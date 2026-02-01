@@ -93,6 +93,20 @@ const translations = {
     'chart.range.6M': '6M',
     'chart.range.1Y': '1Y',
 
+    // Sector names
+    'sector.Communication Services': 'Communication Services',
+    'sector.Consumer Cyclical': 'Consumer Cyclical',
+    'sector.Consumer Discretionary': 'Consumer Discretionary',
+    'sector.Consumer Staples': 'Consumer Staples',
+    'sector.Energy': 'Energy',
+    'sector.Financials': 'Financials',
+    'sector.Health Care': 'Health Care',
+    'sector.Industrials': 'Industrials',
+    'sector.Information Technology': 'Information Technology',
+    'sector.Materials': 'Materials',
+    'sector.Real Estate': 'Real Estate',
+    'sector.Utilities': 'Utilities',
+
     // Metric group headers
     'group.valuation': 'Valuation',
     'group.profitability': 'Profitability',
@@ -315,6 +329,20 @@ const translations = {
     'chart.range.3M': '3月',
     'chart.range.6M': '6月',
     'chart.range.1Y': '1年',
+
+    // Sector names
+    'sector.Communication Services': '通信服务',
+    'sector.Consumer Cyclical': '可选消费',
+    'sector.Consumer Discretionary': '可选消费',
+    'sector.Consumer Staples': '必需消费',
+    'sector.Energy': '能源',
+    'sector.Financials': '金融',
+    'sector.Health Care': '医疗保健',
+    'sector.Industrials': '工业',
+    'sector.Information Technology': '信息技术',
+    'sector.Materials': '原材料',
+    'sector.Real Estate': '房地产',
+    'sector.Utilities': '公用事业',
 
     // Metric group headers
     'group.valuation': '估值',

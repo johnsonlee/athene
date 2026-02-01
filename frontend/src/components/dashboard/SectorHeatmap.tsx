@@ -11,6 +11,7 @@ interface Props {
 
 interface SectorNode {
   name: string;
+  displayName: string;
   size: number;
   avgScore: number;
   count: number;
@@ -35,14 +36,14 @@ function truncateLabel(name: string, width: number, fontSize: number): string {
 }
 
 function CustomContent(props: any) {
-  const { x, y, width, height, name, avgScore, count } = props;
+  const { x, y, width, height, displayName, avgScore, count } = props;
   if (width < 30 || height < 20) return null;
 
   const fill = scoreToColor(avgScore);
   const showScore = width > 50 && height > 35;
   const showCount = width > 60 && height > 50;
   const fontSize = width > 100 ? 12 : width > 60 ? 10 : 9;
-  const label = truncateLabel(name, width, fontSize);
+  const label = truncateLabel(displayName, width, fontSize);
   const clipId = `sc-${Math.round(x)}-${Math.round(y)}`;
 
   return (
@@ -83,7 +84,7 @@ function CustomTooltip({ active, payload }: any) {
   const d = payload[0].payload as SectorNode;
   return (
     <div className="rounded bg-white px-3 py-2 text-xs shadow-lg dark:bg-gray-700 dark:text-gray-200">
-      <p className="font-semibold">{d.name}</p>
+      <p className="font-semibold">{d.displayName}</p>
       <p>Score: {formatScore(d.avgScore)}</p>
       <p>Market Cap: {formatLargeNumber(d.marketCap)}</p>
       <p>{d.count} stocks</p>
@@ -108,13 +109,14 @@ export function SectorHeatmap({ rankings }: Props) {
     return Array.from(grouped.entries())
       .map(([name, { totalScore, totalCap, count }]): SectorNode => ({
         name,
+        displayName: t(`sector.${name}` as any) || name,
         size: totalCap || count, // fallback to count if no market_cap
         avgScore: totalScore / count,
         count,
         marketCap: totalCap,
       }))
       .sort((a, b) => b.size - a.size);
-  }, [rankings]);
+  }, [rankings, t]);
 
   const handleClick = useCallback((node: any) => {
     if (node?.name) navigate(`/screener?sector=${encodeURIComponent(node.name)}`);

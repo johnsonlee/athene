@@ -33,7 +33,7 @@ export function FilterPanel({ filter, onChange, sectors }: Props) {
       >
         <option value="">{t('screener.allSectors')}</option>
         {sectors.map((s) => (
-          <option key={s} value={s}>{s}</option>
+          <option key={s} value={s}>{t(`sector.${s}` as any) || s}</option>
         ))}
       </select>
 

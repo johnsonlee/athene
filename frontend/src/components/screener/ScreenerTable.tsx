@@ -56,9 +56,10 @@ export function ScreenerTable({ data }: Props) {
         accessorKey: 'sector',
         header: t('table.sector'),
         size: 140,
-        cell: ({ getValue }) => (
-          <span className="text-xs text-gray-600 dark:text-gray-400">{getValue() as string}</span>
-        ),
+        cell: ({ getValue }) => {
+          const raw = getValue() as string;
+          return <span className="text-xs text-gray-600 dark:text-gray-400">{t(`sector.${raw}` as any) || raw}</span>;
+        },
       },
       {
         accessorKey: 'composite_score',
