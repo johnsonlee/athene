@@ -103,12 +103,6 @@ def run(tickers_override: list[str] | None = None) -> None:
     log.info("Athene Stock Screening Engine - Pipeline Start")
     log.info("=" * 60)
 
-    # Early exit if US market is closed (skip on weekends/holidays)
-    # Test mode (tickers_override) always runs regardless of market hours.
-    if not tickers_override and not is_us_trading_day():
-        log.info("US market is closed today — skipping pipeline")
-        return
-
     test_mode = tickers_override is not None
 
     # Step 1: Build universe
@@ -125,6 +119,19 @@ def run(tickers_override: list[str] | None = None) -> None:
 
     tickers = universe["ticker"].tolist()
     log.info(f"Universe: {len(tickers)} tickers")
+
+    # Early exit if US market is closed (skip on weekends/holidays),
+    # unless there are new tickers that need historical data.
+    # Test mode always runs regardless.
+    if not test_mode and not is_us_trading_day():
+        stocks_dir = os.path.join(OUTPUT_DIR, "stocks")
+        new_tickers = [t for t in tickers if not os.path.exists(os.path.join(stocks_dir, f"{t}.json"))]
+        if new_tickers:
+            log.info(f"US market is closed but {len(new_tickers)} new ticker(s) detected — running pipeline")
+            log.info(f"  New: {', '.join(new_tickers[:20])}")
+        else:
+            log.info("US market is closed today — skipping pipeline")
+            return
 
     # Step 2: Collect data
     log.info("Step 2/8: Collecting price data...")
