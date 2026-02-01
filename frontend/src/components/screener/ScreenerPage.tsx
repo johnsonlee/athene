@@ -9,9 +9,11 @@ import { ExportButton } from './ExportButton';
 
 export function ScreenerPage() {
   const [searchParams] = useSearchParams();
-  const initialSector = searchParams.get('sector') || undefined;
   const { data: rankings, loading, error } = useRankings();
-  const { filtered, filter, setFilter, sectors } = useFilterSort(rankings, initialSector);
+  const { filtered, filter, setFilter, sectors } = useFilterSort(rankings, {
+    sector: searchParams.get('sector') || undefined,
+    tier: (searchParams.get('tier') as import('../../types').TierKey) || undefined,
+  });
   const { t } = useI18n();
 
   if (loading) return <LoadingSpinner message={t('common.loading')} />;

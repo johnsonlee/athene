@@ -1,18 +1,23 @@
 import { useState, useMemo } from 'react';
-import type { RankedStock, FilterState } from '../types';
+import type { RankedStock, FilterState, TierKey } from '../types';
 
-function buildDefaultFilter(initialSector?: string): FilterState {
+interface InitialFilters {
+  sector?: string;
+  tier?: TierKey;
+}
+
+function buildDefaultFilter(init?: InitialFilters): FilterState {
   return {
     search: '',
-    sectors: initialSector ? [initialSector] : [],
-    tiers: [],
+    sectors: init?.sector ? [init.sector] : [],
+    tiers: init?.tier ? [init.tier] : [],
     minScore: -Infinity,
     maxScore: Infinity,
   };
 }
 
-export function useFilterSort(data: RankedStock[], initialSector?: string) {
-  const [filter, setFilter] = useState<FilterState>(() => buildDefaultFilter(initialSector));
+export function useFilterSort(data: RankedStock[], init?: InitialFilters) {
+  const [filter, setFilter] = useState<FilterState>(() => buildDefaultFilter(init));
 
   const filtered = useMemo(() => {
     return data.filter((stock) => {
