@@ -32,6 +32,7 @@ from engine.exporters.json_exporter import (
 from engine.exporters.changes import detect_changes, format_changes_markdown
 from engine.exporters.feed import generate_feed
 from engine.utils.logger import get_logger
+from engine.utils.market_calendar import is_us_trading_day
 
 log = get_logger("athene.pipeline")
 
@@ -102,6 +103,14 @@ def run(tickers_override: list[str] | None = None) -> None:
     log.info("Athene Stock Screening Engine - Pipeline Start")
     log.info("=" * 60)
 
+    # Early exit if US market is closed (skip on weekends/holidays)
+    # Test mode (tickers_override) always runs regardless of market hours.
+    if not tickers_override and not is_us_trading_day():
+        log.info("US market is closed today — skipping pipeline")
+        return
+
+    test_mode = tickers_override is not None
+
     # Step 1: Build universe
     log.info("Step 1/8: Building stock universe...")
     if tickers_override:
@@ -155,28 +164,32 @@ def run(tickers_override: list[str] | None = None) -> None:
 
     # Step 7: Detect changes (before overwriting rankings.json)
     run_date = time.strftime("%Y-%m-%d")
-    changes = detect_changes(ranked, universe)
-    if changes:
-        log.info(f"Rating changes: {len(changes)}")
-    feed_path = generate_feed(changes, run_date)
+    if not test_mode:
+        changes = detect_changes(ranked, universe)
+        if changes:
+            log.info(f"Rating changes: {len(changes)}")
+        feed_path = generate_feed(changes, run_date)
 
-    # Write changes summary for GitHub Actions Job Summary
-    summary_md = format_changes_markdown(changes)
-    summary_env = os.environ.get("GITHUB_STEP_SUMMARY")
-    if summary_env:
-        with open(summary_env, "a") as f:
-            f.write(summary_md)
-        log.info("Wrote changes to GitHub Job Summary")
+        # Write changes summary for GitHub Actions Job Summary
+        summary_md = format_changes_markdown(changes)
+        summary_env = os.environ.get("GITHUB_STEP_SUMMARY")
+        if summary_env:
+            with open(summary_env, "a") as f:
+                f.write(summary_md)
+            log.info("Wrote changes to GitHub Job Summary")
 
     # Step 8: Export
-    log.info("Exporting JSON data...")
-    export_meta(len(tickers), run_date)
-    export_universe(universe)
-    export_rankings(ranked, universe)
-    export_fundamentals(fund_df)
-    export_technicals(tech_df)
-    export_sentiment(sent_df)
-    export_history(ranked, run_date)
+    if test_mode:
+        log.info("Test mode — skipping global aggregation exports")
+    else:
+        log.info("Exporting JSON data...")
+        export_meta(len(tickers), run_date)
+        export_universe(universe)
+        export_rankings(ranked, universe)
+        export_fundamentals(fund_df)
+        export_technicals(tech_df)
+        export_sentiment(sent_df)
+        export_history(ranked, run_date)
 
     # Export individual stock details (use scored DataFrames for sub-scores)
     log.info("Exporting individual stock details...")
@@ -200,6 +213,21 @@ def run(tickers_override: list[str] | None = None) -> None:
     log.info(f"  News/sentiment: {len(news)}")
     log.info(f"  Stock details exported: {exported_count}")
     log.info("=" * 60)
+
+    # In test mode, print a results summary to console
+    if test_mode:
+        log.info("")
+        log.info("Test Results:")
+        log.info(f"{'Ticker':<8} {'Score':>6} {'Rating':<12} {'Rank':>5}")
+        log.info("-" * 35)
+        for ticker in tickers:
+            if ticker in ranked.index:
+                row = ranked.loc[ticker]
+                log.info(
+                    f"{ticker:<8} {row['composite_score']:>6.1f} "
+                    f"{row['tier']:<12} {int(row.get('rank', 0)):>5}"
+                )
+        log.info("")
 
 
 if __name__ == "__main__":
