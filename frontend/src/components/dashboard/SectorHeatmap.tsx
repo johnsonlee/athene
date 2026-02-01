@@ -27,23 +27,24 @@ function scoreToColor(score: number): string {
   return '#ef4444'; // red-500
 }
 
-function truncateLabel(name: string, width: number, fontSize: number): string {
+function truncateLabel(text: string | undefined, width: number, fontSize: number): string {
+  if (!text) return '';
   const charWidth = fontSize * 0.62;
   const maxChars = Math.floor((width - 10) / charWidth);
   if (maxChars < 2) return '';
-  if (name.length <= maxChars) return name;
-  return name.slice(0, maxChars - 1) + '\u2026';
+  if (text.length <= maxChars) return text;
+  return text.slice(0, maxChars - 1) + '\u2026';
 }
 
 function CustomContent(props: any) {
-  const { x, y, width, height, displayName, avgScore, count } = props;
-  if (width < 30 || height < 20) return null;
+  const { x, y, width, height, displayName, name, avgScore, count } = props;
+  if (!width || !height || width < 30 || height < 20) return null;
 
   const fill = scoreToColor(avgScore);
   const showScore = width > 50 && height > 35;
   const showCount = width > 60 && height > 50;
   const fontSize = width > 100 ? 12 : width > 60 ? 10 : 9;
-  const label = truncateLabel(displayName, width, fontSize);
+  const label = truncateLabel(displayName || name, width, fontSize);
   const clipId = `sc-${Math.round(x)}-${Math.round(y)}`;
 
   return (
@@ -84,7 +85,7 @@ function CustomTooltip({ active, payload }: any) {
   const d = payload[0].payload as SectorNode;
   return (
     <div className="rounded bg-white px-3 py-2 text-xs shadow-lg dark:bg-gray-700 dark:text-gray-200">
-      <p className="font-semibold">{d.displayName}</p>
+      <p className="font-semibold">{d.displayName || d.name}</p>
       <p>Score: {formatScore(d.avgScore)}</p>
       <p>Market Cap: {formatLargeNumber(d.marketCap)}</p>
       <p>{d.count} stocks</p>
