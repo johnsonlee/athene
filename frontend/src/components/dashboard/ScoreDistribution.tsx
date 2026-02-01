@@ -12,19 +12,16 @@ export function ScoreDistribution({ rankings }: Props) {
 
   const data = useMemo(() => {
     const bins = 20;
+    const binWidth = 100 / bins; // Fixed 0-100 range
     const scores = rankings.map((r) => r.composite_score);
-    const min = Math.min(...scores);
-    const max = Math.max(...scores);
-    const range = max - min || 1;
-    const binWidth = range / bins;
 
     const histogram = Array.from({ length: bins }, (_, i) => ({
-      label: (min + i * binWidth).toFixed(2),
+      label: (i * binWidth).toFixed(0),
       count: 0,
     }));
 
     scores.forEach((score) => {
-      const idx = Math.min(Math.floor((score - min) / binWidth), bins - 1);
+      const idx = Math.min(Math.floor(score / binWidth), bins - 1);
       histogram[idx].count++;
     });
 

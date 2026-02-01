@@ -44,13 +44,16 @@ def analyze_sentiment(news: Dict[str, List[NewsItem]]) -> pd.DataFrame:
             negatives.append(scores["neg"])
             neutrals.append(scores["neu"])
 
+        compound_avg = sum(compounds) / len(compounds)
         records.append({
             "ticker": ticker,
-            "sentiment_compound": sum(compounds) / len(compounds),
+            "sentiment_compound": compound_avg,
             "sentiment_pos": sum(positives) / len(positives),
             "sentiment_neg": sum(negatives) / len(negatives),
             "sentiment_neu": sum(neutrals) / len(neutrals),
             "news_count": len(items),
+            # Direct 0-100 mapping: -1 -> 0, 0 -> 50, +1 -> 100
+            "sentiment_score": max(0.0, min(100.0, (compound_avg + 1.0) * 50.0)),
         })
 
     df = pd.DataFrame(records)

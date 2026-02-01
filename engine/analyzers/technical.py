@@ -147,40 +147,38 @@ def analyze_technical(prices: Dict[str, pd.DataFrame]) -> pd.DataFrame:
     return result
 
 
-def compute_technical_subscores(df_z: pd.DataFrame) -> pd.DataFrame:
-    """Given z-scored technical metrics, compute composite technical score.
+def compute_technical_subscores(df: pd.DataFrame) -> pd.DataFrame:
+    """Compute technical sub-factor scores using absolute metric scoring (0-100).
 
-    Expected z-scored columns: trend_alignment_z, rsi_score_z,
-    macd_histogram_z, bb_position_z, volume_ratio_z
+    Uses piecewise linear breakpoints per metric instead of z-scores.
     """
-    result = df_z.copy()
+    from engine.scorer.absolute import (
+        score_trend_alignment, score_rsi, score_macd_histogram,
+        score_bb_position, score_volume_ratio,
+    )
 
-    # Trend sub-score
-    trend_cols = ["trend_alignment_z"]
-    available = [c for c in trend_cols if c in result.columns]
-    result["trend_score"] = result[available].mean(axis=1) if available else 0.0
+    result = df.copy()
 
-    # Momentum sub-score (RSI + MACD)
-    momentum_cols = ["rsi_score_z", "macd_histogram_z"]
-    available = [c for c in momentum_cols if c in result.columns]
-    result["momentum_score"] = result[available].mean(axis=1) if available else 0.0
+    # Trend sub-score (trend_alignment already 0-1 -> 0-100)
+    result["trend_score"] = result["trend_alignment"].apply(score_trend_alignment) if "trend_alignment" in result.columns else 50.0
 
-    # Volatility sub-score (BB position: higher = more bullish short-term)
-    vol_cols = ["bb_position_z"]
-    available = [c for c in vol_cols if c in result.columns]
-    result["volatility_score"] = result[available].mean(axis=1) if available else 0.0
+    # Momentum sub-score: avg(rsi_score, macd_score)
+    result["rsi_abs_score"] = result["rsi"].apply(score_rsi) if "rsi" in result.columns else 50.0
+    result["macd_abs_score"] = result["macd_histogram"].apply(score_macd_histogram) if "macd_histogram" in result.columns else 50.0
+    result["momentum_score"] = result[["rsi_abs_score", "macd_abs_score"]].mean(axis=1)
+
+    # Volatility sub-score (BB position)
+    result["volatility_score"] = result["bb_position"].apply(score_bb_position) if "bb_position" in result.columns else 50.0
 
     # Volume sub-score
-    volume_cols = ["volume_ratio_z"]
-    available = [c for c in volume_cols if c in result.columns]
-    result["volume_score"] = result[available].mean(axis=1) if available else 0.0
+    result["volume_score"] = result["volume_ratio"].apply(score_volume_ratio) if "volume_ratio" in result.columns else 50.0
 
-    # Composite technical score
+    # Composite technical score (weighted, already 0-100)
     result["technical_score"] = (
-        TECH_WEIGHT_TREND * result["trend_score"].fillna(0)
-        + TECH_WEIGHT_MOMENTUM * result["momentum_score"].fillna(0)
-        + TECH_WEIGHT_VOLATILITY * result["volatility_score"].fillna(0)
-        + TECH_WEIGHT_VOLUME * result["volume_score"].fillna(0)
+        TECH_WEIGHT_TREND * result["trend_score"].fillna(50)
+        + TECH_WEIGHT_MOMENTUM * result["momentum_score"].fillna(50)
+        + TECH_WEIGHT_VOLATILITY * result["volatility_score"].fillna(50)
+        + TECH_WEIGHT_VOLUME * result["volume_score"].fillna(50)
     )
 
     return result

@@ -101,45 +101,50 @@ def analyze_fundamental(fundamentals: Dict[str, Dict[str, Any]]) -> pd.DataFrame
     return df
 
 
-def compute_fundamental_subscores(df_z: pd.DataFrame) -> pd.DataFrame:
-    """Given z-scored fundamental metrics, compute sub-factor and composite scores.
+def compute_fundamental_subscores(df: pd.DataFrame) -> pd.DataFrame:
+    """Compute sub-factor scores using absolute metric scoring (0-100).
 
-    Expected z-scored columns: inv_pe_z, inv_pb_z, inv_ps_z,
-    roe_z, roa_z, revenue_growth_z, earnings_growth_z,
-    debt_to_equity_inv_z, fcf_yield_z
+    Uses piecewise linear breakpoints per metric instead of z-scores.
 
     Returns:
         DataFrame with value_score, quality_score, growth_score, safety_score,
-        fundamental_score columns added.
+        fundamental_score columns added (all 0-100).
     """
-    result = df_z.copy()
+    from engine.scorer.absolute import (
+        score_pe, score_pb, score_ps,
+        score_roe, score_roa, score_profit_margin,
+        score_revenue_growth, score_earnings_growth,
+        score_debt_equity,
+    )
 
-    # Value sub-score (mean of available value z-scores)
-    value_cols = ["inv_pe_z", "inv_pb_z", "inv_ps_z"]
-    available = [c for c in value_cols if c in result.columns]
-    result["value_score"] = result[available].mean(axis=1) if available else 0.0
+    result = df.copy()
 
-    # Quality sub-score
-    quality_cols = ["roe_z", "roa_z"]
-    available = [c for c in quality_cols if c in result.columns]
-    result["quality_score"] = result[available].mean(axis=1) if available else 0.0
+    # Value sub-score: avg(pe_score, pb_score, ps_score)
+    result["pe_score"] = result["pe"].apply(score_pe) if "pe" in result.columns else 50.0
+    result["pb_score"] = result["pb"].apply(score_pb) if "pb" in result.columns else 50.0
+    result["ps_score"] = result["ps"].apply(score_ps) if "ps" in result.columns else 50.0
+    result["value_score"] = result[["pe_score", "pb_score", "ps_score"]].mean(axis=1)
 
-    # Growth sub-score
-    growth_cols = ["revenue_growth_z", "earnings_growth_z"]
-    available = [c for c in growth_cols if c in result.columns]
-    result["growth_score"] = result[available].mean(axis=1) if available else 0.0
+    # Quality sub-score: avg(roe_score, roa_score, margin_score)
+    result["roe_score"] = result["roe"].apply(score_roe) if "roe" in result.columns else 50.0
+    result["roa_score"] = result["roa"].apply(score_roa) if "roa" in result.columns else 50.0
+    result["margin_score"] = result["profit_margin"].apply(score_profit_margin) if "profit_margin" in result.columns else 50.0
+    result["quality_score"] = result[["roe_score", "roa_score", "margin_score"]].mean(axis=1)
 
-    # Safety sub-score (lower debt is better, higher FCF yield is better)
-    safety_cols = ["debt_to_equity_inv_z", "fcf_yield_z"]
-    available = [c for c in safety_cols if c in result.columns]
-    result["safety_score"] = result[available].mean(axis=1) if available else 0.0
+    # Growth sub-score: avg(rev_growth_score, earn_growth_score)
+    result["rev_growth_score"] = result["revenue_growth"].apply(score_revenue_growth) if "revenue_growth" in result.columns else 50.0
+    result["earn_growth_score"] = result["earnings_growth"].apply(score_earnings_growth) if "earnings_growth" in result.columns else 50.0
+    result["growth_score"] = result[["rev_growth_score", "earn_growth_score"]].mean(axis=1)
 
-    # Composite fundamental score
+    # Safety sub-score: debt_equity_score
+    result["safety_score"] = result["debt_to_equity"].apply(score_debt_equity) if "debt_to_equity" in result.columns else 50.0
+
+    # Composite fundamental score (weighted, already 0-100)
     result["fundamental_score"] = (
-        FUND_WEIGHT_VALUE * result["value_score"].fillna(0)
-        + FUND_WEIGHT_QUALITY * result["quality_score"].fillna(0)
-        + FUND_WEIGHT_GROWTH * result["growth_score"].fillna(0)
-        + FUND_WEIGHT_SAFETY * result["safety_score"].fillna(0)
+        FUND_WEIGHT_VALUE * result["value_score"].fillna(50)
+        + FUND_WEIGHT_QUALITY * result["quality_score"].fillna(50)
+        + FUND_WEIGHT_GROWTH * result["growth_score"].fillna(50)
+        + FUND_WEIGHT_SAFETY * result["safety_score"].fillna(50)
     )
 
     return result

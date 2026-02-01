@@ -4,7 +4,6 @@ import { LoadingSpinner } from '../common/LoadingSpinner';
 import { ScoreBadge } from '../common/ScoreBadge';
 import { PriceChart } from './PriceChart';
 import { IndicatorCharts } from './IndicatorCharts';
-import { ScoreRadar } from './ScoreRadar';
 import { ScoreBreakdown } from './ScoreBreakdown';
 import { formatScore, formatPrice } from '../../lib/formatters';
 import { useI18n } from '../../lib/i18n';
@@ -48,11 +47,8 @@ export function StockDetailPage() {
       {/* Indicator Sub-charts */}
       <IndicatorCharts prices={data.prices} technical={technical} />
 
-      {/* Score Breakdown + Radar */}
-      <div className="grid gap-6 lg:grid-cols-[1fr_auto]">
-        <ScoreBreakdown detail={data} />
-        <ScoreRadar fundamental={fundamental} technical={technical} />
-      </div>
+      {/* Score Breakdown */}
+      <ScoreBreakdown detail={data} />
     </div>
   );
 }

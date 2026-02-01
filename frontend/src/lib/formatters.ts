@@ -1,6 +1,6 @@
 export function formatScore(score: number | null | undefined): string {
   if (score == null) return 'N/A';
-  return score.toFixed(2);
+  return score.toFixed(1);
 }
 
 export function formatPercent(value: number | null | undefined): string {

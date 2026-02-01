@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import os
 import sys
 import time
@@ -15,9 +16,9 @@ from engine.collectors.news import collect_news
 from engine.analyzers.fundamental import analyze_fundamental, compute_fundamental_subscores
 from engine.analyzers.technical import analyze_technical, compute_technical_subscores
 from engine.analyzers.sentiment import analyze_sentiment
-from engine.scorer.normalizer import normalize_columns
 from engine.scorer.factor_model import compute_composite
 from engine.scorer.ranker import assign_tiers
+from engine.config import OUTPUT_DIR, SMOOTH_ALPHA
 from engine.exporters.json_exporter import (
     export_meta,
     export_universe,
@@ -33,6 +34,52 @@ from engine.exporters.feed import generate_feed
 from engine.utils.logger import get_logger
 
 log = get_logger("athene.pipeline")
+
+
+def _load_previous_smoothed() -> dict[str, float]:
+    """Load previous smoothed composite scores from history.json."""
+    history_path = os.path.join(OUTPUT_DIR, "history.json")
+    if not os.path.exists(history_path):
+        return {}
+    try:
+        with open(history_path, "r", encoding="utf-8") as f:
+            history = json.load(f)
+        if not history:
+            return {}
+        latest_date = sorted(history.keys())[-1]
+        daily = history[latest_date]
+        return {
+            ticker: data["composite_score"]
+            for ticker, data in daily.items()
+            if "composite_score" in data
+        }
+    except Exception as e:
+        log.warning(f"Failed to load previous smoothed scores: {e}")
+        return {}
+
+
+def _apply_ema_smoothing(composite: pd.DataFrame) -> pd.DataFrame:
+    """Apply EMA smoothing to composite_score.
+
+    smoothed = SMOOTH_ALPHA * raw + (1 - SMOOTH_ALPHA) * prev_smoothed
+    First run (no previous): smoothed = raw
+    Sub-factor scores remain raw for attribution clarity.
+    """
+    result = composite.copy()
+    prev_scores = _load_previous_smoothed()
+
+    smoothed = []
+    for ticker, row in result.iterrows():
+        raw = row["composite_score"]
+        prev = prev_scores.get(str(ticker))
+        if prev is not None:
+            s = SMOOTH_ALPHA * raw + (1 - SMOOTH_ALPHA) * prev
+        else:
+            s = raw
+        smoothed.append(s)
+
+    result["composite_score"] = smoothed
+    return result
 
 
 def run(tickers_override: list[str] | None = None) -> None:
@@ -82,40 +129,20 @@ def run(tickers_override: list[str] | None = None) -> None:
     log.info("Step 7/8: Running sentiment analysis...")
     sent_df = analyze_sentiment(news)
 
-    # Step 4: Normalize
-    log.info("Step 8/8: Scoring and ranking...")
+    # Step 4: Absolute scoring (no z-score normalization)
+    log.info("Step 8/8: Scoring and ranking (absolute)...")
 
-    # Normalize fundamental metrics
-    fund_z_cols = ["inv_pe", "inv_pb", "inv_ps", "roe", "roa",
-                   "revenue_growth", "earnings_growth", "fcf_yield"]
-    fund_norm = normalize_columns(fund_df, fund_z_cols)
-
-    # Invert debt_to_equity (lower is better)
-    if "debt_to_equity" in fund_norm.columns:
-        fund_norm["debt_to_equity_inv"] = -fund_norm["debt_to_equity"]
-        fund_norm = normalize_columns(fund_norm, ["debt_to_equity_inv"])
-
-    fund_scored = compute_fundamental_subscores(fund_norm)
-
-    # Normalize technical metrics
-    tech_z_cols = ["trend_alignment", "rsi_score", "macd_histogram",
-                   "bb_position", "volume_ratio"]
-    tech_norm = normalize_columns(tech_df, tech_z_cols)
-    tech_scored = compute_technical_subscores(tech_norm)
-
-    # Normalize sentiment
-    sent_norm = normalize_columns(sent_df, ["sentiment_compound"])
-    if "sentiment_compound_z" in sent_norm.columns:
-        sent_norm["sentiment_score"] = sent_norm["sentiment_compound_z"]
-    elif "sentiment_compound" in sent_norm.columns:
-        sent_norm["sentiment_score"] = sent_norm["sentiment_compound"]
-    else:
-        sent_norm["sentiment_score"] = 0.0
+    fund_scored = compute_fundamental_subscores(fund_df)
+    tech_scored = compute_technical_subscores(tech_df)
+    # sentiment_score already computed in analyze_sentiment (0-100)
 
     # Step 5: Composite scoring
-    composite = compute_composite(fund_scored, tech_scored, sent_norm)
+    composite = compute_composite(fund_scored, tech_scored, sent_df)
 
-    # Step 6: Rank and tier
+    # Step 5.5: EMA smoothing on composite_score
+    composite = _apply_ema_smoothing(composite)
+
+    # Step 6: Rank and tier (absolute rating + relative ranking)
     ranked = assign_tiers(composite)
 
     # Step 7: Detect changes (before overwriting rankings.json)
@@ -150,7 +177,7 @@ def run(tickers_override: list[str] | None = None) -> None:
         price_data = prices.get(ticker, pd.DataFrame())
         fund_data = fund_scored.loc[ticker].to_dict() if ticker in fund_scored.index else None
         tech_data = tech_scored.loc[ticker].to_dict() if ticker in tech_scored.index else None
-        sent_data = sent_norm.loc[ticker].to_dict() if ticker in sent_norm.index else None
+        sent_data = sent_df.loc[ticker].to_dict() if ticker in sent_df.index else None
         rank_data = ranked.loc[ticker].to_dict() if ticker in ranked.index else None
         headlines = news.get(ticker, [])
         export_stock_detail(ticker, price_data, fund_data, tech_data, sent_data, rank_data, headlines)

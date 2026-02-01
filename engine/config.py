@@ -17,13 +17,15 @@ TECH_WEIGHT_MOMENTUM = 0.30
 TECH_WEIGHT_VOLATILITY = 0.15
 TECH_WEIGHT_VOLUME = 0.15
 
-# ---------- Tier thresholds (percentile boundaries) ----------
-TIER_STRONG_BUY = 0.90    # top 10%
-TIER_BUY = 0.70           # 70-90%
-TIER_HOLD_UPPER = 0.70    # 30-70%
-TIER_HOLD_LOWER = 0.30
-TIER_SELL = 0.10           # 10-30%
-# bottom 10% → Strong Sell
+# ---------- Rating thresholds (absolute, 0-100 scale) ----------
+SCORE_STRONG_BUY = 75
+SCORE_BUY = 60
+SCORE_HOLD_LOWER = 40
+SCORE_SELL = 25
+TIER_HYSTERESIS = 2        # ±2 points buffer to prevent oscillation
+
+# Score smoothing (EMA on composite_score)
+SMOOTH_ALPHA = 0.3         # smoothed = alpha * raw + (1-alpha) * prev
 
 TIER_LABELS = {
     "strong_buy": "Strong Buy",
@@ -63,7 +65,7 @@ NEWS_MAX_ARTICLES = 20           # max news articles per ticker
 RATE_LIMIT_PAUSE = 0.1          # seconds between yfinance calls
 BATCH_SIZE = 50                  # tickers per yf.download batch
 
-# ---------- Z-score ----------
+# ---------- Z-score (legacy, kept for reference) ----------
 WINSORIZE_LIMITS = (0.02, 0.02)  # 2% tails
 
 # ---------- Output ----------

@@ -23,8 +23,8 @@ function signalColor(signal: string) {
 
 function scoreBar(score: number | null | undefined) {
   if (score == null) return null;
-  const pct = Math.max(0, Math.min(100, (score + 2) * 25));
-  const color = score > 0.3 ? 'bg-green-500' : score < -0.3 ? 'bg-red-500' : 'bg-gray-400';
+  const pct = Math.max(0, Math.min(100, score));
+  const color = score >= 60 ? 'bg-green-500' : score < 40 ? 'bg-red-500' : 'bg-gray-400';
   return (
     <div className="h-2 w-full rounded-full bg-gray-200 dark:bg-gray-600">
       <div className={`h-2 rounded-full ${color}`} style={{ width: `${pct}%` }} />
@@ -211,9 +211,12 @@ export function ScoreBreakdown({ detail }: Props) {
 
             {fi === 1 && tech && (
               <div className="mt-3 grid grid-cols-2 gap-x-4 border-t pt-2 dark:border-gray-700">
-                <Metric label={t('metric.sma20')} value={formatPrice(tech.sma_20)} />
-                <Metric label={t('metric.sma50')} value={formatPrice(tech.sma_50)} />
-                <Metric label={t('metric.sma200')} value={formatPrice(tech.sma_200)} />
+                <Metric label={t('metric.sma20')} value={formatPrice(tech.sma_20)}
+                  signal={tech.close != null && tech.sma_20 != null ? (tech.close > tech.sma_20 ? 'bullish' : 'bearish') : undefined} />
+                <Metric label={t('metric.sma50')} value={formatPrice(tech.sma_50)}
+                  signal={tech.close != null && tech.sma_50 != null ? (tech.close > tech.sma_50 ? 'bullish' : 'bearish') : undefined} />
+                <Metric label={t('metric.sma200')} value={formatPrice(tech.sma_200)}
+                  signal={tech.close != null && tech.sma_200 != null ? (tech.close > tech.sma_200 ? 'bullish' : 'bearish') : undefined} />
                 <Metric label={t('metric.macd')} value={formatRatio(tech.macd_line)}
                   signal={sig(tech.macd_line, v => v > 0 ? 'bullish' : 'bearish')} />
                 <Metric label={t('metric.stochK')} value={formatRatio(tech.stoch_k)}

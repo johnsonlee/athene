@@ -139,12 +139,18 @@ def export_history(ranked: pd.DataFrame, run_date: str | None = None) -> str:
 
     daily: dict = {}
     for ticker, row in ranked.iterrows():
-        daily[str(ticker)] = {
+        entry: dict = {
             "composite_score": float(row.get("composite_score", 0)),
             "tier": str(row.get("tier", "")),
             "rank": int(row.get("rank", 0)),
             "percentile": float(row.get("percentile", 0)),
         }
+        # Store sub-factor scores for change attribution
+        for key in ("fundamental_score", "technical_score", "sentiment_score"):
+            val = row.get(key)
+            if val is not None and pd.notna(val):
+                entry[key] = float(val)
+        daily[str(ticker)] = entry
 
     history[run_date] = daily
     log.info(f"History: added {len(daily)} tickers for {run_date} ({len(history)} total days)")
