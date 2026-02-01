@@ -68,6 +68,14 @@ def _apply_ema_smoothing(composite: pd.DataFrame) -> pd.DataFrame:
     result = composite.copy()
     prev_scores = _load_previous_smoothed()
 
+    # Detect stale history from old z-score system (scores << 10).
+    # New absolute scores are 0-100; old z-scores are typically -3 to +3.
+    if prev_scores:
+        max_prev = max(prev_scores.values())
+        if max_prev < 10:
+            log.info("Previous scores appear to be from old z-score system, skipping EMA smoothing")
+            prev_scores = {}
+
     smoothed = []
     for ticker, row in result.iterrows():
         raw = row["composite_score"]
