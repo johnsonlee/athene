@@ -10,9 +10,13 @@ import { ExportButton } from './ExportButton';
 export function ScreenerPage() {
   const [searchParams] = useSearchParams();
   const { data: rankings, loading, error } = useRankings();
+  const minScoreParam = searchParams.get('minScore');
+  const maxScoreParam = searchParams.get('maxScore');
   const { filtered, filter, setFilter, sectors } = useFilterSort(rankings, {
     sector: searchParams.get('sector') || undefined,
     tier: (searchParams.get('tier') as import('../../types').TierKey) || undefined,
+    minScore: minScoreParam ? Number(minScoreParam) : undefined,
+    maxScore: maxScoreParam ? Number(maxScoreParam) : undefined,
   });
   const { t } = useI18n();
 

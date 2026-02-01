@@ -4,6 +4,8 @@ import type { RankedStock, FilterState, TierKey } from '../types';
 interface InitialFilters {
   sector?: string;
   tier?: TierKey;
+  minScore?: number;
+  maxScore?: number;
 }
 
 function buildDefaultFilter(init?: InitialFilters): FilterState {
@@ -11,8 +13,8 @@ function buildDefaultFilter(init?: InitialFilters): FilterState {
     search: '',
     sectors: init?.sector ? [init.sector] : [],
     tiers: init?.tier ? [init.tier] : [],
-    minScore: -Infinity,
-    maxScore: Infinity,
+    minScore: init?.minScore ?? -Infinity,
+    maxScore: init?.maxScore ?? Infinity,
   };
 }
 
