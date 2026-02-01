@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { useNavigate } from 'react-router-dom';
 import type { RankedStock } from '../../types';
 import { formatScore } from '../../lib/formatters';
 import { useI18n } from '../../lib/i18n';
@@ -9,6 +10,7 @@ interface Props {
 
 export function SectorHeatmap({ rankings }: Props) {
   const { t } = useI18n();
+  const navigate = useNavigate();
 
   const sectorData = useMemo(() => {
     const grouped = new Map<string, { total: number; count: number }>();
@@ -44,8 +46,9 @@ export function SectorHeatmap({ rankings }: Props) {
           return (
             <div
               key={sector}
-              className="rounded p-3 text-center"
+              className="cursor-pointer rounded p-3 text-center transition-opacity hover:opacity-80"
               style={{ backgroundColor: bg }}
+              onClick={() => navigate(`/screener?sector=${encodeURIComponent(sector)}`)}
             >
               <p className="text-xs font-medium text-gray-700 dark:text-gray-300">{sector}</p>
               <p className="text-lg font-bold text-gray-900 dark:text-white">{formatScore(avgScore)}</p>

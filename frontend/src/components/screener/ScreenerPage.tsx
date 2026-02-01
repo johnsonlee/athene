@@ -1,3 +1,4 @@
+import { useSearchParams } from 'react-router-dom';
 import { useRankings } from '../../hooks/useRankings';
 import { useFilterSort } from '../../hooks/useFilterSort';
 import { useI18n } from '../../lib/i18n';
@@ -7,8 +8,10 @@ import { FilterPanel } from './FilterPanel';
 import { ExportButton } from './ExportButton';
 
 export function ScreenerPage() {
+  const [searchParams] = useSearchParams();
+  const initialSector = searchParams.get('sector') || undefined;
   const { data: rankings, loading, error } = useRankings();
-  const { filtered, filter, setFilter, sectors } = useFilterSort(rankings);
+  const { filtered, filter, setFilter, sectors } = useFilterSort(rankings, initialSector);
   const { t } = useI18n();
 
   if (loading) return <LoadingSpinner message={t('common.loading')} />;
