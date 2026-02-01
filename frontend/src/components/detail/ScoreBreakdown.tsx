@@ -136,10 +136,11 @@ export function ScoreBreakdown({ detail }: Props) {
   // Sort headlines by date desc
   const headlines = [...(detail.headlines || [])].sort((a, b) => (b.date || '').localeCompare(a.date || ''));
 
+  const fmtWeight = (w: number | undefined, fallback: string) => w != null ? `${Math.round(w * 100)}%` : fallback;
   const factors = [
-    { name: t('detail.fundamentals'), score: ranking.fundamental_score, weight: '40%', drivers: fundDrivers },
-    { name: t('detail.technical'), score: ranking.technical_score, weight: '35%', drivers: techDrivers },
-    { name: t('detail.sentiment'), score: ranking.sentiment_score, weight: '25%', drivers: sentDrivers },
+    { name: t('detail.fundamentals'), score: ranking.fundamental_score, weight: fmtWeight(ranking.weight_fundamental, '50%'), drivers: fundDrivers },
+    { name: t('detail.technical'), score: ranking.technical_score, weight: fmtWeight(ranking.weight_technical, '30%'), drivers: techDrivers },
+    { name: t('detail.sentiment'), score: ranking.sentiment_score, weight: fmtWeight(ranking.weight_sentiment, '20%'), drivers: sentDrivers },
   ];
 
   // Determine strongest and weakest factor (by score)
