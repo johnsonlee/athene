@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import os
 import sys
 import time
 
@@ -26,6 +27,8 @@ from engine.exporters.json_exporter import (
     export_sentiment,
     export_stock_detail,
 )
+from engine.exporters.changes import detect_changes, format_changes_markdown
+from engine.exporters.feed import generate_feed
 from engine.utils.logger import get_logger
 
 log = get_logger("athene.pipeline")
@@ -114,9 +117,24 @@ def run(tickers_override: list[str] | None = None) -> None:
     # Step 6: Rank and tier
     ranked = assign_tiers(composite)
 
-    # Step 7: Export
+    # Step 7: Detect changes (before overwriting rankings.json)
+    run_date = time.strftime("%Y-%m-%d")
+    changes = detect_changes(ranked, universe)
+    if changes:
+        log.info(f"Rating changes: {len(changes)}")
+    feed_path = generate_feed(changes, run_date)
+
+    # Write changes summary for GitHub Actions Job Summary
+    summary_md = format_changes_markdown(changes)
+    summary_env = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary_env:
+        with open(summary_env, "a") as f:
+            f.write(summary_md)
+        log.info("Wrote changes to GitHub Job Summary")
+
+    # Step 8: Export
     log.info("Exporting JSON data...")
-    export_meta(len(tickers))
+    export_meta(len(tickers), run_date)
     export_universe(universe)
     export_rankings(ranked, universe)
     export_fundamentals(fund_df)

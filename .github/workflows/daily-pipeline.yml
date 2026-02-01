@@ -15,6 +15,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  issues: write
 
 jobs:
   pipeline:
@@ -22,6 +23,7 @@ jobs:
     timeout-minutes: 45
     outputs:
       data_changed: ${{ steps.commit.outputs.data_changed }}
+      has_changes: ${{ steps.check_changes.outputs.has_changes }}
 
     steps:
       - name: Checkout
@@ -44,6 +46,15 @@ jobs:
             python -m engine.main $TICKERS
           else
             python -m engine.main
+          fi
+
+      - name: Check for rating changes
+        id: check_changes
+        run: |
+          if [ -f frontend/public/data/feed.xml ]; then
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Commit data
