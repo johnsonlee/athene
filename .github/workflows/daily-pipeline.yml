@@ -13,11 +13,15 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   pipeline:
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    outputs:
+      data_changed: ${{ steps.commit.outputs.data_changed }}
 
     steps:
       - name: Checkout
@@ -49,7 +53,15 @@ jobs:
           git add -f frontend/public/data/
           if git diff --staged --quiet; then
             echo "No data changes to commit"
+            echo "data_changed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "data: update $(date -u +%Y-%m-%d) rankings"
             git push
+            echo "data_changed=true" >> "$GITHUB_OUTPUT"
           fi
+        id: commit
+
+  deploy:
+    needs: pipeline
+    if: needs.pipeline.outputs.data_changed == 'true'
+    uses: ./.github/workflows/deploy-pages.yml

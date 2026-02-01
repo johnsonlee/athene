@@ -12,7 +12,8 @@ export function Header() {
   return (
     <header className="border-b border-gray-200 bg-white">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
-        <Link to="/" className="text-xl font-bold text-gray-900">
+        <Link to="/" className="flex items-center gap-2 text-xl font-bold text-gray-900">
+          <img src={import.meta.env.BASE_URL + 'logo.svg'} alt="Athene" className="h-8 w-8" />
           Athene
         </Link>
         <nav className="flex gap-1">

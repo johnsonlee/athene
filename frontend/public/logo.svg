@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- Body -->
+  <ellipse cx="60" cy="72" rx="38" ry="36" fill="#1e293b"/>
+  <!-- Head -->
+  <circle cx="60" cy="38" r="28" fill="#334155"/>
+  <!-- Ear tufts -->
+  <polygon points="38,18 32,2 44,14" fill="#334155"/>
+  <polygon points="82,18 88,2 76,14" fill="#334155"/>
+  <!-- Eye rings -->
+  <circle cx="47" cy="36" r="12" fill="#f8fafc"/>
+  <circle cx="73" cy="36" r="12" fill="#f8fafc"/>
+  <!-- Pupils -->
+  <circle cx="47" cy="36" r="6" fill="#f59e0b"/>
+  <circle cx="73" cy="36" r="6" fill="#f59e0b"/>
+  <circle cx="48" cy="35" r="2.5" fill="#1e293b"/>
+  <circle cx="74" cy="35" r="2.5" fill="#1e293b"/>
+  <!-- Eye shine -->
+  <circle cx="45" cy="33" r="1.5" fill="white"/>
+  <circle cx="71" cy="33" r="1.5" fill="white"/>
+  <!-- Beak -->
+  <polygon points="60,44 55,50 65,50" fill="#f59e0b"/>
+  <!-- Chest pattern -->
+  <ellipse cx="60" cy="78" rx="20" ry="22" fill="#475569"/>
+  <!-- Chest lines -->
+  <path d="M48,66 Q60,72 72,66" fill="none" stroke="#64748b" stroke-width="1"/>
+  <path d="M46,72 Q60,78 74,72" fill="none" stroke="#64748b" stroke-width="1"/>
+  <path d="M46,78 Q60,84 74,78" fill="none" stroke="#64748b" stroke-width="1"/>
+  <path d="M48,84 Q60,90 72,84" fill="none" stroke="#64748b" stroke-width="1"/>
+  <!-- Feet -->
+  <path d="M45,106 L40,112 L46,110 L48,114 L50,110 L54,112 L50,106" fill="#f59e0b"/>
+  <path d="M75,106 L70,112 L76,110 L78,114 L80,110 L84,112 L80,106" fill="#f59e0b"/>
+</svg>
