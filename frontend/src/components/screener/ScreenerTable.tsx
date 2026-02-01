@@ -35,7 +35,7 @@ export function ScreenerTable({ data }: Props) {
         cell: ({ row }) => (
           <Link
             to={`/stock/${row.original.ticker}`}
-            className="font-mono font-semibold text-blue-600 hover:underline"
+            className="font-mono font-semibold text-blue-600 hover:underline dark:text-blue-400"
           >
             {row.original.ticker}
           </Link>
@@ -46,7 +46,7 @@ export function ScreenerTable({ data }: Props) {
         header: t('table.name'),
         size: 200,
         cell: ({ getValue }) => (
-          <span className="truncate text-sm">{getValue() as string}</span>
+          <span className="truncate text-sm text-gray-700 dark:text-gray-300">{getValue() as string}</span>
         ),
       },
       {
@@ -61,28 +61,28 @@ export function ScreenerTable({ data }: Props) {
         accessorKey: 'composite_score',
         header: t('table.score'),
         cell: ({ getValue }) => (
-          <span className="font-mono font-medium">{formatScore(getValue() as number)}</span>
+          <span className="font-mono font-medium text-gray-900 dark:text-white">{formatScore(getValue() as number)}</span>
         ),
       },
       {
         accessorKey: 'fundamental_score',
         header: t('table.fundamental'),
         cell: ({ getValue }) => (
-          <span className="font-mono text-sm">{formatScore(getValue() as number | null)}</span>
+          <span className="font-mono text-sm text-gray-700 dark:text-gray-300">{formatScore(getValue() as number | null)}</span>
         ),
       },
       {
         accessorKey: 'technical_score',
         header: t('table.technical'),
         cell: ({ getValue }) => (
-          <span className="font-mono text-sm">{formatScore(getValue() as number | null)}</span>
+          <span className="font-mono text-sm text-gray-700 dark:text-gray-300">{formatScore(getValue() as number | null)}</span>
         ),
       },
       {
         accessorKey: 'sentiment_score',
         header: t('table.sentiment'),
         cell: ({ getValue }) => (
-          <span className="font-mono text-sm">{formatScore(getValue() as number | null)}</span>
+          <span className="font-mono text-sm text-gray-700 dark:text-gray-300">{formatScore(getValue() as number | null)}</span>
         ),
       },
       {

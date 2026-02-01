@@ -231,7 +231,7 @@ export function ScoreBreakdown({ detail }: Props) {
                 <span className="font-semibold text-gray-900 dark:text-white">{factor.name}</span>
                 <span className="text-xs text-gray-500 dark:text-gray-400">(Weight: {factor.weight})</span>
               </div>
-              <span className="font-mono text-sm font-medium">
+              <span className="font-mono text-sm font-medium text-gray-900 dark:text-white">
                 {formatScore(factor.score)}
               </span>
             </div>

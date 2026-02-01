@@ -15,7 +15,7 @@ export function StockDetailPage() {
   const { t } = useI18n();
 
   if (loading) return <LoadingSpinner message={t('common.loading')} />;
-  if (error) return <p className="text-center text-red-600">{t('common.error', { message: error })}</p>;
+  if (error) return <p className="text-center text-red-600 dark:text-red-400">{t('common.error', { message: error })}</p>;
   if (!data) return <p className="text-center text-gray-500 dark:text-gray-400">{t('common.noDataFound')}</p>;
 
   const { fundamental, technical, sentiment, ranking } = data;
@@ -25,7 +25,7 @@ export function StockDetailPage() {
       {/* Header */}
       <div className="flex items-start justify-between">
         <div>
-          <Link to="/screener" className="text-sm text-blue-600 hover:underline">&larr; {t('detail.backToScreener')}</Link>
+          <Link to="/screener" className="text-sm text-blue-600 hover:underline dark:text-blue-400">&larr; {t('detail.backToScreener')}</Link>
           <h1 className="mt-1 text-2xl font-bold text-gray-900 dark:text-white">{ticker}</h1>
           {fundamental?.current_price && (
             <p className="text-xl font-semibold text-gray-700 dark:text-gray-300">
@@ -36,7 +36,7 @@ export function StockDetailPage() {
         {ranking && (
           <div className="text-right">
             <p className="text-sm text-gray-500 dark:text-gray-400">{t('detail.rank', { rank: ranking.rank })}</p>
-            <p className="text-lg font-bold">{formatScore(ranking.composite_score)}</p>
+            <p className="text-lg font-bold text-gray-900 dark:text-white">{formatScore(ranking.composite_score)}</p>
             <ScoreBadge tier={ranking.tier} label={t(`tier.${ranking.tier}` as any)} />
           </div>
         )}

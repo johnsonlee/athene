@@ -25,11 +25,11 @@ export function TopMovers({ rankings }: Props) {
               className="flex items-center justify-between rounded p-2 hover:bg-gray-50 dark:hover:bg-gray-700"
             >
               <div>
-                <span className="font-mono text-sm font-semibold">{stock.ticker}</span>
+                <span className="font-mono text-sm font-semibold text-gray-900 dark:text-white">{stock.ticker}</span>
                 <span className="ml-2 text-xs text-gray-500 dark:text-gray-400">{stock.name}</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-sm font-medium">{formatScore(stock.composite_score)}</span>
+                <span className="text-sm font-medium text-gray-900 dark:text-white">{formatScore(stock.composite_score)}</span>
                 <ScoreBadge tier={stock.tier} label={t(`tier.${stock.tier}` as any)} />
               </div>
             </Link>
@@ -47,11 +47,11 @@ export function TopMovers({ rankings }: Props) {
               className="flex items-center justify-between rounded p-2 hover:bg-gray-50 dark:hover:bg-gray-700"
             >
               <div>
-                <span className="font-mono text-sm font-semibold">{stock.ticker}</span>
+                <span className="font-mono text-sm font-semibold text-gray-900 dark:text-white">{stock.ticker}</span>
                 <span className="ml-2 text-xs text-gray-500 dark:text-gray-400">{stock.name}</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-sm font-medium">{formatScore(stock.composite_score)}</span>
+                <span className="text-sm font-medium text-gray-900 dark:text-white">{formatScore(stock.composite_score)}</span>
                 <ScoreBadge tier={stock.tier} label={t(`tier.${stock.tier}` as any)} />
               </div>
             </Link>

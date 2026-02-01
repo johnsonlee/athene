@@ -15,24 +15,24 @@ export function About() {
         <table className="mt-2 w-full text-sm">
           <thead>
             <tr className="border-b text-left dark:border-gray-700">
-              <th className="py-1">{t('about.factor')}</th>
-              <th className="py-1">{t('about.weight')}</th>
-              <th className="py-1">{t('about.components')}</th>
+              <th className="py-1 text-gray-900 dark:text-white">{t('about.factor')}</th>
+              <th className="py-1 text-gray-900 dark:text-white">{t('about.weight')}</th>
+              <th className="py-1 text-gray-900 dark:text-white">{t('about.components')}</th>
             </tr>
           </thead>
           <tbody className="text-gray-600 dark:text-gray-400">
             <tr className="border-b dark:border-gray-700">
-              <td className="py-1 font-medium">{t('detail.fundamentals')}</td>
+              <td className="py-1 font-medium text-gray-800 dark:text-gray-200">{t('detail.fundamentals')}</td>
               <td>40%</td>
               <td>{t('about.fundComponents')}</td>
             </tr>
             <tr className="border-b dark:border-gray-700">
-              <td className="py-1 font-medium">{t('detail.technical')}</td>
+              <td className="py-1 font-medium text-gray-800 dark:text-gray-200">{t('detail.technical')}</td>
               <td>35%</td>
               <td>{t('about.techComponents')}</td>
             </tr>
             <tr>
-              <td className="py-1 font-medium">{t('detail.sentiment')}</td>
+              <td className="py-1 font-medium text-gray-800 dark:text-gray-200">{t('detail.sentiment')}</td>
               <td>25%</td>
               <td>{t('about.sentComponents')}</td>
             </tr>

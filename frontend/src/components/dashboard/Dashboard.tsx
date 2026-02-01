@@ -12,7 +12,7 @@ export function Dashboard() {
   const { t } = useI18n();
 
   if (loading) return <LoadingSpinner message={t('common.loading')} />;
-  if (error) return <p className="text-center text-red-600">{t('common.error', { message: error })}</p>;
+  if (error) return <p className="text-center text-red-600 dark:text-red-400">{t('common.error', { message: error })}</p>;
 
   const tierCounts = rankings.reduce<Record<string, number>>((acc, s) => {
     const label = t(`tier.${s.tier}` as any);

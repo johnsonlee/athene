@@ -12,7 +12,7 @@ export function ScreenerPage() {
   const { t } = useI18n();
 
   if (loading) return <LoadingSpinner message={t('common.loading')} />;
-  if (error) return <p className="text-center text-red-600">{t('common.error', { message: error })}</p>;
+  if (error) return <p className="text-center text-red-600 dark:text-red-400">{t('common.error', { message: error })}</p>;
 
   return (
     <div className="space-y-4">

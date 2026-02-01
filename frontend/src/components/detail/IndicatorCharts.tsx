@@ -76,7 +76,7 @@ export function IndicatorCharts({ prices, technical }: Props) {
         <h3 className="mb-2 text-sm font-semibold text-gray-700 dark:text-gray-300">
           MACD (12, 26, 9)
           {technical?.macd_histogram != null && (
-            <span className={`ml-2 font-mono text-xs ${technical.macd_histogram >= 0 ? 'text-green-600' : 'text-red-600'}`}>
+            <span className={`ml-2 font-mono text-xs ${technical.macd_histogram >= 0 ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'}`}>
               Hist: {technical.macd_histogram.toFixed(3)}
             </span>
           )}

@@ -67,7 +67,7 @@ export function FilterPanel({ filter, onChange, sectors }: Props) {
         onClick={() =>
           onChange({ search: '', sectors: [], tiers: [], minScore: -Infinity, maxScore: Infinity })
         }
-        className="text-xs text-blue-600 hover:underline"
+        className="text-xs text-blue-600 hover:underline dark:text-blue-400"
       >
         {t('screener.reset')}
       </button>
