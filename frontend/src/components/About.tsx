@@ -144,6 +144,14 @@ export function About() {
           </tbody>
         </table>
         <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">{t('about.hysteresis')}</p>
+
+        <h3 className="mt-4 font-semibold text-gray-900 dark:text-white">{t('about.icTitle')}</h3>
+        <p className="mt-2 mb-3 text-sm text-gray-600 dark:text-gray-400">{t('about.icDesc')}</p>
+        {icData ? (
+          <ICTable data={icData} t={t} />
+        ) : (
+          <p className="text-sm text-gray-500 dark:text-gray-400">{t('about.icInsufficient')}</p>
+        )}
       </section>
 
       <section className="rounded-lg bg-white p-6 shadow-sm dark:bg-gray-800">
@@ -158,25 +166,6 @@ export function About() {
       <section className="rounded-lg bg-white p-6 shadow-sm dark:bg-gray-800">
         <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">{t('about.disclaimer')}</h2>
         <p className="text-sm text-gray-600 dark:text-gray-400">{t('about.disclaimerText')}</p>
-      </section>
-
-      <section className="rounded-lg bg-white p-6 shadow-sm dark:bg-gray-800">
-        <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">{t('about.icTitle')}</h2>
-        <p className="mb-3 text-sm text-gray-600 dark:text-gray-400">{t('about.icDesc')}</p>
-        {icData ? (
-          <ICTable data={icData} t={t} />
-        ) : (
-          <p className="text-sm text-gray-500 dark:text-gray-400">{t('about.icInsufficient')}</p>
-        )}
-      </section>
-
-      <section className="rounded-lg bg-white p-6 shadow-sm dark:bg-gray-800">
-        <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">{t('about.rssFeed')}</h2>
-        <p className="text-sm text-gray-600 dark:text-gray-400">
-          <a href="/data/feed.xml" className="text-blue-600 hover:underline dark:text-blue-400">
-            https://athene.johnsonlee.io/data/feed.xml
-          </a>
-        </p>
       </section>
     </div>
   );
