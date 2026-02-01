@@ -10,6 +10,11 @@ on:
         description: 'Comma-separated tickers for testing (leave empty for full universe)'
         required: false
         default: ''
+      force:
+        description: 'Force full run even on non-trading days'
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -39,6 +44,8 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run pipeline
+        env:
+          ATHENE_FORCE_RUN: ${{ github.event.inputs.force }}
         run: |
           if [ -n "${{ github.event.inputs.tickers }}" ]; then
             # Convert comma-separated to space-separated for CLI args

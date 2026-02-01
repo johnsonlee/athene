@@ -118,9 +118,10 @@ def run(tickers_override: list[str] | None = None) -> None:
 
     # When US market is closed, only fetch data for new tickers (no existing
     # stock detail JSON).  Existing tickers' data hasn't changed — skip them.
-    # Test mode always runs the full list regardless.
+    # Test mode and ATHENE_FORCE_RUN always run the full list regardless.
+    force_run = os.environ.get("ATHENE_FORCE_RUN", "").lower() in ("true", "1", "yes")
     incremental = False
-    if not test_mode and not is_us_trading_day():
+    if not test_mode and not force_run and not is_us_trading_day():
         stocks_dir = os.path.join(OUTPUT_DIR, "stocks")
         new_tickers = [t for t in tickers if not os.path.exists(os.path.join(stocks_dir, f"{t}.json"))]
         if new_tickers:
