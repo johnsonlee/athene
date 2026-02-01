@@ -23,17 +23,17 @@ export function About() {
           <tbody className="text-gray-600 dark:text-gray-400">
             <tr className="border-b dark:border-gray-700">
               <td className="py-1 font-medium text-gray-800 dark:text-gray-200">{t('detail.fundamentals')}</td>
-              <td>40%</td>
+              <td>50%</td>
               <td>{t('about.fundComponents')}<br /><span className="text-xs text-gray-400 dark:text-gray-500">{t('about.fundSubWeights')}</span></td>
             </tr>
             <tr className="border-b dark:border-gray-700">
               <td className="py-1 font-medium text-gray-800 dark:text-gray-200">{t('detail.technical')}</td>
-              <td>35%</td>
+              <td>30%</td>
               <td>{t('about.techComponents')}<br /><span className="text-xs text-gray-400 dark:text-gray-500">{t('about.techSubWeights')}</span></td>
             </tr>
             <tr>
               <td className="py-1 font-medium text-gray-800 dark:text-gray-200">{t('detail.sentiment')}</td>
-              <td>25%</td>
+              <td>20%</td>
               <td>{t('about.sentComponents')}<br /><span className="text-xs text-gray-400 dark:text-gray-500">{t('about.sentSubWeights')}</span></td>
             </tr>
           </tbody>

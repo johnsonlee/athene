@@ -1,62 +1,119 @@
-import { useMemo } from 'react';
+import { useMemo, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Treemap, ResponsiveContainer, Tooltip } from 'recharts';
 import type { RankedStock } from '../../types';
-import { formatScore } from '../../lib/formatters';
+import { formatScore, formatLargeNumber } from '../../lib/formatters';
 import { useI18n } from '../../lib/i18n';
 
 interface Props {
   rankings: RankedStock[];
 }
 
+interface SectorNode {
+  name: string;
+  size: number;
+  avgScore: number;
+  count: number;
+  marketCap: number;
+  [key: string]: unknown;
+}
+
+function scoreToColor(score: number): string {
+  if (score >= 65) return '#16a34a'; // green-600
+  if (score >= 55) return '#4ade80'; // green-400
+  if (score >= 45) return '#9ca3af'; // gray-400
+  if (score >= 35) return '#fb923c'; // orange-400
+  return '#ef4444'; // red-500
+}
+
+function CustomContent(props: any) {
+  const { x, y, width, height, name, avgScore, count } = props;
+  if (width < 30 || height < 20) return null;
+
+  const fill = scoreToColor(avgScore);
+  const showScore = width > 50 && height > 35;
+  const showCount = width > 60 && height > 50;
+
+  return (
+    <g>
+      <rect x={x} y={y} width={width} height={height} fill={fill} stroke="#fff" strokeWidth={2}
+        rx={4} opacity={0.85} className="cursor-pointer hover:opacity-100 transition-opacity" />
+      <text x={x + width / 2} y={y + height / 2 - (showScore ? 8 : 0)} textAnchor="middle" dominantBaseline="central"
+        fill="#fff" fontSize={width > 80 ? 12 : 10} fontWeight="600">
+        {name}
+      </text>
+      {showScore && (
+        <text x={x + width / 2} y={y + height / 2 + 10} textAnchor="middle" dominantBaseline="central"
+          fill="rgba(255,255,255,0.85)" fontSize={10}>
+          {formatScore(avgScore)}
+        </text>
+      )}
+      {showCount && (
+        <text x={x + width / 2} y={y + height / 2 + 24} textAnchor="middle" dominantBaseline="central"
+          fill="rgba(255,255,255,0.65)" fontSize={9}>
+          {count}
+        </text>
+      )}
+    </g>
+  );
+}
+
+function CustomTooltip({ active, payload }: any) {
+  if (!active || !payload?.[0]) return null;
+  const d = payload[0].payload as SectorNode;
+  return (
+    <div className="rounded bg-white px-3 py-2 text-xs shadow-lg dark:bg-gray-700 dark:text-gray-200">
+      <p className="font-semibold">{d.name}</p>
+      <p>Score: {formatScore(d.avgScore)}</p>
+      <p>Market Cap: {formatLargeNumber(d.marketCap)}</p>
+      <p>{d.count} stocks</p>
+    </div>
+  );
+}
+
 export function SectorHeatmap({ rankings }: Props) {
   const { t } = useI18n();
   const navigate = useNavigate();
 
-  const sectorData = useMemo(() => {
-    const grouped = new Map<string, { total: number; count: number }>();
+  const data = useMemo(() => {
+    const grouped = new Map<string, { totalScore: number; totalCap: number; count: number }>();
     rankings.forEach((s) => {
       if (!s.sector || s.sector === 'Unknown') return;
-      const sector = s.sector;
-      const entry = grouped.get(sector) || { total: 0, count: 0 };
-      entry.total += s.composite_score;
+      const entry = grouped.get(s.sector) || { totalScore: 0, totalCap: 0, count: 0 };
+      entry.totalScore += s.composite_score;
+      entry.totalCap += s.market_cap ?? 0;
       entry.count += 1;
-      grouped.set(sector, entry);
+      grouped.set(s.sector, entry);
     });
     return Array.from(grouped.entries())
-      .map(([sector, { total, count }]) => ({
-        sector,
-        avgScore: total / count,
+      .map(([name, { totalScore, totalCap, count }]): SectorNode => ({
+        name,
+        size: totalCap || count, // fallback to count if no market_cap
+        avgScore: totalScore / count,
         count,
+        marketCap: totalCap,
       }))
-      .sort((a, b) => b.avgScore - a.avgScore);
+      .sort((a, b) => b.size - a.size);
   }, [rankings]);
 
-  const maxScore = Math.max(...sectorData.map((d) => Math.abs(d.avgScore)), 0.01);
+  const handleClick = useCallback((node: any) => {
+    if (node?.name) navigate(`/screener?sector=${encodeURIComponent(node.name)}`);
+  }, [navigate]);
 
   return (
     <div className="rounded-lg bg-white p-4 shadow-sm lg:col-span-2 dark:bg-gray-800">
       <h2 className="mb-3 text-lg font-semibold text-gray-900 dark:text-white">{t('dashboard.sectorOverview')}</h2>
-      <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
-        {sectorData.map(({ sector, avgScore, count }) => {
-          const intensity = avgScore / maxScore; // -1 to 1
-          const bg =
-            intensity > 0
-              ? `rgba(22, 163, 74, ${Math.min(intensity, 1) * 0.5})`
-              : `rgba(239, 68, 68, ${Math.min(Math.abs(intensity), 1) * 0.5})`;
-          return (
-            <div
-              key={sector}
-              className="cursor-pointer rounded p-3 text-center transition-opacity hover:opacity-80"
-              style={{ backgroundColor: bg }}
-              onClick={() => navigate(`/screener?sector=${encodeURIComponent(sector)}`)}
-            >
-              <p className="text-xs font-medium text-gray-700 dark:text-gray-300">{sector}</p>
-              <p className="text-lg font-bold text-gray-900 dark:text-white">{formatScore(avgScore)}</p>
-              <p className="text-xs text-gray-500 dark:text-gray-400">{t('dashboard.stocks', { count })}</p>
-            </div>
-          );
-        })}
-      </div>
+      <ResponsiveContainer width="100%" height={320}>
+        <Treemap
+          data={data}
+          dataKey="size"
+          aspectRatio={4 / 3}
+          content={<CustomContent />}
+          onClick={handleClick}
+        >
+          <Tooltip content={<CustomTooltip />} />
+        </Treemap>
+      </ResponsiveContainer>
     </div>
   );
 }

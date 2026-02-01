@@ -3,7 +3,6 @@ import { useStockDetail } from '../../hooks/useStockDetail';
 import { LoadingSpinner } from '../common/LoadingSpinner';
 import { ScoreBadge } from '../common/ScoreBadge';
 import { PriceChart } from './PriceChart';
-import { IndicatorCharts } from './IndicatorCharts';
 import { ScoreBreakdown } from './ScoreBreakdown';
 import { formatScore, formatPrice } from '../../lib/formatters';
 import { useI18n } from '../../lib/i18n';
@@ -17,7 +16,7 @@ export function StockDetailPage() {
   if (error) return <p className="text-center text-red-600 dark:text-red-400">{t('common.error', { message: error })}</p>;
   if (!data) return <p className="text-center text-gray-500 dark:text-gray-400">{t('common.noDataFound')}</p>;
 
-  const { fundamental, technical, ranking } = data;
+  const { fundamental, ranking } = data;
 
   return (
     <div className="space-y-6">
@@ -41,11 +40,8 @@ export function StockDetailPage() {
         )}
       </div>
 
-      {/* Price Chart */}
+      {/* Price Chart + Indicators */}
       <PriceChart prices={data.prices} ticker={ticker!} />
-
-      {/* Indicator Sub-charts */}
-      <IndicatorCharts prices={data.prices} technical={technical} />
 
       {/* Score Breakdown */}
       <ScoreBreakdown detail={data} />

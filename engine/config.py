@@ -1,21 +1,21 @@
 """Configuration constants for the Athene scoring engine."""
 
 # ---------- Factor weights ----------
-WEIGHT_FUNDAMENTAL = 0.40
-WEIGHT_TECHNICAL = 0.35
-WEIGHT_SENTIMENT = 0.25
+WEIGHT_FUNDAMENTAL = 0.50
+WEIGHT_TECHNICAL = 0.30
+WEIGHT_SENTIMENT = 0.20
 
 # Fundamental sub-factor weights
-FUND_WEIGHT_VALUE = 0.30
+FUND_WEIGHT_VALUE = 0.25
 FUND_WEIGHT_QUALITY = 0.30
 FUND_WEIGHT_GROWTH = 0.25
-FUND_WEIGHT_SAFETY = 0.15
+FUND_WEIGHT_SAFETY = 0.20
 
 # Technical sub-factor weights
-TECH_WEIGHT_TREND = 0.40
+TECH_WEIGHT_TREND = 0.30
 TECH_WEIGHT_MOMENTUM = 0.30
-TECH_WEIGHT_VOLATILITY = 0.15
-TECH_WEIGHT_VOLUME = 0.15
+TECH_WEIGHT_VOLATILITY = 0.20
+TECH_WEIGHT_VOLUME = 0.20
 
 # ---------- Rating thresholds (absolute, 0-100 scale) ----------
 SCORE_STRONG_BUY = 75

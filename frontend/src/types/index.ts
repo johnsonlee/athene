@@ -17,6 +17,7 @@ export interface RankedStock {
   name?: string;
   sector?: string;
   industry?: string;
+  market_cap?: number | null;
   fundamental_score?: number | null;
   technical_score?: number | null;
   sentiment_score?: number | null;

@@ -188,6 +188,10 @@ def run(tickers_override: list[str] | None = None) -> None:
     # Step 8: Export
     # In test mode or incremental mode (market closed, new tickers only),
     # skip global aggregation files to avoid overwriting full-universe data.
+    # Carry market_cap from fundamentals into ranked for export
+    if "market_cap" in fund_scored.columns:
+        ranked = ranked.join(fund_scored[["market_cap"]], how="left")
+
     if full_run:
         log.info("Exporting JSON data...")
         export_meta(len(tickers), run_date)

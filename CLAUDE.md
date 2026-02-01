@@ -26,7 +26,7 @@ npm run build    # Production build → dist/
 
 ## Key Design Decisions
 
-- **Multi-factor model**: 40% fundamental + 35% technical + 25% sentiment
+- **Multi-factor model**: 50% fundamental + 30% technical + 20% sentiment
 - **Absolute scoring**: Each metric mapped to 0-100 via piecewise linear rules (see Scoring Design below)
 - **Rating vs Ranking**: Two separate systems (see Lessons Learned)
 - **Missing data**: Weight redistribution when a factor is unavailable; missing metric defaults to 50 (neutral)
@@ -96,11 +96,11 @@ quality_score   = avg(roe_score, roa_score, margin_score)
 growth_score    = avg(rev_growth_score, earn_growth_score)
 safety_score    = debt_equity_score
 
-fundamental_score = 0.30×value + 0.30×quality + 0.25×growth + 0.15×safety
-technical_score   = 0.40×trend + 0.30×momentum + 0.15×volatility + 0.15×volume
+fundamental_score = 0.25×value + 0.30×quality + 0.25×growth + 0.20×safety
+technical_score   = 0.30×trend + 0.30×momentum + 0.20×volatility + 0.20×volume
 sentiment_score   = (compound + 1) × 50
 
-composite_score   = 0.40×fundamental + 0.35×technical + 0.25×sentiment
+composite_score   = 0.50×fundamental + 0.30×technical + 0.20×sentiment
 ```
 
 All scores are 0-100 throughout the pipeline.

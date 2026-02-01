@@ -28,6 +28,9 @@ export function ScreenerTable({ data }: Props) {
         accessorKey: 'rank',
         header: t('table.rank'),
         size: 50,
+        cell: ({ getValue }) => (
+          <span className="font-mono text-sm text-gray-700 dark:text-gray-300">{getValue() as number}</span>
+        ),
       },
       {
         accessorKey: 'ticker',
