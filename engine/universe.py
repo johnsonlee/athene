@@ -42,7 +42,7 @@ def _fetch_nasdaq100() -> pd.DataFrame:
     tables = pd.read_html(StringIO(html))
     # The constituents table has a "Ticker" column
     for table in tables:
-        cols = [c.lower() for c in table.columns]
+        cols = [str(c).lower() for c in table.columns]
         if "ticker" in cols or "symbol" in cols:
             ticker_col = table.columns[cols.index("ticker") if "ticker" in cols else cols.index("symbol")]
             name_col = table.columns[cols.index("company") if "company" in cols else 1]
