@@ -116,8 +116,24 @@ export function PriceChart({ prices, ticker }: Props) {
       }))
     );
 
+    // Full date range reference — ensures all sub-charts share the same
+    // logical-to-date mapping so time axes stay aligned.
+    const fullDates = prices.map((p) => ({ time: p.date, value: 0 }));
+    const addTimeRef = (chart: IChartApi) => {
+      const ref = chart.addSeries(LineSeries, {
+        color: 'transparent',
+        lineWidth: 1,
+        priceScaleId: '_ref',
+        lastValueVisible: false,
+        priceLineVisible: false,
+      });
+      ref.setData(fullDates);
+      chart.priceScale('_ref').applyOptions({ scaleMargins: { top: 0.99, bottom: 0 } });
+    };
+
     // --- RSI ---
     const rc = charts[1];
+    addTimeRef(rc);
     const rsi = rc.addSeries(LineSeries, { color: '#8b5cf6', lineWidth: 2, title: 'RSI (14)' });
     rsi.setData(
       indicators.filter((d) => d.rsi != null).map((d) => ({ time: d.date, value: d.rsi! }))
@@ -128,6 +144,7 @@ export function PriceChart({ prices, ticker }: Props) {
 
     // --- MACD ---
     const macdC = charts[2];
+    addTimeRef(macdC);
     const macdHist = macdC.addSeries(HistogramSeries, {});
     macdHist.setData(
       indicators
@@ -149,6 +166,7 @@ export function PriceChart({ prices, ticker }: Props) {
 
     // --- KDJ (Stochastic) ---
     const kc = charts[3];
+    addTimeRef(kc);
     const stK = kc.addSeries(LineSeries, { color: '#3b82f6', lineWidth: 2, title: '%K' });
     stK.setData(
       indicators.filter((d) => d.stochK != null).map((d) => ({ time: d.date, value: d.stochK! }))
