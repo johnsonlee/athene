@@ -27,11 +27,105 @@ npm run build    # Production build → dist/
 ## Key Design Decisions
 
 - **Multi-factor model**: 40% fundamental + 35% technical + 25% sentiment
-- **Z-score normalization** with 2% winsorization for outlier handling
-- **Missing data**: Weight redistribution when a factor is unavailable
+- **Absolute scoring**: Each metric mapped to 0-100 via piecewise linear rules (see Scoring Design below)
+- **Rating vs Ranking**: Two separate systems (see Lessons Learned)
+- **Missing data**: Weight redistribution when a factor is unavailable; missing metric defaults to 50 (neutral)
 - **Static JSON**: No backend server; all data is pre-computed and served as static files
 - **GitHub Pages**: Frontend deployed to `/athene/` base path
 
 ## Data Flow
 
-Wikipedia → universe.py → tickers → [price.py, fundamental.py, news.py] → [analyzers] → scorer → ranker → json_exporter → frontend/public/data/
+Wikipedia → universe.py → tickers → [price.py, fundamental.py, news.py] → [analyzers + absolute scoring] → factor_model (weighted avg) → ranker (rating + ranking) → json_exporter → frontend/public/data/
+
+## Lessons Learned
+
+### v1: Z-score + Percentile Ranking (deprecated)
+
+The original design used z-score normalization + percentile-based tier assignment:
+- `z = (x - batch_mean) / batch_std` for each metric
+- `tier = f(percentile)` where percentile = rank within current batch
+
+**Problems identified:**
+1. **Always fixed distribution**: Percentile tiers guarantee exactly 10% Strong Buy, 10% Strong Sell regardless of actual stock quality. In a bull market where everything is good, 10% of stocks are still labeled "Strong Sell".
+2. **Rating = Ranking confusion**: Tier (Strong Buy/Sell) and rank (#1, #2...) were conflated into one system. The tier was just a label for rank position, not an independent quality assessment.
+3. **Unstable ratings**: Z-scores recomputed from each day's cross-section. A stock's z-score changes not because the stock changed, but because other stocks changed. Minor data fluctuations → relative position shifts → tier flips.
+4. **No attribution**: When a rating changed, no way to know which factor (fundamental/technical/sentiment) drove it.
+
+### v2: Absolute Rating + Relative Ranking (current)
+
+**Rating (评级)** and **Ranking (排名)** are now two independent systems:
+
+- **Rating**: Absolute quality tier based on the stock's own metrics. Uses absolute scoring rules (piecewise linear, not z-scores). A stock rated "Buy" stays "Buy" regardless of what other stocks do. In a bull market, many stocks can be "Strong Buy". In a bear market, many can be "Sell".
+- **Ranking**: Relative position by composite score. Used to compare stocks within the same rating tier — e.g., among all "Buy" stocks, who is the best pick. Ranking can change daily (it's relative by design), but rating changes are rare and meaningful.
+
+**Key principle**: A stock's rating should reflect its own quality. Ranking is for comparison.
+
+## Scoring Design (v2)
+
+### Absolute Metric Scoring
+
+Each raw metric is mapped to 0-100 using a piecewise linear function with domain-specific breakpoints. This replaces z-score normalization entirely.
+
+```python
+# engine/scorer/absolute.py
+def metric_score(value, breakpoints) -> float:
+    """Piecewise linear interpolation: raw value → 0-100 score.
+    breakpoints: [(raw_val, score), ...] sorted by raw_val.
+    Missing data → 50 (neutral).
+    """
+```
+
+### Breakpoints (intuition)
+
+| Metric | Direction | Key breakpoints |
+|--------|-----------|-----------------|
+| PE | Lower is better | PE 8→90, 15→75, 25→50, 50→20 |
+| PB | Lower is better | PB 1→80, 3→50, 5→30 |
+| ROE | Higher is better | ROE 8%→45, 15%→65, 25%→85 |
+| Revenue Growth | Higher is better | 0%→40, 10%→65, 30%→90 |
+| Debt/Equity | Lower is better | D/E 40→75, 100→45, 250→15 |
+| RSI | Moderate is best | RSI 50→75, 30→50, 70→40 |
+| BB Position | Mid is best | BB 0.5→75, 0.2→65, 0.9→35 |
+| VADER Compound | Higher is better | compound: direct map (-1,+1)→(0,100) |
+
+### Factor Aggregation (unchanged)
+
+```
+value_score     = avg(pe_score, pb_score, ps_score)
+quality_score   = avg(roe_score, roa_score, margin_score)
+growth_score    = avg(rev_growth_score, earn_growth_score)
+safety_score    = debt_equity_score
+
+fundamental_score = 0.30×value + 0.30×quality + 0.25×growth + 0.15×safety
+technical_score   = 0.40×trend + 0.30×momentum + 0.15×volatility + 0.15×volume
+sentiment_score   = (compound + 1) × 50
+
+composite_score   = 0.40×fundamental + 0.35×technical + 0.25×sentiment
+```
+
+All scores are 0-100 throughout the pipeline.
+
+### Rating Tiers (absolute thresholds)
+
+| Score | Rating |
+|-------|--------|
+| ≥ 75 | Strong Buy |
+| ≥ 60 | Buy |
+| ≥ 40 | Hold |
+| ≥ 25 | Sell |
+| < 25 | Strong Sell |
+
+Hysteresis: ±2 points buffer to prevent oscillation at boundaries.
+
+### EMA Smoothing
+
+`smoothed_composite = 0.3 × raw + 0.7 × prev_smoothed`
+Applied only to composite_score before rating assignment. Sub-factor scores remain raw for attribution clarity.
+
+### Change Attribution
+
+When a rating changes, the system compares today's sub-scores vs yesterday's (from history.json) and identifies the primary driver:
+```
+Δ_weighted = (new_score - old_score) × factor_weight
+primary_driver = factor with largest |Δ_weighted|
+```
