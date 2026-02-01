@@ -10,24 +10,8 @@ export function loadMeta() {
   return fetchJson<import('../types').Meta>('meta.json');
 }
 
-export function loadUniverse() {
-  return fetchJson<import('../types').UniverseStock[]>('universe.json');
-}
-
 export function loadRankings() {
   return fetchJson<import('../types').RankedStock[]>('rankings.json');
-}
-
-export function loadFundamentals() {
-  return fetchJson<import('../types').FundamentalData[]>('fundamentals.json');
-}
-
-export function loadTechnicals() {
-  return fetchJson<import('../types').TechnicalData[]>('technicals.json');
-}
-
-export function loadSentiment() {
-  return fetchJson<import('../types').SentimentData[]>('sentiment.json');
 }
 
 export function loadStockDetail(ticker: string) {

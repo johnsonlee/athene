@@ -66,12 +66,6 @@ def export_meta(ticker_count: int, run_date: str | None = None) -> str:
     return _write_json(data, "meta.json")
 
 
-def export_universe(universe: pd.DataFrame) -> str:
-    """Export universe.json with ticker list."""
-    records = universe.to_dict(orient="records")
-    return _write_json(records, "universe.json")
-
-
 def export_rankings(ranked: pd.DataFrame, universe: pd.DataFrame) -> str:
     """Export rankings.json - the main screener data file."""
     # Merge universe info (name, sector) with rankings
@@ -88,36 +82,6 @@ def export_rankings(ranked: pd.DataFrame, universe: pd.DataFrame) -> str:
         records.append(rec)
 
     return _write_json(records, "rankings.json")
-
-
-def export_fundamentals(fundamental_df: pd.DataFrame) -> str:
-    """Export fundamentals.json with detailed fundamental metrics."""
-    records = []
-    for ticker, row in fundamental_df.iterrows():
-        rec = _clean_record(row.to_dict())
-        rec["ticker"] = ticker
-        records.append(rec)
-    return _write_json(records, "fundamentals.json")
-
-
-def export_technicals(technical_df: pd.DataFrame) -> str:
-    """Export technicals.json with detailed technical indicators."""
-    records = []
-    for ticker, row in technical_df.iterrows():
-        rec = _clean_record(row.to_dict())
-        rec["ticker"] = ticker
-        records.append(rec)
-    return _write_json(records, "technicals.json")
-
-
-def export_sentiment(sentiment_df: pd.DataFrame) -> str:
-    """Export sentiment.json with sentiment data."""
-    records = []
-    for ticker, row in sentiment_df.iterrows():
-        rec = _clean_record(row.to_dict())
-        rec["ticker"] = ticker
-        records.append(rec)
-    return _write_json(records, "sentiment.json")
 
 
 def export_history(ranked: pd.DataFrame, run_date: str | None = None) -> str:

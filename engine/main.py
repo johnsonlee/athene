@@ -21,11 +21,7 @@ from engine.scorer.ranker import assign_tiers
 from engine.config import OUTPUT_DIR, SMOOTH_ALPHA
 from engine.exporters.json_exporter import (
     export_meta,
-    export_universe,
     export_rankings,
-    export_fundamentals,
-    export_technicals,
-    export_sentiment,
     export_history,
     export_stock_detail,
 )
@@ -195,11 +191,7 @@ def run(tickers_override: list[str] | None = None) -> None:
     if full_run:
         log.info("Exporting JSON data...")
         export_meta(len(tickers), run_date)
-        export_universe(universe)
         export_rankings(ranked, universe)
-        export_fundamentals(fund_df)
-        export_technicals(tech_df)
-        export_sentiment(sent_df)
         export_history(ranked, run_date)
     else:
         log.info("Partial run — skipping global aggregation exports")
