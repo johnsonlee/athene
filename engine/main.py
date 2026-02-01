@@ -123,14 +123,14 @@ def run(tickers_override: list[str] | None = None) -> None:
     export_technicals(tech_df)
     export_sentiment(sent_df)
 
-    # Export individual stock details
+    # Export individual stock details (use scored DataFrames for sub-scores)
     log.info("Exporting individual stock details...")
     exported_count = 0
     for ticker in tickers:
         price_data = prices.get(ticker, pd.DataFrame())
-        fund_data = fund_df.loc[ticker].to_dict() if ticker in fund_df.index else None
-        tech_data = tech_df.loc[ticker].to_dict() if ticker in tech_df.index else None
-        sent_data = sent_df.loc[ticker].to_dict() if ticker in sent_df.index else None
+        fund_data = fund_scored.loc[ticker].to_dict() if ticker in fund_scored.index else None
+        tech_data = tech_scored.loc[ticker].to_dict() if ticker in tech_scored.index else None
+        sent_data = sent_norm.loc[ticker].to_dict() if ticker in sent_norm.index else None
         rank_data = ranked.loc[ticker].to_dict() if ticker in ranked.index else None
         export_stock_detail(ticker, price_data, fund_data, tech_data, sent_data, rank_data)
         exported_count += 1

@@ -1,5 +1,6 @@
 import { useRankings } from '../../hooks/useRankings';
 import { useMeta } from '../../hooks/useMeta';
+import { useI18n } from '../../lib/i18n';
 import { LoadingSpinner } from '../common/LoadingSpinner';
 import { TopMovers } from './TopMovers';
 import { SectorHeatmap } from './SectorHeatmap';
@@ -8,22 +9,24 @@ import { ScoreDistribution } from './ScoreDistribution';
 export function Dashboard() {
   const { data: rankings, loading, error } = useRankings();
   const { data: meta } = useMeta();
+  const { t } = useI18n();
 
-  if (loading) return <LoadingSpinner message="Loading dashboard..." />;
-  if (error) return <p className="text-center text-red-600">Error: {error}</p>;
+  if (loading) return <LoadingSpinner message={t('common.loading')} />;
+  if (error) return <p className="text-center text-red-600">{t('common.error', { message: error })}</p>;
 
   const tierCounts = rankings.reduce<Record<string, number>>((acc, s) => {
-    acc[s.tier_label] = (acc[s.tier_label] || 0) + 1;
+    const label = t(`tier.${s.tier}` as any);
+    acc[label] = (acc[label] || 0) + 1;
     return acc;
   }, {});
 
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold text-gray-900">Market Overview</h1>
+        <h1 className="text-2xl font-bold text-gray-900">{t('dashboard.title')}</h1>
         {meta && (
           <p className="mt-1 text-sm text-gray-500">
-            {meta.ticker_count} stocks analyzed &middot; {meta.date}
+            {t('dashboard.analyzed', { count: meta.ticker_count })} &middot; {meta.date}
           </p>
         )}
       </div>

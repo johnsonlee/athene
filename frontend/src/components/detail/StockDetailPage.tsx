@@ -5,6 +5,7 @@ import { ScoreBadge } from '../common/ScoreBadge';
 import { PriceChart } from './PriceChart';
 import { IndicatorCharts } from './IndicatorCharts';
 import { ScoreRadar } from './ScoreRadar';
+import { ScoreBreakdown } from './ScoreBreakdown';
 import { formatScore, formatPrice, formatPercent, formatLargeNumber, formatRatio } from '../../lib/formatters';
 
 export function StockDetailPage() {
@@ -44,6 +45,9 @@ export function StockDetailPage() {
 
       {/* Indicator Sub-charts */}
       <IndicatorCharts prices={data.prices} technical={technical} />
+
+      {/* Score Breakdown - WHY this rating */}
+      <ScoreBreakdown detail={data} />
 
       {/* Score Radar + Cards */}
       <div className="grid gap-6 lg:grid-cols-3">

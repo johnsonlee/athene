@@ -1,12 +1,7 @@
 import type { FilterState, TierKey } from '../../types';
+import { useI18n } from '../../lib/i18n';
 
-const TIERS: { key: TierKey; label: string }[] = [
-  { key: 'strong_buy', label: 'Strong Buy' },
-  { key: 'buy', label: 'Buy' },
-  { key: 'hold', label: 'Hold' },
-  { key: 'sell', label: 'Sell' },
-  { key: 'strong_sell', label: 'Strong Sell' },
-];
+const TIER_KEYS: TierKey[] = ['strong_buy', 'buy', 'hold', 'sell', 'strong_sell'];
 
 interface Props {
   filter: FilterState;
@@ -15,12 +10,14 @@ interface Props {
 }
 
 export function FilterPanel({ filter, onChange, sectors }: Props) {
+  const { t } = useI18n();
+
   return (
     <div className="flex flex-wrap items-center gap-3 rounded-lg bg-white p-3 shadow-sm">
       {/* Search */}
       <input
         type="text"
-        placeholder="Search ticker or name..."
+        placeholder={t('screener.searchPlaceholder')}
         value={filter.search}
         onChange={(e) => onChange({ ...filter, search: e.target.value })}
         className="rounded border px-3 py-1.5 text-sm outline-none focus:border-blue-500"
@@ -34,7 +31,7 @@ export function FilterPanel({ filter, onChange, sectors }: Props) {
         }
         className="rounded border px-2 py-1.5 text-sm"
       >
-        <option value="">All Sectors</option>
+        <option value="">{t('screener.allSectors')}</option>
         {sectors.map((s) => (
           <option key={s} value={s}>{s}</option>
         ))}
@@ -42,7 +39,7 @@ export function FilterPanel({ filter, onChange, sectors }: Props) {
 
       {/* Tier filter */}
       <div className="flex gap-1">
-        {TIERS.map(({ key, label }) => {
+        {TIER_KEYS.map((key) => {
           const active = filter.tiers.includes(key);
           return (
             <button
@@ -59,7 +56,7 @@ export function FilterPanel({ filter, onChange, sectors }: Props) {
                   : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
               }`}
             >
-              {label}
+              {t(`tier.${key}` as any)}
             </button>
           );
         })}
@@ -72,7 +69,7 @@ export function FilterPanel({ filter, onChange, sectors }: Props) {
         }
         className="text-xs text-blue-600 hover:underline"
       >
-        Reset
+        {t('screener.reset')}
       </button>
     </div>
   );

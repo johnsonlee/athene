@@ -2,19 +2,21 @@ import { Link } from 'react-router-dom';
 import type { RankedStock } from '../../types';
 import { ScoreBadge } from '../common/ScoreBadge';
 import { formatScore } from '../../lib/formatters';
+import { useI18n } from '../../lib/i18n';
 
 interface Props {
   rankings: RankedStock[];
 }
 
 export function TopMovers({ rankings }: Props) {
+  const { t } = useI18n();
   const top10 = rankings.slice(0, 10);
   const bottom10 = [...rankings].sort((a, b) => a.composite_score - b.composite_score).slice(0, 10);
 
   return (
     <>
       <div className="rounded-lg bg-white p-4 shadow-sm">
-        <h2 className="mb-3 text-lg font-semibold text-gray-900">Top 10</h2>
+        <h2 className="mb-3 text-lg font-semibold text-gray-900">{t('dashboard.top10')}</h2>
         <div className="space-y-2">
           {top10.map((stock) => (
             <Link
@@ -28,7 +30,7 @@ export function TopMovers({ rankings }: Props) {
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-sm font-medium">{formatScore(stock.composite_score)}</span>
-                <ScoreBadge tier={stock.tier} label={stock.tier_label} />
+                <ScoreBadge tier={stock.tier} label={t(`tier.${stock.tier}` as any)} />
               </div>
             </Link>
           ))}
@@ -36,7 +38,7 @@ export function TopMovers({ rankings }: Props) {
       </div>
 
       <div className="rounded-lg bg-white p-4 shadow-sm">
-        <h2 className="mb-3 text-lg font-semibold text-gray-900">Bottom 10</h2>
+        <h2 className="mb-3 text-lg font-semibold text-gray-900">{t('dashboard.bottom10')}</h2>
         <div className="space-y-2">
           {bottom10.map((stock) => (
             <Link
@@ -50,7 +52,7 @@ export function TopMovers({ rankings }: Props) {
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-sm font-medium">{formatScore(stock.composite_score)}</span>
-                <ScoreBadge tier={stock.tier} label={stock.tier_label} />
+                <ScoreBadge tier={stock.tier} label={t(`tier.${stock.tier}` as any)} />
               </div>
             </Link>
           ))}

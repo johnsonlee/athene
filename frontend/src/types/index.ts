@@ -63,6 +63,12 @@ export interface FundamentalData {
   current_price?: number | null;
   high_52w?: number | null;
   low_52w?: number | null;
+  // Sub-scores (from scored pipeline)
+  value_score?: number | null;
+  quality_score?: number | null;
+  growth_score?: number | null;
+  safety_score?: number | null;
+  fundamental_score?: number | null;
 }
 
 export interface TechnicalData {
@@ -81,6 +87,12 @@ export interface TechnicalData {
   trend_alignment?: number | null;
   stoch_k?: number | null;
   stoch_d?: number | null;
+  // Sub-scores (from scored pipeline)
+  trend_score?: number | null;
+  momentum_score?: number | null;
+  volatility_score?: number | null;
+  volume_score?: number | null;
+  technical_score?: number | null;
 }
 
 export interface SentimentData {
@@ -90,6 +102,7 @@ export interface SentimentData {
   sentiment_neg: number;
   sentiment_neu: number;
   news_count: number;
+  sentiment_score?: number | null;
 }
 
 export interface PriceBar {

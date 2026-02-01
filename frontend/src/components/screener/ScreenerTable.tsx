@@ -12,6 +12,7 @@ import {
 import type { RankedStock } from '../../types';
 import { ScoreBadge } from '../common/ScoreBadge';
 import { formatScore } from '../../lib/formatters';
+import { useI18n } from '../../lib/i18n';
 
 interface Props {
   data: RankedStock[];
@@ -19,17 +20,18 @@ interface Props {
 
 export function ScreenerTable({ data }: Props) {
   const [sorting, setSorting] = useState<SortingState>([{ id: 'rank', desc: false }]);
+  const { t } = useI18n();
 
   const columns = useMemo<ColumnDef<RankedStock, any>[]>(
     () => [
       {
         accessorKey: 'rank',
-        header: '#',
+        header: t('table.rank'),
         size: 50,
       },
       {
         accessorKey: 'ticker',
-        header: 'Ticker',
+        header: t('table.ticker'),
         cell: ({ row }) => (
           <Link
             to={`/stock/${row.original.ticker}`}
@@ -41,7 +43,7 @@ export function ScreenerTable({ data }: Props) {
       },
       {
         accessorKey: 'name',
-        header: 'Name',
+        header: t('table.name'),
         size: 200,
         cell: ({ getValue }) => (
           <span className="truncate text-sm">{getValue() as string}</span>
@@ -49,7 +51,7 @@ export function ScreenerTable({ data }: Props) {
       },
       {
         accessorKey: 'sector',
-        header: 'Sector',
+        header: t('table.sector'),
         size: 140,
         cell: ({ getValue }) => (
           <span className="text-xs text-gray-600">{getValue() as string}</span>
@@ -57,41 +59,41 @@ export function ScreenerTable({ data }: Props) {
       },
       {
         accessorKey: 'composite_score',
-        header: 'Score',
+        header: t('table.score'),
         cell: ({ getValue }) => (
           <span className="font-mono font-medium">{formatScore(getValue() as number)}</span>
         ),
       },
       {
         accessorKey: 'fundamental_score',
-        header: 'Fund.',
+        header: t('table.fundamental'),
         cell: ({ getValue }) => (
           <span className="font-mono text-sm">{formatScore(getValue() as number | null)}</span>
         ),
       },
       {
         accessorKey: 'technical_score',
-        header: 'Tech.',
+        header: t('table.technical'),
         cell: ({ getValue }) => (
           <span className="font-mono text-sm">{formatScore(getValue() as number | null)}</span>
         ),
       },
       {
         accessorKey: 'sentiment_score',
-        header: 'Sent.',
+        header: t('table.sentiment'),
         cell: ({ getValue }) => (
           <span className="font-mono text-sm">{formatScore(getValue() as number | null)}</span>
         ),
       },
       {
         accessorKey: 'tier_label',
-        header: 'Rating',
+        header: t('table.rating'),
         cell: ({ row }) => (
-          <ScoreBadge tier={row.original.tier} label={row.original.tier_label} />
+          <ScoreBadge tier={row.original.tier} label={t(`tier.${row.original.tier}` as any)} />
         ),
       },
     ],
-    []
+    [t]
   );
 
   const table = useReactTable({
@@ -142,7 +144,10 @@ export function ScreenerTable({ data }: Props) {
       {/* Pagination */}
       <div className="flex items-center justify-between border-t px-3 py-2 text-sm text-gray-600">
         <span>
-          Page {table.getState().pagination.pageIndex + 1} of {table.getPageCount()}
+          {t('screener.page', {
+            current: table.getState().pagination.pageIndex + 1,
+            total: table.getPageCount(),
+          })}
         </span>
         <div className="flex gap-2">
           <button
@@ -150,14 +155,14 @@ export function ScreenerTable({ data }: Props) {
             onClick={() => table.previousPage()}
             disabled={!table.getCanPreviousPage()}
           >
-            Prev
+            {t('screener.prev')}
           </button>
           <button
             className="rounded border px-3 py-1 hover:bg-gray-100 disabled:opacity-40"
             onClick={() => table.nextPage()}
             disabled={!table.getCanNextPage()}
           >
-            Next
+            {t('screener.next')}
           </button>
         </div>
       </div>
