@@ -15,6 +15,27 @@ log = get_logger(__name__)
 analyzer = SentimentIntensityAnalyzer()
 
 
+def annotate_headlines(headlines: List[NewsItem]) -> List[dict]:
+    """Add per-headline sentiment signal using VADER.
+
+    Returns a new list of headline dicts, each with an added ``sentiment``
+    field: ``"positive"``, ``"negative"``, or ``"neutral"``.
+    """
+    annotated = []
+    for item in headlines:
+        rec = dict(item) if isinstance(item, dict) else {"title": item}
+        title = rec.get("title", "")
+        compound = analyzer.polarity_scores(title)["compound"]
+        if compound >= 0.05:
+            rec["sentiment"] = "positive"
+        elif compound <= -0.05:
+            rec["sentiment"] = "negative"
+        else:
+            rec["sentiment"] = "neutral"
+        annotated.append(rec)
+    return annotated
+
+
 def analyze_sentiment(news: Dict[str, List[NewsItem]]) -> pd.DataFrame:
     """Compute sentiment scores from news headlines.
 

@@ -119,6 +119,7 @@ export interface HeadlineItem {
   url: string;
   publisher: string;
   date?: string;
+  sentiment?: 'positive' | 'negative' | 'neutral';
 }
 
 export interface StockDetail {

@@ -15,7 +15,7 @@ from engine.collectors.fundamental import collect_fundamentals
 from engine.collectors.news import collect_news
 from engine.analyzers.fundamental import analyze_fundamental, compute_fundamental_subscores
 from engine.analyzers.technical import analyze_technical, compute_technical_subscores
-from engine.analyzers.sentiment import analyze_sentiment
+from engine.analyzers.sentiment import analyze_sentiment, annotate_headlines
 from engine.scorer.factor_model import compute_composite
 from engine.scorer.ranker import assign_tiers
 from engine.config import OUTPUT_DIR, SMOOTH_ALPHA
@@ -205,7 +205,7 @@ def run(tickers_override: list[str] | None = None) -> None:
         tech_data = tech_scored.loc[ticker].to_dict() if ticker in tech_scored.index else None
         sent_data = sent_df.loc[ticker].to_dict() if ticker in sent_df.index else None
         rank_data = ranked.loc[ticker].to_dict() if ticker in ranked.index else None
-        headlines = news.get(ticker, [])
+        headlines = annotate_headlines(news.get(ticker, []))
         export_stock_detail(ticker, price_data, fund_data, tech_data, sent_data, rank_data, headlines)
         exported_count += 1
 

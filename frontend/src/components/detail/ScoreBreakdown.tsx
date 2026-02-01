@@ -236,17 +236,24 @@ export function ScoreBreakdown({ detail }: Props) {
                     <p className="mb-1.5 text-[10px] font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500">{t('detail.recentNews')}</p>
                     <ul className="space-y-1.5">
                       {headlines.map((h, i) => (
-                        <li key={i} className="text-sm">
-                          {h.date && <span className="mr-1.5 font-mono text-[10px] text-gray-400 dark:text-gray-500">{h.date}</span>}
-                          {h.url ? (
-                            <a href={h.url} target="_blank" rel="noopener noreferrer"
-                              className="text-blue-600 hover:underline dark:text-blue-400">{h.title}</a>
-                          ) : (
-                            <span className="text-gray-700 dark:text-gray-300">{h.title}</span>
-                          )}
-                          {h.publisher && (
-                            <span className="ml-1 text-xs text-gray-400 dark:text-gray-500">— {h.publisher}</span>
-                          )}
+                        <li key={i} className="flex items-start gap-1.5 text-sm">
+                          <span className={`mt-0.5 shrink-0 rounded px-1 py-0.5 text-[10px] font-bold leading-none ${
+                            h.sentiment === 'positive' ? 'bg-green-50 text-green-700 dark:bg-green-900/30 dark:text-green-400'
+                              : h.sentiment === 'negative' ? 'bg-red-50 text-red-700 dark:bg-red-900/30 dark:text-red-400'
+                              : 'bg-gray-50 text-gray-500 dark:bg-gray-700 dark:text-gray-400'
+                          }`}>{h.sentiment === 'positive' ? '+' : h.sentiment === 'negative' ? '−' : '~'}</span>
+                          <span>
+                            {h.date && <span className="mr-1.5 font-mono text-[10px] text-gray-400 dark:text-gray-500">{h.date}</span>}
+                            {h.url ? (
+                              <a href={h.url} target="_blank" rel="noopener noreferrer"
+                                className="text-blue-600 hover:underline dark:text-blue-400">{h.title}</a>
+                            ) : (
+                              <span className="text-gray-700 dark:text-gray-300">{h.title}</span>
+                            )}
+                            {h.publisher && (
+                              <span className="ml-1 text-xs text-gray-400 dark:text-gray-500">— {h.publisher}</span>
+                            )}
+                          </span>
                         </li>
                       ))}
                     </ul>
