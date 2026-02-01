@@ -23,9 +23,9 @@ export function Dashboard() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold text-gray-900">{t('dashboard.title')}</h1>
+        <h1 className="text-2xl font-bold text-gray-900 dark:text-white">{t('dashboard.title')}</h1>
         {meta && (
-          <p className="mt-1 text-sm text-gray-500">
+          <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
             {t('dashboard.analyzed', { count: meta.ticker_count })} &middot; {meta.date}
           </p>
         )}
@@ -34,9 +34,9 @@ export function Dashboard() {
       {/* Summary cards */}
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-5">
         {Object.entries(tierCounts).map(([label, count]) => (
-          <div key={label} className="rounded-lg bg-white p-4 shadow-sm">
-            <p className="text-sm text-gray-500">{label}</p>
-            <p className="text-2xl font-bold text-gray-900">{count}</p>
+          <div key={label} className="rounded-lg bg-white p-4 shadow-sm dark:bg-gray-800">
+            <p className="text-sm text-gray-500 dark:text-gray-400">{label}</p>
+            <p className="text-2xl font-bold text-gray-900 dark:text-white">{count}</p>
           </div>
         ))}
       </div>

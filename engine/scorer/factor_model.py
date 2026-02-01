@@ -90,10 +90,16 @@ def compute_composite(
         w_tech /= total_weight
         w_sent /= total_weight
 
+        def _val(v: float | None) -> float:
+            """Convert NaN/None to 0."""
+            if v is None or pd.isna(v):
+                return 0.0
+            return float(v)
+
         score = (
-            w_fund * (row.get("fundamental_score", 0) or 0)
-            + w_tech * (row.get("technical_score", 0) or 0)
-            + w_sent * (row.get("sentiment_score", 0) or 0)
+            w_fund * _val(row.get("fundamental_score"))
+            + w_tech * _val(row.get("technical_score"))
+            + w_sent * _val(row.get("sentiment_score"))
         )
         composites.append(score)
         w_fund_list.append(w_fund)

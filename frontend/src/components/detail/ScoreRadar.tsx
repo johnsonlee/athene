@@ -27,8 +27,8 @@ export function ScoreRadar({ ranking }: Props) {
   ];
 
   return (
-    <div className="rounded-lg bg-white p-4 shadow-sm">
-      <h3 className="mb-2 font-semibold text-gray-900">Factor Scores</h3>
+    <div className="rounded-lg bg-white p-4 shadow-sm dark:bg-gray-800">
+      <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">Factor Scores</h3>
       <ResponsiveContainer width="100%" height={280}>
         <RadarChart data={data}>
           <PolarGrid />

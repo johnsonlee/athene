@@ -114,6 +114,12 @@ export interface PriceBar {
   volume: number;
 }
 
+export interface HeadlineItem {
+  title: string;
+  url: string;
+  publisher: string;
+}
+
 export interface StockDetail {
   ticker: string;
   prices: PriceBar[];
@@ -121,6 +127,7 @@ export interface StockDetail {
   technical: TechnicalData | null;
   sentiment: SentimentData | null;
   ranking: RankedStock | null;
+  headlines: HeadlineItem[];
 }
 
 export interface FilterState {

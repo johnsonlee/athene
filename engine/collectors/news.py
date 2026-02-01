@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Dict, List
+from typing import Dict, List, TypedDict
 
 import yfinance as yf
 
@@ -13,54 +13,71 @@ from engine.utils.rate_limiter import rate_limiter
 log = get_logger(__name__)
 
 
-def _fetch_yfinance_news(ticker: str) -> List[str]:
-    """Get news titles from yfinance."""
+class NewsItem(TypedDict):
+    title: str
+    url: str
+    publisher: str
+
+
+def _fetch_yfinance_news(ticker: str) -> List[NewsItem]:
+    """Get news items from yfinance."""
     try:
         t = yf.Ticker(ticker)
         news = t.news or []
-        titles = []
+        items: List[NewsItem] = []
         for item in news[:NEWS_MAX_ARTICLES]:
             title = item.get("title", "")
             if title:
-                titles.append(title)
-        return titles
+                items.append({
+                    "title": title,
+                    "url": item.get("link", item.get("url", "")),
+                    "publisher": item.get("publisher", ""),
+                })
+        return items
     except Exception:
         return []
 
 
-def _fetch_finviz_news(ticker: str) -> List[str]:
-    """Fallback: get news titles from finviz."""
+def _fetch_finviz_news(ticker: str) -> List[NewsItem]:
+    """Fallback: get news items from finviz."""
     try:
         from finvizfinance.quote import finvizfinance
         stock = finvizfinance(ticker)
         news_df = stock.ticker_news()
         if news_df is not None and not news_df.empty:
-            return news_df["Title"].head(NEWS_MAX_ARTICLES).tolist()
+            items: List[NewsItem] = []
+            for _, row in news_df.head(NEWS_MAX_ARTICLES).iterrows():
+                items.append({
+                    "title": row.get("Title", ""),
+                    "url": row.get("Link", ""),
+                    "publisher": row.get("Source", ""),
+                })
+            return items
     except Exception:
         pass
     return []
 
 
-def collect_news(tickers: list[str]) -> Dict[str, List[str]]:
+def collect_news(tickers: list[str]) -> Dict[str, List[NewsItem]]:
     """Collect news headlines for each ticker.
 
     Returns:
-        dict mapping ticker → list of headline strings
+        dict mapping ticker → list of NewsItem dicts with title, url, publisher
     """
-    result: Dict[str, List[str]] = {}
+    result: Dict[str, List[NewsItem]] = {}
 
     for i, ticker in enumerate(tickers):
         if (i + 1) % 50 == 0:
             log.info(f"News: {i + 1}/{len(tickers)}")
 
         rate_limiter.wait()
-        titles = _fetch_yfinance_news(ticker)
+        items = _fetch_yfinance_news(ticker)
 
-        if not titles:
-            titles = _fetch_finviz_news(ticker)
+        if not items:
+            items = _fetch_finviz_news(ticker)
 
-        if titles:
-            result[ticker] = titles
+        if items:
+            result[ticker] = items
 
     log.info(f"News collected for {len(result)}/{len(tickers)} tickers")
     return result

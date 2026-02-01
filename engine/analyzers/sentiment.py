@@ -7,6 +7,7 @@ from typing import Dict, List
 import pandas as pd
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
+from engine.collectors.news import NewsItem
 from engine.utils.logger import get_logger
 
 log = get_logger(__name__)
@@ -14,7 +15,7 @@ log = get_logger(__name__)
 analyzer = SentimentIntensityAnalyzer()
 
 
-def analyze_sentiment(news: Dict[str, List[str]]) -> pd.DataFrame:
+def analyze_sentiment(news: Dict[str, List[NewsItem]]) -> pd.DataFrame:
     """Compute sentiment scores from news headlines.
 
     Uses VADER compound score averaged across all headlines per ticker.
@@ -26,8 +27,8 @@ def analyze_sentiment(news: Dict[str, List[str]]) -> pd.DataFrame:
     """
     records = []
 
-    for ticker, headlines in news.items():
-        if not headlines:
+    for ticker, items in news.items():
+        if not items:
             continue
 
         compounds = []
@@ -35,8 +36,9 @@ def analyze_sentiment(news: Dict[str, List[str]]) -> pd.DataFrame:
         negatives = []
         neutrals = []
 
-        for headline in headlines:
-            scores = analyzer.polarity_scores(headline)
+        for item in items:
+            title = item["title"] if isinstance(item, dict) else item
+            scores = analyzer.polarity_scores(title)
             compounds.append(scores["compound"])
             positives.append(scores["pos"])
             negatives.append(scores["neg"])
@@ -48,7 +50,7 @@ def analyze_sentiment(news: Dict[str, List[str]]) -> pd.DataFrame:
             "sentiment_pos": sum(positives) / len(positives),
             "sentiment_neg": sum(negatives) / len(negatives),
             "sentiment_neu": sum(neutrals) / len(neutrals),
-            "news_count": len(headlines),
+            "news_count": len(items),
         })
 
     df = pd.DataFrame(records)

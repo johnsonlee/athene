@@ -35,7 +35,7 @@ export function ExportButton({ data }: Props) {
   return (
     <button
       onClick={handleExport}
-      className="rounded-md bg-gray-900 px-3 py-1.5 text-sm font-medium text-white hover:bg-gray-700"
+      className="rounded-md bg-gray-900 px-3 py-1.5 text-sm font-medium text-white hover:bg-gray-700 dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-gray-300"
     >
       {t('screener.exportCsv')}
     </button>

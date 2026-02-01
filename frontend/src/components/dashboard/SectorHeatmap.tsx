@@ -31,8 +31,8 @@ export function SectorHeatmap({ rankings }: Props) {
   const maxScore = Math.max(...sectorData.map((d) => Math.abs(d.avgScore)), 0.01);
 
   return (
-    <div className="rounded-lg bg-white p-4 shadow-sm lg:col-span-2">
-      <h2 className="mb-3 text-lg font-semibold text-gray-900">{t('dashboard.sectorOverview')}</h2>
+    <div className="rounded-lg bg-white p-4 shadow-sm lg:col-span-2 dark:bg-gray-800">
+      <h2 className="mb-3 text-lg font-semibold text-gray-900 dark:text-white">{t('dashboard.sectorOverview')}</h2>
       <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
         {sectorData.map(({ sector, avgScore, count }) => {
           const intensity = avgScore / maxScore; // -1 to 1
@@ -46,9 +46,9 @@ export function SectorHeatmap({ rankings }: Props) {
               className="rounded p-3 text-center"
               style={{ backgroundColor: bg }}
             >
-              <p className="text-xs font-medium text-gray-700">{sector}</p>
-              <p className="text-lg font-bold text-gray-900">{formatScore(avgScore)}</p>
-              <p className="text-xs text-gray-500">{t('dashboard.stocks', { count })}</p>
+              <p className="text-xs font-medium text-gray-700 dark:text-gray-300">{sector}</p>
+              <p className="text-lg font-bold text-gray-900 dark:text-white">{formatScore(avgScore)}</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400">{t('dashboard.stocks', { count })}</p>
             </div>
           );
         })}

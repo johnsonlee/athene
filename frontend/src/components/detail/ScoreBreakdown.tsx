@@ -20,9 +20,9 @@ interface Driver {
 }
 
 function signalColor(signal: string) {
-  if (signal === 'bullish') return 'text-green-700 bg-green-50';
-  if (signal === 'bearish') return 'text-red-700 bg-red-50';
-  return 'text-gray-600 bg-gray-50';
+  if (signal === 'bullish') return 'text-green-700 bg-green-50 dark:text-green-400 dark:bg-green-900/30';
+  if (signal === 'bearish') return 'text-red-700 bg-red-50 dark:text-red-400 dark:bg-red-900/30';
+  return 'text-gray-600 bg-gray-50 dark:text-gray-400 dark:bg-gray-700';
 }
 
 function scoreBar(score: number | null | undefined) {
@@ -31,7 +31,7 @@ function scoreBar(score: number | null | undefined) {
   const pct = Math.max(0, Math.min(100, (score + 2) * 25));
   const color = score > 0.3 ? 'bg-green-500' : score < -0.3 ? 'bg-red-500' : 'bg-gray-400';
   return (
-    <div className="h-2 w-full rounded-full bg-gray-200">
+    <div className="h-2 w-full rounded-full bg-gray-200 dark:bg-gray-600">
       <div className={`h-2 rounded-full ${color}`} style={{ width: `${pct}%` }} />
     </div>
   );
@@ -210,26 +210,26 @@ export function ScoreBreakdown({ detail }: Props) {
   const bearishCount = factors.flatMap(f => f.drivers).filter(d => d.signal === 'bearish').length;
 
   return (
-    <div className="rounded-lg bg-white p-4 shadow-sm">
-      <h2 className="mb-4 text-lg font-semibold text-gray-900">Rating Analysis</h2>
+    <div className="rounded-lg bg-white p-4 shadow-sm dark:bg-gray-800">
+      <h2 className="mb-4 text-lg font-semibold text-gray-900 dark:text-white">Rating Analysis</h2>
 
       {/* Summary */}
-      <div className="mb-4 rounded-md bg-gray-50 p-3 text-sm text-gray-700">
+      <div className="mb-4 rounded-md bg-gray-50 p-3 text-sm text-gray-700 dark:bg-gray-900 dark:text-gray-300">
         <strong>{detail.ticker}</strong> is rated <strong>{ranking.tier_label}</strong> (rank #{ranking.rank}, top {formatPercent(ranking.percentile)})
         with a composite score of <strong>{formatScore(ranking.composite_score)}</strong>.
-        {' '}The analysis found <span className="font-medium text-green-700">{bullishCount} bullish</span> and{' '}
-        <span className="font-medium text-red-700">{bearishCount} bearish</span> signals across{' '}
+        {' '}The analysis found <span className="font-medium text-green-700 dark:text-green-400">{bullishCount} bullish</span> and{' '}
+        <span className="font-medium text-red-700 dark:text-red-400">{bearishCount} bearish</span> signals across{' '}
         {factors.flatMap(f => f.drivers).length} indicators.
       </div>
 
       {/* Factor breakdown */}
       <div className="space-y-4">
         {factors.map((factor) => (
-          <div key={factor.name} className="border-t pt-3 first:border-0 first:pt-0">
+          <div key={factor.name} className="border-t pt-3 first:border-0 first:pt-0 dark:border-gray-700">
             <div className="mb-2 flex items-center justify-between">
               <div className="flex items-center gap-2">
-                <span className="font-semibold text-gray-900">{factor.name}</span>
-                <span className="text-xs text-gray-500">(Weight: {factor.weight})</span>
+                <span className="font-semibold text-gray-900 dark:text-white">{factor.name}</span>
+                <span className="text-xs text-gray-500 dark:text-gray-400">(Weight: {factor.weight})</span>
               </div>
               <span className="font-mono text-sm font-medium">
                 {formatScore(factor.score)}
@@ -243,13 +243,13 @@ export function ScoreBreakdown({ detail }: Props) {
                     {driver.signal === 'bullish' ? '+' : driver.signal === 'bearish' ? '-' : '~'}
                   </span>
                   <div>
-                    <span className="font-medium text-gray-800">{driver.label}: {driver.value}</span>
-                    <span className="ml-1 text-gray-500">— {driver.explanation}</span>
+                    <span className="font-medium text-gray-800 dark:text-gray-200">{driver.label}: {driver.value}</span>
+                    <span className="ml-1 text-gray-500 dark:text-gray-400">— {driver.explanation}</span>
                   </div>
                 </div>
               ))}
               {factor.drivers.length === 0 && (
-                <p className="text-xs text-gray-400">No data available for this factor</p>
+                <p className="text-xs text-gray-400 dark:text-gray-500">No data available for this factor</p>
               )}
             </div>
           </div>

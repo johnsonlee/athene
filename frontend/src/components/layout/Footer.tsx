@@ -6,8 +6,8 @@ export function Footer() {
   const { t } = useI18n();
 
   return (
-    <footer className="border-t border-gray-200 bg-white">
-      <div className="mx-auto max-w-7xl px-4 py-4 text-center text-xs text-gray-500">
+    <footer className="border-t border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800">
+      <div className="mx-auto max-w-7xl px-4 py-4 text-center text-xs text-gray-500 dark:text-gray-400">
         <p>
           Athene Stock Screener &middot; {t('footer.dataFrom')}
           {meta && (

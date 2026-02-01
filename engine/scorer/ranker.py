@@ -27,13 +27,16 @@ def assign_tiers(df: pd.DataFrame) -> pd.DataFrame:
     """
     result = df.copy()
 
+    # Fill NaN composite scores with 0 so ranking doesn't break
+    result["composite_score"] = result["composite_score"].fillna(0.0)
+
     # Rank: 1 = highest composite score
     result["rank"] = result["composite_score"].rank(ascending=False, method="min").astype(int)
     result = result.sort_values("rank")
 
     # Percentile (0-1, higher = better)
     n = len(result)
-    result["percentile"] = result["composite_score"].rank(pct=True)
+    result["percentile"] = result["composite_score"].rank(pct=True).fillna(0.5)
 
     # Assign tiers
     def _tier(pct: float) -> str:

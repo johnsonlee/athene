@@ -52,6 +52,11 @@ BB_PERIOD = 20
 BB_STD = 2
 KDJ_PERIOD = 14
 
+# ---------- Extra tickers (not in S&P 500 / NASDAQ 100) ----------
+EXTRA_TICKERS = [
+    {"ticker": "CPNG", "name": "Coupang", "sector": "Consumer Cyclical", "industry": "Internet Retail"},
+]
+
 # ---------- Data collection ----------
 PRICE_HISTORY_DAYS = 365         # 1 year of daily OHLCV
 NEWS_MAX_ARTICLES = 20           # max news articles per ticker

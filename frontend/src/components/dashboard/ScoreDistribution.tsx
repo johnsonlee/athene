@@ -32,8 +32,8 @@ export function ScoreDistribution({ rankings }: Props) {
   }, [rankings]);
 
   return (
-    <div className="rounded-lg bg-white p-4 shadow-sm">
-      <h2 className="mb-3 text-lg font-semibold text-gray-900">{t('dashboard.scoreDistribution')}</h2>
+    <div className="rounded-lg bg-white p-4 shadow-sm dark:bg-gray-800">
+      <h2 className="mb-3 text-lg font-semibold text-gray-900 dark:text-white">{t('dashboard.scoreDistribution')}</h2>
       <ResponsiveContainer width="100%" height={250}>
         <BarChart data={data}>
           <CartesianGrid strokeDasharray="3 3" />

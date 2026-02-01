@@ -54,7 +54,7 @@ export function ScreenerTable({ data }: Props) {
         header: t('table.sector'),
         size: 140,
         cell: ({ getValue }) => (
-          <span className="text-xs text-gray-600">{getValue() as string}</span>
+          <span className="text-xs text-gray-600 dark:text-gray-400">{getValue() as string}</span>
         ),
       },
       {
@@ -108,15 +108,15 @@ export function ScreenerTable({ data }: Props) {
   });
 
   return (
-    <div className="overflow-x-auto rounded-lg bg-white shadow-sm">
+    <div className="overflow-x-auto rounded-lg bg-white shadow-sm dark:bg-gray-800">
       <table className="w-full text-left text-sm">
-        <thead className="border-b bg-gray-50">
+        <thead className="border-b bg-gray-50 dark:bg-gray-900 dark:border-gray-700">
           {table.getHeaderGroups().map((hg) => (
             <tr key={hg.id}>
               {hg.headers.map((header) => (
                 <th
                   key={header.id}
-                  className="cursor-pointer px-3 py-2 text-xs font-semibold text-gray-600 select-none"
+                  className="cursor-pointer px-3 py-2 text-xs font-semibold text-gray-600 select-none dark:text-gray-400"
                   onClick={header.column.getToggleSortingHandler()}
                 >
                   <div className="flex items-center gap-1">
@@ -130,7 +130,7 @@ export function ScreenerTable({ data }: Props) {
         </thead>
         <tbody>
           {table.getRowModel().rows.map((row) => (
-            <tr key={row.id} className="border-b last:border-0 hover:bg-gray-50">
+            <tr key={row.id} className="border-b last:border-0 hover:bg-gray-50 dark:border-gray-700 dark:hover:bg-gray-700">
               {row.getVisibleCells().map((cell) => (
                 <td key={cell.id} className="px-3 py-2">
                   {flexRender(cell.column.columnDef.cell, cell.getContext())}
@@ -142,7 +142,7 @@ export function ScreenerTable({ data }: Props) {
       </table>
 
       {/* Pagination */}
-      <div className="flex items-center justify-between border-t px-3 py-2 text-sm text-gray-600">
+      <div className="flex items-center justify-between border-t px-3 py-2 text-sm text-gray-600 dark:border-gray-700 dark:text-gray-400">
         <span>
           {t('screener.page', {
             current: table.getState().pagination.pageIndex + 1,
@@ -151,14 +151,14 @@ export function ScreenerTable({ data }: Props) {
         </span>
         <div className="flex gap-2">
           <button
-            className="rounded border px-3 py-1 hover:bg-gray-100 disabled:opacity-40"
+            className="rounded border px-3 py-1 hover:bg-gray-100 disabled:opacity-40 dark:border-gray-600 dark:hover:bg-gray-700"
             onClick={() => table.previousPage()}
             disabled={!table.getCanPreviousPage()}
           >
             {t('screener.prev')}
           </button>
           <button
-            className="rounded border px-3 py-1 hover:bg-gray-100 disabled:opacity-40"
+            className="rounded border px-3 py-1 hover:bg-gray-100 disabled:opacity-40 dark:border-gray-600 dark:hover:bg-gray-700"
             onClick={() => table.nextPage()}
             disabled={!table.getCanNextPage()}
           >

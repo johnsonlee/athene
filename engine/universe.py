@@ -3,7 +3,10 @@
 from __future__ import annotations
 
 import pandas as pd
+import requests
+from io import StringIO
 
+from engine.config import EXTRA_TICKERS
 from engine.utils.logger import get_logger
 
 log = get_logger(__name__)
@@ -11,10 +14,22 @@ log = get_logger(__name__)
 SP500_URL = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
 NASDAQ100_URL = "https://en.wikipedia.org/wiki/Nasdaq-100"
 
+_HEADERS = {
+    "User-Agent": "Athene/1.0 (stock screener; https://github.com/johnsonlee/athene)"
+}
+
+
+def _fetch_html(url: str) -> str:
+    """Fetch HTML content with a proper User-Agent."""
+    resp = requests.get(url, headers=_HEADERS, timeout=30)
+    resp.raise_for_status()
+    return resp.text
+
 
 def _fetch_sp500() -> pd.DataFrame:
     """Scrape S&P 500 constituents from Wikipedia."""
-    tables = pd.read_html(SP500_URL)
+    html = _fetch_html(SP500_URL)
+    tables = pd.read_html(StringIO(html))
     df = tables[0][["Symbol", "Security", "GICS Sector", "GICS Sub-Industry"]].copy()
     df.columns = ["ticker", "name", "sector", "industry"]
     df["ticker"] = df["ticker"].str.replace(".", "-", regex=False)  # BRK.B → BRK-B
@@ -23,7 +38,8 @@ def _fetch_sp500() -> pd.DataFrame:
 
 def _fetch_nasdaq100() -> pd.DataFrame:
     """Scrape NASDAQ 100 constituents from Wikipedia."""
-    tables = pd.read_html(NASDAQ100_URL)
+    html = _fetch_html(NASDAQ100_URL)
+    tables = pd.read_html(StringIO(html))
     # The constituents table has a "Ticker" column
     for table in tables:
         cols = [c.lower() for c in table.columns]
@@ -61,6 +77,13 @@ def build_universe() -> pd.DataFrame:
     log.info(f"  NASDAQ 100: {len(nasdaq)} tickers")
 
     universe = pd.concat([sp500, nasdaq], ignore_index=True)
+
+    # Append extra tickers from config
+    if EXTRA_TICKERS:
+        extra = pd.DataFrame(EXTRA_TICKERS)
+        universe = pd.concat([universe, extra], ignore_index=True)
+        log.info(f"  Extra tickers added: {[t['ticker'] for t in EXTRA_TICKERS]}")
+
     universe = universe.drop_duplicates(subset="ticker").reset_index(drop=True)
     universe = universe.sort_values("ticker").reset_index(drop=True)
 

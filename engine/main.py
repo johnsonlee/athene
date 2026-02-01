@@ -150,7 +150,8 @@ def run(tickers_override: list[str] | None = None) -> None:
         tech_data = tech_scored.loc[ticker].to_dict() if ticker in tech_scored.index else None
         sent_data = sent_norm.loc[ticker].to_dict() if ticker in sent_norm.index else None
         rank_data = ranked.loc[ticker].to_dict() if ticker in ranked.index else None
-        export_stock_detail(ticker, price_data, fund_data, tech_data, sent_data, rank_data)
+        headlines = news.get(ticker, [])
+        export_stock_detail(ticker, price_data, fund_data, tech_data, sent_data, rank_data, headlines)
         exported_count += 1
 
     elapsed = time.time() - start_time

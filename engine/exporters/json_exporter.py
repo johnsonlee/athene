@@ -127,6 +127,7 @@ def export_stock_detail(
     technical: dict | None,
     sentiment: dict | None,
     ranking: dict | None,
+    headlines: list | None = None,
 ) -> str:
     """Export individual stock JSON to stocks/{ticker}.json."""
     stocks_dir = os.path.join(OUTPUT_DIR, "stocks")
@@ -153,6 +154,7 @@ def export_stock_detail(
         "technical": _clean_record(technical) if technical else None,
         "sentiment": _clean_record(sentiment) if sentiment else None,
         "ranking": _clean_record(ranking) if ranking else None,
+        "headlines": headlines or [],
     }
 
     path = os.path.join(stocks_dir, f"{ticker}.json")

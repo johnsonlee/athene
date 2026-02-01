@@ -59,6 +59,7 @@ const translations = {
     'detail.technical': 'Technical',
     'detail.sentiment': 'Sentiment',
     'detail.noData': 'No data available',
+    'detail.recentNews': 'Recent News',
     'detail.weight': 'Weight: {weight}',
     'detail.volume': 'Volume',
 
@@ -222,6 +223,7 @@ const translations = {
     'detail.technical': '技术面',
     'detail.sentiment': '舆情',
     'detail.noData': '暂无数据',
+    'detail.recentNews': '近期新闻',
     'detail.weight': '权重：{weight}',
     'detail.volume': '成交量',
 
