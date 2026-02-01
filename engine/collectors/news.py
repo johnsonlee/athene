@@ -17,6 +17,18 @@ class NewsItem(TypedDict):
     title: str
     url: str
     publisher: str
+    date: str
+
+
+def _epoch_to_date(epoch: int | float | None) -> str:
+    """Convert Unix epoch to YYYY-MM-DD string."""
+    if not epoch:
+        return ""
+    try:
+        from datetime import datetime, timezone
+        return datetime.fromtimestamp(int(epoch), tz=timezone.utc).strftime("%Y-%m-%d")
+    except Exception:
+        return ""
 
 
 def _fetch_yfinance_news(ticker: str) -> List[NewsItem]:
@@ -32,6 +44,7 @@ def _fetch_yfinance_news(ticker: str) -> List[NewsItem]:
                     "title": title,
                     "url": item.get("link", item.get("url", "")),
                     "publisher": item.get("publisher", ""),
+                    "date": _epoch_to_date(item.get("providerPublishTime", item.get("publishedDate"))),
                 })
         return items
     except Exception:
@@ -47,10 +60,13 @@ def _fetch_finviz_news(ticker: str) -> List[NewsItem]:
         if news_df is not None and not news_df.empty:
             items: List[NewsItem] = []
             for _, row in news_df.head(NEWS_MAX_ARTICLES).iterrows():
+                date_val = row.get("Date", "")
+                date_str = str(date_val)[:10] if date_val else ""
                 items.append({
                     "title": row.get("Title", ""),
                     "url": row.get("Link", ""),
                     "publisher": row.get("Source", ""),
+                    "date": date_str,
                 })
             return items
     except Exception:

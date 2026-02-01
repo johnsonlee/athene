@@ -118,6 +118,7 @@ export interface HeadlineItem {
   title: string;
   url: string;
   publisher: string;
+  date?: string;
 }
 
 export interface StockDetail {
