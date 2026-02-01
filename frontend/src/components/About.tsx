@@ -24,29 +24,54 @@ export function About() {
             <tr className="border-b dark:border-gray-700">
               <td className="py-1 font-medium text-gray-800 dark:text-gray-200">{t('detail.fundamentals')}</td>
               <td>40%</td>
-              <td>{t('about.fundComponents')}</td>
+              <td>{t('about.fundComponents')}<br /><span className="text-xs text-gray-400 dark:text-gray-500">{t('about.fundSubWeights')}</span></td>
             </tr>
             <tr className="border-b dark:border-gray-700">
               <td className="py-1 font-medium text-gray-800 dark:text-gray-200">{t('detail.technical')}</td>
               <td>35%</td>
-              <td>{t('about.techComponents')}</td>
+              <td>{t('about.techComponents')}<br /><span className="text-xs text-gray-400 dark:text-gray-500">{t('about.techSubWeights')}</span></td>
             </tr>
             <tr>
               <td className="py-1 font-medium text-gray-800 dark:text-gray-200">{t('detail.sentiment')}</td>
               <td>25%</td>
-              <td>{t('about.sentComponents')}</td>
+              <td>{t('about.sentComponents')}<br /><span className="text-xs text-gray-400 dark:text-gray-500">{t('about.sentSubWeights')}</span></td>
             </tr>
           </tbody>
         </table>
 
+        <h3 className="mt-4 font-semibold text-gray-900 dark:text-white">{t('about.scoringTitle')}</h3>
+        <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">{t('about.scoringAbsolute')}</p>
+        <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">{t('about.scoringComposite')}</p>
+        <p className="mt-1 rounded bg-gray-100 px-3 py-2 font-mono text-sm text-gray-800 dark:bg-gray-900 dark:text-gray-200">{t('about.scoringFormula')}</p>
+        <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">{t('about.scoringSmoothing')}</p>
+
         <h3 className="mt-4 font-semibold text-gray-900 dark:text-white">{t('about.ratingTiers')}</h3>
-        <ul className="mt-2 space-y-1 text-sm text-gray-600 dark:text-gray-400">
-          <li><strong>{t('tier.strong_buy')}</strong> (Top 10%) - {t('about.tierStrongBuy')}</li>
-          <li><strong>{t('tier.buy')}</strong> (10-30%) - {t('about.tierBuy')}</li>
-          <li><strong>{t('tier.hold')}</strong> (30-70%) - {t('about.tierHold')}</li>
-          <li><strong>{t('tier.sell')}</strong> (70-90%) - {t('about.tierSell')}</li>
-          <li><strong>{t('tier.strong_sell')}</strong> (Bottom 10%) - {t('about.tierStrongSell')}</li>
-        </ul>
+        <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">{t('about.ratingTiersDesc')}</p>
+        <table className="mt-2 w-full text-sm">
+          <tbody className="text-gray-600 dark:text-gray-400">
+            <tr className="border-b dark:border-gray-700">
+              <td className="py-1 font-medium text-gray-800 dark:text-gray-200">{t('tier.strong_buy')}</td>
+              <td>{t('about.tierStrongBuy')}</td>
+            </tr>
+            <tr className="border-b dark:border-gray-700">
+              <td className="py-1 font-medium text-gray-800 dark:text-gray-200">{t('tier.buy')}</td>
+              <td>{t('about.tierBuy')}</td>
+            </tr>
+            <tr className="border-b dark:border-gray-700">
+              <td className="py-1 font-medium text-gray-800 dark:text-gray-200">{t('tier.hold')}</td>
+              <td>{t('about.tierHold')}</td>
+            </tr>
+            <tr className="border-b dark:border-gray-700">
+              <td className="py-1 font-medium text-gray-800 dark:text-gray-200">{t('tier.sell')}</td>
+              <td>{t('about.tierSell')}</td>
+            </tr>
+            <tr>
+              <td className="py-1 font-medium text-gray-800 dark:text-gray-200">{t('tier.strong_sell')}</td>
+              <td>{t('about.tierStrongSell')}</td>
+            </tr>
+          </tbody>
+        </table>
+        <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">{t('about.hysteresis')}</p>
       </section>
 
       <section className="rounded-lg bg-white p-6 shadow-sm dark:bg-gray-800">
