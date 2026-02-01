@@ -130,6 +130,8 @@ export function ScoreBreakdown({ detail }: Props) {
   const allDrivers = [...fundDrivers, ...techDrivers, ...sentDrivers];
   const bullishCount = allDrivers.filter(d => d.signal === 'bullish').length;
   const bearishCount = allDrivers.filter(d => d.signal === 'bearish').length;
+  const keyBullish = allDrivers.filter(d => d.signal === 'bullish').slice(0, 3);
+  const keyBearish = allDrivers.filter(d => d.signal === 'bearish').slice(0, 3);
 
   // Sort headlines by date desc
   const headlines = [...(detail.headlines || [])].sort((a, b) => (b.date || '').localeCompare(a.date || ''));
@@ -140,20 +142,68 @@ export function ScoreBreakdown({ detail }: Props) {
     { name: t('detail.sentiment'), score: ranking.sentiment_score, weight: '25%', drivers: sentDrivers },
   ];
 
+  // Determine strongest and weakest factor (by score)
+  const validFactors = factors.filter(f => f.score != null);
+  const strongestFactor = validFactors.length > 0 ? validFactors.reduce((a, b) => (a.score ?? 0) > (b.score ?? 0) ? a : b) : null;
+  const weakestFactor = validFactors.length > 1 ? validFactors.reduce((a, b) => (a.score ?? 100) < (b.score ?? 100) ? a : b) : null;
+
   return (
     <div className="rounded-lg bg-white p-4 shadow-sm dark:bg-gray-800">
       <h2 className="mb-4 text-lg font-semibold text-gray-900 dark:text-white">{t('detail.ratingAnalysis')}</h2>
 
       {/* Summary */}
       <div className="mb-4 rounded-md bg-gray-50 p-3 text-sm text-gray-700 dark:bg-gray-900 dark:text-gray-300">
-        {t('detail.ratedAs', {
-          ticker: detail.ticker,
-          tier: t(`tier.${ranking.tier}` as any),
-          rank: ranking.rank,
-          pct: formatPercent(ranking.percentile),
-          score: formatScore(ranking.composite_score),
-        })}
-        {' '}{t('detail.signalSummary', { bullish: bullishCount, bearish: bearishCount, total: allDrivers.length })}
+        <p>
+          {t('detail.ratedAs', {
+            ticker: detail.ticker,
+            tier: t(`tier.${ranking.tier}` as any),
+            rank: ranking.rank,
+            pct: formatPercent(ranking.percentile),
+            score: formatScore(ranking.composite_score),
+          })}
+          {' '}{t('detail.signalSummary', { bullish: bullishCount, bearish: bearishCount, total: allDrivers.length })}
+        </p>
+
+        {/* Factor highlights */}
+        {(strongestFactor || weakestFactor) && (
+          <p className="mt-1.5 text-xs text-gray-500 dark:text-gray-400">
+            {strongestFactor && t('detail.strongestFactor', { factor: strongestFactor.name, score: formatScore(strongestFactor.score) })}
+            {strongestFactor && weakestFactor && ' · '}
+            {weakestFactor && weakestFactor !== strongestFactor && t('detail.weakestFactor', { factor: weakestFactor.name, score: formatScore(weakestFactor.score) })}
+          </p>
+        )}
+
+        {/* Key strengths & risks */}
+        <div className="mt-2 grid gap-2 sm:grid-cols-2">
+          {keyBullish.length > 0 && (
+            <div>
+              <p className="mb-1 text-[10px] font-semibold uppercase tracking-wider text-green-600 dark:text-green-400">{t('detail.keyStrengths')}</p>
+              <ul className="space-y-0.5">
+                {keyBullish.map(d => (
+                  <li key={d.label} className="flex items-center gap-1 text-xs">
+                    <span className="text-green-600 dark:text-green-400">+</span>
+                    <span>{d.label}: {d.value}</span>
+                    <span className="text-gray-400 dark:text-gray-500">— {d.explanation}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {keyBearish.length > 0 && (
+            <div>
+              <p className="mb-1 text-[10px] font-semibold uppercase tracking-wider text-red-600 dark:text-red-400">{t('detail.keyRisks')}</p>
+              <ul className="space-y-0.5">
+                {keyBearish.map(d => (
+                  <li key={d.label} className="flex items-center gap-1 text-xs">
+                    <span className="text-red-600 dark:text-red-400">−</span>
+                    <span>{d.label}: {d.value}</span>
+                    <span className="text-gray-400 dark:text-gray-500">— {d.explanation}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Factor sections */}
