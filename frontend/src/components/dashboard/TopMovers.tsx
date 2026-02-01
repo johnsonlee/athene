@@ -1,0 +1,61 @@
+import { Link } from 'react-router-dom';
+import type { RankedStock } from '../../types';
+import { ScoreBadge } from '../common/ScoreBadge';
+import { formatScore } from '../../lib/formatters';
+
+interface Props {
+  rankings: RankedStock[];
+}
+
+export function TopMovers({ rankings }: Props) {
+  const top10 = rankings.slice(0, 10);
+  const bottom10 = [...rankings].sort((a, b) => a.composite_score - b.composite_score).slice(0, 10);
+
+  return (
+    <>
+      <div className="rounded-lg bg-white p-4 shadow-sm">
+        <h2 className="mb-3 text-lg font-semibold text-gray-900">Top 10</h2>
+        <div className="space-y-2">
+          {top10.map((stock) => (
+            <Link
+              key={stock.ticker}
+              to={`/stock/${stock.ticker}`}
+              className="flex items-center justify-between rounded p-2 hover:bg-gray-50"
+            >
+              <div>
+                <span className="font-mono text-sm font-semibold">{stock.ticker}</span>
+                <span className="ml-2 text-xs text-gray-500">{stock.name}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-sm font-medium">{formatScore(stock.composite_score)}</span>
+                <ScoreBadge tier={stock.tier} label={stock.tier_label} />
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+
+      <div className="rounded-lg bg-white p-4 shadow-sm">
+        <h2 className="mb-3 text-lg font-semibold text-gray-900">Bottom 10</h2>
+        <div className="space-y-2">
+          {bottom10.map((stock) => (
+            <Link
+              key={stock.ticker}
+              to={`/stock/${stock.ticker}`}
+              className="flex items-center justify-between rounded p-2 hover:bg-gray-50"
+            >
+              <div>
+                <span className="font-mono text-sm font-semibold">{stock.ticker}</span>
+                <span className="ml-2 text-xs text-gray-500">{stock.name}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-sm font-medium">{formatScore(stock.composite_score)}</span>
+                <ScoreBadge tier={stock.tier} label={stock.tier_label} />
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </>
+  );
+}

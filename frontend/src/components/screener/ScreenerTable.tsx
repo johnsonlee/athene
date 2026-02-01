@@ -1,0 +1,166 @@
+import { useMemo, useState } from 'react';
+import { Link } from 'react-router-dom';
+import {
+  useReactTable,
+  getCoreRowModel,
+  getSortedRowModel,
+  getPaginationRowModel,
+  flexRender,
+  type SortingState,
+  type ColumnDef,
+} from '@tanstack/react-table';
+import type { RankedStock } from '../../types';
+import { ScoreBadge } from '../common/ScoreBadge';
+import { formatScore } from '../../lib/formatters';
+
+interface Props {
+  data: RankedStock[];
+}
+
+export function ScreenerTable({ data }: Props) {
+  const [sorting, setSorting] = useState<SortingState>([{ id: 'rank', desc: false }]);
+
+  const columns = useMemo<ColumnDef<RankedStock, any>[]>(
+    () => [
+      {
+        accessorKey: 'rank',
+        header: '#',
+        size: 50,
+      },
+      {
+        accessorKey: 'ticker',
+        header: 'Ticker',
+        cell: ({ row }) => (
+          <Link
+            to={`/stock/${row.original.ticker}`}
+            className="font-mono font-semibold text-blue-600 hover:underline"
+          >
+            {row.original.ticker}
+          </Link>
+        ),
+      },
+      {
+        accessorKey: 'name',
+        header: 'Name',
+        size: 200,
+        cell: ({ getValue }) => (
+          <span className="truncate text-sm">{getValue() as string}</span>
+        ),
+      },
+      {
+        accessorKey: 'sector',
+        header: 'Sector',
+        size: 140,
+        cell: ({ getValue }) => (
+          <span className="text-xs text-gray-600">{getValue() as string}</span>
+        ),
+      },
+      {
+        accessorKey: 'composite_score',
+        header: 'Score',
+        cell: ({ getValue }) => (
+          <span className="font-mono font-medium">{formatScore(getValue() as number)}</span>
+        ),
+      },
+      {
+        accessorKey: 'fundamental_score',
+        header: 'Fund.',
+        cell: ({ getValue }) => (
+          <span className="font-mono text-sm">{formatScore(getValue() as number | null)}</span>
+        ),
+      },
+      {
+        accessorKey: 'technical_score',
+        header: 'Tech.',
+        cell: ({ getValue }) => (
+          <span className="font-mono text-sm">{formatScore(getValue() as number | null)}</span>
+        ),
+      },
+      {
+        accessorKey: 'sentiment_score',
+        header: 'Sent.',
+        cell: ({ getValue }) => (
+          <span className="font-mono text-sm">{formatScore(getValue() as number | null)}</span>
+        ),
+      },
+      {
+        accessorKey: 'tier_label',
+        header: 'Rating',
+        cell: ({ row }) => (
+          <ScoreBadge tier={row.original.tier} label={row.original.tier_label} />
+        ),
+      },
+    ],
+    []
+  );
+
+  const table = useReactTable({
+    data,
+    columns,
+    state: { sorting },
+    onSortingChange: setSorting,
+    getCoreRowModel: getCoreRowModel(),
+    getSortedRowModel: getSortedRowModel(),
+    getPaginationRowModel: getPaginationRowModel(),
+    initialState: { pagination: { pageSize: 50 } },
+  });
+
+  return (
+    <div className="overflow-x-auto rounded-lg bg-white shadow-sm">
+      <table className="w-full text-left text-sm">
+        <thead className="border-b bg-gray-50">
+          {table.getHeaderGroups().map((hg) => (
+            <tr key={hg.id}>
+              {hg.headers.map((header) => (
+                <th
+                  key={header.id}
+                  className="cursor-pointer px-3 py-2 text-xs font-semibold text-gray-600 select-none"
+                  onClick={header.column.getToggleSortingHandler()}
+                >
+                  <div className="flex items-center gap-1">
+                    {flexRender(header.column.columnDef.header, header.getContext())}
+                    {{ asc: ' \u2191', desc: ' \u2193' }[header.column.getIsSorted() as string] ?? ''}
+                  </div>
+                </th>
+              ))}
+            </tr>
+          ))}
+        </thead>
+        <tbody>
+          {table.getRowModel().rows.map((row) => (
+            <tr key={row.id} className="border-b last:border-0 hover:bg-gray-50">
+              {row.getVisibleCells().map((cell) => (
+                <td key={cell.id} className="px-3 py-2">
+                  {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      {/* Pagination */}
+      <div className="flex items-center justify-between border-t px-3 py-2 text-sm text-gray-600">
+        <span>
+          Page {table.getState().pagination.pageIndex + 1} of {table.getPageCount()}
+        </span>
+        <div className="flex gap-2">
+          <button
+            className="rounded border px-3 py-1 hover:bg-gray-100 disabled:opacity-40"
+            onClick={() => table.previousPage()}
+            disabled={!table.getCanPreviousPage()}
+          >
+            Prev
+          </button>
+          <button
+            className="rounded border px-3 py-1 hover:bg-gray-100 disabled:opacity-40"
+            onClick={() => table.nextPage()}
+            disabled={!table.getCanNextPage()}
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}

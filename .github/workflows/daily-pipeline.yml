@@ -1,0 +1,55 @@
+name: Daily Data Pipeline
+
+on:
+  schedule:
+    # Run at UTC 22:00 Mon-Fri (after US market close)
+    - cron: '0 22 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      tickers:
+        description: 'Comma-separated tickers for testing (leave empty for full universe)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pipeline
+        run: |
+          if [ -n "${{ github.event.inputs.tickers }}" ]; then
+            # Convert comma-separated to space-separated for CLI args
+            TICKERS=$(echo "${{ github.event.inputs.tickers }}" | tr ',' ' ')
+            python -m engine.main $TICKERS
+          else
+            python -m engine.main
+          fi
+
+      - name: Commit data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add frontend/public/data/
+          if git diff --staged --quiet; then
+            echo "No data changes to commit"
+          else
+            git commit -m "data: update $(date -u +%Y-%m-%d) rankings"
+            git push
+          fi

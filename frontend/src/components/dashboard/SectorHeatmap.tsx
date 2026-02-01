@@ -1,0 +1,55 @@
+import { useMemo } from 'react';
+import type { RankedStock } from '../../types';
+import { formatScore } from '../../lib/formatters';
+
+interface Props {
+  rankings: RankedStock[];
+}
+
+export function SectorHeatmap({ rankings }: Props) {
+  const sectorData = useMemo(() => {
+    const grouped = new Map<string, { total: number; count: number }>();
+    rankings.forEach((s) => {
+      const sector = s.sector || 'Unknown';
+      const entry = grouped.get(sector) || { total: 0, count: 0 };
+      entry.total += s.composite_score;
+      entry.count += 1;
+      grouped.set(sector, entry);
+    });
+    return Array.from(grouped.entries())
+      .map(([sector, { total, count }]) => ({
+        sector,
+        avgScore: total / count,
+        count,
+      }))
+      .sort((a, b) => b.avgScore - a.avgScore);
+  }, [rankings]);
+
+  const maxScore = Math.max(...sectorData.map((d) => Math.abs(d.avgScore)), 0.01);
+
+  return (
+    <div className="rounded-lg bg-white p-4 shadow-sm lg:col-span-2">
+      <h2 className="mb-3 text-lg font-semibold text-gray-900">Sector Overview</h2>
+      <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
+        {sectorData.map(({ sector, avgScore, count }) => {
+          const intensity = avgScore / maxScore; // -1 to 1
+          const bg =
+            intensity > 0
+              ? `rgba(22, 163, 74, ${Math.min(intensity, 1) * 0.5})`
+              : `rgba(239, 68, 68, ${Math.min(Math.abs(intensity), 1) * 0.5})`;
+          return (
+            <div
+              key={sector}
+              className="rounded p-3 text-center"
+              style={{ backgroundColor: bg }}
+            >
+              <p className="text-xs font-medium text-gray-700">{sector}</p>
+              <p className="text-lg font-bold text-gray-900">{formatScore(avgScore)}</p>
+              <p className="text-xs text-gray-500">{count} stocks</p>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}

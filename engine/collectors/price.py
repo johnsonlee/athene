@@ -1,0 +1,71 @@
+"""Collect OHLCV price data via yfinance batch download."""
+
+from __future__ import annotations
+
+from datetime import datetime, timedelta
+from typing import Dict
+
+import pandas as pd
+import yfinance as yf
+
+from engine.config import PRICE_HISTORY_DAYS, BATCH_SIZE
+from engine.utils.logger import get_logger
+from engine.utils.rate_limiter import rate_limiter
+
+log = get_logger(__name__)
+
+
+def collect_prices(tickers: list[str]) -> Dict[str, pd.DataFrame]:
+    """Download daily OHLCV for all tickers in batches.
+
+    Returns:
+        dict mapping ticker → DataFrame with columns:
+        Date (index), Open, High, Low, Close, Volume
+    """
+    end = datetime.now()
+    start = end - timedelta(days=PRICE_HISTORY_DAYS)
+    result: Dict[str, pd.DataFrame] = {}
+
+    for i in range(0, len(tickers), BATCH_SIZE):
+        batch = tickers[i : i + BATCH_SIZE]
+        log.info(f"Downloading prices: batch {i // BATCH_SIZE + 1} ({len(batch)} tickers)")
+        rate_limiter.wait()
+
+        try:
+            data = yf.download(
+                batch,
+                start=start.strftime("%Y-%m-%d"),
+                end=end.strftime("%Y-%m-%d"),
+                group_by="ticker",
+                threads=True,
+                progress=False,
+            )
+        except Exception as e:
+            log.error(f"Batch download failed: {e}")
+            continue
+
+        if data.empty:
+            continue
+
+        # Single ticker returns flat columns; multi-ticker returns MultiIndex
+        if len(batch) == 1:
+            ticker = batch[0]
+            df = data.copy()
+            if not df.empty:
+                # Flatten MultiIndex columns if present
+                if isinstance(df.columns, pd.MultiIndex):
+                    df.columns = df.columns.get_level_values(0)
+                result[ticker] = df.dropna()
+        else:
+            for ticker in batch:
+                try:
+                    df = data[ticker].copy() if ticker in data.columns.get_level_values(0) else pd.DataFrame()
+                    if not df.empty:
+                        df = df.dropna(how="all")
+                        if not df.empty:
+                            result[ticker] = df
+                except (KeyError, Exception) as e:
+                    log.warning(f"No price data for {ticker}: {e}")
+
+    log.info(f"Price data collected for {len(result)}/{len(tickers)} tickers")
+    return result
