@@ -12,8 +12,8 @@ const translations = {
     // Dashboard
     'dashboard.title': 'Market Overview',
     'dashboard.analyzed': '{count} stocks analyzed',
-    'dashboard.top10': 'Top 10',
-    'dashboard.bottom10': 'Bottom 10',
+    'dashboard.top10': 'Highest Rated',
+    'dashboard.bottom10': 'Lowest Rated',
     'dashboard.sectorOverview': 'Sector Overview',
     'dashboard.scoreDistribution': 'Score Distribution',
     'dashboard.stocks': '{count} stocks',
@@ -216,8 +216,8 @@ const translations = {
     // Dashboard
     'dashboard.title': '市场概览',
     'dashboard.analyzed': '已分析 {count} 只股票',
-    'dashboard.top10': '涨幅前10',
-    'dashboard.bottom10': '跌幅前10',
+    'dashboard.top10': '评分最高',
+    'dashboard.bottom10': '评分最低',
     'dashboard.sectorOverview': '板块概览',
     'dashboard.scoreDistribution': '得分分布',
     'dashboard.stocks': '{count} 只股票',
