@@ -120,15 +120,18 @@ def run(tickers_override: list[str] | None = None) -> None:
     tickers = universe["ticker"].tolist()
     log.info(f"Universe: {len(tickers)} tickers")
 
-    # Early exit if US market is closed (skip on weekends/holidays),
-    # unless there are new tickers that need historical data.
-    # Test mode always runs regardless.
+    # When US market is closed, only fetch data for new tickers (no existing
+    # stock detail JSON).  Existing tickers' data hasn't changed — skip them.
+    # Test mode always runs the full list regardless.
+    incremental = False
     if not test_mode and not is_us_trading_day():
         stocks_dir = os.path.join(OUTPUT_DIR, "stocks")
         new_tickers = [t for t in tickers if not os.path.exists(os.path.join(stocks_dir, f"{t}.json"))]
         if new_tickers:
-            log.info(f"US market is closed but {len(new_tickers)} new ticker(s) detected — running pipeline")
+            log.info(f"US market is closed — only fetching {len(new_tickers)} new ticker(s)")
             log.info(f"  New: {', '.join(new_tickers[:20])}")
+            tickers = new_tickers
+            incremental = True
         else:
             log.info("US market is closed today — skipping pipeline")
             return
@@ -171,7 +174,8 @@ def run(tickers_override: list[str] | None = None) -> None:
 
     # Step 7: Detect changes (before overwriting rankings.json)
     run_date = time.strftime("%Y-%m-%d")
-    if not test_mode:
+    full_run = not test_mode and not incremental
+    if full_run:
         changes = detect_changes(ranked, universe)
         if changes:
             log.info(f"Rating changes: {len(changes)}")
@@ -186,9 +190,9 @@ def run(tickers_override: list[str] | None = None) -> None:
             log.info("Wrote changes to GitHub Job Summary")
 
     # Step 8: Export
-    if test_mode:
-        log.info("Test mode — skipping global aggregation exports")
-    else:
+    # In test mode or incremental mode (market closed, new tickers only),
+    # skip global aggregation files to avoid overwriting full-universe data.
+    if full_run:
         log.info("Exporting JSON data...")
         export_meta(len(tickers), run_date)
         export_universe(universe)
@@ -197,6 +201,8 @@ def run(tickers_override: list[str] | None = None) -> None:
         export_technicals(tech_df)
         export_sentiment(sent_df)
         export_history(ranked, run_date)
+    else:
+        log.info("Partial run — skipping global aggregation exports")
 
     # Export individual stock details (use scored DataFrames for sub-scores)
     log.info("Exporting individual stock details...")
