@@ -26,6 +26,14 @@ function scoreToColor(score: number): string {
   return '#ef4444'; // red-500
 }
 
+function truncateLabel(name: string, width: number, fontSize: number): string {
+  const charWidth = fontSize * 0.62;
+  const maxChars = Math.floor((width - 10) / charWidth);
+  if (maxChars < 2) return '';
+  if (name.length <= maxChars) return name;
+  return name.slice(0, maxChars - 1) + '\u2026';
+}
+
 function CustomContent(props: any) {
   const { x, y, width, height, name, avgScore, count } = props;
   if (width < 30 || height < 20) return null;
@@ -33,27 +41,39 @@ function CustomContent(props: any) {
   const fill = scoreToColor(avgScore);
   const showScore = width > 50 && height > 35;
   const showCount = width > 60 && height > 50;
+  const fontSize = width > 100 ? 12 : width > 60 ? 10 : 9;
+  const label = truncateLabel(name, width, fontSize);
+  const clipId = `sc-${Math.round(x)}-${Math.round(y)}`;
 
   return (
     <g>
+      <defs>
+        <clipPath id={clipId}>
+          <rect x={x + 1} y={y + 1} width={width - 2} height={height - 2} />
+        </clipPath>
+      </defs>
       <rect x={x} y={y} width={width} height={height} fill={fill} stroke="#fff" strokeWidth={2}
         rx={4} opacity={0.85} className="cursor-pointer hover:opacity-100 transition-opacity" />
-      <text x={x + width / 2} y={y + height / 2 - (showScore ? 8 : 0)} textAnchor="middle" dominantBaseline="central"
-        fill="#fff" fontSize={width > 80 ? 12 : 10} fontWeight="600">
-        {name}
-      </text>
-      {showScore && (
-        <text x={x + width / 2} y={y + height / 2 + 10} textAnchor="middle" dominantBaseline="central"
-          fill="rgba(255,255,255,0.85)" fontSize={10}>
-          {formatScore(avgScore)}
-        </text>
-      )}
-      {showCount && (
-        <text x={x + width / 2} y={y + height / 2 + 24} textAnchor="middle" dominantBaseline="central"
-          fill="rgba(255,255,255,0.65)" fontSize={9}>
-          {count}
-        </text>
-      )}
+      <g clipPath={`url(#${clipId})`}>
+        {label && (
+          <text x={x + width / 2} y={y + height / 2 - (showScore ? 8 : 0)} textAnchor="middle" dominantBaseline="central"
+            fill="#fff" fontSize={fontSize} fontWeight="600">
+            {label}
+          </text>
+        )}
+        {showScore && (
+          <text x={x + width / 2} y={y + height / 2 + 10} textAnchor="middle" dominantBaseline="central"
+            fill="rgba(255,255,255,0.85)" fontSize={10}>
+            {formatScore(avgScore)}
+          </text>
+        )}
+        {showCount && (
+          <text x={x + width / 2} y={y + height / 2 + 24} textAnchor="middle" dominantBaseline="central"
+            fill="rgba(255,255,255,0.65)" fontSize={9}>
+            {count}
+          </text>
+        )}
+      </g>
     </g>
   );
 }
