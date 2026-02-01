@@ -15,18 +15,18 @@ export function TopMovers({ rankings }: Props) {
 
   return (
     <>
-      <div className="rounded-lg bg-white p-4 shadow-sm">
-        <h2 className="mb-3 text-lg font-semibold text-gray-900">{t('dashboard.top10')}</h2>
+      <div className="rounded-lg bg-white p-4 shadow-sm dark:bg-gray-800">
+        <h2 className="mb-3 text-lg font-semibold text-gray-900 dark:text-white">{t('dashboard.top10')}</h2>
         <div className="space-y-2">
           {top10.map((stock) => (
             <Link
               key={stock.ticker}
               to={`/stock/${stock.ticker}`}
-              className="flex items-center justify-between rounded p-2 hover:bg-gray-50"
+              className="flex items-center justify-between rounded p-2 hover:bg-gray-50 dark:hover:bg-gray-700"
             >
               <div>
                 <span className="font-mono text-sm font-semibold">{stock.ticker}</span>
-                <span className="ml-2 text-xs text-gray-500">{stock.name}</span>
+                <span className="ml-2 text-xs text-gray-500 dark:text-gray-400">{stock.name}</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-sm font-medium">{formatScore(stock.composite_score)}</span>
@@ -37,18 +37,18 @@ export function TopMovers({ rankings }: Props) {
         </div>
       </div>
 
-      <div className="rounded-lg bg-white p-4 shadow-sm">
-        <h2 className="mb-3 text-lg font-semibold text-gray-900">{t('dashboard.bottom10')}</h2>
+      <div className="rounded-lg bg-white p-4 shadow-sm dark:bg-gray-800">
+        <h2 className="mb-3 text-lg font-semibold text-gray-900 dark:text-white">{t('dashboard.bottom10')}</h2>
         <div className="space-y-2">
           {bottom10.map((stock) => (
             <Link
               key={stock.ticker}
               to={`/stock/${stock.ticker}`}
-              className="flex items-center justify-between rounded p-2 hover:bg-gray-50"
+              className="flex items-center justify-between rounded p-2 hover:bg-gray-50 dark:hover:bg-gray-700"
             >
               <div>
                 <span className="font-mono text-sm font-semibold">{stock.ticker}</span>
-                <span className="ml-2 text-xs text-gray-500">{stock.name}</span>
+                <span className="ml-2 text-xs text-gray-500 dark:text-gray-400">{stock.name}</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-sm font-medium">{formatScore(stock.composite_score)}</span>

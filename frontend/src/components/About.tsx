@@ -8,10 +8,10 @@ export function About() {
       <h1 className="text-2xl font-bold text-gray-900 dark:text-white">{t('about.title')}</h1>
 
       <section className="rounded-lg bg-white p-6 shadow-sm dark:bg-gray-800">
-        <h2 className="mb-2 text-lg font-semibold">{t('about.methodology')}</h2>
+        <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">{t('about.methodology')}</h2>
         <p className="text-sm text-gray-600 dark:text-gray-400">{t('about.methodologyDesc')}</p>
 
-        <h3 className="mt-4 font-semibold">{t('about.multiFactorModel')}</h3>
+        <h3 className="mt-4 font-semibold text-gray-900 dark:text-white">{t('about.multiFactorModel')}</h3>
         <table className="mt-2 w-full text-sm">
           <thead>
             <tr className="border-b text-left dark:border-gray-700">
@@ -39,7 +39,7 @@ export function About() {
           </tbody>
         </table>
 
-        <h3 className="mt-4 font-semibold">{t('about.ratingTiers')}</h3>
+        <h3 className="mt-4 font-semibold text-gray-900 dark:text-white">{t('about.ratingTiers')}</h3>
         <ul className="mt-2 space-y-1 text-sm text-gray-600 dark:text-gray-400">
           <li><strong>{t('tier.strong_buy')}</strong> (Top 10%) - {t('about.tierStrongBuy')}</li>
           <li><strong>{t('tier.buy')}</strong> (10-30%) - {t('about.tierBuy')}</li>
@@ -50,7 +50,7 @@ export function About() {
       </section>
 
       <section className="rounded-lg bg-white p-6 shadow-sm dark:bg-gray-800">
-        <h2 className="mb-2 text-lg font-semibold">{t('about.dataSources')}</h2>
+        <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">{t('about.dataSources')}</h2>
         <ul className="list-disc space-y-1 pl-5 text-sm text-gray-600 dark:text-gray-400">
           <li>Price data &amp; fundamentals: Yahoo Finance (via yfinance)</li>
           <li>News headlines: Yahoo Finance / Finviz</li>
@@ -59,14 +59,14 @@ export function About() {
       </section>
 
       <section className="rounded-lg bg-white p-6 shadow-sm dark:bg-gray-800">
-        <h2 className="mb-2 text-lg font-semibold">{t('about.disclaimer')}</h2>
+        <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">{t('about.disclaimer')}</h2>
         <p className="text-sm text-gray-600 dark:text-gray-400">{t('about.disclaimerText')}</p>
       </section>
 
       <section className="rounded-lg bg-white p-6 shadow-sm dark:bg-gray-800">
-        <h2 className="mb-2 text-lg font-semibold">RSS Feed</h2>
+        <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">RSS Feed</h2>
         <p className="text-sm text-gray-600 dark:text-gray-400">
-          <a href="/data/feed.xml" className="text-blue-600 hover:underline">
+          <a href="/data/feed.xml" className="text-blue-600 hover:underline dark:text-blue-400">
             https://athene.johnsonlee.io/data/feed.xml
           </a>
         </p>
