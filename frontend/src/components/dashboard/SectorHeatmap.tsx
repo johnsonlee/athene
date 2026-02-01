@@ -13,7 +13,8 @@ export function SectorHeatmap({ rankings }: Props) {
   const sectorData = useMemo(() => {
     const grouped = new Map<string, { total: number; count: number }>();
     rankings.forEach((s) => {
-      const sector = s.sector || 'Unknown';
+      if (!s.sector || s.sector === 'Unknown') return;
+      const sector = s.sector;
       const entry = grouped.get(sector) || { total: 0, count: 0 };
       entry.total += s.composite_score;
       entry.count += 1;

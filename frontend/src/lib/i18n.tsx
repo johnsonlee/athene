@@ -62,6 +62,39 @@ const translations = {
     'detail.recentNews': 'Recent News',
     'detail.weight': 'Weight: {weight}',
     'detail.volume': 'Volume',
+    'detail.noFactorData': 'No data available for this factor',
+    'detail.articles': '{count} articles',
+
+    // Factor names (for radar chart)
+    'factor.value': 'Value',
+    'factor.quality': 'Quality',
+    'factor.growth': 'Growth',
+    'factor.safety': 'Safety',
+    'factor.trend': 'Trend',
+    'factor.momentum': 'Momentum',
+    'factor.volatility': 'Volatility',
+    'factor.volume': 'Volume',
+
+    // Chart labels
+    'chart.rsi14': 'RSI (14)',
+    'chart.macd1226': 'MACD (12, 26, 9)',
+    'chart.stochastic': 'Stochastic (14, 3, 3)',
+    'chart.signal': 'Signal',
+    'chart.histogram': 'Histogram',
+    'chart.bollingerBands': 'Bollinger Bands',
+    'chart.hist': 'Hist',
+
+    // Metric group headers
+    'group.valuation': 'Valuation',
+    'group.profitability': 'Profitability',
+    'group.growth': 'Growth',
+    'group.balanceSheet': 'Balance Sheet',
+    'group.market': 'Market',
+    'group.trend': 'Trend',
+    'group.momentum': 'Momentum',
+    'group.volatility': 'Volatility',
+    'group.volumeActivity': 'Volume',
+    'group.sentimentBreakdown': 'Sentiment Breakdown',
 
     // Fundamental labels
     'metric.pe': 'P/E',
@@ -86,6 +119,7 @@ const translations = {
     'metric.sma50': 'SMA 50',
     'metric.sma200': 'SMA 200',
     'metric.bbPosition': 'BB Position',
+    'metric.trendAlignment': 'Trend Alignment',
     'metric.volRatio': 'Vol Ratio',
     'metric.stochK': 'Stoch K',
     'metric.stochD': 'Stoch D',
@@ -94,6 +128,8 @@ const translations = {
     'metric.negative': 'Negative',
     'metric.neutral': 'Neutral',
     'metric.newsCount': 'News Count',
+    'metric.newsSentiment': 'News Sentiment',
+    'metric.newsVolume': 'News Volume',
 
     // Score breakdown drivers
     'driver.pe.bullish': 'Low valuation relative to earnings',
@@ -152,6 +188,10 @@ const translations = {
     'about.tierSell': 'Below average scores',
     'about.tierStrongSell': 'Lowest composite scores',
     'about.dataSources': 'Data Sources',
+    'about.dataPrice': 'Price data & fundamentals: Yahoo Finance (via yfinance)',
+    'about.dataNews': 'News headlines: Yahoo Finance / Finviz',
+    'about.dataUniverse': 'Stock universe: Wikipedia (S&P 500 + NASDAQ 100 lists)',
+    'about.rssFeed': 'RSS Feed',
     'about.disclaimer': 'Disclaimer',
     'about.disclaimerText': 'This tool is for educational and informational purposes only. It does not constitute financial advice, investment recommendations, or solicitation to buy or sell any securities. Past performance does not guarantee future results. Always conduct your own research and consult with a qualified financial advisor before making investment decisions. The authors are not responsible for any financial losses resulting from the use of this tool.',
 
@@ -226,6 +266,39 @@ const translations = {
     'detail.recentNews': '近期新闻',
     'detail.weight': '权重：{weight}',
     'detail.volume': '成交量',
+    'detail.noFactorData': '该因子暂无数据',
+    'detail.articles': '{count} 篇文章',
+
+    // Factor names (for radar chart)
+    'factor.value': '价值',
+    'factor.quality': '质量',
+    'factor.growth': '成长',
+    'factor.safety': '安全',
+    'factor.trend': '趋势',
+    'factor.momentum': '动量',
+    'factor.volatility': '波动',
+    'factor.volume': '量能',
+
+    // Chart labels
+    'chart.rsi14': 'RSI (14)',
+    'chart.macd1226': 'MACD (12, 26, 9)',
+    'chart.stochastic': '随机指标 (14, 3, 3)',
+    'chart.signal': '信号线',
+    'chart.histogram': '柱状图',
+    'chart.bollingerBands': '布林带',
+    'chart.hist': '柱',
+
+    // Metric group headers
+    'group.valuation': '估值',
+    'group.profitability': '盈利能力',
+    'group.growth': '成长性',
+    'group.balanceSheet': '资产负债',
+    'group.market': '市场',
+    'group.trend': '趋势',
+    'group.momentum': '动量',
+    'group.volatility': '波动性',
+    'group.volumeActivity': '成交量',
+    'group.sentimentBreakdown': '情绪分布',
 
     // Fundamental labels
     'metric.pe': '市盈率',
@@ -250,6 +323,7 @@ const translations = {
     'metric.sma50': '50日均线',
     'metric.sma200': '200日均线',
     'metric.bbPosition': '布林带位置',
+    'metric.trendAlignment': '趋势一致性',
     'metric.volRatio': '量比',
     'metric.stochK': '随机指标 K',
     'metric.stochD': '随机指标 D',
@@ -258,6 +332,8 @@ const translations = {
     'metric.negative': '负面',
     'metric.neutral': '中性',
     'metric.newsCount': '新闻数量',
+    'metric.newsSentiment': '新闻情绪',
+    'metric.newsVolume': '新闻量',
 
     // Score breakdown drivers
     'driver.pe.bullish': '相对盈利估值较低',
@@ -316,6 +392,10 @@ const translations = {
     'about.tierSell': '得分低于平均',
     'about.tierStrongSell': '综合得分最低',
     'about.dataSources': '数据来源',
+    'about.dataPrice': '行情和基本面数据：Yahoo Finance (yfinance)',
+    'about.dataNews': '新闻标题：Yahoo Finance / Finviz',
+    'about.dataUniverse': '股票池：维基百科（标普500 + 纳斯达克100列表）',
+    'about.rssFeed': 'RSS 订阅',
     'about.disclaimer': '免责声明',
     'about.disclaimerText': '本工具仅供教育和信息参考之用。不构成财务建议、投资推荐或买卖任何证券的招揽。过去的表现不保证未来的结果。在做出投资决策前，请始终进行自己的研究并咨询合格的财务顾问。作者不对因使用本工具造成的任何财务损失负责。',
 

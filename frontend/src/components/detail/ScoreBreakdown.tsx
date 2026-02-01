@@ -1,5 +1,6 @@
 import type { StockDetail } from '../../types';
 import { formatScore, formatPercent, formatRatio } from '../../lib/formatters';
+import { useI18n } from '../../lib/i18n';
 
 interface Props {
   detail: StockDetail;
@@ -38,6 +39,7 @@ function scoreBar(score: number | null | undefined) {
 }
 
 export function ScoreBreakdown({ detail }: Props) {
+  const { t } = useI18n();
   const { fundamental: fund, technical: tech, sentiment: sent, ranking } = detail;
   if (!ranking) return null;
 
@@ -49,66 +51,60 @@ export function ScoreBreakdown({ detail }: Props) {
     if (fund.pe != null) {
       const signal = fund.pe < 20 ? 'bullish' : fund.pe > 35 ? 'bearish' : 'neutral';
       fundDrivers.push({
-        label: 'P/E Ratio',
+        label: t('metric.pe'),
         value: formatRatio(fund.pe),
         signal,
-        explanation: fund.pe < 20 ? 'Low valuation relative to earnings' :
-          fund.pe > 35 ? 'High valuation relative to earnings' : 'Moderate valuation',
+        explanation: t(`driver.pe.${signal}` as any),
       });
     }
     if (fund.roe != null) {
       const signal = fund.roe > 0.20 ? 'bullish' : fund.roe < 0.10 ? 'bearish' : 'neutral';
       fundDrivers.push({
-        label: 'ROE',
+        label: t('metric.roe'),
         value: formatPercent(fund.roe),
         signal,
-        explanation: fund.roe > 0.20 ? 'Strong return on equity' :
-          fund.roe < 0.10 ? 'Weak return on equity' : 'Average return on equity',
+        explanation: t(`driver.roe.${signal}` as any),
       });
     }
     if (fund.revenue_growth != null) {
       const signal = fund.revenue_growth > 0.10 ? 'bullish' : fund.revenue_growth < 0 ? 'bearish' : 'neutral';
       fundDrivers.push({
-        label: 'Revenue Growth',
+        label: t('metric.revGrowth'),
         value: formatPercent(fund.revenue_growth),
         signal,
-        explanation: fund.revenue_growth > 0.10 ? 'Strong revenue growth' :
-          fund.revenue_growth < 0 ? 'Revenue declining' : 'Modest revenue growth',
+        explanation: t(`driver.revGrowth.${signal}` as any),
       });
     }
     if (fund.earnings_growth != null) {
       const signal = fund.earnings_growth > 0.10 ? 'bullish' : fund.earnings_growth < 0 ? 'bearish' : 'neutral';
       fundDrivers.push({
-        label: 'Earnings Growth',
+        label: t('metric.earnGrowth'),
         value: formatPercent(fund.earnings_growth),
         signal,
-        explanation: fund.earnings_growth > 0.10 ? 'Strong earnings growth' :
-          fund.earnings_growth < 0 ? 'Earnings declining' : 'Modest earnings growth',
+        explanation: t(`driver.earnGrowth.${signal}` as any),
       });
     }
     if (fund.debt_to_equity != null) {
       const signal = fund.debt_to_equity < 50 ? 'bullish' : fund.debt_to_equity > 150 ? 'bearish' : 'neutral';
       fundDrivers.push({
-        label: 'Debt/Equity',
+        label: t('metric.debtEquity'),
         value: formatRatio(fund.debt_to_equity),
         signal,
-        explanation: fund.debt_to_equity < 50 ? 'Low leverage, strong balance sheet' :
-          fund.debt_to_equity > 150 ? 'High leverage, financial risk' : 'Moderate leverage',
+        explanation: t(`driver.debt.${signal}` as any),
       });
     }
     if (fund.profit_margin != null) {
       const signal = fund.profit_margin > 0.20 ? 'bullish' : fund.profit_margin < 0.05 ? 'bearish' : 'neutral';
       fundDrivers.push({
-        label: 'Profit Margin',
+        label: t('metric.profitMargin'),
         value: formatPercent(fund.profit_margin),
         signal,
-        explanation: fund.profit_margin > 0.20 ? 'High profitability' :
-          fund.profit_margin < 0.05 ? 'Low profitability' : 'Average profitability',
+        explanation: t(`driver.margin.${signal}` as any),
       });
     }
   }
   factors.push({
-    name: 'Fundamental',
+    name: t('detail.fundamentals'),
     score: ranking.fundamental_score,
     weight: '40%',
     drivers: fundDrivers,
@@ -120,60 +116,57 @@ export function ScoreBreakdown({ detail }: Props) {
     if (tech.trend_alignment != null) {
       const signal = tech.trend_alignment > 0.6 ? 'bullish' : tech.trend_alignment < 0.3 ? 'bearish' : 'neutral';
       techDrivers.push({
-        label: 'Trend Alignment',
+        label: t('metric.trendAlignment'),
         value: formatPercent(tech.trend_alignment),
         signal,
-        explanation: tech.trend_alignment > 0.6 ? 'Price above key moving averages (bullish trend)' :
-          tech.trend_alignment < 0.3 ? 'Price below key moving averages (bearish trend)' :
-            'Mixed trend signals',
+        explanation: t(`driver.trend.${signal}` as any),
       });
     }
     if (tech.rsi != null) {
       const signal = tech.rsi > 50 && tech.rsi < 70 ? 'bullish' :
         tech.rsi >= 70 ? 'bearish' : tech.rsi < 30 ? 'bullish' : 'neutral';
+      const rsiKey = tech.rsi >= 70 ? 'overbought' : tech.rsi <= 30 ? 'oversold' :
+        tech.rsi > 50 ? 'positive' : 'weak';
       techDrivers.push({
-        label: 'RSI',
+        label: t('metric.rsi'),
         value: formatRatio(tech.rsi),
         signal,
-        explanation: tech.rsi >= 70 ? 'Overbought territory, potential pullback' :
-          tech.rsi <= 30 ? 'Oversold territory, potential bounce' :
-            tech.rsi > 50 ? 'Positive momentum' : 'Weak momentum',
+        explanation: t(`driver.rsi.${rsiKey}` as any),
       });
     }
     if (tech.macd_histogram != null) {
       const signal = tech.macd_histogram > 0 ? 'bullish' : 'bearish';
       techDrivers.push({
-        label: 'MACD Histogram',
+        label: t('metric.macdHist'),
         value: formatRatio(tech.macd_histogram),
         signal,
-        explanation: tech.macd_histogram > 0 ? 'Positive MACD momentum' : 'Negative MACD momentum',
+        explanation: t(`driver.macd.${signal}` as any),
       });
     }
     if (tech.bb_position != null) {
       const signal = tech.bb_position > 0.5 && tech.bb_position < 0.8 ? 'bullish' :
         tech.bb_position >= 0.8 ? 'bearish' : tech.bb_position < 0.2 ? 'bullish' : 'neutral';
+      const bbKey = tech.bb_position >= 0.8 ? 'high' : tech.bb_position <= 0.2 ? 'low' : 'normal';
       techDrivers.push({
-        label: 'Bollinger Position',
+        label: t('metric.bbPosition'),
         value: formatPercent(tech.bb_position),
         signal,
-        explanation: tech.bb_position >= 0.8 ? 'Near upper band, potentially overextended' :
-          tech.bb_position <= 0.2 ? 'Near lower band, potentially oversold' :
-            'Within normal trading range',
+        explanation: t(`driver.bb.${bbKey}` as any),
       });
     }
     if (tech.volume_ratio != null) {
       const signal = tech.volume_ratio > 1.5 ? 'bullish' : tech.volume_ratio < 0.5 ? 'bearish' : 'neutral';
+      const volKey = tech.volume_ratio > 1.5 ? 'high' : tech.volume_ratio < 0.5 ? 'low' : 'normal';
       techDrivers.push({
-        label: 'Volume Ratio',
+        label: t('metric.volRatio'),
         value: `${tech.volume_ratio.toFixed(2)}x`,
         signal,
-        explanation: tech.volume_ratio > 1.5 ? 'Above average volume, strong interest' :
-          tech.volume_ratio < 0.5 ? 'Below average volume, low interest' : 'Normal volume',
+        explanation: t(`driver.vol.${volKey}` as any),
       });
     }
   }
   factors.push({
-    name: 'Technical',
+    name: t('detail.technical'),
     score: ranking.technical_score,
     weight: '35%',
     drivers: techDrivers,
@@ -185,21 +178,20 @@ export function ScoreBreakdown({ detail }: Props) {
     const compound = sent.sentiment_compound;
     const signal = compound > 0.1 ? 'bullish' : compound < -0.1 ? 'bearish' : 'neutral';
     sentDrivers.push({
-      label: 'News Sentiment',
+      label: t('metric.newsSentiment'),
       value: formatRatio(compound),
       signal,
-      explanation: compound > 0.1 ? 'Positive news sentiment overall' :
-        compound < -0.1 ? 'Negative news sentiment overall' : 'Neutral news sentiment',
+      explanation: t(`driver.sentiment.${signal}` as any),
     });
     sentDrivers.push({
-      label: 'News Volume',
-      value: `${sent.news_count} articles`,
-      signal: sent.news_count >= 10 ? 'neutral' : 'neutral',
-      explanation: `Based on ${sent.news_count} recent news articles`,
+      label: t('metric.newsVolume'),
+      value: t('detail.articles', { count: sent.news_count }),
+      signal: 'neutral',
+      explanation: t('driver.newsVolume', { count: sent.news_count }),
     });
   }
   factors.push({
-    name: 'Sentiment',
+    name: t('detail.sentiment'),
     score: ranking.sentiment_score,
     weight: '25%',
     drivers: sentDrivers,
@@ -208,18 +200,22 @@ export function ScoreBreakdown({ detail }: Props) {
   // Generate overall summary
   const bullishCount = factors.flatMap(f => f.drivers).filter(d => d.signal === 'bullish').length;
   const bearishCount = factors.flatMap(f => f.drivers).filter(d => d.signal === 'bearish').length;
+  const totalIndicators = factors.flatMap(f => f.drivers).length;
 
   return (
     <div className="rounded-lg bg-white p-4 shadow-sm dark:bg-gray-800">
-      <h2 className="mb-4 text-lg font-semibold text-gray-900 dark:text-white">Rating Analysis</h2>
+      <h2 className="mb-4 text-lg font-semibold text-gray-900 dark:text-white">{t('detail.ratingAnalysis')}</h2>
 
       {/* Summary */}
       <div className="mb-4 rounded-md bg-gray-50 p-3 text-sm text-gray-700 dark:bg-gray-900 dark:text-gray-300">
-        <strong>{detail.ticker}</strong> is rated <strong>{ranking.tier_label}</strong> (rank #{ranking.rank}, top {formatPercent(ranking.percentile)})
-        with a composite score of <strong>{formatScore(ranking.composite_score)}</strong>.
-        {' '}The analysis found <span className="font-medium text-green-700 dark:text-green-400">{bullishCount} bullish</span> and{' '}
-        <span className="font-medium text-red-700 dark:text-red-400">{bearishCount} bearish</span> signals across{' '}
-        {factors.flatMap(f => f.drivers).length} indicators.
+        {t('detail.ratedAs', {
+          ticker: detail.ticker,
+          tier: t(`tier.${ranking.tier}` as any),
+          rank: ranking.rank,
+          pct: formatPercent(ranking.percentile),
+          score: formatScore(ranking.composite_score),
+        })}
+        {' '}{t('detail.signalSummary', { bullish: bullishCount, bearish: bearishCount, total: totalIndicators })}
       </div>
 
       {/* Factor breakdown */}
@@ -229,7 +225,7 @@ export function ScoreBreakdown({ detail }: Props) {
             <div className="mb-2 flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <span className="font-semibold text-gray-900 dark:text-white">{factor.name}</span>
-                <span className="text-xs text-gray-500 dark:text-gray-400">(Weight: {factor.weight})</span>
+                <span className="text-xs text-gray-500 dark:text-gray-400">({t('detail.weight', { weight: factor.weight })})</span>
               </div>
               <span className="font-mono text-sm font-medium text-gray-900 dark:text-white">
                 {formatScore(factor.score)}
@@ -249,7 +245,7 @@ export function ScoreBreakdown({ detail }: Props) {
                 </div>
               ))}
               {factor.drivers.length === 0 && (
-                <p className="text-xs text-gray-400 dark:text-gray-500">No data available for this factor</p>
+                <p className="text-xs text-gray-400 dark:text-gray-500">{t('detail.noFactorData')}</p>
               )}
             </div>
           </div>

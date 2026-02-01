@@ -52,9 +52,9 @@ export function About() {
       <section className="rounded-lg bg-white p-6 shadow-sm dark:bg-gray-800">
         <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">{t('about.dataSources')}</h2>
         <ul className="list-disc space-y-1 pl-5 text-sm text-gray-600 dark:text-gray-400">
-          <li>Price data &amp; fundamentals: Yahoo Finance (via yfinance)</li>
-          <li>News headlines: Yahoo Finance / Finviz</li>
-          <li>Stock universe: Wikipedia (S&amp;P 500 + NASDAQ 100 lists)</li>
+          <li>{t('about.dataPrice')}</li>
+          <li>{t('about.dataNews')}</li>
+          <li>{t('about.dataUniverse')}</li>
         </ul>
       </section>
 
@@ -64,7 +64,7 @@ export function About() {
       </section>
 
       <section className="rounded-lg bg-white p-6 shadow-sm dark:bg-gray-800">
-        <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">RSS Feed</h2>
+        <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">{t('about.rssFeed')}</h2>
         <p className="text-sm text-gray-600 dark:text-gray-400">
           <a href="/data/feed.xml" className="text-blue-600 hover:underline dark:text-blue-400">
             https://athene.johnsonlee.io/data/feed.xml

@@ -7,28 +7,30 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 import type { RankedStock } from '../../types';
+import { useI18n } from '../../lib/i18n';
 
 interface Props {
   ranking: RankedStock | null;
 }
 
 export function ScoreRadar({ ranking }: Props) {
+  const { t } = useI18n();
   if (!ranking) return null;
 
   const data = [
-    { factor: 'Value', score: ranking.value_score ?? 0 },
-    { factor: 'Quality', score: ranking.quality_score ?? 0 },
-    { factor: 'Growth', score: ranking.growth_score ?? 0 },
-    { factor: 'Safety', score: ranking.safety_score ?? 0 },
-    { factor: 'Trend', score: ranking.trend_score ?? 0 },
-    { factor: 'Momentum', score: ranking.momentum_score ?? 0 },
-    { factor: 'Volatility', score: ranking.volatility_score ?? 0 },
-    { factor: 'Volume', score: ranking.volume_score ?? 0 },
+    { factor: t('factor.value'), score: ranking.value_score ?? 0 },
+    { factor: t('factor.quality'), score: ranking.quality_score ?? 0 },
+    { factor: t('factor.growth'), score: ranking.growth_score ?? 0 },
+    { factor: t('factor.safety'), score: ranking.safety_score ?? 0 },
+    { factor: t('factor.trend'), score: ranking.trend_score ?? 0 },
+    { factor: t('factor.momentum'), score: ranking.momentum_score ?? 0 },
+    { factor: t('factor.volatility'), score: ranking.volatility_score ?? 0 },
+    { factor: t('factor.volume'), score: ranking.volume_score ?? 0 },
   ];
 
   return (
     <div className="rounded-lg bg-white p-4 shadow-sm dark:bg-gray-800">
-      <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">Factor Scores</h3>
+      <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">{t('detail.factorScores')}</h3>
       <ResponsiveContainer width="100%" height={280}>
         <RadarChart data={data}>
           <PolarGrid />

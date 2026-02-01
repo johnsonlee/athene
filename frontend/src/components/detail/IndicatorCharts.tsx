@@ -15,6 +15,7 @@ import {
 import type { PriceBar, TechnicalData } from '../../types';
 import { computeIndicators } from '../../lib/indicators';
 import { formatLargeNumber } from '../../lib/formatters';
+import { useI18n } from '../../lib/i18n';
 
 interface Props {
   prices: PriceBar[];
@@ -22,6 +23,7 @@ interface Props {
 }
 
 export function IndicatorCharts({ prices, technical }: Props) {
+  const { t } = useI18n();
   const data = useMemo(() => {
     if (prices.length === 0) return [];
     const all = computeIndicators(prices);
@@ -38,13 +40,13 @@ export function IndicatorCharts({ prices, technical }: Props) {
     <div className="grid gap-4 lg:grid-cols-2">
       {/* Volume chart */}
       <div className="rounded-lg bg-white p-4 shadow-sm dark:bg-gray-800">
-        <h3 className="mb-2 text-sm font-semibold text-gray-700 dark:text-gray-300">Volume</h3>
+        <h3 className="mb-2 text-sm font-semibold text-gray-700 dark:text-gray-300">{t('detail.volume')}</h3>
         <ResponsiveContainer width="100%" height={150}>
           <BarChart data={data}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="date" tick={{ fontSize: 10 }} interval="preserveStartEnd" />
             <YAxis tickFormatter={formatLargeNumber} tick={{ fontSize: 10 }} width={50} />
-            <Tooltip formatter={(value?: number) => [formatLargeNumber(value ?? 0), 'Volume']} />
+            <Tooltip formatter={(value?: number) => [formatLargeNumber(value ?? 0), t('detail.volume')]} />
             <Bar dataKey="volume" fill="#94a3b8" />
           </BarChart>
         </ResponsiveContainer>
@@ -53,7 +55,7 @@ export function IndicatorCharts({ prices, technical }: Props) {
       {/* RSI chart */}
       <div className="rounded-lg bg-white p-4 shadow-sm dark:bg-gray-800">
         <h3 className="mb-2 text-sm font-semibold text-gray-700 dark:text-gray-300">
-          RSI (14)
+          {t('chart.rsi14')}
           {technical?.rsi != null && (
             <span className="ml-2 font-mono text-xs text-gray-500 dark:text-gray-400">{technical.rsi.toFixed(1)}</span>
           )}
@@ -74,10 +76,10 @@ export function IndicatorCharts({ prices, technical }: Props) {
       {/* MACD chart */}
       <div className="rounded-lg bg-white p-4 shadow-sm dark:bg-gray-800">
         <h3 className="mb-2 text-sm font-semibold text-gray-700 dark:text-gray-300">
-          MACD (12, 26, 9)
+          {t('chart.macd1226')}
           {technical?.macd_histogram != null && (
             <span className={`ml-2 font-mono text-xs ${technical.macd_histogram >= 0 ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'}`}>
-              Hist: {technical.macd_histogram.toFixed(3)}
+              {t('chart.hist')}: {technical.macd_histogram.toFixed(3)}
             </span>
           )}
         </h3>
@@ -89,7 +91,7 @@ export function IndicatorCharts({ prices, technical }: Props) {
             <ReferenceLine y={0} stroke="#9ca3af" />
             <Tooltip formatter={(value?: number, name?: string) => [
               value != null ? value.toFixed(3) : 'N/A',
-              name === 'macdLine' ? 'MACD' : name === 'macdSignal' ? 'Signal' : 'Histogram',
+              name === 'macdLine' ? t('metric.macd') : name === 'macdSignal' ? t('chart.signal') : t('chart.histogram'),
             ]} />
             <Bar dataKey="macdHist" fill="#94a3b8" opacity={0.5} />
             <Line dataKey="macdLine" stroke="#3b82f6" dot={false} connectNulls strokeWidth={1.5} />
@@ -101,7 +103,7 @@ export function IndicatorCharts({ prices, technical }: Props) {
       {/* Stochastic chart */}
       <div className="rounded-lg bg-white p-4 shadow-sm dark:bg-gray-800">
         <h3 className="mb-2 text-sm font-semibold text-gray-700 dark:text-gray-300">
-          Stochastic (14, 3, 3)
+          {t('chart.stochastic')}
           {technical?.stoch_k != null && (
             <span className="ml-2 font-mono text-xs text-gray-500 dark:text-gray-400">
               K: {technical.stoch_k.toFixed(1)} / D: {technical.stoch_d?.toFixed(1) ?? 'N/A'}

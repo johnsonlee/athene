@@ -120,6 +120,37 @@ def export_sentiment(sentiment_df: pd.DataFrame) -> str:
     return _write_json(records, "sentiment.json")
 
 
+def export_history(ranked: pd.DataFrame, run_date: str | None = None) -> str:
+    """Append today's snapshot to history.json.
+
+    Each day's entry is keyed by date, containing per-ticker
+    composite_score, tier, rank, and percentile.
+    """
+    run_date = run_date or datetime.now().strftime("%Y-%m-%d")
+
+    history_path = os.path.join(OUTPUT_DIR, "history.json")
+    history: dict = {}
+    if os.path.exists(history_path):
+        with open(history_path, "r", encoding="utf-8") as f:
+            try:
+                history = json.load(f)
+            except json.JSONDecodeError:
+                history = {}
+
+    daily: dict = {}
+    for ticker, row in ranked.iterrows():
+        daily[str(ticker)] = {
+            "composite_score": float(row.get("composite_score", 0)),
+            "tier": str(row.get("tier", "")),
+            "rank": int(row.get("rank", 0)),
+            "percentile": float(row.get("percentile", 0)),
+        }
+
+    history[run_date] = daily
+    log.info(f"History: added {len(daily)} tickers for {run_date} ({len(history)} total days)")
+    return _write_json(history, "history.json")
+
+
 def export_stock_detail(
     ticker: str,
     prices: pd.DataFrame,

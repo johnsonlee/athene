@@ -130,6 +130,16 @@ export interface StockDetail {
   headlines: HeadlineItem[];
 }
 
+export interface HistorySnapshot {
+  composite_score: number;
+  tier: TierKey;
+  rank: number;
+  percentile: number;
+}
+
+/** history.json: keyed by date, then by ticker */
+export type DailyHistory = Record<string, Record<string, HistorySnapshot>>;
+
 export interface FilterState {
   search: string;
   sectors: string[];

@@ -25,6 +25,7 @@ from engine.exporters.json_exporter import (
     export_fundamentals,
     export_technicals,
     export_sentiment,
+    export_history,
     export_stock_detail,
 )
 from engine.exporters.changes import detect_changes, format_changes_markdown
@@ -140,6 +141,7 @@ def run(tickers_override: list[str] | None = None) -> None:
     export_fundamentals(fund_df)
     export_technicals(tech_df)
     export_sentiment(sent_df)
+    export_history(ranked, run_date)
 
     # Export individual stock details (use scored DataFrames for sub-scores)
     log.info("Exporting individual stock details...")

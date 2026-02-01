@@ -35,7 +35,7 @@ export function useFilterSort(data: RankedStock[]) {
 
   const sectors = useMemo(() => {
     const set = new Set<string>();
-    data.forEach((s) => { if (s.sector) set.add(s.sector); });
+    data.forEach((s) => { if (s.sector && s.sector !== 'Unknown') set.add(s.sector); });
     return Array.from(set).sort();
   }, [data]);
 

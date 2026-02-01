@@ -9,7 +9,7 @@ export function ExportButton({ data }: Props) {
   const { t } = useI18n();
 
   const handleExport = () => {
-    const headers = ['Rank', 'Ticker', 'Name', 'Sector', 'Score', 'Fundamental', 'Technical', 'Sentiment', 'Rating'];
+    const headers = [t('table.rank'), t('table.ticker'), t('table.name'), t('table.sector'), t('table.score'), t('table.fundamental'), t('table.technical'), t('table.sentiment'), t('table.rating')];
     const rows = data.map((s) => [
       s.rank,
       s.ticker,

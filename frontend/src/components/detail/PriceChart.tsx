@@ -3,6 +3,7 @@ import { createChart, type IChartApi, CandlestickSeries, HistogramSeries, LineSe
 import type { PriceBar } from '../../types';
 import { computeIndicators } from '../../lib/indicators';
 import { useTheme } from '../../lib/theme';
+import { useI18n } from '../../lib/i18n';
 
 interface Props {
   prices: PriceBar[];
@@ -15,6 +16,7 @@ export function PriceChart({ prices, ticker }: Props) {
 
   const indicators = useMemo(() => computeIndicators(prices), [prices]);
   const { theme } = useTheme();
+  const { t } = useI18n();
   const isDark = theme === 'dark';
 
   useEffect(() => {
@@ -140,11 +142,11 @@ export function PriceChart({ prices, ticker }: Props) {
 
   return (
     <div className="rounded-lg bg-white p-4 shadow-sm dark:bg-gray-800">
-      <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">{ticker} Price Chart</h2>
+      <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">{t('detail.priceChart', { ticker })}</h2>
       <div className="mb-1 flex flex-wrap gap-3 text-xs text-gray-500 dark:text-gray-400">
-        <span><span className="inline-block h-2 w-4 rounded" style={{ backgroundColor: '#f59e0b' }} /> SMA 20</span>
-        <span><span className="inline-block h-2 w-4 rounded" style={{ backgroundColor: '#3b82f6' }} /> SMA 50</span>
-        <span><span className="inline-block h-2 w-4 rounded" style={{ backgroundColor: 'rgba(156,163,175,0.5)' }} /> Bollinger Bands</span>
+        <span><span className="inline-block h-2 w-4 rounded" style={{ backgroundColor: '#f59e0b' }} /> {t('metric.sma20')}</span>
+        <span><span className="inline-block h-2 w-4 rounded" style={{ backgroundColor: '#3b82f6' }} /> {t('metric.sma50')}</span>
+        <span><span className="inline-block h-2 w-4 rounded" style={{ backgroundColor: 'rgba(156,163,175,0.5)' }} /> {t('chart.bollingerBands')}</span>
       </div>
       <div ref={containerRef} />
     </div>
