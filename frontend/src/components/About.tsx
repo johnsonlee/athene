@@ -111,14 +111,6 @@ export function About() {
           </tbody>
         </table>
 
-        <h3 className="mt-4 font-semibold text-gray-900 dark:text-white">{t('about.icTitle')}</h3>
-        <p className="mt-2 mb-3 text-sm text-gray-600 dark:text-gray-400">{t('about.icDesc')}</p>
-        {icData ? (
-          <ICTable data={icData} t={t} />
-        ) : (
-          <p className="text-sm text-gray-500 dark:text-gray-400">{t('about.icInsufficient')}</p>
-        )}
-
         <h3 className="mt-4 font-semibold text-gray-900 dark:text-white">{t('about.scoringTitle')}</h3>
         <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">{t('about.scoringAbsolute')}</p>
         <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">{t('about.scoringComposite')}</p>
@@ -152,6 +144,14 @@ export function About() {
           </tbody>
         </table>
         <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">{t('about.hysteresis')}</p>
+
+        <h3 className="mt-4 font-semibold text-gray-900 dark:text-white">{t('about.icTitle')}</h3>
+        <p className="mt-2 mb-3 text-sm text-gray-600 dark:text-gray-400">{t('about.icDesc')}</p>
+        {icData ? (
+          <ICTable data={icData} t={t} />
+        ) : (
+          <p className="text-sm text-gray-500 dark:text-gray-400">{t('about.icInsufficient')}</p>
+        )}
       </section>
 
       <section className="rounded-lg bg-white p-6 shadow-sm dark:bg-gray-800">
