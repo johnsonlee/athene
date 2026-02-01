@@ -21,7 +21,8 @@ export function ScoreDistribution({ rankings }: Props) {
     }));
 
     scores.forEach((score) => {
-      const idx = Math.min(Math.floor(score / binWidth), bins - 1);
+      if (score == null || isNaN(score)) return;
+      const idx = Math.min(Math.max(0, Math.floor(score / binWidth)), bins - 1);
       histogram[idx].count++;
     });
 
