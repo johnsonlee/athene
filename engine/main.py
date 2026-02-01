@@ -27,6 +27,7 @@ from engine.exporters.json_exporter import (
 )
 from engine.exporters.changes import detect_changes, format_changes_markdown
 from engine.exporters.feed import generate_feed
+from engine.analyzers.ic_tracker import export_ic
 from engine.utils.logger import get_logger
 from engine.utils.market_calendar import is_us_trading_day
 
@@ -198,6 +199,12 @@ def run(tickers_override: list[str] | None = None) -> None:
         export_meta(len(tickers), run_date)
         export_rankings(ranked, universe)
         export_history(ranked, run_date)
+
+        # Compute IC after history is updated (needs >=2 days for meaningful results)
+        try:
+            export_ic()
+        except Exception as e:
+            log.warning(f"IC computation skipped: {e}")
     else:
         log.info("Partial run — skipping global aggregation exports")
 

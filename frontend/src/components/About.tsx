@@ -1,7 +1,79 @@
+import { Fragment } from 'react';
 import { useI18n } from '../lib/i18n';
+import { useIC } from '../hooks/useIC';
+import type { ICData } from '../types';
+
+function ICTable({ data, t }: { data: ICData; t: (key: any, params?: any) => string }) {
+  const factorLabels: Record<string, string> = {
+    composite_score: t('table.score'),
+    fundamental_score: t('detail.fundamentals'),
+    technical_score: t('detail.technical'),
+    sentiment_score: t('detail.sentiment'),
+  };
+
+  const hasData = Object.values(data.factors).some((horizons) =>
+    Object.values(horizons).some((s) => s.count > 0)
+  );
+
+  if (!hasData) {
+    return <p className="text-sm text-gray-500 dark:text-gray-400">{t('about.icInsufficient')}</p>;
+  }
+
+  return (
+    <table className="mt-2 w-full text-sm">
+      <thead>
+        <tr className="border-b text-left dark:border-gray-700">
+          <th className="py-1 text-gray-900 dark:text-white">{t('about.icFactor')}</th>
+          {data.horizons.map((h) => (
+            <th key={h} colSpan={3} className="py-1 text-center text-gray-900 dark:text-white">
+              {t('about.icHorizon', { days: h })}
+            </th>
+          ))}
+        </tr>
+        <tr className="border-b text-xs text-gray-500 dark:border-gray-700 dark:text-gray-400">
+          <th />
+          {data.horizons.map((h) => (
+            <Fragment key={h}>
+              <th className="py-1 text-center">{t('about.icMeanIC')}</th>
+              <th className="py-1 text-center">{t('about.icIR')}</th>
+              <th className="py-1 text-center">{t('about.icHitRate')}</th>
+            </Fragment>
+          ))}
+        </tr>
+      </thead>
+      <tbody className="text-gray-600 dark:text-gray-400">
+        {Object.entries(data.factors).map(([factor, horizons]) => (
+          <tr key={factor} className="border-b dark:border-gray-700">
+            <td className="py-1 font-medium text-gray-800 dark:text-gray-200">
+              {factorLabels[factor] || factor}
+            </td>
+            {data.horizons.map((h) => {
+              const s = horizons[String(h)];
+              const na = t('about.icNA');
+              return (
+                <Fragment key={h}>
+                  <td className="py-1 text-center font-mono">
+                    {s?.mean != null ? s.mean.toFixed(3) : na}
+                  </td>
+                  <td className="py-1 text-center font-mono">
+                    {s?.ir != null ? s.ir.toFixed(2) : na}
+                  </td>
+                  <td className="py-1 text-center font-mono">
+                    {s?.hit_rate != null ? `${(s.hit_rate * 100).toFixed(0)}%` : na}
+                  </td>
+                </Fragment>
+              );
+            })}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
 
 export function About() {
   const { t } = useI18n();
+  const { data: icData } = useIC();
 
   return (
     <div className="mx-auto max-w-3xl space-y-6">
@@ -86,6 +158,16 @@ export function About() {
       <section className="rounded-lg bg-white p-6 shadow-sm dark:bg-gray-800">
         <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">{t('about.disclaimer')}</h2>
         <p className="text-sm text-gray-600 dark:text-gray-400">{t('about.disclaimerText')}</p>
+      </section>
+
+      <section className="rounded-lg bg-white p-6 shadow-sm dark:bg-gray-800">
+        <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">{t('about.icTitle')}</h2>
+        <p className="mb-3 text-sm text-gray-600 dark:text-gray-400">{t('about.icDesc')}</p>
+        {icData ? (
+          <ICTable data={icData} t={t} />
+        ) : (
+          <p className="text-sm text-gray-500 dark:text-gray-400">{t('about.icInsufficient')}</p>
+        )}
       </section>
 
       <section className="rounded-lg bg-white p-6 shadow-sm dark:bg-gray-800">

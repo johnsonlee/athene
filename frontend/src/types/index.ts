@@ -143,6 +143,23 @@ export interface HistorySnapshot {
 /** history.json: keyed by date, then by ticker */
 export type DailyHistory = Record<string, Record<string, HistorySnapshot>>;
 
+export interface ICHorizonStats {
+  dates: string[];
+  ic: number[];
+  count: number;
+  mean: number | null;
+  std: number | null;
+  ir: number | null;
+  hit_rate: number | null;
+}
+
+export interface ICData {
+  horizons: number[];
+  factors: Record<string, Record<string, ICHorizonStats>>;
+  computed_at: string;
+  num_dates: number;
+}
+
 export interface FilterState {
   search: string;
   sectors: string[];

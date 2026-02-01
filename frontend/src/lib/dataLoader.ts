@@ -17,3 +17,7 @@ export function loadRankings() {
 export function loadStockDetail(ticker: string) {
   return fetchJson<import('../types').StockDetail>(`stocks/${ticker}.json`);
 }
+
+export function loadIC() {
+  return fetchJson<import('../types').ICData>('ic.json');
+}
