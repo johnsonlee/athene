@@ -1,10 +1,13 @@
 import type { RankedStock } from '../../types';
+import { useI18n } from '../../lib/i18n';
 
 interface Props {
   data: RankedStock[];
 }
 
 export function ExportButton({ data }: Props) {
+  const { t } = useI18n();
+
   const handleExport = () => {
     const headers = ['Rank', 'Ticker', 'Name', 'Sector', 'Score', 'Fundamental', 'Technical', 'Sentiment', 'Rating'];
     const rows = data.map((s) => [
@@ -34,7 +37,7 @@ export function ExportButton({ data }: Props) {
       onClick={handleExport}
       className="rounded-md bg-gray-900 px-3 py-1.5 text-sm font-medium text-white hover:bg-gray-700"
     >
-      Export CSV
+      {t('screener.exportCsv')}
     </button>
   );
 }

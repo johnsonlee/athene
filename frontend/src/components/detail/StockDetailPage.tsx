@@ -7,14 +7,16 @@ import { IndicatorCharts } from './IndicatorCharts';
 import { ScoreRadar } from './ScoreRadar';
 import { ScoreBreakdown } from './ScoreBreakdown';
 import { formatScore, formatPrice, formatPercent, formatLargeNumber, formatRatio } from '../../lib/formatters';
+import { useI18n } from '../../lib/i18n';
 
 export function StockDetailPage() {
   const { ticker } = useParams<{ ticker: string }>();
   const { data, loading, error } = useStockDetail(ticker);
+  const { t } = useI18n();
 
-  if (loading) return <LoadingSpinner message={`Loading ${ticker}...`} />;
-  if (error) return <p className="text-center text-red-600">Error: {error}</p>;
-  if (!data) return <p className="text-center text-gray-500">No data found</p>;
+  if (loading) return <LoadingSpinner message={t('common.loading')} />;
+  if (error) return <p className="text-center text-red-600">{t('common.error', { message: error })}</p>;
+  if (!data) return <p className="text-center text-gray-500">{t('common.noDataFound')}</p>;
 
   const { fundamental, technical, sentiment, ranking } = data;
 
@@ -23,7 +25,7 @@ export function StockDetailPage() {
       {/* Header */}
       <div className="flex items-start justify-between">
         <div>
-          <Link to="/screener" className="text-sm text-blue-600 hover:underline">&larr; Back to Screener</Link>
+          <Link to="/screener" className="text-sm text-blue-600 hover:underline">&larr; {t('detail.backToScreener')}</Link>
           <h1 className="mt-1 text-2xl font-bold text-gray-900">{ticker}</h1>
           {fundamental?.current_price && (
             <p className="text-xl font-semibold text-gray-700">
@@ -33,9 +35,9 @@ export function StockDetailPage() {
         </div>
         {ranking && (
           <div className="text-right">
-            <p className="text-sm text-gray-500">Rank #{ranking.rank}</p>
+            <p className="text-sm text-gray-500">{t('detail.rank', { rank: ranking.rank })}</p>
             <p className="text-lg font-bold">{formatScore(ranking.composite_score)}</p>
-            <ScoreBadge tier={ranking.tier} label={ranking.tier_label} />
+            <ScoreBadge tier={ranking.tier} label={t(`tier.${ranking.tier}` as any)} />
           </div>
         )}
       </div>
@@ -55,64 +57,64 @@ export function StockDetailPage() {
 
         {/* Fundamental card */}
         <div className="rounded-lg bg-white p-4 shadow-sm">
-          <h3 className="mb-3 font-semibold text-gray-900">Fundamentals</h3>
+          <h3 className="mb-3 font-semibold text-gray-900">{t('detail.fundamentals')}</h3>
           {fundamental ? (
             <dl className="space-y-1 text-sm">
-              <MetricRow label="P/E" value={formatRatio(fundamental.pe)} />
-              <MetricRow label="Fwd P/E" value={formatRatio(fundamental.forward_pe)} />
-              <MetricRow label="P/B" value={formatRatio(fundamental.pb)} />
-              <MetricRow label="P/S" value={formatRatio(fundamental.ps)} />
-              <MetricRow label="ROE" value={formatPercent(fundamental.roe)} />
-              <MetricRow label="ROA" value={formatPercent(fundamental.roa)} />
-              <MetricRow label="Rev Growth" value={formatPercent(fundamental.revenue_growth)} />
-              <MetricRow label="Earn Growth" value={formatPercent(fundamental.earnings_growth)} />
-              <MetricRow label="Debt/Equity" value={formatRatio(fundamental.debt_to_equity)} />
-              <MetricRow label="Market Cap" value={formatLargeNumber(fundamental.market_cap)} />
-              <MetricRow label="Profit Margin" value={formatPercent(fundamental.profit_margin)} />
-              <MetricRow label="Dividend Yield" value={formatPercent(fundamental.dividend_yield)} />
-              <MetricRow label="Beta" value={formatRatio(fundamental.beta)} />
-              <MetricRow label="52W High" value={formatPrice(fundamental.high_52w)} />
-              <MetricRow label="52W Low" value={formatPrice(fundamental.low_52w)} />
+              <MetricRow label={t('metric.pe')} value={formatRatio(fundamental.pe)} />
+              <MetricRow label={t('metric.fwdPe')} value={formatRatio(fundamental.forward_pe)} />
+              <MetricRow label={t('metric.pb')} value={formatRatio(fundamental.pb)} />
+              <MetricRow label={t('metric.ps')} value={formatRatio(fundamental.ps)} />
+              <MetricRow label={t('metric.roe')} value={formatPercent(fundamental.roe)} />
+              <MetricRow label={t('metric.roa')} value={formatPercent(fundamental.roa)} />
+              <MetricRow label={t('metric.revGrowth')} value={formatPercent(fundamental.revenue_growth)} />
+              <MetricRow label={t('metric.earnGrowth')} value={formatPercent(fundamental.earnings_growth)} />
+              <MetricRow label={t('metric.debtEquity')} value={formatRatio(fundamental.debt_to_equity)} />
+              <MetricRow label={t('metric.marketCap')} value={formatLargeNumber(fundamental.market_cap)} />
+              <MetricRow label={t('metric.profitMargin')} value={formatPercent(fundamental.profit_margin)} />
+              <MetricRow label={t('metric.divYield')} value={formatPercent(fundamental.dividend_yield)} />
+              <MetricRow label={t('metric.beta')} value={formatRatio(fundamental.beta)} />
+              <MetricRow label={t('metric.52wHigh')} value={formatPrice(fundamental.high_52w)} />
+              <MetricRow label={t('metric.52wLow')} value={formatPrice(fundamental.low_52w)} />
             </dl>
           ) : (
-            <p className="text-sm text-gray-400">No data available</p>
+            <p className="text-sm text-gray-400">{t('detail.noData')}</p>
           )}
         </div>
 
         {/* Sentiment + Technical card */}
         <div className="space-y-4">
           <div className="rounded-lg bg-white p-4 shadow-sm">
-            <h3 className="mb-3 font-semibold text-gray-900">Technical</h3>
+            <h3 className="mb-3 font-semibold text-gray-900">{t('detail.technical')}</h3>
             {technical ? (
               <dl className="space-y-1 text-sm">
-                <MetricRow label="RSI" value={formatRatio(technical.rsi)} />
-                <MetricRow label="MACD" value={formatRatio(technical.macd_line)} />
-                <MetricRow label="MACD Hist" value={formatRatio(technical.macd_histogram)} />
-                <MetricRow label="SMA 20" value={formatPrice(technical.sma_20)} />
-                <MetricRow label="SMA 50" value={formatPrice(technical.sma_50)} />
-                <MetricRow label="SMA 200" value={formatPrice(technical.sma_200)} />
-                <MetricRow label="BB Position" value={formatRatio(technical.bb_position)} />
-                <MetricRow label="Vol Ratio" value={formatRatio(technical.volume_ratio)} />
-                <MetricRow label="Stoch K" value={formatRatio(technical.stoch_k)} />
-                <MetricRow label="Stoch D" value={formatRatio(technical.stoch_d)} />
+                <MetricRow label={t('metric.rsi')} value={formatRatio(technical.rsi)} />
+                <MetricRow label={t('metric.macd')} value={formatRatio(technical.macd_line)} />
+                <MetricRow label={t('metric.macdHist')} value={formatRatio(technical.macd_histogram)} />
+                <MetricRow label={t('metric.sma20')} value={formatPrice(technical.sma_20)} />
+                <MetricRow label={t('metric.sma50')} value={formatPrice(technical.sma_50)} />
+                <MetricRow label={t('metric.sma200')} value={formatPrice(technical.sma_200)} />
+                <MetricRow label={t('metric.bbPosition')} value={formatRatio(technical.bb_position)} />
+                <MetricRow label={t('metric.volRatio')} value={formatRatio(technical.volume_ratio)} />
+                <MetricRow label={t('metric.stochK')} value={formatRatio(technical.stoch_k)} />
+                <MetricRow label={t('metric.stochD')} value={formatRatio(technical.stoch_d)} />
               </dl>
             ) : (
-              <p className="text-sm text-gray-400">No data available</p>
+              <p className="text-sm text-gray-400">{t('detail.noData')}</p>
             )}
           </div>
 
           <div className="rounded-lg bg-white p-4 shadow-sm">
-            <h3 className="mb-3 font-semibold text-gray-900">Sentiment</h3>
+            <h3 className="mb-3 font-semibold text-gray-900">{t('detail.sentiment')}</h3>
             {sentiment ? (
               <dl className="space-y-1 text-sm">
-                <MetricRow label="Compound" value={formatRatio(sentiment.sentiment_compound)} />
-                <MetricRow label="Positive" value={formatPercent(sentiment.sentiment_pos)} />
-                <MetricRow label="Negative" value={formatPercent(sentiment.sentiment_neg)} />
-                <MetricRow label="Neutral" value={formatPercent(sentiment.sentiment_neu)} />
-                <MetricRow label="News Count" value={String(sentiment.news_count)} />
+                <MetricRow label={t('metric.compound')} value={formatRatio(sentiment.sentiment_compound)} />
+                <MetricRow label={t('metric.positive')} value={formatPercent(sentiment.sentiment_pos)} />
+                <MetricRow label={t('metric.negative')} value={formatPercent(sentiment.sentiment_neg)} />
+                <MetricRow label={t('metric.neutral')} value={formatPercent(sentiment.sentiment_neu)} />
+                <MetricRow label={t('metric.newsCount')} value={String(sentiment.news_count)} />
               </dl>
             ) : (
-              <p className="text-sm text-gray-400">No data available</p>
+              <p className="text-sm text-gray-400">{t('detail.noData')}</p>
             )}
           </div>
         </div>

@@ -1,12 +1,15 @@
 import { useMemo } from 'react';
 import type { RankedStock } from '../../types';
 import { formatScore } from '../../lib/formatters';
+import { useI18n } from '../../lib/i18n';
 
 interface Props {
   rankings: RankedStock[];
 }
 
 export function SectorHeatmap({ rankings }: Props) {
+  const { t } = useI18n();
+
   const sectorData = useMemo(() => {
     const grouped = new Map<string, { total: number; count: number }>();
     rankings.forEach((s) => {
@@ -29,7 +32,7 @@ export function SectorHeatmap({ rankings }: Props) {
 
   return (
     <div className="rounded-lg bg-white p-4 shadow-sm lg:col-span-2">
-      <h2 className="mb-3 text-lg font-semibold text-gray-900">Sector Overview</h2>
+      <h2 className="mb-3 text-lg font-semibold text-gray-900">{t('dashboard.sectorOverview')}</h2>
       <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
         {sectorData.map(({ sector, avgScore, count }) => {
           const intensity = avgScore / maxScore; // -1 to 1
@@ -45,7 +48,7 @@ export function SectorHeatmap({ rankings }: Props) {
             >
               <p className="text-xs font-medium text-gray-700">{sector}</p>
               <p className="text-lg font-bold text-gray-900">{formatScore(avgScore)}</p>
-              <p className="text-xs text-gray-500">{count} stocks</p>
+              <p className="text-xs text-gray-500">{t('dashboard.stocks', { count })}</p>
             </div>
           );
         })}
