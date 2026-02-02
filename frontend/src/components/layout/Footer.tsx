@@ -12,7 +12,7 @@ export function Footer() {
           Athene Stock Screener &middot; {t('footer.dataFrom')}
           {meta && (
             <>
-              {' '}&middot; {t('footer.lastUpdated', { date: meta.date })}
+              {' '}&middot; {t('footer.lastUpdated', { date: meta.timestamp?.slice(0, 16).replace('T', ' ') || meta.date })}
               {' '}&middot; {t('footer.stockCount', { count: meta.ticker_count })}
             </>
           )}
