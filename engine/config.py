@@ -1,17 +1,41 @@
 """Configuration constants for the Athene scoring engine."""
 
-# ---------- Factor weights ----------
+# ---------- Qualitative dimension weights (v3) ----------
+# Composite = EV*0.30 + VM*0.25 + CT*0.20 + DC*0.25
+WEIGHT_EARNINGS_VISIBILITY = 0.30
+WEIGHT_VALUATION_MARGIN = 0.25
+WEIGHT_CATALYST_TIMELINE = 0.20
+WEIGHT_DOWNSIDE_CONTROL = 0.25
+
+# Earnings Visibility sub-composition
+EV_WEIGHT_QUALITY = 0.60
+EV_WEIGHT_GROWTH = 0.40
+
+# Valuation Margin sub-composition
+VM_WEIGHT_VALUE = 1.00
+
+# Catalyst Timeline sub-composition
+CT_WEIGHT_TREND = 0.30
+CT_WEIGHT_MOMENTUM = 0.30
+CT_WEIGHT_SENTIMENT = 0.25
+CT_WEIGHT_VOLUME = 0.15
+
+# Downside Control sub-composition
+DC_WEIGHT_SAFETY = 0.60
+DC_WEIGHT_VOLATILITY = 0.40
+
+# Legacy factor weights (kept for backward-compat display)
 WEIGHT_FUNDAMENTAL = 0.50
 WEIGHT_TECHNICAL = 0.30
 WEIGHT_SENTIMENT = 0.20
 
-# Fundamental sub-factor weights
+# Fundamental sub-factor weights (used to compute building-block sub-scores)
 FUND_WEIGHT_VALUE = 0.25
 FUND_WEIGHT_QUALITY = 0.30
 FUND_WEIGHT_GROWTH = 0.25
 FUND_WEIGHT_SAFETY = 0.20
 
-# Technical sub-factor weights
+# Technical sub-factor weights (used to compute building-block sub-scores)
 TECH_WEIGHT_TREND = 0.30
 TECH_WEIGHT_MOMENTUM = 0.30
 TECH_WEIGHT_VOLATILITY = 0.20

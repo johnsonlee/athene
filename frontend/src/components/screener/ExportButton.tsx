@@ -9,16 +9,17 @@ export function ExportButton({ data }: Props) {
   const { t } = useI18n();
 
   const handleExport = () => {
-    const headers = [t('table.rank'), t('table.ticker'), t('table.name'), t('table.sector'), t('table.score'), t('table.fundamental'), t('table.technical'), t('table.sentiment'), t('table.rating')];
+    const headers = [t('table.rank'), t('table.ticker'), t('table.name'), t('table.sector'), t('table.score'), t('table.earningsVisibility'), t('table.valuationMargin'), t('table.catalystTimeline'), t('table.downsideControl'), t('table.rating')];
     const rows = data.map((s) => [
       s.rank,
       s.ticker,
       s.name || '',
       s.sector || '',
       s.composite_score?.toFixed(4) ?? '',
-      s.fundamental_score?.toFixed(4) ?? '',
-      s.technical_score?.toFixed(4) ?? '',
-      s.sentiment_score?.toFixed(4) ?? '',
+      s.earnings_visibility?.toFixed(4) ?? '',
+      s.valuation_margin?.toFixed(4) ?? '',
+      s.catalyst_timeline?.toFixed(4) ?? '',
+      s.downside_control?.toFixed(4) ?? '',
       s.tier_label,
     ]);
 

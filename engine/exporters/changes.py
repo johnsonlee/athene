@@ -8,7 +8,13 @@ from typing import Dict, List
 
 import pandas as pd
 
-from engine.config import OUTPUT_DIR, WEIGHT_FUNDAMENTAL, WEIGHT_TECHNICAL, WEIGHT_SENTIMENT
+from engine.config import (
+    OUTPUT_DIR,
+    WEIGHT_EARNINGS_VISIBILITY,
+    WEIGHT_VALUATION_MARGIN,
+    WEIGHT_CATALYST_TIMELINE,
+    WEIGHT_DOWNSIDE_CONTROL,
+)
 from engine.utils.logger import get_logger
 
 log = get_logger(__name__)
@@ -56,18 +62,19 @@ def detect_changes(new_ranked: pd.DataFrame, universe: pd.DataFrame) -> List[Dic
                 "composite_score": float(row.get("composite_score", 0)),
             }
 
-            # Factor attribution
+            # Factor attribution (4 qualitative dimensions)
             prev_sub = prev_history.get(str(ticker), {})
             if prev_sub:
                 deltas = {}
-                factors = [
-                    ("fundamental", "fundamental_score", WEIGHT_FUNDAMENTAL),
-                    ("technical", "technical_score", WEIGHT_TECHNICAL),
-                    ("sentiment", "sentiment_score", WEIGHT_SENTIMENT),
+                dimensions = [
+                    ("earnings_visibility", "earnings_visibility", WEIGHT_EARNINGS_VISIBILITY),
+                    ("valuation_margin", "valuation_margin", WEIGHT_VALUATION_MARGIN),
+                    ("catalyst_timeline", "catalyst_timeline", WEIGHT_CATALYST_TIMELINE),
+                    ("downside_control", "downside_control", WEIGHT_DOWNSIDE_CONTROL),
                 ]
                 max_delta = 0.0
                 driver = None
-                for name, key, weight in factors:
+                for name, key, weight in dimensions:
                     old_val = prev_sub.get(key)
                     new_val = row.get(key)
                     if old_val is not None and new_val is not None and pd.notna(new_val):

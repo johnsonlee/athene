@@ -26,7 +26,7 @@ npm run build    # Production build → dist/
 
 ## Key Design Decisions
 
-- **Multi-factor model**: 50% fundamental + 30% technical + 20% sentiment
+- **Qualitative dimension model**: 30% earnings visibility + 25% valuation margin + 20% catalyst timeline + 25% downside control
 - **Absolute scoring**: Each metric mapped to 0-100 via piecewise linear rules (see Scoring Design below)
 - **Rating vs Ranking**: Two separate systems (see Lessons Learned)
 - **Missing data**: Weight redistribution when a factor is unavailable; missing metric defaults to 50 (neutral)
@@ -35,7 +35,7 @@ npm run build    # Production build → dist/
 
 ## Data Flow
 
-Wikipedia → universe.py → tickers → [price.py, fundamental.py, news.py] → [analyzers + absolute scoring] → factor_model (weighted avg) → ranker (rating + ranking) → json_exporter → frontend/public/data/
+Wikipedia → universe.py → tickers → [price.py, fundamental.py, news.py] → [analyzers + absolute scoring] → factor_model (4 qualitative dimensions → composite) → ranker (rating + ranking) → json_exporter → frontend/public/data/
 
 ## Lessons Learned
 
@@ -88,19 +88,25 @@ def metric_score(value, breakpoints) -> float:
 | BB Position | Mid is best | BB 0.5→75, 0.2→65, 0.9→35 |
 | VADER Compound | Higher is better | compound: direct map (-1,+1)→(0,100) |
 
-### Factor Aggregation (unchanged)
+### Sub-score Computation (unchanged)
 
 ```
 value_score     = avg(pe_score, pb_score, ps_score)
 quality_score   = avg(roe_score, roa_score, margin_score)
 growth_score    = avg(rev_growth_score, earn_growth_score)
 safety_score    = debt_equity_score
+sentiment_score = (compound + 1) × 50
+```
 
-fundamental_score = 0.25×value + 0.30×quality + 0.25×growth + 0.20×safety
-technical_score   = 0.30×trend + 0.30×momentum + 0.20×volatility + 0.20×volume
-sentiment_score   = (compound + 1) × 50
+### Qualitative Dimension Aggregation (v3)
 
-composite_score   = 0.50×fundamental + 0.30×technical + 0.20×sentiment
+```
+earningsVisibility = 0.60×quality + 0.40×growth
+valuationMargin    = value
+catalystTimeline   = 0.30×trend + 0.30×momentum + 0.25×sentiment + 0.15×volume
+downsideControl    = 0.60×safety + 0.40×volatility
+
+composite_score = 0.30×EV + 0.25×VM + 0.20×CT + 0.25×DC
 ```
 
 All scores are 0-100 throughout the pipeline.
@@ -124,8 +130,8 @@ Applied only to composite_score before rating assignment. Sub-factor scores rema
 
 ### Change Attribution
 
-When a rating changes, the system compares today's sub-scores vs yesterday's (from history.json) and identifies the primary driver:
+When a rating changes, the system compares today's dimension scores vs yesterday's (from history.json) and identifies the primary driver:
 ```
-Δ_weighted = (new_score - old_score) × factor_weight
-primary_driver = factor with largest |Δ_weighted|
+Δ_weighted = (new_dimension_score - old_dimension_score) × dimension_weight
+primary_driver = dimension with largest |Δ_weighted|
 ```

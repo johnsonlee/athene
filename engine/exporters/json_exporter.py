@@ -109,8 +109,10 @@ def export_history(ranked: pd.DataFrame, run_date: str | None = None) -> str:
             "rank": int(row.get("rank", 0)),
             "percentile": float(row.get("percentile", 0)),
         }
-        # Store sub-factor scores for change attribution
-        for key in ("fundamental_score", "technical_score", "sentiment_score"):
+        # Store dimension scores for change attribution (v3 4-dimension model)
+        for key in ("earnings_visibility", "valuation_margin",
+                     "catalyst_timeline", "downside_control",
+                     "fundamental_score", "technical_score", "sentiment_score"):
             val = row.get(key)
             if val is not None and pd.notna(val):
                 entry[key] = float(val)

@@ -161,7 +161,7 @@ def run(tickers_override: list[str] | None = None) -> None:
     tech_scored = compute_technical_subscores(tech_df)
     # sentiment_score already computed in analyze_sentiment (0-100)
 
-    # Step 5: Composite scoring
+    # Step 5: Composite scoring (4-dimension qualitative model)
     composite = compute_composite(fund_scored, tech_scored, sent_df)
 
     # Step 5.5: EMA smoothing on composite_score

@@ -69,22 +69,29 @@ export function ScreenerTable({ data }: Props) {
         ),
       },
       {
-        accessorKey: 'fundamental_score',
-        header: t('table.fundamental'),
+        accessorKey: 'earnings_visibility',
+        header: t('table.earningsVisibility'),
         cell: ({ getValue }) => (
           <span className="font-mono text-sm text-gray-700 dark:text-gray-300">{formatScore(getValue() as number | null)}</span>
         ),
       },
       {
-        accessorKey: 'technical_score',
-        header: t('table.technical'),
+        accessorKey: 'valuation_margin',
+        header: t('table.valuationMargin'),
         cell: ({ getValue }) => (
           <span className="font-mono text-sm text-gray-700 dark:text-gray-300">{formatScore(getValue() as number | null)}</span>
         ),
       },
       {
-        accessorKey: 'sentiment_score',
-        header: t('table.sentiment'),
+        accessorKey: 'catalyst_timeline',
+        header: t('table.catalystTimeline'),
+        cell: ({ getValue }) => (
+          <span className="font-mono text-sm text-gray-700 dark:text-gray-300">{formatScore(getValue() as number | null)}</span>
+        ),
+      },
+      {
+        accessorKey: 'downside_control',
+        header: t('table.downsideControl'),
         cell: ({ getValue }) => (
           <span className="font-mono text-sm text-gray-700 dark:text-gray-300">{formatScore(getValue() as number | null)}</span>
         ),

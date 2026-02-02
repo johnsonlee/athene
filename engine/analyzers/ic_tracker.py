@@ -22,9 +22,10 @@ log = get_logger(__name__)
 
 FACTORS = [
     "composite_score",
-    "fundamental_score",
-    "technical_score",
-    "sentiment_score",
+    "earnings_visibility",
+    "valuation_margin",
+    "catalyst_timeline",
+    "downside_control",
 ]
 
 DEFAULT_HORIZONS = [5, 21]  # trading days forward
