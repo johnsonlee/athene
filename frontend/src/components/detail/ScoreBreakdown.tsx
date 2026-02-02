@@ -138,9 +138,10 @@ export function ScoreBreakdown({ detail }: Props) {
 
   const fmtWeight = (w: number | undefined, fallback: string) => w != null ? `${Math.round(w * 100)}%` : fallback;
   const factors = [
-    { name: t('detail.fundamentals'), score: ranking.fundamental_score, weight: fmtWeight(ranking.weight_fundamental, '50%'), drivers: fundDrivers },
-    { name: t('detail.technical'), score: ranking.technical_score, weight: fmtWeight(ranking.weight_technical, '30%'), drivers: techDrivers },
-    { name: t('detail.sentiment'), score: ranking.sentiment_score, weight: fmtWeight(ranking.weight_sentiment, '20%'), drivers: sentDrivers },
+    { name: t('detail.earningsVisibility'), score: ranking.earnings_visibility, weight: fmtWeight(ranking.weight_earnings_visibility, '30%'), drivers: fundDrivers.filter(d => ['ROE', 'ROA', t('metric.roe'), t('metric.roa'), t('metric.revGrowth'), t('metric.earnGrowth'), t('metric.profitMargin')].some(k => d.label.includes(k) || k.includes(d.label))) },
+    { name: t('detail.valuationMargin'), score: ranking.valuation_margin, weight: fmtWeight(ranking.weight_valuation_margin, '25%'), drivers: fundDrivers.filter(d => ['P/E', 'P/B', 'P/S', t('metric.pe'), t('metric.pb'), t('metric.ps')].some(k => d.label.includes(k) || k.includes(d.label))) },
+    { name: t('detail.catalystTimeline'), score: ranking.catalyst_timeline, weight: fmtWeight(ranking.weight_catalyst_timeline, '20%'), drivers: [...techDrivers, ...sentDrivers] },
+    { name: t('detail.downsideControl'), score: ranking.downside_control, weight: fmtWeight(ranking.weight_downside_control, '25%'), drivers: fundDrivers.filter(d => [t('metric.debtEquity'), 'Debt'].some(k => d.label.includes(k) || k.includes(d.label))) },
   ];
 
   // Determine strongest and weakest factor (by score)
@@ -241,8 +242,19 @@ export function ScoreBreakdown({ detail }: Props) {
               )}
             </div>
 
-            {/* Additional metrics per factor */}
+            {/* Additional metrics per dimension */}
+            {/* EV: Earnings Visibility - profitability & growth metrics */}
             {fi === 0 && fund && (
+              <div className="mt-3 grid grid-cols-2 gap-x-4 border-t pt-2 dark:border-gray-700">
+                <Metric label={t('metric.roa')} value={formatPercent(fund.roa)}
+                  signal={sig(fund.roa, v => v > 0.10 ? 'bullish' : v < 0.03 ? 'bearish' : 'neutral')} />
+                <Metric label={t('metric.marketCap')} value={formatLargeNumber(fund.market_cap)} />
+                <Metric label={t('metric.divYield')} value={formatPercent(fund.dividend_yield)} />
+              </div>
+            )}
+
+            {/* VM: Valuation Margin - valuation metrics */}
+            {fi === 1 && fund && (
               <div className="mt-3 grid grid-cols-2 gap-x-4 border-t pt-2 dark:border-gray-700">
                 <Metric label={t('metric.fwdPe')} value={formatRatio(fund.forward_pe)}
                   signal={sig(fund.forward_pe, v => v < 18 ? 'bullish' : v > 30 ? 'bearish' : 'neutral')} />
@@ -250,17 +262,13 @@ export function ScoreBreakdown({ detail }: Props) {
                   signal={sig(fund.pb, v => v < 3 ? 'bullish' : v > 5 ? 'bearish' : 'neutral')} />
                 <Metric label={t('metric.ps')} value={formatRatio(fund.ps)}
                   signal={sig(fund.ps, v => v < 3 ? 'bullish' : v > 10 ? 'bearish' : 'neutral')} />
-                <Metric label={t('metric.roa')} value={formatPercent(fund.roa)}
-                  signal={sig(fund.roa, v => v > 0.10 ? 'bullish' : v < 0.03 ? 'bearish' : 'neutral')} />
-                <Metric label={t('metric.marketCap')} value={formatLargeNumber(fund.market_cap)} />
-                <Metric label={t('metric.divYield')} value={formatPercent(fund.dividend_yield)} />
-                <Metric label={t('metric.beta')} value={formatRatio(fund.beta)} />
                 <Metric label={t('metric.52wHigh')} value={formatPrice(fund.high_52w)} />
                 <Metric label={t('metric.52wLow')} value={formatPrice(fund.low_52w)} />
               </div>
             )}
 
-            {fi === 1 && tech && (
+            {/* CT: Catalyst Timeline - technical + sentiment */}
+            {fi === 2 && tech && (
               <div className="mt-3 grid grid-cols-2 gap-x-4 border-t pt-2 dark:border-gray-700">
                 <Metric label={t('metric.sma20')} value={formatPrice(tech.sma_20)}
                   signal={tech.close != null && tech.sma_20 != null ? (tech.close > tech.sma_20 ? 'bullish' : 'bearish') : undefined} />
@@ -275,7 +283,6 @@ export function ScoreBreakdown({ detail }: Props) {
                 <Metric label={t('metric.stochD')} value={formatRatio(tech.stoch_d)} />
               </div>
             )}
-
             {fi === 2 && sent && (
               <div className="mt-3 border-t pt-2 dark:border-gray-700">
                 <div className="mb-2">
@@ -310,6 +317,13 @@ export function ScoreBreakdown({ detail }: Props) {
                     </ul>
                   </div>
                 )}
+              </div>
+            )}
+
+            {/* DC: Downside Control - safety metrics */}
+            {fi === 3 && fund && (
+              <div className="mt-3 grid grid-cols-2 gap-x-4 border-t pt-2 dark:border-gray-700">
+                <Metric label={t('metric.beta')} value={formatRatio(fund.beta)} />
               </div>
             )}
           </div>

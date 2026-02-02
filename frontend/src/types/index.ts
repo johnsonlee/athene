@@ -27,6 +27,16 @@ export interface RankedStock {
   tier: TierKey;
   tier_label: string;
   tier_color: string;
+  // Qualitative dimensions (v3)
+  earnings_visibility?: number | null;
+  valuation_margin?: number | null;
+  catalyst_timeline?: number | null;
+  downside_control?: number | null;
+  weight_earnings_visibility?: number;
+  weight_valuation_margin?: number;
+  weight_catalyst_timeline?: number;
+  weight_downside_control?: number;
+  // Legacy factor weights
   weight_fundamental?: number;
   weight_technical?: number;
   weight_sentiment?: number;

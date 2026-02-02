@@ -1,111 +1,150 @@
-"""Multi-factor weighted composite scoring model.
+"""Qualitative four-dimension composite scoring model (v3).
 
-All input scores are on the 0-100 absolute scale.
-Composite is a simple weighted average with dynamic weight redistribution
-for missing data.
+Replaces the previous 3-factor (fundamental/technical/sentiment) aggregation
+with four investment-analysis dimensions:
+
+    earningsVisibility  (30%)  = quality + growth
+    valuationMargin     (25%)  = value
+    catalystTimeline    (20%)  = trend + momentum + sentiment + volume
+    downsideControl     (25%)  = safety + volatility
+
+All scores remain on the 0-100 absolute scale.
 """
 
 from __future__ import annotations
 
 import pandas as pd
 
-from engine.config import WEIGHT_FUNDAMENTAL, WEIGHT_TECHNICAL, WEIGHT_SENTIMENT
+from engine.config import (
+    WEIGHT_EARNINGS_VISIBILITY,
+    WEIGHT_VALUATION_MARGIN,
+    WEIGHT_CATALYST_TIMELINE,
+    WEIGHT_DOWNSIDE_CONTROL,
+    EV_WEIGHT_QUALITY,
+    EV_WEIGHT_GROWTH,
+    VM_WEIGHT_VALUE,
+    CT_WEIGHT_TREND,
+    CT_WEIGHT_MOMENTUM,
+    CT_WEIGHT_SENTIMENT,
+    CT_WEIGHT_VOLUME,
+    DC_WEIGHT_SAFETY,
+    DC_WEIGHT_VOLATILITY,
+    # Legacy weights for backward-compat factor scores
+    WEIGHT_FUNDAMENTAL,
+    WEIGHT_TECHNICAL,
+    WEIGHT_SENTIMENT,
+    FUND_WEIGHT_VALUE,
+    FUND_WEIGHT_QUALITY,
+    FUND_WEIGHT_GROWTH,
+    FUND_WEIGHT_SAFETY,
+    TECH_WEIGHT_TREND,
+    TECH_WEIGHT_MOMENTUM,
+    TECH_WEIGHT_VOLATILITY,
+    TECH_WEIGHT_VOLUME,
+)
 from engine.utils.logger import get_logger
 
 log = get_logger(__name__)
 
+NEUTRAL = 50.0
+
+
+def _val(series_or_scalar, default: float = NEUTRAL) -> pd.Series:
+    """Ensure a Series with NaN filled to *default*."""
+    if isinstance(series_or_scalar, pd.Series):
+        return series_or_scalar.fillna(default)
+    return pd.Series(dtype=float)
+
 
 def compute_composite(
-    fundamental_scores: pd.DataFrame,
-    technical_scores: pd.DataFrame,
-    sentiment_scores: pd.DataFrame,
+    fund_scored: pd.DataFrame,
+    tech_scored: pd.DataFrame,
+    sent_df: pd.DataFrame,
 ) -> pd.DataFrame:
-    """Merge factor scores and compute weighted composite.
+    """Compute composite score via four qualitative dimensions.
 
-    All input scores are 0-100.  Handles missing data by redistributing
-    weights to available factors.
+    Accepts the fully-scored DataFrames (with sub-score columns) from the
+    fundamental, technical, and sentiment analyzers.
 
     Returns:
-        DataFrame indexed by ticker with:
-        fundamental_score, technical_score, sentiment_score,
-        composite_score, and weight columns
+        DataFrame indexed by ticker with dimension scores, legacy factor
+        scores, composite_score, and weight columns.
     """
-    fund = fundamental_scores[["fundamental_score"]].copy() if "fundamental_score" in fundamental_scores.columns else pd.DataFrame()
-    tech = technical_scores[["technical_score"]].copy() if "technical_score" in technical_scores.columns else pd.DataFrame()
-    sent = sentiment_scores[["sentiment_score"]].copy() if "sentiment_score" in sentiment_scores.columns else pd.DataFrame()
-
-    # Get all tickers
-    all_tickers = set()
-    for df in [fund, tech, sent]:
-        if not df.empty:
+    # Merge all sub-scores into a single frame
+    all_tickers: set[str] = set()
+    for df in (fund_scored, tech_scored, sent_df):
+        if df is not None and not df.empty:
             all_tickers.update(df.index)
 
-    all_tickers = sorted(all_tickers)
-    result = pd.DataFrame(index=all_tickers)
+    all_tickers_sorted = sorted(all_tickers)
+    result = pd.DataFrame(index=all_tickers_sorted)
     result.index.name = "ticker"
 
-    # Join scores
-    if not fund.empty:
-        result = result.join(fund, how="left")
-    else:
-        result["fundamental_score"] = float("nan")
+    # Pull sub-scores (fill missing with neutral 50)
+    def _get(df: pd.DataFrame | None, col: str) -> pd.Series:
+        if df is not None and col in df.columns:
+            return df[col].reindex(result.index).fillna(NEUTRAL)
+        return pd.Series(NEUTRAL, index=result.index)
 
-    if not tech.empty:
-        result = result.join(tech, how="left")
-    else:
-        result["technical_score"] = float("nan")
+    # --- Building-block sub-scores ---
+    quality = _get(fund_scored, "quality_score")
+    growth = _get(fund_scored, "growth_score")
+    value = _get(fund_scored, "value_score")
+    safety = _get(fund_scored, "safety_score")
 
-    if not sent.empty:
-        result = result.join(sent, how="left")
-    else:
-        result["sentiment_score"] = float("nan")
+    trend = _get(tech_scored, "trend_score")
+    momentum = _get(tech_scored, "momentum_score")
+    volatility = _get(tech_scored, "volatility_score")
+    volume = _get(tech_scored, "volume_score")
 
-    # Compute composite with dynamic weight redistribution
-    composites = []
-    w_fund_list, w_tech_list, w_sent_list = [], [], []
+    sentiment = _get(sent_df, "sentiment_score")
 
-    for _, row in result.iterrows():
-        has_fund = pd.notna(row.get("fundamental_score"))
-        has_tech = pd.notna(row.get("technical_score"))
-        has_sent = pd.notna(row.get("sentiment_score"))
+    # --- Four qualitative dimensions (all 0-100) ---
+    ev = EV_WEIGHT_QUALITY * quality + EV_WEIGHT_GROWTH * growth
+    vm = VM_WEIGHT_VALUE * value
+    ct = (CT_WEIGHT_TREND * trend + CT_WEIGHT_MOMENTUM * momentum
+          + CT_WEIGHT_SENTIMENT * sentiment + CT_WEIGHT_VOLUME * volume)
+    dc = DC_WEIGHT_SAFETY * safety + DC_WEIGHT_VOLATILITY * volatility
 
-        w_fund = WEIGHT_FUNDAMENTAL if has_fund else 0.0
-        w_tech = WEIGHT_TECHNICAL if has_tech else 0.0
-        w_sent = WEIGHT_SENTIMENT if has_sent else 0.0
+    result["earnings_visibility"] = ev
+    result["valuation_margin"] = vm
+    result["catalyst_timeline"] = ct
+    result["downside_control"] = dc
 
-        total_weight = w_fund + w_tech + w_sent
+    # --- Composite score ---
+    result["composite_score"] = (
+        WEIGHT_EARNINGS_VISIBILITY * ev
+        + WEIGHT_VALUATION_MARGIN * vm
+        + WEIGHT_CATALYST_TIMELINE * ct
+        + WEIGHT_DOWNSIDE_CONTROL * dc
+    )
 
-        if total_weight == 0:
-            composites.append(50.0)  # neutral default
-            w_fund_list.append(0.0)
-            w_tech_list.append(0.0)
-            w_sent_list.append(0.0)
-            continue
+    # --- Dimension weights (fixed, but stored for display/export) ---
+    result["weight_earnings_visibility"] = WEIGHT_EARNINGS_VISIBILITY
+    result["weight_valuation_margin"] = WEIGHT_VALUATION_MARGIN
+    result["weight_catalyst_timeline"] = WEIGHT_CATALYST_TIMELINE
+    result["weight_downside_control"] = WEIGHT_DOWNSIDE_CONTROL
 
-        # Normalize weights
-        w_fund /= total_weight
-        w_tech /= total_weight
-        w_sent /= total_weight
+    # --- Legacy 3-factor scores (for backward compat in frontend/history) ---
+    result["fundamental_score"] = (
+        FUND_WEIGHT_VALUE * value
+        + FUND_WEIGHT_QUALITY * quality
+        + FUND_WEIGHT_GROWTH * growth
+        + FUND_WEIGHT_SAFETY * safety
+    )
+    result["technical_score"] = (
+        TECH_WEIGHT_TREND * trend
+        + TECH_WEIGHT_MOMENTUM * momentum
+        + TECH_WEIGHT_VOLATILITY * volatility
+        + TECH_WEIGHT_VOLUME * volume
+    )
+    result["sentiment_score"] = sentiment
 
-        def _val(v: float | None) -> float:
-            if v is None or pd.isna(v):
-                return 50.0  # neutral default
-            return float(v)
+    # Legacy weight columns
+    result["weight_fundamental"] = WEIGHT_FUNDAMENTAL
+    result["weight_technical"] = WEIGHT_TECHNICAL
+    result["weight_sentiment"] = WEIGHT_SENTIMENT
 
-        score = (
-            w_fund * _val(row.get("fundamental_score"))
-            + w_tech * _val(row.get("technical_score"))
-            + w_sent * _val(row.get("sentiment_score"))
-        )
-        composites.append(score)
-        w_fund_list.append(w_fund)
-        w_tech_list.append(w_tech)
-        w_sent_list.append(w_sent)
-
-    result["composite_score"] = composites
-    result["weight_fundamental"] = w_fund_list
-    result["weight_technical"] = w_tech_list
-    result["weight_sentiment"] = w_sent_list
-
-    log.info(f"Composite scores computed for {len(result)} tickers (0-100 scale)")
+    log.info(f"Composite scores computed for {len(result)} tickers "
+             f"(4-dimension model, 0-100 scale)")
     return result

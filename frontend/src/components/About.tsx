@@ -6,9 +6,10 @@ import type { ICData } from '../types';
 function ICTable({ data, t }: { data: ICData; t: (key: any, params?: any) => string }) {
   const factorLabels: Record<string, string> = {
     composite_score: t('table.score'),
-    fundamental_score: t('detail.fundamentals'),
-    technical_score: t('detail.technical'),
-    sentiment_score: t('detail.sentiment'),
+    earnings_visibility: t('detail.earningsVisibility'),
+    valuation_margin: t('detail.valuationMargin'),
+    catalyst_timeline: t('detail.catalystTimeline'),
+    downside_control: t('detail.downsideControl'),
   };
 
   const hasData = Object.values(data.factors).some((horizons) =>
@@ -94,19 +95,24 @@ export function About() {
           </thead>
           <tbody className="text-gray-600 dark:text-gray-400">
             <tr className="border-b dark:border-gray-700">
-              <td className="py-1 font-medium text-gray-800 dark:text-gray-200">{t('detail.fundamentals')}</td>
-              <td>50%</td>
-              <td>{t('about.fundComponents')}<br /><span className="text-xs text-gray-400 dark:text-gray-500">{t('about.fundSubWeights')}</span></td>
+              <td className="py-1 font-medium text-gray-800 dark:text-gray-200">{t('detail.earningsVisibility')}</td>
+              <td>30%</td>
+              <td>{t('about.evComponents')}<br /><span className="text-xs text-gray-400 dark:text-gray-500">{t('about.evSubWeights')}</span></td>
             </tr>
             <tr className="border-b dark:border-gray-700">
-              <td className="py-1 font-medium text-gray-800 dark:text-gray-200">{t('detail.technical')}</td>
-              <td>30%</td>
-              <td>{t('about.techComponents')}<br /><span className="text-xs text-gray-400 dark:text-gray-500">{t('about.techSubWeights')}</span></td>
+              <td className="py-1 font-medium text-gray-800 dark:text-gray-200">{t('detail.valuationMargin')}</td>
+              <td>25%</td>
+              <td>{t('about.vmComponents')}<br /><span className="text-xs text-gray-400 dark:text-gray-500">{t('about.vmSubWeights')}</span></td>
+            </tr>
+            <tr className="border-b dark:border-gray-700">
+              <td className="py-1 font-medium text-gray-800 dark:text-gray-200">{t('detail.catalystTimeline')}</td>
+              <td>20%</td>
+              <td>{t('about.ctComponents')}<br /><span className="text-xs text-gray-400 dark:text-gray-500">{t('about.ctSubWeights')}</span></td>
             </tr>
             <tr>
-              <td className="py-1 font-medium text-gray-800 dark:text-gray-200">{t('detail.sentiment')}</td>
-              <td>20%</td>
-              <td>{t('about.sentComponents')}<br /><span className="text-xs text-gray-400 dark:text-gray-500">{t('about.sentSubWeights')}</span></td>
+              <td className="py-1 font-medium text-gray-800 dark:text-gray-200">{t('detail.downsideControl')}</td>
+              <td>25%</td>
+              <td>{t('about.dcComponents')}<br /><span className="text-xs text-gray-400 dark:text-gray-500">{t('about.dcSubWeights')}</span></td>
             </tr>
           </tbody>
         </table>
