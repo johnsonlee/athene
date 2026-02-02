@@ -28,6 +28,11 @@ interface Props {
   ticker: string;
 }
 
+function getChartHeights(): number[] {
+  const isMobile = window.innerWidth < 640;
+  return isMobile ? [220, 80, 80, 80] : [300, 100, 100, 100];
+}
+
 export function PriceChart({ prices, ticker }: Props) {
   const [range, setRange] = useState<TimeRange>('6M');
   const mainRef = useRef<HTMLDivElement>(null);
@@ -48,7 +53,7 @@ export function PriceChart({ prices, ticker }: Props) {
     const containers = [mainRef.current, rsiRef.current, macdRef.current, kdjRef.current];
     if (containers.some((c) => !c) || prices.length === 0) return;
 
-    const heights = [300, 100, 100, 100];
+    const heights = getChartHeights();
     const charts: IChartApi[] = [];
     const primarySeries: ISeriesApi<SeriesType>[] = [];
 
@@ -221,8 +226,11 @@ export function PriceChart({ prices, ticker }: Props) {
 
     // Resize handler
     const handleResize = () => {
+      const newHeights = getChartHeights();
       containers.forEach((el, i) => {
-        if (el && charts[i]) charts[i].applyOptions({ width: el.clientWidth });
+        if (el && charts[i]) {
+          charts[i].applyOptions({ width: el.clientWidth, height: newHeights[i] });
+        }
       });
     };
     window.addEventListener('resize', handleResize);
@@ -246,9 +254,9 @@ export function PriceChart({ prices, ticker }: Props) {
   }, [range, prices]);
 
   return (
-    <div className="rounded-lg bg-white p-4 shadow-sm dark:bg-gray-800">
-      <div className="mb-2 flex items-center justify-between">
-        <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
+    <div className="rounded-lg bg-white p-3 shadow-sm sm:p-4 dark:bg-gray-800">
+      <div className="mb-2 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+        <h2 className="text-base font-semibold text-gray-900 sm:text-lg dark:text-white">
           {t('detail.priceChart', { ticker })}
         </h2>
         <div className="flex gap-1">
@@ -256,7 +264,7 @@ export function PriceChart({ prices, ticker }: Props) {
             <button
               key={key}
               onClick={() => setRange(key)}
-              className={`rounded px-2 py-0.5 text-xs font-medium transition-colors ${
+              className={`rounded px-2.5 py-1.5 text-xs font-medium transition-colors sm:px-2 sm:py-0.5 ${
                 range === key
                   ? 'bg-blue-600 text-white'
                   : 'bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600'
@@ -267,7 +275,7 @@ export function PriceChart({ prices, ticker }: Props) {
           ))}
         </div>
       </div>
-      <div className="mb-1 flex flex-wrap gap-3 text-xs text-gray-500 dark:text-gray-400">
+      <div className="mb-1 flex flex-wrap gap-3 text-[10px] text-gray-500 sm:text-xs dark:text-gray-400">
         <span>
           <span className="inline-block h-2 w-4 rounded" style={{ backgroundColor: '#f59e0b' }} /> {t('metric.sma20')}
         </span>

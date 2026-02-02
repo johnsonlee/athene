@@ -150,11 +150,11 @@ export function ScoreBreakdown({ detail }: Props) {
   const weakestFactor = validFactors.length > 1 ? validFactors.reduce((a, b) => (a.score ?? 100) < (b.score ?? 100) ? a : b) : null;
 
   return (
-    <div className="rounded-lg bg-white p-4 shadow-sm dark:bg-gray-800">
-      <h2 className="mb-4 text-lg font-semibold text-gray-900 dark:text-white">{t('detail.ratingAnalysis')}</h2>
+    <div className="rounded-lg bg-white p-3 shadow-sm sm:p-4 dark:bg-gray-800">
+      <h2 className="mb-3 text-base font-semibold text-gray-900 sm:mb-4 sm:text-lg dark:text-white">{t('detail.ratingAnalysis')}</h2>
 
       {/* Summary */}
-      <div className="mb-4 rounded-md bg-gray-50 p-3 text-sm text-gray-700 dark:bg-gray-900 dark:text-gray-300">
+      <div className="mb-4 rounded-md bg-gray-50 p-3 text-xs text-gray-700 sm:text-sm dark:bg-gray-900 dark:text-gray-300">
         <p>
           {t('detail.ratedAs', {
             ticker: detail.ticker,
@@ -182,10 +182,10 @@ export function ScoreBreakdown({ detail }: Props) {
               <p className="mb-1 text-[10px] font-semibold uppercase tracking-wider text-green-600 dark:text-green-400">{t('detail.keyStrengths')}</p>
               <ul className="space-y-0.5">
                 {keyBullish.map(d => (
-                  <li key={d.label} className="flex items-center gap-1 text-xs">
-                    <span className="text-green-600 dark:text-green-400">+</span>
+                  <li key={d.label} className="text-xs leading-relaxed">
+                    <span className="text-green-600 dark:text-green-400">+ </span>
                     <span>{d.label}: {d.value}</span>
-                    <span className="text-gray-400 dark:text-gray-500">— {d.explanation}</span>
+                    <span className="text-gray-400 dark:text-gray-500"> — {d.explanation}</span>
                   </li>
                 ))}
               </ul>
@@ -196,10 +196,10 @@ export function ScoreBreakdown({ detail }: Props) {
               <p className="mb-1 text-[10px] font-semibold uppercase tracking-wider text-red-600 dark:text-red-400">{t('detail.keyRisks')}</p>
               <ul className="space-y-0.5">
                 {keyBearish.map(d => (
-                  <li key={d.label} className="flex items-center gap-1 text-xs">
-                    <span className="text-red-600 dark:text-red-400">−</span>
+                  <li key={d.label} className="text-xs leading-relaxed">
+                    <span className="text-red-600 dark:text-red-400">- </span>
                     <span>{d.label}: {d.value}</span>
-                    <span className="text-gray-400 dark:text-gray-500">— {d.explanation}</span>
+                    <span className="text-gray-400 dark:text-gray-500"> — {d.explanation}</span>
                   </li>
                 ))}
               </ul>
@@ -214,9 +214,9 @@ export function ScoreBreakdown({ detail }: Props) {
           <div key={factor.name} className="border-t pt-3 first:border-0 first:pt-0 dark:border-gray-700">
             {/* Factor header + score */}
             <div className="mb-2 flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                <span className="font-semibold text-gray-900 dark:text-white">{factor.name}</span>
-                <span className="text-xs text-gray-500 dark:text-gray-400">({t('detail.weight', { weight: factor.weight })})</span>
+              <div className="flex items-center gap-1.5 sm:gap-2">
+                <span className="text-sm font-semibold text-gray-900 sm:text-base dark:text-white">{factor.name}</span>
+                <span className="text-[10px] text-gray-500 sm:text-xs dark:text-gray-400">({t('detail.weight', { weight: factor.weight })})</span>
               </div>
               <span className="font-mono text-sm font-medium text-gray-900 dark:text-white">
                 {formatScore(factor.score)}
@@ -227,11 +227,11 @@ export function ScoreBreakdown({ detail }: Props) {
             {/* Key driver signals */}
             <div className="mt-2 space-y-1.5">
               {factor.drivers.map((driver) => (
-                <div key={driver.label} className="flex items-start gap-2 text-sm">
+                <div key={driver.label} className="flex items-start gap-2 text-xs sm:text-sm">
                   <span className={`mt-0.5 shrink-0 rounded px-1.5 py-0.5 text-xs font-medium ${signalColor(driver.signal)}`}>
                     {driver.signal === 'bullish' ? '+' : driver.signal === 'bearish' ? '-' : '~'}
                   </span>
-                  <div>
+                  <div className="min-w-0">
                     <span className="font-medium text-gray-800 dark:text-gray-200">{driver.label}: {driver.value}</span>
                     <span className="ml-1 text-gray-500 dark:text-gray-400">— {driver.explanation}</span>
                   </div>
@@ -294,7 +294,7 @@ export function ScoreBreakdown({ detail }: Props) {
                     <p className="mb-1.5 text-[10px] font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500">{t('detail.recentNews')}</p>
                     <ul className="space-y-1.5">
                       {headlines.map((h, i) => (
-                        <li key={i} className="flex items-start gap-1.5 text-sm">
+                        <li key={i} className="flex items-start gap-1.5 text-xs sm:text-sm">
                           <span className={`mt-0.5 shrink-0 rounded px-1 py-0.5 text-[10px] font-bold leading-none ${
                             h.sentiment === 'positive' ? 'bg-green-50 text-green-700 dark:bg-green-900/30 dark:text-green-400'
                               : h.sentiment === 'negative' ? 'bg-red-50 text-red-700 dark:bg-red-900/30 dark:text-red-400'
