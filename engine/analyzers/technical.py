@@ -197,6 +197,9 @@ def compute_technical_subscores(df: pd.DataFrame) -> pd.DataFrame:
 
     v6: MACD uses price-normalized histogram, volume is direction-aware,
     volatility uses BB width + historical vol instead of BB position.
+
+    v7: Also computes ``tech_data_completeness`` (0-1) measuring what
+    fraction of scored technical metrics have real data.
     """
     from engine.scorer.absolute import (
         score_trend_alignment, score_rsi, score_macd_histogram,
@@ -229,5 +232,20 @@ def compute_technical_subscores(df: pd.DataFrame) -> pd.DataFrame:
         + TECH_WEIGHT_VOLATILITY * result["volatility_score"].fillna(50)
         + TECH_WEIGHT_VOLUME * result["volume_score"].fillna(50)
     )
+
+    # --- v7: Data completeness ---
+    _TECH_SCORED_COLS = [
+        "trend_alignment",       # trend
+        "rsi", "macd_histogram_pct",  # momentum
+        "bb_width", "hist_volatility",  # volatility
+        "signed_volume_ratio",   # volume
+    ]
+    present = pd.DataFrame(index=result.index)
+    for col in _TECH_SCORED_COLS:
+        if col in result.columns:
+            present[col] = result[col].notna().astype(float)
+        else:
+            present[col] = 0.0
+    result["tech_data_completeness"] = present.mean(axis=1)
 
     return result

@@ -123,9 +123,13 @@ def compute_fundamental_subscores(
     stocks use adjusted breakpoints so that structurally different sectors
     are not over- or under-rewarded.
 
+    v7: Also computes ``fund_data_completeness`` (0-1) measuring what
+    fraction of scored fundamental metrics have real data vs. missing.
+
     Returns:
         DataFrame with value_score, quality_score, growth_score, safety_score,
-        fundamental_score columns added (all 0-100).
+        fundamental_score, fund_data_completeness columns added (all 0-100
+        except completeness which is 0-1).
     """
     from engine.scorer.absolute import (
         score_pe, score_forward_pe, score_pb, score_ps,
@@ -215,5 +219,21 @@ def compute_fundamental_subscores(
         + FUND_WEIGHT_GROWTH * result["growth_score"].fillna(50)
         + FUND_WEIGHT_SAFETY * result["safety_score"].fillna(50)
     )
+
+    # --- v7: Data completeness ---
+    # Count how many of the 12 scored fundamental metrics have real data
+    _FUND_SCORED_COLS = [
+        "pe", "forward_pe", "pb", "ps",               # value
+        "roe", "roa", "profit_margin",                 # quality
+        "revenue_growth", "earnings_growth",            # growth
+        "debt_to_equity", "fcf_yield", "current_ratio", # safety
+    ]
+    present = pd.DataFrame(index=result.index)
+    for col in _FUND_SCORED_COLS:
+        if col in result.columns:
+            present[col] = result[col].notna().astype(float)
+        else:
+            present[col] = 0.0
+    result["fund_data_completeness"] = present.mean(axis=1)
 
     return result

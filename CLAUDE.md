@@ -94,7 +94,7 @@ Comprehensive upgrade to fundamental scoring: expanded sector awareness, deeper 
 - **Forward PE scoring**: Added `score_forward_pe()` with sector-aware breakpoints. `value_score` now `avg(pe, forward_pe, pb, ps)` instead of `avg(pe, pb, ps)`.
 - **Sector-aware growth scoring**: Utilities use adjusted growth expectations (3% revenue growth = good, not mediocre).
 
-### v6: Technical Scoring Overhaul (current)
+### v6: Technical Scoring Overhaul
 
 Comprehensive upgrade to technical indicator scoring: price normalization, directional context, true volatility measurement, margin-weighted trend, and math-consistent EMA smoothing.
 
@@ -107,7 +107,19 @@ Comprehensive upgrade to technical indicator scoring: price normalization, direc
 
 **Files**: `engine/analyzers/technical.py`, `engine/scorer/absolute.py`, `engine/main.py`
 
-## Scoring Design (v6)
+### v7: Signal Validation & Data Quality (current)
+
+Validates scoring rules via IC tracking, handles missing data honestly, and introduces data completeness scoring.
+
+**Key changes from v6:**
+- **Per-metric IC tracking**: Extended IC computation from 5 factors (composite + 4 dimensions) to 13 factors (+ 8 sub-scores: value, quality, growth, safety, trend, momentum, volatility, volume). Sub-scores are now stored in `history.json` for forward-return correlation. Enables detection of which individual scoring rules are predictive.
+- **Directional missing-data defaults**: Missing metrics no longer universally default to 50 (neutral). Metrics with known directional bias when missing use below-neutral defaults: FCF yield → 35, profit margin → 35, earnings growth → 38, ROA → 40, current ratio → 42. Other metrics remain at 50.
+- **Data completeness tracking**: Each ticker gets a `data_completeness` score (0-1) measuring the fraction of scored metrics with real data. Computed as weighted average of fundamental completeness (12 metrics, 67% weight) and technical completeness (6 metrics, 33% weight).
+- **Composite score penalty**: When `data_completeness < 0.50`, a linear penalty of up to 5 points is applied to composite_score. This prevents stocks with very sparse data from getting inflated neutral scores.
+
+**Files**: `engine/scorer/absolute.py`, `engine/scorer/factor_model.py`, `engine/analyzers/fundamental.py`, `engine/analyzers/technical.py`, `engine/analyzers/ic_tracker.py`, `engine/exporters/json_exporter.py`, `engine/main.py`
+
+## Scoring Design (v7)
 
 ### Absolute Metric Scoring
 
@@ -115,12 +127,23 @@ Each raw metric is mapped to 0-100 using a piecewise linear function with domain
 
 ```python
 # engine/scorer/absolute.py
-def metric_score(value, breakpoints) -> float:
+def metric_score(value, breakpoints, missing_default=50.0) -> float:
     """Piecewise linear interpolation: raw value → 0-100 score.
     breakpoints: [(raw_val, score), ...] sorted by raw_val.
-    Missing data → 50 (neutral).
+    Missing data → missing_default (v7: directional defaults for biased metrics).
     """
 ```
+
+### Missing Data Defaults (v7)
+
+| Metric | Default when missing | Rationale |
+|--------|---------------------|-----------|
+| FCF yield | 35 | Companies not reporting FCF often have negative FCF |
+| Profit margin | 35 | Missing suggests unprofitable or pre-revenue |
+| Earnings growth | 38 | Missing usually means negative/volatile earnings |
+| ROA | 40 | Missing correlates with poor asset efficiency |
+| Current ratio | 42 | Missing common in financials; slight penalty |
+| All others | 50 | No strong directional prior |
 
 ### Breakpoints (intuition)
 
@@ -181,6 +204,15 @@ composite    = Σ(weight_i × smoothed_dim_i)
 ```
 Applied to each dimension individually before composite recomputation. Ensures displayed dimensions add up to composite.
 
+### Data Completeness Penalty (v7)
+
+```
+data_completeness = 0.67 × fund_completeness + 0.33 × tech_completeness
+penalty = max(0, (0.50 - data_completeness) / 0.50) × 5.0   (up to 5 points)
+composite_score = composite_score - penalty
+```
+Only applied when <50% of metrics have real data. Most stocks in the S&P 500/NASDAQ 100 universe have >80% completeness so the penalty rarely triggers.
+
 ### Change Attribution
 
 When a rating changes, the system compares today's dimension scores vs yesterday's (from history.json) and identifies the primary driver:
@@ -205,34 +237,7 @@ When implementing a new version from the roadmap:
 
 ## Improvement Roadmap
 
-Known weaknesses of the current model (v6), grouped into future versions by theme.
-
-### v7: Signal Validation & Data Quality
-
-Theme: Validate that scoring rules actually predict returns; handle missing data honestly.
-
-#### 7.1 IC-Calibrated Breakpoints
-
-**Problem**: All breakpoints in `absolute.py:55-121` are hand-tuned without empirical validation. No evidence that PE=8→90 is better than PE=8→85. The entire scoring system rests on unverified assumptions.
-
-**Proposed fix**:
-1. Compute forward-return IC (Information Coefficient) for each scored metric: `corr(metric_score, forward_N_day_return)`.
-2. Use IC results to validate breakpoint choices — adjust breakpoints where IC is low or negative.
-3. Integrate IC tracking into the daily pipeline (`engine/ic.py` exists but is not used for calibration).
-4. Store IC history to detect signal decay over time.
-
-**Files**: `engine/ic.py`, `engine/scorer/absolute.py`, `engine/main.py`
-
-#### 7.2 Missing Data Should Not Default to Neutral
-
-**Problem**: All missing metrics → 50 (neutral). But missing data is often informational: companies that don't report FCF often have negative FCF; low analyst coverage correlates with higher risk.
-
-**Proposed fix**:
-- Track a `data_completeness` score per ticker (% of metrics available).
-- Apply a penalty to composite_score when data completeness is low (e.g., -5 points if <50% of metrics are available).
-- For specific metrics with known directional bias when missing (e.g., FCF), default to a below-neutral value (e.g., 35 instead of 50).
-
-**Files**: `engine/scorer/factor_model.py`, `engine/scorer/absolute.py`
+Known weaknesses of the current model (v7), grouped into future versions by theme.
 
 ### v8: Intelligence Upgrade
 
