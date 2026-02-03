@@ -26,6 +26,9 @@ export function StockDetailPage() {
         <div className="mt-1 flex items-start justify-between">
           <div>
             <h1 className="text-xl font-bold text-gray-900 sm:text-2xl dark:text-white">{ticker}</h1>
+            {(ranking?.industry || ranking?.sector) && (
+              <p className="text-xs text-gray-500 dark:text-gray-400">{ranking.industry || ranking.sector}</p>
+            )}
             {fundamental?.current_price && (
               <p className="text-lg font-semibold text-gray-700 sm:text-xl dark:text-gray-300">
                 {formatPrice(fundamental.current_price)}

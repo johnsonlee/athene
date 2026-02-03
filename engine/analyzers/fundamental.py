@@ -101,10 +101,16 @@ def analyze_fundamental(fundamentals: Dict[str, Dict[str, Any]]) -> pd.DataFrame
     return df
 
 
-def compute_fundamental_subscores(df: pd.DataFrame) -> pd.DataFrame:
+def compute_fundamental_subscores(
+    df: pd.DataFrame,
+    sectors: pd.Series | None = None,
+) -> pd.DataFrame:
     """Compute sub-factor scores using absolute metric scoring (0-100).
 
     Uses piecewise linear breakpoints per metric instead of z-scores.
+    When *sectors* is provided (ticker → sector mapping), financial-sector
+    stocks use adjusted breakpoints for PE, PB, and Debt/Equity so that
+    structurally low PE ratios (e.g. insurance) are not over-rewarded.
 
     Returns:
         DataFrame with value_score, quality_score, growth_score, safety_score,
@@ -119,9 +125,27 @@ def compute_fundamental_subscores(df: pd.DataFrame) -> pd.DataFrame:
 
     result = df.copy()
 
+    # Build a per-ticker sector lookup (None when unavailable)
+    _sector_map: dict[str, str | None] = {}
+    if sectors is not None:
+        _sector_map = sectors.to_dict()
+
+    def _sector_for(ticker: str) -> str | None:
+        return _sector_map.get(ticker)
+
     # Value sub-score: avg(pe_score, pb_score, ps_score)
-    result["pe_score"] = result["pe"].apply(score_pe) if "pe" in result.columns else 50.0
-    result["pb_score"] = result["pb"].apply(score_pb) if "pb" in result.columns else 50.0
+    if "pe" in result.columns:
+        result["pe_score"] = [
+            score_pe(row["pe"], _sector_for(t)) for t, row in result.iterrows()
+        ]
+    else:
+        result["pe_score"] = 50.0
+    if "pb" in result.columns:
+        result["pb_score"] = [
+            score_pb(row["pb"], _sector_for(t)) for t, row in result.iterrows()
+        ]
+    else:
+        result["pb_score"] = 50.0
     result["ps_score"] = result["ps"].apply(score_ps) if "ps" in result.columns else 50.0
     result["value_score"] = result[["pe_score", "pb_score", "ps_score"]].mean(axis=1)
 
@@ -136,8 +160,14 @@ def compute_fundamental_subscores(df: pd.DataFrame) -> pd.DataFrame:
     result["earn_growth_score"] = result["earnings_growth"].apply(score_earnings_growth) if "earnings_growth" in result.columns else 50.0
     result["growth_score"] = result[["rev_growth_score", "earn_growth_score"]].mean(axis=1)
 
-    # Safety sub-score: debt_equity_score
-    result["safety_score"] = result["debt_to_equity"].apply(score_debt_equity) if "debt_to_equity" in result.columns else 50.0
+    # Safety sub-score: debt_equity_score (sector-aware for financials)
+    if "debt_to_equity" in result.columns:
+        result["safety_score"] = [
+            score_debt_equity(row["debt_to_equity"], _sector_for(t))
+            for t, row in result.iterrows()
+        ]
+    else:
+        result["safety_score"] = 50.0
 
     # Composite fundamental score (weighted, already 0-100)
     result["fundamental_score"] = (
