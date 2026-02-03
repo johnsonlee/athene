@@ -61,7 +61,7 @@ Replaced z-score with piecewise linear breakpoints for absolute 0-100 metric sco
 
 **Key principle**: A stock's rating reflects its own quality. Ranking is for comparison.
 
-### v3: Qualitative 4-Dimension Model (current)
+### v3: Qualitative 4-Dimension Model
 
 Replaced the flat 3-factor aggregation (fundamental/technical/sentiment) with four investment-analysis dimensions, each with clear semantic meaning.
 
@@ -74,7 +74,27 @@ Replaced the flat 3-factor aggregation (fundamental/technical/sentiment) with fo
 - Added hysteresis (±2 pts) at tier boundaries to prevent oscillation.
 - Added change attribution: when a rating changes, identify the primary driving dimension.
 
-## Scoring Design (v3)
+### v4: Sector-Aware Breakpoints
+
+Added financial-sector-specific breakpoints to fix systematic over-scoring of banks and insurers.
+
+**Key changes from v3:**
+- Financial PE 8 now scores 60 (was 90) — low PE is structural for financials, not deep value.
+- Financial PB 1.5 scores 52 (was ~70) — book value dynamics differ from non-financial sectors.
+- Financial D/E scored near-neutral (~50) — leverage is the business model, not a risk signal.
+- Generalized sector-detection pattern (`_is_financial()`) for future sector expansions.
+
+### v5: Fundamental Scoring Overhaul (current)
+
+Comprehensive upgrade to fundamental scoring: expanded sector awareness, deeper safety evaluation, and forward-looking valuation.
+
+**Key changes from v4:**
+- **Sector-aware scoring for 6 sectors**: Generalized `_is_financial()` to a `_SECTOR_OVERRIDES` lookup table covering Financial, Technology, Healthcare, Utilities, Real Estate, Energy. Each sector has tailored breakpoints for PE, PB, PS, D/E, and growth metrics where structural norms differ.
+- **Expanded safety dimension**: `safety_score` upgraded from a single metric (D/E) to `avg(debt_equity_score, fcf_yield_score, current_ratio_score)`. Added FCF yield breakpoints and current ratio breakpoints. Collector now fetches `totalDebt`, `totalCash`, `ebitda`, `currentRatio`.
+- **Forward PE scoring**: Added `score_forward_pe()` with sector-aware breakpoints. `value_score` now `avg(pe, forward_pe, pb, ps)` instead of `avg(pe, pb, ps)`.
+- **Sector-aware growth scoring**: Utilities use adjusted growth expectations (3% revenue growth = good, not mediocre).
+
+## Scoring Design (v5)
 
 ### Absolute Metric Scoring
 
@@ -105,10 +125,10 @@ def metric_score(value, breakpoints) -> float:
 ### Sub-score Computation (unchanged)
 
 ```
-value_score     = avg(pe_score, pb_score, ps_score)
+value_score     = avg(pe_score, forward_pe_score, pb_score, ps_score)    # all sector-aware
 quality_score   = avg(roe_score, roa_score, margin_score)
-growth_score    = avg(rev_growth_score, earn_growth_score)
-safety_score    = debt_equity_score
+growth_score    = avg(rev_growth_score, earn_growth_score)               # sector-aware for Utilities
+safety_score    = avg(debt_equity_score, fcf_yield_score, current_ratio_score)  # sector-aware D/E
 sentiment_score = (compound + 1) × 50
 ```
 
@@ -150,15 +170,29 @@ When a rating changes, the system compares today's dimension scores vs yesterday
 primary_driver = dimension with largest |Δ_weighted|
 ```
 
+## Release Workflow
+
+When implementing a new version from the roadmap:
+
+1. Implement the engine changes (Python scoring/analysis code).
+2. Test with sample tickers: `python -m engine.main AAPL MSFT JPM XOM NEE`.
+3. Update the About page in the frontend:
+   - Add new version entry to `frontend/src/components/About.tsx` (timeline section).
+   - Add i18n strings (EN + ZH) to `frontend/src/lib/i18n.tsx` for the new version's label, date, title, description, and known issues.
+   - Move the "current" badge to the new version; demote the previous current version to a regular timeline entry.
+4. Update `CLAUDE.md`: move the implemented version from "Improvement Roadmap" to "Version History", mark the next version as `(current)`.
+5. Build frontend to verify: `cd frontend && npm run build`.
+6. Commit all changes together with message: `feat(engine): implement vN — <theme>`.
+
 ## Improvement Roadmap
 
-Known weaknesses of the current model (v3), grouped into future versions by theme.
+Known weaknesses of the current model (v4), grouped into future versions by theme.
 
-### v4: Fundamental Scoring Overhaul
+### v5: Fundamental Scoring Overhaul
 
 Theme: Make fundamental scoring sector-aware, deeper on safety, and forward-looking.
 
-#### 4.1 Sector-Specific Scoring (expand beyond Financials)
+#### 5.1 Sector-Specific Scoring (expand beyond Financials)
 
 **Problem**: Only `Financials` gets adjusted breakpoints (`absolute.py:66-82`). Other sectors have equally strong structural differences that distort scores:
 - SaaS/Tech: PS 10-20x is normal, but `PS_BREAKPOINTS` scores PS=12 → 20 (very low).
@@ -171,7 +205,7 @@ Theme: Make fundamental scoring sector-aware, deeper on safety, and forward-look
 
 **Files**: `engine/scorer/absolute.py`, `engine/config.py`
 
-#### 4.2 Strengthen Safety / Downside Control Dimension
+#### 5.2 Strengthen Safety / Downside Control Dimension
 
 **Problem**: `safety_score` is a single metric (Debt/Equity) — too thin for a dimension that carries 25% of the composite weight via Downside Control (`DC = 0.60×safety + 0.40×volatility`).
 
@@ -185,7 +219,7 @@ Update: `safety_score = avg(debt_equity_score, interest_coverage_score, fcf_debt
 
 **Files**: `engine/collectors/fundamental.py`, `engine/analyzers/fundamental.py`, `engine/scorer/absolute.py`
 
-#### 4.3 Use Forward PE for Growth Stock Valuation
+#### 5.3 Use Forward PE for Growth Stock Valuation
 
 **Problem**: `forwardPE` is collected (`fundamental.py:44`) but never scored. For growth stocks, trailing PE overstates expensiveness because it uses past earnings.
 
@@ -197,35 +231,35 @@ Or weight forward PE higher for growth stocks (revenue_growth > 15%).
 
 **Files**: `engine/analyzers/fundamental.py`, `engine/scorer/absolute.py`
 
-### v5: Technical Scoring Overhaul
+### v6: Technical Scoring Overhaul
 
 Theme: Fix directional blindness, price normalization, and volatility mismeasurement in technical indicators.
 
-#### 5.1 MACD Histogram — price normalization
+#### 6.1 MACD Histogram — price normalization
 
 **Problem** (`absolute.py:199-208`): The ±0.5 threshold is an absolute number. For a $5 stock, histogram=0.3 is a strong signal; for a $500 stock, it's noise. Systematic bias toward low-price stocks.
 
 **Fix**: Normalize MACD histogram by close price or ATR before scoring.
 
-#### 5.2 Volume — directional context
+#### 6.2 Volume — directional context
 
 **Problem** (`absolute.py:119-121`): Higher volume = higher score, always. But high volume on a down day is bearish (distribution), not bullish. A stock crashing -10% on 2x volume gets volume_score=85.
 
 **Fix**: Multiply volume_ratio by sign(daily_return) or create separate up-volume/down-volume scoring.
 
-#### 5.3 BB Position ≠ Volatility
+#### 6.3 BB Position ≠ Volatility
 
 **Problem** (`absolute.py:114-116`): BB position measures where price is within the band (mean-reversion signal), not volatility itself. Scoring BB=0.5 as "best" (75) embeds a mean-reversion bias that contradicts trend-following in Catalyst Timeline.
 
 **Fix**: Replace or supplement with true volatility measures: ATR (Average True Range), historical volatility (std of returns), or Bollinger Bandwidth. Use BB position only as a momentum/mean-reversion sub-signal if desired.
 
-#### 5.4 Trend alignment — add margin sensitivity
+#### 6.4 Trend alignment — add margin sensitivity
 
 **Problem** (`technical.py:52-68`): Price 0.1% above SMA200 scores the same as price 20% above. No sense of conviction.
 
 **Fix**: Weight each alignment check by the margin (e.g., `(close - sma) / sma`), or add a distance-based bonus.
 
-#### 5.5 EMA Smoothing — resolve math inconsistency
+#### 6.5 EMA Smoothing — resolve math inconsistency
 
 **Problem**: Sub-dimension scores are raw, composite is EMA-smoothed (`config.py:52`, α=0.3). Users see four dimension scores that don't add up to the displayed composite.
 
@@ -235,11 +269,11 @@ Theme: Fix directional blindness, price normalization, and volatility mismeasure
 
 **Files**: `engine/analyzers/technical.py`, `engine/scorer/absolute.py`, `engine/main.py`, `engine/scorer/factor_model.py`
 
-### v6: Signal Validation & Data Quality
+### v7: Signal Validation & Data Quality
 
 Theme: Validate that scoring rules actually predict returns; handle missing data honestly.
 
-#### 6.1 IC-Calibrated Breakpoints
+#### 7.1 IC-Calibrated Breakpoints
 
 **Problem**: All breakpoints in `absolute.py:55-121` are hand-tuned without empirical validation. No evidence that PE=8→90 is better than PE=8→85. The entire scoring system rests on unverified assumptions.
 
@@ -251,7 +285,7 @@ Theme: Validate that scoring rules actually predict returns; handle missing data
 
 **Files**: `engine/ic.py`, `engine/scorer/absolute.py`, `engine/main.py`
 
-#### 6.2 Missing Data Should Not Default to Neutral
+#### 7.2 Missing Data Should Not Default to Neutral
 
 **Problem**: All missing metrics → 50 (neutral). But missing data is often informational: companies that don't report FCF often have negative FCF; low analyst coverage correlates with higher risk.
 
@@ -262,11 +296,11 @@ Theme: Validate that scoring rules actually predict returns; handle missing data
 
 **Files**: `engine/scorer/factor_model.py`, `engine/scorer/absolute.py`
 
-### v7: Intelligence Upgrade
+### v8: Intelligence Upgrade
 
 Theme: Add higher-order intelligence — better NLP for sentiment, macro regime awareness.
 
-#### 7.1 Sentiment Analysis Upgrade
+#### 8.1 Sentiment Analysis Upgrade
 
 **Problem**: VADER is a rule-based dictionary that doesn't understand financial context. Only headline text is analyzed. No time decay. No source credibility weighting. News coverage is biased toward large caps.
 
@@ -278,7 +312,7 @@ Theme: Add higher-order intelligence — better NLP for sentiment, macro regime 
 
 **Files**: `engine/analyzers/sentiment.py`, `engine/collectors/news.py`
 
-#### 7.2 Macro / Market Regime Awareness
+#### 8.2 Macro / Market Regime Awareness
 
 **Problem**: The model is purely bottom-up. It doesn't know whether the macro environment is risk-on or risk-off. In a rising-rate environment, all growth stock valuations should be discounted; in a falling-rate environment, they should be expanded. Sector rotation is not captured.
 

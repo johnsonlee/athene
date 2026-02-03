@@ -59,11 +59,19 @@ def analyze_fundamental(fundamentals: Dict[str, Dict[str, Any]]) -> pd.DataFrame
         current_price = _safe(data.get("currentPrice"))
         high_52w = _safe(data.get("fiftyTwoWeekHigh"))
         low_52w = _safe(data.get("fiftyTwoWeekLow"))
+        total_debt = _safe(data.get("totalDebt"))
+        total_cash = _safe(data.get("totalCash"))
+        ebitda = _safe(data.get("ebitda"))
+        current_ratio = _safe(data.get("currentRatio"))
 
         # Value: inverse PE/PB/PS (lower is better)
         inv_pe = 1.0 / pe if pe and pe > 0 else None
         inv_pb = 1.0 / pb if pb and pb > 0 else None
         inv_ps = 1.0 / ps if ps and ps > 0 else None
+
+        # Derived safety metrics
+        fcf_yield = fcf / market_cap if fcf and market_cap and market_cap > 0 else None
+        fcf_debt_ratio = fcf / total_debt if fcf and total_debt and total_debt > 0 else None
 
         records.append({
             "ticker": ticker,
@@ -86,17 +94,20 @@ def analyze_fundamental(fundamentals: Dict[str, Dict[str, Any]]) -> pd.DataFrame
             "current_price": current_price,
             "high_52w": high_52w,
             "low_52w": low_52w,
+            "total_debt": total_debt,
+            "total_cash": total_cash,
+            "ebitda": ebitda,
+            "current_ratio": current_ratio,
             # Derived metrics for scoring
             "inv_pe": inv_pe,
             "inv_pb": inv_pb,
             "inv_ps": inv_ps,
-            # FCF yield (FCF / market cap)
-            "fcf_yield": fcf / market_cap if fcf and market_cap and market_cap > 0 else None,
+            "fcf_yield": fcf_yield,
+            "fcf_debt_ratio": fcf_debt_ratio,
         })
 
     df = pd.DataFrame(records).set_index("ticker")
 
-    # We'll z-score normalize in the normalizer; here just return raw metrics
     log.info(f"Fundamental analysis complete for {len(df)} tickers")
     return df
 
@@ -108,19 +119,19 @@ def compute_fundamental_subscores(
     """Compute sub-factor scores using absolute metric scoring (0-100).
 
     Uses piecewise linear breakpoints per metric instead of z-scores.
-    When *sectors* is provided (ticker → sector mapping), financial-sector
-    stocks use adjusted breakpoints for PE, PB, and Debt/Equity so that
-    structurally low PE ratios (e.g. insurance) are not over-rewarded.
+    When *sectors* is provided (ticker → sector mapping), sector-specific
+    stocks use adjusted breakpoints so that structurally different sectors
+    are not over- or under-rewarded.
 
     Returns:
         DataFrame with value_score, quality_score, growth_score, safety_score,
         fundamental_score columns added (all 0-100).
     """
     from engine.scorer.absolute import (
-        score_pe, score_pb, score_ps,
+        score_pe, score_forward_pe, score_pb, score_ps,
         score_roe, score_roa, score_profit_margin,
         score_revenue_growth, score_earnings_growth,
-        score_debt_equity,
+        score_debt_equity, score_fcf_yield, score_current_ratio,
     )
 
     result = df.copy()
@@ -133,41 +144,69 @@ def compute_fundamental_subscores(
     def _sector_for(ticker: str) -> str | None:
         return _sector_map.get(ticker)
 
-    # Value sub-score: avg(pe_score, pb_score, ps_score)
+    # -- Value sub-score: avg(pe, forward_pe, pb, ps) -- sector-aware --
     if "pe" in result.columns:
         result["pe_score"] = [
             score_pe(row["pe"], _sector_for(t)) for t, row in result.iterrows()
         ]
     else:
         result["pe_score"] = 50.0
+    if "forward_pe" in result.columns:
+        result["forward_pe_score"] = [
+            score_forward_pe(row["forward_pe"], _sector_for(t)) for t, row in result.iterrows()
+        ]
+    else:
+        result["forward_pe_score"] = 50.0
     if "pb" in result.columns:
         result["pb_score"] = [
             score_pb(row["pb"], _sector_for(t)) for t, row in result.iterrows()
         ]
     else:
         result["pb_score"] = 50.0
-    result["ps_score"] = result["ps"].apply(score_ps) if "ps" in result.columns else 50.0
-    result["value_score"] = result[["pe_score", "pb_score", "ps_score"]].mean(axis=1)
+    if "ps" in result.columns:
+        result["ps_score"] = [
+            score_ps(row["ps"], _sector_for(t)) for t, row in result.iterrows()
+        ]
+    else:
+        result["ps_score"] = 50.0
+    result["value_score"] = result[["pe_score", "forward_pe_score", "pb_score", "ps_score"]].mean(axis=1)
 
-    # Quality sub-score: avg(roe_score, roa_score, margin_score)
+    # -- Quality sub-score: avg(roe, roa, margin) --
     result["roe_score"] = result["roe"].apply(score_roe) if "roe" in result.columns else 50.0
     result["roa_score"] = result["roa"].apply(score_roa) if "roa" in result.columns else 50.0
     result["margin_score"] = result["profit_margin"].apply(score_profit_margin) if "profit_margin" in result.columns else 50.0
     result["quality_score"] = result[["roe_score", "roa_score", "margin_score"]].mean(axis=1)
 
-    # Growth sub-score: avg(rev_growth_score, earn_growth_score)
-    result["rev_growth_score"] = result["revenue_growth"].apply(score_revenue_growth) if "revenue_growth" in result.columns else 50.0
-    result["earn_growth_score"] = result["earnings_growth"].apply(score_earnings_growth) if "earnings_growth" in result.columns else 50.0
+    # -- Growth sub-score: avg(rev_growth, earn_growth) -- sector-aware --
+    if "revenue_growth" in result.columns:
+        result["rev_growth_score"] = [
+            score_revenue_growth(row["revenue_growth"], _sector_for(t)) for t, row in result.iterrows()
+        ]
+    else:
+        result["rev_growth_score"] = 50.0
+    if "earnings_growth" in result.columns:
+        result["earn_growth_score"] = [
+            score_earnings_growth(row["earnings_growth"], _sector_for(t)) for t, row in result.iterrows()
+        ]
+    else:
+        result["earn_growth_score"] = 50.0
     result["growth_score"] = result[["rev_growth_score", "earn_growth_score"]].mean(axis=1)
 
-    # Safety sub-score: debt_equity_score (sector-aware for financials)
+    # -- Safety sub-score: avg(debt_equity, fcf_yield, current_ratio) -- sector-aware --
     if "debt_to_equity" in result.columns:
-        result["safety_score"] = [
+        result["debt_equity_score"] = [
             score_debt_equity(row["debt_to_equity"], _sector_for(t))
             for t, row in result.iterrows()
         ]
     else:
-        result["safety_score"] = 50.0
+        result["debt_equity_score"] = 50.0
+    result["fcf_yield_score"] = result["fcf_yield"].apply(score_fcf_yield) if "fcf_yield" in result.columns else 50.0
+    result["current_ratio_score"] = result["current_ratio"].apply(score_current_ratio) if "current_ratio" in result.columns else 50.0
+
+    # Weighted average: D/E is most important, FCF yield and current ratio supplement
+    safety_components = result[["debt_equity_score", "fcf_yield_score", "current_ratio_score"]]
+    # Count how many non-50 (non-default) metrics we have per row
+    result["safety_score"] = safety_components.mean(axis=1)
 
     # Composite fundamental score (weighted, already 0-100)
     result["fundamental_score"] = (
