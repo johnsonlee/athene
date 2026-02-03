@@ -10,7 +10,7 @@ import { useI18n } from '../../lib/i18n';
 export function StockDetailPage() {
   const { ticker } = useParams<{ ticker: string }>();
   const { data, loading, error } = useStockDetail(ticker);
-  const { t } = useI18n();
+  const { t, tIndustry } = useI18n();
 
   if (loading) return <LoadingSpinner message={t('common.loading')} />;
   if (error) return <p className="text-center text-red-600 dark:text-red-400">{t('common.error', { message: error })}</p>;
@@ -27,7 +27,7 @@ export function StockDetailPage() {
           <div>
             <h1 className="text-xl font-bold text-gray-900 sm:text-2xl dark:text-white">{ticker}</h1>
             {(ranking?.industry || ranking?.sector) && (
-              <p className="text-xs text-gray-500 dark:text-gray-400">{ranking.industry || ranking.sector}</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400">{ranking.industry ? tIndustry(ranking.industry) : (ranking.sector ? t(`sector.${ranking.sector}` as any) : '')}</p>
             )}
             {fundamental?.current_price && (
               <p className="text-lg font-semibold text-gray-700 sm:text-xl dark:text-gray-300">

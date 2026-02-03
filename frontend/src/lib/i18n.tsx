@@ -576,12 +576,146 @@ const translations = {
   },
 } as const;
 
+// Industry translations (GICS sub-industries from Wikipedia)
+// Kept separate from the main translations object since these are data labels, not UI strings.
+const industryZh: Record<string, string> = {
+  'Advertising': '广告',
+  'Aerospace & Defense': '航空航天与国防',
+  'Agricultural & Farm Machinery': '农业机械',
+  'Agricultural Products & Services': '农产品与服务',
+  'Air Freight & Logistics': '航空货运与物流',
+  'Apparel Retail': '服装零售',
+  'Apparel, Accessories & Luxury Goods': '服装、配饰与奢侈品',
+  'Application Software': '应用软件',
+  'Asset Management & Custody Banks': '资产管理与托管银行',
+  'Automobile Manufacturers': '汽车制造商',
+  'Automotive Parts & Equipment': '汽车零部件与设备',
+  'Automotive Retail': '汽车零售',
+  'Biotechnology': '生物技术',
+  'Brewers': '啤酒酿造',
+  'Broadcasting': '广播',
+  'Broadline Retail': '综合零售',
+  'Building Products': '建筑产品',
+  'Cable & Satellite': '有线电视与卫星通信',
+  'Cargo Ground Transportation': '陆路货运',
+  'Casinos & Gaming': '赌场与博彩',
+  'Commodity Chemicals': '大宗化学品',
+  'Communications Equipment': '通信设备',
+  'Computer & Electronics Retail': '计算机与电子产品零售',
+  'Construction & Engineering': '建筑与工程',
+  'Construction Machinery & Heavy Transportation Equipment': '工程机械与重型运输设备',
+  'Construction Materials': '建筑材料',
+  'Consumer Electronics': '消费电子',
+  'Consumer Finance': '消费金融',
+  'Consumer Staples Merchandise Retail': '日用消费品零售',
+  'Copper': '铜',
+  'Data Center REITs': '数据中心REITs',
+  'Data Processing & Outsourced Services': '数据处理与外包服务',
+  'Distillers & Vintners': '蒸馏酒与葡萄酒',
+  'Distributors': '分销商',
+  'Diversified Banks': '多元化银行',
+  'Diversified Support Services': '多元化支持服务',
+  'Electric Utilities': '电力公用事业',
+  'Electrical Components & Equipment': '电气元件与设备',
+  'Electronic Components': '电子元件',
+  'Electronic Equipment & Instruments': '电子设备与仪器',
+  'Electronic Manufacturing Services': '电子制造服务',
+  'Environmental & Facilities Services': '环境与设施服务',
+  'Fertilizers & Agricultural Chemicals': '化肥与农用化学品',
+  'Financial Exchanges & Data': '金融交易所与数据',
+  'Food Distributors': '食品分销商',
+  'Food Retail': '食品零售',
+  'Footwear': '鞋类',
+  'Gas Utilities': '燃气公用事业',
+  'Gold': '黄金',
+  'Health Care Distributors': '医疗保健分销商',
+  'Health Care Equipment': '医疗保健设备',
+  'Health Care Facilities': '医疗保健设施',
+  'Health Care REITs': '医疗保健REITs',
+  'Health Care Services': '医疗保健服务',
+  'Health Care Supplies': '医疗保健用品',
+  'Health Care Technology': '医疗保健技术',
+  'Heavy Electrical Equipment': '重型电气设备',
+  'Home Improvement Retail': '家居建材零售',
+  'Homebuilding': '住宅建筑',
+  'Homefurnishing Retail': '家居用品零售',
+  'Hotel & Resort REITs': '酒店与度假村REITs',
+  'Hotels, Resorts & Cruise Lines': '酒店、度假村与邮轮',
+  'Household Products': '家居用品',
+  'Human Resource & Employment Services': '人力资源与就业服务',
+  'IT Consulting & Other Services': 'IT咨询与其他服务',
+  'Independent Power Producers & Energy Traders': '独立电力生产商与能源交易商',
+  'Industrial Conglomerates': '工业综合企业',
+  'Industrial Gases': '工业气体',
+  'Industrial Machinery & Supplies & Components': '工业机械与零部件',
+  'Industrial REITs': '工业REITs',
+  'Insurance Brokers': '保险经纪',
+  'Integrated Oil & Gas': '综合石油与天然气',
+  'Integrated Telecommunication Services': '综合电信服务',
+  'Interactive Home Entertainment': '互动家庭娱乐',
+  'Interactive Media & Services': '互动媒体与服务',
+  'Internet Retail': '互联网零售',
+  'Internet Services & Infrastructure': '互联网服务与基础设施',
+  'Investment Banking & Brokerage': '投资银行与经纪',
+  'Leisure Products': '休闲产品',
+  'Life & Health Insurance': '人寿与健康保险',
+  'Life Sciences Tools & Services': '生命科学工具与服务',
+  'Managed Health Care': '管理式医疗',
+  'Metal, Glass & Plastic Containers': '金属、玻璃与塑料容器',
+  'Movies & Entertainment': '电影与娱乐',
+  'Multi-Family Residential REITs': '多户住宅REITs',
+  'Multi-Sector Holdings': '多元化控股',
+  'Multi-Utilities': '多元公用事业',
+  'Multi-line Insurance': '多险种保险',
+  'Office REITs': '办公楼REITs',
+  'Oil & Gas Equipment & Services': '油气设备与服务',
+  'Oil & Gas Exploration & Production': '油气勘探与生产',
+  'Oil & Gas Refining & Marketing': '油气炼化与销售',
+  'Oil & Gas Storage & Transportation': '油气储运',
+  'Other Specialized REITs': '其他专业REITs',
+  'Other Specialty Retail': '其他专业零售',
+  'Packaged Foods & Meats': '包装食品与肉类',
+  'Paper & Plastic Packaging Products & Materials': '纸与塑料包装产品',
+  'Passenger Airlines': '客运航空',
+  'Passenger Ground Transportation': '客运陆路交通',
+  'Personal Care Products': '个人护理产品',
+  'Pharmaceuticals': '制药',
+  'Property & Casualty Insurance': '财产与意外保险',
+  'Publishing': '出版',
+  'Rail Transportation': '铁路运输',
+  'Real Estate Services': '房地产服务',
+  'Regional Banks': '区域银行',
+  'Reinsurance': '再保险',
+  'Research & Consulting Services': '研究与咨询服务',
+  'Restaurants': '餐饮',
+  'Retail REITs': '零售REITs',
+  'Self-Storage REITs': '自助仓储REITs',
+  'Semiconductor Materials & Equipment': '半导体材料与设备',
+  'Semiconductors': '半导体',
+  'Single-Family Residential REITs': '独户住宅REITs',
+  'Soft Drinks & Non-alcoholic Beverages': '软饮料与非酒精饮料',
+  'Specialized Consumer Services': '专业消费服务',
+  'Specialty Chemicals': '特种化学品',
+  'Steel': '钢铁',
+  'Systems Software': '系统软件',
+  'Technology Distributors': '技术分销商',
+  'Technology Hardware, Storage & Peripherals': '技术硬件、存储与外设',
+  'Telecom Tower REITs': '电信塔REITs',
+  'Timber REITs': '林业REITs',
+  'Tobacco': '烟草',
+  'Trading Companies & Distributors': '贸易公司与分销商',
+  'Transaction & Payment Processing Services': '交易与支付处理服务',
+  'Water Utilities': '水务公用事业',
+  'Wireless Telecommunication Services': '无线电信服务',
+};
+
 type TranslationKey = keyof typeof translations.en;
 
 interface I18nContextValue {
   locale: Locale;
   setLocale: (l: Locale) => void;
   t: (key: TranslationKey, params?: Record<string, string | number>) => string;
+  tIndustry: (industry: string) => string;
 }
 
 const I18nContext = createContext<I18nContextValue>(null!);
@@ -608,8 +742,13 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     return text;
   };
 
+  const tIndustry = (industry: string): string => {
+    if (locale === 'zh') return industryZh[industry] || industry;
+    return industry;
+  };
+
   return (
-    <I18nContext.Provider value={{ locale, setLocale: changeLocale, t }}>
+    <I18nContext.Provider value={{ locale, setLocale: changeLocale, t, tIndustry }}>
       {children}
     </I18nContext.Provider>
   );

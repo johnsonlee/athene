@@ -19,7 +19,7 @@ interface Props {
 }
 
 /* ── Mobile card for a single stock ── */
-function StockCard({ stock, t }: { stock: RankedStock; t: ReturnType<typeof useI18n>['t'] }) {
+function StockCard({ stock, t, tIndustry }: { stock: RankedStock; t: ReturnType<typeof useI18n>['t']; tIndustry: ReturnType<typeof useI18n>['tIndustry'] }) {
   return (
     <Link
       to={`/stock/${stock.ticker}`}
@@ -37,7 +37,7 @@ function StockCard({ stock, t }: { stock: RankedStock; t: ReturnType<typeof useI
         <div className="ml-3 text-right">
           <p className="font-mono text-base font-bold text-gray-900 dark:text-white">{formatScore(stock.composite_score)}</p>
           {(stock.industry || stock.sector) && (
-            <p className="text-[10px] text-gray-400 dark:text-gray-500">{stock.industry || (t(`sector.${stock.sector}` as any) || stock.sector)}</p>
+            <p className="text-[10px] text-gray-400 dark:text-gray-500">{stock.industry ? tIndustry(stock.industry) : (t(`sector.${stock.sector}` as any) || stock.sector)}</p>
           )}
         </div>
       </div>
@@ -66,7 +66,7 @@ function StockCard({ stock, t }: { stock: RankedStock; t: ReturnType<typeof useI
 
 export function ScreenerTable({ data }: Props) {
   const [sorting, setSorting] = useState<SortingState>([{ id: 'rank', desc: false }]);
-  const { t } = useI18n();
+  const { t, tIndustry } = useI18n();
 
   const columns = useMemo<ColumnDef<RankedStock, any>[]>(
     () => [
@@ -107,7 +107,7 @@ export function ScreenerTable({ data }: Props) {
           const sector = row.original.sector;
           return (
             <span className="text-xs text-gray-600 dark:text-gray-400">
-              {industry || (sector ? (t(`sector.${sector}` as any) || sector) : '—')}
+              {industry ? tIndustry(industry) : (sector ? (t(`sector.${sector}` as any) || sector) : '—')}
             </span>
           );
         },
@@ -155,7 +155,7 @@ export function ScreenerTable({ data }: Props) {
         ),
       },
     ],
-    [t]
+    [t, tIndustry]
   );
 
   const table = useReactTable({
@@ -177,7 +177,7 @@ export function ScreenerTable({ data }: Props) {
       {/* ── Mobile: card list ── */}
       <div className="space-y-2 md:hidden">
         {sortedData.map((stock) => (
-          <StockCard key={stock.ticker} stock={stock} t={t} />
+          <StockCard key={stock.ticker} stock={stock} t={t} tIndustry={tIndustry} />
         ))}
       </div>
 

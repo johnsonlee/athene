@@ -9,7 +9,7 @@ interface Props {
 }
 
 export function TopMovers({ rankings }: Props) {
-  const { t } = useI18n();
+  const { t, tIndustry } = useI18n();
   const top10 = rankings.slice(0, 10);
   const bottom10 = [...rankings].sort((a, b) => a.composite_score - b.composite_score).slice(0, 10);
 
@@ -31,7 +31,7 @@ export function TopMovers({ rankings }: Props) {
                   <span className="hidden truncate text-xs text-gray-500 sm:inline dark:text-gray-400">{stock.name}</span>
                 </div>
                 {stock.industry && (
-                  <p className="ml-7 truncate text-[10px] text-gray-400 dark:text-gray-500">{stock.industry}</p>
+                  <p className="ml-7 truncate text-[10px] text-gray-400 dark:text-gray-500">{tIndustry(stock.industry)}</p>
                 )}
               </div>
               <div className="ml-2 flex shrink-0 items-center gap-2">
@@ -59,7 +59,7 @@ export function TopMovers({ rankings }: Props) {
                   <span className="hidden truncate text-xs text-gray-500 sm:inline dark:text-gray-400">{stock.name}</span>
                 </div>
                 {stock.industry && (
-                  <p className="ml-7 truncate text-[10px] text-gray-400 dark:text-gray-500">{stock.industry}</p>
+                  <p className="ml-7 truncate text-[10px] text-gray-400 dark:text-gray-500">{tIndustry(stock.industry)}</p>
                 )}
               </div>
               <div className="ml-2 flex shrink-0 items-center gap-2">
