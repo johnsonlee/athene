@@ -125,7 +125,7 @@ export function About() {
         <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">{t('about.scoringAbsolute')}</p>
         <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">{t('about.scoringComposite')}</p>
         <p className="mt-1 overflow-x-auto rounded bg-gray-100 px-3 py-2 font-mono text-xs text-gray-800 sm:text-sm dark:bg-slate-900/60 dark:text-cyan-200">{t('about.scoringFormula')}</p>
-        <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">{t('about.scoringSmoothing')}</p>
+        <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">{t('about.scoringSmoothing6')}</p>
 
         <h3 className="mt-4 font-semibold text-gray-900 dark:text-white">{t('about.ratingTiers')}</h3>
         <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">{t('about.ratingTiersDesc')}</p>
@@ -166,7 +166,7 @@ export function About() {
 
       <section className="tech-card p-4 sm:p-6">
         <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">{t('about.modelHistory')}</h2>
-        <p className="mb-4 text-sm text-gray-600 dark:text-gray-400">{t('about.modelHistoryDesc')}</p>
+        <p className="mb-4 text-sm text-gray-600 dark:text-gray-400">{t('about.modelHistoryDesc6')}</p>
         <div className="relative ml-3 border-l-2 border-gray-200 dark:border-cyan-500/20">
           {/* v1 */}
           <div className="relative mb-6 ml-6">
@@ -212,16 +212,27 @@ export function About() {
             <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">{t('about.historyV4Desc')}</p>
             <p className="mt-1 text-xs text-amber-600 dark:text-amber-400">{t('about.historyV4Issue')}</p>
           </div>
-          {/* v5 (current) */}
-          <div className="relative ml-6">
-            <span className="absolute -left-[33px] flex h-4 w-4 items-center justify-center rounded-full border-2 border-blue-500 bg-blue-500 dark:border-cyan-400 dark:bg-cyan-400" />
+          {/* v5 */}
+          <div className="relative mb-6 ml-6">
+            <span className="absolute -left-[33px] flex h-4 w-4 items-center justify-center rounded-full border-2 border-gray-300 bg-white dark:border-gray-500 dark:bg-gray-800" />
             <div className="flex items-baseline gap-2">
-              <span className="font-mono text-xs font-bold text-blue-600 dark:text-cyan-400">{t('about.historyV5Label')}</span>
+              <span className="font-mono text-xs font-bold text-gray-500 dark:text-gray-400">{t('about.historyV5Label')}</span>
               <span className="text-xs text-gray-400 dark:text-gray-500">{t('about.historyV5Date')}</span>
-              <span className="rounded bg-blue-100 px-1.5 py-0.5 text-xs font-medium text-blue-700 dark:bg-cyan-500/15 dark:text-cyan-300">{t('about.historyCurrent')}</span>
             </div>
             <h4 className="font-medium text-gray-900 dark:text-white">{t('about.historyV5Title')}</h4>
             <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">{t('about.historyV5Desc')}</p>
+            <p className="mt-1 text-xs text-amber-600 dark:text-amber-400">{t('about.historyV5Issue')}</p>
+          </div>
+          {/* v6 (current) */}
+          <div className="relative ml-6">
+            <span className="absolute -left-[33px] flex h-4 w-4 items-center justify-center rounded-full border-2 border-blue-500 bg-blue-500 dark:border-cyan-400 dark:bg-cyan-400" />
+            <div className="flex items-baseline gap-2">
+              <span className="font-mono text-xs font-bold text-blue-600 dark:text-cyan-400">{t('about.historyV6Label')}</span>
+              <span className="text-xs text-gray-400 dark:text-gray-500">{t('about.historyV6Date')}</span>
+              <span className="rounded bg-blue-100 px-1.5 py-0.5 text-xs font-medium text-blue-700 dark:bg-cyan-500/15 dark:text-cyan-300">{t('about.historyCurrent')}</span>
+            </div>
+            <h4 className="font-medium text-gray-900 dark:text-white">{t('about.historyV6Title')}</h4>
+            <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">{t('about.historyV6Desc')}</p>
           </div>
         </div>
       </section>

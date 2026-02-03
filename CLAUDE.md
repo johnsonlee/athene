@@ -84,7 +84,7 @@ Added financial-sector-specific breakpoints to fix systematic over-scoring of ba
 - Financial D/E scored near-neutral (~50) — leverage is the business model, not a risk signal.
 - Generalized sector-detection pattern (`_is_financial()`) for future sector expansions.
 
-### v5: Fundamental Scoring Overhaul (current)
+### v5: Fundamental Scoring Overhaul
 
 Comprehensive upgrade to fundamental scoring: expanded sector awareness, deeper safety evaluation, and forward-looking valuation.
 
@@ -94,7 +94,20 @@ Comprehensive upgrade to fundamental scoring: expanded sector awareness, deeper 
 - **Forward PE scoring**: Added `score_forward_pe()` with sector-aware breakpoints. `value_score` now `avg(pe, forward_pe, pb, ps)` instead of `avg(pe, pb, ps)`.
 - **Sector-aware growth scoring**: Utilities use adjusted growth expectations (3% revenue growth = good, not mediocre).
 
-## Scoring Design (v5)
+### v6: Technical Scoring Overhaul (current)
+
+Comprehensive upgrade to technical indicator scoring: price normalization, directional context, true volatility measurement, margin-weighted trend, and math-consistent EMA smoothing.
+
+**Key changes from v5:**
+- **MACD histogram price normalization**: `macd_histogram_pct = (histogram / close) * 100`. Removes absolute ±0.5 threshold that favored low-price stocks. Breakpoints now use percentage-of-price values.
+- **Direction-aware volume**: `signed_volume_ratio = volume_ratio * sign(daily_return)`. High volume on a down day scores bearish (distribution); high volume on an up day scores bullish (confirmation). Replaces magnitude-only scoring.
+- **True volatility measurement**: Replaced BB position (%B) with two proper volatility measures: `bb_width = (upper - lower) / middle` (Bollinger bandwidth) and `hist_volatility` (annualized std of 20-day returns). `volatility_score = avg(bb_width_score, hist_vol_score)`. Removes mean-reversion bias.
+- **Margin-weighted trend alignment**: Each SMA alignment check now scores on a continuous 0-1 scale based on percentage distance from the SMA, instead of a binary pass/fail. Price 20% above SMA200 gets a stronger signal than price 0.1% above.
+- **Per-dimension EMA smoothing**: EMA smoothing (α=0.3) now applied to each of the four dimensions individually. Composite is then recomputed from smoothed dimensions, ensuring `composite = Σ(weight_i × smoothed_dim_i)`. Fixes the math inconsistency where displayed dimension scores didn't add up to the displayed composite.
+
+**Files**: `engine/analyzers/technical.py`, `engine/scorer/absolute.py`, `engine/main.py`
+
+## Scoring Design (v6)
 
 ### Absolute Metric Scoring
 
@@ -119,7 +132,10 @@ def metric_score(value, breakpoints) -> float:
 | Revenue Growth | Higher is better | 0%→40, 10%→65, 30%→90 |
 | Debt/Equity | Lower is better | D/E 40→75, 100→45, 250→15 |
 | RSI | Moderate is best | RSI 50→75, 30→50, 70→40 |
-| BB Position | Mid is best | BB 0.5→75, 0.2→65, 0.9→35 |
+| MACD Hist % | Higher is better | -1.5%→20, 0%→50, 0.5%→65, 1.5%→80 |
+| BB Width | Lower is better | 0.02→88, 0.10→55, 0.25→20 |
+| Hist Volatility | Lower is better | 10%→88, 30%→52, 70%→18 |
+| Dir. Volume | Positive is better | -2.5→15, 0→50, 1.5→72, 2.5→85 |
 | VADER Compound | Higher is better | compound: direct map (-1,+1)→(0,100) |
 
 ### Sub-score Computation (unchanged)
@@ -157,10 +173,13 @@ All scores are 0-100 throughout the pipeline.
 
 Hysteresis: ±2 points buffer to prevent oscillation at boundaries.
 
-### EMA Smoothing
+### EMA Smoothing (v6: per-dimension)
 
-`smoothed_composite = 0.3 × raw + 0.7 × prev_smoothed`
-Applied only to composite_score before rating assignment. Sub-factor scores remain raw for attribution clarity.
+```
+smoothed_dim = 0.3 × raw_dim + 0.7 × prev_smoothed_dim   (for each of 4 dimensions)
+composite    = Σ(weight_i × smoothed_dim_i)
+```
+Applied to each dimension individually before composite recomputation. Ensures displayed dimensions add up to composite.
 
 ### Change Attribution
 
@@ -186,88 +205,7 @@ When implementing a new version from the roadmap:
 
 ## Improvement Roadmap
 
-Known weaknesses of the current model (v4), grouped into future versions by theme.
-
-### v5: Fundamental Scoring Overhaul
-
-Theme: Make fundamental scoring sector-aware, deeper on safety, and forward-looking.
-
-#### 5.1 Sector-Specific Scoring (expand beyond Financials)
-
-**Problem**: Only `Financials` gets adjusted breakpoints (`absolute.py:66-82`). Other sectors have equally strong structural differences that distort scores:
-- SaaS/Tech: PS 10-20x is normal, but `PS_BREAKPOINTS` scores PS=12 → 20 (very low).
-- Biotech: Negative PE is normal for pre-revenue companies; currently hard-coded to 10.
-- Utilities: Low growth (2-3%) is structural, not a weakness.
-- REITs: High D/E is the business model, same issue as financials.
-- Energy: Trailing PE is misleading at cycle peaks (low PE = high earnings = late cycle danger).
-
-**Proposed fix**: Define sector-specific breakpoint overrides for at least: Technology, Healthcare, Utilities, Real Estate, Energy. Generalize the `_is_financial()` pattern to a sector → breakpoint-set mapping.
-
-**Files**: `engine/scorer/absolute.py`, `engine/config.py`
-
-#### 5.2 Strengthen Safety / Downside Control Dimension
-
-**Problem**: `safety_score` is a single metric (Debt/Equity) — too thin for a dimension that carries 25% of the composite weight via Downside Control (`DC = 0.60×safety + 0.40×volatility`).
-
-**Proposed fix**: Add scored metrics:
-- Interest Coverage Ratio (EBIT / interest expense) — can the company service its debt?
-- FCF / Total Debt — cash flow coverage (FCF is already collected but unused for scoring).
-- Current Ratio — short-term liquidity.
-- Optionally: Altman Z-Score or Piotroski F-Score as composite safety signals.
-
-Update: `safety_score = avg(debt_equity_score, interest_coverage_score, fcf_debt_score, ...)`.
-
-**Files**: `engine/collectors/fundamental.py`, `engine/analyzers/fundamental.py`, `engine/scorer/absolute.py`
-
-#### 5.3 Use Forward PE for Growth Stock Valuation
-
-**Problem**: `forwardPE` is collected (`fundamental.py:44`) but never scored. For growth stocks, trailing PE overstates expensiveness because it uses past earnings.
-
-**Proposed fix**: Add `score_forward_pe()` and blend into `value_score`:
-```
-value_score = avg(pe_score, forward_pe_score, pb_score, ps_score)
-```
-Or weight forward PE higher for growth stocks (revenue_growth > 15%).
-
-**Files**: `engine/analyzers/fundamental.py`, `engine/scorer/absolute.py`
-
-### v6: Technical Scoring Overhaul
-
-Theme: Fix directional blindness, price normalization, and volatility mismeasurement in technical indicators.
-
-#### 6.1 MACD Histogram — price normalization
-
-**Problem** (`absolute.py:199-208`): The ±0.5 threshold is an absolute number. For a $5 stock, histogram=0.3 is a strong signal; for a $500 stock, it's noise. Systematic bias toward low-price stocks.
-
-**Fix**: Normalize MACD histogram by close price or ATR before scoring.
-
-#### 6.2 Volume — directional context
-
-**Problem** (`absolute.py:119-121`): Higher volume = higher score, always. But high volume on a down day is bearish (distribution), not bullish. A stock crashing -10% on 2x volume gets volume_score=85.
-
-**Fix**: Multiply volume_ratio by sign(daily_return) or create separate up-volume/down-volume scoring.
-
-#### 6.3 BB Position ≠ Volatility
-
-**Problem** (`absolute.py:114-116`): BB position measures where price is within the band (mean-reversion signal), not volatility itself. Scoring BB=0.5 as "best" (75) embeds a mean-reversion bias that contradicts trend-following in Catalyst Timeline.
-
-**Fix**: Replace or supplement with true volatility measures: ATR (Average True Range), historical volatility (std of returns), or Bollinger Bandwidth. Use BB position only as a momentum/mean-reversion sub-signal if desired.
-
-#### 6.4 Trend alignment — add margin sensitivity
-
-**Problem** (`technical.py:52-68`): Price 0.1% above SMA200 scores the same as price 20% above. No sense of conviction.
-
-**Fix**: Weight each alignment check by the margin (e.g., `(close - sma) / sma`), or add a distance-based bonus.
-
-#### 6.5 EMA Smoothing — resolve math inconsistency
-
-**Problem**: Sub-dimension scores are raw, composite is EMA-smoothed (`config.py:52`, α=0.3). Users see four dimension scores that don't add up to the displayed composite.
-
-**Proposed fix options**:
-- **Option A**: Smooth each dimension individually, then compute composite from smoothed dimensions. Math stays consistent.
-- **Option B**: Keep current approach but display both raw and smoothed composite in the frontend, with a clear explanation.
-
-**Files**: `engine/analyzers/technical.py`, `engine/scorer/absolute.py`, `engine/main.py`, `engine/scorer/factor_model.py`
+Known weaknesses of the current model (v6), grouped into future versions by theme.
 
 ### v7: Signal Validation & Data Quality
 
