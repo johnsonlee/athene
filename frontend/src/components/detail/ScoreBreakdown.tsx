@@ -16,18 +16,22 @@ interface Driver {
 type Signal = 'bullish' | 'bearish' | 'neutral';
 
 function signalColor(signal: string) {
-  if (signal === 'bullish') return 'text-green-700 bg-green-50 dark:text-green-400 dark:bg-green-900/30';
-  if (signal === 'bearish') return 'text-red-700 bg-red-50 dark:text-red-400 dark:bg-red-900/30';
-  return 'text-gray-600 bg-gray-50 dark:text-gray-400 dark:bg-gray-700';
+  if (signal === 'bullish') return 'text-green-700 bg-green-50 dark:text-emerald-400 dark:bg-emerald-500/10';
+  if (signal === 'bearish') return 'text-red-700 bg-red-50 dark:text-red-400 dark:bg-red-500/10';
+  return 'text-gray-600 bg-gray-50 dark:text-gray-400 dark:bg-slate-700/50';
 }
 
 function scoreBar(score: number | null | undefined) {
   if (score == null) return null;
   const pct = Math.max(0, Math.min(100, score));
-  const color = score >= 60 ? 'bg-green-500' : score < 40 ? 'bg-red-500' : 'bg-gray-400';
+  const color = score >= 60
+    ? 'bg-emerald-500 text-emerald-500'
+    : score < 40
+      ? 'bg-red-500 text-red-500'
+      : 'bg-gray-400 text-gray-400';
   return (
-    <div className="h-2 w-full rounded-full bg-gray-200 dark:bg-gray-600">
-      <div className={`h-2 rounded-full ${color}`} style={{ width: `${pct}%` }} />
+    <div className="tech-score-track h-2 w-full rounded-full bg-gray-200 dark:bg-gray-600">
+      <div className={`tech-score-fill h-2 rounded-full ${color}`} style={{ width: `${pct}%` }} />
     </div>
   );
 }
@@ -150,11 +154,11 @@ export function ScoreBreakdown({ detail }: Props) {
   const weakestFactor = validFactors.length > 1 ? validFactors.reduce((a, b) => (a.score ?? 100) < (b.score ?? 100) ? a : b) : null;
 
   return (
-    <div className="rounded-lg bg-white p-3 shadow-sm sm:p-4 dark:bg-gray-800">
-      <h2 className="mb-3 text-base font-semibold text-gray-900 sm:mb-4 sm:text-lg dark:text-white">{t('detail.ratingAnalysis')}</h2>
+    <div className="tech-card p-3 sm:p-4">
+      <h2 className="tech-heading mb-3 text-base font-semibold text-gray-900 sm:mb-4 sm:text-lg dark:text-white">{t('detail.ratingAnalysis')}</h2>
 
       {/* Summary */}
-      <div className="mb-4 rounded-md bg-gray-50 p-3 text-xs text-gray-700 sm:text-sm dark:bg-gray-900 dark:text-gray-300">
+      <div className="mb-4 rounded-md bg-gray-50 p-3 text-xs text-gray-700 sm:text-sm dark:bg-slate-900/60 dark:text-gray-300">
         <p>
           {t('detail.ratedAs', {
             ticker: detail.ticker,
@@ -211,7 +215,7 @@ export function ScoreBreakdown({ detail }: Props) {
       {/* Factor sections */}
       <div className="space-y-4">
         {factors.map((factor, fi) => (
-          <div key={factor.name} className="border-t pt-3 first:border-0 first:pt-0 dark:border-gray-700">
+          <div key={factor.name} className="border-t pt-3 first:border-0 first:pt-0 dark:border-slate-700/50">
             {/* Factor header + score */}
             <div className="mb-2 flex items-center justify-between">
               <div className="flex items-center gap-1.5 sm:gap-2">
@@ -245,7 +249,7 @@ export function ScoreBreakdown({ detail }: Props) {
             {/* Additional metrics per dimension */}
             {/* EV: Earnings Visibility - profitability & growth metrics */}
             {fi === 0 && fund && (
-              <div className="mt-3 grid grid-cols-2 gap-x-4 border-t pt-2 dark:border-gray-700">
+              <div className="mt-3 grid grid-cols-2 gap-x-4 border-t pt-2 dark:border-slate-700/50">
                 <Metric label={t('metric.roa')} value={formatPercent(fund.roa)}
                   signal={sig(fund.roa, v => v > 0.10 ? 'bullish' : v < 0.03 ? 'bearish' : 'neutral')} />
                 <Metric label={t('metric.marketCap')} value={formatLargeNumber(fund.market_cap)} />
@@ -255,7 +259,7 @@ export function ScoreBreakdown({ detail }: Props) {
 
             {/* VM: Valuation Margin - valuation metrics */}
             {fi === 1 && fund && (
-              <div className="mt-3 grid grid-cols-2 gap-x-4 border-t pt-2 dark:border-gray-700">
+              <div className="mt-3 grid grid-cols-2 gap-x-4 border-t pt-2 dark:border-slate-700/50">
                 <Metric label={t('metric.fwdPe')} value={formatRatio(fund.forward_pe)}
                   signal={sig(fund.forward_pe, v => v < 18 ? 'bullish' : v > 30 ? 'bearish' : 'neutral')} />
                 <Metric label={t('metric.pb')} value={formatRatio(fund.pb)}
@@ -269,7 +273,7 @@ export function ScoreBreakdown({ detail }: Props) {
 
             {/* CT: Catalyst Timeline - technical + sentiment */}
             {fi === 2 && tech && (
-              <div className="mt-3 grid grid-cols-2 gap-x-4 border-t pt-2 dark:border-gray-700">
+              <div className="mt-3 grid grid-cols-2 gap-x-4 border-t pt-2 dark:border-slate-700/50">
                 <Metric label={t('metric.sma20')} value={formatPrice(tech.sma_20)}
                   signal={tech.close != null && tech.sma_20 != null ? (tech.close > tech.sma_20 ? 'bullish' : 'bearish') : undefined} />
                 <Metric label={t('metric.sma50')} value={formatPrice(tech.sma_50)}
@@ -284,7 +288,7 @@ export function ScoreBreakdown({ detail }: Props) {
               </div>
             )}
             {fi === 2 && sent && (
-              <div className="mt-3 border-t pt-2 dark:border-gray-700">
+              <div className="mt-3 border-t pt-2 dark:border-slate-700/50">
                 <div className="mb-2">
                   <p className="mb-1 text-[10px] font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500">{t('group.sentimentBreakdown')}</p>
                   <SentimentBar pos={sent.sentiment_pos} neg={sent.sentiment_neg} neu={sent.sentiment_neu} />
@@ -304,7 +308,7 @@ export function ScoreBreakdown({ detail }: Props) {
                             {h.date && <span className="mr-1.5 font-mono text-[10px] text-gray-400 dark:text-gray-500">{h.date}</span>}
                             {h.url ? (
                               <a href={h.url} target="_blank" rel="noopener noreferrer"
-                                className="text-blue-600 hover:underline dark:text-blue-400">{h.title}</a>
+                                className="text-blue-600 hover:underline dark:text-cyan-400">{h.title}</a>
                             ) : (
                               <span className="text-gray-700 dark:text-gray-300">{h.title}</span>
                             )}
@@ -322,7 +326,7 @@ export function ScoreBreakdown({ detail }: Props) {
 
             {/* DC: Downside Control - safety metrics */}
             {fi === 3 && fund && (
-              <div className="mt-3 grid grid-cols-2 gap-x-4 border-t pt-2 dark:border-gray-700">
+              <div className="mt-3 grid grid-cols-2 gap-x-4 border-t pt-2 dark:border-slate-700/50">
                 <Metric label={t('metric.beta')} value={formatRatio(fund.beta)} />
               </div>
             )}

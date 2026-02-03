@@ -22,23 +22,23 @@ export function StockDetailPage() {
     <div className="space-y-4 sm:space-y-6">
       {/* Header */}
       <div>
-        <Link to="/screener" className="inline-block py-1 text-sm text-blue-600 hover:underline dark:text-blue-400">&larr; {t('detail.backToScreener')}</Link>
+        <Link to="/screener" className="inline-block py-1 text-sm text-blue-600 hover:underline dark:text-cyan-400">&larr; {t('detail.backToScreener')}</Link>
         <div className="mt-1 flex items-start justify-between">
           <div>
-            <h1 className="text-xl font-bold text-gray-900 sm:text-2xl dark:text-white">{ticker}</h1>
+            <h1 className="tech-heading text-xl font-bold tracking-tight text-gray-900 sm:text-2xl dark:text-white">{ticker}</h1>
             {(ranking?.industry || ranking?.sector) && (
-              <p className="text-xs text-gray-500 dark:text-gray-400">{ranking.industry ? tIndustry(ranking.industry) : (ranking.sector ? t(`sector.${ranking.sector}` as any) : '')}</p>
+              <p className="text-xs text-gray-500 dark:text-gray-500">{ranking.industry ? tIndustry(ranking.industry) : (ranking.sector ? t(`sector.${ranking.sector}` as any) : '')}</p>
             )}
             {fundamental?.current_price && (
-              <p className="text-lg font-semibold text-gray-700 sm:text-xl dark:text-gray-300">
+              <p className="font-mono text-lg font-semibold text-gray-700 sm:text-xl dark:text-gray-300">
                 {formatPrice(fundamental.current_price)}
               </p>
             )}
           </div>
           {ranking && (
             <div className="ml-3 text-right">
-              <p className="text-xs text-gray-500 sm:text-sm dark:text-gray-400">{t('detail.rank', { rank: ranking.rank })}</p>
-              <p className="text-base font-bold text-gray-900 sm:text-lg dark:text-white">{formatScore(ranking.composite_score)}</p>
+              <p className="font-mono text-xs text-gray-500 sm:text-sm dark:text-gray-500">{t('detail.rank', { rank: ranking.rank })}</p>
+              <p className="font-mono text-base font-bold text-gray-900 sm:text-lg dark:text-white">{formatScore(ranking.composite_score)}</p>
               <ScoreBadge tier={ranking.tier} label={t(`tier.${ranking.tier}` as any)} />
             </div>
           )}

@@ -80,9 +80,9 @@ export function About() {
 
   return (
     <div className="mx-auto max-w-3xl space-y-6">
-      <h1 className="text-xl font-bold text-gray-900 sm:text-2xl dark:text-white">{t('about.title')}</h1>
+      <h1 className="tech-heading text-xl font-bold tracking-tight text-gray-900 sm:text-2xl dark:text-white">{t('about.title')}</h1>
 
-      <section className="rounded-lg bg-white p-4 shadow-sm sm:p-6 dark:bg-gray-800">
+      <section className="tech-card p-4 sm:p-6">
         <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">{t('about.methodology')}</h2>
         <p className="text-sm text-gray-600 dark:text-gray-400">{t('about.methodologyDesc')}</p>
 
@@ -124,7 +124,7 @@ export function About() {
         <h3 className="mt-4 font-semibold text-gray-900 dark:text-white">{t('about.scoringTitle')}</h3>
         <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">{t('about.scoringAbsolute')}</p>
         <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">{t('about.scoringComposite')}</p>
-        <p className="mt-1 overflow-x-auto rounded bg-gray-100 px-3 py-2 font-mono text-xs text-gray-800 sm:text-sm dark:bg-gray-900 dark:text-gray-200">{t('about.scoringFormula')}</p>
+        <p className="mt-1 overflow-x-auto rounded bg-gray-100 px-3 py-2 font-mono text-xs text-gray-800 sm:text-sm dark:bg-slate-900/60 dark:text-cyan-200">{t('about.scoringFormula')}</p>
         <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">{t('about.scoringSmoothing')}</p>
 
         <h3 className="mt-4 font-semibold text-gray-900 dark:text-white">{t('about.ratingTiers')}</h3>
@@ -164,10 +164,10 @@ export function About() {
         )}
       </section>
 
-      <section className="rounded-lg bg-white p-4 shadow-sm sm:p-6 dark:bg-gray-800">
+      <section className="tech-card p-4 sm:p-6">
         <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">{t('about.modelHistory')}</h2>
         <p className="mb-4 text-sm text-gray-600 dark:text-gray-400">{t('about.modelHistoryDesc')}</p>
-        <div className="relative ml-3 border-l-2 border-gray-200 dark:border-gray-600">
+        <div className="relative ml-3 border-l-2 border-gray-200 dark:border-cyan-500/20">
           {/* v1 */}
           <div className="relative mb-6 ml-6">
             <span className="absolute -left-[33px] flex h-4 w-4 items-center justify-center rounded-full border-2 border-gray-300 bg-white dark:border-gray-500 dark:bg-gray-800" />
@@ -203,11 +203,11 @@ export function About() {
           </div>
           {/* v4 (current) */}
           <div className="relative ml-6">
-            <span className="absolute -left-[33px] flex h-4 w-4 items-center justify-center rounded-full border-2 border-blue-500 bg-blue-500 dark:border-blue-400 dark:bg-blue-400" />
+            <span className="absolute -left-[33px] flex h-4 w-4 items-center justify-center rounded-full border-2 border-blue-500 bg-blue-500 dark:border-cyan-400 dark:bg-cyan-400" />
             <div className="flex items-baseline gap-2">
-              <span className="font-mono text-xs font-bold text-blue-600 dark:text-blue-400">{t('about.historyV4Label')}</span>
+              <span className="font-mono text-xs font-bold text-blue-600 dark:text-cyan-400">{t('about.historyV4Label')}</span>
               <span className="text-xs text-gray-400 dark:text-gray-500">{t('about.historyV4Date')}</span>
-              <span className="rounded bg-blue-100 px-1.5 py-0.5 text-xs font-medium text-blue-700 dark:bg-blue-900/50 dark:text-blue-300">{t('about.historyCurrent')}</span>
+              <span className="rounded bg-blue-100 px-1.5 py-0.5 text-xs font-medium text-blue-700 dark:bg-cyan-500/15 dark:text-cyan-300">{t('about.historyCurrent')}</span>
             </div>
             <h4 className="font-medium text-gray-900 dark:text-white">{t('about.historyV4Title')}</h4>
             <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">{t('about.historyV4Desc')}</p>
@@ -215,7 +215,7 @@ export function About() {
         </div>
       </section>
 
-      <section className="rounded-lg bg-white p-4 shadow-sm sm:p-6 dark:bg-gray-800">
+      <section className="tech-card p-4 sm:p-6">
         <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">{t('about.dataSources')}</h2>
         <ul className="list-disc space-y-1 pl-5 text-sm text-gray-600 dark:text-gray-400">
           <li>{t('about.dataPrice')}</li>
@@ -224,7 +224,7 @@ export function About() {
         </ul>
       </section>
 
-      <section className="rounded-lg bg-white p-4 shadow-sm sm:p-6 dark:bg-gray-800">
+      <section className="tech-card p-4 sm:p-6">
         <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">{t('about.disclaimer')}</h2>
         <p className="text-sm text-gray-600 dark:text-gray-400">{t('about.disclaimerText')}</p>
       </section>

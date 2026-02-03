@@ -13,7 +13,7 @@ export function FilterPanel({ filter, onChange, sectors }: Props) {
   const { t } = useI18n();
 
   return (
-    <div className="space-y-3 rounded-lg bg-white p-3 shadow-sm md:flex md:flex-wrap md:items-center md:gap-3 md:space-y-0 dark:bg-gray-800">
+    <div className="tech-card space-y-3 p-3 md:flex md:flex-wrap md:items-center md:gap-3 md:space-y-0">
       {/* Search + Sector row */}
       <div className="flex gap-2">
         <input
@@ -21,14 +21,14 @@ export function FilterPanel({ filter, onChange, sectors }: Props) {
           placeholder={t('screener.searchPlaceholder')}
           value={filter.search}
           onChange={(e) => onChange({ ...filter, search: e.target.value })}
-          className="min-w-0 flex-1 rounded border px-3 py-2 text-sm outline-none focus:border-blue-500 md:py-1.5 dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600"
+          className="tech-input min-w-0 flex-1 rounded border border-gray-200 bg-white px-3 py-2 text-sm outline-none transition-colors focus:border-blue-500 md:py-1.5 dark:border-slate-600/50 dark:bg-slate-800/50 dark:text-gray-200"
         />
         <select
           value={filter.sectors[0] || ''}
           onChange={(e) =>
             onChange({ ...filter, sectors: e.target.value ? [e.target.value] : [] })
           }
-          className="rounded border px-2 py-2 text-sm md:py-1.5 dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600"
+          className="rounded border border-gray-200 px-2 py-2 text-sm md:py-1.5 dark:border-slate-600/50 dark:bg-slate-800/50 dark:text-gray-200"
         >
           <option value="">{t('screener.allSectors')}</option>
           {sectors.map((s) => (
@@ -53,8 +53,8 @@ export function FilterPanel({ filter, onChange, sectors }: Props) {
                 }}
                 className={`rounded px-2.5 py-1.5 text-xs font-medium transition-colors ${
                   active
-                    ? 'bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900'
-                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600'
+                    ? 'tech-btn-active bg-gray-900 text-white dark:bg-transparent'
+                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-slate-700/50 dark:text-gray-400 dark:hover:bg-slate-600/50'
                 }`}
               >
                 {t(`tier.${key}` as any)}
@@ -66,7 +66,7 @@ export function FilterPanel({ filter, onChange, sectors }: Props) {
           onClick={() =>
             onChange({ search: '', sectors: [], tiers: [], minScore: -Infinity, maxScore: Infinity })
           }
-          className="shrink-0 text-xs text-blue-600 hover:underline dark:text-blue-400"
+          className="shrink-0 text-xs text-blue-600 hover:underline dark:text-cyan-400"
         >
           {t('screener.reset')}
         </button>

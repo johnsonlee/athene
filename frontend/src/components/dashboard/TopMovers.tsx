@@ -15,27 +15,27 @@ export function TopMovers({ rankings }: Props) {
 
   return (
     <>
-      <div className="rounded-lg bg-white p-4 shadow-sm dark:bg-gray-800">
-        <h2 className="mb-3 text-lg font-semibold text-gray-900 dark:text-white">{t('dashboard.top10')}</h2>
+      <div className="tech-card p-4">
+        <h2 className="tech-heading mb-3 text-lg font-semibold text-gray-900 dark:text-white">{t('dashboard.top10')}</h2>
         <div className="space-y-1">
           {top10.map((stock, i) => (
             <Link
               key={stock.ticker}
               to={`/stock/${stock.ticker}`}
-              className="flex items-center justify-between rounded p-2 hover:bg-gray-50 active:bg-gray-100 dark:hover:bg-gray-700 dark:active:bg-gray-600"
+              className="tech-row flex items-center justify-between rounded p-2 transition-colors hover:bg-gray-50 active:bg-gray-100 dark:hover:bg-transparent dark:active:bg-transparent"
             >
               <div className="min-w-0 flex-1">
                 <div className="flex items-center gap-2">
-                  <span className="w-5 shrink-0 text-right font-mono text-xs text-gray-400 dark:text-gray-500">{i + 1}</span>
+                  <span className="w-5 shrink-0 text-right font-mono text-xs text-gray-400 dark:text-gray-600">{i + 1}</span>
                   <span className="shrink-0 font-mono text-sm font-semibold text-gray-900 dark:text-white">{stock.ticker}</span>
-                  <span className="hidden truncate text-xs text-gray-500 sm:inline dark:text-gray-400">{stock.name}</span>
+                  <span className="hidden truncate text-xs text-gray-500 sm:inline dark:text-gray-500">{stock.name}</span>
                 </div>
                 {stock.industry && (
-                  <p className="ml-7 truncate text-[10px] text-gray-400 dark:text-gray-500">{tIndustry(stock.industry)}</p>
+                  <p className="ml-7 truncate text-[10px] text-gray-400 dark:text-gray-600">{tIndustry(stock.industry)}</p>
                 )}
               </div>
               <div className="ml-2 flex shrink-0 items-center gap-2">
-                <span className="font-mono text-sm font-medium text-green-600 dark:text-green-400">{formatScore(stock.composite_score)}</span>
+                <span className="font-mono text-sm font-medium text-emerald-600 dark:text-emerald-400">{formatScore(stock.composite_score)}</span>
                 <ScoreBadge tier={stock.tier} label={t(`tier.${stock.tier}` as any)} />
               </div>
             </Link>
@@ -43,23 +43,23 @@ export function TopMovers({ rankings }: Props) {
         </div>
       </div>
 
-      <div className="rounded-lg bg-white p-4 shadow-sm dark:bg-gray-800">
-        <h2 className="mb-3 text-lg font-semibold text-gray-900 dark:text-white">{t('dashboard.bottom10')}</h2>
+      <div className="tech-card p-4">
+        <h2 className="tech-heading mb-3 text-lg font-semibold text-gray-900 dark:text-white">{t('dashboard.bottom10')}</h2>
         <div className="space-y-1">
           {bottom10.map((stock, i) => (
             <Link
               key={stock.ticker}
               to={`/stock/${stock.ticker}`}
-              className="flex items-center justify-between rounded p-2 hover:bg-gray-50 active:bg-gray-100 dark:hover:bg-gray-700 dark:active:bg-gray-600"
+              className="tech-row flex items-center justify-between rounded p-2 transition-colors hover:bg-gray-50 active:bg-gray-100 dark:hover:bg-transparent dark:active:bg-transparent"
             >
               <div className="min-w-0 flex-1">
                 <div className="flex items-center gap-2">
-                  <span className="w-5 shrink-0 text-right font-mono text-xs text-gray-400 dark:text-gray-500">{i + 1}</span>
+                  <span className="w-5 shrink-0 text-right font-mono text-xs text-gray-400 dark:text-gray-600">{i + 1}</span>
                   <span className="shrink-0 font-mono text-sm font-semibold text-gray-900 dark:text-white">{stock.ticker}</span>
-                  <span className="hidden truncate text-xs text-gray-500 sm:inline dark:text-gray-400">{stock.name}</span>
+                  <span className="hidden truncate text-xs text-gray-500 sm:inline dark:text-gray-500">{stock.name}</span>
                 </div>
                 {stock.industry && (
-                  <p className="ml-7 truncate text-[10px] text-gray-400 dark:text-gray-500">{tIndustry(stock.industry)}</p>
+                  <p className="ml-7 truncate text-[10px] text-gray-400 dark:text-gray-600">{tIndustry(stock.industry)}</p>
                 )}
               </div>
               <div className="ml-2 flex shrink-0 items-center gap-2">
