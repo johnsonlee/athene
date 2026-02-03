@@ -37,30 +37,64 @@ npm run build    # Production build → dist/
 
 Wikipedia → universe.py → tickers → [price.py, fundamental.py, news.py] → [analyzers + absolute scoring] → factor_model (4 qualitative dimensions → composite) → ranker (rating + ranking) → json_exporter → frontend/public/data/
 
-## Lessons Learned
+## Version History
 
 ### v1: Z-score + Percentile Ranking (deprecated)
 
-The original design used z-score normalization + percentile-based tier assignment:
-- `z = (x - batch_mean) / batch_std` for each metric
-- `tier = f(percentile)` where percentile = rank within current batch
+Scoring: z-score normalization (`z = (x - mean) / std`) + percentile-based tier assignment.
 
-**Problems identified:**
-1. **Always fixed distribution**: Percentile tiers guarantee exactly 10% Strong Buy, 10% Strong Sell regardless of actual stock quality. In a bull market where everything is good, 10% of stocks are still labeled "Strong Sell".
-2. **Rating = Ranking confusion**: Tier (Strong Buy/Sell) and rank (#1, #2...) were conflated into one system. The tier was just a label for rank position, not an independent quality assessment.
-3. **Unstable ratings**: Z-scores recomputed from each day's cross-section. A stock's z-score changes not because the stock changed, but because other stocks changed. Minor data fluctuations → relative position shifts → tier flips.
-4. **No attribution**: When a rating changed, no way to know which factor (fundamental/technical/sentiment) drove it.
+**Why deprecated:**
+1. **Fixed distribution**: Percentile tiers guarantee exactly 10% Strong Buy, 10% Strong Sell regardless of actual stock quality. Bull market where everything is good → 10% still labeled "Strong Sell".
+2. **Rating = Ranking confusion**: Tier and rank conflated into one system. Tier was just a label for rank position, not an independent quality assessment.
+3. **Unstable ratings**: Z-scores recomputed daily from cross-section. A stock's z-score changes because *other stocks* changed, not because it changed. Minor data fluctuations → position shifts → tier flips.
+4. **No attribution**: When a rating changed, no way to identify which factor drove it.
 
-### v2: Absolute Rating + Relative Ranking (current)
+### v2: Absolute Rating + Relative Ranking
 
-**Rating (评级)** and **Ranking (排名)** are now two independent systems:
+Replaced z-score with piecewise linear breakpoints for absolute 0-100 metric scoring. Separated **Rating** (absolute quality tier) from **Ranking** (relative position).
 
-- **Rating**: Absolute quality tier based on the stock's own metrics. Uses absolute scoring rules (piecewise linear, not z-scores). A stock rated "Buy" stays "Buy" regardless of what other stocks do. In a bull market, many stocks can be "Strong Buy". In a bear market, many can be "Sell".
-- **Ranking**: Relative position by composite score. Used to compare stocks within the same rating tier — e.g., among all "Buy" stocks, who is the best pick. Ranking can change daily (it's relative by design), but rating changes are rare and meaningful.
+**Key changes from v1:**
+- Each metric scored via domain-specific breakpoints, not cross-sectional statistics.
+- Rating based on fixed thresholds (≥75 Strong Buy, ≥60 Buy, etc.) — independent of other stocks.
+- Ranking remains relative by design, used only for comparison within the same tier.
+- Financial sector gets adjusted breakpoints (PE, PB, D/E) to avoid structural bias.
 
-**Key principle**: A stock's rating should reflect its own quality. Ranking is for comparison.
+**Key principle**: A stock's rating reflects its own quality. Ranking is for comparison.
 
-## Scoring Design (v2)
+### v3: Qualitative 4-Dimension Model
+
+Replaced the flat 3-factor aggregation (fundamental/technical/sentiment) with four investment-analysis dimensions, each with clear semantic meaning.
+
+**Key changes from v2:**
+- **Earnings Visibility (30%)** = 0.60×quality + 0.40×growth — "Can we reliably forecast earnings?"
+- **Valuation Margin (25%)** = value — "Are we buying at a discount?"
+- **Catalyst Timeline (20%)** = 0.30×trend + 0.30×momentum + 0.25×sentiment + 0.15×volume — "Will momentum carry forward?"
+- **Downside Control (25%)** = 0.60×safety + 0.40×volatility — "How much do we lose if wrong?"
+- Added EMA smoothing (α=0.3) on composite score to reduce noise.
+- Added hysteresis (±2 pts) at tier boundaries to prevent oscillation.
+- Added change attribution: when a rating changes, identify the primary driving dimension.
+
+### v4: Sector-Aware Breakpoints
+
+Added financial-sector-specific breakpoints to fix systematic over-scoring of banks and insurers.
+
+**Key changes from v3:**
+- Financial PE 8 now scores 60 (was 90) — low PE is structural for financials, not deep value.
+- Financial PB 1.5 scores 52 (was ~70) — book value dynamics differ from non-financial sectors.
+- Financial D/E scored near-neutral (~50) — leverage is the business model, not a risk signal.
+- Generalized sector-detection pattern (`_is_financial()`) for future sector expansions.
+
+### v5: Fundamental Scoring Overhaul (current)
+
+Comprehensive upgrade to fundamental scoring: expanded sector awareness, deeper safety evaluation, and forward-looking valuation.
+
+**Key changes from v4:**
+- **Sector-aware scoring for 6 sectors**: Generalized `_is_financial()` to a `_SECTOR_OVERRIDES` lookup table covering Financial, Technology, Healthcare, Utilities, Real Estate, Energy. Each sector has tailored breakpoints for PE, PB, PS, D/E, and growth metrics where structural norms differ.
+- **Expanded safety dimension**: `safety_score` upgraded from a single metric (D/E) to `avg(debt_equity_score, fcf_yield_score, current_ratio_score)`. Added FCF yield breakpoints and current ratio breakpoints. Collector now fetches `totalDebt`, `totalCash`, `ebitda`, `currentRatio`.
+- **Forward PE scoring**: Added `score_forward_pe()` with sector-aware breakpoints. `value_score` now `avg(pe, forward_pe, pb, ps)` instead of `avg(pe, pb, ps)`.
+- **Sector-aware growth scoring**: Utilities use adjusted growth expectations (3% revenue growth = good, not mediocre).
+
+## Scoring Design (v5)
 
 ### Absolute Metric Scoring
 
@@ -91,10 +125,10 @@ def metric_score(value, breakpoints) -> float:
 ### Sub-score Computation (unchanged)
 
 ```
-value_score     = avg(pe_score, pb_score, ps_score)
+value_score     = avg(pe_score, forward_pe_score, pb_score, ps_score)    # all sector-aware
 quality_score   = avg(roe_score, roa_score, margin_score)
-growth_score    = avg(rev_growth_score, earn_growth_score)
-safety_score    = debt_equity_score
+growth_score    = avg(rev_growth_score, earn_growth_score)               # sector-aware for Utilities
+safety_score    = avg(debt_equity_score, fcf_yield_score, current_ratio_score)  # sector-aware D/E
 sentiment_score = (compound + 1) × 50
 ```
 
@@ -135,3 +169,157 @@ When a rating changes, the system compares today's dimension scores vs yesterday
 Δ_weighted = (new_dimension_score - old_dimension_score) × dimension_weight
 primary_driver = dimension with largest |Δ_weighted|
 ```
+
+## Release Workflow
+
+When implementing a new version from the roadmap:
+
+1. Implement the engine changes (Python scoring/analysis code).
+2. Test with sample tickers: `python -m engine.main AAPL MSFT JPM XOM NEE`.
+3. Update the About page in the frontend:
+   - Add new version entry to `frontend/src/components/About.tsx` (timeline section).
+   - Add i18n strings (EN + ZH) to `frontend/src/lib/i18n.tsx` for the new version's label, date, title, description, and known issues.
+   - Move the "current" badge to the new version; demote the previous current version to a regular timeline entry.
+4. Update `CLAUDE.md`: move the implemented version from "Improvement Roadmap" to "Version History", mark the next version as `(current)`.
+5. Build frontend to verify: `cd frontend && npm run build`.
+6. Commit all changes together with message: `feat(engine): implement vN — <theme>`.
+
+## Improvement Roadmap
+
+Known weaknesses of the current model (v4), grouped into future versions by theme.
+
+### v5: Fundamental Scoring Overhaul
+
+Theme: Make fundamental scoring sector-aware, deeper on safety, and forward-looking.
+
+#### 5.1 Sector-Specific Scoring (expand beyond Financials)
+
+**Problem**: Only `Financials` gets adjusted breakpoints (`absolute.py:66-82`). Other sectors have equally strong structural differences that distort scores:
+- SaaS/Tech: PS 10-20x is normal, but `PS_BREAKPOINTS` scores PS=12 → 20 (very low).
+- Biotech: Negative PE is normal for pre-revenue companies; currently hard-coded to 10.
+- Utilities: Low growth (2-3%) is structural, not a weakness.
+- REITs: High D/E is the business model, same issue as financials.
+- Energy: Trailing PE is misleading at cycle peaks (low PE = high earnings = late cycle danger).
+
+**Proposed fix**: Define sector-specific breakpoint overrides for at least: Technology, Healthcare, Utilities, Real Estate, Energy. Generalize the `_is_financial()` pattern to a sector → breakpoint-set mapping.
+
+**Files**: `engine/scorer/absolute.py`, `engine/config.py`
+
+#### 5.2 Strengthen Safety / Downside Control Dimension
+
+**Problem**: `safety_score` is a single metric (Debt/Equity) — too thin for a dimension that carries 25% of the composite weight via Downside Control (`DC = 0.60×safety + 0.40×volatility`).
+
+**Proposed fix**: Add scored metrics:
+- Interest Coverage Ratio (EBIT / interest expense) — can the company service its debt?
+- FCF / Total Debt — cash flow coverage (FCF is already collected but unused for scoring).
+- Current Ratio — short-term liquidity.
+- Optionally: Altman Z-Score or Piotroski F-Score as composite safety signals.
+
+Update: `safety_score = avg(debt_equity_score, interest_coverage_score, fcf_debt_score, ...)`.
+
+**Files**: `engine/collectors/fundamental.py`, `engine/analyzers/fundamental.py`, `engine/scorer/absolute.py`
+
+#### 5.3 Use Forward PE for Growth Stock Valuation
+
+**Problem**: `forwardPE` is collected (`fundamental.py:44`) but never scored. For growth stocks, trailing PE overstates expensiveness because it uses past earnings.
+
+**Proposed fix**: Add `score_forward_pe()` and blend into `value_score`:
+```
+value_score = avg(pe_score, forward_pe_score, pb_score, ps_score)
+```
+Or weight forward PE higher for growth stocks (revenue_growth > 15%).
+
+**Files**: `engine/analyzers/fundamental.py`, `engine/scorer/absolute.py`
+
+### v6: Technical Scoring Overhaul
+
+Theme: Fix directional blindness, price normalization, and volatility mismeasurement in technical indicators.
+
+#### 6.1 MACD Histogram — price normalization
+
+**Problem** (`absolute.py:199-208`): The ±0.5 threshold is an absolute number. For a $5 stock, histogram=0.3 is a strong signal; for a $500 stock, it's noise. Systematic bias toward low-price stocks.
+
+**Fix**: Normalize MACD histogram by close price or ATR before scoring.
+
+#### 6.2 Volume — directional context
+
+**Problem** (`absolute.py:119-121`): Higher volume = higher score, always. But high volume on a down day is bearish (distribution), not bullish. A stock crashing -10% on 2x volume gets volume_score=85.
+
+**Fix**: Multiply volume_ratio by sign(daily_return) or create separate up-volume/down-volume scoring.
+
+#### 6.3 BB Position ≠ Volatility
+
+**Problem** (`absolute.py:114-116`): BB position measures where price is within the band (mean-reversion signal), not volatility itself. Scoring BB=0.5 as "best" (75) embeds a mean-reversion bias that contradicts trend-following in Catalyst Timeline.
+
+**Fix**: Replace or supplement with true volatility measures: ATR (Average True Range), historical volatility (std of returns), or Bollinger Bandwidth. Use BB position only as a momentum/mean-reversion sub-signal if desired.
+
+#### 6.4 Trend alignment — add margin sensitivity
+
+**Problem** (`technical.py:52-68`): Price 0.1% above SMA200 scores the same as price 20% above. No sense of conviction.
+
+**Fix**: Weight each alignment check by the margin (e.g., `(close - sma) / sma`), or add a distance-based bonus.
+
+#### 6.5 EMA Smoothing — resolve math inconsistency
+
+**Problem**: Sub-dimension scores are raw, composite is EMA-smoothed (`config.py:52`, α=0.3). Users see four dimension scores that don't add up to the displayed composite.
+
+**Proposed fix options**:
+- **Option A**: Smooth each dimension individually, then compute composite from smoothed dimensions. Math stays consistent.
+- **Option B**: Keep current approach but display both raw and smoothed composite in the frontend, with a clear explanation.
+
+**Files**: `engine/analyzers/technical.py`, `engine/scorer/absolute.py`, `engine/main.py`, `engine/scorer/factor_model.py`
+
+### v7: Signal Validation & Data Quality
+
+Theme: Validate that scoring rules actually predict returns; handle missing data honestly.
+
+#### 7.1 IC-Calibrated Breakpoints
+
+**Problem**: All breakpoints in `absolute.py:55-121` are hand-tuned without empirical validation. No evidence that PE=8→90 is better than PE=8→85. The entire scoring system rests on unverified assumptions.
+
+**Proposed fix**:
+1. Compute forward-return IC (Information Coefficient) for each scored metric: `corr(metric_score, forward_N_day_return)`.
+2. Use IC results to validate breakpoint choices — adjust breakpoints where IC is low or negative.
+3. Integrate IC tracking into the daily pipeline (`engine/ic.py` exists but is not used for calibration).
+4. Store IC history to detect signal decay over time.
+
+**Files**: `engine/ic.py`, `engine/scorer/absolute.py`, `engine/main.py`
+
+#### 7.2 Missing Data Should Not Default to Neutral
+
+**Problem**: All missing metrics → 50 (neutral). But missing data is often informational: companies that don't report FCF often have negative FCF; low analyst coverage correlates with higher risk.
+
+**Proposed fix**:
+- Track a `data_completeness` score per ticker (% of metrics available).
+- Apply a penalty to composite_score when data completeness is low (e.g., -5 points if <50% of metrics are available).
+- For specific metrics with known directional bias when missing (e.g., FCF), default to a below-neutral value (e.g., 35 instead of 50).
+
+**Files**: `engine/scorer/factor_model.py`, `engine/scorer/absolute.py`
+
+### v8: Intelligence Upgrade
+
+Theme: Add higher-order intelligence — better NLP for sentiment, macro regime awareness.
+
+#### 8.1 Sentiment Analysis Upgrade
+
+**Problem**: VADER is a rule-based dictionary that doesn't understand financial context. Only headline text is analyzed. No time decay. No source credibility weighting. News coverage is biased toward large caps.
+
+**Proposed improvements** (incremental):
+1. **Time decay**: Weight recent headlines higher (e.g., exponential decay over 14 days).
+2. **Source weighting**: Assign credibility multipliers by source domain (Reuters/Bloomberg > random blogs).
+3. **Headline count normalization**: Stocks with 2 headlines vs 20 headlines have very different confidence levels — surface a `sentiment_confidence` score.
+4. **Long-term**: Replace VADER with a financial-domain LLM or fine-tuned transformer (FinBERT, etc.).
+
+**Files**: `engine/analyzers/sentiment.py`, `engine/collectors/news.py`
+
+#### 8.2 Macro / Market Regime Awareness
+
+**Problem**: The model is purely bottom-up. It doesn't know whether the macro environment is risk-on or risk-off. In a rising-rate environment, all growth stock valuations should be discounted; in a falling-rate environment, they should be expanded. Sector rotation is not captured.
+
+**Proposed approach** (research needed):
+- Track market-level indicators: VIX level, yield curve slope (10Y-2Y), S&P 500 trend vs SMA200.
+- Define 2-3 market regimes (risk-on / neutral / risk-off).
+- Apply regime-conditional adjustments to dimension weights (e.g., increase Downside Control weight in risk-off; increase Catalyst Timeline weight in risk-on).
+- This is the most complex improvement and requires careful design to avoid overfitting.
+
+**Files**: New module `engine/analyzers/macro.py`, `engine/scorer/factor_model.py`, `engine/config.py`

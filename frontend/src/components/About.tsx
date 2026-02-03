@@ -201,16 +201,27 @@ export function About() {
             <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">{t('about.historyV3Desc')}</p>
             <p className="mt-1 text-xs text-amber-600 dark:text-amber-400">{t('about.historyV3Issue')}</p>
           </div>
-          {/* v4 (current) */}
-          <div className="relative ml-6">
-            <span className="absolute -left-[33px] flex h-4 w-4 items-center justify-center rounded-full border-2 border-blue-500 bg-blue-500 dark:border-cyan-400 dark:bg-cyan-400" />
+          {/* v4 */}
+          <div className="relative mb-6 ml-6">
+            <span className="absolute -left-[33px] flex h-4 w-4 items-center justify-center rounded-full border-2 border-gray-300 bg-white dark:border-gray-500 dark:bg-gray-800" />
             <div className="flex items-baseline gap-2">
-              <span className="font-mono text-xs font-bold text-blue-600 dark:text-cyan-400">{t('about.historyV4Label')}</span>
+              <span className="font-mono text-xs font-bold text-gray-500 dark:text-gray-400">{t('about.historyV4Label')}</span>
               <span className="text-xs text-gray-400 dark:text-gray-500">{t('about.historyV4Date')}</span>
-              <span className="rounded bg-blue-100 px-1.5 py-0.5 text-xs font-medium text-blue-700 dark:bg-cyan-500/15 dark:text-cyan-300">{t('about.historyCurrent')}</span>
             </div>
             <h4 className="font-medium text-gray-900 dark:text-white">{t('about.historyV4Title')}</h4>
             <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">{t('about.historyV4Desc')}</p>
+            <p className="mt-1 text-xs text-amber-600 dark:text-amber-400">{t('about.historyV4Issue')}</p>
+          </div>
+          {/* v5 (current) */}
+          <div className="relative ml-6">
+            <span className="absolute -left-[33px] flex h-4 w-4 items-center justify-center rounded-full border-2 border-blue-500 bg-blue-500 dark:border-cyan-400 dark:bg-cyan-400" />
+            <div className="flex items-baseline gap-2">
+              <span className="font-mono text-xs font-bold text-blue-600 dark:text-cyan-400">{t('about.historyV5Label')}</span>
+              <span className="text-xs text-gray-400 dark:text-gray-500">{t('about.historyV5Date')}</span>
+              <span className="rounded bg-blue-100 px-1.5 py-0.5 text-xs font-medium text-blue-700 dark:bg-cyan-500/15 dark:text-cyan-300">{t('about.historyCurrent')}</span>
+            </div>
+            <h4 className="font-medium text-gray-900 dark:text-white">{t('about.historyV5Title')}</h4>
+            <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">{t('about.historyV5Desc')}</p>
           </div>
         </div>
       </section>
