@@ -6,6 +6,10 @@ This replaces z-score normalization for rating computation.
 v5: Generalized sector-aware breakpoints for Technology, Healthcare, Utilities,
     Real Estate, Energy (beyond the v4 Financial-only adjustment).
     Added forward PE, FCF yield, and current ratio scoring.
+
+v6: Technical scoring overhaul — MACD normalized by price, volume scored with
+    directional context, BB width + historical vol for true volatility, trend
+    alignment weighted by margin distance.
 """
 
 from __future__ import annotations
@@ -103,15 +107,21 @@ CURRENT_RATIO_BREAKPOINTS: Breakpoints = [
 RSI_BREAKPOINTS: Breakpoints = [
     (15, 35), (30, 50), (45, 68), (55, 75), (65, 68), (75, 40), (85, 20),
 ]
-
-# -- Technical: Volatility --
-BB_POSITION_BREAKPOINTS: Breakpoints = [
-    (0, 50), (0.2, 65), (0.5, 75), (0.7, 65), (0.9, 35), (1.0, 20),
+MACD_HISTOGRAM_PCT_BREAKPOINTS: Breakpoints = [
+    (-1.5, 20), (-0.5, 35), (-0.1, 45), (0.0, 50), (0.1, 55), (0.5, 65), (1.5, 80),
 ]
 
-# -- Technical: Volume --
-VOLUME_RATIO_BREAKPOINTS: Breakpoints = [
-    (0.3, 25), (0.7, 45), (1.0, 55), (1.5, 72), (2.5, 85),
+# -- Technical: Volatility (v6: true volatility measures) --
+BB_WIDTH_BREAKPOINTS: Breakpoints = [
+    (0.02, 88), (0.05, 72), (0.10, 55), (0.15, 38), (0.25, 20),
+]
+HIST_VOLATILITY_BREAKPOINTS: Breakpoints = [
+    (0.10, 88), (0.20, 72), (0.30, 52), (0.45, 35), (0.70, 18),
+]
+
+# -- Technical: Volume (v6: direction-aware) --
+DIRECTIONAL_VOLUME_BREAKPOINTS: Breakpoints = [
+    (-2.5, 15), (-1.5, 28), (-1.0, 40), (0, 50), (1.0, 60), (1.5, 72), (2.5, 85),
 ]
 
 
@@ -276,18 +286,25 @@ def score_current_ratio(value: float | None) -> float:
     return metric_score(value, CURRENT_RATIO_BREAKPOINTS)
 
 
-# -- Technical scoring (unchanged from v4) --
+# -- Technical scoring (v6: normalized & direction-aware) --
 
 def score_rsi(value: float | None) -> float:
     return metric_score(value, RSI_BREAKPOINTS)
 
 
-def score_bb_position(value: float | None) -> float:
-    return metric_score(value, BB_POSITION_BREAKPOINTS)
+def score_bb_width(value: float | None) -> float:
+    """BB bandwidth (upper-lower)/mid — true volatility. Lower = calmer = higher score."""
+    return metric_score(value, BB_WIDTH_BREAKPOINTS)
 
 
-def score_volume_ratio(value: float | None) -> float:
-    return metric_score(value, VOLUME_RATIO_BREAKPOINTS)
+def score_hist_volatility(value: float | None) -> float:
+    """Annualized historical volatility. Lower = calmer = higher score."""
+    return metric_score(value, HIST_VOLATILITY_BREAKPOINTS)
+
+
+def score_directional_volume(value: float | None) -> float:
+    """Signed volume ratio (volume_ratio * sign(return)). Positive = bullish confirmation."""
+    return metric_score(value, DIRECTIONAL_VOLUME_BREAKPOINTS)
 
 
 def score_trend_alignment(value: float | None) -> float:
@@ -298,15 +315,8 @@ def score_trend_alignment(value: float | None) -> float:
 
 
 def score_macd_histogram(value: float | None) -> float:
-    """MACD histogram: positive -> bullish (70), negative -> bearish (30), near zero -> neutral (50)."""
-    if value is None or (isinstance(value, float) and np.isnan(value)):
-        return 50.0
-    if value > 0.5:
-        return 70.0
-    if value < -0.5:
-        return 30.0
-    # Linear interpolation around zero
-    return 50.0 + (value / 0.5) * 20.0
+    """MACD histogram normalized by price (% of close). Uses piecewise breakpoints."""
+    return metric_score(value, MACD_HISTOGRAM_PCT_BREAKPOINTS)
 
 
 def score_sentiment(compound: float | None) -> float:

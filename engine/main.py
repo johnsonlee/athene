@@ -18,7 +18,14 @@ from engine.analyzers.technical import analyze_technical, compute_technical_subs
 from engine.analyzers.sentiment import analyze_sentiment, annotate_headlines
 from engine.scorer.factor_model import compute_composite
 from engine.scorer.ranker import assign_tiers
-from engine.config import OUTPUT_DIR, SMOOTH_ALPHA
+from engine.config import (
+    OUTPUT_DIR,
+    SMOOTH_ALPHA,
+    WEIGHT_EARNINGS_VISIBILITY,
+    WEIGHT_VALUATION_MARGIN,
+    WEIGHT_CATALYST_TIMELINE,
+    WEIGHT_DOWNSIDE_CONTROL,
+)
 from engine.exporters.json_exporter import (
     export_meta,
     export_rankings,
@@ -34,8 +41,24 @@ from engine.utils.market_calendar import is_us_trading_day
 log = get_logger("athene.pipeline")
 
 
-def _load_previous_smoothed() -> dict[str, float]:
-    """Load previous smoothed composite scores from history.json."""
+_DIMENSIONS = [
+    "earnings_visibility", "valuation_margin",
+    "catalyst_timeline", "downside_control",
+]
+
+_DIM_WEIGHTS = {
+    "earnings_visibility": WEIGHT_EARNINGS_VISIBILITY,
+    "valuation_margin": WEIGHT_VALUATION_MARGIN,
+    "catalyst_timeline": WEIGHT_CATALYST_TIMELINE,
+    "downside_control": WEIGHT_DOWNSIDE_CONTROL,
+}
+
+
+def _load_previous_smoothed() -> dict[str, dict[str, float]]:
+    """Load previous smoothed scores from history.json.
+
+    Returns dict of ticker → {dimension: score, composite_score: score}.
+    """
     history_path = os.path.join(OUTPUT_DIR, "history.json")
     if not os.path.exists(history_path):
         return {}
@@ -46,45 +69,64 @@ def _load_previous_smoothed() -> dict[str, float]:
             return {}
         latest_date = sorted(history.keys())[-1]
         daily = history[latest_date]
-        return {
-            ticker: data["composite_score"]
-            for ticker, data in daily.items()
-            if "composite_score" in data
-        }
+        result: dict[str, dict[str, float]] = {}
+        for ticker, data in daily.items():
+            if "composite_score" not in data:
+                continue
+            entry: dict[str, float] = {
+                "composite_score": data["composite_score"],
+            }
+            for dim in _DIMENSIONS:
+                if dim in data:
+                    entry[dim] = data[dim]
+            result[ticker] = entry
+        return result
     except Exception as e:
         log.warning(f"Failed to load previous smoothed scores: {e}")
         return {}
 
 
 def _apply_ema_smoothing(composite: pd.DataFrame) -> pd.DataFrame:
-    """Apply EMA smoothing to composite_score.
+    """Apply EMA smoothing to dimension scores, then recompute composite.
 
-    smoothed = SMOOTH_ALPHA * raw + (1 - SMOOTH_ALPHA) * prev_smoothed
-    First run (no previous): smoothed = raw
-    Sub-factor scores remain raw for attribution clarity.
+    v6: Smooth each dimension individually so that
+        composite = weighted sum of smoothed dimensions (math stays consistent).
+
+    smoothed_dim = SMOOTH_ALPHA * raw_dim + (1 - SMOOTH_ALPHA) * prev_smoothed_dim
+    composite = sum(weight_i * smoothed_dim_i)
     """
     result = composite.copy()
     prev_scores = _load_previous_smoothed()
 
     # Detect stale history from old z-score system (scores << 10).
-    # New absolute scores are 0-100; old z-scores are typically -3 to +3.
     if prev_scores:
-        max_prev = max(prev_scores.values())
+        max_prev = max(
+            entry.get("composite_score", 0) or 0
+            for entry in prev_scores.values()
+        )
         if max_prev < 10:
             log.info("Previous scores appear to be from old z-score system, skipping EMA smoothing")
             prev_scores = {}
 
-    smoothed = []
-    for ticker, row in result.iterrows():
-        raw = row["composite_score"]
-        prev = prev_scores.get(str(ticker))
-        if prev is not None:
-            s = SMOOTH_ALPHA * raw + (1 - SMOOTH_ALPHA) * prev
-        else:
-            s = raw
-        smoothed.append(s)
+    # Smooth each dimension individually
+    for dim in _DIMENSIONS:
+        smoothed = []
+        for ticker, row in result.iterrows():
+            raw = row[dim]
+            prev_entry = prev_scores.get(str(ticker), {})
+            prev = prev_entry.get(dim)
+            if prev is not None:
+                s = SMOOTH_ALPHA * raw + (1 - SMOOTH_ALPHA) * prev
+            else:
+                s = raw
+            smoothed.append(s)
+        result[dim] = smoothed
 
-    result["composite_score"] = smoothed
+    # Recompute composite from smoothed dimensions (math-consistent)
+    result["composite_score"] = sum(
+        _DIM_WEIGHTS[dim] * result[dim] for dim in _DIMENSIONS
+    )
+
     return result
 
 
