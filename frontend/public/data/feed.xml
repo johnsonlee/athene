@@ -3,18 +3,36 @@
   <title>Athene Stock Screener - Rating Changes</title>
   <subtitle>Daily rating changes for S&amp;P 500 + NASDAQ 100 stocks</subtitle>
   <id>https://athene.johnsonlee.io/feed.xml</id>
-  <updated>2026-02-03T22:53:38.664058+00:00</updated>
+  <updated>2026-02-03T23:30:54.321790+00:00</updated>
   <link href="https://athene.johnsonlee.io/data/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://athene.johnsonlee.io" rel="alternate" type="text/html" />
   <author>
     <name>Athene Bot</name>
   </author>
   <entry>
-    <title>2026-02-03: 6 upgrades, 33 downgrades (39 total changes)</title>
+    <title>2026-02-03: 0 upgrades, 9 downgrades (9 total changes)</title>
     <id>https://athene.johnsonlee.io/changes/2026-02-03</id>
-    <updated>2026-02-03T22:53:38.664058+00:00</updated>
+    <updated>2026-02-03T23:30:54.321790+00:00</updated>
     <link href="https://athene.johnsonlee.io/screener" rel="alternate" />
     <content type="html">&lt;h2&gt;Rating Changes for 2026-02-03&lt;/h2&gt;
+&lt;h3&gt;Downgrades&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;GD&lt;/strong&gt;: Buy → Hold (score: 57.94)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CBRE&lt;/strong&gt;: Buy → Hold (score: 57.92)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;EQT&lt;/strong&gt;: Buy → Hold (score: 57.89)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CBOE&lt;/strong&gt;: Buy → Hold (score: 57.87)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;EXE&lt;/strong&gt;: Buy → Hold (score: 57.79)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;D&lt;/strong&gt;: Buy → Hold (score: 57.65)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MS&lt;/strong&gt;: Buy → Hold (score: 57.55)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;NOC&lt;/strong&gt;: Buy → Hold (score: 57.51)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;FCX&lt;/strong&gt;: Buy → Hold (score: 57.28)&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <ns0:entry>
+    <ns0:title>2026-02-03: 6 upgrades, 33 downgrades (39 total changes)</ns0:title>
+    <ns0:id>https://athene.johnsonlee.io/changes/2026-02-03</ns0:id>
+    <ns0:updated>2026-02-03T22:53:38.664058+00:00</ns0:updated>
+    <ns0:link href="https://athene.johnsonlee.io/screener" rel="alternate" />
+    <ns0:content type="html">&lt;h2&gt;Rating Changes for 2026-02-03&lt;/h2&gt;
 &lt;h3&gt;Upgrades&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;PTC&lt;/strong&gt;: Hold → Buy (score: 63.86)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;MAS&lt;/strong&gt;: Hold → Buy (score: 63.85)&lt;/li&gt;
@@ -57,8 +75,8 @@
 &lt;li&gt;&lt;strong&gt;PGR&lt;/strong&gt;: Buy → Hold (score: 55.59)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;DIS&lt;/strong&gt;: Buy → Hold (score: 54.10)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;TSLA&lt;/strong&gt;: Hold → Sell (score: 37.22)&lt;/li&gt;
-&lt;/ul&gt;</content>
-  </entry>
+&lt;/ul&gt;</ns0:content>
+  </ns0:entry>
   <ns0:entry>
     <ns0:title>2026-02-03: 3 upgrades, 10 downgrades (13 total changes)</ns0:title>
     <ns0:id>https://athene.johnsonlee.io/changes/2026-02-03</ns0:id>
