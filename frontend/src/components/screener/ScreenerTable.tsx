@@ -36,8 +36,8 @@ function StockCard({ stock, t }: { stock: RankedStock; t: ReturnType<typeof useI
         </div>
         <div className="ml-3 text-right">
           <p className="font-mono text-base font-bold text-gray-900 dark:text-white">{formatScore(stock.composite_score)}</p>
-          {stock.sector && (
-            <p className="text-[10px] text-gray-400 dark:text-gray-500">{t(`sector.${stock.sector}` as any) || stock.sector}</p>
+          {(stock.industry || stock.sector) && (
+            <p className="text-[10px] text-gray-400 dark:text-gray-500">{stock.industry || (t(`sector.${stock.sector}` as any) || stock.sector)}</p>
           )}
         </div>
       </div>
@@ -99,12 +99,17 @@ export function ScreenerTable({ data }: Props) {
         ),
       },
       {
-        accessorKey: 'sector',
-        header: t('table.sector'),
-        size: 140,
-        cell: ({ getValue }) => {
-          const raw = getValue() as string;
-          return <span className="text-xs text-gray-600 dark:text-gray-400">{t(`sector.${raw}` as any) || raw}</span>;
+        accessorKey: 'industry',
+        header: t('table.industry'),
+        size: 180,
+        cell: ({ row }) => {
+          const industry = row.original.industry;
+          const sector = row.original.sector;
+          return (
+            <span className="text-xs text-gray-600 dark:text-gray-400">
+              {industry || (sector ? (t(`sector.${sector}` as any) || sector) : '—')}
+            </span>
+          );
         },
       },
       {

@@ -157,7 +157,9 @@ def run(tickers_override: list[str] | None = None) -> None:
     # Step 4: Absolute scoring (no z-score normalization)
     log.info("Step 8/8: Scoring and ranking (absolute)...")
 
-    fund_scored = compute_fundamental_subscores(fund_df)
+    # Pass sector info so financial-sector stocks use adjusted breakpoints
+    sector_map = universe.set_index("ticker")["sector"] if not universe.empty else None
+    fund_scored = compute_fundamental_subscores(fund_df, sectors=sector_map)
     tech_scored = compute_technical_subscores(tech_df)
     # sentiment_score already computed in analyze_sentiment (0-100)
 
@@ -210,6 +212,7 @@ def run(tickers_override: list[str] | None = None) -> None:
 
     # Export individual stock details (use scored DataFrames for sub-scores)
     log.info("Exporting individual stock details...")
+    universe_info = universe.set_index("ticker")[["name", "sector", "industry"]]
     exported_count = 0
     for ticker in tickers:
         price_data = prices.get(ticker, pd.DataFrame())
@@ -217,6 +220,11 @@ def run(tickers_override: list[str] | None = None) -> None:
         tech_data = tech_scored.loc[ticker].to_dict() if ticker in tech_scored.index else None
         sent_data = sent_df.loc[ticker].to_dict() if ticker in sent_df.index else None
         rank_data = ranked.loc[ticker].to_dict() if ticker in ranked.index else None
+        # Attach universe info (sector/industry) to ranking data for detail pages
+        if rank_data is not None and ticker in universe_info.index:
+            uinfo = universe_info.loc[ticker]
+            rank_data["sector"] = uinfo.get("sector", "")
+            rank_data["industry"] = uinfo.get("industry", "")
         headlines = annotate_headlines(news.get(ticker, []))
         export_stock_detail(ticker, price_data, fund_data, tech_data, sent_data, rank_data, headlines)
         exported_count += 1

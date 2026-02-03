@@ -62,6 +62,25 @@ PS_BREAKPOINTS: Breakpoints = [
     (0.5, 90), (1, 80), (3, 60), (6, 40), (12, 20),
 ]
 
+# -- Financial sector: shifted breakpoints --
+# Insurance/banks naturally have PE 8-14 (structural, not exceptional value).
+# Standard breakpoints score PE 8 → 90, wildly over-rewarding financials.
+PE_FINANCIAL_BREAKPOINTS: Breakpoints = [
+    (0, 15), (5, 70), (8, 60), (12, 52), (18, 42), (25, 30), (50, 15),
+]
+# Financial PB 1-2 is normal book value, not deep value.
+PB_FINANCIAL_BREAKPOINTS: Breakpoints = [
+    (0.3, 75), (0.8, 62), (1.5, 52), (2.5, 40), (4, 25), (8, 15),
+]
+# Debt/Equity is not meaningful for financials — leverage IS the business
+# model.  Flatten the curve so it stays near neutral.
+DEBT_EQUITY_FINANCIAL_BREAKPOINTS: Breakpoints = [
+    (0, 60), (50, 55), (100, 50), (200, 47), (400, 42),
+]
+
+# Sectors whose capital structure makes standard valuation breakpoints misleading.
+FINANCIAL_SECTORS: set[str] = {"Financials", "Financial Services"}
+
 # -- Fundamental: Quality --
 ROE_BREAKPOINTS: Breakpoints = [
     (0, 20), (0.08, 45), (0.15, 65), (0.20, 78), (0.30, 90),
@@ -102,16 +121,22 @@ VOLUME_RATIO_BREAKPOINTS: Breakpoints = [
 ]
 
 
-def score_pe(value: float | None) -> float:
+def _is_financial(sector: str | None) -> bool:
+    return sector is not None and sector in FINANCIAL_SECTORS
+
+
+def score_pe(value: float | None, sector: str | None = None) -> float:
     """Score PE ratio (lower is better, negative PE -> 10)."""
     if value is not None and not (isinstance(value, float) and np.isnan(value)):
         if value < 0:
             return 10.0
-    return metric_score(value, PE_BREAKPOINTS)
+    bp = PE_FINANCIAL_BREAKPOINTS if _is_financial(sector) else PE_BREAKPOINTS
+    return metric_score(value, bp)
 
 
-def score_pb(value: float | None) -> float:
-    return metric_score(value, PB_BREAKPOINTS)
+def score_pb(value: float | None, sector: str | None = None) -> float:
+    bp = PB_FINANCIAL_BREAKPOINTS if _is_financial(sector) else PB_BREAKPOINTS
+    return metric_score(value, bp)
 
 
 def score_ps(value: float | None) -> float:
@@ -147,8 +172,9 @@ def score_earnings_growth(value: float | None) -> float:
     return metric_score(value, EARNINGS_GROWTH_BREAKPOINTS)
 
 
-def score_debt_equity(value: float | None) -> float:
-    return metric_score(value, DEBT_EQUITY_BREAKPOINTS)
+def score_debt_equity(value: float | None, sector: str | None = None) -> float:
+    bp = DEBT_EQUITY_FINANCIAL_BREAKPOINTS if _is_financial(sector) else DEBT_EQUITY_BREAKPOINTS
+    return metric_score(value, bp)
 
 
 def score_rsi(value: float | None) -> float:
