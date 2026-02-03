@@ -4,6 +4,7 @@ import { Treemap, ResponsiveContainer, Tooltip } from 'recharts';
 import type { RankedStock } from '../../types';
 import { formatScore, formatLargeNumber } from '../../lib/formatters';
 import { useI18n } from '../../lib/i18n';
+import { useTheme } from '../../lib/theme';
 
 interface Props {
   rankings: RankedStock[];
@@ -19,12 +20,19 @@ interface SectorNode {
   [key: string]: unknown;
 }
 
-function scoreToColor(score: number): string {
-  if (score >= 65) return '#16a34a'; // green-600
-  if (score >= 55) return '#4ade80'; // green-400
-  if (score >= 45) return '#9ca3af'; // gray-400
-  if (score >= 35) return '#fb923c'; // orange-400
-  return '#ef4444'; // red-500
+function scoreToColor(score: number, isDark: boolean): string {
+  if (isDark) {
+    if (score >= 65) return '#059669'; // emerald-600
+    if (score >= 55) return '#0d9488'; // teal-600
+    if (score >= 45) return '#475569'; // slate-600
+    if (score >= 35) return '#c2410c'; // orange-700
+    return '#b91c1c'; // red-700
+  }
+  if (score >= 65) return '#16a34a';
+  if (score >= 55) return '#4ade80';
+  if (score >= 45) return '#9ca3af';
+  if (score >= 35) return '#fb923c';
+  return '#ef4444';
 }
 
 function truncateLabel(text: string | undefined, width: number, fontSize: number): string {
@@ -37,15 +45,16 @@ function truncateLabel(text: string | undefined, width: number, fontSize: number
 }
 
 function CustomContent(props: any) {
-  const { x, y, width, height, displayName, name, avgScore, count } = props;
+  const { x, y, width, height, displayName, name, avgScore, count, isDark } = props;
   if (!width || !height || width < 30 || height < 20) return null;
 
-  const fill = scoreToColor(avgScore);
+  const fill = scoreToColor(avgScore, isDark);
   const showScore = width > 50 && height > 35;
   const showCount = width > 60 && height > 50;
   const fontSize = width > 100 ? 12 : width > 60 ? 10 : 9;
   const label = truncateLabel(displayName || name, width, fontSize);
   const clipId = `sc-${Math.round(x)}-${Math.round(y)}`;
+  const strokeColor = isDark ? 'rgba(6,182,212,0.15)' : '#fff';
 
   return (
     <g>
@@ -54,8 +63,8 @@ function CustomContent(props: any) {
           <rect x={x + 1} y={y + 1} width={width - 2} height={height - 2} />
         </clipPath>
       </defs>
-      <rect x={x} y={y} width={width} height={height} fill={fill} stroke="#fff" strokeWidth={2}
-        rx={4} opacity={0.85} className="cursor-pointer hover:opacity-100 transition-opacity" />
+      <rect x={x} y={y} width={width} height={height} fill={fill} stroke={strokeColor} strokeWidth={isDark ? 1 : 2}
+        rx={4} opacity={isDark ? 0.9 : 0.85} className="cursor-pointer hover:opacity-100 transition-opacity" />
       <g clipPath={`url(#${clipId})`}>
         {label && (
           <text x={x + width / 2} y={y + height / 2 - (showScore ? 8 : 0)} textAnchor="middle" dominantBaseline="central"
@@ -65,7 +74,7 @@ function CustomContent(props: any) {
         )}
         {showScore && (
           <text x={x + width / 2} y={y + height / 2 + 10} textAnchor="middle" dominantBaseline="central"
-            fill="rgba(255,255,255,0.85)" fontSize={10}>
+            fill="rgba(255,255,255,0.85)" fontSize={10} fontFamily="monospace">
             {formatScore(avgScore)}
           </text>
         )}
@@ -84,18 +93,20 @@ function CustomTooltip({ active, payload }: any) {
   if (!active || !payload?.[0]) return null;
   const d = payload[0].payload as SectorNode;
   return (
-    <div className="rounded bg-white px-3 py-2 text-xs shadow-lg dark:bg-gray-700 dark:text-gray-200">
-      <p className="font-semibold">{d.displayName || d.name}</p>
-      <p>Score: {formatScore(d.avgScore)}</p>
-      <p>Market Cap: {formatLargeNumber(d.marketCap)}</p>
-      <p>{d.count} stocks</p>
+    <div className="tech-card rounded-lg px-3 py-2 text-xs">
+      <p className="font-semibold text-gray-900 dark:text-white">{d.displayName || d.name}</p>
+      <p className="text-gray-600 dark:text-gray-400">Score: <span className="font-mono">{formatScore(d.avgScore)}</span></p>
+      <p className="text-gray-600 dark:text-gray-400">Market Cap: <span className="font-mono">{formatLargeNumber(d.marketCap)}</span></p>
+      <p className="text-gray-600 dark:text-gray-400">{d.count} stocks</p>
     </div>
   );
 }
 
 export function SectorHeatmap({ rankings }: Props) {
   const { t } = useI18n();
+  const { theme } = useTheme();
   const navigate = useNavigate();
+  const isDark = theme === 'dark';
 
   const data = useMemo(() => {
     const grouped = new Map<string, { totalScore: number; totalCap: number; count: number }>();
@@ -111,7 +122,7 @@ export function SectorHeatmap({ rankings }: Props) {
       .map(([name, { totalScore, totalCap, count }]): SectorNode => ({
         name,
         displayName: t(`sector.${name}` as any) || name,
-        size: totalCap || count, // fallback to count if no market_cap
+        size: totalCap || count,
         avgScore: totalScore / count,
         count,
         marketCap: totalCap,
@@ -124,14 +135,14 @@ export function SectorHeatmap({ rankings }: Props) {
   }, [navigate]);
 
   return (
-    <div className="rounded-lg bg-white p-4 shadow-sm lg:col-span-2 dark:bg-gray-800">
-      <h2 className="mb-3 text-lg font-semibold text-gray-900 dark:text-white">{t('dashboard.sectorOverview')}</h2>
+    <div className="tech-card p-4 lg:col-span-2">
+      <h2 className="tech-heading mb-3 text-lg font-semibold text-gray-900 dark:text-white">{t('dashboard.sectorOverview')}</h2>
       <ResponsiveContainer width="100%" height={320}>
         <Treemap
           data={data}
           dataKey="size"
           aspectRatio={4 / 3}
-          content={<CustomContent />}
+          content={<CustomContent isDark={isDark} />}
           onClick={handleClick}
         >
           <Tooltip content={<CustomTooltip />} />

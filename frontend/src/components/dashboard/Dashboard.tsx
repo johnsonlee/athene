@@ -25,9 +25,9 @@ export function Dashboard() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-xl font-bold text-gray-900 sm:text-2xl dark:text-white">{t('dashboard.title')}</h1>
+        <h1 className="tech-heading text-xl font-bold tracking-tight text-gray-900 sm:text-2xl dark:text-white">{t('dashboard.title')}</h1>
         {meta && (
-          <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+          <p className="mt-1 font-mono text-sm text-gray-500 dark:text-gray-500">
             {t('dashboard.analyzed', { count: meta.ticker_count })} &middot; {meta.timestamp?.slice(0, 16).replace('T', ' ') || meta.date}
           </p>
         )}
@@ -37,11 +37,11 @@ export function Dashboard() {
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-5 sm:gap-4">
         {Object.entries(tierCounts).map(([tier, { label, count }]) => (
           <div key={tier}
-            className="cursor-pointer rounded-lg bg-white p-3 shadow-sm transition-opacity hover:opacity-80 active:opacity-70 sm:p-4 dark:bg-gray-800"
+            className="tech-card cursor-pointer p-3 transition-all hover:scale-[1.02] active:scale-[0.98] sm:p-4"
             onClick={() => navigate(`/screener?tier=${tier}`)}
           >
-            <p className="text-xs text-gray-500 sm:text-sm dark:text-gray-400">{label}</p>
-            <p className="text-xl font-bold text-gray-900 sm:text-2xl dark:text-white">{count}</p>
+            <p className="text-xs text-gray-500 sm:text-sm dark:text-gray-500">{label}</p>
+            <p className="font-mono text-xl font-bold text-gray-900 sm:text-2xl dark:text-white">{count}</p>
           </div>
         ))}
       </div>

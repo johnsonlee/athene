@@ -27,8 +27,8 @@ export function ScreenerPage() {
     <div className="space-y-4">
       <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <h1 className="text-xl font-bold text-gray-900 sm:text-2xl dark:text-white">{t('screener.title')}</h1>
-          <p className="text-sm text-gray-500 dark:text-gray-400">
+          <h1 className="tech-heading text-xl font-bold tracking-tight text-gray-900 sm:text-2xl dark:text-white">{t('screener.title')}</h1>
+          <p className="font-mono text-sm text-gray-500 dark:text-gray-500">
             {t('screener.showing', { filtered: filtered.length, total: rankings.length })}
           </p>
         </div>

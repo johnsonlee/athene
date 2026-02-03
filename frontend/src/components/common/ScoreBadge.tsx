@@ -7,7 +7,7 @@ interface ScoreBadgeProps {
 
 export function ScoreBadge({ tier, label }: ScoreBadgeProps) {
   return (
-    <span className={`inline-block rounded px-2 py-0.5 text-xs font-semibold ${tierBgClass(tier)}`}>
+    <span className={`tech-badge inline-block rounded px-2 py-0.5 text-xs font-semibold ${tierBgClass(tier)}`}>
       {label}
     </span>
   );

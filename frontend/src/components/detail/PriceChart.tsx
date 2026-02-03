@@ -57,10 +57,10 @@ export function PriceChart({ prices, ticker }: Props) {
     const charts: IChartApi[] = [];
     const primarySeries: ISeriesApi<SeriesType>[] = [];
 
-    const bg = isDark ? '#1f2937' : '#ffffff';
-    const text = isDark ? '#d1d5db' : '#333';
-    const gridColor = isDark ? '#374151' : '#f0f0f0';
-    const border = isDark ? '#374151' : '#e5e7eb';
+    const bg = isDark ? '#0d1322' : '#ffffff';
+    const text = isDark ? '#64748b' : '#333';
+    const gridColor = isDark ? 'rgba(6,182,212,0.06)' : '#f0f0f0';
+    const border = isDark ? 'rgba(6,182,212,0.12)' : '#e5e7eb';
 
     containers.forEach((el, i) => {
       const chart = createChart(el!, {
@@ -254,9 +254,9 @@ export function PriceChart({ prices, ticker }: Props) {
   }, [range, prices]);
 
   return (
-    <div className="rounded-lg bg-white p-3 shadow-sm sm:p-4 dark:bg-gray-800">
+    <div className="tech-card p-3 sm:p-4">
       <div className="mb-2 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-        <h2 className="text-base font-semibold text-gray-900 sm:text-lg dark:text-white">
+        <h2 className="tech-heading text-base font-semibold text-gray-900 sm:text-lg dark:text-white">
           {t('detail.priceChart', { ticker })}
         </h2>
         <div className="flex gap-1">
@@ -266,8 +266,8 @@ export function PriceChart({ prices, ticker }: Props) {
               onClick={() => setRange(key)}
               className={`rounded px-2.5 py-1.5 text-xs font-medium transition-colors sm:px-2 sm:py-0.5 ${
                 range === key
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600'
+                  ? 'tech-btn-active bg-blue-600 text-white dark:bg-transparent'
+                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-slate-700/50 dark:text-gray-400 dark:hover:bg-slate-600/50'
               }`}
             >
               {t(`chart.range.${key}` as any)}
@@ -275,7 +275,7 @@ export function PriceChart({ prices, ticker }: Props) {
           ))}
         </div>
       </div>
-      <div className="mb-1 flex flex-wrap gap-3 text-[10px] text-gray-500 sm:text-xs dark:text-gray-400">
+      <div className="mb-1 flex flex-wrap gap-3 text-[10px] text-gray-500 sm:text-xs dark:text-gray-500">
         <span>
           <span className="inline-block h-2 w-4 rounded" style={{ backgroundColor: '#f59e0b' }} /> {t('metric.sma20')}
         </span>
