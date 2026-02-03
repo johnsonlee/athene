@@ -49,6 +49,9 @@ export interface RankedStock {
   momentum_score?: number | null;
   volatility_score?: number | null;
   volume_score?: number | null;
+  // v7: data quality
+  data_completeness?: number | null;
+  data_quality_penalty?: number | null;
 }
 
 export type TierKey = 'strong_buy' | 'buy' | 'hold' | 'sell' | 'strong_sell';

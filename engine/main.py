@@ -183,6 +183,23 @@ def run(tickers_override: list[str] | None = None) -> None:
     log.info("Step 3/8: Collecting fundamental data...")
     fundamentals_raw = collect_fundamentals(tickers)
 
+    # Backfill "Unknown" sectors from yfinance data (covers NASDAQ-only stocks
+    # where Wikipedia may lack a sector column, and test-mode tickers).
+    unknown_mask = universe["sector"].isin(["Unknown", "", None])
+    if unknown_mask.any():
+        backfilled = 0
+        for idx in universe.index[unknown_mask]:
+            ticker = universe.at[idx, "ticker"]
+            yf_sector = (fundamentals_raw.get(ticker) or {}).get("sector")
+            yf_industry = (fundamentals_raw.get(ticker) or {}).get("industry")
+            if yf_sector and yf_sector not in ("", "Unknown"):
+                universe.at[idx, "sector"] = yf_sector
+                backfilled += 1
+            if yf_industry and yf_industry not in ("", "Unknown") and not universe.at[idx, "industry"]:
+                universe.at[idx, "industry"] = yf_industry
+        if backfilled:
+            log.info(f"Backfilled {backfilled} unknown sectors from yfinance")
+
     log.info("Step 4/8: Collecting news headlines...")
     news = collect_news(tickers)
 
@@ -210,6 +227,12 @@ def run(tickers_override: list[str] | None = None) -> None:
 
     # Step 5.5: EMA smoothing on composite_score
     composite = _apply_ema_smoothing(composite)
+
+    # Log data quality stats (v7)
+    if "data_completeness" in composite.columns:
+        dc = composite["data_completeness"]
+        log.info(f"Data completeness: mean={dc.mean():.2f}, "
+                 f"min={dc.min():.2f}, <50%={int((dc < 0.50).sum())} tickers")
 
     # Step 6: Rank and tier (absolute rating + relative ranking)
     ranked = assign_tiers(composite)

@@ -10,6 +10,9 @@ v5: Generalized sector-aware breakpoints for Technology, Healthcare, Utilities,
 v6: Technical scoring overhaul — MACD normalized by price, volume scored with
     directional context, BB width + historical vol for true volatility, trend
     alignment weighted by margin distance.
+
+v7: Missing data no longer defaults to neutral (50) for all metrics.  Metrics
+    with known directional bias when missing use below-neutral defaults.
 """
 
 from __future__ import annotations
@@ -21,22 +24,54 @@ import numpy as np
 
 Breakpoints = List[Tuple[float, float]]
 
+NEUTRAL = 50.0
 
-def metric_score(value: float | None, breakpoints: Breakpoints) -> float:
+# ---------------------------------------------------------------------------
+# v7: Directional defaults for missing data
+# ---------------------------------------------------------------------------
+# Metrics with known directional bias when missing.  Companies that don't
+# report a metric often share a pattern (e.g., negative FCF → not reported).
+# Using a below-neutral default is more honest than assuming neutral.
+#
+# Key: metric name used in scoring functions.
+# Value: default score when the raw value is None/NaN.
+MISSING_DEFAULTS: Dict[str, float] = {
+    # FCF yield: companies that don't report FCF often have negative FCF
+    "fcf_yield": 35.0,
+    # Current ratio: missing often means the company doesn't break out
+    # current assets/liabilities (common in financials), slight penalty
+    "current_ratio": 42.0,
+    # Earnings growth: missing usually means negative/volatile earnings
+    "earnings_growth": 38.0,
+    # Profit margin: missing suggests unprofitable or pre-revenue
+    "profit_margin": 35.0,
+    # ROA: missing often correlates with poor asset efficiency
+    "roa": 40.0,
+}
+
+
+def metric_score(
+    value: float | None,
+    breakpoints: Breakpoints,
+    missing_default: float = NEUTRAL,
+) -> float:
     """Map a raw metric value to 0-100 via piecewise linear interpolation.
 
     Args:
-        value: Raw metric value.  None / NaN -> 50 (neutral).
+        value: Raw metric value.  None / NaN -> *missing_default*.
         breakpoints: List of (raw_value, score) pairs sorted by raw_value.
+        missing_default: Score to return when *value* is missing.  Defaults to
+            50 (neutral) but callers may pass a directional default from
+            MISSING_DEFAULTS for metrics with known bias.
 
     Returns:
         Score in [0, 100].
     """
     if value is None or (isinstance(value, float) and np.isnan(value)):
-        return 50.0
+        return missing_default
 
     if not breakpoints:
-        return 50.0
+        return missing_default
 
     # Clamp below / above
     if value <= breakpoints[0][0]:
@@ -251,14 +286,14 @@ def score_roa(value: float | None) -> float:
     if value is not None and not (isinstance(value, float) and np.isnan(value)):
         if value < 0:
             return 10.0
-    return metric_score(value, ROA_BREAKPOINTS)
+    return metric_score(value, ROA_BREAKPOINTS, MISSING_DEFAULTS.get("roa", NEUTRAL))
 
 
 def score_profit_margin(value: float | None) -> float:
     if value is not None and not (isinstance(value, float) and np.isnan(value)):
         if value < 0:
             return 10.0
-    return metric_score(value, PROFIT_MARGIN_BREAKPOINTS)
+    return metric_score(value, PROFIT_MARGIN_BREAKPOINTS, MISSING_DEFAULTS.get("profit_margin", NEUTRAL))
 
 
 def score_revenue_growth(value: float | None, sector: str | None = None) -> float:
@@ -268,7 +303,7 @@ def score_revenue_growth(value: float | None, sector: str | None = None) -> floa
 
 def score_earnings_growth(value: float | None, sector: str | None = None) -> float:
     bp = _get_breakpoints("earnings_growth", sector, EARNINGS_GROWTH_BREAKPOINTS)
-    return metric_score(value, bp)
+    return metric_score(value, bp, MISSING_DEFAULTS.get("earnings_growth", NEUTRAL))
 
 
 def score_debt_equity(value: float | None, sector: str | None = None) -> float:
@@ -278,12 +313,12 @@ def score_debt_equity(value: float | None, sector: str | None = None) -> float:
 
 def score_fcf_yield(value: float | None) -> float:
     """Score FCF yield (FCF / market cap). Higher is better."""
-    return metric_score(value, FCF_YIELD_BREAKPOINTS)
+    return metric_score(value, FCF_YIELD_BREAKPOINTS, MISSING_DEFAULTS.get("fcf_yield", NEUTRAL))
 
 
 def score_current_ratio(value: float | None) -> float:
     """Score current ratio. Values around 1.5-2.0 are healthy."""
-    return metric_score(value, CURRENT_RATIO_BREAKPOINTS)
+    return metric_score(value, CURRENT_RATIO_BREAKPOINTS, MISSING_DEFAULTS.get("current_ratio", NEUTRAL))
 
 
 # -- Technical scoring (v6: normalized & direction-aware) --

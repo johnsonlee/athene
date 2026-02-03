@@ -26,6 +26,15 @@ FACTORS = [
     "valuation_margin",
     "catalyst_timeline",
     "downside_control",
+    # v7: sub-scores for per-metric IC validation
+    "value_score",
+    "quality_score",
+    "growth_score",
+    "safety_score",
+    "trend_score",
+    "momentum_score",
+    "volatility_score",
+    "volume_score",
 ]
 
 DEFAULT_HORIZONS = [5, 21]  # trading days forward

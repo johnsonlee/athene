@@ -13,6 +13,8 @@ log = get_logger(__name__)
 
 # Keys we extract from yf.Ticker.info
 INFO_KEYS = [
+    "sector",
+    "industry",
     "trailingPE",
     "forwardPE",
     "priceToBook",

@@ -110,12 +110,17 @@ def export_history(ranked: pd.DataFrame, run_date: str | None = None) -> str:
             "percentile": float(row.get("percentile", 0)),
         }
         # Store dimension scores for change attribution (v3 4-dimension model)
+        # v7: also store sub-scores for per-metric IC validation
         for key in ("earnings_visibility", "valuation_margin",
                      "catalyst_timeline", "downside_control",
-                     "fundamental_score", "technical_score", "sentiment_score"):
+                     "fundamental_score", "technical_score", "sentiment_score",
+                     # v7: sub-scores for IC tracking
+                     "value_score", "quality_score", "growth_score", "safety_score",
+                     "trend_score", "momentum_score", "volatility_score", "volume_score",
+                     "data_completeness"):
             val = row.get(key)
             if val is not None and pd.notna(val):
-                entry[key] = float(val)
+                entry[key] = round(float(val), 2)
         daily[str(ticker)] = entry
 
     history[run_date] = daily

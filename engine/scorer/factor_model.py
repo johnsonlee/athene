@@ -1,4 +1,4 @@
-"""Qualitative four-dimension composite scoring model (v3).
+"""Qualitative four-dimension composite scoring model (v3+).
 
 Replaces the previous 3-factor (fundamental/technical/sentiment) aggregation
 with four investment-analysis dimensions:
@@ -7,6 +7,9 @@ with four investment-analysis dimensions:
     valuationMargin     (25%)  = value
     catalystTimeline    (20%)  = trend + momentum + sentiment + volume
     downsideControl     (25%)  = safety + volatility
+
+v7: Incorporates data completeness — applies a penalty to composite_score
+when a large fraction of metrics are missing (data_completeness < 0.5).
 
 All scores remain on the 0-100 absolute scale.
 """
@@ -99,6 +102,16 @@ def compute_composite(
 
     sentiment = _get(sent_df, "sentiment_score")
 
+    # --- v7: Store building-block sub-scores for IC tracking ---
+    result["value_score"] = value
+    result["quality_score"] = quality
+    result["growth_score"] = growth
+    result["safety_score"] = safety
+    result["trend_score"] = trend
+    result["momentum_score"] = momentum
+    result["volatility_score"] = volatility
+    result["volume_score"] = volume
+
     # --- Four qualitative dimensions (all 0-100) ---
     ev = EV_WEIGHT_QUALITY * quality + EV_WEIGHT_GROWTH * growth
     vm = VM_WEIGHT_VALUE * value
@@ -144,6 +157,33 @@ def compute_composite(
     result["weight_fundamental"] = WEIGHT_FUNDAMENTAL
     result["weight_technical"] = WEIGHT_TECHNICAL
     result["weight_sentiment"] = WEIGHT_SENTIMENT
+
+    # --- v7: Data completeness penalty ---
+    # Combine fundamental and technical data completeness.  Sentiment has
+    # only one metric (compound) so it doesn't affect completeness much.
+    # Note: default to 0.0 (not NEUTRAL) — missing ticker = zero completeness.
+    def _get_completeness(df: pd.DataFrame | None, col: str) -> pd.Series:
+        if df is not None and col in df.columns:
+            return df[col].reindex(result.index).fillna(0.0)
+        return pd.Series(0.0, index=result.index)
+
+    fund_comp = _get_completeness(fund_scored, "fund_data_completeness")
+    tech_comp = _get_completeness(tech_scored, "tech_data_completeness")
+    # Weight fundamental data slightly more (12 metrics vs 6 technical)
+    data_completeness = 0.67 * fund_comp + 0.33 * tech_comp
+    result["data_completeness"] = data_completeness
+
+    # Apply penalty when data completeness is low.
+    # Linear penalty: full 5-point penalty at 0% completeness,
+    # zero penalty at ≥50% completeness.
+    penalty = ((0.50 - data_completeness.clip(upper=0.50)) / 0.50) * 5.0
+    result["composite_score"] = (result["composite_score"] - penalty).clip(lower=0.0)
+    result["data_quality_penalty"] = penalty
+
+    low_data = (data_completeness < 0.50).sum()
+    if low_data > 0:
+        log.info(f"Data completeness: {low_data} tickers below 50% "
+                 f"(penalty applied, max {penalty.max():.1f} pts)")
 
     log.info(f"Composite scores computed for {len(result)} tickers "
              f"(4-dimension model, 0-100 scale)")
