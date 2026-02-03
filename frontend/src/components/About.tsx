@@ -165,6 +165,57 @@ export function About() {
       </section>
 
       <section className="rounded-lg bg-white p-4 shadow-sm sm:p-6 dark:bg-gray-800">
+        <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">{t('about.modelHistory')}</h2>
+        <p className="mb-4 text-sm text-gray-600 dark:text-gray-400">{t('about.modelHistoryDesc')}</p>
+        <div className="relative ml-3 border-l-2 border-gray-200 dark:border-gray-600">
+          {/* v1 */}
+          <div className="relative mb-6 ml-6">
+            <span className="absolute -left-[33px] flex h-4 w-4 items-center justify-center rounded-full border-2 border-gray-300 bg-white dark:border-gray-500 dark:bg-gray-800" />
+            <div className="flex items-baseline gap-2">
+              <span className="font-mono text-xs font-bold text-gray-500 dark:text-gray-400">{t('about.historyV1Label')}</span>
+              <span className="text-xs text-gray-400 dark:text-gray-500">{t('about.historyV1Date')}</span>
+            </div>
+            <h4 className="font-medium text-gray-900 dark:text-white">{t('about.historyV1Title')}</h4>
+            <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">{t('about.historyV1Desc')}</p>
+            <p className="mt-1 text-xs text-amber-600 dark:text-amber-400">{t('about.historyV1Issue')}</p>
+          </div>
+          {/* v2 */}
+          <div className="relative mb-6 ml-6">
+            <span className="absolute -left-[33px] flex h-4 w-4 items-center justify-center rounded-full border-2 border-gray-300 bg-white dark:border-gray-500 dark:bg-gray-800" />
+            <div className="flex items-baseline gap-2">
+              <span className="font-mono text-xs font-bold text-gray-500 dark:text-gray-400">{t('about.historyV2Label')}</span>
+              <span className="text-xs text-gray-400 dark:text-gray-500">{t('about.historyV2Date')}</span>
+            </div>
+            <h4 className="font-medium text-gray-900 dark:text-white">{t('about.historyV2Title')}</h4>
+            <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">{t('about.historyV2Desc')}</p>
+            <p className="mt-1 text-xs text-amber-600 dark:text-amber-400">{t('about.historyV2Issue')}</p>
+          </div>
+          {/* v3 */}
+          <div className="relative mb-6 ml-6">
+            <span className="absolute -left-[33px] flex h-4 w-4 items-center justify-center rounded-full border-2 border-gray-300 bg-white dark:border-gray-500 dark:bg-gray-800" />
+            <div className="flex items-baseline gap-2">
+              <span className="font-mono text-xs font-bold text-gray-500 dark:text-gray-400">{t('about.historyV3Label')}</span>
+              <span className="text-xs text-gray-400 dark:text-gray-500">{t('about.historyV3Date')}</span>
+            </div>
+            <h4 className="font-medium text-gray-900 dark:text-white">{t('about.historyV3Title')}</h4>
+            <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">{t('about.historyV3Desc')}</p>
+            <p className="mt-1 text-xs text-amber-600 dark:text-amber-400">{t('about.historyV3Issue')}</p>
+          </div>
+          {/* v4 (current) */}
+          <div className="relative ml-6">
+            <span className="absolute -left-[33px] flex h-4 w-4 items-center justify-center rounded-full border-2 border-blue-500 bg-blue-500 dark:border-blue-400 dark:bg-blue-400" />
+            <div className="flex items-baseline gap-2">
+              <span className="font-mono text-xs font-bold text-blue-600 dark:text-blue-400">{t('about.historyV4Label')}</span>
+              <span className="text-xs text-gray-400 dark:text-gray-500">{t('about.historyV4Date')}</span>
+              <span className="rounded bg-blue-100 px-1.5 py-0.5 text-xs font-medium text-blue-700 dark:bg-blue-900/50 dark:text-blue-300">{t('about.historyCurrent')}</span>
+            </div>
+            <h4 className="font-medium text-gray-900 dark:text-white">{t('about.historyV4Title')}</h4>
+            <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">{t('about.historyV4Desc')}</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="rounded-lg bg-white p-4 shadow-sm sm:p-6 dark:bg-gray-800">
         <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">{t('about.dataSources')}</h2>
         <ul className="list-disc space-y-1 pl-5 text-sm text-gray-600 dark:text-gray-400">
           <li>{t('about.dataPrice')}</li>
