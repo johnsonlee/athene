@@ -13,64 +13,64 @@ export function FilterPanel({ filter, onChange, sectors }: Props) {
   const { t } = useI18n();
 
   return (
-    <div className="flex flex-wrap items-center gap-3 rounded-lg bg-white p-3 shadow-sm dark:bg-gray-800">
-      {/* Search */}
-      <input
-        type="text"
-        placeholder={t('screener.searchPlaceholder')}
-        value={filter.search}
-        onChange={(e) => onChange({ ...filter, search: e.target.value })}
-        className="rounded border px-3 py-1.5 text-sm outline-none focus:border-blue-500 dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600"
-      />
-
-      {/* Sector filter */}
-      <select
-        value={filter.sectors[0] || ''}
-        onChange={(e) =>
-          onChange({ ...filter, sectors: e.target.value ? [e.target.value] : [] })
-        }
-        className="rounded border px-2 py-1.5 text-sm dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600"
-      >
-        <option value="">{t('screener.allSectors')}</option>
-        {sectors.map((s) => (
-          <option key={s} value={s}>{t(`sector.${s}` as any) || s}</option>
-        ))}
-      </select>
-
-      {/* Tier filter */}
-      <div className="flex gap-1">
-        {TIER_KEYS.map((key) => {
-          const active = filter.tiers.includes(key);
-          return (
-            <button
-              key={key}
-              onClick={() => {
-                const tiers = active
-                  ? filter.tiers.filter((t) => t !== key)
-                  : [...filter.tiers, key];
-                onChange({ ...filter, tiers });
-              }}
-              className={`rounded px-2 py-1 text-xs font-medium transition-colors ${
-                active
-                  ? 'bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900'
-                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600'
-              }`}
-            >
-              {t(`tier.${key}` as any)}
-            </button>
-          );
-        })}
+    <div className="space-y-3 rounded-lg bg-white p-3 shadow-sm md:flex md:flex-wrap md:items-center md:gap-3 md:space-y-0 dark:bg-gray-800">
+      {/* Search + Sector row */}
+      <div className="flex gap-2">
+        <input
+          type="text"
+          placeholder={t('screener.searchPlaceholder')}
+          value={filter.search}
+          onChange={(e) => onChange({ ...filter, search: e.target.value })}
+          className="min-w-0 flex-1 rounded border px-3 py-2 text-sm outline-none focus:border-blue-500 md:py-1.5 dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600"
+        />
+        <select
+          value={filter.sectors[0] || ''}
+          onChange={(e) =>
+            onChange({ ...filter, sectors: e.target.value ? [e.target.value] : [] })
+          }
+          className="rounded border px-2 py-2 text-sm md:py-1.5 dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600"
+        >
+          <option value="">{t('screener.allSectors')}</option>
+          {sectors.map((s) => (
+            <option key={s} value={s}>{t(`sector.${s}` as any) || s}</option>
+          ))}
+        </select>
       </div>
 
-      {/* Reset */}
-      <button
-        onClick={() =>
-          onChange({ search: '', sectors: [], tiers: [], minScore: -Infinity, maxScore: Infinity })
-        }
-        className="text-xs text-blue-600 hover:underline dark:text-blue-400"
-      >
-        {t('screener.reset')}
-      </button>
+      {/* Tier filter + Reset */}
+      <div className="flex items-center gap-2">
+        <div className="flex flex-wrap gap-1">
+          {TIER_KEYS.map((key) => {
+            const active = filter.tiers.includes(key);
+            return (
+              <button
+                key={key}
+                onClick={() => {
+                  const tiers = active
+                    ? filter.tiers.filter((t) => t !== key)
+                    : [...filter.tiers, key];
+                  onChange({ ...filter, tiers });
+                }}
+                className={`rounded px-2.5 py-1.5 text-xs font-medium transition-colors ${
+                  active
+                    ? 'bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900'
+                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600'
+                }`}
+              >
+                {t(`tier.${key}` as any)}
+              </button>
+            );
+          })}
+        </div>
+        <button
+          onClick={() =>
+            onChange({ search: '', sectors: [], tiers: [], minScore: -Infinity, maxScore: Infinity })
+          }
+          className="shrink-0 text-xs text-blue-600 hover:underline dark:text-blue-400"
+        >
+          {t('screener.reset')}
+        </button>
+      </div>
     </div>
   );
 }

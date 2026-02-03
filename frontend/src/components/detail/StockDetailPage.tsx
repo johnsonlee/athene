@@ -19,25 +19,27 @@ export function StockDetailPage() {
   const { fundamental, ranking } = data;
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4 sm:space-y-6">
       {/* Header */}
-      <div className="flex items-start justify-between">
-        <div>
-          <Link to="/screener" className="text-sm text-blue-600 hover:underline dark:text-blue-400">&larr; {t('detail.backToScreener')}</Link>
-          <h1 className="mt-1 text-2xl font-bold text-gray-900 dark:text-white">{ticker}</h1>
-          {fundamental?.current_price && (
-            <p className="text-xl font-semibold text-gray-700 dark:text-gray-300">
-              {formatPrice(fundamental.current_price)}
-            </p>
+      <div>
+        <Link to="/screener" className="inline-block py-1 text-sm text-blue-600 hover:underline dark:text-blue-400">&larr; {t('detail.backToScreener')}</Link>
+        <div className="mt-1 flex items-start justify-between">
+          <div>
+            <h1 className="text-xl font-bold text-gray-900 sm:text-2xl dark:text-white">{ticker}</h1>
+            {fundamental?.current_price && (
+              <p className="text-lg font-semibold text-gray-700 sm:text-xl dark:text-gray-300">
+                {formatPrice(fundamental.current_price)}
+              </p>
+            )}
+          </div>
+          {ranking && (
+            <div className="ml-3 text-right">
+              <p className="text-xs text-gray-500 sm:text-sm dark:text-gray-400">{t('detail.rank', { rank: ranking.rank })}</p>
+              <p className="text-base font-bold text-gray-900 sm:text-lg dark:text-white">{formatScore(ranking.composite_score)}</p>
+              <ScoreBadge tier={ranking.tier} label={t(`tier.${ranking.tier}` as any)} />
+            </div>
           )}
         </div>
-        {ranking && (
-          <div className="text-right">
-            <p className="text-sm text-gray-500 dark:text-gray-400">{t('detail.rank', { rank: ranking.rank })}</p>
-            <p className="text-lg font-bold text-gray-900 dark:text-white">{formatScore(ranking.composite_score)}</p>
-            <ScoreBadge tier={ranking.tier} label={t(`tier.${ranking.tier}` as any)} />
-          </div>
-        )}
       </div>
 
       {/* Price Chart + Indicators */}
