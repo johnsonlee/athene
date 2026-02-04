@@ -35,7 +35,7 @@ npm run build    # Production build → dist/
 
 ## Data Flow
 
-Wikipedia → universe.py → tickers → [price.py, fundamental.py, news.py] → [analyzers + absolute scoring] → factor_model (4 qualitative dimensions → composite) → ranker (rating + ranking) → json_exporter → frontend/public/data/
+Wikipedia → universe.py → tickers → [price.py, fundamental.py, news.py, analyst.py, macro.py] → [analyzers + absolute scoring] → factor_model (4 qualitative dimensions × regime-adjusted weights → composite) → ranker (rating + ranking) → json_exporter → frontend/public/data/
 
 ## Version History
 
@@ -119,7 +119,7 @@ Validates scoring rules via IC tracking, handles missing data honestly, and intr
 
 **Files**: `engine/scorer/absolute.py`, `engine/scorer/factor_model.py`, `engine/analyzers/fundamental.py`, `engine/analyzers/technical.py`, `engine/analyzers/ic_tracker.py`, `engine/exporters/json_exporter.py`, `engine/main.py`
 
-### v8: Analyst Revision Momentum (current)
+### v8: Analyst Revision Momentum
 
 Adds sell-side analyst revision momentum as a dedicated signal within Catalyst Timeline, separating institutional-quality analyst actions from general news sentiment.
 
@@ -135,7 +135,22 @@ Adds sell-side analyst revision momentum as a dedicated signal within Catalyst T
 
 **Files**: `engine/collectors/analyst.py`, `engine/analyzers/analyst.py`, `engine/scorer/absolute.py`, `engine/scorer/factor_model.py`, `engine/config.py`, `engine/analyzers/ic_tracker.py`, `engine/exporters/json_exporter.py`, `engine/main.py`
 
-## Scoring Design (v8)
+### v9: Intelligence Upgrade (current)
+
+Two-part intelligence upgrade: better sentiment NLP and macro regime awareness.
+
+**Key changes from v8:**
+- **Sentiment time decay**: Headlines weighted by exponential decay with 7-day half-life (`w = exp(-ln2/7 × days_old)`). Recent headlines contribute more to the average than stale ones.
+- **Source credibility weighting**: Three-tier publisher credibility system. Tier 1 (1.5×): Reuters, Bloomberg, WSJ, FT, CNBC, AP, Barron's, MarketWatch. Tier 2 (1.0×): default. Tier 3 (0.7×): Benzinga, Seeking Alpha, Motley Fool, InvestorPlace. Combined weight = `time_decay × source_weight`.
+- **Headline count normalization**: `sentiment_confidence = min(1.0, news_count / 10)`. Low-confidence scores pulled toward neutral: `score = 50 + confidence × (raw - 50)`. Prevents stocks with 1-2 headlines from getting extreme sentiment scores.
+- **Macro data collector**: New `engine/collectors/macro.py` fetches VIX (`^VIX`), S&P 500 (`^GSPC`) with SMA200, 10Y Treasury yield (`^TNX`), and 13W T-Bill yield (`^IRX`).
+- **Market regime detection**: New `engine/analyzers/macro.py` classifies market as risk_on, neutral, or risk_off based on three signals: VIX level (<15 risk-on, >25 risk-off), S&P 500 vs SMA200 (>5% above risk-on, >5% below risk-off), yield curve slope (>1pp normal, <0 inverted). Regime score = average of available signals.
+- **Regime-conditional dimension weights**: In risk-on: CT 25%, DC 20% (+5% to catalysts). In risk-off: CT 15%, DC 30% (+5% to defense). Neutral: default weights. EV and VM stay constant across regimes.
+- **Macro data export**: Regime info (regime, signals, VIX, spread, etc.) exported in `meta.json` for frontend consumption.
+
+**Files**: `engine/analyzers/sentiment.py`, `engine/collectors/macro.py`, `engine/analyzers/macro.py`, `engine/scorer/factor_model.py`, `engine/config.py`, `engine/exporters/json_exporter.py`, `engine/main.py`
+
+## Scoring Design (v9)
 
 ### Absolute Metric Scoring
 
@@ -187,11 +202,11 @@ value_score     = avg(pe_score, forward_pe_score, pb_score, ps_score)    # all s
 quality_score   = avg(roe_score, roa_score, margin_score)
 growth_score    = avg(rev_growth_score, earn_growth_score)               # sector-aware for Utilities
 safety_score    = avg(debt_equity_score, fcf_yield_score, current_ratio_score)  # sector-aware D/E
-sentiment_score = (compound + 1) × 50
+sentiment_score = 50 + confidence × (raw_vader_score - 50)   # v9: confidence-normalized, time/source weighted
 analyst_score   = 0.40×revision_momentum_score + 0.35×target_upside_score + 0.25×consensus_score
 ```
 
-### Qualitative Dimension Aggregation (v8)
+### Qualitative Dimension Aggregation (v9)
 
 ```
 earningsVisibility = 0.60×quality + 0.40×growth
@@ -199,8 +214,13 @@ valuationMargin    = value
 catalystTimeline   = 0.25×trend + 0.25×momentum + 0.20×analyst + 0.15×sentiment + 0.15×volume
 downsideControl    = 0.60×safety + 0.40×volatility
 
-composite_score = 0.30×EV + 0.25×VM + 0.20×CT + 0.25×DC
+composite_score = w_EV×EV + w_VM×VM + w_CT×CT + w_DC×DC
 ```
+
+Default weights: EV 30%, VM 25%, CT 20%, DC 25%. Regime-adjusted:
+- **risk_on**: CT 25%, DC 20% (shift +5% to catalysts)
+- **risk_off**: CT 15%, DC 30% (shift +5% to defense)
+- **neutral**: default weights (no change)
 
 All scores are 0-100 throughout the pipeline.
 
@@ -257,32 +277,35 @@ When implementing a new version from the roadmap:
 
 ## Improvement Roadmap
 
-Known weaknesses of the current model (v8), grouped into future versions by theme.
+Known weaknesses of the current model (v9), grouped by theme.
 
-### v9: Intelligence Upgrade
+### v10: Advanced NLP & Cross-Asset Signals
 
-Theme: Add higher-order intelligence — better NLP for sentiment, macro regime awareness.
+Theme: Replace rule-based NLP with ML-based models, add cross-asset and event-driven signals.
 
-#### 9.1 Sentiment Analysis Upgrade
+#### 10.1 Financial NLP Upgrade
 
-**Problem**: VADER is a rule-based dictionary that doesn't understand financial context. Only headline text is analyzed. No time decay. No source credibility weighting. News coverage is biased toward large caps.
+**Problem**: VADER is still rule-based and doesn't understand financial context. "Revenue missed expectations" scores neutral because VADER doesn't know "missed" is negative in financial context.
 
-**Proposed improvements** (incremental):
-1. **Time decay**: Weight recent headlines higher (e.g., exponential decay over 14 days).
-2. **Source weighting**: Assign credibility multipliers by source domain (Reuters/Bloomberg > random blogs).
-3. **Headline count normalization**: Stocks with 2 headlines vs 20 headlines have very different confidence levels — surface a `sentiment_confidence` score.
-4. **Long-term**: Replace VADER with a financial-domain LLM or fine-tuned transformer (FinBERT, etc.).
+**Proposed improvements**:
+1. Replace VADER with FinBERT or similar financial-domain transformer.
+2. Analyze full article text when available, not just headlines.
+3. Entity-level sentiment (distinguish sentiment about the company vs the sector).
 
-**Files**: `engine/analyzers/sentiment.py`, `engine/collectors/news.py`
+#### 10.2 Earnings Calendar Awareness
 
-#### 9.2 Macro / Market Regime Awareness
+**Problem**: No awareness of upcoming earnings dates, ex-dividend dates, or other scheduled events that drive short-term volatility.
 
-**Problem**: The model is purely bottom-up. It doesn't know whether the macro environment is risk-on or risk-off. In a rising-rate environment, all growth stock valuations should be discounted; in a falling-rate environment, they should be expanded. Sector rotation is not captured.
+**Proposed approach**:
+- Collect earnings calendar from yfinance.
+- Adjust Catalyst Timeline around earnings dates (increase momentum weight pre-earnings).
+- Flag stocks with earnings within 5 trading days.
 
-**Proposed approach** (research needed):
-- Track market-level indicators: VIX level, yield curve slope (10Y-2Y), S&P 500 trend vs SMA200.
-- Define 2-3 market regimes (risk-on / neutral / risk-off).
-- Apply regime-conditional adjustments to dimension weights (e.g., increase Downside Control weight in risk-off; increase Catalyst Timeline weight in risk-on).
-- This is the most complex improvement and requires careful design to avoid overfitting.
+#### 10.3 Cross-Asset Correlation
 
-**Files**: New module `engine/analyzers/macro.py`, `engine/scorer/factor_model.py`, `engine/config.py`
+**Problem**: No awareness of sector ETF flows, credit spreads, or commodity prices that may signal sector rotation.
+
+**Proposed approach**:
+- Track sector ETF relative strength (XLF, XLK, XLE, etc.).
+- Compare individual stock momentum vs sector momentum (relative strength).
+- This could improve Catalyst Timeline signal quality.

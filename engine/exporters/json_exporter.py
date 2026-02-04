@@ -55,14 +55,20 @@ def _write_json(data: Any, filename: str) -> str:
     return path
 
 
-def export_meta(ticker_count: int, run_date: str | None = None) -> str:
-    """Export meta.json with run metadata."""
-    data = {
+def export_meta(ticker_count: int, run_date: str | None = None, macro: dict | None = None) -> str:
+    """Export meta.json with run metadata.
+
+    Args:
+        macro: Optional macro regime info dict from detect_regime().
+    """
+    data: Dict[str, Any] = {
         "date": run_date or datetime.now().strftime("%Y-%m-%d"),
         "timestamp": datetime.now().isoformat(),
         "version": "1.0.0",
         "ticker_count": ticker_count,
     }
+    if macro:
+        data["macro"] = macro
     return _write_json(data, "meta.json")
 
 

@@ -84,6 +84,13 @@ EXTRA_TICKERS = [
     {"ticker": "CPNG", "name": "Coupang", "sector": "Consumer Cyclical", "industry": "Internet Retail"},
 ]
 
+# ---------- v9: Sentiment analysis ----------
+SENTIMENT_HALF_LIFE_DAYS = 7     # time decay half-life for news headlines
+SENTIMENT_CONFIDENCE_N = 10      # headlines needed for full confidence (1.0)
+
+# ---------- v9: Macro regime ----------
+REGIME_WEIGHT_SHIFT = 0.05       # ± shift to CT/DC in risk_on/risk_off
+
 # ---------- Data collection ----------
 PRICE_HISTORY_DAYS = 365         # 1 year of daily OHLCV
 NEWS_MAX_ARTICLES = 20           # max news articles per ticker

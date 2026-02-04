@@ -14,6 +14,9 @@ when a large fraction of metrics are missing (data_completeness < 0.5).
 v8: Added analyst revision momentum to Catalyst Timeline (20% of CT).
 Reweighted CT: trend 25% + momentum 25% + analyst 20% + sentiment 15% + volume 15%.
 
+v9: Accepts optional weight_overrides for macro regime-adjusted dimension weights.
+Risk-on shifts +5% to CT from DC; risk-off shifts +5% to DC from CT.
+
 All scores remain on the 0-100 absolute scale.
 """
 
@@ -68,16 +71,27 @@ def compute_composite(
     tech_scored: pd.DataFrame,
     sent_df: pd.DataFrame,
     analyst_scored: pd.DataFrame | None = None,
+    weight_overrides: dict[str, float] | None = None,
 ) -> pd.DataFrame:
     """Compute composite score via four qualitative dimensions.
 
     Accepts the fully-scored DataFrames (with sub-score columns) from the
     fundamental, technical, sentiment, and analyst analyzers.
 
+    Args:
+        weight_overrides: Optional dict mapping dimension name to weight.
+            Used by macro regime detection to shift weights in risk-on/off.
+
     Returns:
         DataFrame indexed by ticker with dimension scores, legacy factor
         scores, composite_score, and weight columns.
     """
+    # Resolve dimension weights (regime-adjusted or default)
+    w_ev = (weight_overrides or {}).get("earnings_visibility", WEIGHT_EARNINGS_VISIBILITY)
+    w_vm = (weight_overrides or {}).get("valuation_margin", WEIGHT_VALUATION_MARGIN)
+    w_ct = (weight_overrides or {}).get("catalyst_timeline", WEIGHT_CATALYST_TIMELINE)
+    w_dc = (weight_overrides or {}).get("downside_control", WEIGHT_DOWNSIDE_CONTROL)
+
     # Merge all sub-scores into a single frame
     all_tickers: set[str] = set()
     for df in (fund_scored, tech_scored, sent_df, analyst_scored):
@@ -133,19 +147,16 @@ def compute_composite(
     result["catalyst_timeline"] = ct
     result["downside_control"] = dc
 
-    # --- Composite score ---
+    # --- Composite score (v9: uses regime-adjusted weights) ---
     result["composite_score"] = (
-        WEIGHT_EARNINGS_VISIBILITY * ev
-        + WEIGHT_VALUATION_MARGIN * vm
-        + WEIGHT_CATALYST_TIMELINE * ct
-        + WEIGHT_DOWNSIDE_CONTROL * dc
+        w_ev * ev + w_vm * vm + w_ct * ct + w_dc * dc
     )
 
-    # --- Dimension weights (fixed, but stored for display/export) ---
-    result["weight_earnings_visibility"] = WEIGHT_EARNINGS_VISIBILITY
-    result["weight_valuation_margin"] = WEIGHT_VALUATION_MARGIN
-    result["weight_catalyst_timeline"] = WEIGHT_CATALYST_TIMELINE
-    result["weight_downside_control"] = WEIGHT_DOWNSIDE_CONTROL
+    # --- Dimension weights (v9: stores actual used weights, may differ from defaults) ---
+    result["weight_earnings_visibility"] = w_ev
+    result["weight_valuation_margin"] = w_vm
+    result["weight_catalyst_timeline"] = w_ct
+    result["weight_downside_control"] = w_dc
 
     # --- Legacy 3-factor scores (for backward compat in frontend/history) ---
     result["fundamental_score"] = (
