@@ -75,15 +75,19 @@ def collect_sector_etfs_daily(target_date: str) -> Dict[str, dict]:
     return result
 
 
-def collect_sector_etfs() -> Dict[str, pd.DataFrame]:
-    """Fetch 1Y OHLCV for 11 sector ETFs + SPY benchmark.
+def collect_sector_etfs(start_date: str | None = None, end_date: str | None = None) -> Dict[str, pd.DataFrame]:
+    """Fetch OHLCV for 11 sector ETFs + SPY benchmark.
+
+    Args:
+        start_date: Start date (YYYY-MM-DD). Defaults to now - PRICE_HISTORY_DAYS.
+        end_date: End date (YYYY-MM-DD). Defaults to now.
 
     Returns:
         dict mapping ticker (e.g. "XLK", "SPY") -> DataFrame[Date, Open, High, Low, Close, Volume]
     """
     tickers = list(SECTOR_ETFS.keys()) + [SPY_TICKER]
-    end = datetime.now()
-    start = end - timedelta(days=PRICE_HISTORY_DAYS)
+    end = datetime.strptime(end_date, "%Y-%m-%d") if end_date else datetime.now()
+    start = datetime.strptime(start_date, "%Y-%m-%d") if start_date else end - timedelta(days=PRICE_HISTORY_DAYS)
 
     log.info(f"Downloading sector ETF prices: {len(tickers)} tickers")
     rate_limiter.wait()

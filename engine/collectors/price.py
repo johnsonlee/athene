@@ -89,15 +89,20 @@ def collect_prices_daily(tickers: list[str], target_date: str) -> Dict[str, dict
     return result
 
 
-def collect_prices(tickers: list[str]) -> Dict[str, pd.DataFrame]:
+def collect_prices(tickers: list[str], start_date: str | None = None, end_date: str | None = None) -> Dict[str, pd.DataFrame]:
     """Download daily OHLCV for all tickers in batches.
+
+    Args:
+        tickers: List of ticker symbols.
+        start_date: Start date (YYYY-MM-DD). Defaults to now - PRICE_HISTORY_DAYS.
+        end_date: End date (YYYY-MM-DD). Defaults to now.
 
     Returns:
         dict mapping ticker → DataFrame with columns:
         Date (index), Open, High, Low, Close, Volume
     """
-    end = datetime.now()
-    start = end - timedelta(days=PRICE_HISTORY_DAYS)
+    end = datetime.strptime(end_date, "%Y-%m-%d") if end_date else datetime.now()
+    start = datetime.strptime(start_date, "%Y-%m-%d") if start_date else end - timedelta(days=PRICE_HISTORY_DAYS)
     result: Dict[str, pd.DataFrame] = {}
 
     for i in range(0, len(tickers), BATCH_SIZE):

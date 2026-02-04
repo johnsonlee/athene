@@ -3,13 +3,13 @@
 Usage:
     python -m engine.collect universe [--tickers AAPL MSFT] [--date 2026-02-05] [--force]
     python -m engine.collect prices [--date 2026-02-05] [--force]
-    python -m engine.collect prices --bootstrap
+    python -m engine.collect prices --backfill
     python -m engine.collect fundamentals [--date 2026-02-05] [--force]
     python -m engine.collect news [--date 2026-02-05] [--force]
     python -m engine.collect analyst [--date 2026-02-05] [--force]
     python -m engine.collect macro [--date 2026-02-05] [--force]
     python -m engine.collect sector_etfs [--date 2026-02-05] [--force]
-    python -m engine.collect sector_etfs --bootstrap
+    python -m engine.collect sector_etfs --backfill
 
 Each command writes output to collected/YYYY-MM-DD/<name>.json.
 Per-ticker collectors read tickers from the latest universe.json.
@@ -203,8 +203,8 @@ def cmd_universe(args: argparse.Namespace) -> None:
 
 def cmd_prices(args: argparse.Namespace) -> None:
     """Collect price data for all tickers."""
-    if args.bootstrap:
-        _bootstrap_prices(args)
+    if args.backfill:
+        _backfill_prices(args)
         return
     if _skip_if_exists("prices", args):
         return
@@ -219,13 +219,16 @@ def cmd_prices(args: argparse.Namespace) -> None:
     log.info(f"Daily price data collected for {len(daily)} tickers")
 
 
-def _bootstrap_prices(args: argparse.Namespace) -> None:
-    """Bootstrap: fetch 365 days of prices and split into daily slices."""
+def _backfill_prices(args: argparse.Namespace) -> None:
+    """Backfill: fetch historical prices and split into daily slices."""
     from engine.collectors.price import collect_prices
 
     tickers = _load_tickers()
-    log.info(f"Bootstrapping prices for {len(tickers)} tickers (365 days)...")
-    prices = collect_prices(tickers)
+    start_date = getattr(args, "start", None)
+    end_date = getattr(args, "end", None)
+    label = f"{start_date} to {end_date}" if start_date and end_date else "365 days"
+    log.info(f"Backfilling prices for {len(tickers)} tickers ({label})...")
+    prices = collect_prices(tickers, start_date=start_date, end_date=end_date)
 
     total_files = 0
     for ticker, df in prices.items():
@@ -259,7 +262,7 @@ def _bootstrap_prices(args: argparse.Namespace) -> None:
         1 for d in os.listdir(COLLECTED_DIR)
         if _is_date_dir(d) and os.path.exists(os.path.join(COLLECTED_DIR, d, "prices.json"))
     )
-    log.info(f"Bootstrap complete: {len(prices)} tickers across {date_count} date directories")
+    log.info(f"Backfill complete: {len(prices)} tickers across {date_count} date directories")
 
 
 def cmd_fundamentals(args: argparse.Namespace) -> None:
@@ -314,8 +317,8 @@ def cmd_macro(args: argparse.Namespace) -> None:
 
 def cmd_sector_etfs(args: argparse.Namespace) -> None:
     """Collect sector ETF price data."""
-    if args.bootstrap:
-        _bootstrap_sector_etfs(args)
+    if args.backfill:
+        _backfill_sector_etfs(args)
         return
     if _skip_if_exists("sector_etfs", args):
         return
@@ -329,12 +332,15 @@ def cmd_sector_etfs(args: argparse.Namespace) -> None:
     log.info(f"Daily sector ETF data collected for {len(daily)} tickers")
 
 
-def _bootstrap_sector_etfs(args: argparse.Namespace) -> None:
-    """Bootstrap: fetch 365 days of sector ETF data and split into daily slices."""
+def _backfill_sector_etfs(args: argparse.Namespace) -> None:
+    """Backfill: fetch historical sector ETF data and split into daily slices."""
     from engine.collectors.sector_etf import collect_sector_etfs
 
-    log.info("Bootstrapping sector ETF data (365 days)...")
-    etf_prices = collect_sector_etfs()
+    start_date = getattr(args, "start", None)
+    end_date = getattr(args, "end", None)
+    label = f"{start_date} to {end_date}" if start_date and end_date else "365 days"
+    log.info(f"Backfilling sector ETF data ({label})...")
+    etf_prices = collect_sector_etfs(start_date=start_date, end_date=end_date)
 
     for ticker, df in etf_prices.items():
         for date_val, row in df.iterrows():
@@ -363,7 +369,7 @@ def _bootstrap_sector_etfs(args: argparse.Namespace) -> None:
         1 for d in os.listdir(COLLECTED_DIR)
         if _is_date_dir(d) and os.path.exists(os.path.join(COLLECTED_DIR, d, "sector_etfs.json"))
     )
-    log.info(f"Bootstrap complete: {len(etf_prices)} ETFs across {date_count} date directories")
+    log.info(f"Backfill complete: {len(etf_prices)} ETFs across {date_count} date directories")
 
 
 def main() -> None:
@@ -390,8 +396,10 @@ def main() -> None:
     # prices
     p_prices = subparsers.add_parser("prices", help="Collect price data")
     _add_common_args(p_prices)
-    p_prices.add_argument("--bootstrap", action="store_true",
-                          help="Fetch full 365 days and split into daily slices")
+    p_prices.add_argument("--backfill", action="store_true",
+                          help="Fetch historical data and split into daily slices")
+    p_prices.add_argument("--start", help="Backfill start date (YYYY-MM-DD)")
+    p_prices.add_argument("--end", help="Backfill end date (YYYY-MM-DD)")
     p_prices.set_defaults(func=cmd_prices)
 
     # fundamentals
@@ -417,8 +425,10 @@ def main() -> None:
     # sector_etfs
     p_etfs = subparsers.add_parser("sector_etfs", help="Collect sector ETF data")
     _add_common_args(p_etfs)
-    p_etfs.add_argument("--bootstrap", action="store_true",
-                        help="Fetch full 365 days and split into daily slices")
+    p_etfs.add_argument("--backfill", action="store_true",
+                        help="Fetch historical data and split into daily slices")
+    p_etfs.add_argument("--start", help="Backfill start date (YYYY-MM-DD)")
+    p_etfs.add_argument("--end", help="Backfill end date (YYYY-MM-DD)")
     p_etfs.set_defaults(func=cmd_sector_etfs)
 
     args = parser.parse_args()

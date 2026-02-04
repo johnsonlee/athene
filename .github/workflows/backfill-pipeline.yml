@@ -1,0 +1,140 @@
+name: Backfill Pipeline
+
+on:
+  workflow_dispatch:
+    inputs:
+      start_date:
+        description: 'Start date (YYYY-MM-DD), e.g. 2024-01-01'
+        required: false
+        default: ''
+      end_date:
+        description: 'End date (YYYY-MM-DD), e.g. 2024-12-31'
+        required: false
+        default: ''
+      skip_snapshot:
+        description: 'Skip today snapshot collection (fundamentals/news/analyst/macro)'
+        required: false
+        type: boolean
+        default: false
+      skip_analyze:
+        description: 'Skip analyze + deploy (useful for incremental backfill)'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-pipeline
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    outputs:
+      has_analysis: ${{ steps.analyze-commit.outputs.data_changed }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set run date
+        id: date
+        run: |
+          RUN_DATE=$(date -u +%Y-%m-%d)
+          echo "run_date=$RUN_DATE" >> "$GITHUB_OUTPUT"
+          echo "Run date: $RUN_DATE"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build universe
+        run: |
+          RUN_DATE="${{ steps.date.outputs.run_date }}"
+          python -m engine.collect universe --date "$RUN_DATE"
+
+      - name: Remove old flat collected files
+        run: rm -f collected/*.json collected/*.json.gz
+
+      - name: Backfill prices
+        run: |
+          ARGS="--backfill"
+          [ -n "${{ inputs.start_date }}" ] && ARGS="$ARGS --start ${{ inputs.start_date }}"
+          [ -n "${{ inputs.end_date }}" ]   && ARGS="$ARGS --end ${{ inputs.end_date }}"
+          python -m engine.collect prices $ARGS
+
+      - name: Backfill sector ETFs
+        run: |
+          ARGS="--backfill"
+          [ -n "${{ inputs.start_date }}" ] && ARGS="$ARGS --start ${{ inputs.start_date }}"
+          [ -n "${{ inputs.end_date }}" ]   && ARGS="$ARGS --end ${{ inputs.end_date }}"
+          python -m engine.collect sector_etfs $ARGS
+
+      - name: Collect today fundamentals
+        if: inputs.skip_snapshot != true
+        run: |
+          RUN_DATE="${{ steps.date.outputs.run_date }}"
+          python -m engine.collect fundamentals --date "$RUN_DATE"
+
+      - name: Collect today news
+        if: inputs.skip_snapshot != true
+        run: |
+          RUN_DATE="${{ steps.date.outputs.run_date }}"
+          python -m engine.collect news --date "$RUN_DATE"
+
+      - name: Collect today analyst
+        if: inputs.skip_snapshot != true
+        run: |
+          RUN_DATE="${{ steps.date.outputs.run_date }}"
+          python -m engine.collect analyst --date "$RUN_DATE"
+
+      - name: Collect today macro
+        if: inputs.skip_snapshot != true
+        run: |
+          RUN_DATE="${{ steps.date.outputs.run_date }}"
+          python -m engine.collect macro --date "$RUN_DATE"
+
+      - name: Commit collected data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f collected/
+          if git diff --staged --quiet; then
+            echo "No collected data changes"
+          else
+            LABEL="backfill: collected data"
+            [ -n "${{ inputs.start_date }}" ] && LABEL="$LABEL (${{ inputs.start_date }} to ${{ inputs.end_date }})"
+            git commit -m "$LABEL [skip ci]"
+            git push
+          fi
+
+      - name: Run analysis
+        if: inputs.skip_analyze != true
+        run: python -m engine.analyze
+
+      - name: Commit analysis data
+        if: inputs.skip_analyze != true
+        id: analyze-commit
+        run: |
+          git add -f frontend/public/data/
+          if git diff --staged --quiet; then
+            echo "No analysis data changes"
+            echo "data_changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "data: update $(date -u +%Y-%m-%d) rankings"
+            git push
+            echo "data_changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  deploy:
+    needs: backfill
+    if: needs.backfill.outputs.has_analysis == 'true'
+    uses: ./.github/workflows/deploy-pages.yml
