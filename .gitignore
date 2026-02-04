@@ -33,6 +33,9 @@ frontend/.vite/
 frontend/public/data/*
 !frontend/public/data/.gitkeep
 
+# Collected data (intermediate, committed by CI pipeline jobs)
+collected/
+
 # Logs
 *.log
 
