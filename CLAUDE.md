@@ -26,16 +26,19 @@ npm run build    # Production build → dist/
 
 ## Key Design Decisions
 
-- **Qualitative dimension model**: 30% earnings visibility + 25% valuation margin + 20% catalyst timeline + 25% downside control
-- **Absolute scoring**: Each metric mapped to 0-100 via piecewise linear rules (see Scoring Design below)
-- **Rating vs Ranking**: Two separate systems (see Lessons Learned)
-- **Missing data**: Weight redistribution when a factor is unavailable; missing metric defaults to 50 (neutral)
+- **Trend identification focus**: Sector-level trend analysis — observe institutional movements, understand trends, find optimal expression
+- **Dual pipeline**: Trend pipeline (sector-centric) runs alongside stock scoring pipeline (stock-centric)
+- **Sector ETFs as primary signal**: 11 SPDR Select Sector ETFs measure institutional capital allocation directly
 - **Static JSON**: No backend server; all data is pre-computed and served as static files
 - **GitHub Pages**: Frontend deployed to `/athene/` base path
 
 ## Data Flow
 
-Wikipedia → universe.py → tickers → [price.py, fundamental.py, news.py, analyst.py, macro.py] → [analyzers + absolute scoring] → factor_model (4 qualitative dimensions × regime-adjusted weights → composite) → ranker (rating + ranking) → json_exporter → frontend/public/data/
+### Stock Scoring Pipeline (existing)
+Wikipedia → universe.py → tickers → [price, fundamental, news, analyst, macro] → [analyzers + scoring] → factor_model → ranker → json_exporter → frontend/public/data/
+
+### Trend Pipeline (v10+)
+Wikipedia → universe.py → tickers + sector ETFs → [sector_etf, price, analyst, macro] → sector_trend → trend_scorer → trend_exporter → frontend/public/data/
 
 ## Version History
 
@@ -275,37 +278,54 @@ When implementing a new version from the roadmap:
 5. Build frontend to verify: `cd frontend && npm run build`.
 6. Commit all changes together with message: `feat(engine): implement vN — <theme>`.
 
-## Improvement Roadmap
+## Roadmap
 
-Known weaknesses of the current model (v9), grouped by theme.
+### v10: Trend Dashboard (next)
 
-### v10: Advanced NLP & Cross-Asset Signals
+Theme: Reposition from stock screener to trend identification tool. Build sector-level trend analysis.
 
-Theme: Replace rule-based NLP with ML-based models, add cross-asset and event-driven signals.
+**New pipeline** (`engine/trend_main.py`): sector-centric analysis alongside existing stock pipeline.
 
-#### 10.1 Financial NLP Upgrade
+**New collectors:**
+- `engine/collectors/sector_etf.py` — 11 sector ETFs (XLK/XLF/XLE/XLV/XLY/XLP/XLRE/XLI/XLU/XLB/XLC) + SPY benchmark OHLCV
 
-**Problem**: VADER is still rule-based and doesn't understand financial context. "Revenue missed expectations" scores neutral because VADER doesn't know "missed" is negative in financial context.
+**New analyzers:**
+- `engine/analyzers/sector_trend.py` — per-sector trend signals (relative strength, breadth, analyst revision aggregation, momentum, volume)
+- `engine/analyzers/trend_scorer.py` — composite trend strength score (0-100) + trend state classification
 
-**Proposed improvements**:
-1. Replace VADER with FinBERT or similar financial-domain transformer.
-2. Analyze full article text when available, not just headlines.
-3. Entity-level sentiment (distinguish sentiment about the company vs the sector).
+**New exporter:**
+- `engine/exporters/trend_exporter.py` → `trends.json`, `trend_history.json`
 
-#### 10.2 Earnings Calendar Awareness
+**Trend signals (per sector):**
+| Signal | Weight | Source |
+|--------|--------|--------|
+| Relative Strength | 35% | Sector ETF return vs SPY (1M/3M/6M) |
+| Breadth | 25% | % stocks above SMA50/SMA200 |
+| Analyst Revisions | 15% | Aggregate upgrades - downgrades (30d) |
+| Momentum | 15% | ETF RSI + MACD + SMA alignment |
+| Volume | 10% | ETF volume vs 20-day average |
 
-**Problem**: No awareness of upcoming earnings dates, ex-dividend dates, or other scheduled events that drive short-term volatility.
+**Trend states:** Strong Uptrend (>=70) / Uptrend (>=55) / Neutral (>=40) / Downtrend (>=25) / Strong Downtrend (<25)
 
-**Proposed approach**:
-- Collect earnings calendar from yfinance.
-- Adjust Catalyst Timeline around earnings dates (increase momentum weight pre-earnings).
-- Flag stocks with earnings within 5 trading days.
+**Frontend:**
+- New route `/` → TrendDashboard (regime banner + sector rotation map + trend strength table + trend alerts)
+- New components: `frontend/src/components/trends/`
 
-#### 10.3 Cross-Asset Correlation
+### v11: Sector Drill-Down
 
-**Problem**: No awareness of sector ETF flows, credit spreads, or commodity prices that may signal sector rotation.
+- Sector detail page (`/sector/:name`) — ETF price chart, signal radar, breadth history, constituent stocks
+- Sparklines in trend table from `trend_history.json`
+- 13F institutional holdings via SEC Edgar API
+- ETF fund flow proxy via AUM changes
 
-**Proposed approach**:
-- Track sector ETF relative strength (XLF, XLK, XLE, etc.).
-- Compare individual stock momentum vs sector momentum (relative strength).
-- This could improve Catalyst Timeline signal quality.
+### v12: Leading Stock Valuation (龙头估值)
+
+- For sectors in uptrend/strong_uptrend, identify leading stocks (top RS within sector + quality metrics)
+- Valuation analysis of sector leaders (reuse existing fundamental scoring)
+- New page `/leaders` — top 3-5 stocks per trending sector
+
+### v13: Position Alerts (持仓提醒)
+
+- User watchlist (localStorage)
+- Alert when sector trend changes or stock RS vs sector turns negative
+- Frontend-only (compare watchlist against existing JSON data)

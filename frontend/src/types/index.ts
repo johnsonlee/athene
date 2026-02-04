@@ -1,8 +1,22 @@
+export interface MacroRegime {
+  regime: string;
+  regime_score: number;
+  vix: number | null;
+  sp500_close: number | null;
+  sp500_sma200: number | null;
+  sp500_vs_sma200_pct: number | null;
+  tnx_yield: number | null;
+  irx_yield: number | null;
+  yield_curve_spread: number | null;
+  weights: Record<string, number>;
+}
+
 export interface Meta {
   date: string;
   timestamp: string;
   version: string;
   ticker_count: number;
+  macro?: MacroRegime;
 }
 
 export interface UniverseStock {
@@ -172,6 +186,46 @@ export interface ICData {
   computed_at: string;
   num_dates: number;
 }
+
+export type TrendState = 'strong_uptrend' | 'uptrend' | 'neutral' | 'downtrend' | 'strong_downtrend';
+
+export interface TrendSignal {
+  score: number;
+  [key: string]: unknown;
+}
+
+export interface SectorTrend {
+  sector: string;
+  etf: string;
+  trend_strength: number;
+  trend_state: TrendState;
+  primary_signal: string;
+  signals: {
+    relative_strength: TrendSignal;
+    breadth: TrendSignal;
+    analyst_revisions: TrendSignal;
+    momentum: TrendSignal;
+    volume: TrendSignal;
+  };
+  etf_close: number;
+  stock_count: number;
+}
+
+export interface TrendsData {
+  date: string;
+  regime: Record<string, unknown>;
+  sectors: SectorTrend[];
+}
+
+export interface TrendHistoryEntry {
+  trend_strength: number;
+  trend_state: TrendState;
+  rs_score?: number | null;
+  momentum_score?: number | null;
+}
+
+/** trend_history.json: keyed by date, then by sector name */
+export type TrendHistory = Record<string, Record<string, TrendHistoryEntry>>;
 
 export interface FilterState {
   search: string;

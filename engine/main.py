@@ -36,6 +36,10 @@ from engine.exporters.json_exporter import (
     export_history,
     export_stock_detail,
 )
+from engine.collectors.sector_etf import collect_sector_etfs
+from engine.analyzers.sector_trend import analyze_sector_trends, compute_trend_history
+from engine.analyzers.trend_scorer import score_sector_trends
+from engine.exporters.trend_exporter import export_trends
 from engine.exporters.changes import detect_changes, format_changes_markdown
 from engine.exporters.feed import generate_feed
 from engine.analyzers.ic_tracker import export_ic
@@ -306,6 +310,23 @@ def run(tickers_override: list[str] | None = None) -> None:
             log.warning(f"IC computation skipped: {e}")
     else:
         log.info("Partial run — skipping global aggregation exports")
+
+    # --- Trend Pipeline ---
+    if full_run:
+        log.info("Step T1: Collecting sector ETF data...")
+        etf_prices = collect_sector_etfs()
+
+        log.info("Step T2: Analyzing sector trends...")
+        trend_df = analyze_sector_trends(etf_prices, prices, universe, analyst_raw)
+
+        log.info("Step T3: Scoring sector trends...")
+        trend_scored = score_sector_trends(trend_df)
+
+        log.info("Step T4: Computing trend history (RRG trails)...")
+        trend_hist = compute_trend_history(etf_prices)
+
+        log.info("Step T5: Exporting trend data...")
+        export_trends(trend_scored, regime_info, run_date, computed_history=trend_hist)
 
     # Export individual stock details (use scored DataFrames for sub-scores)
     log.info("Exporting individual stock details...")

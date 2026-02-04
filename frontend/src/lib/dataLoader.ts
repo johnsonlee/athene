@@ -21,3 +21,11 @@ export function loadStockDetail(ticker: string) {
 export function loadIC() {
   return fetchJson<import('../types').ICData>('ic.json');
 }
+
+export function loadTrends() {
+  return fetchJson<import('../types').TrendsData>('trends.json');
+}
+
+export function loadTrendHistory() {
+  return fetchJson<import('../types').TrendHistory>('trend_history.json');
+}
