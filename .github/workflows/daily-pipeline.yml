@@ -33,9 +33,17 @@ jobs:
     timeout-minutes: 10
     outputs:
       skip: ${{ steps.check.outputs.skip }}
+      run_date: ${{ steps.date.outputs.run_date }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Set run date
+        id: date
+        run: |
+          RUN_DATE=$(date -u +%Y-%m-%d)
+          echo "run_date=$RUN_DATE" >> "$GITHUB_OUTPUT"
+          echo "Run date: $RUN_DATE"
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -75,11 +83,12 @@ jobs:
         if: steps.check.outputs.skip != 'true'
         run: |
           source .venv/bin/activate
+          RUN_DATE="${{ steps.date.outputs.run_date }}"
           if [ -n "${{ github.event.inputs.tickers }}" ]; then
             TICKERS=$(echo "${{ github.event.inputs.tickers }}" | tr ',' ' ')
-            python -m engine.collect universe --tickers $TICKERS
+            python -m engine.collect universe --tickers $TICKERS --date "$RUN_DATE"
           else
-            python -m engine.collect universe
+            python -m engine.collect universe --date "$RUN_DATE"
           fi
 
       - name: Commit and push universe
@@ -87,15 +96,16 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          RUN_DATE="${{ steps.date.outputs.run_date }}"
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             git reset origin/main
-            git add -f collected/universe.json
+            git add -f "collected/$RUN_DATE/universe.json"
             if git diff --staged --quiet; then
               echo "No changes to commit"
               break
             fi
-            git commit -m "collected: universe [skip ci]"
+            git commit -m "collected: universe $RUN_DATE [skip ci]"
             git push origin main && break
             echo "Push failed (attempt $attempt), retrying..."
             sleep $((attempt * 3))
@@ -133,21 +143,23 @@ jobs:
       - name: Collect prices
         run: |
           source .venv/bin/activate
-          python -m engine.collect prices
+          RUN_DATE="${{ needs.universe.outputs.run_date }}"
+          python -m engine.collect prices --date "$RUN_DATE"
 
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          RUN_DATE="${{ needs.universe.outputs.run_date }}"
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             git reset origin/main
-            git add -f collected/prices.json.gz
+            git add -f "collected/$RUN_DATE/prices.json"
             if git diff --staged --quiet; then
               echo "No changes to commit"
               break
             fi
-            git commit -m "collected: prices [skip ci]"
+            git commit -m "collected: prices $RUN_DATE [skip ci]"
             git push origin main && break
             echo "Push failed (attempt $attempt), retrying..."
             sleep $((attempt * 3))
@@ -184,21 +196,23 @@ jobs:
       - name: Collect fundamentals
         run: |
           source .venv/bin/activate
-          python -m engine.collect fundamentals
+          RUN_DATE="${{ needs.universe.outputs.run_date }}"
+          python -m engine.collect fundamentals --date "$RUN_DATE"
 
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          RUN_DATE="${{ needs.universe.outputs.run_date }}"
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             git reset origin/main
-            git add -f collected/fundamentals.json
+            git add -f "collected/$RUN_DATE/fundamentals.json"
             if git diff --staged --quiet; then
               echo "No changes to commit"
               break
             fi
-            git commit -m "collected: fundamentals [skip ci]"
+            git commit -m "collected: fundamentals $RUN_DATE [skip ci]"
             git push origin main && break
             echo "Push failed (attempt $attempt), retrying..."
             sleep $((attempt * 3))
@@ -235,21 +249,23 @@ jobs:
       - name: Collect news
         run: |
           source .venv/bin/activate
-          python -m engine.collect news
+          RUN_DATE="${{ needs.universe.outputs.run_date }}"
+          python -m engine.collect news --date "$RUN_DATE"
 
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          RUN_DATE="${{ needs.universe.outputs.run_date }}"
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             git reset origin/main
-            git add -f collected/news.json
+            git add -f "collected/$RUN_DATE/news.json"
             if git diff --staged --quiet; then
               echo "No changes to commit"
               break
             fi
-            git commit -m "collected: news [skip ci]"
+            git commit -m "collected: news $RUN_DATE [skip ci]"
             git push origin main && break
             echo "Push failed (attempt $attempt), retrying..."
             sleep $((attempt * 3))
@@ -286,21 +302,23 @@ jobs:
       - name: Collect analyst data
         run: |
           source .venv/bin/activate
-          python -m engine.collect analyst
+          RUN_DATE="${{ needs.universe.outputs.run_date }}"
+          python -m engine.collect analyst --date "$RUN_DATE"
 
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          RUN_DATE="${{ needs.universe.outputs.run_date }}"
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             git reset origin/main
-            git add -f collected/analyst.json
+            git add -f "collected/$RUN_DATE/analyst.json"
             if git diff --staged --quiet; then
               echo "No changes to commit"
               break
             fi
-            git commit -m "collected: analyst [skip ci]"
+            git commit -m "collected: analyst $RUN_DATE [skip ci]"
             git push origin main && break
             echo "Push failed (attempt $attempt), retrying..."
             sleep $((attempt * 3))
@@ -338,21 +356,23 @@ jobs:
       - name: Collect macro data
         run: |
           source .venv/bin/activate
-          python -m engine.collect macro
+          RUN_DATE="${{ needs.universe.outputs.run_date }}"
+          python -m engine.collect macro --date "$RUN_DATE"
 
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          RUN_DATE="${{ needs.universe.outputs.run_date }}"
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             git reset origin/main
-            git add -f collected/macro.json
+            git add -f "collected/$RUN_DATE/macro.json"
             if git diff --staged --quiet; then
               echo "No changes to commit"
               break
             fi
-            git commit -m "collected: macro [skip ci]"
+            git commit -m "collected: macro $RUN_DATE [skip ci]"
             git push origin main && break
             echo "Push failed (attempt $attempt), retrying..."
             sleep $((attempt * 3))
@@ -389,21 +409,23 @@ jobs:
       - name: Collect sector ETF data
         run: |
           source .venv/bin/activate
-          python -m engine.collect sector_etfs
+          RUN_DATE="${{ needs.universe.outputs.run_date }}"
+          python -m engine.collect sector_etfs --date "$RUN_DATE"
 
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          RUN_DATE="${{ needs.universe.outputs.run_date }}"
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             git reset origin/main
-            git add -f collected/sector_etfs.json
+            git add -f "collected/$RUN_DATE/sector_etfs.json"
             if git diff --staged --quiet; then
               echo "No changes to commit"
               break
             fi
-            git commit -m "collected: sector_etfs [skip ci]"
+            git commit -m "collected: sector_etfs $RUN_DATE [skip ci]"
             git push origin main && break
             echo "Push failed (attempt $attempt), retrying..."
             sleep $((attempt * 3))
@@ -412,6 +434,7 @@ jobs:
   # ── Analyze (depends on all collectors) ─────────────────────
   analyze:
     needs:
+      - universe
       - collect-prices
       - collect-fundamentals
       - collect-news
@@ -455,7 +478,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Reset to latest remote (collected/ already cleaned up by analyze)
           git fetch origin main
           git reset origin/main
           git add -f frontend/public/data/
