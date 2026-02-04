@@ -124,7 +124,7 @@ TREND_DOWNTREND = 25
 # ---------- Data collection ----------
 PRICE_HISTORY_DAYS = 365         # 1 year of daily OHLCV
 ETF_HISTORY_PERIOD = "max"       # yfinance period for sector ETF trend history (all available)
-TREND_HISTORY_SAMPLE_INTERVAL = 5  # sample every N trading days (~weekly)
+TREND_HISTORY_SAMPLE_INTERVAL = 1  # sample every N trading days (1 = daily)
 NEWS_MAX_ARTICLES = 20           # max news articles per ticker
 RATE_LIMIT_PAUSE = 0.1          # seconds between yfinance calls
 BATCH_SIZE = 50                  # tickers per yf.download batch
