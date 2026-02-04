@@ -14,10 +14,12 @@ from engine.collectors.price import collect_prices
 from engine.collectors.fundamental import collect_fundamentals
 from engine.collectors.news import collect_news
 from engine.collectors.analyst import collect_analyst_data
+from engine.collectors.macro import collect_macro
 from engine.analyzers.fundamental import analyze_fundamental, compute_fundamental_subscores
 from engine.analyzers.technical import analyze_technical, compute_technical_subscores
 from engine.analyzers.sentiment import analyze_sentiment, annotate_headlines
 from engine.analyzers.analyst import analyze_analyst, compute_analyst_subscores
+from engine.analyzers.macro import detect_regime
 from engine.scorer.factor_model import compute_composite
 from engine.scorer.ranker import assign_tiers
 from engine.config import (
@@ -59,7 +61,7 @@ _DIM_WEIGHTS = {
 def _load_previous_smoothed() -> dict[str, dict[str, float]]:
     """Load previous smoothed scores from history.json.
 
-    Returns dict of ticker → {dimension: score, composite_score: score}.
+    Returns dict of ticker -> {dimension: score, composite_score: score}.
     """
     history_path = os.path.join(OUTPUT_DIR, "history.json")
     if not os.path.exists(history_path):
@@ -94,6 +96,9 @@ def _apply_ema_smoothing(composite: pd.DataFrame) -> pd.DataFrame:
     v6: Smooth each dimension individually so that
         composite = weighted sum of smoothed dimensions (math stays consistent).
 
+    v9: Reads actual dimension weights from the DataFrame (may be regime-adjusted)
+        instead of using fixed module-level _DIM_WEIGHTS.
+
     smoothed_dim = SMOOTH_ALPHA * raw_dim + (1 - SMOOTH_ALPHA) * prev_smoothed_dim
     composite = sum(weight_i * smoothed_dim_i)
     """
@@ -124,9 +129,18 @@ def _apply_ema_smoothing(composite: pd.DataFrame) -> pd.DataFrame:
             smoothed.append(s)
         result[dim] = smoothed
 
+    # v9: Read actual weights from the composite DataFrame (may be regime-adjusted)
+    dim_weights = {}
+    for dim in _DIMENSIONS:
+        weight_col = f"weight_{dim}"
+        if weight_col in result.columns:
+            dim_weights[dim] = result[weight_col].iloc[0]
+        else:
+            dim_weights[dim] = _DIM_WEIGHTS[dim]
+
     # Recompute composite from smoothed dimensions (math-consistent)
     result["composite_score"] = sum(
-        _DIM_WEIGHTS[dim] * result[dim] for dim in _DIMENSIONS
+        dim_weights[dim] * result[dim] for dim in _DIMENSIONS
     )
 
     return result
@@ -147,7 +161,7 @@ def run(tickers_override: list[str] | None = None) -> None:
     test_mode = tickers_override is not None
 
     # Step 1: Build universe
-    log.info("Step 1/9: Building stock universe...")
+    log.info("Step 1/11: Building stock universe...")
     if tickers_override:
         universe = pd.DataFrame({
             "ticker": tickers_override,
@@ -178,11 +192,11 @@ def run(tickers_override: list[str] | None = None) -> None:
             log.info("US market is closed today — skipping pipeline")
             return
 
-    # Step 2: Collect data
-    log.info("Step 2/9: Collecting price data...")
+    # Step 2-5: Collect data
+    log.info("Step 2/11: Collecting price data...")
     prices = collect_prices(tickers)
 
-    log.info("Step 3/9: Collecting fundamental data...")
+    log.info("Step 3/11: Collecting fundamental data...")
     fundamentals_raw = collect_fundamentals(tickers)
 
     # Backfill "Unknown" sectors from yfinance data (covers NASDAQ-only stocks
@@ -202,24 +216,30 @@ def run(tickers_override: list[str] | None = None) -> None:
         if backfilled:
             log.info(f"Backfilled {backfilled} unknown sectors from yfinance")
 
-    log.info("Step 4/9: Collecting news headlines...")
+    log.info("Step 4/11: Collecting news headlines...")
     news = collect_news(tickers)
 
-    log.info("Step 5/9: Collecting analyst data...")
+    log.info("Step 5/11: Collecting analyst data...")
     analyst_raw = collect_analyst_data(tickers)
 
-    # Step 3: Analyze
-    log.info("Step 6/9: Running fundamental analysis...")
+    log.info("Step 6/11: Collecting macro data...")
+    macro_raw = collect_macro()
+
+    # Step 7-9: Analyze
+    log.info("Step 7/11: Running fundamental analysis...")
     fund_df = analyze_fundamental(fundamentals_raw)
 
-    log.info("Step 7/9: Running technical analysis...")
+    log.info("Step 8/11: Running technical analysis...")
     tech_df = analyze_technical(prices)
 
-    log.info("Step 8/9: Running sentiment analysis...")
+    log.info("Step 9/11: Running sentiment analysis...")
     sent_df = analyze_sentiment(news)
 
-    # Step 4: Absolute scoring (no z-score normalization)
-    log.info("Step 9/9: Scoring and ranking (absolute)...")
+    log.info("Step 10/11: Detecting market regime...")
+    regime_info = detect_regime(macro_raw)
+
+    # Step 11: Absolute scoring (no z-score normalization)
+    log.info("Step 11/11: Scoring and ranking (absolute)...")
 
     # Pass sector info so financial-sector stocks use adjusted breakpoints
     sector_map = universe.set_index("ticker")["sector"] if not universe.empty else None
@@ -232,9 +252,12 @@ def run(tickers_override: list[str] | None = None) -> None:
     analyst_scored = compute_analyst_subscores(analyst_df)
 
     # Step 5: Composite scoring (4-dimension qualitative model)
-    composite = compute_composite(fund_scored, tech_scored, sent_df, analyst_scored)
+    # v9: Pass regime-adjusted weights
+    regime_weights = regime_info.get("weights")
+    composite = compute_composite(fund_scored, tech_scored, sent_df, analyst_scored,
+                                  weight_overrides=regime_weights)
 
-    # Step 5.5: EMA smoothing on composite_score
+    # EMA smoothing on composite_score
     composite = _apply_ema_smoothing(composite)
 
     # Log data quality stats (v7)
@@ -243,10 +266,10 @@ def run(tickers_override: list[str] | None = None) -> None:
         log.info(f"Data completeness: mean={dc.mean():.2f}, "
                  f"min={dc.min():.2f}, <50%={int((dc < 0.50).sum())} tickers")
 
-    # Step 6: Rank and tier (absolute rating + relative ranking)
+    # Rank and tier (absolute rating + relative ranking)
     ranked = assign_tiers(composite)
 
-    # Step 7: Detect changes (before overwriting rankings.json)
+    # Detect changes (before overwriting rankings.json)
     run_date = time.strftime("%Y-%m-%d")
     full_run = not test_mode and not incremental
     if full_run:
@@ -263,7 +286,7 @@ def run(tickers_override: list[str] | None = None) -> None:
                 f.write(summary_md)
             log.info("Wrote changes to GitHub Job Summary")
 
-    # Step 8: Export
+    # Export
     # In test mode or incremental mode (market closed, new tickers only),
     # skip global aggregation files to avoid overwriting full-universe data.
     # Carry market_cap from fundamentals into ranked for export
@@ -272,7 +295,7 @@ def run(tickers_override: list[str] | None = None) -> None:
 
     if full_run:
         log.info("Exporting JSON data...")
-        export_meta(len(tickers), run_date)
+        export_meta(len(tickers), run_date, macro=regime_info)
         export_rankings(ranked, universe)
         export_history(ranked, run_date)
 
@@ -312,6 +335,7 @@ def run(tickers_override: list[str] | None = None) -> None:
     log.info(f"  Fundamentals: {len(fundamentals_raw)}")
     log.info(f"  News/sentiment: {len(news)}")
     log.info(f"  Analyst data: {len(analyst_raw)}")
+    log.info(f"  Market regime: {regime_info.get('regime', 'N/A')}")
     log.info(f"  Stock details exported: {exported_count}")
     log.info("=" * 60)
 
