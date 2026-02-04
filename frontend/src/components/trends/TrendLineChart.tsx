@@ -25,7 +25,7 @@ interface Props {
 
 type Signal = 'rs_score' | 'momentum_score';
 type Range = '3m' | '6m' | '1y' | 'all';
-type Interval = 'W' | 'M' | 'Q';
+type Interval = 'D' | 'W' | 'M' | 'Q';
 
 const SIGNAL_I18N: Record<Signal, string> = {
   rs_score: 'trends.relativeStrength',
@@ -40,6 +40,7 @@ const RANGE_OPTIONS: { key: Range; i18nKey: string; days: number }[] = [
 ];
 
 const INTERVAL_OPTIONS: { key: Interval; i18nKey: string }[] = [
+  { key: 'D', i18nKey: 'trends.intervalD' },
   { key: 'W', i18nKey: 'trends.intervalW' },
   { key: 'M', i18nKey: 'trends.intervalM' },
   { key: 'Q', i18nKey: 'trends.intervalQ' },
@@ -66,6 +67,7 @@ const EMA_PERIOD = 4;
  * Return a period key for grouping: "2025-W16", "2025-04", "2025-Q2".
  */
 function periodKey(dateStr: string, interval: Interval): string {
+  if (interval === 'D') return dateStr;
   const d = new Date(dateStr + 'T00:00:00');
   const y = d.getFullYear();
   if (interval === 'W') {
@@ -165,7 +167,7 @@ function ToggleGroup({ options, value, onChange, t }: {
 }
 
 const VALID_RANGES: Range[] = ['3m', '6m', '1y', 'all'];
-const VALID_INTERVALS: Interval[] = ['W', 'M', 'Q'];
+const VALID_INTERVALS: Interval[] = ['D', 'W', 'M', 'Q'];
 
 export function TrendLineChart({ sectors, history, selectedSector, onSectorSelect }: Props) {
   const { t } = useI18n();

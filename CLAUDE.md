@@ -138,7 +138,7 @@ Adds sell-side analyst revision momentum as a dedicated signal within Catalyst T
 
 **Files**: `engine/collectors/analyst.py`, `engine/analyzers/analyst.py`, `engine/scorer/absolute.py`, `engine/scorer/factor_model.py`, `engine/config.py`, `engine/analyzers/ic_tracker.py`, `engine/exporters/json_exporter.py`, `engine/main.py`
 
-### v9: Intelligence Upgrade (current)
+### v9: Intelligence Upgrade
 
 Two-part intelligence upgrade: better sentiment NLP and macro regime awareness.
 
@@ -152,6 +152,23 @@ Two-part intelligence upgrade: better sentiment NLP and macro regime awareness.
 - **Macro data export**: Regime info (regime, signals, VIX, spread, etc.) exported in `meta.json` for frontend consumption.
 
 **Files**: `engine/analyzers/sentiment.py`, `engine/collectors/macro.py`, `engine/analyzers/macro.py`, `engine/scorer/factor_model.py`, `engine/config.py`, `engine/exporters/json_exporter.py`, `engine/main.py`
+
+### v10: Trend Dashboard (current)
+
+Reposition from stock screener to trend identification tool. Build sector-level trend analysis with interactive frontend.
+
+**Key changes from v9:**
+- **Sector ETF collector**: New `engine/collectors/sector_etf.py` fetches OHLCV for 11 SPDR Select Sector ETFs (XLK/XLF/XLE/XLV/XLY/XLP/XLRE/XLI/XLU/XLB/XLC) + SPY benchmark.
+- **Sector trend analyzer**: New `engine/analyzers/sector_trend.py` computes per-sector trend signals: relative strength (35%), breadth (25%), analyst revisions (15%), momentum (15%), volume (10%). Also computes historical RS/momentum from ETF price data via `compute_trend_history()`.
+- **Trend scorer**: New `engine/analyzers/trend_scorer.py` produces composite trend strength (0-100) and trend state classification: Strong Uptrend (>=70), Uptrend (>=55), Neutral (>=40), Downtrend (>=25), Strong Downtrend (<25).
+- **Trend exporter**: New `engine/exporters/trend_exporter.py` exports `trends.json` (current sector trends) and `trend_history.json` (historical RS/momentum scores for charting).
+- **Trend line chart**: `frontend/src/components/trends/TrendLineChart.tsx` — multi-line chart (recharts) showing 11 sector trend lines over time. Signal toggle (Rel. Strength / Momentum), range selector (3M/6M/1Y/All), interval selector (W/M/Q) with period-based resampling.
+- **Sector selection + stock list**: Legend click selects a sector — highlights that line, dims others, and filters a stock table below the chart to show only that sector's stocks. Default shows all stocks.
+- **Regime banner**: `RegimeBanner` displays current macro regime (Risk On / Neutral / Risk Off) from `meta.json`.
+- **Trend history**: Engine computes weekly-sampled historical RS and momentum scores from ETF price data. Frontend renders these as interactive time-series.
+- **Version history timeline**: About page now includes a visual timeline of all versions (v1-v10) with current/deprecated badges.
+
+**Files**: `engine/collectors/sector_etf.py`, `engine/analyzers/sector_trend.py`, `engine/analyzers/trend_scorer.py`, `engine/exporters/trend_exporter.py`, `engine/config.py`, `engine/main.py`, `frontend/src/components/trends/TrendDashboard.tsx`, `frontend/src/components/trends/TrendLineChart.tsx`, `frontend/src/components/trends/RegimeBanner.tsx`, `frontend/src/hooks/useTrends.ts`, `frontend/src/hooks/useTrendHistory.ts`, `frontend/src/lib/dataLoader.ts`, `frontend/src/lib/i18n.tsx`, `frontend/src/types/index.ts`, `frontend/src/routes.tsx`, `frontend/src/components/About.tsx`
 
 ## Scoring Design (v9)
 
@@ -280,51 +297,20 @@ When implementing a new version from the roadmap:
 
 ## Roadmap
 
-### v10: Trend Dashboard (next)
-
-Theme: Reposition from stock screener to trend identification tool. Build sector-level trend analysis.
-
-**New pipeline** (`engine/trend_main.py`): sector-centric analysis alongside existing stock pipeline.
-
-**New collectors:**
-- `engine/collectors/sector_etf.py` — 11 sector ETFs (XLK/XLF/XLE/XLV/XLY/XLP/XLRE/XLI/XLU/XLB/XLC) + SPY benchmark OHLCV
-
-**New analyzers:**
-- `engine/analyzers/sector_trend.py` — per-sector trend signals (relative strength, breadth, analyst revision aggregation, momentum, volume)
-- `engine/analyzers/trend_scorer.py` — composite trend strength score (0-100) + trend state classification
-
-**New exporter:**
-- `engine/exporters/trend_exporter.py` → `trends.json`, `trend_history.json`
-
-**Trend signals (per sector):**
-| Signal | Weight | Source |
-|--------|--------|--------|
-| Relative Strength | 35% | Sector ETF return vs SPY (1M/3M/6M) |
-| Breadth | 25% | % stocks above SMA50/SMA200 |
-| Analyst Revisions | 15% | Aggregate upgrades - downgrades (30d) |
-| Momentum | 15% | ETF RSI + MACD + SMA alignment |
-| Volume | 10% | ETF volume vs 20-day average |
-
-**Trend states:** Strong Uptrend (>=70) / Uptrend (>=55) / Neutral (>=40) / Downtrend (>=25) / Strong Downtrend (<25)
-
-**Frontend:**
-- New route `/` → TrendDashboard (regime banner + sector rotation map + trend strength table + trend alerts)
-- New components: `frontend/src/components/trends/`
-
-### v11: Sector Drill-Down
+### Sector Drill-Down (next)
 
 - Sector detail page (`/sector/:name`) — ETF price chart, signal radar, breadth history, constituent stocks
 - Sparklines in trend table from `trend_history.json`
 - 13F institutional holdings via SEC Edgar API
 - ETF fund flow proxy via AUM changes
 
-### v12: Leading Stock Valuation (龙头估值)
+### Leading Stock Valuation (龙头估值)
 
 - For sectors in uptrend/strong_uptrend, identify leading stocks (top RS within sector + quality metrics)
 - Valuation analysis of sector leaders (reuse existing fundamental scoring)
 - New page `/leaders` — top 3-5 stocks per trending sector
 
-### v13: Position Alerts (持仓提醒)
+### Position Alerts (持仓提醒)
 
 - User watchlist (localStorage)
 - Alert when sector trend changes or stock RS vs sector turns negative
