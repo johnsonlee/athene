@@ -91,8 +91,40 @@ SENTIMENT_CONFIDENCE_N = 10      # headlines needed for full confidence (1.0)
 # ---------- v9: Macro regime ----------
 REGIME_WEIGHT_SHIFT = 0.05       # ± shift to CT/DC in risk_on/risk_off
 
+# ---------- Sector ETFs (v10: trend pipeline) ----------
+SECTOR_ETFS = {
+    "XLK": "Information Technology",
+    "XLF": "Financials",
+    "XLE": "Energy",
+    "XLV": "Health Care",
+    "XLY": "Consumer Discretionary",
+    "XLP": "Consumer Staples",
+    "XLRE": "Real Estate",
+    "XLI": "Industrials",
+    "XLU": "Utilities",
+    "XLB": "Materials",
+    "XLC": "Communication Services",
+}
+SPY_TICKER = "SPY"
+
+# Trend signal weights
+TREND_WEIGHT_RELATIVE_STRENGTH = 0.35
+TREND_WEIGHT_BREADTH = 0.25
+TREND_WEIGHT_ANALYST_REVISIONS = 0.15
+TREND_WEIGHT_MOMENTUM = 0.15
+TREND_WEIGHT_VOLUME = 0.10
+
+# Trend state thresholds (0-100 scale)
+TREND_STRONG_UPTREND = 70
+TREND_UPTREND = 55
+TREND_NEUTRAL = 40
+TREND_DOWNTREND = 25
+# < 25 = Strong Downtrend
+
 # ---------- Data collection ----------
 PRICE_HISTORY_DAYS = 365         # 1 year of daily OHLCV
+ETF_HISTORY_PERIOD = "max"       # yfinance period for sector ETF trend history (all available)
+TREND_HISTORY_SAMPLE_INTERVAL = 5  # sample every N trading days (~weekly)
 NEWS_MAX_ARTICLES = 20           # max news articles per ticker
 RATE_LIMIT_PAUSE = 0.1          # seconds between yfinance calls
 BATCH_SIZE = 50                  # tickers per yf.download batch

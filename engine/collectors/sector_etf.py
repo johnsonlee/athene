@@ -1,0 +1,65 @@
+"""Collect OHLCV data for sector ETFs and SPY benchmark.
+
+Fetches 1 year of daily OHLCV for 11 SPDR Select Sector ETFs plus SPY,
+used by the trend pipeline to compute sector-level signals.
+"""
+
+from __future__ import annotations
+
+from datetime import datetime, timedelta
+from typing import Dict
+
+import pandas as pd
+import yfinance as yf
+
+from engine.config import SECTOR_ETFS, SPY_TICKER, PRICE_HISTORY_DAYS
+from engine.utils.logger import get_logger
+from engine.utils.rate_limiter import rate_limiter
+
+log = get_logger(__name__)
+
+
+def collect_sector_etfs() -> Dict[str, pd.DataFrame]:
+    """Fetch 1Y OHLCV for 11 sector ETFs + SPY benchmark.
+
+    Returns:
+        dict mapping ticker (e.g. "XLK", "SPY") -> DataFrame[Date, Open, High, Low, Close, Volume]
+    """
+    tickers = list(SECTOR_ETFS.keys()) + [SPY_TICKER]
+    end = datetime.now()
+    start = end - timedelta(days=PRICE_HISTORY_DAYS)
+
+    log.info(f"Downloading sector ETF prices: {len(tickers)} tickers")
+    rate_limiter.wait()
+
+    result: Dict[str, pd.DataFrame] = {}
+
+    try:
+        data = yf.download(
+            tickers,
+            start=start.strftime("%Y-%m-%d"),
+            end=end.strftime("%Y-%m-%d"),
+            group_by="ticker",
+            threads=True,
+            progress=False,
+        )
+    except Exception as e:
+        log.error(f"Sector ETF batch download failed: {e}")
+        return result
+
+    if data.empty:
+        log.warning("Sector ETF download returned empty data")
+        return result
+
+    for ticker in tickers:
+        try:
+            df = data[ticker].copy() if ticker in data.columns.get_level_values(0) else pd.DataFrame()
+            if not df.empty:
+                df = df.dropna(how="all")
+                if not df.empty:
+                    result[ticker] = df
+        except (KeyError, Exception) as e:
+            log.warning(f"No ETF price data for {ticker}: {e}")
+
+    log.info(f"Sector ETF data collected for {len(result)}/{len(tickers)} tickers")
+    return result
