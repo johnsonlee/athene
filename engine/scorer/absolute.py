@@ -159,6 +159,21 @@ DIRECTIONAL_VOLUME_BREAKPOINTS: Breakpoints = [
     (-2.5, 15), (-1.5, 28), (-1.0, 40), (0, 50), (1.0, 60), (1.5, 72), (2.5, 85),
 ]
 
+# -- Analyst (v8: analyst revision momentum) --
+# Revision momentum: -1 (all downgrades) to +1 (all upgrades)
+REVISION_MOMENTUM_BREAKPOINTS: Breakpoints = [
+    (-1.0, 10), (-0.5, 25), (-0.2, 38), (0.0, 50), (0.2, 62), (0.5, 75), (1.0, 90),
+]
+# Target price upside: (target - current) / current
+# Negative means price is above target (bearish)
+TARGET_UPSIDE_BREAKPOINTS: Breakpoints = [
+    (-0.20, 10), (-0.10, 25), (0.0, 45), (0.10, 60), (0.20, 72), (0.40, 85), (0.60, 92),
+]
+# Consensus rating: 1.0 = Strong Buy ... 5.0 = Strong Sell (inverted: lower is better)
+CONSENSUS_RATING_BREAKPOINTS: Breakpoints = [
+    (1.0, 92), (1.5, 82), (2.0, 70), (2.5, 58), (3.0, 45), (3.5, 32), (4.0, 20), (5.0, 8),
+]
+
 
 # ---------------------------------------------------------------------------
 # Sector-specific breakpoint overrides
@@ -359,3 +374,21 @@ def score_sentiment(compound: float | None) -> float:
     if compound is None or (isinstance(compound, float) and np.isnan(compound)):
         return 50.0
     return max(0.0, min(100.0, (compound + 1.0) * 50.0))
+
+
+# -- Analyst scoring (v8) --
+
+def score_revision_momentum(value: float | None) -> float:
+    """Analyst revision momentum (-1 to +1) -> 0-100."""
+    return metric_score(value, REVISION_MOMENTUM_BREAKPOINTS)
+
+
+def score_target_upside(value: float | None) -> float:
+    """Target price upside (fractional). Positive = upside -> higher score."""
+    return metric_score(value, TARGET_UPSIDE_BREAKPOINTS)
+
+
+def score_consensus_rating(value: float | None) -> float:
+    """Consensus recommendation mean (1=Strong Buy to 5=Strong Sell).
+    Lower value -> higher score (inverted)."""
+    return metric_score(value, CONSENSUS_RATING_BREAKPOINTS)
