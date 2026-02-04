@@ -13,9 +13,11 @@ from engine.universe import build_universe
 from engine.collectors.price import collect_prices
 from engine.collectors.fundamental import collect_fundamentals
 from engine.collectors.news import collect_news
+from engine.collectors.analyst import collect_analyst_data
 from engine.analyzers.fundamental import analyze_fundamental, compute_fundamental_subscores
 from engine.analyzers.technical import analyze_technical, compute_technical_subscores
 from engine.analyzers.sentiment import analyze_sentiment, annotate_headlines
+from engine.analyzers.analyst import analyze_analyst, compute_analyst_subscores
 from engine.scorer.factor_model import compute_composite
 from engine.scorer.ranker import assign_tiers
 from engine.config import (
@@ -145,7 +147,7 @@ def run(tickers_override: list[str] | None = None) -> None:
     test_mode = tickers_override is not None
 
     # Step 1: Build universe
-    log.info("Step 1/8: Building stock universe...")
+    log.info("Step 1/9: Building stock universe...")
     if tickers_override:
         universe = pd.DataFrame({
             "ticker": tickers_override,
@@ -177,10 +179,10 @@ def run(tickers_override: list[str] | None = None) -> None:
             return
 
     # Step 2: Collect data
-    log.info("Step 2/8: Collecting price data...")
+    log.info("Step 2/9: Collecting price data...")
     prices = collect_prices(tickers)
 
-    log.info("Step 3/8: Collecting fundamental data...")
+    log.info("Step 3/9: Collecting fundamental data...")
     fundamentals_raw = collect_fundamentals(tickers)
 
     # Backfill "Unknown" sectors from yfinance data (covers NASDAQ-only stocks
@@ -200,21 +202,24 @@ def run(tickers_override: list[str] | None = None) -> None:
         if backfilled:
             log.info(f"Backfilled {backfilled} unknown sectors from yfinance")
 
-    log.info("Step 4/8: Collecting news headlines...")
+    log.info("Step 4/9: Collecting news headlines...")
     news = collect_news(tickers)
 
+    log.info("Step 5/9: Collecting analyst data...")
+    analyst_raw = collect_analyst_data(tickers)
+
     # Step 3: Analyze
-    log.info("Step 5/8: Running fundamental analysis...")
+    log.info("Step 6/9: Running fundamental analysis...")
     fund_df = analyze_fundamental(fundamentals_raw)
 
-    log.info("Step 6/8: Running technical analysis...")
+    log.info("Step 7/9: Running technical analysis...")
     tech_df = analyze_technical(prices)
 
-    log.info("Step 7/8: Running sentiment analysis...")
+    log.info("Step 8/9: Running sentiment analysis...")
     sent_df = analyze_sentiment(news)
 
     # Step 4: Absolute scoring (no z-score normalization)
-    log.info("Step 8/8: Scoring and ranking (absolute)...")
+    log.info("Step 9/9: Scoring and ranking (absolute)...")
 
     # Pass sector info so financial-sector stocks use adjusted breakpoints
     sector_map = universe.set_index("ticker")["sector"] if not universe.empty else None
@@ -222,8 +227,12 @@ def run(tickers_override: list[str] | None = None) -> None:
     tech_scored = compute_technical_subscores(tech_df)
     # sentiment_score already computed in analyze_sentiment (0-100)
 
+    # v8: Analyst revision momentum scoring
+    analyst_df = analyze_analyst(analyst_raw)
+    analyst_scored = compute_analyst_subscores(analyst_df)
+
     # Step 5: Composite scoring (4-dimension qualitative model)
-    composite = compute_composite(fund_scored, tech_scored, sent_df)
+    composite = compute_composite(fund_scored, tech_scored, sent_df, analyst_scored)
 
     # Step 5.5: EMA smoothing on composite_score
     composite = _apply_ema_smoothing(composite)
@@ -284,6 +293,7 @@ def run(tickers_override: list[str] | None = None) -> None:
         fund_data = fund_scored.loc[ticker].to_dict() if ticker in fund_scored.index else None
         tech_data = tech_scored.loc[ticker].to_dict() if ticker in tech_scored.index else None
         sent_data = sent_df.loc[ticker].to_dict() if ticker in sent_df.index else None
+        anl_data = analyst_scored.loc[ticker].to_dict() if ticker in analyst_scored.index else None
         rank_data = ranked.loc[ticker].to_dict() if ticker in ranked.index else None
         # Attach universe info (sector/industry) to ranking data for detail pages
         if rank_data is not None and ticker in universe_info.index:
@@ -291,7 +301,7 @@ def run(tickers_override: list[str] | None = None) -> None:
             rank_data["sector"] = uinfo.get("sector", "")
             rank_data["industry"] = uinfo.get("industry", "")
         headlines = annotate_headlines(news.get(ticker, []))
-        export_stock_detail(ticker, price_data, fund_data, tech_data, sent_data, rank_data, headlines)
+        export_stock_detail(ticker, price_data, fund_data, tech_data, sent_data, rank_data, headlines, anl_data)
         exported_count += 1
 
     elapsed = time.time() - start_time
@@ -301,6 +311,7 @@ def run(tickers_override: list[str] | None = None) -> None:
     log.info(f"  Price data: {len(prices)}")
     log.info(f"  Fundamentals: {len(fundamentals_raw)}")
     log.info(f"  News/sentiment: {len(news)}")
+    log.info(f"  Analyst data: {len(analyst_raw)}")
     log.info(f"  Stock details exported: {exported_count}")
     log.info("=" * 60)
 

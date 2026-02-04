@@ -111,12 +111,15 @@ def export_history(ranked: pd.DataFrame, run_date: str | None = None) -> str:
         }
         # Store dimension scores for change attribution (v3 4-dimension model)
         # v7: also store sub-scores for per-metric IC validation
+        # v8: added analyst_score
         for key in ("earnings_visibility", "valuation_margin",
                      "catalyst_timeline", "downside_control",
                      "fundamental_score", "technical_score", "sentiment_score",
                      # v7: sub-scores for IC tracking
                      "value_score", "quality_score", "growth_score", "safety_score",
                      "trend_score", "momentum_score", "volatility_score", "volume_score",
+                     # v8: analyst revision momentum
+                     "analyst_score",
                      "data_completeness"):
             val = row.get(key)
             if val is not None and pd.notna(val):
@@ -136,6 +139,7 @@ def export_stock_detail(
     sentiment: dict | None,
     ranking: dict | None,
     headlines: list | None = None,
+    analyst: dict | None = None,
 ) -> str:
     """Export individual stock JSON to stocks/{ticker}.json."""
     stocks_dir = os.path.join(OUTPUT_DIR, "stocks")
@@ -161,6 +165,7 @@ def export_stock_detail(
         "fundamental": _clean_record(fundamental) if fundamental else None,
         "technical": _clean_record(technical) if technical else None,
         "sentiment": _clean_record(sentiment) if sentiment else None,
+        "analyst": _clean_record(analyst) if analyst else None,
         "ranking": _clean_record(ranking) if ranking else None,
         "headlines": headlines or [],
     }

@@ -5,11 +5,14 @@ with four investment-analysis dimensions:
 
     earningsVisibility  (30%)  = quality + growth
     valuationMargin     (25%)  = value
-    catalystTimeline    (20%)  = trend + momentum + sentiment + volume
+    catalystTimeline    (20%)  = trend + momentum + analyst + sentiment + volume
     downsideControl     (25%)  = safety + volatility
 
 v7: Incorporates data completeness — applies a penalty to composite_score
 when a large fraction of metrics are missing (data_completeness < 0.5).
+
+v8: Added analyst revision momentum to Catalyst Timeline (20% of CT).
+Reweighted CT: trend 25% + momentum 25% + analyst 20% + sentiment 15% + volume 15%.
 
 All scores remain on the 0-100 absolute scale.
 """
@@ -28,6 +31,7 @@ from engine.config import (
     VM_WEIGHT_VALUE,
     CT_WEIGHT_TREND,
     CT_WEIGHT_MOMENTUM,
+    CT_WEIGHT_ANALYST,
     CT_WEIGHT_SENTIMENT,
     CT_WEIGHT_VOLUME,
     DC_WEIGHT_SAFETY,
@@ -63,11 +67,12 @@ def compute_composite(
     fund_scored: pd.DataFrame,
     tech_scored: pd.DataFrame,
     sent_df: pd.DataFrame,
+    analyst_scored: pd.DataFrame | None = None,
 ) -> pd.DataFrame:
     """Compute composite score via four qualitative dimensions.
 
     Accepts the fully-scored DataFrames (with sub-score columns) from the
-    fundamental, technical, and sentiment analyzers.
+    fundamental, technical, sentiment, and analyst analyzers.
 
     Returns:
         DataFrame indexed by ticker with dimension scores, legacy factor
@@ -75,7 +80,7 @@ def compute_composite(
     """
     # Merge all sub-scores into a single frame
     all_tickers: set[str] = set()
-    for df in (fund_scored, tech_scored, sent_df):
+    for df in (fund_scored, tech_scored, sent_df, analyst_scored):
         if df is not None and not df.empty:
             all_tickers.update(df.index)
 
@@ -102,6 +107,8 @@ def compute_composite(
 
     sentiment = _get(sent_df, "sentiment_score")
 
+    analyst = _get(analyst_scored, "analyst_score")
+
     # --- v7: Store building-block sub-scores for IC tracking ---
     result["value_score"] = value
     result["quality_score"] = quality
@@ -111,12 +118,14 @@ def compute_composite(
     result["momentum_score"] = momentum
     result["volatility_score"] = volatility
     result["volume_score"] = volume
+    result["analyst_score"] = analyst
 
     # --- Four qualitative dimensions (all 0-100) ---
     ev = EV_WEIGHT_QUALITY * quality + EV_WEIGHT_GROWTH * growth
     vm = VM_WEIGHT_VALUE * value
     ct = (CT_WEIGHT_TREND * trend + CT_WEIGHT_MOMENTUM * momentum
-          + CT_WEIGHT_SENTIMENT * sentiment + CT_WEIGHT_VOLUME * volume)
+          + CT_WEIGHT_ANALYST * analyst + CT_WEIGHT_SENTIMENT * sentiment
+          + CT_WEIGHT_VOLUME * volume)
     dc = DC_WEIGHT_SAFETY * safety + DC_WEIGHT_VOLATILITY * volatility
 
     result["earnings_visibility"] = ev

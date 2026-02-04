@@ -107,7 +107,7 @@ Comprehensive upgrade to technical indicator scoring: price normalization, direc
 
 **Files**: `engine/analyzers/technical.py`, `engine/scorer/absolute.py`, `engine/main.py`
 
-### v7: Signal Validation & Data Quality (current)
+### v7: Signal Validation & Data Quality
 
 Validates scoring rules via IC tracking, handles missing data honestly, and introduces data completeness scoring.
 
@@ -119,7 +119,23 @@ Validates scoring rules via IC tracking, handles missing data honestly, and intr
 
 **Files**: `engine/scorer/absolute.py`, `engine/scorer/factor_model.py`, `engine/analyzers/fundamental.py`, `engine/analyzers/technical.py`, `engine/analyzers/ic_tracker.py`, `engine/exporters/json_exporter.py`, `engine/main.py`
 
-## Scoring Design (v7)
+### v8: Analyst Revision Momentum (current)
+
+Adds sell-side analyst revision momentum as a dedicated signal within Catalyst Timeline, separating institutional-quality analyst actions from general news sentiment.
+
+**Key changes from v7:**
+- **Analyst data collector**: New `engine/collectors/analyst.py` fetches analyst consensus (recommendation mean, target prices, number of analysts) and upgrade/downgrade history (90-day lookback) from yfinance per ticker.
+- **Analyst revision momentum analyzer**: New `engine/analyzers/analyst.py` computes three sub-metrics:
+  - **Revision momentum** (40%): `(upgrades - downgrades) / total_revisions` mapped to 0-100 via piecewise breakpoints.
+  - **Target price upside** (35%): `(target_median - current_price) / current_price` mapped to 0-100.
+  - **Consensus rating** (25%): yfinance `recommendationMean` (1=Strong Buy to 5=Strong Sell) inverted and mapped to 0-100.
+- **Catalyst Timeline reweighting**: Added `analyst_score` as a new component. Reweighted: trend 25% + momentum 25% + analyst 20% + sentiment 15% + volume 15% (was: trend 30% + momentum 30% + sentiment 25% + volume 15%).
+- **IC tracking extended**: `analyst_score` added to the 14-factor IC tracker (was 13 factors).
+- **Missing data default**: Analyst score defaults to 50 (neutral) when no analyst data is available — no directional bias since lack of coverage is ambiguous.
+
+**Files**: `engine/collectors/analyst.py`, `engine/analyzers/analyst.py`, `engine/scorer/absolute.py`, `engine/scorer/factor_model.py`, `engine/config.py`, `engine/analyzers/ic_tracker.py`, `engine/exporters/json_exporter.py`, `engine/main.py`
+
+## Scoring Design (v8)
 
 ### Absolute Metric Scoring
 
@@ -160,8 +176,11 @@ def metric_score(value, breakpoints, missing_default=50.0) -> float:
 | Hist Volatility | Lower is better | 10%→88, 30%→52, 70%→18 |
 | Dir. Volume | Positive is better | -2.5→15, 0→50, 1.5→72, 2.5→85 |
 | VADER Compound | Higher is better | compound: direct map (-1,+1)→(0,100) |
+| Revision Momentum | Positive is better | -1.0→10, 0→50, +0.5→75, +1.0→90 |
+| Target Upside | Higher is better | -20%→10, 0%→45, +20%→72, +40%→85 |
+| Consensus Rating | Lower is better | 1.0→92, 2.0→70, 3.0→45, 4.0→20 |
 
-### Sub-score Computation (unchanged)
+### Sub-score Computation
 
 ```
 value_score     = avg(pe_score, forward_pe_score, pb_score, ps_score)    # all sector-aware
@@ -169,14 +188,15 @@ quality_score   = avg(roe_score, roa_score, margin_score)
 growth_score    = avg(rev_growth_score, earn_growth_score)               # sector-aware for Utilities
 safety_score    = avg(debt_equity_score, fcf_yield_score, current_ratio_score)  # sector-aware D/E
 sentiment_score = (compound + 1) × 50
+analyst_score   = 0.40×revision_momentum_score + 0.35×target_upside_score + 0.25×consensus_score
 ```
 
-### Qualitative Dimension Aggregation (v3)
+### Qualitative Dimension Aggregation (v8)
 
 ```
 earningsVisibility = 0.60×quality + 0.40×growth
 valuationMargin    = value
-catalystTimeline   = 0.30×trend + 0.30×momentum + 0.25×sentiment + 0.15×volume
+catalystTimeline   = 0.25×trend + 0.25×momentum + 0.20×analyst + 0.15×sentiment + 0.15×volume
 downsideControl    = 0.60×safety + 0.40×volatility
 
 composite_score = 0.30×EV + 0.25×VM + 0.20×CT + 0.25×DC
@@ -237,13 +257,13 @@ When implementing a new version from the roadmap:
 
 ## Improvement Roadmap
 
-Known weaknesses of the current model (v7), grouped into future versions by theme.
+Known weaknesses of the current model (v8), grouped into future versions by theme.
 
-### v8: Intelligence Upgrade
+### v9: Intelligence Upgrade
 
 Theme: Add higher-order intelligence — better NLP for sentiment, macro regime awareness.
 
-#### 8.1 Sentiment Analysis Upgrade
+#### 9.1 Sentiment Analysis Upgrade
 
 **Problem**: VADER is a rule-based dictionary that doesn't understand financial context. Only headline text is analyzed. No time decay. No source credibility weighting. News coverage is biased toward large caps.
 
@@ -255,7 +275,7 @@ Theme: Add higher-order intelligence — better NLP for sentiment, macro regime 
 
 **Files**: `engine/analyzers/sentiment.py`, `engine/collectors/news.py`
 
-#### 8.2 Macro / Market Regime Awareness
+#### 9.2 Macro / Market Regime Awareness
 
 **Problem**: The model is purely bottom-up. It doesn't know whether the macro environment is risk-on or risk-off. In a rising-rate environment, all growth stock valuations should be discounted; in a falling-rate environment, they should be expanded. Sector rotation is not captured.
 

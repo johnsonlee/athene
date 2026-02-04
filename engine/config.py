@@ -14,10 +14,11 @@ EV_WEIGHT_GROWTH = 0.40
 # Valuation Margin sub-composition
 VM_WEIGHT_VALUE = 1.00
 
-# Catalyst Timeline sub-composition
-CT_WEIGHT_TREND = 0.30
-CT_WEIGHT_MOMENTUM = 0.30
-CT_WEIGHT_SENTIMENT = 0.25
+# Catalyst Timeline sub-composition (v8: added analyst revision momentum)
+CT_WEIGHT_TREND = 0.25
+CT_WEIGHT_MOMENTUM = 0.25
+CT_WEIGHT_ANALYST = 0.20
+CT_WEIGHT_SENTIMENT = 0.15
 CT_WEIGHT_VOLUME = 0.15
 
 # Downside Control sub-composition

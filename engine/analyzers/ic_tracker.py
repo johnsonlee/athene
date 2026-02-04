@@ -35,6 +35,8 @@ FACTORS = [
     "momentum_score",
     "volatility_score",
     "volume_score",
+    # v8: analyst revision momentum
+    "analyst_score",
 ]
 
 DEFAULT_HORIZONS = [5, 21]  # trading days forward
