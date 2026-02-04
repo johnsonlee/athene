@@ -1,11 +1,13 @@
 """CLI entry point for the analysis phase.
 
 Usage:
-    python -m engine.analyze [--collected-dir collected]
+    python -m engine.analyze
 
-Loads all collected/*.json[.gz] files produced by engine.collect,
-runs the full analysis + scoring + export pipeline, then cleans up
-the collected/ directory.
+Reads all collected/YYYY-MM-DD/ directories:
+  - prices/ETFs: concatenate daily slices → full DataFrames (200+ days for SMA200)
+  - fundamentals/news/analyst/macro: latest date only
+Runs the full analysis + scoring + export pipeline.
+The collected/ directory is permanently retained.
 """
 
 from __future__ import annotations
@@ -13,15 +15,17 @@ from __future__ import annotations
 import argparse
 import json
 import os
-import shutil
+import sys
 import time
 
+import numpy as np
 import pandas as pd
 
 from engine.collect import (
     COLLECTED_DIR,
+    _is_date_dir,
+    _read_json_from_dir,
     read_json,
-    deserialize_prices,
 )
 from engine.analyzers.fundamental import analyze_fundamental, compute_fundamental_subscores
 from engine.analyzers.technical import analyze_technical, compute_technical_subscores
@@ -66,6 +70,156 @@ _DIM_WEIGHTS = {
     "downside_control": WEIGHT_DOWNSIDE_CONTROL,
 }
 
+
+# ── Date-partitioned data reconstruction ──────────────────────────
+
+def _sorted_date_dirs(collected_dir: str) -> list[str]:
+    """Return sorted list of YYYY-MM-DD directory names under collected_dir."""
+    if not os.path.isdir(collected_dir):
+        return []
+    return sorted(
+        d for d in os.listdir(collected_dir)
+        if os.path.isdir(os.path.join(collected_dir, d)) and _is_date_dir(d)
+    )
+
+
+def _reconstruct_prices(collected_dir: str) -> dict[str, pd.DataFrame]:
+    """Reconstruct full price DataFrames from daily slices.
+
+    Reads each collected/<date>/prices.json, accumulates rows per ticker,
+    and returns Dict[str, pd.DataFrame] with DatetimeIndex — same structure
+    that analyzers expect.
+    """
+    date_dirs = _sorted_date_dirs(collected_dir)
+    # ticker -> list of (date, {Open, High, Low, Close, Volume})
+    ticker_rows: dict[str, list[tuple[str, dict]]] = {}
+
+    for d in date_dirs:
+        dir_path = os.path.join(collected_dir, d)
+        prices_path = os.path.join(dir_path, "prices.json")
+        if not os.path.exists(prices_path):
+            continue
+        with open(prices_path, "r", encoding="utf-8") as f:
+            daily = json.load(f)
+        for ticker, row in daily.items():
+            if ticker not in ticker_rows:
+                ticker_rows[ticker] = []
+            ticker_rows[ticker].append((d, row))
+
+    result: dict[str, pd.DataFrame] = {}
+    for ticker, rows in ticker_rows.items():
+        records = []
+        for date_str, row in rows:
+            rec = {"Date": pd.Timestamp(date_str)}
+            rec.update(row)
+            records.append(rec)
+        df = pd.DataFrame(records).set_index("Date").sort_index()
+        # Drop duplicate dates (keep last)
+        df = df[~df.index.duplicated(keep="last")]
+        result[ticker] = df
+
+    return result
+
+
+def _reconstruct_etf_prices(collected_dir: str) -> dict[str, pd.DataFrame]:
+    """Reconstruct full ETF price DataFrames from daily slices.
+
+    Same approach as _reconstruct_prices but reads sector_etfs.json files.
+    """
+    date_dirs = _sorted_date_dirs(collected_dir)
+    ticker_rows: dict[str, list[tuple[str, dict]]] = {}
+
+    for d in date_dirs:
+        dir_path = os.path.join(collected_dir, d)
+        etf_path = os.path.join(dir_path, "sector_etfs.json")
+        if not os.path.exists(etf_path):
+            continue
+        with open(etf_path, "r", encoding="utf-8") as f:
+            daily = json.load(f)
+        for ticker, row in daily.items():
+            if ticker not in ticker_rows:
+                ticker_rows[ticker] = []
+            ticker_rows[ticker].append((d, row))
+
+    result: dict[str, pd.DataFrame] = {}
+    for ticker, rows in ticker_rows.items():
+        records = []
+        for date_str, row in rows:
+            rec = {"Date": pd.Timestamp(date_str)}
+            rec.update(row)
+            records.append(rec)
+        df = pd.DataFrame(records).set_index("Date").sort_index()
+        df = df[~df.index.duplicated(keep="last")]
+        result[ticker] = df
+
+    return result
+
+
+def _load_latest_snapshot(name: str, collected_dir: str) -> object:
+    """Find the latest date directory containing <name>.json and load it."""
+    date_dirs = _sorted_date_dirs(collected_dir)
+    for d in reversed(date_dirs):
+        dir_path = os.path.join(collected_dir, d)
+        json_path = os.path.join(dir_path, f"{name}.json")
+        gz_path = os.path.join(dir_path, f"{name}.json.gz")
+        if os.path.exists(json_path) or os.path.exists(gz_path):
+            return _read_json_from_dir(dir_path, name)
+    raise FileNotFoundError(f"No collected data for '{name}' in any date directory under {collected_dir}")
+
+
+# ── Data validation ───────────────────────────────────────────────
+
+def _validate_data_quality(
+    ranked: pd.DataFrame,
+    universe_size: int,
+    prices: dict[str, pd.DataFrame],
+) -> None:
+    """Validate data quality before exporting. Aborts on critical failures."""
+    errors = []
+
+    # Ticker coverage: ranked tickers >= 80% of universe
+    coverage = len(ranked) / universe_size if universe_size > 0 else 0
+    if coverage < 0.80:
+        errors.append(
+            f"Ticker coverage too low: {len(ranked)}/{universe_size} "
+            f"({coverage:.0%}) — need >=80%"
+        )
+
+    # NaN/Inf check on composite_score
+    if "composite_score" in ranked.columns:
+        bad = ranked["composite_score"].isna() | np.isinf(ranked["composite_score"])
+        if bad.any():
+            errors.append(
+                f"NaN/Inf in composite_score: {int(bad.sum())} tickers"
+            )
+
+        # Score distribution: std >= 5.0
+        std = ranked["composite_score"].std()
+        if std < 5.0:
+            errors.append(
+                f"Score distribution degenerate: std={std:.2f} — need >=5.0"
+            )
+
+    # Price history depth: >= 80% of tickers have 200+ days (warn only)
+    if prices:
+        deep_count = sum(1 for df in prices.values() if len(df) >= 200)
+        deep_pct = deep_count / len(prices)
+        if deep_pct < 0.80:
+            log.warning(
+                f"Price history depth: only {deep_count}/{len(prices)} "
+                f"({deep_pct:.0%}) tickers have 200+ days"
+            )
+
+    if errors:
+        for e in errors:
+            log.error(f"VALIDATION FAILED: {e}")
+        log.error("Aborting — will NOT overwrite frontend/public/data/")
+        sys.exit(1)
+
+    log.info("Data validation passed")
+
+
+# ── EMA smoothing ─────────────────────────────────────────────────
 
 def _load_previous_smoothed() -> dict[str, dict[str, float]]:
     """Load previous smoothed scores from history.json."""
@@ -138,37 +292,43 @@ def _apply_ema_smoothing(composite: pd.DataFrame) -> pd.DataFrame:
     return result
 
 
+# ── Main pipeline ─────────────────────────────────────────────────
+
 def run(collected_dir: str = COLLECTED_DIR) -> None:
-    """Run the analysis pipeline from collected data."""
+    """Run the analysis pipeline from date-partitioned collected data."""
     start_time = time.time()
     log.info("=" * 60)
     log.info("Athene Analysis Pipeline - Start")
     log.info("=" * 60)
 
-    # Load collected data
-    log.info("Loading collected data...")
+    # Load collected data via date-partitioned reconstruction
+    log.info("Loading collected data (date-partitioned)...")
 
-    universe_records = read_json("universe")
+    universe_records = _load_latest_snapshot("universe", collected_dir)
     universe = pd.DataFrame(universe_records)
     tickers = universe["ticker"].tolist()
     log.info(f"Universe: {len(tickers)} tickers")
 
-    prices = deserialize_prices(read_json("prices"))
-    log.info(f"Prices: {len(prices)} tickers")
+    log.info("Reconstructing price history from daily slices...")
+    prices = _reconstruct_prices(collected_dir)
+    log.info(f"Prices: {len(prices)} tickers, "
+             f"history depth: {min(len(df) for df in prices.values()) if prices else 0}-"
+             f"{max(len(df) for df in prices.values()) if prices else 0} days")
 
-    fundamentals_raw = read_json("fundamentals")
+    fundamentals_raw = _load_latest_snapshot("fundamentals", collected_dir)
     log.info(f"Fundamentals: {len(fundamentals_raw)} tickers")
 
-    news = read_json("news")
+    news = _load_latest_snapshot("news", collected_dir)
     log.info(f"News: {len(news)} tickers")
 
-    analyst_raw = read_json("analyst")
+    analyst_raw = _load_latest_snapshot("analyst", collected_dir)
     log.info(f"Analyst: {len(analyst_raw)} tickers")
 
-    macro_raw = read_json("macro")
+    macro_raw = _load_latest_snapshot("macro", collected_dir)
     log.info(f"Macro: {list(macro_raw.keys())}")
 
-    etf_prices = deserialize_prices(read_json("sector_etfs"))
+    log.info("Reconstructing sector ETF history from daily slices...")
+    etf_prices = _reconstruct_etf_prices(collected_dir)
     log.info(f"Sector ETFs: {len(etf_prices)} tickers")
 
     # Backfill "Unknown" sectors from yfinance data
@@ -221,6 +381,9 @@ def run(collected_dir: str = COLLECTED_DIR) -> None:
                  f"min={dc.min():.2f}, <50%={int((dc < 0.50).sum())} tickers")
 
     ranked = assign_tiers(composite)
+
+    # Validate data quality before exporting
+    _validate_data_quality(ranked, len(tickers), prices)
 
     # Detect changes
     run_date = time.strftime("%Y-%m-%d")
@@ -282,10 +445,7 @@ def run(collected_dir: str = COLLECTED_DIR) -> None:
         export_stock_detail(ticker, price_data, fund_data, tech_data, sent_data, rank_data, headlines, anl_data)
         exported_count += 1
 
-    # Clean up collected directory
-    if os.path.isdir(collected_dir):
-        shutil.rmtree(collected_dir)
-        log.info(f"Cleaned up {collected_dir}/")
+    # No cleanup of collected/ — data is permanently retained
 
     elapsed = time.time() - start_time
     log.info("=" * 60)
@@ -308,7 +468,7 @@ def main() -> None:
     parser.add_argument(
         "--collected-dir",
         default=COLLECTED_DIR,
-        help=f"Directory containing collected data files (default: {COLLECTED_DIR})",
+        help=f"Directory containing collected date-partitioned data (default: {COLLECTED_DIR})",
     )
     args = parser.parse_args()
     run(collected_dir=args.collected_dir)

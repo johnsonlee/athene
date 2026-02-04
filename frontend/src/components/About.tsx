@@ -26,7 +26,7 @@ export function About() {
       {/* Version History */}
       <section className="tech-card p-4 sm:p-6">
         <h2 className="mb-4 text-lg font-semibold text-gray-900 dark:text-white">{t('about.versionHistory')}</h2>
-        <div className="relative space-y-0 pl-4 before:absolute before:left-[7px] before:top-2 before:bottom-2 before:w-px before:bg-gray-200 dark:before:bg-gray-700">
+        <div className="relative ml-3 border-l-2 border-gray-200 dark:border-gray-700">
           {([
             { key: 'v10', status: 'current' as const },
             { key: 'v9', status: null },
@@ -38,42 +38,53 @@ export function About() {
             { key: 'v3', status: null },
             { key: 'v2', status: null },
             { key: 'v1', status: 'deprecated' as const },
-          ]).map(({ key, status }) => (
-            <div key={key} className="relative pb-4 pl-5 last:pb-0">
-              <span className={`absolute left-0 top-1.5 h-2.5 w-2.5 rounded-full ${
-                status === 'current'
-                  ? 'bg-green-500 ring-2 ring-green-500/20'
-                  : status === 'deprecated'
-                    ? 'bg-gray-300 dark:bg-gray-600'
-                    : 'bg-gray-400 dark:bg-gray-500'
-              }`} />
-              <div className="flex items-center gap-2">
-                <h3 className={`text-sm font-medium ${
-                  status === 'deprecated'
-                    ? 'text-gray-400 line-through dark:text-gray-600'
-                    : 'text-gray-900 dark:text-white'
-                }`}>
-                  {t(`about.${key}.title` as any)}
-                </h3>
-                {status && (
-                  <span className={`rounded px-1.5 py-0.5 text-[10px] font-medium ${
-                    status === 'current'
-                      ? 'bg-green-100 text-green-700 dark:bg-green-500/15 dark:text-green-300'
-                      : 'bg-gray-100 text-gray-500 dark:bg-gray-700 dark:text-gray-400'
+          ]).map(({ key, status }, i, arr) => {
+            const issuesKey = `about.${key}.issues` as any;
+            const issues = t(issuesKey);
+            const hasIssues = issues !== issuesKey;
+            const isLast = i === arr.length - 1;
+            return (
+              <div key={key} className={`relative ${isLast ? '' : 'mb-6'} ml-6`}>
+                <span className={`absolute -left-[33px] flex h-4 w-4 items-center justify-center rounded-full border-2 ${
+                  status === 'current'
+                    ? 'border-green-500 bg-green-500 dark:border-green-400 dark:bg-green-400'
+                    : status === 'deprecated'
+                      ? 'border-gray-300 bg-gray-300 dark:border-gray-600 dark:bg-gray-600'
+                      : 'border-gray-300 bg-white dark:border-gray-500 dark:bg-gray-800'
+                }`} />
+                <div className="flex items-center gap-2">
+                  <h3 className={`text-sm font-medium ${
+                    status === 'deprecated'
+                      ? 'text-gray-400 line-through dark:text-gray-600'
+                      : 'text-gray-900 dark:text-white'
                   }`}>
-                    {t(`about.${status}` as any)}
-                  </span>
+                    {t(`about.${key}.title` as any)}
+                  </h3>
+                  {status && (
+                    <span className={`rounded px-1.5 py-0.5 text-[10px] font-medium ${
+                      status === 'current'
+                        ? 'bg-green-100 text-green-700 dark:bg-green-500/15 dark:text-green-300'
+                        : 'bg-gray-100 text-gray-500 dark:bg-gray-700 dark:text-gray-400'
+                    }`}>
+                      {t(`about.${status}` as any)}
+                    </span>
+                  )}
+                </div>
+                <p className={`mt-0.5 text-xs ${
+                  status === 'deprecated'
+                    ? 'text-gray-400 dark:text-gray-600'
+                    : 'text-gray-500 dark:text-gray-400'
+                }`}>
+                  {t(`about.${key}.desc` as any)}
+                </p>
+                {hasIssues && (
+                  <p className="mt-1 text-xs text-amber-600 dark:text-amber-400/80">
+                    {issues}
+                  </p>
                 )}
               </div>
-              <p className={`mt-0.5 text-xs ${
-                status === 'deprecated'
-                  ? 'text-gray-400 dark:text-gray-600'
-                  : 'text-gray-500 dark:text-gray-400'
-              }`}>
-                {t(`about.${key}.desc` as any)}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
