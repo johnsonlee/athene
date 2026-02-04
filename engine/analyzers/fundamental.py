@@ -54,7 +54,11 @@ def analyze_fundamental(fundamentals: Dict[str, Dict[str, Any]]) -> pd.DataFrame
         profit_margin = _safe(data.get("profitMargins"))
         op_margin = _safe(data.get("operatingMargins"))
         gross_margin = _safe(data.get("grossMargins"))
-        dividend_yield = _safe(data.get("dividendYield"))
+        dividend_yield_raw = _safe(data.get("dividendYield"))
+        # yfinance returns dividendYield in percentage form (e.g. 2.23 for 2.23%),
+        # unlike other ratio fields (ROE, ROA, margins) which are decimal.
+        # Normalize to decimal so formatPercent() in the frontend works correctly.
+        dividend_yield = dividend_yield_raw / 100.0 if dividend_yield_raw is not None else None
         beta = _safe(data.get("beta"))
         current_price = _safe(data.get("currentPrice"))
         high_52w = _safe(data.get("fiftyTwoWeekHigh"))
