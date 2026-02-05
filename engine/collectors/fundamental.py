@@ -40,6 +40,12 @@ INFO_KEYS = [
     "profitMargins",
     "operatingMargins",
     "grossMargins",
+    # Company profile
+    "longBusinessSummary",
+    "fullTimeEmployees",
+    "website",
+    "city",
+    "country",
 ]
 
 

@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import { useStockDetail } from '../../hooks/useStockDetail';
 import { LoadingSpinner } from '../common/LoadingSpinner';
 import { ScoreBadge } from '../common/ScoreBadge';
+import { CompanyProfile } from './CompanyProfile';
 import { PriceChart } from './PriceChart';
 import { ScoreBreakdown } from './ScoreBreakdown';
 import { formatScore, formatPrice } from '../../lib/formatters';
@@ -44,6 +45,9 @@ export function StockDetailPage() {
           )}
         </div>
       </div>
+
+      {/* Company Profile */}
+      <CompanyProfile profile={data.profile} fundamental={data.fundamental} ranking={data.ranking} />
 
       {/* Price Chart + Indicators */}
       <PriceChart prices={data.prices} ticker={ticker!} />

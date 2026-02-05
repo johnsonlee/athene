@@ -16,7 +16,7 @@ export function TrendDashboard() {
   const { data: trendHistory } = useTrendHistory();
   const { data: rankings } = useRankings();
   const { data: meta } = useMeta();
-  const { t } = useI18n();
+  const { t, tIndustry } = useI18n();
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
 
@@ -108,11 +108,9 @@ export function TrendDashboard() {
                 <th className="px-3 py-2 text-xs font-semibold uppercase tracking-wider text-gray-600 dark:text-gray-500">
                   {t('table.name')}
                 </th>
-                {!selectedSector && (
-                  <th className="px-3 py-2 text-xs font-semibold uppercase tracking-wider text-gray-600 dark:text-gray-500">
-                    {t('trends.sector' as any)}
-                  </th>
-                )}
+                <th className="px-3 py-2 text-xs font-semibold uppercase tracking-wider text-gray-600 dark:text-gray-500">
+                  {selectedSector ? t('table.industry') : t('table.sectorIndustry')}
+                </th>
                 <th className="px-3 py-2 text-right text-xs font-semibold uppercase tracking-wider text-gray-600 dark:text-gray-500">
                   {t('table.score')}
                 </th>
@@ -137,11 +135,16 @@ export function TrendDashboard() {
                   <td className="max-w-[200px] truncate px-3 py-2 text-gray-700 dark:text-gray-300">
                     {stock.name}
                   </td>
-                  {!selectedSector && (
-                    <td className="px-3 py-2 text-xs text-gray-500 dark:text-gray-500">
-                      {stock.sector ? t(`sector.${stock.sector}` as any) : ''}
-                    </td>
-                  )}
+                  <td className="px-3 py-2 text-xs text-gray-500 dark:text-gray-500">
+                    {selectedSector
+                      ? (stock.industry ? tIndustry(stock.industry) : '\u2014')
+                      : <>
+                          {stock.sector ? (t(`sector.${stock.sector}` as any) || stock.sector) : ''}
+                          {stock.sector && stock.industry ? <span className="mx-1 text-gray-300 dark:text-gray-700">&middot;</span> : ''}
+                          {stock.industry ? tIndustry(stock.industry) : ''}
+                        </>
+                    }
+                  </td>
                   <td className="px-3 py-2 text-right font-mono font-medium text-gray-900 dark:text-white">
                     {stock.composite_score?.toFixed(1)}
                   </td>
