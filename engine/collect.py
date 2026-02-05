@@ -359,13 +359,11 @@ def _backfill_capital_flow_etfs(args: argparse.Namespace) -> None:
     end_date = getattr(args, "end", None)
     label = f"{start_date} to {end_date}" if start_date and end_date else "all available"
     log.info(f"Backfilling capital flow ETF data ({label})...")
-    etf_prices = collect_capital_flow_etfs(end_date=end_date)
+    etf_prices = collect_capital_flow_etfs(start_date=start_date, end_date=end_date)
 
     for ticker, df in etf_prices.items():
         for date_val, row in df.iterrows():
             date_str = pd.Timestamp(date_val).strftime("%Y-%m-%d")
-            if start_date and date_str < start_date:
-                continue
             d = _get_date_dir(date_str)
             path = os.path.join(d, "capital_flow_etfs.json")
 

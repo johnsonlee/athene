@@ -78,6 +78,13 @@ jobs:
           [ -n "${{ inputs.end_date }}" ]   && ARGS="$ARGS --end ${{ inputs.end_date }}"
           python -m engine.collect sector_etfs $ARGS
 
+      - name: Backfill capital flow ETFs
+        run: |
+          ARGS="--backfill"
+          [ -n "${{ inputs.start_date }}" ] && ARGS="$ARGS --start ${{ inputs.start_date }}"
+          [ -n "${{ inputs.end_date }}" ]   && ARGS="$ARGS --end ${{ inputs.end_date }}"
+          python -m engine.collect capital_flow_etfs $ARGS
+
       - name: Collect today fundamentals
         if: inputs.skip_snapshot != true
         run: |
