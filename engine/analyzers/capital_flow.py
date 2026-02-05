@@ -555,6 +555,13 @@ def analyze_capital_flows(
                 }
                 continue
 
+            # Normalize crypto volume: yfinance reports BTC-USD volume
+            # in USD, not units.  Convert to unit volume so that
+            # Close × Volume gives correct dollar volume downstream.
+            if meta.get("volume_in_usd"):
+                df_up_to = df_up_to.copy()
+                df_up_to["Volume"] = df_up_to["Volume"] / df_up_to["Close"]
+
             # Compute 3 independent signals
             cmf_val = _chaikin_money_flow(df_up_to, actual_window)
             obv_val = _obv_slope(df_up_to, actual_window)

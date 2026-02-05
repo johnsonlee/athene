@@ -127,7 +127,7 @@ CAPITAL_FLOW_ETFS = {
     "VGK":     {"id": "euEquity",   "label_zh": "欧股",   "label_en": "EU Equity",   "type": "risk"},
     "EWJ":     {"id": "jpEquity",   "label_zh": "日股",   "label_en": "JP Equity",   "type": "risk"},
     "EEM":     {"id": "emEquity",   "label_zh": "新兴",   "label_en": "EM Equity",   "type": "risk"},
-    "BTC-USD": {"id": "crypto",     "label_zh": "加密",   "label_en": "Crypto",      "type": "risk"},
+    "BTC-USD": {"id": "crypto",     "label_zh": "加密",   "label_en": "Crypto",      "type": "risk", "volume_in_usd": True},
     "GLD":     {"id": "gold",       "label_zh": "黄金",   "label_en": "Gold",        "type": "safe"},
     "TLT":     {"id": "usTreasury", "label_zh": "美债",   "label_en": "US Treasury", "type": "safe"},
     "BIL":     {"id": "cash",       "label_zh": "现金",   "label_en": "Cash",        "type": "safe"},

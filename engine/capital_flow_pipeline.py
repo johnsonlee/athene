@@ -53,6 +53,26 @@ def run(window_days: int | None = None, lookback_weeks: int | None = None) -> No
         lookback_weeks=lookback_weeks,
         end_date=run_date,
     )
+
+    # Determine minimum data depth for the requested window(s)
+    from engine.config import CAPITAL_FLOW_WINDOWS
+    windows_to_run = (
+        {f"{window_days}d": window_days} if window_days
+        else CAPITAL_FLOW_WINDOWS
+    )
+    min_window = min(windows_to_run.values())
+
+    # Fall back to live fetch if stored data is missing or insufficient
+    if cf_prices:
+        min_len = min(
+            (len(df) for df in cf_prices.values() if not df.empty),
+            default=0,
+        )
+        if min_len < min_window + 1:
+            log.info(f"  Stored data insufficient ({min_len} days, need >={min_window + 1})"
+                     " — fetching live from yfinance...")
+            cf_prices = {}
+
     if not cf_prices:
         log.info("  No stored data found — fetching live from yfinance...")
         cf_prices = collect_capital_flow_etfs(
@@ -80,11 +100,6 @@ def run(window_days: int | None = None, lookback_weeks: int | None = None) -> No
 
     # Step 4: Analyze with multi-signal fusion at multiple windows
     log.info("Step 4/5: Analyzing capital flows (multi-signal fusion)...")
-    from engine.config import CAPITAL_FLOW_WINDOWS
-    windows_to_run = (
-        {f"{window_days}d": window_days} if window_days
-        else CAPITAL_FLOW_WINDOWS
-    )
     all_window_results: dict[str, list] = {}
     for label, wdays in windows_to_run.items():
         log.info(f"  Window {label} ({wdays} trading days)...")

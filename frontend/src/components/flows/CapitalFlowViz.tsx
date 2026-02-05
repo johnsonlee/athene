@@ -6,7 +6,7 @@ import type { CapitalFlowPhase, CapitalFlowNode } from '../../types';
 
 // ─── SVG Layout Constants ───
 const SVG_W = 820;
-const SVG_H = 440;
+const SVG_H = 500;
 const NODE_W = 100;
 const NODE_H = 52;
 
@@ -39,11 +39,13 @@ function computeNodePositions(nodes: Record<string, CapitalFlowNode>) {
   const distribute = (items: [string, CapitalFlowNode][], x: number) => {
     const count = items.length;
     if (count === 0) return;
-    const totalH = SVG_H - 80; // leave margin top/bottom
-    const spacing = count > 1 ? totalH / (count - 1) : 0;
-    const startY = count > 1 ? 55 : SVG_H / 2 - NODE_H / 2;
+    const startY = 55;
+    // Available height from first node top to last node bottom
+    const availableH = SVG_H - startY - NODE_H - 15;
+    const spacing = count > 1 ? availableH / (count - 1) : 0;
+    const effectiveStartY = count > 1 ? startY : SVG_H / 2 - NODE_H / 2;
     items.forEach(([id], i) => {
-      positions[id] = { x, y: startY + i * spacing };
+      positions[id] = { x, y: effectiveStartY + i * spacing };
     });
   };
 
