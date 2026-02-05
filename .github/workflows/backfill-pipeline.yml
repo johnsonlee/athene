@@ -64,50 +64,45 @@ jobs:
       - name: Remove old flat collected files
         run: rm -f collected/*.json collected/*.json.gz
 
-      - name: Backfill prices
+      - name: Backfill prices, sector ETFs, capital flow ETFs (parallel)
         run: |
           ARGS="--backfill"
           [ -n "${{ inputs.start_date }}" ] && ARGS="$ARGS --start ${{ inputs.start_date }}"
           [ -n "${{ inputs.end_date }}" ]   && ARGS="$ARGS --end ${{ inputs.end_date }}"
-          python -m engine.collect prices $ARGS
 
-      - name: Backfill sector ETFs
-        run: |
-          ARGS="--backfill"
-          [ -n "${{ inputs.start_date }}" ] && ARGS="$ARGS --start ${{ inputs.start_date }}"
-          [ -n "${{ inputs.end_date }}" ]   && ARGS="$ARGS --end ${{ inputs.end_date }}"
-          python -m engine.collect sector_etfs $ARGS
+          python -m engine.collect prices $ARGS &
+          PID_PRICES=$!
+          python -m engine.collect sector_etfs $ARGS &
+          PID_SECTOR=$!
+          python -m engine.collect capital_flow_etfs $ARGS &
+          PID_CAPITAL=$!
 
-      - name: Backfill capital flow ETFs
-        run: |
-          ARGS="--backfill"
-          [ -n "${{ inputs.start_date }}" ] && ARGS="$ARGS --start ${{ inputs.start_date }}"
-          [ -n "${{ inputs.end_date }}" ]   && ARGS="$ARGS --end ${{ inputs.end_date }}"
-          python -m engine.collect capital_flow_etfs $ARGS
+          FAIL=0
+          wait $PID_PRICES  || FAIL=1
+          wait $PID_SECTOR  || FAIL=1
+          wait $PID_CAPITAL || FAIL=1
+          [ $FAIL -eq 0 ] || exit 1
 
-      - name: Collect today fundamentals
+      - name: Collect today snapshots (parallel)
         if: inputs.skip_snapshot != true
         run: |
           RUN_DATE="${{ steps.date.outputs.run_date }}"
-          python -m engine.collect fundamentals --date "$RUN_DATE"
 
-      - name: Collect today news
-        if: inputs.skip_snapshot != true
-        run: |
-          RUN_DATE="${{ steps.date.outputs.run_date }}"
-          python -m engine.collect news --date "$RUN_DATE"
+          python -m engine.collect fundamentals --date "$RUN_DATE" &
+          PID_FUND=$!
+          python -m engine.collect news --date "$RUN_DATE" &
+          PID_NEWS=$!
+          python -m engine.collect analyst --date "$RUN_DATE" &
+          PID_ANALYST=$!
+          python -m engine.collect macro --date "$RUN_DATE" &
+          PID_MACRO=$!
 
-      - name: Collect today analyst
-        if: inputs.skip_snapshot != true
-        run: |
-          RUN_DATE="${{ steps.date.outputs.run_date }}"
-          python -m engine.collect analyst --date "$RUN_DATE"
-
-      - name: Collect today macro
-        if: inputs.skip_snapshot != true
-        run: |
-          RUN_DATE="${{ steps.date.outputs.run_date }}"
-          python -m engine.collect macro --date "$RUN_DATE"
+          FAIL=0
+          wait $PID_FUND    || FAIL=1
+          wait $PID_NEWS    || FAIL=1
+          wait $PID_ANALYST || FAIL=1
+          wait $PID_MACRO   || FAIL=1
+          [ $FAIL -eq 0 ] || exit 1
 
       - name: Commit collected data
         run: |
