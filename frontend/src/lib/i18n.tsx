@@ -6,9 +6,32 @@ const translations = {
   en: {
     // Nav
     'nav.trends': 'Trends',
+    'nav.flows': 'Flows',
     'nav.dashboard': 'Dashboard',
     'nav.screener': 'Screener',
     'nav.about': 'About',
+
+    // Capital Flows
+    'flows.title': 'Global Capital Flow',
+    'flows.subtitle': 'Fund Flow Proxy (CMF Model)',
+    'flows.riskNet': 'Risk Asset Net',
+    'flows.safeNet': 'Safe Asset Net',
+    'flows.marketState': 'Market State',
+    'flows.riskOn': 'Risk-On',
+    'flows.riskOff': 'Risk-Off',
+    'flows.totalVolume': 'Total Flow',
+    'flows.riskAssets': 'RISK ASSETS',
+    'flows.safeAssets': 'SAFE HAVENS',
+    'flows.noData': 'Capital flow data not yet available.',
+    'flows.noDataHint': 'Run the engine to generate capital_flows.json.',
+    'flows.legendInflow5': 'Net inflow >$5B',
+    'flows.legendInflow': 'Net inflow',
+    'flows.legendSmallOutflow': 'Small outflow',
+    'flows.legendOutflow5': 'Net outflow >$5B',
+    'flows.legendPath': 'Flow path (width = magnitude)',
+    'flows.disclaimer': 'Fund flow proxy based on Chaikin Money Flow × dollar volume. Not actual fund flow data.',
+    'flows.interval': 'Interval',
+    'flows.range': 'Range',
 
     // Trends
     'trends.title': 'Sector Trends',
@@ -330,9 +353,32 @@ const translations = {
   zh: {
     // Nav
     'nav.trends': '趋势',
+    'nav.flows': '资金流',
     'nav.dashboard': '市场概览',
     'nav.screener': '选股器',
     'nav.about': '关于',
+
+    // Capital Flows
+    'flows.title': '全球资金流向',
+    'flows.subtitle': '资金流代理指标（CMF 模型）',
+    'flows.riskNet': '风险资产净流',
+    'flows.safeNet': '避险资产净流',
+    'flows.marketState': '市场状态',
+    'flows.riskOn': 'Risk-On',
+    'flows.riskOff': 'Risk-Off',
+    'flows.totalVolume': '总流动规模',
+    'flows.riskAssets': '风险资产',
+    'flows.safeAssets': '避险资产',
+    'flows.noData': '资金流向数据尚未生成。',
+    'flows.noDataHint': '运行引擎以生成 capital_flows.json。',
+    'flows.legendInflow5': '净流入 >$5B',
+    'flows.legendInflow': '净流入',
+    'flows.legendSmallOutflow': '小幅流出',
+    'flows.legendOutflow5': '净流出 >$5B',
+    'flows.legendPath': '资金流动路径（粗细=规模）',
+    'flows.disclaimer': '基于 Chaikin Money Flow × 成交额的代理估算，非实际基金申赎数据。',
+    'flows.interval': '周期',
+    'flows.range': '跨度',
 
     // Trends
     'trends.title': '板块趋势',

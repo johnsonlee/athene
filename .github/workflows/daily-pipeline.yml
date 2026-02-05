@@ -431,6 +431,59 @@ jobs:
             sleep $((attempt * 3))
           done
 
+  collect-capital-flow-etfs:
+    needs: universe
+    if: needs.universe.outputs.skip != 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Cache venv
+        uses: actions/cache@v4
+        with:
+          path: .venv
+          key: venv-${{ runner.os }}-py3.12-${{ hashFiles('requirements.txt') }}
+
+      - name: Install dependencies
+        run: |
+          test -d .venv || python -m venv .venv
+          source .venv/bin/activate
+          pip install -r requirements.txt
+
+      - name: Collect capital flow ETF data
+        run: |
+          source .venv/bin/activate
+          RUN_DATE="${{ needs.universe.outputs.run_date }}"
+          python -m engine.collect capital_flow_etfs --date "$RUN_DATE"
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          RUN_DATE="${{ needs.universe.outputs.run_date }}"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset origin/main
+            git add -f "collected/$RUN_DATE/capital_flow_etfs.json"
+            if git diff --staged --quiet; then
+              echo "No changes to commit"
+              break
+            fi
+            git commit -m "collected: capital_flow_etfs $RUN_DATE [skip ci]"
+            git push origin main && break
+            echo "Push failed (attempt $attempt), retrying..."
+            sleep $((attempt * 3))
+          done
+
   # ── Analyze (depends on all collectors) ─────────────────────
   analyze:
     needs:
@@ -441,6 +494,7 @@ jobs:
       - collect-analyst
       - collect-macro
       - collect-sector-etfs
+      - collect-capital-flow-etfs
     runs-on: ubuntu-latest
     timeout-minutes: 30
     outputs:
