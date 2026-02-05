@@ -100,6 +100,14 @@ const translations = {
     'tier.strong_sell': 'Strong Sell',
 
     // Stock Detail
+    // Company profile
+    'profile.employees': 'Employees',
+    'profile.marketCap': 'Market Cap',
+    'profile.marginBreakdown': 'Margin Breakdown',
+    'profile.grossMargin': 'Gross',
+    'profile.operatingMargin': 'Operating',
+    'profile.profitMargin': 'Net',
+
     'detail.backToScreener': 'Back to Screener',
     'detail.rank': 'Rank #{rank}',
     'detail.priceChart': '{ticker} Price Chart',
@@ -420,6 +428,14 @@ const translations = {
     'tier.strong_sell': '强烈减持',
 
     // Stock Detail
+    // Company profile
+    'profile.employees': '员工',
+    'profile.marketCap': '市值',
+    'profile.marginBreakdown': '利润率构成',
+    'profile.grossMargin': '毛利',
+    'profile.operatingMargin': '营业',
+    'profile.profitMargin': '净利',
+
     'detail.backToScreener': '返回选股器',
     'detail.rank': '排名 #{rank}',
     'detail.priceChart': '{ticker} 价格走势',

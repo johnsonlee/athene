@@ -150,8 +150,17 @@ export interface HeadlineItem {
   sentiment?: 'positive' | 'negative' | 'neutral';
 }
 
+export interface CompanyProfile {
+  longBusinessSummary?: string;
+  fullTimeEmployees?: number;
+  website?: string;
+  city?: string;
+  country?: string;
+}
+
 export interface StockDetail {
   ticker: string;
+  profile: CompanyProfile | null;
   prices: PriceBar[];
   fundamental: FundamentalData | null;
   technical: TechnicalData | null;

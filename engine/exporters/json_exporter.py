@@ -137,6 +137,23 @@ def export_history(ranked: pd.DataFrame, run_date: str | None = None) -> str:
     return _write_json(history, "history.json")
 
 
+_PROFILE_KEYS = [
+    "longBusinessSummary",
+    "fullTimeEmployees",
+    "website",
+    "city",
+    "country",
+]
+
+
+def _extract_profile(fundamental: dict | None) -> dict | None:
+    """Extract company profile fields from fundamental data."""
+    if not fundamental:
+        return None
+    profile = {k: fundamental.get(k) for k in _PROFILE_KEYS if fundamental.get(k) is not None}
+    return profile if profile else None
+
+
 def export_stock_detail(
     ticker: str,
     prices: pd.DataFrame,
@@ -167,6 +184,7 @@ def export_stock_detail(
 
     data = {
         "ticker": ticker,
+        "profile": _extract_profile(fundamental),
         "prices": price_records,
         "fundamental": _clean_record(fundamental) if fundamental else None,
         "technical": _clean_record(technical) if technical else None,
