@@ -6,12 +6,28 @@ async function fetchJson<T>(path: string): Promise<T> {
   return res.json();
 }
 
+/** Map variant sector names (yfinance) to canonical GICS names */
+const SECTOR_CANONICAL: Record<string, string> = {
+  'Consumer Cyclical': 'Consumer Discretionary',
+  'Consumer Defensive': 'Consumer Staples',
+  'Healthcare': 'Health Care',
+  'Technology': 'Information Technology',
+};
+
+export function normalizeSector(sector: string): string {
+  return SECTOR_CANONICAL[sector] ?? sector;
+}
+
 export function loadMeta() {
   return fetchJson<import('../types').Meta>('meta.json');
 }
 
-export function loadRankings() {
-  return fetchJson<import('../types').RankedStock[]>('rankings.json');
+export async function loadRankings() {
+  const data = await fetchJson<import('../types').RankedStock[]>('rankings.json');
+  return data.map((stock) => ({
+    ...stock,
+    sector: stock.sector ? normalizeSector(stock.sector) : stock.sector,
+  }));
 }
 
 export function loadStockDetail(ticker: string) {
