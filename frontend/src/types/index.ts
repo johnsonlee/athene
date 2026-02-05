@@ -255,7 +255,7 @@ export interface CapitalFlowArrow {
 export interface CapitalFlowPhase {
   id: string;
   date: string;
-  phase: 'normal' | 'deleverage' | 'bottom' | 'riskon';
+  phase: 'normal' | 'deleverage' | 'outflow' | 'bottom' | 'riskon';
   label_zh: string;
   label_en: string;
   description_zh: string;
@@ -264,6 +264,7 @@ export interface CapitalFlowPhase {
   flows: CapitalFlowArrow[];
   risk_net: number;
   safe_net: number;
+  untracked?: number;
 }
 
 export interface CapitalFlowWindow {

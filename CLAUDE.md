@@ -318,7 +318,7 @@ Reposition from stock screener to trend identification tool. Build sector-level 
 
 **Files**: `engine/collectors/sector_etf.py`, `engine/analyzers/sector_trend.py`, `engine/analyzers/trend_scorer.py`, `engine/exporters/trend_exporter.py`, `engine/config.py`, `engine/main.py`, `frontend/src/components/trends/TrendDashboard.tsx`, `frontend/src/components/trends/TrendLineChart.tsx`, `frontend/src/components/trends/RegimeBanner.tsx`, `frontend/src/hooks/useTrends.ts`, `frontend/src/hooks/useTrendHistory.ts`, `frontend/src/lib/dataLoader.ts`, `frontend/src/lib/i18n.tsx`, `frontend/src/types/index.ts`, `frontend/src/routes.tsx`, `frontend/src/components/About.tsx`
 
-### v11: Capital Flow Tracking (current)
+### v11: Capital Flow Tracking
 
 Track global capital rotation across 9 asset classes (5 risk, 4 safe) using ETF volume-price signals. Visualize fund flows as an interactive SVG diagram.
 
@@ -334,6 +334,18 @@ Track global capital rotation across 9 asset classes (5 risk, 4 safe) using ETF 
 - **SVG visualization**: New `frontend/src/components/flows/CapitalFlowViz.tsx` renders interactive SVG diagram with risk assets on the left, safe havens on the right, animated flow arrows between them. Includes interval selector (1W/2W/1M), phase indicator, and net flow summary.
 
 **Files**: `engine/collectors/capital_flow.py`, `engine/collectors/cftc.py`, `engine/collectors/ici.py`, `engine/analyzers/capital_flow.py`, `engine/exporters/capital_flow_exporter.py`, `engine/capital_flow_pipeline.py`, `engine/config.py`, `frontend/src/components/flows/CapitalFlowViz.tsx`
+
+### v12: Flow Normalization (current)
+
+Dollar-volume normalization for cross-asset comparability. Fixes three issues from v11: distorted flow magnitudes, missing phase detection, and phantom flow arrows.
+
+**Key changes from v11:**
+- **Dollar-volume normalization**: Raw flows are divided by each asset's weekly dollar volume to get dimensionless "flow intensity", then scaled to the median weekly dollar volume across all 9 assets. This makes BTC ($35B/day volume) and EWJ ($0.3B/day volume) produce comparable flow numbers instead of a 100× distortion.
+- **Broad Outflow phase**: New `outflow` phase detected when both risk_net < -3 AND safe_net < -1 (both sides declining simultaneously). Previously misclassified as "normal rotation". Label: "全面流出" / "Broad Outflow" with explanation that capital is exiting to money markets / deposits outside the tracked universe.
+- **Zero-sum flow arrows**: Flow arrow total volume capped at `min(total_outflow, total_inflow)`. Each source contributes proportionally to its share of total outflow, each sink proportionally to its share of total inflow. Prevents phantom arrows (e.g., $171B arrows when only $2B actually flowed into sinks).
+- **Untracked flow tracking**: Each phase now includes an `untracked` field = `total_outflow - total_inflow`, representing capital that left the tracked ETF universe (likely money market funds, bank deposits, etc.). Displayed in frontend when > $1B with orange highlight.
+
+**Files**: `engine/analyzers/capital_flow.py`, `frontend/src/components/flows/CapitalFlowViz.tsx`, `frontend/src/types/index.ts`, `frontend/src/lib/i18n.tsx`, `frontend/src/components/About.tsx`
 
 ## Scoring Design (v9)
 

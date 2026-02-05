@@ -389,6 +389,8 @@ def _detect_phase(risk_net: float, safe_net: float) -> str:
 
     if risk_net < -3 and safe_net > 1:
         return "deleverage"
+    if risk_net < -3 and safe_net < -1:
+        return "outflow"
     if risk_net > 3 and safe_net < -1:
         return "riskon"
     if risk_net > 0 and risk_net <= 3 and safe_net < 0:
@@ -401,23 +403,33 @@ def _generate_flow_arrows(
     min_flow: float = CAPITAL_FLOW_MIN_FLOW,
     max_arrows: int = CAPITAL_FLOW_MAX_ARROWS,
 ) -> List[Dict[str, Any]]:
-    """Generate flow arrows from sources (outflow) to sinks (inflow)."""
+    """Generate flow arrows from sources (outflow) to sinks (inflow).
+
+    Total arrow volume is capped at min(total_outflow, total_inflow) to
+    enforce zero-sum accounting.  Without this cap, broad-outflow scenarios
+    (where almost everything is a source) would produce phantom arrows that
+    vastly exceed the actual tracked inflows.
+    """
     sources = {nid: n for nid, n in nodes.items() if n["net"] < 0}
     sinks = {nid: n for nid, n in nodes.items() if n["net"] > 0}
 
     if not sources or not sinks:
         return []
 
+    total_outflow = sum(abs(n["net"]) for n in sources.values())
     total_inflow = sum(n["net"] for n in sinks.values())
-    if total_inflow <= 0:
+    if total_inflow <= 0 or total_outflow <= 0:
         return []
+
+    # Cap at the smaller side — the maximum that could actually flow
+    cap = min(total_outflow, total_inflow)
 
     arrows: List[Dict[str, Any]] = []
     for src_id, src in sources.items():
-        src_outflow = abs(src["net"])
+        src_share = abs(src["net"]) / total_outflow
         for sink_id, sink in sinks.items():
             sink_share = sink["net"] / total_inflow
-            amount = round(src_outflow * sink_share, 1)
+            amount = round(cap * src_share * sink_share, 1)
             if amount >= min_flow:
                 arrows.append({
                     "from": src_id,
@@ -486,6 +498,7 @@ def analyze_capital_flows(
     phase_labels = {
         "normal":     {"zh": "正常轮动", "en": "Normal Rotation"},
         "deleverage": {"zh": "去杠杆",   "en": "Deleveraging"},
+        "outflow":    {"zh": "全面流出", "en": "Broad Outflow"},
         "bottom":     {"zh": "筑底试探", "en": "Bottom Testing"},
         "riskon":     {"zh": "Risk-On",  "en": "Risk-On"},
     }
@@ -495,6 +508,8 @@ def analyze_capital_flows(
                        "en": "Capital rotating normally across asset classes, no systemic direction"},
         "deleverage": {"zh": "风险资产被抛售，资金涌入避险资产",
                        "en": "Risk assets sold off, capital flowing into safe havens"},
+        "outflow":    {"zh": "风险资产与避险资产同步流出，资金撤离至场外（货基/存款等）",
+                       "en": "Both risk and safe assets declining, capital exiting to money markets / deposits"},
         "bottom":     {"zh": "恐慌缓解，资金开始试探性回流风险资产",
                        "en": "Panic subsiding, capital tentatively flowing back to risk assets"},
         "riskon":     {"zh": "风险偏好恢复，资金从避险资产大规模回流",
@@ -525,6 +540,7 @@ def analyze_capital_flows(
 
         nodes: Dict[str, Dict[str, Any]] = {}
         all_signals: Dict[str, dict] = {}  # node_id -> signal details
+        dv_scales: Dict[str, float] = {}   # node_id -> weekly dollar vol ($B)
         risk_net = 0.0
         safe_net = 0.0
 
@@ -571,6 +587,9 @@ def analyze_capital_flows(
             tail = df_up_to.tail(actual_window)
             avg_dollar_vol = float((tail["Close"] * tail["Volume"]).mean())
 
+            # Track weekly dollar volume for cross-asset normalization
+            dv_scales[node_id] = avg_dollar_vol * actual_window / 1e9  # $B
+
             # Fuse signals
             net, confidence, sig_details = _fuse_signals(
                 cmf_val, obv_val, rdv_val, avg_dollar_vol, actual_window
@@ -591,6 +610,22 @@ def analyze_capital_flows(
                 risk_net += net
             else:
                 safe_net += net
+
+        # Step 2.5: Dollar-volume normalization
+        # Raw flows scale with dollar volume, making BTC ($35B/day) produce
+        # signals 100x larger than EWJ ($0.3B/day).  Normalize each asset's
+        # flow by its weekly dollar volume (giving dimensionless "intensity"),
+        # then scale to the median dollar volume so all assets are comparable.
+        valid_dvs = [v for v in dv_scales.values() if v > 0]
+        if valid_dvs:
+            median_dv = float(np.median(valid_dvs))
+            for nid, node in nodes.items():
+                dv = dv_scales.get(nid, 0.0)
+                if dv > 0 and node["net"] != 0:
+                    intensity = node["net"] / dv
+                    normalized = round(intensity * median_dv, 1)
+                    node["net"] = normalized
+                    node["value"] = _format_value(normalized)
 
         # Step 3: Cross-asset consistency adjustment
         nodes = _apply_cross_asset_consistency(nodes)
@@ -613,6 +648,11 @@ def analyze_capital_flows(
         # Generate flow arrows
         flows = _generate_flow_arrows(nodes)
 
+        # Compute untracked flow (imbalance between outflows and inflows)
+        total_outflow = round(sum(abs(n["net"]) for n in nodes.values() if n["net"] < 0), 1)
+        total_inflow = round(sum(n["net"] for n in nodes.values() if n["net"] > 0), 1)
+        untracked = round(total_outflow - total_inflow, 1)
+
         phase = {
             "id": f"w{weeks - w + 1}",
             "date": date_str,
@@ -625,6 +665,7 @@ def analyze_capital_flows(
             "flows": flows,
             "risk_net": risk_net,
             "safe_net": safe_net,
+            "untracked": untracked,
         }
         phases.append(phase)
 

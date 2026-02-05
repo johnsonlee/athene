@@ -21,6 +21,7 @@ function getNodeColor(net: number) {
 function getPhaseColor(phase: string) {
   switch (phase) {
     case 'deleverage': return '#ef4444';
+    case 'outflow': return '#f97316';
     case 'bottom': return '#f59e0b';
     case 'riskon': return '#22c55e';
     default: return '#6b7280';
@@ -141,14 +142,11 @@ function NodeBox({ data, pos, locale }: {
 
 // ─── Summary Bar Component ───
 function SummaryBar({ phase, t }: { phase: CapitalFlowPhase; t: (key: any, p?: any) => string }) {
-  const nodes = phase.nodes;
-  const totalOut = Object.values(nodes)
-    .filter(n => n.net < 0)
-    .reduce((s, n) => s + Math.abs(n.net), 0);
-
   const riskNet = phase.risk_net;
   const safeNet = phase.safe_net;
   const isRiskOn = riskNet > 0;
+  const untracked = phase.untracked ?? 0;
+  const hasUntracked = Math.abs(untracked) > 1;
 
   return (
     <div className="grid grid-cols-2 gap-2 sm:grid-cols-4 sm:gap-3">
@@ -185,14 +183,18 @@ function SummaryBar({ phase, t }: { phase: CapitalFlowPhase; t: (key: any, p?: a
           {isRiskOn ? t('flows.riskOn') : t('flows.riskOff')}
         </div>
       </div>
-      <div className="tech-card rounded-lg p-3">
+      <div className={`rounded-lg border p-3 ${
+        hasUntracked
+          ? 'border-orange-500/20 bg-orange-500/5'
+          : 'tech-card'
+      }`}>
         <div className="text-[10px] uppercase tracking-wider text-gray-500 dark:text-gray-500"
           style={{ fontFamily: 'monospace' }}>
-          {t('flows.totalVolume')}
+          {hasUntracked ? t('flows.untracked') : t('flows.totalVolume')}
         </div>
-        <div className="mt-0.5 text-lg font-bold text-indigo-400"
+        <div className={`mt-0.5 text-lg font-bold ${hasUntracked ? 'text-orange-400' : 'text-indigo-400'}`}
           style={{ fontFamily: 'monospace' }}>
-          ${Math.round(totalOut)}B
+          ${Math.round(hasUntracked ? untracked : Math.abs(riskNet) + Math.abs(safeNet))}B
         </div>
       </div>
     </div>
