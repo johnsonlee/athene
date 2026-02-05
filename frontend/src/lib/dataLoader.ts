@@ -45,3 +45,7 @@ export function loadTrends() {
 export function loadTrendHistory() {
   return fetchJson<import('../types').TrendHistory>('trend_history.json');
 }
+
+export function loadCapitalFlows() {
+  return fetchJson<import('../types').CapitalFlowData>('capital_flows.json');
+}

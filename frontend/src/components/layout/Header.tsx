@@ -11,6 +11,7 @@ export function Header() {
 
   const NAV_ITEMS = [
     { path: '/', label: t('nav.trends') },
+    { path: '/flows', label: t('nav.flows') },
     { path: '/dashboard', label: t('nav.dashboard') },
     { path: '/screener', label: t('nav.screener') },
     { path: '/about', label: t('nav.about') },

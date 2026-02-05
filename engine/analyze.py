@@ -51,6 +51,9 @@ from engine.exporters.json_exporter import (
 from engine.analyzers.sector_trend import analyze_sector_trends, compute_trend_history
 from engine.analyzers.trend_scorer import score_sector_trends
 from engine.exporters.trend_exporter import export_trends
+from engine.analyzers.capital_flow import analyze_capital_flows
+from engine.exporters.capital_flow_exporter import export_capital_flows
+from engine.config import CAPITAL_FLOW_WINDOWS
 from engine.exporters.changes import detect_changes, format_changes_markdown
 from engine.exporters.feed import generate_feed
 from engine.analyzers.ic_tracker import export_ic
@@ -135,6 +138,40 @@ def _reconstruct_etf_prices(collected_dir: str) -> dict[str, pd.DataFrame]:
         if not os.path.exists(etf_path):
             continue
         with open(etf_path, "r", encoding="utf-8") as f:
+            daily = json.load(f)
+        for ticker, row in daily.items():
+            if ticker not in ticker_rows:
+                ticker_rows[ticker] = []
+            ticker_rows[ticker].append((d, row))
+
+    result: dict[str, pd.DataFrame] = {}
+    for ticker, rows in ticker_rows.items():
+        records = []
+        for date_str, row in rows:
+            rec = {"Date": pd.Timestamp(date_str)}
+            rec.update(row)
+            records.append(rec)
+        df = pd.DataFrame(records).set_index("Date").sort_index()
+        df = df[~df.index.duplicated(keep="last")]
+        result[ticker] = df
+
+    return result
+
+
+def _reconstruct_capital_flow_etf_prices(collected_dir: str) -> dict[str, pd.DataFrame]:
+    """Reconstruct capital flow ETF price DataFrames from daily slices.
+
+    Same approach as _reconstruct_etf_prices but reads capital_flow_etfs.json files.
+    """
+    date_dirs = _sorted_date_dirs(collected_dir)
+    ticker_rows: dict[str, list[tuple[str, dict]]] = {}
+
+    for d in date_dirs:
+        dir_path = os.path.join(collected_dir, d)
+        cf_path = os.path.join(dir_path, "capital_flow_etfs.json")
+        if not os.path.exists(cf_path):
+            continue
+        with open(cf_path, "r", encoding="utf-8") as f:
             daily = json.load(f)
         for ticker, row in daily.items():
             if ticker not in ticker_rows:
@@ -425,6 +462,28 @@ def run(collected_dir: str = COLLECTED_DIR) -> None:
 
     log.info("Exporting trend data...")
     export_trends(trend_scored, regime_info, run_date, computed_history=trend_hist)
+
+    # Capital flow pipeline
+    log.info("Reconstructing capital flow ETF history from daily slices...")
+    cf_prices = _reconstruct_capital_flow_etf_prices(collected_dir)
+    if cf_prices:
+        log.info(f"Capital flow ETFs: {len(cf_prices)} tickers")
+        log.info("Analyzing capital flows (multi-window)...")
+        all_window_results: dict[str, list] = {}
+        for label, wdays in CAPITAL_FLOW_WINDOWS.items():
+            log.info(f"  Window {label} ({wdays} trading days)...")
+            phases = analyze_capital_flows(
+                cf_prices,
+                window_days=wdays,
+            )
+            all_window_results[label] = phases
+        log.info("Exporting capital flow data...")
+        export_capital_flows(all_window_results, run_date)
+        total_phases = sum(len(v) for v in all_window_results.values())
+        log.info(f"  Capital flow: {total_phases} phases across "
+                 f"{len(all_window_results)} windows")
+    else:
+        log.warning("No capital flow ETF data in collected/ — skipping capital flow analysis")
 
     # Export individual stock details
     log.info("Exporting individual stock details...")

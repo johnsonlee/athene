@@ -236,6 +236,48 @@ export interface TrendHistoryEntry {
 /** trend_history.json: keyed by date, then by sector name */
 export type TrendHistory = Record<string, Record<string, TrendHistoryEntry>>;
 
+// Capital Flow types
+export interface CapitalFlowNode {
+  label_zh: string;
+  label_en: string;
+  value: string;
+  net: number;
+  type: 'risk' | 'safe';
+}
+
+export interface CapitalFlowArrow {
+  from: string;
+  to: string;
+  amount: number;
+  label: string;
+}
+
+export interface CapitalFlowPhase {
+  id: string;
+  date: string;
+  phase: 'normal' | 'deleverage' | 'bottom' | 'riskon';
+  label_zh: string;
+  label_en: string;
+  description_zh: string;
+  description_en: string;
+  nodes: Record<string, CapitalFlowNode>;
+  flows: CapitalFlowArrow[];
+  risk_net: number;
+  safe_net: number;
+}
+
+export interface CapitalFlowWindow {
+  current_phase_idx: number;
+  phases: CapitalFlowPhase[];
+}
+
+export interface CapitalFlowData {
+  date: string;
+  default_window: string;
+  signal_method: string;
+  windows: Record<string, CapitalFlowWindow>;
+}
+
 export interface FilterState {
   search: string;
   sectors: string[];

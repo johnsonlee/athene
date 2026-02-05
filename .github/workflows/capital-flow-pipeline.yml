@@ -1,0 +1,109 @@
+name: Capital Flow Pipeline
+
+on:
+  # No scheduled trigger — daily pipeline handles collection + analysis.
+  # Keep workflow_dispatch for ad-hoc runs with custom window/lookback.
+  workflow_dispatch:
+    inputs:
+      window_days:
+        description: 'Analysis window in trading days (default 5 = weekly)'
+        required: false
+        default: '5'
+      lookback_weeks:
+        description: 'Number of weekly snapshots in timeline (default 52)'
+        required: false
+        default: '52'
+      force:
+        description: 'Force run even on non-trading days'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: capital-flow-pipeline
+  cancel-in-progress: false
+
+jobs:
+  capital-flow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      data_changed: ${{ steps.commit.outputs.data_changed }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Cache venv
+        uses: actions/cache@v4
+        with:
+          path: .venv
+          key: venv-${{ runner.os }}-py3.12-${{ hashFiles('requirements.txt') }}
+
+      - name: Install dependencies
+        run: |
+          test -d .venv || python -m venv .venv
+          source .venv/bin/activate
+          pip install -r requirements.txt
+
+      - name: Check trading day
+        id: check
+        run: |
+          source .venv/bin/activate
+          FORCE="${{ github.event.inputs.force }}"
+          if [ "$FORCE" = "true" ]; then
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          else
+            python -c "
+          from engine.utils.market_calendar import is_us_trading_day
+          import sys
+          if not is_us_trading_day():
+              print('US market is closed today — skipping pipeline')
+              sys.exit(1)
+          " && echo "skip=false" >> "$GITHUB_OUTPUT" || echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Run capital flow pipeline
+        if: steps.check.outputs.skip != 'true'
+        run: |
+          source .venv/bin/activate
+          WINDOW="${{ github.event.inputs.window_days || '5' }}"
+          LOOKBACK="${{ github.event.inputs.lookback_weeks || '52' }}"
+          python -m engine.capital_flow_pipeline --window "$WINDOW" --lookback "$LOOKBACK"
+
+      - name: Commit and push
+        if: steps.check.outputs.skip != 'true'
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset origin/main
+            git add -f frontend/public/data/capital_flows.json
+            if git diff --staged --quiet; then
+              echo "No capital flow data changes"
+              echo "data_changed=false" >> "$GITHUB_OUTPUT"
+              break
+            fi
+            git commit -m "data: update $(date -u +%Y-%m-%d) capital flows [skip ci]"
+            git push origin main && echo "data_changed=true" >> "$GITHUB_OUTPUT" && break
+            echo "Push failed (attempt $attempt), retrying..."
+            sleep $((attempt * 3))
+          done
+
+  deploy:
+    needs: capital-flow
+    if: needs.capital-flow.outputs.data_changed == 'true'
+    uses: ./.github/workflows/deploy-pages.yml

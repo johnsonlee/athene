@@ -10,6 +10,8 @@ Usage:
     python -m engine.collect macro [--date 2026-02-05] [--force]
     python -m engine.collect sector_etfs [--date 2026-02-05] [--force]
     python -m engine.collect sector_etfs --backfill
+    python -m engine.collect capital_flow_etfs [--date 2026-02-05] [--force]
+    python -m engine.collect capital_flow_etfs --backfill
 
 Each command writes output to collected/YYYY-MM-DD/<name>.json.
 Per-ticker collectors read tickers from the latest universe.json.
@@ -332,6 +334,65 @@ def cmd_sector_etfs(args: argparse.Namespace) -> None:
     log.info(f"Daily sector ETF data collected for {len(daily)} tickers")
 
 
+def cmd_capital_flow_etfs(args: argparse.Namespace) -> None:
+    """Collect capital flow ETF price data."""
+    if args.backfill:
+        _backfill_capital_flow_etfs(args)
+        return
+    if _skip_if_exists("capital_flow_etfs", args):
+        return
+
+    from engine.collectors.capital_flow import collect_capital_flow_etfs_daily
+
+    date_str = args.date
+    log.info(f"Collecting daily capital flow ETF data (date={date_str})...")
+    daily = collect_capital_flow_etfs_daily(date_str)
+    _write_json("capital_flow_etfs", daily, date_str=date_str)
+    log.info(f"Daily capital flow ETF data collected for {len(daily)} tickers")
+
+
+def _backfill_capital_flow_etfs(args: argparse.Namespace) -> None:
+    """Backfill: fetch historical capital flow ETF data and split into daily slices."""
+    from engine.collectors.capital_flow import collect_capital_flow_etfs
+
+    start_date = getattr(args, "start", None)
+    end_date = getattr(args, "end", None)
+    label = f"{start_date} to {end_date}" if start_date and end_date else "all available"
+    log.info(f"Backfilling capital flow ETF data ({label})...")
+    etf_prices = collect_capital_flow_etfs(end_date=end_date)
+
+    for ticker, df in etf_prices.items():
+        for date_val, row in df.iterrows():
+            date_str = pd.Timestamp(date_val).strftime("%Y-%m-%d")
+            if start_date and date_str < start_date:
+                continue
+            d = _get_date_dir(date_str)
+            path = os.path.join(d, "capital_flow_etfs.json")
+
+            existing = {}
+            if os.path.exists(path):
+                with open(path, "r", encoding="utf-8") as f:
+                    existing = json.load(f)
+
+            existing[ticker] = {
+                "Open": float(row["Open"]),
+                "High": float(row["High"]),
+                "Low": float(row["Low"]),
+                "Close": float(row["Close"]),
+                "Volume": int(row["Volume"]),
+            }
+
+            os.makedirs(d, exist_ok=True)
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump(existing, f, default=str)
+
+    date_count = sum(
+        1 for d in os.listdir(COLLECTED_DIR)
+        if _is_date_dir(d) and os.path.exists(os.path.join(COLLECTED_DIR, d, "capital_flow_etfs.json"))
+    )
+    log.info(f"Backfill complete: {len(etf_prices)} ETFs across {date_count} date directories")
+
+
 def _backfill_sector_etfs(args: argparse.Namespace) -> None:
     """Backfill: fetch historical sector ETF data and split into daily slices."""
     from engine.collectors.sector_etf import collect_sector_etfs
@@ -430,6 +491,15 @@ def main() -> None:
     p_etfs.add_argument("--start", help="Backfill start date (YYYY-MM-DD)")
     p_etfs.add_argument("--end", help="Backfill end date (YYYY-MM-DD)")
     p_etfs.set_defaults(func=cmd_sector_etfs)
+
+    # capital_flow_etfs
+    p_cf = subparsers.add_parser("capital_flow_etfs", help="Collect capital flow ETF data")
+    _add_common_args(p_cf)
+    p_cf.add_argument("--backfill", action="store_true",
+                      help="Fetch historical data and split into daily slices")
+    p_cf.add_argument("--start", help="Backfill start date (YYYY-MM-DD)")
+    p_cf.add_argument("--end", help="Backfill end date (YYYY-MM-DD)")
+    p_cf.set_defaults(func=cmd_capital_flow_etfs)
 
     args = parser.parse_args()
     args.func(args)
