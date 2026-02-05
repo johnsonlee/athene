@@ -301,7 +301,7 @@ Two-part intelligence upgrade: better sentiment NLP and macro regime awareness.
 
 **Files**: `engine/analyzers/sentiment.py`, `engine/collectors/macro.py`, `engine/analyzers/macro.py`, `engine/scorer/factor_model.py`, `engine/config.py`, `engine/exporters/json_exporter.py`, `engine/main.py`
 
-### v10: Trend Dashboard (current)
+### v10: Trend Dashboard
 
 Reposition from stock screener to trend identification tool. Build sector-level trend analysis with interactive frontend.
 
@@ -317,6 +317,23 @@ Reposition from stock screener to trend identification tool. Build sector-level 
 - **Version history timeline**: About page now includes a visual timeline of all versions (v1-v10) with current/deprecated badges.
 
 **Files**: `engine/collectors/sector_etf.py`, `engine/analyzers/sector_trend.py`, `engine/analyzers/trend_scorer.py`, `engine/exporters/trend_exporter.py`, `engine/config.py`, `engine/main.py`, `frontend/src/components/trends/TrendDashboard.tsx`, `frontend/src/components/trends/TrendLineChart.tsx`, `frontend/src/components/trends/RegimeBanner.tsx`, `frontend/src/hooks/useTrends.ts`, `frontend/src/hooks/useTrendHistory.ts`, `frontend/src/lib/dataLoader.ts`, `frontend/src/lib/i18n.tsx`, `frontend/src/types/index.ts`, `frontend/src/routes.tsx`, `frontend/src/components/About.tsx`
+
+### v11: Capital Flow Tracking (current)
+
+Track global capital rotation across 9 asset classes (5 risk, 4 safe) using ETF volume-price signals. Visualize fund flows as an interactive SVG diagram.
+
+**Key changes from v10:**
+- **Capital flow ETF collector**: New `engine/collectors/capital_flow.py` fetches daily OHLCV for 9 ETFs — risk assets (SPY, VGK, EWJ, EEM, BTC-USD) and safe havens (GLD, TLT, BIL, LQD). Supports daily snapshots, historical backfill, and reconstruction from stored daily slices.
+- **Multi-signal fusion analyzer**: New `engine/analyzers/capital_flow.py` computes per-asset flow estimates using CMF (40%) + OBV slope (30%) + Return×DollarVolume (30%). Direction voting (2/3 agreement → boost, outlier → penalize), cross-asset consistency checks (risk↑ safe↓ → ×1.3, same direction → ×0.7).
+- **Optional institutional data**: CFTC COT futures positioning (`engine/collectors/cftc.py`) for directional confirmation (±15-25%). ICI fund flows (`engine/collectors/ici.py`) for magnitude calibration (scale factor [0.2, 5.0]).
+- **Multi-window analysis**: Analyzes capital flows across 1W/2W/1M windows simultaneously. Each window produces independent phase detection and flow arrow computation.
+- **Phase detection**: Classifies market state — deleverage (risk_net < -3, safe_net > 1), risk-on (risk_net > 3, safe_net < -1), bottom (risk_net ∈ (0, 3], safe_net < 0), normal (default).
+- **Flow arrow computation**: Sources (net < 0) → sinks (net > 0) with proportional allocation, minimum ≥0.1B threshold, max 10 arrows per window.
+- **Capital flow exporter**: New `engine/exporters/capital_flow_exporter.py` exports `capital_flows.json` with multi-window structure: `{date, default_window, windows: {1W/2W/1M: {phases[]}}}`.
+- **Standalone pipeline**: `engine/capital_flow_pipeline.py` — independent CLI for capital flow collection + analysis, runnable separately from the main stock scoring pipeline.
+- **SVG visualization**: New `frontend/src/components/flows/CapitalFlowViz.tsx` renders interactive SVG diagram with risk assets on the left, safe havens on the right, animated flow arrows between them. Includes interval selector (1W/2W/1M), phase indicator, and net flow summary.
+
+**Files**: `engine/collectors/capital_flow.py`, `engine/collectors/cftc.py`, `engine/collectors/ici.py`, `engine/analyzers/capital_flow.py`, `engine/exporters/capital_flow_exporter.py`, `engine/capital_flow_pipeline.py`, `engine/config.py`, `frontend/src/components/flows/CapitalFlowViz.tsx`
 
 ## Scoring Design (v9)
 
