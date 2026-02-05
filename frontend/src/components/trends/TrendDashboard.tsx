@@ -160,7 +160,7 @@ export function TrendDashboard() {
           </table>
 
           {/* Mobile cards */}
-          <div className="space-y-2 md:hidden">
+          <div className="space-y-2 px-3 pb-3 md:hidden">
             {filteredStocks.map((stock) => (
               <div
                 key={stock.ticker}
