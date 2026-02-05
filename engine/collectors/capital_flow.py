@@ -34,6 +34,7 @@ log = get_logger(__name__)
 def collect_capital_flow_etfs(
     lookback_weeks: int | None = None,
     end_date: str | None = None,
+    start_date: str | None = None,
 ) -> Dict[str, pd.DataFrame]:
     """Fetch OHLCV for global asset class ETFs.
 
@@ -41,6 +42,8 @@ def collect_capital_flow_etfs(
         lookback_weeks: Number of weekly windows to cover. Defaults to
             CAPITAL_FLOW_LOOKBACK_WEEKS.
         end_date: End date (YYYY-MM-DD). Defaults to now.
+        start_date: Start date (YYYY-MM-DD). If provided, overrides
+            the lookback_weeks calculation.
 
     Returns:
         dict mapping ticker (e.g. "SPY", "GLD") -> DataFrame with
@@ -50,9 +53,12 @@ def collect_capital_flow_etfs(
     tickers = list(CAPITAL_FLOW_ETFS.keys())
 
     end = datetime.strptime(end_date, "%Y-%m-%d") if end_date else datetime.now()
-    # Extra buffer for weekends/holidays
-    calendar_days = weeks * 7 + 30
-    start = end - timedelta(days=calendar_days)
+    if start_date:
+        start = datetime.strptime(start_date, "%Y-%m-%d")
+    else:
+        # Extra buffer for weekends/holidays
+        calendar_days = weeks * 7 + 30
+        start = end - timedelta(days=calendar_days)
 
     log.info(f"Downloading capital flow ETF prices: {len(tickers)} tickers, "
              f"{start.strftime('%Y-%m-%d')} to {end.strftime('%Y-%m-%d')}")
