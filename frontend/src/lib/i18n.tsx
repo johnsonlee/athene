@@ -360,8 +360,8 @@ const translations = {
 
   zh: {
     // Nav
-    'nav.trends': '趋势',
-    'nav.flows': '资金流',
+    'nav.trends': '板块趋势',
+    'nav.flows': '资金流向',
     'nav.dashboard': '市场概览',
     'nav.screener': '选股器',
     'nav.about': '关于',
