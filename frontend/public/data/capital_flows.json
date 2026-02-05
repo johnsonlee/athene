@@ -1,1 +1,1 @@
-{"date":"2026-02-05","default_window":"1W","signal_method":"CMF+OBV+RDV fusion with cross-asset consistency","windows":{"1W":{"current_phase_idx":0,"phases":[]},"2W":{"current_phase_idx":0,"phases":[]},"1M":{"current_phase_idx":0,"phases":[]}}}
+{"date":"2026-02-05","default_window":"5d","signal_method":"CMF+OBV+RDV fusion with cross-asset consistency","windows":{"5d":{"current_phase_idx":0,"phases":[]}}}
