@@ -423,7 +423,8 @@ def run(collected_dir: str = COLLECTED_DIR) -> None:
     _validate_data_quality(ranked, len(tickers), prices)
 
     # Detect changes
-    run_date = time.strftime("%Y-%m-%d")
+    from engine.utils.market_calendar import us_market_date
+    run_date = us_market_date()
     changes = detect_changes(ranked, universe)
     if changes:
         log.info(f"Rating changes: {len(changes)}")

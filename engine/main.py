@@ -282,7 +282,8 @@ def run(tickers_override: list[str] | None = None) -> None:
     ranked = assign_tiers(composite)
 
     # Detect changes (before overwriting rankings.json)
-    run_date = time.strftime("%Y-%m-%d")
+    from engine.utils.market_calendar import us_market_date
+    run_date = us_market_date()
     full_run = not test_mode and not incremental
     if full_run:
         changes = detect_changes(ranked, universe)

@@ -86,7 +86,8 @@ def collect_sector_etfs(start_date: str | None = None, end_date: str | None = No
         dict mapping ticker (e.g. "XLK", "SPY") -> DataFrame[Date, Open, High, Low, Close, Volume]
     """
     tickers = list(SECTOR_ETFS.keys()) + [SPY_TICKER]
-    end = datetime.strptime(end_date, "%Y-%m-%d") if end_date else datetime.now()
+    from engine.utils.market_calendar import us_market_now
+    end = datetime.strptime(end_date, "%Y-%m-%d") if end_date else us_market_now()
     start = datetime.strptime(start_date, "%Y-%m-%d") if start_date else end - timedelta(days=PRICE_HISTORY_DAYS)
 
     log.info(f"Downloading sector ETF prices: {len(tickers)} tickers")

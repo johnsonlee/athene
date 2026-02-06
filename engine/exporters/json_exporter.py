@@ -61,9 +61,10 @@ def export_meta(ticker_count: int, run_date: str | None = None, macro: dict | No
     Args:
         macro: Optional macro regime info dict from detect_regime().
     """
+    from engine.utils.market_calendar import us_market_date, us_market_now
     data: Dict[str, Any] = {
-        "date": run_date or datetime.now().strftime("%Y-%m-%d"),
-        "timestamp": datetime.now().isoformat(),
+        "date": run_date or us_market_date(),
+        "timestamp": us_market_now().isoformat(),
         "version": "1.0.0",
         "ticker_count": ticker_count,
     }
@@ -96,7 +97,8 @@ def export_history(ranked: pd.DataFrame, run_date: str | None = None) -> str:
     Each day's entry is keyed by date, containing per-ticker
     composite_score, tier, rank, and percentile.
     """
-    run_date = run_date or datetime.now().strftime("%Y-%m-%d")
+    from engine.utils.market_calendar import us_market_date
+    run_date = run_date or us_market_date()
 
     history_path = os.path.join(OUTPUT_DIR, "history.json")
     history: dict = {}

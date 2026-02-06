@@ -52,7 +52,8 @@ def collect_capital_flow_etfs(
     weeks = lookback_weeks or CAPITAL_FLOW_LOOKBACK_WEEKS
     tickers = list(CAPITAL_FLOW_ETFS.keys())
 
-    end = datetime.strptime(end_date, "%Y-%m-%d") if end_date else datetime.now()
+    from engine.utils.market_calendar import us_market_now
+    end = datetime.strptime(end_date, "%Y-%m-%d") if end_date else us_market_now()
     if start_date:
         start = datetime.strptime(start_date, "%Y-%m-%d")
     else:
@@ -189,7 +190,8 @@ def load_capital_flow_etfs_from_collected(
     from engine.collect import COLLECTED_DIR
 
     weeks = lookback_weeks or CAPITAL_FLOW_LOOKBACK_WEEKS
-    end = datetime.strptime(end_date, "%Y-%m-%d") if end_date else datetime.now()
+    from engine.utils.market_calendar import us_market_now
+    end = datetime.strptime(end_date, "%Y-%m-%d") if end_date else us_market_now()
     # Extra buffer for weekends/holidays (same as live fetch)
     calendar_days = weeks * 7 + 30
     start = end - timedelta(days=calendar_days)

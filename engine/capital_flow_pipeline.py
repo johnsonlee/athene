@@ -16,6 +16,7 @@ import argparse
 import sys
 import time
 
+from engine.utils.market_calendar import us_market_date
 from engine.collectors.capital_flow import (
     collect_capital_flow_etfs,
     load_capital_flow_etfs_from_collected,
@@ -45,7 +46,7 @@ def run(window_days: int | None = None, lookback_weeks: int | None = None) -> No
     if lookback_weeks:
         log.info(f"  Lookback: {lookback_weeks} snapshots")
 
-    run_date = time.strftime("%Y-%m-%d")
+    run_date = us_market_date()
 
     # Step 1: Load ETF price data (prefer stored daily slices, fallback to live)
     log.info("Step 1/5: Loading global asset class ETF data...")
