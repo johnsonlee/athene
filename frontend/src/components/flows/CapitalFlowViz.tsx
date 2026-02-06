@@ -234,19 +234,24 @@ function Timeline({ phases, activeIdx, onSelect, locale }: {
     return i % step === 0;
   };
 
+  // Fixed height for dot row to keep connector lines aligned
+  const dotRowHeight = 14; // max dot size (active)
+  const dotCenterY = dotRowHeight / 2;
+
   return (
     <div
       ref={scrollRef}
-      className="mb-4 flex items-center overflow-x-auto scrollbar-thin"
+      className="mb-4 flex items-start overflow-x-auto scrollbar-thin"
       style={{ scrollbarWidth: 'thin', scrollbarColor: 'rgba(255,255,255,0.1) transparent' }}
     >
       {phases.map((p, i) => {
         const active = i === activeIdx;
         const past = i < activeIdx;
         const color = getPhaseColor(p.phase);
+        const dotSize = active ? 14 : compact ? 8 : 10;
 
         return (
-          <div key={p.id} className="flex items-center" style={{ flexShrink: 0 }}
+          <div key={p.id} className="flex items-start" style={{ flexShrink: 0 }}
             ref={active ? activeRef : undefined}>
             <button
               onClick={() => onSelect(i)}
@@ -254,10 +259,11 @@ function Timeline({ phases, activeIdx, onSelect, locale }: {
               style={{ padding: compact ? '4px 2px' : '6px', minWidth: compact ? 28 : undefined }}
             >
               <div
-                className="rounded-full transition-all duration-300"
+                className="rounded-full transition-colors duration-300"
                 style={{
-                  width: active ? 14 : compact ? 8 : 10,
-                  height: active ? 14 : compact ? 8 : 10,
+                  width: dotSize,
+                  height: dotSize,
+                  marginTop: (dotRowHeight - dotSize) / 2,
                   background: active ? color : past ? color + '88' : 'rgba(255,255,255,0.1)',
                   border: `2px solid ${active ? color : past ? color + '44' : 'rgba(255,255,255,0.08)'}`,
                   boxShadow: active ? `0 0 12px ${color}55` : 'none',
@@ -282,7 +288,7 @@ function Timeline({ phases, activeIdx, onSelect, locale }: {
                   width: compact ? 12 : 20,
                   height: 2,
                   flexShrink: 0,
-                  marginBottom: compact && !active ? 0 : 28,
+                  marginTop: (compact ? 4 : 6) + dotCenterY,
                   background: past
                     ? `linear-gradient(to right, ${color}66, ${color}22)`
                     : 'rgba(255,255,255,0.06)',
