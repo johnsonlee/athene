@@ -1,8 +1,25 @@
-"""US stock market trading day check."""
+"""US stock market trading day and date utilities."""
 
 from __future__ import annotations
 
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
+
+_US_EASTERN = ZoneInfo("America/New_York")
+
+
+def us_market_date() -> str:
+    """Return today's date in US Eastern Time as YYYY-MM-DD.
+
+    All pipeline dates should use this instead of time.strftime() or
+    datetime.now() to ensure consistency with US market hours.
+    """
+    return datetime.now(_US_EASTERN).strftime("%Y-%m-%d")
+
+
+def us_market_now() -> datetime:
+    """Return the current datetime in US Eastern Time (timezone-aware)."""
+    return datetime.now(_US_EASTERN)
 
 
 def _us_market_holidays(year: int) -> set[date]:
@@ -49,9 +66,9 @@ def _us_market_holidays(year: int) -> set[date]:
 
 
 def is_us_trading_day(d: date | None = None) -> bool:
-    """Return True if *d* (default: today) is a US market trading day."""
+    """Return True if *d* (default: today in US Eastern) is a US market trading day."""
     if d is None:
-        d = date.today()
+        d = datetime.now(_US_EASTERN).date()
     # Weekends
     if d.weekday() >= 5:
         return False

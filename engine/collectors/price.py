@@ -101,7 +101,8 @@ def collect_prices(tickers: list[str], start_date: str | None = None, end_date: 
         dict mapping ticker → DataFrame with columns:
         Date (index), Open, High, Low, Close, Volume
     """
-    end = datetime.strptime(end_date, "%Y-%m-%d") if end_date else datetime.now()
+    from engine.utils.market_calendar import us_market_now
+    end = datetime.strptime(end_date, "%Y-%m-%d") if end_date else us_market_now()
     start = datetime.strptime(start_date, "%Y-%m-%d") if start_date else end - timedelta(days=PRICE_HISTORY_DAYS)
     result: Dict[str, pd.DataFrame] = {}
 

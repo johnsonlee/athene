@@ -49,8 +49,9 @@ def _ensure_date_dir(date_str: str) -> str:
 
 
 def _today() -> str:
-    """Return today's date as YYYY-MM-DD string."""
-    return time.strftime("%Y-%m-%d")
+    """Return today's date in US Eastern Time as YYYY-MM-DD string."""
+    from engine.utils.market_calendar import us_market_date
+    return us_market_date()
 
 
 def _write_json(name: str, data: object, date_str: str | None = None) -> str:
