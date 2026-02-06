@@ -108,15 +108,21 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -f collected/
-          if git diff --staged --quiet; then
-            echo "No collected data changes"
-          else
-            LABEL="backfill: collected data"
-            [ -n "${{ inputs.start_date }}" ] && LABEL="$LABEL (${{ inputs.start_date }} to ${{ inputs.end_date }})"
+          LABEL="backfill: collected data"
+          [ -n "${{ inputs.start_date }}" ] && LABEL="$LABEL (${{ inputs.start_date }} to ${{ inputs.end_date }})"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset origin/main
+            git add -f collected/
+            if git diff --staged --quiet; then
+              echo "No collected data changes"
+              break
+            fi
             git commit -m "$LABEL [skip ci]"
-            git push
-          fi
+            git push origin main && break
+            echo "Push failed (attempt $attempt), retrying..."
+            sleep $((attempt * 3))
+          done
 
       - name: Run analysis
         if: inputs.skip_analyze != true
@@ -126,15 +132,24 @@ jobs:
         if: inputs.skip_analyze != true
         id: analyze-commit
         run: |
-          git add -f frontend/public/data/
-          if git diff --staged --quiet; then
-            echo "No analysis data changes"
-            echo "data_changed=false" >> "$GITHUB_OUTPUT"
-          else
+          DATA_CHANGED=false
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset origin/main
+            git add -f frontend/public/data/
+            if git diff --staged --quiet; then
+              echo "No analysis data changes"
+              break
+            fi
             git commit -m "data: update $(date -u +%Y-%m-%d) rankings"
-            git push
-            echo "data_changed=true" >> "$GITHUB_OUTPUT"
-          fi
+            if git push origin main; then
+              DATA_CHANGED=true
+              break
+            fi
+            echo "Push failed (attempt $attempt), retrying..."
+            sleep $((attempt * 3))
+          done
+          echo "data_changed=$DATA_CHANGED" >> "$GITHUB_OUTPUT"
 
   deploy:
     needs: backfill
