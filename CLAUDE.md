@@ -26,6 +26,7 @@ npm run build    # Production build → dist/
 
 ## Git Workflow
 
+- **All changes require a PR.** Never push directly to main. Create a feature branch, commit changes, and submit a pull request for review.
 - **Always squash commits before push.** Each push to a feature branch should be a single, clean commit summarizing all changes.
 - **No Claude session links in commits.** Do not append `https://claude.ai/code/...` URLs to commit messages.
 
