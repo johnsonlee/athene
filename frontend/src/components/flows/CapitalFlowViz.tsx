@@ -1,6 +1,7 @@
 import { useState, useCallback, useMemo, useRef, useEffect } from 'react';
 import { useCapitalFlows } from '../../hooks/useCapitalFlows';
 import { useI18n } from '../../lib/i18n';
+import { useTheme } from '../../lib/theme';
 import { LoadingSpinner } from '../common/LoadingSpinner';
 import type { CapitalFlowPhase, CapitalFlowNode } from '../../types';
 
@@ -11,11 +12,17 @@ const NODE_W = 100;
 const NODE_H = 52;
 
 // ─── Color helpers ───
-function getNodeColor(net: number) {
-  if (net > 5) return { fill: '#064e3b', stroke: '#10b981', text: '#6ee7b7', glow: 'rgba(16,185,129,0.3)' };
-  if (net > 0) return { fill: '#14532d', stroke: '#22c55e', text: '#86efac', glow: 'rgba(34,197,94,0.2)' };
-  if (net > -5) return { fill: '#451a03', stroke: '#f59e0b', text: '#fcd34d', glow: 'rgba(245,158,11,0.15)' };
-  return { fill: '#450a0a', stroke: '#ef4444', text: '#fca5a5', glow: 'rgba(239,68,68,0.3)' };
+function getNodeColor(net: number, isDark: boolean) {
+  if (isDark) {
+    if (net > 5) return { fill: '#064e3b', stroke: '#10b981', text: '#6ee7b7', label: '#d1d5db', glow: 'rgba(16,185,129,0.3)' };
+    if (net > 0) return { fill: '#14532d', stroke: '#22c55e', text: '#86efac', label: '#d1d5db', glow: 'rgba(34,197,94,0.2)' };
+    if (net > -5) return { fill: '#451a03', stroke: '#f59e0b', text: '#fcd34d', label: '#d1d5db', glow: 'rgba(245,158,11,0.15)' };
+    return { fill: '#450a0a', stroke: '#ef4444', text: '#fca5a5', label: '#d1d5db', glow: 'rgba(239,68,68,0.3)' };
+  }
+  if (net > 5) return { fill: '#ecfdf5', stroke: '#10b981', text: '#065f46', label: '#374151', glow: 'rgba(16,185,129,0.15)' };
+  if (net > 0) return { fill: '#f0fdf4', stroke: '#22c55e', text: '#166534', label: '#374151', glow: 'rgba(34,197,94,0.1)' };
+  if (net > -5) return { fill: '#fffbeb', stroke: '#f59e0b', text: '#92400e', label: '#374151', glow: 'rgba(245,158,11,0.1)' };
+  return { fill: '#fef2f2', stroke: '#ef4444', text: '#991b1b', label: '#374151', glow: 'rgba(239,68,68,0.15)' };
 }
 
 function getPhaseColor(phase: string) {
@@ -56,10 +63,11 @@ function computeNodePositions(nodes: Record<string, CapitalFlowNode>) {
 }
 
 // ─── Flow Path Component ───
-function FlowPath({ from, to, amount, maxAmount, label, animDelay, positions }: {
+function FlowPath({ from, to, amount, maxAmount, label, animDelay, positions, isDark }: {
   from: string; to: string; amount: number; maxAmount: number;
   label: string; animDelay: number;
   positions: Record<string, { x: number; y: number }>;
+  isDark: boolean;
 }) {
   const fp = positions[from];
   const tp = positions[to];
@@ -87,7 +95,7 @@ function FlowPath({ from, to, amount, maxAmount, label, animDelay, positions }: 
 
   return (
     <g>
-      <path d={path} fill="none" stroke="rgba(99,102,241,0.08)" strokeWidth={thickness + 4} />
+      <path d={path} fill="none" stroke={isDark ? 'rgba(99,102,241,0.08)' : 'rgba(99,102,241,0.06)'} strokeWidth={thickness + 4} />
       <path
         d={path} fill="none" stroke="#6366f1" strokeWidth={thickness}
         opacity={opacity} strokeLinecap="round"
@@ -96,15 +104,17 @@ function FlowPath({ from, to, amount, maxAmount, label, animDelay, positions }: 
           animation: `flowDraw 1s ease ${animDelay}s forwards`,
         }}
       />
-      <circle r={Math.max(2, thickness / 2)} fill="#a5b4fc" opacity={0.9}>
+      <circle r={Math.max(2, thickness / 2)} fill={isDark ? '#a5b4fc' : '#6366f1'} opacity={0.9}>
         <animateMotion dur="3s" repeatCount="indefinite" begin={`${animDelay}s`}>
           <mpath href={`#${pathId}`} />
         </animateMotion>
       </circle>
       <path id={pathId} d={path} fill="none" stroke="none" />
       <rect x={labelX - 22} y={labelY - 8} width={44} height={16} rx={4}
-        fill="rgba(15,15,25,0.85)" stroke="rgba(99,102,241,0.2)" strokeWidth={0.5} />
-      <text x={labelX} y={labelY + 3} textAnchor="middle" fill="#a5b4fc"
+        fill={isDark ? 'rgba(15,15,25,0.85)' : 'rgba(255,255,255,0.92)'}
+        stroke={isDark ? 'rgba(99,102,241,0.2)' : 'rgba(99,102,241,0.3)'} strokeWidth={0.5} />
+      <text x={labelX} y={labelY + 3} textAnchor="middle"
+        fill={isDark ? '#a5b4fc' : '#4f46e5'}
         fontSize="8" fontWeight="500" style={{ fontFamily: 'monospace' }}>
         {label}
       </text>
@@ -113,12 +123,13 @@ function FlowPath({ from, to, amount, maxAmount, label, animDelay, positions }: 
 }
 
 // ─── Node Box Component ───
-function NodeBox({ data, pos, locale }: {
+function NodeBox({ data, pos, locale, isDark }: {
   data: CapitalFlowNode;
   pos: { x: number; y: number };
   locale: string;
+  isDark: boolean;
 }) {
-  const colors = getNodeColor(data.net);
+  const colors = getNodeColor(data.net, isDark);
   const label = locale === 'zh' ? data.label_zh : data.label_en;
   return (
     <g>
@@ -128,7 +139,7 @@ function NodeBox({ data, pos, locale }: {
         filter={`drop-shadow(0 0 6px ${colors.glow})`}
       />
       <text x={pos.x + NODE_W / 2} y={pos.y + 18} textAnchor="middle"
-        fill="#d1d5db" fontSize="11" fontWeight="600">
+        fill={colors.label} fontSize="11" fontWeight="600">
         {label}
       </text>
       <text x={pos.x + NODE_W / 2} y={pos.y + 36} textAnchor="middle"
@@ -202,11 +213,12 @@ function SummaryBar({ phase, t }: { phase: CapitalFlowPhase; t: (key: any, p?: a
 }
 
 // ─── Timeline Component ───
-function Timeline({ phases, activeIdx, onSelect, locale }: {
+function Timeline({ phases, activeIdx, onSelect, locale, isDark }: {
   phases: CapitalFlowPhase[];
   activeIdx: number;
   onSelect: (idx: number) => void;
   locale: string;
+  isDark: boolean;
 }) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const activeRef = useRef<HTMLDivElement>(null);
@@ -242,7 +254,7 @@ function Timeline({ phases, activeIdx, onSelect, locale }: {
     <div
       ref={scrollRef}
       className="mb-4 flex items-start overflow-x-auto scrollbar-thin"
-      style={{ scrollbarWidth: 'thin', scrollbarColor: 'rgba(255,255,255,0.1) transparent' }}
+      style={{ scrollbarWidth: 'thin', scrollbarColor: isDark ? 'rgba(255,255,255,0.1) transparent' : 'rgba(0,0,0,0.15) transparent' }}
     >
       {phases.map((p, i) => {
         const active = i === activeIdx;
@@ -264,13 +276,13 @@ function Timeline({ phases, activeIdx, onSelect, locale }: {
                   width: dotSize,
                   height: dotSize,
                   marginTop: (dotRowHeight - dotSize) / 2,
-                  background: active ? color : past ? color + '88' : 'rgba(255,255,255,0.1)',
-                  border: `2px solid ${active ? color : past ? color + '44' : 'rgba(255,255,255,0.08)'}`,
+                  background: active ? color : past ? color + '88' : (isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)'),
+                  border: `2px solid ${active ? color : past ? color + '44' : (isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.12)')}`,
                   boxShadow: active ? `0 0 12px ${color}55` : 'none',
                 }}
               />
               {showDateLabel(i) && (
-                <span className={`text-[10px] ${active ? 'text-gray-200 font-semibold' : 'text-gray-600 font-normal'}`}
+                <span className={`text-[10px] ${active ? 'text-gray-800 dark:text-gray-200 font-semibold' : 'text-gray-600 font-normal'}`}
                   style={{ fontFamily: 'monospace', whiteSpace: 'nowrap' }}>
                   {p.date.slice(5)}
                 </span>
@@ -291,7 +303,7 @@ function Timeline({ phases, activeIdx, onSelect, locale }: {
                   marginTop: (compact ? 4 : 6) + dotCenterY,
                   background: past
                     ? `linear-gradient(to right, ${color}66, ${color}22)`
-                    : 'rgba(255,255,255,0.06)',
+                    : (isDark ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.08)'),
                 }}
               />
             )}
@@ -303,10 +315,11 @@ function Timeline({ phases, activeIdx, onSelect, locale }: {
 }
 
 // ─── Column Labels ───
-function ColumnLabels({ t, positions, nodes }: {
+function ColumnLabels({ t, positions, nodes, isDark }: {
   t: (key: any) => string;
   positions: Record<string, { x: number; y: number }>;
   nodes: Record<string, CapitalFlowNode>;
+  isDark: boolean;
 }) {
   const risk = Object.entries(nodes).filter(([, n]) => n.type === 'risk');
   const safe = Object.entries(nodes).filter(([, n]) => n.type === 'safe');
@@ -326,7 +339,7 @@ function ColumnLabels({ t, positions, nodes }: {
         {t('flows.safeAssets')}
       </text>
       <line x1={SVG_W / 2} y1={35} x2={SVG_W / 2} y2={SVG_H - 10}
-        stroke="rgba(255,255,255,0.04)" strokeWidth={1} strokeDasharray="4 4" />
+        stroke={isDark ? 'rgba(255,255,255,0.04)' : 'rgba(0,0,0,0.06)'} strokeWidth={1} strokeDasharray="4 4" />
     </>
   );
 }
@@ -389,6 +402,8 @@ function filterPhasesByRange(phases: CapitalFlowPhase[], range: RangeKey): Capit
 export function CapitalFlowViz() {
   const { data, loading, error } = useCapitalFlows();
   const { t, locale } = useI18n();
+  const { theme } = useTheme();
+  const isDark = theme === 'dark';
   const [activeIdx, setActiveIdx] = useState<number | null>(null);
   const [animKey, setAnimKey] = useState(0);
   const [interval, setInterval] = useState<string | null>(null);
@@ -497,7 +512,7 @@ export function CapitalFlowViz() {
       </div>
 
       {/* Timeline */}
-      <Timeline phases={phases} activeIdx={resolvedIdx} onSelect={handleSelect} locale={locale} />
+      <Timeline phases={phases} activeIdx={resolvedIdx} onSelect={handleSelect} locale={locale} isDark={isDark} />
 
       {/* Summary stats */}
       <SummaryBar phase={phase} t={t} />
@@ -505,7 +520,7 @@ export function CapitalFlowViz() {
       {/* Flow Diagram */}
       <div className="tech-card overflow-hidden rounded-xl p-2">
         <svg key={animKey} width="100%" viewBox={`0 0 ${SVG_W} ${SVG_H}`} className="block">
-          <ColumnLabels t={t} positions={positions} nodes={phase.nodes} />
+          <ColumnLabels t={t} positions={positions} nodes={phase.nodes} isDark={isDark} />
 
           {/* Flow paths */}
           {phase.flows.map((f, i) => (
@@ -516,6 +531,7 @@ export function CapitalFlowViz() {
               label={f.label}
               animDelay={i * 0.12}
               positions={positions}
+              isDark={isDark}
             />
           ))}
 
@@ -523,7 +539,7 @@ export function CapitalFlowViz() {
           {Object.entries(phase.nodes).map(([id, nodeData]) => {
             const pos = positions[id];
             if (!pos) return null;
-            return <NodeBox key={id} data={nodeData} pos={pos} locale={locale} />;
+            return <NodeBox key={id} data={nodeData} pos={pos} locale={locale} isDark={isDark} />;
           })}
         </svg>
       </div>
