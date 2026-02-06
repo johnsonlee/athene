@@ -13,8 +13,9 @@ export const router = createBrowserRouter(
       path: '/',
       element: <App />,
       children: [
-        { index: true, element: <TrendDashboard /> },
+        { index: true, element: <CapitalFlowViz /> },
         { path: 'flows', element: <CapitalFlowViz /> },
+        { path: 'trends', element: <TrendDashboard /> },
         { path: 'dashboard', element: <Dashboard /> },
         { path: 'screener', element: <ScreenerPage /> },
         { path: 'stock/:ticker', element: <StockDetailPage /> },

@@ -179,7 +179,7 @@ export function TrendLineChart({ sectors, history, selectedSector, onSectorSelec
   const signal: Signal = rawSignal === 'momentum' ? 'momentum_score' : 'rs_score';
 
   const rawRange = searchParams.get('range') as Range | null;
-  const range: Range = rawRange && VALID_RANGES.includes(rawRange) ? rawRange : 'all';
+  const range: Range = rawRange && VALID_RANGES.includes(rawRange) ? rawRange : '1y';
 
   const rawInterval = searchParams.get('interval') as Interval | null;
   const interval: Interval = rawInterval && VALID_INTERVALS.includes(rawInterval) ? rawInterval : 'W';
@@ -194,7 +194,7 @@ export function TrendLineChart({ sectors, history, selectedSector, onSectorSelec
   }, [setSearchParams]);
 
   const setSignal = useCallback((s: Signal) => updateParam('signal', s === 'momentum_score' ? 'momentum' : 'rs', 'rs'), [updateParam]);
-  const setRange = useCallback((r: Range) => updateParam('range', r, 'all'), [updateParam]);
+  const setRange = useCallback((r: Range) => updateParam('range', r, '1y'), [updateParam]);
   const setInterval = useCallback((i: Interval) => updateParam('interval', i, 'W'), [updateParam]);
 
   const sectorEtfMap = useMemo(

@@ -214,13 +214,17 @@ function Timeline({ phases, activeIdx, onSelect, locale }: {
 
   // Auto-scroll to active phase
   useEffect(() => {
-    if (activeRef.current && scrollRef.current) {
-      const container = scrollRef.current;
-      const el = activeRef.current;
-      const left = el.offsetLeft - container.offsetWidth / 2 + el.offsetWidth / 2;
-      container.scrollTo({ left: Math.max(0, left), behavior: 'smooth' });
-    }
-  }, [activeIdx]);
+    // Use setTimeout to ensure DOM has updated after phases change
+    const timer = setTimeout(() => {
+      if (activeRef.current && scrollRef.current) {
+        const container = scrollRef.current;
+        const el = activeRef.current;
+        const left = el.offsetLeft - container.offsetWidth / 2 + el.offsetWidth / 2;
+        container.scrollTo({ left: Math.max(0, left), behavior: 'smooth' });
+      }
+    }, 50);
+    return () => clearTimeout(timer);
+  }, [activeIdx, phases.length]);
 
   // In compact mode, show date labels only on active, first, last, and every ~8th phase
   const showDateLabel = (i: number) => {
@@ -406,7 +410,8 @@ export function CapitalFlowViz() {
 
   const handleRangeChange = useCallback((key: string) => {
     setRange(key as RangeKey);
-    setActiveIdx(null);
+    // Reset to last index (latest) instead of null to avoid scroll issues
+    setActiveIdx(-1); // -1 signals "use latest"
     setAnimKey(k => k + 1);
   }, []);
 
@@ -416,7 +421,10 @@ export function CapitalFlowViz() {
   }, []);
 
   // Set initial active index once data loads (default to latest = last phase)
-  const resolvedIdx = activeIdx ?? (phases.length ? phases.length - 1 : 0);
+  // -1 or null both resolve to the last phase
+  const resolvedIdx = (activeIdx === null || activeIdx === -1 || activeIdx >= phases.length)
+    ? (phases.length ? phases.length - 1 : 0)
+    : activeIdx;
 
   const phase = phases[resolvedIdx];
 

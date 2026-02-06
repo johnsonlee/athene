@@ -10,8 +10,8 @@ export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const NAV_ITEMS = [
-    { path: '/', label: t('nav.trends') },
-    { path: '/flows', label: t('nav.flows') },
+    { path: '/', label: t('nav.flows') },
+    { path: '/trends', label: t('nav.trends') },
     { path: '/dashboard', label: t('nav.dashboard') },
     { path: '/screener', label: t('nav.screener') },
     { path: '/about', label: t('nav.about') },
