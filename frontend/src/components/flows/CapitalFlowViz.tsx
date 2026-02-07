@@ -5,6 +5,48 @@ import { useTheme } from '../../lib/theme';
 import { LoadingSpinner } from '../common/LoadingSpinner';
 import type { CapitalFlowPhase, CapitalFlowNode } from '../../types';
 
+// ─── Catmull-Rom spline → SVG cubic bezier path ───
+function catmullRomPath(points: { x: number; y: number }[], alpha = 0.5): string {
+  if (points.length < 2) return '';
+  if (points.length === 2) return `M ${points[0].x} ${points[0].y} L ${points[1].x} ${points[1].y}`;
+
+  let d = `M ${points[0].x} ${points[0].y}`;
+  for (let i = 0; i < points.length - 1; i++) {
+    const p0 = points[Math.max(0, i - 1)];
+    const p1 = points[i];
+    const p2 = points[i + 1];
+    const p3 = points[Math.min(points.length - 1, i + 2)];
+
+    // Knot parameterization
+    const d1 = Math.hypot(p2.x - p1.x, p2.y - p1.y);
+    const d0 = Math.hypot(p1.x - p0.x, p1.y - p0.y);
+    const d2 = Math.hypot(p3.x - p2.x, p3.y - p2.y);
+
+    const t0a = Math.pow(d0, alpha) || 1;
+    const t1a = Math.pow(d1, alpha) || 1;
+    const t2a = Math.pow(d2, alpha) || 1;
+
+    const cp1x = p1.x + (p2.x - p0.x) / (3 * (1 + t0a / t1a));
+    const cp1y = p1.y + (p2.y - p0.y) / (3 * (1 + t0a / t1a));
+    const cp2x = p2.x - (p3.x - p1.x) / (3 * (1 + t2a / t1a));
+    const cp2y = p2.y - (p3.y - p1.y) / (3 * (1 + t2a / t1a));
+
+    d += ` C ${cp1x} ${cp1y}, ${cp2x} ${cp2y}, ${p2.x} ${p2.y}`;
+  }
+  return d;
+}
+
+// ─── EMA smoothing ───
+function emaSmooth(values: number[], period: number): number[] {
+  if (values.length === 0) return [];
+  const alpha = 2 / (period + 1);
+  const result = [values[0]];
+  for (let i = 1; i < values.length; i++) {
+    result.push(alpha * values[i] + (1 - alpha) * result[i - 1]);
+  }
+  return result;
+}
+
 // ─── SVG Layout Constants ───
 const SVG_W = 820;
 const SVG_H = 500;
@@ -196,12 +238,17 @@ function RfiTrendChart({ phases, activeIdx, onSelect, t, isDark }: {
   const toY = (v: number) => pad.top + ch * (1 - (v - yMin) / (yMax - yMin));
   const toX = (i: number) => pad.left + (n > 1 ? (i / (n - 1)) * cw : cw / 2);
 
-  // Build the line path
-  const points = phases.map((p, i) => {
-    const rfi = p.rfi ?? computeRfi(p.risk_net, p.safe_net);
-    return { x: toX(i), y: toY(Math.max(-1, Math.min(1, rfi))), rfi };
-  });
-  const linePath = points.map((p, i) => `${i === 0 ? 'M' : 'L'} ${p.x} ${p.y}`).join(' ');
+  // Compute RFI values with EMA smoothing
+  const rawRfi = phases.map(p => p.rfi ?? computeRfi(p.risk_net, p.safe_net));
+  const smoothedRfi = emaSmooth(rawRfi, 4);
+
+  // Build the line path using Catmull-Rom spline
+  const points = smoothedRfi.map((rfi, i) => ({
+    x: toX(i),
+    y: toY(Math.max(-1, Math.min(1, rfi))),
+    rfi: rawRfi[i],
+  }));
+  const linePath = catmullRomPath(points);
 
   // Active point
   const ap = points[activeIdx];
@@ -360,16 +407,21 @@ function AssetFlowPanel({ phases, activeIdx, onSelect, assetIds, isDark, locale 
   const n = phases.length;
   if (n === 0) return null;
 
-  // Collect all net values to determine y-axis range
+  // Collect all net values, apply EMA smoothing, then determine y-axis range
   let minVal = 0, maxVal = 0;
+  const rawData: Record<string, number[]> = {};
   const seriesData: Record<string, number[]> = {};
   for (const id of assetIds) {
-    seriesData[id] = [];
+    rawData[id] = [];
   }
   for (const p of phases) {
     for (const id of assetIds) {
-      const v = p.nodes[id]?.net ?? 0;
-      seriesData[id].push(v);
+      rawData[id].push(p.nodes[id]?.net ?? 0);
+    }
+  }
+  for (const id of assetIds) {
+    seriesData[id] = emaSmooth(rawData[id], 4);
+    for (const v of seriesData[id]) {
       if (v < minVal) minVal = v;
       if (v > maxVal) maxVal = v;
     }
@@ -442,7 +494,8 @@ function AssetFlowPanel({ phases, activeIdx, onSelect, assetIds, isDark, locale 
       {/* Asset lines */}
       {assetIds.map((id) => {
         const vals = seriesData[id];
-        const path = vals.map((v, i) => `${i === 0 ? 'M' : 'L'} ${toX(i)} ${toY(v)}`).join(' ');
+        const pts = vals.map((v, i) => ({ x: toX(i), y: toY(v) }));
+        const path = catmullRomPath(pts);
         return (
           <path key={id} d={path} fill="none"
             stroke={ASSET_COLORS[id] ?? '#888'}
@@ -470,7 +523,7 @@ function AssetFlowPanel({ phases, activeIdx, onSelect, assetIds, isDark, locale 
       {assetIds.map((id, i) => {
         const node = phases[activeIdx]?.nodes[id];
         const label = node ? (locale === 'zh' ? node.label_zh : node.label_en) : id;
-        const val = seriesData[id][activeIdx] ?? 0;
+        const val = rawData[id][activeIdx] ?? 0;
         const colsPerRow = assetIds.length <= 4 ? assetIds.length : Math.ceil(assetIds.length / 2);
         const row = Math.floor(i / colsPerRow);
         const col = i % colsPerRow;
