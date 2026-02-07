@@ -66,7 +66,7 @@ def _clean_phases(phases: List[dict]) -> List[dict]:
                 "label": flow["label"],
             })
 
-        cleaned.append({
+        entry = {
             "id": phase["id"],
             "date": phase["date"],
             "phase": phase["phase"],
@@ -78,7 +78,17 @@ def _clean_phases(phases: List[dict]) -> List[dict]:
             "flows": cleaned_flows,
             "risk_net": _safe_float(phase["risk_net"]),
             "safe_net": _safe_float(phase["safe_net"]),
-        })
+        }
+        if "rfi" in phase:
+            rfi_val = phase["rfi"]
+            try:
+                rfi_f = float(rfi_val)
+                entry["rfi"] = None if (np.isnan(rfi_f) or np.isinf(rfi_f)) else round(rfi_f, 4)
+            except (TypeError, ValueError):
+                entry["rfi"] = _safe_float(rfi_val)
+        if "untracked" in phase:
+            entry["untracked"] = _safe_float(phase["untracked"])
+        cleaned.append(entry)
     return cleaned
 
 
