@@ -15,6 +15,7 @@ from engine.utils.logger import get_logger
 log = get_logger(__name__)
 
 _VIX_TICKER = "^VIX"
+_VIX3M_TICKER = "^VIX3M"  # 3-month VIX for term structure
 _SP500_TICKER = "^GSPC"
 _TNX_TICKER = "^TNX"     # 10-Year Treasury yield
 _IRX_TICKER = "^IRX"     # 13-Week Treasury Bill yield
@@ -37,6 +38,15 @@ def collect_macro() -> Dict[str, Any]:
             result["vix"] = float(vix_hist["Close"].iloc[-1])
     except Exception as e:
         log.warning(f"Failed to fetch VIX: {e}")
+
+    # VIX3M (3-month VIX for term structure analysis)
+    try:
+        vix3m = yf.Ticker(_VIX3M_TICKER)
+        vix3m_hist = vix3m.history(period="5d")
+        if not vix3m_hist.empty:
+            result["vix3m"] = float(vix3m_hist["Close"].iloc[-1])
+    except Exception as e:
+        log.warning(f"Failed to fetch VIX3M: {e}")
 
     # S&P 500 + SMA200
     try:

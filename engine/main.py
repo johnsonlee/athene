@@ -51,6 +51,7 @@ from engine.exporters.capital_flow_exporter import export_capital_flows
 from engine.exporters.changes import detect_changes, format_changes_markdown
 from engine.exporters.feed import generate_feed
 from engine.analyzers.ic_tracker import export_ic
+from engine.analyzers.leading_indicators import compute_leading_indicators, export_leading_indicators
 from engine.utils.logger import get_logger
 from engine.utils.market_calendar import is_us_trading_day
 
@@ -370,6 +371,12 @@ def run(tickers_override: list[str] | None = None) -> None:
 
         log.info("Step F5: Exporting capital flow data...")
         export_capital_flows(cf_window_results, run_date)
+
+    # --- Leading Indicators ---
+    if full_run:
+        log.info("Step L1: Computing leading indicators...")
+        leading = compute_leading_indicators()
+        export_leading_indicators(leading, run_date)
 
     # Export individual stock details (use scored DataFrames for sub-scores)
     log.info("Exporting individual stock details...")

@@ -49,3 +49,11 @@ export function loadTrendHistory() {
 export function loadCapitalFlows() {
   return fetchJson<import('../types').CapitalFlowData>('capital_flows.json');
 }
+
+export function loadBacktest() {
+  return fetchJson<import('../types').BacktestData>('backtest.json');
+}
+
+export function loadLeadingIndicators() {
+  return fetchJson<import('../types').LeadingIndicatorsData>('leading_indicators.json');
+}

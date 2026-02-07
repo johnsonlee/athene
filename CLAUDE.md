@@ -7,6 +7,8 @@
 pip install -r requirements.txt
 python -m engine.main                    # Full universe (~550 tickers)
 python -m engine.main AAPL MSFT GOOGL   # Test with specific tickers
+python -m engine.backtest               # Run signal backtests → backtest.json
+python -m engine.backtest --signal sector_trend  # Specific signal only
 ```
 
 ### Frontend
@@ -337,7 +339,48 @@ Track global capital rotation across 9 asset classes (5 risk, 4 safe) using ETF 
 
 **Files**: `engine/collectors/capital_flow.py`, `engine/collectors/cftc.py`, `engine/collectors/ici.py`, `engine/analyzers/capital_flow.py`, `engine/exporters/capital_flow_exporter.py`, `engine/capital_flow_pipeline.py`, `engine/config.py`, `frontend/src/components/flows/CapitalFlowViz.tsx`
 
-### v12: Flow Normalization (current)
+### v14: Leading Indicators (current)
+
+Four forward-looking market turn signals computed from existing collected data. Designed to detect market turns before they happen, complementing the reactive signals in v13.
+
+**Key changes from v13:**
+- **VIX Term Structure**: `^VIX / ^VIX3M` ratio — backwardation (>1.05) signals peak fear, deep contango (<0.85) signals complacency. Added `^VIX3M` to macro collector; historical data will accumulate over time.
+- **Credit Spread Velocity**: LQD/TLT ratio rate-of-change at 5d/10d windows. Rising = credit tightening (bearish for equities). Falling = credit easing (bullish). 1,018 historical data points from capital flow ETF archives.
+- **RFI Acceleration**: Second derivative of Risk Flow Index from `capital_flows.json` phase timeline. Detects bottoming (deceleration of outflow) and topping (deceleration of inflow) signals that precede direction changes. 50 data points.
+- **Breadth Thrust**: Rate of sectors flipping from downtrend to uptrend over a 22-day rolling window. Computed from `trend_history.json`. Thrust ≥18% = bullish, ≤-18% = bearish. 1,462 data points.
+- **Backtest integration**: All three active indicators added to the backtest framework — 178 credit spread events, 280 breadth thrust events, 38 RFI acceleration events with forward return validation.
+- **Pipeline integration**: `compute_leading_indicators()` runs automatically in the main pipeline after capital flows. Exports `leading_indicators.json`.
+- **Frontend**: New `/indicators` page with per-indicator cards showing latest signal, mini sparklines, and recent signal history. Filter by individual indicator.
+
+**Files**: `engine/analyzers/leading_indicators.py`, `engine/collectors/macro.py`, `engine/backtest.py`, `engine/main.py`, `frontend/src/components/indicators/LeadingIndicatorsPage.tsx`, `frontend/src/hooks/useLeadingIndicators.ts`, `frontend/src/types/index.ts`, `frontend/src/lib/dataLoader.ts`, `frontend/src/routes.tsx`, `frontend/src/components/layout/Header.tsx`, `frontend/src/lib/i18n.tsx`, `frontend/src/components/About.tsx`
+
+### v13: Signal Backtesting
+
+Backtest framework for historical signal validation. Reads from stored trend_history.json, capital_flows.json, and collected/ ETF price archives to compute forward returns after signal events.
+
+**Key changes from v12:**
+- **Backtest engine**: New `engine/backtest.py` — standalone CLI (`python -m engine.backtest`) that runs all backtests and exports `backtest.json`. Pure Python, no new dependencies. Reads from existing `collected/` archives (1,775 daily snapshots from 2020-01-02 to 2026-02-07) and frontend JSON data.
+- **4 signal types tested**:
+  - **Sector trend transitions** (2,241 events): Detects when a sector's trend state changes (e.g., neutral → uptrend). Forward returns computed from sector ETF prices. Per-sector breakdown included.
+  - **Capital flow phase transitions** (27 events): Detects phase changes (normal/riskon/deleverage/bottom/outflow) from capital_flows.json. SPY forward returns as benchmark.
+  - **RFI level crossings** (40 events): Tracks Risk Flow Index zone transitions (panic/risk_off/mild_risk_off/neutral/risk_on). SPY forward returns.
+  - **Macro regime transitions** (0 events currently — macro collector only started recently, framework ready for future data).
+- **Per-signal statistics**: Hit rate, average/median return, expectancy, standard deviation, max drawdown at 5d/10d/22d horizons. Per-sector breakdown for sector trend signals.
+- **Backtest report page**: New `/backtest` route with interactive signal cards — filter by signal type, drill-down into horizons/sectors/recent events. Summary cards show top-level metrics.
+- **Frontend**: Added nav item, i18n (EN/ZH), TypeScript types, data loader, hook.
+
+**Files**: `engine/backtest.py`, `frontend/src/components/backtest/BacktestPage.tsx`, `frontend/src/hooks/useBacktest.ts`, `frontend/src/types/index.ts`, `frontend/src/lib/dataLoader.ts`, `frontend/src/routes.tsx`, `frontend/src/components/layout/Header.tsx`, `frontend/src/lib/i18n.tsx`, `frontend/src/components/About.tsx`
+
+**Key findings** (2020-01-02 ~ 2026-02-07, 2,308 events):
+
+1. **Sector trend transitions lack standalone alpha.** Both upgrades (n=1126, 22d +1.89%) and downgrades (n=1115, 22d +2.24%) produce positive forward returns — the market's upward beta drowns out signal directionality. Sector trends need conditional filtering (RFI direction or macro regime) to generate alpha.
+2. **RFI panic → risk_on is the strongest signal.** 22d: 100% hit rate, +2.51% avg return, only 2.98% max drawdown (n=5). The neutral → panic signal is similarly strong (22d: 100% hit rate, +5.50%). Both confirm that post-panic periods are the highest-conviction buying opportunity.
+3. **Capital flow Risk-Off is a contrarian signal.** Phase transitions to risk_off show 83% hit rate at 22d (+1.91%) — fear-driven exits lead to rebounds. Risk-On transitions show 69% hit rate (+1.67%).
+4. **mild_risk_off → risk_on is a trap.** Only 50% hit rate at 22d with -3.42% avg return — likely false breakouts where the recovery attempt fails.
+5. **Sector performance dispersion matters.** On upgrades, Energy (22d +2.77%, 66% hit) and Industrials (+2.59%, 70% hit) consistently outperform Consumer Staples (+0.70%, 58% hit). Cyclical sectors respond more strongly to trend shifts.
+6. **Macro regime data is too sparse.** Only 4 daily snapshots exist (macro collector started recently). Framework ready — will produce actionable signals as data accumulates.
+
+### v12: Flow Normalization
 
 Dollar-volume normalization for cross-asset comparability. Fixes three issues from v11: distorted flow magnitudes, missing phase detection, and phantom flow arrows.
 
@@ -476,26 +519,26 @@ When implementing a new version from the roadmap:
 
 ## Roadmap
 
-### Signal Backtesting (next)
+### Conditional Signal Filtering (next)
 
-- Backtest framework using stored `history.json` + `trend_history.json` + `capital_flows.json` historical data
-- Core question per signal: entry condition → hit rate, avg return, max drawdown over N-day forward window
-- Key signals to validate: RFI regime transitions (e.g. -1 → -0.7), macro regime switches, sector trend state changes
-- Output: per-signal stats table (win rate, expectancy, max drawdown, sample count)
-- Minimum viable: pure Python, no new dependencies, reads from existing `collected/` and `frontend/public/data/` archives
-
-### Leading Indicators
-
-- VIX term structure: front-month vs second-month VIX futures ratio — inversion signals peak fear (yfinance: `^VIX`, `^VIX3M`)
-- Credit spread velocity: LQD/TLT ratio rate-of-change — leads equity turns by days (already have both ETFs in capital flow collector)
-- RFI acceleration: second derivative of RFI (delta of delta) — momentum of capital flow direction change (computed from existing `capital_flows.json`)
-- Breadth thrust: % of sectors flipping from downtrend to uptrend within a rolling window — signals broad-based reversals (computed from existing `trends.json`)
+- Depends on: Leading Indicators
+- **Motivation (v13 finding)**: Sector trend transitions alone lack alpha — both upgrades and downgrades produce positive returns because market beta drowns out signal directionality. Filtering by RFI state or macro regime is required.
+- Sector trend upgrade filtered by RFI state: only count upgrades when RFI is in neutral or risk_on zone (exclude panic/risk_off to avoid catching falling knives)
+- Sector trend downgrade filtered by RFI state: only count downgrades when RFI is in risk_off or panic (avoid selling in normal rotation)
+- Re-run backtest with conditional filters to verify improved hit rate / expectancy vs unconditional baseline
+- **Trap signal avoidance (v13 finding)**: mild_risk_off → risk_on (50% hit, -3.42% avg) should be excluded or require confirmation from a second signal before acting
 
 ### Signal-to-Position Mapping
 
-- Depends on: Signal Backtesting + Leading Indicators
+- Depends on: Conditional Signal Filtering
 - Multi-signal composite decision matrix: RFI level + RFI direction + macro regime + sector trend breadth → position size bucket
 - Position buckets: empty (0%), light (25%), half (50%), heavy (75%), full (100%)
+- **Backtest-validated rules (v13 evidence)**:
+  - RFI panic → risk_on = heavy/full (100% hit rate, +2.51% 22d, 2.98% max DD)
+  - neutral → panic = heavy (100% hit rate, +5.50% 22d — post-panic rebound)
+  - risk_off → neutral = heavy (100% hit rate, +7.92% 22d — recovery confirmation)
+  - capital_flow risk_off phase = half (83% hit rate, +1.91% 22d — contrarian entry)
+  - mild_risk_off → risk_on = empty (trap signal, -3.42% avg — wait for confirmation)
 - Rules derived from backtesting results (not hand-tuned) — each rule must cite backtest evidence
 - Export as `signals.json` with current composite signal state + suggested position bucket
 - Frontend: signal dashboard showing current state of each input signal and the resulting position suggestion
@@ -509,7 +552,8 @@ When implementing a new version from the roadmap:
 
 ### Leading Stock Valuation
 
-- Depends on: Signal Backtesting (validated sector trends)
+- Depends on: v13 backtest results (validated sector trends)
+- **Sector selection (v13 evidence)**: Prioritize cyclical sectors — Energy (22d +2.77%, 66% hit), Industrials (+2.59%, 70% hit), Tech (+2.39%, 65% hit) respond most to trend upgrades. Deprioritize Consumer Staples (+0.70%, 58% hit).
 - For sectors in backtesting-confirmed uptrend, identify leading stocks (top RS within sector + quality metrics)
 - Valuation analysis of sector leaders (reuse existing fundamental scoring)
 - New page `/leaders` — top 3-5 stocks per trending sector

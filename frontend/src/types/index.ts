@@ -280,6 +280,109 @@ export interface CapitalFlowData {
   windows: Record<string, CapitalFlowWindow>;
 }
 
+// Backtest types
+export interface BacktestHorizonStats {
+  count: number;
+  hit_rate: number | null;
+  avg_return: number | null;
+  median_return: number | null;
+  std: number | null;
+  max_return: number | null;
+  min_return: number | null;
+  expectancy: number | null;
+}
+
+export interface BacktestSectorBreakdown {
+  count: number;
+  hit_rate_5d: number | null;
+  avg_return_5d: number | null;
+  hit_rate_22d: number | null;
+  avg_return_22d: number | null;
+}
+
+export interface BacktestRecentEvent {
+  date: string;
+  transition: string;
+  sector?: string;
+  etf?: string;
+  rfi?: number;
+  fwd_5d: number | null;
+  fwd_10d: number | null;
+  fwd_22d: number | null;
+  max_drawdown_22d: number | null;
+}
+
+export interface BacktestSignal {
+  signal: string;
+  direction: string;
+  count: number;
+  date_range: { first: string; last: string };
+  horizons: Record<string, BacktestHorizonStats>;
+  transitions: Record<string, number>;
+  max_drawdown: { avg: number | null; median: number | null; worst: number | null };
+  sectors?: Record<string, BacktestSectorBreakdown>;
+  recent_events: BacktestRecentEvent[];
+}
+
+export interface BacktestData {
+  date: string;
+  total_events: number;
+  forward_horizons: number[];
+  signals: BacktestSignal[];
+}
+
+// Leading Indicators types
+export interface CreditSpreadEntry {
+  date: string;
+  lqd_tlt_ratio: number;
+  velocity_5d: number | null;
+  velocity_10d: number | null;
+  signal: string;
+}
+
+export interface RfiAccelerationEntry {
+  date: string;
+  rfi: number;
+  rfi_velocity: number;
+  rfi_acceleration: number;
+  signal: string;
+}
+
+export interface BreadthThrustEntry {
+  date: string;
+  pct_uptrend: number;
+  pct_downtrend: number;
+  sectors_uptrend: number;
+  sectors_downtrend: number;
+  sectors_total: number;
+  thrust: number;
+  signal: string;
+}
+
+export interface VixTermStructureEntry {
+  date: string;
+  vix: number;
+  vix3m: number;
+  ratio: number;
+  signal: string;
+}
+
+export interface LeadingIndicatorBlock<T> {
+  data: T[];
+  count: number;
+  available: boolean;
+}
+
+export interface LeadingIndicatorsData {
+  date: string;
+  indicators: {
+    vix_term_structure: LeadingIndicatorBlock<VixTermStructureEntry>;
+    credit_spread: LeadingIndicatorBlock<CreditSpreadEntry>;
+    rfi_acceleration: LeadingIndicatorBlock<RfiAccelerationEntry>;
+    breadth_thrust: LeadingIndicatorBlock<BreadthThrustEntry>;
+  };
+}
+
 export interface FilterState {
   search: string;
   sectors: string[];
