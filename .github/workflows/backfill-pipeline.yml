@@ -21,6 +21,11 @@ on:
         required: false
         type: boolean
         default: false
+      force_collect:
+        description: 'Force re-fetch collected data even if it already exists'
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -32,11 +37,12 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  backfill:
+  # ── Setup: universe + cleanup ──────────────────────────────
+  setup:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 10
     outputs:
-      has_analysis: ${{ steps.analyze-commit.outputs.data_changed }}
+      run_date: ${{ steps.date.outputs.run_date }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -53,48 +59,254 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Cache venv
+        uses: actions/cache@v4
+        with:
+          path: .venv
+          key: venv-${{ runner.os }}-py3.12-${{ hashFiles('requirements.txt') }}
+
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          test -d .venv || python -m venv .venv
+          source .venv/bin/activate
+          pip install -r requirements.txt
 
       - name: Build universe
         run: |
-          RUN_DATE="${{ steps.date.outputs.run_date }}"
-          python -m engine.collect universe --date "$RUN_DATE"
+          source .venv/bin/activate
+          python -m engine.collect universe --date "${{ steps.date.outputs.run_date }}"
 
       - name: Remove old flat collected files
         run: rm -f collected/*.json collected/*.json.gz
 
-      - name: Backfill prices, sector ETFs, capital flow ETFs (parallel)
+      - name: Commit setup data
         run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          RUN_DATE="${{ steps.date.outputs.run_date }}"
+          git add -f "collected/${RUN_DATE:0:4}/${RUN_DATE:5:2}/${RUN_DATE:8:2}/"
+          git add -u collected/
+          if git diff --staged --quiet; then
+            echo "No setup changes to commit"
+          else
+            git commit -m "backfill: setup $RUN_DATE [skip ci]"
+            git push origin main
+          fi
+
+  # ── Backfill: prices ───────────────────────────────────────
+  backfill-prices:
+    needs: setup
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Cache venv
+        uses: actions/cache@v4
+        with:
+          path: .venv
+          key: venv-${{ runner.os }}-py3.12-${{ hashFiles('requirements.txt') }}
+
+      - name: Install dependencies
+        run: |
+          test -d .venv || python -m venv .venv
+          source .venv/bin/activate
+          pip install -r requirements.txt
+
+      - name: Backfill prices
+        run: |
+          source .venv/bin/activate
           ARGS="--backfill"
           [ -n "${{ inputs.start_date }}" ] && ARGS="$ARGS --start ${{ inputs.start_date }}"
           [ -n "${{ inputs.end_date }}" ]   && ARGS="$ARGS --end ${{ inputs.end_date }}"
+          [ "${{ inputs.force_collect }}" = "true" ] && ARGS="$ARGS --force"
+          python -m engine.collect prices $ARGS
 
-          python -m engine.collect prices $ARGS &
-          PID_PRICES=$!
-          python -m engine.collect sector_etfs $ARGS &
-          PID_SECTOR=$!
-          python -m engine.collect capital_flow_etfs $ARGS &
-          PID_CAPITAL=$!
-
-          FAIL=0
-          wait $PID_PRICES  || FAIL=1
-          wait $PID_SECTOR  || FAIL=1
-          wait $PID_CAPITAL || FAIL=1
-          [ $FAIL -eq 0 ] || exit 1
-
-      - name: Collect today snapshots (parallel)
-        if: inputs.skip_snapshot != true
+      - name: Commit prices data
         run: |
-          RUN_DATE="${{ steps.date.outputs.run_date }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          LABEL="backfill: prices"
+          [ -n "${{ inputs.start_date }}" ] && LABEL="$LABEL (${{ inputs.start_date }} to ${{ inputs.end_date }})"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset origin/main
+            git add -f collected/*/*/*/prices.json
+            if git diff --staged --quiet; then
+              echo "No prices changes"
+              break
+            fi
+            git commit -m "$LABEL [skip ci]"
+            git push origin main && break
+            echo "Push failed (attempt $attempt), retrying..."
+            sleep $((attempt * 3))
+          done
 
-          python -m engine.collect fundamentals --date "$RUN_DATE" &
+  # ── Backfill: sector ETFs ──────────────────────────────────
+  backfill-sector-etfs:
+    needs: setup
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Cache venv
+        uses: actions/cache@v4
+        with:
+          path: .venv
+          key: venv-${{ runner.os }}-py3.12-${{ hashFiles('requirements.txt') }}
+
+      - name: Install dependencies
+        run: |
+          test -d .venv || python -m venv .venv
+          source .venv/bin/activate
+          pip install -r requirements.txt
+
+      - name: Backfill sector ETFs
+        run: |
+          source .venv/bin/activate
+          ARGS="--backfill"
+          [ -n "${{ inputs.start_date }}" ] && ARGS="$ARGS --start ${{ inputs.start_date }}"
+          [ -n "${{ inputs.end_date }}" ]   && ARGS="$ARGS --end ${{ inputs.end_date }}"
+          [ "${{ inputs.force_collect }}" = "true" ] && ARGS="$ARGS --force"
+          python -m engine.collect sector_etfs $ARGS
+
+      - name: Commit sector ETFs data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          LABEL="backfill: sector_etfs"
+          [ -n "${{ inputs.start_date }}" ] && LABEL="$LABEL (${{ inputs.start_date }} to ${{ inputs.end_date }})"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset origin/main
+            git add -f collected/*/*/*/sector_etfs.json
+            if git diff --staged --quiet; then
+              echo "No sector ETFs changes"
+              break
+            fi
+            git commit -m "$LABEL [skip ci]"
+            git push origin main && break
+            echo "Push failed (attempt $attempt), retrying..."
+            sleep $((attempt * 3))
+          done
+
+  # ── Backfill: capital flow ETFs ────────────────────────────
+  backfill-capital-flow-etfs:
+    needs: setup
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Cache venv
+        uses: actions/cache@v4
+        with:
+          path: .venv
+          key: venv-${{ runner.os }}-py3.12-${{ hashFiles('requirements.txt') }}
+
+      - name: Install dependencies
+        run: |
+          test -d .venv || python -m venv .venv
+          source .venv/bin/activate
+          pip install -r requirements.txt
+
+      - name: Backfill capital flow ETFs
+        run: |
+          source .venv/bin/activate
+          ARGS="--backfill"
+          [ -n "${{ inputs.start_date }}" ] && ARGS="$ARGS --start ${{ inputs.start_date }}"
+          [ -n "${{ inputs.end_date }}" ]   && ARGS="$ARGS --end ${{ inputs.end_date }}"
+          [ "${{ inputs.force_collect }}" = "true" ] && ARGS="$ARGS --force"
+          python -m engine.collect capital_flow_etfs $ARGS
+
+      - name: Commit capital flow ETFs data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          LABEL="backfill: capital_flow_etfs"
+          [ -n "${{ inputs.start_date }}" ] && LABEL="$LABEL (${{ inputs.start_date }} to ${{ inputs.end_date }})"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset origin/main
+            git add -f collected/*/*/*/capital_flow_etfs.json
+            if git diff --staged --quiet; then
+              echo "No capital flow ETFs changes"
+              break
+            fi
+            git commit -m "$LABEL [skip ci]"
+            git push origin main && break
+            echo "Push failed (attempt $attempt), retrying..."
+            sleep $((attempt * 3))
+          done
+
+  # ── Snapshot: today's fundamentals/news/analyst/macro ──────
+  snapshot:
+    needs: setup
+    if: inputs.skip_snapshot != true
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Cache venv
+        uses: actions/cache@v4
+        with:
+          path: .venv
+          key: venv-${{ runner.os }}-py3.12-${{ hashFiles('requirements.txt') }}
+
+      - name: Install dependencies
+        run: |
+          test -d .venv || python -m venv .venv
+          source .venv/bin/activate
+          pip install -r requirements.txt
+
+      - name: Collect snapshots (parallel)
+        run: |
+          source .venv/bin/activate
+          RUN_DATE="${{ needs.setup.outputs.run_date }}"
+          FORCE_FLAG=""
+          [ "${{ inputs.force_collect }}" = "true" ] && FORCE_FLAG="--force"
+
+          python -m engine.collect fundamentals --date "$RUN_DATE" $FORCE_FLAG &
           PID_FUND=$!
-          python -m engine.collect news --date "$RUN_DATE" &
+          python -m engine.collect news --date "$RUN_DATE" $FORCE_FLAG &
           PID_NEWS=$!
-          python -m engine.collect analyst --date "$RUN_DATE" &
+          python -m engine.collect analyst --date "$RUN_DATE" $FORCE_FLAG &
           PID_ANALYST=$!
-          python -m engine.collect macro --date "$RUN_DATE" &
+          python -m engine.collect macro --date "$RUN_DATE" $FORCE_FLAG &
           PID_MACRO=$!
 
           FAIL=0
@@ -104,39 +316,71 @@ jobs:
           wait $PID_MACRO   || FAIL=1
           [ $FAIL -eq 0 ] || exit 1
 
-      - name: Commit collected data
+      - name: Commit snapshot data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          LABEL="backfill: collected data"
-          [ -n "${{ inputs.start_date }}" ] && LABEL="$LABEL (${{ inputs.start_date }} to ${{ inputs.end_date }})"
+          RUN_DATE="${{ needs.setup.outputs.run_date }}"
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             git reset origin/main
-            git add -f collected/
+            DATE_DIR="collected/${RUN_DATE:0:4}/${RUN_DATE:5:2}/${RUN_DATE:8:2}"
+            git add -f "$DATE_DIR/fundamentals.json" "$DATE_DIR/news.json" "$DATE_DIR/analyst.json" "$DATE_DIR/macro.json"
             if git diff --staged --quiet; then
-              echo "No collected data changes"
+              echo "No snapshot changes"
               break
             fi
-            git commit -m "$LABEL [skip ci]"
+            git commit -m "backfill: snapshots $RUN_DATE [skip ci]"
             git push origin main && break
             echo "Push failed (attempt $attempt), retrying..."
             sleep $((attempt * 3))
           done
 
+  # ── Analyze + export ───────────────────────────────────────
+  analyze:
+    needs: [backfill-prices, backfill-sector-etfs, backfill-capital-flow-etfs, snapshot]
+    if: ${{ !failure() && !cancelled() && inputs.skip_analyze != true }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    outputs:
+      data_changed: ${{ steps.commit.outputs.data_changed }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Cache venv
+        uses: actions/cache@v4
+        with:
+          path: .venv
+          key: venv-${{ runner.os }}-py3.12-${{ hashFiles('requirements.txt') }}
+
+      - name: Install dependencies
+        run: |
+          test -d .venv || python -m venv .venv
+          source .venv/bin/activate
+          pip install -r requirements.txt
+
       - name: Run analysis
-        if: inputs.skip_analyze != true
-        run: python -m engine.analyze
+        run: |
+          source .venv/bin/activate
+          python -m engine.analyze
 
       - name: Commit analysis data
-        if: inputs.skip_analyze != true
-        id: analyze-commit
+        id: commit
         run: |
           DATA_CHANGED=false
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             git reset origin/main
             git add -f frontend/public/data/
+            [ -d snapshots ] && git add -f snapshots/
             if git diff --staged --quiet; then
               echo "No analysis data changes"
               break
@@ -151,7 +395,8 @@ jobs:
           done
           echo "data_changed=$DATA_CHANGED" >> "$GITHUB_OUTPUT"
 
+  # ── Deploy ─────────────────────────────────────────────────
   deploy:
-    needs: backfill
-    if: needs.backfill.outputs.has_analysis == 'true'
+    needs: analyze
+    if: needs.analyze.outputs.data_changed == 'true'
     uses: ./.github/workflows/deploy-pages.yml

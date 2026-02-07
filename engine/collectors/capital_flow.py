@@ -7,7 +7,7 @@ used by the capital flow pipeline to compute money flow proxies.
 Supports two modes:
 - **Live fetch**: `collect_capital_flow_etfs()` downloads historical OHLCV from yfinance.
 - **Stored daily**: `load_capital_flow_etfs_from_collected()` reconstructs DataFrames
-  from stored `collected/{date}/capital_flow_etfs.json` daily slices.
+  from stored `collected/YYYY/MM/DD/capital_flow_etfs.json` daily slices.
 """
 
 from __future__ import annotations
@@ -174,7 +174,7 @@ def load_capital_flow_etfs_from_collected(
 ) -> Dict[str, pd.DataFrame]:
     """Reconstruct OHLCV DataFrames from stored daily slices.
 
-    Scans ``collected/{date}/capital_flow_etfs.json`` files and assembles them
+    Scans ``collected/YYYY/MM/DD/capital_flow_etfs.json`` files and assembles them
     into per-ticker DataFrames matching the format returned by
     ``collect_capital_flow_etfs()``.
 
@@ -203,14 +203,14 @@ def load_capital_flow_etfs_from_collected(
         return {}
 
     # Scan date directories in range
+    from engine.collect import iter_date_dirs
     rows_by_ticker: Dict[str, list] = {}
-    date_dirs = sorted(d for d in os.listdir(COLLECTED_DIR) if len(d) == 10)
     loaded_dates = 0
 
-    for date_dir in date_dirs:
-        if date_dir < start_str or date_dir > end_str:
+    for date_str, dir_path in iter_date_dirs():
+        if date_str < start_str or date_str > end_str:
             continue
-        path = os.path.join(COLLECTED_DIR, date_dir, "capital_flow_etfs.json")
+        path = os.path.join(dir_path, "capital_flow_etfs.json")
         if not os.path.exists(path):
             continue
         try:
@@ -225,7 +225,7 @@ def load_capital_flow_etfs_from_collected(
             if ticker not in rows_by_ticker:
                 rows_by_ticker[ticker] = []
             rows_by_ticker[ticker].append({
-                "Date": pd.Timestamp(date_dir),
+                "Date": pd.Timestamp(date_str),
                 "Open": float(ohlcv["Open"]),
                 "High": float(ohlcv["High"]),
                 "Low": float(ohlcv["Low"]),
