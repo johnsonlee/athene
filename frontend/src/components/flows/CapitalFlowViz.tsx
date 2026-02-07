@@ -499,13 +499,12 @@ const RISK_ASSET_IDS = ['usEquity', 'euEquity', 'jpEquity', 'emEquity', 'crypto'
 const SAFE_ASSET_IDS = ['gold', 'usTreasury', 'cash', 'corpBond'];
 
 // ─── RFI Dashboard ───
-function RfiDashboard({ phases, activeIdx, onSelect, t, isDark, locale }: {
+function RfiDashboard({ phases, activeIdx, onSelect, t, isDark }: {
   phases: CapitalFlowPhase[];
   activeIdx: number;
   onSelect: (idx: number) => void;
   t: (key: any, p?: any) => string;
   isDark: boolean;
-  locale: string;
 }) {
   const phase = phases[activeIdx];
   if (!phase) return null;
@@ -542,30 +541,6 @@ function RfiDashboard({ phases, activeIdx, onSelect, t, isDark, locale }: {
           phases={phases} activeIdx={activeIdx} onSelect={onSelect}
           t={t} isDark={isDark}
         />
-      </div>
-
-      {/* Per-asset flow charts: risk left, safe right */}
-      <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
-        <div className="tech-card overflow-hidden rounded-xl p-2">
-          <div className="mb-0.5 text-[10px] uppercase tracking-wider text-gray-500 px-1"
-            style={{ fontFamily: 'monospace' }}>
-            {t('flows.riskAssets')}
-          </div>
-          <AssetFlowPanel
-            phases={phases} activeIdx={activeIdx} onSelect={onSelect}
-            assetIds={RISK_ASSET_IDS} isDark={isDark} locale={locale}
-          />
-        </div>
-        <div className="tech-card overflow-hidden rounded-xl p-2">
-          <div className="mb-0.5 text-[10px] uppercase tracking-wider text-gray-500 px-1"
-            style={{ fontFamily: 'monospace' }}>
-            {t('flows.safeAssets')}
-          </div>
-          <AssetFlowPanel
-            phases={phases} activeIdx={activeIdx} onSelect={onSelect}
-            assetIds={SAFE_ASSET_IDS} isDark={isDark} locale={locale}
-          />
-        </div>
       </div>
 
       {/* Metrics row */}
@@ -922,7 +897,7 @@ export function CapitalFlowViz() {
       <Timeline phases={phases} activeIdx={resolvedIdx} onSelect={handleSelect} locale={locale} isDark={isDark} />
 
       {/* RFI Dashboard */}
-      <RfiDashboard phases={phases} activeIdx={resolvedIdx} onSelect={handleSelect} t={t} isDark={isDark} locale={locale} />
+      <RfiDashboard phases={phases} activeIdx={resolvedIdx} onSelect={handleSelect} t={t} isDark={isDark} />
 
       {/* Flow Diagram */}
       <div className="tech-card overflow-hidden rounded-xl p-2">
@@ -949,6 +924,30 @@ export function CapitalFlowViz() {
             return <NodeBox key={id} data={nodeData} pos={pos} locale={locale} isDark={isDark} />;
           })}
         </svg>
+      </div>
+
+      {/* Per-asset flow charts: risk left, safe right */}
+      <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+        <div className="tech-card overflow-hidden rounded-xl p-2">
+          <div className="mb-0.5 text-[10px] uppercase tracking-wider text-gray-500 px-1"
+            style={{ fontFamily: 'monospace' }}>
+            {t('flows.riskAssets')}
+          </div>
+          <AssetFlowPanel
+            phases={phases} activeIdx={resolvedIdx} onSelect={handleSelect}
+            assetIds={RISK_ASSET_IDS} isDark={isDark} locale={locale}
+          />
+        </div>
+        <div className="tech-card overflow-hidden rounded-xl p-2">
+          <div className="mb-0.5 text-[10px] uppercase tracking-wider text-gray-500 px-1"
+            style={{ fontFamily: 'monospace' }}>
+            {t('flows.safeAssets')}
+          </div>
+          <AssetFlowPanel
+            phases={phases} activeIdx={resolvedIdx} onSelect={handleSelect}
+            assetIds={SAFE_ASSET_IDS} isDark={isDark} locale={locale}
+          />
+        </div>
       </div>
 
       {/* Legend */}
