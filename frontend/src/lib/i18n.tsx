@@ -83,6 +83,13 @@ const translations = {
     'backtest.tab.horizons': 'Horizons',
     'backtest.tab.sectors': 'By Sector',
     'backtest.tab.events': 'Recent Events',
+    'backtest.keyFindings': 'Key Findings',
+    'backtest.finding.strongSignal': 'Strongest signal: {signal} — {hitRate} hit rate, {return} avg return at 22d (n={n})',
+    'backtest.finding.contrarian': 'Risk-off phases are contrarian buy signals — {hitRate} hit rate, {return} avg at 22d (n={n})',
+    'backtest.finding.trap': 'Trap signal: {signal} — {return} avg return, only {hitRate} hit rate at 22d. Avoid.',
+    'backtest.finding.sectorBeta': 'Sector trends lack standalone alpha — both upgrades ({upReturn}) and downgrades ({downReturn}) positive at 22d due to market beta. Need conditional filtering.',
+    'backtest.showSmall': 'Show {n} low-sample signals',
+    'backtest.hideSmall': 'Hide low-sample signals',
     'backtest.disclaimer': 'Backtest results are based on historical data and do not guarantee future performance. Forward returns are computed from sector ETF and SPY closing prices.',
 
     // Capital Flows
@@ -525,6 +532,13 @@ const translations = {
     'backtest.tab.horizons': '时间窗口',
     'backtest.tab.sectors': '按板块',
     'backtest.tab.events': '近期事件',
+    'backtest.keyFindings': '核心发现',
+    'backtest.finding.strongSignal': '最强信号：{signal} — 22d 胜率 {hitRate}，平均收益 {return}（n={n}）',
+    'backtest.finding.contrarian': '风险厌恶阶段是反向买入信号 — 22d 胜率 {hitRate}，平均 {return}（n={n}）',
+    'backtest.finding.trap': '陷阱信号：{signal} — 平均收益 {return}，胜率仅 {hitRate}。建议回避。',
+    'backtest.finding.sectorBeta': '板块趋势缺乏独立 alpha — 升级（{upReturn}）和降级（{downReturn}）在 22d 均为正收益，被市场 beta 淹没。需条件过滤。',
+    'backtest.showSmall': '显示 {n} 个小样本信号',
+    'backtest.hideSmall': '隐藏小样本信号',
     'backtest.disclaimer': '回测结果基于历史数据，不保证未来表现。前瞻收益率根据板块 ETF 和 SPY 收盘价计算。',
 
     // Capital Flows

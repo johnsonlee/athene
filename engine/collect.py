@@ -54,6 +54,13 @@ def _today() -> str:
     return us_market_date()
 
 
+def _is_trading_day(date_str: str) -> bool:
+    """Return True if *date_str* (YYYY-MM-DD) is a US stock market trading day."""
+    from datetime import date as _date
+    from engine.utils.market_calendar import is_us_trading_day
+    return is_us_trading_day(_date.fromisoformat(date_str))
+
+
 def _write_json(name: str, data: object, date_str: str | None = None) -> str:
     """Write data as JSON to collected/YYYY-MM-DD/<name>.json. Returns the file path."""
     ds = date_str or _today()
@@ -237,6 +244,8 @@ def _backfill_prices(args: argparse.Namespace) -> None:
     for ticker, df in prices.items():
         for date_val, row in df.iterrows():
             date_str = pd.Timestamp(date_val).strftime("%Y-%m-%d")
+            if not _is_trading_day(date_str):
+                continue
             d = _get_date_dir(date_str)
             path = os.path.join(d, "prices.json")
 
@@ -365,6 +374,8 @@ def _backfill_capital_flow_etfs(args: argparse.Namespace) -> None:
     for ticker, df in etf_prices.items():
         for date_val, row in df.iterrows():
             date_str = pd.Timestamp(date_val).strftime("%Y-%m-%d")
+            if not _is_trading_day(date_str):
+                continue
             d = _get_date_dir(date_str)
             path = os.path.join(d, "capital_flow_etfs.json")
 
@@ -405,6 +416,8 @@ def _backfill_sector_etfs(args: argparse.Namespace) -> None:
     for ticker, df in etf_prices.items():
         for date_val, row in df.iterrows():
             date_str = pd.Timestamp(date_val).strftime("%Y-%m-%d")
+            if not _is_trading_day(date_str):
+                continue
             d = _get_date_dir(date_str)
             path = os.path.join(d, "sector_etfs.json")
 

@@ -27,10 +27,10 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # ── Build universe & check trading day ──────────────────────
-  universe:
+  # ── Collect all data sources (parallel within one job) ───
+  collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 45
     outputs:
       skip: ${{ steps.check.outputs.skip }}
       run_date: ${{ steps.date.outputs.run_date }}
@@ -91,7 +91,40 @@ jobs:
             python -m engine.collect universe --date "$RUN_DATE"
           fi
 
-      - name: Commit and push universe
+      - name: Collect all data sources (parallel)
+        if: steps.check.outputs.skip != 'true'
+        run: |
+          source .venv/bin/activate
+          RUN_DATE="${{ steps.date.outputs.run_date }}"
+
+          # All 7 collectors run in parallel
+          python -m engine.collect prices --date "$RUN_DATE" &
+          PID_PRICES=$!
+          python -m engine.collect fundamentals --date "$RUN_DATE" &
+          PID_FUND=$!
+          python -m engine.collect news --date "$RUN_DATE" &
+          PID_NEWS=$!
+          python -m engine.collect analyst --date "$RUN_DATE" &
+          PID_ANALYST=$!
+          python -m engine.collect macro --date "$RUN_DATE" &
+          PID_MACRO=$!
+          python -m engine.collect sector_etfs --date "$RUN_DATE" &
+          PID_SECTOR=$!
+          python -m engine.collect capital_flow_etfs --date "$RUN_DATE" &
+          PID_CF=$!
+
+          # Wait for all collectors — fail if any fails
+          FAIL=0
+          wait $PID_PRICES  || FAIL=1
+          wait $PID_FUND    || FAIL=1
+          wait $PID_NEWS    || FAIL=1
+          wait $PID_ANALYST || FAIL=1
+          wait $PID_MACRO   || FAIL=1
+          wait $PID_SECTOR  || FAIL=1
+          wait $PID_CF      || FAIL=1
+          [ $FAIL -eq 0 ] || exit 1
+
+      - name: Commit collected data
         if: steps.check.outputs.skip != 'true'
         run: |
           git config user.name "github-actions[bot]"
@@ -100,401 +133,21 @@ jobs:
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             git reset origin/main
-            git add -f "collected/$RUN_DATE/universe.json"
+            git add -f "collected/$RUN_DATE/"
             if git diff --staged --quiet; then
-              echo "No changes to commit"
+              echo "No collected data changes"
               break
             fi
-            git commit -m "collected: universe $RUN_DATE [skip ci]"
+            git commit -m "collected: $RUN_DATE [skip ci]"
             git push origin main && break
             echo "Push failed (attempt $attempt), retrying..."
             sleep $((attempt * 3))
           done
 
-  # ── Parallel collectors (depend on universe) ────────────────
-  collect-prices:
-    needs: universe
-    if: needs.universe.outputs.skip != 'true'
-    runs-on: ubuntu-latest
-    timeout-minutes: 30
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          ref: main
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Cache venv
-        uses: actions/cache@v4
-        with:
-          path: .venv
-          key: venv-${{ runner.os }}-py3.12-${{ hashFiles('requirements.txt') }}
-
-      - name: Install dependencies
-        run: |
-          test -d .venv || python -m venv .venv
-          source .venv/bin/activate
-          pip install -r requirements.txt
-
-      - name: Collect prices
-        run: |
-          source .venv/bin/activate
-          RUN_DATE="${{ needs.universe.outputs.run_date }}"
-          python -m engine.collect prices --date "$RUN_DATE"
-
-      - name: Commit and push
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          RUN_DATE="${{ needs.universe.outputs.run_date }}"
-          for attempt in 1 2 3 4 5; do
-            git fetch origin main
-            git reset origin/main
-            git add -f "collected/$RUN_DATE/prices.json"
-            if git diff --staged --quiet; then
-              echo "No changes to commit"
-              break
-            fi
-            git commit -m "collected: prices $RUN_DATE [skip ci]"
-            git push origin main && break
-            echo "Push failed (attempt $attempt), retrying..."
-            sleep $((attempt * 3))
-          done
-
-  collect-fundamentals:
-    needs: universe
-    if: needs.universe.outputs.skip != 'true'
-    runs-on: ubuntu-latest
-    timeout-minutes: 30
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          ref: main
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Cache venv
-        uses: actions/cache@v4
-        with:
-          path: .venv
-          key: venv-${{ runner.os }}-py3.12-${{ hashFiles('requirements.txt') }}
-
-      - name: Install dependencies
-        run: |
-          test -d .venv || python -m venv .venv
-          source .venv/bin/activate
-          pip install -r requirements.txt
-
-      - name: Collect fundamentals
-        run: |
-          source .venv/bin/activate
-          RUN_DATE="${{ needs.universe.outputs.run_date }}"
-          python -m engine.collect fundamentals --date "$RUN_DATE"
-
-      - name: Commit and push
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          RUN_DATE="${{ needs.universe.outputs.run_date }}"
-          for attempt in 1 2 3 4 5; do
-            git fetch origin main
-            git reset origin/main
-            git add -f "collected/$RUN_DATE/fundamentals.json"
-            if git diff --staged --quiet; then
-              echo "No changes to commit"
-              break
-            fi
-            git commit -m "collected: fundamentals $RUN_DATE [skip ci]"
-            git push origin main && break
-            echo "Push failed (attempt $attempt), retrying..."
-            sleep $((attempt * 3))
-          done
-
-  collect-news:
-    needs: universe
-    if: needs.universe.outputs.skip != 'true'
-    runs-on: ubuntu-latest
-    timeout-minutes: 30
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          ref: main
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Cache venv
-        uses: actions/cache@v4
-        with:
-          path: .venv
-          key: venv-${{ runner.os }}-py3.12-${{ hashFiles('requirements.txt') }}
-
-      - name: Install dependencies
-        run: |
-          test -d .venv || python -m venv .venv
-          source .venv/bin/activate
-          pip install -r requirements.txt
-
-      - name: Collect news
-        run: |
-          source .venv/bin/activate
-          RUN_DATE="${{ needs.universe.outputs.run_date }}"
-          python -m engine.collect news --date "$RUN_DATE"
-
-      - name: Commit and push
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          RUN_DATE="${{ needs.universe.outputs.run_date }}"
-          for attempt in 1 2 3 4 5; do
-            git fetch origin main
-            git reset origin/main
-            git add -f "collected/$RUN_DATE/news.json"
-            if git diff --staged --quiet; then
-              echo "No changes to commit"
-              break
-            fi
-            git commit -m "collected: news $RUN_DATE [skip ci]"
-            git push origin main && break
-            echo "Push failed (attempt $attempt), retrying..."
-            sleep $((attempt * 3))
-          done
-
-  collect-analyst:
-    needs: universe
-    if: needs.universe.outputs.skip != 'true'
-    runs-on: ubuntu-latest
-    timeout-minutes: 30
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          ref: main
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Cache venv
-        uses: actions/cache@v4
-        with:
-          path: .venv
-          key: venv-${{ runner.os }}-py3.12-${{ hashFiles('requirements.txt') }}
-
-      - name: Install dependencies
-        run: |
-          test -d .venv || python -m venv .venv
-          source .venv/bin/activate
-          pip install -r requirements.txt
-
-      - name: Collect analyst data
-        run: |
-          source .venv/bin/activate
-          RUN_DATE="${{ needs.universe.outputs.run_date }}"
-          python -m engine.collect analyst --date "$RUN_DATE"
-
-      - name: Commit and push
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          RUN_DATE="${{ needs.universe.outputs.run_date }}"
-          for attempt in 1 2 3 4 5; do
-            git fetch origin main
-            git reset origin/main
-            git add -f "collected/$RUN_DATE/analyst.json"
-            if git diff --staged --quiet; then
-              echo "No changes to commit"
-              break
-            fi
-            git commit -m "collected: analyst $RUN_DATE [skip ci]"
-            git push origin main && break
-            echo "Push failed (attempt $attempt), retrying..."
-            sleep $((attempt * 3))
-          done
-
-  # ── Independent collectors (no universe dependency) ─────────
-  collect-macro:
-    needs: universe
-    if: needs.universe.outputs.skip != 'true'
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          ref: main
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Cache venv
-        uses: actions/cache@v4
-        with:
-          path: .venv
-          key: venv-${{ runner.os }}-py3.12-${{ hashFiles('requirements.txt') }}
-
-      - name: Install dependencies
-        run: |
-          test -d .venv || python -m venv .venv
-          source .venv/bin/activate
-          pip install -r requirements.txt
-
-      - name: Collect macro data
-        run: |
-          source .venv/bin/activate
-          RUN_DATE="${{ needs.universe.outputs.run_date }}"
-          python -m engine.collect macro --date "$RUN_DATE"
-
-      - name: Commit and push
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          RUN_DATE="${{ needs.universe.outputs.run_date }}"
-          for attempt in 1 2 3 4 5; do
-            git fetch origin main
-            git reset origin/main
-            git add -f "collected/$RUN_DATE/macro.json"
-            if git diff --staged --quiet; then
-              echo "No changes to commit"
-              break
-            fi
-            git commit -m "collected: macro $RUN_DATE [skip ci]"
-            git push origin main && break
-            echo "Push failed (attempt $attempt), retrying..."
-            sleep $((attempt * 3))
-          done
-
-  collect-sector-etfs:
-    needs: universe
-    if: needs.universe.outputs.skip != 'true'
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          ref: main
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Cache venv
-        uses: actions/cache@v4
-        with:
-          path: .venv
-          key: venv-${{ runner.os }}-py3.12-${{ hashFiles('requirements.txt') }}
-
-      - name: Install dependencies
-        run: |
-          test -d .venv || python -m venv .venv
-          source .venv/bin/activate
-          pip install -r requirements.txt
-
-      - name: Collect sector ETF data
-        run: |
-          source .venv/bin/activate
-          RUN_DATE="${{ needs.universe.outputs.run_date }}"
-          python -m engine.collect sector_etfs --date "$RUN_DATE"
-
-      - name: Commit and push
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          RUN_DATE="${{ needs.universe.outputs.run_date }}"
-          for attempt in 1 2 3 4 5; do
-            git fetch origin main
-            git reset origin/main
-            git add -f "collected/$RUN_DATE/sector_etfs.json"
-            if git diff --staged --quiet; then
-              echo "No changes to commit"
-              break
-            fi
-            git commit -m "collected: sector_etfs $RUN_DATE [skip ci]"
-            git push origin main && break
-            echo "Push failed (attempt $attempt), retrying..."
-            sleep $((attempt * 3))
-          done
-
-  collect-capital-flow-etfs:
-    needs: universe
-    if: needs.universe.outputs.skip != 'true'
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          ref: main
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Cache venv
-        uses: actions/cache@v4
-        with:
-          path: .venv
-          key: venv-${{ runner.os }}-py3.12-${{ hashFiles('requirements.txt') }}
-
-      - name: Install dependencies
-        run: |
-          test -d .venv || python -m venv .venv
-          source .venv/bin/activate
-          pip install -r requirements.txt
-
-      - name: Collect capital flow ETF data
-        run: |
-          source .venv/bin/activate
-          RUN_DATE="${{ needs.universe.outputs.run_date }}"
-          python -m engine.collect capital_flow_etfs --date "$RUN_DATE"
-
-      - name: Commit and push
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          RUN_DATE="${{ needs.universe.outputs.run_date }}"
-          for attempt in 1 2 3 4 5; do
-            git fetch origin main
-            git reset origin/main
-            git add -f "collected/$RUN_DATE/capital_flow_etfs.json"
-            if git diff --staged --quiet; then
-              echo "No changes to commit"
-              break
-            fi
-            git commit -m "collected: capital_flow_etfs $RUN_DATE [skip ci]"
-            git push origin main && break
-            echo "Push failed (attempt $attempt), retrying..."
-            sleep $((attempt * 3))
-          done
-
-  # ── Analyze (depends on all collectors) ─────────────────────
+  # ── Analyze all data + export JSON ───────────────────────
   analyze:
-    needs:
-      - universe
-      - collect-prices
-      - collect-fundamentals
-      - collect-news
-      - collect-analyst
-      - collect-macro
-      - collect-sector-etfs
-      - collect-capital-flow-etfs
+    needs: collect
+    if: needs.collect.outputs.skip != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     outputs:
@@ -540,11 +193,11 @@ jobs:
             echo "data_changed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "data: update $(date -u +%Y-%m-%d) rankings"
-            git push
+            git push origin main
             echo "data_changed=true" >> "$GITHUB_OUTPUT"
           fi
 
-  # ── Deploy ──────────────────────────────────────────────────
+  # ── Deploy ───────────────────────────────────────────────
   deploy:
     needs: analyze
     if: needs.analyze.outputs.data_changed == 'true'
