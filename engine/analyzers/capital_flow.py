@@ -381,6 +381,18 @@ def _format_value(net: float) -> str:
     return f"{sign}${abs(net):.1f}B"
 
 
+def _compute_rfi(risk_net: float, safe_net: float) -> float:
+    """Compute Risk Flow Index: (risk_net - safe_net) / total_scale.
+
+    Returns a value in [-1, +1].  When risk_net dominates, RFI → +1 (risk-on);
+    when safe_net dominates, RFI → -1 (panic deleveraging).
+    """
+    total = abs(risk_net) + abs(safe_net)
+    if total < 0.5:
+        return 0.0
+    return round((risk_net - safe_net) / total, 4)
+
+
 def _detect_phase(risk_net: float, safe_net: float) -> str:
     """Classify the market phase based on risk/safe net flows."""
     total = abs(risk_net) + abs(safe_net)
@@ -642,8 +654,9 @@ def analyze_capital_flows(
         risk_net = round(sum(n["net"] for n in nodes.values() if n["type"] == "risk"), 1)
         safe_net = round(sum(n["net"] for n in nodes.values() if n["type"] == "safe"), 1)
 
-        # Detect phase
+        # Detect phase and compute RFI
         phase_type = _detect_phase(risk_net, safe_net)
+        rfi = _compute_rfi(risk_net, safe_net)
 
         # Generate flow arrows
         flows = _generate_flow_arrows(nodes)
@@ -657,6 +670,7 @@ def analyze_capital_flows(
             "id": f"w{weeks - w + 1}",
             "date": date_str,
             "phase": phase_type,
+            "rfi": rfi,
             "label_zh": phase_labels[phase_type]["zh"],
             "label_en": phase_labels[phase_type]["en"],
             "description_zh": phase_descriptions[phase_type]["zh"],
@@ -673,6 +687,7 @@ def analyze_capital_flows(
     if phases:
         latest = phases[-1]
         log.info(f"  Latest phase: {latest['phase']} "
-                 f"(risk_net={latest['risk_net']:.1f}B, safe_net={latest['safe_net']:.1f}B)")
+                 f"(risk_net={latest['risk_net']:.1f}B, safe_net={latest['safe_net']:.1f}B, "
+                 f"RFI={latest['rfi']:.2f})")
 
     return phases

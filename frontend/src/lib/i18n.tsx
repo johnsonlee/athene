@@ -33,6 +33,14 @@ const translations = {
     'flows.disclaimer': 'Fund flow proxy based on Chaikin Money Flow × dollar volume. Not actual fund flow data.',
     'flows.interval': 'Interval',
     'flows.range': 'Range',
+    'flows.rfi': 'Risk Flow Index',
+    'flows.rfiShort': 'RFI',
+    'flows.rfiPanic': 'Panic Deleverage',
+    'flows.rfiRiskOff': 'Risk-Off',
+    'flows.rfiMild': 'Mild Risk-Off',
+    'flows.rfiNeutral': 'Neutral',
+    'flows.rfiRiskOn': 'Risk-On',
+    'flows.total': 'Total',
 
     // Trends
     'trends.title': 'Sector Trends',
@@ -388,6 +396,14 @@ const translations = {
     'flows.disclaimer': '基于 Chaikin Money Flow × 成交额的代理估算，非实际基金申赎数据。',
     'flows.interval': '周期',
     'flows.range': '跨度',
+    'flows.rfi': '风险流动指数',
+    'flows.rfiShort': 'RFI',
+    'flows.rfiPanic': '恐慌去杠杆',
+    'flows.rfiRiskOff': '风险撤离',
+    'flows.rfiMild': '轻微避险',
+    'flows.rfiNeutral': '中性轮动',
+    'flows.rfiRiskOn': 'Risk-On',
+    'flows.total': '总规模',
 
     // Trends
     'trends.title': '板块趋势',

@@ -151,61 +151,468 @@ function NodeBox({ data, pos, locale, isDark }: {
   );
 }
 
-// ─── Summary Bar Component ───
-function SummaryBar({ phase, t }: { phase: CapitalFlowPhase; t: (key: any, p?: any) => string }) {
-  const riskNet = phase.risk_net;
-  const safeNet = phase.safe_net;
-  const isRiskOn = riskNet > 0;
-  const untracked = phase.untracked ?? 0;
-  const hasUntracked = Math.abs(untracked) > 1;
+// ─── RFI helpers ───
+function computeRfi(riskNet: number, safeNet: number): number {
+  const total = Math.abs(riskNet) + Math.abs(safeNet);
+  if (total < 0.5) return 0;
+  return (riskNet - safeNet) / total;
+}
+
+function getRfiRegime(rfi: number, t: (k: any) => string): { label: string; color: string } {
+  if (rfi < -0.7) return { label: t('flows.rfiPanic'), color: '#991b1b' };
+  if (rfi < -0.3) return { label: t('flows.rfiRiskOff'), color: '#ef4444' };
+  if (rfi < 0)    return { label: t('flows.rfiMild'), color: '#f59e0b' };
+  if (rfi < 0.3)  return { label: t('flows.rfiNeutral'), color: '#6b7280' };
+  return { label: t('flows.rfiRiskOn'), color: '#22c55e' };
+}
+
+// ─── RFI Trend Chart (SVG line chart with colored zone bands) ───
+const RFI_ZONES = [
+  { from: -1.0, to: -0.7, color: '#991b1b' },  // panic
+  { from: -0.7, to: -0.3, color: '#ef4444' },  // risk-off
+  { from: -0.3, to: 0.0,  color: '#f59e0b' },  // mild
+  { from: 0.0,  to: 0.3,  color: '#6b7280' },  // neutral
+  { from: 0.3,  to: 1.0,  color: '#22c55e' },  // risk-on
+];
+
+function RfiTrendChart({ phases, activeIdx, onSelect, t, isDark }: {
+  phases: CapitalFlowPhase[];
+  activeIdx: number;
+  onSelect: (idx: number) => void;
+  t: (k: any) => string;
+  isDark: boolean;
+}) {
+  const W = 600;
+  const H = 160;
+  const pad = { top: 14, right: 40, bottom: 22, left: 40 };
+  const cw = W - pad.left - pad.right; // chart width
+  const ch = H - pad.top - pad.bottom; // chart height
+
+  const n = phases.length;
+  if (n === 0) return null;
+
+  // Map RFI [-1, +1] → y coordinate
+  const yMin = -1, yMax = 1;
+  const toY = (v: number) => pad.top + ch * (1 - (v - yMin) / (yMax - yMin));
+  const toX = (i: number) => pad.left + (n > 1 ? (i / (n - 1)) * cw : cw / 2);
+
+  // Build the line path
+  const points = phases.map((p, i) => {
+    const rfi = p.rfi ?? computeRfi(p.risk_net, p.safe_net);
+    return { x: toX(i), y: toY(Math.max(-1, Math.min(1, rfi))), rfi };
+  });
+  const linePath = points.map((p, i) => `${i === 0 ? 'M' : 'L'} ${p.x} ${p.y}`).join(' ');
+
+  // Active point
+  const ap = points[activeIdx];
+  const activeRfi = ap?.rfi ?? 0;
+  const regime = getRfiRegime(activeRfi, t);
+
+  // Date labels: show ~5-7 evenly spaced labels
+  const labelCount = Math.min(n, 6);
+  const labelStep = n > 1 ? (n - 1) / (labelCount - 1) : 0;
+  const dateLabels: { idx: number; x: number; label: string }[] = [];
+  for (let k = 0; k < labelCount; k++) {
+    const idx = Math.round(k * labelStep);
+    dateLabels.push({ idx, x: toX(idx), label: phases[idx].date.slice(5) });
+  }
+
+  // Y-axis threshold labels
+  const yTicks = [
+    { v: 0.3, label: '0.3' },
+    { v: 0, label: '0' },
+    { v: -0.3, label: '-0.3' },
+    { v: -0.7, label: '-0.7' },
+  ];
+
+  // Hover hit area: find nearest point
+  const handleClick = useCallback((e: React.MouseEvent<SVGSVGElement>) => {
+    const svg = e.currentTarget;
+    const rect = svg.getBoundingClientRect();
+    const clientX = e.clientX - rect.left;
+    const svgX = (clientX / rect.width) * W;
+    // Find nearest phase index
+    let best = 0;
+    let bestDist = Infinity;
+    for (let i = 0; i < n; i++) {
+      const d = Math.abs(toX(i) - svgX);
+      if (d < bestDist) { bestDist = d; best = i; }
+    }
+    onSelect(best);
+  }, [n, onSelect]);
 
   return (
-    <div className="grid grid-cols-2 gap-2 sm:grid-cols-4 sm:gap-3">
-      <div className="tech-card rounded-lg p-3">
-        <div className="text-[10px] uppercase tracking-wider text-gray-500 dark:text-gray-500"
+    <svg
+      width="100%" viewBox={`0 0 ${W} ${H}`} className="block cursor-crosshair"
+      onClick={handleClick}
+    >
+      {/* Zone background bands */}
+      {RFI_ZONES.map((z, i) => (
+        <rect
+          key={i}
+          x={pad.left} y={toY(z.to)}
+          width={cw} height={toY(z.from) - toY(z.to)}
+          fill={z.color}
+          opacity={isDark ? 0.08 : 0.06}
+        />
+      ))}
+      {/* Horizontal threshold lines */}
+      {yTicks.map(({ v }) => (
+        <line
+          key={v}
+          x1={pad.left} y1={toY(v)} x2={pad.left + cw} y2={toY(v)}
+          stroke={isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.08)'}
+          strokeWidth={0.5}
+          strokeDasharray={v === 0 ? 'none' : '3 3'}
+        />
+      ))}
+      {/* Y-axis labels (right side) */}
+      {yTicks.map(({ v, label }) => (
+        <text
+          key={v}
+          x={pad.left + cw + 4} y={toY(v) + 3}
+          fill={isDark ? '#6b7280' : '#9ca3af'}
+          fontSize="8" style={{ fontFamily: 'monospace' }}
+        >
+          {label}
+        </text>
+      ))}
+      {/* X-axis date labels */}
+      {dateLabels.map(({ idx, x, label }) => (
+        <text
+          key={idx}
+          x={x} y={H - 4}
+          textAnchor="middle"
+          fill={isDark ? '#6b7280' : '#9ca3af'}
+          fontSize="8" style={{ fontFamily: 'monospace' }}
+        >
+          {label}
+        </text>
+      ))}
+      {/* RFI line */}
+      <path
+        d={linePath} fill="none"
+        stroke={isDark ? '#a5b4fc' : '#6366f1'}
+        strokeWidth={1.8} strokeLinejoin="round" strokeLinecap="round"
+      />
+      {/* Active vertical crosshair */}
+      {ap && (
+        <>
+          <line
+            x1={ap.x} y1={pad.top} x2={ap.x} y2={pad.top + ch}
+            stroke={isDark ? 'rgba(255,255,255,0.15)' : 'rgba(0,0,0,0.1)'}
+            strokeWidth={0.5} strokeDasharray="2 2"
+          />
+          <circle
+            cx={ap.x} cy={ap.y} r={4}
+            fill={regime.color} stroke={isDark ? '#1f2937' : '#fff'} strokeWidth={1.5}
+          />
+          {/* Value badge near the active point */}
+          <rect
+            x={ap.x - 24} y={ap.y - 18}
+            width={48} height={14} rx={3}
+            fill={isDark ? 'rgba(15,15,25,0.9)' : 'rgba(255,255,255,0.95)'}
+            stroke={regime.color} strokeWidth={0.5}
+          />
+          <text
+            x={ap.x} y={ap.y - 8}
+            textAnchor="middle" fill={regime.color}
+            fontSize="8" fontWeight="700" style={{ fontFamily: 'monospace' }}
+          >
+            {activeRfi >= 0 ? '+' : ''}{activeRfi.toFixed(2)}
+          </text>
+        </>
+      )}
+    </svg>
+  );
+}
+
+// ─── Per-asset line colors ───
+const ASSET_COLORS: Record<string, string> = {
+  // Risk
+  usEquity: '#3b82f6',  // blue
+  euEquity: '#14b8a6',  // teal
+  jpEquity: '#ec4899',  // pink
+  emEquity: '#f97316',  // orange
+  crypto:   '#a855f7',  // purple
+  // Safe
+  gold:       '#eab308', // yellow
+  usTreasury: '#6366f1', // indigo
+  cash:       '#22c55e', // green
+  corpBond:   '#06b6d4', // cyan
+};
+
+// ─── Asset Flow Panel (multi-line chart for one asset group) ───
+function AssetFlowPanel({ phases, activeIdx, onSelect, assetIds, isDark, locale }: {
+  phases: CapitalFlowPhase[];
+  activeIdx: number;
+  onSelect: (idx: number) => void;
+  assetIds: string[];
+  isDark: boolean;
+  locale: string;
+}) {
+  const W = 300;
+  const H = 120;
+  const pad = { top: 10, right: 8, bottom: 20, left: 38 };
+  const cw = W - pad.left - pad.right;
+  const ch = H - pad.top - pad.bottom;
+
+  const n = phases.length;
+  if (n === 0) return null;
+
+  // Collect all net values to determine y-axis range
+  let minVal = 0, maxVal = 0;
+  const seriesData: Record<string, number[]> = {};
+  for (const id of assetIds) {
+    seriesData[id] = [];
+  }
+  for (const p of phases) {
+    for (const id of assetIds) {
+      const v = p.nodes[id]?.net ?? 0;
+      seriesData[id].push(v);
+      if (v < minVal) minVal = v;
+      if (v > maxVal) maxVal = v;
+    }
+  }
+  // Ensure symmetric or at least include zero with some padding
+  const yPad = Math.max(1, (maxVal - minVal) * 0.1);
+  const yMin = Math.min(minVal - yPad, -0.5);
+  const yMax = Math.max(maxVal + yPad, 0.5);
+
+  const toY = (v: number) => pad.top + ch * (1 - (v - yMin) / (yMax - yMin));
+  const toX = (i: number) => pad.left + (n > 1 ? (i / (n - 1)) * cw : cw / 2);
+
+  // Zero line
+  const zeroY = toY(0);
+
+  // Y-axis ticks: 0 + nice bounds
+  const yTicks = [
+    { v: Math.round(yMax), label: `${Math.round(yMax)}` },
+    { v: 0, label: '0' },
+    { v: Math.round(yMin), label: `${Math.round(yMin)}` },
+  ];
+
+  // X-axis date labels: 3-4 evenly spaced
+  const labelCount = Math.min(n, 4);
+  const labelStep = n > 1 ? (n - 1) / (labelCount - 1) : 0;
+  const dateLabels: { idx: number; x: number; label: string }[] = [];
+  for (let k = 0; k < labelCount; k++) {
+    const idx = Math.round(k * labelStep);
+    dateLabels.push({ idx, x: toX(idx), label: phases[idx].date.slice(5) });
+  }
+
+  // Click handler
+  const handleClick = useCallback((e: React.MouseEvent<SVGSVGElement>) => {
+    const svg = e.currentTarget;
+    const rect = svg.getBoundingClientRect();
+    const svgX = ((e.clientX - rect.left) / rect.width) * W;
+    let best = 0, bestDist = Infinity;
+    for (let i = 0; i < n; i++) {
+      const d = Math.abs(toX(i) - svgX);
+      if (d < bestDist) { bestDist = d; best = i; }
+    }
+    onSelect(best);
+  }, [n, onSelect]);
+
+  const activeX = toX(activeIdx);
+
+  return (
+    <svg width="100%" viewBox={`0 0 ${W} ${H}`} className="block cursor-crosshair" onClick={handleClick}>
+      {/* Zero line */}
+      <line x1={pad.left} y1={zeroY} x2={pad.left + cw} y2={zeroY}
+        stroke={isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.08)'}
+        strokeWidth={0.5}
+      />
+      {/* Y-axis labels */}
+      {yTicks.map(({ v, label }) => (
+        <text key={v} x={pad.left - 4} y={toY(v) + 3} textAnchor="end"
+          fill={isDark ? '#6b7280' : '#9ca3af'} fontSize="7"
           style={{ fontFamily: 'monospace' }}>
-          {t('flows.riskNet')}
-        </div>
-        <div className={`mt-0.5 text-lg font-bold ${riskNet > 0 ? 'text-green-500' : 'text-red-500'}`}
+          {label}
+        </text>
+      ))}
+      {/* X-axis date labels */}
+      {dateLabels.map(({ idx, x, label }) => (
+        <text key={idx} x={x} y={H - 4} textAnchor="middle"
+          fill={isDark ? '#6b7280' : '#9ca3af'} fontSize="7"
           style={{ fontFamily: 'monospace' }}>
-          {riskNet > 0 ? '+' : ''}{riskNet.toFixed(1)}B
+          {label}
+        </text>
+      ))}
+      {/* Asset lines */}
+      {assetIds.map((id) => {
+        const vals = seriesData[id];
+        const path = vals.map((v, i) => `${i === 0 ? 'M' : 'L'} ${toX(i)} ${toY(v)}`).join(' ');
+        return (
+          <path key={id} d={path} fill="none"
+            stroke={ASSET_COLORS[id] ?? '#888'}
+            strokeWidth={1.3} strokeLinejoin="round" strokeLinecap="round"
+            opacity={0.85}
+          />
+        );
+      })}
+      {/* Active crosshair */}
+      <line x1={activeX} y1={pad.top} x2={activeX} y2={pad.top + ch}
+        stroke={isDark ? 'rgba(255,255,255,0.15)' : 'rgba(0,0,0,0.1)'}
+        strokeWidth={0.5} strokeDasharray="2 2"
+      />
+      {/* Active dots */}
+      {assetIds.map((id) => {
+        const v = seriesData[id][activeIdx] ?? 0;
+        return (
+          <circle key={id} cx={activeX} cy={toY(v)} r={2.5}
+            fill={ASSET_COLORS[id] ?? '#888'}
+            stroke={isDark ? '#1f2937' : '#fff'} strokeWidth={1}
+          />
+        );
+      })}
+      {/* Legend inside chart (top area) */}
+      {assetIds.map((id, i) => {
+        const node = phases[activeIdx]?.nodes[id];
+        const label = node ? (locale === 'zh' ? node.label_zh : node.label_en) : id;
+        const val = seriesData[id][activeIdx] ?? 0;
+        const colsPerRow = assetIds.length <= 4 ? assetIds.length : Math.ceil(assetIds.length / 2);
+        const row = Math.floor(i / colsPerRow);
+        const col = i % colsPerRow;
+        const spacing = cw / colsPerRow;
+        const lx = pad.left + col * spacing + 4;
+        const ly = pad.top + row * 10 + 7;
+        return (
+          <g key={id}>
+            <rect x={lx} y={ly - 5} width={5} height={5} rx={1}
+              fill={ASSET_COLORS[id] ?? '#888'}
+            />
+            <text x={lx + 7} y={ly} fontSize="7"
+              fill={isDark ? '#d1d5db' : '#374151'}
+              style={{ fontFamily: 'monospace' }}>
+              {label} {val >= 0 ? '+' : ''}{val.toFixed(1)}
+            </text>
+          </g>
+        );
+      })}
+    </svg>
+  );
+}
+
+// ─── Asset ID lists (stable references) ───
+const RISK_ASSET_IDS = ['usEquity', 'euEquity', 'jpEquity', 'emEquity', 'crypto'];
+const SAFE_ASSET_IDS = ['gold', 'usTreasury', 'cash', 'corpBond'];
+
+// ─── RFI Dashboard ───
+function RfiDashboard({ phases, activeIdx, onSelect, t, isDark, locale }: {
+  phases: CapitalFlowPhase[];
+  activeIdx: number;
+  onSelect: (idx: number) => void;
+  t: (key: any, p?: any) => string;
+  isDark: boolean;
+  locale: string;
+}) {
+  const phase = phases[activeIdx];
+  if (!phase) return null;
+
+  const riskNet = phase.risk_net;
+  const safeNet = phase.safe_net;
+  const untracked = phase.untracked ?? 0;
+  const hasUntracked = Math.abs(untracked) > 1;
+  const total = Math.abs(riskNet) + Math.abs(safeNet);
+  const rfi = phase.rfi ?? computeRfi(riskNet, safeNet);
+  const regime = getRfiRegime(rfi, t);
+
+  return (
+    <div className="space-y-2">
+      {/* Chart header: title + current RFI value */}
+      <div className="flex items-center justify-between">
+        <div className="flex items-center gap-2">
+          <span className="text-[10px] uppercase tracking-wider text-gray-500"
+            style={{ fontFamily: 'monospace' }}>
+            {t('flows.rfi')}
+          </span>
+          <span className="text-base font-bold" style={{ fontFamily: 'monospace', color: regime.color }}>
+            {rfi >= 0 ? '+' : ''}{rfi.toFixed(2)}
+          </span>
+          <span className="text-xs font-semibold" style={{ color: regime.color }}>
+            {regime.label}
+          </span>
         </div>
       </div>
-      <div className="tech-card rounded-lg p-3">
-        <div className="text-[10px] uppercase tracking-wider text-gray-500 dark:text-gray-500"
-          style={{ fontFamily: 'monospace' }}>
-          {t('flows.safeNet')}
+
+      {/* Trend chart */}
+      <div className="tech-card overflow-hidden rounded-xl p-2">
+        <RfiTrendChart
+          phases={phases} activeIdx={activeIdx} onSelect={onSelect}
+          t={t} isDark={isDark}
+        />
+      </div>
+
+      {/* Per-asset flow charts: risk left, safe right */}
+      <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+        <div className="tech-card overflow-hidden rounded-xl p-2">
+          <div className="mb-0.5 text-[10px] uppercase tracking-wider text-gray-500 px-1"
+            style={{ fontFamily: 'monospace' }}>
+            {t('flows.riskAssets')}
+          </div>
+          <AssetFlowPanel
+            phases={phases} activeIdx={activeIdx} onSelect={onSelect}
+            assetIds={RISK_ASSET_IDS} isDark={isDark} locale={locale}
+          />
         </div>
-        <div className={`mt-0.5 text-lg font-bold ${safeNet > 0 ? 'text-green-500' : 'text-red-500'}`}
-          style={{ fontFamily: 'monospace' }}>
-          {safeNet > 0 ? '+' : ''}{safeNet.toFixed(1)}B
+        <div className="tech-card overflow-hidden rounded-xl p-2">
+          <div className="mb-0.5 text-[10px] uppercase tracking-wider text-gray-500 px-1"
+            style={{ fontFamily: 'monospace' }}>
+            {t('flows.safeAssets')}
+          </div>
+          <AssetFlowPanel
+            phases={phases} activeIdx={activeIdx} onSelect={onSelect}
+            assetIds={SAFE_ASSET_IDS} isDark={isDark} locale={locale}
+          />
         </div>
       </div>
-      <div className={`rounded-lg border p-3 ${
-        isRiskOn
-          ? 'border-green-500/20 bg-green-500/5'
-          : 'border-red-500/20 bg-red-500/5'
-      }`}>
-        <div className="text-[10px] uppercase tracking-wider text-gray-500 dark:text-gray-500"
-          style={{ fontFamily: 'monospace' }}>
-          {t('flows.marketState')}
+
+      {/* Metrics row */}
+      <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+        <div className="tech-card rounded-lg p-3">
+          <div className="text-[10px] uppercase tracking-wider text-gray-500"
+            style={{ fontFamily: 'monospace' }}>
+            {t('flows.riskNet')}
+          </div>
+          <div className={`mt-0.5 text-lg font-bold ${riskNet > 0 ? 'text-green-500' : 'text-red-500'}`}
+            style={{ fontFamily: 'monospace' }}>
+            {riskNet > 0 ? '+' : ''}{riskNet.toFixed(1)}B
+          </div>
         </div>
-        <div className={`mt-0.5 text-base font-bold ${isRiskOn ? 'text-green-500' : 'text-red-500'}`}>
-          {isRiskOn ? t('flows.riskOn') : t('flows.riskOff')}
+        <div className="tech-card rounded-lg p-3">
+          <div className="text-[10px] uppercase tracking-wider text-gray-500"
+            style={{ fontFamily: 'monospace' }}>
+            {t('flows.safeNet')}
+          </div>
+          <div className={`mt-0.5 text-lg font-bold ${safeNet > 0 ? 'text-green-500' : 'text-red-500'}`}
+            style={{ fontFamily: 'monospace' }}>
+            {safeNet > 0 ? '+' : ''}{safeNet.toFixed(1)}B
+          </div>
         </div>
-      </div>
-      <div className={`rounded-lg border p-3 ${
-        hasUntracked
-          ? 'border-orange-500/20 bg-orange-500/5'
-          : 'tech-card'
-      }`}>
-        <div className="text-[10px] uppercase tracking-wider text-gray-500 dark:text-gray-500"
-          style={{ fontFamily: 'monospace' }}>
-          {hasUntracked ? t('flows.untracked') : t('flows.totalVolume')}
+        <div className="tech-card rounded-lg p-3">
+          <div className="text-[10px] uppercase tracking-wider text-gray-500"
+            style={{ fontFamily: 'monospace' }}>
+            {t('flows.total')}
+          </div>
+          <div className="mt-0.5 text-lg font-bold text-indigo-400"
+            style={{ fontFamily: 'monospace' }}>
+            ${Math.round(total)}B
+          </div>
         </div>
-        <div className={`mt-0.5 text-lg font-bold ${hasUntracked ? 'text-orange-400' : 'text-indigo-400'}`}
-          style={{ fontFamily: 'monospace' }}>
-          ${Math.round(hasUntracked ? untracked : Math.abs(riskNet) + Math.abs(safeNet))}B
+        <div className={`rounded-lg border p-3 ${
+          hasUntracked
+            ? 'border-orange-500/20 bg-orange-500/5'
+            : 'tech-card'
+        }`}>
+          <div className="text-[10px] uppercase tracking-wider text-gray-500"
+            style={{ fontFamily: 'monospace' }}>
+            {t('flows.untracked')}
+          </div>
+          <div className={`mt-0.5 text-lg font-bold ${hasUntracked ? 'text-orange-400' : 'text-gray-500'}`}
+            style={{ fontFamily: 'monospace' }}>
+            {hasUntracked ? `$${Math.round(untracked)}B` : '—'}
+          </div>
         </div>
       </div>
     </div>
@@ -514,8 +921,8 @@ export function CapitalFlowViz() {
       {/* Timeline */}
       <Timeline phases={phases} activeIdx={resolvedIdx} onSelect={handleSelect} locale={locale} isDark={isDark} />
 
-      {/* Summary stats */}
-      <SummaryBar phase={phase} t={t} />
+      {/* RFI Dashboard */}
+      <RfiDashboard phases={phases} activeIdx={resolvedIdx} onSelect={handleSelect} t={t} isDark={isDark} locale={locale} />
 
       {/* Flow Diagram */}
       <div className="tech-card overflow-hidden rounded-xl p-2">

@@ -256,6 +256,7 @@ export interface CapitalFlowPhase {
   id: string;
   date: string;
   phase: 'normal' | 'deleverage' | 'outflow' | 'bottom' | 'riskon';
+  rfi?: number;
   label_zh: string;
   label_en: string;
   description_zh: string;

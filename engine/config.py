@@ -153,6 +153,13 @@ CF_WEIGHT_RDV = 0.30              # Return × Dollar Volume (raw price-volume fl
 CF_CONSISTENCY_BOOST = 1.3        # multiplier when risk/safe signals agree
 CF_CONSISTENCY_PENALTY = 0.7      # multiplier when signals are contradictory
 
+# Risk Flow Index (RFI) thresholds: (risk_net - safe_net) / (|risk_net| + |safe_net|)
+RFI_RISK_ON = 0.3                 # RFI >  0.3 → Risk-On (capital flooding risk assets)
+RFI_NEUTRAL_HIGH = 0.3            # RFI  0 ~ 0.3 → Neutral rotation
+RFI_MILD_RISK_OFF = -0.3          # RFI -0.3 ~ 0 → Mild risk-off
+RFI_RISK_OFF = -0.3               # RFI < -0.3 → Risk-Off (capital fleeing risk assets)
+RFI_PANIC = -0.7                  # RFI < -0.7 → Panic deleveraging
+
 # CFTC COT mapping: futures contract keywords → node IDs
 CFTC_CONTRACT_MAP = {
     "E-MINI S&P 500":    "usEquity",
