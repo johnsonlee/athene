@@ -13,9 +13,9 @@ export function Header() {
     { path: '/', label: t('nav.flows') },
     { path: '/trends', label: t('nav.trends') },
     { path: '/indicators', label: t('nav.indicators' as any) },
-    { path: '/backtest', label: t('nav.backtest') },
     { path: '/dashboard', label: t('nav.dashboard') },
     { path: '/screener', label: t('nav.screener') },
+    { path: '/backtest', label: t('nav.backtest') },
     { path: '/about', label: t('nav.about') },
   ];
 
