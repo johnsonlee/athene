@@ -9,12 +9,17 @@ _US_EASTERN = ZoneInfo("America/New_York")
 
 
 def us_market_date() -> str:
-    """Return today's date in US Eastern Time as YYYY-MM-DD.
+    """Return the most recent US trading day in YYYY-MM-DD format.
 
+    If today (US Eastern) is a trading day, returns today.
+    Otherwise walks backwards to find the last trading day.
     All pipeline dates should use this instead of time.strftime() or
     datetime.now() to ensure consistency with US market hours.
     """
-    return datetime.now(_US_EASTERN).strftime("%Y-%m-%d")
+    d = datetime.now(_US_EASTERN).date()
+    while not is_us_trading_day(d):
+        d -= timedelta(days=1)
+    return d.strftime("%Y-%m-%d")
 
 
 def us_market_now() -> datetime:

@@ -40,6 +40,8 @@ from engine.config import (
     CF_WEIGHT_RDV,
     CF_CONSISTENCY_BOOST,
     CF_CONSISTENCY_PENALTY,
+    RFI_PANIC,
+    RFI_RISK_ON,
 )
 from engine.utils.logger import get_logger
 
@@ -394,11 +396,17 @@ def _compute_rfi(risk_net: float, safe_net: float) -> float:
 
 
 def _detect_phase(risk_net: float, safe_net: float) -> str:
-    """Classify the market phase based on risk/safe net flows."""
+    """Classify the market phase based on risk/safe net flows.
+
+    Uses absolute dollar thresholds first, then falls back to RFI-based
+    classification when dollar thresholds don't trigger but capital allocation
+    is heavily skewed (e.g. risk_net=0.2, safe_net=8.0 → RFI=-0.95).
+    """
     total = abs(risk_net) + abs(safe_net)
     if total < 0.5:
         return "normal"
 
+    # Primary: absolute dollar thresholds
     if risk_net < -3 and safe_net > 1:
         return "deleverage"
     if risk_net < -3 and safe_net < -1:
@@ -407,6 +415,15 @@ def _detect_phase(risk_net: float, safe_net: float) -> str:
         return "riskon"
     if risk_net > 0 and risk_net <= 3 and safe_net < 0:
         return "bottom"
+
+    # Secondary: RFI-based fallback for skewed allocation
+    rfi = (risk_net - safe_net) / total
+    if rfi < RFI_PANIC:  # < -0.7
+        # Overwhelmingly safe — deleverage behavior even if risk_net >= 0
+        return "deleverage"
+    if rfi > RFI_RISK_ON:  # > 0.3
+        return "riskon"
+
     return "normal"
 
 
