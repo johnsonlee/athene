@@ -7,7 +7,7 @@ used by the capital flow pipeline to compute money flow proxies.
 Supports two modes:
 - **Live fetch**: `collect_capital_flow_etfs()` downloads historical OHLCV from yfinance.
 - **Stored daily**: `load_capital_flow_etfs_from_collected()` reconstructs DataFrames
-  from stored `collected/YYYY/MM/DD/capital_flow_etfs.json` daily slices.
+  from stored `collected/YYYY/MM/DD/capital_flow_etfs/<TICKER>.json` daily slices.
 """
 
 from __future__ import annotations
@@ -174,7 +174,7 @@ def load_capital_flow_etfs_from_collected(
 ) -> Dict[str, pd.DataFrame]:
     """Reconstruct OHLCV DataFrames from stored daily slices.
 
-    Scans ``collected/YYYY/MM/DD/capital_flow_etfs.json`` files and assembles them
+    Scans ``collected/YYYY/MM/DD/capital_flow_etfs/<TICKER>.json`` files and assembles them
     into per-ticker DataFrames matching the format returned by
     ``collect_capital_flow_etfs()``.
 
@@ -203,21 +203,19 @@ def load_capital_flow_etfs_from_collected(
         return {}
 
     # Scan date directories in range
-    from engine.collect import iter_date_dirs
+    from engine.collect import iter_date_dirs, read_per_ticker
     rows_by_ticker: Dict[str, list] = {}
     loaded_dates = 0
 
     for date_str, dir_path in iter_date_dirs():
         if date_str < start_str or date_str > end_str:
             continue
-        path = os.path.join(dir_path, "capital_flow_etfs.json")
-        if not os.path.exists(path):
-            continue
         try:
-            with open(path, "r", encoding="utf-8") as f:
-                daily = json.load(f)
-        except (json.JSONDecodeError, IOError) as e:
-            log.warning(f"Failed to read {path}: {e}")
+            daily = read_per_ticker("capital_flow_etfs", dir_path)
+        except Exception as e:
+            log.warning(f"Failed to read capital_flow_etfs from {dir_path}: {e}")
+            continue
+        if not daily:
             continue
 
         loaded_dates += 1

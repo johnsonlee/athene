@@ -28,6 +28,7 @@ from engine.collect import (
     iter_date_dirs,
     _read_json_from_dir,
     read_json,
+    read_per_ticker,
 )
 from engine.analyzers.fundamental import analyze_fundamental, compute_fundamental_subscores
 from engine.analyzers.technical import analyze_technical, compute_technical_subscores
@@ -107,22 +108,20 @@ def _sorted_date_dirs(collected_dir: str) -> list[tuple[str, str]]:
 
 
 def _reconstruct_prices(collected_dir: str) -> dict[str, pd.DataFrame]:
-    """Reconstruct full price DataFrames from daily slices.
+    """Reconstruct full price DataFrames from daily per-ticker files.
 
-    Reads each collected/YYYY/MM/DD/prices.json, accumulates rows per ticker,
-    and returns Dict[str, pd.DataFrame] with DatetimeIndex — same structure
-    that analyzers expect.
+    Reads each collected/YYYY/MM/DD/prices/<TICKER>.json (or legacy prices.json),
+    accumulates rows per ticker, and returns Dict[str, pd.DataFrame] with
+    DatetimeIndex — same structure that analyzers expect.
     """
     date_dirs = _sorted_date_dirs(collected_dir)
     # ticker -> list of (date, {Open, High, Low, Close, Volume})
     ticker_rows: dict[str, list[tuple[str, dict]]] = {}
 
     for date_str, dir_path in date_dirs:
-        prices_path = os.path.join(dir_path, "prices.json")
-        if not os.path.exists(prices_path):
+        daily = read_per_ticker("prices", dir_path)
+        if not daily:
             continue
-        with open(prices_path, "r", encoding="utf-8") as f:
-            daily = json.load(f)
         for ticker, row in daily.items():
             if ticker not in ticker_rows:
                 ticker_rows[ticker] = []
@@ -144,19 +143,17 @@ def _reconstruct_prices(collected_dir: str) -> dict[str, pd.DataFrame]:
 
 
 def _reconstruct_etf_prices(collected_dir: str) -> dict[str, pd.DataFrame]:
-    """Reconstruct full ETF price DataFrames from daily slices.
+    """Reconstruct full ETF price DataFrames from daily per-ticker files.
 
-    Same approach as _reconstruct_prices but reads sector_etfs.json files.
+    Same approach as _reconstruct_prices but reads sector_etfs/<TICKER>.json files.
     """
     date_dirs = _sorted_date_dirs(collected_dir)
     ticker_rows: dict[str, list[tuple[str, dict]]] = {}
 
     for date_str, dir_path in date_dirs:
-        etf_path = os.path.join(dir_path, "sector_etfs.json")
-        if not os.path.exists(etf_path):
+        daily = read_per_ticker("sector_etfs", dir_path)
+        if not daily:
             continue
-        with open(etf_path, "r", encoding="utf-8") as f:
-            daily = json.load(f)
         for ticker, row in daily.items():
             if ticker not in ticker_rows:
                 ticker_rows[ticker] = []
@@ -177,19 +174,17 @@ def _reconstruct_etf_prices(collected_dir: str) -> dict[str, pd.DataFrame]:
 
 
 def _reconstruct_capital_flow_etf_prices(collected_dir: str) -> dict[str, pd.DataFrame]:
-    """Reconstruct capital flow ETF price DataFrames from daily slices.
+    """Reconstruct capital flow ETF price DataFrames from daily per-ticker files.
 
-    Same approach as _reconstruct_etf_prices but reads capital_flow_etfs.json files.
+    Same approach as _reconstruct_etf_prices but reads capital_flow_etfs/<TICKER>.json files.
     """
     date_dirs = _sorted_date_dirs(collected_dir)
     ticker_rows: dict[str, list[tuple[str, dict]]] = {}
 
     for date_str, dir_path in date_dirs:
-        cf_path = os.path.join(dir_path, "capital_flow_etfs.json")
-        if not os.path.exists(cf_path):
+        daily = read_per_ticker("capital_flow_etfs", dir_path)
+        if not daily:
             continue
-        with open(cf_path, "r", encoding="utf-8") as f:
-            daily = json.load(f)
         for ticker, row in daily.items():
             if ticker not in ticker_rows:
                 ticker_rows[ticker] = []

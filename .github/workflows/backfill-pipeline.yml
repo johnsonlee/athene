@@ -139,7 +139,7 @@ jobs:
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             git reset origin/main
-            git add -f collected/*/*/*/prices.json
+            git add -f collected/*/*/*/prices/
             if git diff --staged --quiet; then
               echo "No prices changes"
               break
@@ -196,7 +196,7 @@ jobs:
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             git reset origin/main
-            git add -f collected/*/*/*/sector_etfs.json
+            git add -f collected/*/*/*/sector_etfs/
             if git diff --staged --quiet; then
               echo "No sector ETFs changes"
               break
@@ -253,7 +253,7 @@ jobs:
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             git reset origin/main
-            git add -f collected/*/*/*/capital_flow_etfs.json
+            git add -f collected/*/*/*/capital_flow_etfs/
             if git diff --staged --quiet; then
               echo "No capital flow ETFs changes"
               break
@@ -375,6 +375,8 @@ jobs:
       - name: Commit analysis data
         id: commit
         run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           DATA_CHANGED=false
           for attempt in 1 2 3 4 5; do
             git fetch origin main
