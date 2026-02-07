@@ -49,7 +49,7 @@ npm run build    # Production build → dist/
 Scores ~550 individual stocks (S&P 500 + NASDAQ 100) across 4 qualitative dimensions.
 
 ```
-Collection (daily, stored to collected/{date}/):
+Collection (daily, stored to collected/YYYY/MM/DD/):
   universe.json        ← Wikipedia S&P 500 + NASDAQ 100 lists (~550 tickers)
   prices.json          ← yfinance daily OHLCV (365+ days per ticker)
   fundamentals.json    ← yfinance PE/PB/PS/ROE/ROA/D-E/FCF/margins (25+ metrics)
@@ -102,7 +102,7 @@ Frontend: / (screener table), /stock/:ticker (detail page), /dashboard (macro)
 Identifies sector-level trends using 11 SPDR Select Sector ETFs as institutional capital allocation proxies.
 
 ```
-Collection (daily, stored to collected/{date}/sector_etfs.json):
+Collection (daily, stored to collected/YYYY/MM/DD/sector_etfs.json):
   yfinance → 11 ETFs (XLK/XLF/XLE/XLV/XLY/XLP/XLRE/XLI/XLU/XLB/XLC) + SPY → daily OHLCV
 
 Analysis (5 signals per sector):
@@ -143,7 +143,7 @@ Frontend (/): TrendDashboard → TrendLineChart (11 sector lines, signal toggle,
 Tracks global capital rotation across 9 asset classes (5 risk, 4 safe) using ETF volume-price signals.
 
 ```
-Collection (daily, stored to collected/{date}/capital_flow_etfs.json):
+Collection (daily, stored to collected/YYYY/MM/DD/capital_flow_etfs.json):
   yfinance → 9 ETFs (SPY/VGK/EWJ/EEM/BTC-USD/GLD/TLT/BIL/LQD) → daily OHLCV snapshot
 
 Analysis (multi-window: 1W/2W/1M):

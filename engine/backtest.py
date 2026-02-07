@@ -54,15 +54,12 @@ def _load_etf_price_series() -> dict[str, dict[str, float]]:
 
     Returns: { date_str: { etf_ticker: close_price } }
     """
-    collected_dir = "collected"
-    if not os.path.isdir(collected_dir):
-        return {}
+    from engine.collect import iter_date_dirs
 
     prices: dict[str, dict[str, float]] = {}
-    dates = sorted(os.listdir(collected_dir))
 
-    for date_str in dates:
-        etf_path = os.path.join(collected_dir, date_str, "sector_etfs.json")
+    for date_str, dir_path in iter_date_dirs():
+        etf_path = os.path.join(dir_path, "sector_etfs.json")
         if not os.path.exists(etf_path):
             continue
         try:
@@ -87,15 +84,12 @@ def _load_capital_flow_etf_prices() -> dict[str, dict[str, float]]:
 
     Returns: { date_str: { etf_ticker: close_price } }
     """
-    collected_dir = "collected"
-    if not os.path.isdir(collected_dir):
-        return {}
+    from engine.collect import iter_date_dirs
 
     prices: dict[str, dict[str, float]] = {}
-    dates = sorted(os.listdir(collected_dir))
 
-    for date_str in dates:
-        cf_path = os.path.join(collected_dir, date_str, "capital_flow_etfs.json")
+    for date_str, dir_path in iter_date_dirs():
+        cf_path = os.path.join(dir_path, "capital_flow_etfs.json")
         if not os.path.exists(cf_path):
             continue
         try:
@@ -495,15 +489,13 @@ def backtest_macro_regime(
     Uses SPY forward returns as benchmark.
     """
     results = []
-    collected_dir = "collected"
-    if not os.path.isdir(collected_dir):
-        return results
+
+    from engine.collect import iter_date_dirs
 
     # Load macro data for each date
     macro_by_date: dict[str, dict] = {}
-    dates = sorted(os.listdir(collected_dir))
-    for date_str in dates:
-        macro_path = os.path.join(collected_dir, date_str, "macro.json")
+    for date_str, dir_path in iter_date_dirs():
+        macro_path = os.path.join(dir_path, "macro.json")
         if not os.path.exists(macro_path):
             continue
         try:

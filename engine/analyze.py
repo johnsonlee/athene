@@ -3,7 +3,7 @@
 Usage:
     python -m engine.analyze
 
-Reads all collected/YYYY-MM-DD/ directories:
+Reads all collected/YYYY/MM/DD/ directories:
   - prices/ETFs: concatenate daily slices → full DataFrames (200+ days for SMA200)
   - fundamentals/news/analyst/macro: latest date only
 Runs the full analysis + scoring + export pipeline.
@@ -15,15 +15,17 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import shutil
 import sys
 import time
+from datetime import datetime, timezone
 
 import numpy as np
 import pandas as pd
 
 from engine.collect import (
     COLLECTED_DIR,
-    _is_date_dir,
+    iter_date_dirs,
     _read_json_from_dir,
     read_json,
 )
@@ -74,23 +76,40 @@ _DIM_WEIGHTS = {
     "downside_control": WEIGHT_DOWNSIDE_CONTROL,
 }
 
+SNAPSHOT_DIR = "snapshots"
+SNAPSHOT_FILES = [
+    "meta.json", "rankings.json", "trends.json", "capital_flows.json",
+    "leading_indicators.json", "ic.json", "backtest.json",
+]
+
+
+def _snapshot_results(run_date: str) -> None:
+    """Archive analysis output files to snapshots/YYYY/MM/DD_{HHmmss}/ for debugging."""
+    y, m, d = run_date.split("-")
+    ts = datetime.now(timezone.utc).strftime("%H%M%S")
+    snap_dir = os.path.join(SNAPSHOT_DIR, y, m, f"{d}_{ts}")
+    copied = 0
+    for fname in SNAPSHOT_FILES:
+        src = os.path.join(OUTPUT_DIR, fname)
+        if os.path.exists(src):
+            os.makedirs(snap_dir, exist_ok=True)
+            shutil.copy2(src, os.path.join(snap_dir, fname))
+            copied += 1
+    if copied:
+        log.info(f"Snapshot: {copied} files → {snap_dir}")
+
 
 # ── Date-partitioned data reconstruction ──────────────────────────
 
-def _sorted_date_dirs(collected_dir: str) -> list[str]:
-    """Return sorted list of YYYY-MM-DD directory names under collected_dir."""
-    if not os.path.isdir(collected_dir):
-        return []
-    return sorted(
-        d for d in os.listdir(collected_dir)
-        if os.path.isdir(os.path.join(collected_dir, d)) and _is_date_dir(d)
-    )
+def _sorted_date_dirs(collected_dir: str) -> list[tuple[str, str]]:
+    """Return sorted list of (date_str, dir_path) tuples under collected_dir."""
+    return iter_date_dirs(collected_dir)
 
 
 def _reconstruct_prices(collected_dir: str) -> dict[str, pd.DataFrame]:
     """Reconstruct full price DataFrames from daily slices.
 
-    Reads each collected/<date>/prices.json, accumulates rows per ticker,
+    Reads each collected/YYYY/MM/DD/prices.json, accumulates rows per ticker,
     and returns Dict[str, pd.DataFrame] with DatetimeIndex — same structure
     that analyzers expect.
     """
@@ -98,8 +117,7 @@ def _reconstruct_prices(collected_dir: str) -> dict[str, pd.DataFrame]:
     # ticker -> list of (date, {Open, High, Low, Close, Volume})
     ticker_rows: dict[str, list[tuple[str, dict]]] = {}
 
-    for d in date_dirs:
-        dir_path = os.path.join(collected_dir, d)
+    for date_str, dir_path in date_dirs:
         prices_path = os.path.join(dir_path, "prices.json")
         if not os.path.exists(prices_path):
             continue
@@ -108,7 +126,7 @@ def _reconstruct_prices(collected_dir: str) -> dict[str, pd.DataFrame]:
         for ticker, row in daily.items():
             if ticker not in ticker_rows:
                 ticker_rows[ticker] = []
-            ticker_rows[ticker].append((d, row))
+            ticker_rows[ticker].append((date_str, row))
 
     result: dict[str, pd.DataFrame] = {}
     for ticker, rows in ticker_rows.items():
@@ -133,8 +151,7 @@ def _reconstruct_etf_prices(collected_dir: str) -> dict[str, pd.DataFrame]:
     date_dirs = _sorted_date_dirs(collected_dir)
     ticker_rows: dict[str, list[tuple[str, dict]]] = {}
 
-    for d in date_dirs:
-        dir_path = os.path.join(collected_dir, d)
+    for date_str, dir_path in date_dirs:
         etf_path = os.path.join(dir_path, "sector_etfs.json")
         if not os.path.exists(etf_path):
             continue
@@ -143,7 +160,7 @@ def _reconstruct_etf_prices(collected_dir: str) -> dict[str, pd.DataFrame]:
         for ticker, row in daily.items():
             if ticker not in ticker_rows:
                 ticker_rows[ticker] = []
-            ticker_rows[ticker].append((d, row))
+            ticker_rows[ticker].append((date_str, row))
 
     result: dict[str, pd.DataFrame] = {}
     for ticker, rows in ticker_rows.items():
@@ -167,8 +184,7 @@ def _reconstruct_capital_flow_etf_prices(collected_dir: str) -> dict[str, pd.Dat
     date_dirs = _sorted_date_dirs(collected_dir)
     ticker_rows: dict[str, list[tuple[str, dict]]] = {}
 
-    for d in date_dirs:
-        dir_path = os.path.join(collected_dir, d)
+    for date_str, dir_path in date_dirs:
         cf_path = os.path.join(dir_path, "capital_flow_etfs.json")
         if not os.path.exists(cf_path):
             continue
@@ -177,7 +193,7 @@ def _reconstruct_capital_flow_etf_prices(collected_dir: str) -> dict[str, pd.Dat
         for ticker, row in daily.items():
             if ticker not in ticker_rows:
                 ticker_rows[ticker] = []
-            ticker_rows[ticker].append((d, row))
+            ticker_rows[ticker].append((date_str, row))
 
     result: dict[str, pd.DataFrame] = {}
     for ticker, rows in ticker_rows.items():
@@ -195,9 +211,7 @@ def _reconstruct_capital_flow_etf_prices(collected_dir: str) -> dict[str, pd.Dat
 
 def _load_latest_snapshot(name: str, collected_dir: str) -> object:
     """Find the latest date directory containing <name>.json and load it."""
-    date_dirs = _sorted_date_dirs(collected_dir)
-    for d in reversed(date_dirs):
-        dir_path = os.path.join(collected_dir, d)
+    for _, dir_path in reversed(_sorted_date_dirs(collected_dir)):
         json_path = os.path.join(dir_path, f"{name}.json")
         gz_path = os.path.join(dir_path, f"{name}.json.gz")
         if os.path.exists(json_path) or os.path.exists(gz_path):
@@ -521,6 +535,8 @@ def run(collected_dir: str = COLLECTED_DIR) -> None:
         headlines = annotate_headlines(news.get(ticker, []))
         export_stock_detail(ticker, price_data, fund_data, tech_data, sent_data, rank_data, headlines, anl_data)
         exported_count += 1
+
+    _snapshot_results(run_date)
 
     # No cleanup of collected/ — data is permanently retained
 

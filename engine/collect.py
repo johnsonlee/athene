@@ -13,7 +13,7 @@ Usage:
     python -m engine.collect capital_flow_etfs [--date 2026-02-05] [--force]
     python -m engine.collect capital_flow_etfs --backfill
 
-Each command writes output to collected/YYYY-MM-DD/<name>.json.
+Each command writes output to collected/YYYY/MM/DD/<name>.json.
 Per-ticker collectors read tickers from the latest universe.json.
 If data already exists for the given date, the command is skipped unless --force is set.
 """
@@ -25,7 +25,6 @@ import gzip
 import json
 import os
 import sys
-import time
 
 import pandas as pd
 
@@ -37,8 +36,9 @@ COLLECTED_DIR = "collected"
 
 
 def _get_date_dir(date_str: str) -> str:
-    """Return the date-partitioned directory path: collected/YYYY-MM-DD/."""
-    return os.path.join(COLLECTED_DIR, date_str)
+    """Return the date-partitioned directory path: collected/YYYY/MM/DD/."""
+    y, m, d = date_str.split("-")
+    return os.path.join(COLLECTED_DIR, y, m, d)
 
 
 def _ensure_date_dir(date_str: str) -> str:
@@ -62,7 +62,7 @@ def _is_trading_day(date_str: str) -> bool:
 
 
 def _write_json(name: str, data: object, date_str: str | None = None) -> str:
-    """Write data as JSON to collected/YYYY-MM-DD/<name>.json. Returns the file path."""
+    """Write data as JSON to collected/YYYY/MM/DD/<name>.json. Returns the file path."""
     ds = date_str or _today()
     d = _ensure_date_dir(ds)
     path = os.path.join(d, f"{name}.json")
@@ -73,7 +73,7 @@ def _write_json(name: str, data: object, date_str: str | None = None) -> str:
 
 
 def _write_json_gz(name: str, data: object, date_str: str | None = None) -> str:
-    """Write data as gzipped JSON to collected/YYYY-MM-DD/<name>.json.gz. Returns the file path."""
+    """Write data as gzipped JSON to collected/YYYY/MM/DD/<name>.json.gz. Returns the file path."""
     ds = date_str or _today()
     d = _ensure_date_dir(ds)
     path = os.path.join(d, f"{name}.json.gz")
@@ -87,7 +87,7 @@ def _write_json_gz(name: str, data: object, date_str: str | None = None) -> str:
 def read_json(name: str, date_str: str | None = None) -> object:
     """Read collected data.
 
-    If *date_str* is given, reads from collected/<date_str>/<name>.json[.gz].
+    If *date_str* is given, reads from collected/YYYY/MM/DD/<name>.json[.gz].
     Otherwise finds the latest date directory containing <name>.json[.gz].
     """
     if date_str:
@@ -113,12 +113,7 @@ def _read_json_latest(name: str) -> object:
     """Find the latest date directory containing <name>.json[.gz] and load it."""
     if not os.path.isdir(COLLECTED_DIR):
         raise FileNotFoundError(f"No collected/ directory found")
-    date_dirs = sorted(
-        d for d in os.listdir(COLLECTED_DIR)
-        if os.path.isdir(os.path.join(COLLECTED_DIR, d)) and _is_date_dir(d)
-    )
-    for d in reversed(date_dirs):
-        dir_path = os.path.join(COLLECTED_DIR, d)
+    for _, dir_path in reversed(iter_date_dirs()):
         gz = os.path.join(dir_path, f"{name}.json.gz")
         js = os.path.join(dir_path, f"{name}.json")
         if os.path.exists(gz) or os.path.exists(js):
@@ -126,15 +121,26 @@ def _read_json_latest(name: str) -> object:
     raise FileNotFoundError(f"No collected data for '{name}' in any date directory")
 
 
-def _is_date_dir(name: str) -> bool:
-    """Check if a directory name looks like YYYY-MM-DD."""
-    if len(name) != 10:
-        return False
-    try:
-        time.strptime(name, "%Y-%m-%d")
-        return True
-    except ValueError:
-        return False
+def iter_date_dirs(base_dir: str | None = None) -> list[tuple[str, str]]:
+    """Walk YYYY/MM/DD tree under base_dir. Returns sorted [(date_str, dir_path)]."""
+    root = base_dir or COLLECTED_DIR
+    if not os.path.isdir(root):
+        return []
+    result: list[tuple[str, str]] = []
+    for y in sorted(os.listdir(root)):
+        yp = os.path.join(root, y)
+        if not os.path.isdir(yp) or len(y) != 4 or not y.isdigit():
+            continue
+        for m in sorted(os.listdir(yp)):
+            mp = os.path.join(yp, m)
+            if not os.path.isdir(mp) or len(m) != 2 or not m.isdigit():
+                continue
+            for d in sorted(os.listdir(mp)):
+                dp = os.path.join(mp, d)
+                if not os.path.isdir(dp) or len(d) != 2 or not d.isdigit():
+                    continue
+                result.append((f"{y}-{m}-{d}", dp))
+    return result
 
 
 def serialize_dataframe(df: pd.DataFrame) -> dict:
@@ -173,7 +179,7 @@ def _load_tickers() -> list[str]:
 
 
 def _already_collected(name: str, date_str: str) -> bool:
-    """Check if collected/<date>/<name>.json[.gz] already exists."""
+    """Check if collected/YYYY/MM/DD/<name>.json[.gz] already exists."""
     d = _get_date_dir(date_str)
     return (
         os.path.exists(os.path.join(d, f"{name}.json"))
@@ -189,10 +195,40 @@ def _skip_if_exists(name: str, args: argparse.Namespace) -> bool:
     return False
 
 
+def _weekdays_in_range(start: str, end: str) -> list[str]:
+    """Return list of weekday date strings (Mon-Fri) between start and end inclusive."""
+    from datetime import date as _date, timedelta
+    s = _date.fromisoformat(start)
+    e = _date.fromisoformat(end)
+    result = []
+    d = s
+    while d <= e:
+        if d.weekday() < 5:  # Mon=0 .. Fri=4
+            result.append(d.isoformat())
+        d += timedelta(days=1)
+    return result
+
+
+def _all_dates_collected(name: str, start: str, end: str) -> bool:
+    """Return True if all weekdays in [start, end] already have collected data for name."""
+    for date_str in _weekdays_in_range(start, end):
+        if not _already_collected(name, date_str):
+            return False
+    return True
+
+
+def _dates_missing(name: str, start: str, end: str) -> set[str]:
+    """Return the set of weekday dates in [start, end] missing collected data for name."""
+    return {
+        date_str for date_str in _weekdays_in_range(start, end)
+        if not _already_collected(name, date_str)
+    }
+
+
 # ── CLI commands ──────────────────────────────────────────────────
 
 def cmd_universe(args: argparse.Namespace) -> None:
-    """Build stock universe and write to collected/<date>/universe.json."""
+    """Build stock universe and write to collected/YYYY/MM/DD/universe.json."""
     if _skip_if_exists("universe", args):
         return
     if args.tickers:
@@ -236,8 +272,20 @@ def _backfill_prices(args: argparse.Namespace) -> None:
     tickers = _load_tickers()
     start_date = getattr(args, "start", None)
     end_date = getattr(args, "end", None)
+    force = getattr(args, "force", False)
     label = f"{start_date} to {end_date}" if start_date and end_date else "365 days"
-    log.info(f"Backfilling prices for {len(tickers)} tickers ({label})...")
+
+    # Skip entire API call if all dates already collected
+    if not force and start_date and end_date:
+        if _all_dates_collected("prices", start_date, end_date):
+            log.info(f"All dates in {label} already have prices — skipping (use --force to overwrite)")
+            return
+        missing = _dates_missing("prices", start_date, end_date)
+        log.info(f"Backfilling prices for {len(tickers)} tickers ({label}, {len(missing)} dates missing)...")
+    else:
+        missing = None
+        log.info(f"Backfilling prices for {len(tickers)} tickers ({label})...")
+
     prices = collect_prices(tickers, start_date=start_date, end_date=end_date)
 
     total_files = 0
@@ -245,6 +293,9 @@ def _backfill_prices(args: argparse.Namespace) -> None:
         for date_val, row in df.iterrows():
             date_str = pd.Timestamp(date_val).strftime("%Y-%m-%d")
             if not _is_trading_day(date_str):
+                continue
+            # Skip dates that already have data (unless --force)
+            if not force and missing is not None and date_str not in missing:
                 continue
             d = _get_date_dir(date_str)
             path = os.path.join(d, "prices.json")
@@ -271,8 +322,8 @@ def _backfill_prices(args: argparse.Namespace) -> None:
 
     # Count date dirs with prices
     date_count = sum(
-        1 for d in os.listdir(COLLECTED_DIR)
-        if _is_date_dir(d) and os.path.exists(os.path.join(COLLECTED_DIR, d, "prices.json"))
+        1 for _, dp in iter_date_dirs()
+        if os.path.exists(os.path.join(dp, "prices.json"))
     )
     log.info(f"Backfill complete: {len(prices)} tickers across {date_count} date directories")
 
@@ -367,14 +418,29 @@ def _backfill_capital_flow_etfs(args: argparse.Namespace) -> None:
 
     start_date = getattr(args, "start", None)
     end_date = getattr(args, "end", None)
+    force = getattr(args, "force", False)
     label = f"{start_date} to {end_date}" if start_date and end_date else "all available"
-    log.info(f"Backfilling capital flow ETF data ({label})...")
+
+    # Skip entire API call if all dates already collected
+    if not force and start_date and end_date:
+        if _all_dates_collected("capital_flow_etfs", start_date, end_date):
+            log.info(f"All dates in {label} already have capital_flow_etfs — skipping (use --force to overwrite)")
+            return
+        missing = _dates_missing("capital_flow_etfs", start_date, end_date)
+        log.info(f"Backfilling capital flow ETF data ({label}, {len(missing)} dates missing)...")
+    else:
+        missing = None
+        log.info(f"Backfilling capital flow ETF data ({label})...")
+
     etf_prices = collect_capital_flow_etfs(start_date=start_date, end_date=end_date)
 
     for ticker, df in etf_prices.items():
         for date_val, row in df.iterrows():
             date_str = pd.Timestamp(date_val).strftime("%Y-%m-%d")
             if not _is_trading_day(date_str):
+                continue
+            # Skip dates that already have data (unless --force)
+            if not force and missing is not None and date_str not in missing:
                 continue
             d = _get_date_dir(date_str)
             path = os.path.join(d, "capital_flow_etfs.json")
@@ -397,8 +463,8 @@ def _backfill_capital_flow_etfs(args: argparse.Namespace) -> None:
                 json.dump(existing, f, default=str)
 
     date_count = sum(
-        1 for d in os.listdir(COLLECTED_DIR)
-        if _is_date_dir(d) and os.path.exists(os.path.join(COLLECTED_DIR, d, "capital_flow_etfs.json"))
+        1 for _, dp in iter_date_dirs()
+        if os.path.exists(os.path.join(dp, "capital_flow_etfs.json"))
     )
     log.info(f"Backfill complete: {len(etf_prices)} ETFs across {date_count} date directories")
 
@@ -409,14 +475,29 @@ def _backfill_sector_etfs(args: argparse.Namespace) -> None:
 
     start_date = getattr(args, "start", None)
     end_date = getattr(args, "end", None)
+    force = getattr(args, "force", False)
     label = f"{start_date} to {end_date}" if start_date and end_date else "365 days"
-    log.info(f"Backfilling sector ETF data ({label})...")
+
+    # Skip entire API call if all dates already collected
+    if not force and start_date and end_date:
+        if _all_dates_collected("sector_etfs", start_date, end_date):
+            log.info(f"All dates in {label} already have sector_etfs — skipping (use --force to overwrite)")
+            return
+        missing = _dates_missing("sector_etfs", start_date, end_date)
+        log.info(f"Backfilling sector ETF data ({label}, {len(missing)} dates missing)...")
+    else:
+        missing = None
+        log.info(f"Backfilling sector ETF data ({label})...")
+
     etf_prices = collect_sector_etfs(start_date=start_date, end_date=end_date)
 
     for ticker, df in etf_prices.items():
         for date_val, row in df.iterrows():
             date_str = pd.Timestamp(date_val).strftime("%Y-%m-%d")
             if not _is_trading_day(date_str):
+                continue
+            # Skip dates that already have data (unless --force)
+            if not force and missing is not None and date_str not in missing:
                 continue
             d = _get_date_dir(date_str)
             path = os.path.join(d, "sector_etfs.json")
@@ -439,8 +520,8 @@ def _backfill_sector_etfs(args: argparse.Namespace) -> None:
                 json.dump(existing, f, default=str)
 
     date_count = sum(
-        1 for d in os.listdir(COLLECTED_DIR)
-        if _is_date_dir(d) and os.path.exists(os.path.join(COLLECTED_DIR, d, "sector_etfs.json"))
+        1 for _, dp in iter_date_dirs()
+        if os.path.exists(os.path.join(dp, "sector_etfs.json"))
     )
     log.info(f"Backfill complete: {len(etf_prices)} ETFs across {date_count} date directories")
 

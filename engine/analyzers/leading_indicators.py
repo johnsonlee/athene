@@ -40,12 +40,10 @@ def _load_json(filename: str) -> Any:
 
 def _load_cf_etf_prices() -> dict[str, dict[str, float]]:
     """Load capital flow ETF daily close prices from collected/."""
-    collected_dir = "collected"
-    if not os.path.isdir(collected_dir):
-        return {}
+    from engine.collect import iter_date_dirs
     prices: dict[str, dict[str, float]] = {}
-    for date_str in sorted(os.listdir(collected_dir)):
-        cf_path = os.path.join(collected_dir, date_str, "capital_flow_etfs.json")
+    for date_str, dir_path in iter_date_dirs():
+        cf_path = os.path.join(dir_path, "capital_flow_etfs.json")
         if not os.path.exists(cf_path):
             continue
         try:
@@ -66,12 +64,10 @@ def _load_cf_etf_prices() -> dict[str, dict[str, float]]:
 
 def _load_macro_history() -> dict[str, dict]:
     """Load macro.json from collected/ for VIX history."""
-    collected_dir = "collected"
-    if not os.path.isdir(collected_dir):
-        return {}
+    from engine.collect import iter_date_dirs
     result: dict[str, dict] = {}
-    for date_str in sorted(os.listdir(collected_dir)):
-        p = os.path.join(collected_dir, date_str, "macro.json")
+    for date_str, dir_path in iter_date_dirs():
+        p = os.path.join(dir_path, "macro.json")
         if not os.path.exists(p):
             continue
         try:
