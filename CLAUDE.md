@@ -28,6 +28,7 @@ npm run build    # Production build → dist/
 
 - **All changes require a PR.** Never push directly to main. Create a feature branch, commit changes, and submit a pull request for review.
 - **Always squash commits before push.** Each push to a feature branch should be a single, clean commit summarizing all changes.
+- **Always rebase onto latest main before push.** Run `git fetch origin main && git rebase origin/main` before every push to keep the branch up to date and avoid merge commits.
 - **No Claude session links in commits.** Do not append `https://claude.ai/code/...` URLs to commit messages.
 
 ## Key Design Decisions
@@ -475,21 +476,48 @@ When implementing a new version from the roadmap:
 
 ## Roadmap
 
-### Sector Drill-Down (next)
+### Signal Backtesting (next)
 
+- Backtest framework using stored `history.json` + `trend_history.json` + `capital_flows.json` historical data
+- Core question per signal: entry condition → hit rate, avg return, max drawdown over N-day forward window
+- Key signals to validate: RFI regime transitions (e.g. -1 → -0.7), macro regime switches, sector trend state changes
+- Output: per-signal stats table (win rate, expectancy, max drawdown, sample count)
+- Minimum viable: pure Python, no new dependencies, reads from existing `collected/` and `frontend/public/data/` archives
+
+### Leading Indicators
+
+- VIX term structure: front-month vs second-month VIX futures ratio — inversion signals peak fear (yfinance: `^VIX`, `^VIX3M`)
+- Credit spread velocity: LQD/TLT ratio rate-of-change — leads equity turns by days (already have both ETFs in capital flow collector)
+- RFI acceleration: second derivative of RFI (delta of delta) — momentum of capital flow direction change (computed from existing `capital_flows.json`)
+- Breadth thrust: % of sectors flipping from downtrend to uptrend within a rolling window — signals broad-based reversals (computed from existing `trends.json`)
+
+### Signal-to-Position Mapping
+
+- Depends on: Signal Backtesting + Leading Indicators
+- Multi-signal composite decision matrix: RFI level + RFI direction + macro regime + sector trend breadth → position size bucket
+- Position buckets: empty (0%), light (25%), half (50%), heavy (75%), full (100%)
+- Rules derived from backtesting results (not hand-tuned) — each rule must cite backtest evidence
+- Export as `signals.json` with current composite signal state + suggested position bucket
+- Frontend: signal dashboard showing current state of each input signal and the resulting position suggestion
+
+### Position Alerts
+
+- Depends on: Signal-to-Position Mapping
+- User watchlist (localStorage)
+- Alert when position suggestion changes (e.g. light → heavy) based on validated signal rules
+- Frontend-only (compare watchlist against `signals.json` + existing JSON data)
+
+### Leading Stock Valuation
+
+- Depends on: Signal Backtesting (validated sector trends)
+- For sectors in backtesting-confirmed uptrend, identify leading stocks (top RS within sector + quality metrics)
+- Valuation analysis of sector leaders (reuse existing fundamental scoring)
+- New page `/leaders` — top 3-5 stocks per trending sector
+
+### Sector Drill-Down
+
+- Independent — can be built at any time
 - Sector detail page (`/sector/:name`) — ETF price chart, signal radar, breadth history, constituent stocks
 - Sparklines in trend table from `trend_history.json`
 - 13F institutional holdings via SEC Edgar API
 - ETF fund flow proxy via AUM changes
-
-### Leading Stock Valuation (龙头估值)
-
-- For sectors in uptrend/strong_uptrend, identify leading stocks (top RS within sector + quality metrics)
-- Valuation analysis of sector leaders (reuse existing fundamental scoring)
-- New page `/leaders` — top 3-5 stocks per trending sector
-
-### Position Alerts (持仓提醒)
-
-- User watchlist (localStorage)
-- Alert when sector trend changes or stock RS vs sector turns negative
-- Frontend-only (compare watchlist against existing JSON data)

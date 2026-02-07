@@ -227,7 +227,7 @@ function RfiTrendChart({ phases, activeIdx, onSelect, t, isDark }: {
   const toY = (v: number) => pad.top + ch * (1 - (v - yMin) / (yMax - yMin));
   const toX = (i: number) => pad.left + (n > 1 ? (i / (n - 1)) * cw : cw / 2);
 
-  // Build the line path using Catmull-Rom spline (no EMA — spline handles smoothness)
+  // Build the line path using Catmull-Rom spline
   const points = phases.map((p, i) => {
     const rfi = p.rfi ?? computeRfi(p.risk_net, p.safe_net);
     return { x: toX(i), y: toY(Math.max(-1, Math.min(1, rfi))), rfi };
