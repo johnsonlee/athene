@@ -40,15 +40,13 @@ def _load_json(filename: str) -> Any:
 
 def _load_cf_etf_prices() -> dict[str, dict[str, float]]:
     """Load capital flow ETF daily close prices from collected/."""
-    from engine.collect import iter_date_dirs
+    from engine.collect import iter_date_dirs, read_per_ticker
     prices: dict[str, dict[str, float]] = {}
     for date_str, dir_path in iter_date_dirs():
-        cf_path = os.path.join(dir_path, "capital_flow_etfs.json")
-        if not os.path.exists(cf_path):
-            continue
         try:
-            with open(cf_path, "r", encoding="utf-8") as f:
-                data = json.load(f)
+            data = read_per_ticker("capital_flow_etfs", dir_path)
+            if not data:
+                continue
             day: dict[str, float] = {}
             for ticker, etf_data in data.items():
                 if isinstance(etf_data, dict):

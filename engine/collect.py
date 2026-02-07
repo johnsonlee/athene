@@ -13,7 +13,9 @@ Usage:
     python -m engine.collect capital_flow_etfs [--date 2026-02-05] [--force]
     python -m engine.collect capital_flow_etfs --backfill
 
-Each command writes output to collected/YYYY/MM/DD/<name>.json.
+Multi-ticker data types (prices, sector_etfs, capital_flow_etfs) are stored as
+per-ticker files under collected/YYYY/MM/DD/<name>/<TICKER>.json.
+Other types are stored as single files: collected/YYYY/MM/DD/<name>.json.
 Per-ticker collectors read tickers from the latest universe.json.
 If data already exists for the given date, the command is skipped unless --force is set.
 """
@@ -82,6 +84,62 @@ def _write_json_gz(name: str, data: object, date_str: str | None = None) -> str:
         f.write(payload)
     log.info(f"Wrote {path} ({os.path.getsize(path):,} bytes)")
     return path
+
+
+_PER_TICKER_NAMES = {"prices", "sector_etfs", "capital_flow_etfs"}
+
+
+def _write_per_ticker(name: str, data: dict, date_str: str | None = None) -> str:
+    """Write a {ticker: ohlcv} dict as individual <name>/<TICKER>.json files.
+
+    Returns the subdirectory path.
+    """
+    ds = date_str or _today()
+    d = _ensure_date_dir(ds)
+    subdir = os.path.join(d, name)
+    os.makedirs(subdir, exist_ok=True)
+    for ticker, ticker_data in data.items():
+        path = os.path.join(subdir, f"{ticker}.json")
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(ticker_data, f, default=str)
+    total_size = sum(
+        os.path.getsize(os.path.join(subdir, f))
+        for f in os.listdir(subdir)
+        if f.endswith(".json")
+    )
+    log.info(f"Wrote {subdir}/ ({len(data)} files, {total_size:,} bytes total)")
+    return subdir
+
+
+def read_per_ticker(name: str, dir_path: str) -> dict[str, dict]:
+    """Read per-ticker data from a date directory.
+
+    Tries the per-ticker subdirectory first (<name>/<TICKER>.json),
+    falls back to the legacy single-file format (<name>.json).
+    Returns the same {ticker: data} dict in both cases.
+    """
+    subdir = os.path.join(dir_path, name)
+    if os.path.isdir(subdir):
+        result = {}
+        for fname in os.listdir(subdir):
+            if not fname.endswith(".json"):
+                continue
+            ticker = fname[:-5]  # "AAPL.json" -> "AAPL"
+            with open(os.path.join(subdir, fname), "r", encoding="utf-8") as f:
+                result[ticker] = json.load(f)
+        return result
+    # Fallback: legacy single-file format
+    json_path = os.path.join(dir_path, f"{name}.json")
+    if os.path.exists(json_path):
+        with open(json_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+
+def _ticker_already_collected(name: str, date_str: str, ticker: str) -> bool:
+    """Check if a specific per-ticker file exists for the given date."""
+    d = _get_date_dir(date_str)
+    return os.path.exists(os.path.join(d, name, f"{ticker}.json"))
 
 
 def read_json(name: str, date_str: str | None = None) -> object:
@@ -179,8 +237,18 @@ def _load_tickers() -> list[str]:
 
 
 def _already_collected(name: str, date_str: str) -> bool:
-    """Check if collected/YYYY/MM/DD/<name>.json[.gz] already exists."""
+    """Check if data already exists for the given date.
+
+    For per-ticker names, checks if the subdirectory exists and is non-empty.
+    For single-file names, checks for <name>.json[.gz].
+    """
     d = _get_date_dir(date_str)
+    if name in _PER_TICKER_NAMES:
+        subdir = os.path.join(d, name)
+        if os.path.isdir(subdir) and any(
+            f.endswith(".json") for f in os.listdir(subdir)
+        ):
+            return True
     return (
         os.path.exists(os.path.join(d, f"{name}.json"))
         or os.path.exists(os.path.join(d, f"{name}.json.gz"))
@@ -261,7 +329,7 @@ def cmd_prices(args: argparse.Namespace) -> None:
     date_str = args.date
     log.info(f"Collecting daily prices for {len(tickers)} tickers (date={date_str})...")
     daily = collect_prices_daily(tickers, date_str)
-    _write_json("prices", daily, date_str=date_str)
+    _write_per_ticker("prices", daily, date_str=date_str)
     log.info(f"Daily price data collected for {len(daily)} tickers")
 
 
@@ -297,35 +365,31 @@ def _backfill_prices(args: argparse.Namespace) -> None:
             # Skip dates that already have data (unless --force)
             if not force and missing is not None and date_str not in missing:
                 continue
-            d = _get_date_dir(date_str)
-            path = os.path.join(d, "prices.json")
+            # Skip individual ticker/date if already collected
+            if not force and _ticker_already_collected("prices", date_str, ticker):
+                continue
 
-            # Load existing file if present (accumulate tickers)
-            existing = {}
-            if os.path.exists(path):
-                with open(path, "r", encoding="utf-8") as f:
-                    existing = json.load(f)
-
-            existing[ticker] = {
-                "Open": float(row["Open"]),
-                "High": float(row["High"]),
-                "Low": float(row["Low"]),
-                "Close": float(row["Close"]),
-                "Volume": int(row["Volume"]),
-            }
-
-            os.makedirs(d, exist_ok=True)
+            d = _ensure_date_dir(date_str)
+            subdir = os.path.join(d, "prices")
+            os.makedirs(subdir, exist_ok=True)
+            path = os.path.join(subdir, f"{ticker}.json")
             with open(path, "w", encoding="utf-8") as f:
-                json.dump(existing, f, default=str)
-
-        total_files += 1
+                json.dump({
+                    "Open": float(row["Open"]),
+                    "High": float(row["High"]),
+                    "Low": float(row["Low"]),
+                    "Close": float(row["Close"]),
+                    "Volume": int(row["Volume"]),
+                }, f, default=str)
+            total_files += 1
 
     # Count date dirs with prices
     date_count = sum(
         1 for _, dp in iter_date_dirs()
-        if os.path.exists(os.path.join(dp, "prices.json"))
+        if os.path.isdir(os.path.join(dp, "prices"))
+           or os.path.exists(os.path.join(dp, "prices.json"))
     )
-    log.info(f"Backfill complete: {len(prices)} tickers across {date_count} date directories")
+    log.info(f"Backfill complete: {len(prices)} tickers, {total_files} files across {date_count} date directories")
 
 
 def cmd_fundamentals(args: argparse.Namespace) -> None:
@@ -391,7 +455,7 @@ def cmd_sector_etfs(args: argparse.Namespace) -> None:
     date_str = args.date
     log.info(f"Collecting daily sector ETF data (date={date_str})...")
     daily = collect_sector_etfs_daily(date_str)
-    _write_json("sector_etfs", daily, date_str=date_str)
+    _write_per_ticker("sector_etfs", daily, date_str=date_str)
     log.info(f"Daily sector ETF data collected for {len(daily)} tickers")
 
 
@@ -408,7 +472,7 @@ def cmd_capital_flow_etfs(args: argparse.Namespace) -> None:
     date_str = args.date
     log.info(f"Collecting daily capital flow ETF data (date={date_str})...")
     daily = collect_capital_flow_etfs_daily(date_str)
-    _write_json("capital_flow_etfs", daily, date_str=date_str)
+    _write_per_ticker("capital_flow_etfs", daily, date_str=date_str)
     log.info(f"Daily capital flow ETF data collected for {len(daily)} tickers")
 
 
@@ -434,39 +498,37 @@ def _backfill_capital_flow_etfs(args: argparse.Namespace) -> None:
 
     etf_prices = collect_capital_flow_etfs(start_date=start_date, end_date=end_date)
 
+    total_files = 0
     for ticker, df in etf_prices.items():
         for date_val, row in df.iterrows():
             date_str = pd.Timestamp(date_val).strftime("%Y-%m-%d")
             if not _is_trading_day(date_str):
                 continue
-            # Skip dates that already have data (unless --force)
             if not force and missing is not None and date_str not in missing:
                 continue
-            d = _get_date_dir(date_str)
-            path = os.path.join(d, "capital_flow_etfs.json")
+            if not force and _ticker_already_collected("capital_flow_etfs", date_str, ticker):
+                continue
 
-            existing = {}
-            if os.path.exists(path):
-                with open(path, "r", encoding="utf-8") as f:
-                    existing = json.load(f)
-
-            existing[ticker] = {
-                "Open": float(row["Open"]),
-                "High": float(row["High"]),
-                "Low": float(row["Low"]),
-                "Close": float(row["Close"]),
-                "Volume": int(row["Volume"]),
-            }
-
-            os.makedirs(d, exist_ok=True)
+            d = _ensure_date_dir(date_str)
+            subdir = os.path.join(d, "capital_flow_etfs")
+            os.makedirs(subdir, exist_ok=True)
+            path = os.path.join(subdir, f"{ticker}.json")
             with open(path, "w", encoding="utf-8") as f:
-                json.dump(existing, f, default=str)
+                json.dump({
+                    "Open": float(row["Open"]),
+                    "High": float(row["High"]),
+                    "Low": float(row["Low"]),
+                    "Close": float(row["Close"]),
+                    "Volume": int(row["Volume"]),
+                }, f, default=str)
+            total_files += 1
 
     date_count = sum(
         1 for _, dp in iter_date_dirs()
-        if os.path.exists(os.path.join(dp, "capital_flow_etfs.json"))
+        if os.path.isdir(os.path.join(dp, "capital_flow_etfs"))
+           or os.path.exists(os.path.join(dp, "capital_flow_etfs.json"))
     )
-    log.info(f"Backfill complete: {len(etf_prices)} ETFs across {date_count} date directories")
+    log.info(f"Backfill complete: {len(etf_prices)} ETFs, {total_files} files across {date_count} date directories")
 
 
 def _backfill_sector_etfs(args: argparse.Namespace) -> None:
@@ -491,39 +553,37 @@ def _backfill_sector_etfs(args: argparse.Namespace) -> None:
 
     etf_prices = collect_sector_etfs(start_date=start_date, end_date=end_date)
 
+    total_files = 0
     for ticker, df in etf_prices.items():
         for date_val, row in df.iterrows():
             date_str = pd.Timestamp(date_val).strftime("%Y-%m-%d")
             if not _is_trading_day(date_str):
                 continue
-            # Skip dates that already have data (unless --force)
             if not force and missing is not None and date_str not in missing:
                 continue
-            d = _get_date_dir(date_str)
-            path = os.path.join(d, "sector_etfs.json")
+            if not force and _ticker_already_collected("sector_etfs", date_str, ticker):
+                continue
 
-            existing = {}
-            if os.path.exists(path):
-                with open(path, "r", encoding="utf-8") as f:
-                    existing = json.load(f)
-
-            existing[ticker] = {
-                "Open": float(row["Open"]),
-                "High": float(row["High"]),
-                "Low": float(row["Low"]),
-                "Close": float(row["Close"]),
-                "Volume": int(row["Volume"]),
-            }
-
-            os.makedirs(d, exist_ok=True)
+            d = _ensure_date_dir(date_str)
+            subdir = os.path.join(d, "sector_etfs")
+            os.makedirs(subdir, exist_ok=True)
+            path = os.path.join(subdir, f"{ticker}.json")
             with open(path, "w", encoding="utf-8") as f:
-                json.dump(existing, f, default=str)
+                json.dump({
+                    "Open": float(row["Open"]),
+                    "High": float(row["High"]),
+                    "Low": float(row["Low"]),
+                    "Close": float(row["Close"]),
+                    "Volume": int(row["Volume"]),
+                }, f, default=str)
+            total_files += 1
 
     date_count = sum(
         1 for _, dp in iter_date_dirs()
-        if os.path.exists(os.path.join(dp, "sector_etfs.json"))
+        if os.path.isdir(os.path.join(dp, "sector_etfs"))
+           or os.path.exists(os.path.join(dp, "sector_etfs.json"))
     )
-    log.info(f"Backfill complete: {len(etf_prices)} ETFs across {date_count} date directories")
+    log.info(f"Backfill complete: {len(etf_prices)} ETFs, {total_files} files across {date_count} date directories")
 
 
 def main() -> None:

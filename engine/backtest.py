@@ -54,17 +54,15 @@ def _load_etf_price_series() -> dict[str, dict[str, float]]:
 
     Returns: { date_str: { etf_ticker: close_price } }
     """
-    from engine.collect import iter_date_dirs
+    from engine.collect import iter_date_dirs, read_per_ticker
 
     prices: dict[str, dict[str, float]] = {}
 
     for date_str, dir_path in iter_date_dirs():
-        etf_path = os.path.join(dir_path, "sector_etfs.json")
-        if not os.path.exists(etf_path):
-            continue
         try:
-            with open(etf_path, "r", encoding="utf-8") as f:
-                data = json.load(f)
+            data = read_per_ticker("sector_etfs", dir_path)
+            if not data:
+                continue
             day_prices: dict[str, float] = {}
             for ticker, etf_data in data.items():
                 if isinstance(etf_data, dict):
@@ -73,7 +71,7 @@ def _load_etf_price_series() -> dict[str, dict[str, float]]:
                         day_prices[ticker] = float(close)
             if day_prices:
                 prices[date_str] = day_prices
-        except (json.JSONDecodeError, Exception):
+        except Exception:
             continue
 
     return prices
@@ -84,17 +82,15 @@ def _load_capital_flow_etf_prices() -> dict[str, dict[str, float]]:
 
     Returns: { date_str: { etf_ticker: close_price } }
     """
-    from engine.collect import iter_date_dirs
+    from engine.collect import iter_date_dirs, read_per_ticker
 
     prices: dict[str, dict[str, float]] = {}
 
     for date_str, dir_path in iter_date_dirs():
-        cf_path = os.path.join(dir_path, "capital_flow_etfs.json")
-        if not os.path.exists(cf_path):
-            continue
         try:
-            with open(cf_path, "r", encoding="utf-8") as f:
-                data = json.load(f)
+            data = read_per_ticker("capital_flow_etfs", dir_path)
+            if not data:
+                continue
             day_prices: dict[str, float] = {}
             for ticker, etf_data in data.items():
                 if isinstance(etf_data, dict):
@@ -103,7 +99,7 @@ def _load_capital_flow_etf_prices() -> dict[str, dict[str, float]]:
                         day_prices[ticker] = float(close)
             if day_prices:
                 prices[date_str] = day_prices
-        except (json.JSONDecodeError, Exception):
+        except Exception:
             continue
 
     return prices
