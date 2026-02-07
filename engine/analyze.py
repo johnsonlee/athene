@@ -57,6 +57,7 @@ from engine.config import CAPITAL_FLOW_WINDOWS
 from engine.exporters.changes import detect_changes, format_changes_markdown
 from engine.exporters.feed import generate_feed
 from engine.analyzers.ic_tracker import export_ic
+from engine.analyzers.leading_indicators import compute_leading_indicators, export_leading_indicators
 from engine.utils.logger import get_logger
 
 log = get_logger("athene.analyze")
@@ -485,6 +486,22 @@ def run(collected_dir: str = COLLECTED_DIR) -> None:
                  f"{len(all_window_results)} windows")
     else:
         log.warning("No capital flow ETF data in collected/ — skipping capital flow analysis")
+
+    # Leading indicators
+    log.info("Computing leading indicators...")
+    try:
+        leading = compute_leading_indicators()
+        export_leading_indicators(leading, run_date)
+    except Exception as e:
+        log.warning(f"Leading indicators skipped: {e}")
+
+    # Backtest
+    log.info("Running backtests...")
+    try:
+        from engine.backtest import run as run_backtest
+        run_backtest()
+    except Exception as e:
+        log.warning(f"Backtest skipped: {e}")
 
     # Export individual stock details
     log.info("Exporting individual stock details...")
