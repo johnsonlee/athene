@@ -20,8 +20,7 @@ def _write_json(data: Any, filename: str) -> str:
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     path = os.path.join(OUTPUT_DIR, filename)
     with open(path, "w", encoding="utf-8") as f:
-        json.dump(data, f, cls=NumpyEncoder, ensure_ascii=False,
-                  indent=None, separators=(",", ":"))
+        json.dump(data, f, cls=NumpyEncoder, ensure_ascii=False, indent=2)
     size_kb = os.path.getsize(path) / 1024
     log.info(f"Wrote {path} ({size_kb:.1f} KB)")
     return path

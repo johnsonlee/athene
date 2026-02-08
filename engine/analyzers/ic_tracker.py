@@ -224,7 +224,7 @@ def export_ic(ic_data: dict[str, Any] | None = None) -> str:
 
     path = os.path.join(OUTPUT_DIR, "ic.json")
     with open(path, "w", encoding="utf-8") as f:
-        json.dump(ic_data, f, ensure_ascii=False, separators=(",", ":"))
+        json.dump(ic_data, f, ensure_ascii=False, indent=2)
 
     size_kb = os.path.getsize(path) / 1024
     log.info(f"IC tracker: wrote {path} ({size_kb:.1f} KB)")
