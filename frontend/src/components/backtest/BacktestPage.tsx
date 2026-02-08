@@ -30,30 +30,31 @@ function retColor(ret: number | null | undefined): string {
 
 /** Signal quality badge based on sample size and hit rate */
 function QualityBadge({ signal }: { signal: BacktestSignal }) {
+  const { t } = useI18n();
   const h22 = signal.horizons['22d'];
   const n = signal.count;
   const hr = h22?.hit_rate ?? 0;
 
-  let label: string;
+  let key: string;
   let cls: string;
 
   if (n >= 20 && hr >= 0.7) {
-    label = 'Strong';
+    key = 'backtest.quality.strong';
     cls = 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400';
   } else if (n >= 10 && hr >= 0.6) {
-    label = 'Moderate';
+    key = 'backtest.quality.moderate';
     cls = 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400';
   } else if (n >= 5) {
-    label = 'Weak';
+    key = 'backtest.quality.weak';
     cls = 'bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-400';
   } else {
-    label = 'n<5';
+    key = 'backtest.quality.insufficient';
     cls = 'bg-gray-50 text-gray-400 dark:bg-gray-800 dark:text-gray-500';
   }
 
   return (
     <span className={`rounded px-1.5 py-0.5 text-[10px] font-medium ${cls}`}>
-      {label}
+      {t(key as any)}
     </span>
   );
 }
@@ -188,7 +189,7 @@ function SignalRow({ signal, t }: { signal: BacktestSignal; t: (k: string) => st
             <QualityBadge signal={signal} />
           </div>
           <div className="mt-0.5 text-[11px] text-gray-400">
-            n={signal.count} &middot; {signal.date_range.first} ~ {signal.date_range.last}
+            {t('backtest.sampleCount' as any).replace('{count}', String(signal.count))} &middot; {signal.date_range.first} ~ {signal.date_range.last}
           </div>
         </div>
 
