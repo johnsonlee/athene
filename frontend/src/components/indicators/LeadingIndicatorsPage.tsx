@@ -56,8 +56,8 @@ function CreditSpreadCard({ data }: { data: CreditSpreadEntry[] }) {
   const latest = data[data.length - 1];
   if (!latest) return null;
 
-  // Find recent signal events
-  const signals = data.filter((d) => d.signal !== 'neutral').slice(-5);
+  // Find recent signal events (newest first)
+  const signals = data.filter((d) => d.signal !== 'neutral').slice(-5).reverse();
 
   return (
     <div className="tech-card p-4 sm:p-5">
@@ -132,7 +132,7 @@ function BreadthThrustCard({ data }: { data: BreadthThrustEntry[] }) {
   const latest = data[data.length - 1];
   if (!latest) return null;
 
-  const signals = data.filter((d) => d.signal !== 'neutral').slice(-5);
+  const signals = data.filter((d) => d.signal !== 'neutral').slice(-5).reverse();
 
   return (
     <div className="tech-card p-4 sm:p-5">
@@ -207,7 +207,7 @@ function RfiAccelerationCard({ data }: { data: RfiAccelerationEntry[] }) {
   const latest = data[data.length - 1];
   if (!latest) return null;
 
-  const signals = data.filter((d) => d.signal !== 'neutral').slice(-5);
+  const signals = data.filter((d) => d.signal !== 'neutral').slice(-5).reverse();
 
   return (
     <div className="tech-card p-4 sm:p-5">
