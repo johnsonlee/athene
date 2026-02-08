@@ -50306,7 +50306,7 @@
       "current_ratio_score": 46.84
     },
     "VRSN": {
-      "composite_score": 59.58100353637004,
+      "composite_score": 59.58100353637005,
       "tier": "buy",
       "rank": 106,
       "percentile": 0.7976878612716763,
@@ -50551,7 +50551,7 @@
       "current_ratio_score": 15.0
     },
     "SYK": {
-      "composite_score": 59.3947819322093,
+      "composite_score": 59.39478193220931,
       "tier": "buy",
       "rank": 113,
       "percentile": 0.7842003853564548,
@@ -54086,7 +54086,7 @@
       "current_ratio_score": 34.5
     },
     "EBAY": {
-      "composite_score": 56.56526996254562,
+      "composite_score": 56.56526996254563,
       "tier": "hold",
       "rank": 214,
       "percentile": 0.5895953757225434,
@@ -54611,7 +54611,7 @@
       "current_ratio_score": 39.78
     },
     "NI": {
-      "composite_score": 56.14262011458115,
+      "composite_score": 56.14262011458113,
       "tier": "hold",
       "rank": 229,
       "percentile": 0.5606936416184971,
@@ -54891,7 +54891,7 @@
       "current_ratio_score": 85.0
     },
     "FITB": {
-      "composite_score": 55.949828233509706,
+      "composite_score": 55.94982823350972,
       "tier": "hold",
       "rank": 237,
       "percentile": 0.5452793834296724,
@@ -57551,7 +57551,7 @@
       "current_ratio_score": 51.3
     },
     "VLTO": {
-      "composite_score": 53.673494641741925,
+      "composite_score": 53.67349464174194,
       "tier": "hold",
       "rank": 313,
       "percentile": 0.3988439306358382,
@@ -59406,7 +59406,7 @@
       "current_ratio_score": 76.98
     },
     "NWSA": {
-      "composite_score": 51.629871974094854,
+      "composite_score": 51.62987197409486,
       "tier": "hold",
       "rank": 366,
       "percentile": 0.29672447013487474,
@@ -63781,7 +63781,7 @@
       "current_ratio_score": 80.08
     },
     "AJG": {
-      "composite_score": 42.396039940623474,
+      "composite_score": 42.39603994062347,
       "tier": "sell",
       "rank": 491,
       "percentile": 0.055876685934489405,
@@ -63921,7 +63921,7 @@
       "current_ratio_score": 70.81
     },
     "FISV": {
-      "composite_score": 41.96777350685459,
+      "composite_score": 41.96777350685458,
       "tier": "sell",
       "rank": 495,
       "percentile": 0.04816955684007707,

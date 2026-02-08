@@ -6278,7 +6278,7 @@
   "technical": {
     "close": 448.239990234375,
     "sma_20": 449.9990005493164,
-    "sma_50": 430.65347412109384,
+    "sma_50": 430.6534741210938,
     "sma_200": 450.26809173583985,
     "trend_alignment": 0.5168914639195578,
     "rsi": 51.49932393892344,
@@ -6307,7 +6307,7 @@
     "tech_data_completeness": 1.0
   },
   "sentiment": {
-    "sentiment_compound": 0.018017433118819277,
+    "sentiment_compound": 0.01801743311881927,
     "sentiment_pos": 0.034050000000000004,
     "sentiment_neg": 0.00385,
     "sentiment_neu": 0.9621000000000001,

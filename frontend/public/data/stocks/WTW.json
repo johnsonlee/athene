@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 330.0400085449219,
     "sma_20": 324.61350097656253,
-    "sma_50": 325.84209411621094,
+    "sma_50": 325.8420941162109,
     "sma_200": 319.8181405639649,
-    "trend_alignment": 0.5383133243903965,
+    "trend_alignment": 0.5383133243903966,
     "rsi": 54.163301444551294,
     "rsi_score": 0.08326602889102588,
     "macd_histogram": 1.262485301579516,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 52.16696325032366,
     "stoch_d": 62.59027069258119,
-    "trend_score": 53.83133243903965,
+    "trend_score": 53.831332439039656,
     "rsi_abs_score": 74.4143110111859,
     "macd_abs_score": 62.06312317365364,
     "momentum_score": 68.23871709241978,
@@ -6307,7 +6307,7 @@
     "tech_data_completeness": 1.0
   },
   "sentiment": {
-    "sentiment_compound": 0.03908928546720492,
+    "sentiment_compound": 0.03908928546720493,
     "sentiment_pos": 0.07085,
     "sentiment_neg": 0.07065,
     "sentiment_neu": 0.8584999999999999,
@@ -6333,7 +6333,7 @@
     "quality_score": 74.14522612500001,
     "growth_score": 21.700000000000003,
     "safety_score": 50.4716170963157,
-    "trend_score": 53.83133243903965,
+    "trend_score": 53.831332439039656,
     "momentum_score": 68.23871709241978,
     "volatility_score": 56.58552164351879,
     "volume_score": 50.0,

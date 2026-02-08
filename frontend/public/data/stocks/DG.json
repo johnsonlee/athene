@@ -6295,8 +6295,8 @@
     "avg_volume_20d": 2999270.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 47.61897917866869,
-    "stoch_d": 52.41087940350582,
+    "stoch_k": 47.61897917866868,
+    "stoch_d": 52.4108794035058,
     "trend_score": 76.9507536010577,
     "rsi_abs_score": 74.44114421801034,
     "macd_abs_score": 33.6583464959958,
@@ -6307,7 +6307,7 @@
     "tech_data_completeness": 1.0
   },
   "sentiment": {
-    "sentiment_compound": 0.2350440765596373,
+    "sentiment_compound": 0.23504407655963733,
     "sentiment_pos": 0.14485,
     "sentiment_neg": 0.01175,
     "sentiment_neu": 0.8433999999999999,

@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 218.55999755859375,
-    "sma_20": 205.3725006103516,
+    "sma_20": 205.37250061035158,
     "sma_50": 217.5755914306641,
     "sma_200": 196.96190994262696,
     "trend_alignment": 0.613482356235646,
@@ -6286,10 +6286,10 @@
     "macd_histogram": 2.6338651156836805,
     "macd_line": -0.4651156772842455,
     "macd_histogram_pct": 1.2050993526285925,
-    "bb_position": 1.0590428788466308,
-    "bb_upper": 217.16721032514974,
-    "bb_lower": 193.57779089555348,
-    "bb_width": 0.11486162635937276,
+    "bb_position": 1.059042878846632,
+    "bb_upper": 217.1672103251497,
+    "bb_lower": 193.57779089555345,
+    "bb_width": 0.11486162635937279,
     "hist_volatility": 0.27304183828544804,
     "volume_ratio": 1.106677945040385,
     "avg_volume_20d": 667945.0,
@@ -6307,7 +6307,7 @@
     "tech_data_completeness": 1.0
   },
   "sentiment": {
-    "sentiment_compound": 0.2797962869191267,
+    "sentiment_compound": 0.27979628691912667,
     "sentiment_pos": 0.1368,
     "sentiment_neg": 0.0395,
     "sentiment_neu": 0.8237,
