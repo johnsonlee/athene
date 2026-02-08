@@ -6295,8 +6295,8 @@
     "avg_volume_20d": 1624130.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 97.75454481080108,
-    "stoch_d": 91.841960637461,
+    "stoch_k": 97.7545448108011,
+    "stoch_d": 91.84196063746101,
     "trend_score": 61.927726769993896,
     "rsi_abs_score": 32.57076077061683,
     "macd_abs_score": 70.58176464741986,
@@ -6306,7 +6306,15 @@
     "technical_score": 56.74083763944158,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.000491331075746156,
+    "sentiment_pos": 0.10515,
+    "sentiment_neg": 0.0144,
+    "sentiment_neu": 0.8804000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 50.02
+  },
   "analyst": {
     "revision_momentum": -0.5,
     "target_upside": 0.0098531160311603,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 56.87156053571428,
     "catalyst_timeline": 51.98412780706481,
     "downside_control": 51.69927649593077,
-    "composite_score": 55.30384985359311,
+    "composite_score": 55.29996080829467,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 56.15467203526503,
     "technical_score": 56.74083763944158,
-    "sentiment_score": 50.0,
+    "sentiment_score": 50.02,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Defensive",
     "industry": "Beverages - Non-Alcoholic"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "BofA downgrades Coca-Cola bottler as muted top-line caps valuation upside",
+      "url": "https://finance.yahoo.com/news/bofa-downgrades-coca-cola-bottler-122731910.html",
+      "publisher": "Investing.com",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Coca-Cola Europacific Partners PLC",
+      "url": "https://finance.yahoo.com/m/35423e86-c087-37d6-8e06-33498279822b/analyst-report%3A-coca-cola.html",
+      "publisher": "Morningstar Research",
+      "date": "2025-11-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Coca-Cola Europacific Partners plc Announces Q3 Trading Update & Interim Dividend Declaration",
+      "url": "/news/218174/coca-cola-europacific-partners-plc-announces-q3-trading-update-interim-dividend-declaration",
+      "publisher": "ACCESSWIRE",
+      "date": "2025-11-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FEMSA Q3 Earnings Miss Estimates, Revenues Top on Growth Across Units",
+      "url": "/news/209665/femsa-q3-earnings-miss-estimates-revenues-top-on-growth-across-units",
+      "publisher": "Zacks",
+      "date": "2025-10-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CCEP vs. KO: Which Stock Is the Better Value Option?",
+      "url": "/news/207528/ccep-vs-ko-which-stock-is-the-better-value-option",
+      "publisher": "Zacks",
+      "date": "2025-10-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Coca-Cola Europacific Partners PLC",
+      "url": "https://finance.yahoo.com/m/7500b841-b989-3000-bf10-c77335b51fff/analyst-report%3A-coca-cola.html",
+      "publisher": "Morningstar Research",
+      "date": "2025-09-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Morgan Stanley downgrades Coca-Cola bottler CCEP on balanced risk-reward profile",
+      "url": "https://finance.yahoo.com/news/morgan-stanley-downgrades-coca-cola-105808788.html",
+      "publisher": "Investing.com",
+      "date": "2025-08-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Coca-Cola Europacific Partners PLC (CCEP) (H1 2025) Earnings Call Highlights: Strong Profit ...",
+      "url": "https://finance.yahoo.com/news/coca-cola-europacific-partners-plc-070633520.html",
+      "publisher": "GuruFocus.com",
+      "date": "2025-08-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Coca-Cola Europacific Partners PLC",
+      "url": "https://finance.yahoo.com/m/d4dfde70-dc14-32f2-9ea1-34325c68f54f/analyst-report%3A-coca-cola.html",
+      "publisher": "Morningstar Research",
+      "date": "2025-08-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Coca-Cola Europacific Partners Plc Announces Results for The Six Months Ended 27 June 2025",
+      "url": "/news/129310/coca-cola-europacific-partners-plc-announces-results-for-the-six-months-ended-27-june-2025",
+      "publisher": "ACCESSWIRE",
+      "date": "2025-08-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Coca-Cola Europacific Partners PLC",
+      "url": "https://finance.yahoo.com/m/a2707575-6105-3863-9dd5-6142eacc0a4f/analyst-report%3A-coca-cola.html",
+      "publisher": "Morningstar Research",
+      "date": "2025-07-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Coca-Cola Europacific Partners PLC",
+      "url": "https://finance.yahoo.com/m/308a5a2f-e16c-3f0e-8eff-2e4cd5f707c7/analyst-report%3A-coca-cola.html",
+      "publisher": "Morningstar Research",
+      "date": "2025-06-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is Coca-Cola Europacific Partners (CCEP) Stock Outpacing Its Consumer Staples Peers This Year?",
+      "url": "/news/84067/is-coca-cola-europacific-partners-ccep-stock-outpacing-its-consumer-staples-peers-this-year",
+      "publisher": "Zacks",
+      "date": "2025-06-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is Coca-Cola Europacific Partners (CCEP) Outperforming Other Consumer Staples Stocks This Year?",
+      "url": "/news/72421/is-coca-cola-europacific-partners-ccep-outperforming-other-consumer-staples-stocks-this-year",
+      "publisher": "Zacks",
+      "date": "2025-06-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PepsiCo Strengthens Wellness Brands Portfolio With Poppi Acquisition",
+      "url": "/news/62049/pepsico-strengthens-wellness-brands-portfolio-with-poppi-acquisition",
+      "publisher": "Zacks",
+      "date": "2025-05-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Are Consumer Staples Stocks Lagging  Coca-Cola Europacific Partners (CCEP) This Year?",
+      "url": "/news/58657/are-consumer-staples-stocks-lagging-coca-cola-europacific-partners-ccep-this-year",
+      "publisher": "Zacks",
+      "date": "2025-05-15",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Coca-Cola Europacific Partners plc Announces Capital Markets Event",
+      "url": "/news/56820/coca-cola-europacific-partners-plc-announces-capital-markets-event",
+      "publisher": "ACCESSWIRE",
+      "date": "2025-05-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Coca-Cola Europacific Partners: A Defensive Pick",
+      "url": "https://seekingalpha.com/article/4783375-coca-cola-europacific-partners-stock-q1-defensive-pick?utm_source=finviz.com&utm_medium=referral&feed_item_type=article",
+      "publisher": "Seeking Alpha",
+      "date": "2025-05-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "New Strong Buy Stocks for May 1st",
+      "url": "/news/43177/new-strong-buy-stocks-for-may-1st",
+      "publisher": "Zacks",
+      "date": "2025-05-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Coca-Cola Europacific Partners PLC (CCEP) Q1 2025 Earnings Call Transcript",
+      "url": "https://seekingalpha.com/article/4779263-coca-cola-europacific-partners-plc-ccep-q1-2025-earnings-call-transcript?utm_source=finviz.com&utm_medium=referral&feed_item_type=transcript",
+      "publisher": "Seeking Alpha",
+      "date": "2025-04-29",
+      "sentiment": "neutral"
+    }
+  ]
 }

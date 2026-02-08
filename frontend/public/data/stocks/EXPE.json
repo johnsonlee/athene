@@ -6306,7 +6306,15 @@
     "technical_score": 40.67090393872283,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.1529469683226822,
+    "sentiment_pos": 0.10794999999999999,
+    "sentiment_neg": 0.1223,
+    "sentiment_neu": 0.7697499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 42.35
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.19484906058686935,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 58.3918701,
     "catalyst_timeline": 48.60515342363125,
     "downside_control": 33.22517021782036,
-    "composite_score": 54.46715120651134,
+    "composite_score": 54.4632621612129,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 66.22662004253687,
     "technical_score": 40.67090393872283,
-    "sentiment_score": 50.0,
+    "sentiment_score": 42.35,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Hotels, Resorts & Cruise Lines"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "AI Fear Grips Wall Street as a New Stock Market Reality Sets In",
+      "url": "https://finance.yahoo.com/news/ai-fear-grips-wall-street-140007396.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Software Stocks Sell-Off: Are They Deals or Traps?",
+      "url": "/news/303451/software-stocks-sell-off-are-they-deals-or-traps",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AI Fears Slam Booking and Expedia Stock. Why They Can Bounce Back.",
+      "url": "https://www.barrons.com/articles/booking-expedia-stock-travel-ai-fe421427?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "These 2 Retail and Wholesale Stocks Could Beat Earnings: Why They Should Be on Your Radar",
+      "url": "/news/302764/these-2-retail-and-wholesale-stocks-could-beat-earnings-why-they-should-be-on-your-radar",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Expedia (EXPE) Reports Next Week: Wall Street Expects Earnings Growth",
+      "url": "/news/301686/expedia-expe-reports-next-week-wall-street-expects-earnings-growth",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Salesforce stock gets brutal reality check amid software slump",
+      "url": "https://finance.yahoo.com/m/6e10af87-2c34-363a-a121-d6e1f70d76f3/salesforce-stock-gets-brutal.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Analyst Report: Expedia Group, Inc.",
+      "url": "https://finance.yahoo.com/m/e3299ee3-ff40-36ca-844d-80ba3ffe4815/analyst-report%3A-expedia.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Williams to Report Q4 Earnings: What Surprise Awaits Investors?",
+      "url": "/news/299353/williams-to-report-q4-earnings-what-surprise-awaits-investors",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why the AI-driven software stock crash probably isn't over",
+      "url": "https://finance.yahoo.com/news/why-the-ai-driven-software-stock-crash-probably-isnt-over-125809330.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stocks Tumble on AI Disruption Fears",
+      "url": "https://finance.yahoo.com/m/2d280010-8635-3f1a-b487-d134aea3e092/stocks-tumble-on-ai.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Why Is Expedia (EXPE) Stock Soaring Today",
+      "url": "/news/296115/why-is-expedia-expe-stock-soaring-today",
+      "publisher": "StockStory",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Some companies tie AI to layoffs, but the reality is more complicated",
+      "url": "https://finance.yahoo.com/news/did-artificial-intelligence-really-drive-214951405.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-01",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Affirm Expands Exclusive Partnership Across Expedia Brands",
+      "url": "/news/294557/affirm-expands-exclusive-partnership-across-expedia-brands",
+      "publisher": "Benzinga",
+      "date": "2026-01-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Expedia Group and Affirm deepen partnership, with US exclusivity and plans for further expansion",
+      "url": "https://www.businesswire.com/news/home/20260130359644/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Layoffs update 2026: Amazon, Nike, Dow, and others join list of companies slashing jobs in brutal January",
+      "url": "https://finance.yahoo.com/m/9cc30e06-1840-35f1-97a3-51293f3d7bc8/layoffs-update-2026%3A-amazon%2C.html",
+      "publisher": "FastCompany",
+      "date": "2026-01-30",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Major travel site just sent workers a harsh message",
+      "url": "https://finance.yahoo.com/m/d79c874e-3229-3028-b3d9-f2b894f1bba1/major-travel-site-just-sent.html",
+      "publisher": "TheStreet",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Expedia sends workers a hard nosed message",
+      "url": "https://finance.yahoo.com/m/d79c874e-3229-3028-b3d9-f2b894f1bba1/expedia-sends-workers-a-hard.html",
+      "publisher": "TheStreet",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Do Wall Street Analysts Like Expedia Group Stock?",
+      "url": "https://finance.yahoo.com/m/82257e6a-0f69-3225-9c23-503ab9256cb0/do-wall-street-analysts-like.html",
+      "publisher": "Barchart",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Expedia Group Inc. (EXPE) Advances on Strong B2B Momentum",
+      "url": "/news/289401/expedia-group-inc-expe-advances-on-strong-b2b-momentum",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Best \"Strong Buy\" Momentum Stocks to Buy in February",
+      "url": "/news/289019/best-strong-buy-momentum-stocks-to-buy-in-february",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    }
+  ]
 }

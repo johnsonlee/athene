@@ -6279,8 +6279,8 @@
     "close": 46.310001373291016,
     "sma_20": 44.3394998550415,
     "sma_50": 42.43110885620116,
-    "sma_200": 42.89689689636232,
-    "trend_alignment": 0.624770335235692,
+    "sma_200": 42.896896896362314,
+    "trend_alignment": 0.6247703352356923,
     "rsi": 61.064191520684574,
     "rsi_score": 0.22128383041369148,
     "macd_histogram": 0.14266979207717334,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 78.35552814587501,
     "stoch_d": 77.88720489603145,
-    "trend_score": 62.477033523569204,
+    "trend_score": 62.477033523569226,
     "rsi_abs_score": 70.7550659355208,
     "macd_abs_score": 60.201888784625325,
     "momentum_score": 65.47847736007307,
     "volatility_score": 48.612289572390324,
     "volume_score": 50.0,
-    "technical_score": 58.109111179570746,
+    "technical_score": 58.10911117957075,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.17940882558704999,
+    "sentiment_pos": 0.13415,
+    "sentiment_neg": 0.02425,
+    "sentiment_neu": 0.8416,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 58.97
+  },
   "analyst": {
     "revision_momentum": -0.09090909090909091,
     "target_upside": 0.03649319801338799,
@@ -6325,7 +6333,7 @@
     "quality_score": 45.27464285714285,
     "growth_score": 17.3,
     "safety_score": 56.363862308262725,
-    "trend_score": 62.477033523569204,
+    "trend_score": 62.477033523569226,
     "momentum_score": 65.47847736007307,
     "volatility_score": 48.612289572390324,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 51.82907884999999,
     "catalyst_timeline": 57.32719105975269,
     "downside_control": 54.90442278209795,
-    "composite_score": 45.76802422835584,
+    "composite_score": 45.764135183057405,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 43.75856436046207,
-    "technical_score": 58.109111179570746,
-    "sentiment_score": 50.0,
+    "technical_score": 58.10911117957075,
+    "sentiment_score": 58.97,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Energy",
     "industry": "Oil & Gas Exploration & Production"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Piper Sandler and BofA Raise Occidental (OXY) Price Targets",
+      "url": "/news/303751/piper-sandler-and-bofa-raise-occidental-oxy-price-targets",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Occidental Petroleum (OXY) Exceeds Market Returns: Some Facts to Consider",
+      "url": "/news/303439/occidental-petroleum-oxy-exceeds-market-returns-some-facts-to-consider",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Can FuelCell Energy Improve ROI at Fossil Power Plants?",
+      "url": "/news/302732/can-fuelcell-energy-improve-roi-at-fossil-power-plants",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks Gain on US Manufacturing Strength",
+      "url": "https://finance.yahoo.com/m/fd077afd-6eb7-36bd-8cc3-d39c206200ed/stocks-gain-on-us.html",
+      "publisher": "Barchart",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stock Indexes Climb as Chip Makers and AI Infrastructure Stocks Rebound",
+      "url": "https://finance.yahoo.com/m/1374d656-6f72-314c-a8fc-52c418638b2c/stock-indexes-climb-as-chip.html",
+      "publisher": "Barchart",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Occidental Petroleum (OXY) Price Target Raised at Piper Sandler",
+      "url": "/news/293835/occidental-petroleum-oxy-price-target-raised-at-piper-sandler",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is Wall Street Bullish or Bearish on Occidental Petroleum Stock?",
+      "url": "https://finance.yahoo.com/m/b37c4308-2a41-3457-8837-689c5c14347a/is-wall-street-bullish-or.html",
+      "publisher": "Barchart",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Occidental Petroleum (OXY) Ascends While Market Falls: Some Facts to Note",
+      "url": "/news/292808/occidental-petroleum-oxy-ascends-while-market-falls-some-facts-to-note",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Concerns Over AI Spending Weigh on Stocks",
+      "url": "https://finance.yahoo.com/m/847e6871-a324-397e-a746-c6933beb4d18/concerns-over-ai-spending.html",
+      "publisher": "Barchart",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "OXY vs. CNQ: Which Oil & Gas Stock Currently Offers Better Returns?",
+      "url": "/news/292125/oxy-vs-cnq-which-oil-gas-stock-currently-offers-better-returns",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Best Warren Buffett Stocks to Buy With $3,000 Right Now",
+      "url": "/news/291048/the-best-warren-buffett-stocks-to-buy-with-3000-right-now",
+      "publisher": "Motley Fool",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "National Fuel Gas (NFG) Surpasses Q1 Earnings and Revenue Estimates",
+      "url": "/news/291000/national-fuel-gas-nfg-surpasses-q1-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Investors Heavily Search Occidental Petroleum Corporation (OXY): Here is What You Need to Know",
+      "url": "/news/288391/investors-heavily-search-occidental-petroleum-corporation-oxy-here-is-what-you-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Occidental Petroleum (OXY) Outperforms Broader Market: What You Need to Know",
+      "url": "/news/285883/occidental-petroleum-oxy-outperforms-broader-market-what-you-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Recover on Strength in Megacap Tech and Consumer Sentiment",
+      "url": "https://finance.yahoo.com/m/a54841e3-8c22-3aeb-aff0-05f1f74a3dd5/stocks-recover-on-strength-in.html",
+      "publisher": "Barchart",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks Pressured by Weakness in Chip Makers",
+      "url": "https://finance.yahoo.com/m/6b1cbbbb-5b88-3a93-8195-2c69a8d5b2d9/stocks-pressured-by-weakness.html",
+      "publisher": "Barchart",
+      "date": "2026-01-23",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Western Midstream Secures New Deals with Occidental,ConocoPhillips",
+      "url": "https://finance.yahoo.com/news/western-midstream-secures-deals-occidental-171134851.html",
+      "publisher": "Rigzone.com",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Arm upgraded, Flutter downgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/arm-upgraded-flutter-downgraded-wall-143555244.html",
+      "publisher": "The Fly",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "This Energy Stock Secures a Win-Win Deal to Further Support its 8.8%-Yielding Dividend",
+      "url": "/news/281871/this-energy-stock-secures-a-win-win-deal-to-further-support-its-88-yielding-dividend",
+      "publisher": "Motley Fool",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Occidental Petroleum (OXY) Stock Moves -1.08%: What You Should Know",
+      "url": "/news/281698/occidental-petroleum-oxy-stock-moves-108-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    }
+  ]
 }

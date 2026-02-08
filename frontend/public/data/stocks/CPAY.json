@@ -6278,8 +6278,8 @@
   "technical": {
     "close": 354.19000244140625,
     "sma_20": 322.38550109863286,
-    "sma_50": 314.0804003906251,
-    "sma_200": 312.9394502258301,
+    "sma_50": 314.080400390625,
+    "sma_200": 312.93945022583017,
     "trend_alignment": 0.6941317154977773,
     "rsi": 65.40141129379987,
     "rsi_score": 0.3080282258759974,
@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 672215.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 97.71193780992198,
+    "stoch_k": 97.71193780992199,
     "stoch_d": 70.82254202294499,
     "trend_score": 69.41317154977773,
     "rsi_abs_score": 66.87604837736038,
@@ -6306,7 +6306,15 @@
     "technical_score": 56.93897120265728,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.15007323725396612,
+    "sentiment_pos": 0.08725000000000001,
+    "sentiment_neg": 0.007049999999999999,
+    "sentiment_neu": 0.9057000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 57.5
+  },
   "analyst": {
     "revision_momentum": 0.375,
     "target_upside": 0.06298879132668907,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 38.286027409523804,
     "catalyst_timeline": 64.12249811387639,
     "downside_control": 44.04650009227919,
-    "composite_score": 56.62102539629555,
+    "composite_score": 56.617136350997114,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 63.44042930655197,
     "technical_score": 56.93897120265728,
-    "sentiment_score": 50.0,
+    "sentiment_score": 57.5,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Transaction & Payment Processing Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Corpay, Inc. (CPAY): A Bull Case Theory",
+      "url": "/news/302290/corpay-inc-cpay-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Corpay (CPAY) Stock Trades Up, Here Is Why",
+      "url": "/news/301994/corpay-cpay-stock-trades-up-here-is-why",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Software's Freefall Continues, Bitcoin Dips To 16-Month Lows: What's Moving Markets Thursday?",
+      "url": "/news/301895/softwares-freefall-continues-bitcoin-dips-to-16-month-lows-whats-moving-markets-thursday",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Corpay's Q4 Earnings and Revenues Surpass Estimates, Increase Y/Y",
+      "url": "/news/301899/corpays-q4-earnings-and-revenues-surpass-estimates-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Corpay Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/ce502c8a-d740-3786-9a5a-cbc5972977e0/corpay-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CPAY Q4 Deep Dive: Acquisitions and Corporate Payments Drive Positive Momentum",
+      "url": "/news/300875/cpay-q4-deep-dive-acquisitions-and-corporate-payments-drive-positive-momentum",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Corpay (CPAY) Q4 2025 Earnings Call Transcript",
+      "url": "/news/300526/corpay-cpay-q4-2025-earnings-call-transcript",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Compared to Estimates, Corpay (CPAY) Q4 Earnings: A Look at Key Metrics",
+      "url": "/news/300500/compared-to-estimates-corpay-cpay-q4-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Corpay (CPAY) Surpasses Q4 Earnings and Revenue Estimates",
+      "url": "/news/300409/corpay-cpay-surpasses-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Corpay's (NYSE:CPAY) Q4 CY2025 Sales Top Estimates, Stock Jumps 10.2%",
+      "url": "/news/300324/corpays-nyse-cpay-q4-cy2025-sales-top-estimates-stock-jumps-102",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Corpay quarterly profit rises on resilient business spending",
+      "url": "https://finance.yahoo.com/news/corpay-quarterly-profit-rises-resilient-212621534.html",
+      "publisher": "Reuters",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Corpay: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/corpay-q4-earnings-snapshot-212339719.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Corpay Reports Fourth Quarter and Full Year Financial Results",
+      "url": "https://www.businesswire.com/news/home/20260204517103/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Lightyear Capital Signs Agreement to Acquire PayByPhone",
+      "url": "https://www.businesswire.com/news/home/20260204696987/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Corpay Announces Agreement to Sell Non-Core Vehicle Payments Asset",
+      "url": "https://www.businesswire.com/news/home/20260204689731/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Corpay Earnings: What To Look For From CPAY",
+      "url": "/news/296585/corpay-earnings-what-to-look-for-from-cpay",
+      "publisher": "StockStory",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Corpay Set to Report Q4 Earnings: Here's What Investors Should Know",
+      "url": "/news/296053/corpay-set-to-report-q4-earnings-heres-what-investors-should-know",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why ClearBridge Mid Cap Strategy Exited Corpay (CPAY)",
+      "url": "/news/289408/heres-why-clearbridge-mid-cap-strategy-exited-corpay-cpay",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Corpay Lodging Broadens Global Hotel Access for U.S. Companies Managing Workforce Travel",
+      "url": "https://www.businesswire.com/news/home/20260127277566/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dollar Tumbles Against the Yen",
+      "url": "https://finance.yahoo.com/m/fec6bd10-1cf3-338f-ad81-a233c2e39010/dollar-tumbles-against-the-yen.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    }
+  ]
 }

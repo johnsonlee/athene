@@ -6306,7 +6306,15 @@
     "technical_score": 50.597258220915606,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.10436534651187496,
+    "sentiment_pos": 0.07504999999999999,
+    "sentiment_neg": 0.03935,
+    "sentiment_neu": 0.88565,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 55.22
+  },
   "analyst": {
     "revision_momentum": 0.07692307692307693,
     "target_upside": 0.25678890434938734,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 47.377949466666664,
     "catalyst_timeline": 55.46891637692994,
     "downside_control": 39.172309637117365,
-    "composite_score": 48.717031268231594,
+    "composite_score": 48.71314222293316,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 52.53843807460318,
     "technical_score": 50.597258220915606,
-    "sentiment_score": 50.0,
+    "sentiment_score": 55.22,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Consumer Finance"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Analysts Reiterate Buy Rating For Capital One Financial (COF) Despite Disappointing Earnings",
+      "url": "/news/303810/analysts-reiterate-buy-rating-for-capital-one-financial-cof-despite-disappointing-earnings",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "OneMain Holdings Dips Despite Q4 Earnings Beat, NII & Costs Rise Y/Y",
+      "url": "/news/303132/onemain-holdings-dips-despite-q4-earnings-beat-nii-costs-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Capital One Financial Corp. (COF) Surged Following Strong Results",
+      "url": "/news/299022/capital-one-financial-corp-cof-surged-following-strong-results",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Intel Conference: Lip-Bu Tan Talks Foundry Turnaround, 18A Yield Gains and 14A Roadmap Push",
+      "url": "https://finance.yahoo.com/m/c74d72f6-710c-38ba-b0a8-444055af01c7/intel-conference%3A-lip-bu-tan.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Capital One Financial Corp (COF) Surged Following Strong Results",
+      "url": "/news/297202/capital-one-financial-corp-cof-surged-following-strong-results",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Capital One Announces Quarterly Dividend",
+      "url": "https://www.businesswire.com/news/home/20260203802027/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "2 Overlooked Stocks That Could Beat the Market in 2026 And Beyond",
+      "url": "/news/297126/2-overlooked-stocks-that-could-beat-the-market-in-2026-and-beyond",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "?Capital One's (COF) Path Forward: Analyst Adjustments, Brex Integration, and Competitive Positioning",
+      "url": "/news/297075/capital-ones-cof-path-forward-analyst-adjustments-brex-integration-and-competitive-positioning",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Chris Davis's Strategic Moves: A Closer Look at Coterra Energy Inc's Impactful Increase",
+      "url": "https://finance.yahoo.com/news/chris-daviss-strategic-moves-closer-140021661.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Visa Shareholders Approve Directors, Pay Plan and Charter Amendments; Reject 4 Proposals at AGM",
+      "url": "https://finance.yahoo.com/m/522ab0a6-5aae-39f7-b83f-03c3268f88af/visa-shareholders-approve.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-01",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Truist Trims Capital One (COF) PT to $275 Following Brex Acquisition, Expense Surge",
+      "url": "/news/294819/truist-trims-capital-one-cof-pt-to-275-following-brex-acquisition-expense-surge",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-01",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\"Let it go Down,\" Says Jim Cramer on Capital One (COF)",
+      "url": "/news/294392/let-it-go-down-says-jim-cramer-on-capital-one-cof",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-31",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "American Express Falls After Earnings. The Stock Is Having a Rocky Start to 2026.",
+      "url": "https://finance.yahoo.com/m/52335412-c0b6-3030-95ec-051c4e50f732/american-express-falls-after.html",
+      "publisher": "Barrons.com",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CACC Up on Q4 Earnings Beat Despite Y/Y Rise in Expenses, Provisions",
+      "url": "/news/293938/cacc-up-on-q4-earnings-beat-despite-yy-rise-in-expenses-provisions",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "American Express Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/24e279f6-867b-3120-aa74-d72ed641b8e1/american-express-q4-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Trump Sues IRS, Treasury for $10 Billion for Tax-Return Leak",
+      "url": "https://finance.yahoo.com/news/trump-sues-irs-treasury-10-014621753.html",
+      "publisher": "Bloomberg",
+      "date": "2026-01-30",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Visa Q1 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/f06b50f6-bb34-392e-bcac-cd3df552486e/visa-q1-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Mastercard Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/bc27c6fd-1e09-3632-8768-7e96f9ea6a23/mastercard-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Axos Financial Q2 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/a85fbeb8-6681-37bd-9066-45ccdee8647b/axos-financial-q2-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Capital One Stock Weak After Earnings, Brex Deal in Focus",
+      "url": "/news/292408/capital-one-stock-weak-after-earnings-brex-deal-in-focus",
+      "publisher": "MarketBeat",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    }
+  ]
 }

@@ -6306,7 +6306,15 @@
     "technical_score": 60.14220092672625,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.09835977104473775,
+    "sentiment_pos": 0.04865,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.95135,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 54.92
+  },
   "analyst": {
     "revision_momentum": 0.1111111111111111,
     "target_upside": 0.09772161779772655,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 25.347751599999995,
     "catalyst_timeline": 68.59891533323662,
     "downside_control": 50.600290305497936,
-    "composite_score": 57.263661462579265,
+    "composite_score": 57.25977241728083,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 52.36433660333333,
     "technical_score": 60.14220092672625,
-    "sentiment_score": 50.0,
+    "sentiment_score": 54.92,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Semiconductors"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Trump Ally Mullin Buys 10 Stocks, Including These $5 Billion Companies You've Probably Never Heard Of",
+      "url": "https://finance.yahoo.com/m/91b1be9a-cc6f-3bbd-8531-d17ef43c3a18/trump-ally-mullin-buys-10.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Monolithic Power Systems (MPWR) Stock Trades Up, Here Is Why",
+      "url": "/news/303247/monolithic-power-systems-mpwr-stock-trades-up-here-is-why",
+      "publisher": "StockStory",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Monolithic Power's Q4 Earnings Surpass Estimates on Record Revenues",
+      "url": "/news/303205/monolithic-powers-q4-earnings-surpass-estimates-on-record-revenues",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MPWR Q4 Deep Dive: Data Center and Automotive Growth Drive Strong Outlook",
+      "url": "/news/302643/mpwr-q4-deep-dive-data-center-and-automotive-growth-drive-strong-outlook",
+      "publisher": "StockStory",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Monolithic Power Systems Inc (MPWR) Q4 2025 Earnings Call Highlights: Record Revenue and ...",
+      "url": "https://finance.yahoo.com/news/monolithic-power-systems-inc-mpwr-050247560.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Monolithic Power Systems Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/6850f26b-1b50-34a2-a22e-523a4f790236/monolithic-power-systems-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Monolithic Power Systems, Inc.",
+      "url": "https://finance.yahoo.com/m/fc0340e8-538b-357e-8053-e263cd13bafe/analyst-report%3A-monolithic.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Trump Ally Mullin Buys 10 Stocks, Including These $5 Billion Companies You've Probably Never Heard Of",
+      "url": "/news/302331/trump-ally-mullin-buys-10-stocks-including-these-5-billion-companies-youve-probably-never-heard-of",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Monolithic Power Systems (NASDAQ:MPWR) Q4: Beats On Revenue But Inventory Levels Increase",
+      "url": "/news/302216/monolithic-power-systems-nasdaq-mpwr-q4-beats-on-revenue-but-inventory-levels-increase",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Monolithic (MPWR) Q4 Earnings: How Key Metrics Compare to Wall Street Estimates",
+      "url": "/news/302245/monolithic-mpwr-q4-earnings-how-key-metrics-compare-to-wall-street-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Monolithic Power (MPWR) Tops Q4 Earnings and Revenue Estimates",
+      "url": "/news/302226/monolithic-power-mpwr-tops-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Monolithic: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/monolithic-q4-earnings-snapshot-212202040.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Monolithic Power Systems Beats Estimates, Hikes Dividend",
+      "url": "https://www.investors.com/news/technology/mpwr-stock-monolithic-power-systems-q4-2025-earnings?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Monolithic Power Systems Announces CFO Transition",
+      "url": "/news/302048/monolithic-power-systems-announces-cfo-transition",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Monolithic Power Systems Provides Earnings Commentary for the Quarter and Year Ended December 31, 2025",
+      "url": "/news/302039/monolithic-power-systems-provides-earnings-commentary-for-the-quarter-and-year-ended-december-31-2025",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Monolithic Power Systems Announces Results for the Fourth Quarter and Year Ended December 31, 2025 and an Increase in Quarterly Cash Dividend",
+      "url": "/news/302038/monolithic-power-systems-announces-results-for-the-fourth-quarter-and-year-ended-december-31-2025-and-an-increase-in-quarterly-cash-dividend",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Earnings Storm Brewing: What's In Store For Google Stock, Nvidia, And Beyond?",
+      "url": "https://www.investors.com/research/breakout-stocks-technical-analysis/google-stock-nvidia-arista-networks-lead-flurry-of-upcoming-earnings-reports?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What's in Store for These 3 Semiconductor Stocks This Earnings Season?",
+      "url": "/news/299313/whats-in-store-for-these-3-semiconductor-stocks-this-earnings-season",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Monolithic Power Systems (MPWR) Reports Q4: Everything You Need To Know Ahead Of Earnings",
+      "url": "/news/298623/monolithic-power-systems-mpwr-reports-q4-everything-you-need-to-know-ahead-of-earnings",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Monolithic (MPWR) Q4 Earnings on the Horizon: Analysts' Insights on Key Performance Measures",
+      "url": "/news/297474/monolithic-mpwr-q4-earnings-on-the-horizon-analysts-insights-on-key-performance-measures",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    }
+  ]
 }

@@ -6278,7 +6278,7 @@
   "technical": {
     "close": 115.91000366210938,
     "sma_20": 109.8100006103516,
-    "sma_50": 110.03759963989258,
+    "sma_50": 110.03759963989256,
     "sma_200": 95.21730010986327,
     "trend_alignment": 0.7312482642676559,
     "rsi": 58.787246907677385,
@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 75.79694555952739,
-    "stoch_d": 63.463254504598794,
+    "stoch_d": 63.4632545045988,
     "trend_score": 73.1248264267656,
     "rsi_abs_score": 72.34892716462583,
     "macd_abs_score": 66.4584514449876,
@@ -6306,7 +6306,15 @@
     "technical_score": 59.30692696707112,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.23837766557788725,
+    "sentiment_pos": 0.1603,
+    "sentiment_neg": 0.04675,
+    "sentiment_neu": 0.79295,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 61.92
+  },
   "analyst": {
     "revision_momentum": 0.23076923076923078,
     "target_upside": 0.20783366404969375,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 80.03539225142858,
     "catalyst_timeline": 63.038701492203614,
     "downside_control": 32.36814591174088,
-    "composite_score": 60.49429833093099,
+    "composite_score": 60.49040928563255,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 58.85889251091223,
     "technical_score": 59.30692696707112,
-    "sentiment_score": 50.0,
+    "sentiment_score": 61.92,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Passenger Airlines"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Here's Why United Airlines (UAL) is a Strong Value Stock",
+      "url": "/news/302911/heres-why-united-airlines-ual-is-a-strong-value-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Citi Remains Bullish on United Airlines Holdings (UAL)",
+      "url": "/news/302385/citi-remains-bullish-on-united-airlines-holdings-ual",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "This Airline Stock Is Soaring in 2026. Elliott Investment Management Reduced Its Stake.",
+      "url": "https://www.barrons.com/articles/airline-southwest-elliott-investment-management-stock-7759a411?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Kirby Q4 Earnings Surpass Estimates, Increase Year Over Year",
+      "url": "/news/301929/kirby-q4-earnings-surpass-estimates-increase-year-over-year",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "DAL Gains 31% in 6 Months: How Should Investors Play the Stock Now?",
+      "url": "/news/301727/dal-gains-31-in-6-months-how-should-investors-play-the-stock-now",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "United Airlines to Present at Barclays 43rd Annual Industrial Select Conference",
+      "url": "/news/301465/united-airlines-to-present-at-barclays-43rd-annual-industrial-select-conference",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Canadian National Stock Rises 2.8% Since Q4 Earnings Release",
+      "url": "/news/301585/canadian-national-stock-rises-28-since-q4-earnings-release",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Starlink's Direct-To-Cell Tech Gears Up For EU Debut As Spain's MasOrange To Begin Trial",
+      "url": "/news/298652/starlinks-direct-to-cell-tech-gears-up-for-eu-debut-as-spains-masorange-to-begin-trial",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Landstar Q4 Earnings Beat Estimates, Revenues Miss, Both Down Y/Y",
+      "url": "/news/297993/landstar-q4-earnings-beat-estimates-revenues-miss-both-down-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Canadian Pacific Q4 Earnings & Revenues Miss Estimates, Improve Y/Y",
+      "url": "/news/297714/canadian-pacific-q4-earnings-revenues-miss-estimates-improve-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "IATA Chief Expects 'Broadly Flat' US Air Travel Even As Global Demand Rises, Says It's Unlikely To Catch Up In Near Future",
+      "url": "/news/297285/iata-chief-expects-broadly-flat-us-air-travel-even-as-global-demand-rises-says-its-unlikely-to-catch-up-in-near-future",
+      "publisher": "Benzinga",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "United Airlines Rolls Out Starlink Wi-Fi On Over 300 Planes, Targets 800 Planes By Year-End",
+      "url": "/news/296634/united-airlines-rolls-out-starlink-wi-fi-on-over-300-planes-targets-800-planes-by-year-end",
+      "publisher": "Benzinga",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "SkyWest Q4 Earnings Miss Estimates, Down Year Over Year",
+      "url": "/news/296071/skywest-q4-earnings-miss-estimates-down-year-over-year",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "United Spotlights Starlink Wi-Fi in New Big Game Ad as Airline Completes Installation on 300+ Regional Aircraft",
+      "url": "/news/295330/united-spotlights-starlink-wi-fi-in-new-big-game-ad-as-airline-completes-installation-on-300-regional-aircraft",
+      "publisher": "PR Newswire",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Schneider Q4 Earnings Miss Estimates, Down Year Over Year",
+      "url": "/news/293864/schneider-q4-earnings-miss-estimates-down-year-over-year",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Boeings 737 MAX Delivery Pace Tells the Truth Earnings Reports Cant Hide",
+      "url": "https://finance.yahoo.com/m/6832fc76-63f0-3eff-b5d9-3d06bb212e50/boeing%E2%80%99s-737-max-delivery.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Norfolk Southern Q4 Earnings Top Estimates, Increase Year Over Year",
+      "url": "/news/292426/norfolk-southern-q4-earnings-top-estimates-increase-year-over-year",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Southwest Airlines Q4 Earnings Beat Estimates, Revenues Lag",
+      "url": "/news/292419/southwest-airlines-q4-earnings-beat-estimates-revenues-lag",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "C.H. Robinson Q4 Earnings Surpass Estimates, Increase Year Over Year",
+      "url": "/news/292395/ch-robinson-q4-earnings-surpass-estimates-increase-year-over-year",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Are Wall Street Analysts Bullish on United Airlines Stock?",
+      "url": "https://finance.yahoo.com/m/62fc8610-c8b1-350b-933b-a770e10cf8c1/are-wall-street-analysts.html",
+      "publisher": "Barchart",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    }
+  ]
 }

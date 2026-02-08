@@ -6277,19 +6277,19 @@
   },
   "technical": {
     "close": 203.0,
-    "sma_20": 180.98549957275392,
+    "sma_20": 180.98549957275395,
     "sma_50": 179.3763998413086,
-    "sma_200": 174.50753952026363,
-    "trend_alignment": 0.7267399596025086,
+    "sma_200": 174.50753952026358,
+    "trend_alignment": 0.726739959602509,
     "rsi": 77.50529162461784,
     "rsi_score": 0.5501058324923568,
     "macd_histogram": 3.428235523202279,
     "macd_line": 5.69918774706494,
     "macd_histogram_pct": 1.6887859720208274,
-    "bb_position": 1.0412839245687266,
-    "bb_upper": 201.32094593280087,
-    "bb_lower": 160.65005321270698,
-    "bb_width": 0.2247190676385911,
+    "bb_position": 1.041283924568726,
+    "bb_upper": 201.3209459328009,
+    "bb_lower": 160.650053212707,
+    "bb_width": 0.22471906763859106,
     "hist_volatility": 0.33372912805766963,
     "volume_ratio": 0.9655960528675517,
     "avg_volume_20d": 2397690.0,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 95.21524090604944,
     "stoch_d": 95.16763375911516,
-    "trend_score": 72.67399596025086,
+    "trend_score": 72.6739959602509,
     "rsi_abs_score": 34.98941675076432,
     "macd_abs_score": 80.0,
     "momentum_score": 57.49470837538216,
     "volatility_score": 36.36396665592552,
     "volume_score": 50.0,
-    "technical_score": 56.323404631875015,
+    "technical_score": 56.32340463187502,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.13680910319827758,
+    "sentiment_pos": 0.0953,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.9047000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 56.84
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.0,
@@ -6325,7 +6333,7 @@
     "quality_score": 61.575199999999995,
     "growth_score": 65.5,
     "safety_score": 25.62325,
-    "trend_score": 72.67399596025086,
+    "trend_score": 72.6739959602509,
     "momentum_score": 57.49470837538216,
     "volatility_score": 36.36396665592552,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 61.262301449999995,
     "catalyst_timeline": 59.0922419335633,
     "downside_control": 36.248082498388825,
-    "composite_score": 55.00494722643706,
+    "composite_score": 55.001058181138625,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 56.164127875000005,
-    "technical_score": 56.323404631875015,
-    "sentiment_score": 50.0,
+    "technical_score": 56.32340463187502,
+    "sentiment_score": 56.84,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Energy",
     "industry": "Oil & Gas Refining & Marketing"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "From AI Darlings To Dow Dinosaurs: Investors Flee Software For Old-Economy Stocks",
+      "url": "/news/303569/from-ai-darlings-to-dow-dinosaurs-investors-flee-software-for-old-economy-stocks",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "MarketBeat Week in Review - 02/02 - 02/06",
+      "url": "/news/303521/marketbeat-week-in-review-0202-0206",
+      "publisher": "MarketBeat",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "New Strong Sell Stocks for February 6th",
+      "url": "/news/302497/new-strong-sell-stocks-for-february-6th",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Marathon Petroleum price target raised to $198 from $183 at TD Cowen",
+      "url": "https://finance.yahoo.com/news/marathon-petroleum-price-target-raised-135542851.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Marathon Petroleum Corporation",
+      "url": "https://finance.yahoo.com/m/a6063577-3d8b-33af-9526-c29bafd6b35c/analyst-report%3A-marathon.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Marathon Q4 Earnings & Revenues Beat Estimates, Expenses Down Y/Y",
+      "url": "/news/301282/marathon-q4-earnings-revenues-beat-estimates-expenses-down-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Marathon Petroleum Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/b83778e6-05a6-3323-bfe2-6fd9d9fb86e5/marathon-petroleum-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Marathon Petroleum Company Is Ready to Sprint Higher",
+      "url": "/news/298258/marathon-petroleum-company-is-ready-to-sprint-higher",
+      "publisher": "MarketBeat",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Marathon Petroleum Corp (MPC) Q4 2025 Earnings Call Highlights: Strong Operational Performance ...",
+      "url": "https://finance.yahoo.com/news/marathon-petroleum-corp-mpc-q4-230102055.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Marathon Petroleum (MPC) Earnings Transcript",
+      "url": "/news/297832/marathon-petroleum-mpc-earnings-transcript",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Market Awaits JOLTS Jobs Report",
+      "url": "/news/297779/market-awaits-jolts-jobs-report",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Q4 Earnings, JOLTS & a Changing of the Disney Guard",
+      "url": "/news/297723/q4-earnings-jolts-a-changing-of-the-disney-guard",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Refining Giant Marathon Petroleum Sees Profits Jump On Higher Margins",
+      "url": "/news/297238/refining-giant-marathon-petroleum-sees-profits-jump-on-higher-margins",
+      "publisher": "Benzinga",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Marathon Petroleum (MPC) Q4 Earnings and Revenues Surpass Estimates",
+      "url": "/news/297250/marathon-petroleum-mpc-q4-earnings-and-revenues-surpass-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Marathon Petroleum: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/marathon-petroleum-q4-earnings-snapshot-114731173.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MPLX LP Reports Fourth-Quarter and Full-Year 2025 Results",
+      "url": "/news/296930/mplx-lp-reports-fourth-quarter-and-full-year-2025-results",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Marathon Petroleum Corp. Reports Fourth-Quarter and Full-Year 2025 Results",
+      "url": "/news/296931/marathon-petroleum-corp-reports-fourth-quarter-and-full-year-2025-results",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Phillips 66's Q4 Earnings on Deck: Should You Stay Invested or Exit?",
+      "url": "/news/295798/phillips-66s-q4-earnings-on-deck-should-you-stay-invested-or-exit",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "January jobs data, Alphabet and Amazon earnings, more Warsh fallout: What to watch this week",
+      "url": "https://finance.yahoo.com/news/january-jobs-data-alphabet-and-amazon-earnings-more-warsh-fallout-what-to-watch-this-week-124723942.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "My 5 Favorite Ultra-High-Yield Dividend Stocks to Buy for 2026",
+      "url": "/news/294476/my-5-favorite-ultra-high-yield-dividend-stocks-to-buy-for-2026",
+      "publisher": "Motley Fool",
+      "date": "2026-01-31",
+      "sentiment": "positive"
+    }
+  ]
 }

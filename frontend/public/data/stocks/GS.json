@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 41.03673552568139,
-    "stoch_d": 31.515874273219282,
+    "stoch_d": 31.515874273219286,
     "trend_score": 72.56546623905547,
     "rsi_abs_score": 72.48750575229903,
     "macd_abs_score": 33.86329181717826,
@@ -6306,7 +6306,15 @@
     "technical_score": 58.82928273486807,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.13901362719624155,
+    "sentiment_pos": 0.0836,
+    "sentiment_neg": 0.0158,
+    "sentiment_neu": 0.9006000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 56.95
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.04979811574697174,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 44.61690110476191,
     "catalyst_timeline": 56.85368161005101,
     "downside_control": 54.10187992079737,
-    "composite_score": 56.96852272586227,
+    "composite_score": 56.964633680563836,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 62.5161167511111,
     "technical_score": 58.82928273486807,
-    "sentiment_score": 50.0,
+    "sentiment_score": 56.95,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Investment Banking & Brokerage"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "The Dow Surged Past 50,000. How It Got There, and Where It Goes Next.",
+      "url": "https://finance.yahoo.com/m/d4d07bd1-e873-3a77-8c7a-e7616a7fd512/the-dow-surged-past-50%2C000..html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Goldman Sachs signals grim shift as software stocks bounce",
+      "url": "https://finance.yahoo.com/m/a6b2fdab-9d7c-32ac-b519-41d3d26253e9/goldman-sachs-signals-grim.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Wall Streets wild week rattles investors confidence while highlighting a growing divide within markets",
+      "url": "https://finance.yahoo.com/m/c3403153-ced0-3806-acac-ba5af7026c10/wall-street%E2%80%99s-wild-week.html",
+      "publisher": "MarketWatch",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Goldman Sachs Teams Up With Anthropic To Deploy AI For Core Banking Tasks",
+      "url": "/news/303464/goldman-sachs-teams-up-with-anthropic-to-deploy-ai-for-core-banking-tasks",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dow Jones Sets Record and Breaks Past 50,000",
+      "url": "https://finance.yahoo.com/m/381e08a9-39c5-3e50-8071-1780420c60a8/dow-jones-sets-record-and.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Dow Surged Past 50,000. How Caterpillar and These Other Stocks Got It There.",
+      "url": "https://www.barrons.com/articles/dow-jones-industrial-average-50000-first-time-caterpillar-stock-ff67c63d?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Top Dow Contributors Over the Past 10,000 Points: Goldman, Caterpillar, IBM",
+      "url": "https://finance.yahoo.com/m/1b882369-7dff-30f5-a716-9c5bcbfc0e17/top-dow-contributors-over-the.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Dow Crosses 50,000 Level",
+      "url": "https://www.barrons.com/livecoverage/stock-market-news-today-020626/card/dow-crosses-50-000-level-G5G9zEkP3rV2tHpcP14J?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Goldman Sachs teams up with Anthropic to automate banking tasks with AI agents, CNBC reports",
+      "url": "https://finance.yahoo.com/news/goldman-sachs-teams-anthropic-automate-190013193.html",
+      "publisher": "Reuters",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Dow Is on the Verge of 50,000. It's Not About Tech.",
+      "url": "https://www.barrons.com/articles/dow-50000-tech-rally-broadens-ff67c63d?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Goldman, JPMorgan Bankers See Bonus Pools Rise at Least 10%",
+      "url": "https://finance.yahoo.com/video/goldman-jpmorgan-bankers-see-bonus-174616990.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Nvidia and Microsoft Lead Wall Street Rally After Massive Sell-Off",
+      "url": "https://finance.yahoo.com/news/nvidia-microsoft-lead-wall-street-171257432.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Wall Street Banks Lift Bonuses 10% as Trading Revenue Jumps 16%",
+      "url": "https://finance.yahoo.com/news/wall-street-banks-lift-bonuses-161905542.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Gary Roth: What United Capital Taught Me About Building a New Firm",
+      "url": "https://www.barrons.com/advisor/articles/gary-roth-united-capital-goldman-sachs-modern-wealth-1264b7a7?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Big Numbers: Whats on tap for tobacco?",
+      "url": "https://finance.yahoo.com/m/f33a57be-fd64-33f9-be42-e209147e3535/3-big-numbers%3A-what%E2%80%99s-on-tap.html",
+      "publisher": "C-Store Dive",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Evercore Stock Rises as Q4 Earnings Beat, Revenue Reaches Record Level",
+      "url": "/news/301922/evercore-stock-rises-as-q4-earnings-beat-revenue-reaches-record-level",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Private Credit Giants Back A$1.4 Billion BGH Loan for Aspen Asia Deal",
+      "url": "https://finance.yahoo.com/news/private-credit-giants-back-1-132428776.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "MC Gains on Q4 Earnings Beat as Revenues Rise, Announces Buyback Plan",
+      "url": "/news/301332/mc-gains-on-q4-earnings-beat-as-revenues-rise-announces-buyback-plan",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "7 Bank Stocks With Solid-and Growing-Dividends",
+      "url": "https://www.barrons.com/articles/7-bank-stocks-growing-dividends-144d4aae?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "T. Rowe Price Group Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/67e79178-fc4d-3146-94d1-27be72cb2e6b/t.-rowe-price-group-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    }
+  ]
 }

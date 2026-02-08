@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 4828685.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 46.94601409074731,
+    "stoch_k": 46.94601409074732,
     "stoch_d": 38.22406580249284,
     "trend_score": 54.65606285615034,
     "rsi_abs_score": 70.15896179989439,
@@ -6306,7 +6306,15 @@
     "technical_score": 57.41845016605578,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.16444511151509808,
+    "sentiment_pos": 0.12395,
+    "sentiment_neg": 0.03995,
+    "sentiment_neu": 0.8361000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 58.22
+  },
   "analyst": {
     "revision_momentum": 0.125,
     "target_upside": 0.13324175824175824,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 54.28054331666666,
     "catalyst_timeline": 56.905221013649594,
     "downside_control": 55.749471209214846,
-    "composite_score": 53.636126336446544,
+    "composite_score": 53.63223729114811,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 54.78535026388889,
     "technical_score": 57.41845016605578,
-    "sentiment_score": 50.0,
+    "sentiment_score": 58.22,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Utilities",
     "industry": "Multi-Utilities"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Amazon downgraded, Roblox upgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/amazon-downgraded-roblox-upgraded-wall-144121688.html",
+      "publisher": "The Fly",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here Are Fridays Top Wall Street Analyst Research Calls: Amazon.com, Caterpillar, Estee Lauder,  JPMorgan, Norfolk Southern, Roku, Snap, Vistra, and More",
+      "url": "https://finance.yahoo.com/m/2c0413d3-07a7-364e-97b6-23d3281ed969/here-are-friday%E2%80%99s-top-wall.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Sempra Ranks Again Among Fortune's Most Admired",
+      "url": "/news/302256/sempra-ranks-again-among-fortunes-most-admired",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Do Wall Street Analysts Like Sempra Stock?",
+      "url": "https://finance.yahoo.com/m/84ce5dd8-50c5-3fb7-8b28-84c68cdd3e78/do-wall-street-analysts-like.html",
+      "publisher": "Barchart",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "UGI (UGI) Misses Q1 Earnings and Revenue Estimates",
+      "url": "/news/300486/ugi-ugi-misses-q1-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "SoCalGas Petitions CPUC to Update Hydrogen Blending Demonstration Requirements Based on Global Safety History and Research",
+      "url": "/news/299033/socalgas-petitions-cpuc-to-update-hydrogen-blending-demonstration-requirements-based-on-global-safety-history-and-research",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Atmos Energy (ATO) Q1 Earnings Surpass Estimates",
+      "url": "/news/298417/atmos-energy-ato-q1-earnings-surpass-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "SoCalGas Declares Preferred Dividends",
+      "url": "/news/297943/socalgas-declares-preferred-dividends",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Will Sempra (SRE) Beat Estimates Again in Its Next Earnings Report?",
+      "url": "/news/297934/will-sempra-sre-beat-estimates-again-in-its-next-earnings-report",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "These 2 Utilities Stocks Could Beat Earnings: Why They Should Be on Your Radar",
+      "url": "/news/297423/these-2-utilities-stocks-could-beat-earnings-why-they-should-be-on-your-radar",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The $7 Trillion Data Centre Boom Has A 100GW Power Problem",
+      "url": "https://finance.yahoo.com/news/7-trillion-data-centre-boom-110000119.html",
+      "publisher": "Oilprice.com",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Analyst Report: Sempra",
+      "url": "https://finance.yahoo.com/m/53c622da-2c2d-3097-a449-98609ed42cb2/analyst-report%3A-sempra.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "A 'Crippling' Winter Storm is Coming. Utilities Are at Risk.",
+      "url": "https://www.barrons.com/articles/winter-storm-utilities-risk-data-center-50ff0ce4?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-22",
+      "sentiment": "negative"
+    },
+    {
+      "title": "SoCalGas Issues Statement on Southern California Edison's Eaton Litigation",
+      "url": "/news/283093/socalgas-issues-statement-on-southern-california-edisons-eaton-litigation",
+      "publisher": "PR Newswire",
+      "date": "2026-01-21",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Sempra Earnings Preview: What to Expect",
+      "url": "https://finance.yahoo.com/m/097ea552-fd8f-3ec8-ba40-a48fc1500294/sempra-earnings-preview%3A-what.html",
+      "publisher": "Barchart",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Sempra Energy Benefits From LNG Growth and Strategic Investments",
+      "url": "/news/281153/sempra-energy-benefits-from-lng-growth-and-strategic-investments",
+      "publisher": "Zacks",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Sempra (SRE) Estimates A $471 million After-Tax Impact To Earnings From Track 2 Proposed Decision",
+      "url": "/news/266712/sempra-sre-estimates-a-471-million-after-tax-impact-to-earnings-from-track-2-proposed-decision",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "4 Low-Beta Defensive Stocks to Buy as Consumer Confidence Plummets",
+      "url": "/news/264312/4-low-beta-defensive-stocks-to-buy-as-consumer-confidence-plummets",
+      "publisher": "Zacks",
+      "date": "2025-12-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Fed Caution Ahead: 5 Low-Volatility Stocks to Buy for 2026",
+      "url": "/news/263726/fed-caution-ahead-5-low-volatility-stocks-to-buy-for-2026",
+      "publisher": "Zacks",
+      "date": "2025-12-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why You Should Add PCG Stock to Your Portfolio Right Now",
+      "url": "/news/262451/heres-why-you-should-add-pcg-stock-to-your-portfolio-right-now",
+      "publisher": "Zacks",
+      "date": "2025-12-26",
+      "sentiment": "neutral"
+    }
+  ]
 }

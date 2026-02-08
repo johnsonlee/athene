@@ -6306,7 +6306,15 @@
     "technical_score": 58.315096708675654,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.32005611836971365,
+    "sentiment_pos": 0.13815,
+    "sentiment_neg": 0.0076,
+    "sentiment_neu": 0.8543,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 66.0
+  },
   "analyst": {
     "revision_momentum": 0.0625,
     "target_upside": 0.05218855218855217,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 58.6651676,
     "catalyst_timeline": 59.60096789691484,
     "downside_control": 56.55099416117562,
-    "composite_score": 63.26155222060088,
+    "composite_score": 63.25766317530245,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 66.06755133333333,
     "technical_score": 58.315096708675654,
-    "sentiment_score": 50.0,
+    "sentiment_score": 66.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Property & Casualty Insurance"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Hartford Insurance Group's (HIG) Delivered Strong Earnings Growth in Q4-2025",
+      "url": "/news/303503/hartford-insurance-groups-hig-delivered-strong-earnings-growth-in-q4-2025",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Allstate Q4 Earnings Beat Estimates on Property-Liability Unit Strength",
+      "url": "/news/301947/allstate-q4-earnings-beat-estimates-on-property-liability-unit-strength",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "RNR Q4 Earnings Beat on Lower Claims Costs, Strong Investment Results",
+      "url": "/news/300064/rnr-q4-earnings-beat-on-lower-claims-costs-strong-investment-results",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cantor Fitzgerald Raises Hartford Insurance (HIG) PT to $165 Following Strong Q4 Results, 2026 Growth Outlook",
+      "url": "/news/299111/cantor-fitzgerald-raises-hartford-insurance-hig-pt-to-165-following-strong-q4-results-2026-growth-outlook",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Centro Expands Carrier Ecosystem with Addition of The Hartford to Its API-Powered RFP and Quoting Platform",
+      "url": "/news/299067/centro-expands-carrier-ecosystem-with-addition-of-the-hartford-to-its-api-powered-rfp-and-quoting-platform",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Aflac Gears Up for Q4 Earnings: Can Higher Premiums Help it Quack?",
+      "url": "/news/295763/aflac-gears-up-for-q4-earnings-can-higher-premiums-help-it-quack",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Hartford Insurance Group Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/11bdc2b4-7390-379c-91cc-54aa778ea25e/the-hartford-insurance-group.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Hartford Insurance Group Inc (HIG) Q4 2025 Earnings Call Highlights: Strong Core Earnings ...",
+      "url": "https://finance.yahoo.com/news/hartford-insurance-group-inc-hig-210055077.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "HIG Posts Q4 Earnings Beat on Higher Premiums & Investment Income",
+      "url": "/news/293923/hig-posts-q4-earnings-beat-on-higher-premiums-investment-income",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's What Key Metrics Tell Us About The Hartford Insurance Group (HIG) Q4 Earnings",
+      "url": "/news/292883/heres-what-key-metrics-tell-us-about-the-hartford-insurance-group-hig-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hartford (NYSE:HIG) Reports Bullish Q4 CY2025",
+      "url": "/news/292717/hartford-nyse-hig-reports-bullish-q4-cy2025",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Hartford Reports Outstanding Fourth Quarter Earnings Of $1.1 Billion And Full Year 2025 Earnings Of $3.8 Billion",
+      "url": "https://www.businesswire.com/news/home/20260129947781/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Hartford (HIG) Reports Q4: Everything You Need To Know Ahead Of Earnings",
+      "url": "/news/289371/hartford-hig-reports-q4-everything-you-need-to-know-ahead-of-earnings",
+      "publisher": "StockStory",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Can HIG Offset Rising Expenses in Q4 With Higher Premiums?",
+      "url": "/news/288889/can-hig-offset-rising-expenses-in-q4-with-higher-premiums",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Chubb (CB) Earnings Expected to Grow: What to Know Ahead of Next Week's Release",
+      "url": "/news/288590/chubb-cb-earnings-expected-to-grow-what-to-know-ahead-of-next-weeks-release",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ahead of The Hartford Insurance Group (HIG) Q4 Earnings: Get Ready With Wall Street Estimates for Key Metrics",
+      "url": "/news/288427/ahead-of-the-hartford-insurance-group-hig-q4-earnings-get-ready-with-wall-street-estimates-for-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "1 Insurance Stock on Our Buy List and 2 We Brush Off",
+      "url": "/news/274477/1-insurance-stock-on-our-buy-list-and-2-we-brush-off",
+      "publisher": "StockStory",
+      "date": "2026-01-12",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hartford Insurance Strengthens Digital Push With New Columbus Tech Hub",
+      "url": "/news/271217/hartford-insurance-strengthens-digital-push-with-new-columbus-tech-hub",
+      "publisher": "Zacks",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Hartford Expands Technology Team With New Office In Columbus, Ohio",
+      "url": "https://www.businesswire.com/news/home/20260106489258/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks Give Up Early Gains as Megacap Tech Shares Fall",
+      "url": "https://finance.yahoo.com/m/bca75bc9-7ac6-3a1d-b715-fc93b6b29014/stocks-give-up-early-gains-as.html",
+      "publisher": "Barchart",
+      "date": "2026-01-02",
+      "sentiment": "positive"
+    }
+  ]
 }

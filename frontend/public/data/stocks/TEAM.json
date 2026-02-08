@@ -6278,7 +6278,7 @@
   "technical": {
     "close": 94.72000122070312,
     "sma_20": 121.05800056457521,
-    "sma_50": 143.53359970092777,
+    "sma_50": 143.53359970092774,
     "sma_200": 173.2867501449585,
     "trend_alignment": 0.03585667246077226,
     "rsi": 21.8590273666059,
@@ -6306,7 +6306,15 @@
     "technical_score": 24.216555994906916,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.01991677563892404,
+    "sentiment_pos": 0.05375,
+    "sentiment_neg": 0.0317,
+    "sentiment_neu": 0.91465,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 49.0
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.7155827702702703,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 55.110134556999995,
     "catalyst_timeline": 33.895458092938014,
     "downside_control": 41.52920839283212,
-    "composite_score": 35.3894467705641,
+    "composite_score": 35.38555772526566,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 44.08705493851664,
     "technical_score": 24.216555994906916,
-    "sentiment_score": 50.0,
+    "sentiment_score": 49.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Technology",
     "industry": "Software - Application"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "AI Fear Grips Wall Street as a New Stock Market Reality Sets In",
+      "url": "https://finance.yahoo.com/news/ai-fear-grips-wall-street-140007396.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Gartner, Stellantis, And Novo Nordisk Are Among Top 10 Large Cap Losers Last Week (Feb. 2-Feb. 6): Are the Others in Your Portfolio?",
+      "url": "/news/303783/gartner-stellantis-and-novo-nordisk-are-among-top-10-large-cap-losers-last-week-feb-2-feb-6-are-the-others-in-your-portfolio",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "3 Oversold Software Stocks You Should Buy on the Dip Now",
+      "url": "https://finance.yahoo.com/m/c4e948d3-c2a8-3998-90e9-944c9b79a50a/3-oversold-software-stocks.html",
+      "publisher": "Barchart",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Software stocks have been crushed. Here's how to play the sector as the dust settles.",
+      "url": "https://www.marketwatch.com/story/software-stocks-have-been-crushed-heres-how-to-play-the-sector-as-the-dust-settles-c0175f8a?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Atlassian's (TEAM) Maintained at Buy by Canaccord Genuity",
+      "url": "/news/303491/atlassians-team-maintained-at-buy-by-canaccord-genuity",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Atlassian Shares Slide 8% as AI R&D Spend Hits $826 Million",
+      "url": "https://finance.yahoo.com/news/atlassian-shares-slide-8-ai-172519145.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Atlassian Corporation",
+      "url": "https://finance.yahoo.com/m/954af10d-8077-3bf1-b7a1-1551ef1af99a/analyst-report%3A-atlassian.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Atlassian Q2 Earnings Surpass Expectations, Revenues Rise Y/Y",
+      "url": "/news/302991/atlassian-q2-earnings-surpass-expectations-revenues-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TEAM Q4 Deep Dive: AI Adoption and Enterprise Expansion Shape Results",
+      "url": "/news/302641/team-q4-deep-dive-ai-adoption-and-enterprise-expansion-shape-results",
+      "publisher": "StockStory",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Atlassian Posts Strong Quarter Fueled By Cloud Demand",
+      "url": "/news/302486/atlassian-posts-strong-quarter-fueled-by-cloud-demand",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Atlassian Q2 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/cf51f6de-8ab8-306b-aafb-bb980ca34d62/atlassian-q2-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Atlassian Corp (TEAM) Q2 2026 Earnings Call Highlights: Record Cloud Revenue and AI Integration ...",
+      "url": "https://finance.yahoo.com/news/atlassian-corp-team-q2-2026-050118956.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Atlassian (TEAM) Reports Q2 Earnings: What Key Metrics Have to Say",
+      "url": "/news/302345/atlassian-team-reports-q2-earnings-what-key-metrics-have-to-say",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Atlassian raises annual revenue forecast on resilient software spending",
+      "url": "https://finance.yahoo.com/news/atlassian-raises-annual-revenue-forecast-223636753.html",
+      "publisher": "Reuters",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Atlassian (TEAM) Surpasses Q2 Earnings and Revenue Estimates",
+      "url": "/news/302250/atlassian-team-surpasses-q2-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Atlassian delivers solid fiscal Q2 results, shares up",
+      "url": "https://finance.yahoo.com/news/atlassian-shares-dip-cloud-growth-214054251.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Atlassian: Fiscal Q2 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/atlassian-fiscal-q2-earnings-snapshot-213255874.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Atlassian (NASDAQ:TEAM) Exceeds Q4 CY2025 Expectations But Stock Drops",
+      "url": "/news/302152/atlassian-nasdaq-team-exceeds-q4-cy2025-expectations-but-stock-drops",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Atlassian Announces Second Quarter Fiscal Year 2026 Results",
+      "url": "https://www.businesswire.com/news/home/20260205386782/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Secondary sales shift from founder windfalls to employee-retention tools",
+      "url": "https://finance.yahoo.com/news/secondary-sales-shift-founder-windfalls-173000108.html",
+      "publisher": "TechCrunch",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    }
+  ]
 }

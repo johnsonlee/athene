@@ -6295,8 +6295,8 @@
     "avg_volume_20d": 6840990.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 97.16590483973764,
-    "stoch_d": 95.24992038915289,
+    "stoch_k": 97.16590483973765,
+    "stoch_d": 95.2499203891529,
     "trend_score": 78.27263500984122,
     "rsi_abs_score": 41.8644383120954,
     "macd_abs_score": 68.24816956622816,
@@ -6306,7 +6306,15 @@
     "technical_score": 59.26755363424429,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.08704218235092903,
+    "sentiment_pos": 0.07189999999999999,
+    "sentiment_neg": 0.13620000000000002,
+    "sentiment_neu": 0.7918999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 45.65
+  },
   "analyst": {
     "revision_momentum": -0.05263157894736842,
     "target_upside": -0.0199420487472303,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 64.87386394285713,
     "catalyst_timeline": 58.532648264196,
     "downside_control": 48.21669179926127,
-    "composite_score": 57.98676641229808,
+    "composite_score": 57.982877366999645,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 60.549950401852584,
     "technical_score": 59.26755363424429,
-    "sentiment_score": 50.0,
+    "sentiment_score": 45.65,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Air Freight & Logistics"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "The job market was bruising in 2025. The start of 2026 doesn't look much better.",
+      "url": "https://finance.yahoo.com/news/the-job-market-was-bruising-in-2025-the-start-of-2026-doesnt-look-much-better-150057009.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "United Parcel Service (UPS) Is Consistent, Says Jim Cramer",
+      "url": "/news/303602/united-parcel-service-ups-is-consistent-says-jim-cramer",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "From AI Darlings To Dow Dinosaurs: Investors Flee Software For Old-Economy Stocks",
+      "url": "/news/303569/from-ai-darlings-to-dow-dinosaurs-investors-flee-software-for-old-economy-stocks",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bitcoin Could Bounce From 50% Crash - Here's What Record Layoffs Just Changed",
+      "url": "/news/302807/bitcoin-could-bounce-from-50-crash-heres-what-record-layoffs-just-changed",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "U.S. job losses at 17-year high raise positive signals for bitcoin bulls",
+      "url": "https://finance.yahoo.com/m/481382b0-e395-3377-9013-076ff74b58a5/u.s.-job-losses-at-17-year.html",
+      "publisher": "CoinDesk",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Canadian e-commerce shipping platform acquires Warehowz",
+      "url": "https://finance.yahoo.com/news/canadian-e-commerce-shipping-platform-193235346.html",
+      "publisher": "FreightWaves",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The job market was already slim pickings. New data shows it just got worse",
+      "url": "https://finance.yahoo.com/m/403ae51a-3196-35ae-9187-ca0e7186990b/the-job-market-was-already.html",
+      "publisher": "CNN Business",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Job openings sink in December to lowest level since 2020",
+      "url": "https://finance.yahoo.com/news/job-openings-sink-in-december-to-lowest-level-since-2020-151605057.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "The Latest Alternative Jobs Data Point to a Rough January",
+      "url": "https://finance.yahoo.com/m/2fe4fb8f-1eac-3638-ae99-1b2cf23e7929/the-latest-alternative-jobs.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "United Parcel Service, Inc. (UPS) Is a Trending Stock: Facts to Know Before Betting on It",
+      "url": "/news/301449/united-parcel-service-inc-ups-is-a-trending-stock-facts-to-know-before-betting-on-it",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "January Sees Surge in Layoff Plans, Outplacement Firm Says",
+      "url": "https://finance.yahoo.com/m/2fe4fb8f-1eac-3638-ae99-1b2cf23e7929/january-sees-surge-in-layoff.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "US applications for jobless benefits jump by 22,000 to 231,000 last week, the most in 2 months.",
+      "url": "https://finance.yahoo.com/news/us-applications-jobless-benefits-jump-134045248.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "US weekly jobless claims increase more than expected",
+      "url": "https://finance.yahoo.com/news/us-weekly-jobless-claims-increase-133618429.html",
+      "publisher": "Reuters",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "AI Killed Software, Now It's Killing Jobs: January Sees Most Cuts Since 2009",
+      "url": "/news/301242/ai-killed-software-now-its-killing-jobs-january-sees-most-cuts-since-2009",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "January layoffs were the highest since 2009, report says",
+      "url": "https://finance.yahoo.com/m/2a96ac6a-e565-34c3-818c-f65c68205e8f/january-layoffs-were-the.html",
+      "publisher": "Quartz",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Last month was the worst January for layoff plans since 2009: Challenger",
+      "url": "https://finance.yahoo.com/news/last-month-was-the-worst-january-for-layoff-plans-since-2009-challenger-131244531.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Last month was the worst January for job cut announcements since 2009",
+      "url": "https://finance.yahoo.com/m/403ae51a-3196-35ae-9187-ca0e7186990b/last-month-was-the-worst.html",
+      "publisher": "CNN Business",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "California job losses slow in January as cuts surge nationwide",
+      "url": "https://finance.yahoo.com/news/california-job-losses-slow-january-123000528.html",
+      "publisher": "LA Times",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Amazon, UPS and Other Major Companies Are Making Big Job Cuts. Is AI To Blame?",
+      "url": "https://finance.yahoo.com/m/f9df8c6a-06cc-3f81-ac3c-c2a67767336a/amazon%2C-ups-and-other-major.html",
+      "publisher": "Investopedia",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Manning & Napier Group, LLC Reduces Stake in UnitedHealth Group Inc by 65.05%",
+      "url": "https://finance.yahoo.com/news/manning-napier-group-llc-reduces-220403049.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    }
+  ]
 }

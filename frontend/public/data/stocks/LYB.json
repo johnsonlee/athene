@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 6961360.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 73.85865938080948,
+    "stoch_k": 73.8586593808095,
     "stoch_d": 78.72243327096504,
     "trend_score": 67.34889288190618,
     "rsi_abs_score": 68.8155943993446,
@@ -6306,7 +6306,15 @@
     "technical_score": 56.41480457215987,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.20258704417144502,
+    "sentiment_pos": 0.14285,
+    "sentiment_neg": 0.08675000000000001,
+    "sentiment_neu": 0.77035,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 60.13
+  },
   "analyst": {
     "revision_momentum": -0.16666666666666666,
     "target_upside": -0.09255898366606173,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 72.57841972142856,
     "catalyst_timeline": 56.115701699074634,
     "downside_control": 45.15415823292315,
-    "composite_score": 46.103490598921454,
+    "composite_score": 46.099601553623025,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 44.120954693806034,
     "technical_score": 56.41480457215987,
-    "sentiment_score": 50.0,
+    "sentiment_score": 60.13,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Materials",
     "industry": "Specialty Chemicals"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "From AI Darlings To Dow Dinosaurs: Investors Flee Software For Old-Economy Stocks",
+      "url": "/news/303569/from-ai-darlings-to-dow-dinosaurs-investors-flee-software-for-old-economy-stocks",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Traders Chase AI Resistant Stocks During Slide in Tech",
+      "url": "https://finance.yahoo.com/news/traders-chase-ai-resistant-stocks-110000701.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: LyondellBasell Industries N.V.",
+      "url": "https://finance.yahoo.com/m/3fc3e118-b50f-377f-a0ad-96483fe203ed/analyst-report%3A.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "LyondellBasell Industries N.V. (LYB): A Bull Case Theory",
+      "url": "/news/299936/lyondellbasell-industries-nv-lyb-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Forget 2025: 2 High-Yield Materials Stocks to Power Your Passive Income in 2026",
+      "url": "/news/295344/forget-2025-2-high-yield-materials-stocks-to-power-your-passive-income-in-2026",
+      "publisher": "Motley Fool",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "LyondellBasell Industries Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/addd2b60-a558-3d94-a8d4-d2e911c9aa73/lyondellbasell-industries-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "LyondellBasell Industries NV (LYB) Q4 2025 Earnings Call Highlights: Navigating Challenges with ...",
+      "url": "https://finance.yahoo.com/news/lyondellbasell-industries-nv-lyb-q4-230043602.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: LyondellBasell Industries N.V.",
+      "url": "https://finance.yahoo.com/m/72ed391e-34dc-35a3-b9cf-e5af74e819d8/analyst-report%3A.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "LYB Q4 Earnings Miss Estimates Amid Pricing, Volume Pressures",
+      "url": "/news/293650/lyb-q4-earnings-miss-estimates-amid-pricing-volume-pressures",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "LyondellBasell Highlights Cash Strength And Cost Controls As Q4 Results Show Mixed Signals",
+      "url": "/news/293420/lyondellbasell-highlights-cash-strength-and-cost-controls-as-q4-results-show-mixed-signals",
+      "publisher": "Benzinga",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "LyondellBasell (LYB) Reports Q4 Loss, Tops Revenue Estimates",
+      "url": "/news/293357/lyondellbasell-lyb-reports-q4-loss-tops-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "LyondellBasell: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/lyondellbasell-q4-earnings-snapshot-120421774.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "LyondellBasell reports 2025 earnings",
+      "url": "/news/293127/lyondellbasell-reports-2025-earnings",
+      "publisher": "GlobeNewswire",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Olin (OLN) Reports Q4 Loss, Beats Revenue Estimates",
+      "url": "/news/292742/olin-oln-reports-q4-loss-beats-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "LyondellBasell to Post Q4 Earnings: What's in the Cards for the Stock?",
+      "url": "/news/290109/lyondellbasell-to-post-q4-earnings-whats-in-the-cards-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analysts Estimate LyondellBasell (LYB) to Report a Decline in Earnings: What to Look Out for",
+      "url": "/news/285440/analysts-estimate-lyondellbasell-lyb-to-report-a-decline-in-earnings-what-to-look-out-for",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Should You Buy the 3 Highest-Paying Dividend Stocks in the S&P 500?",
+      "url": "/news/279147/should-you-buy-the-3-highest-paying-dividend-stocks-in-the-sp-500",
+      "publisher": "Motley Fool",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "LyondellBasell (LYB) Surges 6.8%: Is This an Indication of Further Gains?",
+      "url": "/news/277046/lyondellbasell-lyb-surges-68-is-this-an-indication-of-further-gains",
+      "publisher": "Zacks",
+      "date": "2026-01-15",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Review & Preview: Not So Magnificent",
+      "url": "https://www.barrons.com/articles/stocks-today-rotation-mag-7-selloff-318554f9?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-14",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stock Indexes Settle Lower on Tech Weakness",
+      "url": "https://finance.yahoo.com/m/84d699ea-b799-3bb0-a0f5-d887325d38fb/stock-indexes-settle-lower-on.html",
+      "publisher": "Barchart",
+      "date": "2026-01-14",
+      "sentiment": "negative"
+    }
+  ]
 }

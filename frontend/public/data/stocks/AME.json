@@ -6306,7 +6306,15 @@
     "technical_score": 59.99348350757443,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.04280836245550407,
+    "sentiment_pos": 0.0328,
+    "sentiment_neg": 0.00835,
+    "sentiment_neu": 0.95885,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 52.14
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.10818852140916736,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 36.884053658333336,
     "catalyst_timeline": 60.523330911716656,
     "downside_control": 57.05931585663498,
-    "composite_score": 55.208110558403526,
+    "composite_score": 55.20422151310509,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 56.082244120039675,
     "technical_score": 59.99348350757443,
-    "sentiment_score": 50.0,
+    "sentiment_score": 52.14,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Electrical Components & Equipment"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Fortive Q4 Earnings & Sales Surpass Estimates, Increase Y/Y, Stock Up",
+      "url": "/news/301886/fortive-q4-earnings-sales-surpass-estimates-increase-yy-stock-up",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "AMETEK Q4 Earnings Surpass Expectations, Revenues Rise Y/Y",
+      "url": "/news/299387/ametek-q4-earnings-surpass-expectations-revenues-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AME Q4 Deep Dive: Acquisitions and Niche Market Expansion Offset Margin Pressure",
+      "url": "/news/298808/ame-q4-deep-dive-acquisitions-and-niche-market-expansion-offset-margin-pressure",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "AMETEK Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/65c8c769-cfa9-328d-b130-8ff1e00988f2/ametek-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AMETEK Inc (AME) Q4 2025 Earnings Call Highlights: Record Sales and Strategic Growth Amid Challenges",
+      "url": "https://finance.yahoo.com/news/ametek-inc-ame-q4-2025-210156393.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: AMETEK, Inc.",
+      "url": "https://finance.yahoo.com/m/1b8b3ae7-a6f5-3b90-a00f-21bd7b42a876/analyst-report%3A-ametek%2C-inc..html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ametek (AME) Reports Q4 Earnings: What Key Metrics Have to Say",
+      "url": "/news/297527/ametek-ame-reports-q4-earnings-what-key-metrics-have-to-say",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ametek (AME) Q4 Earnings and Revenues Beat Estimates",
+      "url": "/news/297321/ametek-ame-q4-earnings-and-revenues-beat-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "DW Healthcare Partners Announces Sale of LKC Technologies to AMETEK, Inc.",
+      "url": "/news/297112/dw-healthcare-partners-announces-sale-of-lkc-technologies-to-ametek-inc",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ametek: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/ametek-q4-earnings-snapshot-121336032.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AMETEK (NYSE:AME) Beats Q4 CY2025 Sales Expectations",
+      "url": "/news/297170/ametek-nyse-ame-beats-q4-cy2025-sales-expectations",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AMETEK Acquires LKC Technologies",
+      "url": "/news/296965/ametek-acquires-lkc-technologies",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AMETEK Announces Record Fourth Quarter and Full Year Results",
+      "url": "/news/296958/ametek-announces-record-fourth-quarter-and-full-year-results",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Gen Digital to Report Q3 Earnings: What's in Store for the Stock?",
+      "url": "/news/295835/gen-digital-to-report-q3-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Atlassian to Report Q2 Earnings: What's in Store for the Stock?",
+      "url": "/news/295830/atlassian-to-report-q2-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Giverny Capital Asset Management Trimmed Ametek (AME) on Valuation",
+      "url": "/news/295277/giverny-capital-asset-management-trimmed-ametek-ame-on-valuation",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "AMETEK Earnings: What To Look For From AME",
+      "url": "/news/294922/ametek-earnings-what-to-look-for-from-ame",
+      "publisher": "StockStory",
+      "date": "2026-02-01",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Palantir Gears Up to Report Q4 Earnings: What's in the Offing?",
+      "url": "/news/293782/palantir-gears-up-to-report-q4-earnings-whats-in-the-offing",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Do Options Traders Know Something About AMETEK Stock We Don't?",
+      "url": "/news/292529/do-options-traders-know-something-about-ametek-stock-we-dont",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Digital Turbine to Report Q3 Earnings: What's in Store for the Stock?",
+      "url": "/news/292489/digital-turbine-to-report-q3-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    }
+  ]
 }

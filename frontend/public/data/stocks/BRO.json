@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 73.77999877929688,
-    "sma_20": 75.87942695617674,
+    "sma_20": 75.87942695617676,
     "sma_50": 78.2421095275879,
     "sma_200": 92.83217330932618,
     "trend_alignment": 0.263969711174708,
@@ -6286,10 +6286,10 @@
     "macd_histogram": -0.10586334304633249,
     "macd_line": -1.7986935841254308,
     "macd_histogram_pct": -0.14348515152868016,
-    "bb_position": 0.34452053650620623,
-    "bb_upper": 82.63089152166796,
-    "bb_lower": 69.12796239068552,
-    "bb_width": 0.17795243945082628,
+    "bb_position": 0.3445205365062052,
+    "bb_upper": 82.63089152166798,
+    "bb_lower": 69.12796239068554,
+    "bb_width": 0.17795243945082626,
     "hist_volatility": 0.31776130512596845,
     "volume_ratio": 0.7297537441980567,
     "avg_volume_20d": 3117490.0,
@@ -6301,12 +6301,20 @@
     "rsi_abs_score": 63.68776347563099,
     "macd_abs_score": 43.912871211783,
     "momentum_score": 53.80031734370699,
-    "volatility_score": 41.47780649228742,
+    "volatility_score": 41.47780649228743,
     "volume_score": 50.0,
     "technical_score": 42.35474783681082,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.13902151099238452,
+    "sentiment_pos": 0.1262,
+    "sentiment_neg": 0.04825,
+    "sentiment_neu": 0.82555,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 56.95
+  },
   "analyst": {
     "revision_momentum": -0.047619047619047616,
     "target_upside": 0.11818921116833829,
@@ -6327,7 +6335,7 @@
     "safety_score": 48.54541930107579,
     "trend_score": 26.3969711174708,
     "momentum_score": 53.80031734370699,
-    "volatility_score": 41.47780649228742,
+    "volatility_score": 41.47780649228743,
     "volume_score": 50.0,
     "analyst_score": 49.44461472621306,
     "pe_score": 32.831828571428574,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 44.97487364,
     "catalyst_timeline": 44.64619031873908,
     "downside_control": 48.83948386900448,
-    "composite_score": 46.91988031080069,
+    "composite_score": 46.91599126550226,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 53.46617082211992,
     "technical_score": 42.35474783681082,
-    "sentiment_score": 50.0,
+    "sentiment_score": 56.95,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Insurance Brokers"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Voya Financial Q4 Earnings Miss Estimates, Revenues Rise Y/Y",
+      "url": "/news/299425/voya-financial-q4-earnings-miss-estimates-revenues-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Willis Towers Q4 Earnings & Revenues Beat Estimates on Lower Expenses",
+      "url": "/news/297712/willis-towers-q4-earnings-revenues-beat-estimates-on-lower-expenses",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Brown & Brown (BRO) Price Target Reduced by $7",
+      "url": "/news/295170/brown-brown-bro-price-target-reduced-by-7",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The 5 Most Interesting Analyst Questions From Brown & Brown's Q4 Earnings Call",
+      "url": "/news/294967/the-5-most-interesting-analyst-questions-from-brown-browns-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BMO Capital Maintained a Hold Rating on Brown & Brown, Inc. (BRO)",
+      "url": "/news/294582/bmo-capital-maintained-a-hold-rating-on-brown-brown-inc-bro",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-31",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Aon Q4 Earnings Top Estimates on New Business Growth, Strong Retention",
+      "url": "/news/293939/aon-q4-earnings-top-estimates-on-new-business-growth-strong-retention",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Arthur J. Gallagher Q4 Earnings & Revenues Beat, Dividend Raised",
+      "url": "/news/293415/arthur-j-gallagher-q4-earnings-revenues-beat-dividend-raised",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BofA Lowers Long-Term Earnings Outlook for Brown & Brown (BRO) After Q4 Results",
+      "url": "/news/292739/bofa-lowers-long-term-earnings-outlook-for-brown-brown-bro-after-q4-results",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "AXIS Capital Reports Q4 Earnings Growth Despite Higher Expenses",
+      "url": "/news/291699/axis-capital-reports-q4-earnings-growth-despite-higher-expenses",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "S&P 500 Posts a Record High on Tech Strength and Solid Corporate Earnings",
+      "url": "https://finance.yahoo.com/m/b7ee55b7-b915-3b3a-9c85-9340d250f076/s%26p-500-posts-a-record-high.html",
+      "publisher": "Barchart",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Brown & Brown (BRO) Shares Are Falling Today",
+      "url": "/news/288958/why-brown-brown-bro-shares-are-falling-today",
+      "publisher": "StockStory",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "W.R. Berkley Q4 Earnings Miss Estimate, Revenues Up Y/Y",
+      "url": "/news/288938/wr-berkley-q4-earnings-miss-estimate-revenues-up-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Brown & Brown Inc (BRO) Q4 2025 Earnings Call Highlights: Strong Revenue Growth Amidst ...",
+      "url": "https://finance.yahoo.com/news/brown-brown-inc-bro-q4-190138661.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Brown & Brown Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/ccf89ca7-fda4-3220-807c-7934cccd0007/brown-%26-brown-q4-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Broader Market Rallies on Tech Strength and Solid Earnings",
+      "url": "https://finance.yahoo.com/m/b41b3bdc-0c89-379c-a194-333fe11c8cbf/broader-market-rallies-on.html",
+      "publisher": "Barchart",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Brown & Brown Q4 Earnings Top Estimates on Strong Investment Income",
+      "url": "/news/288485/brown-brown-q4-earnings-top-estimates-on-strong-investment-income",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Brown & Brown (BRO) Q4 Earnings: How Key Metrics Compare to Wall Street Estimates",
+      "url": "/news/287688/brown-brown-bro-q4-earnings-how-key-metrics-compare-to-wall-street-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Brown & Brown (BRO) Q4 Earnings Beat Estimates",
+      "url": "/news/287655/brown-brown-bro-q4-earnings-beat-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Brown & Brown: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/brown-brown-q4-earnings-snapshot-222152789.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Brown & Brown (NYSE:BRO) Misses Q4 CY2025 Sales Expectations",
+      "url": "/news/287521/brown-brown-nyse-bro-misses-q4-cy2025-sales-expectations",
+      "publisher": "StockStory",
+      "date": "2026-01-26",
+      "sentiment": "negative"
+    }
+  ]
 }

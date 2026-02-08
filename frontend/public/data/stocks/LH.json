@@ -6306,7 +6306,15 @@
     "technical_score": 59.25907517885326,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.060836584292403094,
+    "sentiment_pos": 0.11125,
+    "sentiment_neg": 0.03795,
+    "sentiment_neu": 0.85085,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 53.04
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.09307359307359311,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 62.607073099999994,
     "catalyst_timeline": 58.4313037622875,
     "downside_control": 62.1817408052996,
-    "composite_score": 62.46835941828352,
+    "composite_score": 62.46447037298508,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 61.20144128607106,
     "technical_score": 59.25907517885326,
-    "sentiment_score": 50.0,
+    "sentiment_score": 53.04,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Health Care Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Analyst Report: Fortrea Holdings Inc.",
+      "url": "https://finance.yahoo.com/m/31b965bb-7b1a-372a-9253-6c474a69142e/analyst-report%3A-fortrea.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Investor Concerns Impacted Labcorp (LH) in Q4",
+      "url": "/news/297165/investor-concerns-impacted-labcorp-lh-in-q4",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How TEM Is Capitalizing on AI-Driven Pathology Market Growth",
+      "url": "/news/287078/how-tem-is-capitalizing-on-ai-driven-pathology-market-growth",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Sorry, 'Dr. Google.' ChatGPT and Claude are now getting into the business of providing health advice.",
+      "url": "https://www.marketwatch.com/story/sorry-dr-google-chatgpt-and-claude-are-now-getting-into-the-business-of-providing-health-advice-426c167e?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-01-21",
+      "sentiment": "negative"
+    },
+    {
+      "title": "These charts show the stock market giving investors a lot to like - for now - as the S&P 500 nears 7,000",
+      "url": "https://www.marketwatch.com/story/these-charts-show-the-stock-market-giving-investors-a-lot-to-like-for-now-as-the-s-p-500-nears-7-000-00d5d41d?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-01-15",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Labcorp to Announce Fourth Quarter Financial Results on February 17, 2026",
+      "url": "/news/278235/labcorp-to-announce-fourth-quarter-financial-results-on-february-17-2026",
+      "publisher": "PR Newswire",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Labcorp Declares Quarterly Dividend",
+      "url": "/news/275766/labcorp-declares-quarterly-dividend",
+      "publisher": "PR Newswire",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Labcorp Expands MRD Testing for Breast, Lung and Colon Cancer Recurrence Risk",
+      "url": "/news/274502/labcorp-expands-mrd-testing-for-breast-lung-and-colon-cancer-recurrence-risk",
+      "publisher": "PR Newswire",
+      "date": "2026-01-13",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Clinical Labs Hope to Head Off Looming Medicare Cuts",
+      "url": "https://www.barrons.com/articles/labs-medicare-cuts-congress-0efdafcd?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Labcorps Quarterly Earnings Preview: What You Need to Know",
+      "url": "https://finance.yahoo.com/m/323003f0-8802-3315-ba5d-f1832b616f8d/labcorp%E2%80%99s-quarterly-earnings.html",
+      "publisher": "Barchart",
+      "date": "2026-01-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NAMSA acquires Labcorps medical device testing assets",
+      "url": "https://finance.yahoo.com/m/cceb47c7-01f7-3ac7-9bc2-7f9aa699ba24/namsa-acquires-labcorp%E2%80%99s.html",
+      "publisher": "Medical Device Network",
+      "date": "2026-01-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Visby Engages Quest and Labcorp to Broaden Consumer Access to First At-Home, FDA-Authorized PCR Test for STIs",
+      "url": "https://www.businesswire.com/news/home/20260108675059/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "NAMSA Announces Strategic Acquisition of Select Assets of the Early Development Medical Device Testing Business of Labcorp",
+      "url": "/news/270587/namsa-announces-strategic-acquisition-of-select-assets-of-the-early-development-medical-device-testing-business-of-labcorp",
+      "publisher": "PR Newswire",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Should Labcorp Stock Stay in Your Portfolio Right Now?",
+      "url": "/news/268240/should-labcorp-stock-stay-in-your-portfolio-right-now",
+      "publisher": "Zacks",
+      "date": "2026-01-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Labcorp to Speak at the 44th Annual J.P. Morgan Healthcare Conference",
+      "url": "/news/264693/labcorp-to-speak-at-the-44th-annual-jp-morgan-healthcare-conference",
+      "publisher": "PR Newswire",
+      "date": "2025-12-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Labcorp Holdings (LH) is a Strong Value Stock",
+      "url": "/news/260033/heres-why-labcorp-holdings-lh-is-a-strong-value-stock",
+      "publisher": "Zacks",
+      "date": "2025-12-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "HOLX vs. LH: Which MedTech Stock Is the Stronger Investment Now?",
+      "url": "/news/259818/holx-vs-lh-which-medtech-stock-is-the-stronger-investment-now",
+      "publisher": "Zacks",
+      "date": "2025-12-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Will Strength in Biotechnology Unit Continue to Drive Danaher's Growth?",
+      "url": "/news/257555/will-strength-in-biotechnology-unit-continue-to-drive-danahers-growth",
+      "publisher": "Zacks",
+      "date": "2025-12-18",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is Charles River Laboratories Stock Underperforming the Dow?",
+      "url": "https://finance.yahoo.com/m/59885e4b-214c-37c1-82aa-4889060052e9/is-charles-river-laboratories.html",
+      "publisher": "Barchart",
+      "date": "2025-12-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is the Options Market Predicting a Spike in Labcorp Holdings Stock?",
+      "url": "/news/254117/is-the-options-market-predicting-a-spike-in-labcorp-holdings-stock",
+      "publisher": "Zacks",
+      "date": "2025-12-15",
+      "sentiment": "neutral"
+    }
+  ]
 }

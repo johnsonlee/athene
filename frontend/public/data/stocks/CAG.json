@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 13293945.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 81.87952520658331,
+    "stoch_k": 81.87952520658332,
     "stoch_d": 87.05972485939371,
     "trend_score": 60.34117569133822,
     "rsi_abs_score": 57.8713842700304,
@@ -6306,7 +6306,15 @@
     "technical_score": 54.915370207941464,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.0296056818344875,
+    "sentiment_pos": 0.0669,
+    "sentiment_neg": 0.0298,
+    "sentiment_neu": 0.9033,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.48
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": -0.06976744186046518,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 75.33438574,
     "catalyst_timeline": 54.45830009736903,
     "downside_control": 46.847265002269786,
-    "composite_score": 48.51006677493298,
+    "composite_score": 48.506177729634544,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 47.351821149595146,
     "technical_score": 54.915370207941464,
-    "sentiment_score": 50.0,
+    "sentiment_score": 51.48,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Staples",
     "industry": "Packaged Foods & Meats"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Conagra Brands, Inc. (CAG): A Bull Case Theory",
+      "url": "/news/303620/conagra-brands-inc-cag-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Post Holdings names former General Mills exec to lead its cereal, pet food business",
+      "url": "https://finance.yahoo.com/m/49ae441f-d95c-31e7-be63-4721a6791e07/post-holdings-names-former.html",
+      "publisher": "Food Dive",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CONAGRA BRANDS ANNOUNCES DETAILS OF 2026 CAGNY CONFERENCE PRESENTATION WEBCAST",
+      "url": "/news/297041/conagra-brands-announces-details-of-2026-cagny-conference-presentation-webcast",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Conagra Brands Stock: Is Wall Street Bullish or Bearish?",
+      "url": "https://finance.yahoo.com/m/d0cdd0ff-3ff0-3ff7-b15c-bbdf1dac7cb3/conagra-brands-stock%3A-is-wall.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BANQUET MEGA BREAKFAST BOWLS DELIVER BIG PROTEIN FOR YOUR MORNING",
+      "url": "/news/295287/banquet-mega-breakfast-bowls-deliver-big-protein-for-your-morning",
+      "publisher": "PR Newswire",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is Conagra Brands an Underrated Dividend Stock for Patient Investors??",
+      "url": "/news/293136/is-conagra-brands-an-underrated-dividend-stock-for-patient-investors",
+      "publisher": "Motley Fool",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "1 Profitable Stock Worth Your Attention and 2 We Find Risky",
+      "url": "/news/293985/1-profitable-stock-worth-your-attention-and-2-we-find-risky",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Morgan Stanley Sees Rising Competitive Pressure Weighing on Conagra (CAG)",
+      "url": "/news/286040/morgan-stanley-sees-rising-competitive-pressure-weighing-on-conagra-cag",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-24",
+      "sentiment": "negative"
+    },
+    {
+      "title": "35% Stock Sell-Off: Should You Buy the Dip?",
+      "url": "/news/281732/35-stock-sell-off-should-you-buy-the-dip",
+      "publisher": "Motley Fool",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Should You Buy the 3 Highest-Paying Dividend Stocks in the S&P 500?",
+      "url": "/news/279147/should-you-buy-the-3-highest-paying-dividend-stocks-in-the-sp-500",
+      "publisher": "Motley Fool",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pan American Silver and Conagra Brands have been highlighted as Zacks Bull and Bear of the Day",
+      "url": "/news/277599/pan-american-silver-and-conagra-brands-have-been-highlighted-as-zacks-bull-and-bear-of-the-day",
+      "publisher": "Zacks",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bear of the Day: Conagra (CAG)",
+      "url": "/news/277120/bear-of-the-day-conagra-cag",
+      "publisher": "Zacks",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "This Chemicals Company Pays a Nearly 11% Dividend Yield. Investors Are Doubtful.",
+      "url": "https://www.barrons.com/articles/lyondellbasell-stock-dividend-yield-81d7fa21?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-14",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Conagra Brands' Future of Frozen Food 2026 Reviews Trends Shaping $93.5 Billion Industry",
+      "url": "/news/275845/conagra-brands-future-of-frozen-food-2026-reviews-trends-shaping-935-billion-industry",
+      "publisher": "PR Newswire",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Best Stocks to Buy With $1,000 Right Now",
+      "url": "/news/271910/the-best-stocks-to-buy-with-1000-right-now",
+      "publisher": "Motley Fool",
+      "date": "2026-01-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "This S&P 500 Stock Yields 12%  And It's Already Up 10% This Year",
+      "url": "https://finance.yahoo.com/m/be012a7f-370b-35e1-afff-4cd4f8048693/this-s%26p-500-stock-yields-12%25.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "5 Under-the-Radar Consumer Staples Stocks With Pricing Power",
+      "url": "/news/271507/5-under-the-radar-consumer-staples-stocks-with-pricing-power",
+      "publisher": "MarketBeat",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Kraft Heinz and Mondelez shares drop as Trump officials blast ultraprocessed foods and unveil new food pyramid",
+      "url": "https://www.marketwatch.com/story/kraft-heinz-and-mondelez-shares-drop-as-trump-officials-blast-ultraprocessed-foods-and-unveil-new-food-pyramid-d573a8f0?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-01-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "'Project Catalyst' Is Coming for This High-Yield Dividend Star. Should You Buy Shares in 2026 to Profit?",
+      "url": "https://finance.yahoo.com/m/de4d9608-f735-376a-8122-5ab685b64c86/%27project-catalyst%27-is-coming.html",
+      "publisher": "Barchart",
+      "date": "2026-01-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Conagra (CAG) Target Trimmed as Wells Fargo Updates 2026 Food Sector Models",
+      "url": "/news/267761/conagra-cag-target-trimmed-as-wells-fargo-updates-2026-food-sector-models",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-05",
+      "sentiment": "positive"
+    }
+  ]
 }

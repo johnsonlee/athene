@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 276.6499938964844,
     "sma_20": 312.57049865722655,
-    "sma_50": 324.4892700195312,
+    "sma_50": 324.48927001953126,
     "sma_200": 319.934143447876,
-    "trend_alignment": 0.2899334406916851,
+    "trend_alignment": 0.28993344069168503,
     "rsi": 32.728442961991476,
     "rsi_score": -0.34543114076017045,
     "macd_histogram": -4.904873079411882,
@@ -6296,8 +6296,8 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 8.364254684633318,
-    "stoch_d": 5.87133492162532,
-    "trend_score": 28.993344069168508,
+    "stoch_d": 5.871334921625321,
+    "trend_score": 28.993344069168504,
     "rsi_abs_score": 53.27413155438977,
     "macd_abs_score": 20.0,
     "momentum_score": 36.637065777194884,
@@ -6306,7 +6306,15 @@
     "technical_score": 33.48912295390902,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.05924111562002519,
+    "sentiment_pos": 0.05845,
+    "sentiment_neg": 0.09015,
+    "sentiment_neu": 0.8513999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 47.04
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.3374299656605821,
@@ -6325,7 +6333,7 @@
     "quality_score": 51.23285714285715,
     "growth_score": 39.60714285714286,
     "safety_score": 52.066126562763046,
-    "trend_score": 28.993344069168508,
+    "trend_score": 28.993344069168504,
     "momentum_score": 36.637065777194884,
     "volatility_score": 19.0,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 74.25082680428571,
     "catalyst_timeline": 41.60014415651416,
     "downside_control": 38.71591898441446,
-    "composite_score": 48.04733447540562,
+    "composite_score": 48.043445430107184,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 55.11139050660024,
     "technical_score": 33.48912295390902,
-    "sentiment_score": 50.0,
+    "sentiment_score": 47.04,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Managed Health Care"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Molina Healthcare Stock Notches Lowest Close in Six Years. Why Its Earnings Outlook Is So Bleak.",
+      "url": "https://finance.yahoo.com/m/c7fe7ab4-d49e-3836-8704-26cd1cf0da9e/molina-healthcare-stock.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "The Dow Industrials Have Tilted More Toward Financials",
+      "url": "https://finance.yahoo.com/m/8d4d0775-c0cf-3062-87c5-0dd384dbb03c/the-dow-industrials-have.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dow Crosses 50,000 Level",
+      "url": "https://www.barrons.com/livecoverage/stock-market-news-today-020626/card/dow-crosses-50-000-level-G5G9zEkP3rV2tHpcP14J?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Will Declining Medical Membership Affect Humana's Q4 Earnings?",
+      "url": "/news/303221/will-declining-medical-membership-affect-humanas-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ensign Group Q4 Earnings Beat Estimates on Growing Occupancy",
+      "url": "/news/303100/ensign-group-q4-earnings-beat-estimates-on-growing-occupancy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "S&P 500 Health Insurer Dives As ACA Enrollment Implodes",
+      "url": "https://finance.yahoo.com/m/5bd6723b-bcab-32a9-837f-700a9d2d94c8/s%26p-500-health-insurer-dives.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Molina Healthcare Incurs a Loss in Q4 as Medical Costs Surge",
+      "url": "/news/302966/molina-healthcare-incurs-a-loss-in-q4-as-medical-costs-surge",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Molina Healthcare Stock Falls 27%. Why Its Earnings Outlook Is So Bleak.",
+      "url": "https://www.barrons.com/articles/molina-healthcare-earnings-stock-price-5a29806e?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FTC Settlement With Cigna's Pharmacy Benefit Manager Promises Cheaper Insulin, Boosts Dividend On Strong Quarterly Earnings",
+      "url": "/news/301838/ftc-settlement-with-cignas-pharmacy-benefit-manager-promises-cheaper-insulin-boosts-dividend-on-strong-quarterly-earnings",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "UnitedHealth's Q4 Beat Can't Stop the Slide: Should You Let Go Now?",
+      "url": "/news/301778/unitedhealths-q4-beat-cant-stop-the-slide-should-you-let-go-now",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stock Market Today: Dow Falls On Surprise Jobless Claims; Alphabet Shares Drop On Earnings Report (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/e263e442-296b-39d8-8185-e01b4d948dbe/stock-market-today%3A-dow-falls.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Investors Heavily Search UnitedHealth Group Incorporated (UNH): Here is What You Need to Know",
+      "url": "/news/301462/investors-heavily-search-unitedhealth-group-incorporated-unh-here-is-what-you-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "UnitedHealth, CVS, Humana Face Double Trouble As Trump's Medicare Cuts Are Just The StartPBM 'Spread Pricing' Comes Under Fire",
+      "url": "https://finance.yahoo.com/news/unitedhealth-cvs-humana-face-double-130105980.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Is a Dividend Cut Coming for UnitedHealth Stock?",
+      "url": "/news/300360/is-a-dividend-cut-coming-for-unitedhealth-stock",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Manning & Napier Group, LLC Reduces Stake in UnitedHealth Group Inc by 65.05%",
+      "url": "https://finance.yahoo.com/news/manning-napier-group-llc-reduces-220403049.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "UnitedHealth Group Just Received More Bad News. Here's What Investors Should Know.",
+      "url": "/news/300072/unitedhealth-group-just-received-more-bad-news-heres-what-investors-should-know",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "How UnitedHealth's Comeback Ran Aground",
+      "url": "https://www.barrons.com/articles/unh-stock-unitedhealth-turnaround-6db7c259?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "UnitedHealth's Comeback Runs Aground. Medicare Is Still a Problem.",
+      "url": "https://www.barrons.com/articles/unh-stock-optum-medicare-advantage-unitedhealth-6db7c259?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Why Investors Need to Take Advantage of These 2 Medical Stocks Now",
+      "url": "/news/299378/why-investors-need-to-take-advantage-of-these-2-medical-stocks-now",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "UnitedHealth, CVS, Humana Face Double Trouble As Trump's Medicare Cuts Are Just The StartPBM 'Spread Pricing' Comes Under Fire",
+      "url": "https://finance.yahoo.com/news/unitedhealth-cvs-humana-face-double-114604435.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    }
+  ]
 }

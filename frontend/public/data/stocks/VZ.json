@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 46.310001373291016,
-    "sma_20": 41.727000236511216,
+    "sma_20": 41.72700023651122,
     "sma_50": 40.613938827514644,
     "sma_200": 40.90828859329225,
     "trend_alignment": 0.7011684708899775,
@@ -6286,10 +6286,10 @@
     "macd_histogram": 0.7125324426418318,
     "macd_line": 1.8340332582553174,
     "macd_histogram_pct": 1.5386146005445385,
-    "bb_position": 0.84811114119753,
-    "bb_upper": 48.3096696693451,
+    "bb_position": 0.8481111411975291,
+    "bb_upper": 48.30966966934511,
     "bb_lower": 35.144330803677335,
-    "bb_width": 0.31551127066517626,
+    "bb_width": 0.31551127066517654,
     "hist_volatility": 0.46091586945664625,
     "volume_ratio": 0.9274408115046033,
     "avg_volume_20d": 38891215.0,
@@ -6306,7 +6306,15 @@
     "technical_score": 53.71945655735428,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.028697549512388364,
+    "sentiment_pos": 0.0531,
+    "sentiment_neg": 0.041400000000000006,
+    "sentiment_neu": 0.9054500000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.43
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.04729000215936078,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 78.84710151857142,
     "catalyst_timeline": 57.54083400122313,
     "downside_control": 39.13431744802206,
-    "composite_score": 56.17093679710437,
+    "composite_score": 56.16704775180593,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 56.20692931097747,
     "technical_score": 53.71945655735428,
-    "sentiment_score": 50.0,
+    "sentiment_score": 51.43,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Communication Services",
     "industry": "Integrated Telecommunication Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Benzinga's 'Stock Whisper' Index: 5 Stocks Investors Secretly Monitor But Don't Talk About Yet",
+      "url": "/news/303781/benzingas-stock-whisper-index-5-stocks-investors-secretly-monitor-but-dont-talk-about-yet",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Consumer Tech News (Feb 2-6): Big Tech Earnings Take Center Stage In U.S. Markets, Anthropic Launches New AI Tool & More",
+      "url": "/news/303773/consumer-tech-news-feb-2-6-big-tech-earnings-take-center-stage-in-us-markets-anthropic-launches-new-ai-tool-more",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Verizon (VZ) Added 1.1 Million Net Subscribers in Q4-2025",
+      "url": "/news/303505/verizon-vz-added-11-million-net-subscribers-in-q4-2025",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Verizon Executives Rarely Sell Company Stock. This Insider Just Did.",
+      "url": "https://www.barrons.com/articles/verizon-stock-executive-sells-earnings-b1805608?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 High-Yield Dividend Stocks Perfect For Retirees",
+      "url": "https://finance.yahoo.com/m/5f4d1936-691e-3c34-bf9a-dd825be1c6c4/3-high-yield-dividend-stocks.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Crown Castle Inc.",
+      "url": "https://finance.yahoo.com/m/d60c5dbb-28e6-34be-97e3-668390f0915a/analyst-report%3A-crown-castle.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Verizon Communications (VZ) is a Top-Ranked Momentum Stock: Should You Buy?",
+      "url": "/news/302955/verizon-communications-vz-is-a-top-ranked-momentum-stock-should-you-buy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BCE Q4 Earnings Beat Despite Revenue Headwinds, Fall Y/Y, Shares Tank",
+      "url": "/news/302845/bce-q4-earnings-beat-despite-revenue-headwinds-fall-yy-shares-tank",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "5 High-Yield Stocks (6%-8%) Every Retiree Should Consider Now",
+      "url": "https://finance.yahoo.com/m/85ac535a-0a2a-37a8-8d90-018916fbeb55/5-high-yield-stocks-%286%25-8%25%29.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Market Today, Feb. 6: U.S. stocks snap three day losing streak as Russell 2000 adds 2%",
+      "url": "https://finance.yahoo.com/m/94b48945-7cbc-3bda-ad62-e0bd7840ba3f/stock-market-today%2C-feb.-6%3A.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Can SpaceX Rival AST SpaceMobile Meet Its 2026 Launch Targets?",
+      "url": "/news/302248/can-spacex-rival-ast-spacemobile-meet-its-2026-launch-targets",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How Verizon job cuts impact its 6% dividend yield",
+      "url": "https://finance.yahoo.com/m/2d2d7350-c17f-3fcd-8eba-c3c8848e11a8/how-verizon-job-cuts-impact.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Verizon's Consumer Unit CEO Sowmyanarayan Sampath to Step Down",
+      "url": "https://www.wsj.com/business/telecom/verizons-consumer-unit-ceo-sowmyanarayan-sampath-to-step-down-2c279aa2?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Verizon's Sampath Leaves as Leadership Shakeup Continues",
+      "url": "https://www.barrons.com/articles/verizon-sampath-ceo-consumer-exit-stock-c3588d5a?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Telecom Stocks: The 1996 Law That Missed Its Mark  But Helped Create the Internet",
+      "url": "https://finance.yahoo.com/m/4c42e132-1a73-3567-be8b-e748dabe6b52/telecom-stocks%3A-the-1996-law.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Starlink fuels SpaceX growth with potential phone, more internet services",
+      "url": "https://finance.yahoo.com/news/starlink-fuels-spacex-growth-potential-110206417.html",
+      "publisher": "Reuters",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Verizon Sues T-Mobile Over $1,000 Savings Claims, Alleges Misleading Ads Despite Prior Regulatory Warnings",
+      "url": "/news/300739/verizon-sues-t-mobile-over-1000-savings-claims-alleges-misleading-ads-despite-prior-regulatory-warnings",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Analyst Report: Crown Castle Inc.",
+      "url": "https://finance.yahoo.com/m/4ac288c5-faf2-3562-8372-f8b59e2f6fc7/analyst-report%3A-crown-castle.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Verizon Wireless sues T-Mobile, alleges false advertising",
+      "url": "https://finance.yahoo.com/news/verizon-wireless-sues-t-mobile-221400302.html",
+      "publisher": "Reuters",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "2 No-Brainer Dividend Stocks to Buy Right Now",
+      "url": "/news/300293/2-no-brainer-dividend-stocks-to-buy-right-now",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    }
+  ]
 }

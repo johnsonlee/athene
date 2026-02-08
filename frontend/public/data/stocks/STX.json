@@ -6306,7 +6306,15 @@
     "technical_score": 62.523201892389466,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.11947387213256522,
+    "sentiment_pos": 0.10429999999999999,
+    "sentiment_neg": 0.034249999999999996,
+    "sentiment_neu": 0.8614,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 55.97
+  },
   "analyst": {
     "revision_momentum": 0.08333333333333333,
     "target_upside": 0.048169197801173964,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 41.68221144857143,
     "catalyst_timeline": 68.7556255859193,
     "downside_control": 27.761360522637055,
-    "composite_score": 57.81162937429303,
+    "composite_score": 57.80774032899459,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 65.22676523732561,
     "technical_score": 62.523201892389466,
-    "sentiment_score": 50.0,
+    "sentiment_score": 55.97,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Technology Hardware, Storage & Peripherals"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Tech stocks have been shaky, but these 20 companies could still see rocketing sales growth",
+      "url": "https://www.marketwatch.com/story/tech-stocks-have-been-shaky-but-these-20-companies-could-still-see-rocketing-sales-growth-148195c9?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Nvidia Shares Surge on Big Techs $650 Billion AI-Spending Plan",
+      "url": "https://finance.yahoo.com/news/nvidia-shares-surge-big-tech-180706782.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "5 Growth Stocks to Buy in February to Enhance Your Portfolio Returns",
+      "url": "/news/302751/5-growth-stocks-to-buy-in-february-to-enhance-your-portfolio-returns",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Zacks.com featured highlights include Archrock, Southwest Airlines, Ford Motor, Seagate Technology and Texas Capital Bancshares",
+      "url": "/news/302600/zackscom-featured-highlights-include-archrock-southwest-airlines-ford-motor-seagate-technology-and-texas-capital-bancshares",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "These 2 Computer and Technology Stocks Could Beat Earnings: Why They Should Be on Your Radar",
+      "url": "/news/301435/these-2-computer-and-technology-stocks-could-beat-earnings-why-they-should-be-on-your-radar",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Looking for Leaders? 5 Stocks With Relative Price Strength",
+      "url": "/news/301363/looking-for-leaders-5-stocks-with-relative-price-strength",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Should You Invest in Sandisk Stock Post Its Q2 Earnings Release?",
+      "url": "/news/301305/should-you-invest-in-sandisk-stock-post-its-q2-earnings-release",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Can Pure Storage's Hyperscaler Strategy Drive Long-Term Growth?",
+      "url": "/news/301306/can-pure-storages-hyperscaler-strategy-drive-long-term-growth",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "SanDisk and Seagate: Analysts Bang the Drum on the Hottest Tech Stocks Today",
+      "url": "https://finance.yahoo.com/news/sandisk-seagate-analysts-bang-drum-105828632.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Heard on the Street Wednesday Recap: Tech Tantrum",
+      "url": "https://finance.yahoo.com/m/8125b7e3-2723-3344-af8d-52aff352f1b1/heard-on-the-street-wednesday.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Analyst Report: Seagate Technology Holdings plc",
+      "url": "https://finance.yahoo.com/m/f218d44e-9844-30ee-aac9-cbbe77eaa2cd/analyst-report%3A-seagate.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Heard on the Street Recap: Tech Tantrum",
+      "url": "https://finance.yahoo.com/m/ac5d1e6f-b4fd-398a-b9fb-d1e3424f32f9/heard-on-the-street-recap%3A.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Rotation out of Tech Stocks Weighs on the Broader Market",
+      "url": "https://finance.yahoo.com/m/53c7bb8e-05f9-319a-a276-65ec476a457b/rotation-out-of-tech-stocks.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Seagate (STX) is a Strong Momentum Stock",
+      "url": "/news/299610/heres-why-seagate-stx-is-a-strong-momentum-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Seagate Technology Holdings PLC (STX) Hit a 52 Week High, Can the Run Continue?",
+      "url": "/news/299471/seagate-technology-holdings-plc-stx-hit-a-52-week-high-can-the-run-continue",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Seagate Technology Holdings plc",
+      "url": "https://finance.yahoo.com/m/6edc74a2-2310-300d-a42a-506311038671/analyst-report%3A-seagate.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nasdaq Slips, Gold and Silver Stage Substantial Recovery",
+      "url": "https://finance.yahoo.com/m/e2a821b3-72dd-368c-9e69-12718b55c208/nasdaq-slips%2C-gold-and-silver.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Seagate (STX) is a Top Growth Stock for the Long-Term",
+      "url": "/news/297607/why-seagate-stx-is-a-top-growth-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stock Market Today: Dow Rises As Palantir Soars On Earnings; PayPal Plunges (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/ef588fd5-c678-37b0-9cd7-c1ffa5e83dc7/stock-market-today%3A-dow-rises.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "2 Computer Storage Device Stocks to Buy on Solid Earnings & Guidance",
+      "url": "/news/297565/2-computer-storage-device-stocks-to-buy-on-solid-earnings-guidance",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    }
+  ]
 }

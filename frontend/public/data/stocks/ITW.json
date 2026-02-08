@@ -6279,8 +6279,8 @@
     "close": 293.57000732421875,
     "sma_20": 266.77250213623046,
     "sma_50": 256.69228515624997,
-    "sma_200": 251.02137817382814,
-    "trend_alignment": 0.7377394362551833,
+    "sma_200": 251.0213781738281,
+    "trend_alignment": 0.7377394362551835,
     "rsi": 80.3009071854505,
     "rsi_score": 0.60601814370901,
     "macd_histogram": 3.5184655442743438,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 93.34706614438663,
     "stoch_d": 90.15924523224801,
-    "trend_score": 73.77394362551833,
+    "trend_score": 73.77394362551834,
     "rsi_abs_score": 29.398185629099004,
     "macd_abs_score": 75.47764820907888,
     "momentum_score": 52.43791691908894,
@@ -6306,7 +6306,15 @@
     "technical_score": 56.21729488547424,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.09113089260271963,
+    "sentiment_pos": 0.058750000000000004,
+    "sentiment_neg": 0.005,
+    "sentiment_neu": 0.93625,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 54.56
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": -0.05644309704670093,
@@ -6325,7 +6333,7 @@
     "quality_score": 88.882999,
     "growth_score": 52.425,
     "safety_score": 31.953249999999997,
-    "trend_score": 73.77394362551833,
+    "trend_score": 73.77394362551834,
     "momentum_score": 52.43791691908894,
     "volatility_score": 41.768683610460286,
     "volume_score": 50.0,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 41.26143581666667,
     "catalyst_timeline": 54.572750375133815,
     "downside_control": 38.01529004156904,
-    "composite_score": 52.28915384184101,
+    "composite_score": 52.28526479654258,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 57.81966288055556,
     "technical_score": 56.21729488547424,
-    "sentiment_score": 50.0,
+    "sentiment_score": 54.56,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 0.9441666666666666,
     "data_quality_penalty": 0.0,
-    "rank": 349,
-    "percentile": 0.32947976878612717,
+    "rank": 350,
+    "percentile": 0.32755298651252407,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Industrial Machinery & Supplies & Components"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Analyst Report: ESAB Corporation",
+      "url": "https://finance.yahoo.com/m/5d3e6d5e-c04a-3553-87c1-31be1f2ad95a/analyst-report%3A-esab.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Top Stock Reports for SAP, McDonald's & Shopify",
+      "url": "/news/302210/top-stock-reports-for-sap-mcdonalds-shopify",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Company News for Feb 4, 2026",
+      "url": "/news/299586/company-news-for-feb-4-2026",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Illinois Tool Works Inc.",
+      "url": "https://finance.yahoo.com/m/21df0751-1b93-327e-8481-bbda99e87dc0/analyst-report%3A-illinois-tool.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ITW Q4 Deep Dive: CBI Drives Margins, Cautious Growth Outlook for 2026",
+      "url": "/news/298688/itw-q4-deep-dive-cbi-drives-margins-cautious-growth-outlook-for-2026",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Illinois Tool Works Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/1a05bb96-82ac-304a-8821-72b2933599cd/illinois-tool-works-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Illinois Tool Works Inc (ITW) Q4 2025 Earnings Call Highlights: Record Margins and Strategic ...",
+      "url": "https://finance.yahoo.com/news/illinois-tool-works-inc-itw-210428524.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Illinois Tool Surpasses Q4 Earnings Estimates, Issues 2026 View",
+      "url": "/news/297867/illinois-tool-surpasses-q4-earnings-estimates-issues-2026-view",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Illinois Tool Works Stock Smashes 52-Week High After Earnings Beat",
+      "url": "/news/297616/illinois-tool-works-stock-smashes-52-week-high-after-earnings-beat",
+      "publisher": "Benzinga",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Illinois Tool Works (ITW) Reports Q4 Earnings: What Key Metrics Have to Say",
+      "url": "/news/297548/illinois-tool-works-itw-reports-q4-earnings-what-key-metrics-have-to-say",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Illinois Tool Works (ITW) Tops Q4 Earnings and Revenue Estimates",
+      "url": "/news/297503/illinois-tool-works-itw-tops-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Illinois Tool Works (ITW) Maintains Dividend Growth Through Business Cycles",
+      "url": "/news/297255/illinois-tool-works-itw-maintains-dividend-growth-through-business-cycles",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Illinois Tool Works: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/illinois-tool-works-q4-earnings-131725473.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Illinois Tool Works's (NYSE:ITW) Q4 CY2025 Sales Top Estimates",
+      "url": "/news/297186/illinois-tool-workss-nyse-itw-q4-cy2025-sales-top-estimates",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "ITW Reports Fourth Quarter and Full Year 2025 Results",
+      "url": "/news/297118/itw-reports-fourth-quarter-and-full-year-2025-results",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: ESAB Corporation",
+      "url": "https://finance.yahoo.com/m/c540183d-c54b-3887-ab5b-2fa9d616796c/analyst-report%3A-esab.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Illinois Tool Works (ITW) Reports Earnings Tomorrow: What To Expect",
+      "url": "/news/294924/illinois-tool-works-itw-reports-earnings-tomorrow-what-to-expect",
+      "publisher": "StockStory",
+      "date": "2026-02-01",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "January jobs data, Alphabet and Amazon earnings, more Warsh fallout: What to watch this week",
+      "url": "https://finance.yahoo.com/news/january-jobs-data-alphabet-and-amazon-earnings-more-warsh-fallout-what-to-watch-this-week-124723942.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Illinois Tool Gears Up to Report Q4 Earnings: What's in the Cards?",
+      "url": "/news/293798/illinois-tool-gears-up-to-report-q4-earnings-whats-in-the-cards",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Illinois Tool Works (ITW) Q4 Earnings on the Horizon: Analysts' Insights on Key Performance Measures",
+      "url": "/news/291820/illinois-tool-works-itw-q4-earnings-on-the-horizon-analysts-insights-on-key-performance-measures",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    }
+  ]
 }

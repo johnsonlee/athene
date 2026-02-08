@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 89.78194777698081,
-    "stoch_d": 87.20024078765682,
+    "stoch_d": 87.20024078765681,
     "trend_score": 72.9381547165373,
     "rsi_abs_score": 60.79932126353377,
     "macd_abs_score": 61.279753598071096,
@@ -6306,7 +6306,15 @@
     "technical_score": 61.46751525305462,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.011037925147766614,
+    "sentiment_pos": 0.05845,
+    "sentiment_neg": 0.01205,
+    "sentiment_neu": 0.9295,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 49.45
+  },
   "analyst": {
     "revision_momentum": -0.25,
     "target_upside": -0.04458598726114653,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 57.33730873333333,
     "catalyst_timeline": 57.19900063723928,
     "downside_control": 61.5321380103173,
-    "composite_score": 57.64269001853077,
+    "composite_score": 57.638800973232335,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 58.98316246839576,
     "technical_score": 61.46751525305462,
-    "sentiment_score": 50.0,
+    "sentiment_score": 49.45,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Life & Health Insurance"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "PFG Gears Up to Report Q4 Earnings: Here's What to Expect",
+      "url": "/news/301281/pfg-gears-up-to-report-q4-earnings-heres-what-to-expect",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Everest Group (EG) Misses Q4 Earnings Estimates",
+      "url": "/news/300424/everest-group-eg-misses-q4-earnings-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Countdown to Principal Financial (PFG) Q4 Earnings: A Look at Estimates Beyond Revenue and EPS",
+      "url": "/news/299449/countdown-to-principal-financial-pfg-q4-earnings-a-look-at-estimates-beyond-revenue-and-eps",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Principal Financial (PFG) Stock Outlook Adjusted by JPMorgan Amid Life Insurance Peer Comparison",
+      "url": "/news/296856/principal-financial-pfg-stock-outlook-adjusted-by-jpmorgan-amid-life-insurance-peer-comparison",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Zacks Industry Outlook Highlights American International, Prudential Financial, Markel, Principal Financial Group and Everest",
+      "url": "/news/291231/zacks-industry-outlook-highlights-american-international-prudential-financial-markel-principal-financial-group-and-everest",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "5 Multiline Insurers to Watch Amid Prudent Underwriting and Pricing",
+      "url": "/news/290575/5-multiline-insurers-to-watch-amid-prudent-underwriting-and-pricing",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PFG Outperforms Industry, Trades Near 52-Week High: Time to Buy?",
+      "url": "/news/281274/pfg-outperforms-industry-trades-near-52-week-high-time-to-buy",
+      "publisher": "Zacks",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AIG Taps CVC to Put Its Investment Engine in a Higher Gear",
+      "url": "/news/280321/aig-taps-cvc-to-put-its-investment-engine-in-a-higher-gear",
+      "publisher": "Zacks",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AIZ Boosts Post-Purchase Capabilities With RL Circular Operations",
+      "url": "/news/280288/aiz-boosts-post-purchase-capabilities-with-rl-circular-operations",
+      "publisher": "Zacks",
+      "date": "2026-01-19",
+      "sentiment": "positive"
+    },
+    {
+      "title": "MKL Stock Trading at a Discount to Industry at 1.48X: Time to Hold?",
+      "url": "/news/275018/mkl-stock-trading-at-a-discount-to-industry-at-148x-time-to-hold",
+      "publisher": "Zacks",
+      "date": "2026-01-13",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Deanna Strable to Speak at 2026 Bank of America Financial Services Conference",
+      "url": "https://www.businesswire.com/news/home/20260112211960/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-12",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Principal Financial's Q4 2025 Earnings: What to Expect",
+      "url": "https://finance.yahoo.com/m/a753d9e3-958b-31fe-966f-71d1726113e4/principal-financial%27s-q4-2025.html",
+      "publisher": "Barchart",
+      "date": "2026-01-12",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Are You a Value Investor? This 1 Stock Could Be the Perfect Pick",
+      "url": "/news/270895/are-you-a-value-investor-this-1-stock-could-be-the-perfect-pick",
+      "publisher": "Zacks",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PFG or PUK: Which Is the Better Value Stock Right Now?",
+      "url": "/news/269739/pfg-or-puk-which-is-the-better-value-stock-right-now",
+      "publisher": "Zacks",
+      "date": "2026-01-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Principal Financial Group to Hold Combined Earnings and Outlook Call",
+      "url": "https://www.businesswire.com/news/home/20260102578088/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Implied Volatility Surging for Principal Financial Stock Options",
+      "url": "/news/263750/implied-volatility-surging-for-principal-financial-stock-options",
+      "publisher": "Zacks",
+      "date": "2025-12-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Principal Financial price target raised to $100 from $94 at Piper Sandler",
+      "url": "https://finance.yahoo.com/news/principal-financial-price-target-raised-115045407.html",
+      "publisher": "TipRanks",
+      "date": "2025-12-24",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PFG Outperforms Industry, Hits 52-Week High: How to Play the Stock",
+      "url": "/news/251966/pfg-outperforms-industry-hits-52-week-high-how-to-play-the-stock",
+      "publisher": "Zacks",
+      "date": "2025-12-11",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is Principal Financial Stock Underperforming the Nasdaq?",
+      "url": "https://finance.yahoo.com/m/5d9cf880-8c5f-3969-81d5-174b14ba2c91/is-principal-financial-stock.html",
+      "publisher": "Barchart",
+      "date": "2025-12-11",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analysts Continue to View Principal Financial Group (PFG) Cautiously as Sector Cycle Softens",
+      "url": "/news/250248/analysts-continue-to-view-principal-financial-group-pfg-cautiously-as-sector-cycle-softens",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-10",
+      "sentiment": "neutral"
+    }
+  ]
 }

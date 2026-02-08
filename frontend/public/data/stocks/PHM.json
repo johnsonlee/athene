@@ -6306,7 +6306,15 @@
     "technical_score": 60.43653128583794,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.11562742925321193,
+    "sentiment_pos": 0.11425,
+    "sentiment_neg": 0.0308,
+    "sentiment_neu": 0.8549,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 55.78
+  },
   "analyst": {
     "revision_momentum": 0.1111111111111111,
     "target_upside": 0.07335850173958099,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 75.74143449428571,
     "catalyst_timeline": 61.079276328359704,
     "downside_control": 67.1491021523679,
-    "composite_score": 64.00013567812331,
+    "composite_score": 63.99624663282488,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 60.144284188571426,
     "technical_score": 60.43653128583794,
-    "sentiment_score": 50.0,
+    "sentiment_score": 55.78,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Homebuilding"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Raymond James Stays Outperform on PulteGroup, Inc. (PHM) Amid Challenging Housing Backdrop",
+      "url": "/news/303550/raymond-james-stays-outperform-on-pultegroup-inc-phm-amid-challenging-housing-backdrop",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Homebuilder stocks fall after potential antitrust probe report",
+      "url": "https://finance.yahoo.com/news/homebuilder-stocks-fall-potential-antitrust-175737004.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "A Key Takeaway From Earnings Season: Signs of Consumer Weakness",
+      "url": "https://finance.yahoo.com/m/014e1af8-29db-3db9-94ba-ea8224d66cd3/a-key-takeaway-from-earnings.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Del Webb Breaks Ground on Two New Resort-Style Communities in the Columbus Area",
+      "url": "https://www.businesswire.com/news/home/20260206247721/en/Del",
+      "publisher": "Business Wire",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Del Webb Announces First Active Adult Community in Bridgeland",
+      "url": "https://www.businesswire.com/news/home/20260205330562/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The 5 Most Interesting Analyst Questions From PulteGroup's Q4 Earnings Call",
+      "url": "/news/300818/the-5-most-interesting-analyst-questions-from-pultegroups-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PulteGroup Announces Quarterly Cash Dividend of $0.26 Per Share",
+      "url": "https://www.businesswire.com/news/home/20260204493449/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PulteGroup Extends Build Your Future Scholarship in 2026 To Fuel the Future of the Homebuilding Workforce",
+      "url": "https://www.businesswire.com/news/home/20260204524066/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jacobs Q1 Earnings & Revenues Top, Both Up Y/Y, FY26 View Raised",
+      "url": "/news/299329/jacobs-q1-earnings-revenues-top-both-up-yy-fy26-view-raised",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "These Homebuilder Stocks Get a Boost Following Report of Plan to Build 'Trump Homes'",
+      "url": "https://finance.yahoo.com/m/17638541-a611-3260-b1fb-36de8309b694/these-homebuilder-stocks-get.html",
+      "publisher": "Investopedia",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "These Homebuilder Stocks Climb Following Report of Plan to Build 'Trump Homes'",
+      "url": "https://finance.yahoo.com/m/17638541-a611-3260-b1fb-36de8309b694/these-homebuilder-stocks.html",
+      "publisher": "Investopedia",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here is What to Know Beyond Why PulteGroup, Inc. (PHM) is a Trending Stock",
+      "url": "/news/295588/here-is-what-to-know-beyond-why-pultegroup-inc-phm-is-a-trending-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PulteGroup Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/de407333-9c86-391c-b635-029ed9b35225/pultegroup-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PHM Q4 Deep Dive: Margins Compress as Incentives Rise, Active Adult Segment Expands",
+      "url": "/news/293146/phm-q4-deep-dive-margins-compress-as-incentives-rise-active-adult-segment-expands",
+      "publisher": "StockStory",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PulteGroup Inc (PHM) Q4 2025 Earnings Call Highlights: Navigating Challenges with Strategic Growth",
+      "url": "https://finance.yahoo.com/news/pultegroup-inc-phm-q4-2025-210509053.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PulteGroup (PHM) Stock Trades Up, Here Is Why",
+      "url": "/news/292473/pultegroup-phm-stock-trades-up-here-is-why",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PulteGroup Q4 Earnings & Revenues Top Estimates, Stock Down",
+      "url": "/news/292388/pultegroup-q4-earnings-revenues-top-estimates-stock-down",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PulteGroup Sounds Cautious On Demand Even As Home Affordability Improves",
+      "url": "/news/292088/pultegroup-sounds-cautious-on-demand-even-as-home-affordability-improves",
+      "publisher": "Benzinga",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PulteGroup Earnings Miss Expectations. Why the Stock Is Rising Anyway.",
+      "url": "https://finance.yahoo.com/m/d3af818b-e7c9-3e23-a4c6-b6869fdfdae9/pultegroup-earnings-miss.html",
+      "publisher": "Barrons.com",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Here's What Key Metrics Tell Us About PulteGroup (PHM) Q4 Earnings",
+      "url": "/news/291858/heres-what-key-metrics-tell-us-about-pultegroup-phm-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    }
+  ]
 }

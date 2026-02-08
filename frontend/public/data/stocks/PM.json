@@ -6279,8 +6279,8 @@
     "close": 182.80999755859375,
     "sma_20": 175.14199981689455,
     "sma_50": 163.42892852783206,
-    "sma_200": 163.88102256774903,
-    "trend_alignment": 0.6733941194196454,
+    "sma_200": 163.881022567749,
+    "trend_alignment": 0.6733941194196457,
     "rsi": 71.73955874766723,
     "rsi_score": 0.43479117495334463,
     "macd_histogram": 0.2746933692513531,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 85.59265382845008,
     "stoch_d": 86.42718415110278,
-    "trend_score": 67.33941194196454,
+    "trend_score": 67.33941194196457,
     "rsi_abs_score": 49.12923550653176,
     "macd_abs_score": 56.256541941357845,
     "momentum_score": 52.692888723944804,
     "volatility_score": 55.678091222641314,
     "volume_score": 50.0,
-    "technical_score": 57.145308444301065,
+    "technical_score": 57.14530844430108,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.11861584554700501,
+    "sentiment_pos": 0.10005,
+    "sentiment_neg": 0.027850000000000003,
+    "sentiment_neu": 0.8721500000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 55.93
+  },
   "analyst": {
     "revision_momentum": -0.3333333333333333,
     "target_upside": -0.01537115037470599,
@@ -6325,7 +6333,7 @@
     "quality_score": 86.7148,
     "growth_score": 47.5,
     "safety_score": 40.023073097537846,
-    "trend_score": 67.33941194196454,
+    "trend_score": 67.33941194196457,
     "momentum_score": 52.692888723944804,
     "volatility_score": 55.678091222641314,
     "volume_score": 50.0,
@@ -6344,16 +6352,16 @@
     "current_ratio_score": 42.48,
     "earnings_visibility": 68.06121999999999,
     "valuation_margin": 61.558951924999995,
-    "catalyst_timeline": 56.150630902856875,
+    "catalyst_timeline": 56.15063090285688,
     "downside_control": 48.949174648026876,
-    "composite_score": 60.941995604738366,
+    "composite_score": 60.93810655943993,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 62.71818122367423,
-    "technical_score": 57.145308444301065,
-    "sentiment_score": 50.0,
+    "technical_score": 57.14530844430108,
+    "sentiment_score": 55.93,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Staples",
     "industry": "Tobacco"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Philip Morris International Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/a04dcfa2-d00b-3b8c-860d-3c0b95cc56a1/philip-morris-international.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Philip Morris International Inc.",
+      "url": "https://finance.yahoo.com/m/10bea129-583c-3815-bc39-c378c74839e0/analyst-report%3A-philip-morris.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Philip Morris International Inc (PM) Q4 2025 Earnings Call Highlights: Strong Smoke-Free Growth ...",
+      "url": "https://finance.yahoo.com/news/philip-morris-international-inc-pm-210157374.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Marlboro Cigarette Maker Now Says Smoke-Free Drives Over Half Of Sales",
+      "url": "/news/303154/marlboro-cigarette-maker-now-says-smoke-free-drives-over-half-of-sales",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Philip Morris Leans Into Smoke-Free to Fuel Growth",
+      "url": "https://finance.yahoo.com/m/a8e96d99-0ab0-3faa-9d18-d5e5e7322f59/philip-morris-leans-into.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Rotation into Consumer Staples: Defensive Strength in an Uncertain 2026",
+      "url": "/news/303136/the-rotation-into-consumer-staples-defensive-strength-in-an-uncertain-2026",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Philip Morris Q4 Earnings Beat Estimates, Revenues Grow 6.8% Y/Y",
+      "url": "/news/303046/philip-morris-q4-earnings-beat-estimates-revenues-grow-68-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Philip Morris Stock Edges Up. Why Soft Revenue Isnt a Drag for the Tobacco Giant.",
+      "url": "https://finance.yahoo.com/m/81816284-1a4a-39a4-971a-2e3bce617d5f/philip-morris-stock-edges-up..html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Philip Morris (PM) Reports Q4 Earnings: What Key Metrics Have to Say",
+      "url": "/news/302865/philip-morris-pm-reports-q4-earnings-what-key-metrics-have-to-say",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Earnings live: Amazon stock sinks, Philip Morris retreats, Reddit spikes as Wall Street focuses on guidance",
+      "url": "https://finance.yahoo.com/news/live/earnings-live-amazon-stock-sinks-philip-morris-retreats-reddit-spikes-as-wall-street-focuses-on-guidance-140858850.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Philip Morris (PM) Q4 Earnings Top Estimates",
+      "url": "/news/302729/philip-morris-pm-q4-earnings-top-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Philip Morris Posts Higher Profit, Revenue; Forecasts Continued Growth",
+      "url": "https://www.wsj.com/business/earnings/philip-morris-posts-higher-profit-revenue-forecasts-continued-growth-4301b6fd?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Philip Morris International falls as Q4 results meet expectations",
+      "url": "https://finance.yahoo.com/news/philip-morris-international-falls-q4-124109878.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Philip Morris (NYSE:PM) Posts Q4 CY2025 Sales In Line With Estimates",
+      "url": "/news/302553/philip-morris-nyse-pm-posts-q4-cy2025-sales-in-line-with-estimates",
+      "publisher": "StockStory",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Philip Morris Stock Drops. Why Earnings Are a Drag for the Tobacco Giant.",
+      "url": "https://www.barrons.com/articles/philip-morris-international-earnings-stock-price-44b8cd1b?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Philip Morris: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/philip-morris-q4-earnings-snapshot-122025818.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Philip Morris International Reports 2025 Fourth-Quarter & Full-Year Results",
+      "url": "https://www.businesswire.com/news/home/20260205612890/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Consumer Sentiment, Biogen Earnings: What to Watch Friday",
+      "url": "https://finance.yahoo.com/m/7b2b6226-1169-333f-adde-6c86f0d9fff6/consumer-sentiment%2C-biogen.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock market today: S&P 500, Nasdaq poised to deepen tech rout futures as Amazon's earnings flop",
+      "url": "https://finance.yahoo.com/news/live/stock-market-today-sp-500-nasdaq-poised-to-deepen-tech-rout-futures-as-amazons-earnings-flop-000711234.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stock market today: S&P 500, Nasdaq poised to deepen tech rout as Amazon's earnings flop",
+      "url": "https://finance.yahoo.com/news/live/stock-market-today-sp-500-nasdaq-poised-to-deepen-tech-rout-as-amazons-earnings-flop-000711574.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    }
+  ]
 }

@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 52.25727951173356,
-    "stoch_d": 44.95852948430503,
+    "stoch_d": 44.958529484305025,
     "trend_score": 59.73914877415607,
     "rsi_abs_score": 72.65843301863194,
     "macd_abs_score": 44.640767848609094,
@@ -6306,7 +6306,15 @@
     "technical_score": 60.46326605143777,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.20020211691562875,
+    "sentiment_pos": 0.1568,
+    "sentiment_neg": 0.016,
+    "sentiment_neu": 0.8272,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 60.01
+  },
   "analyst": {
     "revision_momentum": 0.25,
     "target_upside": 0.07227107012652793,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 60.48973341999999,
     "catalyst_timeline": 58.566714705608604,
     "downside_control": 46.411998154328586,
-    "composite_score": 58.07363022171755,
+    "composite_score": 58.06974117641912,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 55.04113452857143,
     "technical_score": 60.46326605143777,
-    "sentiment_score": 50.0,
+    "sentiment_score": 60.01,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Utilities",
     "industry": "Electric Utilities"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Xcel Energy Q4 Earnings and Revenues Lag Estimates, Expenses Rise",
+      "url": "/news/301833/xcel-energy-q4-earnings-and-revenues-lag-estimates-expenses-rise",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "FirstEnergy Pennsylvania Outlines New Plan for Buying Electricity Starting in 2027",
+      "url": "/news/300128/firstenergy-pennsylvania-outlines-new-plan-for-buying-electricity-starting-in-2027",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FirstEnergy Builds Greener Communities with 30,000+ Trees Planted in 2025, 26,000 Planned for 2026",
+      "url": "/news/300124/firstenergy-builds-greener-communities-with-30000-trees-planted-in-2025-26000-planned-for-2026",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Potomac Edison Pilot Program to Help Maryland Schools Transition to Clean, Electric Buses",
+      "url": "/news/299533/potomac-edison-pilot-program-to-help-maryland-schools-transition-to-clean-electric-buses",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Potomac Edison Residential Customers in Maryland to Receive Second Round of Energy Relief Bill Credits",
+      "url": "/news/293470/potomac-edison-residential-customers-in-maryland-to-receive-second-round-of-energy-relief-bill-credits",
+      "publisher": "PR Newswire",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "FirstEnergy (FE) Upgraded to 'Outperform' at Wolfe Research",
+      "url": "/news/291937/firstenergy-fe-upgraded-to-outperform-at-wolfe-research",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Electric Upgrades Boost Reliability for McKean County Customers",
+      "url": "/news/290048/electric-upgrades-boost-reliability-for-mckean-county-customers",
+      "publisher": "PR Newswire",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here Are Tuesdays Top Wall Street Analyst Research Calls: Affirm Holdings, Alcoa, Block, Coinbase Global,CoreWeave, Datadog, Intuitive Surgical, and More",
+      "url": "https://finance.yahoo.com/m/dcd35300-3bbb-30b5-a962-034964a21c29/here-are-tuesday%E2%80%99s-top-wall.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "FirstEnergy Crews Ready for Winter Storm; Offer Tips to Stay Safe and Warm During Extreme Cold",
+      "url": "/news/285705/firstenergy-crews-ready-for-winter-storm-offer-tips-to-stay-safe-and-warm-during-extreme-cold",
+      "publisher": "PR Newswire",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Will FirstEnergy (FE) Beat Estimates Again in Its Next Earnings Report?",
+      "url": "/news/284313/will-firstenergy-fe-beat-estimates-again-in-its-next-earnings-report",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Earnings Preview: What to Expect From FirstEnergys Report",
+      "url": "https://finance.yahoo.com/m/b8ad67fb-18e3-3cf5-9b07-2783c2303d40/earnings-preview%3A-what-to.html",
+      "publisher": "Barchart",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: FirstEnergy Corp.",
+      "url": "https://finance.yahoo.com/m/417cd62e-aff8-30f4-aa4a-6b6e8a6bb178/analyst-report%3A-firstenergy.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: FirstEnergy Corp.",
+      "url": "https://finance.yahoo.com/m/1a4c40ac-780c-30c6-a3aa-fd1197e09b65/analyst-report%3A-firstenergy.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FirstEnergy to Webcast Fourth Quarter Earnings Teleconference",
+      "url": "/news/275424/firstenergy-to-webcast-fourth-quarter-earnings-teleconference",
+      "publisher": "PR Newswire",
+      "date": "2026-01-13",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FirstEnergy Foundation Marks 10 Years of Support for Fill a Glass with Hope",
+      "url": "/news/272501/firstenergy-foundation-marks-10-years-of-support-for-fill-a-glass-with-hope",
+      "publisher": "PR Newswire",
+      "date": "2026-01-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ohio regulator approves settlement to end its FirstEnergy HB 6 cases",
+      "url": "https://finance.yahoo.com/m/95307bbc-4efc-300e-8472-e69061012ff8/ohio-regulator-approves.html",
+      "publisher": "Akron Beacon Journal",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PUCO Approves FirstEnergy Settlement, Delivering Customer Benefits",
+      "url": "/news/271104/puco-approves-firstenergy-settlement-delivering-customer-benefits",
+      "publisher": "PR Newswire",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "FirstEnergy Transmission, LLC Announces Extension of Exchange Offer for its 4.750% Senior Notes Due 2033",
+      "url": "/news/270450/firstenergy-transmission-llc-announces-extension-of-exchange-offer-for-its-4750-senior-notes-due-2033",
+      "publisher": "PR Newswire",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FE to Benefit From Infrastructure Upgradation & Grid Modernization",
+      "url": "/news/264974/fe-to-benefit-from-infrastructure-upgradation-grid-modernization",
+      "publisher": "Zacks",
+      "date": "2025-12-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "FirstEnergy notifies PSC of plan to apply for approval of gas-fired power plant project",
+      "url": "https://finance.yahoo.com/m/58a7fb63-6f32-3546-9e46-cf4d71d32cc0/firstenergy-notifies-psc-of.html",
+      "publisher": "The Dominion Post, Morgantown, W.Va.",
+      "date": "2025-12-22",
+      "sentiment": "positive"
+    }
+  ]
 }

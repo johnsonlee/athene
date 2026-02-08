@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 362280.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 40.48100375707389,
+    "stoch_k": 40.481003757073886,
     "stoch_d": 58.20541647614674,
     "trend_score": 62.93804662729302,
     "rsi_abs_score": 74.62182765721342,
@@ -6306,7 +6306,15 @@
     "technical_score": 60.73425995484534,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.13477508376066963,
+    "sentiment_pos": 0.0716,
+    "sentiment_neg": 0.029099999999999997,
+    "sentiment_neu": 0.8993,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 56.74
+  },
   "analyst": {
     "revision_momentum": null,
     "target_upside": 0.028862294904424178,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 59.63125446190476,
     "catalyst_timeline": 55.73607303949346,
     "downside_control": 72.22597273583222,
-    "composite_score": 64.22075027541871,
+    "composite_score": 64.21686123012027,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 63.992564994920635,
     "technical_score": 60.73425995484534,
-    "sentiment_score": 50.0,
+    "sentiment_score": 56.74,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Industrial Machinery & Supplies & Components"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Snap-On Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/10ce6a1d-2948-339d-a421-638b484a90cb/snap-on-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Snap-On (SNA) is a Great Dividend Stock Right Now",
+      "url": "/news/303126/why-snap-on-sna-is-a-great-dividend-stock-right-now",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "SNA Q4 Deep Dive: Product Innovation and Stable Margins Amid Revenue Pressures",
+      "url": "/news/302718/sna-q4-deep-dive-product-innovation-and-stable-margins-amid-revenue-pressures",
+      "publisher": "StockStory",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Snap-on Inc (SNA) Q4 2025 Earnings Call Highlights: Strong Financial Services Growth and ...",
+      "url": "https://finance.yahoo.com/news/snap-inc-sna-q4-2025-211030122.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Snap-on's Q4 Earnings Beat Estimates, Higher Organic Sales Aid",
+      "url": "/news/301973/snap-ons-q4-earnings-beat-estimates-higher-organic-sales-aid",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Snap-on Sales Grow But CEO Flags 'Extraordinary' Turbulence",
+      "url": "/news/301437/snap-on-sales-grow-but-ceo-flags-extraordinary-turbulence",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Compared to Estimates, Snap-On (SNA) Q4 Earnings: A Look at Key Metrics",
+      "url": "/news/301536/compared-to-estimates-snap-on-sna-q4-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Snap-On (SNA) Tops Q4 Earnings and Revenue Estimates",
+      "url": "/news/301262/snap-on-sna-tops-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Snap-On: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/snap-q4-earnings-snapshot-115205915.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Snap-on (NYSE:SNA) Misses Q4 CY2025 Revenue Estimates",
+      "url": "/news/301278/snap-on-nyse-sna-misses-q4-cy2025-revenue-estimates",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Snap-on Announces Fourth Quarter and Full Year 2025 Results",
+      "url": "https://www.businesswire.com/news/home/20260205670403/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stay Ahead of the Game With Snap-On (SNA) Q4 Earnings: Wall Street's Insights on Key Metrics",
+      "url": "/news/299466/stay-ahead-of-the-game-with-snap-on-sna-q4-earnings-wall-streets-insights-on-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Snap-on (SNA) To Report Earnings Tomorrow: Here Is What To Expect",
+      "url": "/news/298692/snap-on-sna-to-report-earnings-tomorrow-here-is-what-to-expect",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Snap-on's Pre-Q4 Earnings Snapshot: Time to Buy the Stock?",
+      "url": "/news/295999/snap-ons-pre-q4-earnings-snapshot-time-to-buy-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Cash-Producing Stocks with Open Questions",
+      "url": "/news/294101/3-cash-producing-stocks-with-open-questions",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Snap-on Incorporated to Webcast 2025 Fourth Quarter and Full Year Results Conference Call",
+      "url": "https://www.businesswire.com/news/home/20260122071306/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why You Should Retain Snap-on Stock in Your Portfolio",
+      "url": "/news/282859/heres-why-you-should-retain-snap-on-stock-in-your-portfolio",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "1 Mid-Cap Stock Worth Investigating and 2 We Avoid",
+      "url": "/news/280340/1-mid-cap-stock-worth-investigating-and-2-we-avoid",
+      "publisher": "StockStory",
+      "date": "2026-01-18",
+      "sentiment": "negative"
+    },
+    {
+      "title": "What to Expect From Snap-ons Q4 2025 Earnings Report",
+      "url": "https://finance.yahoo.com/m/6d35a782-45a1-3268-b46d-e6e164326da6/what-to-expect-from-snap-on%E2%80%99s.html",
+      "publisher": "Barchart",
+      "date": "2026-01-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Q3 Earnings Roundup: Snap-on (NYSE:SNA) And The Rest Of The Professional Tools and Equipment Segment",
+      "url": "/news/268393/q3-earnings-roundup-snap-on-nyse-sna-and-the-rest-of-the-professional-tools-and-equipment-segment",
+      "publisher": "StockStory",
+      "date": "2026-01-05",
+      "sentiment": "neutral"
+    }
+  ]
 }

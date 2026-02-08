@@ -6279,8 +6279,8 @@
     "close": 112.05000305175781,
     "sma_20": 137.68499870300292,
     "sma_50": 153.22719985961913,
-    "sma_200": 137.66459987640383,
-    "trend_alignment": 0.21968187898621988,
+    "sma_200": 137.6645998764038,
+    "trend_alignment": 0.21968187898622005,
     "rsi": 22.63127033071618,
     "rsi_score": -0.5473745933856764,
     "macd_histogram": -2.8376819427958004,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 7.047480712292234,
     "stoch_d": 6.462558745501265,
-    "trend_score": 21.968187898621988,
+    "trend_score": 21.968187898622006,
     "rsi_abs_score": 42.631270330716184,
     "macd_abs_score": 20.0,
     "momentum_score": 31.315635165358092,
     "volatility_score": 22.998182005705207,
     "volume_score": 50.0,
-    "technical_score": 30.584783320335063,
+    "technical_score": 30.58478332033507,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.027622547595162333,
+    "sentiment_pos": 0.055600000000000004,
+    "sentiment_neg": 0.05014999999999999,
+    "sentiment_neu": 0.8942,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.38
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.6153502900490853,
@@ -6325,7 +6333,7 @@
     "quality_score": 68.695673875,
     "growth_score": 50.0,
     "safety_score": 72.95225,
-    "trend_score": 21.968187898621988,
+    "trend_score": 21.968187898622006,
     "momentum_score": 31.315635165358092,
     "volatility_score": 22.998182005705207,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 27.00280814628571,
     "catalyst_timeline": 39.415532306398006,
     "downside_control": 50.050564800855774,
-    "composite_score": 41.341254394230106,
+    "composite_score": 41.33736534893167,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 55.30315895107143,
-    "technical_score": 30.584783320335063,
-    "sentiment_score": 50.0,
+    "technical_score": 30.58478332033507,
+    "sentiment_score": 51.38,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Technology",
     "industry": "Software - Application"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Tech stocks have been shaky, but these 20 companies could still see rocketing sales growth",
+      "url": "https://www.marketwatch.com/story/tech-stocks-have-been-shaky-but-these-20-companies-could-still-see-rocketing-sales-growth-148195c9?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Super Bowl LX, Coinbase earnings, jobs data & CPI: What to Watch",
+      "url": "https://finance.yahoo.com/video/super-bowl-lx-coinbase-earnings-000012395.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Unveiling Shopify (SHOP) Q4 Outlook: Wall Street Estimates for Key Metrics",
+      "url": "/news/302833/unveiling-shopify-shop-q4-outlook-wall-street-estimates-for-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Zacks Analyst Blog Highlights SAP, McDonald's, Shopify, Comstock and SIFCO Industries",
+      "url": "/news/302616/the-zacks-analyst-blog-highlights-sap-mcdonalds-shopify-comstock-and-sifco-industries",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Top Stock Reports for SAP, McDonald's & Shopify",
+      "url": "/news/302210/top-stock-reports-for-sap-mcdonalds-shopify",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The side hustle tipping point: When a gig becomes a real business, and what happens if you wait too long to formalize",
+      "url": "https://finance.yahoo.com/m/e61bf022-841b-3822-b234-240b748931af/the-side-hustle-tipping.html",
+      "publisher": "Stacker",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Week Ahead: Inflation Data Hits Amid Earnings Season",
+      "url": "/news/301191/the-week-ahead-inflation-data-hits-amid-earnings-season",
+      "publisher": "Schaeffer's Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nvidia CEO Jensen Huang Just Said AI Won't Replace Software. 3 Beaten-Down SaaS Stocks To Buy Now",
+      "url": "/news/300689/nvidia-ceo-jensen-huang-just-said-ai-wont-replace-software-3-beaten-down-saas-stocks-to-buy-now",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tech, Media & Telecom Roundup: Market Talk",
+      "url": "https://finance.yahoo.com/m/c834e8cd-801d-3af9-9e01-d74e80e28a9b/tech%2C-media-%26-telecom.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Market Today: Dow Rises On Surprise Jobs Data; AMD Plunges On Earnings (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/95eff06b-9fa2-3b22-b1b7-24055bf9706b/stock-market-today%3A-dow-rises.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Watches of Switzerland Group Q3 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/5af54d8b-b717-3937-95f7-f09f8d60598d/watches-of-switzerland-group.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Heard on the Street Tuesday Recap: Code Red",
+      "url": "https://finance.yahoo.com/m/af68f4b2-5e4e-3115-b526-4a59127f82c4/heard-on-the-street-tuesday.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Shopify Inc. (SHOP): A Bull Case Theory",
+      "url": "/news/298633/shopify-inc-shop-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Shopify Inc.",
+      "url": "https://finance.yahoo.com/m/83bee6e2-b8db-3e41-b21b-b59e64c361c0/analyst-report%3A-shopify-inc..html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Shopify (SHOP) Falls More Steeply Than Broader Market: What Investors Need to Know",
+      "url": "/news/298319/shopify-shop-falls-more-steeply-than-broader-market-what-investors-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Heard on the Street Recap: Code Red",
+      "url": "https://finance.yahoo.com/m/a39d2f87-7870-392a-b761-b2745ab03605/heard-on-the-street-recap%3A.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Struggling PayPal Hires New CEO. Is Company Break-Up Coming?",
+      "url": "https://finance.yahoo.com/m/113fcbb4-fb58-3c18-a5a9-7fee880598ac/struggling-paypal-hires-new.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "1 Growth Stock Down 16% in 2026 to Buy and Hold",
+      "url": "/news/298046/1-growth-stock-down-16-in-2026-to-buy-and-hold",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bitcoin nears weekend low of $74,600 as stock selloff adds to crypto's woes",
+      "url": "https://finance.yahoo.com/m/7b106667-14c3-37ec-bd86-dd3538ec28a4/bitcoin-nears-weekend-low-of.html",
+      "publisher": "CoinDesk",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "PayPal Turmoil At The Top: Struggling Payments Firm Hires New CEO",
+      "url": "https://finance.yahoo.com/m/113fcbb4-fb58-3c18-a5a9-7fee880598ac/paypal-turmoil-at-the-top%3A.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    }
+  ]
 }

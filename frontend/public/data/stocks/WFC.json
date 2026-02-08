@@ -6279,8 +6279,8 @@
     "close": 93.97000122070312,
     "sma_20": 89.92820281982422,
     "sma_50": 90.99743576049806,
-    "sma_200": 81.91168125152588,
-    "trend_alignment": 0.6619968237667715,
+    "sma_200": 81.91168125152586,
+    "trend_alignment": 0.6619968237667717,
     "rsi": 60.896396559923915,
     "rsi_score": 0.21792793119847828,
     "macd_histogram": 0.6070673295335602,
@@ -6295,18 +6295,26 @@
     "avg_volume_20d": 18002125.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 84.40728146918474,
+    "stoch_k": 84.40728146918475,
     "stoch_d": 79.58313843807244,
-    "trend_score": 66.19968237667715,
+    "trend_score": 66.19968237667717,
     "rsi_abs_score": 70.87252240805326,
     "macd_abs_score": 67.1903371551699,
     "momentum_score": 69.03142978161158,
     "volatility_score": 50.98256518177233,
     "volume_score": 50.0,
-    "technical_score": 60.76584668384108,
+    "technical_score": 60.76584668384109,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.27476660621452087,
+    "sentiment_pos": 0.20245000000000002,
+    "sentiment_neg": 0.0257,
+    "sentiment_neu": 0.7719,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 63.74
+  },
   "analyst": {
     "revision_momentum": -0.07692307692307693,
     "target_upside": 0.06416941577099075,
@@ -6325,7 +6333,7 @@
     "quality_score": 70.82682857142858,
     "growth_score": 58.95,
     "safety_score": 33.12325,
-    "trend_score": 66.19968237667715,
+    "trend_score": 66.19968237667717,
     "momentum_score": 69.03142978161158,
     "volatility_score": 50.98256518177233,
     "volume_score": 50.0,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 50.625873426666665,
     "catalyst_timeline": 61.25423976401119,
     "downside_control": 47.22387227726585,
-    "composite_score": 53.9821380276859,
+    "composite_score": 53.97824898238747,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 55.474259760317466,
-    "technical_score": 60.76584668384108,
-    "sentiment_score": 50.0,
+    "technical_score": 60.76584668384109,
+    "sentiment_score": 63.74,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 0.8325,
     "data_quality_penalty": 0.0,
-    "rank": 300,
-    "percentile": 0.4238921001926782,
+    "rank": 301,
+    "percentile": 0.42196531791907516,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Diversified Banks"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "90-year-old man scammed out of $814K life savings  Wells Fargo denies claim. Why you must always flag big withdrawals",
+      "url": "https://finance.yahoo.com/news/90-old-man-scammed-814k-164500397.html",
+      "publisher": "Moneywise",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Wells Fargo Launches Ad with Comedian and Actor Marcello Hernndez Ahead of Big Game",
+      "url": "https://www.businesswire.com/news/home/20260206277235/en/Wells",
+      "publisher": "Business Wire",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Wells Fargo announces more layoffs at Jordan Creek campus",
+      "url": "https://finance.yahoo.com/m/68cb0803-ea79-353d-8bcc-6d50856541d0/wells-fargo-announces-more.html",
+      "publisher": "The Des Moines Register",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jim Cramer on Wells Fargo: \"That's a Winner\"",
+      "url": "/news/300076/jim-cramer-on-wells-fargo-thats-a-winner",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Investors Heavily Search Wells Fargo & Company (WFC): Here is What You Need to Know",
+      "url": "/news/299400/investors-heavily-search-wells-fargo-company-wfc-here-is-what-you-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Software debt selloff may give private credit an edge  Wells Fargo",
+      "url": "https://finance.yahoo.com/news/software-debt-selloff-may-private-153607791.html",
+      "publisher": "Pitchbook",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Wells Fargo to Present at the UBS Financial Services Conference",
+      "url": "https://www.businesswire.com/news/home/20260203227985/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "RBC Highlights Wells Fargo (WFC) Growth Strategy and Capital Management Plans",
+      "url": "/news/296879/rbc-highlights-wells-fargo-wfc-growth-strategy-and-capital-management-plans",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Whats the Game Plan for Advising Young Sports Stars?",
+      "url": "https://finance.yahoo.com/m/e0bf0ba0-98ec-33f4-a438-0032bce1c704/what%E2%80%99s-the-game-plan-for.html",
+      "publisher": "The Daily Upside",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Big Banks Are Loading up on Bitcoin. Should Individual Investors Do the Same?",
+      "url": "/news/296061/big-banks-are-loading-up-on-bitcoin-should-individual-investors-do-the-same",
+      "publisher": "Motley Fool",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Mosaic Stock: Analyst Estimates & Ratings",
+      "url": "https://finance.yahoo.com/m/be0cb497-7a19-3d61-a6a6-e32562cd643f/mosaic-stock%3A-analyst.html",
+      "publisher": "Barchart",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "RIA Boom Redraws Wealth Management Map",
+      "url": "https://finance.yahoo.com/m/2fc3f6b7-dca9-324d-ab66-30cbe30c4a64/ria-boom-redraws-wealth.html",
+      "publisher": "The Daily Upside",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "This Year's Super Bowl Party Will Cost $140. Here's the Breakdown",
+      "url": "https://finance.yahoo.com/m/f056a365-28c1-3f72-a5d9-ccb5e6a8e662/this-year%27s-super-bowl-party.html",
+      "publisher": "Investopedia",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jamie Dimon Reportedly Blasted Brian Armstrong In Davos: 'You Are Full Of...'",
+      "url": "/news/293911/jamie-dimon-reportedly-blasted-brian-armstrong-in-davos-you-are-full-of",
+      "publisher": "Benzinga",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Wells Fargo to pay CEO Scharf $40M for 2025",
+      "url": "https://finance.yahoo.com/m/d07f8fab-d355-3789-8656-3b546eb2c0e4/wells-fargo-to-pay-ceo-scharf.html",
+      "publisher": "Banking Dive",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Wells Fargo launches internal proxy voting service",
+      "url": "https://finance.yahoo.com/m/3fbce55a-ab7d-32ed-b5a2-e979320edaa7/wells-fargo-launches-internal.html",
+      "publisher": "ESG Dive",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Wells Fargo CEO Charlie Scharfs Pay Rises to $40 Million in Watershed Year for Bank",
+      "url": "https://finance.yahoo.com/m/49fafda6-6a5a-382b-a422-0d5c9658c55b/wells-fargo-ceo-charlie.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Robinhood CEO Told President They Can Make Trump Accounts 'Robust,' Now Company Could Win Deal",
+      "url": "/news/292652/robinhood-ceo-told-president-they-can-make-trump-accounts-robust-now-company-could-win-deal",
+      "publisher": "Benzinga",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Copper Prices Top $14,500 a Ton For First Time",
+      "url": "https://finance.yahoo.com/video/copper-prices-top-14-500-210737848.html",
+      "publisher": "Bloomberg",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Citigroup or Wells Fargo: Which Bank Stock Has More Upside in 2026?",
+      "url": "/news/292432/citigroup-or-wells-fargo-which-bank-stock-has-more-upside-in-2026",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    }
+  ]
 }

@@ -6306,7 +6306,15 @@
     "technical_score": 58.571639827231394,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.1452637338080339,
+    "sentiment_pos": 0.11234999999999999,
+    "sentiment_neg": 0.02085,
+    "sentiment_neu": 0.8667999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 57.26
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.05227427019687709,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 52.182675599999996,
     "catalyst_timeline": 63.61578397306924,
     "downside_control": 48.90477137271834,
-    "composite_score": 50.661429895352164,
+    "composite_score": 50.65754085005373,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 48.5756005,
     "technical_score": 58.571639827231394,
-    "sentiment_score": 50.0,
+    "sentiment_score": 57.26,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Energy",
     "industry": "Oil & Gas Equipment & Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Nat-Gas Prices Fall on Warm Temps and Higher Production",
+      "url": "https://finance.yahoo.com/m/60a9ba41-fc60-350f-9015-a7eea514e7e2/nat-gas-prices-fall-on-warm.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "US Oil Drillers Add Rigs Even in Price Uncertainty",
+      "url": "https://finance.yahoo.com/news/us-oil-drillers-add-rigs-180726377.html",
+      "publisher": "Oilprice.com",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "ITT's Q4 Earnings & Revenues Top Estimates, Increase Y/Y",
+      "url": "/news/303175/itts-q4-earnings-revenues-top-estimates-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "RBC Bearings Q3 Earnings & Revenues Surpass Estimates, Rise Y/Y",
+      "url": "/news/303170/rbc-bearings-q3-earnings-revenues-surpass-estimates-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Baker Hughes (BKR) is a Strong Momentum Stock",
+      "url": "/news/302961/heres-why-baker-hughes-bkr-is-a-strong-momentum-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Core Laboratories Q4 Earnings Beat Estimates, Expenses Increase Y/Y",
+      "url": "/news/302804/core-laboratories-q4-earnings-beat-estimates-expenses-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Baker Hughes Declares Quarterly Dividend",
+      "url": "/news/302063/baker-hughes-declares-quarterly-dividend",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Kennametal's Q2 Earnings & Revenues Top Estimates, Increase Y/Y",
+      "url": "/news/301848/kennametals-q2-earnings-revenues-top-estimates-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "SLB Secures $1.5 Billion Contract for Mutriba Field Development",
+      "url": "/news/301372/slb-secures-15-billion-contract-for-mutriba-field-development",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Marathon Q4 Earnings & Revenues Beat Estimates, Expenses Down Y/Y",
+      "url": "/news/301282/marathon-q4-earnings-revenues-beat-estimates-expenses-down-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Baker Hughes to Provide Downstream Chemicals for Marathon Petroleum Refineries, Becoming Preferred Provider Across North America",
+      "url": "/news/300999/baker-hughes-to-provide-downstream-chemicals-for-marathon-petroleum-refineries-becoming-preferred-provider-across-north-america",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Oil Services Stocks Stage Historic Comeback - Expert Highlights An 'Accumulating Strength'",
+      "url": "/news/300279/oil-services-stocks-stage-historic-comeback-expert-highlights-an-accumulating-strength",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Carlisle Q4 Earnings Beat Estimates, Organic Revenues Decline Y/Y",
+      "url": "/news/300028/carlisle-q4-earnings-beat-estimates-organic-revenues-decline-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "IDEX Q4 Earnings Surpass Estimates, Sales Increase Year Over Year",
+      "url": "/news/300022/idex-q4-earnings-surpass-estimates-sales-increase-year-over-year",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stanley Black's Q4 Earnings Beat Estimates, Revenues Miss",
+      "url": "/news/300008/stanley-blacks-q4-earnings-beat-estimates-revenues-miss",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Suncor Energy Q4 Earnings & Revenues Beat Estimates, Both Down Y/Y",
+      "url": "/news/299859/suncor-energy-q4-earnings-revenues-beat-estimates-both-down-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Baker Hughes Company",
+      "url": "https://finance.yahoo.com/m/13c4c340-d672-3969-82e2-40907222ebde/analyst-report%3A-baker-hughes.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tecnimont and Baker Hughes sign MoU to pursue modular LNG projects",
+      "url": "https://finance.yahoo.com/m/5a2e3aec-13ab-340e-bcf8-64587ba2ebc4/tecnimont-and-baker-hughes.html",
+      "publisher": "Offshore Technology",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Are Wall Street Analysts Bullish on Baker Hughes Stock?",
+      "url": "https://finance.yahoo.com/m/85d49552-619e-3e12-80cf-842d18006c1e/are-wall-street-analysts.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tecnimont and Baker Hughes Team Up on Modular LNG Projects",
+      "url": "https://finance.yahoo.com/news/tecnimont-baker-hughes-team-modular-181005807.html",
+      "publisher": "Oilprice.com",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    }
+  ]
 }

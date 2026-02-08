@@ -6306,7 +6306,15 @@
     "technical_score": 47.40341556965268,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.0826270296637127,
+    "sentiment_pos": 0.045450000000000004,
+    "sentiment_neg": 0.09745000000000001,
+    "sentiment_neu": 0.8571500000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 45.87
+  },
   "analyst": {
     "revision_momentum": -0.1,
     "target_upside": 0.24955035119937888,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 36.217876200000006,
     "catalyst_timeline": 51.090961484818976,
     "downside_control": 45.37114169659861,
-    "composite_score": 44.858329987922566,
+    "composite_score": 44.85444094262413,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 48.728402843809526,
     "technical_score": 47.40341556965268,
-    "sentiment_score": 50.0,
+    "sentiment_score": 45.87,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Asset Management & Custody Banks"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Arthur Hayes Attributes Bitcoin Crash to ETF-Linked Dealer Hedging",
+      "url": "https://finance.yahoo.com/m/75392c30-25b1-393d-8f47-a6f3f68bce51/arthur-hayes-attributes.html",
+      "publisher": "BeInCrypto",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Apollo, BlackRock, Oaktree ask judge to toss Altice lawsuit",
+      "url": "https://finance.yahoo.com/news/apollo-blackrock-oaktree-ask-judge-204204193.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Why investors are bullish on emerging markets: BlackRock's Chaudhuri",
+      "url": "https://finance.yahoo.com/video/why-investors-bullish-emerging-markets-190043600.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Private Markets Push for Worlds Wealthy Runs Into AI Meltdown",
+      "url": "https://finance.yahoo.com/news/private-markets-push-world-wealthy-120000784.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BlackRock bitcoin ETF options saw record activity during crash, sparking theories of hedge fund blowup",
+      "url": "https://finance.yahoo.com/m/88ba4e42-f7f6-3c73-a167-1e14691f58bc/blackrock-bitcoin-etf-options.html",
+      "publisher": "CoinDesk",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "What caused the massive Bitcoin crash? Clues point to a blow-up at Hong Kong hedge funds",
+      "url": "https://finance.yahoo.com/news/caused-massive-bitcoin-crash-clues-224125613.html",
+      "publisher": "Fortune",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "EXCLUSIVE: BlackRock could bid for largest New York container terminal",
+      "url": "https://finance.yahoo.com/news/exclusive-blackrock-could-bid-largest-193416568.html",
+      "publisher": "FreightWaves",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "MegaETH Foundation to use USDM stablecoin revenue to fund MEGA token buybacks",
+      "url": "https://finance.yahoo.com/m/aabf75b2-8498-3849-b561-7b80c414539a/megaeth-foundation-to-use.html",
+      "publisher": "The Block",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BlackRock Bitcoin hits record $10bn trading volume as investors scramble for exit",
+      "url": "https://finance.yahoo.com/m/721e6c7f-99a6-32cb-9b72-1781411d0409/blackrock-bitcoin-hits-record.html",
+      "publisher": "DLNews",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BlackRock's Rieder Is Looking to Emerging Markets",
+      "url": "https://finance.yahoo.com/video/blackrocks-rieder-looking-emerging-markets-153814717.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Michael Saylor Loses $47 Billion Unrealized Profit As Bitcoin Dumps Below Strategy's Cost Basis",
+      "url": "https://finance.yahoo.com/news/michael-saylor-loses-47-billion-143116447.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Blackrock Silver to Present at the Precious Metals and Critical Minerals Virtual Investor Conference on February 10th 2026",
+      "url": "https://finance.yahoo.com/news/blackrock-silver-present-precious-metals-123000512.html",
+      "publisher": "TMX Newsfile",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bitcoins Drop to $60K Didnt Come From Leverage or ExchangesSo Where Did It Come From?",
+      "url": "https://finance.yahoo.com/m/7d86d4b4-9818-33bd-8dcc-60e3b740425f/bitcoin%E2%80%99s-drop-to-%2460k-didn%E2%80%99t.html",
+      "publisher": "CCN",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Dynasty Financial Partners offloads minority stake",
+      "url": "https://finance.yahoo.com/m/3008b073-bb9e-3db2-8f11-40b16b8e20fd/dynasty-financial-partners.html",
+      "publisher": "Private Banker International",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BlackRock's bitcoin fund hits $10 billion volume record, hinting at peak selling",
+      "url": "https://finance.yahoo.com/m/ba0036df-9d8b-38d4-a73d-0318f4f97385/blackrock%27s-bitcoin-fund-hits.html",
+      "publisher": "CoinDesk",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Strategy Loses Billions on Massive Bitcoin Hoard",
+      "url": "https://finance.yahoo.com/m/9621944a-5ec8-3dd6-87e6-faf3c3aae1da/strategy-loses-billions-on.html",
+      "publisher": "The Daily Upside",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "BlackRocks spot bitcoin ETF posts $10 billion daily volume record as BTC records major intra-day decline: Bloomberg",
+      "url": "https://finance.yahoo.com/m/66b2c076-fe26-3e6f-82f3-40319e391734/blackrock%E2%80%99s-spot-bitcoin-etf.html",
+      "publisher": "The Block",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How Crypto ETFs Could Make the Bitcoin Selloff Even Worse",
+      "url": "https://www.barrons.com/articles/bitcoin-price-etfs-crypto-market-94c040eb?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "CK Hutchison Ports Sale Faces Fresh Risk After Panama Court Ruling",
+      "url": "https://finance.yahoo.com/news/ck-hutchison-ports-sale-faces-173421956.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Dynasty Sells Sixth Minority Stake to Investor Consortium",
+      "url": "https://finance.yahoo.com/m/8c1d1479-b4b4-3ae4-a79e-46c7593c0696/dynasty-sells-sixth-minority.html",
+      "publisher": "Wealth Management",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    }
+  ]
 }

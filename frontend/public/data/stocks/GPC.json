@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 148.50999450683594,
     "sma_20": 139.1245010375977,
-    "sma_50": 131.98727752685545,
+    "sma_50": 131.98727752685548,
     "sma_200": 128.77015174865724,
-    "trend_alignment": 0.7124995050675925,
+    "trend_alignment": 0.7124995050675923,
     "rsi": 74.32042005666766,
     "rsi_score": 0.48640840113335315,
     "macd_histogram": 0.9273970416804911,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 95.70836686167117,
     "stoch_d": 93.55685307857223,
-    "trend_score": 71.24995050675925,
+    "trend_score": 71.24995050675923,
     "rsi_abs_score": 41.90282384133056,
     "macd_abs_score": 66.8670164566379,
     "momentum_score": 54.38492014898423,
@@ -6306,7 +6306,15 @@
     "technical_score": 57.574343478554994,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.08565929846877568,
+    "sentiment_pos": 0.08095,
+    "sentiment_neg": 0.03185,
+    "sentiment_neu": 0.8872,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 45.72
+  },
   "analyst": {
     "revision_momentum": 1.0,
     "target_upside": -0.023634772069220867,
@@ -6325,7 +6333,7 @@
     "quality_score": 58.6772,
     "growth_score": 46.125,
     "safety_score": 33.009715329384306,
-    "trend_score": 71.24995050675925,
+    "trend_score": 71.24995050675923,
     "momentum_score": 54.38492014898423,
     "volatility_score": 49.4194114091598,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 61.26764794285714,
     "catalyst_timeline": 60.0625436610898,
     "downside_control": 43.95536901078162,
-    "composite_score": 53.67788689128387,
+    "composite_score": 53.67399784598543,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 52.31772635159115,
     "technical_score": 57.574343478554994,
-    "sentiment_score": 50.0,
+    "sentiment_score": 45.72,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Distributors"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "O'Reilly Automotive (ORLY) Q4 Earnings Lag Estimates",
+      "url": "/news/300480/oreilly-automotive-orly-q4-earnings-lag-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Is Brinker International (EAT) Stock Outpacing Its Retail-Wholesale Peers This Year?",
+      "url": "/news/293646/is-brinker-international-eat-stock-outpacing-its-retail-wholesale-peers-this-year",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Genuine Parts Company to Report Fourth Quarter and Full-Year 2025 Results on February 17, 2026",
+      "url": "/news/288155/genuine-parts-company-to-report-fourth-quarter-and-full-year-2025-results-on-february-17-2026",
+      "publisher": "PR Newswire",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "1 Safe-and-Steady Stock for Long-Term Investors and 2 We Find Risky",
+      "url": "/news/284996/1-safe-and-steady-stock-for-long-term-investors-and-2-we-find-risky",
+      "publisher": "StockStory",
+      "date": "2026-01-22",
+      "sentiment": "negative"
+    },
+    {
+      "title": "3 Unpopular Stocks We Steer Clear Of",
+      "url": "/news/283480/3-unpopular-stocks-we-steer-clear-of",
+      "publisher": "StockStory",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Genuine Parts (GPC) Dividend Safety: Is This Auto Parts Giants Payout Secure?",
+      "url": "https://finance.yahoo.com/m/04c3b3fe-bee3-3d8f-97c4-2b9fd73e6390/genuine-parts-%28gpc%29-dividend.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Genuine Parts' Q4 2025 Earnings: What to Expect",
+      "url": "https://finance.yahoo.com/m/32adec6f-8d8d-30b2-b4ef-fdea7db302bd/genuine-parts%27-q4-2025.html",
+      "publisher": "Barchart",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Genuine Parts Company Announces Board Leadership Transition",
+      "url": "/news/277264/genuine-parts-company-announces-board-leadership-transition",
+      "publisher": "PR Newswire",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Collapse of a Car-Parts Supplier Puts Spotlight on How Cash Flow Can Lie",
+      "url": "https://www.wsj.com/finance/the-collapse-of-a-car-parts-supplier-puts-spotlight-on-how-cash-flow-can-lie-9c26452b?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-14",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Genuine Parts Stock: Is GPC Outperforming the Consumer Discretionary Sector?",
+      "url": "https://finance.yahoo.com/m/3b6c491d-bd9d-356c-a0f3-fc27f3428db9/genuine-parts-stock%3A-is-gpc.html",
+      "publisher": "Barchart",
+      "date": "2025-12-11",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "2 Mid-Cap Stocks Worth Investigating and 1 Facing Challenges",
+      "url": "/news/250305/2-mid-cap-stocks-worth-investigating-and-1-facing-challenges",
+      "publisher": "StockStory",
+      "date": "2025-12-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "1 S&P 500 Stock to Own for Decades and 2 That Underwhelm",
+      "url": "/news/247992/1-sp-500-stock-to-own-for-decades-and-2-that-underwhelm",
+      "publisher": "StockStory",
+      "date": "2025-12-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "1 Profitable Stock Worth Your Attention and 2 That Underwhelm",
+      "url": "/news/246993/1-profitable-stock-worth-your-attention-and-2-that-underwhelm",
+      "publisher": "StockStory",
+      "date": "2025-12-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Looking For Yields: Merck, Altria, And Genuine Parts Are Consistent Moneymakers",
+      "url": "https://finance.yahoo.com/news/looking-yields-merck-altria-genuine-030106250.html",
+      "publisher": "Benzinga",
+      "date": "2025-11-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Is Genuine Parts (GPC) Down 5.6% Since Last Earnings Report?",
+      "url": "/news/235311/why-is-genuine-parts-gpc-down-56-since-last-earnings-report",
+      "publisher": "Zacks",
+      "date": "2025-11-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What Are Wall Street Analysts Target Price for Genuine Parts Company Stock?",
+      "url": "https://finance.yahoo.com/m/59e0068b-4843-368b-826a-3098ee1c98e6/what-are-wall-street.html",
+      "publisher": "Barchart",
+      "date": "2025-11-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Genuine Parts Company",
+      "url": "https://finance.yahoo.com/m/79afac0c-b37b-35a8-9db0-a72628cfa879/analyst-report%3A-genuine-parts.html",
+      "publisher": "Morningstar Research",
+      "date": "2025-11-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Genuine Parts Company Declares Regular Quarterly Dividend",
+      "url": "/news/232090/genuine-parts-company-declares-regular-quarterly-dividend",
+      "publisher": "PR Newswire",
+      "date": "2025-11-17",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Goldman Sachs upgrades AutoZone to Buy, lifts Genuine Parts to Neutral",
+      "url": "https://finance.yahoo.com/news/goldman-sachs-upgrades-autozone-buy-154540528.html",
+      "publisher": "Investing.com",
+      "date": "2025-11-13",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Got $1,000? Here Are the Smartest Dividend Stocks to Start With.",
+      "url": "/news/224174/got-1000-here-are-the-smartest-dividend-stocks-to-start-with",
+      "publisher": "Motley Fool",
+      "date": "2025-11-10",
+      "sentiment": "positive"
+    }
+  ]
 }

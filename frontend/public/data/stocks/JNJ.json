@@ -6306,7 +6306,15 @@
     "technical_score": 59.15159305984886,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.11726984539181524,
+    "sentiment_pos": 0.091,
+    "sentiment_neg": 0.02505,
+    "sentiment_neu": 0.8839499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 55.86
+  },
   "analyst": {
     "revision_momentum": 0.05,
     "target_upside": -0.012458852452185545,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 48.27604018666666,
     "catalyst_timeline": 58.251030094161194,
     "downside_control": 51.565912656902015,
-    "composite_score": 61.51113713783291,
+    "composite_score": 61.507248092534475,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 67.63227301269842,
     "technical_score": 59.15159305984886,
-    "sentiment_score": 50.0,
+    "sentiment_score": 55.86,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Pharmaceuticals"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Recession-proof Dividend King offers safe 2.2% yield",
+      "url": "https://finance.yahoo.com/m/466e78f3-1456-303e-b4b3-24895ff3c53a/recession-proof-dividend-king.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jim Cramer Says Stocks Like Johnson & Johnson \"Simply Refuse to Quit\"",
+      "url": "/news/303477/jim-cramer-says-stocks-like-johnson-johnson-simply-refuse-to-quit",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Merck's Subdued 2026 Outlook: What it Means After Q4 Results?",
+      "url": "/news/303048/mercks-subdued-2026-outlook-what-it-means-after-q4-results",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Johnson & Johnson Is a Resilient Blue-Chip Stock and It Just Hit New All-Time Highs",
+      "url": "https://finance.yahoo.com/m/f463f700-4f45-3042-b488-6bc7c9ae1299/johnson-%26-johnson-is-a.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bayer's Asundexian Shows 26% Stroke Reduction in Late-Stage Study",
+      "url": "/news/303034/bayers-asundexian-shows-26-stroke-reduction-in-late-stage-study",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Low Volatility ETFs to Watch Amid Major Tech Sell-Off Over AI Panic",
+      "url": "/news/302877/low-volatility-etfs-to-watch-amid-major-tech-sell-off-over-ai-panic",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Johnson & Johnson (JNJ) is Attracting Investor Attention: Here is What You Should Know",
+      "url": "/news/302778/johnson-johnson-jnj-is-attracting-investor-attention-here-is-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "RBC Sees Johnson & Johnson (JNJ) Well Positioned to Manage Legal Overhang",
+      "url": "/news/301977/rbc-sees-johnson-johnson-jnj-well-positioned-to-manage-legal-overhang",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Mid Cap Dividend Stocks Are Gaining an Edge Over Large Caps This Year",
+      "url": "https://finance.yahoo.com/m/cf0e32d6-82eb-3375-8e40-0291e3d92714/why-mid-cap-dividend-stocks.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "This Medical Technology Leader Sees Growth Into The 2040s",
+      "url": "https://finance.yahoo.com/m/1dc44dac-5a8b-33e4-83cc-b0992cdf9338/this-medical-technology.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Big Pharma CEOs set sights on massive growth in years to come",
+      "url": "https://finance.yahoo.com/m/f11fcdb4-9358-3d9b-96b8-d482cf62a11a/big-pharma-ceos-set-sights-on.html",
+      "publisher": "Pharma Voice",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Nearly 20% of S&P 500 Stocks Hit 52-Week Highs Today",
+      "url": "https://finance.yahoo.com/m/b6e7c836-9b61-3160-9c2b-5aed8a0c5bc3/nearly-20%25-of-s%26p-500-stocks.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dozens of Stocks Hitting 52-Week Highs",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-02-04-2026/card/dozens-of-stocks-hitting-52-week-highs-RVYVXvgA2CXmT9yj7x9u?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AbbVie Beats on Q4 Earnings, Stock Down Despite Upbeat '26 View",
+      "url": "/news/299949/abbvie-beats-on-q4-earnings-stock-down-despite-upbeat-26-view",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Johnson & Johnson's Getting Back to Double-Digit Growth. Has the Stock Become a Bargain Buy?",
+      "url": "/news/299739/johnson-johnsons-getting-back-to-double-digit-growth-has-the-stock-become-a-bargain-buy",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The John Bogle Method for Building a Dividend Portfolio Under $10,000",
+      "url": "https://finance.yahoo.com/m/82b4b464-2f23-391e-b31c-033afc0e2329/the-john-bogle-method-for.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "GSK's Q4 Earnings & Sales Beat Estimates, Stock Up on '26 Outlook",
+      "url": "/news/299332/gsks-q4-earnings-sales-beat-estimates-stock-up-on-26-outlook",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Johnson & Johnson",
+      "url": "https://finance.yahoo.com/m/23c59ec0-fd03-39a7-8549-3307946d7bc3/analyst-report%3A-johnson-%26.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Will Reblozyl Shine in Bristol Myers' Fourth-Quarter Results?",
+      "url": "/news/297854/will-reblozyl-shine-in-bristol-myers-fourth-quarter-results",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BofA Lifts PT on Johnson & Johnson (JNJ) to $227 From $221 - Here's Why",
+      "url": "/news/296791/bofa-lifts-pt-on-johnson-johnson-jnj-to-227-from-221-heres-why",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    }
+  ]
 }

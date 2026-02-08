@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 2095500.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 79.81426688173715,
+    "stoch_k": 79.81426688173714,
     "stoch_d": 77.2700982122806,
     "trend_score": 57.89030924859544,
     "rsi_abs_score": 60.41692499060254,
@@ -6306,7 +6306,15 @@
     "technical_score": 57.978441507409414,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.3450885835989802,
+    "sentiment_pos": 0.1913,
+    "sentiment_neg": 0.01,
+    "sentiment_neu": 0.7987,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 67.25
+  },
   "analyst": {
     "revision_momentum": 0.14285714285714285,
     "target_upside": 0.13623120848385967,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 34.47506811666666,
     "catalyst_timeline": 60.68270407950277,
     "downside_control": 57.24306794327686,
-    "composite_score": 51.938441387454944,
+    "composite_score": 51.93455234215651,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 46.00368718055556,
     "technical_score": 57.978441507409414,
-    "sentiment_score": 50.0,
+    "sentiment_score": 67.25,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Real Estate",
     "industry": "Data Center REITs"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "The AI Bet That Investors Still Love",
+      "url": "https://www.barrons.com/articles/ai-reit-data-center-stock-3a44f4d2?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Digital Realty's Q4 Core FFO & Revenues Top Estimates, Rentals Rise",
+      "url": "/news/302798/digital-realtys-q4-core-ffo-revenues-top-estimates-rentals-rise",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Digital Realty Trust Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/95b06a9e-ffe1-39ae-9080-ee035d094827/digital-realty-trust-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Digital Realty Trust Inc (DLR) Q4 2025 Earnings Call Highlights: Record Financial Performance ...",
+      "url": "https://finance.yahoo.com/news/digital-realty-trust-inc-dlr-050249284.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Compared to Estimates, Digital Realty Trust (DLR) Q4 Earnings: A Look at Key Metrics",
+      "url": "/news/302276/compared-to-estimates-digital-realty-trust-dlr-q4-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Digital Realty Trust: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/digital-realty-trust-q4-earnings-213028456.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Digital Realty Reports Fourth Quarter 2025 Results",
+      "url": "/news/302077/digital-realty-reports-fourth-quarter-2025-results",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Market Today, Feb. 5: S&P, Nasdaq fall after layoff data surprise; Alphabet details overspending",
+      "url": "https://finance.yahoo.com/m/553b0529-3a48-3db5-a1d7-2715b00b0272/stock-market-today%2C-feb.-5%3A.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What Are Wall Street Analysts' Target Price for Digital Realty Trust Stock?",
+      "url": "https://finance.yahoo.com/m/5f1e9bd3-6691-3300-996d-8d5367480767/what-are-wall-street.html",
+      "publisher": "Barchart",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The $194B Shift: How Quantum Risk Redefines Value",
+      "url": "/news/301334/the-194b-shift-how-quantum-risk-redefines-value",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "First Industrial Realty Trust (FR) Q4 FFO and Revenues Surpass Estimates",
+      "url": "/news/300560/first-industrial-realty-trust-fr-q4-ffo-and-revenues-surpass-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 REITs to Buy Now: Picks From a Standout Real Estate Portfolio Manager",
+      "url": "https://www.barrons.com/articles/3-reits-buy-now-real-estate-portfolio-manager-32898823?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Digital Realty Trust (DLR) Q4 Earnings Preview: What You Should Know Beyond the Headline Estimates",
+      "url": "/news/297484/digital-realty-trust-dlr-q4-earnings-preview-what-you-should-know-beyond-the-headline-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Healthpeak Q4 FFO Beats Estimates, Same-Store NOI Rises Y/Y",
+      "url": "/news/297394/healthpeak-q4-ffo-beats-estimates-same-store-noi-rises-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Digital Realty Trust (DLR) Expands Regional Reach with Malaysia Data Center Acquisition",
+      "url": "/news/296620/digital-realty-trust-dlr-expands-regional-reach-with-malaysia-data-center-acquisition",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Palantir, AMD, Amazon and More Stocks with Earnings This Week",
+      "url": "/news/295351/palantir-amd-amazon-and-more-stocks-with-earnings-this-week",
+      "publisher": "Benzinga",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Should You Hold DLR Stock in Your Portfolio Ahead of Q4 Earnings?",
+      "url": "/news/295467/should-you-hold-dlr-stock-in-your-portfolio-ahead-of-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "January jobs data, Alphabet and Amazon earnings, more Warsh fallout: What to watch this week",
+      "url": "https://finance.yahoo.com/news/january-jobs-data-alphabet-and-amazon-earnings-more-warsh-fallout-what-to-watch-this-week-124723942.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Digital Realty Trust (DLR) Crossed Above the 200-Day Moving Average: What That Means for Investors",
+      "url": "/news/293604/digital-realty-trust-dlr-crossed-above-the-200-day-moving-average-what-that-means-for-investors",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "SL Green's Q4 FFO & Revenues Beat Estimates, Rental Rates Improve",
+      "url": "/news/291777/sl-greens-q4-ffo-revenues-beat-estimates-rental-rates-improve",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    }
+  ]
 }

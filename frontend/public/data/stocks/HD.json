@@ -6306,7 +6306,15 @@
     "technical_score": 59.70593611221202,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.039565003752065925,
+    "sentiment_pos": 0.0817,
+    "sentiment_neg": 0.06715,
+    "sentiment_neu": 0.851,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.98
+  },
   "analyst": {
     "revision_momentum": -0.037037037037037035,
     "target_upside": 0.051538361677268656,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 47.679954075,
     "catalyst_timeline": 55.6905429868261,
     "downside_control": 52.328528502858646,
-    "composite_score": 54.80138493303463,
+    "composite_score": 54.7974958877362,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 57.095946718160846,
     "technical_score": 59.70593611221202,
-    "sentiment_score": 50.0,
+    "sentiment_score": 51.98,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Home Improvement Retail"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "The job market was bruising in 2025. The start of 2026 doesn't look much better.",
+      "url": "https://finance.yahoo.com/news/the-job-market-was-bruising-in-2025-the-start-of-2026-doesnt-look-much-better-150057009.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Lowe's makes major change to how you interact with its stores",
+      "url": "https://finance.yahoo.com/m/c29f4cc1-f8cc-3fc6-8b1e-c58f1b4c8f64/lowe%27s-makes-major-change-to.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Stocks That Punch Above Their Weight in the Dow",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-02-06-2026/card/the-stocks-that-punch-above-their-weight-in-the-dow-zruDHmDpvw8tNvQvU4vA?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Profitable Stocks That Concern Us",
+      "url": "/news/303362/3-profitable-stocks-that-concern-us",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Callaway Golf and Albany International have been highlighted as Zacks Bull and Bear of the Day",
+      "url": "/news/301666/callaway-golf-and-albany-international-have-been-highlighted-as-zacks-bull-and-bear-of-the-day",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Home Depot (HD) Advances While Market Declines: Some Information for Investors",
+      "url": "/news/300461/home-depot-hd-advances-while-market-declines-some-information-for-investors",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Amazon, UPS and Other Major Companies Are Making Big Job Cuts. Is AI To Blame?",
+      "url": "https://finance.yahoo.com/m/f9df8c6a-06cc-3f81-ac3c-c2a67767336a/amazon%2C-ups-and-other-major.html",
+      "publisher": "Investopedia",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "The five-day office comeback: Why stricter return-to-office mandates may push top performers out the door",
+      "url": "https://finance.yahoo.com/news/five-day-office-comeback-why-183000219.html",
+      "publisher": "Moneywise",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why Home Depot's Pro Strategy Is a Long-Term Growth Lever",
+      "url": "/news/299346/heres-why-home-depots-pro-strategy-is-a-long-term-growth-lever",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Are Wall Street Analysts Predicting Home Depot Stock Will Climb or Sink?",
+      "url": "https://finance.yahoo.com/m/c08ada77-3851-3f94-8856-31871613d788/are-wall-street-analysts.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Do you actually need a hedge fund in todays market?",
+      "url": "https://finance.yahoo.com/video/actually-hedge-fund-today-market-110013151.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ETFs in Spotlight as Tesla Tops Q4 Earnings, Dips on Revenue Miss",
+      "url": "/news/295784/etfs-in-spotlight-as-tesla-tops-q4-earnings-dips-on-revenue-miss",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Brokers Suggest Investing in Home Depot (HD): Read This Before Placing a Bet",
+      "url": "/news/295688/brokers-suggest-investing-in-home-depot-hd-read-this-before-placing-a-bet",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Home Depot, Inc. (HD) is Attracting Investor Attention: Here is What You Should Know",
+      "url": "/news/295589/the-home-depot-inc-hd-is-attracting-investor-attention-here-is-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Home Depot finds a new way to beat Lowe's",
+      "url": "https://finance.yahoo.com/m/bf28c6f9-1dcb-329a-999e-2f84b52d471b/home-depot-finds-a-new-way-to.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-01",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Minivan sales surge 21% in 2025 as millennial dads lead demand for cars offering the 'best bang for your buck'",
+      "url": "https://finance.yahoo.com/news/minivan-sales-surge-21-in-2025-as-millennial-dads-lead-demand-for-cars-offering-the-best-bang-for-your-buck-143022892.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-01-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "After Disappointing in 2025, These Blue-Chip Dividend Stocks Are Way Too Cheap",
+      "url": "https://finance.yahoo.com/m/7310f8d1-cea5-35fd-96bb-00643d6160b1/after-disappointing-in-2025%2C.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-30",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Corporate America faces growing shareholder pressure to talk about Trump's immigration policies",
+      "url": "https://www.marketwatch.com/story/corporate-america-faces-growing-shareholder-pressure-to-talk-about-trumps-immigration-policies-8ed79a02?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Home Depot Cuts 800 Jobs, Ends Remote Work",
+      "url": "https://finance.yahoo.com/news/home-depot-cuts-800-jobs-161334282.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Home Depot Cuts Jobs, Orders Full Office Return as Shares Slide 10%",
+      "url": "https://finance.yahoo.com/news/home-depot-cuts-jobs-orders-161205998.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    }
+  ]
 }

@@ -6306,7 +6306,15 @@
     "technical_score": 63.678557136371985,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.02783518334397788,
+    "sentiment_pos": 0.052000000000000005,
+    "sentiment_neg": 0.027500000000000004,
+    "sentiment_neu": 0.9205,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.39
+  },
   "analyst": {
     "revision_momentum": 0.2727272727272727,
     "target_upside": -0.024726923538590833,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 49.058273076470584,
     "catalyst_timeline": 61.2983583081939,
     "downside_control": 47.792731685034724,
-    "composite_score": 59.408487715322885,
+    "composite_score": 59.40459867002445,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 61.49683484144343,
     "technical_score": 63.678557136371985,
-    "sentiment_score": 50.0,
+    "sentiment_score": 51.39,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 0.8883333333333334,
     "data_quality_penalty": 0.0,
-    "rank": 113,
-    "percentile": 0.7842003853564548,
+    "rank": 112,
+    "percentile": 0.7861271676300579,
     "tier": "buy",
     "tier_raw": "buy",
     "tier_label": "Buy",
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Hotels, Resorts & Cruise Lines"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "From AI Darlings To Dow Dinosaurs: Investors Flee Software For Old-Economy Stocks",
+      "url": "/news/303569/from-ai-darlings-to-dow-dinosaurs-investors-flee-software-for-old-economy-stocks",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jobs Report, CPI Data: What to Watch Next Week",
+      "url": "https://finance.yahoo.com/m/5e5a76be-cde7-3066-bdef-30523ee18e4d/jobs-report%2C-cpi-data%3A-what.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "A Key Takeaway From Earnings Season: Signs of Consumer Weakness",
+      "url": "https://finance.yahoo.com/m/014e1af8-29db-3db9-94ba-ea8224d66cd3/a-key-takeaway-from-earnings.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Marriott to Report Q4 Earnings: What to Expect From the Stock?",
+      "url": "/news/301847/marriott-to-report-q4-earnings-what-to-expect-from-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ahead of Marriott (MAR) Q4 Earnings: Get Ready With Wall Street Estimates for Key Metrics",
+      "url": "/news/301492/ahead-of-marriott-mar-q4-earnings-get-ready-with-wall-street-estimates-for-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Investors Need to Take Advantage of These 2 Consumer Discretionary Stocks Now",
+      "url": "/news/301429/why-investors-need-to-take-advantage-of-these-2-consumer-discretionary-stocks-now",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Hasbro Prepares to Unveil Q4 Earnings: Key Things to Watch",
+      "url": "/news/301349/hasbro-prepares-to-unveil-q4-earnings-key-things-to-watch",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Chase cut my credit-card limit due to lower usage. Will this affect my credit score and lead other banks to do the same?",
+      "url": "https://finance.yahoo.com/m/48737866-6e33-3422-b61e-8554f06f16ea/chase-cut-my-credit-card.html",
+      "publisher": "MarketWatch",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Another Marriott executive to retire in March amid leadership shuffle",
+      "url": "https://finance.yahoo.com/m/18bc4b26-3018-368d-9ffc-fa611cbdf7f4/another-marriott-executive-to.html",
+      "publisher": "Hotel Dive",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hilton Worldwide Holdings Inc. (HLT) Reports Next Week: Wall Street Expects Earnings Growth",
+      "url": "/news/299681/hilton-worldwide-holdings-inc-hlt-reports-next-week-wall-street-expects-earnings-growth",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Marriott International (MAR) Earnings Expected to Grow: What to Know Ahead of Next Week's Release",
+      "url": "/news/297664/marriott-international-mar-earnings-expected-to-grow-what-to-know-ahead-of-next-weeks-release",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Boyd Gaming Set to Report Q4 Earnings: Can Gaming Momentum Persist?",
+      "url": "/news/297411/boyd-gaming-set-to-report-q4-earnings-can-gaming-momentum-persist",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Roblox Prepares to Report Q4 Earnings: Key Things to Watch",
+      "url": "/news/295834/roblox-prepares-to-report-q4-earnings-key-things-to-watch",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Can InterContinental Hotels Be the Leader of the Pack?",
+      "url": "/news/294527/can-intercontinental-hotels-be-the-leader-of-the-pack",
+      "publisher": "Motley Fool",
+      "date": "2026-01-31",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Accor taps chief franchise officer for premium, midscale and economy division",
+      "url": "https://finance.yahoo.com/m/c249a433-d891-3547-b5f2-c4860ffe17b5/accor-taps-chief-franchise.html",
+      "publisher": "Hotel Dive",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Marriott Announces Milestone Global Growth & Expansion in 2025",
+      "url": "/news/288900/marriott-announces-milestone-global-growth-expansion-in-2025",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What Should You Expect From Las Vegas Sands' Q4 Earnings?",
+      "url": "/news/288905/what-should-you-expect-from-las-vegas-sands-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Royal Caribbean Prepares to Unveil Q4 Results: Key Things to Watch",
+      "url": "/news/288674/royal-caribbean-prepares-to-unveil-q4-results-key-things-to-watch",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ian Schrager Forges New Partnership to Revamp His Stalled Hotel Brand",
+      "url": "https://finance.yahoo.com/m/6ca384e8-6f01-3613-ac56-038c030cc3c7/ian-schrager-forges-new.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Agilysys Q3 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/6fbe8ece-8497-3905-a03e-782f17e0f815/agilysys-q3-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    }
+  ]
 }

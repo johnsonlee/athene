@@ -6306,7 +6306,15 @@
     "technical_score": 55.91979576761463,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.16843591910052091,
+    "sentiment_pos": 0.11015,
+    "sentiment_neg": 0.013250000000000001,
+    "sentiment_neu": 0.8766,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 58.42
+  },
   "analyst": {
     "revision_momentum": 0.42857142857142855,
     "target_upside": 0.208154894746366,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 24.107506308571423,
     "catalyst_timeline": 56.77149796137193,
     "downside_control": 56.340602985152145,
-    "composite_score": 56.72101171249762,
+    "composite_score": 56.717122667199185,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 60.56805257815532,
     "technical_score": 55.91979576761463,
-    "sentiment_score": 50.0,
+    "sentiment_score": 58.42,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Transaction & Payment Processing Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Affirm Q2 Earnings Beat Estimates on Higher Transactions",
+      "url": "/news/303235/affirm-q2-earnings-beat-estimates-on-higher-transactions",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Visa takes a fresh crack at China's elusive payments market",
+      "url": "https://finance.yahoo.com/m/21a9c501-a6a2-3f42-a37a-e2e369dc1709/visa-takes-a-fresh-crack-at.html",
+      "publisher": "American Banker",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Visa launches a new platform aimed at helping small businesses access capital and gain exposure",
+      "url": "https://finance.yahoo.com/m/fdd7c2ff-781f-361e-95de-ac399b580bff/visa-launches-a-new-platform.html",
+      "publisher": "FastCompany",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Visa Introduces Visa & Main, A New Platform to Accelerate Small Business Growth Across the U.S.",
+      "url": "https://www.businesswire.com/news/home/20260205275998/en/Attendees",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Visa, Amex vie for small businesses",
+      "url": "https://finance.yahoo.com/m/653e812d-037a-32f6-beb7-183fe523b54f/visa%2C-amex-vie-for-small.html",
+      "publisher": "Payments Dive",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Visa Inc. (V): A Bull Case Theory",
+      "url": "/news/300637/visa-inc-v-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Visa-UnionPay Link-Up: A Turning Point in Cross-Border Money Flow?",
+      "url": "/news/299950/visa-unionpay-link-up-a-turning-point-in-cross-border-money-flow",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Could Buying American Express (AXP) Today Set You Up for Life?",
+      "url": "/news/299745/could-buying-american-express-axp-today-set-you-up-for-life",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "C WorldWide Group Loads Up 45,000 MercadoLibre Shares Worth $94 Million",
+      "url": "/news/299725/c-worldwide-group-loads-up-45000-mercadolibre-shares-worth-94-million",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The 1% Problem: How PayPal's Most Profitable Engine Stalled While The Board Watched",
+      "url": "/news/299724/the-1-problem-how-paypals-most-profitable-engine-stalled-while-the-board-watched",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "TRM Labs Achieves Unicorn Status With $1 Billion Valuation After $70M Series C",
+      "url": "https://finance.yahoo.com/m/fb3c9a6c-eaa1-3d25-9da7-2b691190efaf/trm-labs-achieves-unicorn.html",
+      "publisher": "Coinspeaker",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TRM Labs Hits $1B Valuation After $70M Series C Led by Blockchain Capital",
+      "url": "https://finance.yahoo.com/m/a73ec053-6002-3f33-9ae8-19a87292f3b6/trm-labs-hits-%241b-valuation.html",
+      "publisher": "Cryptonews",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What Are Wall Street Analysts' Target Price for Visa Stock?",
+      "url": "https://finance.yahoo.com/m/270390c1-c8e1-3a78-96d5-f9c6697f4071/what-are-wall-street.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Visa Direct connects to UnionPay MoneyExpress for China remittances",
+      "url": "https://finance.yahoo.com/m/02b94501-5823-3211-a94d-9b6743157695/visa-direct-connects-to.html",
+      "publisher": "Electronic Payments",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Mastercard Stock Is Still a Buy Despite Cap and Competition Headwinds",
+      "url": "/news/298194/heres-why-mastercard-stock-is-still-a-buy-despite-cap-and-competition-headwinds",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Top Dividend Stocks to Buy in February",
+      "url": "/news/298018/3-top-dividend-stocks-to-buy-in-february",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "'Visa Direct' To Enable Cross-Border Transfers To China",
+      "url": "/news/297873/visa-direct-to-enable-cross-border-transfers-to-china",
+      "publisher": "Benzinga",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Affirm to Report Q2 Earnings: Will Higher GMV & Consumers Help?",
+      "url": "/news/297920/affirm-to-report-q2-earnings-will-higher-gmv-consumers-help",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why Visa (V) is a Strong Growth Stock",
+      "url": "/news/297606/heres-why-visa-v-is-a-strong-growth-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Adobe downgraded, Palantir upgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/adobe-downgraded-palantir-upgraded-wall-143444113.html",
+      "publisher": "The Fly",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    }
+  ]
 }

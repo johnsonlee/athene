@@ -6277,8 +6277,8 @@
   },
   "technical": {
     "close": 40.04999923706055,
-    "sma_20": 39.47999973297119,
-    "sma_50": 38.75580001831055,
+    "sma_20": 39.479999732971194,
+    "sma_50": 38.755800018310545,
     "sma_200": 37.950022354125984,
     "trend_alignment": 0.5715427619293465,
     "rsi": 59.58437914642403,
@@ -6286,10 +6286,10 @@
     "macd_histogram": 0.05435817682711491,
     "macd_line": 0.4156237417820421,
     "macd_histogram_pct": 0.1357257874222734,
-    "bb_position": 0.7309032733122951,
-    "bb_upper": 40.71428172454443,
-    "bb_lower": 38.24571774139795,
-    "bb_width": 0.06252695035063269,
+    "bb_position": 0.7309032733122922,
+    "bb_upper": 40.714281724544435,
+    "bb_lower": 38.245717741397954,
+    "bb_width": 0.06252695035063267,
     "hist_volatility": 0.1568507303562179,
     "volume_ratio": 1.0226598541682836,
     "avg_volume_20d": 5604405.0,
@@ -6301,12 +6301,20 @@
     "rsi_abs_score": 71.79093459750318,
     "macd_abs_score": 55.893144685556834,
     "momentum_score": 63.84203964153001,
-    "volatility_score": 73.322360011895,
+    "volatility_score": 73.32236001189501,
     "volume_score": 50.0,
     "technical_score": 60.9633667527184,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.16072948468110096,
+    "sentiment_pos": 0.11625,
+    "sentiment_neg": 0.0507,
+    "sentiment_neu": 0.8331,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 58.04
+  },
   "analyst": {
     "revision_momentum": 0.3333333333333333,
     "target_upside": 0.048689138576779104,
@@ -6327,7 +6335,7 @@
     "safety_score": 14.87251666666667,
     "trend_score": 57.15427619293465,
     "momentum_score": 63.84203964153001,
-    "volatility_score": 73.322360011895,
+    "volatility_score": 73.32236001189501,
     "volume_score": 50.0,
     "analyst_score": 59.15256588639201,
     "pe_score": 40.635287500000004,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 51.90953392857142,
     "catalyst_timeline": 58.726888172085665,
     "downside_control": 42.59423150178425,
-    "composite_score": 55.94866985037535,
+    "composite_score": 55.94478080507692,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 54.07486494047619,
     "technical_score": 60.9633667527184,
-    "sentiment_score": 50.0,
+    "sentiment_score": 58.04,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Utilities",
     "industry": "Multi-Utilities"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "CMS Energy (CMS) Q4 Earnings and Revenues Beat Estimates",
+      "url": "/news/301249/cms-energy-cms-q4-earnings-and-revenues-beat-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is Wall Street Bullish or Bearish on CenterPoint Energy Stock?",
+      "url": "https://finance.yahoo.com/m/fd90bb5f-b332-3ae6-b558-4f4d702bd70f/is-wall-street-bullish-or.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Palantir Rides Nvidia-Backed AI Expansion Into Q4 Earnings",
+      "url": "https://finance.yahoo.com/news/palantir-rides-nvidia-backed-ai-120802815.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "National Fuel Gas Q1 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/79b4f2f4-a179-3e1c-836d-bd9f2d68cb11/national-fuel-gas-q1-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MISO regulators seek stakeholder review for DOE emergency orders cost allocation",
+      "url": "https://finance.yahoo.com/m/2c7feeb4-622b-3425-a815-2b4764308886/miso-regulators-seek.html",
+      "publisher": "Utility Dive",
+      "date": "2026-01-26",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Winter Storm Fern To Impact Energy, Utility Stocks-Antero Resources, Energy Transfer, Exelon In Focus",
+      "url": "/news/286494/winter-storm-fern-to-impact-energy-utility-stocks-antero-resources-energy-transfer-exelon-in-focus",
+      "publisher": "Benzinga",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CenterPoint Energy Winter Storm Update: CenterPoint releases more than 500 contract frontline electric workers to support restoration efforts in other hard-hit areas of the country; more than 99 percent of customers maintained power through overnight winter weather",
+      "url": "/news/286368/centerpoint-energy-winter-storm-update-centerpoint-releases-more-than-500-contract-frontline-electric-workers-to-support-restoration-efforts-in-other-hard-hit-areas-of-the-country-more-than-99-percent-of-customers-maintained-power-through-overnight-winter-weather",
+      "publisher": "PR Newswire",
+      "date": "2026-01-25",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CenterPoint Energy Winter Storm Update: Over 99 percent of CenterPoint customers have power across Greater Houston area; Teams actively repairing weather-related damages and restoring power as soon as possible",
+      "url": "/news/286287/centerpoint-energy-winter-storm-update-over-99-percent-of-centerpoint-customers-have-power-across-greater-houston-area-teams-actively-repairing-weather-related-damages-and-restoring-power-as-soon-as-possible",
+      "publisher": "PR Newswire",
+      "date": "2026-01-25",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CenterPoint Energy's 3,300-person expanded electric workforce pre-positioned at area staging sites and ready to mobilize ahead of late-night winter weather",
+      "url": "/news/286135/centerpoint-energys-3300-person-expanded-electric-workforce-pre-positioned-at-area-staging-sites-and-ready-to-mobilize-ahead-of-late-night-winter-weather",
+      "publisher": "PR Newswire",
+      "date": "2026-01-24",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CenterPoint Energy activates staging sites and begins onboarding additional emergency response resources as preparations continue ahead of this weekend's approaching winter weather conditions",
+      "url": "/news/285218/centerpoint-energy-activates-staging-sites-and-begins-onboarding-additional-emergency-response-resources-as-preparations-continue-ahead-of-this-weekends-approaching-winter-weather-conditions",
+      "publisher": "PR Newswire",
+      "date": "2026-01-23",
+      "sentiment": "negative"
+    },
+    {
+      "title": "CenterPoint Energy ramps up customer communications as 3,300-person expanded workforce continues preparations and emergency response efforts ahead of winter weather system forecasted to impact Texas",
+      "url": "/news/284607/centerpoint-energy-ramps-up-customer-communications-as-3300-person-expanded-workforce-continues-preparations-and-emergency-response-efforts-ahead-of-winter-weather-system-forecasted-to-impact-texas",
+      "publisher": "PR Newswire",
+      "date": "2026-01-22",
+      "sentiment": "negative"
+    },
+    {
+      "title": "A 'Crippling' Winter Storm is Coming. Utilities Are at Risk.",
+      "url": "https://www.barrons.com/articles/winter-storm-utilities-risk-data-center-50ff0ce4?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-22",
+      "sentiment": "negative"
+    },
+    {
+      "title": "CenterPoint Energy continues to prepare for weekend winter weather and secures 600 additional frontline workers to support emergency response efforts as ERCOT issues Weather Watch and Texas Governor declares State of Emergency",
+      "url": "/news/283290/centerpoint-energy-continues-to-prepare-for-weekend-winter-weather-and-secures-600-additional-frontline-workers-to-support-emergency-response-efforts-as-ercot-issues-weather-watch-and-texas-governor-declares-state-of-emergency",
+      "publisher": "PR Newswire",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CenterPoint Energy, Inc. to Host Webcast of Fourth Quarter 2025 Earnings Conference Call on February 19, 2026",
+      "url": "/news/281579/centerpoint-energy-inc-to-host-webcast-of-fourth-quarter-2025-earnings-conference-call-on-february-19-2026",
+      "publisher": "GlobeNewswire",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Data Center Beneficiaries Raising Dividends Up to 60%",
+      "url": "/news/280418/3-data-center-beneficiaries-raising-dividends-up-to-60",
+      "publisher": "MarketBeat",
+      "date": "2026-01-19",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Earnings Preview: What To Expect From CenterPoint Energy's Report",
+      "url": "https://finance.yahoo.com/m/503583a9-bfe5-3da9-863b-4a32b4952b01/earnings-preview%3A-what-to.html",
+      "publisher": "Barchart",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CNP to Benefit From Infrastructure Upgradation & Renewable Expansion",
+      "url": "/news/263465/cnp-to-benefit-from-infrastructure-upgradation-renewable-expansion",
+      "publisher": "Zacks",
+      "date": "2025-12-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "How Much Youd Have If You Bet $10,000 on Palantir Stock in January and 1 Key PLTR Catalyst to Watch in 2026",
+      "url": "https://finance.yahoo.com/m/4cbee6f4-88a5-3543-b55d-06bab26c19dc/how-much-you%E2%80%99d-have-if-you.html",
+      "publisher": "Barchart",
+      "date": "2025-12-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "4 Stocks That Declared Dividend Hikes Amid Ongoing Economic Uncertainty",
+      "url": "/news/256272/4-stocks-that-declared-dividend-hikes-amid-ongoing-economic-uncertainty",
+      "publisher": "Zacks",
+      "date": "2025-12-17",
+      "sentiment": "negative"
+    },
+    {
+      "title": "5 Stocks Worth Watching on Their Recent Dividend Hikes",
+      "url": "/news/256209/5-stocks-worth-watching-on-their-recent-dividend-hikes",
+      "publisher": "Zacks",
+      "date": "2025-12-17",
+      "sentiment": "positive"
+    }
+  ]
 }

@@ -6277,27 +6277,27 @@
   },
   "technical": {
     "close": 88.06999969482422,
-    "sma_20": 112.98999900817873,
+    "sma_20": 112.98999900817874,
     "sma_50": 124.20180053710939,
     "sma_200": 162.86625358581543,
-    "trend_alignment": 0.05486457732317348,
+    "trend_alignment": 0.054864577323173534,
     "rsi": 13.04552631847733,
     "rsi_score": -0.7390894736304534,
     "macd_histogram": -3.071650532601236,
     "macd_line": -10.530191329645803,
     "macd_histogram_pct": -3.4877376441977597,
-    "bb_position": 0.07364471037982974,
+    "bb_position": 0.07364471037982952,
     "bb_upper": 142.2144509148915,
-    "bb_lower": 83.76554710146597,
-    "bb_width": 0.5172927190590978,
+    "bb_lower": 83.76554710146598,
+    "bb_width": 0.5172927190590976,
     "hist_volatility": 0.5943345488830247,
     "volume_ratio": 1.8030948373234252,
     "avg_volume_20d": 2492215.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 7.884245390674746,
-    "stoch_d": 10.587388453938367,
-    "trend_score": 5.486457732317348,
+    "stoch_d": 10.587388453938365,
+    "trend_score": 5.486457732317353,
     "rsi_abs_score": 35.0,
     "macd_abs_score": 20.0,
     "momentum_score": 27.5,
@@ -6306,7 +6306,15 @@
     "technical_score": 24.414462387290637,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.09116768002707606,
+    "sentiment_pos": 0.04935,
+    "sentiment_neg": 0.07635,
+    "sentiment_neu": 0.87435,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 45.44
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.4306801407970933,
@@ -6325,7 +6333,7 @@
     "quality_score": 69.6414,
     "growth_score": 31.5,
     "safety_score": 59.68488238824314,
-    "trend_score": 5.486457732317348,
+    "trend_score": 5.486457732317353,
     "momentum_score": 27.5,
     "volatility_score": 22.59262533797716,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 51.875145607142855,
     "catalyst_timeline": 32.08772894570817,
     "downside_control": 42.217626158933044,
-    "composite_score": 43.398248908197075,
+    "composite_score": 43.39435986289864,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 54.072851150267674,
     "technical_score": 24.414462387290637,
-    "sentiment_score": 50.0,
+    "sentiment_score": 45.44,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Specialty Business Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "The Software Stock Panic Will Be a Buying OpportunityEventually",
+      "url": "https://finance.yahoo.com/m/5a3b302c-e67d-3dcf-89b3-e36e6b2b16c6/the-software-stock-panic-will.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Gartner, Stellantis, And Novo Nordisk Are Among Top 10 Large Cap Losers Last Week (Feb. 2-Feb. 6): Are the Others in Your Portfolio?",
+      "url": "/news/303783/gartner-stellantis-and-novo-nordisk-are-among-top-10-large-cap-losers-last-week-feb-2-feb-6-are-the-others-in-your-portfolio",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Thomson Reuters Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/21b68128-3939-362d-96ea-47b33c4ed58c/thomson-reuters-q4-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How Golub Capital Sees Private Credit Surviving the Software Apocalypse",
+      "url": "https://www.barrons.com/articles/ai-software-golub-capital-salesforce-d72fb1ab?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Software Apocalypse Will Be a Buying OpportunityEventually",
+      "url": "https://finance.yahoo.com/m/5a3b302c-e67d-3dcf-89b3-e36e6b2b16c6/the-software-apocalypse-will.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Thomson Reuters Corporation",
+      "url": "https://finance.yahoo.com/m/b3985ef3-e3a3-3849-b88e-d7e5eb718512/analyst-report%3A-thomson.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Thomson Reuters Corp (TRI) Q4 2025 Earnings Call Highlights: Strong Revenue Growth and AI ...",
+      "url": "https://finance.yahoo.com/news/thomson-reuters-corp-tri-q4-210731612.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Thomson Reuters CEO Says AI Is Delivering Tangible Gains",
+      "url": "/news/301940/thomson-reuters-ceo-says-ai-is-delivering-tangible-gains",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Anthropic's New Model Can Run Financial Analyses. Financial Data Stocks Tumble.",
+      "url": "https://www.barrons.com/articles/anthropic-financial-research-stocks-01721769?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Data Companies Hit by AI Selloff Push Back on Claude Threat",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-02-05-2026/card/data-companies-hit-by-ai-selloff-push-back-on-claude-threat-kDYcvX3XTlbFT1ZoaE9D?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Compared to Estimates, Thomson Reuters (TRI) Q4 Earnings: A Look at Key Metrics",
+      "url": "/news/301529/compared-to-estimates-thomson-reuters-tri-q4-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Software ate the world. Now, Wall Street is worried AI will eat software.",
+      "url": "https://www.marketwatch.com/story/software-ate-the-world-now-wall-street-is-worried-ai-will-eat-software-88661ed5?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Thomson Reuters (TRI) Beats Q4 Earnings and Revenue Estimates",
+      "url": "/news/301263/thomson-reuters-tri-beats-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Thomson Reuters Reports Fourth-Quarter and Full-Year 2025 Results",
+      "url": "/news/300957/thomson-reuters-reports-fourth-quarter-and-full-year-2025-results",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "4 Investing Lessons as a Tech Columnist Bids Farewell",
+      "url": "https://finance.yahoo.com/m/03cd19bb-ac0f-32c7-b6fb-4d829bc37f00/4-investing-lessons-as-a-tech.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Mixed on Sector Rotation out of Tech",
+      "url": "https://finance.yahoo.com/m/d2e885bd-e047-3deb-9c46-4d88220b392d/stocks-mixed-on-sector.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why the AI-driven software stock crash probably isn't over",
+      "url": "https://finance.yahoo.com/news/why-the-ai-driven-software-stock-crash-probably-isnt-over-125809330.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Software Stocks Crushed by AI Panic. There's an Even Bigger Problem for U.S. Markets.",
+      "url": "https://www.barrons.com/articles/software-stocks-ai-panic-things-to-know-today-e62d2d8b?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stock Index Futures Steady After Tech-Led Selloff, U.S. ADP Jobs Report and Alphabet Earnings in Focus",
+      "url": "https://finance.yahoo.com/m/bf825e59-c634-35ae-ad25-5c90052b8217/stock-index-futures-steady.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Thomson Reuters Corporation",
+      "url": "https://finance.yahoo.com/m/55d87801-609c-3b14-b00a-74183a3021bc/analyst-report%3A-thomson.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    }
+  ]
 }

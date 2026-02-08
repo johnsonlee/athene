@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 86.55000305175781,
     "sma_20": 92.21199951171874,
-    "sma_50": 87.95339981079101,
+    "sma_50": 87.95339981079104,
     "sma_200": 84.35188541412352,
-    "trend_alignment": 0.5199079725250413,
+    "trend_alignment": 0.5199079725250411,
     "rsi": 40.1039160156332,
     "rsi_score": -0.19792167968733593,
     "macd_histogram": -1.2100409636953402,
@@ -6295,18 +6295,26 @@
     "avg_volume_20d": 4839725.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 33.06402054484036,
+    "stoch_k": 33.06402054484037,
     "stoch_d": 30.8462768768849,
-    "trend_score": 51.99079725250413,
+    "trend_score": 51.99079725250411,
     "rsi_abs_score": 62.124699218759844,
     "macd_abs_score": 21.528753535022012,
     "momentum_score": 41.82672637689093,
     "volatility_score": 42.04915896687788,
     "volume_score": 50.0,
-    "technical_score": 46.5550888821941,
+    "technical_score": 46.555088882194084,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.20126332350052578,
+    "sentiment_pos": 0.148,
+    "sentiment_neg": 0.00635,
+    "sentiment_neu": 0.84565,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 60.06
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.09763142692085504,
@@ -6325,7 +6333,7 @@
     "quality_score": 84.2196,
     "growth_score": 57.00714285714285,
     "safety_score": 37.8256082408748,
-    "trend_score": 51.99079725250413,
+    "trend_score": 51.99079725250411,
     "momentum_score": 41.82672637689093,
     "volatility_score": 42.04915896687788,
     "volume_score": 50.0,
@@ -6344,16 +6352,16 @@
     "current_ratio_score": 40.5,
     "earnings_visibility": 69.55401142857141,
     "valuation_margin": 56.48221157619048,
-    "catalyst_timeline": 50.965907354273995,
+    "catalyst_timeline": 50.96590735427399,
     "downside_control": 42.718215081162896,
-    "composite_score": 56.569159007844064,
+    "composite_score": 56.56526996254562,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 63.1296303426194,
-    "technical_score": 46.5550888821941,
-    "sentiment_score": 50.0,
+    "technical_score": 46.555088882194084,
+    "sentiment_score": 60.06,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Broadline Retail"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "For Disney's board, a meticulous CEO handoff  not 'a rigged game'  was the imperative",
+      "url": "https://finance.yahoo.com/news/disneys-board-meticulous-ceo-handoff-200835314.html",
+      "publisher": "LA Times",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: PayPal Holdings, Inc.",
+      "url": "https://finance.yahoo.com/m/d203120d-34ed-3a13-a79f-ffbd611eb5ea/analyst-report%3A-paypal.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PayPal Tanks After Earnings Miss: Could Elon Musks X Be the Lifeline?",
+      "url": "https://finance.yahoo.com/m/960025b1-b0cf-3d58-8e09-75940c94cf1d/paypal-tanks-after-earnings.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Want Better Returns? Don't Ignore These 2 Retail and Wholesale Stocks Set to Beat Earnings",
+      "url": "/news/297418/want-better-returns-dont-ignore-these-2-retail-and-wholesale-stocks-set-to-beat-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: PayPal Holdings, Inc.",
+      "url": "https://finance.yahoo.com/m/594c716c-e6f3-3409-b1d1-a4340b5c1b71/analyst-report%3A-paypal.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "eBay Stock: Is Wall Street Bullish or Bearish?",
+      "url": "https://finance.yahoo.com/m/cf6cae79-c11e-3c4a-8e6a-71296ed74ff0/ebay-stock%3A-is-wall-street.html",
+      "publisher": "Barchart",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How to Find Strong Retail and Wholesale Stocks Slated for Positive Earnings Surprises",
+      "url": "/news/291732/how-to-find-strong-retail-and-wholesale-stocks-slated-for-positive-earnings-surprises",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Unpopular Stocks We Approach with Caution",
+      "url": "/news/292328/3-unpopular-stocks-we-approach-with-caution",
+      "publisher": "StockStory",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Amazon Quality Champion",
+      "url": "https://finance.yahoo.com/m/d7f17bbd-b1d6-3bdf-a7af-a000a5eac625/amazon-quality-champion.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why eBay (EBAY) is Poised to Beat Earnings Estimates Again",
+      "url": "/news/287305/why-ebay-ebay-is-poised-to-beat-earnings-estimates-again",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Five key things to know before you sell your silver coins, bars, jewelry or flatware",
+      "url": "https://www.marketwatch.com/story/five-key-things-to-know-before-you-sell-your-silver-coins-bars-jewelry-or-flatware-4c71a9db?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-01-24",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TRIP vs. EBAY: Which Stock Should Value Investors Buy Now?",
+      "url": "/news/285553/trip-vs-ebay-which-stock-should-value-investors-buy-now",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Adobe nabs CIO from Airbnb",
+      "url": "https://finance.yahoo.com/m/637e88fc-33cd-3de5-ae77-8e6e4d006d12/adobe-nabs-cio-from-airbnb.html",
+      "publisher": "CIO Dive",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "eBays Q4 2025 Earnings: What to Expect",
+      "url": "https://finance.yahoo.com/m/977f541e-8306-3f88-ac97-3081167a1c40/ebay%E2%80%99s-q4-2025-earnings%3A-what.html",
+      "publisher": "Barchart",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Eternal CEO Deepinder Goyal hands over reins to Blinkit chief as quick commerce takes off",
+      "url": "https://finance.yahoo.com/news/eternal-ceo-deepinder-goyal-hands-130548184.html",
+      "publisher": "TechCrunch",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Morgan Stanley Maintains Coverage of eBay Inc. (EBAY)",
+      "url": "/news/280175/morgan-stanley-maintains-coverage-of-ebay-inc-ebay",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AI journalism startup Symbolic.ai signs deal with Rupert Murdochs News Corp",
+      "url": "https://finance.yahoo.com/news/ai-journalism-startup-symbolic-ai-004954201.html",
+      "publisher": "TechCrunch",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Temu challenges Amazon for cross-border e-commerce dominance",
+      "url": "https://finance.yahoo.com/news/temu-challenges-amazon-cross-border-135945518.html",
+      "publisher": "FreightWaves",
+      "date": "2026-01-14",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's How Much a $1000 Investment in eBay Made 10 Years Ago Would Be Worth Today",
+      "url": "/news/276084/heres-how-much-a-1000-investment-in-ebay-made-10-years-ago-would-be-worth-today",
+      "publisher": "Zacks",
+      "date": "2026-01-14",
+      "sentiment": "positive"
+    },
+    {
+      "title": "eBay unveils climate transition plan to reach 2045 net-zero target",
+      "url": "https://finance.yahoo.com/m/d020a59a-fd6a-36d1-b331-02357091e955/ebay-unveils-climate.html",
+      "publisher": "ESG Dive",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    }
+  ]
 }

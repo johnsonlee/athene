@@ -6295,8 +6295,8 @@
     "avg_volume_20d": 5678885.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 35.61644890534437,
-    "stoch_d": 31.722903242138493,
+    "stoch_k": 35.61644890534436,
+    "stoch_d": 31.72290324213849,
     "trend_score": 49.08410288320944,
     "rsi_abs_score": 58.83391200358568,
     "macd_abs_score": 24.303283551824375,
@@ -6306,7 +6306,15 @@
     "technical_score": 44.16767602147114,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.23550740938420778,
+    "sentiment_pos": 0.14925,
+    "sentiment_neg": 0.00585,
+    "sentiment_neu": 0.8449,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 61.78
+  },
   "analyst": {
     "revision_momentum": 0.1111111111111111,
     "target_upside": 0.16761805915931502,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 76.34924017,
     "catalyst_timeline": 51.96355908122723,
     "downside_control": 56.48798686739759,
-    "composite_score": 65.21719846149011,
+    "composite_score": 65.21330941619169,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 70.73634702433333,
     "technical_score": 44.16767602147114,
-    "sentiment_score": 50.0,
+    "sentiment_score": 61.78,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "IT Consulting & Other Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Why Cognizant (CTSH) is a Top Value Stock for the Long-Term",
+      "url": "/news/302913/why-cognizant-ctsh-is-a-top-value-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cognizant Q4 Earnings Beat Estimates: Will Raised View Aid Shares?",
+      "url": "/news/301957/cognizant-q4-earnings-beat-estimates-will-raised-view-aid-shares",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cognizant partners with Palantir to Accelerate AI-Driven Modernization in Healthcare and Enterprise Operations",
+      "url": "/news/301783/cognizant-partners-with-palantir-to-accelerate-ai-driven-modernization-in-healthcare-and-enterprise-operations",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Cognizant (CTSH) is a Strong Growth Stock",
+      "url": "/news/301642/heres-why-cognizant-ctsh-is-a-strong-growth-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Morning Movers: Eli Lilly rises, Boston Scientific falls after quarterly results",
+      "url": "https://finance.yahoo.com/news/morning-movers-eli-lilly-rises-140052306.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cognizant Technology Solutions Corp (CTSH) Q4 2025 Earnings Call Highlights: Record Bookings ...",
+      "url": "https://finance.yahoo.com/news/cognizant-technology-solutions-corp-ctsh-210359006.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cognizant Technology Solutions Corporation (CTSH): A Bull Case Theory",
+      "url": "/news/300132/cognizant-technology-solutions-corporation-ctsh-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Innodata Stock's Forward P/E Is Raising Eyebrows on Wall Street",
+      "url": "/news/299861/why-innodata-stocks-forward-pe-is-raising-eyebrows-on-wall-street",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cognizant (CTSH) Q4 2025 Earnings Call Transcript",
+      "url": "/news/299478/cognizant-ctsh-q4-2025-earnings-call-transcript",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cognizant Technology Solutions Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/e8528158-ff1e-36bc-9e5f-4f55eca9a5e5/cognizant-technology.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "IT Services Giant Cognizant Issues Healthy Outlook As $500 Million 'Mega-Deals' Fuel AI Growth",
+      "url": "/news/299296/it-services-giant-cognizant-issues-healthy-outlook-as-500-million-mega-deals-fuel-ai-growth",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cognizant (CTSH) Beats Q4 Earnings and Revenue Estimates",
+      "url": "/news/299196/cognizant-ctsh-beats-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cognizant beats Q4 expectations, shares rise on positive 2026 outlook",
+      "url": "https://finance.yahoo.com/news/cognizant-beats-q4-expectations-shares-121236619.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cognizant: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/cognizant-q4-earnings-snapshot-114741971.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cognizant forecasts annual revenue above estimates on strong AI demand",
+      "url": "https://finance.yahoo.com/news/cognizant-forecasts-annual-revenue-above-113733219.html",
+      "publisher": "Reuters",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cognizant Reports Fourth Quarter and Full-Year 2025 Results",
+      "url": "/news/298892/cognizant-reports-fourth-quarter-and-full-year-2025-results",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Gartner and other IT stocks got slammed on Tuesday",
+      "url": "https://www.marketwatch.com/story/why-gartner-and-other-it-stocks-got-slammed-on-tuesday-d0c74924?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cognizant to Report Q4 Earnings: What's in Store for the Stock?",
+      "url": "/news/296032/cognizant-to-report-q4-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cognizant and Uniphore Partner to Deliver Smarter, Domain-Specific AI for the Enterprise",
+      "url": "/news/295283/cognizant-and-uniphore-partner-to-deliver-smarter-domain-specific-ai-for-the-enterprise",
+      "publisher": "PR Newswire",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cognizant and Ace Hardware Celebrate 25 Years of Partnership to Advance Next-Generation E-Commerce and Supply Chain Innovation",
+      "url": "/news/293867/cognizant-and-ace-hardware-celebrate-25-years-of-partnership-to-advance-next-generation-e-commerce-and-supply-chain-innovation",
+      "publisher": "PR Newswire",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    }
+  ]
 }

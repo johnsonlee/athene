@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 19.649999618530273,
-    "sma_20": 19.81949996948242,
+    "sma_20": 19.819499969482422,
     "sma_50": 22.104746322631836,
     "sma_200": 24.870787944793697,
     "trend_alignment": 0.23289902128605044,
@@ -6286,9 +6286,9 @@
     "macd_histogram": 0.15231939932054184,
     "macd_line": -0.7359410773258759,
     "macd_histogram_pct": 0.7751623525575142,
-    "bb_position": 0.4344348729660971,
-    "bb_upper": 21.112110528022924,
-    "bb_lower": 18.526889410941912,
+    "bb_position": 0.43443487296609573,
+    "bb_upper": 21.112110528022928,
+    "bb_lower": 18.526889410941916,
     "bb_width": 0.13043826136187453,
     "hist_volatility": 0.3300992015139982,
     "volume_ratio": 0.7768504379335781,
@@ -6306,7 +6306,15 @@
     "technical_score": 46.3080648429613,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.059664510618641135,
+    "sentiment_pos": 0.10075,
+    "sentiment_neg": 0.11034999999999999,
+    "sentiment_neu": 0.7889999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 47.02
+  },
   "analyst": {
     "revision_momentum": -0.1875,
     "target_upside": 0.2722646310432571,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 72.6444715,
     "catalyst_timeline": 46.28380670665353,
     "downside_control": 51.62246862240321,
-    "composite_score": 52.36679470693514,
+    "composite_score": 52.3629056616367,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 54.860376099999996,
     "technical_score": 46.3080648429613,
-    "sentiment_score": 50.0,
+    "sentiment_score": 47.02,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 0.8883333333333334,
     "data_quality_penalty": 0.0,
-    "rank": 346,
-    "percentile": 0.3352601156069364,
+    "rank": 347,
+    "percentile": 0.3333333333333333,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Technology Hardware, Storage & Peripherals"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "HP Inc. Sets Annual Meeting and Record Dates",
+      "url": "/news/303421/hp-inc-sets-annual-meeting-and-record-dates",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 High-Yield Dividend Stocks Perfect For Retirees",
+      "url": "https://finance.yahoo.com/m/5f4d1936-691e-3c34-bf9a-dd825be1c6c4/3-high-yield-dividend-stocks.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ex-PayPal President David Marcus Says 'Defensive' BNPL Strategy Handed PYPL's Market Share To Rivals, Leading To Stagnant Growth",
+      "url": "https://finance.yahoo.com/news/ex-paypal-president-david-marcus-104619089.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "With PayPal stock down 80%, finance chief Jamie Miller steps in as interim CEO",
+      "url": "https://finance.yahoo.com/news/paypal-stock-down-80-finance-123848452.html",
+      "publisher": "Fortune",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ex-PayPal President David Marcus Says 'Defensive' BNPL Strategy Handed PYPL's Market Share To Rivals, Leading To Stagnant Growth",
+      "url": "/news/298655/ex-paypal-president-david-marcus-says-defensive-bnpl-strategy-handed-pypls-market-share-to-rivals-leading-to-stagnant-growth",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PayPal Stock Drops 20%, Sheds $10 Billion in Market Cap",
+      "url": "/news/298377/paypal-stock-drops-20-sheds-10-billion-in-market-cap",
+      "publisher": "Benzinga",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "HP (HPQ) Falls More Steeply Than Broader Market: What Investors Need to Know",
+      "url": "/news/298387/hp-hpq-falls-more-steeply-than-broader-market-what-investors-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Struggling PayPal Hires New CEO. Is Company Break-Up Coming?",
+      "url": "https://finance.yahoo.com/m/113fcbb4-fb58-3c18-a5a9-7fee880598ac/struggling-paypal-hires-new.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "The AI in a Box Trade: Hardware Is the Next Boom",
+      "url": "/news/298122/the-ai-in-a-box-trade-hardware-is-the-next-boom",
+      "publisher": "MarketBeat",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PayPal Earnings Revealed Many Problems. A New CEO Cant Keep the Stock From Tumbling.",
+      "url": "https://finance.yahoo.com/m/bad0d015-9759-3903-b1fa-1b4aa5b1a852/paypal-earnings-revealed-many.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "PayPal's growing competition is a 'pressure point': Analyst",
+      "url": "https://finance.yahoo.com/video/paypals-growing-competition-pressure-point-193000621.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "PayPal bulls set to win big as spooked investors 'puke in the hole': Analyst",
+      "url": "https://finance.yahoo.com/news/paypal-bulls-set-to-win-big-as-spooked-investors-puke-in-the-hole-analyst-181841351.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PayPal Shares Drop 12% as CEO Change Follows Earnings Miss",
+      "url": "https://finance.yahoo.com/news/paypal-shares-drop-12-ceo-172328362.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "PayPal Stock Plunges 20% After Earnings -- Is It a Buy Now?",
+      "url": "/news/297795/paypal-stock-plunges-20-after-earnings-is-it-a-buy-now",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why HP (HPQ) Shares Are Trading Lower Today",
+      "url": "/news/297768/why-hp-hpq-shares-are-trading-lower-today",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PayPal Stock Crashes After Weak Outlook and CEO Shake-Up",
+      "url": "https://finance.yahoo.com/news/paypal-stock-crashes-weak-outlook-154739451.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "PayPal stock plunges, appoints Enrique Lores as new CEO",
+      "url": "https://finance.yahoo.com/video/paypal-stock-plunges-appoints-enrique-154045875.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PayPal Turmoil At The Top: Struggling Payments Firm Hires New CEO",
+      "url": "https://finance.yahoo.com/m/113fcbb4-fb58-3c18-a5a9-7fee880598ac/paypal-turmoil-at-the-top%3A.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "PayPal Shares Slide On Weak Outlook, CEO Exit",
+      "url": "https://finance.yahoo.com/news/paypal-shares-slide-weak-outlook-153105408.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "HP stock drops 6% as CEO Enrique Lores exits for PayPal",
+      "url": "https://finance.yahoo.com/news/hp-stock-drops-6-ceo-152255992.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    }
+  ]
 }

@@ -6295,8 +6295,8 @@
     "avg_volume_20d": 2683020.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 77.53906316714142,
-    "stoch_d": 55.612319267450324,
+    "stoch_k": 77.53906316714144,
+    "stoch_d": 55.61231926745033,
     "trend_score": 44.47772381163222,
     "rsi_abs_score": 73.0578854089934,
     "macd_abs_score": 69.94402322220964,
@@ -6306,7 +6306,15 @@
     "technical_score": 51.41106611210471,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.2616169128079384,
+    "sentiment_pos": 0.12725,
+    "sentiment_neg": 0.02325,
+    "sentiment_neu": 0.84955,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 63.08
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.23862976582155987,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 65.09646304949999,
     "catalyst_timeline": 56.643133029967416,
     "downside_control": 43.24734953578936,
-    "composite_score": 60.11266839151754,
+    "composite_score": 60.1087793462191,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 66.29794724420124,
     "technical_score": 51.41106611210471,
-    "sentiment_score": 50.0,
+    "sentiment_score": 63.08,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Technology Hardware, Storage & Peripherals"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Here's Why NetApp (NTAP) is a Strong Value Stock",
+      "url": "/news/302934/heres-why-netapp-ntap-is-a-strong-value-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Can Pure Storage's Hyperscaler Strategy Drive Long-Term Growth?",
+      "url": "/news/301306/can-pure-storages-hyperscaler-strategy-drive-long-term-growth",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "NetApp Hosts Third Quarter of Fiscal Year 2026 Financial Results Webcast",
+      "url": "https://www.businesswire.com/news/home/20260204589823/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Morgan Stanley Downgrades NetApp (NTAP) Due to 15-Year Low in IT Hardware Budget Growth",
+      "url": "/news/299120/morgan-stanley-downgrades-netapp-ntap-due-to-15-year-low-in-it-hardware-budget-growth",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Super Micro Computer (SMCI) Q2 Earnings and Revenues Beat Estimates",
+      "url": "/news/298411/super-micro-computer-smci-q2-earnings-and-revenues-beat-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "NetApp (NTAP) Sees a More Significant Dip Than Broader Market: Some Facts to Know",
+      "url": "/news/292835/netapp-ntap-sees-a-more-significant-dip-than-broader-market-some-facts-to-know",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "NetApp, Inc. (NTAP) Is a Trending Stock: Facts to Know Before Betting on It",
+      "url": "/news/290094/netapp-inc-ntap-is-a-trending-stock-facts-to-know-before-betting-on-it",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Western Digital's Q2 Earnings on Deck: Is the Stock Worth Buying Now?",
+      "url": "/news/288412/western-digitals-q2-earnings-on-deck-is-the-stock-worth-buying-now",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "NetApp Data Platform Powers Data Operations for Super Bowl LX",
+      "url": "https://www.businesswire.com/news/home/20260127322960/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Pure Storage's Shareholder Return Strategy Signals Business Confidence",
+      "url": "/news/287031/pure-storages-shareholder-return-strategy-signals-business-confidence",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Quantum ActiveScale & Telestream DIVA Build Sustainable Media Archives",
+      "url": "/news/286843/quantum-activescale-telestream-diva-build-sustainable-media-archives",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Seagate Stock Ahead of Q2 Earnings Release: Buy, Sell or Stay Put?",
+      "url": "/news/285241/seagate-stock-ahead-of-q2-earnings-release-buy-sell-or-stay-put",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NetApp (NTAP) Laps the Stock Market: Here's Why",
+      "url": "/news/284736/netapp-ntap-laps-the-stock-market-heres-why",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Seagate Elevates HDD Performance Through Aerial Density Advancements",
+      "url": "/news/284361/seagate-elevates-hdd-performance-through-aerial-density-advancements",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NetApp Earnings Preview: What to Expect",
+      "url": "https://finance.yahoo.com/m/e0c88bdc-af1d-3d01-9a3b-76a141601073/netapp-earnings-preview%3A-what.html",
+      "publisher": "Barchart",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why NetApp (NTAP) is a Top Value Stock for the Long-Term",
+      "url": "/news/282526/why-netapp-ntap-is-a-top-value-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "NetApp (NTAP) Tumbles 9% on Downgraded Rating, Price Target",
+      "url": "/news/281864/netapp-ntap-tumbles-9-on-downgraded-rating-price-target",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Plunge on Greenland Crisis and Soaring Bond Yields",
+      "url": "https://finance.yahoo.com/m/cb1bdf7c-0b2c-353a-b282-37c38d2db7c0/stocks-plunge-on-greenland.html",
+      "publisher": "Barchart",
+      "date": "2026-01-20",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stocks Tumble, Treasury Yields Jump To 5-Month Highs: What's Moving Markets Tuesday?",
+      "url": "/news/281388/stocks-tumble-treasury-yields-jump-to-5-month-highs-whats-moving-markets-tuesday",
+      "publisher": "Benzinga",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why NetApp (NTAP) Stock Is Down Today",
+      "url": "/news/281280/why-netapp-ntap-stock-is-down-today",
+      "publisher": "StockStory",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    }
+  ]
 }

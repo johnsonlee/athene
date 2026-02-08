@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 24.93000030517578,
     "sma_20": 24.538000106811527,
-    "sma_50": 23.82049476623535,
+    "sma_50": 23.820494766235353,
     "sma_200": 25.81080438613892,
-    "trend_alignment": 0.49071872602017275,
+    "trend_alignment": 0.49071872602017264,
     "rsi": 58.470660511197316,
     "rsi_score": 0.16941321022394631,
     "macd_histogram": 0.01121866205904476,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 65.96739363851835,
     "stoch_d": 71.73438072547717,
-    "trend_score": 49.07187260201727,
+    "trend_score": 49.071872602017265,
     "rsi_abs_score": 72.57053764216188,
     "macd_abs_score": 52.2500324752735,
     "momentum_score": 62.41028505871769,
@@ -6306,7 +6306,15 @@
     "technical_score": 55.32986487209685,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.04520400966553416,
+    "sentiment_pos": 0.0468,
+    "sentiment_neg": 0.029200000000000004,
+    "sentiment_neu": 0.924,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 47.74
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.10308864821500202,
@@ -6325,7 +6333,7 @@
     "quality_score": 43.068124999999995,
     "growth_score": 40.875,
     "safety_score": 66.122,
-    "trend_score": 49.07187260201727,
+    "trend_score": 49.071872602017265,
     "momentum_score": 62.41028505871769,
     "volatility_score": 59.42608786938179,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 66.92768727142857,
     "catalyst_timeline": 53.7801880885765,
     "downside_control": 63.576213180407265,
-    "composite_score": 55.21101770860544,
+    "composite_score": 55.207128663307,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 54.37749355952381,
     "technical_score": 55.32986487209685,
-    "sentiment_score": 50.0,
+    "sentiment_score": 47.74,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Staples",
     "industry": "Packaged Foods & Meats"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "3 Dividend Stocks I'm Piling Into in 2026 For Reliable Income",
+      "url": "/news/299792/3-dividend-stocks-im-piling-into-in-2026-for-reliable-income",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "SPAM Brand Teams Up with Rookie Wide Receiver Tetairoa McMillan to Launch \"SPAM Brand vs. Everybody\" Big Game Campaign",
+      "url": "/news/297113/spam-brand-teams-up-with-rookie-wide-receiver-tetairoa-mcmillan-to-launch-spam-brand-vs-everybody-big-game-campaign",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Hormel Foods Corporation (HRL): A Bull Case Theory",
+      "url": "/news/296388/hormel-foods-corporation-hrl-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hormel Foods Corporation Announces First Quarter Earnings Call and Participation in 2026 CAGNY Conference",
+      "url": "/news/296221/hormel-foods-corporation-announces-first-quarter-earnings-call-and-participation-in-2026-cagny-conference",
+      "publisher": "PR Newswire",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Genius Gourmet Builds Momentum with SKIPPY-Inspired Protein Snacks Across Grocery and Convenience",
+      "url": "https://www.businesswire.com/news/home/20260202458734/en/The",
+      "publisher": "Business Wire",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "America's Most Shell-ebrated Job is Back: Bigger, Bolder and Crunchier Than Ever",
+      "url": "/news/291418/americas-most-shell-ebrated-job-is-back-bigger-bolder-and-crunchier-than-ever",
+      "publisher": "PR Newswire",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "5 Low-Beta Defensive Stocks to Sail Through Ongoing Market Volatility",
+      "url": "/news/288695/5-low-beta-defensive-stocks-to-sail-through-ongoing-market-volatility",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What to Expect From Hormel Foods Next Quarterly Earnings Report",
+      "url": "https://finance.yahoo.com/m/c31670af-4749-39b8-a3cb-778f828c8425/what-to-expect-from-hormel.html",
+      "publisher": "Barchart",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Smithfield Buys Nathan's Famous In $450 Million Cash Deal",
+      "url": "/news/282640/smithfield-buys-nathans-famous-in-450-million-cash-deal",
+      "publisher": "Benzinga",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Consumer Staples Are Exploding Higher in 2026: Buy 5 High-Yielding Dividend Kings Now",
+      "url": "https://finance.yahoo.com/m/f43c3f0e-c2bd-3e1e-ae23-b21d6be95335/consumer-staples-are.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hormel Foods International Sales: Still a Growth Engine?",
+      "url": "/news/282422/hormel-foods-international-sales-still-a-growth-engine",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "COLUMBUS Craft Meats Launches New Entertaining Tray Featuring Ready-to-Serve Charcuterie and Cheese Pairings",
+      "url": "/news/282155/columbus-craft-meats-launches-new-entertaining-tray-featuring-ready-to-serve-charcuterie-and-cheese-pairings",
+      "publisher": "PR Newswire",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Hormel Foods Taps Domenic Borrelli as Executive Vice President of Retail, Bringing Extensive Category Leadership to Iconic Brand Portfolio",
+      "url": "/news/278260/hormel-foods-taps-domenic-borrelli-as-executive-vice-president-of-retail-bringing-extensive-category-leadership-to-iconic-brand-portfolio",
+      "publisher": "PR Newswire",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hormel Foods To Hold 2026 Annual Meeting of Stockholders",
+      "url": "/news/275436/hormel-foods-to-hold-2026-annual-meeting-of-stockholders",
+      "publisher": "PR Newswire",
+      "date": "2026-01-13",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hormel Foods Announces Upcoming Retirements of Mark Morey and Paul Peil",
+      "url": "/news/274202/hormel-foods-announces-upcoming-retirements-of-mark-morey-and-paul-peil",
+      "publisher": "PR Newswire",
+      "date": "2026-01-12",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Dividend Stocks With High Yields and a Triple-Digit Upside Potential",
+      "url": "https://finance.yahoo.com/m/b93e1976-61a5-34cc-8afe-873fbb2473e2/3-dividend-stocks-with-high.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-12",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Reasons HRL is Risky and 1 Stock to Buy Instead",
+      "url": "/news/272626/3-reasons-hrl-is-risky-and-1-stock-to-buy-instead",
+      "publisher": "StockStory",
+      "date": "2026-01-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "5 Under-the-Radar Consumer Staples Stocks With Pricing Power",
+      "url": "/news/271507/5-under-the-radar-consumer-staples-stocks-with-pricing-power",
+      "publisher": "MarketBeat",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Dividend Aristocrats No Ones Talking About (And Their 30+ Year Track Records)",
+      "url": "https://finance.yahoo.com/m/054c9180-16a6-3373-a622-9b77464a3c4d/the-dividend-aristocrats-no.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "How HRL Is Evolving Its Portfolio to Meet Consumer Value Needs?",
+      "url": "/news/269369/how-hrl-is-evolving-its-portfolio-to-meet-consumer-value-needs",
+      "publisher": "Zacks",
+      "date": "2026-01-07",
+      "sentiment": "positive"
+    }
+  ]
 }

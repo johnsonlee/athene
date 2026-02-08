@@ -6279,8 +6279,8 @@
     "close": 439.2799987792969,
     "sma_20": 514.2559875488281,
     "sma_50": 513.0475946044921,
-    "sma_200": 513.116356048584,
-    "trend_alignment": 0.2843726087857924,
+    "sma_200": 513.1163560485841,
+    "trend_alignment": 0.2843726087857922,
     "rsi": 19.542749203501355,
     "rsi_score": -0.6091450159299729,
     "macd_histogram": -11.774541684408668,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 5.521639543095877,
     "stoch_d": 8.757730026180289,
-    "trend_score": 28.43726087857924,
+    "trend_score": 28.437260878579217,
     "rsi_abs_score": 39.54274920350136,
     "macd_abs_score": 20.0,
     "momentum_score": 29.77137460175068,
     "volatility_score": 27.06763531486793,
     "volume_score": 50.0,
-    "technical_score": 32.87611770707256,
+    "technical_score": 32.87611770707255,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.0038151309454231594,
+    "sentiment_pos": 0.071,
+    "sentiment_neg": 0.03945,
+    "sentiment_neu": 0.8895500000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 49.81
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.4114004735020944,
@@ -6325,7 +6333,7 @@
     "quality_score": 72.9196,
     "growth_score": 71.29214285714286,
     "safety_score": 44.775164912894965,
-    "trend_score": 28.43726087857924,
+    "trend_score": 28.437260878579217,
     "momentum_score": 29.77137460175068,
     "volatility_score": 27.06763531486793,
     "volume_score": 50.0,
@@ -6344,16 +6352,16 @@
     "current_ratio_score": 43.44,
     "earnings_visibility": 69.91076142857142,
     "valuation_margin": 28.662676078095238,
-    "catalyst_timeline": 40.43528112807306,
+    "catalyst_timeline": 40.43528112807305,
     "downside_control": 40.74342003416443,
-    "composite_score": 43.7310422352282,
+    "composite_score": 43.727153189929766,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 56.08367876194407,
-    "technical_score": 32.87611770707256,
-    "sentiment_score": 50.0,
+    "technical_score": 32.87611770707255,
+    "sentiment_score": 49.81,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Financial Exchanges & Data"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "The Software Stock Panic Will Be a Buying OpportunityEventually",
+      "url": "https://finance.yahoo.com/m/5a3b302c-e67d-3dcf-89b3-e36e6b2b16c6/the-software-stock-panic-will.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Merchants Bancorp Set to Join S&P SmallCap 600",
+      "url": "/news/303420/merchants-bancorp-set-to-join-sp-smallcap-600",
+      "publisher": "PR Newswire",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "IREN's Q2 Loss Wider Than Expected, Revenues Decline Q/Q",
+      "url": "/news/303204/irens-q2-loss-wider-than-expected-revenues-decline-qq",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "S&P Global Gears Up to Report Q4 Earnings: What's in Store?",
+      "url": "/news/303091/sp-global-gears-up-to-report-q4-earnings-whats-in-store",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "5 Securities & Exchanges Stocks to Watch Amid Increased Volatility",
+      "url": "/news/303077/5-securities-exchanges-stocks-to-watch-amid-increased-volatility",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Software Apocalypse Will Be a Buying Opportunity-Eventually",
+      "url": "https://www.barrons.com/articles/software-stock-selloff-anthropic-ai-claude-microsoft-salesforce-105f5ca2?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CBOE Global (CBOE) Q4 Earnings and Revenues Top Estimates",
+      "url": "/news/302748/cboe-global-cboe-q4-earnings-and-revenues-top-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Anthropic's New Model Can Run Financial Analyses. Financial Data Stocks Tumble.",
+      "url": "https://www.barrons.com/articles/anthropic-financial-research-stocks-01721769?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "S&P Global Launches New Partner Perspectives Initiative, Debuts Collaborative Research Volume with Vanguard",
+      "url": "/news/301782/sp-global-launches-new-partner-perspectives-initiative-debuts-collaborative-research-volume-with-vanguard",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Down 13.4% in 4 Weeks, Here's Why You Should You Buy the Dip in S&P Global (SPGI)",
+      "url": "/news/301575/down-134-in-4-weeks-heres-why-you-should-you-buy-the-dip-in-sp-global-spgi",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Exploring Analyst Estimates for S&P Global (SPGI) Q4 Earnings, Beyond Revenue and EPS",
+      "url": "/news/301498/exploring-analyst-estimates-for-sp-global-spgi-q4-earnings-beyond-revenue-and-eps",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Software ate the world. Now, Wall Street is worried AI will eat software.",
+      "url": "https://www.marketwatch.com/story/software-ate-the-world-now-wall-street-is-worried-ai-will-eat-software-88661ed5?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "IntercontinentalExchange (ICE) Q4 Earnings and Revenues Beat Estimates",
+      "url": "/news/301407/intercontinentalexchange-ice-q4-earnings-and-revenues-beat-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What NJ chains were hit by bankruptcies in the past few years?",
+      "url": "https://finance.yahoo.com/m/23a05d11-1634-3496-86e4-39a90a39bbec/what-nj-chains-were-hit-by.html",
+      "publisher": "The Bergen Record",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ciena Set to Join S&P 500; Arrowhead Pharmaceuticals to Join S&P MidCap 400; ADT and OneSpaWorld Holdings to Join S&P SmallCap 600",
+      "url": "/news/300385/ciena-set-to-join-sp-500-arrowhead-pharmaceuticals-to-join-sp-midcap-400-adt-and-onespaworld-holdings-to-join-sp-smallcap-600",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "S&P Global (SPGI) Loses 13.2% in 4 Weeks, Here's Why a Trend Reversal May be Around the Corner",
+      "url": "/news/299538/sp-global-spgi-loses-132-in-4-weeks-heres-why-a-trend-reversal-may-be-around-the-corner",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "CME Group (CME) Q4 Earnings and Revenues Top Estimates",
+      "url": "/news/299293/cme-group-cme-q4-earnings-and-revenues-top-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Top Dividend Stocks to Buy in February",
+      "url": "/news/298018/3-top-dividend-stocks-to-buy-in-february",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CleanSpark Gears Up to Report Q1 Earnings: What's in the Offing?",
+      "url": "/news/298000/cleanspark-gears-up-to-report-q1-earnings-whats-in-the-offing",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: S&P Global Inc.",
+      "url": "https://finance.yahoo.com/m/ecfe7769-a915-3fc0-9600-ea4e8f6bbcf6/analyst-report%3A-s%26p-global.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    }
+  ]
 }

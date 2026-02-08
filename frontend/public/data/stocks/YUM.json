@@ -6279,8 +6279,8 @@
     "close": 162.92999267578125,
     "sma_20": 156.9474998474121,
     "sma_50": 153.22505981445312,
-    "sma_200": 147.32577804565432,
-    "trend_alignment": 0.6358541584323595,
+    "sma_200": 147.32577804565437,
+    "trend_alignment": 0.635854158432359,
     "rsi": 70.0423964575661,
     "rsi_score": 0.400847929151322,
     "macd_histogram": 0.72731107019486,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 89.30545383029514,
     "stoch_d": 84.94158776864197,
-    "trend_score": 63.58541584323595,
+    "trend_score": 63.58541584323591,
     "rsi_abs_score": 53.88128991881493,
     "macd_abs_score": 63.659870847753545,
     "momentum_score": 58.77058038328424,
     "volatility_score": 64.67712045284242,
     "volume_score": 50.0,
-    "technical_score": 59.642222958524535,
+    "technical_score": 59.64222295852452,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.026926811335821282,
+    "sentiment_pos": 0.04485,
+    "sentiment_neg": 0.0253,
+    "sentiment_neu": 0.9298500000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.35
+  },
   "analyst": {
     "revision_momentum": 0.1111111111111111,
     "target_upside": 0.04339286810286622,
@@ -6325,7 +6333,7 @@
     "quality_score": 82.85249999999999,
     "growth_score": 69.555,
     "safety_score": 45.53758999203097,
-    "trend_score": 63.58541584323595,
+    "trend_score": 63.58541584323591,
     "momentum_score": 58.77058038328424,
     "volatility_score": 64.67712045284242,
     "volume_score": 50.0,
@@ -6344,23 +6352,23 @@
     "current_ratio_score": 60.916000000000004,
     "earnings_visibility": 61.36812499999999,
     "valuation_margin": 55.85911004166666,
-    "catalyst_timeline": 57.64518184685873,
+    "catalyst_timeline": 57.645181846858726,
     "downside_control": 57.34220656673101,
-    "composite_score": 59.14715729831871,
+    "composite_score": 59.143268253020274,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 67.11294303312842,
-    "technical_score": 59.642222958524535,
-    "sentiment_score": 50.0,
+    "technical_score": 59.64222295852452,
+    "sentiment_score": 51.35,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 0.8883333333333334,
     "data_quality_penalty": 0.0,
-    "rank": 124,
-    "percentile": 0.7630057803468208,
+    "rank": 123,
+    "percentile": 0.7649325626204239,
     "tier": "buy",
     "tier_raw": "buy",
     "tier_label": "Buy",
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Restaurants"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Pizza Hut to close 250 restaurants nationwide",
+      "url": "https://finance.yahoo.com/m/d428d9cb-7733-3dfd-869f-3f1e8d2839b1/pizza-hut-to-close-250.html",
+      "publisher": "Lohud | The Journal News",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Yum! Brands Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/e402d789-fb02-334f-a559-18dc941c0c02/yum%21-brands-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pizza Hut to close 250 US stores. What does it mean for Colorado?",
+      "url": "https://finance.yahoo.com/m/f638bd6b-e6a8-306f-9e52-760841fafc30/pizza-hut-to-close-250-us.html",
+      "publisher": "The Coloradoan",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Expect more menu innovation from KFC, including beverages",
+      "url": "https://finance.yahoo.com/m/5cab9393-fe3e-372b-8579-e6242137f825/expect-more-menu-innovation.html",
+      "publisher": "Nation's Restaurant News",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Pizza Hut closing hundreds of locations around the U.S.",
+      "url": "https://finance.yahoo.com/news/pizza-hut-closing-hundreds-locations-110000581.html",
+      "publisher": "LA Times",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Yum China Holdings, Inc.",
+      "url": "https://finance.yahoo.com/m/615bfbe2-088f-3386-91df-e80dc40eafc6/analyst-report%3A-yum-china.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pizza Hut Is Shutting 250 Restaurants. Here's Why.",
+      "url": "https://finance.yahoo.com/m/ca989a76-7abe-30dd-a149-c3bc12b39b0c/pizza-hut-is-shutting-250.html",
+      "publisher": "Investopedia",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pizza Hut Cuts Underperformers To Reset US Business",
+      "url": "/news/301938/pizza-hut-cuts-underperformers-to-reset-us-business",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Pizza Hut closing 250 US stores as parent company considers selling the brand",
+      "url": "https://finance.yahoo.com/news/pizza-hut-closing-250-us-185821739.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pizza Hut is closing 250 locations. What we know about Fox Valley stores",
+      "url": "https://finance.yahoo.com/m/fb36694d-ee6b-3fb1-b3bf-e8167379ef7b/pizza-hut-is-closing-250.html",
+      "publisher": "The Post-Crescent",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pizza Hut to close 250 locations. What we know about Brown County stores",
+      "url": "https://finance.yahoo.com/m/de0452b6-f5a3-339b-95d4-a00a37073c85/pizza-hut-to-close-250.html",
+      "publisher": "Green Bay Press-Gazette",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Yum China Q4 Earnings & Revenues Top Estimates, Both Up YoY",
+      "url": "/news/301910/yum-china-q4-earnings-revenues-top-estimates-both-up-yoy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Hundreds of Pizza Huts will close, how many are there in Minnesota?",
+      "url": "https://finance.yahoo.com/m/727950ff-7a24-36dd-9768-b47cdca68239/hundreds-of-pizza-huts-will.html",
+      "publisher": "SC Cloud | St. Cloud Times",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pizza Hut is closing hundreds of locations in 2026 after dismal sales",
+      "url": "https://finance.yahoo.com/m/75c9b4d7-c76c-31de-9119-f8c86dd5aff7/pizza-hut-is-closing-hundreds.html",
+      "publisher": "IndyStar | The Indianapolis Star",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Indias Pizza Hut and KFC operator names new CEO",
+      "url": "https://finance.yahoo.com/m/e6836955-e782-3930-b075-581f739bf140/india%E2%80%99s-pizza-hut-and-kfc.html",
+      "publisher": "Verdict Food Service",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Eddie Bauer and Pizza Hut lead a parade of retail and food chain closings",
+      "url": "https://finance.yahoo.com/m/da9cc72c-a5b7-3855-83ce-b51f456ff8e4/eddie-bauer-and-pizza-hut.html",
+      "publisher": "Quartz",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Morning Movers: Eli Lilly rises, Boston Scientific falls after quarterly results",
+      "url": "https://finance.yahoo.com/news/morning-movers-eli-lilly-rises-140052306.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Yum! Brands posts double-digit profit growth in Q4 2025",
+      "url": "https://finance.yahoo.com/m/b58a59a9-c3d2-3967-9be6-60098996dcab/yum%21-brands-posts.html",
+      "publisher": "Verdict Food Service",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "How Yum is adapting Taco Bells playbook for KFC",
+      "url": "https://finance.yahoo.com/m/27b7dec7-2e72-3d28-9156-b9d4d54ad180/how-yum-is-adapting-taco.html",
+      "publisher": "Restaurant Dive",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "YUM Q4 Deep Dive: Digital Expansion and Core Brand Momentum Shape Outlook",
+      "url": "/news/300858/yum-q4-deep-dive-digital-expansion-and-core-brand-momentum-shape-outlook",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    }
+  ]
 }

@@ -6279,8 +6279,8 @@
     "close": 323.7200012207031,
     "sma_20": 305.53750305175777,
     "sma_50": 298.59400085449226,
-    "sma_200": 284.384895401001,
-    "trend_alignment": 0.6775961779030882,
+    "sma_200": 284.38489540100096,
+    "trend_alignment": 0.6775961779030885,
     "rsi": 70.11176910871939,
     "rsi_score": 0.4022353821743877,
     "macd_histogram": 2.1017082219989938,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 86.97163110888275,
     "stoch_d": 77.58631182258569,
-    "trend_score": 67.75961779030882,
+    "trend_score": 67.75961779030885,
     "rsi_abs_score": 53.68704649558572,
     "macd_abs_score": 67.23854664867977,
     "momentum_score": 60.462796572132746,
     "volatility_score": 55.15143405910156,
     "volume_score": 50.0,
-    "technical_score": 59.49701112055278,
+    "technical_score": 59.49701112055279,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.06812773019184966,
+    "sentiment_pos": 0.0893,
+    "sentiment_neg": 0.05495,
+    "sentiment_neu": 0.8557499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 53.41
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.028666749042382218,
@@ -6325,7 +6333,7 @@
     "quality_score": 62.84976642857142,
     "growth_score": 82.85714285714286,
     "safety_score": 61.12675,
-    "trend_score": 67.75961779030882,
+    "trend_score": 67.75961779030885,
     "momentum_score": 60.462796572132746,
     "volatility_score": 55.15143405910156,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 36.392615074509806,
     "catalyst_timeline": 57.87861186871666,
     "downside_control": 61.62572760886523,
-    "composite_score": 57.62578210526574,
+    "composite_score": 57.621893059967306,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 61.05757820494865,
-    "technical_score": 59.49701112055278,
-    "sentiment_score": 50.0,
+    "technical_score": 59.49701112055279,
+    "sentiment_score": 53.41,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Materials",
     "industry": "Construction Materials"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "From AI Darlings To Dow Dinosaurs: Investors Flee Software For Old-Economy Stocks",
+      "url": "/news/303569/from-ai-darlings-to-dow-dinosaurs-investors-flee-software-for-old-economy-stocks",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Reasons VMC is Risky and 1 Stock to Buy Instead",
+      "url": "/news/298726/3-reasons-vmc-is-risky-and-1-stock-to-buy-instead",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Zacks Industry Outlook Highlights Vulcan Materials and Martin Marietta Materials",
+      "url": "/news/295241/zacks-industry-outlook-highlights-vulcan-materials-and-martin-marietta-materials",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "2 Concrete & Aggregates Stocks Riding the Infrastructure Boom",
+      "url": "/news/293810/2-concrete-aggregates-stocks-riding-the-infrastructure-boom",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Unpacking Q3 Earnings: Vulcan Materials (NYSE:VMC) In The Context Of Other Building Materials Stocks",
+      "url": "/news/283853/unpacking-q3-earnings-vulcan-materials-nyse-vmc-in-the-context-of-other-building-materials-stocks",
+      "publisher": "StockStory",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AI Data Center Buildout In Focus With Major Industry Conference On Tap",
+      "url": "https://www.investors.com/news/data-centers-ai-crh-vulcan-materials-martin-marietta-world-of-concrete?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What to Expect From Vulcan Materials Next Quarterly Earnings Report",
+      "url": "https://finance.yahoo.com/m/29b0b119-5c51-35e8-b280-b0658f1ab4dd/what-to-expect-from-vulcan.html",
+      "publisher": "Barchart",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "VULCAN ANNOUNCES FOURTH QUARTER 2025 CONFERENCE CALL",
+      "url": "/news/274610/vulcan-announces-fourth-quarter-2025-conference-call",
+      "publisher": "PR Newswire",
+      "date": "2026-01-13",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Unpopular Stocks We Find Risky",
+      "url": "/news/266806/3-unpopular-stocks-we-find-risky",
+      "publisher": "StockStory",
+      "date": "2026-01-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "CX vs. VMC: Which Stock Should Value Investors Buy Now?",
+      "url": "/news/262630/cx-vs-vmc-which-stock-should-value-investors-buy-now",
+      "publisher": "Zacks",
+      "date": "2025-12-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "These 4 Companies Are Fighting For Infrastructure Dollars",
+      "url": "https://finance.yahoo.com/m/2c4c5665-58ae-3d00-b99b-f086578908b3/these-4-companies-are.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2025-12-22",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Who Actually Benefits From the $200 Billion Infrastructure Boom? We Compared 3 Stocks.",
+      "url": "https://finance.yahoo.com/m/7b435da4-415c-396b-aae3-5459d3a109e6/who-actually-benefits-from.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2025-12-18",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Novembers Infrastructure Winner: The $43B Company Beating Industry Titans on Every Metric",
+      "url": "https://finance.yahoo.com/m/c1f0d7ee-058b-3dae-99f6-e594649ff0fa/november%E2%80%99s-infrastructure.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2025-12-11",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is Vulcan Materials Stock Underperforming the Dow?",
+      "url": "https://finance.yahoo.com/m/18258747-a44a-35aa-a057-fa8553f707e2/is-vulcan-materials-stock.html",
+      "publisher": "Barchart",
+      "date": "2025-12-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CX or VMC: Which Is the Better Value Stock Right Now?",
+      "url": "/news/248627/cx-or-vmc-which-is-the-better-value-stock-right-now",
+      "publisher": "Zacks",
+      "date": "2025-12-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Is Martin Marietta (MLM) Up 0.9% Since Last Earnings Report?",
+      "url": "/news/245931/why-is-martin-marietta-mlm-up-09-since-last-earnings-report",
+      "publisher": "Zacks",
+      "date": "2025-12-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "CX or VMC: Which Is the Better Value Stock Right Now?",
+      "url": "/news/236302/cx-or-vmc-which-is-the-better-value-stock-right-now",
+      "publisher": "Zacks",
+      "date": "2025-11-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Dycom Q3 Earnings & Revenues Surpass Estimates, Stock Up",
+      "url": "/news/235395/dycom-q3-earnings-revenues-surpass-estimates-stock-up",
+      "publisher": "Zacks",
+      "date": "2025-11-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jacobs Q4 Earnings & Revenues Beat Estimates, Margins Expand Sharply",
+      "url": "/news/235327/jacobs-q4-earnings-revenues-beat-estimates-margins-expand-sharply",
+      "publisher": "Zacks",
+      "date": "2025-11-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "AECOM Q4 Earnings Surpass Estimates, Backlog Increases Y/Y",
+      "url": "/news/234205/aecom-q4-earnings-surpass-estimates-backlog-increases-yy",
+      "publisher": "Zacks",
+      "date": "2025-11-19",
+      "sentiment": "neutral"
+    }
+  ]
 }

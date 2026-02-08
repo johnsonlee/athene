@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 140.00999450683594,
-    "sma_20": 141.2644981384277,
+    "sma_20": 141.26449813842774,
     "sma_50": 135.20282211303712,
     "sma_200": 139.33222793579102,
     "trend_alignment": 0.5233679777426862,
@@ -6286,10 +6286,10 @@
     "macd_histogram": -0.4666649949698196,
     "macd_line": 0.862215193006989,
     "macd_histogram_pct": -0.3333083446032382,
-    "bb_position": 0.4120766116257496,
-    "bb_upper": 148.39857050977398,
-    "bb_lower": 134.13042576708145,
-    "bb_width": 0.10100304698432373,
+    "bb_position": 0.4120766116257476,
+    "bb_upper": 148.398570509774,
+    "bb_lower": 134.13042576708148,
+    "bb_width": 0.10100304698432372,
     "hist_volatility": 0.2595846752088407,
     "volume_ratio": 0.8890550967200217,
     "avg_volume_20d": 1417235.0,
@@ -6306,7 +6306,15 @@
     "technical_score": 54.08797274048613,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.10899141446751043,
+    "sentiment_pos": 0.06284999999999999,
+    "sentiment_neg": 0.03195,
+    "sentiment_neu": 0.9052,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 44.55
+  },
   "analyst": {
     "revision_momentum": -0.125,
     "target_upside": 0.04635383186915227,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 46.498854699999995,
     "catalyst_timeline": 51.28499673135636,
     "downside_control": 55.74092558142995,
-    "composite_score": 48.3894995496855,
+    "composite_score": 48.385610504387074,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 49.6617932352171,
     "technical_score": 54.08797274048613,
-    "sentiment_score": 50.0,
+    "sentiment_score": 44.55,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Real Estate",
     "industry": "Self-Storage REITs"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "BofA cuts storage REITS, Public Storage, Extra Space and Americold",
+      "url": "https://finance.yahoo.com/news/bofa-cuts-storage-reits-public-191035856.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Extra Space Storage Inc. Announces Tax Reporting Information for 2025 Distributions",
+      "url": "/news/284599/extra-space-storage-inc-announces-tax-reporting-information-for-2025-distributions",
+      "publisher": "PR Newswire",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Extra Space Storage Inc. Announces Date of Earnings Release and Conference Call to Discuss 4th Quarter and Year-End 2025 Results",
+      "url": "/news/281538/extra-space-storage-inc-announces-date-of-earnings-release-and-conference-call-to-discuss-4th-quarter-and-year-end-2025-results",
+      "publisher": "PR Newswire",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Extra Space Storage's Quarterly Earnings Preview: What You Need to Know",
+      "url": "https://finance.yahoo.com/m/127fc662-4a61-377a-84a5-9d9a35dd3343/extra-space-storage%27s.html",
+      "publisher": "Barchart",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Extra Space Storage Inc. (EXR): A Bull Case Theory",
+      "url": "/news/278115/extra-space-storage-inc-exr-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "HST vs. EXR: Which Stock Is the Better Value Option?",
+      "url": "/news/277882/hst-vs-exr-which-stock-is-the-better-value-option",
+      "publisher": "Zacks",
+      "date": "2026-01-15",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Extra Space Storage Announces Promotion of Noah Springer to President",
+      "url": "/news/267626/extra-space-storage-announces-promotion-of-noah-springer-to-president",
+      "publisher": "PR Newswire",
+      "date": "2026-01-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Extra Space Storage Stock: Is EXR Underperforming the Real Estate Sector?",
+      "url": "https://finance.yahoo.com/m/e25acdfc-d083-3014-93f6-9d568b26fd76/extra-space-storage-stock%3A-is.html",
+      "publisher": "Barchart",
+      "date": "2025-12-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is the worst over for storage REITs? RBC sees pricing turning positive",
+      "url": "https://finance.yahoo.com/news/worst-over-storage-reits-rbc-081047612.html",
+      "publisher": "Investing.com",
+      "date": "2025-12-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Why Is Host Hotels (HST) Down 0.9% Since Last Earnings Report?",
+      "url": "/news/247138/why-is-host-hotels-hst-down-09-since-last-earnings-report",
+      "publisher": "Zacks",
+      "date": "2025-12-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Is Extra Space Storage (EXR) Down 1.1% Since Last Earnings Report?",
+      "url": "/news/241033/why-is-extra-space-storage-exr-down-11-since-last-earnings-report",
+      "publisher": "Zacks",
+      "date": "2025-11-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is it Wise to Retain Extra Space Storage Stock in Your Portfolio Now?",
+      "url": "/news/239649/is-it-wise-to-retain-extra-space-storage-stock-in-your-portfolio-now",
+      "publisher": "Zacks",
+      "date": "2025-11-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Best Dividend Stocks to Buy and Hold Forever",
+      "url": "/news/237009/the-best-dividend-stocks-to-buy-and-hold-forever",
+      "publisher": "Motley Fool",
+      "date": "2025-11-24",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Extra Space Storage Inc. Announces 4th Quarter 2025 Dividend",
+      "url": "/news/235599/extra-space-storage-inc-announces-4th-quarter-2025-dividend",
+      "publisher": "PR Newswire",
+      "date": "2025-11-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What Are Wall Street Analysts' Target Price for Extra Space Storage Stock?",
+      "url": "https://finance.yahoo.com/m/a7e548a5-b2aa-30af-85a4-7b47645400b5/what-are-wall-street.html",
+      "publisher": "Barchart",
+      "date": "2025-11-18",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Extra Space Storage Inc.",
+      "url": "https://finance.yahoo.com/m/284eedcd-5c33-3593-b344-5b0f6f681561/analyst-report%3A-extra-space.html",
+      "publisher": "Morningstar Research",
+      "date": "2025-11-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's How You Can Earn $100 In Passive Income By Investing In Extra Space Storage Stock",
+      "url": "https://finance.yahoo.com/news/heres-earn-100-passive-income-130205128.html",
+      "publisher": "Benzinga",
+      "date": "2025-11-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Extra Space Storage Inc (EXR) Q3 2025 Earnings Call Highlights: Strategic Acquisitions and ...",
+      "url": "https://finance.yahoo.com/news/extra-space-storage-inc-exr-011518954.html",
+      "publisher": "GuruFocus.com",
+      "date": "2025-10-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Extra Space Storage Inc.",
+      "url": "https://finance.yahoo.com/m/477d596c-f498-3969-a96a-922cdb2a6e9e/analyst-report%3A-extra-space.html",
+      "publisher": "Morningstar Research",
+      "date": "2025-10-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Extra Space Storage Q3 Core FFO Beats Estimates, Revenues Lag",
+      "url": "/news/211716/extra-space-storage-q3-core-ffo-beats-estimates-revenues-lag",
+      "publisher": "Zacks",
+      "date": "2025-10-30",
+      "sentiment": "negative"
+    }
+  ]
 }

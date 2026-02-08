@@ -6229,7 +6229,7 @@
   ],
   "fundamental": {
     "pe": 34.673576,
-    "forward_pe": 29.757563,
+    "forward_pe": 29.71343,
     "pb": 6.5498676,
     "ps": 7.056118,
     "roe": 0.16902,
@@ -6257,10 +6257,10 @@
     "fcf_yield": 0.005926964678547231,
     "fcf_debt_ratio": 0.01730714332312248,
     "pe_score": 31.027460400000002,
-    "forward_pe_score": 30.242437,
+    "forward_pe_score": 30.28657,
     "pb_score": 25.3503972,
     "ps_score": 36.47960666666667,
-    "value_score": 32.583168022222225,
+    "value_score": 32.59787902222222,
     "roe_score": 69.9452,
     "roa_score": 47.68,
     "margin_score": 78.5555988,
@@ -6272,7 +6272,7 @@
     "fcf_yield_score": 34.93913723212269,
     "current_ratio_score": 15.0,
     "safety_score": 17.231318616061344,
-    "fundamental_score": 44.853782691624964,
+    "fundamental_score": 44.857460441624966,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,7 +6306,15 @@
     "technical_score": 58.334351431567974,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.2602676293215865,
+    "sentiment_pos": 0.16999999999999998,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.8300000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 63.01
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.0385534967124925,
@@ -6321,7 +6329,7 @@
     "analyst_score": 54.77405857740585
   },
   "ranking": {
-    "value_score": 32.583168022222225,
+    "value_score": 32.59787902222222,
     "quality_score": 74.25039939999999,
     "growth_score": 43.94642857142857,
     "safety_score": 17.231318616061344,
@@ -6331,7 +6339,7 @@
     "volume_score": 50.0,
     "analyst_score": 54.77405857740585,
     "pe_score": 31.027460400000002,
-    "forward_pe_score": 30.242437,
+    "forward_pe_score": 30.28657,
     "pb_score": 25.3503972,
     "ps_score": 36.47960666666667,
     "roe_score": 69.9452,
@@ -6343,17 +6351,17 @@
     "fcf_yield_score": 34.93913723212269,
     "current_ratio_score": 15.0,
     "earnings_visibility": 54.36752419571428,
-    "valuation_margin": 40.14095040666667,
+    "valuation_margin": 40.145363706666664,
     "catalyst_timeline": 60.46515778009033,
     "downside_control": 39.966769540798246,
-    "composite_score": 47.707399654830034,
+    "composite_score": 47.704944932031594,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 44.853782691624964,
+    "fundamental_score": 44.857460441624966,
     "technical_score": 58.334351431567974,
-    "sentiment_score": 50.0,
+    "sentiment_score": 63.01,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Energy",
     "industry": "Oil & Gas Storage & Transportation"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Jefferies and Mizuho Raise Williams Companies (WMB) Price Targets",
+      "url": "/news/303756/jefferies-and-mizuho-raise-williams-companies-wmb-price-targets",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Morgan Stanley Upheld Buy Rating for The Williams Companies (WMB)",
+      "url": "/news/303027/morgan-stanley-upheld-buy-rating-for-the-williams-companies-wmb",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Enbridge (ENB) Reports Next Week: Wall Street Expects Earnings Growth",
+      "url": "/news/302977/enbridge-enb-reports-next-week-wall-street-expects-earnings-growth",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Williams Companies, Inc. (The) (WMB) to Report Q4 Results: Wall Street Expects Earnings Growth",
+      "url": "/news/299670/williams-companies-inc-the-wmb-to-report-q4-results-wall-street-expects-earnings-growth",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Williams to Report Q4 Earnings: What Surprise Awaits Investors?",
+      "url": "/news/299353/williams-to-report-q4-earnings-what-surprise-awaits-investors",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Williams Leads Industry Across Major Sustainability Rankings",
+      "url": "https://www.businesswire.com/news/home/20260203752072/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Do Wall Street Analysts Like Williams Stock?",
+      "url": "https://finance.yahoo.com/m/ddd10d0a-2af4-3fd1-b74a-474a526100bb/do-wall-street-analysts-like.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Late-January Cold Sparks Sudden Natural Gas Price Rally",
+      "url": "/news/295465/late-january-cold-sparks-sudden-natural-gas-price-rally",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Looking for Growth and Income? These 3 High-Yield Dividend Stocks Just Hiked Their Payouts Again.",
+      "url": "/news/294380/looking-for-growth-and-income-these-3-high-yield-dividend-stocks-just-hiked-their-payouts-again",
+      "publisher": "Motley Fool",
+      "date": "2026-01-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Shares Of Energy Giant Williams Pop To Record High, Get Stock Strength Rating Upgrade",
+      "url": "https://finance.yahoo.com/m/8f977374-172e-3875-acb8-a9fdff0534c1/shares-of-energy-giant.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Are Enbridge's Midstream Projects the Next Cash Flow Catalyst?",
+      "url": "/news/291489/are-enbridges-midstream-projects-the-next-cash-flow-catalyst",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Williams Increases Quarterly Cash Dividend by 5%",
+      "url": "https://www.businesswire.com/news/home/20260127381687/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Scotiabank Constructive on The Williams Companies (WMB) Amid Broader Reset of Energy Infrastructure Valuations",
+      "url": "/news/287171/scotiabank-constructive-on-the-williams-companies-wmb-amid-broader-reset-of-energy-infrastructure-valuations",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Winter Storm Fern To Impact Energy, Utility Stocks-Antero Resources, Energy Transfer, Exelon In Focus",
+      "url": "/news/286494/winter-storm-fern-to-impact-energy-utility-stocks-antero-resources-energy-transfer-exelon-in-focus",
+      "publisher": "Benzinga",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Should You Buy Energy Transfer Stock While It's Below $20?",
+      "url": "/news/286354/should-you-buy-energy-transfer-stock-while-its-below-20",
+      "publisher": "Motley Fool",
+      "date": "2026-01-25",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Williams Sets February Dates for Clean Energy & Technology Expo and 2026 Analyst Day",
+      "url": "https://www.businesswire.com/news/home/20260122217313/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Natural gas prices soar with massive winter storm, arctic blast set to impact almost half the country",
+      "url": "https://finance.yahoo.com/news/natural-gas-prices-soar-with-massive-winter-storm-arctic-blast-set-to-impact-almost-half-the-country-134413249.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PSX & KMI Launch Second Open Season for Western Gateway Pipeline",
+      "url": "/news/281447/psx-kmi-launch-second-open-season-for-western-gateway-pipeline",
+      "publisher": "Zacks",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Polar Vortex Sets Natural Gas Market On Fire-Stocks To Watch",
+      "url": "/news/281132/polar-vortex-sets-natural-gas-market-on-fire-stocks-to-watch",
+      "publisher": "Benzinga",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The AI Gold Rush Needs Energy: 3 Stocks That Could Benefit Most",
+      "url": "/news/281126/the-ai-gold-rush-needs-energy-3-stocks-that-could-benefit-most",
+      "publisher": "Motley Fool",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    }
+  ]
 }

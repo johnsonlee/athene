@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 28.600000381469727,
     "sma_20": 27.747000026702878,
-    "sma_50": 25.776372795104983,
+    "sma_50": 25.77637279510498,
     "sma_200": 30.678327817916873,
-    "trend_alignment": 0.49460242454091424,
+    "trend_alignment": 0.4946024245409143,
     "rsi": 59.87603851961295,
     "rsi_score": 0.19752077039225896,
     "macd_histogram": -0.021218846869817565,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 72.60862679529468,
     "stoch_d": 74.61397171746094,
-    "trend_score": 49.46024245409142,
+    "trend_score": 49.46024245409143,
     "rsi_abs_score": 71.58677303627094,
     "macd_abs_score": 46.290411435874404,
     "momentum_score": 58.93859223607267,
@@ -6306,7 +6306,15 @@
     "technical_score": 51.24678620046012,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.11080068132832377,
+    "sentiment_pos": 0.08954999999999999,
+    "sentiment_neg": 0.033850000000000005,
+    "sentiment_neu": 0.8766,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 55.54
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.1538461538461538,
@@ -6325,7 +6333,7 @@
     "quality_score": 53.14428514285714,
     "growth_score": 87.4,
     "safety_score": 50.903625,
-    "trend_score": 49.46024245409142,
+    "trend_score": 49.46024245409143,
     "momentum_score": 58.93859223607267,
     "volatility_score": 43.635678967054474,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 83.30074977321428,
     "catalyst_timeline": 54.27903731517026,
     "downside_control": 50.74889559505817,
-    "composite_score": 67.02589431649514,
+    "composite_score": 67.0220052711967,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 69.08546868720238,
     "technical_score": 51.24678620046012,
-    "sentiment_score": 50.0,
+    "sentiment_score": 55.54,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Materials",
     "industry": "Fertilizers & Agricultural Chemicals"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Mosaic Announces Investor Conference Participation",
+      "url": "/news/296937/mosaic-announces-investor-conference-participation",
+      "publisher": "ACCESSWIRE",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Booking Is February's Seasonal Leader, With Nvidia And 5 Stocks Joining The Trade",
+      "url": "/news/295803/booking-is-februarys-seasonal-leader-with-nvidia-and-5-stocks-joining-the-trade",
+      "publisher": "Benzinga",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Mosaic Stock: Analyst Estimates & Ratings",
+      "url": "https://finance.yahoo.com/m/be0cb497-7a19-3d61-a6a6-e32562cd643f/mosaic-stock%3A-analyst.html",
+      "publisher": "Barchart",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Wells Fargo Sees Near-Term Pressure at Mosaic (MOS) but Steadier Outlook Ahead",
+      "url": "/news/289122/wells-fargo-sees-near-term-pressure-at-mosaic-mos-but-steadier-outlook-ahead",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Put Traders Should Keep an Eye on Mosaic Stock",
+      "url": "/news/287364/put-traders-should-keep-an-eye-on-mosaic-stock",
+      "publisher": "Schaeffer's Research",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CF Industries Gains on Healthy Nitrogen Demand and Higher Prices",
+      "url": "/news/287126/cf-industries-gains-on-healthy-nitrogen-demand-and-higher-prices",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Saturday Spread: Using Inductive Reasoning to Identify Options Trading Opportunities",
+      "url": "https://finance.yahoo.com/m/4c678b64-a77f-3755-ae86-9768b59057b2/the-saturday-spread%3A-using.html",
+      "publisher": "Barchart",
+      "date": "2026-01-24",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Reasons Why Mosaic (MOS) is Strongly Favored by Hedge Funds",
+      "url": "/news/285170/reasons-why-mosaic-mos-is-strongly-favored-by-hedge-funds",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Mosaic Company Earnings Preview: What to Expect",
+      "url": "https://finance.yahoo.com/m/332a1086-27cf-37ac-9be0-a4c2301ce924/mosaic-company-earnings.html",
+      "publisher": "Barchart",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Mosaic Announces Extension of Phosphate Production Curtailments in Brazil",
+      "url": "/news/282030/mosaic-announces-extension-of-phosphate-production-curtailments-in-brazil",
+      "publisher": "ACCESSWIRE",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MOS Updates on Market and Issues Preliminary Q4 Sales Volumes",
+      "url": "/news/281276/mos-updates-on-market-and-issues-preliminary-q4-sales-volumes",
+      "publisher": "Zacks",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Morgan Stanley Raises Mosaic (MOS) Target as Potash Outlook Improves for 2026",
+      "url": "/news/279928/morgan-stanley-raises-mosaic-mos-target-as-potash-outlook-improves-for-2026",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-18",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Mosaic Stock Flopped on Friday",
+      "url": "/news/279482/why-mosaic-stock-flopped-on-friday",
+      "publisher": "Motley Fool",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Finish Slightly Lower as Bond Yields Climb",
+      "url": "https://finance.yahoo.com/m/2f0dcf53-6ce6-3e76-b5c2-f4c2ad46c649/stocks-finish-slightly-lower.html",
+      "publisher": "Barchart",
+      "date": "2026-01-16",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Farmers Cutting Back on Fertilizer Purchases",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-01-16-2026/card/farmers-cutting-back-on-fertilizer-purchases-RuitGIqVAGQZ8uw1dZgC?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-16",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Why Is Mosaic Stock Down Today?",
+      "url": "/news/279072/why-is-mosaic-stock-down-today",
+      "publisher": "Benzinga",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: The Mosaic Company",
+      "url": "https://finance.yahoo.com/m/1c7bfc09-b544-31ae-8f24-2f90f4301365/analyst-report%3A-the-mosaic.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Climb on Renewed Optimism for AI Spending",
+      "url": "https://finance.yahoo.com/m/d5ef5a34-5fb7-3002-a327-fc7eca70e59a/stocks-climb-on-renewed.html",
+      "publisher": "Barchart",
+      "date": "2026-01-16",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Mosaic Issues Market Update And Preliminary Fourth Quarter 2025 Sales Results",
+      "url": "/news/278544/mosaic-issues-market-update-and-preliminary-fourth-quarter-2025-sales-results",
+      "publisher": "ACCESSWIRE",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Climb Before the Open as TSMC Reignites AI Optimism, U.S. Economic Data and Earnings in Focus",
+      "url": "https://finance.yahoo.com/m/cbd881be-98e8-306c-baaa-793cd1d87efc/stocks-climb-before-the-open.html",
+      "publisher": "Barchart",
+      "date": "2026-01-15",
+      "sentiment": "positive"
+    }
+  ]
 }

@@ -6295,8 +6295,8 @@
     "avg_volume_20d": 775505.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 26.302347505443194,
-    "stoch_d": 35.98445802869986,
+    "stoch_k": 26.3023475054432,
+    "stoch_d": 35.98445802869987,
     "trend_score": 37.70771332924992,
     "rsi_abs_score": 61.56084041324709,
     "macd_abs_score": 41.33928909062732,
@@ -6306,7 +6306,15 @@
     "technical_score": 49.02542201007464,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.07608341690329697,
+    "sentiment_pos": 0.09885000000000001,
+    "sentiment_neg": 0.01625,
+    "sentiment_neu": 0.8849,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 53.8
+  },
   "analyst": {
     "revision_momentum": -0.25,
     "target_upside": 0.23835089141004864,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 68.30785415,
     "catalyst_timeline": 48.55424291940991,
     "downside_control": 59.32930038193945,
-    "composite_score": 63.297188811560375,
+    "composite_score": 63.29329976626194,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 67.12018621520077,
     "technical_score": 49.02542201007464,
-    "sentiment_score": 50.0,
+    "sentiment_score": 53.8,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Restaurants"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "McDonald's to Post Q4 Earnings: What's in the Cards for the Stock?",
+      "url": "/news/303200/mcdonalds-to-post-q4-earnings-whats-in-the-cards-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pizza Hut closing 250 US stores as parent company considers selling the brand",
+      "url": "https://finance.yahoo.com/news/pizza-hut-closing-250-us-185821739.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pizza Hut will close 250 underperforming locations in 2026 as list of struggling restaurants grows",
+      "url": "https://finance.yahoo.com/m/8e9ed865-2b76-3505-8d31-5c7ce436f0e2/pizza-hut-will-close-250.html",
+      "publisher": "FastCompany",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Pizza Hut is closing hundreds of locations",
+      "url": "https://finance.yahoo.com/m/512b869e-b5d6-35bb-b25e-5610e8c1364c/pizza-hut-is-closing-hundreds.html",
+      "publisher": "CNN Business",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Domino's Pizza, Inc. (DPZ): A Bull Case Theory",
+      "url": "/news/298628/dominos-pizza-inc-dpz-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Investing Legend Warren Buffett Sold 45% of Berkshire Hathaway's Bank of America Stake and Bought Shares of This Consumer Favorite for 5 Consecutive Quarters Before Retiring",
+      "url": "/news/294996/investing-legend-warren-buffett-sold-45-of-berkshire-hathaways-bank-of-america-stake-and-bought-shares-of-this-consumer-favorite-for-5-consecutive-quarters-before-retiring",
+      "publisher": "Motley Fool",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "I Predicted That Coca-Cola Would Be a Better Buffett Stock Than Domino's to Buy in 2025. Here's What Happened.",
+      "url": "/news/294784/i-predicted-that-coca-cola-would-be-a-better-buffett-stock-than-dominos-to-buy-in-2025-heres-what-happened",
+      "publisher": "Motley Fool",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why I'm Not Following Buffett Into Domino's Just Yet",
+      "url": "https://finance.yahoo.com/news/why-im-not-following-buffett-110546410.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Fast-Casual Comeback Tour",
+      "url": "/news/293066/the-fast-casual-comeback-tour",
+      "publisher": "Motley Fool",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Chipotle to Report Q4 Earnings: Should You Buy Before the Breakout?",
+      "url": "/news/291621/chipotle-to-report-q4-earnings-should-you-buy-before-the-breakout",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Domino's Pizza Faces Tough Comps Ahead Of Q4: Analyst",
+      "url": "/news/290572/dominos-pizza-faces-tough-comps-ahead-of-q4-analyst",
+      "publisher": "Benzinga",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Domino's follows McDonald's menu plan, adds bigger deals",
+      "url": "https://finance.yahoo.com/m/34432561-1853-34ac-b6cc-0a9d6d841e4b/domino%27s-follows-mcdonald%27s.html",
+      "publisher": "TheStreet",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Domino's Throws Game-Winning Pass with Carryout Special",
+      "url": "/news/286655/dominos-throws-game-winning-pass-with-carryout-special",
+      "publisher": "PR Newswire",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "1 Profitable Stock with Exciting Potential and 2 That Underwhelm",
+      "url": "/news/285078/1-profitable-stock-with-exciting-potential-and-2-that-underwhelm",
+      "publisher": "StockStory",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Before Retiring, Warren Buffett Invested Another $6.4 Billion in 6 Different Stocks. Here's the Best of the Bunch.",
+      "url": "/news/284790/before-retiring-warren-buffett-invested-another-64-billion-in-6-different-stocks-heres-the-best-of-the-bunch",
+      "publisher": "Motley Fool",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Domino's Announces Fourth Quarter/Year-End 2025 Earnings Webcast",
+      "url": "/news/284505/dominos-announces-fourth-quarteryear-end-2025-earnings-webcast",
+      "publisher": "PR Newswire",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Intel upgraded, Domino's downgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/intel-upgraded-dominos-downgraded-wall-143603334.html",
+      "publisher": "The Fly",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here Are Tuesdays Top Wall Street Analyst Research Calls: Chevron, Dominos Pizza, Doximity, Exact Sciences, Intel, NetApp, StubHub, Toast, and More",
+      "url": "https://finance.yahoo.com/m/2262f645-346c-3a8f-97bd-5b120d5ce229/here-are-tuesday%E2%80%99s-top-wall.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What to Expect From Domino's Pizza's Next Quarterly Earnings Report",
+      "url": "https://finance.yahoo.com/m/5f6caea2-f8e9-35cb-85f8-876d98e02ddf/what-to-expect-from-domino%27s.html",
+      "publisher": "Barchart",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Popular pizza chain tests guilt-free option to win back customers",
+      "url": "https://finance.yahoo.com/m/00c4c673-d9c5-3a31-b7f1-470ff0d1378d/popular-pizza-chain-tests.html",
+      "publisher": "TheStreet",
+      "date": "2026-01-19",
+      "sentiment": "positive"
+    }
+  ]
 }

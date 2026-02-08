@@ -6277,27 +6277,27 @@
   },
   "technical": {
     "close": 74.81999969482422,
-    "sma_20": 71.7555004119873,
-    "sma_50": 68.66182548522951,
-    "sma_200": 68.78095529556273,
-    "trend_alignment": 0.6317608897628291,
+    "sma_20": 71.75550041198731,
+    "sma_50": 68.6618254852295,
+    "sma_200": 68.78095529556275,
+    "trend_alignment": 0.631760889762829,
     "rsi": 65.27639904453856,
     "rsi_score": 0.30552798089077127,
     "macd_histogram": 0.18210268747196956,
     "macd_line": 1.48123972505077,
     "macd_histogram_pct": 0.24338771480183094,
-    "bb_position": 0.90226489619996,
-    "bb_upper": 75.56455672262496,
-    "bb_lower": 67.94644410134964,
-    "bb_width": 0.1061676467662492,
+    "bb_position": 0.9022648961999581,
+    "bb_upper": 75.56455672262497,
+    "bb_lower": 67.94644410134966,
+    "bb_width": 0.10616764676624917,
     "hist_volatility": 0.2811473377927161,
     "volume_ratio": 0.8029139950028598,
     "avg_volume_20d": 1660950.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 91.48906701105832,
+    "stoch_k": 91.48906701105834,
     "stoch_d": 83.63154295454632,
-    "trend_score": 63.176088976282905,
+    "trend_score": 63.1760889762829,
     "rsi_abs_score": 67.22608267529202,
     "macd_abs_score": 58.58469287004577,
     "momentum_score": 62.905387772668895,
@@ -6306,7 +6306,15 @@
     "technical_score": 58.69179627877874,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.008391899828101743,
+    "sentiment_pos": 0.0421,
+    "sentiment_neg": 0.033999999999999996,
+    "sentiment_neu": 0.9239,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 50.42
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.10932905640203164,
@@ -6325,7 +6333,7 @@
     "quality_score": 20.84,
     "growth_score": 17.1,
     "safety_score": 66.90525,
-    "trend_score": 63.176088976282905,
+    "trend_score": 63.1760889762829,
     "momentum_score": 62.905387772668895,
     "volatility_score": 54.33676627046603,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 67.81033905714285,
     "catalyst_timeline": 58.927329711783706,
     "downside_control": 65.3103024405699,
-    "composite_score": 48.495770961647196,
+    "composite_score": 48.49188191634876,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 41.782499214285714,
     "technical_score": 58.69179627877874,
-    "sentiment_score": 50.0,
+    "sentiment_score": 50.42,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Materials",
     "industry": "Specialty Chemicals"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "International Flavors (IFF) Q4 Earnings Preview: What You Should Know Beyond the Headline Estimates",
+      "url": "/news/302830/international-flavors-iff-q4-earnings-preview-what-you-should-know-beyond-the-headline-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Green Plains Renewable Energy (GPRE) Q4 Earnings Surpass Estimates",
+      "url": "/news/301410/green-plains-renewable-energy-gpre-q4-earnings-surpass-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "International Flavors (IFF) Expected to Beat Earnings Estimates: What to Know Ahead of Q4 Release",
+      "url": "/news/299682/international-flavors-iff-expected-to-beat-earnings-estimates-what-to-know-ahead-of-q4-release",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tastepoint by IFF Predicts Ten Flavor Trends for 2026",
+      "url": "https://www.businesswire.com/news/home/20260202440399/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "International Flavors & Fragrances (IFF): Buy, Sell, or Hold Post Q3 Earnings?",
+      "url": "/news/294054/international-flavors-fragrances-iff-buy-sell-or-hold-post-q3-earnings",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Reasons IFF is Risky and 1 Stock to Buy Instead",
+      "url": "/news/291073/3-reasons-iff-is-risky-and-1-stock-to-buy-instead",
+      "publisher": "StockStory",
+      "date": "2026-01-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "IFF price target raised to $80 from $70 at Argus",
+      "url": "https://finance.yahoo.com/news/iff-price-target-raised-80-143548030.html",
+      "publisher": "TipRanks",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Potential Rate Cuts to Drive Momentum for International Flavors & Fragrances (IFF)",
+      "url": "/news/285185/potential-rate-cuts-to-drive-momentum-for-international-flavors-fragrances-iff",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-23",
+      "sentiment": "negative"
+    },
+    {
+      "title": "IFF to Release Fourth Quarter & Full Year 2025 Results on Feb. 11, 2026; IFF to Present at 2026 CAGNY Conference on Feb. 19, 2026",
+      "url": "https://www.businesswire.com/news/home/20260121960548/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Reasons to Avoid IFF and 1 Stock to Buy Instead",
+      "url": "/news/280560/3-reasons-to-avoid-iff-and-1-stock-to-buy-instead",
+      "publisher": "StockStory",
+      "date": "2026-01-18",
+      "sentiment": "negative"
+    },
+    {
+      "title": "International Flavors & Fragrances Quarterly Earnings Preview: What You Need to Know",
+      "url": "https://finance.yahoo.com/m/22f33297-47d3-30a5-83b3-b96ffa2bd7d2/international-flavors-%26.html",
+      "publisher": "Barchart",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Q3 Earnings Roundup: International Flavors & Fragrances (NYSE:IFF) And The Rest Of The Ingredients, Flavors & Fragrances Segment",
+      "url": "/news/278486/q3-earnings-roundup-international-flavors-fragrances-nyse-iff-and-the-rest-of-the-ingredients-flavors-fragrances-segment",
+      "publisher": "StockStory",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Reasons to Avoid IFF and 1 Stock to Buy Instead",
+      "url": "/news/278059/3-reasons-to-avoid-iff-and-1-stock-to-buy-instead",
+      "publisher": "StockStory",
+      "date": "2026-01-14",
+      "sentiment": "negative"
+    },
+    {
+      "title": "IFF Gains From Focus on Growth Despite Low Food Ingredient Volumes",
+      "url": "/news/265283/iff-gains-from-focus-on-growth-despite-low-food-ingredient-volumes",
+      "publisher": "Zacks",
+      "date": "2025-12-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "International Flavors & Fragrances (NYSE:IFF) Surprises With Q3 CY2025 Sales",
+      "url": "/news/264527/international-flavors-fragrances-nyse-iff-surprises-with-q3-cy2025-sales",
+      "publisher": "StockStory",
+      "date": "2025-12-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Implied Volatility Surging for International Flavors Stock Options",
+      "url": "/news/261082/implied-volatility-surging-for-international-flavors-stock-options",
+      "publisher": "Zacks",
+      "date": "2025-12-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: International Flavors & Fragrances Inc.",
+      "url": "https://finance.yahoo.com/m/8fed405e-7b09-3631-b876-af915f45a18e/analyst-report%3A-international.html",
+      "publisher": "Morningstar Research",
+      "date": "2025-12-10",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How Is International Flavors & Fragrances' Stock Performance Compared to Other Material Stocks?",
+      "url": "https://finance.yahoo.com/m/b1a1de8e-73f3-317a-be29-32f26f77287c/how-is-international-flavors.html",
+      "publisher": "Barchart",
+      "date": "2025-12-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "International Flavors (IFF) Up 4.9% Since Last Earnings Report: Can It Continue?",
+      "url": "/news/245944/international-flavors-iff-up-49-since-last-earnings-report-can-it-continue",
+      "publisher": "Zacks",
+      "date": "2025-12-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Mativ Announces Appointment of Seasoned Executive to Its Board of Directors",
+      "url": "https://www.businesswire.com/news/home/20251124104625/en",
+      "publisher": "Business Wire",
+      "date": "2025-11-24",
+      "sentiment": "neutral"
+    }
+  ]
 }

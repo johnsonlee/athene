@@ -6279,7 +6279,7 @@
     "close": 226.32000732421875,
     "sma_20": 213.4689994812012,
     "sma_50": 207.24756866455078,
-    "sma_200": 171.8073624420166,
+    "sma_200": 171.80736244201663,
     "trend_alignment": 0.7911237279024845,
     "rsi": 64.70005606340769,
     "rsi_score": 0.2940011212681537,
@@ -6306,7 +6306,15 @@
     "technical_score": 62.06102096404177,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.14520315346311813,
+    "sentiment_pos": 0.08235,
+    "sentiment_neg": 0.012199999999999999,
+    "sentiment_neu": 0.9054500000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 57.26
+  },
   "analyst": {
     "revision_momentum": 0.4,
     "target_upside": 0.10021208907741255,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 73.54383399999999,
     "catalyst_timeline": 68.06549397047691,
     "downside_control": 51.08276103123982,
-    "composite_score": 64.53389568572526,
+    "composite_score": 64.53000664042682,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 64.43809499999999,
     "technical_score": 62.06102096404177,
-    "sentiment_score": 50.0,
+    "sentiment_score": 57.26,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Health Care Distributors"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "3 things this healthcare exec is aligned with the Trump admin. on",
+      "url": "https://finance.yahoo.com/video/3-things-healthcare-exec-aligned-190053653.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cardinal Health price target raised to $255 from $245 at Morgan Stanley",
+      "url": "https://finance.yahoo.com/news/cardinal-health-price-target-raised-154531371.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Doximity Stock Falls Despite Q3 Earnings & Revenues Beat Estimates",
+      "url": "/news/303216/doximity-stock-falls-despite-q3-earnings-revenues-beat-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Cardinal Health (CAH) is a Strong Momentum Stock",
+      "url": "/news/302964/heres-why-cardinal-health-cah-is-a-strong-momentum-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's How Quest Diagnostics Is Placed Ahead of Q4 Earnings",
+      "url": "/news/302951/heres-how-quest-diagnostics-is-placed-ahead-of-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cardinal Health Q2 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/9bcdc88e-c68b-3981-a3f8-78411313aee6/cardinal-health-q2-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CAH Q4 Deep Dive: Specialty and Growth Segments Drive Outperformance and Upgraded Outlook",
+      "url": "/news/302472/cah-q4-deep-dive-specialty-and-growth-segments-drive-outperformance-and-upgraded-outlook",
+      "publisher": "StockStory",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cardinal Health Inc (CAH) Q2 2026 Earnings Call Highlights: Robust Revenue Growth and Raised ...",
+      "url": "https://finance.yahoo.com/news/cardinal-health-inc-cah-q2-210657873.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Is Cardinal Health (CAH) Stock Rocketing Higher Today",
+      "url": "/news/302000/why-is-cardinal-health-cah-stock-rocketing-higher-today",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cardinal Health Shares Jump After Lifting Outlook on Pharma Momentum",
+      "url": "https://finance.yahoo.com/m/126ca75c-886e-3245-8797-7a46d6031908/cardinal-health-shares-jump.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Cardinal Health, Inc.",
+      "url": "https://finance.yahoo.com/m/c96c6c00-76f8-3723-b14a-8664bd3dd3c5/analyst-report%3A-cardinal.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The $65.6 Billion Secret Wall Street Doesnt Want You to Know About Cardinal Health",
+      "url": "https://finance.yahoo.com/m/4da6b94a-2e9f-3e2c-9689-2f534f45eef9/the-%2465.6-billion-secret-wall.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Cardinal Health Stock Jumps After Earnings. Its CEO Explains What Went Right.",
+      "url": "https://www.barrons.com/articles/cardinal-earnings-stock-price-ceo-360b636e?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cardinal Health CFO talks healthcare demand from aging population",
+      "url": "https://finance.yahoo.com/video/cardinal-health-cfo-talks-healthcare-164200926.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Cardinal Health Stock Roars Higher. Another Guidance Boost Can Do That.",
+      "url": "https://www.barrons.com/articles/cardinal-health-earnings-stock-price-360b636e?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: McKesson Corporation",
+      "url": "https://finance.yahoo.com/m/8fe3c8ca-1e9a-37ea-961e-ec6c44ae9de9/analyst-report%3A-mckesson.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CAH Q2 Earnings Beat Estimates, '26 EPS View Up, Stock Gains",
+      "url": "/news/301750/cah-q2-earnings-beat-estimates-26-eps-view-up-stock-gains",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cardinal Health Smashes 52-Week High After Strong Quarter",
+      "url": "/news/301511/cardinal-health-smashes-52-week-high-after-strong-quarter",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Compared to Estimates, Cardinal (CAH) Q2 Earnings: A Look at Key Metrics",
+      "url": "/news/301539/compared-to-estimates-cardinal-cah-q2-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cardinal Health Stock: Is Wall Street Bullish or Bearish?",
+      "url": "https://finance.yahoo.com/m/49b84c67-283d-37cd-bffe-e7bb12cc164e/cardinal-health-stock%3A-is.html",
+      "publisher": "Barchart",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    }
+  ]
 }

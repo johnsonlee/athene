@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 98.52999877929688,
-    "sma_20": 104.13714981079103,
+    "sma_20": 104.13714981079102,
     "sma_50": 108.75471481323243,
     "sma_200": 128.06189933776855,
     "trend_alignment": 0.22945839665921453,
@@ -6286,17 +6286,17 @@
     "macd_histogram": -0.5123935035682505,
     "macd_line": -3.266541442555905,
     "macd_histogram_pct": -0.5200380695385888,
-    "bb_position": 0.1807113580303462,
-    "bb_upper": 112.91784272379962,
-    "bb_lower": 95.35645689778244,
+    "bb_position": 0.180711358030347,
+    "bb_upper": 112.91784272379961,
+    "bb_lower": 95.35645689778242,
     "bb_width": 0.16863708924168597,
     "hist_volatility": 0.2464019951169889,
     "volume_ratio": 0.9452565642816964,
     "avg_volume_20d": 3599975.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 24.914387114252676,
-    "stoch_d": 20.857486216441444,
+    "stoch_k": 24.91438711425268,
+    "stoch_d": 20.857486216441448,
     "trend_score": 22.945839665921454,
     "rsi_abs_score": 48.69265018192313,
     "macd_abs_score": 34.69942895692117,
@@ -6306,7 +6306,15 @@
     "technical_score": 39.12905626191295,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.038786110444433905,
+    "sentiment_pos": 0.053349999999999995,
+    "sentiment_neg": 0.05495,
+    "sentiment_neu": 0.8916999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.94
+  },
   "analyst": {
     "revision_momentum": -0.1111111111111111,
     "target_upside": 0.228052369836598,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 49.12870144047619,
     "catalyst_timeline": 40.51100839824595,
     "downside_control": 51.3821296224698,
-    "composite_score": 54.30851647662475,
+    "composite_score": 54.30462743132632,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 64.67512820571335,
     "technical_score": 39.12905626191295,
-    "sentiment_score": 50.0,
+    "sentiment_score": 51.94,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Human Resource & Employment Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Should You Buy the 3 Highest-Paying Dividend Stocks in the Nasdaq?",
+      "url": "/news/300390/should-you-buy-the-3-highest-paying-dividend-stocks-in-the-nasdaq",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "U.S. Small Business Employment Trends Hold Steady to Start 2026",
+      "url": "https://www.businesswire.com/news/home/20260203337079/en/The",
+      "publisher": "Business Wire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why the 5 Highest-Yielding Nasdaq 100 Stocks Are 2026 Boomer Safety Nets",
+      "url": "https://finance.yahoo.com/m/89ae626b-b907-39b2-985f-c2336ab6f5e2/why-the-5-highest-yielding.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Paychex, Inc. (PAYX): A Bull Case Theory",
+      "url": "/news/296529/paychex-inc-payx-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's What Wall Street Thinks About ?Paychex, Inc. (PAYX)",
+      "url": "/news/294584/heres-what-wall-street-thinks-about-paychex-inc-payx",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-31",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "WM Earnings Miss Estimates in Q4, Revenues Rise 14% Y/Y",
+      "url": "/news/292448/wm-earnings-miss-estimates-in-q4-revenues-rise-14-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "1 Cash-Producing Stock to Research Further and 2 We Question",
+      "url": "/news/292291/1-cash-producing-stock-to-research-further-and-2-we-question",
+      "publisher": "StockStory",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Automatic Data Processing Q2 Earnings Top Estimates, Revenues Rise Y/Y",
+      "url": "/news/290590/automatic-data-processing-q2-earnings-top-estimates-revenues-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Large Cap Stocks Announce Big Buyback Boosts Amid +20% Falls",
+      "url": "/news/289837/3-large-cap-stocks-announce-big-buyback-boosts-amid-20-falls",
+      "publisher": "MarketBeat",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Paychex, Inc.",
+      "url": "https://finance.yahoo.com/m/36f42991-6b64-365a-bdb9-dbbd39574255/analyst-report%3A-paychex%2C-inc..html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Booz Allen Stock Dips 8.1% Since Fiscal Q3 Earnings Release",
+      "url": "/news/288924/booz-allen-stock-dips-81-since-fiscal-q3-earnings-release",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Buyouts & Robust Liquidity Aid Accenture Amid Fierce Competition",
+      "url": "/news/287160/buyouts-robust-liquidity-aid-accenture-amid-fierce-competition",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "1 S&P 500 Stock on Our Watchlist and 2 We Question",
+      "url": "/news/285691/1-sp-500-stock-on-our-watchlist-and-2-we-question",
+      "publisher": "StockStory",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "SaaS Demand and Client Retention Aid Paychex Amid Heavy Competition",
+      "url": "/news/284244/saas-demand-and-client-retention-aid-paychex-amid-heavy-competition",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "negative"
+    },
+    {
+      "title": "PayPals Path Forward Doesnt Require Winning the Stablecoin Battle",
+      "url": "https://finance.yahoo.com/m/1a5e5430-4760-3af0-8a78-860b4f3b862e/paypal%E2%80%99s-path-forward-doesn%E2%80%99t.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-22",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Paychex (PAYX): Buy, Sell, or Hold Post Q4 Earnings?",
+      "url": "/news/283514/paychex-payx-buy-sell-or-hold-post-q4-earnings",
+      "publisher": "StockStory",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "As risk skyrockets, current and former CFOs are in demand for audit committees",
+      "url": "https://finance.yahoo.com/news/risk-skyrockets-current-former-cfos-120907833.html",
+      "publisher": "Fortune",
+      "date": "2026-01-21",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Paychex Expands Board of Directors, Appoints New Member",
+      "url": "https://www.businesswire.com/news/home/20260119850035/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Paychex Announces $1 Billion Stock Repurchase Authorization and Declares Quarterly Dividend",
+      "url": "https://www.businesswire.com/news/home/20260115728250/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jim Cramer on Paychex: \"People Didn't Like the Last Quarter, I Thought It Was Okay\"",
+      "url": "/news/273974/jim-cramer-on-paychex-people-didnt-like-the-last-quarter-i-thought-it-was-okay",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-12",
+      "sentiment": "negative"
+    }
+  ]
 }

@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 690.3699951171875,
-    "sma_20": 667.5589965820311,
+    "sma_20": 667.5589965820312,
     "sma_50": 625.5392016601562,
     "sma_200": 525.2802508544921,
     "trend_alignment": 0.7979259399809855,
@@ -6286,10 +6286,10 @@
     "macd_histogram": 0.10921997386563653,
     "macd_line": 15.297485567890703,
     "macd_histogram_pct": 0.015820498375960976,
-    "bb_position": 0.8463490770869543,
-    "bb_upper": 700.489643787754,
-    "bb_lower": 634.6283493763083,
-    "bb_width": 0.09865988586576181,
+    "bb_position": 0.8463490770869525,
+    "bb_upper": 700.4896437877541,
+    "bb_lower": 634.6283493763084,
+    "bb_width": 0.0986598858657618,
     "hist_volatility": 0.24674206985858807,
     "volume_ratio": 0.877778819998124,
     "avg_volume_20d": 533050.0,
@@ -6306,7 +6306,15 @@
     "technical_score": 62.75625606220579,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.30418923275616955,
+    "sentiment_pos": 0.209,
+    "sentiment_neg": 0.05815,
+    "sentiment_neu": 0.7329,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 65.21
+  },
   "analyst": {
     "revision_momentum": 0.09090909090909091,
     "target_upside": 0.003085302084389524,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 47.693109025,
     "catalyst_timeline": 61.66867934706268,
     "downside_control": 55.571232842518086,
-    "composite_score": 60.24133723717298,
+    "composite_score": 60.23744819187454,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 62.588245494131776,
     "technical_score": 62.75625606220579,
-    "sentiment_score": 50.0,
+    "sentiment_score": 65.21,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Other Specialty Retail"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Gen Z is obsessed with 2016, and beauty stocks like e.l.f. and Ulta are riding the nostalgia wave",
+      "url": "https://www.marketwatch.com/story/gen-z-is-obsessed-with-2016-and-beauty-stocks-like-e-l-f-and-ulta-are-riding-the-nostalgia-wave-581dd031?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why Ulta Beauty (ULTA) Gained But Lagged the Market Today",
+      "url": "/news/303425/heres-why-ulta-beauty-ulta-gained-but-lagged-the-market-today",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Energizer Q1 Earnings Top Estimates Despite Margin Pressure & Tariffs",
+      "url": "/news/302742/energizer-q1-earnings-top-estimates-despite-margin-pressure-tariffs",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Coty Q2 Earnings Miss Estimates Amid Margin Pressure, Revenues Beat",
+      "url": "/news/302712/coty-q2-earnings-miss-estimates-amid-margin-pressure-revenues-beat",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Coty Inc (COTY) Q2 2026 Earnings Call Highlights: Strategic Shifts Amid Market Challenges",
+      "url": "https://finance.yahoo.com/news/coty-inc-coty-q2-2026-050402593.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Target bets on beauty makeover as Ulta exit looms",
+      "url": "https://finance.yahoo.com/m/1a04ee86-8872-3ee9-b049-d74d9c9afaa4/target-bets-on-beauty.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Estee Lauder Q2 Earnings Beat Estimates, 2026 Guidance Raised",
+      "url": "/news/301820/estee-lauder-q2-earnings-beat-estimates-2026-guidance-raised",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "E.l.f. Beauty's more upbeat outlook shows demand for cosmetics is still growing",
+      "url": "https://www.marketwatch.com/story/e-l-f-beautys-more-upbeat-outlook-shows-demand-for-cosmetics-is-still-growing-0459cd41?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ulta Beauty Introduces the First-Ever Ulta Beauty Roster, Announcing Its Biggest Investment in Women's Sports",
+      "url": "https://www.businesswire.com/news/home/20260204769976/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Coty Expands AI Capabilities Through Strategic Alliance With OpenAI",
+      "url": "/news/297865/coty-expands-ai-capabilities-through-strategic-alliance-with-openai",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Sally Beauty to Report Q1 Earnings: Key Factors to Watch Ahead",
+      "url": "/news/297834/sally-beauty-to-report-q1-earnings-key-factors-to-watch-ahead",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ulta Beauty (ULTA) Crossed Above the 20-Day Moving Average: What That Means for Investors",
+      "url": "/news/297564/ulta-beauty-ulta-crossed-above-the-20-day-moving-average-what-that-means-for-investors",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "5 Momentum Picks for February After Wall Street's Solid Start to 2026",
+      "url": "/news/297554/5-momentum-picks-for-february-after-wall-streets-solid-start-to-2026",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "QVC introduces new beauty, wellness products",
+      "url": "https://finance.yahoo.com/m/9d156f84-9a18-30f3-a19c-03eafb206baa/qvc-introduces-new-beauty%2C.html",
+      "publisher": "Retail Dive",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "1 Cash-Producing Stock to Keep an Eye On and 2 We Find Risky",
+      "url": "/news/296785/1-cash-producing-stock-to-keep-an-eye-on-and-2-we-find-risky",
+      "publisher": "StockStory",
+      "date": "2026-02-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Ulta Beauty (ULTA) Exceeds Market Returns: Some Facts to Consider",
+      "url": "/news/296290/ulta-beauty-ulta-exceeds-market-returns-some-facts-to-consider",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Wall Street Bulls Look Optimistic About Ulta (ULTA): Should You Buy?",
+      "url": "/news/295682/wall-street-bulls-look-optimistic-about-ulta-ulta-should-you-buy",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "1 Safe-and-Steady Stock with Solid Fundamentals and 2 We Ignore",
+      "url": "/news/294097/1-safe-and-steady-stock-with-solid-fundamentals-and-2-we-ignore",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Ulta Beauty Inc. (ULTA) Is a Trending Stock: Facts to Know Before Betting on It",
+      "url": "/news/291760/ulta-beauty-inc-ulta-is-a-trending-stock-facts-to-know-before-betting-on-it",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Dollar Tree's Q3 Revenue & Comps Up: Can It Retain the Momentum?",
+      "url": "/news/290585/dollar-trees-q3-revenue-comps-up-can-it-retain-the-momentum",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    }
+  ]
 }

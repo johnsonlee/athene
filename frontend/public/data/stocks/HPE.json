@@ -6306,7 +6306,15 @@
     "technical_score": 58.56670492615368,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.08896267532869791,
+    "sentiment_pos": 0.0578,
+    "sentiment_neg": 0.01555,
+    "sentiment_neu": 0.9266500000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 54.45
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.10122829309614573,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 73.56172581,
     "catalyst_timeline": 60.932569431192235,
     "downside_control": 39.97000959419128,
-    "composite_score": 49.914514719717964,
+    "composite_score": 49.91062567441953,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 44.529486389285715,
     "technical_score": 58.56670492615368,
-    "sentiment_score": 50.0,
+    "sentiment_score": 54.45,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Technology Hardware, Storage & Peripherals"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Should You Buy, Sell, or Hold Vertiv Stock Before Q4 Earnings?",
+      "url": "/news/303015/should-you-buy-sell-or-hold-vertiv-stock-before-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Hewlett Packard Enterprise Company",
+      "url": "https://finance.yahoo.com/m/0ce429ef-f654-3e21-84eb-64883cd7b3d6/analyst-report%3A-hewlett.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Market Today, Feb. 4: Super Micro Computer Surges on Blowout Earnings Fueled by AI Server Demand",
+      "url": "/news/300371/stock-market-today-feb-4-super-micro-computer-surges-on-blowout-earnings-fueled-by-ai-server-demand",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Advanced Micro Devices (AMD) Beats Q4 Earnings and Revenue Estimates",
+      "url": "/news/298299/advanced-micro-devices-amd-beats-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Disney, PayPal name new CEOs: Why this matters",
+      "url": "https://finance.yahoo.com/video/disney-paypal-name-ceos-why-140252206.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "HPE to Present Live Audio Webcast of Fiscal 2026 First Quarter Earnings Conference Call",
+      "url": "https://www.businesswire.com/news/home/20260203062125/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "HP CEO Enrique Lores reveals why he is leaving to be the CEO of PayPal",
+      "url": "https://finance.yahoo.com/news/hp-ceo-enrique-lores-reveals-why-he-is-leaving-to-be-the-ceo-of-paypal-123935117.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Buy, Sell or Hold QCOM Stock? Key Tips Ahead of Q1 Earnings Release",
+      "url": "/news/293715/buy-sell-or-hold-qcom-stock-key-tips-ahead-of-q1-earnings-release",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is Wall Street Bullish or Bearish on Hewlett Packard Enterprise Stock?",
+      "url": "https://finance.yahoo.com/m/6bb32cdc-8db6-3415-88e9-4b6c255c3456/is-wall-street-bullish-or.html",
+      "publisher": "Barchart",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Zacks Analyst Blog Microsoft, Lenovo, and Dell",
+      "url": "/news/287844/the-zacks-analyst-blog-microsoft-lenovo-and-dell",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "HPE and 2degrees Collaborate to Accelerate AI Innovation and Strengthen Data Sovereignty in New Zealand",
+      "url": "https://www.businesswire.com/news/home/20260126775140/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Microsoft Stock Before Q2 Earnings: Buy Now or Wait for Results?",
+      "url": "/news/286935/microsoft-stock-before-q2-earnings-buy-now-or-wait-for-results",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Hewlett Packard Enterprise (HPE) Stock Is Up Today",
+      "url": "/news/284351/why-hewlett-packard-enterprise-hpe-stock-is-up-today",
+      "publisher": "StockStory",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Arista Stock Moves Into Positive Territory Ahead Of Q4 Earnings",
+      "url": "https://finance.yahoo.com/m/259145c6-4996-39ca-9b7b-bd2d21711d1b/arista-stock-moves-into.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "SMCI's Server and Storage Segmental Revenues Surge: What Lies Ahead?",
+      "url": "/news/284156/smcis-server-and-storage-segmental-revenues-surge-what-lies-ahead",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Heres What to Expect From Hewlett Packard Enterprises Next Earnings Report",
+      "url": "https://finance.yahoo.com/m/4603f31d-b04d-3430-9253-15ed373bcb6b/here%E2%80%99s-what-to-expect-from.html",
+      "publisher": "Barchart",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "President Trump addresses world leadersDavos CEO Brief for Wednesday, January 21, 2026",
+      "url": "https://finance.yahoo.com/video/president-trump-addresses-world-leaders-201100298.html",
+      "publisher": "WSJ",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "For Data Centers, Power Is the New Real Estate",
+      "url": "/news/282740/for-data-centers-power-is-the-new-real-estate",
+      "publisher": "Motley Fool",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Can Vertiv's International Expansion Drive More Upside in the Stock?",
+      "url": "/news/282641/can-vertivs-international-expansion-drive-more-upside-in-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "HPE CEO: Governments Are Racing to Build Their Own AI Cloudsand They Want Them Now",
+      "url": "https://finance.yahoo.com/video/hpe-ceo-governments-racing-build-152400112.html",
+      "publisher": "WSJ",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    }
+  ]
 }

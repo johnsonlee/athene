@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 121.86000061035156,
-    "sma_20": 119.85050010681151,
+    "sma_20": 119.85050010681152,
     "sma_50": 118.34800033569336,
     "sma_200": 119.18390533447268,
     "trend_alignment": 0.5372887268513405,
@@ -6286,17 +6286,17 @@
     "macd_histogram": 0.29983237698899756,
     "macd_line": 1.1008459946406361,
     "macd_histogram_pct": 0.24604659074942423,
-    "bb_position": 0.773889011112646,
-    "bb_upper": 123.51895780684238,
-    "bb_lower": 116.18204240678064,
-    "bb_width": 0.06121722807600333,
+    "bb_position": 0.773889011112644,
+    "bb_upper": 123.5189578068424,
+    "bb_lower": 116.18204240678065,
+    "bb_width": 0.06121722807600332,
     "hist_volatility": 0.13920298343284776,
     "volume_ratio": 1.01414180884136,
     "avg_volume_20d": 4350575.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 77.17364889001564,
-    "stoch_d": 83.01354624514849,
+    "stoch_d": 83.01354624514848,
     "trend_score": 53.72887268513406,
     "rsi_abs_score": 72.35721841909432,
     "macd_abs_score": 58.651164768735605,
@@ -6306,7 +6306,15 @@
     "technical_score": 60.76128579420503,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.37761730341764266,
+    "sentiment_pos": 0.23755,
+    "sentiment_neg": 0.0241,
+    "sentiment_neu": 0.73835,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 68.88
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.08321024126046284,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 58.418786643333334,
     "catalyst_timeline": 58.85552619452233,
     "downside_control": 47.97854988286774,
-    "composite_score": 59.18347044047516,
+    "composite_score": 59.179581395176726,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 56.699000774206354,
     "technical_score": 60.76128579420503,
-    "sentiment_score": 50.0,
+    "sentiment_score": 68.88,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 123,
-    "percentile": 0.7649325626204239,
+    "rank": 122,
+    "percentile": 0.766859344894027,
     "tier": "buy",
     "tier_raw": "buy",
     "tier_label": "Buy",
@@ -6369,5 +6377,146 @@
     "sector": "Utilities",
     "industry": "Electric Utilities"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "BTIG, RBC Capital, and Wells Fargo Cut Duke Energy (DUK) Price Targets",
+      "url": "/news/303750/btig-rbc-capital-and-wells-fargo-cut-duke-energy-duk-price-targets",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Duke Energy (DUK) Stock Sinks As Market Gains: What You Should Know",
+      "url": "/news/303443/duke-energy-duk-stock-sinks-as-market-gains-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 High-Yield Dividend Stocks Perfect For Those 60+ Years",
+      "url": "https://finance.yahoo.com/m/f1f5153b-0348-38b0-ade6-8c82e8d45ede/3-high-yield-dividend-stocks.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Duke Energy to Release Q4 Earnings: How to Approach the Stock Now?",
+      "url": "/news/302753/duke-energy-to-release-q4-earnings-how-to-approach-the-stock-now",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Duke Energy again named by Fortune one of World's Most Admired Companies",
+      "url": "/news/301872/duke-energy-again-named-by-fortune-one-of-worlds-most-admired-companies",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Duke Energy invests $500,000 in North Carolina community colleges to strengthen energy workforce pipeline",
+      "url": "/news/301519/duke-energy-invests-500000-in-north-carolina-community-colleges-to-strengthen-energy-workforce-pipeline",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Duke Energy Corporation (DUK): A Bull Case Theory",
+      "url": "/news/299802/duke-energy-corporation-duk-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "NorthWestern (NWE) Reports Next Week: Wall Street Expects Earnings Growth",
+      "url": "/news/299678/northwestern-nwe-reports-next-week-wall-street-expects-earnings-growth",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Duke Energy Corporation (DUK) is Attracting Investor Attention: Here is What You Should Know",
+      "url": "/news/299399/duke-energy-corporation-duk-is-attracting-investor-attention-here-is-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analysts Estimate Duke Energy (DUK) to Report a Decline in Earnings: What to Look Out for",
+      "url": "/news/297677/analysts-estimate-duke-energy-duk-to-report-a-decline-in-earnings-what-to-look-out-for",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What Are Wall Street Analysts' Target Price for Duke Energy Stock?",
+      "url": "https://finance.yahoo.com/m/a79586eb-ffd8-315d-83b1-b3c2d76dfd80/what-are-wall-street.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "KPMG LLP Launches Tax AI Accelerator Program",
+      "url": "https://finance.yahoo.com/news/kpmg-llp-launches-tax-ai-125900555.html",
+      "publisher": "TMX Newsfile",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Duke Energy (DUK) Stock Dips While Market Gains: Key Facts",
+      "url": "/news/296327/duke-energy-duk-stock-dips-while-market-gains-key-facts",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Duke Energy: Thank you, Florida customers, for conserving energy during extreme cold on Monday morning",
+      "url": "/news/296010/duke-energy-thank-you-florida-customers-for-conserving-energy-during-extreme-cold-on-monday-morning",
+      "publisher": "PR Newswire",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Duke Energy: Thank you, Carolinas customers, for conserving energy during extreme cold on Monday morning",
+      "url": "/news/296011/duke-energy-thank-you-carolinas-customers-for-conserving-energy-during-extreme-cold-on-monday-morning",
+      "publisher": "PR Newswire",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Dukes budget and employee cuts called into question by audit",
+      "url": "https://finance.yahoo.com/m/b09c66ac-bfa9-32da-b66b-302d8dabc3b8/duke%E2%80%99s-budget-and-employee.html",
+      "publisher": "Higher Ed Dive",
+      "date": "2026-02-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Duke Energy urges Florida customers to reduce electric usage",
+      "url": "/news/294840/duke-energy-urges-florida-customers-to-reduce-electric-usage",
+      "publisher": "PR Newswire",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Duke Energy urges Carolinas customers to reduce energy use",
+      "url": "/news/294773/duke-energy-urges-carolinas-customers-to-reduce-energy-use",
+      "publisher": "PR Newswire",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Spire Spotlights FY2025 Results, 23rd Straight Dividend Hike, Tennessee Expansion at Annual Meeting",
+      "url": "https://finance.yahoo.com/m/a3a66721-64bc-3574-af36-07684c4f1d8a/spire-spotlights-fy2025.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Duke Energy urges customers to prepare for snow, high winds and bitter cold across the Carolinas",
+      "url": "/news/293585/duke-energy-urges-customers-to-prepare-for-snow-high-winds-and-bitter-cold-across-the-carolinas",
+      "publisher": "PR Newswire",
+      "date": "2026-01-30",
+      "sentiment": "negative"
+    }
+  ]
 }

@@ -6306,7 +6306,15 @@
     "technical_score": 58.99337000779745,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.0710481151674214,
+    "sentiment_pos": 0.0684,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.9316000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 53.55
+  },
   "analyst": {
     "revision_momentum": -0.25,
     "target_upside": 0.05025259239563947,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 48.225905466666674,
     "catalyst_timeline": 55.09653757204349,
     "downside_control": 55.212054216423724,
-    "composite_score": 55.75926727979886,
+    "composite_score": 55.75537823450043,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 62.62363747222222,
     "technical_score": 58.99337000779745,
-    "sentiment_score": 50.0,
+    "sentiment_score": 53.55,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Real Estate",
     "industry": "Retail REITs"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Regency Centers Corp (REG) Q4 2025 Earnings Call Highlights: Record Rent Spreads and Robust ...",
+      "url": "https://finance.yahoo.com/news/regency-centers-corp-reg-q4-230043656.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Regency Centers Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/f39fa616-95a7-30b7-9c3e-9daa1b6e4a5c/regency-centers-q4-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Regency Centers Corporation",
+      "url": "https://finance.yahoo.com/m/76f834a6-f3eb-365a-8fa5-b6d077a3d756/analyst-report%3A-regency.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Regency Centers Q4 FFO Meet Estimates, Same-Property NOI Rises",
+      "url": "/news/303036/regency-centers-q4-ffo-meet-estimates-same-property-noi-rises",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Regency Centers (REG) Q4 FFO Match Estimates",
+      "url": "/news/302243/regency-centers-reg-q4-ffo-match-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Regency Centers: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/regency-centers-q4-earnings-snapshot-213255733.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Regency Centers Reports Fourth Quarter and Full Year 2025 Results",
+      "url": "/news/302137/regency-centers-reports-fourth-quarter-and-full-year-2025-results",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Regency Centers to Post Q4 Earnings: What's in Store for the Stock?",
+      "url": "/news/299738/regency-centers-to-post-q4-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Simon Property Q4 FFO Beats Estimates on Higher Revenues & Rent",
+      "url": "/news/297910/simon-property-q4-ffo-beats-estimates-on-higher-revenues-rent",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What's in Store for Equity Residential Stock in Q4 Earnings?",
+      "url": "/news/297692/whats-in-store-for-equity-residential-stock-in-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What to Expect From Simon Property Stock This Earnings Season?",
+      "url": "/news/292083/what-to-expect-from-simon-property-stock-this-earnings-season",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Zacks Industry Outlook Highlights Simon, Regency and Urban Edge Properties",
+      "url": "/news/291217/zacks-industry-outlook-highlights-simon-regency-and-urban-edge-properties",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Top 3 Retail REITs Poised Well to Gain From Tight Supply and Stability",
+      "url": "/news/290528/top-3-retail-reits-poised-well-to-gain-from-tight-supply-and-stability",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Zacks Analyst Blog Cushman & Wakefield's, Simon Property, Regency Centers, Kimco  and Federal Realty Investment",
+      "url": "/news/289472/the-zacks-analyst-blog-cushman-wakefields-simon-property-regency-centers-kimco-and-federal-realty-investment",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Retail REITs That Appear Well Poised to Surpass Q4 Expectations",
+      "url": "/news/288708/retail-reits-that-appear-well-poised-to-surpass-q4-expectations",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Key Reasons to Add Simon Property Stock to Your Portfolio Now",
+      "url": "/news/288345/key-reasons-to-add-simon-property-stock-to-your-portfolio-now",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Regency Centers Announces Tax Information for Regency Centers 2025 Distributions",
+      "url": "/news/283691/regency-centers-announces-tax-information-for-regency-centers-2025-distributions",
+      "publisher": "GlobeNewswire",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Regency Centers Corporations Q4 2025 Earnings: What to Expect",
+      "url": "https://finance.yahoo.com/m/b0a86321-9782-3754-a146-0efb1dca51d6/regency-centers-corporation%E2%80%99s.html",
+      "publisher": "Barchart",
+      "date": "2026-01-13",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Regency Centers Invites You to Join Its Fourth Quarter 2025 Earnings Conference Call",
+      "url": "/news/268829/regency-centers-invites-you-to-join-its-fourth-quarter-2025-earnings-conference-call",
+      "publisher": "GlobeNewswire",
+      "date": "2026-01-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is it Wise to Hold Regency Centers Stock in Your Portfolio Now?",
+      "url": "/news/266111/is-it-wise-to-hold-regency-centers-stock-in-your-portfolio-now",
+      "publisher": "Zacks",
+      "date": "2026-01-02",
+      "sentiment": "positive"
+    }
+  ]
 }

@@ -6277,19 +6277,19 @@
   },
   "technical": {
     "close": 50.119998931884766,
-    "sma_20": 44.886484146118164,
+    "sma_20": 44.88648414611816,
     "sma_50": 48.46066482543946,
-    "sma_200": 53.531417808532716,
-    "trend_alignment": 0.4593144049159452,
+    "sma_200": 53.53141780853271,
+    "trend_alignment": 0.45931440491594533,
     "rsi": 67.94748294175467,
     "rsi_score": 0.35894965883509344,
     "macd_histogram": 1.0398417457149833,
     "macd_line": 0.6006415333864865,
     "macd_histogram_pct": 2.0747042455610845,
-    "bb_position": 1.0241565692404566,
-    "bb_upper": 49.87880427801155,
-    "bb_lower": 39.89416401422478,
-    "bb_width": 0.22244202132837923,
+    "bb_position": 1.0241565692404573,
+    "bb_upper": 49.87880427801154,
+    "bb_lower": 39.89416401422477,
+    "bb_width": 0.22244202132837926,
     "hist_volatility": 0.2954024287047634,
     "volume_ratio": 1.1974968842588483,
     "avg_volume_20d": 3041010.0,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 93.9526811352135,
     "stoch_d": 93.73500190807353,
-    "trend_score": 45.93144049159452,
+    "trend_score": 45.931440491594536,
     "rsi_abs_score": 59.74704776308692,
     "macd_abs_score": 80.0,
     "momentum_score": 69.87352388154346,
-    "volatility_score": 38.93997520996953,
+    "volatility_score": 38.939975209969525,
     "volume_score": 50.0,
     "technical_score": 52.5294843539353,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.3341361140027946,
+    "sentiment_pos": 0.10665,
+    "sentiment_neg": 0.01595,
+    "sentiment_neu": 0.8774,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 66.71
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.05746209098164411,
@@ -6325,9 +6333,9 @@
     "quality_score": 70.6609,
     "growth_score": 40.375,
     "safety_score": 61.181249538240536,
-    "trend_score": 45.93144049159452,
+    "trend_score": 45.931440491594536,
     "momentum_score": 69.87352388154346,
-    "volatility_score": 38.93997520996953,
+    "volatility_score": 38.939975209969525,
     "volume_score": 50.0,
     "analyst_score": 50.903099776536315,
     "pe_score": 68.22981428571428,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 66.51772969999999,
     "catalyst_timeline": 56.73880641496743,
     "downside_control": 51.27818371223151,
-    "composite_score": 57.779212129742504,
+    "composite_score": 57.77532308444407,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 61.433877990981436,
     "technical_score": 52.5294843539353,
-    "sentiment_score": 50.0,
+    "sentiment_score": 66.71,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Staples",
     "industry": "Packaged Foods & Meats"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Lamb Weston Announces Inducement Award Under NYSE Listing Rule 303A.08",
+      "url": "https://www.businesswire.com/news/home/20260206482566/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Lamb Weston Holdings, Inc.",
+      "url": "https://finance.yahoo.com/m/5fd17ed9-30e9-35c6-9356-b47cdd5b6aba/analyst-report%3A-lamb-weston.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Lamb Weston Announces Leadership Changes to Accelerate Focus to Win Strategy and Drive Shareholder Value",
+      "url": "https://www.businesswire.com/news/home/20260204262842/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bear of the Day: Lamb Weston (LW)",
+      "url": "/news/283490/bear-of-the-day-lamb-weston-lw",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Zoom Video and Lamb Weston have been highlighted as Zacks Bull and Bear of the Day",
+      "url": "/news/283400/zoom-video-and-lamb-weston-have-been-highlighted-as-zacks-bull-and-bear-of-the-day",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Lamb Weston Holdings, Inc. (LW): A Bull Case Theory",
+      "url": "/news/278038/lamb-weston-holdings-inc-lw-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Barclays Sees Lamb Weston (LW) Selloff as Overdone, Cuts Price Target",
+      "url": "/news/272997/barclays-sees-lamb-weston-lw-selloff-as-overdone-cuts-price-target",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-11",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Lamb Weston Streamlines Global Footprint to Improve Efficiency",
+      "url": "/news/271902/lamb-weston-streamlines-global-footprint-to-improve-efficiency",
+      "publisher": "Zacks",
+      "date": "2026-01-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "5 Under-the-Radar Consumer Staples Stocks With Pricing Power",
+      "url": "/news/271507/5-under-the-radar-consumer-staples-stocks-with-pricing-power",
+      "publisher": "MarketBeat",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Lamb Weston to Close Munro, Argentina Plant, Consolidating Latin America Production to State-of-the-Art Mar del Plata Facility",
+      "url": "https://www.businesswire.com/news/home/20260108883438/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "KRYAY vs. LW: Which Stock Is the Better Value Option?",
+      "url": "/news/268583/kryay-vs-lw-which-stock-is-the-better-value-option",
+      "publisher": "Zacks",
+      "date": "2026-01-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "5 Revealing Analyst Questions From Lamb Weston's Q4 Earnings Call",
+      "url": "/news/263640/5-revealing-analyst-questions-from-lamb-westons-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2025-12-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Lamb Weston (LW) Stock Trades Down, Here Is Why",
+      "url": "/news/261327/lamb-weston-lw-stock-trades-down-here-is-why",
+      "publisher": "StockStory",
+      "date": "2025-12-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Lamb Weston Holdings, Inc.",
+      "url": "https://finance.yahoo.com/m/07c364d4-2579-37a4-907c-a6de64ae26b6/analyst-report%3A-lamb-weston.html",
+      "publisher": "Morningstar Research",
+      "date": "2025-12-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Lamb Weston (LW) Shares Are Sliding Today",
+      "url": "/news/260328/why-lamb-weston-lw-shares-are-sliding-today",
+      "publisher": "StockStory",
+      "date": "2025-12-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "International Markets and Lamb Weston (LW): A Deep Dive for Investors",
+      "url": "/news/259969/international-markets-and-lamb-weston-lw-a-deep-dive-for-investors",
+      "publisher": "Zacks",
+      "date": "2025-12-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Market Today: S&P 500 Futures Gain; Gold, Silver Prices Rally",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-12-22-2025?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2025-12-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Lamb Weston Holdings, Inc.",
+      "url": "https://finance.yahoo.com/m/60e55046-2f69-3d5b-990f-9fb9ad145c6e/analyst-report%3A-lamb-weston.html",
+      "publisher": "Morningstar Research",
+      "date": "2025-12-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "LW Q4 Deep Dive: Volume Growth Offset by Pricing Pressure and Margin Headwinds",
+      "url": "/news/260365/lw-q4-deep-dive-volume-growth-offset-by-pricing-pressure-and-margin-headwinds",
+      "publisher": "StockStory",
+      "date": "2025-12-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Review & Preview: Here Comes Santa Claus",
+      "url": "https://www.barrons.com/articles/stocks-today-santa-claus-rally-839318be?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2025-12-19",
+      "sentiment": "neutral"
+    }
+  ]
 }

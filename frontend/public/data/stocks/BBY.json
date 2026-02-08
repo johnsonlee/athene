@@ -6277,36 +6277,44 @@
   },
   "technical": {
     "close": 70.41000366210938,
-    "sma_20": 67.05000038146972,
+    "sma_20": 67.05000038146973,
     "sma_50": 69.95174499511718,
-    "sma_200": 70.80146650314332,
-    "trend_alignment": 0.4988251970730772,
+    "sma_200": 70.80146650314333,
+    "trend_alignment": 0.49882519707307704,
     "rsi": 58.61908403149673,
     "rsi_score": 0.17238168062993467,
     "macd_histogram": 0.6908533463430147,
     "macd_line": -0.3043773541783992,
     "macd_histogram_pct": 0.981186351954122,
-    "bb_position": 1.047850224477397,
-    "bb_upper": 70.11653492916003,
-    "bb_lower": 63.9834658337794,
-    "bb_width": 0.09147008293046324,
+    "bb_position": 1.0478502244773948,
+    "bb_upper": 70.11653492916004,
+    "bb_lower": 63.98346583377941,
+    "bb_width": 0.09147008293046323,
     "hist_volatility": 0.31742993753345433,
     "volume_ratio": 0.7186315503153948,
     "avg_volume_20d": 4246265.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 94.43597628806424,
-    "stoch_d": 87.08929035222664,
-    "trend_score": 49.88251970730772,
+    "stoch_d": 87.08929035222666,
+    "trend_score": 49.88251970730771,
     "rsi_abs_score": 72.46664117795228,
     "macd_abs_score": 72.21779527931183,
     "momentum_score": 72.34221822863205,
-    "volatility_score": 53.96238944159217,
+    "volatility_score": 53.96238944159218,
     "volume_score": 50.0,
-    "technical_score": 57.45989926910037,
+    "technical_score": 57.45989926910036,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.18224842677332725,
+    "sentiment_pos": 0.13365,
+    "sentiment_neg": 0.048299999999999996,
+    "sentiment_neu": 0.81805,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 59.11
+  },
   "analyst": {
     "revision_momentum": -0.0625,
     "target_upside": 0.13620224399943195,
@@ -6325,9 +6333,9 @@
     "quality_score": 69.29330000000002,
     "growth_score": 28.0,
     "safety_score": 50.12816371067097,
-    "trend_score": 49.88251970730772,
+    "trend_score": 49.88251970730771,
     "momentum_score": 72.34221822863205,
-    "volatility_score": 53.96238944159217,
+    "volatility_score": 53.96238944159218,
     "volume_score": 50.0,
     "analyst_score": 52.87232924797615,
     "pe_score": 56.90593749999999,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 67.95799173,
     "catalyst_timeline": 57.46570671839159,
     "downside_control": 53.35758297283947,
-    "composite_score": 55.796001595863416,
+    "composite_score": 55.79211255056498,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 56.849449183800864,
-    "technical_score": 57.45989926910037,
-    "sentiment_score": 50.0,
+    "technical_score": 57.45989926910036,
+    "sentiment_score": 59.11,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Computer & Electronics Retail"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Street Calls of the Week",
+      "url": "https://finance.yahoo.com/news/street-calls-week-090516424.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Best Buy's Biggest Category Is Flashing Warning Signs: Analyst",
+      "url": "/news/296021/best-buys-biggest-category-is-flashing-warning-signs-analyst",
+      "publisher": "Benzinga",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Palantir upgraded, Best Buy downgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/palantir-upgraded-best-buy-downgraded-144724384.html",
+      "publisher": "The Fly",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here Are Mondays Top Wall Street Analyst Research Calls: Apple, Autodesk, Chevron, Circle Internet, McDonalds, Microsoft, Micron Technology, Spotify, and More",
+      "url": "https://finance.yahoo.com/m/213cd4bd-15bb-35f3-9b95-3494406d5b9e/here-are-monday%E2%80%99s-top-wall.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "2 S&P 500 Stocks with Exciting Potential and 1 We Brush Off",
+      "url": "/news/295142/2-sp-500-stocks-with-exciting-potential-and-1-we-brush-off",
+      "publisher": "StockStory",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Minnesota Businesses Resisted ICE, and Now Face DHS Audits",
+      "url": "https://finance.yahoo.com/news/minnesota-businesses-resisted-ice-now-224843307.html",
+      "publisher": "Bloomberg",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Retail Media & Marketplace Tech Unlock Profit Streams for Target",
+      "url": "/news/292444/retail-media-marketplace-tech-unlock-profit-streams-for-target",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Patagonia Urges Lawmakers to Vote Against Further ICE Funding",
+      "url": "https://finance.yahoo.com/news/patagonia-urges-lawmakers-vote-against-180759721.html",
+      "publisher": "Bloomberg",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "1 Profitable Stock on Our Buy List and 2 We Avoid",
+      "url": "/news/289542/1-profitable-stock-on-our-buy-list-and-2-we-avoid",
+      "publisher": "StockStory",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Trumps Border Enforcer to Leave Minnesota After Backlash",
+      "url": "https://finance.yahoo.com/news/trump-border-enforcer-plans-leave-011215515.html",
+      "publisher": "Bloomberg",
+      "date": "2026-01-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Minnesota CEOs Walk a Fine Line in Call for 'Immediate De-Escalation'",
+      "url": "https://www.barrons.com/articles/minnesota-ceo-letter-ice-protests-7d7e5f3b?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Minnesota CEOs Urge 'Immediate De-Escalation' but Nobody's Taking Sides",
+      "url": "https://www.barrons.com/articles/minnesota-ceos-letter-protests-7d7e5f3b?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CEOs at Target, Best Buy, and more urge 'immediate deescalation of tensions' in Minnesota",
+      "url": "https://qz.com/minnesota-ceos-letter-alex-pretti-shooting-minnesota-ice-cbp",
+      "publisher": "Quartz",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Businesses face pressure to respond to immigration enforcement while also becoming a target of it",
+      "url": "https://finance.yahoo.com/news/businesses-face-pressure-respond-immigration-162203887.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-01-26",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Best Buy's Quarterly Earnings Preview: What You Need to Know",
+      "url": "https://finance.yahoo.com/m/f6fd9466-ca2e-3851-a060-cae5df74ea3d/best-buy%27s-quarterly-earnings.html",
+      "publisher": "Barchart",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Truist Cuts Best Buy (BBY) Target to $73, Keeps Hold Rating After Spending Data Review",
+      "url": "/news/283275/truist-cuts-best-buy-bby-target-to-73-keeps-hold-rating-after-spending-data-review",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Surging memory chip prices dim outlook for consumer electronics makers",
+      "url": "https://finance.yahoo.com/news/surging-memory-chip-prices-dim-001756209.html",
+      "publisher": "Reuters",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "UBER Stock Price Decreases 9% in 3 Months: Should You Buy the Dip?",
+      "url": "/news/281304/uber-stock-price-decreases-9-in-3-months-should-you-buy-the-dip",
+      "publisher": "Zacks",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Target Eyes FY26 as Turning Point on Investments in Tech & Remodels",
+      "url": "/news/280393/target-eyes-fy26-as-turning-point-on-investments-in-tech-remodels",
+      "publisher": "Zacks",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Best Buy price target lowered to $76 from $82 at Morgan Stanley",
+      "url": "https://finance.yahoo.com/news/best-buy-price-target-lowered-124648249.html",
+      "publisher": "TipRanks",
+      "date": "2026-01-16",
+      "sentiment": "positive"
+    }
+  ]
 }

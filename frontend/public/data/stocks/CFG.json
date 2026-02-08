@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 68.12000274658203,
     "sma_20": 63.03796463012695,
-    "sma_50": 59.87064147949219,
+    "sma_50": 59.870641479492186,
     "sma_200": 49.85113353729247,
-    "trend_alignment": 0.8356539423178753,
+    "trend_alignment": 0.8356539423178754,
     "rsi": 75.94152221571575,
     "rsi_score": 0.518830444314315,
     "macd_histogram": 0.43855002887613637,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 94.70492545058792,
     "stoch_d": 92.92584818920261,
-    "trend_score": 83.56539423178752,
+    "trend_score": 83.56539423178754,
     "rsi_abs_score": 38.1169555685685,
     "macd_abs_score": 67.15685579552053,
     "momentum_score": 52.636905682044514,
     "volatility_score": 41.129782176773915,
     "volume_score": 50.0,
-    "technical_score": 59.08664640950439,
+    "technical_score": 59.0866464095044,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.12296781230028374,
+    "sentiment_pos": 0.08990000000000001,
+    "sentiment_neg": 0.0068000000000000005,
+    "sentiment_neu": 0.9033,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 56.15
+  },
   "analyst": {
     "revision_momentum": -0.06666666666666667,
     "target_upside": 0.05695830886670574,
@@ -6325,7 +6333,7 @@
     "quality_score": 62.69546249999999,
     "growth_score": 77.45785714285714,
     "safety_score": 33.12325,
-    "trend_score": 83.56539423178752,
+    "trend_score": 83.56539423178754,
     "momentum_score": 52.636905682044514,
     "volatility_score": 41.129782176773915,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 52.38619517142857,
     "catalyst_timeline": 62.9404511129334,
     "downside_control": 40.86695482651608,
-    "composite_score": 56.41793747361687,
+    "composite_score": 56.41404842831843,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 58.37624901190476,
-    "technical_score": 59.08664640950439,
-    "sentiment_score": 50.0,
+    "technical_score": 59.0866464095044,
+    "sentiment_score": 56.15,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Regional Banks"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Are Wall Street Analysts Predicting Citizens Financial Group Stock Will Climb or Sink?",
+      "url": "https://finance.yahoo.com/m/5722298a-3230-36ff-95d2-cce56effeaaf/are-wall-street-analysts.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NAVI Q4 Earnings Top on Lower Expenses, Shares Fall as NII Decline Y/Y",
+      "url": "/news/290628/navi-q4-earnings-top-on-lower-expenses-shares-fall-as-nii-decline-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "5 Revealing Analyst Questions From Citizens Financial Group's Q4 Earnings Call",
+      "url": "/news/289521/5-revealing-analyst-questions-from-citizens-financial-groups-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Citizens Financial Group Announces Redemption of Subordinated Notes",
+      "url": "https://www.businesswire.com/news/home/20260126392127/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Webster Financial Q4 Earnings Top Estimates on Higher NII, Stock Down",
+      "url": "/news/287156/webster-financial-q4-earnings-top-estimates-on-higher-nii-stock-down",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Navient Gears Up for Q4 Earnings: What's in Store for the Stock?",
+      "url": "/news/286994/navient-gears-up-for-q4-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Citizens Financial price target raised to $78 from $75 at TD Cowen",
+      "url": "https://finance.yahoo.com/news/citizens-financial-price-target-raised-145015892.html",
+      "publisher": "TipRanks",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Citizens Financial (CFG) Hits New All-Time High on Strong Earnings",
+      "url": "/news/283667/citizens-financial-cfg-hits-new-all-time-high-on-strong-earnings",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CFG Q4 Deep Dive: Private Bank Expansion and Strategic Tech Initiatives Shape Outlook",
+      "url": "/news/283365/cfg-q4-deep-dive-private-bank-expansion-and-strategic-tech-initiatives-shape-outlook",
+      "publisher": "StockStory",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Compared to Estimates, Citizens Financial Group (CFG) Q4 Earnings: A Look at Key Metrics",
+      "url": "/news/283077/compared-to-estimates-citizens-financial-group-cfg-q4-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Citizens Financial Group (CFG) Tops Q4 Earnings and Revenue Estimates",
+      "url": "/news/283066/citizens-financial-group-cfg-tops-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Citizens Financial Group Inc (CFG) Q4 2025 Earnings Call Highlights: Strong EPS Growth and ...",
+      "url": "https://finance.yahoo.com/news/citizens-financial-group-inc-cfg-210108258.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Citizens Financial Group to Participate at the UBS Financial Services Conference",
+      "url": "https://www.businesswire.com/news/home/20260121394242/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CFG Q4 Earnings Beat Estimates on NII & Fee Income Growth, Stock Up",
+      "url": "/news/282838/cfg-q4-earnings-beat-estimates-on-nii-fee-income-growth-stock-up",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Citizens Financial Group (CFG) Shares Skyrocket, What You Need To Know",
+      "url": "/news/282728/citizens-financial-group-cfg-shares-skyrocket-what-you-need-to-know",
+      "publisher": "StockStory",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Citizens Financial Group Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/c1a0a033-6ca7-3a71-a70f-fa9fc6f19d59/citizens-financial-group-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Citizens Financial Group (CFG) Q4 Earnings on the Horizon: Analysts' Insights on Key Performance Measures",
+      "url": "/news/282452/citizens-financial-group-cfg-q4-earnings-on-the-horizon-analysts-insights-on-key-performance-measures",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Citizens Financial Group: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/citizens-financial-group-q4-earnings-113643112.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Citizens Financial Group (NYSE:CFG) Surprises With Q4 CY2025 Sales",
+      "url": "/news/282137/citizens-financial-group-nyse-cfg-surprises-with-q4-cy2025-sales",
+      "publisher": "StockStory",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Citizens Financial Group, Inc. Reports Fourth Quarter 2025 Net Income of $528 million, up 32% YoY, and EPS of $1.13, up 36% YoY",
+      "url": "https://www.businesswire.com/news/home/20260121879859/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    }
+  ]
 }

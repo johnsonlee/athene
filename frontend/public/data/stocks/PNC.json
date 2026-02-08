@@ -6306,7 +6306,15 @@
     "technical_score": 58.90057180046553,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.18997580693275115,
+    "sentiment_pos": 0.09530000000000001,
+    "sentiment_neg": 0.009,
+    "sentiment_neu": 0.8957,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 59.5
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.010392609699769096,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 50.341857106666666,
     "catalyst_timeline": 60.08903173648752,
     "downside_control": 44.439267645330744,
-    "composite_score": 57.12671915329472,
+    "composite_score": 57.122830107996286,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 59.85510235079365,
     "technical_score": 58.90057180046553,
-    "sentiment_score": 50.0,
+    "sentiment_score": 59.5,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Diversified Banks"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "From AI Darlings To Dow Dinosaurs: Investors Flee Software For Old-Economy Stocks",
+      "url": "/news/303569/from-ai-darlings-to-dow-dinosaurs-investors-flee-software-for-old-economy-stocks",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Reasons to Avoid PNC and 1 Stock to Buy Instead",
+      "url": "/news/296713/3-reasons-to-avoid-pnc-and-1-stock-to-buy-instead",
+      "publisher": "StockStory",
+      "date": "2026-02-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "PNC FOUNDATION CONTRIBUTES $2M FOR NEW SNOW REMOVAL EQUIPMENT TO CITY OF PITTSBURGH",
+      "url": "/news/293119/pnc-foundation-contributes-2m-for-new-snow-removal-equipment-to-city-of-pittsburgh",
+      "publisher": "PR Newswire",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Top Stock Reports for Johnson & Johnson, Netflix & Arista Networks",
+      "url": "/news/290871/top-stock-reports-for-johnson-johnson-netflix-arista-networks",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PNC Executive to Speak at Bank of America Financial Services Conference",
+      "url": "/news/288161/pnc-executive-to-speak-at-bank-of-america-financial-services-conference",
+      "publisher": "PR Newswire",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why The PNC Financial Services Group, Inc (PNC) is a Great Dividend Stock Right Now",
+      "url": "/news/287245/why-the-pnc-financial-services-group-inc-pnc-is-a-great-dividend-stock-right-now",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why The PNC Financial Services Group, Inc (PNC) is a Strong Value Stock",
+      "url": "/news/287060/heres-why-the-pnc-financial-services-group-inc-pnc-is-a-strong-value-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The PNC Financial Services Group, Inc. (PNC) Enters 2026 With Momentum as Oppenheimer Highlights Growth Drivers",
+      "url": "/news/286297/the-pnc-financial-services-group-inc-pnc-enters-2026-with-momentum-as-oppenheimer-highlights-growth-drivers",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-25",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PNC vs. TW: Which Stock Is the Better Value Option?",
+      "url": "/news/285551/pnc-vs-tw-which-stock-is-the-better-value-option",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "5 Insightful Analyst Questions From PNC Financial Services Group's Q4 Earnings Call",
+      "url": "/news/284984/5-insightful-analyst-questions-from-pnc-financial-services-groups-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Keefe Bruyette Lifts PNC Financial (PNC) PT to $247 Following Management's Bullish 2026 Outlook",
+      "url": "/news/284849/keefe-bruyette-lifts-pnc-financial-pnc-pt-to-247-following-managements-bullish-2026-outlook",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ALLY Q4 Earnings Beat as Revenues Grow Y/Y & Provisions Decline",
+      "url": "/news/284367/ally-q4-earnings-beat-as-revenues-grow-yy-provisions-decline",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PNC Wealth Management Simplifies Investing With New Online Brokerage Account Opening",
+      "url": "/news/283807/pnc-wealth-management-simplifies-investing-with-new-online-brokerage-account-opening",
+      "publisher": "PR Newswire",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "TFC Q4 Earnings Beat Despite Y/Y Rise in Expenses, Stock Dips",
+      "url": "/news/282853/tfc-q4-earnings-beat-despite-yy-rise-in-expenses-stock-dips",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PNC Financial price target raised to $284 from $268 at Oppenheimer",
+      "url": "https://finance.yahoo.com/news/pnc-financial-price-target-raised-134604251.html",
+      "publisher": "TipRanks",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Company News for Jan 20, 2026",
+      "url": "/news/281233/company-news-for-jan-20-2026",
+      "publisher": "Zacks",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "KEY Q4 Earnings Beat as NII Jumps, Stock Down on Rise in Provisions",
+      "url": "/news/281219/key-q4-earnings-beat-as-nii-jumps-stock-down-on-rise-in-provisions",
+      "publisher": "Zacks",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Company News for Jan 19, 2026",
+      "url": "/news/280271/company-news-for-jan-19-2026",
+      "publisher": "Zacks",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PNC Q4 Deep Dive: Loan Growth, M&A, and Technology Investment Drive Momentum",
+      "url": "/news/280059/pnc-q4-deep-dive-loan-growth-ma-and-technology-investment-drive-momentum",
+      "publisher": "StockStory",
+      "date": "2026-01-17",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why PNC Financial Services Stock Flew Almost 4% Higher on Friday",
+      "url": "/news/279434/why-pnc-financial-services-stock-flew-almost-4-higher-on-friday",
+      "publisher": "Motley Fool",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    }
+  ]
 }

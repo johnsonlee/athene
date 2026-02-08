@@ -6306,7 +6306,15 @@
     "technical_score": 58.085006994146006,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.008136346915732376,
+    "sentiment_pos": 0.0498,
+    "sentiment_neg": 0.0712,
+    "sentiment_neu": 0.8789999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 50.41
+  },
   "analyst": {
     "revision_momentum": -0.125,
     "target_upside": 0.12612612612612611,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 49.5457082,
     "catalyst_timeline": 55.62264543493832,
     "downside_control": 53.91058740889015,
-    "composite_score": 46.64755536146429,
+    "composite_score": 46.643666316165856,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 38.766396713333336,
     "technical_score": 58.085006994146006,
-    "sentiment_score": 50.0,
+    "sentiment_score": 50.41,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Real Estate",
     "industry": "Timber REITs"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Masco to Report Q4 Earnings: Here's What Investors Must Know",
+      "url": "/news/301347/masco-to-report-q4-earnings-heres-what-investors-must-know",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Weyerhaeuser Co: A Significant Addition to First Eagle Investment's Portfolio",
+      "url": "https://finance.yahoo.com/news/weyerhaeuser-co-significant-addition-first-220255973.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jacobs Q1 Earnings & Revenues Top, Both Up Y/Y, FY26 View Raised",
+      "url": "/news/299329/jacobs-q1-earnings-revenues-top-both-up-yy-fy26-view-raised",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Do Wall Street Analysts Like Weyerhaeuser Stock?",
+      "url": "https://finance.yahoo.com/m/5438e507-4a59-3e94-ace6-27f42051303e/do-wall-street-analysts-like.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Weyerhaeuser Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/3296aa30-fa6a-3c27-ba01-bb19a2a482c2/weyerhaeuser-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Weyerhaeuser Co (WY) Q4 2025 Earnings Call Highlights: Strategic Growth Amid Market Challenges",
+      "url": "https://finance.yahoo.com/news/weyerhaeuser-co-wy-q4-2025-210327512.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Weyerhaeuser Q4 Loss Narrower Than Estimates, Revenues Miss, Stock Down",
+      "url": "/news/293889/weyerhaeuser-q4-loss-narrower-than-estimates-revenues-miss-stock-down",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Compared to Estimates, Weyerhaeuser (WY) Q4 Earnings: A Look at Key Metrics",
+      "url": "/news/292885/compared-to-estimates-weyerhaeuser-wy-q4-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Weyerhaeuser (WY) Reports Q4 Loss, Misses Revenue Estimates",
+      "url": "/news/292748/weyerhaeuser-wy-reports-q4-loss-misses-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Weyerhaeuser: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/weyerhaeuser-q4-earnings-snapshot-213623892.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Weyerhaeuser Reports Fourth Quarter, Full Year 2025 Results",
+      "url": "/news/292588/weyerhaeuser-reports-fourth-quarter-full-year-2025-results",
+      "publisher": "PR Newswire",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's What Investors Must Know Ahead of Weyerhaeuser's Q4 Earnings",
+      "url": "/news/290605/heres-what-investors-must-know-ahead-of-weyerhaeusers-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nine S&P 500 Stocks' Earnings Are About To Crash In A Big Way",
+      "url": "https://finance.yahoo.com/m/c1d59756-f688-35e4-8c55-4265a500e0e3/nine-s%26p-500-stocks%27-earnings.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Weyerhaeuser (WY) Q4 Earnings on the Horizon: Analysts' Insights on Key Performance Measures",
+      "url": "/news/288428/weyerhaeuser-wy-q4-earnings-on-the-horizon-analysts-insights-on-key-performance-measures",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Earnings Preview: Weyerhaeuser (WY) Q4 Earnings Expected to Decline",
+      "url": "/news/284130/earnings-preview-weyerhaeuser-wy-q4-earnings-expected-to-decline",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Weyerhaeuser Announces Tax Treatment of 2025 Dividend Distributions",
+      "url": "/news/281586/weyerhaeuser-announces-tax-treatment-of-2025-dividend-distributions",
+      "publisher": "PR Newswire",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Indexes Settle Lower on Tech Weakness",
+      "url": "https://finance.yahoo.com/m/84d699ea-b799-3bb0-a0f5-d887325d38fb/stock-indexes-settle-lower-on.html",
+      "publisher": "Barchart",
+      "date": "2026-01-14",
+      "sentiment": "negative"
+    },
+    {
+      "title": "2 Wood Stocks in Focus Despite a Tough Industry Climate",
+      "url": "/news/270626/2-wood-stocks-in-focus-despite-a-tough-industry-climate",
+      "publisher": "Zacks",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What to Expect From Weyerhaeusers Next Quarterly Earnings Report",
+      "url": "https://finance.yahoo.com/m/7e1ab74f-396d-3d3d-86c7-bea164382e9d/what-to-expect-from.html",
+      "publisher": "Barchart",
+      "date": "2025-12-31",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "DA Davidson Highlights Timberland Upside in Weyerhaeuser's (WY) Medium-Term Plan",
+      "url": "/news/262935/da-davidson-highlights-timberland-upside-in-weyerhaeusers-wy-medium-term-plan",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-28",
+      "sentiment": "neutral"
+    }
+  ]
 }

@@ -6306,7 +6306,15 @@
     "technical_score": 50.23403782596035,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.036465139978336725,
+    "sentiment_pos": 0.0524,
+    "sentiment_neg": 0.0381,
+    "sentiment_neu": 0.9095000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.82
+  },
   "analyst": {
     "revision_momentum": 0.09090909090909091,
     "target_upside": 0.1568669072383783,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 57.842980299999994,
     "catalyst_timeline": 52.133007180045524,
     "downside_control": 46.09290452195049,
-    "composite_score": 56.50398070891981,
+    "composite_score": 56.500091663621376,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 59.38418984102789,
     "technical_score": 50.23403782596035,
-    "sentiment_score": 50.0,
+    "sentiment_score": 51.82,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Automotive Retail"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "O'Reilly Automotive Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/b313f0d6-a4bd-346b-a92f-7dca8e11b160/o%27reilly-automotive-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "O'Reilly Automotive Inc (ORLY) Q4 2025 Earnings Call Highlights: Strong Sales Growth and ...",
+      "url": "https://finance.yahoo.com/news/oreilly-automotive-inc-orly-q4-230207454.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "ORLY Q4 Deep Dive: Margin Pressures and Expansion Shape 2026 Outlook",
+      "url": "/news/303294/orly-q4-deep-dive-margin-pressures-and-expansion-shape-2026-outlook",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Analyst Report: O'Reilly Automotive, Inc.",
+      "url": "https://finance.yahoo.com/m/40272d7a-97ae-33c4-8751-3aa8b9b81413/analyst-report%3A-o%27reilly.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "O'Reilly Q4 Earnings Miss Expectations, Revenues Rise Y/Y",
+      "url": "/news/301747/oreilly-q4-earnings-miss-expectations-revenues-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Analyst Report: O'Reilly Automotive, Inc.",
+      "url": "https://finance.yahoo.com/m/0095d37a-8773-3f85-a3d4-7fa9c1428d80/analyst-report%3A-o%27reilly.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Compared to Estimates, O'Reilly Automotive (ORLY) Q4 Earnings: A Look at Key Metrics",
+      "url": "/news/300592/compared-to-estimates-oreilly-automotive-orly-q4-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "O'Reilly Automotive (ORLY) Q4 Earnings Lag Estimates",
+      "url": "/news/300480/oreilly-automotive-orly-q4-earnings-lag-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "O'Reilly Automotive: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/oreilly-automotive-q4-earnings-snapshot-220301764.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "O'Reilly's (NASDAQ:ORLY) Q4 CY2025 Earnings Results: Revenue In Line With Expectations",
+      "url": "/news/300301/oreillys-nasdaq-orly-q4-cy2025-earnings-results-revenue-in-line-with-expectations",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "O'Reilly Automotive, Inc. Reports Fourth Quarter and Full-Year 2025 Results",
+      "url": "/news/300270/oreilly-automotive-inc-reports-fourth-quarter-and-full-year-2025-results",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "O'Reilly (ORLY) To Report Earnings Tomorrow: Here Is What To Expect",
+      "url": "/news/296676/oreilly-orly-to-report-earnings-tomorrow-here-is-what-to-expect",
+      "publisher": "StockStory",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Palantir, AMD, Amazon and More Stocks with Earnings This Week",
+      "url": "/news/295351/palantir-amd-amazon-and-more-stocks-with-earnings-this-week",
+      "publisher": "Benzinga",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "January jobs data, Alphabet and Amazon earnings, more Warsh fallout: What to watch this week",
+      "url": "https://finance.yahoo.com/news/january-jobs-data-alphabet-and-amazon-earnings-more-warsh-fallout-what-to-watch-this-week-124723942.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ahead of O'Reilly Automotive (ORLY) Q4 Earnings: Get Ready With Wall Street Estimates for Key Metrics",
+      "url": "/news/293557/ahead-of-oreilly-automotive-orly-q4-earnings-get-ready-with-wall-street-estimates-for-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "2 Unpopular Stocks That Deserve a Second Chance and 1 Facing Headwinds",
+      "url": "/news/294070/2-unpopular-stocks-that-deserve-a-second-chance-and-1-facing-headwinds",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Rank Group H1 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/6e90204d-3325-3b14-8604-0ace34a939a3/the-rank-group-h1-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "1 Unpopular Stock That Deserves a Second Chance and 2 We Question",
+      "url": "/news/289543/1-unpopular-stock-that-deserves-a-second-chance-and-2-we-question",
+      "publisher": "StockStory",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bullish Traders Get New 2X ETFs Tied To Xpeng EVs And O'Reilly Auto Demand",
+      "url": "/news/281145/bullish-traders-get-new-2x-etfs-tied-to-xpeng-evs-and-oreilly-auto-demand",
+      "publisher": "Benzinga",
+      "date": "2026-01-20",
+      "sentiment": "negative"
+    },
+    {
+      "title": "1 Safe-and-Steady Stock to Target This Week and 2 That Underwhelm",
+      "url": "/news/280857/1-safe-and-steady-stock-to-target-this-week-and-2-that-underwhelm",
+      "publisher": "StockStory",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    }
+  ]
 }

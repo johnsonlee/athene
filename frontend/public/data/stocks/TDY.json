@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 647.5599975585938,
     "sma_20": 606.768490600586,
-    "sma_50": 552.2443957519533,
+    "sma_50": 552.2443957519532,
     "sma_200": 533.0982994079591,
-    "trend_alignment": 0.7872354091140176,
+    "trend_alignment": 0.7872354091140177,
     "rsi": 72.24929867344528,
     "rsi_score": 0.4449859734689056,
     "macd_histogram": 1.3178716645056454,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 91.95425506088776,
     "stoch_d": 87.65644356992523,
-    "trend_score": 78.72354091140176,
+    "trend_score": 78.72354091140177,
     "rsi_abs_score": 47.70196371435321,
     "macd_abs_score": 57.58783614442768,
     "momentum_score": 52.64489992939045,
     "volatility_score": 32.88576733859904,
     "volume_score": 50.0,
-    "technical_score": 55.98768571995747,
+    "technical_score": 55.987685719957476,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.1596610054613157,
+    "sentiment_pos": 0.12025,
+    "sentiment_neg": 0.0152,
+    "sentiment_neu": 0.86455,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 57.98
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.06090555315337584,
@@ -6325,7 +6333,7 @@
     "quality_score": 57.76349999999999,
     "growth_score": 74.81,
     "safety_score": 63.42474999999999,
-    "trend_score": 78.72354091140176,
+    "trend_score": 78.72354091140177,
     "momentum_score": 52.64489992939045,
     "volatility_score": 32.88576733859904,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 60.35062757666667,
     "catalyst_timeline": 60.48128823813444,
     "downside_control": 52.09957760078985,
-    "composite_score": 61.06641254321362,
+    "composite_score": 61.062523497915194,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 64.32368964722222,
-    "technical_score": 55.98768571995747,
-    "sentiment_score": 50.0,
+    "technical_score": 55.987685719957476,
+    "sentiment_score": 57.98,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Electronic Equipment & Instruments"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "TransDigm's Q1 Earnings Surpass Estimates, Sales Increase Y/Y",
+      "url": "/news/297853/transdigms-q1-earnings-surpass-estimates-sales-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Woodward's Q1 Earnings & Revenues Beat Estimates, Up Y/Y, Stock Rises",
+      "url": "/news/297256/woodwards-q1-earnings-revenues-beat-estimates-up-yy-stock-rises",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Teledyne Demonstrates Autonomous System for Anti-Submarine Warfare to NATO Members in the North Atlantic",
+      "url": "https://www.businesswire.com/news/home/20260202468130/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Teledyne FLIR Defense Wins $17.5 Million Contract from armasuisse to Deliver Black Hornet 4 Nano-Drones for Dismounted and Vehicle-Integrated Reconnaissance",
+      "url": "https://www.businesswire.com/news/home/20260201061637/en/Teledyne",
+      "publisher": "Business Wire",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Hexcel's Q4 Earnings Beat Estimates, Revenues Increase Y/Y",
+      "url": "/news/292061/hexcels-q4-earnings-beat-estimates-revenues-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Teledyne Delivers Four GAVIA AUV Systems to the Swedish Defence Materiel Administration",
+      "url": "https://www.businesswire.com/news/home/20260128080585/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The 5 Most Interesting Analyst Questions From Teledyne's Q4 Earnings Call",
+      "url": "/news/289427/the-5-most-interesting-analyst-questions-from-teledynes-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why Teledyne Technologies (TDY) Stock Weighed on ClearBridge Mid Cap Strategy's Returns",
+      "url": "/news/288367/heres-why-teledyne-technologies-tdy-stock-weighed-on-clearbridge-mid-cap-strategys-returns",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Robotics Stocks Animating Markets With Ample Upside to Go",
+      "url": "/news/288287/3-robotics-stocks-animating-markets-with-ample-upside-to-go",
+      "publisher": "MarketBeat",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Teledyne Accelerates to Maximum Velocity: $700 in Sight",
+      "url": "/news/285574/teledyne-accelerates-to-maximum-velocity-700-in-sight",
+      "publisher": "MarketBeat",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Stocks Positioned to Gain From Renewed U.S. Defense Priorities",
+      "url": "/news/285191/3-stocks-positioned-to-gain-from-renewed-us-defense-priorities",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Teledyne Technologies Stock Earns RS Rating Upgrade",
+      "url": "https://www.investors.com/news/teledyne-technologies-stock-earns-rs-rating-upgrade?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TDY Q4 Deep Dive: Defense and Imaging Growth Drive Margin Expansion, Management Highlights Balanced Outlook",
+      "url": "/news/283328/tdy-q4-deep-dive-defense-and-imaging-growth-drive-margin-expansion-management-highlights-balanced-outlook",
+      "publisher": "StockStory",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Teledyne Technologies Inc (TDY) Q4 2026 Earnings Call Highlights: Strong Growth in Digital ...",
+      "url": "https://finance.yahoo.com/news/teledyne-technologies-inc-tdy-q4-230053879.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stock Market Today: Dow, S&P Surge As Trump Sees Framework For Greenland Deal; Nvidia Rises (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/bee35023-8e1b-32af-945a-e20e588ee361/stock-market-today%3A-dow%2C-s%26p.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Teledyne (TDY) Reports Q4 Earnings: What Key Metrics Have to Say",
+      "url": "/news/283075/teledyne-tdy-reports-q4-earnings-what-key-metrics-have-to-say",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Teledyne Technologies (TDY) Tops Q4 Earnings and Revenue Estimates",
+      "url": "/news/283051/teledyne-technologies-tdy-tops-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stock Market Today: Dow Soars As Trump Calls Off Europe Tariffs; Schwab Sways (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/bee35023-8e1b-32af-945a-e20e588ee361/stock-market-today%3A-dow-soars.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Market Today: S&P 500 Higher After Trump Davos News; Johnson & Johnson Slides (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/bee35023-8e1b-32af-945a-e20e588ee361/stock-market-today%3A-s%26p-500.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "This Electronics Maker Is One of the S&P 500s Top Stocks Today. It Crushed Earnings.",
+      "url": "https://finance.yahoo.com/m/d8b7b98c-35ce-3e4b-b968-ffa51e3f51b2/this-electronics-maker-is-one.html",
+      "publisher": "Barrons.com",
+      "date": "2026-01-21",
+      "sentiment": "negative"
+    }
+  ]
 }

@@ -6277,18 +6277,18 @@
   },
   "technical": {
     "close": 1001.1599731445312,
-    "sma_20": 968.195639038086,
-    "sma_50": 916.0101293945313,
+    "sma_20": 968.1956390380859,
+    "sma_50": 916.0101293945312,
     "sma_200": 949.0612451171875,
-    "trend_alignment": 0.6020224503802312,
+    "trend_alignment": 0.6020224503802313,
     "rsi": 70.61816431958187,
     "rsi_score": 0.41236328639163733,
     "macd_histogram": 1.5809637714556644,
     "macd_line": 21.9623053071125,
     "macd_histogram_pct": 0.157913202071996,
-    "bb_position": 0.9473101314064566,
-    "bb_upper": 1005.0429310978444,
-    "bb_lower": 931.3483469783276,
+    "bb_position": 0.9473101314064581,
+    "bb_upper": 1005.0429310978443,
+    "bb_lower": 931.3483469783275,
     "bb_width": 0.07611538530862753,
     "hist_volatility": 0.17692276568293416,
     "volume_ratio": 0.898273724368145,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 94.30167882375865,
     "stoch_d": 86.29816377386109,
-    "trend_score": 60.202245038023115,
+    "trend_score": 60.20224503802313,
     "rsi_abs_score": 52.269139905170775,
     "macd_abs_score": 56.4478300517999,
     "momentum_score": 54.358484978485336,
@@ -6306,7 +6306,15 @@
     "technical_score": 58.24953165353225,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.012056188288430322,
+    "sentiment_pos": 0.11069999999999999,
+    "sentiment_neg": 0.09680000000000001,
+    "sentiment_neu": 0.7925,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 49.4
+  },
   "analyst": {
     "revision_momentum": 0.05263157894736842,
     "target_upside": 0.0487834112429582,
@@ -6325,7 +6333,7 @@
     "quality_score": 77.7432,
     "growth_score": 61.581428571428575,
     "safety_score": 50.440749999999994,
-    "trend_score": 60.202245038023115,
+    "trend_score": 60.20224503802313,
     "momentum_score": 54.358484978485336,
     "volatility_score": 69.40656324289859,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 33.78494673428571,
     "catalyst_timeline": 56.32161170015006,
     "downside_control": 61.30009698643479,
-    "composite_score": 53.74216745629114,
+    "composite_score": 53.738278410992706,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 58.2239227547619,
     "technical_score": 58.24953165353225,
-    "sentiment_score": 50.0,
+    "sentiment_score": 49.4,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Staples",
     "industry": "Consumer Staples Merchandise Retail"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Sam's Club makes key move to win where Costco dominates",
+      "url": "https://finance.yahoo.com/m/77016e9d-636e-3cc0-a6ae-8788580cdde2/sam%27s-club-makes-key-move-to.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Costcos CEO is an unlikely risk taker",
+      "url": "https://finance.yahoo.com/m/d262423f-1d73-3146-94a7-7bbb848f1f41/costco%E2%80%99s-ceo-is-an-unlikely.html",
+      "publisher": "CNN Business",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "A Tech Bust Gave Way to a Broader Rally. What Comes Next Could Be Ugly.",
+      "url": "https://www.barrons.com/articles/tech-bust-broader-rally-crypto-silver-fde38403?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Costco (COST) Ascends But Remains Behind Market: Some Facts to Note",
+      "url": "/news/303428/costco-cost-ascends-but-remains-behind-market-some-facts-to-note",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jennifer Garner-backed kids' food brand Once Upon a Farm rises 16% in Wall Street debut",
+      "url": "https://finance.yahoo.com/news/jennifer-garner-backed-kids-food-brand-once-upon-a-farm-rises-16-in-wall-street-debut-221123011.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jennifer Garner's Once Upon a Farm Rises Nearly 20% To Wrap Up Busy Week for IPOs",
+      "url": "https://www.barrons.com/articles/jennifer-garner-once-upon-farm-ipo-ae14b122?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Revenge of the Real. Why Energy, Materials and Staples Stocks Are Beating the Market.",
+      "url": "https://finance.yahoo.com/m/52f16a06-b250-3bb8-9447-6327ecee03c1/revenge-of-the-real.-why.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Costco makes moves to fix key membership problem",
+      "url": "https://finance.yahoo.com/m/3c5f59ca-4469-38a7-bfb9-508b13d99a47/costco-makes-moves-to-fix-key.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Jim Cramer Says Its 'Just Crazy' That Costco Sells Discounted Hermès Birkin In Chinese Warehouses: 'Love This Stock But...'",
+      "url": "https://finance.yahoo.com/news/jim-cramer-says-just-crazy-173110744.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Aldi is coming to Colorado, and the disruption could lead to lower food prices",
+      "url": "https://finance.yahoo.com/news/aldi-coming-colorado-disruption-could-140417819.html",
+      "publisher": "The Conversation",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Amazon projects $200 billion in capital spending this year",
+      "url": "https://finance.yahoo.com/news/amazon-projects-200-billion-capital-210517509.html",
+      "publisher": "Reuters",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Mizuho Raises Costco (COST) Target as Membership Trends Rebound",
+      "url": "/news/301970/mizuho-raises-costco-cost-target-as-membership-trends-rebound",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "With New CEOs, Is Walmart or Target the Better Buy Going Forward?",
+      "url": "/news/301516/with-new-ceos-is-walmart-or-target-the-better-buy-going-forward",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "E.l.f. Beauty CEO talks 'incredible momentum' since Hailey Bieber deal",
+      "url": "https://finance.yahoo.com/video/e-l-f-beauty-ceo-150311743.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Costcos Comeback: Why Betting Against This Retail Giant Is a Losing Game",
+      "url": "https://finance.yahoo.com/m/f43c2eb3-5ef0-3448-8ef3-5ace58d7e616/costco%E2%80%99s-comeback%3A-why.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "How Is Target Navigating a Value-Focused Retail Landscape?",
+      "url": "/news/301362/how-is-target-navigating-a-value-focused-retail-landscape",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jim Cramer Says Its 'Just Crazy' That Costco Sells Discounted Hermes Birkin In Chinese Warehouses: 'Love This Stock But...'",
+      "url": "/news/300768/jim-cramer-says-its-just-crazy-that-costco-sells-discounted-hermes-birkin-in-chinese-warehouses-love-this-stock-but",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Walmart, Costco, XLP Surge As BofA Flags Record Inflows Into Consumer Staples Amid Tech Selloff",
+      "url": "/news/300751/walmart-costco-xlp-surge-as-bofa-flags-record-inflows-into-consumer-staples-amid-tech-selloff",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Costco solves problem that plagues Walmart and Target",
+      "url": "https://finance.yahoo.com/m/18a911ff-de1e-35af-a7a6-859134f194b5/costco-solves-problem-that.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Costco's Strong January Sales Give Stock a Boost",
+      "url": "https://www.barrons.com/articles/costco-stock-price-january-sales-4a695519?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    }
+  ]
 }

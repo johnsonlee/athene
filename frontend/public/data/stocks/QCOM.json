@@ -6279,8 +6279,8 @@
     "close": 137.33999633789062,
     "sma_20": 153.38549880981444,
     "sma_50": 166.36207702636716,
-    "sma_200": 159.73943260192868,
-    "trend_alignment": 0.27208594628014804,
+    "sma_200": 159.7394326019287,
+    "trend_alignment": 0.2720859462801479,
     "rsi": 23.09237852687985,
     "rsi_score": -0.538152429462403,
     "macd_histogram": -1.5907937259925378,
@@ -6295,9 +6295,9 @@
     "avg_volume_20d": 11637870.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 15.618320447445889,
+    "stoch_k": 15.618320447445887,
     "stoch_d": 15.899041166804606,
-    "trend_score": 27.208594628014804,
+    "trend_score": 27.208594628014787,
     "rsi_abs_score": 43.09237852687985,
     "macd_abs_score": 25.125668759170612,
     "momentum_score": 34.10902364302523,
@@ -6306,7 +6306,15 @@
     "technical_score": 35.023272249212,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.08912002448125653,
+    "sentiment_pos": 0.07915,
+    "sentiment_neg": 0.0423,
+    "sentiment_neu": 0.87855,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 54.46
+  },
   "analyst": {
     "revision_momentum": -0.07142857142857142,
     "target_upside": 0.12858599097131204,
@@ -6325,7 +6333,7 @@
     "quality_score": 80.935,
     "growth_score": 44.9,
     "safety_score": 66.5976361569932,
-    "trend_score": 27.208594628014804,
+    "trend_score": 27.208594628014787,
     "momentum_score": 34.10902364302523,
     "volatility_score": 33.13993383949997,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 65.861059065,
     "catalyst_timeline": 39.18639441775494,
     "downside_control": 54.60163549947397,
-    "composite_score": 56.45214508895649,
+    "composite_score": 56.448256043658056,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 66.1484097855653,
     "technical_score": 35.023272249212,
-    "sentiment_score": 50.0,
+    "sentiment_score": 54.46,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Semiconductors"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "The Robot Revolution Is Real. Tesla, Hyundai, and More Stocks to Play It.",
+      "url": "https://finance.yahoo.com/m/2f4b559e-b426-3efd-911e-0deb2a756756/the-robot-revolution-is-real..html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why I am still taking these tech stocks to task",
+      "url": "https://finance.yahoo.com/news/why-i-am-still-taking-these-tech-stocks-to-task-133012952.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Consumer Tech News (Feb 2-6): Big Tech Earnings Take Center Stage In U.S. Markets, Anthropic Launches New AI Tool & More",
+      "url": "/news/303773/consumer-tech-news-feb-2-6-big-tech-earnings-take-center-stage-in-us-markets-anthropic-launches-new-ai-tool-more",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Musk On Apple's Recruiting Tactics, Record iPhone Quarter, Tim Cook Successor And More: This Week In Appleverse",
+      "url": "/news/303762/musk-on-apples-recruiting-tactics-record-iphone-quarter-tim-cook-successor-and-more-this-week-in-appleverse",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Street Calls of the Week",
+      "url": "https://finance.yahoo.com/news/street-calls-week-090516424.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Qualcomm is 'at the center' of transforming robotics: CFO",
+      "url": "https://finance.yahoo.com/video/qualcomm-center-transforming-robotics-cfo-190050895.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Qualcomm price target lowered to $177 from $200 at Baird",
+      "url": "https://finance.yahoo.com/news/qualcomm-price-target-lowered-177-151543026.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "MarketBeat Week in Review - 02/02 - 02/06",
+      "url": "/news/303521/marketbeat-week-in-review-0202-0206",
+      "publisher": "MarketBeat",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Earnings live: Amazon, Reddit stocks sink to cap jam-packed earnings week",
+      "url": "https://finance.yahoo.com/news/live/earnings-live-amazon-reddit-stocks-sink-to-cap-jam-packed-earnings-week-213155571.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Options Corner: Qualcomm's Post-Earnings Fallout Offers A Potentially Discounted Opportunity",
+      "url": "/news/303277/options-corner-qualcomms-post-earnings-fallout-offers-a-potentially-discounted-opportunity",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Unusual Options Activity Alert: 3 Stocks Setting Up for Major Profit Potential",
+      "url": "https://finance.yahoo.com/m/e2151715-8063-396e-8ed6-fb44bee8e00a/unusual-options-activity.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Big-Name Earnings, Selloffs Highlight Busy Week on Wall Street",
+      "url": "/news/303135/big-name-earnings-selloffs-highlight-busy-week-on-wall-street",
+      "publisher": "Schaeffer's Research",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Company News for Feb 6, 2026",
+      "url": "/news/302935/company-news-for-feb-6-2026",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Qualcomm Stock Is Deeply Oversold. Should You Buy the Dip?",
+      "url": "https://finance.yahoo.com/m/d201d5b8-9ae2-3937-88f2-4605efb454a1/qualcomm-stock-is-deeply.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Earnings live: Amazon stock sinks, Philip Morris retreats, Reddit spikes as Wall Street focuses on guidance",
+      "url": "https://finance.yahoo.com/news/live/earnings-live-amazon-stock-sinks-philip-morris-retreats-reddit-spikes-as-wall-street-focuses-on-guidance-140858850.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stock Index Futures Climb After Tech Rout, Amazon Slips on CapEx Blowout",
+      "url": "https://finance.yahoo.com/m/2334f854-a77f-3c9c-862b-303f96bef555/stock-index-futures-climb.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Strategy Loses Billions on Massive Bitcoin Hoard",
+      "url": "https://finance.yahoo.com/m/9621944a-5ec8-3dd6-87e6-faf3c3aae1da/strategy-loses-billions-on.html",
+      "publisher": "The Daily Upside",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Shell Pumps Out Dividend Hike Despite Slippery Oil Prices",
+      "url": "https://finance.yahoo.com/m/a6f4d331-2fa8-3110-b768-1543bc79f94a/shell-pumps-out-dividend-hike.html",
+      "publisher": "The Daily Upside",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Qualcomm, Arm Take Hits as Rising AI Memory Requirements Snarl Smartphone Production",
+      "url": "https://finance.yahoo.com/m/8f434d3c-46df-3a72-bdaa-d6bf71d5c30a/qualcomm%2C-arm-take-hits-as.html",
+      "publisher": "The Daily Upside",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Qualcomm, MediaTek strike cautious tone as smartphone market pressures mount",
+      "url": "https://www.digitimes.com/news/a20260206PD207/qualcomm-smartphone-market-mediatek-2026.html",
+      "publisher": "DigiTimes",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    }
+  ]
 }

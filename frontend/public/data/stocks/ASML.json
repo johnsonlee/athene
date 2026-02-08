@@ -6279,7 +6279,7 @@
     "close": 1413.010009765625,
     "sma_20": 1374.8539978027345,
     "sma_50": 1215.3395910644533,
-    "sma_200": 928.7280947875977,
+    "sma_200": 928.7280947875976,
     "trend_alignment": 0.8608249550305805,
     "rsi": 61.1562824224418,
     "rsi_score": 0.22312564844883595,
@@ -6306,7 +6306,15 @@
     "technical_score": 58.485531830569506,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.19889148615500207,
+    "sentiment_pos": 0.1471,
+    "sentiment_neg": 0.028499999999999998,
+    "sentiment_neu": 0.8244,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 59.94
+  },
   "analyst": {
     "revision_momentum": 0.36363636363636365,
     "target_upside": 0.13928861083785676,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 33.61539346666666,
     "catalyst_timeline": 65.84262478555057,
     "downside_control": 50.9006991710379,
-    "composite_score": 57.45514179363835,
+    "composite_score": 57.45125274833991,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 60.950820388888886,
     "technical_score": 58.485531830569506,
-    "sentiment_score": 50.0,
+    "sentiment_score": 59.94,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Technology",
     "industry": "Semiconductor Equipment & Materials"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Top Funds Like Google  But Go Bonkers For These Three Stocks",
+      "url": "https://finance.yahoo.com/m/da3245ba-9015-31b0-a441-d953bc51dce7/top-funds-like-google-%E2%80%94-but.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Genpact Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/20f09234-5b21-357c-8693-309dacb06531/genpact-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "General Motors CFO Flags $3$4B Tariff Hit, Margin Rebound and EV Reset at Conference",
+      "url": "https://finance.yahoo.com/m/13a5bb10-5fb8-337b-865c-c624b210f6d5/general-motors-cfo-flags.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ASML (ASML) is a Great Momentum Stock: Should You Buy?",
+      "url": "/news/301862/asml-asml-is-a-great-momentum-stock-should-you-buy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Euro Keeps Rising. The U.S. Is Helping.",
+      "url": "https://www.barrons.com/articles/euro-rising-europe-economy-us-markets-992a60e2?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "ASML Holding N.V. (ASML) Is a Trending Stock: Facts to Know Before Betting on It",
+      "url": "/news/301445/asml-holding-nv-asml-is-a-trending-stock-facts-to-know-before-betting-on-it",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TSMC Expands AI Chip Production to Japan",
+      "url": "https://finance.yahoo.com/m/fd3e9469-7972-3e84-aa05-336010265735/tsmc-expands-ai-chip.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "GM, TRV & ASML: 3 Industry Giants Boosting Buybacks in 2026",
+      "url": "/news/301084/gm-trv-asml-3-industry-giants-boosting-buybacks-in-2026",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Rotation out of Tech Stocks Weighs on the Broader Market",
+      "url": "https://finance.yahoo.com/m/53c7bb8e-05f9-319a-a276-65ec476a457b/rotation-out-of-tech-stocks.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Broadcom Is 'Uncle Sam Of AI,' Says Futurum Equities As It Lists 15 Non-Mag7 AI Disruptors",
+      "url": "/news/299188/broadcom-is-uncle-sam-of-ai-says-futurum-equities-as-it-lists-15-non-mag7-ai-disruptors",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Top-Performing ETF Stories of January: Winning Investing Areas",
+      "url": "/news/299231/top-performing-etf-stories-of-january-winning-investing-areas",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Samsung Arms Its Advanced Chip Push With Invisix Investment",
+      "url": "/news/298886/samsung-arms-its-advanced-chip-push-with-invisix-investment",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Don't Know Which AI Stock To Buy? Here's the Easiest Way To Play the Once-in-a-Generation Tech Boom.",
+      "url": "/news/298525/dont-know-which-ai-stock-to-buy-heres-the-easiest-way-to-play-the-once-in-a-generation-tech-boom",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks Tumble on AI Disruption Fears",
+      "url": "https://finance.yahoo.com/m/2d280010-8635-3f1a-b487-d134aea3e092/stocks-tumble-on-ai.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "The Zacks Analyst Blog Highlights Alphabet, Amazon, ASML, Micron and Lam Research",
+      "url": "/news/297858/the-zacks-analyst-blog-highlights-alphabet-amazon-asml-micron-and-lam-research",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Half the Worlds Market Value Sits Outside Your Portfolio Right Now",
+      "url": "https://finance.yahoo.com/m/2c8d8c18-62bb-365b-9dab-6b7705d39767/why-half-the-world%E2%80%99s-market.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Prediction: ASML Could Be One of the Best Semiconductor Stocks of 2026",
+      "url": "/news/296618/prediction-asml-could-be-one-of-the-best-semiconductor-stocks-of-2026",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "These software stocks could rise as much as 75%. But is now the time to buy?",
+      "url": "https://www.marketwatch.com/story/these-software-stocks-could-rise-as-much-as-75-but-is-now-the-time-to-buy-8ca0e3c8?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Best Momentum Stocks to Buy for February 2nd",
+      "url": "/news/295831/best-momentum-stocks-to-buy-for-february-2nd",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bernstein Raises PT on ASML Holding as the Company Updates 2026 Outlook",
+      "url": "/news/295545/bernstein-raises-pt-on-asml-holding-as-the-company-updates-2026-outlook",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    }
+  ]
 }

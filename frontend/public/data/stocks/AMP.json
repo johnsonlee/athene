@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 646625.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 83.35025027964133,
+    "stoch_k": 83.35025027964134,
     "stoch_d": 82.89407457952797,
     "trend_score": 63.597650351524436,
     "rsi_abs_score": 65.25281841337785,
@@ -6306,7 +6306,15 @@
     "technical_score": 58.12978935449806,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.2597580237573909,
+    "sentiment_pos": 0.14825,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.85175,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 62.99
+  },
   "analyst": {
     "revision_momentum": 0.2,
     "target_upside": 0.04974308919132947,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 47.02905343333333,
     "catalyst_timeline": 60.92502978062171,
     "downside_control": 59.06989798220973,
-    "composite_score": 58.12196876496496,
+    "composite_score": 58.118079719666525,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 63.537330455708684,
     "technical_score": 58.12978935449806,
-    "sentiment_score": 50.0,
+    "sentiment_score": 62.99,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Asset Management & Custody Banks"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Huntington Bank to Outsource $28 Billion Wealth Management Business to Ameriprise",
+      "url": "https://www.barrons.com/advisor/articles/huntington-bank-outsource-ameriprise-3505321c?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ameriprise Financial's Q4 Earnings Call: Our Top 5 Analyst Questions",
+      "url": "/news/300788/ameriprise-financials-q4-earnings-call-our-top-5-analyst-questions",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ameriprise Financial Chief Financial Officer to Present at the 2026 Bank of America Securities Financial Services Conference",
+      "url": "https://www.businesswire.com/news/home/20260204767226/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Should Value Investors Buy Ameriprise Financial (AMP) Stock?",
+      "url": "/news/299556/should-value-investors-buy-ameriprise-financial-amp-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ameriprise Adds $28B in Deal With Huntington Bank's Wealth Division",
+      "url": "https://finance.yahoo.com/m/42bbdb9c-1c79-38ce-a847-a4769f3ae451/ameriprise-adds-%2428b-in-deal.html",
+      "publisher": "Wealth Management",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Huntington Bank Selects Ameriprise Financial as its New Retail Investment Program Provider",
+      "url": "https://www.businesswire.com/news/home/20260204167256/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ameriprise Financial (AMP) Q4 Earnings Beat Expectations With $10.83 Adjusted EPS",
+      "url": "/news/296859/ameriprise-financial-amp-q4-earnings-beat-expectations-with-1083-adjusted-eps",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Ameriprise Financial Services (AMP) is a Top Value Stock for the Long-Term",
+      "url": "/news/295736/why-ameriprise-financial-services-amp-is-a-top-value-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Ameriprise Financial, Inc.",
+      "url": "https://finance.yahoo.com/m/abbe13be-6404-3da3-ad60-7e2762714d28/analyst-report%3A-ameriprise.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AMP Q4 Deep Dive: Adviser Growth and Digital Investments Drive Strong Performance",
+      "url": "/news/294074/amp-q4-deep-dive-adviser-growth-and-digital-investments-drive-strong-performance",
+      "publisher": "StockStory",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ameriprise Financial Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/e3ac76a3-5161-3585-825f-7b1ec0b10c42/ameriprise-financial-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NewEdge Advisors Recruits $1.4 Billion Team From Ameriprise",
+      "url": "https://www.barrons.com/advisor/articles/newedge-advisors-cleartrust-ameriprise-5c98f098?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ameriprise Reports Strong Recruiting Amid Competitive Environment",
+      "url": "https://finance.yahoo.com/m/2baa9dba-6031-323f-9822-d18268a9b722/ameriprise-reports-strong.html",
+      "publisher": "Wealth Management",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ameriprise Financial Inc (AMP) Q4 2025 Earnings Call Highlights: Record Growth in Revenue and Assets",
+      "url": "https://finance.yahoo.com/news/ameriprise-financial-inc-amp-q4-190432711.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ameriprise Stock Gains on Q4 Earnings Beat as Revenues & AUM Grow Y/Y",
+      "url": "/news/292449/ameriprise-stock-gains-on-q4-earnings-beat-as-revenues-aum-grow-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Ameriprise Financial, Inc.",
+      "url": "https://finance.yahoo.com/m/c4a8effa-1548-38ac-9f32-eba977cf02aa/analyst-report%3A-ameriprise.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ameriprise (AMP) Reports Q4 Earnings: What Key Metrics Have to Say",
+      "url": "/news/292175/ameriprise-amp-reports-q4-earnings-what-key-metrics-have-to-say",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ameriprise Financial Services (AMP) Q4 Earnings and Revenues Surpass Estimates",
+      "url": "/news/291559/ameriprise-financial-services-amp-q4-earnings-and-revenues-surpass-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ameriprise Financial's (NYSE:AMP) Q4 CY2025: Strong Sales",
+      "url": "/news/291367/ameriprise-financials-nyse-amp-q4-cy2025-strong-sales",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ameriprise: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/ameriprise-q4-earnings-snapshot-114725826.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    }
+  ]
 }

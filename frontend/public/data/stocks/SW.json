@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 5487730.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 80.772104943312,
+    "stoch_k": 80.77210494331202,
     "stoch_d": 73.65447867639955,
     "trend_score": 60.83553232967569,
     "rsi_abs_score": 71.32184211003293,
@@ -6306,7 +6306,15 @@
     "technical_score": 55.84963761228329,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.05850050600570805,
+    "sentiment_pos": 0.02955,
+    "sentiment_neg": 0.0381,
+    "sentiment_neu": 0.9323499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 52.93
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.16674218396012686,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 71.14688727142857,
     "catalyst_timeline": 57.544343663109544,
     "downside_control": 55.39564452375891,
-    "composite_score": 54.668944325850106,
+    "composite_score": 54.66505528055167,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 52.08385653368343,
     "technical_score": 55.84963761228329,
-    "sentiment_score": 50.0,
+    "sentiment_score": 52.93,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 0.9441666666666666,
     "data_quality_penalty": 0.0,
-    "rank": 281,
-    "percentile": 0.4605009633911368,
+    "rank": 282,
+    "percentile": 0.45857418111753373,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6369,5 +6377,146 @@
     "sector": "Materials",
     "industry": "Paper & Plastic Packaging Products & Materials"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Insights Into Smurfit Westrock (SW) Q4: Wall Street Projections for Key Metrics",
+      "url": "/news/302829/insights-into-smurfit-westrock-sw-q4-wall-street-projections-for-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analysts Estimate Sylvamo Corporation (SLVM) to Report a Decline in Earnings: What to Look Out for",
+      "url": "/news/301670/analysts-estimate-sylvamo-corporation-slvm-to-report-a-decline-in-earnings-what-to-look-out-for",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Smurfit Westrock (SW) Reports Next Week: Wall Street Expects Earnings Growth",
+      "url": "/news/299690/smurfit-westrock-sw-reports-next-week-wall-street-expects-earnings-growth",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Smurfit Westrock Declares Quarterly Dividend",
+      "url": "https://www.businesswire.com/news/home/20260203922973/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "IP Earnings Miss Estimates in Q4, Sales Beat and Rise Y/Y",
+      "url": "/news/292332/ip-earnings-miss-estimates-in-q4-sales-beat-and-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Smurfit Westrock to Announce 2025 Fourth Quarter and Full Year Results together with a Medium-Term investor update on February 11, 2026",
+      "url": "https://www.businesswire.com/news/home/20260126214223/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Finish Mostly Higher Despite a Plunge in Intel",
+      "url": "https://finance.yahoo.com/m/a26c1321-951e-3161-ab20-9c0e41adaa8d/stocks-finish-mostly-higher.html",
+      "publisher": "Barchart",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What to Expect From Smurfit Westrocks Q4 2025 Earnings Report",
+      "url": "https://finance.yahoo.com/m/d554049e-85ab-38dc-bac4-6c103a1a60e4/what-to-expect-from-smurfit.html",
+      "publisher": "Barchart",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Morgan Stanley Lifts Smurfit Westrock (SW) PT to 4,000GBp on 2026 Synergy Gains",
+      "url": "/news/273711/morgan-stanley-lifts-smurfit-westrock-sw-pt-to-4000gbp-on-2026-synergy-gains",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-12",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analysts Remain Bullish on Smurfit Westrock Plc (SW) with Adjusted Price Targets",
+      "url": "/news/264496/analysts-remain-bullish-on-smurfit-westrock-plc-sw-with-adjusted-price-targets",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is Smurfit Westrock Stock Underperforming the Nasdaq?",
+      "url": "https://finance.yahoo.com/m/9896e828-0136-338c-b31c-ea8446c76553/is-smurfit-westrock-stock.html",
+      "publisher": "Barchart",
+      "date": "2025-12-18",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "10 of the most loved dividend stocks for 2026 - sporting yields of 4% or more",
+      "url": "https://www.marketwatch.com/story/10-of-the-most-loved-dividend-stocks-for-2026-sporting-yields-of-4-or-more-5baafbea?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2025-12-17",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Buy! Analysts Pound The Table For 11 S&P 500 Stocks In 2026",
+      "url": "https://finance.yahoo.com/m/6c8b793b-8d2d-3015-94f6-0d287e5a5eda/buy%21-analysts-pound-the-table.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2025-12-17",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Smurfit Westrock Plc (SW): A Bull Case Theory",
+      "url": "/news/249956/smurfit-westrock-plc-sw-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why SCCMS Enhanced Equity Income Fund Added Smurfit WestRock (SW) to Its Portfolio",
+      "url": "/news/246743/heres-why-sccms-enhanced-equity-income-fund-added-smurfit-westrock-sw-to-its-portfolio",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Is Smurfit Westrock (SW) Down 0.7% Since Last Earnings Report?",
+      "url": "/news/240993/why-is-smurfit-westrock-sw-down-07-since-last-earnings-report",
+      "publisher": "Zacks",
+      "date": "2025-11-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Smurfit Westrock to close Atlanta plant, affecting 55 workers",
+      "url": "https://finance.yahoo.com/m/81b766d0-2b60-3fb7-8c2e-c173d0d998fe/smurfit-westrock-to-close.html",
+      "publisher": "Packaging Dive",
+      "date": "2025-11-10",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Smurfit Westrock Stock Was Sliding This Week",
+      "url": "/news/212920/why-smurfit-westrock-stock-was-sliding-this-week",
+      "publisher": "Motley Fool",
+      "date": "2025-10-31",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "SW Misses Q3 Earnings Estimates, Lowers FY25 EBITDA View",
+      "url": "/news/212046/sw-misses-q3-earnings-estimates-lowers-fy25-ebitda-view",
+      "publisher": "Zacks",
+      "date": "2025-10-30",
+      "sentiment": "negative"
+    },
+    {
+      "title": "IP Earnings & Sales Miss Estimates in Q3 on Lower Volumes",
+      "url": "/news/211948/ip-earnings-sales-miss-estimates-in-q3-on-lower-volumes",
+      "publisher": "Zacks",
+      "date": "2025-10-30",
+      "sentiment": "negative"
+    }
+  ]
 }

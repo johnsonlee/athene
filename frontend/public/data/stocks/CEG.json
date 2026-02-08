@@ -6279,8 +6279,8 @@
     "close": 261.4200134277344,
     "sma_20": 290.2330024719239,
     "sma_50": 330.43830047607423,
-    "sma_200": 324.56410491943353,
-    "trend_alignment": 0.20130013589419637,
+    "sma_200": 324.5641049194336,
+    "trend_alignment": 0.2013001358941962,
     "rsi": 31.524915420498246,
     "rsi_score": -0.3695016915900351,
     "macd_histogram": -1.8450823065660522,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 20.963221900219583,
     "stoch_d": 12.933007534474712,
-    "trend_score": 20.130013589419637,
+    "trend_score": 20.130013589419622,
     "rsi_abs_score": 51.82989850459789,
     "macd_abs_score": 31.913115608250298,
     "momentum_score": 41.87150705642409,
     "volatility_score": 25.135140725759044,
     "volume_score": 50.0,
-    "technical_score": 33.62748433890493,
+    "technical_score": 33.62748433890492,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.07694264025049198,
+    "sentiment_pos": 0.18480000000000002,
+    "sentiment_neg": 0.0879,
+    "sentiment_neu": 0.7273,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 53.85
+  },
   "analyst": {
     "revision_momentum": 0.2,
     "target_upside": 0.5568816463927778,
@@ -6325,7 +6333,7 @@
     "quality_score": 67.39927142857142,
     "growth_score": 33.25,
     "safety_score": 57.66533333333332,
-    "trend_score": 20.130013589419637,
+    "trend_score": 20.130013589419622,
     "momentum_score": 41.87150705642409,
     "volatility_score": 25.135140725759044,
     "volume_score": 50.0,
@@ -6344,16 +6352,16 @@
     "current_ratio_score": 69.512,
     "earnings_visibility": 49.495390714285705,
     "valuation_margin": 39.845246842857144,
-    "catalyst_timeline": 44.536112081415524,
+    "catalyst_timeline": 44.53611208141552,
     "downside_control": 47.09107110886386,
-    "composite_score": 42.38654249446254,
+    "composite_score": 42.3826534491641,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 50.43805379761904,
-    "technical_score": 33.62748433890493,
-    "sentiment_score": 50.0,
+    "technical_score": 33.62748433890492,
+    "sentiment_score": 53.85,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Utilities",
     "industry": "Electric Utilities"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Wells Fargo Maintains Overweight Rating on Constellation Energy Corp. (CEG)",
+      "url": "/news/303525/wells-fargo-maintains-overweight-rating-on-constellation-energy-corp-ceg",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Top Analyst Reports for AMD, Constellation Energy & Freeport-McMoRan",
+      "url": "/news/303417/top-analyst-reports-for-amd-constellation-energy-freeport-mcmoran",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Investors Heavily Search Constellation Energy Corporation (CEG): Here is What You Need to Know",
+      "url": "/news/302774/investors-heavily-search-constellation-energy-corporation-ceg-here-is-what-you-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Constellation Energy Corporation (CEG): A Bull Case Theory",
+      "url": "/news/302297/constellation-energy-corporation-ceg-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bitter Cold Tested the Electric Grid. Nuclear and Batteries Came Through.",
+      "url": "https://www.barrons.com/articles/power-outage-supply-cold-weather-acbce6a2?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Heard on the Street Wednesday Recap: Tech Tantrum",
+      "url": "https://finance.yahoo.com/m/8125b7e3-2723-3344-af8d-52aff352f1b1/heard-on-the-street-wednesday.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Heard on the Street Recap: Tech Tantrum",
+      "url": "https://finance.yahoo.com/m/ac5d1e6f-b4fd-398a-b9fb-d1e3424f32f9/heard-on-the-street-recap%3A.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Jim Cramer on Constellation Energy: \"I Like This One\"",
+      "url": "/news/299959/jim-cramer-on-constellation-energy-i-like-this-one",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Constellation Energy Stock Outlook: Is Wall Street Bullish or Bearish?",
+      "url": "https://finance.yahoo.com/m/74758fd9-294c-3214-8d71-447caa705914/constellation-energy-stock.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analysts Say Load Up on These 2 Nuclear Power Stocks  Heres Why",
+      "url": "https://finance.yahoo.com/news/analysts-load-2-nuclear-power-105835653.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BlackRocks GIP Teams Up With EQT in Bid to Acquire Power Firm AES",
+      "url": "https://finance.yahoo.com/news/blackrock-gip-teams-eqt-bid-114503205.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Wall Street Analysts Think Constellation Energy Corporation (CEG) Is a Good Investment: Is It?",
+      "url": "/news/295679/wall-street-analysts-think-constellation-energy-corporation-ceg-is-a-good-investment-is-it",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Forget Tech Stocks: The Utility That's Solving AI's Biggest Problem",
+      "url": "/news/294868/forget-tech-stocks-the-utility-thats-solving-ais-biggest-problem",
+      "publisher": "Motley Fool",
+      "date": "2026-02-01",
+      "sentiment": "negative"
+    },
+    {
+      "title": "1 Nuclear Stock That Could Power Your Retirement Income for Decades",
+      "url": "/news/294807/1-nuclear-stock-that-could-power-your-retirement-income-for-decades",
+      "publisher": "Motley Fool",
+      "date": "2026-02-01",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Forget AI Stocks: This Utility Could Deliver Better Returns in 2026",
+      "url": "/news/294626/forget-ai-stocks-this-utility-could-deliver-better-returns-in-2026",
+      "publisher": "Motley Fool",
+      "date": "2026-01-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Constellation Energy Corporation (CEG) Dips More Than Broader Market: What You Should Know",
+      "url": "/news/294268/constellation-energy-corporation-ceg-dips-more-than-broader-market-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "2 Nuclear Energy Stocks for Explosive Growth",
+      "url": "https://finance.yahoo.com/m/67d08a8b-d82e-31cc-8870-533b65a93931/2-nuclear-energy-stocks-for.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "TD Cowen Bullish on Constellation Energy (CEG) After Calpine Acquisition",
+      "url": "/news/293394/td-cowen-bullish-on-constellation-energy-ceg-after-calpine-acquisition",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Frozen Assets: Winter Storm Fern Is Heating Up These 3 Energy Winners",
+      "url": "/news/290910/frozen-assets-winter-storm-fern-is-heating-up-these-3-energy-winners",
+      "publisher": "MarketBeat",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Constellation Energy (CEG) Price Target Lowered by $15, 'Overweight' Rating Maintained",
+      "url": "/news/289623/constellation-energy-ceg-price-target-lowered-by-15-overweight-rating-maintained",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    }
+  ]
 }

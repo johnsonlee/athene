@@ -6295,8 +6295,8 @@
     "avg_volume_20d": 8622905.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 47.43334020449622,
-    "stoch_d": 36.91300887421705,
+    "stoch_k": 47.433340204496226,
+    "stoch_d": 36.913008874217056,
     "trend_score": 67.15638561981419,
     "rsi_abs_score": 70.25809574039727,
     "macd_abs_score": 33.13132153491352,
@@ -6306,7 +6306,15 @@
     "technical_score": 57.656432071902884,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.18931095351812888,
+    "sentiment_pos": 0.10765,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.8923500000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 59.47
+  },
   "analyst": {
     "revision_momentum": 0.1,
     "target_upside": 0.1315475455705057,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 29.228715985714285,
     "catalyst_timeline": 59.667149117143076,
     "downside_control": 45.1748183233694,
-    "composite_score": 45.39562489970259,
+    "composite_score": 45.39173585440415,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 49.0772172912591,
     "technical_score": 57.656432071902884,
-    "sentiment_score": 50.0,
+    "sentiment_score": 59.47,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Aerospace & Defense"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "The Dow Surged Past 50,000. How It Got There, and Where It Goes Next.",
+      "url": "https://finance.yahoo.com/m/d4d07bd1-e873-3a77-8c7a-e7616a7fd512/the-dow-surged-past-50%2C000..html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jefferies Reiterates Buy on The Boeing Company (BA) Following Q4 Results",
+      "url": "/news/303698/jefferies-reiterates-buy-on-the-boeing-company-ba-following-q4-results",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Boeing (BA) Is One of My Favorites, Says Jim Cramer",
+      "url": "/news/303580/boeing-ba-is-one-of-my-favorites-says-jim-cramer",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Dow Jones Tops 50,000 As Apple, Boeing, JPMorgan Flash Buy Signals; Is AI Trade Reviving?",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-50000-apple-boeing-jpmorgan-ai-stocks?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Dow Surged Past 50,000. How Caterpillar and These Other Stocks Got It There.",
+      "url": "https://www.barrons.com/articles/dow-jones-industrial-average-50000-first-time-caterpillar-stock-ff67c63d?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Boeing, IBD Stock Of The Day, Back In Buy Zone On India, Saudi Arabia Deal Buzz",
+      "url": "https://www.investors.com/research/ibd-stock-of-the-day/boeing-stock-buy-zone-india-saudi-arabia-jet-orders?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Boeing Stock In Focus -- India Eyes $80 Billion Aircraft Deal",
+      "url": "https://finance.yahoo.com/news/boeing-stock-focus-india-eyes-155227811.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Boeing Stock Rises. Thank China.",
+      "url": "https://www.barrons.com/articles/boeing-stock-rises-thank-china-92e56bd9?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Saudia reportedly mulls 150-jet order, talks to Boeing, Airbus",
+      "url": "https://finance.yahoo.com/news/saudia-reportedly-mulls-150-jet-183511695.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Strong Newport News Shipbuilding Performance Drives HII's Q4 Results",
+      "url": "/news/301867/strong-newport-news-shipbuilding-performance-drives-hiis-q4-results",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "DAL Gains 31% in 6 Months: How Should Investors Play the Stock Now?",
+      "url": "/news/301727/dal-gains-31-in-6-months-how-should-investors-play-the-stock-now",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Catch Up on Trumps Breakneck Critical-Minerals Drive",
+      "url": "https://finance.yahoo.com/m/71382e32-ac70-3737-b255-13a6a906ebc5/catch-up-on-trump%E2%80%99s-breakneck.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Boeing Lands Biggest-Ever Landing Gear Deal At Singapore Airshow",
+      "url": "/news/300959/boeing-lands-biggest-ever-landing-gear-deal-at-singapore-airshow",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Boeing 787 Under Spotlight Again As UK Regulator Questions Air India Over Fuel Switch Incident",
+      "url": "/news/300941/boeing-787-under-spotlight-again-as-uk-regulator-questions-air-india-over-fuel-switch-incident",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "India to sign trade deal with United States in March, minister says",
+      "url": "https://finance.yahoo.com/news/india-us-trade-deal-signed-075827559.html",
+      "publisher": "Reuters",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Rolls-Royce Pushes Trent 1000 XE to Win Back 787 Customers",
+      "url": "https://finance.yahoo.com/news/rolls-royce-pushes-trent-1000-202422363.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Boeing Company (BA): A Bull Case Theory",
+      "url": "/news/300019/the-boeing-company-ba-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Boeing Targets April First Flight For 777X",
+      "url": "https://finance.yahoo.com/news/boeing-targets-april-first-flight-185829503.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ryanair's Traffic Numbers for January 2026 Improve Year Over Year",
+      "url": "/news/299954/ryanairs-traffic-numbers-for-january-2026-improve-year-over-year",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Boeing Stock Surges 2.2% in a Month: What Should Investors Know?",
+      "url": "/news/299733/boeing-stock-surges-22-in-a-month-what-should-investors-know",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    }
+  ]
 }

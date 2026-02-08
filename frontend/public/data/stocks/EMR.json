@@ -6278,7 +6278,7 @@
   "technical": {
     "close": 157.3800048828125,
     "sma_20": 149.83600234985354,
-    "sma_50": 141.728401184082,
+    "sma_50": 141.72840118408203,
     "sma_200": 132.21338745117185,
     "trend_alignment": 0.7401514784586629,
     "rsi": 63.68737710099242,
@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 3726250.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 68.89724980334569,
+    "stoch_k": 68.8972498033457,
     "stoch_d": 69.05879506600553,
     "trend_score": 74.0151478458663,
     "rsi_abs_score": 68.91883602930531,
@@ -6306,7 +6306,15 @@
     "technical_score": 61.864248216856026,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.1464444142613148,
+    "sentiment_pos": 0.0747,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.9253,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 57.32
+  },
   "analyst": {
     "revision_momentum": -0.08333333333333333,
     "target_upside": 0.06747998475028597,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 44.220091425,
     "catalyst_timeline": 60.845935214287024,
     "downside_control": 51.52397150733352,
-    "composite_score": 51.99951084456039,
+    "composite_score": 51.995621799261954,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 51.19083749263277,
     "technical_score": 61.864248216856026,
-    "sentiment_score": 50.0,
+    "sentiment_score": 57.32,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 357,
-    "percentile": 0.3140655105973025,
+    "rank": 358,
+    "percentile": 0.31213872832369943,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Electrical Components & Equipment"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Emerson Q1 Earnings Top Estimates, Intelligent Devices Sales Rise",
+      "url": "/news/300031/emerson-q1-earnings-top-estimates-intelligent-devices-sales-rise",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "EMR Q4 Deep Dive: Automation, AI, and Power Drive Growth Amid Regional Divergence",
+      "url": "/news/298849/emr-q4-deep-dive-automation-ai-and-power-drive-growth-amid-regional-divergence",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Emerson Electric Co (EMR) Q1 2026 Earnings Call Highlights: Strong Growth Amid Regional Challenges",
+      "url": "https://finance.yahoo.com/news/emerson-electric-co-emr-q1-050305158.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Emerson Electric Q1 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/22e41a0e-2f69-3ddf-a13c-27e89f6cdc5d/emerson-electric-q1-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Emerson (EMR) Q1 2026 Earnings Call Transcript",
+      "url": "/news/298264/emerson-emr-q1-2026-earnings-call-transcript",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Emerson Electric (NYSE:EMR) Posts Q4 CY2025 Sales In Line With Estimates",
+      "url": "/news/298242/emerson-electric-nyse-emr-posts-q4-cy2025-sales-in-line-with-estimates",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Emerson Electric (EMR) Surpasses Q1 Earnings Estimates",
+      "url": "/news/298271/emerson-electric-emr-surpasses-q1-earnings-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Emerson Electric: Fiscal Q1 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/emerson-electric-fiscal-q1-earnings-214226582.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Emerson Reports First Quarter 2026 Results; Updates 2026 Outlook",
+      "url": "/news/298108/emerson-reports-first-quarter-2026-results-updates-2026-outlook",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Emerson Electric Shareholders Reelect Directors as Board Declassification Proposal Falls Short",
+      "url": "https://finance.yahoo.com/m/b3ed31af-5ebb-339c-a46c-21037526a2ba/emerson-electric-shareholders.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Emerson Electric (EMR) Reports Earnings Tomorrow: What To Expect",
+      "url": "/news/294921/emerson-electric-emr-reports-earnings-tomorrow-what-to-expect",
+      "publisher": "StockStory",
+      "date": "2026-02-01",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "January jobs data, Alphabet and Amazon earnings, more Warsh fallout: What to watch this week",
+      "url": "https://finance.yahoo.com/news/january-jobs-data-alphabet-and-amazon-earnings-more-warsh-fallout-what-to-watch-this-week-124723942.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Emerson Gears Up to Report Q1 Earnings: Here's What to Expect",
+      "url": "/news/293728/emerson-gears-up-to-report-q1-earnings-heres-what-to-expect",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Are Wall Street Analysts Predicting Emerson Electric Stock Will Climb or Sink?",
+      "url": "https://finance.yahoo.com/m/1d85468d-6036-3136-ac07-aa81c308f735/are-wall-street-analysts.html",
+      "publisher": "Barchart",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Emerson Electric (EMR) Gains As Market Dips: What You Should Know",
+      "url": "/news/292794/emerson-electric-emr-gains-as-market-dips-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Insights Into Emerson Electric (EMR) Q1: Wall Street Projections for Key Metrics",
+      "url": "/news/291819/insights-into-emerson-electric-emr-q1-wall-street-projections-for-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Emerson Electric (EMR) Earnings Expected to Grow: Should You Buy?",
+      "url": "/news/288578/emerson-electric-emr-earnings-expected-to-grow-should-you-buy",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Emerson Electric (EMR) Stock Sinks As Market Gains: Here's Why",
+      "url": "/news/285889/emerson-electric-emr-stock-sinks-as-market-gains-heres-why",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Emerson Electric (EMR) Dipped More Than Broader Market Today",
+      "url": "/news/281712/why-emerson-electric-emr-dipped-more-than-broader-market-today",
+      "publisher": "Zacks",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "JPMorgan Keeps Neutral on EMR but Raises Target Ahead of Q4 Earnings",
+      "url": "/news/280544/jpmorgan-keeps-neutral-on-emr-but-raises-target-ahead-of-q4-earnings",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    }
+  ]
 }

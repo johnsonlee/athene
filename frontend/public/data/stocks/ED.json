@@ -6295,8 +6295,8 @@
     "avg_volume_20d": 2109785.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 72.02606362879322,
-    "stoch_d": 79.9379089341395,
+    "stoch_k": 72.02606362879324,
+    "stoch_d": 79.93790893413951,
     "trend_score": 60.06437988693971,
     "rsi_abs_score": 68.66975922235213,
     "macd_abs_score": 56.40204927108671,
@@ -6306,7 +6306,15 @@
     "technical_score": 60.26782598299075,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.05962587589966785,
+    "sentiment_pos": 0.0813,
+    "sentiment_neg": 0.03565,
+    "sentiment_neu": 0.8830500000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 52.98
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": -0.0171417924352525,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 61.971038269999994,
     "catalyst_timeline": 53.73270386631914,
     "downside_control": 53.63961680716976,
-    "composite_score": 60.564692384424674,
+    "composite_score": 60.56080333912624,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 61.67231018940476,
     "technical_score": 60.26782598299075,
-    "sentiment_score": 50.0,
+    "sentiment_score": 52.98,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Utilities",
     "industry": "Multi-Utilities"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "BofA Maintains Cautious View on Con Edison (ED) After Rate Decision",
+      "url": "/news/289150/bofa-maintains-cautious-view-on-con-edison-ed-after-rate-decision",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "CON EDISON DECLARES COMMON STOCK DIVIDEND",
+      "url": "/news/289074/con-edison-declares-common-stock-dividend",
+      "publisher": "PR Newswire",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Allstate Upgraded, Amazon Downgraded: Updated Rankings on Top Blue-Chip Stocks",
+      "url": "https://finance.yahoo.com/news/allstate-upgraded-amazon-downgraded-updated-151444232.html",
+      "publisher": "InvestorPlace",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What to Expect From Consolidated Edison's Q4 2025 Earnings Report",
+      "url": "https://finance.yahoo.com/m/5cb1d98a-5682-38fe-a1c8-7cced3234b78/what-to-expect-from.html",
+      "publisher": "Barchart",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Consolidated Edison, Inc.",
+      "url": "https://finance.yahoo.com/m/bd7bf4e5-2952-39e0-8245-f3ba9b1275a3/analyst-report%3A-consolidated.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Con Edison to Report 2025 Earnings on February 19",
+      "url": "/news/278258/con-edison-to-report-2025-earnings-on-february-19",
+      "publisher": "PR Newswire",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ED Benefits From Long-Term Capital Spending and Renewable Growth",
+      "url": "/news/270699/ed-benefits-from-long-term-capital-spending-and-renewable-growth",
+      "publisher": "Zacks",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Eli Lilly Upgraded, NVIDIA Downgraded: Updated Rankings on Top Blue-Chip Stocks",
+      "url": "https://finance.yahoo.com/news/eli-lilly-upgraded-nvidia-downgraded-145053268.html",
+      "publisher": "InvestorPlace",
+      "date": "2026-01-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Dividend King Buy-and-Hold Strategy That Can Surge 100% in 10 Years",
+      "url": "/news/260799/the-dividend-king-buy-and-hold-strategy-that-can-surge-100-in-10-years",
+      "publisher": "Motley Fool",
+      "date": "2025-12-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Morgan Stanley Maintains Underweight Rating On Consolidated Edison, Inc. (ED)",
+      "url": "/news/259341/morgan-stanley-maintains-underweight-rating-on-consolidated-edison-inc-ed",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The AI Power Trade Is Getting Tricky. Stocks to Consider in 2026.",
+      "url": "https://finance.yahoo.com/m/a7e6d424-ce28-3473-9cbc-074f6f1ef1d1/the-ai-power-trade-is-getting.html",
+      "publisher": "Barrons.com",
+      "date": "2025-12-17",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Is Ameren Stock Underperforming the Dow?",
+      "url": "https://finance.yahoo.com/m/1f42d0a1-eb29-3d28-86d7-0a0ca9110f4c/is-ameren-stock.html",
+      "publisher": "Barchart",
+      "date": "2025-12-11",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Consolidated Edison (ED) Agrees to Divest Interest in Mountain Valley Pipeline",
+      "url": "/news/251057/consolidated-edison-ed-agrees-to-divest-interest-in-mountain-valley-pipeline",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-10",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The 5 Best S&P 500 Dividend Aristocrat Stocks to Buy Before 2026",
+      "url": "https://finance.yahoo.com/m/e72fb8a2-41a6-31a1-a7b4-b9e0342343c8/the-5-best-s%26p-500-dividend.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2025-12-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Consolidated Edison Stock: Is ED Underperforming the Utilities Sector?",
+      "url": "https://finance.yahoo.com/m/c0d0974d-0223-393e-bfe1-6d8e4dbbbd28/consolidated-edison-stock%3A-is.html",
+      "publisher": "Barchart",
+      "date": "2025-12-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Consolidated Edison, Inc.",
+      "url": "https://finance.yahoo.com/m/d0a795df-af9c-3562-9eeb-bcb0a969ac8f/analyst-report%3A-consolidated.html",
+      "publisher": "Morningstar Research",
+      "date": "2025-12-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Morgan Stanley Updates Consolidated Edison (ED) Price Target Amid Sector Headwinds",
+      "url": "/news/241557/morgan-stanley-updates-consolidated-edison-ed-price-target-amid-sector-headwinds",
+      "publisher": "Insider Monkey",
+      "date": "2025-11-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Con Ed Stock Drops After Mamdani, Trump Call for Lower Electricity Rates",
+      "url": "https://www.barrons.com/livecoverage/trump-policy-markets-today/card/con-edison-stock-drops-after-mamdani-trump-call-for-lower-electricity-rates-1on918HvRhIBrw6fwerP?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2025-11-21",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Trump and Mamdani See Eye to Eye. Capitalists, Time to Worry.",
+      "url": "https://www.barrons.com/articles/trump-mamdani-meeting-affordability-03748c2f?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2025-11-21",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Mamdani and Trump say they agree on cutting the cost of living - including a big utility company's rates",
+      "url": "https://www.marketwatch.com/story/mamdani-is-meeting-trump-at-the-white-house-the-mayor-elect-says-theyre-connected-by-this-one-big-issue-d62e7b29?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2025-11-21",
+      "sentiment": "positive"
+    }
+  ]
 }

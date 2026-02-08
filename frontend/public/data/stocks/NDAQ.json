@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 4.55975555783668,
-    "stoch_d": 9.172751611115281,
+    "stoch_d": 9.172751611115277,
     "trend_score": 39.72326756753312,
     "rsi_abs_score": 43.50354963330659,
     "macd_abs_score": 20.0,
@@ -6306,7 +6306,15 @@
     "technical_score": 37.88827977422213,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.11661259168250279,
+    "sentiment_pos": 0.08395,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.91605,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 55.83
+  },
   "analyst": {
     "revision_momentum": 0.07692307692307693,
     "target_upside": 0.28492278674997057,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 33.61970578571428,
     "catalyst_timeline": 45.409788962890204,
     "downside_control": 38.45966029422465,
-    "composite_score": 45.660071296992754,
+    "composite_score": 45.65618225169432,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 55.19721482142857,
     "technical_score": 37.88827977422213,
-    "sentiment_score": 50.0,
+    "sentiment_score": 55.83,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Financial Exchanges & Data"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "5 Securities & Exchanges Stocks to Watch Amid Increased Volatility",
+      "url": "/news/303077/5-securities-exchanges-stocks-to-watch-amid-increased-volatility",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cboe Global's Q4 Earnings Beat Estimates on Higher Revenues",
+      "url": "/news/303011/cboe-globals-q4-earnings-beat-estimates-on-higher-revenues",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Are Wall Street Analysts Predicting Nasdaq Stock Will Climb or Sink?",
+      "url": "https://finance.yahoo.com/m/205008ee-a5ad-397d-8cc3-ddddb2ecfc5c/are-wall-street-analysts.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Questions Emerge on Nasdaq's Fast-Entry Index Proposal",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-02-05-2026/card/questions-emerge-on-nasdaq-s-fast-entry-index-proposal-mSlf66gJF6OGe7vGXZ9D?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nasdaq 2026 Investor Day",
+      "url": "/news/302079/nasdaq-2026-investor-day",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Anthropic's New Model Can Run Financial Analyses. Financial Data Stocks Tumble.",
+      "url": "https://www.barrons.com/articles/anthropic-financial-research-stocks-01721769?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ICE's Q4 Earnings and Revenues Top Estimates, Dividend Raised",
+      "url": "/news/301846/ices-q4-earnings-and-revenues-top-estimates-dividend-raised",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Top 5 Analyst Questions From Nasdaq's Q4 Earnings Call",
+      "url": "/news/300838/the-top-5-analyst-questions-from-nasdaqs-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Nasdaq Reports January 2026 Volumes",
+      "url": "/news/300178/nasdaq-reports-january-2026-volumes",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nasdaq, Inc. (NDAQ): A Bull Case Theory",
+      "url": "/news/300141/nasdaq-inc-ndaq-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CME Group Q4 Earnings and Revenues Top Estimates, ADV Rises Y/Y",
+      "url": "/news/299835/cme-group-q4-earnings-and-revenues-top-estimates-adv-rises-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Japan's Osaka Exchange Adopts Nasdaq Eqlipse Trading and Surveillance Technology for Next-Generation Derivatives Platform",
+      "url": "/news/298653/japans-osaka-exchange-adopts-nasdaq-eqlipse-trading-and-surveillance-technology-for-next-generation-derivatives-platform",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Nasdaq, Inc.",
+      "url": "https://finance.yahoo.com/m/4bef17e9-1ea8-3b8f-bdb7-550fe6d3fd81/analyst-report%3A-nasdaq%2C-inc..html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Top Analyst Reports for Alphabet, Apple & Thermo Fisher",
+      "url": "/news/298251/top-analyst-reports-for-alphabet-apple-thermo-fisher",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Nasdaq price target raised to $116 from $113 at Morgan Stanley",
+      "url": "https://finance.yahoo.com/news/nasdaq-price-target-raised-116-131047579.html",
+      "publisher": "TipRanks",
+      "date": "2026-01-31",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NDAQ Q4 Deep Dive: Solutions Revenue and AI Initiatives Drive Robust Growth Amid Margin Compression",
+      "url": "/news/294059/ndaq-q4-deep-dive-solutions-revenue-and-ai-initiatives-drive-robust-growth-amid-margin-compression",
+      "publisher": "StockStory",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Nasdaq Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/ec11bb5b-7819-335d-a954-56e82025a758/nasdaq-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Nasdaq, Inc.",
+      "url": "https://finance.yahoo.com/m/2df966b2-5fcf-3847-8bc0-213cc5ec8d94/analyst-report%3A-nasdaq%2C-inc..html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nasdaq Inc (NDAQ) Q4 2025 Earnings Call Highlights: Record Revenue and Strategic Growth Initiatives",
+      "url": "https://finance.yahoo.com/news/nasdaq-inc-ndaq-q4-2025-190513758.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Nasdaq Hits Record $5 Billion Revenue As Tech And Index Sales Surge",
+      "url": "/news/292063/nasdaq-hits-record-5-billion-revenue-as-tech-and-index-sales-surge",
+      "publisher": "Benzinga",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    }
+  ]
 }

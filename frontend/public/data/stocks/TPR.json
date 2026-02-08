@@ -6306,7 +6306,15 @@
     "technical_score": 59.82019106472172,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.1932326214427942,
+    "sentiment_pos": 0.10455,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.89545,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 59.66
+  },
   "analyst": {
     "revision_momentum": -0.0625,
     "target_upside": 0.051939513477975055,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 36.517303765,
     "catalyst_timeline": 65.26261675857485,
     "downside_control": 43.25184318828242,
-    "composite_score": 57.73156486338458,
+    "composite_score": 57.72767581808614,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 68.08157908607748,
     "technical_score": 59.82019106472172,
-    "sentiment_score": 50.0,
+    "sentiment_score": 59.66,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Apparel, Accessories & Luxury Goods"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Lumentum, Woodward, And Teradyne Are Among the Top 10 Large-Cap Gainers Last Week (Feb. 2-Feb. 6): Are the Others in Your Portfolio?",
+      "url": "/news/303782/lumentum-woodward-and-teradyne-are-among-the-top-10-large-cap-gainers-last-week-feb-2-feb-6-are-the-others-in-your-portfolio",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Tapestry Q2 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/3dbb0e6f-081a-30a9-9850-dba0304e764c/tapestry-q2-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Tapestry (TPR) Stock Is Trading Up Today",
+      "url": "/news/303250/why-tapestry-tpr-stock-is-trading-up-today",
+      "publisher": "StockStory",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tapestry Rises 10% on Strong Q2 Earnings & Higher FY26 Outlook",
+      "url": "/news/303214/tapestry-rises-10-on-strong-q2-earnings-higher-fy26-outlook",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Big-Name Earnings, Selloffs Highlight Busy Week on Wall Street",
+      "url": "/news/303135/big-name-earnings-selloffs-highlight-busy-week-on-wall-street",
+      "publisher": "Schaeffer's Research",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Tapestry (TPR) Hits All-Time High on Strong Earnings, Outlook",
+      "url": "/news/302411/tapestry-tpr-hits-all-time-high-on-strong-earnings-outlook",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "TPR Q4 Deep Dive: Global Expansion, Gen Z Growth Drive Results and Guidance",
+      "url": "/news/303300/tpr-q4-deep-dive-global-expansion-gen-z-growth-drive-results-and-guidance",
+      "publisher": "StockStory",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Review & Preview: Utilities Are the New Bitcoin",
+      "url": "https://www.barrons.com/articles/stocks-today-bitcoin-retail-earnings-a2030255?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Coach Parent Company Tapestry Spikes On Soaring Handbag Sales",
+      "url": "https://www.investors.com/news/tapestry-stock-coach?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Peloton stock sinks 30% as CFO departs, Tapestry tops Q2 estimates",
+      "url": "https://finance.yahoo.com/video/peloton-stock-sinks-30-cfo-205012809.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Tapestry Inc (TPR) Q2 2026 Earnings Call Highlights: Strong Revenue Growth and Strategic Brand ...",
+      "url": "https://finance.yahoo.com/news/tapestry-inc-tpr-q2-2026-190345572.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Tapestry, Inc.",
+      "url": "https://finance.yahoo.com/m/77efe5e8-97b7-340b-b52e-794ac550bc77/analyst-report%3A-tapestry%2C-inc..html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Weekly Jobless Claims Exceed Expectations",
+      "url": "/news/301789/weekly-jobless-claims-exceed-expectations",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What's Going On With Tapestry Stock?",
+      "url": "/news/301729/whats-going-on-with-tapestry-stock",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tapestry Stock Hits Record Highs as Coach Sales Surge",
+      "url": "/news/301723/tapestry-stock-hits-record-highs-as-coach-sales-surge",
+      "publisher": "Schaeffer's Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tapestry shares jump on strong Q2 beat as Coach drives growth",
+      "url": "https://finance.yahoo.com/m/1dc20af5-1704-363c-a9d4-2034fb520d99/tapestry-shares-jump-on.html",
+      "publisher": "Proactive",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Tapestry Stock: Is Wall Street Bullish or Bearish?",
+      "url": "https://finance.yahoo.com/m/b22da4bc-b800-3cac-98b0-cc230ba5db25/tapestry-stock%3A-is-wall.html",
+      "publisher": "Barchart",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jobless Claims Pop Up a Bit, Major Morning for Earnings",
+      "url": "/news/301755/jobless-claims-pop-up-a-bit-major-morning-for-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tapestry (TPR) Q2 Earnings: Taking a Look at Key Metrics Versus Estimates",
+      "url": "/news/301543/tapestry-tpr-q2-earnings-taking-a-look-at-key-metrics-versus-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Week Ahead: Inflation Data Hits Amid Earnings Season",
+      "url": "/news/301191/the-week-ahead-inflation-data-hits-amid-earnings-season",
+      "publisher": "Schaeffer's Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    }
+  ]
 }

@@ -6306,7 +6306,15 @@
     "technical_score": 45.762818388725826,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.13222621409740085,
+    "sentiment_pos": 0.11925,
+    "sentiment_neg": 0.033499999999999995,
+    "sentiment_neu": 0.8473499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 56.61
+  },
   "analyst": null,
   "ranking": {
     "value_score": 76.4149551095238,
@@ -6334,14 +6342,14 @@
     "valuation_margin": 73.50648653285714,
     "catalyst_timeline": 45.715806338417934,
     "downside_control": 64.37735428813566,
-    "composite_score": 58.131659425277576,
+    "composite_score": 58.12777037997914,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 59.62618178808981,
     "technical_score": 45.762818388725826,
-    "sentiment_score": 50.0,
+    "sentiment_score": 56.61,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6357,5 +6365,146 @@
     "sector": "Communication Services",
     "industry": "Broadcasting"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Is Wall Street Bullish or Bearish on Fox Corporation Stock?",
+      "url": "https://finance.yahoo.com/m/6b371783-a75f-31b0-900b-14f6ed5c3b0e/is-wall-street-bullish-or.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Morning Movers: Eli Lilly rises, Boston Scientific falls after quarterly results",
+      "url": "https://finance.yahoo.com/news/morning-movers-eli-lilly-rises-140052306.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Fox Corporation",
+      "url": "https://finance.yahoo.com/m/1d793d72-66dc-3f23-b190-a3625704eded/analyst-report%3A-fox.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Fox Corp (FOX) Q2 2026 Earnings Call Highlights: Revenue Growth Amidst Rising Costs",
+      "url": "https://finance.yahoo.com/news/fox-corp-fox-q2-2026-210208356.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Fox Corporation reports strong quarter, boosted by advertising and cable growth",
+      "url": "https://finance.yahoo.com/m/558c1e9b-07b3-307c-b12f-28070231fbd6/fox-corporation-reports.html",
+      "publisher": "Fox Business",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Fox Keeps Ads Growing Even Without Election Boost",
+      "url": "/news/299710/fox-keeps-ads-growing-even-without-election-boost",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "FOX Q2 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/cc94c367-9160-37a1-a68e-7f76a04fc857/fox-q2-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Fox Corporation (FOX) Q2 Earnings and Revenues Beat Estimates",
+      "url": "/news/299436/fox-corporation-fox-q2-earnings-and-revenues-beat-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Fox Revenue Climbs on Growth in Cable, Advertising",
+      "url": "https://finance.yahoo.com/m/164fe5ad-13ea-391f-84e9-04cbc3b18dd3/fox-revenue-climbs-on-growth.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Fox: Fiscal Q2 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/fox-fiscal-q2-earnings-snapshot-130616995.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FOX REPORTS SECOND QUARTER FISCAL 2026 REVENUES OF $5.18 BILLION, NET INCOME OF $247 MILLION, AND ADJUSTED EBITDA OF $692 MILLION",
+      "url": "/news/299091/fox-reports-second-quarter-fiscal-2026-revenues-of-518-billion-net-income-of-247-million-and-adjusted-ebitda-of-692-million",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Fox and ASA Display Value and Momentum",
+      "url": "https://finance.yahoo.com/news/fox-asa-display-value-momentum-120212442.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "January jobs data, Alphabet and Amazon earnings, more Warsh fallout: What to watch this week",
+      "url": "https://finance.yahoo.com/news/january-jobs-data-alphabet-and-amazon-earnings-more-warsh-fallout-what-to-watch-this-week-124723942.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "UBS discusses top themes for media in 2026",
+      "url": "https://finance.yahoo.com/news/ubs-discusses-top-themes-media-093003900.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Winter Storm Fern Puts Spotlight on NFL Playoffs, Lifts Betting Volume Expectations",
+      "url": "https://finance.yahoo.com/news/winter-storm-fern-puts-spotlight-173819924.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FOX SPORTS UNVEILS HISTORIC FIFA WORLD CUP 2026 BROADCAST SCHEDULE",
+      "url": "/news/291792/fox-sports-unveils-historic-fifa-world-cup-2026-broadcast-schedule",
+      "publisher": "PR Newswire",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Are Consumer Discretionary Stocks Lagging  Fox (FOX) This Year?",
+      "url": "/news/288514/are-consumer-discretionary-stocks-lagging-fox-fox-this-year",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Disney's CEO succession drama is hurting the stock price",
+      "url": "https://finance.yahoo.com/news/disneys-ceo-succession-drama-is-hurting-the-stock-price-141914816.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-01-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "FOX vs. NFLX: Which Stock Should Value Investors Buy Now?",
+      "url": "/news/285555/fox-vs-nflx-which-stock-should-value-investors-buy-now",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Should Value Investors Buy Fox (FOX) Stock?",
+      "url": "/news/284032/should-value-investors-buy-fox-fox-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    }
+  ]
 }

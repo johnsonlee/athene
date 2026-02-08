@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 179.9600067138672,
-    "sma_20": 182.03712463378903,
+    "sma_20": 182.03712463378906,
     "sma_50": 179.12281097412108,
     "sma_200": 152.15741481781006,
     "trend_alignment": 0.6847381603628439,
@@ -6286,9 +6286,9 @@
     "macd_histogram": -0.7306043040641372,
     "macd_line": 0.16412212283577787,
     "macd_histogram_pct": -0.40598148300015535,
-    "bb_position": 0.3403603446447837,
-    "bb_upper": 188.5427698486325,
-    "bb_lower": 175.53147941894557,
+    "bb_position": 0.34036034464478154,
+    "bb_upper": 188.54276984863253,
+    "bb_lower": 175.5314794189456,
     "bb_width": 0.07147602696901657,
     "hist_volatility": 0.3227711238960239,
     "volume_ratio": 1.1104336434622177,
@@ -6306,7 +6306,15 @@
     "technical_score": 58.17010511433988,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.19207754687916495,
+    "sentiment_pos": 0.10594999999999999,
+    "sentiment_neg": 0.01365,
+    "sentiment_neu": 0.8804000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 59.6
+  },
   "analyst": {
     "revision_momentum": 0.2,
     "target_upside": 0.08357412758390749,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 45.2625617,
     "catalyst_timeline": 58.291551759407085,
     "downside_control": 45.49129425917387,
-    "composite_score": 55.78740062317612,
+    "composite_score": 55.78351157787768,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 58.14589617857143,
     "technical_score": 58.17010511433988,
-    "sentiment_score": 50.0,
+    "sentiment_score": 59.6,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Investment Banking & Brokerage"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Chipotle CEO Says Higher-Income Customers Give Company 'Confidence' To Keep Raising Prices: Report",
+      "url": "/news/303699/chipotle-ceo-says-higher-income-customers-give-company-confidence-to-keep-raising-prices-report",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Morgan Stanley, Clairfield lead South & Central America M&A financial advisory in 2025",
+      "url": "https://finance.yahoo.com/m/5c9d0f34-2435-3a56-8868-379c31c737c1/morgan-stanley%2C-clairfield.html",
+      "publisher": "Private Banker International",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Morgan Stanley leads 2025 APAC M&A financial adviser rankings",
+      "url": "https://finance.yahoo.com/m/aafd65c0-1f4a-3bb7-b688-7e1ee4efbbcd/morgan-stanley-leads-2025.html",
+      "publisher": "Private Banker International",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hedge Funds Pulled Back From Stocks During Selloff",
+      "url": "https://finance.yahoo.com/m/9343422a-c620-34cb-b6fa-be6cecf60046/hedge-funds-pulled-back-from.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Morgan Stanley tweaks AMD stock price target post-earnings",
+      "url": "https://finance.yahoo.com/m/681e6d8b-efba-3e14-8b91-7dbc00fd8079/morgan-stanley-tweaks-amd.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Morgan Stanley to Host 17th Annual Go Red Womens Leadership Event in Collaboration with the American Heart Association",
+      "url": "https://www.businesswire.com/news/home/20260205633986/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "MC Gains on Q4 Earnings Beat as Revenues Rise, Announces Buyback Plan",
+      "url": "/news/301332/mc-gains-on-q4-earnings-beat-as-revenues-rise-announces-buyback-plan",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Morgan Stanley tops power M&A financial advisory in 2025",
+      "url": "https://finance.yahoo.com/m/cc87efd7-8a05-3b9f-94f4-da3e169fb0bd/morgan-stanley-tops-power-m%26a.html",
+      "publisher": "Power Technology",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "7 Bank Stocks With Solid-and Growing-Dividends",
+      "url": "https://www.barrons.com/articles/7-bank-stocks-growing-dividends-144d4aae?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CME Group Eyes 'CME Coin' After JPMorgan Success-Chart Shows Breakout To $320",
+      "url": "/news/300068/cme-group-eyes-cme-coin-after-jpmorgan-success-chart-shows-breakout-to-320",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Morgan Stanley Inclusive & Sustainable Ventures Hosts Global Demo Day, Opens Applications for Next Cohort",
+      "url": "https://www.businesswire.com/news/home/20260203065578/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Lumentum Holdings (LITE) Stock Is Trending Overnight: Here's What You Should Know",
+      "url": "/news/298522/lumentum-holdings-lite-stock-is-trending-overnight-heres-what-you-should-know",
+      "publisher": "Benzinga",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Morgan Stanley says this is the best software stock to buy now",
+      "url": "https://finance.yahoo.com/news/morgan-stanley-says-best-software-143533803.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "RBC Boosts Morgan Stanley (MS) Price Target on Strong Fourth-Quarter Results",
+      "url": "/news/296873/rbc-boosts-morgan-stanley-ms-price-target-on-strong-fourth-quarter-results",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Trump woke the rest of the world up to leveraging economic firepower against trade partners, says Morgan Stanley CIO",
+      "url": "https://finance.yahoo.com/news/trump-woke-rest-world-leveraging-171258237.html",
+      "publisher": "Fortune",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Morgan Stanley survey shows electronics spending intentions are worsening",
+      "url": "https://finance.yahoo.com/news/morgan-stanley-survey-shows-electronics-164546223.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Morgan Stanley (MS) Could Be a Great Choice",
+      "url": "/news/295937/morgan-stanley-ms-could-be-a-great-choice",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Are Wall Street Analysts Bullish on Morgan Stanley Stock?",
+      "url": "https://finance.yahoo.com/m/bb85d5b7-3200-38fd-9fde-fe507c7e79b8/are-wall-street-analysts.html",
+      "publisher": "Barchart",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Morgan Stanley (MS) is Attracting Investor Attention: Here is What You Should Know",
+      "url": "/news/295602/morgan-stanley-ms-is-attracting-investor-attention-here-is-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "As Disneys Bob Iger Runs Out the Clock, Some Protegés Cant Wait to Be King",
+      "url": "https://finance.yahoo.com/m/e353fc03-aa4e-3c87-aec5-71b8c4a92537/as-disney%E2%80%99s-bob-iger-runs-out.html",
+      "publisher": "The Daily Upside",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    }
+  ]
 }

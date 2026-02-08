@@ -6306,7 +6306,15 @@
     "technical_score": 57.56296466511088,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.21514150823437284,
+    "sentiment_pos": 0.1772,
+    "sentiment_neg": 0.0193,
+    "sentiment_neu": 0.80345,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 60.76
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.07519655937101,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 52.15034955714285,
     "catalyst_timeline": 60.39280308943493,
     "downside_control": 57.223329902410185,
-    "composite_score": 54.24543375481946,
+    "composite_score": 54.24154470952102,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 53.990079960599815,
     "technical_score": 57.56296466511088,
-    "sentiment_score": 50.0,
+    "sentiment_score": 60.76,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Construction & Engineering"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Willdan Stock at 23.75X Forward P/E: Risk or Opportunity?",
+      "url": "/news/303031/willdan-stock-at-2375x-forward-pe-risk-or-opportunity",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why Jacobs Solutions (J) is a Strong Momentum Stock",
+      "url": "/news/302962/heres-why-jacobs-solutions-j-is-a-strong-momentum-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jacobs Wins Texas Coastal Storm Surge Barrier Design Contract",
+      "url": "/news/301920/jacobs-wins-texas-coastal-storm-surge-barrier-design-contract",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jacobs Selected to Lead Southern California Rail Infrastructure Upgrade",
+      "url": "/news/301088/jacobs-selected-to-lead-southern-california-rail-infrastructure-upgrade",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Jacobs Solutions (J) Stock Is Trading Up Today",
+      "url": "/news/299828/why-jacobs-solutions-j-stock-is-trading-up-today",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Jacobs Solutions Inc.",
+      "url": "https://finance.yahoo.com/m/89939967-02e7-3e28-9c04-782594430876/analyst-report%3A-jacobs.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jacobs Q1 Earnings & Revenues Top, Both Up Y/Y, FY26 View Raised",
+      "url": "/news/299329/jacobs-q1-earnings-revenues-top-both-up-yy-fy26-view-raised",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jacobs to Design One of the World's Largest Coastal Gate Systems Along Texas Gulf Coast",
+      "url": "/news/299020/jacobs-to-design-one-of-the-worlds-largest-coastal-gate-systems-along-texas-gulf-coast",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "J Q1 Deep Dive: Backlog Momentum and Digital Consulting Expansion Set the Stage for 2026",
+      "url": "/news/298822/j-q1-deep-dive-backlog-momentum-and-digital-consulting-expansion-set-the-stage-for-2026",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jacobs Solutions Inc (J) Q1 2026 Earnings Call Highlights: Record Backlog and Strategic ...",
+      "url": "https://finance.yahoo.com/news/jacobs-solutions-inc-j-q1-050236093.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jacobs Solutions Q1 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/811ce596-9c3e-39ee-b208-6a756caf829d/jacobs-solutions-q1-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jacobs J Q1 2026 Earnings Call Transcript",
+      "url": "/news/298257/jacobs-j-q1-2026-earnings-call-transcript",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jacobs Solutions (J) Tops Q1 Earnings and Revenue Estimates",
+      "url": "/news/298289/jacobs-solutions-j-tops-q1-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jacobs Solutions: Fiscal Q1 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/jacobs-solutions-fiscal-q1-earnings-213824224.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jacobs Solutions (NYSE:J) Reports Bullish Q4 CY2025",
+      "url": "/news/298168/jacobs-solutions-nyse-j-reports-bullish-q4-cy2025",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jacobs Reports Strong Fiscal First Quarter 2026 Results",
+      "url": "/news/298112/jacobs-reports-strong-fiscal-first-quarter-2026-results",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jacobs to Report Q1 Earnings: What to Expect From the Stock?",
+      "url": "/news/295468/jacobs-to-report-q1-earnings-what-to-expect-from-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jacobs Solutions (J) Q4 Earnings: What To Expect",
+      "url": "/news/294928/jacobs-solutions-j-q4-earnings-what-to-expect",
+      "publisher": "StockStory",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jacobs Solutions AGM: Shareholders Back Directors, Pay Plan and EY Auditor; CEO Highlights FY25 Focus",
+      "url": "https://finance.yahoo.com/m/83d782d9-5e41-316e-8cdc-0591a74ee1c6/jacobs-solutions-agm%3A.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Government & Technical Consulting Stocks Q3 Teardown: Jacobs Solutions (NYSE:J) Vs The Rest",
+      "url": "/news/294000/government-technical-consulting-stocks-q3-teardown-jacobs-solutions-nyse-j-vs-the-rest",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    }
+  ]
 }

@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 183.52999877929688,
-    "sma_20": 169.49699783325198,
+    "sma_20": 169.49699783325195,
     "sma_50": 157.7159991455078,
     "sma_200": 157.83909976959228,
     "trend_alignment": 0.7415749974794136,
@@ -6286,27 +6286,35 @@
     "macd_histogram": 1.0411723442185732,
     "macd_line": 6.830354863381331,
     "macd_histogram_pct": 0.5673036294576725,
-    "bb_position": 0.9514416821317108,
-    "bb_upper": 185.0394272338569,
-    "bb_lower": 153.95456843264705,
-    "bb_width": 0.1833947456213388,
+    "bb_position": 0.9514416821317117,
+    "bb_upper": 185.03942723385688,
+    "bb_lower": 153.95456843264702,
+    "bb_width": 0.18339474562133884,
     "hist_volatility": 0.40330130031352956,
     "volume_ratio": 0.9087547421329669,
     "avg_volume_20d": 1095235.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 86.53135265146562,
-    "stoch_d": 79.67757178072901,
+    "stoch_k": 86.53135265146564,
+    "stoch_d": 79.67757178072902,
     "trend_score": 74.15749974794136,
     "rsi_abs_score": 61.70226095419205,
     "macd_abs_score": 66.00955444186509,
     "momentum_score": 63.855907698028574,
-    "volatility_score": 36.1407325429795,
+    "volatility_score": 36.14073254297949,
     "volume_score": 50.0,
     "technical_score": 58.632168742386874,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.17784543191180244,
+    "sentiment_pos": 0.07535,
+    "sentiment_neg": 0.019,
+    "sentiment_neu": 0.90565,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 58.89
+  },
   "analyst": {
     "revision_momentum": 0.625,
     "target_upside": 0.1006374979567373,
@@ -6327,7 +6335,7 @@
     "safety_score": 61.0475,
     "trend_score": 74.15749974794136,
     "momentum_score": 63.855907698028574,
-    "volatility_score": 36.1407325429795,
+    "volatility_score": 36.14073254297949,
     "volume_score": 50.0,
     "analyst_score": 65.02677491418297,
     "pe_score": 35.041904,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 50.157178625,
     "catalyst_timeline": 63.86501823601528,
     "downside_control": 52.95223488144692,
-    "composite_score": 49.311138805454064,
+    "composite_score": 49.30724976015563,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 46.923565670833334,
     "technical_score": 58.632168742386874,
-    "sentiment_score": 50.0,
+    "sentiment_score": 58.89,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Electrical Components & Equipment"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "New Strong Sell Stocks for February 5th",
+      "url": "/news/300894/new-strong-sell-stocks-for-february-5th",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analysts Estimate Generac Holdings (GNRC) to Report a Decline in Earnings: What to Look Out for",
+      "url": "/news/299666/analysts-estimate-generac-holdings-gnrc-to-report-a-decline-in-earnings-what-to-look-out-for",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ingersoll (IR) Surges 5.4%: Is This an Indication of Further Gains?",
+      "url": "/news/298994/ingersoll-ir-surges-54-is-this-an-indication-of-further-gains",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "ecobee Expands SmartBuildings Platform with New Multifamily API, Enhancing Flexibility and Control for Property Operators",
+      "url": "/news/295414/ecobee-expands-smartbuildings-platform-with-new-multifamily-api-enhancing-flexibility-and-control-for-property-operators",
+      "publisher": "PR Newswire",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Lam Research and Generac have been highlighted as Zacks Bull and Bear of the Day",
+      "url": "/news/290447/lam-research-and-generac-have-been-highlighted-as-zacks-bull-and-bear-of-the-day",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bear of the Day: Generac (GNRC)",
+      "url": "/news/289715/bear-of-the-day-generac-gnrc",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Generac Announces Fourth Quarter and Full-Year 2025 Earnings Release Date and Conference Call",
+      "url": "/news/289586/generac-announces-fourth-quarter-and-full-year-2025-earnings-release-date-and-conference-call",
+      "publisher": "GlobeNewswire",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Cold Snap Lit a Fire Under Natural Gas-3 Trades to Watch",
+      "url": "/news/288874/the-cold-snap-lit-a-fire-under-natural-gas-3-trades-to-watch",
+      "publisher": "MarketBeat",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Generac (GNRC) Stock Slips As Storm Rally Fades",
+      "url": "/news/287218/generac-gnrc-stock-slips-as-storm-rally-fades",
+      "publisher": "Benzinga",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks making big moves yesterday: Generac, Coinbase, Forestar Group, Nova, and Intel",
+      "url": "/news/282310/stocks-making-big-moves-yesterday-generac-coinbase-forestar-group-nova-and-intel",
+      "publisher": "StockStory",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Generac (GNRC) Stock Is Up, What You Need To Know",
+      "url": "/news/281290/generac-gnrc-stock-is-up-what-you-need-to-know",
+      "publisher": "StockStory",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What to Expect From Generac Holdings Q4 2025 Earnings Report",
+      "url": "https://finance.yahoo.com/m/81d530bb-9d36-3372-a0bd-afb89f22ba99/what-to-expect-from-generac.html",
+      "publisher": "Barchart",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Generac Holdings Inc.",
+      "url": "https://finance.yahoo.com/m/4b96aee7-1939-3f7f-b7d2-1974aea5772d/analyst-report%3A-generac.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why the Best Time to Own Generac Stock Is Now",
+      "url": "https://www.barrons.com/articles/generac-stock-price-buy-4735a777?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks Settle Mixed on Sector Rotation",
+      "url": "https://finance.yahoo.com/m/a65d864f-5e93-3961-adf0-8a3fb4fe5d44/stocks-settle-mixed-on-sector.html",
+      "publisher": "Barchart",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Indexes Mixed on Big Tech Weakness and Higher Bond Yields",
+      "url": "https://finance.yahoo.com/m/4155bf3f-5c6b-38b0-bcfe-83c678924b41/stock-indexes-mixed-on-big.html",
+      "publisher": "Barchart",
+      "date": "2026-01-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Generac Stock Upgraded After Recent Slide",
+      "url": "/news/270971/generac-stock-upgraded-after-recent-slide",
+      "publisher": "Schaeffer's Research",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Premarket Movers: Palantir Still Running on Venezuela Operation",
+      "url": "https://finance.yahoo.com/m/1509e016-dbf3-33a1-8f16-5b7d8f14f799/premarket-movers%3A-palantir.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Generac Expands C&I Capacity With New Sussex Manufacturing Site",
+      "url": "/news/268519/generac-expands-ci-capacity-with-new-sussex-manufacturing-site",
+      "publisher": "Zacks",
+      "date": "2026-01-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Generac Expands Its Commercial & Industrial Manufacturing Footprint with New Facility in Sussex, Wisconsin",
+      "url": "/news/266966/generac-expands-its-commercial-industrial-manufacturing-footprint-with-new-facility-in-sussex-wisconsin",
+      "publisher": "PR Newswire",
+      "date": "2026-01-05",
+      "sentiment": "positive"
+    }
+  ]
 }

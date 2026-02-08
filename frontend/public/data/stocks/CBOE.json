@@ -6279,8 +6279,8 @@
     "close": 273.3599853515625,
     "sma_20": 270.07949981689455,
     "sma_50": 259.9952001953125,
-    "sma_200": 242.82369132995606,
-    "trend_alignment": 0.6494038895282354,
+    "sma_200": 242.82369132995603,
+    "trend_alignment": 0.6494038895282356,
     "rsi": 61.186697007079964,
     "rsi_score": 0.22373394014159928,
     "macd_histogram": -0.05599091958939484,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 75.66894819375472,
     "stoch_d": 67.64167617300748,
-    "trend_score": 64.94038895282354,
+    "trend_score": 64.94038895282355,
     "rsi_abs_score": 70.66931209504402,
     "macd_abs_score": 48.97587572084872,
     "momentum_score": 59.82259390794637,
@@ -6306,7 +6306,15 @@
     "technical_score": 61.95479616539523,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.06748992967005576,
+    "sentiment_pos": 0.0742,
+    "sentiment_neg": 0.02,
+    "sentiment_neu": 0.9057999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 53.37
+  },
   "analyst": {
     "revision_momentum": 0.16666666666666666,
     "target_upside": 0.024290313140181395,
@@ -6325,7 +6333,7 @@
     "quality_score": 82.0164,
     "growth_score": 76.75,
     "safety_score": 54.06555,
-    "trend_score": 64.94038895282354,
+    "trend_score": 64.94038895282355,
     "momentum_score": 59.82259390794637,
     "volatility_score": 72.62950653582126,
     "volume_score": 50.0,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 31.016712643809523,
     "catalyst_timeline": 57.237822430062934,
     "downside_control": 65.4002584803732,
-    "composite_score": 59.13288548110348,
+    "composite_score": 59.12899643580504,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 63.046123869841274,
     "technical_score": 61.95479616539523,
-    "sentiment_score": 50.0,
+    "sentiment_score": 53.37,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 0.9441666666666666,
     "data_quality_penalty": 0.0,
-    "rank": 125,
-    "percentile": 0.7610789980732178,
+    "rank": 124,
+    "percentile": 0.7630057803468208,
     "tier": "buy",
     "tier_raw": "buy",
     "tier_label": "Buy",
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Financial Exchanges & Data"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Markets have witnessed 'coalescence of risk taking' last 2 years",
+      "url": "https://finance.yahoo.com/video/markets-witnessed-coalescence-risk-taking-223000056.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Cboe Global Markets Inc (CBOE) Q4 2025 Earnings Call Highlights: Record Revenue and Strategic ...",
+      "url": "https://finance.yahoo.com/news/cboe-global-markets-inc-cboe-210137192.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Cboe Global Markets, Inc.",
+      "url": "https://finance.yahoo.com/m/2b0d75ff-4065-3363-b885-b85b3b0e14fb/analyst-report%3A-cboe-global.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Record Trading Boosts This Financial Firm As Prediction Markets Tempt Exchanges",
+      "url": "https://finance.yahoo.com/m/07d9028b-4c80-35ba-b488-0b55351f799f/record-trading-boosts-this.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "5 Securities & Exchanges Stocks to Watch Amid Increased Volatility",
+      "url": "/news/303077/5-securities-exchanges-stocks-to-watch-amid-increased-volatility",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cboe Global's Q4 Earnings Beat Estimates on Higher Revenues",
+      "url": "/news/303011/cboe-globals-q4-earnings-beat-estimates-on-higher-revenues",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CBOE (CBOE) Q4 Earnings: How Key Metrics Compare to Wall Street Estimates",
+      "url": "/news/302847/cboe-cboe-q4-earnings-how-key-metrics-compare-to-wall-street-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CBOE Global (CBOE) Q4 Earnings and Revenues Top Estimates",
+      "url": "/news/302748/cboe-global-cboe-q4-earnings-and-revenues-top-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CBOE: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/cboe-q4-earnings-snapshot-124744425.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cboe Global Markets Reports Results for Fourth Quarter 2025 and Full Year",
+      "url": "/news/302540/cboe-global-markets-reports-results-for-fourth-quarter-2025-and-full-year",
+      "publisher": "PR Newswire",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks to Watch Friday: Amazon, Roblox, Stellantis, Strategy",
+      "url": "https://finance.yahoo.com/m/b9ddf50a-9f85-33bb-abac-388ab9931b3d/stocks-to-watch-friday%3A.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bitcoin 'volatility fear gauge' hits FTX-blowup peak as prices crater to nearly $60,000",
+      "url": "https://finance.yahoo.com/m/08c319e1-4013-342a-af3f-2161d6879a75/bitcoin-%27volatility-fear.html",
+      "publisher": "CoinDesk",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "MetLife Q4 Earnings Beat Estimates on Increasing Volumes",
+      "url": "/news/301950/metlife-q4-earnings-beat-estimates-on-increasing-volumes",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ICE's Q4 Earnings and Revenues Top Estimates, Dividend Raised",
+      "url": "/news/301846/ices-q4-earnings-and-revenues-top-estimates-dividend-raised",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cboe Global Markets Reports Trading Volume for January 2026",
+      "url": "/news/300257/cboe-global-markets-reports-trading-volume-for-january-2026",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CME Group Q4 Earnings and Revenues Top Estimates, ADV Rises Y/Y",
+      "url": "/news/299835/cme-group-q4-earnings-and-revenues-top-estimates-adv-rises-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What's in the Cards for Cboe Global This Earnings Season?",
+      "url": "/news/297750/whats-in-the-cards-for-cboe-global-this-earnings-season",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "S&P Global (SPGI) Earnings Expected to Grow: Should You Buy?",
+      "url": "/news/297659/sp-global-spgi-earnings-expected-to-grow-should-you-buy",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "From Holding to Hedging: The \"Crypto Casino\" Trade Is Taking Over",
+      "url": "/news/297183/from-holding-to-hedging-the-crypto-casino-trade-is-taking-over",
+      "publisher": "MarketBeat",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cboe Explores All-or-None Options as Event Trading Gains Momentum",
+      "url": "https://finance.yahoo.com/m/c54a5706-0e58-3c5a-a69b-d2828aa0da92/cboe-explores-%E2%80%9Call-or-none%E2%80%9D.html",
+      "publisher": "CCN",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    }
+  ]
 }

@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 577.72998046875,
     "sma_20": 576.882000732422,
-    "sma_50": 540.1974029541016,
+    "sma_50": 540.1974029541017,
     "sma_200": 417.05763366699216,
-    "trend_alignment": 0.7694294628230496,
+    "trend_alignment": 0.7694294628230495,
     "rsi": 54.3136573419816,
     "rsi_score": 0.08627314683963207,
     "macd_histogram": -3.404443855302379,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 41.91873385343739,
     "stoch_d": 49.73190606359796,
-    "trend_score": 76.94294628230496,
+    "trend_score": 76.94294628230494,
     "rsi_abs_score": 74.51956013938712,
     "macd_abs_score": 33.66080875911928,
     "momentum_score": 54.0901844492532,
     "volatility_score": 42.945573778744446,
     "volume_score": 50.0,
-    "technical_score": 57.89905397521633,
+    "technical_score": 57.899053975216326,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.1133641342590932,
+    "sentiment_pos": 0.10629999999999999,
+    "sentiment_neg": 0.0313,
+    "sentiment_neu": 0.8624,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 55.67
+  },
   "analyst": {
     "revision_momentum": 0.26666666666666666,
     "target_upside": 0.01258373288560397,
@@ -6325,7 +6333,7 @@
     "quality_score": 72.4944,
     "growth_score": 67.375,
     "safety_score": 57.67399999999999,
-    "trend_score": 76.94294628230496,
+    "trend_score": 76.94294628230494,
     "momentum_score": 54.0901844492532,
     "volatility_score": 42.945573778744446,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 52.203446214285705,
     "catalyst_timeline": 59.25536772636079,
     "downside_control": 51.53493606681167,
-    "composite_score": 57.41563778527904,
+    "composite_score": 57.4117487399806,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 64.6497418452381,
-    "technical_score": 57.89905397521633,
-    "sentiment_score": 50.0,
+    "technical_score": 57.899053975216326,
+    "sentiment_score": 55.67,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Construction Machinery & Heavy Transportation Equipment"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Cummins, Belden, and Perma-Fix Shares Are Soaring, What You Need To Know",
+      "url": "/news/303399/cummins-belden-and-perma-fix-shares-are-soaring-what-you-need-to-know",
+      "publisher": "StockStory",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cummins Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/480aea9d-7d32-3a03-9358-037470056eba/cummins-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CMI Q4 Deep Dive: Power Systems Strength Balances Truck Market Weakness, Tariffs Pressure Margins",
+      "url": "/news/302465/cmi-q4-deep-dive-power-systems-strength-balances-truck-market-weakness-tariffs-pressure-margins",
+      "publisher": "StockStory",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Auto & Transport Roundup: Market Talk",
+      "url": "https://finance.yahoo.com/m/7a65a6d5-7afa-30c4-8f5f-df397275f26d/auto-%26-transport-roundup%3A.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cummins Earnings Beat Driven by Data Center Demand. The Stock Is Down.",
+      "url": "https://finance.yahoo.com/m/8fc5b728-bb82-3f1d-b077-ec9409da6ce7/cummins-earnings-beat-driven.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Cummins Inc (CMI) Q4 2025 Earnings Call Highlights: Resilient Performance Amid Market Challenges",
+      "url": "https://finance.yahoo.com/news/cummins-inc-cmi-q4-2025-210929481.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Cummins (CMI) Shares Are Sliding Today",
+      "url": "/news/301996/why-cummins-cmi-shares-are-sliding-today",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cummins Q4 Earnings Beat on Strong Performance From Power Systems Unit",
+      "url": "/news/301798/cummins-q4-earnings-beat-on-strong-performance-from-power-systems-unit",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cummins Takes $458 Million Accelera Hit But Cashes In On Data Centers",
+      "url": "/news/301724/cummins-takes-458-million-accelera-hit-but-cashes-in-on-data-centers",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cummins (CMI) Q4 Earnings: Taking a Look at Key Metrics Versus Estimates",
+      "url": "/news/301533/cummins-cmi-q4-earnings-taking-a-look-at-key-metrics-versus-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cummins Earnings Driven by Data-Center Demand. The Stock Is Down.",
+      "url": "https://www.barrons.com/articles/cummins-earnings-stock-price-e038b959?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Cummins (CMI) Tops Q4 Earnings and Revenue Estimates",
+      "url": "/news/301411/cummins-cmi-tops-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cummins: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/cummins-q4-earnings-snapshot-125835611.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cummins (NYSE:CMI) Posts Better-Than-Expected Sales In Q4 CY2025",
+      "url": "/news/301181/cummins-nyse-cmi-posts-better-than-expected-sales-in-q4-cy2025",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cummins Reports Strong Fourth Quarter and Full-Year 2025 Results, Records Charges Associated with Electrolyzer Business Strategic Review",
+      "url": "https://www.businesswire.com/news/home/20260205124135/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cummins (CMI) Q4 Earnings Report Preview: What To Look For",
+      "url": "/news/298565/cummins-cmi-q4-earnings-report-preview-what-to-look-for",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Five AI Value Stocks for Investors to Consider",
+      "url": "https://www.barrons.com/articles/five-ai-value-stocks-for-investors-to-consider-f5ea4c83?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Curious about Cummins (CMI) Q4 Performance? Explore Wall Street Estimates for Key Metrics",
+      "url": "/news/295653/curious-about-cummins-cmi-q4-performance-explore-wall-street-estimates-for-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "January jobs data, Alphabet and Amazon earnings, more Warsh fallout: What to watch this week",
+      "url": "https://finance.yahoo.com/news/january-jobs-data-alphabet-and-amazon-earnings-more-warsh-fallout-what-to-watch-this-week-124723942.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "HALPER SADEH LLC ENCOURAGES CUMMINS INC. SHAREHOLDERS TO CONTACT THE FIRM TO DISCUSS THEIR RIGHTS",
+      "url": "/news/292664/halper-sadeh-llc-encourages-cummins-inc-shareholders-to-contact-the-firm-to-discuss-their-rights",
+      "publisher": "PR Newswire",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    }
+  ]
 }

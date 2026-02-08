@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 1469255.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 74.9624681209736,
+    "stoch_k": 74.96246812097361,
     "stoch_d": 70.2632774537825,
     "trend_score": 61.703013237652286,
     "rsi_abs_score": 72.79963999772829,
@@ -6306,7 +6306,15 @@
     "technical_score": 57.89749564569735,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.02167126744954821,
+    "sentiment_pos": 0.05399999999999999,
+    "sentiment_neg": 0.023399999999999997,
+    "sentiment_neu": 0.9225999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.08
+  },
   "analyst": {
     "revision_momentum": 0.5,
     "target_upside": 0.10897221292266485,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 37.032121137254904,
     "catalyst_timeline": 57.86754578369178,
     "downside_control": 64.99245488308568,
-    "composite_score": 59.449001410393564,
+    "composite_score": 59.44511236509513,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 64.16814070961718,
     "technical_score": 57.89749564569735,
-    "sentiment_score": 50.0,
+    "sentiment_score": 51.08,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 112,
-    "percentile": 0.7861271676300579,
+    "rank": 111,
+    "percentile": 0.7880539499036608,
     "tier": "buy",
     "tier_raw": "buy",
     "tier_label": "Buy",
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Biotechnology"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Analyst Report: CRISPR Therapeutics AG",
+      "url": "https://finance.yahoo.com/m/b28e38f3-b6c8-3b72-aa7d-0513d55d8735/analyst-report%3A-crispr.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Vertex Pharmaceuticals (VRTX) Earnings Expected to Grow: What to Know Ahead of Next Week's Release",
+      "url": "/news/301674/vertex-pharmaceuticals-vrtx-earnings-expected-to-grow-what-to-know-ahead-of-next-weeks-release",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Software stocks take hit on AI. Is Wall Street worried of a bubble?",
+      "url": "https://finance.yahoo.com/video/software-stock-hit-over-ai-152802600.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Why Investors Need to Take Advantage of These 2 Medical Stocks Now",
+      "url": "/news/299375/why-investors-need-to-take-advantage-of-these-2-medical-stocks-now",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "These Are The Worst 25 Stocks to Own in February",
+      "url": "/news/298026/these-are-the-worst-25-stocks-to-own-in-february",
+      "publisher": "Schaeffer's Research",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Is Trending Stock Vertex Pharmaceuticals Incorporated (VRTX) a Buy Now?",
+      "url": "/news/297439/is-trending-stock-vertex-pharmaceuticals-incorporated-vrtx-a-buy-now",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's How Much a $1000 Investment in Vertex Pharmaceuticals Made 10 Years Ago Would Be Worth Today",
+      "url": "/news/297384/heres-how-much-a-1000-investment-in-vertex-pharmaceuticals-made-10-years-ago-would-be-worth-today",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CRSP to Report Q4 Earnings: Is a Beat in Store for the Stock?",
+      "url": "/news/297385/crsp-to-report-q4-earnings-is-a-beat-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Analysts Are Positive on Vertex Pharmaceuticals Incorporated (VRTX)'s Story",
+      "url": "/news/294536/why-analysts-are-positive-on-vertex-pharmaceuticals-incorporated-vrtxs-story",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Vertex Pharmaceuticals (VRTX) Dipped More Than Broader Market Today",
+      "url": "/news/294285/why-vertex-pharmaceuticals-vrtx-dipped-more-than-broader-market-today",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dow Jones Leader Amgen Leads These Biotech Stocks Heading Into Q4 Earnings Season",
+      "url": "https://www.investors.com/research/ibd-industry-themes/dow-jones-amgenamgn-stock-biotech-stocks?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Top Analyst Reports for Applied Materials, Linde & Abbott",
+      "url": "/news/292736/top-analyst-reports-for-applied-materials-linde-abbott",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Prediction: 2026 Will Be the Year of Vertex Pharmaceuticals",
+      "url": "/news/291660/prediction-2026-will-be-the-year-of-vertex-pharmaceuticals",
+      "publisher": "Motley Fool",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Satellos Appoints Antoinette Paone as Chief Development Officer and Head of Regulatory Affairs",
+      "url": "https://www.businesswire.com/news/home/20260129951231/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "1 Healthcare Stock to Consider Right Now and 2 We Brush Off",
+      "url": "/news/292337/1-healthcare-stock-to-consider-right-now-and-2-we-brush-off",
+      "publisher": "StockStory",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Hardman Johnston Global Equity Strategy Sold Vertex Pharmaceuticals (VRTX)",
+      "url": "/news/289739/heres-why-hardman-johnston-global-equity-strategy-sold-vertex-pharmaceuticals-vrtx",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Breaking Barriers: How 2026's Top Clinical Leaders Are Disrupting Chronic Disease Markets",
+      "url": "/news/286993/breaking-barriers-how-2026s-top-clinical-leaders-are-disrupting-chronic-disease-markets",
+      "publisher": "PR Newswire",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Wall Street Analysts Think Vertex (VRTX) Is a Good Investment: Is It?",
+      "url": "/news/285355/wall-street-analysts-think-vertex-vrtx-is-a-good-investment-is-it",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Vertex Pharmaceuticals (VRTX) Exceeds Market Returns: Some Facts to Consider",
+      "url": "/news/284729/vertex-pharmaceuticals-vrtx-exceeds-market-returns-some-facts-to-consider",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Is Vertex Pharmaceuticals (VRTX) Stock Trending Overnight?",
+      "url": "/news/283316/why-is-vertex-pharmaceuticals-vrtx-stock-trending-overnight",
+      "publisher": "Benzinga",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    }
+  ]
 }

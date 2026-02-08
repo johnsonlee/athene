@@ -6306,7 +6306,15 @@
     "technical_score": 51.30133717267545,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.058584064734550106,
+    "sentiment_pos": 0.06174999999999999,
+    "sentiment_neg": 0.0264,
+    "sentiment_neu": 0.91185,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 52.93
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.16393212733137003,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 73.6325128625,
     "catalyst_timeline": 57.67832225772458,
     "downside_control": 39.76573825674281,
-    "composite_score": 60.53434452952402,
+    "composite_score": 60.530455484225584,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 64.97159955719677,
     "technical_score": 51.30133717267545,
-    "sentiment_score": 50.0,
+    "sentiment_score": 52.93,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Technology Distributors"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "CDW Q4 Deep Dive: Cloud, AI Services, and End-Market Diversity Drive Outperformance",
+      "url": "/news/300869/cdw-q4-deep-dive-cloud-ai-services-and-end-market-diversity-drive-outperformance",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CDW Corp (CDW) Q4 2025 Earnings Call Highlights: Strong Finish with Record Gross Margin Amid ...",
+      "url": "https://finance.yahoo.com/news/cdw-corp-cdw-q4-2025-210259638.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CDW Sees AI Fueling Massive Demand Across Every Customer Segment",
+      "url": "/news/299858/cdw-sees-ai-fueling-massive-demand-across-every-customer-segment",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "CDW Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/1d1331ed-d64d-3a78-a6f6-4cbf9bcaad44/cdw-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CDW (CDW) Q4 2025 Earnings Call Transcript",
+      "url": "/news/299477/cdw-cdw-q4-2025-earnings-call-transcript",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CDW Q4 Earnings & Revenues Beat, Stock Rallies on AI-Led Demand Trends",
+      "url": "/news/299545/cdw-q4-earnings-revenues-beat-stock-rallies-on-ai-led-demand-trends",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Here's What Key Metrics Tell Us About CDW (CDW) Q4 Earnings",
+      "url": "/news/299517/heres-what-key-metrics-tell-us-about-cdw-cdw-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CDW (NASDAQ:CDW) Delivers Strong Q4 CY2025 Numbers, Stock Soars",
+      "url": "/news/299143/cdw-nasdaq-cdw-delivers-strong-q4-cy2025-numbers-stock-soars",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CDW (CDW) Q4 Earnings and Revenues Beat Estimates",
+      "url": "/news/299278/cdw-cdw-q4-earnings-and-revenues-beat-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CDW: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/cdw-q4-earnings-snapshot-122632653.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CDW Declares Quarterly Cash Dividend of $0.630 Per Share",
+      "url": "https://www.businesswire.com/news/home/20260204673977/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CDW Reports Fourth Quarter and Full Year 2025 Earnings",
+      "url": "https://www.businesswire.com/news/home/20260204268884/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CDW (CDW) Q4 Earnings: What To Expect",
+      "url": "/news/296546/cdw-cdw-q4-earnings-what-to-expect",
+      "publisher": "StockStory",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CDW to Release Q4 Earnings: Here's What Investors Should Know",
+      "url": "/news/295761/cdw-to-release-q4-earnings-heres-what-investors-should-know",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Celestica (CLS) Tops Q4 Earnings and Revenue Estimates",
+      "url": "/news/291012/celestica-cls-tops-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Earnings Preview: CDW (CDW) Q4 Earnings Expected to Decline",
+      "url": "/news/290312/earnings-preview-cdw-cdw-q4-earnings-expected-to-decline",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CDW to Announce Fourth Quarter and Full Year 2025 Results on February 4",
+      "url": "https://www.businesswire.com/news/home/20260121858661/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "US IT hardware stocks fall as Morgan Stanley turns cautious on sector",
+      "url": "https://finance.yahoo.com/news/us-hardware-stocks-fall-morgan-112240004.html",
+      "publisher": "Reuters",
+      "date": "2026-01-20",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Here's What Hit CDW Corporation (CDW) in Q4",
+      "url": "/news/278736/heres-what-hit-cdw-corporation-cdw-in-q4",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Oakmark Fund Added CDW (CDW) Citing Diverse Growth Signals",
+      "url": "/news/275973/oakmark-fund-added-cdw-cdw-citing-diverse-growth-signals",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-14",
+      "sentiment": "positive"
+    }
+  ]
 }

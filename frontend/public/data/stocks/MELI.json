@@ -6295,8 +6295,8 @@
     "avg_volume_20d": 598295.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 13.499904260635674,
-    "stoch_d": 15.79979063910444,
+    "stoch_k": 13.499904260635677,
+    "stoch_d": 15.799790639104442,
     "trend_score": 33.69843021517968,
     "rsi_abs_score": 58.79571249251915,
     "macd_abs_score": 22.210906396799075,
@@ -6306,7 +6306,15 @@
     "technical_score": 40.15844810101544,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.09152189835099579,
+    "sentiment_pos": 0.11045,
+    "sentiment_neg": 0.054400000000000004,
+    "sentiment_neu": 0.8352,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 54.58
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.4300941552673654,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 33.16489967647058,
     "catalyst_timeline": 48.6518833061864,
     "downside_control": 35.60803215229785,
-    "composite_score": 46.23744280615885,
+    "composite_score": 46.23355376086042,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 55.04419973039216,
     "technical_score": 40.15844810101544,
-    "sentiment_score": 50.0,
+    "sentiment_score": 54.58,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Cyclical",
     "industry": "Internet Retail"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "MercadoLibre (MELI) Stock Drops Despite Market Gains: Important Facts to Note",
+      "url": "/news/303426/mercadolibre-meli-stock-drops-despite-market-gains-important-facts-to-note",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stock Market Today: Dow Rallies, Bitcoin Bounces; Amazon Dives On Earnings Results (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/d5f6d70b-adbf-3412-b185-ebea8f943d91/stock-market-today%3A-dow.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Wall Street Bulls Look Optimistic About MercadoLibre (MELI): Should You Buy?",
+      "url": "/news/302874/wall-street-bulls-look-optimistic-about-mercadolibre-meli-should-you-buy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "2 Large-Cap Stocks Worth Your Attention and 1 We Brush Off",
+      "url": "/news/303383/2-large-cap-stocks-worth-your-attention-and-1-we-brush-off",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "MercadoLibre, Inc. (MELI): A Bull Case Theory",
+      "url": "/news/300020/mercadolibre-inc-meli-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Investment Manager Exits MercadoLibre Position Valued at $13.2 Million, According to Recent SEC Filing",
+      "url": "/news/299992/investment-manager-exits-mercadolibre-position-valued-at-132-million-according-to-recent-sec-filing",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "C WorldWide Group Loads Up 45,000 MercadoLibre Shares Worth $94 Million",
+      "url": "/news/299725/c-worldwide-group-loads-up-45000-mercadolibre-shares-worth-94-million",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "MercadoLibre (MELI) Suffers a Larger Drop Than the General Market: Key Insights",
+      "url": "/news/298347/mercadolibre-meli-suffers-a-larger-drop-than-the-general-market-key-insights",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "The Top 5 Stocks to Double Up on Right Now",
+      "url": "/news/296608/the-top-5-stocks-to-double-up-on-right-now",
+      "publisher": "Motley Fool",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Druckenmiller Connection: Meet the Man Behind Bessent and Warsh",
+      "url": "https://www.barrons.com/articles/stan-druckenmiller-bessent-warsh-fed-chair-507bd26b?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "2 Unstoppable Stocks to Buy in 2026 and Hold Forever -- Including, Of Course, Nvidia Stock (NVDA)",
+      "url": "/news/294636/2-unstoppable-stocks-to-buy-in-2026-and-hold-forever-including-of-course-nvidia-stock-nvda",
+      "publisher": "Motley Fool",
+      "date": "2026-01-31",
+      "sentiment": "negative"
+    },
+    {
+      "title": "3 Emerging Market Stocks Leveraging South America's Momentum",
+      "url": "/news/294473/3-emerging-market-stocks-leveraging-south-americas-momentum",
+      "publisher": "MarketBeat",
+      "date": "2026-01-31",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The 5 Best Stocks to Buy for 2026",
+      "url": "/news/293733/the-5-best-stocks-to-buy-for-2026",
+      "publisher": "Motley Fool",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Investors Heavily Search MercadoLibre, Inc. (MELI): Here is What You Need to Know",
+      "url": "/news/293510/investors-heavily-search-mercadolibre-inc-meli-here-is-what-you-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "1 of Wall Street's Favorite Stock with Exciting Potential and 2 We Ignore",
+      "url": "/news/294064/1-of-wall-streets-favorite-stock-with-exciting-potential-and-2-we-ignore",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why MercadoLibre (MELI) Dipped More Than Broader Market Today",
+      "url": "/news/290940/why-mercadolibre-meli-dipped-more-than-broader-market-today",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Andy Anavi, Senior VP of Fintech Services, Discusses Mercado Pago's Ambitions and Competitive Advantages",
+      "url": "https://www.businesswire.com/news/home/20260128617902/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "MercadoLibre and Chipotle: 2 Consumer Names With Serious Pricing Power?",
+      "url": "/news/290193/mercadolibre-and-chipotle-2-consumer-names-with-serious-pricing-power",
+      "publisher": "Motley Fool",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Latin American e-commerce market projected to hit $215 billion in 2026",
+      "url": "https://finance.yahoo.com/news/latin-american-e-commerce-market-205621862.html",
+      "publisher": "Investing.com",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Latin American e-commerce to top $215 billion as consumers demand rapid delivery, report says",
+      "url": "https://finance.yahoo.com/news/latin-american-e-commerce-top-202252635.html",
+      "publisher": "Reuters",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    }
+  ]
 }

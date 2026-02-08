@@ -6306,7 +6306,15 @@
     "technical_score": 58.36059673634357,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.004252208289178836,
+    "sentiment_pos": 0.05075,
+    "sentiment_neg": 0.040749999999999995,
+    "sentiment_neu": 0.9085000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 49.79
+  },
   "analyst": {
     "revision_momentum": 0.375,
     "target_upside": 0.12734864300626306,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 52.915787882352944,
     "catalyst_timeline": 62.51967999553709,
     "downside_control": 43.667682353686274,
-    "composite_score": 54.740191949470585,
+    "composite_score": 54.736302904172156,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 58.25339672193129,
     "technical_score": 58.36059673634357,
-    "sentiment_score": 50.0,
+    "sentiment_score": 49.79,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Health Care Distributors"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Low Volatility ETFs to Watch Amid Major Tech Sell-Off Over AI Panic",
+      "url": "/news/302877/low-volatility-etfs-to-watch-amid-major-tech-sell-off-over-ai-panic",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Cencora (COR) Stock Trades Up, Here Is Why",
+      "url": "/news/302011/cencora-cor-stock-trades-up-here-is-why",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Cardinal Health, Inc.",
+      "url": "https://finance.yahoo.com/m/c96c6c00-76f8-3723-b14a-8664bd3dd3c5/analyst-report%3A-cardinal.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cardinal Health Stock Jumps After Earnings. Its CEO Explains What Went Right.",
+      "url": "https://www.barrons.com/articles/cardinal-earnings-stock-price-ceo-360b636e?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: McKesson Corporation",
+      "url": "https://finance.yahoo.com/m/8fe3c8ca-1e9a-37ea-961e-ec6c44ae9de9/analyst-report%3A-mckesson.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cencora Q1 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/d973da63-3370-3866-aab3-09a920458fc7/cencora-q1-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "COR Q4 Deep Dive: Specialty Expansion and OneOncology Drive Strategic Shifts",
+      "url": "/news/300846/cor-q4-deep-dive-specialty-expansion-and-oneoncology-drive-strategic-shifts",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: McKesson Corporation",
+      "url": "https://finance.yahoo.com/m/27229e2f-8207-382b-bc16-f53acc0bbcc7/analyst-report%3A-mckesson.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cencora Inc (COR) Q1 2026 Earnings Call Highlights: Strong US Growth Amid International Challenges",
+      "url": "https://finance.yahoo.com/news/cencora-inc-cor-q1-2026-210559467.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Cencora, Inc.",
+      "url": "https://finance.yahoo.com/m/ed20d735-572c-3c97-8563-5105d70de979/analyst-report%3A-cencora%2C-inc..html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cencora Stock Down Despite Q1 Earnings Beat, Gross Margin Improves",
+      "url": "/news/299881/cencora-stock-down-despite-q1-earnings-beat-gross-margin-improves",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Cencora Lifts 2026 Sales Outlook Despite Q1 Revenue Miss",
+      "url": "/news/299744/cencora-lifts-2026-sales-outlook-despite-q1-revenue-miss",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Rotation out of Tech Stocks Weighs on the Broader Market",
+      "url": "https://finance.yahoo.com/m/53c7bb8e-05f9-319a-a276-65ec476a457b/rotation-out-of-tech-stocks.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cencora (COR) Q1 2026 Earnings Call Transcript",
+      "url": "/news/299432/cencora-cor-q1-2026-earnings-call-transcript",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Mixed on Sector Rotation out of Tech",
+      "url": "https://finance.yahoo.com/m/d2e885bd-e047-3deb-9c46-4d88220b392d/stocks-mixed-on-sector.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cencora (COR) Q1 Earnings: How Key Metrics Compare to Wall Street Estimates",
+      "url": "/news/299502/cencora-cor-q1-earnings-how-key-metrics-compare-to-wall-street-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cencora (COR) Q1 Earnings Top Estimates",
+      "url": "/news/299197/cencora-cor-q1-earnings-top-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cencora (NYSE:COR) Misses Q4 CY2025 Revenue Estimates",
+      "url": "/news/299066/cencora-nyse-cor-misses-q4-cy2025-revenue-estimates",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Cencora: Fiscal Q1 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/cencora-fiscal-q1-earnings-snapshot-113830263.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cencora Reports Fiscal 2026 First Quarter Results",
+      "url": "https://www.businesswire.com/news/home/20260203562721/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    }
+  ]
 }

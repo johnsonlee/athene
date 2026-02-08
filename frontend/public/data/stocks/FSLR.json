@@ -6279,8 +6279,8 @@
     "close": 218.72999572753906,
     "sma_20": 236.3549987792969,
     "sma_50": 251.9289999389648,
-    "sma_200": 208.98640026092534,
-    "trend_alignment": 0.48922742222272414,
+    "sma_200": 208.9864002609253,
+    "trend_alignment": 0.48922742222272425,
     "rsi": 37.14945487565967,
     "rsi_score": -0.2570109024868066,
     "macd_histogram": -1.1895790269876674,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 26.60598820330076,
     "stoch_d": 43.488821039930826,
-    "trend_score": 48.92274222227241,
+    "trend_score": 48.922742222272426,
     "rsi_abs_score": 58.579345850791604,
     "macd_abs_score": 34.34214065132521,
     "momentum_score": 46.4607432510584,
@@ -6306,7 +6306,15 @@
     "technical_score": 45.298246185532015,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.15832600502619973,
+    "sentiment_pos": 0.1115,
+    "sentiment_neg": 0.0375,
+    "sentiment_neu": 0.851,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 57.92
+  },
   "analyst": {
     "revision_momentum": -0.25,
     "target_upside": 0.2984044255474787,
@@ -6325,7 +6333,7 @@
     "quality_score": 78.56000000000002,
     "growth_score": 91.0,
     "safety_score": 69.18831250000001,
-    "trend_score": 48.92274222227241,
+    "trend_score": 48.922742222272426,
     "momentum_score": 46.4607432510584,
     "volatility_score": 33.41600271766386,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 72.7760874825,
     "catalyst_timeline": 53.81077194878692,
     "downside_control": 54.646647282649575,
-    "composite_score": 70.58662758585504,
+    "composite_score": 70.5827385405566,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 78.70906873541668,
     "technical_score": 45.298246185532015,
-    "sentiment_score": 50.0,
+    "sentiment_score": 57.92,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Semiconductors"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "First Solar (FSLR) Stock Declines While Market Improves: Some Information for Investors",
+      "url": "/news/303434/first-solar-fslr-stock-declines-while-market-improves-some-information-for-investors",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Tesla Weighs New York, Arizona, Idaho to Lift Solar Cell Output",
+      "url": "https://finance.yahoo.com/news/tesla-weighs-york-arizona-idaho-110002387.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "First Solar, Inc. (FSLR) Is a Trending Stock: Facts to Know Before Betting on It",
+      "url": "/news/301444/first-solar-inc-fslr-is-a-trending-stock-facts-to-know-before-betting-on-it",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "First Solar Stock Outlook: Is Wall Street Bullish or Bearish?",
+      "url": "https://finance.yahoo.com/m/53bee9e0-0678-33ef-bf4c-339863250284/first-solar-stock-outlook%3A-is.html",
+      "publisher": "Barchart",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "First Solar releases poll showing support for solar among GOP voters",
+      "url": "https://finance.yahoo.com/m/c9276ee8-22f7-3b21-8f29-e29464dcfb27/first-solar-releases-poll.html",
+      "publisher": "Utility Dive",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Solar Stock Enphase Spikes On Strong Guidance, But This Key Question Remains",
+      "url": "https://finance.yahoo.com/m/32968a64-8d34-313d-9419-ede22b0199a0/solar-stock-enphase-spikes-on.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Enphase Energy Q4 Earnings Beat Estimates, Revenues Decline Y/Y",
+      "url": "/news/299720/enphase-energy-q4-earnings-beat-estimates-revenues-decline-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "FSLR Stock Down 13.8% in Three Months: What's Next for Investors?",
+      "url": "/news/299721/fslr-stock-down-138-in-three-months-whats-next-for-investors",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Project Vault: ETFs to Gain as Trump Pushes $12B Into Rare Earth Reserve",
+      "url": "/news/299544/project-vault-etfs-to-gain-as-trump-pushes-12b-into-rare-earth-reserve",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Poll Shows GOP Voters Support Solar Energy, American-Made Solar",
+      "url": "https://www.businesswire.com/news/home/20260204040489/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here is Why First Solar (FSLR) Fell This Week",
+      "url": "/news/297337/here-is-why-first-solar-fslr-fell-this-week",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Top Blue Chip Stocks for Growth and Value According to WarrenAI",
+      "url": "https://finance.yahoo.com/news/top-blue-chip-stocks-growth-134238972.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Street Calls of the Week",
+      "url": "https://finance.yahoo.com/news/street-calls-week-092054269.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-01",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: First Solar, Inc.",
+      "url": "https://finance.yahoo.com/m/49e3f047-1c84-300f-a8ed-d12824cd43be/analyst-report%3A-first-solar%2C.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "First Solar (FSLR) Suffers a Larger Drop Than the General Market: Key Insights",
+      "url": "/news/292769/first-solar-fslr-suffers-a-larger-drop-than-the-general-market-key-insights",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Microsoft Stock's Worst Day Since March 2020, Bitcoin Plunges 5%: What's Moving Markets Thursday?",
+      "url": "/news/292290/microsoft-stocks-worst-day-since-march-2020-bitcoin-plunges-5-whats-moving-markets-thursday",
+      "publisher": "Benzinga",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "First Solar drops 13% on risk of Teslas solar push",
+      "url": "https://finance.yahoo.com/news/first-solar-drops-13-risk-160612482.html",
+      "publisher": "Investing.com",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Enphase Energy to Report Q4 Earnings: Here's What to Expect",
+      "url": "/news/292068/enphase-energy-to-report-q4-earnings-heres-what-to-expect",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "First Solar downgraded, Fortinet upgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/first-solar-downgraded-fortinet-upgraded-143511661.html",
+      "publisher": "The Fly",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "First Solar, Inc. to Announce Fourth Quarter and Full Year 2025 Financial Results and 2026 Financial Guidance on February 24, 2026",
+      "url": "https://www.businesswire.com/news/home/20260129870761/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    }
+  ]
 }

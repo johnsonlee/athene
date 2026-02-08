@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 1864480.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 92.6530444145309,
+    "stoch_k": 92.65304441453088,
     "stoch_d": 93.47129423812017,
     "trend_score": 63.31141512140081,
     "rsi_abs_score": 40.40801472080689,
@@ -6306,7 +6306,15 @@
     "technical_score": 56.969418479450674,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.13849427171195464,
+    "sentiment_pos": 0.12095,
+    "sentiment_neg": 0.053500000000000006,
+    "sentiment_neu": 0.82555,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 56.92
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.008325317589306415,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 58.4162785,
     "catalyst_timeline": 56.51368163689351,
     "downside_control": 55.96951799060127,
-    "composite_score": 60.33300243914462,
+    "composite_score": 60.329113393846185,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 64.44989023666668,
     "technical_score": 56.969418479450674,
-    "sentiment_score": 50.0,
+    "sentiment_score": 56.92,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Property & Casualty Insurance"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Insurance Stocks Gain Ground in Turbulent Markets. Boring Might Be the Way to Go.",
+      "url": "https://www.barrons.com/articles/insurance-stocks-travelers-markets-7ed3a034?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "GM, TRV & ASML: 3 Industry Giants Boosting Buybacks in 2026",
+      "url": "/news/301084/gm-trv-asml-3-industry-giants-boosting-buybacks-in-2026",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Chubb Q4 Earnings & Revenues Top Estimates on Solid Underwriting",
+      "url": "/news/299732/chubb-q4-earnings-revenues-top-estimates-on-solid-underwriting",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "MGIC Q4 Earnings Beat Estimates, Revenues Miss, Insurance in Force Up Y/Y",
+      "url": "/news/297825/mgic-q4-earnings-beat-estimates-revenues-miss-insurance-in-force-up-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Top Research Reports for Meta, Palantir and Amphenol",
+      "url": "/news/294326/top-research-reports-for-meta-palantir-and-amphenol",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "HIG Posts Q4 Earnings Beat on Higher Premiums & Investment Income",
+      "url": "/news/293923/hig-posts-q4-earnings-beat-on-higher-premiums-investment-income",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Selective Insurance 4Q Earnings Beat Estimates on Solid Underwriting",
+      "url": "/news/293574/selective-insurance-4q-earnings-beat-estimates-on-solid-underwriting",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Travelers and National Trust Take Resilience Initiative to Los Angeles",
+      "url": "https://www.businesswire.com/news/home/20260130201268/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Arthur J. Gallagher Q4 Earnings & Revenues Beat, Dividend Raised",
+      "url": "/news/293415/arthur-j-gallagher-q4-earnings-revenues-beat-dividend-raised",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Argus Raises Travelers (TRV) Target After Strong Q4 Earnings Beat",
+      "url": "/news/292148/argus-raises-travelers-trv-target-after-strong-q4-earnings-beat",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "AXIS Capital Reports Q4 Earnings Growth Despite Higher Expenses",
+      "url": "/news/291699/axis-capital-reports-q4-earnings-growth-despite-higher-expenses",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Progressive's Q4 Earnings & Revenues Beat Estimates on Higher Premiums",
+      "url": "/news/290360/progressives-q4-earnings-revenues-beat-estimates-on-higher-premiums",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "5 Revealing Analyst Questions From Travelers's Q4 Earnings Call",
+      "url": "/news/289519/5-revealing-analyst-questions-from-travelerss-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "W.R. Berkley Q4 Earnings Miss Estimate, Revenues Up Y/Y",
+      "url": "/news/288938/wr-berkley-q4-earnings-miss-estimate-revenues-up-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Greg Abel Signals Shift as Berkshire Weighs Kraft Heinz Exit?",
+      "url": "/news/288694/greg-abel-signals-shift-as-berkshire-weighs-kraft-heinz-exit",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Brown & Brown Q4 Earnings Top Estimates on Strong Investment Income",
+      "url": "/news/288485/brown-brown-q4-earnings-top-estimates-on-strong-investment-income",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Dow Retreats on Financials Weakness. Nasdaq Rises 0.3%.",
+      "url": "https://www.barrons.com/livecoverage/stock-market-news-today-012326/card/dow-retreats-on-financials-weakness-nasdaq-rises-0-3--S0aqx9OCdwPHXrVWRB5E?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-23",
+      "sentiment": "negative"
+    },
+    {
+      "title": "AIG Dropped Sharply in January. The Stock Is a Buy.",
+      "url": "https://www.barrons.com/articles/aig-stock-pick-insurer-merger-944396d3?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: The Travelers Companies, Inc.",
+      "url": "https://finance.yahoo.com/m/ac647e80-1029-34fb-8bca-e87349fa77d6/analyst-report%3A-the-travelers.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "RLI's Q4 Earnings Beat Estimates on Strong Net Investment Income",
+      "url": "/news/284170/rlis-q4-earnings-beat-estimates-on-strong-net-investment-income",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    }
+  ]
 }

@@ -6306,7 +6306,15 @@
     "technical_score": 34.11766244273129,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.08527519217629811,
+    "sentiment_pos": 0.0711,
+    "sentiment_neg": 0.14125000000000001,
+    "sentiment_neu": 0.78765,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 45.74
+  },
   "analyst": {
     "revision_momentum": 0.07692307692307693,
     "target_upside": 0.5186707164552439,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 54.63248556,
     "catalyst_timeline": 41.380775976890206,
     "downside_control": 42.12693666165988,
-    "composite_score": 47.87934447060271,
+    "composite_score": 47.875455425304274,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 62.44598623273809,
     "technical_score": 34.11766244273129,
-    "sentiment_score": 50.0,
+    "sentiment_score": 45.74,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Transaction & Payment Processing Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Dorseys Block cutting up to 10% of staff, Bloomberg News reports",
+      "url": "https://finance.yahoo.com/news/dorsey-block-cutting-10-staff-221923601.html",
+      "publisher": "Reuters",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "BILL Holdings Q2 Earnings Beat Estimates on Core Strength & Higher TPV",
+      "url": "/news/303134/bill-holdings-q2-earnings-beat-estimates-on-core-strength-higher-tpv",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Block (XYZ) Retains Strong Analyst Sentiment Amid Improving Momentum in Fintech Sector",
+      "url": "/news/302371/block-xyz-retains-strong-analyst-sentiment-amid-improving-momentum-in-fintech-sector",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Block doubles down on European ambitions",
+      "url": "https://finance.yahoo.com/m/d7bc3d61-d951-370b-960f-22dba6c18281/block-doubles-down-on.html",
+      "publisher": "American Banker",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Second Generation Square Register Delivers More Speed, Power, and Reliability to the Neighborhood",
+      "url": "https://www.businesswire.com/news/home/20260204804070/en/Square",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Block, Inc. Stock: Is Wall Street Bullish or Bearish?",
+      "url": "https://finance.yahoo.com/m/9d43f9a2-a302-3af1-8ef0-8aac886e4602/block%2C-inc.-stock%3A-is-wall.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "ARK Invest goes on $19 million buying spree as crypto stocks nurse losses",
+      "url": "https://finance.yahoo.com/m/4cb0f1a2-be9b-369c-8124-0c15495bc461/ark-invest-goes-on-%2419.html",
+      "publisher": "CoinDesk",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Cathie Wood recommends four assets for portfolio diversification",
+      "url": "https://finance.yahoo.com/m/7c0cf17b-aa09-345a-aa93-3df38363e9d1/cathie-wood-recommends-four.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cathie Wood Buys $24.8M in Crypto Stocks Despite Slump  Whats Ark Invests Real Plan?",
+      "url": "https://finance.yahoo.com/m/b5140059-25df-35a3-ad56-ef83471f6e6b/cathie-wood-buys-%2424.8m-in.html",
+      "publisher": "Cryptonews",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Fintech Stock Block Just Proved That the Ultimate Cryptocurrency Has a Clear Use Case",
+      "url": "/news/297468/fintech-stock-block-just-proved-that-the-ultimate-cryptocurrency-has-a-clear-use-case",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Cathie Wood's ARK buys over $70 million of crypto stocks as bitcoin slides",
+      "url": "https://finance.yahoo.com/m/d8b133da-1a92-370a-9be6-d1ef33187000/cathie-wood%27s-ark-buys-over.html",
+      "publisher": "CoinDesk",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "A large Subway operator declares bankruptcy",
+      "url": "https://finance.yahoo.com/m/1c9a8aea-a54f-338e-b1b3-a91093a4a487/a-large-subway-operator.html",
+      "publisher": "Restaurant Dive",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Sleeper Fintech Stock That Could Surge Before Wall Street Notices",
+      "url": "/news/294851/the-sleeper-fintech-stock-that-could-surge-before-wall-street-notices",
+      "publisher": "Motley Fool",
+      "date": "2026-02-01",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "In the age of AI, better meetings might be your companys secret weapon",
+      "url": "https://finance.yahoo.com/news/age-ai-better-meetings-might-120000866.html",
+      "publisher": "Fortune",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Block opens Dublin office",
+      "url": "https://finance.yahoo.com/m/ae0ed4bb-831c-384c-add7-f3263fe88e49/block-opens-dublin-office.html",
+      "publisher": "Payments Dive",
+      "date": "2026-01-30",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Halper Sadeh LLC Encourages Block, Inc. Shareholders To Contact The Firm To Discuss Their Rights",
+      "url": "/news/292685/halper-sadeh-llc-encourages-block-inc-shareholders-to-contact-the-firm-to-discuss-their-rights",
+      "publisher": "PR Newswire",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Block to Announce Fourth Quarter 2025 Results",
+      "url": "https://www.businesswire.com/news/home/20260129894116/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "7 Leaves Cafe Plans Expansion, Chooses Square as its Commerce Technology Partner",
+      "url": "https://www.businesswire.com/news/home/20260129598503/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Piper Sandler Maintains an Underweight Rating on Block, Inc. (XYZ)",
+      "url": "/news/291396/piper-sandler-maintains-an-underweight-rating-on-block-inc-xyz",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Block's Square Renews Corner Store Lease in San Francisco",
+      "url": "/news/290428/blocks-square-renews-corner-store-lease-in-san-francisco",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    }
+  ]
 }

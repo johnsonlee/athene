@@ -6277,36 +6277,44 @@
   },
   "technical": {
     "close": 216.61000061035156,
-    "sma_20": 229.19449996948245,
-    "sma_50": 228.98887176513674,
+    "sma_20": 229.19449996948242,
+    "sma_50": 228.98887176513676,
     "sma_200": 208.43763450622566,
-    "trend_alignment": 0.514867972625643,
+    "trend_alignment": 0.5148679726256429,
     "rsi": 37.38122837388618,
     "rsi_score": -0.2523754325222764,
     "macd_histogram": -2.0177799233662337,
     "macd_line": -4.100198210186846,
     "macd_histogram_pct": -0.9315266689814165,
-    "bb_position": 0.17851979997781045,
-    "bb_upper": 248.76724404246465,
+    "bb_position": 0.1785197999778107,
+    "bb_upper": 248.7672440424646,
     "bb_lower": 209.62175589650025,
-    "bb_width": 0.17079593162652978,
+    "bb_width": 0.17079593162652956,
     "hist_volatility": 0.29466106975571205,
     "volume_ratio": 0.974680596596497,
     "avg_volume_20d": 4423090.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 6.156935943963187,
+    "stoch_k": 6.156935943963188,
     "stoch_d": 6.557690528208892,
-    "trend_score": 51.4867972625643,
+    "trend_score": 51.48679726256429,
     "rsi_abs_score": 58.85747404866342,
     "macd_abs_score": 28.52709996527875,
     "momentum_score": 43.692287006971085,
-    "volatility_score": 43.66225917804111,
+    "volatility_score": 43.66225917804113,
     "volume_score": 50.0,
     "technical_score": 47.286177116468835,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.12161079577190204,
+    "sentiment_pos": 0.08765,
+    "sentiment_neg": 0.01815,
+    "sentiment_neu": 0.8942,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 56.08
+  },
   "analyst": {
     "revision_momentum": 0.2857142857142857,
     "target_upside": 0.24647984857578129,
@@ -6325,9 +6333,9 @@
     "quality_score": 54.65124999999999,
     "growth_score": 58.0,
     "safety_score": 64.0384375,
-    "trend_score": 51.4867972625643,
+    "trend_score": 51.48679726256429,
     "momentum_score": 43.692287006971085,
-    "volatility_score": 43.66225917804111,
+    "volatility_score": 43.66225917804113,
     "volume_score": 50.0,
     "analyst_score": 72.74313084081331,
     "pe_score": 30.50590611764706,
@@ -6344,16 +6352,16 @@
     "current_ratio_score": 76.976,
     "earnings_visibility": 54.32668749999999,
     "valuation_margin": 44.13740551666666,
-    "catalyst_timeline": 54.760221511034864,
-    "downside_control": 57.42010450170616,
-    "composite_score": 51.674084056644496,
+    "catalyst_timeline": 54.76022151103486,
+    "downside_control": 57.42010450170617,
+    "composite_score": 51.67019501134606,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 55.453400430555554,
     "technical_score": 47.286177116468835,
-    "sentiment_score": 50.0,
+    "sentiment_score": 56.08,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Life Sciences Tools & Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Exclusive: Lawhive, a startup using AI to reimagine the general practice law firm, raises $60 million in new venture capital funding",
+      "url": "https://finance.yahoo.com/news/exclusive-lawhive-startup-using-ai-080000322.html",
+      "publisher": "Fortune",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Danaher Corporation (DHR): A Bull Case Theory",
+      "url": "/news/300131/danaher-corporation-dhr-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Top 5 Analyst Questions From Danaher's Q4 Earnings Call",
+      "url": "/news/298665/the-top-5-analyst-questions-from-danahers-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Revvity Sees Steady Growth On Rising Demand From Pharma/Biotech Customers",
+      "url": "/news/295674/revvity-sees-steady-growth-on-rising-demand-from-pharmabiotech-customers",
+      "publisher": "Benzinga",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "DHR Q4 Deep Dive: Bioprocessing and Diagnostics Drive Steady Performance Amid Muted End Markets",
+      "url": "/news/292104/dhr-q4-deep-dive-bioprocessing-and-diagnostics-drive-steady-performance-amid-muted-end-markets",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Finish Mixed as Fed Keeps Interest Rates Steady",
+      "url": "https://finance.yahoo.com/m/6de3b3a0-2e33-3d40-8a18-16671e3a3446/stocks-finish-mixed-as-fed.html",
+      "publisher": "Barchart",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Danaher Corp (DHR) Q4 2025 Earnings Call Highlights: Strong Finish with Robust Free Cash Flow ...",
+      "url": "https://finance.yahoo.com/news/danaher-corp-dhr-q4-2025-190204534.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Danaher Corporation",
+      "url": "https://finance.yahoo.com/m/c7151ea8-0658-33f3-a834-b6c36a87fe28/analyst-report%3A-danaher.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Gold Rallies To $5,300, Memory Stocks Go Wild: What's Moving Markets Wednesday?",
+      "url": "/news/290536/gold-rallies-to-5300-memory-stocks-go-wild-whats-moving-markets-wednesday",
+      "publisher": "Benzinga",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Mixed After the Fed Pauses Rate Cuts",
+      "url": "https://finance.yahoo.com/m/396af179-3604-3474-8571-1f8c6eb49f58/stocks-mixed-after-the-fed.html",
+      "publisher": "Barchart",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Danaher Q4 Earnings Beat Estimates, Life Sciences Sales Up Y/Y",
+      "url": "/news/290383/danaher-q4-earnings-beat-estimates-life-sciences-sales-up-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Danaher Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/64928d8e-c87d-36ff-b69d-f724d0f49d2f/danaher-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Danaher Expects Gradual Improvement In End-Market Conditions",
+      "url": "/news/290028/danaher-expects-gradual-improvement-in-end-market-conditions",
+      "publisher": "Benzinga",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Compared to Estimates, Danaher (DHR) Q4 Earnings: A Look at Key Metrics",
+      "url": "/news/290174/compared-to-estimates-danaher-dhr-q4-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Danaher (DHR) Beats Q4 Earnings and Revenue Estimates",
+      "url": "/news/289827/danaher-dhr-beats-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Danaher beats Q4 expectations as bioprocessing business shows strength",
+      "url": "https://finance.yahoo.com/news/danaher-beats-q4-expectations-bioprocessing-114219961.html",
+      "publisher": "Investing.com",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Danaher (NYSE:DHR) Posts Q4 CY2025 Sales In Line With Estimates",
+      "url": "/news/289755/danaher-nyse-dhr-posts-q4-cy2025-sales-in-line-with-estimates",
+      "publisher": "StockStory",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Danaher: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/danaher-q4-earnings-snapshot-111720522.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Danaher Reports Fourth Quarter and Full Year 2025 Results",
+      "url": "/news/289576/danaher-reports-fourth-quarter-and-full-year-2025-results",
+      "publisher": "PR Newswire",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What To Expect From Danaher's (DHR) Q4 Earnings",
+      "url": "/news/287738/what-to-expect-from-danahers-dhr-q4-earnings",
+      "publisher": "StockStory",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    }
+  ]
 }

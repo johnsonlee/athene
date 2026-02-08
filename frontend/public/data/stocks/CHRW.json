@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 200.58999633789062,
-    "sma_20": 185.2735000610352,
+    "sma_20": 185.27350006103518,
     "sma_50": 171.04299102783204,
     "sma_200": 129.33112461090087,
     "trend_alignment": 0.8693070818159931,
@@ -6286,10 +6286,10 @@
     "macd_histogram": 1.1638399689166086,
     "macd_line": 9.141135523020267,
     "macd_histogram_pct": 0.5802083803601745,
-    "bb_position": 0.8443527057375249,
-    "bb_upper": 207.51304692919612,
-    "bb_lower": 163.0339531928743,
-    "bb_width": 0.24007261546669625,
+    "bb_position": 0.8443527057375255,
+    "bb_upper": 207.5130469291961,
+    "bb_lower": 163.03395319287426,
+    "bb_width": 0.24007261546669628,
     "hist_volatility": 0.2281934203828959,
     "volume_ratio": 1.0932378686266297,
     "avg_volume_20d": 2315690.0,
@@ -6301,12 +6301,20 @@
     "rsi_abs_score": 26.67848455628112,
     "macd_abs_score": 66.20312570540261,
     "momentum_score": 46.440805130841866,
-    "volatility_score": 44.07412256970775,
+    "volatility_score": 44.07412256970774,
     "volume_score": 50.0,
     "technical_score": 58.826278507673905,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.19802855365275618,
+    "sentiment_pos": 0.0992,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.9007999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 59.9
+  },
   "analyst": {
     "revision_momentum": 0.047619047619047616,
     "target_upside": 0.00702926367216709,
@@ -6327,7 +6335,7 @@
     "safety_score": 50.05825,
     "trend_score": 86.93070818159931,
     "momentum_score": 46.440805130841866,
-    "volatility_score": 44.07412256970775,
+    "volatility_score": 44.07412256970774,
     "volume_score": 50.0,
     "analyst_score": 51.51190348564592,
     "pe_score": 28.46998,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 42.812658735294114,
     "catalyst_timeline": 61.25834167980871,
     "downside_control": 51.83585588545616,
-    "composite_score": 50.63673654232492,
+    "composite_score": 50.63284749702648,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 53.079552279411764,
     "technical_score": 58.826278507673905,
-    "sentiment_score": 50.0,
+    "sentiment_score": 59.9,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Air Freight & Logistics"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Do Wall Street Analysts Like C.H. Robinson Stock?",
+      "url": "https://finance.yahoo.com/m/25a0e862-9d5a-3166-9354-037878590346/do-wall-street-analysts-like.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "C.H. Robinson Declares Quarterly Cash Dividend",
+      "url": "https://www.businesswire.com/news/home/20260205945214/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "C.H. Robinson Worldwide, Inc. (CHRW) Hit a 52 Week High, Can the Run Continue?",
+      "url": "/news/299469/ch-robinson-worldwide-inc-chrw-hit-a-52-week-high-can-the-run-continue",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "5 Must-Read Analyst Questions From C.H. Robinson Worldwide's Q4 Earnings Call",
+      "url": "/news/298676/5-must-read-analyst-questions-from-ch-robinson-worldwides-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "C.H. Robinson Worldwide (CHRW) is a Great Momentum Stock: Should You Buy?",
+      "url": "/news/297889/ch-robinson-worldwide-chrw-is-a-great-momentum-stock-should-you-buy",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jim Cramer on C.H. Robinson: \"This One's Still a Terrific Stock\"",
+      "url": "/news/297741/jim-cramer-on-ch-robinson-this-ones-still-a-terrific-stock",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why C.H. Robinson Worldwide (CHRW) is a Strong Growth Stock",
+      "url": "/news/297610/heres-why-ch-robinson-worldwide-chrw-is-a-strong-growth-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CH Robinsons surface transportation business a bright spot in Q4",
+      "url": "https://finance.yahoo.com/m/0d2835bd-0c48-3a13-8e92-6077f1320697/ch-robinson%E2%80%99s-surface.html",
+      "publisher": "Trucking Dive",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "C.H. Robinson Worldwide (CHRW) is a Top-Ranked Momentum Stock: Should You Buy?",
+      "url": "/news/295779/ch-robinson-worldwide-chrw-is-a-top-ranked-momentum-stock-should-you-buy",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: C.H. Robinson Worldwide, Inc.",
+      "url": "https://finance.yahoo.com/m/548ab12c-0bea-342f-8968-545e2166eeac/analyst-report%3A-c.h.-robinson.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "C.H. Robinson price target raised to $194 from $165 at TD Cowen",
+      "url": "https://finance.yahoo.com/news/c-h-robinson-price-target-144550092.html",
+      "publisher": "TipRanks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Microsoft Rout Weighs on the Broader Market",
+      "url": "https://finance.yahoo.com/m/57cec5ad-0d77-3a09-b508-a7dd475295fe/microsoft-rout-weighs-on-the.html",
+      "publisher": "Barchart",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "This Logistics Firm Defies Industry Trends, Climbs To Record High",
+      "url": "https://finance.yahoo.com/m/efd686a7-0272-3a82-8552-646d7340884b/this-logistics-firm-defies.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "C.H. Robinson Q4 Earnings Surpass Estimates, Increase Year Over Year",
+      "url": "/news/292395/ch-robinson-q4-earnings-surpass-estimates-increase-year-over-year",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Concerns Over AI Spending Weigh on Stocks",
+      "url": "https://finance.yahoo.com/m/847e6871-a324-397e-a746-c6933beb4d18/concerns-over-ai-spending.html",
+      "publisher": "Barchart",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock soaring, job numbers dropping: whats next for C.H. Robinson?",
+      "url": "https://finance.yahoo.com/news/stock-soaring-job-numbers-dropping-145039083.html",
+      "publisher": "FreightWaves",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: C.H. Robinson Worldwide, Inc.",
+      "url": "https://finance.yahoo.com/m/aa85b701-806e-32d3-bd7e-4ae79fd4e085/analyst-report%3A-c.h.-robinson.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CHRW Q4 Deep Dive: Market Share Gains and Lean AI Strategy Offset Freight Headwinds",
+      "url": "/news/291182/chrw-q4-deep-dive-market-share-gains-and-lean-ai-strategy-offset-freight-headwinds",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "C.H. Robinson Worldwide Inc (CHRW) Q4 2025 Earnings Call Highlights: Navigating Challenges with ...",
+      "url": "https://finance.yahoo.com/news/c-h-robinson-worldwide-inc-050336768.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "C.H. Robinson Worldwide Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/3d341340-67ad-3541-a1b4-cc3e86d62642/c.h.-robinson-worldwide-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    }
+  ]
 }

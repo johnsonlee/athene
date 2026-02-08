@@ -6279,7 +6279,7 @@
     "close": 137.64999389648438,
     "sma_20": 119.69649925231933,
     "sma_50": 118.14879928588866,
-    "sma_200": 108.68289989471438,
+    "sma_200": 108.68289989471437,
     "trend_alignment": 0.8076220546690707,
     "rsi": 82.229811730605,
     "rsi_score": 0.6445962346120999,
@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 6062730.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 93.1462859737185,
+    "stoch_k": 93.14628597371852,
     "stoch_d": 87.04637816072707,
     "trend_score": 80.76220546690706,
     "rsi_abs_score": 25.540376538790014,
@@ -6306,7 +6306,15 @@
     "technical_score": 58.32362045265402,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.14770948806838496,
+    "sentiment_pos": 0.0881,
+    "sentiment_neg": 0.0127,
+    "sentiment_neu": 0.89925,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 57.39
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.009807482746095128,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 40.448652458333335,
     "catalyst_timeline": 61.0931861580472,
     "downside_control": 47.53599389649059,
-    "composite_score": 53.999349765251985,
+    "composite_score": 53.99546071995355,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 56.42190926931136,
     "technical_score": 58.32362045265402,
-    "sentiment_score": 50.0,
+    "sentiment_score": 57.39,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 299,
-    "percentile": 0.4258188824662813,
+    "rank": 300,
+    "percentile": 0.4238921001926782,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Building Products"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Transforming Physical Security with AI: Ambient.ai CEO Shikhar Shrestha, Live at NYSE",
+      "url": "https://finance.yahoo.com/m/c87becb7-c52d-32f9-baec-4bb2b5b007bd/transforming-physical.html",
+      "publisher": "Exec Edge",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Looking for Stocks with Positive Earnings Momentum? Check Out These 2 Construction Names",
+      "url": "/news/302768/looking-for-stocks-with-positive-earnings-momentum-check-out-these-2-construction-names",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Johnson Controls Announces Participation in Upcoming Investor Conferences",
+      "url": "/news/302645/johnson-controls-announces-participation-in-upcoming-investor-conferences",
+      "publisher": "PR Newswire",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Johnson Controls price target raised to $154 from $137 at Goldman Sachs",
+      "url": "https://finance.yahoo.com/news/johnson-controls-price-target-raised-130225414.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Morning Movers: Eli Lilly rises, Boston Scientific falls after quarterly results",
+      "url": "https://finance.yahoo.com/news/morning-movers-eli-lilly-rises-140052306.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Johnson Controls International Q1 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/37707e6b-9622-34f7-9311-8a9a5c6485ef/johnson-controls.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "JCI Q4 Deep Dive: Data Center Demand and Execution Drive Guidance Increase",
+      "url": "/news/300830/jci-q4-deep-dive-data-center-demand-and-execution-drive-guidance-increase",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Adient plc",
+      "url": "https://finance.yahoo.com/m/c8d5812c-d8e1-3899-9815-03f17c4f64e4/analyst-report%3A-adient-plc.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Johnson Controls International PLC (JCI) Q1 2026 Earnings Call Highlights: Strong Growth and ...",
+      "url": "https://finance.yahoo.com/news/johnson-controls-international-plc-jci-210302018.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Johnson Controls Q1 Earnings & Revenues Top Estimates, Increase Y/Y",
+      "url": "/news/300027/johnson-controls-q1-earnings-revenues-top-estimates-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Rotation out of Tech Stocks Weighs on the Broader Market",
+      "url": "https://finance.yahoo.com/m/53c7bb8e-05f9-319a-a276-65ec476a457b/rotation-out-of-tech-stocks.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Johnson Controls Smashes 52-Week High As Record $18.2 Billion Backlog Screams Data Center Boom",
+      "url": "/news/299486/johnson-controls-smashes-52-week-high-as-record-182-billion-backlog-screams-data-center-boom",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Johnson Controls (JCI) Q1 2026 Earnings Transcript",
+      "url": "/news/299435/johnson-controls-jci-q1-2026-earnings-transcript",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Mixed on Sector Rotation out of Tech",
+      "url": "https://finance.yahoo.com/m/d2e885bd-e047-3deb-9c46-4d88220b392d/stocks-mixed-on-sector.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Johnson Controls (JCI) Reports Q1 Earnings: What Key Metrics Have to Say",
+      "url": "/news/299519/johnson-controls-jci-reports-q1-earnings-what-key-metrics-have-to-say",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Johnson Controls sees 84% systems order growth in the Americas",
+      "url": "https://finance.yahoo.com/m/e78680f3-7202-33fc-ba73-bee01793c1c2/johnson-controls-sees-84%25.html",
+      "publisher": "Facilities Dive",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Johnson Controls (NYSE:JCI) Beats Q4 CY2025 Sales Expectations, Stock Soars",
+      "url": "/news/299026/johnson-controls-nyse-jci-beats-q4-cy2025-sales-expectations-stock-soars",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Johnson Controls Reports Strong Q1 Results; Raises FY26 Guidance",
+      "url": "/news/298920/johnson-controls-reports-strong-q1-results-raises-fy26-guidance",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Uber and Alphabet headline earnings slate",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-sp500-nasdaq-up-after-software-dive-amd-down-alphabet-gold/card/uber-and-alphabet-headline-earnings-slate-l5EBVus4M3FKwmrvnPGw?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Market Today: Dow, S&P 500 and Nasdaq consolidate after software rout; AMD results weigh; Alphabet earnings on tap; gold recovers $5,000 level.",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-sp500-nasdaq-up-after-software-dive-amd-down-alphabet-gold?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    }
+  ]
 }

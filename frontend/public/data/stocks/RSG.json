@@ -6279,8 +6279,8 @@
     "close": 219.94000244140625,
     "sma_20": 215.08449935913086,
     "sma_50": 213.58807891845703,
-    "sma_200": 228.0424007415771,
-    "trend_alignment": 0.4802027544840911,
+    "sma_200": 228.04240074157713,
+    "trend_alignment": 0.480202754484091,
     "rsi": 62.79549828944988,
     "rsi_score": 0.2559099657889976,
     "macd_histogram": 0.49082750433597533,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 78.98525621077927,
     "stoch_d": 76.3570230468205,
-    "trend_score": 48.02027544840911,
+    "trend_score": 48.0202754484091,
     "rsi_abs_score": 69.54315119738509,
     "macd_abs_score": 58.079106789211025,
     "momentum_score": 63.811128993298055,
@@ -6306,7 +6306,15 @@
     "technical_score": 58.58305957183762,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.010325745231789111,
+    "sentiment_pos": 0.10415,
+    "sentiment_neg": 0.0374,
+    "sentiment_neu": 0.85845,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 50.52
+  },
   "analyst": {
     "revision_momentum": 0.2222222222222222,
     "target_upside": 0.11848686005274167,
@@ -6325,7 +6333,7 @@
     "quality_score": 67.5877,
     "growth_score": 42.475,
     "safety_score": 34.82113823315437,
-    "trend_score": 48.02027544840911,
+    "trend_score": 48.0202754484091,
     "momentum_score": 63.811128993298055,
     "volatility_score": 75.16819119662736,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 40.33000554509804,
     "catalyst_timeline": 55.71330377491074,
     "downside_control": 53.87839941446725,
-    "composite_score": 50.19285730396223,
+    "composite_score": 50.18896825866379,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 48.59512560087924,
     "technical_score": 58.58305957183762,
-    "sentiment_score": 50.0,
+    "sentiment_score": 50.52,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Environmental & Facilities Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Analyst Report: AutoNation, Inc.",
+      "url": "https://finance.yahoo.com/m/aad23dbd-8148-3570-bd99-1ea17847be2c/analyst-report%3A-autonation%2C.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Republic Services (RSG): Buy, Sell, or Hold Post Q3 Earnings?",
+      "url": "/news/303340/republic-services-rsg-buy-sell-or-hold-post-q3-earnings",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Republic Services acquiring Hamm landfill and MRF in Kansas",
+      "url": "https://finance.yahoo.com/m/9bfca4c9-1e2b-32c6-9113-213f52bf2226/republic-services-acquiring.html",
+      "publisher": "Waste Dive",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "1 S&P 500 Stock for Long-Term Investors and 2 We Ignore",
+      "url": "/news/298730/1-sp-500-stock-for-long-term-investors-and-2-we-ignore",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Republic Services Recognized for the Fifth Time as One of the World's Most Admired Companies",
+      "url": "/news/286840/republic-services-recognized-for-the-fifth-time-as-one-of-the-worlds-most-admired-companies",
+      "publisher": "PR Newswire",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Top 5 Waste Management & Landfill Stocks: Trash = Cash",
+      "url": "https://finance.yahoo.com/m/dabcb845-0ff4-3c40-a6c4-da0aa7e93f36/top-5-waste-management-%26.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-25",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Analyst Report: Republic Services, Inc.",
+      "url": "https://finance.yahoo.com/m/c9aa14ae-c181-39bc-a8d0-e026355f3ee9/analyst-report%3A-republic.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Republic Services (RSG) is Poised to Beat Earnings Estimates Again",
+      "url": "/news/285610/why-republic-services-rsg-is-poised-to-beat-earnings-estimates-again",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Republic Services and The Martin Luther King, Jr. Center for Nonviolent Social Change Join Forces to Build Stronger Communities",
+      "url": "/news/277374/republic-services-and-the-martin-luther-king-jr-center-for-nonviolent-social-change-join-forces-to-build-stronger-communities",
+      "publisher": "PR Newswire",
+      "date": "2026-01-15",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Republic Services' Q4 2025 Earnings: What to Expect",
+      "url": "https://finance.yahoo.com/m/739366f5-8daf-3184-9eef-5620c596e5a8/republic-services%27-q4-2025.html",
+      "publisher": "Barchart",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Republic Services, Inc. Sets Date for Fourth Quarter and Full-Year 2025 Earnings Release and Conference Call",
+      "url": "/news/271369/republic-services-inc-sets-date-for-fourth-quarter-and-full-year-2025-earnings-release-and-conference-call",
+      "publisher": "PR Newswire",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Should You Hold Republic Services (RSG)?",
+      "url": "/news/270711/should-you-hold-republic-services-rsg",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AI Is Being Used to Find Valuable Commodities in Our Trash",
+      "url": "https://www.wsj.com/business/ai-is-being-used-to-find-valuable-commodities-in-our-trash-6b7de5d7?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ameresco and Republic Services Bring 5.2 MWe Upper Rock Landfill Gas-to-Renewable Natural Gas Facility Online",
+      "url": "https://www.businesswire.com/news/home/20260106299031/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Top Stock Reports for AbbVie, Coca-Cola & Chevron",
+      "url": "/news/262011/top-stock-reports-for-abbvie-coca-cola-chevron",
+      "publisher": "Zacks",
+      "date": "2025-12-24",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Reasons Why You Should Hold Republic Services Stock Now",
+      "url": "/news/261141/reasons-why-you-should-hold-republic-services-stock-now",
+      "publisher": "Zacks",
+      "date": "2025-12-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why This 1 Momentum Stock Could Be a Great Addition to Your Portfolio",
+      "url": "/news/248461/why-this-1-momentum-stock-could-be-a-great-addition-to-your-portfolio",
+      "publisher": "Zacks",
+      "date": "2025-12-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "2 S&P 500 Stocks Worth Your Attention and 1 We Question",
+      "url": "/news/243893/2-sp-500-stocks-worth-your-attention-and-1-we-question",
+      "publisher": "StockStory",
+      "date": "2025-12-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Goldman Sachs Is Positive on Republic Services (RSG)",
+      "url": "/news/242801/goldman-sachs-is-positive-on-republic-services-rsg",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "A Junk Stock Rally? Waste Management Is Beating the Market Over the Past Month.",
+      "url": "https://finance.yahoo.com/m/07247b77-dc2b-3a6c-9257-31a58c0bf342/a-%E2%80%98junk%E2%80%99-stock-rally%3F-waste.html",
+      "publisher": "Barrons.com",
+      "date": "2025-12-01",
+      "sentiment": "negative"
+    }
+  ]
 }

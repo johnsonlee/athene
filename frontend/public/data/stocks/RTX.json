@@ -6306,7 +6306,15 @@
     "technical_score": 61.86591715341747,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.0996178119223924,
+    "sentiment_pos": 0.09625,
+    "sentiment_neg": 0.022600000000000002,
+    "sentiment_neu": 0.8811,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 54.98
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.13258834189066748,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 45.09372818333333,
     "catalyst_timeline": 59.68414153227583,
     "downside_control": 57.20532931460582,
-    "composite_score": 53.77522679456838,
+    "composite_score": 53.77133774926995,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 52.060666950696984,
     "technical_score": 61.86591715341747,
-    "sentiment_score": 50.0,
+    "sentiment_score": 54.98,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 306,
-    "percentile": 0.4123314065510597,
+    "rank": 307,
+    "percentile": 0.41040462427745666,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Aerospace & Defense"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Citigroup Lifts Price Target on RTX Corporation (RTX) to $238, Keeps Buy Rating",
+      "url": "/news/303696/citigroup-lifts-price-target-on-rtx-corporation-rtx-to-238-keeps-buy-rating",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "New U.S. Arms Export Policy Boosts Production of Weapons Important to Pentagon",
+      "url": "https://finance.yahoo.com/m/bf8aca02-e111-39c5-a10c-b700e614ce66/new-u.s.-arms-export-policy.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "RTX Board of Directors Declares Quarterly Cash Dividend",
+      "url": "/news/303415/rtx-board-of-directors-declares-quarterly-cash-dividend",
+      "publisher": "PR Newswire",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pentagon poised to curb some defense contractors' payouts under Trump order",
+      "url": "https://finance.yahoo.com/news/pentagon-poised-curb-defense-contractors-212134373.html",
+      "publisher": "Reuters",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "GE Aerospace's Commercial Engines Unit Gains Momentum: Can It Sustain?",
+      "url": "/news/301897/ge-aerospaces-commercial-engines-unit-gains-momentum-can-it-sustain",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Strong Newport News Shipbuilding Performance Drives HII's Q4 Results",
+      "url": "/news/301867/strong-newport-news-shipbuilding-performance-drives-hiis-q4-results",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "RTX Corporation (RTX) Is a Trending Stock: Facts to Know Before Betting on It",
+      "url": "/news/301460/rtx-corporation-rtx-is-a-trending-stock-facts-to-know-before-betting-on-it",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nearly 20% of S&P 500 Stocks Hit 52-Week Highs Today",
+      "url": "https://finance.yahoo.com/m/b6e7c836-9b61-3160-9c2b-5aed8a0c5bc3/nearly-20%25-of-s%26p-500-stocks.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "RTX Stock Falls. Missile Production Could Quadruple.",
+      "url": "https://finance.yahoo.com/m/6e3a36e7-bb67-3811-92b9-9f89fba0cdd3/rtx-stock-falls.-missile.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dozens of Stocks Hitting 52-Week Highs",
+      "url": "https://finance.yahoo.com/m/b6e7c836-9b61-3160-9c2b-5aed8a0c5bc3/dozens-of-stocks-hitting.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "RTX Lands Mega Pentagon Deal To Supercharge US Missile Production",
+      "url": "/news/299989/rtx-lands-mega-pentagon-deal-to-supercharge-us-missile-production",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "These hot S&P 500 stocks show where investors are heading as they run away from tech",
+      "url": "https://www.marketwatch.com/story/these-hot-s-p-500-stocks-show-where-investors-are-heading-as-they-run-away-from-tech-0fcd53f6?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "RTX Stock Rises. Missile Production Could Quadruple.",
+      "url": "https://www.barrons.com/articles/rtx-stock-missiles-defense-department-2826f339?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Another missile maker partners with the Trump administration, and the stock rises to record heights",
+      "url": "https://www.marketwatch.com/story/another-missile-maker-partners-with-the-trump-administration-and-the-stock-rises-to-record-heights-d34c84a8?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "RTX Outperforms Industry in the Past 6 Months: How to Play the Stock?",
+      "url": "/news/299331/rtx-outperforms-industry-in-the-past-6-months-how-to-play-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "RTX to Increase Missile Production Under Pentagon Deals",
+      "url": "https://finance.yahoo.com/m/f5b7f864-4b75-3f96-bd2f-2d7201401d45/rtx-to-increase-missile.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "RTX to Dramatically Increase Missile Production Under Pentagon Deals",
+      "url": "https://www.wsj.com/politics/national-security/rtx-to-dramatically-increase-missile-production-under-pentagon-deals-0b9a8666?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "RTX Chairman and CEO to present at Citi's 2026 Global Industrial Tech and Mobility Conference",
+      "url": "/news/299065/rtx-chairman-and-ceo-to-present-at-citis-2026-global-industrial-tech-and-mobility-conference",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Vietjet selects RTX's Pratt & Whitney to power 44 additional A320neo family aircraft",
+      "url": "/news/298908/vietjet-selects-rtxs-pratt-whitney-to-power-44-additional-a320neo-family-aircraft",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "RTX's Raytheon partners with Department of War on five landmark agreements to expand critical munition production",
+      "url": "/news/298905/rtxs-raytheon-partners-with-department-of-war-on-five-landmark-agreements-to-expand-critical-munition-production",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    }
+  ]
 }

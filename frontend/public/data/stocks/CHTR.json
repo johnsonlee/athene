@@ -6306,7 +6306,15 @@
     "technical_score": 48.069562423648286,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.07270076175834463,
+    "sentiment_pos": 0.06105000000000001,
+    "sentiment_neg": 0.0511,
+    "sentiment_neu": 0.88785,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 53.64
+  },
   "analyst": {
     "revision_momentum": -0.14285714285714285,
     "target_upside": 0.027515791295318916,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 73.64672218749999,
     "catalyst_timeline": 52.106624609335036,
     "downside_control": 32.06505509750636,
-    "composite_score": 53.979503770570936,
+    "composite_score": 53.9756147252725,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 57.8262575296188,
     "technical_score": 48.069562423648286,
-    "sentiment_score": 50.0,
+    "sentiment_score": 53.64,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 301,
-    "percentile": 0.42196531791907516,
+    "rank": 302,
+    "percentile": 0.42003853564547206,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6369,5 +6377,146 @@
     "sector": "Communication Services",
     "industry": "Cable & Satellite"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Charter Communications, Inc. (CHTR) Focused on Long-Term Customer EBITDA and Cash Flow Growth",
+      "url": "/news/303724/charter-communications-inc-chtr-focused-on-long-term-customer-ebitda-and-cash-flow-growth",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Corrections & Amplifications",
+      "url": "https://finance.yahoo.com/m/2fcf0599-62cb-38d6-8a06-a7815360edb7/corrections-%26-amplifications.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Spectrum revamps internet service as customers exit",
+      "url": "https://finance.yahoo.com/m/328fd3cb-338f-3a71-a3db-ef135b942509/spectrum-revamps-internet.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Spectrum plans 3 major changes as internet customers flee",
+      "url": "https://finance.yahoo.com/m/328fd3cb-338f-3a71-a3db-ef135b942509/spectrum-plans-3-major.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Spectrum loses 119,000 internet customers, plans major changes",
+      "url": "https://finance.yahoo.com/m/328fd3cb-338f-3a71-a3db-ef135b942509/spectrum-loses-119%2C000.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Five AI Value Stocks for Investors to Consider",
+      "url": "https://www.barrons.com/articles/five-ai-value-stocks-for-investors-to-consider-f5ea4c83?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Charter Communications, Inc.",
+      "url": "https://finance.yahoo.com/m/aa81ce0b-63f9-3708-909f-a67375d142b3/analyst-report%3A-charter.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Charter Communications (CHTR) Climbs 7.6% as Subscription Decline 'Lower-Than-Expected'",
+      "url": "/news/294343/charter-communications-chtr-climbs-76-as-subscription-decline-lower-than-expected",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Charter Communications, Inc.",
+      "url": "https://finance.yahoo.com/m/2d5f1c0f-d0ec-30c8-8e40-c9dea3ca3b2e/analyst-report%3A-charter.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Charter Communications Inc (CHTR) Q4 2025 Earnings Call Highlights: Navigating Growth Amidst ...",
+      "url": "https://finance.yahoo.com/news/charter-communications-inc-chtr-q4-210202536.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Charter Mobile, Video Growth Offsets Internet Subscriber Declines",
+      "url": "https://finance.yahoo.com/m/4796e4e9-215e-351c-860e-6be1b6e898b7/charter-mobile%2C-video-growth.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Charter Earnings Miss Estimates in Q4, Revenues Decline Y/Y",
+      "url": "/news/293890/charter-earnings-miss-estimates-in-q4-revenues-decline-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stocks Slip as Bond Yields Rise after Warsh Picked for Fed Chair",
+      "url": "https://finance.yahoo.com/m/f8b5dfd3-285a-3d21-816a-900fc4922606/stocks-slip-as-bond-yields.html",
+      "publisher": "Barchart",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Compared to Estimates, Charter (CHTR) Q4 Earnings: A Look at Key Metrics",
+      "url": "/news/293773/compared-to-estimates-charter-chtr-q4-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Charter Communications Wireless Adds Outpace Internet Losses",
+      "url": "/news/293621/charter-communications-wireless-adds-outpace-internet-losses",
+      "publisher": "Benzinga",
+      "date": "2026-01-30",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Charter Communications Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/1451f7be-6e26-3743-9196-8bb8c390bc3a/charter-communications-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Fall as Trump Nominates Warsh for Fed Chair",
+      "url": "https://finance.yahoo.com/m/96f0d3f7-ea32-331b-bc1c-8802bac1fdd7/stocks-fall-as-trump.html",
+      "publisher": "Barchart",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "KeyBanc Maintains Sector Weight on Charter (CHTR) Amid Rising Broadband Competition",
+      "url": "/news/293388/keybanc-maintains-sector-weight-on-charter-chtr-amid-rising-broadband-competition",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Charter Communications sheds fewer broadband subscribers than expected, shares rise",
+      "url": "https://finance.yahoo.com/news/charter-communications-sheds-fewer-broadband-134026412.html",
+      "publisher": "Reuters",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Charter Revenue Hurt by Declines in Internet Subscriber Volumes",
+      "url": "https://www.wsj.com/business/earnings/charter-revenue-hurt-by-declines-in-internet-subscriber-volumes-afa31d47?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-30",
+      "sentiment": "negative"
+    }
+  ]
 }

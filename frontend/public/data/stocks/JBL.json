@@ -6277,36 +6277,44 @@
   },
   "technical": {
     "close": 258.25,
-    "sma_20": 244.72699890136718,
-    "sma_50": 232.23619995117184,
-    "sma_200": 208.89250137329103,
-    "trend_alignment": 0.7664033049999787,
+    "sma_20": 244.7269989013672,
+    "sma_50": 232.2361999511719,
+    "sma_200": 208.892501373291,
+    "trend_alignment": 0.7664033049999786,
     "rsi": 63.40072266189466,
     "rsi_score": 0.26801445323789325,
     "macd_histogram": 0.5709087067680976,
     "macd_line": 5.159498610431996,
     "macd_histogram_pct": 0.22106823108154794,
-    "bb_position": 0.9731851983597959,
+    "bb_position": 0.9731851983597958,
     "bb_upper": 259.0163312235823,
-    "bb_lower": 230.43766657915205,
-    "bb_width": 0.11677773507919484,
+    "bb_lower": 230.43766657915208,
+    "bb_width": 0.1167777350791947,
     "hist_volatility": 0.4248948954262969,
     "volume_ratio": 1.0503446947469326,
     "avg_volume_20d": 1116205.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 77.7942831015641,
-    "stoch_d": 58.17492864707063,
-    "trend_score": 76.64033049999787,
+    "stoch_k": 77.79428310156409,
+    "stoch_d": 58.17492864707062,
+    "trend_score": 76.64033049999786,
     "rsi_abs_score": 69.11949413667374,
     "macd_abs_score": 58.0267057770387,
     "momentum_score": 63.57309995685622,
-    "volatility_score": 43.57040762904673,
+    "volatility_score": 43.57040762904675,
     "volume_score": 50.0,
     "technical_score": 60.77811066286557,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.20264418477869933,
+    "sentiment_pos": 0.14705,
+    "sentiment_neg": 0.02975,
+    "sentiment_neu": 0.8231999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 60.13
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.026137463697967087,
@@ -6325,9 +6333,9 @@
     "quality_score": 70.40500075,
     "growth_score": 85.35,
     "safety_score": 40.46254107144355,
-    "trend_score": 76.64033049999787,
+    "trend_score": 76.64033049999786,
     "momentum_score": 63.57309995685622,
-    "volatility_score": 43.57040762904673,
+    "volatility_score": 43.57040762904675,
     "volume_score": 50.0,
     "analyst_score": 49.62221684414327,
     "pe_score": 41.02926133333334,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 56.70182389333333,
     "catalyst_timeline": 60.38856473009973,
     "downside_control": 42.91494230507354,
-    "composite_score": 60.33367882300775,
+    "composite_score": 60.329789777709316,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 66.54802835039982,
     "technical_score": 60.77811066286557,
-    "sentiment_score": 50.0,
+    "sentiment_score": 60.13,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Electronic Manufacturing Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "SANM Rises 26.4% in the Past 6 Months: Should You Buy the Stock?",
+      "url": "/news/301732/sanm-rises-264-in-the-past-6-months-should-you-buy-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Should Celestica Be in Your Portfolio Post Strong Q4 Earnings?",
+      "url": "/news/299979/should-celestica-be-in-your-portfolio-post-strong-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Goldman Sachs Sees Data Center Demand Driving Continued Upside at Jabil (JBL)",
+      "url": "/news/299229/goldman-sachs-sees-data-center-demand-driving-continued-upside-at-jabil-jbl",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Why Jabil (JBL) is a Top Value Stock for the Long-Term",
+      "url": "/news/295726/why-jabil-jbl-is-a-top-value-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jabil (JBL) Suffers a Larger Drop Than the General Market: Key Insights",
+      "url": "/news/294308/jabil-jbl-suffers-a-larger-drop-than-the-general-market-key-insights",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Here's Why Jabil (JBL) is a Strong Momentum Stock",
+      "url": "/news/293675/heres-why-jabil-jbl-is-a-strong-momentum-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Fast-paced Mover Jabil (JBL) Is a Great Choice for Value Investors",
+      "url": "/news/293482/why-fast-paced-mover-jabil-jbl-is-a-great-choice-for-value-investors",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Reasons to Sell JBL and 1 Stock to Buy Instead",
+      "url": "/news/294053/3-reasons-to-sell-jbl-and-1-stock-to-buy-instead",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Plexus' Q1 Earnings Surpass Estimates, Revenues Increase Y/Y",
+      "url": "/news/291832/plexus-q1-earnings-surpass-estimates-revenues-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "MSI's Silvus Unveils Advanced Radio Systems: Will it Boost Prospects?",
+      "url": "/news/287079/msis-silvus-unveils-advanced-radio-systems-will-it-boost-prospects",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jabil names longtime director Steve Raymund chair",
+      "url": "https://www.digitimes.com/news/a20260126VL203/jabil-chairman-ceo-president-2021.html",
+      "publisher": "DigiTimes",
+      "date": "2026-01-25",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jabil Earnings Preview: What to Expect",
+      "url": "https://finance.yahoo.com/m/3520ee72-f441-393b-8cae-9f916449831d/jabil-earnings-preview%3A-what.html",
+      "publisher": "Barchart",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jabil Declares Quarterly Dividend",
+      "url": "https://www.businesswire.com/news/home/20260122708525/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jabil Announces Appointment of New Chairman, Directors to the Board",
+      "url": "https://www.businesswire.com/news/home/20260122991636/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jabil Soared Last Year. Now Insiders Are Selling Millions of Dollars in Stock.",
+      "url": "https://www.barrons.com/articles/jabil-insider-selling-ai-data-center-stock-rally-0587546e?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is Sanmina Stock a Smart Buy Before Q1 Earnings Report?",
+      "url": "/news/284279/is-sanmina-stock-a-smart-buy-before-q1-earnings-report",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "EMS watch: Celestica and Flex double down on platform-led data center builds; Sanmina and Jabil expand through M&A and diversified portfolios",
+      "url": "https://www.digitimes.com/news/a20260120VL202/ems-watch-celestica-flex-data-center-jabil-sanmina-infrastructure.html",
+      "publisher": "DigiTimes",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CLS Stock Before Q4 Earnings: A Smart Buy or Risky Investment?",
+      "url": "/news/282435/cls-stock-before-q4-earnings-a-smart-buy-or-risky-investment",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "JBL Gains Traction in AI Infrastructure Space: Will This Fuel Revenue?",
+      "url": "/news/281332/jbl-gains-traction-in-ai-infrastructure-space-will-this-fuel-revenue",
+      "publisher": "Zacks",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jabil Invests in EHT Semi to Accelerate Advanced RF and Pulsed Power Solutions for Next-Generation Semiconductor Manufacturing",
+      "url": "https://www.businesswire.com/news/home/20260120379919/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    }
+  ]
 }

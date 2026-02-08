@@ -6306,7 +6306,15 @@
     "technical_score": 36.99651148512495,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.05496366817126992,
+    "sentiment_pos": 0.05789999999999999,
+    "sentiment_neg": 0.08285000000000001,
+    "sentiment_neu": 0.85925,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 47.25
+  },
   "analyst": {
     "revision_momentum": 0.5,
     "target_upside": 0.2795862891997613,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 22.788363281333332,
     "catalyst_timeline": 45.28302444886831,
     "downside_control": 46.98017364978082,
-    "composite_score": 49.45398738131358,
+    "composite_score": 49.450098336015145,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 61.50347065755812,
     "technical_score": 36.99651148512495,
-    "sentiment_score": 50.0,
+    "sentiment_score": 47.25,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Financial Exchanges & Data"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Ladder Capital Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/64c4a802-aa4e-391a-a67f-26f038f86d7f/ladder-capital-q4-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "IREN's Q2 Loss Wider Than Expected, Revenues Decline Q/Q",
+      "url": "/news/303204/irens-q2-loss-wider-than-expected-revenues-decline-qq",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Anthropic's New Model Can Run Financial Analyses. Financial Data Stocks Tumble.",
+      "url": "https://www.barrons.com/articles/anthropic-financial-research-stocks-01721769?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Software ate the world. Now, Wall Street is worried AI will eat software.",
+      "url": "https://www.marketwatch.com/story/software-ate-the-world-now-wall-street-is-worried-ai-will-eat-software-88661ed5?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Analyst Report: Moody's Corporation",
+      "url": "https://finance.yahoo.com/m/af33d683-ab0d-33f0-b659-8bba959dadc5/analyst-report%3A-moody%27s.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why These 2 Stocks Remain My Top Stocks to Buy for 2026 and Beyond",
+      "url": "/news/295929/why-these-2-stocks-remain-my-top-stocks-to-buy-for-2026-and-beyond",
+      "publisher": "Motley Fool",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Red River Bancshares (RRBI) Q4 Earnings and Revenues Beat Estimates",
+      "url": "/news/293658/red-river-bancshares-rrbi-q4-earnings-and-revenues-beat-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Axos Financial (AX) Beats Q2 Earnings and Revenue Estimates",
+      "url": "/news/292749/axos-financial-ax-beats-q2-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Shadow banks quizzed over meltdown threat from hidden losses",
+      "url": "https://finance.yahoo.com/m/d8c114c7-b2bf-33db-82dd-e67979b12e41/%E2%80%98shadow-banks%E2%80%99-quizzed-over.html",
+      "publisher": "The Telegraph",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "S&P Global Stock: More Than the Sum of Its Parts",
+      "url": "https://www.barrons.com/articles/buy-sp-global-stock-price-pick-59f4b698?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "10 Dividend Stocks to Buy Today and Hold Forever",
+      "url": "/news/291398/10-dividend-stocks-to-buy-today-and-hold-forever",
+      "publisher": "Motley Fool",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Moody's Flags Rising Federal Funding Risk for US Transit Systems",
+      "url": "https://finance.yahoo.com/news/moodys-flags-rising-federal-funding-112114843.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Date Set For Moody's Earnings Release And Investor Teleconference",
+      "url": "https://www.businesswire.com/news/home/20260128819906/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "VIRT or MCO: Which Is the Better Value Stock Right Now?",
+      "url": "/news/288765/virt-or-mco-which-is-the-better-value-stock-right-now",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Morgan Stanley Sees Issuance Momentum Supporting Moody's (MCO) Results",
+      "url": "/news/287489/morgan-stanley-sees-issuance-momentum-supporting-moodys-mco-results",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "FedEx Freight will begin life as an investment-grade credit",
+      "url": "https://finance.yahoo.com/news/fedex-freight-begin-life-investment-150000171.html",
+      "publisher": "FreightWaves",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "35% of Warren Buffett's $309 Billion Berkshire Hathaway Portfolio Is Invested in These 5 Financial Stocks. Here's the Best of the Bunch for 2026.",
+      "url": "/news/286247/35-of-warren-buffetts-309-billion-berkshire-hathaway-portfolio-is-invested-in-these-5-financial-stocks-heres-the-best-of-the-bunch-for-2026",
+      "publisher": "Motley Fool",
+      "date": "2026-01-25",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Moodys Cuts Nidecs Rating to Junk Status",
+      "url": "https://finance.yahoo.com/m/901bf8e7-eed2-39c3-9584-3c8a50b633fc/moody%E2%80%99s-cuts-nidec%E2%80%99s-rating.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-22",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Financial Exchanges & Data Stocks Q3 Earnings: Moody's (NYSE:MCO) Firing on All Cylinders",
+      "url": "/news/285262/financial-exchanges-data-stocks-q3-earnings-moodys-nyse-mco-firing-on-all-cylinders",
+      "publisher": "StockStory",
+      "date": "2026-01-21",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Cautious consumers shunned big-ticket items last year",
+      "url": "https://finance.yahoo.com/m/573d4271-9117-3f83-a02b-446ed801f96a/cautious-consumers-shunned.html",
+      "publisher": "Retail Dive",
+      "date": "2026-01-21",
+      "sentiment": "negative"
+    }
+  ]
 }

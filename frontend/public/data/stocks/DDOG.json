@@ -6279,8 +6279,8 @@
     "close": 111.69000244140625,
     "sma_20": 124.1820011138916,
     "sma_50": 136.02140014648438,
-    "sma_200": 137.95377555847165,
-    "trend_alignment": 0.2145487233298085,
+    "sma_200": 137.95377555847168,
+    "trend_alignment": 0.21454872332980832,
     "rsi": 34.99138460029443,
     "rsi_score": -0.3001723079941114,
     "macd_histogram": -1.4632050042277749,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 11.479338288404147,
     "stoch_d": 9.667908806804428,
-    "trend_score": 21.45487233298085,
+    "trend_score": 21.45487233298083,
     "rsi_abs_score": 55.989661520353316,
     "macd_abs_score": 22.849113990815056,
     "momentum_score": 39.41938775558418,
     "volatility_score": 20.179324219054536,
     "volume_score": 50.0,
-    "technical_score": 32.29814287038042,
+    "technical_score": 32.29814287038041,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.020034840744717116,
+    "sentiment_pos": 0.09955,
+    "sentiment_neg": 0.05015000000000001,
+    "sentiment_neu": 0.8503000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.0
+  },
   "analyst": {
     "revision_momentum": 0.15789473684210525,
     "target_upside": 0.7011370758349003,
@@ -6325,7 +6333,7 @@
     "quality_score": 32.1464371,
     "growth_score": 49.2,
     "safety_score": 67.64843750000001,
-    "trend_score": 21.45487233298085,
+    "trend_score": 21.45487233298083,
     "momentum_score": 39.41938775558418,
     "volatility_score": 20.179324219054536,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 29.869055762857137,
     "catalyst_timeline": 44.95802737727755,
     "downside_control": 48.23716425785818,
-    "composite_score": 34.4643712751348,
+    "composite_score": 34.460482229836366,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 44.206165099047624,
-    "technical_score": 32.29814287038042,
-    "sentiment_score": 50.0,
+    "technical_score": 32.29814287038041,
+    "sentiment_score": 51.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Application Software"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Rosenblatt Stays Constructive on Datadog, Inc. (DDOG) Growth Outlook Despite Target Cut",
+      "url": "/news/303664/rosenblatt-stays-constructive-on-datadog-inc-ddog-growth-outlook-despite-target-cut",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "KeyBanc Flags Guidance Uncertainty as Key Debate around Datadog (DDOG)",
+      "url": "/news/303598/keybanc-flags-guidance-uncertainty-as-key-debate-around-datadog-ddog",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Software stocks have been crushed. Here's how to play the sector as the dust settles.",
+      "url": "https://www.marketwatch.com/story/software-stocks-have-been-crushed-heres-how-to-play-the-sector-as-the-dust-settles-c0175f8a?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "4 stocks to buy after a 25% drop in software sector: BofA",
+      "url": "https://finance.yahoo.com/news/4-stocks-buy-25-drop-125309901.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Tech stock shakeout clouds market ahead of economic data deluge",
+      "url": "https://finance.yahoo.com/news/tech-stock-shakeout-clouds-market-110520808.html",
+      "publisher": "Reuters",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Heard on the Street Thursday Recap: Chomping at the Bitcoin",
+      "url": "https://finance.yahoo.com/m/5f388fe8-dcbf-3051-83ac-2c75d47bfb22/heard-on-the-street-thursday.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Volatile Stocks with Exciting Potential",
+      "url": "/news/302438/3-volatile-stocks-with-exciting-potential",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Heard on the Street Recap: Chomping at the Bitcoin",
+      "url": "https://finance.yahoo.com/m/368d2563-a21a-3a81-8b2d-ce75f3256521/heard-on-the-street-recap%3A.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Datadog (DDOG) Shares Are Getting Obliterated Today",
+      "url": "/news/302003/why-datadog-ddog-shares-are-getting-obliterated-today",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Software companies are 'overly maligned,' analyst says",
+      "url": "https://finance.yahoo.com/video/software-companies-overly-maligned-analyst-113031213.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Datadog (DDOG) Fell More Than Broader Market",
+      "url": "/news/298329/heres-why-datadog-ddog-fell-more-than-broader-market",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Was the Market Down Today?",
+      "url": "https://finance.yahoo.com/m/5bea00d4-2fcc-3992-91a1-e7463831fc87/why-was-the-market-down-today%3F.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cathie Wood Goes Bargain Hunting: 3 Stocks She Just Bought",
+      "url": "/news/297602/cathie-wood-goes-bargain-hunting-3-stocks-she-just-bought",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Datadog (DDOG) Reports Next Week: Wall Street Expects Earnings Growth",
+      "url": "/news/297652/datadog-ddog-reports-next-week-wall-street-expects-earnings-growth",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Datadog (DDOG) Seen as Software Top Pick as AI Momentum Builds",
+      "url": "/news/296939/datadog-ddog-seen-as-software-top-pick-as-ai-momentum-builds",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Software Bear Market: 2 AI Stocks to Buy Before They Soar 102% and 170%, According to Wall Street Analysts",
+      "url": "/news/296670/software-bear-market-2-ai-stocks-to-buy-before-they-soar-102-and-170-according-to-wall-street-analysts",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Investors Heavily Search Datadog, Inc. (DDOG): Here is What You Need to Know",
+      "url": "/news/295599/investors-heavily-search-datadog-inc-ddog-here-is-what-you-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BMO Maintains Outperform on Datadog (DDOG) Despite OpenAI Risk",
+      "url": "/news/294813/bmo-maintains-outperform-on-datadog-ddog-despite-openai-risk",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "'The haves and the have-nots': Wall Street sees divide in tech stock performance after earnings reports",
+      "url": "https://finance.yahoo.com/news/the-haves-and-the-have-nots-wall-street-sees-divide-in-tech-stock-performance-after-earnings-reports-153043282.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-01",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Rosenblatt Securities Remains a Buy on Datadog (DDOG)",
+      "url": "/news/294680/rosenblatt-securities-remains-a-buy-on-datadog-ddog",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    }
+  ]
 }

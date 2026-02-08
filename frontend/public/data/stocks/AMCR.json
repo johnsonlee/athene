@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 48.16999816894531,
     "sma_20": 44.42749938964845,
-    "sma_50": 42.906999511718745,
+    "sma_50": 42.90699951171875,
     "sma_200": 43.77490976333618,
-    "trend_alignment": 0.6614556957972664,
+    "trend_alignment": 0.6614556957972663,
     "rsi": 66.80394189362657,
     "rsi_score": 0.33607883787253146,
     "macd_histogram": 0.452032507552217,
@@ -6295,18 +6295,26 @@
     "avg_volume_20d": 7361536.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 85.46644955183572,
+    "stoch_k": 85.46644955183571,
     "stoch_d": 86.41569560239714,
-    "trend_score": 66.14556957972664,
+    "trend_score": 66.14556957972663,
     "rsi_abs_score": 62.9489626978456,
     "macd_abs_score": 71.57616331954641,
     "momentum_score": 67.262563008696,
     "volatility_score": 32.035987360660044,
     "volume_score": 50.0,
-    "technical_score": 56.42963724865881,
+    "technical_score": 56.4296372486588,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.12685905184056634,
+    "sentiment_pos": 0.0907,
+    "sentiment_neg": 0.00645,
+    "sentiment_neu": 0.9028499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 56.34
+  },
   "analyst": {
     "revision_momentum": 0.3333333333333333,
     "target_upside": 0.12102968652688391,
@@ -6325,7 +6333,7 @@
     "quality_score": 44.356875,
     "growth_score": 50.0,
     "safety_score": 39.900460472542306,
-    "trend_score": 66.14556957972664,
+    "trend_score": 66.14556957972663,
     "momentum_score": 67.262563008696,
     "volatility_score": 32.035987360660044,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 63.563904390000005,
     "catalyst_timeline": 63.626579053366285,
     "downside_control": 40.14846717498035,
-    "composite_score": 52.78589574928683,
+    "composite_score": 52.782006703988394,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 52.57957491950847,
-    "technical_score": 56.42963724865881,
-    "sentiment_score": 50.0,
+    "technical_score": 56.4296372486588,
+    "sentiment_score": 56.34,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Materials",
     "industry": "Paper & Plastic Packaging Products & Materials"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "AMCR Q2 Earnings Top Estimates, Sales Miss as Volume Decline Continues",
+      "url": "/news/301888/amcr-q2-earnings-top-estimates-sales-miss-as-volume-decline-continues",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Alter Eco partners with Amcor on recyclable chocolate wrappers",
+      "url": "https://finance.yahoo.com/m/dc36e809-5b7c-394f-9eb8-31c916c64dac/alter-eco-partners-with-amcor.html",
+      "publisher": "Packaging Gateway",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NAN FUNG TRINITY Loads Up KT Corp Stock With 1.49 Million Shares Bought",
+      "url": "/news/299641/nan-fung-trinity-loads-up-kt-corp-stock-with-149-million-shares-bought",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Amcor plc",
+      "url": "https://finance.yahoo.com/m/0c258a3a-a234-3342-93a3-e7bd56f0410f/analyst-report%3A-amcor-plc.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Amcor talks GLP-1 opportunities and impacts",
+      "url": "https://finance.yahoo.com/m/b4983278-6216-3fda-a202-e747d61636ad/amcor-talks-glp-1.html",
+      "publisher": "Packaging Dive",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Amcor PLC (AMCCD) Q2 2026 Earnings Call Highlights: Strong EPS Growth and Strategic Synergies ...",
+      "url": "https://finance.yahoo.com/news/amcor-plc-amccd-q2-2026-050331240.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Amcor Q2 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/e9a431f8-ff3c-3f13-b3c6-3833233d3efb/amcor-q2-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Amcor (AMCR) Q2 2026 Earnings Call Transcript",
+      "url": "/news/298407/amcor-amcr-q2-2026-earnings-call-transcript",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's What Key Metrics Tell Us About Amcor (AMCR) Q2 Earnings",
+      "url": "/news/298441/heres-what-key-metrics-tell-us-about-amcor-amcr-q2-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Amcor (AMCR) Tops Q2 Earnings Estimates",
+      "url": "/news/298281/amcor-amcr-tops-q2-earnings-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Amcor: Fiscal Q2 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/amcor-fiscal-q2-earnings-snapshot-213253746.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Amcor Reports Solid Second Quarter Results and Reaffirms Fiscal 2026 Guidance",
+      "url": "/news/298117/amcor-reports-solid-second-quarter-results-and-reaffirms-fiscal-2026-guidance",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Zacks Industry Outlook Highlights Amcor, Karat Packaging and Sonoco Products",
+      "url": "/news/297907/zacks-industry-outlook-highlights-amcor-karat-packaging-and-sonoco-products",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Amcor Set to Report Q2 Earnings: What's in Store for the Stock?",
+      "url": "/news/295859/amcor-set-to-report-q2-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Packaging Stocks to Watch Amid Industry Challenges",
+      "url": "/news/295829/3-packaging-stocks-to-watch-amid-industry-challenges",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Benzinga's 'Stock Whisper' Index: 5 Stocks Investors Secretly Monitor But Don't Talk About Yet",
+      "url": "/news/294767/benzingas-stock-whisper-index-5-stocks-investors-secretly-monitor-but-dont-talk-about-yet",
+      "publisher": "Benzinga",
+      "date": "2026-02-01",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Are Wall Street Analysts Predicting Amcor Stock Will Climb or Sink?",
+      "url": "https://finance.yahoo.com/m/4e71528a-c7ad-3635-8ae4-34713c8e3b84/are-wall-street-analysts.html",
+      "publisher": "Barchart",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "First Solar downgraded, Fortinet upgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/first-solar-downgraded-fortinet-upgraded-143511661.html",
+      "publisher": "The Fly",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Amcor broadens packaging offerings for de-icing sector",
+      "url": "https://finance.yahoo.com/m/917e6256-38b7-32a4-a250-dd29c7ac7700/amcor-broadens-packaging.html",
+      "publisher": "Packaging Gateway",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Avery Dennison (AVY) Earnings Expected to Grow: Should You Buy?",
+      "url": "/news/290315/avery-dennison-avy-earnings-expected-to-grow-should-you-buy",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    }
+  ]
 }

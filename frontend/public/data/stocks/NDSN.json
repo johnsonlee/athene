@@ -6306,7 +6306,15 @@
     "technical_score": 60.21864505269757,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.2191908634715296,
+    "sentiment_pos": 0.1558,
+    "sentiment_neg": 0.027249999999999996,
+    "sentiment_neu": 0.81695,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 60.96
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": -0.0523123578468537,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 40.457253933333334,
     "catalyst_timeline": 57.59394945296705,
     "downside_control": 61.31385288425933,
-    "composite_score": 56.89012120265294,
+    "composite_score": 56.88623215735451,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 57.955686611111105,
     "technical_score": 60.21864505269757,
-    "sentiment_score": 50.0,
+    "sentiment_score": 60.96,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Industrial Machinery & Supplies & Components"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Flowserve's Q4 Earnings Surpass Estimates, Revenues Increase Y/Y",
+      "url": "/news/303187/flowserves-q4-earnings-surpass-estimates-revenues-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Taylor Devices Jumps 74% in 6 Months: Should You Buy the Stock?",
+      "url": "/news/303174/taylor-devices-jumps-74-in-6-months-should-you-buy-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Griffon's Earnings & Revenues Top Estimates in Q1, Increase Y/Y",
+      "url": "/news/303173/griffons-earnings-revenues-top-estimates-in-q1-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Are Industrial Products Stocks Lagging  Nordson (NDSN) This Year?",
+      "url": "/news/302920/are-industrial-products-stocks-lagging-nordson-ndsn-this-year",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "EnerSys' Q3 Earnings Beat Estimates, Decrease Year Over Year",
+      "url": "/news/301898/enersys-q3-earnings-beat-estimates-decrease-year-over-year",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Powell Industries Q1 Earnings Surpass Estimates, Increase Y/Y",
+      "url": "/news/300030/powell-industries-q1-earnings-surpass-estimates-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Emerson Q1 Earnings Top Estimates, Intelligent Devices Sales Rise",
+      "url": "/news/300031/emerson-q1-earnings-top-estimates-intelligent-devices-sales-rise",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Johnson Controls Q1 Earnings & Revenues Top Estimates, Increase Y/Y",
+      "url": "/news/300027/johnson-controls-q1-earnings-revenues-top-estimates-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Are You Looking for a Top Momentum Pick? Why Nordson (NDSN) is a Great Choice",
+      "url": "/news/299875/are-you-looking-for-a-top-momentum-pick-why-nordson-ndsn-is-a-great-choice",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Nordson (NDSN) Balances Dividend Consistency with Disciplined Growth",
+      "url": "/news/297405/nordson-ndsn-balances-dividend-consistency-with-disciplined-growth",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "4 Industrial Stocks to Buy on Steady Rebound in Manufacturing Activity",
+      "url": "/news/297457/4-industrial-stocks-to-buy-on-steady-rebound-in-manufacturing-activity",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Standex International (SXI) Q2 Earnings and Revenues Surpass Estimates",
+      "url": "/news/292878/standex-international-sxi-q2-earnings-and-revenues-surpass-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nordson Corporation Announces Earnings Release and Webcast for First Quarter Fiscal Year 2026",
+      "url": "https://www.businesswire.com/news/home/20260129456990/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Parker-Hannifin Tops Q2 Earnings & Sales Estimates, Raises 26' View",
+      "url": "/news/292319/parker-hannifin-tops-q2-earnings-sales-estimates-raises-26-view",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "A. O. Smith Earnings Surpass Estimates in Q4, Sales Miss",
+      "url": "/news/292286/a-o-smith-earnings-surpass-estimates-in-q4-sales-miss",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Tetra Tech Surpasses Q1 Earnings & Revenues Estimates, Raises 26' View",
+      "url": "/news/292278/tetra-tech-surpasses-q1-earnings-revenues-estimates-raises-26-view",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Applied Industrial Q2 Earnings Surpass Estimates, Revenues Miss",
+      "url": "/news/290387/applied-industrial-q2-earnings-surpass-estimates-revenues-miss",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Graco's Earnings Match Estimates in Q4, Sales Increase Y/Y",
+      "url": "/news/288486/gracos-earnings-match-estimates-in-q4-sales-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3M's Q4 Earnings Top Estimates, Safety and Industrial Sales Increase Y/Y",
+      "url": "/news/281417/3ms-q4-earnings-top-estimates-safety-and-industrial-sales-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Nordson EFD Takes Assembly Automation to Center Stage at MD&M West, February 3 5, 2026",
+      "url": "https://www.businesswire.com/news/home/20260120272285/en/Nordson",
+      "publisher": "Business Wire",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    }
+  ]
 }

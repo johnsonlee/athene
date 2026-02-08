@@ -6277,19 +6277,19 @@
   },
   "technical": {
     "close": 31.6299991607666,
-    "sma_20": 31.281750011444093,
-    "sma_50": 32.202302131652836,
+    "sma_20": 31.28175001144409,
+    "sma_50": 32.20230213165283,
     "sma_200": 32.65644883155823,
-    "trend_alignment": 0.459717728428554,
+    "trend_alignment": 0.45971772842855413,
     "rsi": 50.95037818293115,
     "rsi_score": 0.01900756365862307,
     "macd_histogram": 0.06575184808996382,
     "macd_line": -0.30347537527049795,
     "macd_histogram_pct": 0.2078781215129511,
-    "bb_position": 0.624559359574971,
-    "bb_upper": 32.67967446493689,
-    "bb_lower": 29.8838255579513,
-    "bb_width": 0.08937635861045994,
+    "bb_position": 0.624559359574973,
+    "bb_upper": 32.67967446493688,
+    "bb_lower": 29.883825557951297,
+    "bb_width": 0.08937635861045984,
     "hist_volatility": 0.43084504089073977,
     "volume_ratio": 0.9517870177360359,
     "avg_volume_20d": 4938815.0,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 55.77339766511267,
     "stoch_d": 44.12996902494792,
-    "trend_score": 45.9717728428554,
+    "trend_score": 45.971772842855415,
     "rsi_abs_score": 72.16526472805181,
     "macd_abs_score": 57.696953037823775,
     "momentum_score": 64.93110888293779,
-    "volatility_score": 47.891466719079894,
+    "volatility_score": 47.89146671907991,
     "volume_score": 50.0,
-    "technical_score": 52.849157861553934,
+    "technical_score": 52.84915786155395,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.01271720678874459,
+    "sentiment_pos": 0.030449999999999998,
+    "sentiment_neg": 0.02405,
+    "sentiment_neu": 0.9455,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 50.64
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.10654441985456849,
@@ -6325,9 +6333,9 @@
     "quality_score": 75.50787600000001,
     "growth_score": 68.625,
     "safety_score": 63.23725,
-    "trend_score": 45.9717728428554,
+    "trend_score": 45.971772842855415,
     "momentum_score": 64.93110888293779,
-    "volatility_score": 47.891466719079894,
+    "volatility_score": 47.89146671907991,
     "volume_score": 50.0,
     "analyst_score": 53.174865633891876,
     "pe_score": 78.66446785714285,
@@ -6344,16 +6352,16 @@
     "current_ratio_score": 64.228,
     "earnings_visibility": 68.9049314,
     "valuation_margin": 82.07366831071428,
-    "catalyst_timeline": 53.5567747359685,
+    "catalyst_timeline": 53.55677473596851,
     "downside_control": 58.32630750786198,
-    "composite_score": 69.53337716541392,
+    "composite_score": 69.52948812011549,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 73.72911972559524,
-    "technical_score": 52.849157861553934,
-    "sentiment_score": 50.0,
+    "technical_score": 52.84915786155395,
+    "sentiment_score": 50.64,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Communication Services",
     "industry": "Interactive Media & Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Match Group price target lowered to $34 from $35 at Truist",
+      "url": "https://finance.yahoo.com/news/match-group-price-target-lowered-144108885.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Match Group Q4 Earnings & Revenues Beat Estimates, Both Increase Y/Y",
+      "url": "/news/299917/match-group-q4-earnings-revenues-beat-estimates-both-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Rotation out of Tech Stocks Weighs on the Broader Market",
+      "url": "https://finance.yahoo.com/m/53c7bb8e-05f9-319a-a276-65ec476a457b/rotation-out-of-tech-stocks.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Mixed on Sector Rotation out of Tech",
+      "url": "https://finance.yahoo.com/m/d2e885bd-e047-3deb-9c46-4d88220b392d/stocks-mixed-on-sector.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MTCH Q4 Deep Dive: Product Revitalization and Hinge Expansion Define Outlook",
+      "url": "/news/298826/mtch-q4-deep-dive-product-revitalization-and-hinge-expansion-define-outlook",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Match Group Inc (MTCH) Q4 2025 Earnings Call Highlights: Strong Cash Flow and Strategic ...",
+      "url": "https://finance.yahoo.com/news/match-group-inc-mtch-q4-050137521.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Wall Street steadies in mixed trading as gold rises back above $5,000",
+      "url": "https://finance.yahoo.com/news/asia-shares-mixed-wall-street-040948016.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Match Group Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/a1c7dddc-b9b1-3f15-87e9-74698f6819f3/match-group-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Compared to Estimates, Match Group (MTCH) Q4 Earnings: A Look at Key Metrics",
+      "url": "/news/298451/compared-to-estimates-match-group-mtch-q4-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Match Group (MTCH) Q4 2025 Earnings Transcript",
+      "url": "/news/298343/match-group-mtch-q4-2025-earnings-transcript",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Match Group (MTCH) Surpasses Q4 Earnings and Revenue Estimates",
+      "url": "/news/298287/match-group-mtch-surpasses-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Match Group: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/match-group-q4-earnings-snapshot-215223621.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Match Group's (NASDAQ:MTCH) Q4 CY2025 Sales Beat Estimates, Stock Soars",
+      "url": "/news/298198/match-groups-nasdaq-mtch-q4-cy2025-sales-beat-estimates-stock-soars",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Match Group forecasts upbeat revenue as turnaround gains traction",
+      "url": "https://finance.yahoo.com/news/match-group-forecasts-upbeat-revenue-211423806.html",
+      "publisher": "Reuters",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Match Group Announces Fourth Quarter and Full-Year Results",
+      "url": "/news/298114/match-group-announces-fourth-quarter-and-full-year-results",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Get Me Out: Traders Dump Software Stocks as AI Fears Take Hold",
+      "url": "https://finance.yahoo.com/news/traders-dump-software-stocks-ai-115502147.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Do Options Traders Know Something About MTCH Stock We Don't?",
+      "url": "/news/296081/do-options-traders-know-something-about-mtch-stock-we-dont",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What's in Store for These 4 Internet Stocks This Earnings Season?",
+      "url": "/news/295883/whats-in-store-for-these-4-internet-stocks-this-earnings-season",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "4 Software Stocks Set to Pull Off a Beat This Earnings Season",
+      "url": "/news/295528/4-software-stocks-set-to-pull-off-a-beat-this-earnings-season",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Match Group (MTCH) To Report Earnings Tomorrow: Here Is What To Expect",
+      "url": "/news/294878/match-group-mtch-to-report-earnings-tomorrow-here-is-what-to-expect",
+      "publisher": "StockStory",
+      "date": "2026-02-01",
+      "sentiment": "neutral"
+    }
+  ]
 }

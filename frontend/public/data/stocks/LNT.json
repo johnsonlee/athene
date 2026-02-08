@@ -6279,8 +6279,8 @@
     "close": 66.69000244140625,
     "sma_20": 66.26602287292481,
     "sma_50": 65.58207122802735,
-    "sma_200": 63.78684545516969,
-    "trend_alignment": 0.553689224546409,
+    "sma_200": 63.78684545516968,
+    "trend_alignment": 0.5536892245464091,
     "rsi": 56.657669238600064,
     "rsi_score": 0.13315338477200128,
     "macd_histogram": 0.04858904636629713,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 68.69469529288106,
     "stoch_d": 70.96274123894614,
-    "trend_score": 55.3689224546409,
+    "trend_score": 55.36892245464091,
     "rsi_abs_score": 73.83963153297995,
     "macd_abs_score": 53.64290332790041,
     "momentum_score": 63.74126743044018,
@@ -6306,7 +6306,15 @@
     "technical_score": 61.968729748696944,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.22138764317371118,
+    "sentiment_pos": 0.1871,
+    "sentiment_neg": 0.022350000000000002,
+    "sentiment_neu": 0.79055,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 61.07
+  },
   "analyst": {
     "revision_momentum": 0.4,
     "target_upside": 0.07962213225371124,
@@ -6325,7 +6333,7 @@
     "quality_score": 65.47566071428571,
     "growth_score": 59.9,
     "safety_score": 27.82840625,
-    "trend_score": 55.3689224546409,
+    "trend_score": 55.36892245464091,
     "momentum_score": 63.74126743044018,
     "volatility_score": 81.17836391586306,
     "volume_score": 50.0,
@@ -6344,16 +6352,16 @@
     "current_ratio_score": 34.5,
     "earnings_visibility": 59.252349107142855,
     "valuation_margin": 52.89639221249999,
-    "catalyst_timeline": 60.03870184950675,
+    "catalyst_timeline": 60.03870184950676,
     "downside_control": 51.435015524879454,
-    "composite_score": 56.60114573560446,
+    "composite_score": 56.597256690306025,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 53.76703964136905,
     "technical_score": 61.968729748696944,
-    "sentiment_score": 50.0,
+    "sentiment_score": 61.07,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Utilities",
     "industry": "Electric Utilities"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Xcel Energy Q4 Earnings and Revenues Lag Estimates, Expenses Rise",
+      "url": "/news/301833/xcel-energy-q4-earnings-and-revenues-lag-estimates-expenses-rise",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "CMS Energy Q4 Earnings Surpass Estimates, Revenues Increase Y/Y",
+      "url": "/news/301513/cms-energy-q4-earnings-surpass-estimates-revenues-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Alliant Energy Corporation (LNT): A Bull Case Theory",
+      "url": "/news/299803/alliant-energy-corporation-lnt-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "T Rowe Price Equity Income Fund's Strategic Moves: Spotlight on Alliant Energy Corp",
+      "url": "https://finance.yahoo.com/news/t-rowe-price-equity-income-210020176.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Zacks Industry Outlook Highlights NextEra, Ameren, Alliant Energy and Pinnacle West Capital",
+      "url": "/news/289508/zacks-industry-outlook-highlights-nextera-ameren-alliant-energy-and-pinnacle-west-capital",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "NextEra Energy's Q4 Earnings Surpass Estimates, Revenues Lag",
+      "url": "/news/288684/nextera-energys-q4-earnings-surpass-estimates-revenues-lag",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "4 Utility Stocks to Buy From the Flourishing Electric Power Industry",
+      "url": "/news/288338/4-utility-stocks-to-buy-from-the-flourishing-electric-power-industry",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How CMS Is Positioned for Growth on Stable Utilities and Renewables",
+      "url": "/news/287131/how-cms-is-positioned-for-growth-on-stable-utilities-and-renewables",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "NextEra Energy to Report Q4 Earnings: Buy, Sell or Hold the Stock?",
+      "url": "/news/285529/nextera-energy-to-report-q4-earnings-buy-sell-or-hold-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Alliant Energy Corporation Announces Fourth Quarter and Year-End 2025 Earnings Release and Conference Call",
+      "url": "https://www.businesswire.com/news/home/20260120506633/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's What to Expect From Alliant Energy's Next Earnings Report",
+      "url": "https://finance.yahoo.com/m/fb2bb3bf-a99b-371e-8351-d7108fbb5e33/here%27s-what-to-expect-from.html",
+      "publisher": "Barchart",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Southern Company's Stability Makes It a Wise Hold Right Now",
+      "url": "/news/280230/southern-companys-stability-makes-it-a-wise-hold-right-now",
+      "publisher": "Zacks",
+      "date": "2026-01-19",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Alliant Energy Corporation Declares Quarterly Common Stock Dividend",
+      "url": "https://www.businesswire.com/news/home/20260112774056/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-12",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Manu Asthana Appointed to Alliant Energy Board of Directors",
+      "url": "https://www.businesswire.com/news/home/20260108771154/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "ED Benefits From Long-Term Capital Spending and Renewable Growth",
+      "url": "/news/270699/ed-benefits-from-long-term-capital-spending-and-renewable-growth",
+      "publisher": "Zacks",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Alliant Energy Stock: Is LNT Underperforming the Utilities Sector?",
+      "url": "https://finance.yahoo.com/m/72d922a5-1826-3f53-b765-dab52a565029/alliant-energy-stock%3A-is-lnt.html",
+      "publisher": "Barchart",
+      "date": "2025-12-15",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Nordex secures wind turbine supply contracts from Alliant Energy in US",
+      "url": "https://finance.yahoo.com/m/d0037328-716c-3781-972e-2983cc0f29f5/nordex-secures-wind-turbine.html",
+      "publisher": "Power Technology",
+      "date": "2025-12-10",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Alliant Energy Corporation",
+      "url": "https://finance.yahoo.com/m/0cefb4f3-8c3a-3ed4-9ca2-d62a73ad1a1f/analyst-report%3A-alliant.html",
+      "publisher": "Morningstar Research",
+      "date": "2025-12-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Southern Company Pledges Steady Customer Rates Through 2027",
+      "url": "/news/244632/southern-company-pledges-steady-customer-rates-through-2027",
+      "publisher": "Zacks",
+      "date": "2025-12-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Wisconsin Power and Light Company Prices Public Offering of Debentures",
+      "url": "https://www.businesswire.com/news/home/20251202882984/en",
+      "publisher": "Business Wire",
+      "date": "2025-12-02",
+      "sentiment": "neutral"
+    }
+  ]
 }

@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 80.92615748588634,
-    "stoch_d": 77.26066118575376,
+    "stoch_d": 77.26066118575375,
     "trend_score": 73.81557142921505,
     "rsi_abs_score": 61.653083793363535,
     "macd_abs_score": 49.535072231584955,
@@ -6306,7 +6306,15 @@
     "technical_score": 62.284857356838906,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.16011935477238204,
+    "sentiment_pos": 0.09855,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.90145,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 58.01
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": -0.006542282529682654,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 24.89122290588235,
     "catalyst_timeline": 59.71617096646115,
     "downside_control": 71.03805001824908,
-    "composite_score": 62.331276907454296,
+    "composite_score": 62.32738786215586,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 68.53098052156864,
     "technical_score": 62.284857356838906,
-    "sentiment_score": 50.0,
+    "sentiment_score": 58.01,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Staples",
     "industry": "Soft Drinks & Non-alcoholic Beverages"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Newell Q4 Earnings Meet Estimates, Core Sales Decline 4.1% Y/Y",
+      "url": "/news/303219/newell-q4-earnings-meet-estimates-core-sales-decline-41-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Coca-Cola Pre-Q4 Earnings: Does It Offer a Buying Opportunity Now?",
+      "url": "/news/303095/coca-cola-pre-q4-earnings-does-it-offer-a-buying-opportunity-now",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PepsiCo's Productivity Strategy: A Catalyst for EPS Expansion?",
+      "url": "/news/301967/pepsicos-productivity-strategy-a-catalyst-for-eps-expansion",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Will Strategic Pricing Shield Monster Beverage From Rising Costs?",
+      "url": "/news/299856/will-strategic-pricing-shield-monster-beverage-from-rising-costs",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PepsiCo Q4 Earnings & Revenues Beat on Strength Across Segments",
+      "url": "/news/299764/pepsico-q4-earnings-revenues-beat-on-strength-across-segments",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Coca-Cola's All-Weather Strategy: Built for Volatility or Peak Cycle?",
+      "url": "/news/299343/coca-colas-all-weather-strategy-built-for-volatility-or-peak-cycle",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "You'll Never Guess the Top-Performing Stock of the 21st Century",
+      "url": "/news/298202/youll-never-guess-the-top-performing-stock-of-the-21st-century",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "4 Consumer Staple Picks With the Right Setup to Top Earnings Estimates",
+      "url": "/news/295698/4-consumer-staple-picks-with-the-right-setup-to-top-earnings-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "If You Invested $1000 in Monster Beverage a Decade Ago, This is How Much It'd Be Worth Now",
+      "url": "/news/295510/if-you-invested-1000-in-monster-beverage-a-decade-ago-this-is-how-much-itd-be-worth-now",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Corteva's Q4 Earnings Around the Corner: What Awaits the Stock?",
+      "url": "/news/293721/cortevas-q4-earnings-around-the-corner-what-awaits-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Will Monster Beverage (MNST) Beat Estimates Again in Its Next Earnings Report?",
+      "url": "/news/292356/will-monster-beverage-mnst-beat-estimates-again-in-its-next-earnings-report",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Investors Need to Take Advantage of These 2 Consumer Staples Stocks Now",
+      "url": "/news/291733/why-investors-need-to-take-advantage-of-these-2-consumer-staples-stocks-now",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Are Wall Street Analysts Predicting Monster Beverage Stock Will Climb or Sink?",
+      "url": "https://finance.yahoo.com/m/7b69e181-1301-3c51-9293-d0b9420c3880/are-wall-street-analysts.html",
+      "publisher": "Barchart",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is Volume Growth the Next Real Test for Coca-Cola's Strategy?",
+      "url": "/news/288909/is-volume-growth-the-next-real-test-for-coca-colas-strategy",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why Monster Beverage (MNST) is a Strong Momentum Stock",
+      "url": "/news/288534/heres-why-monster-beverage-mnst-is-a-strong-momentum-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Warren Buffett Left With 65% in 6 Stocks: 4 to Buy Now and Hold Forever",
+      "url": "https://finance.yahoo.com/m/dc867763-e01d-3615-8aab-c70aa53bbf45/warren-buffett-left-with-65%25.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Calls of the Day: Wynn, Cummins, Boston Scientific, Applovin and Monster Beverage",
+      "url": "https://www.youtube.com/watch?v=rCK8b5BCLXE",
+      "publisher": "CNBC TV",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Can Celsius Holdings' International Momentum Support Long-Term Growth?",
+      "url": "/news/287004/can-celsius-holdings-international-momentum-support-long-term-growth",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Coca-Cola vs. Monster Beverage: Which Stock Stays Ahead of the Curve?",
+      "url": "/news/284277/coca-cola-vs-monster-beverage-which-stock-stays-ahead-of-the-curve",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Zacks Analyst Blog Highlights Agnico Eagle Mines, Monster Beverage, General Motors, Kewaunee Scientific and CSP",
+      "url": "/news/283457/the-zacks-analyst-blog-highlights-agnico-eagle-mines-monster-beverage-general-motors-kewaunee-scientific-and-csp",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    }
+  ]
 }

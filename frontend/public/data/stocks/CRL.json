@@ -6306,7 +6306,15 @@
     "technical_score": 45.02375200184975,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.08875774092949373,
+    "sentiment_pos": 0.066,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.9339999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 54.44
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.13630357803498752,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 59.533224849999996,
     "catalyst_timeline": 50.17195604780814,
     "downside_control": 47.463946208414185,
-    "composite_score": 41.15560603317323,
+    "composite_score": 41.15171698787479,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 41.23347337788607,
     "technical_score": 45.02375200184975,
-    "sentiment_score": 50.0,
+    "sentiment_score": 54.44,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Life Sciences Tools & Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Revvity (RVTY) Q4 Earnings and Revenues Beat Estimates",
+      "url": "/news/295337/revvity-rvty-q4-earnings-and-revenues-beat-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "HCA Healthcare (HCA) Beats Q4 Earnings Estimates",
+      "url": "/news/288273/hca-healthcare-hca-beats-q4-earnings-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Charles River Laboratories Schedules Fourth-Quarter 2025 Earnings and 2026 Guidance Release and Conference Call",
+      "url": "https://www.businesswire.com/news/home/20260121513328/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Charles River Enters Manufacturing Collaboration with Gazi University",
+      "url": "https://www.businesswire.com/news/home/20260121488189/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Organon Secures FDA Approval Extending NEXPLANON Use to Five Years",
+      "url": "/news/281317/organon-secures-fda-approval-extending-nexplanon-use-to-five-years",
+      "publisher": "Zacks",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why You Should Retain CLOV Stock in Your Portfolio for Now",
+      "url": "/news/281309/heres-why-you-should-retain-clov-stock-in-your-portfolio-for-now",
+      "publisher": "Zacks",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What to Expect From Charles River Laboratories Next Quarterly Earnings Report",
+      "url": "https://finance.yahoo.com/m/564ab204-4708-3eb3-a4d6-0c1f1bf6a2e6/what-to-expect-from-charles.html",
+      "publisher": "Barchart",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Charles River Laboratories (CRL) is a Great Momentum Stock to Buy",
+      "url": "/news/277923/heres-why-charles-river-laboratories-crl-is-a-great-momentum-stock-to-buy",
+      "publisher": "Zacks",
+      "date": "2026-01-15",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Phibro Animal Health Stock Climbs 90.9% in a Year: What's Driving It?",
+      "url": "/news/277655/phibro-animal-health-stock-climbs-909-in-a-year-whats-driving-it",
+      "publisher": "Zacks",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Charles River Laboratories Provides Business Updates",
+      "url": "https://www.businesswire.com/news/home/20260112549794/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-12",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "RVTY & Eli Lilly Partner to Expand Access to AI Drug Discovery Models",
+      "url": "/news/273688/rvty-eli-lilly-partner-to-expand-access-to-ai-drug-discovery-models",
+      "publisher": "Zacks",
+      "date": "2026-01-12",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Tempus AI Stock Surges 82.4% in a Year: What's Driving It?",
+      "url": "/news/271911/tempus-ai-stock-surges-824-in-a-year-whats-driving-it",
+      "publisher": "Zacks",
+      "date": "2026-01-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Charles River Laboratories Announces Planned Retirement of James C. Foster and CEO Succession Plan",
+      "url": "https://www.businesswire.com/news/home/20260108366069/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What Makes Charles River (CRL) a New Buy Stock",
+      "url": "/news/268619/what-makes-charles-river-crl-a-new-buy-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Charles River Laboratories International, Inc. (CRL) Hit a 52 Week High, Can the Run Continue?",
+      "url": "/news/268371/charles-river-laboratories-international-inc-crl-hit-a-52-week-high-can-the-run-continue",
+      "publisher": "Zacks",
+      "date": "2026-01-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Charles River Laboratories (CRL) Stock Is Trading Up Today",
+      "url": "/news/260358/why-charles-river-laboratories-crl-stock-is-trading-up-today",
+      "publisher": "StockStory",
+      "date": "2025-12-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Should You Continue to Hold CRL Stock in Your Portfolio for Now?",
+      "url": "/news/257369/should-you-continue-to-hold-crl-stock-in-your-portfolio-for-now",
+      "publisher": "Zacks",
+      "date": "2025-12-18",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is Charles River Laboratories Stock Underperforming the Dow?",
+      "url": "https://finance.yahoo.com/m/59885e4b-214c-37c1-82aa-4889060052e9/is-charles-river-laboratories.html",
+      "publisher": "Barchart",
+      "date": "2025-12-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Fall Ahead of US November Payroll Report",
+      "url": "https://finance.yahoo.com/m/b3bd63db-fe58-37e0-babc-f3dd9681b2bc/stocks-fall-ahead-of-us.html",
+      "publisher": "Barchart",
+      "date": "2025-12-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Charles River Extends Commitment to Advanced Therapy Developers with Second Incubator Program Cohort",
+      "url": "https://www.businesswire.com/news/home/20251211009064/en/",
+      "publisher": "Business Wire",
+      "date": "2025-12-11",
+      "sentiment": "positive"
+    }
+  ]
 }

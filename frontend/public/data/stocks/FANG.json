@@ -6279,8 +6279,8 @@
     "close": 166.92999267578125,
     "sma_20": 157.56250076293944,
     "sma_50": 154.0620007324219,
-    "sma_200": 143.98953117370596,
-    "trend_alignment": 0.6974859072289046,
+    "sma_200": 143.98953117370598,
+    "trend_alignment": 0.6974859072289045,
     "rsi": 63.17908708494312,
     "rsi_score": 0.2635817416988624,
     "macd_histogram": 1.0733909170782363,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 84.38497812155748,
     "stoch_d": 84.92912155598316,
-    "trend_score": 69.74859072289046,
+    "trend_score": 69.74859072289044,
     "rsi_abs_score": 69.27463904053981,
     "macd_abs_score": 67.1452791365332,
     "momentum_score": 68.20995908853651,
@@ -6306,7 +6306,15 @@
     "technical_score": 59.81967452552627,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.24271107882590753,
+    "sentiment_pos": 0.1698,
+    "sentiment_neg": 0.0117,
+    "sentiment_neu": 0.8185,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 62.14
+  },
   "analyst": {
     "revision_momentum": null,
     "target_upside": 0.06032468699454857,
@@ -6325,7 +6333,7 @@
     "quality_score": 70.85768571428571,
     "growth_score": 75.0,
     "safety_score": 36.626999999999995,
-    "trend_score": 69.74859072289046,
+    "trend_score": 69.74859072289044,
     "momentum_score": 68.20995908853651,
     "volatility_score": 42.160547910490905,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 61.640485866666666,
     "catalyst_timeline": 64.00558958786408,
     "downside_control": 39.30713218657364,
-    "composite_score": 61.68734348271525,
+    "composite_score": 61.68345443741681,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 63.50144393650793,
     "technical_score": 59.81967452552627,
-    "sentiment_score": 50.0,
+    "sentiment_score": 62.14,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Energy",
     "industry": "Oil & Gas Exploration & Production"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Diamondback Energy (FANG) Ascends But Remains Behind Market: Some Facts to Note",
+      "url": "/news/303455/diamondback-energy-fang-ascends-but-remains-behind-market-some-facts-to-note",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Verde Clean Fuels, Inc. Announces Suspension of Development of Permian Basin Project",
+      "url": "https://www.businesswire.com/news/home/20260206057403/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Equinor Divests Argentina Onshore Assets to Vista Energy for $1.1B",
+      "url": "/news/299772/equinor-divests-argentina-onshore-assets-to-vista-energy-for-11b",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Devon, Coterra Merger Redraws the 2026 U.S. Shale Playbook",
+      "url": "/news/297556/devon-coterra-merger-redraws-the-2026-us-shale-playbook",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Devon Energy CEO: $26 billion Coterra merger marries two crown jewels as merger mania returns to the oilfield",
+      "url": "https://finance.yahoo.com/news/devon-energy-ceo-stars-align-212036746.html",
+      "publisher": "Fortune",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks Gain on US Manufacturing Strength",
+      "url": "https://finance.yahoo.com/m/fd077afd-6eb7-36bd-8cc3-d39c206200ed/stocks-gain-on-us.html",
+      "publisher": "Barchart",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stock Indexes Climb as Chip Makers and AI Infrastructure Stocks Rebound",
+      "url": "https://finance.yahoo.com/m/1374d656-6f72-314c-a8fc-52c418638b2c/stock-indexes-climb-as-chip.html",
+      "publisher": "Barchart",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Devon Agrees to Buy Oil Rival Coterra for $21.4 Billion in Stock",
+      "url": "https://finance.yahoo.com/news/devon-agrees-buy-oil-rival-132254969.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Raises Diamondback Energy (FANG) Price Target to $218",
+      "url": "/news/295175/analyst-raises-diamondback-energy-fang-price-target-to-218",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Diamondback Energy (FANG) Increases Despite Market Slip: Here's What You Need to Know",
+      "url": "/news/292865/diamondback-energy-fang-increases-despite-market-slip-heres-what-you-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Concerns Over AI Spending Weigh on Stocks",
+      "url": "https://finance.yahoo.com/m/847e6871-a324-397e-a746-c6933beb4d18/concerns-over-ai-spending.html",
+      "publisher": "Barchart",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Market Today: Dow Rises As Microsoft Dives On Earnings; Meta, Tesla Rally (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/ce704e57-e7b0-34b2-87ce-0e6fdacd4d2e/stock-market-today%3A-dow-rises.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Morgan Stanley Lowered Diamondback Energy, Inc. (FANG) Target to $171 And Maintained Overweight Rating",
+      "url": "/news/291494/morgan-stanley-lowered-diamondback-energy-inc-fang-target-to-171-and-maintained-overweight-rating",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Will Diamondback Energy Raise Its Dividend Next Month? If So, FANG Stock Could Rise",
+      "url": "https://finance.yahoo.com/m/f08e48d4-c718-3087-899b-53123bed755c/will-diamondback-energy-raise.html",
+      "publisher": "Barchart",
+      "date": "2026-01-25",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Diamondback Energy (FANG) Exceeds Market Returns: Some Facts to Consider",
+      "url": "/news/285926/diamondback-energy-fang-exceeds-market-returns-some-facts-to-consider",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stock Market News for Jan 22, 2026",
+      "url": "/news/284015/stock-market-news-for-jan-22-2026",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "1 Stock I'd Buy Before Vitesse Energy in 2026",
+      "url": "/news/283124/1-stock-id-buy-before-vitesse-energy-in-2026",
+      "publisher": "Motley Fool",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Diamondback Energy Earnings Preview: What to Expect",
+      "url": "https://finance.yahoo.com/m/4dcd3acd-1aea-39e2-a918-d694e045098f/diamondback-energy-earnings.html",
+      "publisher": "Barchart",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Coterra and Devon Explore Merger to Create Major U.S. Shale Player",
+      "url": "/news/280366/coterra-and-devon-explore-merger-to-create-major-us-shale-player",
+      "publisher": "Zacks",
+      "date": "2026-01-19",
+      "sentiment": "positive"
+    },
+    {
+      "title": "How ExxonMobil Keeps Rewarding Shareholders Across Various Oil Cycles",
+      "url": "/news/280246/how-exxonmobil-keeps-rewarding-shareholders-across-various-oil-cycles",
+      "publisher": "Zacks",
+      "date": "2026-01-19",
+      "sentiment": "positive"
+    }
+  ]
 }

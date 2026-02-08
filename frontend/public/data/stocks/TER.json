@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 300.1099853515625,
     "sma_20": 247.04399871826175,
-    "sma_50": 218.42059906005858,
-    "sma_200": 139.8737948608398,
-    "trend_alignment": 0.9655235810664833,
+    "sma_50": 218.42059906005863,
+    "sma_200": 139.87379486083984,
+    "trend_alignment": 0.9655235810664831,
     "rsi": 76.434653479913,
     "rsi_score": 0.5286930695982599,
     "macd_histogram": 5.089561699096375,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 88.12434185015162,
     "stoch_d": 80.34065777794723,
-    "trend_score": 96.55235810664833,
+    "trend_score": 96.55235810664831,
     "rsi_abs_score": 37.13069304017401,
     "macd_abs_score": 80.0,
     "momentum_score": 58.565346520087004,
     "volatility_score": 19.32798447482064,
     "volume_score": 50.0,
-    "technical_score": 60.40090828298472,
+    "technical_score": 60.400908282984716,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.24704736148698775,
+    "sentiment_pos": 0.1376,
+    "sentiment_neg": 0.0124,
+    "sentiment_neu": 0.84995,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 62.35
+  },
   "analyst": {
     "revision_momentum": 0.13333333333333333,
     "target_upside": 0.04961514111492448,
@@ -6325,7 +6333,7 @@
     "quality_score": 75.67599999999999,
     "growth_score": 91.0,
     "safety_score": 67.30768749999999,
-    "trend_score": 96.55235810664833,
+    "trend_score": 96.55235810664831,
     "momentum_score": 58.565346520087004,
     "volatility_score": 19.32798447482064,
     "volume_score": 50.0,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 29.578496869523804,
     "catalyst_timeline": 68.58291995352687,
     "downside_control": 46.32935079622309,
-    "composite_score": 59.24646765170737,
+    "composite_score": 59.242578606408934,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 67.0897515579365,
-    "technical_score": 60.40090828298472,
-    "sentiment_score": 50.0,
+    "technical_score": 60.400908282984716,
+    "sentiment_score": 62.35,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 121,
-    "percentile": 0.7687861271676301,
+    "rank": 120,
+    "percentile": 0.7707129094412332,
     "tier": "buy",
     "tier_raw": "buy",
     "tier_label": "Buy",
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Semiconductor Materials & Equipment"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Lumentum, Woodward, And Teradyne Are Among the Top 10 Large-Cap Gainers Last Week (Feb. 2-Feb. 6): Are the Others in Your Portfolio?",
+      "url": "/news/303782/lumentum-woodward-and-teradyne-are-among-the-top-10-large-cap-gainers-last-week-feb-2-feb-6-are-the-others-in-your-portfolio",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stifel Sees Upside for Teradyne (TER) from AI and Semi Test Share Gains",
+      "url": "/news/303597/stifel-sees-upside-for-teradyne-ter-from-ai-and-semi-test-share-gains",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Tech stocks have been shaky, but these 20 companies could still see rocketing sales growth",
+      "url": "https://www.marketwatch.com/story/tech-stocks-have-been-shaky-but-these-20-companies-could-still-see-rocketing-sales-growth-148195c9?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Teradyne (TER) Rockets 24% as 11 Analysts Hike PT After Strong Earnings",
+      "url": "/news/303520/teradyne-ter-rockets-24-as-11-analysts-hike-pt-after-strong-earnings",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Teradyne, Inc.",
+      "url": "https://finance.yahoo.com/m/e1290e19-9675-3dc5-a319-930aff5dc927/analyst-report%3A-teradyne%2C-inc..html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Earnings Estimates Rising for Teradyne (TER): Will It Gain?",
+      "url": "/news/303165/earnings-estimates-rising-for-teradyne-ter-will-it-gain",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Are Wall Street Analysts Predicting Teradyne Stock Will Climb or Sink?",
+      "url": "https://finance.yahoo.com/m/28224c60-7028-3e15-99d8-2093b947c6cb/are-wall-street-analysts.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Zacks Investment Ideas feature highlights: Alphabet, Amazon, AMD, Nvidia, Simon Property and Teradyne",
+      "url": "/news/302554/zacks-investment-ideas-feature-highlights-alphabet-amazon-amd-nvidia-simon-property-and-teradyne",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "1 Cash-Heavy Stock to Keep an Eye On and 2 We Avoid",
+      "url": "/news/302658/1-cash-heavy-stock-to-keep-an-eye-on-and-2-we-avoid",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Top Stock Reports for SAP, McDonald's & Shopify",
+      "url": "/news/302210/top-stock-reports-for-sap-mcdonalds-shopify",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "This Robotics Stock Is Up 141% Over the Past Year. Can It Go Higher in 2026?",
+      "url": "https://finance.yahoo.com/m/849d91f0-be0c-32a3-b77d-791872ec0a28/this-robotics-stock-is-up.html",
+      "publisher": "Barchart",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ROK Q1 Earnings Surpass Estimates, Increase Y/Y on Higher Volumes",
+      "url": "/news/301915/rok-q1-earnings-surpass-estimates-increase-yy-on-higher-volumes",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Fortive Q4 Earnings & Sales Surpass Estimates, Increase Y/Y, Stock Up",
+      "url": "/news/301886/fortive-q4-earnings-sales-surpass-estimates-increase-yy-stock-up",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Flex's Q3 Earnings & Revenues Surpass Estimates, Increase Y/Y",
+      "url": "/news/301875/flexs-q3-earnings-revenues-surpass-estimates-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Teradyne (TER) Upgraded to Strong Buy: Here's What You Should Know",
+      "url": "/news/301860/teradyne-ter-upgraded-to-strong-buy-heres-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "How to Find Strong Computer and Technology Stocks Slated for Positive Earnings Surprises",
+      "url": "/news/301428/how-to-find-strong-computer-and-technology-stocks-slated-for-positive-earnings-surprises",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cathie Wood Pours Millions Into AMD, Tesla on Dip Buying Spree",
+      "url": "https://finance.yahoo.com/news/cathie-wood-pours-millions-amd-134038444.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "If You Invested $1000 in Teradyne 10 Years Ago, This Is How Much You'd Have Now",
+      "url": "/news/301394/if-you-invested-1000-in-teradyne-10-years-ago-this-is-how-much-youd-have-now",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Intriguing Stocks to Watch After Q4 Earnings: AMD, SPG, TER",
+      "url": "/news/300621/3-intriguing-stocks-to-watch-after-q4-earnings-amd-spg-ter",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cirrus Logic Q3 Earnings & Revenues Surpass Estimates, Rise Y/Y",
+      "url": "/news/299736/cirrus-logic-q3-earnings-revenues-surpass-estimates-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    }
+  ]
 }

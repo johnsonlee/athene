@@ -6279,8 +6279,8 @@
     "close": 899.5499877929688,
     "sma_20": 886.8559997558592,
     "sma_50": 851.2403967285154,
-    "sma_200": 836.7094366455077,
-    "trend_alignment": 0.6026881514196513,
+    "sma_200": 836.7094366455078,
+    "trend_alignment": 0.602688151419651,
     "rsi": 56.04779635311606,
     "rsi_score": 0.12095592706232125,
     "macd_histogram": -1.3204355687409919,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 61.302663985259045,
     "stoch_d": 49.878206431799356,
-    "trend_score": 60.26881514196513,
+    "trend_score": 60.268815141965106,
     "rsi_abs_score": 74.26654255281876,
     "macd_abs_score": 43.83028851464759,
     "momentum_score": 59.04841553373318,
@@ -6306,7 +6306,15 @@
     "technical_score": 50.10391789517001,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.24940506560146639,
+    "sentiment_pos": 0.21185,
+    "sentiment_neg": 0.0712,
+    "sentiment_neu": 0.7169000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 62.47
+  },
   "analyst": {
     "revision_momentum": 0.2,
     "target_upside": 0.07831693624590079,
@@ -6325,7 +6333,7 @@
     "quality_score": 77.9427,
     "growth_score": 42.075,
     "safety_score": 36.528080552061624,
-    "trend_score": 60.26881514196513,
+    "trend_score": 60.268815141965106,
     "momentum_score": 59.04841553373318,
     "volatility_score": 21.5437434623026,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 54.44947416666666,
     "catalyst_timeline": 56.0431569828608,
     "downside_control": 32.73477360215463,
-    "composite_score": 51.565501687354526,
+    "composite_score": 51.56161264205609,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 56.18423791596788,
     "technical_score": 50.10391789517001,
-    "sentiment_score": 50.0,
+    "sentiment_score": 62.47,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Trading Companies & Distributors"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Jacobs Q1 Earnings & Revenues Top, Both Up Y/Y, FY26 View Raised",
+      "url": "/news/299329/jacobs-q1-earnings-revenues-top-both-up-yy-fy26-view-raised",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "United Rentals Names Alexander Taussig to Board of Directors",
+      "url": "https://www.businesswire.com/news/home/20260204853612/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The 5 Most Interesting Analyst Questions From United Rentals's Q4 Earnings Call",
+      "url": "/news/298669/the-5-most-interesting-analyst-questions-from-united-rentalss-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jim Cramer Says \"I Don't Think United Rentals Is a Lost Cause\"",
+      "url": "/news/297739/jim-cramer-says-i-dont-think-united-rentals-is-a-lost-cause",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Why United Rentals Stock Plunged by Nearly 15% This Week",
+      "url": "/news/294217/why-united-rentals-stock-plunged-by-nearly-15-this-week",
+      "publisher": "Motley Fool",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stock Index Futures Slip as Trump Picks Warsh for Fed Chair",
+      "url": "https://finance.yahoo.com/m/d587aa7a-b235-316c-86fa-29ec9a159dcc/stock-index-futures-slip-as.html",
+      "publisher": "Barchart",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "United Rentals Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/486f75b5-77e8-3636-af89-8eee54eee081/united-rentals-q4-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Microsoft Rout Weighs on the Broader Market",
+      "url": "https://finance.yahoo.com/m/57cec5ad-0d77-3a09-b508-a7dd475295fe/microsoft-rout-weighs-on-the.html",
+      "publisher": "Barchart",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "United Rentals Inc (URI) Q4 2025 Earnings Call Highlights: Record Revenue and Strategic Growth Plans",
+      "url": "https://finance.yahoo.com/news/united-rentals-inc-uri-q4-210515574.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "URI Q4 Deep Dive: Large Project Growth Offset by Margin Pressures and Mixed Demand",
+      "url": "/news/292918/uri-q4-deep-dive-large-project-growth-offset-by-margin-pressures-and-mixed-demand",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Why United Rentals Stock Is Plummeting Today",
+      "url": "/news/292342/why-united-rentals-stock-is-plummeting-today",
+      "publisher": "Motley Fool",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Microsoft Stock's Worst Day Since March 2020, Bitcoin Plunges 5%: What's Moving Markets Thursday?",
+      "url": "/news/292290/microsoft-stocks-worst-day-since-march-2020-bitcoin-plunges-5-whats-moving-markets-thursday",
+      "publisher": "Benzinga",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Why United Rentals (URI) Stock Is Trading Lower Today",
+      "url": "/news/292246/why-united-rentals-uri-stock-is-trading-lower-today",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "United Rentals' Q4 Earnings & Revenues Miss, Dividend Hiked by 10%",
+      "url": "/news/292220/united-rentals-q4-earnings-revenues-miss-dividend-hiked-by-10",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's What Key Metrics Tell Us About United Rentals (URI) Q4 Earnings",
+      "url": "/news/291021/heres-what-key-metrics-tell-us-about-united-rentals-uri-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "United Rentals (URI) Q4 Earnings and Revenues Lag Estimates",
+      "url": "/news/290897/united-rentals-uri-q4-earnings-and-revenues-lag-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "United Rentals (NYSE:URI) Misses Q4 CY2025 Sales Expectations, Stock Drops",
+      "url": "/news/290852/united-rentals-nyse-uri-misses-q4-cy2025-sales-expectations-stock-drops",
+      "publisher": "StockStory",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "United Rentals: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/united-rentals-q4-earnings-snapshot-213925890.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "United Rentals Increases Quarterly Cash Dividend",
+      "url": "https://www.businesswire.com/news/home/20260128789152/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "United Rentals Announces Fourth Quarter and Full-Year1 2025 Results, Introduces 2026 Outlook for Growth, and Announces Plan to Return Approximately $2 Billion to Shareholders in 2026 Supported by New $5 Billion Share Repurchase Program",
+      "url": "https://www.businesswire.com/news/home/20260128560444/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    }
+  ]
 }

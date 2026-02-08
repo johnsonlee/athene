@@ -6306,7 +6306,15 @@
     "technical_score": 60.88529165663537,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.30482897371765794,
+    "sentiment_pos": 0.20074999999999998,
+    "sentiment_neg": 0.010150000000000001,
+    "sentiment_neu": 0.7891,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 65.24
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.16586351624436493,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 64.37327098571429,
     "catalyst_timeline": 58.49770889479527,
     "downside_control": 60.994429981444995,
-    "composite_score": 64.1189490335392,
+    "composite_score": 64.11505998824077,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 64.93985035309333,
     "technical_score": 60.88529165663537,
-    "sentiment_score": 50.0,
+    "sentiment_score": 65.24,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Diversified Support Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Leidos, RegScale to improve digital security for Department of War and federal agencies",
+      "url": "/news/301118/leidos-regscale-to-improve-digital-security-for-department-of-war-and-federal-agencies",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Leidos and Trustible Launch Joint Initiative to Redefine AI Governance with Agents",
+      "url": "/news/299233/leidos-and-trustible-launch-joint-initiative-to-redefine-ai-governance-with-agents",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jack Henry (JKHY) Q2 Earnings and Revenues Top Estimates",
+      "url": "/news/298284/jack-henry-jkhy-q2-earnings-and-revenues-top-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is Delivery Volume Growth Showing Strong Adoption for Serve Robotics?",
+      "url": "/news/297409/is-delivery-volume-growth-showing-strong-adoption-for-serve-robotics",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Smart Money Is Chasing This Defense Tech Shift",
+      "url": "/news/295496/why-smart-money-is-chasing-this-defense-tech-shift",
+      "publisher": "PR Newswire",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Leidos to Buy ENTRUST for $2.4B Cash Deal, Aiming to Turbocharge Energy Growth by 2026",
+      "url": "https://finance.yahoo.com/m/d5faa8be-4e88-3914-a01b-a2fc99c08cfa/leidos-to-buy-entrust-for.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Deal Dispatch: Musk Merger Talk, LIV Golf Stakes, And A Flurry Of M&A From AI To Athleisure",
+      "url": "/news/294198/deal-dispatch-musk-merger-talk-liv-golf-stakes-and-a-flurry-of-ma-from-ai-to-athleisure",
+      "publisher": "Benzinga",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Leidos Expands Energy Infrastructure Presence With $2.4B ENTRUST Deal",
+      "url": "/news/293726/leidos-expands-energy-infrastructure-presence-with-24b-entrust-deal",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Trump's Race to Space Superiority: 2 Rocket Stocks Ready to Take Off in 2026",
+      "url": "/news/292133/trumps-race-to-space-superiority-2-rocket-stocks-ready-to-take-off-in-2026",
+      "publisher": "Motley Fool",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Leidos (LDOS) is a Top Momentum Stock for the Long-Term",
+      "url": "/news/291944/why-leidos-ldos-is-a-top-momentum-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is Trending Stock Leidos Holdings, Inc. (LDOS) a Buy Now?",
+      "url": "/news/291774/is-trending-stock-leidos-holdings-inc-ldos-a-buy-now",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Looking for Stocks with Positive Earnings Momentum? Check Out These 2 Computer and Technology Names",
+      "url": "/news/291734/looking-for-stocks-with-positive-earnings-momentum-check-out-these-2-computer-and-technology-names",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Wix.com (WIX) Soars 5.8%: Is Further Upside Left in the Stock?",
+      "url": "/news/291340/wixcom-wix-soars-58-is-further-upside-left-in-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Implied Volatility Surging for Leidos Stock Options",
+      "url": "/news/290451/implied-volatility-surging-for-leidos-stock-options",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Leidos (LDOS) is a Top Value Stock for the Long-Term",
+      "url": "/news/290210/why-leidos-ldos-is-a-top-value-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Leidos (LDOS) Stock Sinks As Market Gains: Here's Why",
+      "url": "/news/289205/leidos-ldos-stock-sinks-as-market-gains-heres-why",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Neuberger Berman Capital Solutions Exits Minority Investment in ENTRUST Solutions Group Through Sale to Leidos for $2.4 Billion",
+      "url": "/news/288917/neuberger-berman-capital-solutions-exits-minority-investment-in-entrust-solutions-group-through-sale-to-leidos-for-24-billion",
+      "publisher": "PR Newswire",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Leidos signs agreement to acquire ENTRUST Solutions in $2.4bn deal",
+      "url": "https://finance.yahoo.com/m/31fc176e-0d3d-352b-b497-3d4b7281cb98/leidos-signs-agreement-to.html",
+      "publisher": "Power Technology",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Market Minute 1-26-26- Gold Tops $5K as US Dollar Slides",
+      "url": "https://finance.yahoo.com/news/market-minute-1-26-26-141500380.html",
+      "publisher": "MoneyShow",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Next-Generation RF Systems Move to the Center of Global Defense Spending",
+      "url": "/news/286828/next-generation-rf-systems-move-to-the-center-of-global-defense-spending",
+      "publisher": "PR Newswire",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    }
+  ]
 }

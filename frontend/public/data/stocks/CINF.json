@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 172.64999389648438,
     "sma_20": 162.85149688720702,
-    "sma_50": 163.61983673095705,
+    "sma_50": 163.61983673095708,
     "sma_200": 153.9515171051025,
-    "trend_alignment": 0.6474601323084412,
+    "trend_alignment": 0.6474601323084411,
     "rsi": 72.32996716003406,
     "rsi_score": 0.4465993432006812,
     "macd_histogram": 1.6409401996538322,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 92.02352022604511,
     "stoch_d": 91.75798411994492,
-    "trend_score": 64.74601323084413,
+    "trend_score": 64.74601323084411,
     "rsi_abs_score": 47.476091951904635,
     "macd_abs_score": 71.75664863305198,
     "momentum_score": 59.61637029247831,
     "volatility_score": 60.28212064666241,
     "volume_score": 50.0,
-    "technical_score": 59.365139186329216,
+    "technical_score": 59.36513918632921,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.03722223868175303,
+    "sentiment_pos": 0.0267,
+    "sentiment_neg": 0.0239,
+    "sentiment_neu": 0.9494,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 48.14
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.013611352447147375,
@@ -6325,7 +6333,7 @@
     "quality_score": 68.09226785714286,
     "growth_score": 79.345,
     "safety_score": 53.43647700192963,
-    "trend_score": 64.74601323084413,
+    "trend_score": 64.74601323084411,
     "momentum_score": 59.61637029247831,
     "volatility_score": 60.28212064666241,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 52.37676919333333,
     "catalyst_timeline": 57.95069795267976,
     "downside_control": 60.177789647288805,
-    "composite_score": 62.1838922775901,
+    "composite_score": 62.18000323229166,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 64.88936675197323,
-    "technical_score": 59.365139186329216,
-    "sentiment_score": 50.0,
+    "technical_score": 59.36513918632921,
+    "sentiment_score": 48.14,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Property & Casualty Insurance"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Dow 50,000 sets table for inflation data, delayed January jobs report: What to watch this week",
+      "url": "https://finance.yahoo.com/news/dow-50000-sets-table-for-inflation-data-delayed-january-jobs-report-what-to-watch-this-week-123826626.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Cincinnati Financial (CINF) Q4 Earnings Report Preview: What To Look For",
+      "url": "/news/303688/cincinnati-financial-cinf-q4-earnings-report-preview-what-to-look-for",
+      "publisher": "StockStory",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is a Beat in Store for Cincinnati Financial This Earnings Season?",
+      "url": "/news/299953/is-a-beat-in-store-for-cincinnati-financial-this-earnings-season",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What Analyst Projections for Key Metrics Reveal About Cincinnati Financial (CINF) Q4 Earnings",
+      "url": "/news/299457/what-analyst-projections-for-key-metrics-reveal-about-cincinnati-financial-cinf-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CleanSpark Gears Up to Report Q1 Earnings: What's in the Offing?",
+      "url": "/news/298000/cleanspark-gears-up-to-report-q1-earnings-whats-in-the-offing",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BofA Assesses Cincinnati Financial's (CINF) Outlook Amid Soft P&C Pricing",
+      "url": "/news/297346/bofa-assesses-cincinnati-financials-cinf-outlook-amid-soft-pc-pricing",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cincinnati Financial (CINF) Expected to Beat Earnings Estimates: What to Know Ahead of Q4 Release",
+      "url": "/news/295810/cincinnati-financial-cinf-expected-to-beat-earnings-estimates-what-to-know-ahead-of-q4-release",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cincinnati Financial Corporation Increases Regular Quarterly Cash Dividend",
+      "url": "/news/294035/cincinnati-financial-corporation-increases-regular-quarterly-cash-dividend",
+      "publisher": "PR Newswire",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cincinnati Financial Corporation and Subsidiaries Recognize Promotions and Appointments",
+      "url": "/news/294033/cincinnati-financial-corporation-and-subsidiaries-recognize-promotions-and-appointments",
+      "publisher": "PR Newswire",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "W.R. Berkley (WRB) Q4 Earnings and Revenues Lag Estimates",
+      "url": "/news/287541/wr-berkley-wrb-q4-earnings-and-revenues-lag-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Travelers (TRV) Beats Q4 Earnings and Revenue Estimates",
+      "url": "/news/283052/travelers-trv-beats-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "2 Reasons to Watch CINF and 1 to Stay Cautious",
+      "url": "/news/280998/2-reasons-to-watch-cinf-and-1-to-stay-cautious",
+      "publisher": "StockStory",
+      "date": "2026-01-19",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Cincinnati Financial (CINF) Gets Mixed Wall Street Signals as Pricing Trends Stay Soft",
+      "url": "/news/280535/cincinnati-financial-cinf-gets-mixed-wall-street-signals-as-pricing-trends-stay-soft",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Aflac Teams Up With Workday Wellness to Enhance Health Benefits",
+      "url": "/news/278818/aflac-teams-up-with-workday-wellness-to-enhance-health-benefits",
+      "publisher": "Zacks",
+      "date": "2026-01-16",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Zacks Industry Outlook Highlights Chubb, The Travelers Companies, Cincinnati Financial, Skyward Specialty Insurance and Hagerty",
+      "url": "/news/277764/zacks-industry-outlook-highlights-chubb-the-travelers-companies-cincinnati-financial-skyward-specialty-insurance-and-hagerty",
+      "publisher": "Zacks",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "5 P&C Insurers Stocks to Watch As the Industry Witnesses Soft Pricing",
+      "url": "/news/276172/5-pc-insurers-stocks-to-watch-as-the-industry-witnesses-soft-pricing",
+      "publisher": "Zacks",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What to Expect From Cincinnati Financial's Q4 2025 Earnings Report",
+      "url": "https://finance.yahoo.com/m/9b8ca68c-96aa-327e-b3b6-5f765a404b9b/what-to-expect-from.html",
+      "publisher": "Barchart",
+      "date": "2026-01-13",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cincinnati Financial Schedules Webcast to Discuss Fourth-Quarter and Full-Year 2025 Results",
+      "url": "/news/270585/cincinnati-financial-schedules-webcast-to-discuss-fourth-quarter-and-full-year-2025-results",
+      "publisher": "PR Newswire",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NMIH Outperforms Industry, Trades Near 52-Week High: Time to Hold?",
+      "url": "/news/268473/nmih-outperforms-industry-trades-near-52-week-high-time-to-hold",
+      "publisher": "Zacks",
+      "date": "2026-01-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AIZ Near 52-Week High: Time to Buy the Stock for Solid Returns?",
+      "url": "/news/266209/aiz-near-52-week-high-time-to-buy-the-stock-for-solid-returns",
+      "publisher": "Zacks",
+      "date": "2026-01-02",
+      "sentiment": "positive"
+    }
+  ]
 }

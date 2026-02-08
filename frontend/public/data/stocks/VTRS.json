@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 14.579999923706055,
-    "sma_20": 13.384999990463259,
+    "sma_20": 13.38499999046326,
     "sma_50": 12.395599994659424,
     "sma_200": 10.148280618190766,
     "trend_alignment": 0.8726607497556153,
@@ -6286,10 +6286,10 @@
     "macd_histogram": 0.10838321099685227,
     "macd_line": 0.56375989141962,
     "macd_histogram_pct": 0.7433690779423723,
-    "bb_position": 0.9859067487459884,
-    "bb_upper": 14.614659731068643,
-    "bb_lower": 12.155340249857874,
-    "bb_width": 0.18373698042308717,
+    "bb_position": 0.9859067487459877,
+    "bb_upper": 14.614659731068645,
+    "bb_lower": 12.155340249857876,
+    "bb_width": 0.18373698042308714,
     "hist_volatility": 0.3508513152613448,
     "volume_ratio": 0.9829620759039722,
     "avg_volume_20d": 8605215.0,
@@ -6306,7 +6306,15 @@
     "technical_score": 58.73741941802813,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.048971252776903285,
+    "sentiment_pos": 0.064,
+    "sentiment_neg": 0.027350000000000003,
+    "sentiment_neu": 0.9087,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 52.45
+  },
   "analyst": {
     "revision_momentum": 0.6666666666666666,
     "target_upside": -0.10836762688614542,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 69.370472325,
     "catalyst_timeline": 60.97212878282738,
     "downside_control": 54.169752084566895,
-    "composite_score": 50.727965879229195,
+    "composite_score": 50.72407683393076,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 47.211143604166665,
     "technical_score": 58.73741941802813,
-    "sentiment_score": 50.0,
+    "sentiment_score": 52.45,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Pharmaceuticals"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Women Are One Patch Away From Menopause Reliefif Only They Could Find It",
+      "url": "https://finance.yahoo.com/m/974f3ece-7c03-38f0-a4d7-c69323bd4a2f/women-are-one-patch-away-from.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Viatris to Report Fourth Quarter and Full Year 2025 Financial Results on February 26, 2026, and Host Investor Event on March 19, 2026",
+      "url": "/news/298187/viatris-to-report-fourth-quarter-and-full-year-2025-financial-results-on-february-26-2026-and-host-investor-event-on-march-19-2026",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Viatris Appoints Matthew J. Maletta as Chief Legal Officer",
+      "url": "/news/297222/viatris-appoints-matthew-j-maletta-as-chief-legal-officer",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What Are Wall Street Analysts' Target Price for Viatris Stock?",
+      "url": "https://finance.yahoo.com/m/bf082dc2-5607-3087-8020-b2f4efb11032/what-are-wall-street.html",
+      "publisher": "Barchart",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Viatris Earnings Preview: What to Expect",
+      "url": "https://finance.yahoo.com/m/bb479301-2ad4-3a61-bb98-fcf28a585d8f/viatris-earnings-preview%3A.html",
+      "publisher": "Barchart",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Reasons to Sell VTRS and 1 Stock to Buy Instead",
+      "url": "/news/283858/3-reasons-to-sell-vtrs-and-1-stock-to-buy-instead",
+      "publisher": "StockStory",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Viatris Expands Innovative Portfolio in Cardiovascular Diseases with the Company's First Launch of Inpefa (Sotagliflozin) for the Treatment of Heart Failure",
+      "url": "/news/280767/viatris-expands-innovative-portfolio-in-cardiovascular-diseases-with-the-companys-first-launch-of-inpefa-sotagliflozin-for-the-treatment-of-heart-failure",
+      "publisher": "PR Newswire",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Viatris Appoints Lara Ramsburg as Chief People and Corporate Affairs Officer",
+      "url": "/news/270658/viatris-appoints-lara-ramsburg-as-chief-people-and-corporate-affairs-officer",
+      "publisher": "PR Newswire",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Viatris (VTRS) Upgraded to Buy: What Does It Mean for the Stock?",
+      "url": "/news/268630/viatris-vtrs-upgraded-to-buy-what-does-it-mean-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Viatris Inc. (VTRS) Provides Updates on Four Recent Regulatory Milestones",
+      "url": "/news/266012/viatris-inc-vtrs-provides-updates-on-four-recent-regulatory-milestones",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Barclays Initiates Viatris (VTRS) with Overweight as Pharma Sentiment Improves",
+      "url": "/news/264715/barclays-initiates-viatris-vtrs-with-overweight-as-pharma-sentiment-improves",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Viatris Gets FDA Nod for Generic Sandostatin, Shares Regulatory Updates",
+      "url": "/news/258854/viatris-gets-fda-nod-for-generic-sandostatin-shares-regulatory-updates",
+      "publisher": "Zacks",
+      "date": "2025-12-19",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Viatris Provides Pipeline Update on Four Regulatory Milestones",
+      "url": "/news/257059/viatris-provides-pipeline-update-on-four-regulatory-milestones",
+      "publisher": "PR Newswire",
+      "date": "2025-12-18",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Viatris to Present at the 44th Annual J.P. Morgan Healthcare Conference",
+      "url": "/news/255955/viatris-to-present-at-the-44th-annual-jp-morgan-healthcare-conference",
+      "publisher": "PR Newswire",
+      "date": "2025-12-17",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is Viatris Stock Outperforming the Dow?",
+      "url": "https://finance.yahoo.com/m/c667804b-5b26-31ec-a598-5ab20046171e/is-viatris-stock.html",
+      "publisher": "Barchart",
+      "date": "2025-12-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Viatris signs agreements with Biocon on $815m stake sale",
+      "url": "https://www.pharmaceutical-business-review.com/news/viatris-signs-agreements-biocon/",
+      "publisher": "Pharmaceutical Business Review",
+      "date": "2025-12-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Viatris Announces Agreement to Monetize its Equity Stake in Biocon Biologics Limited",
+      "url": "/news/247583/viatris-announces-agreement-to-monetize-its-equity-stake-in-biocon-biologics-limited",
+      "publisher": "PR Newswire",
+      "date": "2025-12-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Mark Cuban Takes Aim at FDA Fees",
+      "url": "https://finance.yahoo.com/news/mark-cuban-takes-aim-fda-190838782.html",
+      "publisher": "GuruFocus.com",
+      "date": "2025-12-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Viatris to Participate in Upcoming Investor Conferences",
+      "url": "/news/237196/viatris-to-participate-in-upcoming-investor-conferences",
+      "publisher": "PR Newswire",
+      "date": "2025-11-24",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "European study shows falling prices, rising costs and shortages - findings from independent study presented during World AMR Awareness Week by Viatris and Medicines for Europe",
+      "url": "/news/233431/european-study-shows-falling-prices-rising-costs-and-shortages-findings-from-independent-study-presented-during-world-amr-awareness-week-by-viatris-and-medicines-for-europe",
+      "publisher": "PR Newswire",
+      "date": "2025-11-19",
+      "sentiment": "negative"
+    }
+  ]
 }

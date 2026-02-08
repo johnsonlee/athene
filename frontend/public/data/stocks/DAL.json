@@ -6306,7 +6306,15 @@
     "technical_score": 61.057450630918424,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.14315879100309464,
+    "sentiment_pos": 0.0935,
+    "sentiment_neg": 0.03005,
+    "sentiment_neu": 0.87645,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 57.16
+  },
   "analyst": {
     "revision_momentum": 0.3333333333333333,
     "target_upside": 0.1147976111479762,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 81.19216932571427,
     "catalyst_timeline": 67.63284205197118,
     "downside_control": 35.78814653160201,
-    "composite_score": 66.76685988637648,
+    "composite_score": 66.76297084107804,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 64.57238989047619,
     "technical_score": 61.057450630918424,
-    "sentiment_score": 50.0,
+    "sentiment_score": 57.16,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Passenger Airlines"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Southwest Airlines adds a policy Delta and United passengers hate",
+      "url": "https://finance.yahoo.com/m/afb83b0e-9823-305e-8e30-5e99000a1901/southwest-airlines-adds-a.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "From AI Darlings To Dow Dinosaurs: Investors Flee Software For Old-Economy Stocks",
+      "url": "/news/303569/from-ai-darlings-to-dow-dinosaurs-investors-flee-software-for-old-economy-stocks",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Dow Theory Sends a Buy Signal as Transportation Stocks Rally",
+      "url": "https://finance.yahoo.com/m/3db04dd8-c259-3d7c-9666-14e3492afbec/%E2%80%98dow-theory%E2%80%99-sends-a-buy.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Transportation Stocks Are Trucking Along. That's Great for the Broader Market.",
+      "url": "https://www.barrons.com/articles/market-rally-dow-theory-transportation-stocks-f0fdf0d0?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Where is Delta Air Lines (DAL) Headed According to the Street?",
+      "url": "/news/302387/where-is-delta-air-lines-dal-headed-according-to-the-street",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Kirby Q4 Earnings Surpass Estimates, Increase Year Over Year",
+      "url": "/news/301929/kirby-q4-earnings-surpass-estimates-increase-year-over-year",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Santander Bank tech chief takes on CIO role at USAA",
+      "url": "https://finance.yahoo.com/m/abc295ae-da51-33ab-8d3f-71fe39aa0813/santander-bank-tech-chief.html",
+      "publisher": "CIO Dive",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "DAL Gains 31% in 6 Months: How Should Investors Play the Stock Now?",
+      "url": "/news/301727/dal-gains-31-in-6-months-how-should-investors-play-the-stock-now",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Canadian National Stock Rises 2.8% Since Q4 Earnings Release",
+      "url": "/news/301585/canadian-national-stock-rises-28-since-q4-earnings-release",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Delta Air Lines, Inc. (DAL) Is a Trending Stock: Facts to Know Before Betting on It",
+      "url": "/news/301442/delta-air-lines-inc-dal-is-a-trending-stock-facts-to-know-before-betting-on-it",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "This Investment Pro Recommends Checking Into Hyatt Hotels, Out of Airbnb",
+      "url": "https://www.barrons.com/articles/this-investment-pro-recommends-checking-into-hyatt-hotels-out-of-airbnb-9158fe6b?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Delta Air Lines Declares Quarterly Dividend",
+      "url": "/news/300260/delta-air-lines-declares-quarterly-dividend",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Old Dominion Beats on Q4 Earnings and Revenues, Hikes Dividend",
+      "url": "/news/299770/old-dominion-beats-on-q4-earnings-and-revenues-hikes-dividend",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "GE Aerospace Plans $300 Million Upgrade In Singapore Repair Facility",
+      "url": "/news/299160/ge-aerospace-plans-300-million-upgrade-in-singapore-repair-facility",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Delta Reports New Gold Intercept at Nova Target in Wedge Area, 4 Kilometres West of Eureka; Follow-Up Drill Program Underway",
+      "url": "https://finance.yahoo.com/news/delta-reports-gold-intercept-nova-123700104.html",
+      "publisher": "TMX Newsfile",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Landstar Q4 Earnings Beat Estimates, Revenues Miss, Both Down Y/Y",
+      "url": "/news/297993/landstar-q4-earnings-beat-estimates-revenues-miss-both-down-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Canadian Pacific Q4 Earnings & Revenues Miss Estimates, Improve Y/Y",
+      "url": "/news/297714/canadian-pacific-q4-earnings-revenues-miss-estimates-improve-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "IATA Chief Expects 'Broadly Flat' US Air Travel Even As Global Demand Rises, Says It's Unlikely To Catch Up In Near Future",
+      "url": "/news/297285/iata-chief-expects-broadly-flat-us-air-travel-even-as-global-demand-rises-says-its-unlikely-to-catch-up-in-near-future",
+      "publisher": "Benzinga",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Delta Air Lines (DAL): Strengthening Global Network with Strategic Fleet Investments",
+      "url": "/news/297086/delta-air-lines-dal-strengthening-global-network-with-strategic-fleet-investments",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BofA Sees Conservative 2026 Guidance for Delta (DAL)",
+      "url": "/news/296848/bofa-sees-conservative-2026-guidance-for-delta-dal",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    }
+  ]
 }

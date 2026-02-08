@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 72.86000061035156,
     "sma_20": 73.54350051879885,
-    "sma_50": 76.90979522705076,
+    "sma_50": 76.90979522705078,
     "sma_200": 79.90361343383788,
-    "trend_alignment": 0.38433056686906186,
+    "trend_alignment": 0.3843305668690618,
     "rsi": 46.291981267952174,
     "rsi_score": -0.07416037464095653,
     "macd_histogram": 0.06775547081511735,
@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 57.19696999551536,
-    "stoch_d": 45.03180313913202,
+    "stoch_d": 45.031803139132016,
     "trend_score": 38.433056686906184,
     "rsi_abs_score": 68.90438688756652,
     "macd_abs_score": 54.64970287177647,
@@ -6306,7 +6306,15 @@
     "technical_score": 47.59616258118195,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.13466017042494793,
+    "sentiment_pos": 0.13285,
+    "sentiment_neg": 0.027200000000000002,
+    "sentiment_neu": 0.83995,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 56.73
+  },
   "analyst": {
     "revision_momentum": 0.3333333333333333,
     "target_upside": 0.2695580565468021,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 64.50358385999999,
     "catalyst_timeline": 54.10070134641285,
     "downside_control": 49.41835158340648,
-    "composite_score": 57.850262049717756,
+    "composite_score": 57.84637300441932,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 62.0430628,
     "technical_score": 47.59616258118195,
-    "sentiment_score": 50.0,
+    "sentiment_score": 56.73,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Transaction & Payment Processing Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Global Payments (GPN) Draws Mixed Analyst Views Following Worldpay Deal and Strategic Shift",
+      "url": "/news/303733/global-payments-gpn-draws-mixed-analyst-views-following-worldpay-deal-and-strategic-shift",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Are Investors Undervaluing Global Payments (GPN) Right Now?",
+      "url": "/news/301593/are-investors-undervaluing-global-payments-gpn-right-now",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Global Payments Stock: Analyst Estimates & Ratings",
+      "url": "https://finance.yahoo.com/m/67b7175a-1f25-3162-bfd8-3796712e0392/global-payments-stock%3A.html",
+      "publisher": "Barchart",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Global Payments to Report Fourth Quarter and Full Year 2025 Results on February 18, 2026",
+      "url": "https://www.businesswire.com/news/home/20260204254502/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Your Phone is the New Wallet: Top Mobile Payment Stocks to Buy",
+      "url": "/news/299312/your-phone-is-the-new-wallet-top-mobile-payment-stocks-to-buy",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Billionaire Investor David Einhorn Has a Big Warning for Stock Investors",
+      "url": "/news/298889/billionaire-investor-david-einhorn-has-a-big-warning-for-stock-investors",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Global Payments (GPN) is an Incredible Growth Stock: 3 Reasons Why",
+      "url": "/news/296029/global-payments-gpn-is-an-incredible-growth-stock-3-reasons-why",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "5 Low Price-to-Book Stocks That Are Worth Watching in February",
+      "url": "/news/295342/5-low-price-to-book-stocks-that-are-worth-watching-in-february",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Zacks.com featured highlights include Harmony Biosciences, Universal Health Services, Concentrix and Global Payments",
+      "url": "/news/295218/zackscom-featured-highlights-include-harmony-biosciences-universal-health-services-concentrix-and-global-payments",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Deal fever returns: 2026 looks hot for M&A",
+      "url": "https://finance.yahoo.com/m/e7689884-3b1a-34c8-a9e1-63fa3c942372/deal-fever-returns%3A-2026.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-01",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "4 Value Stocks to Consider as Tech Volatility Weighs on Wall Street",
+      "url": "/news/293805/4-value-stocks-to-consider-as-tech-volatility-weighs-on-wall-street",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "GPN vs. MA: Which Stock Is the Better Value Option?",
+      "url": "/news/292210/gpn-vs-ma-which-stock-is-the-better-value-option",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Greenlight Capital Re-Acquired a Position in Global Payments (GPN)",
+      "url": "/news/291725/greenlight-capital-re-acquired-a-position-in-global-payments-gpn",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Global Payments (GPN) is a Top Growth Stock for the Long-Term",
+      "url": "/news/291927/why-global-payments-gpn-is-a-top-growth-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Global Payments (GPN) is a Top Value Stock for the Long-Term",
+      "url": "/news/285382/why-global-payments-gpn-is-a-top-value-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "GPN's Worldpay Expands Its Solutions Reach via Regions Bank Partnership",
+      "url": "/news/284393/gpns-worldpay-expands-its-solutions-reach-via-regions-bank-partnership",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Reasons Why You Should Retain Fiserv Stock in Your Portfolio",
+      "url": "/news/282625/reasons-why-you-should-retain-fiserv-stock-in-your-portfolio",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "After Plunging 10.6% in 4 Weeks, Here's Why the Trend Might Reverse for Global Payments (GPN)",
+      "url": "/news/282509/after-plunging-106-in-4-weeks-heres-why-the-trend-might-reverse-for-global-payments-gpn",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Powering Business Growth: Regions Bank Selects Worldpay to Transform Business Payments",
+      "url": "https://www.businesswire.com/news/home/20260121528843/en/Regions",
+      "publisher": "Business Wire",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Avoid Value Traps and Buy These 4 PEG-Based Stocks Now",
+      "url": "/news/281498/avoid-value-traps-and-buy-these-4-peg-based-stocks-now",
+      "publisher": "Zacks",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    }
+  ]
 }

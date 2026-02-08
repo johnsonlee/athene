@@ -6306,7 +6306,15 @@
     "technical_score": 34.310042323637475,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.14603520568543718,
+    "sentiment_pos": 0.10569999999999999,
+    "sentiment_neg": 0.024149999999999998,
+    "sentiment_neu": 0.8701000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 57.3
+  },
   "analyst": {
     "revision_momentum": -0.16666666666666666,
     "target_upside": 0.2583052811654986,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 68.74175121433333,
     "catalyst_timeline": 39.70221780895969,
     "downside_control": 42.25616678174174,
-    "composite_score": 50.15905640694955,
+    "composite_score": 50.15516736165112,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 59.060637256410985,
     "technical_score": 34.310042323637475,
-    "sentiment_score": 50.0,
+    "sentiment_score": 57.3,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Electronic Equipment & Instruments"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Analysts Stay Bullish on Roper Technologies (ROP) Despite Price Target Cuts Following Mixed Q4 Results",
+      "url": "/news/303721/analysts-stay-bullish-on-roper-technologies-rop-despite-price-target-cuts-following-mixed-q4-results",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "8 Software Stocks to Buy That Are Actually Profitable-and Cheap",
+      "url": "https://www.barrons.com/articles/8-software-stocks-profitable-cheap-6d5f6396?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jim Cramer Thinks Roper Technologies Won't Bounce Back Until Software Stocks Recover",
+      "url": "/news/297736/jim-cramer-thinks-roper-technologies-wont-bounce-back-until-software-stocks-recover",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "RBC Capital Flags Organic Growth Concerns at Roper Technologies (ROP)",
+      "url": "/news/297373/rbc-capital-flags-organic-growth-concerns-at-roper-technologies-rop",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Roper Technologies Had a Lousy Week on the Stock Market",
+      "url": "/news/294219/why-roper-technologies-had-a-lousy-week-on-the-stock-market",
+      "publisher": "Motley Fool",
+      "date": "2026-01-30",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Roper Technologies price target lowered to $398 from $539 at RBC Capital",
+      "url": "https://finance.yahoo.com/news/roper-technologies-price-target-lowered-150025753.html",
+      "publisher": "TipRanks",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "PayPal downgraded, UPS upgraded: Wall Streets top analyst calls",
+      "url": "https://finance.yahoo.com/news/paypal-downgraded-ups-upgraded-wall-144103429.html",
+      "publisher": "TipRanks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "These Are the 3 Top Oversold S&P 500 Stocks. Should You Buy the Dip?",
+      "url": "https://finance.yahoo.com/m/a4975bd7-7563-389b-b02c-9ea0764ceac7/these-are-the-3-top-oversold.html",
+      "publisher": "Barchart",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PayPal downgraded, UPS upgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/paypal-downgraded-ups-upgraded-wall-143913385.html",
+      "publisher": "The Fly",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Roper Technologies, Inc.",
+      "url": "https://finance.yahoo.com/m/20ef3be3-b5b0-3e3c-af8d-a285d3cdd889/analyst-report%3A-roper.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Roper Technologies, Inc.",
+      "url": "https://finance.yahoo.com/m/633f31f7-f7be-3a32-9140-b67141705055/analyst-report%3A-roper.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "S&P 500 Posts a Record High on Tech Strength and Solid Corporate Earnings",
+      "url": "https://finance.yahoo.com/m/b7ee55b7-b915-3b3a-9c85-9340d250f076/s%26p-500-posts-a-record-high.html",
+      "publisher": "Barchart",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Roper Technologies Inc (ROP) Q4 2025 Earnings Call Highlights: Strong Financial Performance and ...",
+      "url": "https://finance.yahoo.com/news/roper-technologies-inc-rop-q4-190241618.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Roper Stock Is Plummeting Today",
+      "url": "/news/288797/why-roper-stock-is-plummeting-today",
+      "publisher": "Motley Fool",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "S&P 500 Hits New Records, GM Stock Jumps 8% On Earnings: What's Moving Markets Tuesday?",
+      "url": "/news/288796/sp-500-hits-new-records-gm-stock-jumps-8-on-earnings-whats-moving-markets-tuesday",
+      "publisher": "Benzinga",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Broader Market Rallies on Tech Strength and Solid Earnings",
+      "url": "https://finance.yahoo.com/m/b41b3bdc-0c89-379c-a194-333fe11c8cbf/broader-market-rallies-on.html",
+      "publisher": "Barchart",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Roper Technologies Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/683ea950-2b38-3f40-97be-134b10bd6485/roper-technologies-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Roper forecasts 2026 revenue, profit below estimates on soft government contract demand",
+      "url": "https://finance.yahoo.com/news/roper-forecasts-2026-revenue-profit-155043734.html",
+      "publisher": "Reuters",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Roper Q4 Earnings Top Estimates, Application Software Sales Up Y/Y",
+      "url": "/news/288618/roper-q4-earnings-top-estimates-application-software-sales-up-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks Edge Higher as Chip Makers Rally",
+      "url": "https://finance.yahoo.com/m/006209c2-8adb-3e77-80f7-3e86e55c0a03/stocks-edge-higher-as-chip.html",
+      "publisher": "Barchart",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    }
+  ]
 }

@@ -6295,8 +6295,8 @@
     "avg_volume_20d": 1147750.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 66.26369432343002,
-    "stoch_d": 60.00723906437062,
+    "stoch_k": 66.26369432343,
+    "stoch_d": 60.007239064370616,
     "trend_score": 54.418533074537464,
     "rsi_abs_score": 72.95753120737012,
     "macd_abs_score": 54.602233436208124,
@@ -6306,7 +6306,15 @@
     "technical_score": 57.11303375049468,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.14247067020610132,
+    "sentiment_pos": 0.1367,
+    "sentiment_neg": 0.021400000000000002,
+    "sentiment_neu": 0.8419000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 57.12
+  },
   "analyst": {
     "revision_momentum": -0.375,
     "target_upside": 0.06445993031358885,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 34.6806443,
     "catalyst_timeline": 54.299352340445665,
     "downside_control": 49.82895232882751,
-    "composite_score": 53.26188614083788,
+    "composite_score": 53.257997095539444,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 59.65266755683999,
     "technical_score": 57.11303375049468,
-    "sentiment_score": 50.0,
+    "sentiment_score": 57.12,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Real Estate",
     "industry": "Self-Storage REITs"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "BofA cuts storage REITS, Public Storage, Extra Space and Americold",
+      "url": "https://finance.yahoo.com/news/bofa-cuts-storage-reits-public-191035856.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "OUT or PSA: Which Is the Better Value Stock Right Now?",
+      "url": "/news/292217/out-or-psa-which-is-the-better-value-stock-right-now",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analysts Favor Public Storage (PSA) Over Retail and Cold Storage REITs",
+      "url": "/news/291547/analysts-favor-public-storage-psa-over-retail-and-cold-storage-reits",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Netflix, Meta upgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/netflix-meta-upgraded-wall-streets-145018203.html",
+      "publisher": "The Fly",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Public Storage to Release Fourth Quarter 2025 Earnings Results and Host Quarterly Conference Call",
+      "url": "https://www.businesswire.com/news/home/20260120913232/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What to Expect From Public Storage's Next Quarterly Earnings Report",
+      "url": "https://finance.yahoo.com/m/956bb328-f9f0-3569-92a9-b846151ff61c/what-to-expect-from-public.html",
+      "publisher": "Barchart",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Public Storage Announces Tax Treatment of 2025 Dividends",
+      "url": "https://www.businesswire.com/news/home/20260114072721/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "OUT or PSA: Which Is the Better Value Stock Right Now?",
+      "url": "/news/275201/out-or-psa-which-is-the-better-value-stock-right-now",
+      "publisher": "Zacks",
+      "date": "2026-01-13",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Raymond James Analysts Best Picks Could Explode Again in 2026: 4 Red-Hot Dividend Stocks",
+      "url": "https://finance.yahoo.com/m/26511855-8b88-3471-ac0a-be8120b9a59c/raymond-james-analysts%E2%80%99-best.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-13",
+      "sentiment": "positive"
+    },
+    {
+      "title": "These 3 Defensive Stocks Could Help Portfolios Weather a 2026 Downturn",
+      "url": "/news/274190/these-3-defensive-stocks-could-help-portfolios-weather-a-2026-downturn",
+      "publisher": "MarketBeat",
+      "date": "2026-01-12",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Key Reasons to Add Public Storage Stock to Your Portfolio Now",
+      "url": "/news/268361/key-reasons-to-add-public-storage-stock-to-your-portfolio-now",
+      "publisher": "Zacks",
+      "date": "2026-01-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Prediction: These 5 Top Stocks Will Be the Largest REIT Dividend Payers in 2026",
+      "url": "/news/267963/prediction-these-5-top-stocks-will-be-the-largest-reit-dividend-payers-in-2026",
+      "publisher": "Motley Fool",
+      "date": "2026-01-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is the worst over for storage REITs? RBC sees pricing turning positive",
+      "url": "https://finance.yahoo.com/news/worst-over-storage-reits-rbc-081047612.html",
+      "publisher": "Investing.com",
+      "date": "2025-12-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Brookfield, GIC Agree $4.5 Billion Deal for Australias National Storage",
+      "url": "https://finance.yahoo.com/m/330177e9-685a-3541-a086-c3bcf553621e/brookfield%2C-gic-agree-%244.5.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2025-12-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CoreWeave initiated, Unity upgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/coreweave-initiated-unity-upgraded-wall-144224676.html",
+      "publisher": "The Fly",
+      "date": "2025-12-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is Public Storage Stock Underperforming the S&P 500?",
+      "url": "https://finance.yahoo.com/m/f95bef35-253d-3f8d-bf4c-1a98c5d923f7/is-public-storage-stock.html",
+      "publisher": "Barchart",
+      "date": "2025-12-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Equinix Hosts Merck KGaA's HPC at its Data Center in Germany",
+      "url": "/news/236235/equinix-hosts-merck-kgaas-hpc-at-its-data-center-in-germany",
+      "publisher": "Zacks",
+      "date": "2025-11-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is Wall Street Bullish or Bearish on Public Storage Stock?",
+      "url": "https://finance.yahoo.com/m/35f48c5a-0546-3547-afeb-2828e26ae892/is-wall-street-bullish-or.html",
+      "publisher": "Barchart",
+      "date": "2025-11-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "HIW's $223M Bet on 6Hundred at Legacy Union: Time to Buy the Stock?",
+      "url": "/news/233168/hiws-223m-bet-on-6hundred-at-legacy-union-time-to-buy-the-stock",
+      "publisher": "Zacks",
+      "date": "2025-11-18",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Medical Properties Rewards Investors With 12.5% Dividend Hike",
+      "url": "/news/233113/medical-properties-rewards-investors-with-125-dividend-hike",
+      "publisher": "Zacks",
+      "date": "2025-11-18",
+      "sentiment": "positive"
+    }
+  ]
 }

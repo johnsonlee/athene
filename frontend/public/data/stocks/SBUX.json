@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 99.44999694824219,
     "sma_20": 94.5595001220703,
-    "sma_50": 89.27720001220703,
+    "sma_50": 89.27720001220702,
     "sma_200": 87.04323574066164,
-    "trend_alignment": 0.6965164659834384,
+    "trend_alignment": 0.6965164659834385,
     "rsi": 67.43411895162178,
     "rsi_score": 0.34868237903243565,
     "macd_histogram": 0.23581681832047385,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 54.24880356382348,
     "stoch_d": 45.647411402324224,
-    "trend_score": 69.65164659834385,
+    "trend_score": 69.65164659834386,
     "rsi_abs_score": 61.18446693545901,
     "macd_abs_score": 58.42802477518432,
     "momentum_score": 59.80624585532166,
@@ -6306,7 +6306,15 @@
     "technical_score": 59.47827204813338,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.12628502629280935,
+    "sentiment_pos": 0.1283,
+    "sentiment_neg": 0.06420000000000001,
+    "sentiment_neu": 0.80755,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 56.31
+  },
   "analyst": {
     "revision_momentum": 0.1111111111111111,
     "target_upside": 0.005530417295123149,
@@ -6325,7 +6333,7 @@
     "quality_score": 54.684999999999995,
     "growth_score": 31.875,
     "safety_score": 35.70425,
-    "trend_score": 69.65164659834385,
+    "trend_score": 69.65164659834386,
     "momentum_score": 59.80624585532166,
     "volatility_score": 53.204521560168615,
     "volume_score": 50.0,
@@ -6344,16 +6352,16 @@
     "current_ratio_score": 47.162,
     "earnings_visibility": 42.055,
     "valuation_margin": 52.740906235294105,
-    "catalyst_timeline": 58.34882610283261,
+    "catalyst_timeline": 58.34882610283262,
     "downside_control": 46.13131573402529,
-    "composite_score": 47.91547507793566,
+    "composite_score": 47.911586032637224,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 46.90002186274509,
     "technical_score": 59.47827204813338,
-    "sentiment_score": 50.0,
+    "sentiment_score": 56.31,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Restaurants"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "EXCLUSIVE: Should The Day After Super Bowl Be A Holiday? 55% Say This",
+      "url": "/news/303779/exclusive-should-the-day-after-super-bowl-be-a-holiday-55-say-this",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "In 2026, your performance might not be reflected in your pay raise",
+      "url": "https://finance.yahoo.com/news/in-2026-your-performance-might-not-be-reflected-in-your-pay-raise-140039503.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Starbucks beats Missouri AGs lawsuit targeting DEI programs",
+      "url": "https://finance.yahoo.com/m/8fcc2f33-2ab7-3501-baaa-b8c3e4a05bd7/starbucks-beats-missouri-ag%E2%80%99s.html",
+      "publisher": "HR Dive",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "A Key Takeaway From Earnings Season: Signs of Consumer Weakness",
+      "url": "https://finance.yahoo.com/m/014e1af8-29db-3db9-94ba-ea8224d66cd3/a-key-takeaway-from-earnings.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Starbucks wins dismissal of Missouri lawsuit over DEI policies",
+      "url": "https://finance.yahoo.com/news/starbucks-wins-dismissal-missouri-lawsuit-002848980.html",
+      "publisher": "Reuters",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Yum China Q4 Earnings & Revenues Top Estimates, Both Up YoY",
+      "url": "/news/301910/yum-china-q4-earnings-revenues-top-estimates-both-up-yoy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Starbucks unveils new rewards plan that offers 'more meaningful benefits,' but the perks may not be as good as they seem",
+      "url": "https://finance.yahoo.com/news/starbucks-unveils-rewards-plan-offers-120000025.html",
+      "publisher": "Moneywise",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Starbucks Is Back, but Is It a Buy?",
+      "url": "/news/300628/starbucks-is-back-but-is-it-a-buy",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Can Starbucks Open Another 10,000 Stores in the U.S.?",
+      "url": "/news/299819/can-starbucks-open-another-10000-stores-in-the-us",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Disneys new DAmaro-land:  a dream team succession saga comes to life",
+      "url": "https://finance.yahoo.com/news/disney-d-amaro-land-dream-165849499.html",
+      "publisher": "Fortune",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here is What to Know Beyond Why Starbucks Corporation (SBUX) is a Trending Stock",
+      "url": "/news/299404/here-is-what-to-know-beyond-why-starbucks-corporation-sbux-is-a-trending-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "5 Insightful Analyst Questions From Starbucks's Q4 Earnings Call",
+      "url": "/news/298816/5-insightful-analyst-questions-from-starbuckss-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Their Boss Is Offering Them The Coffee Shop For $65K. It Feels Like A Sign, But 'If It's Truly So Low-Maintenance, Why Would They Sell?'",
+      "url": "https://finance.yahoo.com/news/boss-offering-them-coffee-shop-161608088.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Dutch Bros Rewards Drive Transactions: Can Loyalty Back Growth?",
+      "url": "/news/297395/dutch-bros-rewards-drive-transactions-can-loyalty-back-growth",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Investors Are Piling Into This Stock That's Up 28,000% Since Its IPO. Can It Soar in 2026?",
+      "url": "/news/296868/investors-are-piling-into-this-stock-thats-up-28000-since-its-ipo-can-it-soar-in-2026",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Chili's secret ingredient, Starbucks' solid quarter, and lessons from the FAT Brands debacle",
+      "url": "https://www.nrn.com/casual-dining/chili-s-secret-ingredient-starbucks-solid-quarter-and-lessons-from-the-fat-brands-debacle",
+      "publisher": "Nation's Restaurant News",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Starbucks slashes its menu, removing 13 drinks",
+      "url": "https://finance.yahoo.com/m/3b376d7c-4f51-3177-a716-9671b6055a67/starbucks-slashes-its-menu%2C.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Polypropylene Cups Earn Widely Recyclable Designation, Expanding Access to Curbside Recycling Nationwide",
+      "url": "https://www.businesswire.com/news/home/20260202061056/en/A",
+      "publisher": "Business Wire",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Starbucks turnaround plan hits costly snags",
+      "url": "https://finance.yahoo.com/m/165f9a91-5b54-3959-af34-009536c46eb0/starbucks-turnaround-plan.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-01",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Starbucks Sees Robust Same-Store Sales. Can the Stock's Momentum Continue?",
+      "url": "/news/294749/starbucks-sees-robust-same-store-sales-can-the-stocks-momentum-continue",
+      "publisher": "Motley Fool",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    }
+  ]
 }

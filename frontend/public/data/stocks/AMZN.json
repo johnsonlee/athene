@@ -6229,7 +6229,7 @@
   ],
   "fundamental": {
     "pe": 29.333334,
-    "forward_pe": 22.67567,
+    "forward_pe": 22.605234,
     "pb": 5.490524,
     "ps": 3.149244,
     "roe": 0.22286,
@@ -6257,10 +6257,10 @@
     "fcf_yield": 0.010538336196448873,
     "fcf_debt_ratio": 0.1332597325623777,
     "pe_score": 41.666664999999995,
-    "forward_pe_score": 53.9797425,
+    "forward_pe_score": 54.1382235,
     "pb_score": 28.528428,
     "ps_score": 59.00504,
-    "value_score": 51.55048250000001,
+    "value_score": 51.6033095,
     "roe_score": 80.7432,
     "roa_score": 59.63999999999999,
     "margin_score": 56.66857,
@@ -6272,15 +6272,15 @@
     "fcf_yield_score": 38.78194683037406,
     "current_ratio_score": 47.346,
     "safety_score": 47.4375,
-    "fundamental_score": 58.682600625000006,
+    "fundamental_score": 58.695807375,
     "fund_data_completeness": 1.0
   },
   "technical": {
     "close": 210.32000732421875,
     "sma_20": 235.19349975585936,
     "sma_50": 232.91440002441408,
-    "sma_200": 223.33600021362304,
-    "trend_alignment": 0.39581413302465723,
+    "sma_200": 223.33600021362307,
+    "trend_alignment": 0.39581413302465707,
     "rsi": 28.63392057967107,
     "rsi_score": -0.4273215884065786,
     "macd_histogram": -3.6039892713051405,
@@ -6296,17 +6296,25 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 16.868231532146574,
-    "stoch_d": 22.577128629714196,
-    "trend_score": 39.58141330246573,
+    "stoch_d": 22.5771286297142,
+    "trend_score": 39.581413302465705,
     "rsi_abs_score": 48.63392057967107,
     "macd_abs_score": 20.0,
     "momentum_score": 34.316960289835535,
     "volatility_score": 41.02027376258749,
     "volume_score": 50.0,
-    "technical_score": 40.37356683020788,
+    "technical_score": 40.37356683020787,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.1340465296376127,
+    "sentiment_pos": 0.06805,
+    "sentiment_neg": 0.12655,
+    "sentiment_neu": 0.80535,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 43.3
+  },
   "analyst": {
     "revision_momentum": -0.023809523809523808,
     "target_upside": 0.3550779764168886,
@@ -6321,17 +6329,17 @@
     "analyst_score": 68.68601539205565
   },
   "ranking": {
-    "value_score": 51.55048250000001,
+    "value_score": 51.6033095,
     "quality_score": 70.1916,
     "growth_score": 61.0,
     "safety_score": 47.4375,
-    "trend_score": 39.58141330246573,
+    "trend_score": 39.581413302465705,
     "momentum_score": 34.316960289835535,
     "volatility_score": 41.02027376258749,
     "volume_score": 50.0,
     "analyst_score": 68.68601539205565,
     "pe_score": 41.666664999999995,
-    "forward_pe_score": 53.9797425,
+    "forward_pe_score": 54.1382235,
     "pb_score": 28.528428,
     "ps_score": 59.00504,
     "roe_score": 80.7432,
@@ -6343,17 +6351,17 @@
     "fcf_yield_score": 38.78194683037406,
     "current_ratio_score": 47.346,
     "earnings_visibility": 70.54774,
-    "valuation_margin": 46.55214475,
+    "valuation_margin": 46.567992849999996,
     "catalyst_timeline": 48.11043889843569,
     "downside_control": 49.57766606438812,
-    "composite_score": 54.58487143968042,
+    "composite_score": 54.586133026881974,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 58.682600625000006,
-    "technical_score": 40.37356683020788,
-    "sentiment_score": 50.0,
+    "fundamental_score": 58.695807375,
+    "technical_score": 40.37356683020787,
+    "sentiment_score": 43.3,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Broadline Retail"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Thomson Reuters CEO Says AI Is Delivering Tangible Gains",
+      "url": "https://finance.yahoo.com/news/thomson-reuters-ceo-says-ai-163138862.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Amazon is turning to AI to cut film and TV production costs",
+      "url": "https://finance.yahoo.com/m/7cb96ff0-093e-384b-b8e2-bf00f371e5c1/amazon-is-turning-to-ai-to.html",
+      "publisher": "Digital Trends",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "AI Killed Software, Now It's Killing Jobs: January Sees Most Cuts Since 2009",
+      "url": "https://finance.yahoo.com/news/ai-killed-software-now-killing-160133411.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "'This probably seems overdone': Wall Street strategists weigh in on software stock sell-off",
+      "url": "https://finance.yahoo.com/news/this-probably-seems-overdone-wall-street-strategists-weigh-in-on-software-stock-sell-off-160003877.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The job market was bruising in 2025. The start of 2026 doesn't look much better.",
+      "url": "https://finance.yahoo.com/news/the-job-market-was-bruising-in-2025-the-start-of-2026-doesnt-look-much-better-150057009.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Amazon Defends Massive AI Spending, Says New AWS Capacity Being Monetized Quickly: Andy Jassy Sees Very 'Unusual' Opportunity",
+      "url": "https://finance.yahoo.com/news/amazon-defends-massive-ai-spending-143139992.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Consumer Tech News (Feb 2-6): Big Tech Earnings Take Center Stage In U.S. Markets, Anthropic Launches New AI Tool & More",
+      "url": "/news/303773/consumer-tech-news-feb-2-6-big-tech-earnings-take-center-stage-in-us-markets-anthropic-launches-new-ai-tool-more",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dow 50,000 sets table for inflation data, delayed January jobs report: What to watch this week",
+      "url": "https://finance.yahoo.com/news/dow-50000-sets-table-for-inflation-data-delayed-january-jobs-report-what-to-watch-this-week-123826626.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Analysis-Investors chase cheaper, smaller companies as risk aversion hits tech sector",
+      "url": "https://finance.yahoo.com/news/analysis-investors-chase-cheaper-smaller-110318617.html",
+      "publisher": "Reuters",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "5 big analyst AI moves: Microsoft stock downgraded as its time for a break",
+      "url": "https://finance.yahoo.com/news/5-big-analyst-ai-moves-093503505.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Street Calls of the Week",
+      "url": "https://finance.yahoo.com/news/street-calls-week-090516424.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dan Ives Says Software Selloff Is Worst He's Seen In 25 Years As Microsoft, Salesforce Face Brutal AI Reckoning",
+      "url": "https://finance.yahoo.com/news/dan-ives-says-software-selloff-003125036.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Jim Cramer On Amazon Stock Slip: Not Saying Downside Overdone, 'I Figure Tomorrow's Pretty Ugly'",
+      "url": "https://finance.yahoo.com/news/jim-cramer-amazon-stock-slip-233145336.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Amazon CEO Andy Jassy Warns Shoppers Are 'Starting To See More Of That Impact' As Trump's 10% Tariffs Begin Hitting Prices On Amazon",
+      "url": "https://finance.yahoo.com/news/amazon-ceo-andy-jassy-warns-203141202.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Techs AI Push Risks a Bond Market Blowback: Credit Weekly",
+      "url": "https://finance.yahoo.com/news/tech-ai-push-risks-bond-190132451.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Her Husband Brings In $156K, But They Struggle With Groceries Due To His $700 Monthly Vices. She Calls Him An Addict, Dave Ramsey Disagrees",
+      "url": "https://finance.yahoo.com/news/her-husband-brings-156k-struggle-183131125.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Amazon.com, Inc. (AMZN): A Bull Case Theory",
+      "url": "/news/303651/amazoncom-inc-amzn-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bitcoin To Fall To $54K? Veteran Trader Questions Whether Strategy Investors Can Hold On",
+      "url": "https://finance.yahoo.com/news/bitcoin-fall-54k-veteran-trader-164602291.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Peter Thiel Once Said Brilliant Thinking Is 'Rare' But Even Rarer And In 'Shorter Supply' Is This Personality Trait",
+      "url": "/news/303617/peter-thiel-once-said-brilliant-thinking-is-rare-but-even-rarer-and-in-shorter-supply-is-this-personality-trait",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Saturday Spread: Reducing Uncertainty in an Uncertain World (AMZN, CHWY, EXPE)",
+      "url": "https://finance.yahoo.com/m/567a6fc5-4e0f-3fde-abfe-764ead759ceb/the-saturday-spread%3A-reducing.html",
+      "publisher": "Barchart",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    }
+  ]
 }

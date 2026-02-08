@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 15.450867369535331,
-    "stoch_d": 9.614976892825624,
+    "stoch_d": 9.614976892825625,
     "trend_score": 4.747996304841929,
     "rsi_abs_score": 48.356090522472996,
     "macd_abs_score": 20.0,
@@ -6306,7 +6306,15 @@
     "technical_score": 25.47781246982353,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.06706073345923921,
+    "sentiment_pos": 0.0546,
+    "sentiment_neg": 0.07909999999999999,
+    "sentiment_neu": 0.86625,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 46.65
+  },
   "analyst": {
     "revision_momentum": 0.15384615384615385,
     "target_upside": 0.998546511627907,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 40.440363533333326,
     "catalyst_timeline": 37.29669492583861,
     "downside_control": 39.289795,
-    "composite_score": 50.25841617642878,
+    "composite_score": 50.254527131130345,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 70.62059627777779,
     "technical_score": 25.47781246982353,
-    "sentiment_score": 50.0,
+    "sentiment_score": 46.65,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Financial Exchanges & Data"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "BTIG Lowers Coinbase (COIN ) PT to $340, Cites Expected Weakness in Q4 Transaction Volumes",
+      "url": "/news/303821/btig-lowers-coinbase-coin-pt-to-340-cites-expected-weakness-in-q4-transaction-volumes",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Crypto Currents: Strategy, Galaxy Digital report Q4 earnings results",
+      "url": "https://finance.yahoo.com/news/crypto-currents-strategy-galaxy-digital-153045203.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Super Bowl LX, Coinbase earnings, jobs data & CPI: What to Watch",
+      "url": "https://finance.yahoo.com/video/super-bowl-lx-coinbase-earnings-000012395.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Tech Bounces As Software Sell-Off Eases, Dow Jones Hits Records: What's Moving Markets Friday?",
+      "url": "/news/303167/tech-bounces-as-software-sell-off-eases-dow-jones-hits-records-whats-moving-markets-friday",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cathie Wood Makes $17 Million Crypto Shift - ARK ETFs Rotate From Coinbase To Bullish",
+      "url": "/news/303153/cathie-wood-makes-17-million-crypto-shift-ark-etfs-rotate-from-coinbase-to-bullish",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Coinbase (COIN) Shares Skyrocket, What You Need To Know",
+      "url": "/news/303054/coinbase-coin-shares-skyrocket-what-you-need-to-know",
+      "publisher": "StockStory",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Robinhood Stock Surges As Bitcoin Rebounds Above $68,000",
+      "url": "/news/302967/robinhood-stock-surges-as-bitcoin-rebounds-above-68000",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cathie Wood Loads Up On Bullish After Earnings, Sells Coinbase",
+      "url": "https://www.investors.com/news/cathie-wood-loads-up-on-bullish-after-earnings-sells-coinbase?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "'Stay Long Detroit, Short Davos': Why BofA's Hartnett Sees A Main Street Boom Ahead Of The Midterms",
+      "url": "/news/302666/stay-long-detroit-short-davos-why-bofas-hartnett-sees-a-main-street-boom-ahead-of-the-midterms",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Anthony Scaramucci Points To $193 Million War Chest As Catalyst For Chuck Schumer's Crypto Push: 'Money Talks'",
+      "url": "/news/302432/anthony-scaramucci-points-to-193-million-war-chest-as-catalyst-for-chuck-schumers-crypto-push-money-talks",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Coinbase Global (COIN) Retains Analyst Confidence As Firms Weigh Growth Against Volume Pressures",
+      "url": "/news/302369/coinbase-global-coin-retains-analyst-confidence-as-firms-weigh-growth-against-volume-pressures",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Crypto Selloff Deepens, Hitting Strategy and Pushing Bitcoin Price Below $65,000",
+      "url": "https://finance.yahoo.com/m/880d992e-0503-3e6c-a874-f70371d3fcaa/crypto-selloff-deepens%2C.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Strategy Slides Even Further on Earnings Miss After Dismal Day",
+      "url": "https://finance.yahoo.com/m/6b1aec50-e50f-3ed3-af31-86d4c4bf82ef/strategy-slides-even-further.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Bitcoin Falls To 16-Month Low, Stifel Warns Of Drop To $38,000. Clarity Talks Hit Snag.",
+      "url": "https://finance.yahoo.com/m/44b4e95d-cab2-323e-b4cb-4304489df75d/bitcoin-falls-to-16-month.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stock Market Today: Nasdaq, Dow Sink But Small Caps Take It On Chin (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/e263e442-296b-39d8-8185-e01b4d948dbe/stock-market-today%3A-nasdaq%2C.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Market Today: Dow, Nasdaq Struggle; Animal Health Name Soars (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/e263e442-296b-39d8-8185-e01b4d948dbe/stock-market-today%3A-dow%2C.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Strategys Earnings Are Today. Bitcoins Tumble Is Sinking the Stock.",
+      "url": "https://finance.yahoo.com/m/6b1aec50-e50f-3ed3-af31-86d4c4bf82ef/strategy%E2%80%99s-earnings-are.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Market Today: Nasdaq Gets Clobbered But Off Lows; Candy Giant Breaks Out (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/e263e442-296b-39d8-8185-e01b4d948dbe/stock-market-today%3A-nasdaq.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Crypto Market Structure Bill Pulled 'Not Because Of What Coinbase Said': Report",
+      "url": "/news/301518/crypto-market-structure-bill-pulled-not-because-of-what-coinbase-said-report",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Earnings Preview: Coinbase Global, Inc. (COIN) Q4 Earnings Expected to Decline",
+      "url": "/news/301690/earnings-preview-coinbase-global-inc-coin-q4-earnings-expected-to-decline",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    }
+  ]
 }

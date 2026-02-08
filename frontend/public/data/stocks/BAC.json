@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 56.529998779296875,
     "sma_20": 53.5125,
-    "sma_50": 54.339176483154304,
-    "sma_200": 49.27164154052734,
-    "trend_alignment": 0.6658274727682011,
+    "sma_50": 54.3391764831543,
+    "sma_200": 49.27164154052735,
+    "trend_alignment": 0.665827472768201,
     "rsi": 65.17417244869307,
     "rsi_score": 0.3034834489738614,
     "macd_histogram": 0.47471593287825975,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 88.17130290667215,
     "stoch_d": 85.15498090556461,
-    "trend_score": 66.58274727682011,
+    "trend_score": 66.5827472768201,
     "rsi_abs_score": 67.5123171436594,
     "macd_abs_score": 70.0963897876144,
     "momentum_score": 68.8043534656369,
@@ -6306,7 +6306,15 @@
     "technical_score": 61.87181344565705,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.29909683692199335,
+    "sentiment_pos": 0.1722,
+    "sentiment_neg": 0.032850000000000004,
+    "sentiment_neu": 0.79495,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 64.95
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.09676278082434103,
@@ -6325,7 +6333,7 @@
     "quality_score": 69.66917142857143,
     "growth_score": 74.88642857142857,
     "safety_score": 33.12325,
-    "trend_score": 66.58274727682011,
+    "trend_score": 66.5827472768201,
     "momentum_score": 68.8043534656369,
     "volatility_score": 56.278416114599736,
     "volume_score": 50.0,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 51.862655247619045,
     "catalyst_timeline": 63.29033467357348,
     "downside_control": 47.969249917189956,
-    "composite_score": 58.978869280054866,
+    "composite_score": 58.97498023475643,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 59.41255461111112,
     "technical_score": 61.87181344565705,
-    "sentiment_score": 50.0,
+    "sentiment_score": 64.95,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 0.8325,
     "data_quality_penalty": 0.0,
-    "rank": 129,
-    "percentile": 0.7533718689788054,
+    "rank": 128,
+    "percentile": 0.7552986512524085,
     "tier": "buy",
     "tier_raw": "buy",
     "tier_label": "Buy",
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Diversified Banks"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Bank of America (BAC) Maintains Dividend Amid Strong Earnings and Moderate Outlook",
+      "url": "/news/303736/bank-of-america-bac-maintains-dividend-amid-strong-earnings-and-moderate-outlook",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "'Stay Long Detroit, Short Davos': Why BofA's Hartnett Sees A Main Street Boom Ahead Of The Midterms",
+      "url": "https://finance.yahoo.com/news/stay-long-detroit-short-davos-230108607.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Goldman Sachs signals grim shift as software stocks bounce",
+      "url": "https://finance.yahoo.com/m/a6b2fdab-9d7c-32ac-b519-41d3d26253e9/goldman-sachs-signals-grim.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Bank of America resets Google stock forecast post-earnings",
+      "url": "https://finance.yahoo.com/m/d043f956-e1a1-3095-9da2-2ced0359ac25/bank-of-america-resets-google.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Goldman, JPMorgan Bankers See Bonus Pools Rise at Least 10%",
+      "url": "https://finance.yahoo.com/video/goldman-jpmorgan-bankers-see-bonus-174616990.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Financial Services Roundup: Market Talk",
+      "url": "https://finance.yahoo.com/m/a21c2e13-066f-3990-a923-ca693ea67249/financial-services-roundup%3A.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Wall Street Banks Lift Bonuses 10% as Trading Revenue Jumps 16%",
+      "url": "https://finance.yahoo.com/news/wall-street-banks-lift-bonuses-161905542.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BofAs Hartnett Says Midcaps Are Best Play Ahead of US Midterms",
+      "url": "https://finance.yahoo.com/news/bofa-hartnett-says-midcaps-best-113028954.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bank of Americas SSI Points to 12% Upside for the S&P 500  Here Are 2 Stocks to Play the Call",
+      "url": "https://finance.yahoo.com/news/bank-america-ssi-points-12-105714648.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bank of America resets Qualcomm stock price target after earnings",
+      "url": "https://finance.yahoo.com/m/c66f8ce8-afc4-3707-b756-4b4fb7280db7/bank-of-america-resets.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bank of America Announces Full Redemption of Its Series DD Preferred Stock and Related Depositary Shares",
+      "url": "/news/302140/bank-of-america-announces-full-redemption-of-its-series-dd-preferred-stock-and-related-depositary-shares",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BofA cuts storage REITS, Public Storage, Extra Space and Americold",
+      "url": "https://finance.yahoo.com/news/bofa-cuts-storage-reits-public-191035856.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Cathie Wood Adds Tesla Stock To Space ETF: Is This A Bet On SpaceX Merger?",
+      "url": "/news/301801/cathie-wood-adds-tesla-stock-to-space-etf-is-this-a-bet-on-spacex-merger",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BofA lists 5 best stocks as AI spending directly benefits Gas",
+      "url": "https://finance.yahoo.com/news/bofa-lists-5-best-stocks-155410943.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Trump is giving the U.S. economy a $65 billion tax-refund shot in the arm, mostly for higher-income people, BofA says",
+      "url": "https://finance.yahoo.com/news/trump-giving-u-economy-65-152337003.html",
+      "publisher": "Fortune",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here is What to Know Beyond Why Bank of America Corporation (BAC) is a Trending Stock",
+      "url": "/news/301453/here-is-what-to-know-beyond-why-bank-of-america-corporation-bac-is-a-trending-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analysts Love These 3 Stocks Trading Near 52-Week Lows-Here's Why",
+      "url": "/news/301195/analysts-love-these-3-stocks-trading-near-52-week-lows-heres-why",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Inside Bank of Americas plan for credit card growth",
+      "url": "https://finance.yahoo.com/m/c990bbe0-c166-3af8-91c9-1ffe8bec6567/inside-bank-of-america%E2%80%99s-plan.html",
+      "publisher": "Banking Dive",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BofA Reworks Credit Cards to Fuel Ambitious Consumer Profit Plan",
+      "url": "https://finance.yahoo.com/news/bofa-reworks-credit-cards-fuel-114000513.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BofA moves Equinor down to Neutral on limited share price upside",
+      "url": "https://finance.yahoo.com/news/bofa-moves-equinor-down-neutral-112447759.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    }
+  ]
 }

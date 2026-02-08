@@ -6295,8 +6295,8 @@
     "avg_volume_20d": 24852730.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 43.77360177707497,
-    "stoch_d": 48.99707067433161,
+    "stoch_k": 43.77360177707498,
+    "stoch_d": 48.997070674331624,
     "trend_score": 70.27399120038156,
     "rsi_abs_score": 67.49084743635626,
     "macd_abs_score": 32.33716284048035,
@@ -6306,7 +6306,15 @@
     "technical_score": 59.4585418816496,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.09295180359169579,
+    "sentiment_pos": 0.08025,
+    "sentiment_neg": 0.1113,
+    "sentiment_neu": 0.80845,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 45.35
+  },
   "analyst": {
     "revision_momentum": 0.125,
     "target_upside": 0.16063138347260902,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 35.05057075,
     "catalyst_timeline": 60.15321944446494,
     "downside_control": 68.28422911000722,
-    "composite_score": 65.61955385900089,
+    "composite_score": 65.61566481370245,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 71.158888125,
     "technical_score": 59.4585418816496,
-    "sentiment_score": 50.0,
+    "sentiment_score": 45.35,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Communication Services",
     "industry": "Interactive Media & Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Thomson Reuters CEO Says AI Is Delivering Tangible Gains",
+      "url": "https://finance.yahoo.com/news/thomson-reuters-ceo-says-ai-163138862.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "AI Killed Software, Now It's Killing Jobs: January Sees Most Cuts Since 2009",
+      "url": "https://finance.yahoo.com/news/ai-killed-software-now-killing-160133411.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "'This probably seems overdone': Wall Street strategists weigh in on software stock sell-off",
+      "url": "https://finance.yahoo.com/news/this-probably-seems-overdone-wall-street-strategists-weigh-in-on-software-stock-sell-off-160003877.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The New Ways High Schools Are Teaching Teens About Money",
+      "url": "https://finance.yahoo.com/m/df5be533-13ba-3d87-b413-453907d3a982/the-new-ways-high-schools-are.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Amazon Defends Massive AI Spending, Says New AWS Capacity Being Monetized Quickly: Andy Jassy Sees Very 'Unusual' Opportunity",
+      "url": "https://finance.yahoo.com/news/amazon-defends-massive-ai-spending-143139992.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "AI Fear Grips Wall Street as a New Stock Market Reality Sets In",
+      "url": "https://finance.yahoo.com/news/ai-fear-grips-wall-street-140007396.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Why I am still taking these tech stocks to task",
+      "url": "https://finance.yahoo.com/news/why-i-am-still-taking-these-tech-stocks-to-task-133012952.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Waymo Says Bar Higher Than Human Driving For Autonomy Even As Tesla Says Cameras Are Enough: 'What Does It Take To Build A Safe Product?'",
+      "url": "/news/303777/waymo-says-bar-higher-than-human-driving-for-autonomy-even-as-tesla-says-cameras-are-enough-what-does-it-take-to-build-a-safe-product",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Consumer Tech News (Feb 2-6): Big Tech Earnings Take Center Stage In U.S. Markets, Anthropic Launches New AI Tool & More",
+      "url": "/news/303773/consumer-tech-news-feb-2-6-big-tech-earnings-take-center-stage-in-us-markets-anthropic-launches-new-ai-tool-more",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dow 50,000 sets table for inflation data, delayed January jobs report: What to watch this week",
+      "url": "https://finance.yahoo.com/news/dow-50000-sets-table-for-inflation-data-delayed-january-jobs-report-what-to-watch-this-week-123826626.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Analysis-Investors chase cheaper, smaller companies as risk aversion hits tech sector",
+      "url": "https://finance.yahoo.com/news/analysis-investors-chase-cheaper-smaller-110318617.html",
+      "publisher": "Reuters",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "5 big analyst AI moves: Microsoft stock downgraded as its time for a break",
+      "url": "https://finance.yahoo.com/news/5-big-analyst-ai-moves-093503505.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "'Humans Plus AI Together Actually Create More Meaningful Work,' Says Anthropic Cofounder Daniela Amodei As Job Market Shifts",
+      "url": "/news/303701/humans-plus-ai-together-actually-create-more-meaningful-work-says-anthropic-cofounder-daniela-amodei-as-job-market-shifts",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Dan Ives Says Software Selloff Is Worst He's Seen In 25 Years As Microsoft, Salesforce Face Brutal AI Reckoning",
+      "url": "https://finance.yahoo.com/news/dan-ives-says-software-selloff-003125036.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Jim Cramer On Amazon Stock Slip: Not Saying Downside Overdone, 'I Figure Tomorrow's Pretty Ugly'",
+      "url": "https://finance.yahoo.com/news/jim-cramer-amazon-stock-slip-233145336.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Techs AI Push Risks a Bond Market Blowback: Credit Weekly",
+      "url": "https://finance.yahoo.com/news/tech-ai-push-risks-bond-190132451.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Her Husband Brings In $156K, But They Struggle With Groceries Due To His $700 Monthly Vices. She Calls Him An Addict, Dave Ramsey Disagrees",
+      "url": "https://finance.yahoo.com/news/her-husband-brings-156k-struggle-183131125.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Google named Apple's preferred cloud provider as AI partnership details remain unclear",
+      "url": "https://www.digitimes.com/news/a20260206PD205/apple-google-alphabet-gemini-siri.html",
+      "publisher": "DigiTimes",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Maybe I Wasnt So Wrong About Reddit After All",
+      "url": "https://finance.yahoo.com/m/a2362cdd-556d-3f4a-a783-494179e02997/maybe-i-wasn%E2%80%99t-so-wrong-about.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bitcoin To Fall To $54K? Veteran Trader Questions Whether Strategy Investors Can Hold On",
+      "url": "https://finance.yahoo.com/news/bitcoin-fall-54k-veteran-trader-164602291.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    }
+  ]
 }

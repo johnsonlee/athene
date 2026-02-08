@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 97.27964613303084,
-    "stoch_d": 94.34670603680689,
+    "stoch_d": 94.3467060368069,
     "trend_score": 65.86959575537115,
     "rsi_abs_score": 58.18496596084181,
     "macd_abs_score": 66.6735085258436,
@@ -6306,7 +6306,15 @@
     "technical_score": 57.06954811941808,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.16677830404681288,
+    "sentiment_pos": 0.06885,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.93115,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 58.34
+  },
   "analyst": {
     "revision_momentum": -0.25,
     "target_upside": 0.008064516129032216,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 60.92090809999999,
     "catalyst_timeline": 58.12360234288214,
     "downside_control": 40.99685982287028,
-    "composite_score": 61.06697758358086,
+    "composite_score": 61.06308853828242,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 63.191751927356435,
     "technical_score": 57.06954811941808,
-    "sentiment_score": 50.0,
+    "sentiment_score": 58.34,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Energy",
     "industry": "Oil & Gas Storage & Transportation"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "JP Morgan Thinks Soft Macroeconomic Conditions Could Affect Natural Gas Player ONEOK (OKE)",
+      "url": "/news/303513/jp-morgan-thinks-soft-macroeconomic-conditions-could-affect-natural-gas-player-oneok-oke",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "ONEOK (OKE) Draws Mixed Analyst Calls and Price Target Falls",
+      "url": "/news/303020/oneok-oke-draws-mixed-analyst-calls-and-price-target-falls",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ONEOK Just Paid Investors: Heres Why This Dividend Earns a B+",
+      "url": "https://finance.yahoo.com/m/b04c198c-b3ab-3f90-b43e-001ca27fdb52/oneok-just-paid-investors%3A.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Oneok Inc. (OKE) Ascends While Market Falls: Some Facts to Note",
+      "url": "/news/300552/oneok-inc-oke-ascends-while-market-falls-some-facts-to-note",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "National Fuel Gas Q1 Earnings Beat Estimates, Gas Production Up",
+      "url": "/news/295534/national-fuel-gas-q1-earnings-beat-estimates-gas-production-up",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "My 5 Favorite Ultra-High-Yield Dividend Stocks to Buy for 2026",
+      "url": "/news/294476/my-5-favorite-ultra-high-yield-dividend-stocks-to-buy-for-2026",
+      "publisher": "Motley Fool",
+      "date": "2026-01-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Looking for Growth and Income? These 3 High-Yield Dividend Stocks Just Hiked Their Payouts Again.",
+      "url": "/news/294380/looking-for-growth-and-income-these-3-high-yield-dividend-stocks-just-hiked-their-payouts-again",
+      "publisher": "Motley Fool",
+      "date": "2026-01-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Oneok Inc. (OKE) Rises As Market Takes a Dip: Key Facts",
+      "url": "/news/291008/oneok-inc-oke-rises-as-market-takes-a-dip-key-facts",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ONEOK Announces Board of Directors Additions",
+      "url": "/news/287438/oneok-announces-board-of-directors-additions",
+      "publisher": "GlobeNewswire",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Winter Storm Fern To Impact Energy, Utility Stocks-Antero Resources, Energy Transfer, Exelon In Focus",
+      "url": "/news/286494/winter-storm-fern-to-impact-energy-utility-stocks-antero-resources-energy-transfer-exelon-in-focus",
+      "publisher": "Benzinga",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "This Rock-Solid 5.5%-Yielding Dividend Stock Just Gave its Investors Another Raise",
+      "url": "/news/286329/this-rock-solid-55-yielding-dividend-stock-just-gave-its-investors-another-raise",
+      "publisher": "Motley Fool",
+      "date": "2026-01-25",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "5 Dividend Stocks Yielding 5% or More to Buy Right Now for Passive Income",
+      "url": "/news/286083/5-dividend-stocks-yielding-5-or-more-to-buy-right-now-for-passive-income",
+      "publisher": "Motley Fool",
+      "date": "2026-01-24",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Natural Gas Set For Biggest Weekly Price Spike Ever As US Brace For Cold Wave",
+      "url": "/news/285189/natural-gas-set-for-biggest-weekly-price-spike-ever-as-us-brace-for-cold-wave",
+      "publisher": "Benzinga",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "ONEOK Increases Quarterly Dividend 4%",
+      "url": "/news/282991/oneok-increases-quarterly-dividend-4",
+      "publisher": "GlobeNewswire",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ONEOK Schedules Fourth-quarter and Year-end 2025 Conference Call and Webcast",
+      "url": "/news/281554/oneok-schedules-fourth-quarter-and-year-end-2025-conference-call-and-webcast",
+      "publisher": "GlobeNewswire",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ONEOK's Q4 2025 Earnings: What to Expect",
+      "url": "https://finance.yahoo.com/m/4c729fa1-f70c-3d1e-a107-5e2d83611dae/oneok%27s-q4-2025-earnings%3A.html",
+      "publisher": "Barchart",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Oneok Inc. (OKE) Increases Despite Market Slip: Here's What You Need to Know",
+      "url": "/news/275596/oneok-inc-oke-increases-despite-market-slip-heres-what-you-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-01-13",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jim Cramer Remains Bullish on ONEOK",
+      "url": "/news/273969/jim-cramer-remains-bullish-on-oneok",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-12",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Down 27% in 2025, This Worst-Performing Oil Stock Is Set to Go Parabolic in 2026",
+      "url": "/news/273602/down-27-in-2025-this-worst-performing-oil-stock-is-set-to-go-parabolic-in-2026",
+      "publisher": "Motley Fool",
+      "date": "2026-01-12",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "These 2 Oils and Energy Stocks Could Beat Earnings: Why They Should Be on Your Radar",
+      "url": "/news/271999/these-2-oils-and-energy-stocks-could-beat-earnings-why-they-should-be-on-your-radar",
+      "publisher": "Zacks",
+      "date": "2026-01-09",
+      "sentiment": "positive"
+    }
+  ]
 }

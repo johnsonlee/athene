@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 8685640.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 69.68033868850887,
+    "stoch_k": 69.68033868850885,
     "stoch_d": 70.68050136882628,
     "trend_score": 62.561753557083414,
     "rsi_abs_score": 70.46316567416247,
@@ -6306,7 +6306,15 @@
     "technical_score": 61.42771976231148,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.16517930399929698,
+    "sentiment_pos": 0.1075,
+    "sentiment_neg": 0.01065,
+    "sentiment_neu": 0.88185,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 58.26
+  },
   "analyst": {
     "revision_momentum": 0.15384615384615385,
     "target_upside": 0.08843537414965981,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 56.47694096666666,
     "catalyst_timeline": 60.86633221048449,
     "downside_control": 66.17995931105557,
-    "composite_score": 60.41453144850362,
+    "composite_score": 60.41064240320518,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 57.79808294841269,
     "technical_score": 61.42771976231148,
-    "sentiment_score": 50.0,
+    "sentiment_score": 58.26,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Health Care Equipment"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "University of Galway opens medtech prototype hub under Medtronic partnership",
+      "url": "https://finance.yahoo.com/m/09b6d5b4-230a-321c-baff-5d8ccb0d75ea/university-of-galway-opens.html",
+      "publisher": "Medical Device Network",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "UBS Makes a Modest Target Increase on Medtronic (MDT), Keeps Neutral Rating",
+      "url": "/news/301959/ubs-makes-a-modest-target-increase-on-medtronic-mdt-keeps-neutral-rating",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Medtronic set to acquire CathWorks for $585m",
+      "url": "https://finance.yahoo.com/m/dec2483c-4418-3566-9a62-538e8e5360e4/medtronic-set-to-acquire.html",
+      "publisher": "Medical Device Network",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "2 Healthcare Dividend Stocks That are Just What the Doctor Ordered",
+      "url": "/news/298250/2-healthcare-dividend-stocks-that-are-just-what-the-doctor-ordered",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Medtronic Bets On AI Heart Care With $585 Million Deal For Partner CathWorks",
+      "url": "/news/297805/medtronic-bets-on-ai-heart-care-with-585-million-deal-for-partner-cathworks",
+      "publisher": "Benzinga",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Silver Economy Boom: Investing in Healthcare's Aging Tailwinds",
+      "url": "/news/297804/silver-economy-boom-investing-in-healthcares-aging-tailwinds",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Medtronic advances its innovation strategy with intent to acquire CathWorks",
+      "url": "/news/297199/medtronic-advances-its-innovation-strategy-with-intent-to-acquire-cathworks",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here Are Tuesdays Top Wall Street Analyst Research Calls: Adobe, Disney, Exxon Mobil, Lockheed Martin, Mastercard, Palantir Technologies, SoFi Technologies, and More",
+      "url": "https://finance.yahoo.com/m/32379009-b2a2-3dea-bf90-1187d0eecb43/here-are-tuesday%E2%80%99s-top-wall.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Medtronic to acquire CathWorks for up to $585M",
+      "url": "https://finance.yahoo.com/m/be846a46-f7b7-3ffa-a4b7-750f72d57304/medtronic-to-acquire.html",
+      "publisher": "MedTech Dive",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Are Wall Street Analysts Predicting Medtronic Stock Will Climb or Sink?",
+      "url": "https://finance.yahoo.com/m/6f53c1bf-74e7-3429-b3cb-206c9a68b610/are-wall-street-analysts.html",
+      "publisher": "Barchart",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Medtronic Diabetes expands access to full-stack insulin delivery solutions with Medicare access and new FDA clearances",
+      "url": "/news/295488/medtronic-diabetes-expands-access-to-full-stack-insulin-delivery-solutions-with-medicare-access-and-new-fda-clearances",
+      "publisher": "PR Newswire",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why the Market Dipped But Medtronic (MDT) Gained Today",
+      "url": "/news/294273/why-the-market-dipped-but-medtronic-mdt-gained-today",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "2 AI Surgery Stocks to Buy Hand Over Fist in February",
+      "url": "/news/294218/2-ai-surgery-stocks-to-buy-hand-over-fist-in-february",
+      "publisher": "Motley Fool",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Survey on RDN Procedure Volumes Fuels Optimism for Medtronic (MDT)",
+      "url": "/news/293961/survey-on-rdn-procedure-volumes-fuels-optimism-for-medtronic-mdt",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Spotify upgraded, Pinterest downgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/spotify-upgraded-pinterest-downgraded-wall-145401832.html",
+      "publisher": "The Fly",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here Are Fridays Top Wall Street Analyst Research Calls: Broadcom, Circle Internet, Kenvue, Medtronic, Sandisk, Southwest Airlines, Spotify, and More",
+      "url": "https://finance.yahoo.com/m/2c13c3ab-cfdf-3d81-93ad-aefc3042dc8e/here-are-friday%E2%80%99s-top-wall.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Squawk Pod: Corporate responses to Minneapolis - 01/27/26  Audio Only",
+      "url": "https://www.youtube.com/watch?v=gkOX0Zf5iwE",
+      "publisher": "CNBC TV",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Medtronic targets ASCs with extended Mindray collaboration",
+      "url": "https://finance.yahoo.com/m/100fcc25-11b0-330f-af7a-db796af672d2/medtronic-targets-ascs-with.html",
+      "publisher": "MedTech Dive",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "5 robotic surgery trends to watch in 2026",
+      "url": "https://finance.yahoo.com/m/6427d142-5a66-3484-9234-a7f1110f6aac/5-robotic-surgery-trends-to.html",
+      "publisher": "MedTech Dive",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CEOs Took Just Hours to Organize Joint Letter on Minneapolis Tensions",
+      "url": "https://finance.yahoo.com/m/27caa21f-feae-30b4-9d43-3d1faac3d95a/ceos-took-just-hours-to.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-26",
+      "sentiment": "negative"
+    }
+  ]
 }

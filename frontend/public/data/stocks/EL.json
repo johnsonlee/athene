@@ -6306,7 +6306,15 @@
     "technical_score": 42.9698862297985,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.030645902119558883,
+    "sentiment_pos": 0.06305000000000001,
+    "sentiment_neg": 0.0834,
+    "sentiment_neu": 0.85355,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 48.47
+  },
   "analyst": {
     "revision_momentum": 0.1111111111111111,
     "target_upside": 0.0656479340504675,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 44.596187617647054,
     "catalyst_timeline": 49.828694083588836,
     "downside_control": 34.39150913008575,
-    "composite_score": 35.94938265392186,
+    "composite_score": 35.94549360862342,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 42.68998841449337,
     "technical_score": 42.9698862297985,
-    "sentiment_score": 50.0,
+    "sentiment_score": 48.47,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Staples",
     "industry": "Personal Care Products"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Estée Lauder Flags $100 Million Tariff Alarm",
+      "url": "https://finance.yahoo.com/news/est-e-lauder-flags-100-160106006.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Estée Lauder Stock Sank After Earnings. Better-Looking Days Are Ahead.",
+      "url": "https://finance.yahoo.com/m/3da7c1fd-3f33-3246-a5d4-809deb4388e7/est%C3%A9e-lauder-stock-sank-after.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Amazon downgraded, Roblox upgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/amazon-downgraded-roblox-upgraded-wall-144121688.html",
+      "publisher": "The Fly",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Coty Q2 Earnings Miss Estimates Amid Margin Pressure, Revenues Beat",
+      "url": "/news/302712/coty-q2-earnings-miss-estimates-amid-margin-pressure-revenues-beat",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Here Are Fridays Top Wall Street Analyst Research Calls: Amazon.com, Caterpillar, Estee Lauder,  JPMorgan, Norfolk Southern, Roku, Snap, Vistra, and More",
+      "url": "https://finance.yahoo.com/m/2c0413d3-07a7-364e-97b6-23d3281ed969/here-are-friday%E2%80%99s-top-wall.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Estee Lauder Companies Q2 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/e203f8b5-bbfd-397a-9797-8acabfa2e58f/estee-lauder-companies-q2.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "EL Stock Plunges 19% - Here's Why Analysts Still Think Buyers Have A Shot At Big Gains",
+      "url": "/news/302520/el-stock-plunges-19-heres-why-analysts-still-think-buyers-have-a-shot-at-big-gains",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Estee Lauder (EL) Nosedives 19% on Weak Outlook",
+      "url": "/news/302400/estee-lauder-el-nosedives-19-on-weak-outlook",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "EL Q4 Deep Dive: Market Reacts to Margin Shortfall Despite Revenue Growth",
+      "url": "/news/302717/el-q4-deep-dive-market-reacts-to-margin-shortfall-despite-revenue-growth",
+      "publisher": "StockStory",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Analyst Report: The Estée Lauder Companies Inc.",
+      "url": "https://finance.yahoo.com/m/e6ef3119-200c-3faf-bac6-b142ec68440c/analyst-report%3A-the-est%C3%A9e.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks to Watch Thursday Recap: Qualcomm, Shell, Arm",
+      "url": "https://finance.yahoo.com/m/60a92c51-b772-30ee-9667-fbe0df514dfd/stocks-to-watch-thursday.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Estée Lauder Stock Tumbled 20% Today. Here's What Dragged the Shares Lower",
+      "url": "https://finance.yahoo.com/m/b33588d2-eb3e-32ba-bbe7-958c60d4dde2/est%C3%A9e-lauder-stock-tumbled.html",
+      "publisher": "Investopedia",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stock Market Today: Nasdaq, Dow Sink But Small Caps Take It On Chin (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/e263e442-296b-39d8-8185-e01b4d948dbe/stock-market-today%3A-nasdaq%2C.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Estee Lauder Companies Inc (EL) Q2 2026 Earnings Call Highlights: Strong EPS Growth and ...",
+      "url": "https://finance.yahoo.com/news/estee-lauder-companies-inc-el-210711966.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stock Market Today: Dow, Nasdaq Struggle; Animal Health Name Soars (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/e263e442-296b-39d8-8185-e01b4d948dbe/stock-market-today%3A-dow%2C.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Estée Lauder Sank After Earnings. Better-Looking Days Are Ahead.",
+      "url": "https://finance.yahoo.com/m/3da7c1fd-3f33-3246-a5d4-809deb4388e7/est%C3%A9e-lauder-sank-after.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Estee Lauder Sank After Earnings. Better-Looking Days Are Ahead.",
+      "url": "https://www.barrons.com/articles/estee-lauder-stock-earnings-outlook-3b720f61?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Estee Lauder Stock Tanks. Restructuring Costs and Tariffs Take Bite Out of Earnings.",
+      "url": "https://finance.yahoo.com/m/28a7e22e-2a8b-3c9f-9ecf-2b9d930d01c2/estee-lauder-stock-tanks..html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Estee Lauder's stock heads for worst day ever, as investors were betting on much higher profits",
+      "url": "https://www.marketwatch.com/story/estee-lauders-stock-heads-for-worst-day-ever-as-investors-were-betting-on-much-higher-profits-5ae5d114?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "The China Secret Thats Making Smart Money Load Up on Estee Lauder While Everyone Else Runs for the Exit",
+      "url": "https://finance.yahoo.com/m/b198b175-9cb2-34c6-a804-290cdbb936e8/the-china-secret-that%E2%80%99s.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    }
+  ]
 }

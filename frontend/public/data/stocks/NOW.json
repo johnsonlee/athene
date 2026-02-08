@@ -6279,8 +6279,8 @@
     "close": 100.73999786376953,
     "sma_20": 123.03699951171875,
     "sma_50": 144.27783935546876,
-    "sma_200": 177.35658935546877,
-    "trend_alignment": 0.04252322765401825,
+    "sma_200": 177.35658935546874,
+    "trend_alignment": 0.04252322765401832,
     "rsi": 19.853844077929768,
     "rsi_score": -0.6029231184414047,
     "macd_histogram": -1.8561283263417536,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 4.0434530836301725,
     "stoch_d": 7.189711072022612,
-    "trend_score": 4.252322765401825,
+    "trend_score": 4.252322765401832,
     "rsi_abs_score": 39.853844077929764,
     "macd_abs_score": 20.0,
     "momentum_score": 29.926922038964882,
@@ -6306,7 +6306,15 @@
     "technical_score": 25.05292230878269,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.18082966136511672,
+    "sentiment_pos": 0.0156,
+    "sentiment_neg": 0.10654999999999999,
+    "sentiment_neu": 0.8778499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 40.96
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.8860432797299981,
@@ -6325,7 +6333,7 @@
     "quality_score": 64.445025,
     "growth_score": 63.75,
     "safety_score": 60.846481511532474,
-    "trend_score": 4.252322765401825,
+    "trend_score": 4.252322765401832,
     "momentum_score": 29.926922038964882,
     "volatility_score": 23.995744337363377,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 48.50123248,
     "catalyst_timeline": 35.64537648043667,
     "downside_control": 46.37533387733438,
-    "composite_score": 47.15354365994675,
+    "composite_score": 47.14965461464831,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 61.06549753563982,
     "technical_score": 25.05292230878269,
-    "sentiment_score": 50.0,
+    "sentiment_score": 40.96,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Systems Software"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "'This probably seems overdone': Wall Street strategists weigh in on software stock sell-off",
+      "url": "https://finance.yahoo.com/news/this-probably-seems-overdone-wall-street-strategists-weigh-in-on-software-stock-sell-off-160003877.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AI Fear Grips Wall Street as a New Stock Market Reality Sets In",
+      "url": "https://finance.yahoo.com/news/ai-fear-grips-wall-street-140007396.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Truist Cut PT on ServiceNow (NOW) to $175 From $240 - Here's Why",
+      "url": "/news/303712/truist-cut-pt-on-servicenow-now-to-175-from-240-heres-why",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Dan Ives Says Software Selloff Is Worst He's Seen In 25 Years As Microsoft, Salesforce Face Brutal AI Reckoning",
+      "url": "https://finance.yahoo.com/news/dan-ives-says-software-selloff-003125036.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "3 Contrarian \"Buy the Dip\" Picks-and One Area to Avoid",
+      "url": "/news/303668/3-contrarian-buy-the-dip-picks-and-one-area-to-avoid",
+      "publisher": "MarketBeat",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Software stocks have been crushed. Here's how to play the sector as the dust settles.",
+      "url": "https://www.marketwatch.com/story/software-stocks-have-been-crushed-heres-how-to-play-the-sector-as-the-dust-settles-c0175f8a?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Software Stocks Sell-Off: Are They Deals or Traps?",
+      "url": "/news/303451/software-stocks-sell-off-are-they-deals-or-traps",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dow Jones Tops 50,000 For First Time Ever, Decoupling From Tech: This Week On Wall Street",
+      "url": "/news/303276/dow-jones-tops-50000-for-first-time-ever-decoupling-from-tech-this-week-on-wall-street",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "AI trade splinters as investors get more selective",
+      "url": "https://finance.yahoo.com/news/ai-trade-splinters-investors-more-150101291.html",
+      "publisher": "Reuters",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Company News for Feb 6, 2026",
+      "url": "/news/302935/company-news-for-feb-6-2026",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Low Volatility ETFs to Watch Amid Major Tech Sell-Off Over AI Panic",
+      "url": "/news/302877/low-volatility-etfs-to-watch-amid-major-tech-sell-off-over-ai-panic",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "ServiceNow (NOW)'s Decline is Overdone, Says Jim Cramer",
+      "url": "/news/302698/servicenow-nows-decline-is-overdone-says-jim-cramer",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BetterInvesting Magazine Update on ServiceNow Inc. (NYSE: NOW) and Deckers Outdoors Corp. (NYSE: DECK)",
+      "url": "/news/302541/betterinvesting-magazine-update-on-servicenow-inc-nyse-now-and-deckers-outdoors-corp-nyse-deck",
+      "publisher": "PR Newswire",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Coty Q2 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/80554687-e119-38e3-b49f-4b14c758c89c/coty-q2-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Heard on the Street Thursday Recap: Chomping at the Bitcoin",
+      "url": "https://finance.yahoo.com/m/5f388fe8-dcbf-3051-83ac-2c75d47bfb22/heard-on-the-street-thursday.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dan Ives Says Software Selloff Is Worst He's Seen In 25 Years As Microsoft, Salesforce Face Brutal AI Reckoning",
+      "url": "/news/302364/dan-ives-says-software-selloff-is-worst-hes-seen-in-25-years-as-microsoft-salesforce-face-brutal-ai-reckoning",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "The Software Rout Is Spreading Pain to the Debt Markets",
+      "url": "https://finance.yahoo.com/m/b82600a2-2be8-390b-800f-196ae2f22e13/the-software-rout-is.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Heard on the Street Recap: Chomping at the Bitcoin",
+      "url": "https://finance.yahoo.com/m/368d2563-a21a-3a81-8b2d-ce75f3256521/heard-on-the-street-recap%3A.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "'Software-mageddon' unlikely to be broad-based, market expert says",
+      "url": "https://finance.yahoo.com/video/software-mageddon-unlikely-broad-based-205608449.html",
+      "publisher": "Reuters Videos",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ServiceNow (NOW) Stock Trades Down, Here Is Why",
+      "url": "/news/302014/servicenow-now-stock-trades-down-here-is-why",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    }
+  ]
 }

@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 34.97999954223633,
     "sma_20": 33.47600011825561,
-    "sma_50": 30.496464042663575,
+    "sma_50": 30.49646404266358,
     "sma_200": 24.38044304847718,
-    "trend_alignment": 0.844823467198812,
+    "trend_alignment": 0.8448234671988117,
     "rsi": 66.65860763343501,
     "rsi_score": 0.3331721526687002,
     "macd_histogram": -0.04134137191433829,
@@ -6296,17 +6296,25 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 73.17429098013001,
-    "stoch_d": 66.6979664642891,
-    "trend_score": 84.48234671988119,
+    "stoch_d": 66.69796646428911,
+    "trend_score": 84.48234671988118,
     "rsi_abs_score": 63.35589862638197,
     "macd_abs_score": 44.54535645687895,
     "momentum_score": 53.95062754163046,
     "volatility_score": 53.01039761296324,
     "volume_score": 50.0,
-    "technical_score": 62.13197180104614,
+    "technical_score": 62.131971801046134,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.2395111138857478,
+    "sentiment_pos": 0.1789,
+    "sentiment_neg": 0.02915,
+    "sentiment_neu": 0.79195,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 61.98
+  },
   "analyst": {
     "revision_momentum": -0.1111111111111111,
     "target_upside": 0.0005717552887365102,
@@ -6325,7 +6333,7 @@
     "quality_score": 59.27891428571428,
     "growth_score": 40.625,
     "safety_score": 65.57158349470662,
-    "trend_score": 84.48234671988119,
+    "trend_score": 84.48234671988118,
     "momentum_score": 53.95062754163046,
     "volatility_score": 53.01039761296324,
     "volume_score": 50.0,
@@ -6344,16 +6352,16 @@
     "current_ratio_score": 80.2,
     "earnings_visibility": 49.00558714285714,
     "valuation_margin": 58.25753565,
-    "catalyst_timeline": 61.425672474750364,
+    "catalyst_timeline": 61.42567247475036,
     "downside_control": 63.29429716615047,
-    "composite_score": 57.881458866655166,
+    "composite_score": 57.87756982135673,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 56.358020692988944,
-    "technical_score": 62.13197180104614,
-    "sentiment_score": 50.0,
+    "technical_score": 62.131971801046134,
+    "sentiment_score": 61.98,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Energy",
     "industry": "Oil & Gas Equipment & Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "From AI Darlings To Dow Dinosaurs: Investors Flee Software For Old-Economy Stocks",
+      "url": "/news/303569/from-ai-darlings-to-dow-dinosaurs-investors-flee-software-for-old-economy-stocks",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Halliburton (HAL) Q4 Earnings: How Key Metrics Compare to Wall Street Estimates",
+      "url": "/news/303447/halliburton-hal-q4-earnings-how-key-metrics-compare-to-wall-street-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Core Laboratories Q4 Earnings Beat Estimates, Expenses Increase Y/Y",
+      "url": "/news/302804/core-laboratories-q4-earnings-beat-estimates-expenses-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Patterson-UTI Energy Q4 Loss Narrower Than Expected, Revenues Beat",
+      "url": "/news/301839/patterson-uti-energy-q4-loss-narrower-than-expected-revenues-beat",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "SLB Secures $1.5 Billion Contract for Mutriba Field Development",
+      "url": "/news/301372/slb-secures-15-billion-contract-for-mutriba-field-development",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Marathon Q4 Earnings & Revenues Beat Estimates, Expenses Down Y/Y",
+      "url": "/news/301282/marathon-q4-earnings-revenues-beat-estimates-expenses-down-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Oil Services Stocks Stage Historic Comeback - Expert Highlights An 'Accumulating Strength'",
+      "url": "/news/300279/oil-services-stocks-stage-historic-comeback-expert-highlights-an-accumulating-strength",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Suncor Energy Q4 Earnings & Revenues Beat Estimates, Both Down Y/Y",
+      "url": "/news/299859/suncor-energy-q4-earnings-revenues-beat-estimates-both-down-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Halliburton Company Stock: Analyst Estimates & Ratings",
+      "url": "https://finance.yahoo.com/m/e7e90ce6-11b9-32a6-8134-79bbf242a874/halliburton-company-stock%3A.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Aker BP starts oil production at Solveig phase two development",
+      "url": "https://finance.yahoo.com/m/bd2ee94a-9cf6-3177-b580-3b4cf886a57d/aker-bp-starts-oil-production.html",
+      "publisher": "Offshore Technology",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Imperial Oil Q4 Earnings Surpass Estimates, Revenues Miss",
+      "url": "/news/295943/imperial-oil-q4-earnings-surpass-estimates-revenues-miss",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stocks Gain on US Manufacturing Strength",
+      "url": "https://finance.yahoo.com/m/fd077afd-6eb7-36bd-8cc3-d39c206200ed/stocks-gain-on-us.html",
+      "publisher": "Barchart",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stock Indexes Climb as Chip Makers and AI Infrastructure Stocks Rebound",
+      "url": "https://finance.yahoo.com/m/1374d656-6f72-314c-a8fc-52c418638b2c/stock-indexes-climb-as-chip.html",
+      "publisher": "Barchart",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jim Cramer Discuses Halliburton's (HAL) Infrastructure Business",
+      "url": "/news/294520/jim-cramer-discuses-halliburtons-hal-infrastructure-business",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-31",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Chevron And Exxon Top Earnings But Only One Supermajor Saw Profit Growth; U.S. Oil Prices And Venezuela In Focus",
+      "url": "https://finance.yahoo.com/m/4e77cb4e-909d-3df0-a232-c2a3677c3099/chevron-and-exxon-top.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Chevron Tops Q4 Earnings Estimates, Lags Revenues, Hikes Dividend",
+      "url": "/news/293756/chevron-tops-q4-earnings-estimates-lags-revenues-hikes-dividend",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Leucipa Rollout Strengthens Baker Hughes' Digital Energy Footprint",
+      "url": "/news/293578/leucipa-rollout-strengthens-baker-hughes-digital-energy-footprint",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Liberty Energy's Q4 Earnings and Revenues Beat Estimates",
+      "url": "/news/293275/liberty-energys-q4-earnings-and-revenues-beat-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Trump Administration Talks With Energy Firms on Rapid Venezuela Oil Output Increase",
+      "url": "https://finance.yahoo.com/news/trump-administration-talks-energy-firms-172806325.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Concerns Over AI Spending Weigh on Stocks",
+      "url": "https://finance.yahoo.com/m/847e6871-a324-397e-a746-c6933beb4d18/concerns-over-ai-spending.html",
+      "publisher": "Barchart",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    }
+  ]
 }

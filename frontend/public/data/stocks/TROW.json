@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 94.58000183105469,
     "sma_20": 103.37199935913087,
-    "sma_50": 103.80870925903321,
-    "sma_200": 99.94954780578612,
-    "trend_alignment": 0.40336427367091615,
+    "sma_50": 103.80870925903322,
+    "sma_200": 99.94954780578614,
+    "trend_alignment": 0.403364273670916,
     "rsi": 33.604434262555934,
     "rsi_score": -0.3279113147488813,
     "macd_histogram": -1.490297685696943,
@@ -6296,17 +6296,25 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 12.305219611047598,
-    "stoch_d": 15.05514410722041,
-    "trend_score": 40.336427367091616,
+    "stoch_d": 15.055144107220412,
+    "trend_score": 40.3364273670916,
     "rsi_abs_score": 54.32532111506712,
     "macd_abs_score": 20.0,
     "momentum_score": 37.162660557533556,
     "volatility_score": 37.618964661452885,
     "volume_score": 50.0,
-    "technical_score": 40.77351930967813,
+    "technical_score": 40.77351930967812,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.04932762643749516,
+    "sentiment_pos": 0.05205,
+    "sentiment_neg": 0.03555,
+    "sentiment_neu": 0.9124000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 52.47
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.12074434341298373,
@@ -6325,7 +6333,7 @@
     "quality_score": 81.5481,
     "growth_score": 51.3,
     "safety_score": 33.12325,
-    "trend_score": 40.336427367091616,
+    "trend_score": 40.3364273670916,
     "momentum_score": 37.162660557533556,
     "volatility_score": 37.618964661452885,
     "volume_score": 50.0,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 55.831495000000004,
     "catalyst_timeline": 43.11342103479704,
     "downside_control": 39.89233219921793,
-    "composite_score": 52.228567910303596,
+    "composite_score": 52.22467886500516,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 58.316159166666665,
-    "technical_score": 40.77351930967813,
-    "sentiment_score": 50.0,
+    "technical_score": 40.77351930967812,
+    "sentiment_score": 52.47,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 0.8325,
     "data_quality_penalty": 0.0,
-    "rank": 350,
-    "percentile": 0.32755298651252407,
+    "rank": 351,
+    "percentile": 0.325626204238921,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Asset Management & Custody Banks"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Apollo Set to Report Q4 Earnings: What's in the Cards for the Stock?",
+      "url": "/news/303090/apollo-set-to-report-q4-earnings-whats-in-the-cards-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BEN's January AUM Rises 1.3% Sequentially: What's Driving Growth?",
+      "url": "/news/303075/bens-january-aum-rises-13-sequentially-whats-driving-growth",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: T. Rowe Price Group, Inc.",
+      "url": "https://finance.yahoo.com/m/e9b7770f-8245-365b-9d41-6be8811e7a32/analyst-report%3A-t.-rowe-price.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "KKR & Co. Shares Fall as Q4 Earnings Miss Estimates, AUM Rises Y/Y",
+      "url": "/news/301812/kkr-co-shares-fall-as-q4-earnings-miss-estimates-aum-rises-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "TROW Q4 Deep Dive: Market Outflows, Fee Pressures, and Strategic Shifts Shape Results",
+      "url": "/news/300845/trow-q4-deep-dive-market-outflows-fee-pressures-and-strategic-shifts-shape-results",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "T. Rowe Price Group Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/67e79178-fc4d-3146-94d1-27be72cb2e6b/t.-rowe-price-group-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why T. Rowe Price (TROW) Shares Are Sliding Today",
+      "url": "/news/300113/why-t-rowe-price-trow-shares-are-sliding-today",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "T. Rowe Price Group Inc (TROW) Q4 2025 Earnings Call Highlights: Strong AUM Growth Amidst Net ...",
+      "url": "https://finance.yahoo.com/news/t-rowe-price-group-inc-190215818.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "T. Rowe Price Stock Down 6.4% as Q4 Earnings Miss, Expenses Rise Y/Y",
+      "url": "/news/300003/t-rowe-price-stock-down-64-as-q4-earnings-miss-expenses-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Rotation out of Tech Stocks Weighs on the Broader Market",
+      "url": "https://finance.yahoo.com/m/53c7bb8e-05f9-319a-a276-65ec476a457b/rotation-out-of-tech-stocks.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: T. Rowe Price Group, Inc.",
+      "url": "https://finance.yahoo.com/m/dfbac98e-3ecc-3dd0-a560-0ae445ed7546/analyst-report%3A-t.-rowe-price.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Mixed on Sector Rotation out of Tech",
+      "url": "https://finance.yahoo.com/m/d2e885bd-e047-3deb-9c46-4d88220b392d/stocks-mixed-on-sector.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "T. Rowe (TROW) Q4 Earnings: How Key Metrics Compare to Wall Street Estimates",
+      "url": "/news/299491/t-rowe-trow-q4-earnings-how-key-metrics-compare-to-wall-street-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "T Rowe Price (TROW) Q4 2025 Earnings Transcript",
+      "url": "/news/299298/t-rowe-price-trow-q4-2025-earnings-transcript",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "T. Rowe Price price target lowered to $123 from $128 at Morgan Stanley",
+      "url": "https://finance.yahoo.com/news/t-rowe-price-price-target-134622594.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "T. Rowe Price (TROW) Misses Q4 Earnings Estimates",
+      "url": "/news/299310/t-rowe-price-trow-misses-q4-earnings-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "T. Rowe Price (NASDAQ:TROW) Reports Sales Below Analyst Estimates In Q4 CY2025 Earnings",
+      "url": "/news/299146/t-rowe-price-nasdaq-trow-reports-sales-below-analyst-estimates-in-q4-cy2025-earnings",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "T. Rowe: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/t-rowe-q4-earnings-snapshot-122825790.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "T. ROWE PRICE GROUP REPORTS FOURTH QUARTER AND FULL YEAR 2025 RESULTS",
+      "url": "/news/298933/t-rowe-price-group-reports-fourth-quarter-and-full-year-2025-results",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "T Rowe Price Equity Income Fund's Strategic Moves: Spotlight on Alliant Energy Corp",
+      "url": "https://finance.yahoo.com/news/t-rowe-price-equity-income-210020176.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    }
+  ]
 }

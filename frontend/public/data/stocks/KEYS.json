@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 1086775.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 80.06660212739564,
+    "stoch_k": 80.06660212739563,
     "stoch_d": 72.98903227609479,
     "trend_score": 78.96136134444153,
     "rsi_abs_score": 60.064026209966464,
@@ -6306,7 +6306,15 @@
     "technical_score": 62.457725601793705,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.08046462056038509,
+    "sentiment_pos": 0.08705,
+    "sentiment_neg": 0.020550000000000002,
+    "sentiment_neu": 0.8924,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 54.02
+  },
   "analyst": {
     "revision_momentum": 0.07692307692307693,
     "target_upside": -0.025763152197445287,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 50.84534313799999,
     "catalyst_timeline": 62.01671205386899,
     "downside_control": 62.9108895484149,
-    "composite_score": 59.387119786428904,
+    "composite_score": 59.383230741130475,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 59.45118237690476,
     "technical_score": 62.457725601793705,
-    "sentiment_score": 50.0,
+    "sentiment_score": 54.02,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 0.9441666666666666,
     "data_quality_penalty": 0.0,
-    "rank": 115,
-    "percentile": 0.7803468208092486,
+    "rank": 114,
+    "percentile": 0.7822736030828517,
     "tier": "buy",
     "tier_raw": "buy",
     "tier_label": "Buy",
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Electronic Equipment & Instruments"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Spirent Partners with ESA to Spearhead PNT Resilience Initiative for Critical National Infrastructure",
+      "url": "https://www.businesswire.com/news/home/20260205682924/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Here's How Much a $1000 Investment in Keysight Made 10 Years Ago Would Be Worth Today",
+      "url": "/news/297383/heres-how-much-a-1000-investment-in-keysight-made-10-years-ago-would-be-worth-today",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Inflated  Stocks That Concern Us",
+      "url": "/news/296776/3-inflated-stocks-that-concern-us",
+      "publisher": "StockStory",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Keysight (KEYS): Buy, Sell, or Hold Post Q3 Earnings?",
+      "url": "/news/296837/keysight-keys-buy-sell-or-hold-post-q3-earnings",
+      "publisher": "StockStory",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Keysight Technologies to Report Fiscal First Quarter Results on February 23, 2026",
+      "url": "https://www.businesswire.com/news/home/20260202735016/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Can Keysight's Deal for High-Speed Testing Drive Its Future Growth?",
+      "url": "/news/293844/can-keysights-deal-for-high-speed-testing-drive-its-future-growth",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Keysight and Point2 Technology Collaborate to Advance Next-Generation AI Scale-Up Interconnects",
+      "url": "https://www.businesswire.com/news/home/20260129047043/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Keysight Launches Wireless Coexistence Test Solution to Accelerate Compliance and Innovation",
+      "url": "https://www.businesswire.com/news/home/20260127649425/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "AI Stock With 150% Earnings Growth Tests Entry, But Note This Potential Catalyst",
+      "url": "https://finance.yahoo.com/m/548b2b1f-9a90-39e1-be29-29ab3bc4e1b7/ai-stock-with-150%25-earnings.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Keysight Technologies, Inc.",
+      "url": "https://finance.yahoo.com/m/2d9f23fb-4a62-35a7-a433-7e5e528d9abe/analyst-report%3A-keysight.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Keysight Powers the Future of E-Mobility with Test Solutions for High-Power and Megawatt Charging",
+      "url": "https://www.businesswire.com/news/home/20260121397795/en/The",
+      "publisher": "Business Wire",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Keysight Collaborates on Airbus UpNext SpaceRAN Demonstrator to Advance 5G NTN Innovation",
+      "url": "https://www.businesswire.com/news/home/20260120378362/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "KeyCorp Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/6e85c234-04cc-3eb2-af62-2e84eb9ad334/keycorp-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Earnings Preview: What to Expect From Keysight Technologies' Report",
+      "url": "https://finance.yahoo.com/m/15d84738-c352-3e9d-a579-370d0e7e7d29/earnings-preview%3A-what-to.html",
+      "publisher": "Barchart",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "inTest (INTT) Surges 8.9%: Is This an Indication of Further Gains?",
+      "url": "/news/278505/intest-intt-surges-89-is-this-an-indication-of-further-gains",
+      "publisher": "Zacks",
+      "date": "2026-01-16",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Keysight Unveils Machine Learning Toolkit to Accelerate Device Modeling and PDK Development",
+      "url": "https://www.businesswire.com/news/home/20260115914104/en/Machine",
+      "publisher": "Business Wire",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "If You Invested $1000 in Keysight a Decade Ago, This is How Much It'd Be Worth Now",
+      "url": "/news/277407/if-you-invested-1000-in-keysight-a-decade-ago-this-is-how-much-itd-be-worth-now",
+      "publisher": "Zacks",
+      "date": "2026-01-15",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Profitable Stocks We're Skeptical Of",
+      "url": "/news/277079/3-profitable-stocks-were-skeptical-of",
+      "publisher": "StockStory",
+      "date": "2026-01-14",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Forescout Named Keysight Network Visibility Tech Partner of the Year",
+      "url": "https://www.businesswire.com/news/home/20260114322946/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Keysight Technologies, Inc.",
+      "url": "https://finance.yahoo.com/m/94ccbee4-35b5-3402-b6ba-f19c48567bbf/analyst-report%3A-keysight.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-11",
+      "sentiment": "neutral"
+    }
+  ]
 }

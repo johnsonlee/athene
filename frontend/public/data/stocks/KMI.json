@@ -6279,8 +6279,8 @@
     "close": 30.5,
     "sma_20": 29.008994293212886,
     "sma_50": 27.713088340759278,
-    "sma_200": 26.958672523498535,
-    "trend_alignment": 0.6790340402032043,
+    "sma_200": 26.95867252349854,
+    "trend_alignment": 0.6790340402032042,
     "rsi": 70.14608671126965,
     "rsi_score": 0.4029217342253929,
     "macd_histogram": 0.09413732161607302,
@@ -6295,18 +6295,26 @@
     "avg_volume_20d": 15927035.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 95.6598780209074,
+    "stoch_k": 95.65987802090739,
     "stoch_d": 93.3387014659435,
-    "trend_score": 67.90340402032044,
+    "trend_score": 67.90340402032042,
     "rsi_abs_score": 53.59095720844499,
     "macd_abs_score": 60.216173902956804,
     "momentum_score": 56.903565555700894,
     "volatility_score": 50.462632269215504,
     "volume_score": 50.0,
-    "technical_score": 57.5346173266495,
+    "technical_score": 57.534617326649496,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.4600204664835333,
+    "sentiment_pos": 0.24220000000000003,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.7578,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 73.0
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.04918032786885246,
@@ -6325,7 +6333,7 @@
     "quality_score": 61.90694642857142,
     "growth_score": 81.46428571428572,
     "safety_score": 28.398049999999998,
-    "trend_score": 67.90340402032044,
+    "trend_score": 67.90340402032042,
     "momentum_score": 56.903565555700894,
     "volatility_score": 50.462632269215504,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 51.414576966666665,
     "catalyst_timeline": 60.686351178913604,
     "downside_control": 40.62710234038232,
-    "composite_score": 56.93690531336804,
+    "composite_score": 56.9330162680696,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 57.975746162698414,
-    "technical_score": 57.5346173266495,
-    "sentiment_score": 50.0,
+    "technical_score": 57.534617326649496,
+    "sentiment_score": 73.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Energy",
     "industry": "Oil & Gas Storage & Transportation"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Kinder Morgan (KMI) Gets Positive Analyst Updates After Q4 Results",
+      "url": "/news/303752/kinder-morgan-kmi-gets-positive-analyst-updates-after-q4-results",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 High-Yield Dividend Stocks Perfect For Those 60+ Years",
+      "url": "https://finance.yahoo.com/m/f1f5153b-0348-38b0-ade6-8c82e8d45ede/3-high-yield-dividend-stocks.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Freedom Capital Upgraded Kinder Morgan to Hold",
+      "url": "/news/303021/freedom-capital-upgraded-kinder-morgan-to-hold",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "MPLX LP Q4 Earnings Beat Estimates on Higher Throughput",
+      "url": "/news/302897/mplx-lp-q4-earnings-beat-estimates-on-higher-throughput",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Kinder Morgan, Inc. (KMI) Is a Trending Stock: Facts to Know Before Betting on It",
+      "url": "/news/302781/kinder-morgan-inc-kmi-is-a-trending-stock-facts-to-know-before-betting-on-it",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "UGP or KMI: Which Is the Better Value Stock Right Now?",
+      "url": "/news/297845/ugp-or-kmi-which-is-the-better-value-stock-right-now",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "2 No-Brainer High-Yield Energy Stocks to Buy for Reliable Income Right Now",
+      "url": "/news/296125/2-no-brainer-high-yield-energy-stocks-to-buy-for-reliable-income-right-now",
+      "publisher": "Motley Fool",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Enterprise Products' Midstream Network Supports Steady Returns",
+      "url": "/news/293339/why-enterprise-products-midstream-network-supports-steady-returns",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Liberty Energy's Q4 Earnings and Revenues Beat Estimates",
+      "url": "/news/293275/liberty-energys-q4-earnings-and-revenues-beat-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What the LNG Wave Means for Gas Market Exposure in 2026",
+      "url": "/news/291724/what-the-lng-wave-means-for-gas-market-exposure-in-2026",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Energy ETFs to Gain as Arctic Blast Ignites US Natural Gas Price Rally",
+      "url": "/news/290642/energy-etfs-to-gain-as-arctic-blast-ignites-us-natural-gas-price-rally",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Enterprise Products' Q4 Earnings on Deck: Time to Buy the Stock?",
+      "url": "/news/290604/enterprise-products-q4-earnings-on-deck-time-to-buy-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is Wall Street Bullish or Bearish on Kinder Morgan Stock?",
+      "url": "https://finance.yahoo.com/m/4ab59b51-c91e-3e77-9958-73af7ba5ead4/is-wall-street-bullish-or.html",
+      "publisher": "Barchart",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Amphenol and LGI Homes have been highlighted as Zacks Bull and Bear of the Day",
+      "url": "/news/287850/amphenol-and-lgi-homes-have-been-highlighted-as-zacks-bull-and-bear-of-the-day",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Midstream Stocks Positioned to Withstand Energy Price Swings",
+      "url": "/news/287200/3-midstream-stocks-positioned-to-withstand-energy-price-swings",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Kinder Morgan's Natural Gas/Dividend Growth Cycle Still in Play",
+      "url": "/news/286845/kinder-morgans-natural-gasdividend-growth-cycle-still-in-play",
+      "publisher": "MarketBeat",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Investors Heavily Search Kinder Morgan, Inc. (KMI): Here is What You Need to Know",
+      "url": "/news/286918/investors-heavily-search-kinder-morgan-inc-kmi-here-is-what-you-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Winter Storm Fern To Impact Energy, Utility Stocks-Antero Resources, Energy Transfer, Exelon In Focus",
+      "url": "/news/286494/winter-storm-fern-to-impact-energy-utility-stocks-antero-resources-energy-transfer-exelon-in-focus",
+      "publisher": "Benzinga",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Looking to Cash in AI, But Own Too Many Tech Stocks? This High-Yielding Energy Stock is Capitalizing on the AI-Powered Gas Boom.",
+      "url": "/news/286311/looking-to-cash-in-ai-but-own-too-many-tech-stocks-this-high-yielding-energy-stock-is-capitalizing-on-the-ai-powered-gas-boom",
+      "publisher": "Motley Fool",
+      "date": "2026-01-25",
+      "sentiment": "positive"
+    },
+    {
+      "title": "My 6 Highest Conviction Stock Picks for 2026 and Beyond",
+      "url": "/news/285992/my-6-highest-conviction-stock-picks-for-2026-and-beyond",
+      "publisher": "Motley Fool",
+      "date": "2026-01-24",
+      "sentiment": "neutral"
+    }
+  ]
 }

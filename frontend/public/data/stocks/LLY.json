@@ -6277,36 +6277,44 @@
   },
   "technical": {
     "close": 1058.1800537109375,
-    "sma_20": 1052.6795135498046,
+    "sma_20": 1052.6795135498048,
     "sma_50": 1053.4292053222657,
-    "sma_200": 859.0363488769531,
+    "sma_200": 859.0363488769532,
     "trend_alignment": 0.704511747953801,
     "rsi": 51.11784616309892,
     "rsi_score": 0.022356923261978353,
     "macd_histogram": -0.1491276790435888,
     "macd_line": -1.1024818072671678,
     "macd_histogram_pct": -0.0140928454019344,
-    "bb_position": 0.5520641882349434,
-    "bb_upper": 1105.5041166753865,
-    "bb_lower": 999.8549104242226,
-    "bb_width": 0.10036217565866541,
+    "bb_position": 0.5520641882349413,
+    "bb_upper": 1105.5041166753867,
+    "bb_lower": 999.8549104242228,
+    "bb_width": 0.10036217565866538,
     "hist_volatility": 0.5647922266396008,
     "volume_ratio": 1.3496700130778227,
     "avg_volume_20d": 3616810.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 43.309556887676266,
-    "stoch_d": 47.45758687249173,
+    "stoch_k": 43.30955688767627,
+    "stoch_d": 47.457586872491746,
     "trend_score": 70.4511747953801,
     "rsi_abs_score": 72.28249231416925,
     "macd_abs_score": 49.29535772990328,
     "momentum_score": 60.78892502203627,
-    "volatility_score": 41.03549443228045,
+    "volatility_score": 41.03549443228046,
     "volume_score": 50.0,
     "technical_score": 57.579128831681004,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.015676357468676697,
+    "sentiment_pos": 0.07365000000000001,
+    "sentiment_neg": 0.0749,
+    "sentiment_neu": 0.85145,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 49.22
+  },
   "analyst": {
     "revision_momentum": -0.0625,
     "target_upside": 0.18127350734279604,
@@ -6327,7 +6335,7 @@
     "safety_score": 25.62325,
     "trend_score": 70.4511747953801,
     "momentum_score": 60.78892502203627,
-    "volatility_score": 41.03549443228045,
+    "volatility_score": 41.03549443228046,
     "volume_score": 50.0,
     "analyst_score": 60.17208730839744,
     "pe_score": 27.440466400000002,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 28.785000033333333,
     "catalyst_timeline": 59.78321871258137,
     "downside_control": 36.010811664842066,
-    "composite_score": 54.20737210247912,
+    "composite_score": 54.203483057180684,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 62.77381669444445,
     "technical_score": 57.579128831681004,
-    "sentiment_score": 50.0,
+    "sentiment_score": 49.22,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Pharmaceuticals"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Analysts Project Eli Lilly (LLY) to Deliver 21%+ Revenue Growth and 40%+ Adjusted Earnings Growth in 2026",
+      "url": "/news/303800/analysts-project-eli-lilly-lly-to-deliver-21-revenue-growth-and-40-adjusted-earnings-growth-in-2026",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Hims & Hers Health Stops Offering Knockoff Wegovy Pill Amid FDA Crackdown",
+      "url": "https://finance.yahoo.com/m/1002bb24-5eb4-303a-9144-64abe04a7a40/hims-%26-hers-health-stops.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Goldman Sachs Reaffirms Buy on Eli Lilly and Company (LLY), Citing 25% Growth Outlook",
+      "url": "/news/303570/goldman-sachs-reaffirms-buy-on-eli-lilly-and-company-lly-citing-25-growth-outlook",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Weight-Loss Price Wars Are Breaking Big Pharma's Business Model",
+      "url": "https://www.wsj.com/health/pharma/the-weight-loss-price-wars-are-breaking-big-pharmas-business-model-53446a58?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Jim Cramer Says \"Eli Lilly's Constantly Taking Share From Danish Novo Nordisk\"",
+      "url": "/news/303478/jim-cramer-says-eli-lillys-constantly-taking-share-from-danish-novo-nordisk",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Eli Lilly Booms, Then Busts: Stellar Guidance vs Hims Undercut",
+      "url": "/news/303416/eli-lilly-booms-then-busts-stellar-guidance-vs-hims-undercut",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TrumpRx Is Here. Most People Won't Benefit.",
+      "url": "https://www.barrons.com/articles/trumprx-drug-discounts-who-benefits-05c323d5?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Amazon, Strategy, Robinhood, Novo Nordisk, Molina, Stellantis, Hub Group, and More Stock Market Movers",
+      "url": "https://finance.yahoo.com/m/c18863ff-041f-35f2-8054-0ec3d92baa4a/amazon%2C-strategy%2C-robinhood%2C.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CVS Caremark Replaces Amgen And Eli Lilly's Branded Drugs, Expands Biosimilar Strategy For Weak Bone Disorder",
+      "url": "/news/303195/cvs-caremark-replaces-amgen-and-eli-lillys-branded-drugs-expands-biosimilar-strategy-for-weak-bone-disorder",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Big-Name Earnings, Selloffs Highlight Busy Week on Wall Street",
+      "url": "/news/303135/big-name-earnings-selloffs-highlight-busy-week-on-wall-street",
+      "publisher": "Schaeffer's Research",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "These Stocks Are Todays Movers: Amazon, Strategy, Robinhood, Novo Nordisk, Molina, Stellantis, Hub Group, and More",
+      "url": "https://finance.yahoo.com/m/c18863ff-041f-35f2-8054-0ec3d92baa4a/these-stocks-are-today%E2%80%99s.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "TrumpRx launches to slash drug prices for cash-paying US patients",
+      "url": "https://finance.yahoo.com/m/4ef79b4d-689c-35f0-ab20-5a55317cbcf8/trumprx-launches-to-slash.html",
+      "publisher": "Pharmaceutical Technology",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Hims & Hers Stock Drops. It May Be Losing Its Weight-Loss Battle With Novo.",
+      "url": "https://www.barrons.com/articles/hims-hers-stock-novo-nordisk-weight-loss-wegovy-7104d3ad?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stock Market Divided With S&P 500, Nasdaq Below Key Levels; Google, Amazon AI Spending Stuns: Weekly Review",
+      "url": "https://finance.yahoo.com/m/e11da50b-cad4-3459-9edc-b4e8339e8b79/stock-market-divided-with-s%26p.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Pfizer Bets Big on Obesity and Oncology With 2026 Pipeline Push",
+      "url": "/news/303069/pfizer-bets-big-on-obesity-and-oncology-with-2026-pipeline-push",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Eli Lilly Stock Jumps on Wave of Analysts Upgrade",
+      "url": "https://finance.yahoo.com/news/eli-lilly-stock-jumps-wave-152951932.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Eli Lilly (LLY) is a Top-Ranked Growth Stock: Should You Buy?",
+      "url": "/news/302947/eli-lilly-lly-is-a-top-ranked-growth-stock-should-you-buy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "NVO, LLY Stocks Slide as HIMS Launches $49 Compounded Semaglutide Pill",
+      "url": "/news/302878/nvo-lly-stocks-slide-as-hims-launches-49-compounded-semaglutide-pill",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Incyte Gears Up to Report Q4 Earnings: Is a Beat in the Cards?",
+      "url": "/news/302730/incyte-gears-up-to-report-q4-earnings-is-a-beat-in-the-cards",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "China Biotech Lights Up. U.S. Stocks Prepare For A New Powerhouse.",
+      "url": "https://finance.yahoo.com/m/dfa6d3be-8b8d-3855-a4f9-84f680d8ff75/china-biotech-lights-up.-u.s..html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    }
+  ]
 }

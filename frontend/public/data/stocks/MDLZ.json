@@ -6306,7 +6306,15 @@
     "technical_score": 57.214187165634485,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.008760958455696547,
+    "sentiment_pos": 0.0539,
+    "sentiment_neg": 0.0404,
+    "sentiment_neu": 0.9057000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 50.44
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.11629456847717422,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 57.61042522857142,
     "catalyst_timeline": 55.90791772814056,
     "downside_control": 54.14628651864057,
-    "composite_score": 50.51324236154727,
+    "composite_score": 50.509353316248834,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 47.47015607606701,
     "technical_score": 57.214187165634485,
-    "sentiment_score": 50.0,
+    "sentiment_score": 50.44,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Staples",
     "industry": "Packaged Foods & Meats"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Hershey Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/98cc071b-d437-37d0-9a2f-09ea66cf19e0/hershey-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Take-Two, Mondelez Get Analyst Attention",
+      "url": "https://www.barrons.com/articles/take-two-mondelez-get-analyst-attention-cb192831?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hershey positions for lower volume sensitivity from inflation pricing",
+      "url": "https://finance.yahoo.com/m/5158fd51-d633-3e5b-90b8-a3e30886573b/hershey-positions-for-%E2%80%9Clower.html",
+      "publisher": "Just Food",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "TD Cowen Raises Mondelez (MDLZ) Target While North America Volumes Remain Weak",
+      "url": "/news/301949/td-cowen-raises-mondelez-mdlz-target-while-north-america-volumes-remain-weak",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "TD Cowen Lifts PT on Mondelez International (MDLZ) to $65 From $62, Maintains a Buy Rating",
+      "url": "/news/300717/td-cowen-lifts-pt-on-mondelez-international-mdlz-to-65-from-62-maintains-a-buy-rating",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Mondelez's Q4 Earnings Top Estimates Despite Cocoa Cost Headwinds",
+      "url": "/news/299604/mondelezs-q4-earnings-top-estimates-despite-cocoa-cost-headwinds",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Mondelez thrown curve ball by cocoa retreat in challenge to pricing strategy",
+      "url": "https://finance.yahoo.com/m/8e25f263-74a7-3876-b9ae-e61148d0915d/mondelez-thrown-curve-ball-by.html",
+      "publisher": "Just Food",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Mondelez International, Inc.",
+      "url": "https://finance.yahoo.com/m/94a02efb-0b93-3863-91bf-537b439528e3/analyst-report%3A-mondelez.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MDLZ Q4 Deep Dive: Margin Compression Amid Pricing, Cocoa Volatility, and Shifting Consumer Trends",
+      "url": "/news/298850/mdlz-q4-deep-dive-margin-compression-amid-pricing-cocoa-volatility-and-shifting-consumer-trends",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Mondelez International Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/f6e45a8b-4cbd-3e9f-bc42-852bd80fec67/mondelez-international-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Consumers Are Unlikely to Shake Their Economic Funk Soon, Mondelez Says",
+      "url": "https://finance.yahoo.com/m/623c37bf-5f1a-3eed-acae-33af9f15df41/consumers-are-unlikely-to.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Compared to Estimates, Mondelez (MDLZ) Q4 Earnings: A Look at Key Metrics",
+      "url": "/news/298421/compared-to-estimates-mondelez-mdlz-q4-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Mondelez (MDLZ) Q4 2025 Earnings Call Transcript",
+      "url": "/news/298291/mondelez-mdlz-q4-2025-earnings-call-transcript",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Mondelez (MDLZ) Q4 Earnings and Revenues Beat Estimates",
+      "url": "/news/298309/mondelez-mdlz-q4-earnings-and-revenues-beat-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Mondelez: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/mondelez-q4-earnings-snapshot-215223240.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Earnings live: AMD, Chipotle stocks fall, Mondelez profits hit by high cocoa prices",
+      "url": "https://finance.yahoo.com/news/live/earnings-live-amd-chipotle-stocks-fall-mondelez-profits-hit-by-high-cocoa-prices-215027935.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Mondelez (NASDAQ:MDLZ) Exceeds Q4 CY2025 Expectations",
+      "url": "/news/298199/mondelez-nasdaq-mdlz-exceeds-q4-cy2025-expectations",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Mondelez International Fourth-Quarter Profit Falls, Hurt by High Cocoa Costs",
+      "url": "https://www.wsj.com/business/earnings/mondelez-international-fourth-quarter-profit-falls-hurt-by-high-cocoa-costs-b5992590?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Mondelez International Reports Q4 and FY 2025 Results",
+      "url": "/news/298143/mondelz-international-reports-q4-and-fy-2025-results",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "RITZ Crackers Delivers a Salty Slice of Paradise in Its Big Game Comeback",
+      "url": "/news/297461/ritz-crackers-delivers-a-salty-slice-of-paradise-in-its-big-game-comeback",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    }
+  ]
 }

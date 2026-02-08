@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 47.72999954223633,
-    "sma_20": 44.35166873931886,
+    "sma_20": 44.35166873931885,
     "sma_50": 42.39964225769043,
     "sma_200": 43.28143085479737,
     "trend_alignment": 0.6651681229049922,
@@ -6286,16 +6286,16 @@
     "macd_histogram": 0.4161367807857319,
     "macd_line": 1.499378711534746,
     "macd_histogram_pct": 0.8718558239613894,
-    "bb_position": 0.9132699317248076,
-    "bb_upper": 48.4389861843817,
-    "bb_lower": 40.26435129425602,
-    "bb_width": 0.18431403197414883,
+    "bb_position": 0.9132699317248085,
+    "bb_upper": 48.43898618438169,
+    "bb_lower": 40.264351294256016,
+    "bb_width": 0.18431403197414886,
     "hist_volatility": 0.32438730000393706,
     "volume_ratio": 0.6180030628777029,
     "avg_volume_20d": 10483605.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 87.81817369441613,
+    "stoch_k": 87.81817369441612,
     "stoch_d": 90.65613166139325,
     "trend_score": 66.51681229049922,
     "rsi_abs_score": 51.48623124829726,
@@ -6306,7 +6306,15 @@
     "technical_score": 56.37061200272818,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.12344768482976742,
+    "sentiment_pos": 0.0721,
+    "sentiment_neg": 0.04955,
+    "sentiment_neu": 0.87835,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 56.17
+  },
   "analyst": {
     "revision_momentum": -0.2,
     "target_upside": -0.057196731615336206,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 29.03886439215686,
     "catalyst_timeline": 54.93692503812847,
     "downside_control": 58.27181539331552,
-    "composite_score": 55.589477115731235,
+    "composite_score": 55.5855880704328,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 65.16553996965453,
     "technical_score": 56.37061200272818,
-    "sentiment_score": 50.0,
+    "sentiment_score": 56.17,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Trading Companies & Distributors"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "From AI Darlings To Dow Dinosaurs: Investors Flee Software For Old-Economy Stocks",
+      "url": "/news/303569/from-ai-darlings-to-dow-dinosaurs-investors-flee-software-for-old-economy-stocks",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Are Wall Street Analysts Bullish on Fastenal Stock?",
+      "url": "https://finance.yahoo.com/m/220dfa7a-2d2b-30ee-b926-b88c8b1a134f/are-wall-street-analysts.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MSC Industrial Direct Stock Shows Improved Technical Strength",
+      "url": "https://finance.yahoo.com/m/a42818c1-d92f-3197-b960-8fd7367d6356/msc-industrial-direct-stock.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Fastenal Company",
+      "url": "https://finance.yahoo.com/m/a78cc0cd-17cc-338a-828a-a531fdd73ac4/analyst-report%3A-fastenal.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Barclays Reviews Fastenal (FAST) as Lower Pricing Weighs on Results",
+      "url": "/news/297382/barclays-reviews-fastenal-fast-as-lower-pricing-weighs-on-results",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Fastenal Company (FAST): A Bull Case Theory",
+      "url": "/news/296403/fastenal-company-fast-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Look beyond the S&P 500 at this group of stocks that is less pricey, and less concentrated",
+      "url": "https://www.marketwatch.com/story/look-beyond-the-s-p-500-at-this-group-of-stocks-that-is-less-pricey-and-less-concentrated-d7335bb4?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Fastenal's Q4 Earnings Call: Our Top 5 Analyst Questions",
+      "url": "/news/287829/fastenals-q4-earnings-call-our-top-5-analyst-questions",
+      "publisher": "StockStory",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Dividend Raises Are Spreading-These 3 Big Players Led the Move",
+      "url": "/news/287354/dividend-raises-are-spreading-these-3-big-players-led-the-move",
+      "publisher": "MarketBeat",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MarketBeat Week in Review - 01/19 - 01/23",
+      "url": "/news/286066/marketbeat-week-in-review-0119-0123",
+      "publisher": "MarketBeat",
+      "date": "2026-01-24",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CEOs Flag Jittery US Consumers as Global Tensions Intensify",
+      "url": "https://finance.yahoo.com/news/ceos-wary-jittery-us-consumer-120000220.html",
+      "publisher": "Bloomberg",
+      "date": "2026-01-23",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Analyst Report: Fastenal Company",
+      "url": "https://finance.yahoo.com/m/5d0f0850-da4f-30fb-a9ef-c8673beb68e7/analyst-report%3A-fastenal.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Nuts and Bolts of Fastenal Earnings-And What Comes Next",
+      "url": "/news/282663/the-nuts-and-bolts-of-fastenal-earnings-and-what-comes-next",
+      "publisher": "MarketBeat",
+      "date": "2026-01-21",
+      "sentiment": "negative"
+    },
+    {
+      "title": "FAST Q4 Deep Dive: Digital Expansion and Key Account Growth Shape Outlook",
+      "url": "/news/281903/fast-q4-deep-dive-digital-expansion-and-key-account-growth-shape-outlook",
+      "publisher": "StockStory",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Fastenal (FAST) Q4 Earnings: How Key Metrics Compare to Wall Street Estimates",
+      "url": "/news/281764/fastenal-fast-q4-earnings-how-key-metrics-compare-to-wall-street-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "These Stocks Are Todays Movers: Nvidia, Netflix, Intel, Sandisk, 3M, Coinbase, Newmont, RAPT, Fastenal, and More",
+      "url": "https://finance.yahoo.com/m/5d7ef121-979a-3321-9c45-b04e0d3c34fc/these-stocks-are-today%E2%80%99s.html",
+      "publisher": "Barrons.com",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Plunge on Greenland Crisis and Soaring Bond Yields",
+      "url": "https://finance.yahoo.com/m/cb1bdf7c-0b2c-353a-b282-37c38d2db7c0/stocks-plunge-on-greenland.html",
+      "publisher": "Barchart",
+      "date": "2026-01-20",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Fastenal Co (FAST) Q4 2025 Earnings Call Highlights: Strong Growth and Strategic Advancements ...",
+      "url": "https://finance.yahoo.com/news/fastenal-co-fast-q4-2025-210041709.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Fastenal Company",
+      "url": "https://finance.yahoo.com/m/347e9cc1-2c5a-3cca-a859-92b239cb39ee/analyst-report%3A-fastenal.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Fastenal Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/a6019f3d-10b3-31ee-8c91-8126767f7222/fastenal-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    }
+  ]
 }

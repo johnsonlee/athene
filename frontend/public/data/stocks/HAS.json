@@ -6279,8 +6279,8 @@
     "close": 93.83999633789062,
     "sma_20": 89.97149925231935,
     "sma_50": 85.6663996887207,
-    "sma_200": 75.93702711105348,
-    "trend_alignment": 0.7583936541369347,
+    "sma_200": 75.9370271110535,
+    "trend_alignment": 0.7583936541369345,
     "rsi": 65.04584201137467,
     "rsi_score": 0.3009168402274935,
     "macd_histogram": 0.30896329790214727,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 75.81201136222182,
     "stoch_d": 82.77887356711553,
-    "trend_score": 75.83936541369347,
+    "trend_score": 75.83936541369344,
     "rsi_abs_score": 67.87164236815092,
     "macd_abs_score": 60.73111972398368,
     "momentum_score": 64.30138104606729,
     "volatility_score": 47.611119206552225,
     "volume_score": 50.0,
-    "technical_score": 61.56444777923868,
+    "technical_score": 61.56444777923866,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.23384882286018308,
+    "sentiment_pos": 0.12505,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.8749499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 61.69
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.03367433930093773,
@@ -6325,7 +6333,7 @@
     "quality_score": 38.3516018,
     "growth_score": 53.42142857142858,
     "safety_score": 52.48732197511639,
-    "trend_score": 75.83936541369347,
+    "trend_score": 75.83936541369344,
     "momentum_score": 64.30138104606729,
     "volatility_score": 47.611119206552225,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 50.6228316,
     "catalyst_timeline": 63.03286592730599,
     "downside_control": 48.34876617725029,
-    "composite_score": 48.86105315638599,
+    "composite_score": 48.857164111087556,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 49.92316174454709,
-    "technical_score": 61.56444777923868,
-    "sentiment_score": 50.0,
+    "technical_score": 61.56444777923866,
+    "sentiment_score": 61.69,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Leisure Products"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Hasbro (HAS) Stock Dips While Market Gains: Key Facts",
+      "url": "/news/303446/hasbro-has-stock-dips-while-market-gains-key-facts",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Hasbro (HAS) is a Top Momentum Stock for the Long-Term",
+      "url": "/news/302963/why-hasbro-has-is-a-top-momentum-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Gear Up for Hasbro (HAS) Q4 Earnings: Wall Street Estimates for Key Metrics",
+      "url": "/news/301476/gear-up-for-hasbro-has-q4-earnings-wall-street-estimates-for-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hasbro Prepares to Unveil Q4 Earnings: Key Things to Watch",
+      "url": "/news/301349/hasbro-prepares-to-unveil-q4-earnings-key-things-to-watch",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What's Going On With Hasbro Stock On Wednesday?",
+      "url": "/news/300024/whats-going-on-with-hasbro-stock-on-wednesday",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How to Find Strong Consumer Discretionary Stocks Slated for Positive Earnings Surprises",
+      "url": "/news/299382/how-to-find-strong-consumer-discretionary-stocks-slated-for-positive-earnings-surprises",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Hasbro and Amazon MGM Studios Join Forces to Launch New Voltron Movie Toys",
+      "url": "https://www.businesswire.com/news/home/20260204272079/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Hasbro (HAS) is Poised to Beat Earnings Estimates Again",
+      "url": "/news/297938/why-hasbro-has-is-poised-to-beat-earnings-estimates-again",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Hasbro (HAS) Earnings Expected to Grow: Should You Buy?",
+      "url": "/news/297675/hasbro-has-earnings-expected-to-grow-should-you-buy",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hasbro and Legendary Entertainment Enter the Ring for Epic Street Fighter Toy Collaboration Ahead of Highly Anticipated New Film",
+      "url": "https://www.businesswire.com/news/home/20260202081847/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Hasbro (HAS) Dips More Than Broader Market: What You Should Know",
+      "url": "/news/294297/hasbro-has-dips-more-than-broader-market-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hasbro to Announce Fourth Quarter and Full Year 2025 Earnings on February 10, 2026",
+      "url": "https://www.businesswire.com/news/home/20260120107891/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hasbro Announces Additions to Board of Directors",
+      "url": "https://www.businesswire.com/news/home/20260120899535/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hasbro Earnings Preview: What to Expect",
+      "url": "https://finance.yahoo.com/m/a7665df4-a147-3455-abaf-1219ec1ca2e8/hasbro-earnings-preview%3A-what.html",
+      "publisher": "Barchart",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hasbro (HAS) Laps the Stock Market: Here's Why",
+      "url": "/news/278407/hasbro-has-laps-the-stock-market-heres-why",
+      "publisher": "Zacks",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hasbro (HAS) Stock Sinks As Market Gains: What You Should Know",
+      "url": "/news/272617/hasbro-has-stock-sinks-as-market-gains-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-01-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Hasbro (HAS) Outperforms Broader Market: What You Need to Know",
+      "url": "/news/271581/hasbro-has-outperforms-broader-market-what-you-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Supreme Court Could Rule on Trump's Tariffs. Here's What Market Experts Expect.",
+      "url": "https://finance.yahoo.com/m/5635e36a-22cf-3e6d-a535-20daea02ab1f/the-supreme-court-could-rule.html",
+      "publisher": "Investopedia",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Are You Looking for a Top Momentum Pick? Why Hasbro (HAS) is a Great Choice",
+      "url": "/news/271166/are-you-looking-for-a-top-momentum-pick-why-hasbro-has-is-a-great-choice",
+      "publisher": "Zacks",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Are You a Momentum Investor? This 1 Stock Could Be the Perfect Pick",
+      "url": "/news/270940/are-you-a-momentum-investor-this-1-stock-could-be-the-perfect-pick",
+      "publisher": "Zacks",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    }
+  ]
 }

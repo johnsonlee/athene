@@ -6278,8 +6278,8 @@
   "technical": {
     "close": 100.52999877929688,
     "sma_20": 93.87150001525879,
-    "sma_50": 88.2269998168945,
-    "sma_200": 91.07381874084473,
+    "sma_50": 88.22699981689452,
+    "sma_200": 91.07381874084471,
     "trend_alignment": 0.6734638219697292,
     "rsi": 80.86310439062053,
     "rsi_score": 0.6172620878124107,
@@ -6306,7 +6306,15 @@
     "technical_score": 54.8324618265743,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.18341569263379523,
+    "sentiment_pos": 0.1096,
+    "sentiment_neg": 0.010100000000000001,
+    "sentiment_neu": 0.88025,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 59.17
+  },
   "analyst": {
     "revision_momentum": 0.26666666666666666,
     "target_upside": 0.024569780165124826,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 43.00939806666666,
     "catalyst_timeline": 56.831193215761395,
     "downside_control": 55.36961168051095,
-    "composite_score": 49.91862808091986,
+    "composite_score": 49.91473903562142,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 50.246954579345996,
     "technical_score": 54.8324618265743,
-    "sentiment_score": 50.0,
+    "sentiment_score": 59.17,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Staples",
     "industry": "Household Products"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Church & Dwight Co., Inc. (CHD): A Bull Case Theory",
+      "url": "/news/298600/church-dwight-co-inc-chd-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Palantir upgraded, Best Buy downgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/palantir-upgraded-best-buy-downgraded-144724384.html",
+      "publisher": "The Fly",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Church & Dwight (CHD) Jumps 4.7% on Strong Earnings, Outlook; Firm to Pay Higher Dividends",
+      "url": "/news/294337/church-dwight-chd-jumps-47-on-strong-earnings-outlook-firm-to-pay-higher-dividends",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Church & Dwight Co Inc (CHD) Q4 2025 Earnings Call Highlights: Strong Sales Growth and ...",
+      "url": "https://finance.yahoo.com/news/church-dwight-co-inc-chd-230113354.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Church & Dwight Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/5fbc0774-39c8-371c-b268-affdcf7e8f08/church-%26-dwight-q4-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Church & Dwight Co., Inc.",
+      "url": "https://finance.yahoo.com/m/4101ca91-d356-3491-a2e4-128ed0483c41/analyst-report%3A-church-%26.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Church & Dwight Rides International Growth To Q4 Beat",
+      "url": "/news/293668/church-dwight-rides-international-growth-to-q4-beat",
+      "publisher": "Benzinga",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Church & Dwight (CHD) Q4 Earnings: Taking a Look at Key Metrics Versus Estimates",
+      "url": "/news/293603/church-dwight-chd-q4-earnings-taking-a-look-at-key-metrics-versus-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Church & Dwight Q4 Earnings Top Estimates, Organic Sales Up 0.7%",
+      "url": "/news/293610/church-dwight-q4-earnings-top-estimates-organic-sales-up-07",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Church & Dwight (CHD) Q4 Earnings and Revenues Beat Estimates",
+      "url": "/news/293378/church-dwight-chd-q4-earnings-and-revenues-beat-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Church & Dwight Logs Sales Growth",
+      "url": "https://www.wsj.com/business/earnings/church-dwight-logs-sales-growth-becc0a1a?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Church & Dwight (NYSE:CHD) Reports Q4 CY2025 In Line With Expectations",
+      "url": "/news/293224/church-dwight-nyse-chd-reports-q4-cy2025-in-line-with-expectations",
+      "publisher": "StockStory",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Church & Dwight: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/church-dwight-q4-earnings-snapshot-121142902.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Church & Dwight Reports Q4 2025 and 2025 Results and Provides 2026 Outlook",
+      "url": "https://www.businesswire.com/news/home/20260130391816/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CHD's Q4 Earnings Coming Up: Will the Stock Extend Its Beat Streak?",
+      "url": "/news/292377/chds-q4-earnings-coming-up-will-the-stock-extend-its-beat-streak",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Earnings To Watch: Church & Dwight (CHD) Reports Q4 Results Tomorrow",
+      "url": "/news/291093/earnings-to-watch-church-dwight-chd-reports-q4-results-tomorrow",
+      "publisher": "StockStory",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Church & Dwight (CHD) Earnings Expected to Grow: What to Know Ahead of Next Week's Release",
+      "url": "/news/285426/church-dwight-chd-earnings-expected-to-grow-what-to-know-ahead-of-next-weeks-release",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "P&G CFO: Consumers are dosing their products carefully",
+      "url": "https://finance.yahoo.com/news/pg-cfo-consumers-are-dosing-their-products-carefully-125331340.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Can PG's Productivity Drive Fuel EPS Gains Amid Inflation?",
+      "url": "/news/281395/can-pgs-productivity-drive-fuel-eps-gains-amid-inflation",
+      "publisher": "Zacks",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Procter & Gamble Q2 Earnings Preview: Buy Now or Stay Cautious?",
+      "url": "/news/280391/procter-gamble-q2-earnings-preview-buy-now-or-stay-cautious",
+      "publisher": "Zacks",
+      "date": "2026-01-19",
+      "sentiment": "negative"
+    }
+  ]
 }

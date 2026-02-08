@@ -6279,8 +6279,8 @@
     "close": 75.16000366210938,
     "sma_20": 75.6326889038086,
     "sma_50": 80.09894744873046,
-    "sma_200": 70.76960023880002,
-    "trend_alignment": 0.5350977411088701,
+    "sma_200": 70.76960023880004,
+    "trend_alignment": 0.53509774110887,
     "rsi": 44.328265542036505,
     "rsi_score": -0.11343468915926991,
     "macd_histogram": 0.09758839767753802,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 38.51240435234566,
     "stoch_d": 32.573512997238076,
-    "trend_score": 53.50977411088701,
+    "trend_score": 53.509774110887,
     "rsi_abs_score": 67.1939186504438,
     "macd_abs_score": 55.746021584706746,
     "momentum_score": 61.46997011757527,
@@ -6306,7 +6306,15 @@
     "technical_score": 52.76034205953925,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.12261042375782877,
+    "sentiment_pos": 0.0912,
+    "sentiment_neg": 0.034050000000000004,
+    "sentiment_neu": 0.8747999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 56.13
+  },
   "analyst": {
     "revision_momentum": -0.07692307692307693,
     "target_upside": 0.23736029803086753,
@@ -6325,7 +6333,7 @@
     "quality_score": 84.7824006,
     "growth_score": 54.05,
     "safety_score": 33.12325,
-    "trend_score": 53.50977411088701,
+    "trend_score": 53.509774110887,
     "momentum_score": 61.46997011757527,
     "volatility_score": 41.33209395500283,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 59.02447873333333,
     "catalyst_timeline": 54.92926371625106,
     "downside_control": 39.105301593250424,
-    "composite_score": 56.053420122657926,
+    "composite_score": 56.0495310773595,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 60.79726912444444,
     "technical_score": 52.76034205953925,
-    "sentiment_score": 50.0,
+    "sentiment_score": 56.13,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Consumer Finance"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Jim Cramer Says \"I Don't Want to Own Synchrony, I Want to Own Capital One\"",
+      "url": "/news/303479/jim-cramer-says-i-dont-want-to-own-synchrony-i-want-to-own-capital-one",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Are Wall Street Analysts Predicting Synchrony Financial Stock Will Climb or Sink?",
+      "url": "https://finance.yahoo.com/m/4811ecb6-f94c-3a85-b7c4-d2afc12f7e42/are-wall-street-analysts.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Truist Lowers Synchrony Financial (SYF) PT to $84 Following Cautious Credit Outlook, Adjusted 2026 Guidance",
+      "url": "/news/299108/truist-lowers-synchrony-financial-syf-pt-to-84-following-cautious-credit-outlook-adjusted-2026-guidance",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Synchrony to Participate in the 2026 UBS Financial Services Conference",
+      "url": "/news/297111/synchrony-to-participate-in-the-2026-ubs-financial-services-conference",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The 5 Most Interesting Analyst Questions From Synchrony Financial's Q4 Earnings Call",
+      "url": "/news/296717/the-5-most-interesting-analyst-questions-from-synchrony-financials-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bread Financial Q4 Earnings and Revenues Top Estimates, Rise Y/Y",
+      "url": "/news/295745/bread-financial-q4-earnings-and-revenues-top-estimates-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Synchrony Financial Stock Could Rally Back Near Record Peak",
+      "url": "/news/292450/synchrony-financial-stock-could-rally-back-near-record-peak",
+      "publisher": "Schaeffer's Research",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Synchrony price target lowered to $85 from $91 at RBC Capital",
+      "url": "https://finance.yahoo.com/news/synchrony-price-target-lowered-85-150041914.html",
+      "publisher": "TipRanks",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "SYF Q4 Deep Dive: Flat Revenues and Cautious Growth Outlook Amid Product Expansion",
+      "url": "/news/289456/syf-q4-deep-dive-flat-revenues-and-cautious-growth-outlook-amid-product-expansion",
+      "publisher": "StockStory",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Synchrony Financial Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/d2356639-038d-36e8-bd02-c8ad30a47a11/synchrony-financial-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Synchrony Financial (SYF) Q4 2025 Earnings Call Highlights: Strong Earnings Amid Flat Revenue ...",
+      "url": "https://finance.yahoo.com/news/synchrony-financial-syf-q4-2025-190053576.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Synchrony Q4 Earnings Beat Estimates on Improved Efficiency",
+      "url": "/news/288899/synchrony-q4-earnings-beat-estimates-on-improved-efficiency",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Synchrony Financial",
+      "url": "https://finance.yahoo.com/m/a19a17b4-4178-3e97-88d2-75b0ace019a1/analyst-report%3A-synchrony.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Compared to Estimates, Synchrony (SYF) Q4 Earnings: A Look at Key Metrics",
+      "url": "/news/288480/compared-to-estimates-synchrony-syf-q4-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Synchrony (SYF) Q4 Earnings Beat Estimates",
+      "url": "/news/288123/synchrony-syf-q4-earnings-beat-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Synchrony Financial (NYSE:SYF) Misses Q4 CY2025 Sales Expectations",
+      "url": "/news/288064/synchrony-financial-nyse-syf-misses-q4-cy2025-sales-expectations",
+      "publisher": "StockStory",
+      "date": "2026-01-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Synchrony: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/synchrony-q4-earnings-snapshot-111132427.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Synchrony Reports Fourth Quarter 2025 Results; Company also Announces Quarterly Common Stock Dividend of $0.30 Per Share",
+      "url": "/news/287936/synchrony-reports-fourth-quarter-2025-results-company-also-announces-quarterly-common-stock-dividend-of-030-per-share",
+      "publisher": "PR Newswire",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Synchrony Financial (SYF) Q4 Earnings Report Preview: What To Look For",
+      "url": "/news/286434/synchrony-financial-syf-q4-earnings-report-preview-what-to-look-for",
+      "publisher": "StockStory",
+      "date": "2026-01-25",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How Banks Can Appease Trump on Credit-Card Rates",
+      "url": "https://finance.yahoo.com/m/a3f90e0b-617b-3bc1-b9cd-f8adda83fc7a/how-banks-can-appease-trump.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    }
+  ]
 }

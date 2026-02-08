@@ -6277,19 +6277,19 @@
   },
   "technical": {
     "close": 322.510009765625,
-    "sma_20": 319.5495010375976,
+    "sma_20": 319.5495010375977,
     "sma_50": 287.67140045166013,
-    "sma_200": 212.79008903503416,
+    "sma_200": 212.79008903503413,
     "trend_alignment": 0.8205922445344628,
     "rsi": 56.62337994083429,
     "rsi_score": 0.1324675988166858,
     "macd_histogram": -3.235500830864474,
     "macd_line": 9.222725716235232,
     "macd_histogram_pct": -1.0032249334573469,
-    "bb_position": 0.5638928711061122,
-    "bb_upper": 342.71725572427164,
-    "bb_lower": 296.3817463509236,
-    "bb_width": 0.14500260279829472,
+    "bb_position": 0.563892871106111,
+    "bb_upper": 342.7172557242717,
+    "bb_lower": 296.38174635092366,
+    "bb_width": 0.1450026027982947,
     "hist_volatility": 0.5258971199880694,
     "volume_ratio": 0.9862713705250261,
     "avg_volume_20d": 8447675.0,
@@ -6306,7 +6306,15 @@
     "technical_score": 56.768867430906354,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.2171859334131047,
+    "sentiment_pos": 0.1142,
+    "sentiment_neg": 0.0049,
+    "sentiment_neu": 0.8808999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 60.86
+  },
   "analyst": {
     "revision_momentum": 0.1724137931034483,
     "target_upside": 0.11004309943877712,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 47.83560035619048,
     "catalyst_timeline": 62.62581956841355,
     "downside_control": 52.76235519170432,
-    "composite_score": 60.49316974403733,
+    "composite_score": 60.489280698738895,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 64.47312916349206,
     "technical_score": 56.768867430906354,
-    "sentiment_score": 50.0,
+    "sentiment_score": 60.86,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Semiconductor Materials & Equipment"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Wealthy Families Are Worried About Geopolitics. But They're Not Rushing to AI, Crypto, or Gold",
+      "url": "https://www.barrons.com/articles/wealthy-families-are-worried-about-geopolitics-but-they-arent-rushing-to-ai-crypto-or-gold-62ce6f59?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Super Bowl LX, Coinbase earnings, jobs data & CPI: What to Watch",
+      "url": "https://finance.yahoo.com/video/super-bowl-lx-coinbase-earnings-000012395.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cisco Stock Holds Strong Amid Tech Selling As Earnings Come Into Focus",
+      "url": "https://finance.yahoo.com/m/8f2e1c81-f827-31b3-bba3-eca7e27ac489/cisco-stock-holds-strong-amid.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cloudflare to Post Q4 Earnings: What's in Store for the Stock?",
+      "url": "/news/303007/cloudflare-to-post-q4-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Synaptics (SYNA) Surpasses Q2 Earnings and Revenue Estimates",
+      "url": "/news/302263/synaptics-syna-surpasses-q2-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Citi Jumps Applied Materials (AMAT) Target Ahead of Earnings",
+      "url": "/news/301975/citi-jumps-applied-materials-amat-target-ahead-of-earnings",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ON Set to Report Q4 Earnings: What's in Store for the Stock?",
+      "url": "/news/301958/on-set-to-report-q4-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "T-Mobile Set to Report Q4 Results: Can Revenue Growth Lift Earnings?",
+      "url": "/news/301761/t-mobile-set-to-report-q4-results-can-revenue-growth-lift-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Motorola to Report Q4 Earnings: Can Strong Revenues Drive Growth?",
+      "url": "/news/301758/motorola-to-report-q4-earnings-can-strong-revenues-drive-growth",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Applied Materials (AMAT) Expected to Beat Earnings Estimates: Can the Stock Move Higher?",
+      "url": "/news/301706/applied-materials-amat-expected-to-beat-earnings-estimates-can-the-stock-move-higher",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Applied Materials (AMAT) is a Strong Momentum Stock",
+      "url": "/news/301660/heres-why-applied-materials-amat-is-a-strong-momentum-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Will Applied Materials (AMAT) Beat Estimates Again in Its Next Earnings Report?",
+      "url": "/news/299899/will-applied-materials-amat-beat-estimates-again-in-its-next-earnings-report",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Rotation out of Tech Stocks Weighs on the Broader Market",
+      "url": "https://finance.yahoo.com/m/53c7bb8e-05f9-319a-a276-65ec476a457b/rotation-out-of-tech-stocks.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Applied Materials (AMAT) is a Strong Growth Stock",
+      "url": "/news/299597/heres-why-applied-materials-amat-is-a-strong-growth-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is It Worth Investing in Applied Materials (AMAT) Based on Wall Street's Bullish Views?",
+      "url": "/news/299514/is-it-worth-investing-in-applied-materials-amat-based-on-wall-streets-bullish-views",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Investors Need to Take Advantage of These 2 Computer and Technology Stocks Now",
+      "url": "/news/299376/why-investors-need-to-take-advantage-of-these-2-computer-and-technology-stocks-now",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "If You Invested $1000 in Applied Materials a Decade Ago, This is How Much It'd Be Worth Now",
+      "url": "/news/299322/if-you-invested-1000-in-applied-materials-a-decade-ago-this-is-how-much-itd-be-worth-now",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Are Wall Street Analysts Bullish on Applied Materials Stock?",
+      "url": "https://finance.yahoo.com/m/30057b6f-16a5-319d-bcf0-5659e75fa9f7/are-wall-street-analysts.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Applied Materials, Inc. (AMAT): A Bull Case Theory",
+      "url": "/news/298574/applied-materials-inc-amat-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Applied Materials (AMAT) Fell More Than Broader Market",
+      "url": "/news/298339/heres-why-applied-materials-amat-fell-more-than-broader-market",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    }
+  ]
 }

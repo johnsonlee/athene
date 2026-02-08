@@ -6306,7 +6306,15 @@
     "technical_score": 57.15279803274673,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.10188444978315428,
+    "sentiment_pos": 0.04755,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.95245,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 55.09
+  },
   "analyst": {
     "revision_momentum": 0.16666666666666666,
     "target_upside": -0.08153467206612958,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 42.30506115833333,
     "catalyst_timeline": 57.347584334095274,
     "downside_control": 53.51338518780411,
-    "composite_score": 54.99016241106627,
+    "composite_score": 54.986273365767836,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 61.74358429861111,
     "technical_score": 57.15279803274673,
-    "sentiment_score": 50.0,
+    "sentiment_score": 55.09,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Industrial Machinery & Supplies & Components"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "GWW Q4 Deep Dive: Technology Investments and Market Share Gains Drive Results Amid Macro Headwinds",
+      "url": "/news/298851/gww-q4-deep-dive-technology-investments-and-market-share-gains-drive-results-amid-macro-headwinds",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "W.W. Grainger Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/c5b9728c-efd7-3147-9e67-0e68574ae94d/w.w.-grainger-q4-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: W.W. Grainger, Inc.",
+      "url": "https://finance.yahoo.com/m/9cd53e56-89db-3043-bf04-d785a1ba3d38/analyst-report%3A-w.w..html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "W.W. Grainger Inc (GWW) Q4 2025 Earnings Call Highlights: Navigating Growth Amidst Challenges",
+      "url": "https://finance.yahoo.com/news/w-w-grainger-inc-gww-230134244.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Grainger (GWW) Q4 2025 Earnings Call Transcript",
+      "url": "/news/297831/grainger-gww-q4-2025-earnings-call-transcript",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Grainger Earnings Beat Estimates in Q4, Sales Increase Y/Y",
+      "url": "/news/297909/grainger-earnings-beat-estimates-in-q4-sales-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "W.W. Grainger (GWW) Q4 Earnings and Revenues Surpass Estimates",
+      "url": "/news/297500/ww-grainger-gww-q4-earnings-and-revenues-surpass-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "W.W. Grainger: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/w-w-grainger-q4-earnings-132140873.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "W.W. Grainger's (NYSE:GWW) Q4 CY2025 Sales Beat Estimates",
+      "url": "/news/297184/ww-graingers-nyse-gww-q4-cy2025-sales-beat-estimates",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "GRAINGER REPORTS RESULTS FOR THE FOURTH QUARTER AND FULL YEAR 2025",
+      "url": "/news/297152/grainger-reports-results-for-the-fourth-quarter-and-full-year-2025",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "W.W. Grainger (GWW) Reports Earnings Tomorrow: What To Expect",
+      "url": "/news/294925/ww-grainger-gww-reports-earnings-tomorrow-what-to-expect",
+      "publisher": "StockStory",
+      "date": "2026-02-01",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Grainger Stock Set to Report Q4 Earnings: Here's What to Expect",
+      "url": "/news/293982/grainger-stock-set-to-report-q4-earnings-heres-what-to-expect",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Seeking Clues to W.W. Grainger (GWW) Q4 Earnings? A Peek Into Wall Street Projections for Key Metrics",
+      "url": "/news/291814/seeking-clues-to-ww-grainger-gww-q4-earnings-a-peek-into-wall-street-projections-for-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "GRAINGER DECLARES QUARTERLY DIVIDEND",
+      "url": "/news/290531/grainger-declares-quarterly-dividend",
+      "publisher": "PR Newswire",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "W.W. Grainger (GWW) Expected to Beat Earnings Estimates: What to Know Ahead of Q4 Release",
+      "url": "/news/288575/ww-grainger-gww-expected-to-beat-earnings-estimates-what-to-know-ahead-of-q4-release",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Top Picks 2026- WW Grainger Inc. Notes GWW",
+      "url": "https://finance.yahoo.com/news/top-picks-2026-ww-grainger-050100476.html",
+      "publisher": "MoneyShow",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What Makes W.W. Grainger (GWW) an Investment Choice?",
+      "url": "/news/265878/what-makes-ww-grainger-gww-an-investment-choice",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "W.W. Grainger's Q4 2025 Earnings: What to Expect",
+      "url": "https://finance.yahoo.com/m/fd726f82-2626-3bfb-995c-84c09faf148d/w.w.-grainger%27s-q4-2025.html",
+      "publisher": "Barchart",
+      "date": "2026-01-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What Makes W.W. Grainger (GWW) an Investment Bet?",
+      "url": "/news/260797/what-makes-ww-grainger-gww-an-investment-bet",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Grainger Generates Five Dollars of Cash for Every Dollar Paid to Shareholders",
+      "url": "https://finance.yahoo.com/m/e06a67e3-023d-35e4-accd-5c2bceaa310a/grainger-generates-five.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2025-12-08",
+      "sentiment": "neutral"
+    }
+  ]
 }

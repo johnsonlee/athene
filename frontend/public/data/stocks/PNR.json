@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 2207180.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 22.87554642325351,
+    "stoch_k": 22.875546423253514,
     "stoch_d": 20.295138995381983,
     "trend_score": 40.702361883271045,
     "rsi_abs_score": 60.323069727046615,
@@ -6306,7 +6306,15 @@
     "technical_score": 41.96819516983017,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.15048322482101878,
+    "sentiment_pos": 0.0947,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.9053000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 57.52
+  },
   "analyst": {
     "revision_momentum": -0.2222222222222222,
     "target_upside": 0.23266563944530053,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 54.945348828571426,
     "catalyst_timeline": 46.075582144310204,
     "downside_control": 52.170589627918616,
-    "composite_score": 53.01177082269326,
+    "composite_score": 53.00788177739482,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 59.289977747142856,
     "technical_score": 41.96819516983017,
-    "sentiment_score": 50.0,
+    "sentiment_score": 57.52,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Industrial Machinery & Supplies & Components"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Oppenheimer Maintains Outperform Rating on Pentair (PNR)",
+      "url": "/news/302424/oppenheimer-maintains-outperform-rating-on-pentair-pnr",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pentair Q4 Earnings & Sales Surpass Estimates, Increase Y/Y",
+      "url": "/news/301768/pentair-q4-earnings-sales-surpass-estimates-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Pentair Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/ab7dde37-24c1-30e4-979e-cc7904b16226/pentair-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Pentair plc",
+      "url": "https://finance.yahoo.com/m/28506aba-dbcf-3f61-b6df-e76c360b99d9/analyst-report%3A-pentair-plc.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pentair PLC (PNR) Q4 2025 Earnings Call Highlights: Record Performance and Strategic Growth ...",
+      "url": "https://finance.yahoo.com/news/pentair-plc-pnr-q4-2025-210045464.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Pentair's Soft 2026 Outlook Wipes Out A Solid Earnings Beat",
+      "url": "/news/297466/pentairs-soft-2026-outlook-wipes-out-a-solid-earnings-beat",
+      "publisher": "Benzinga",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Pentair (PNR) Q4 Earnings: Taking a Look at Key Metrics Versus Estimates",
+      "url": "/news/297541/pentair-pnr-q4-earnings-taking-a-look-at-key-metrics-versus-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pentair plc (PNR) Beats Q4 Earnings and Revenue Estimates",
+      "url": "/news/297320/pentair-plc-pnr-beats-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pentair Announces New Executive Leadership Roles to Accelerate Growth and Enhance Customer Focus",
+      "url": "https://www.businesswire.com/news/home/20260203092281/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Pentair Reports Strong Fourth Quarter and Full Year 2025 Results",
+      "url": "https://www.businesswire.com/news/home/20260203960993/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Pentair Gears Up to Report Q4 Earnings: What to Expect From the Stock?",
+      "url": "/news/295868/pentair-gears-up-to-report-q4-earnings-what-to-expect-from-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pentair to Release Fourth Quarter and Full Year 2025 Earnings and Host Investor Conference Call on February 3",
+      "url": "https://www.businesswire.com/news/home/20260120823769/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pentair Just Hit a Milestone Barely 1 in 1,000 Stocks Achieve: Is It a Buy?",
+      "url": "/news/281151/pentair-just-hit-a-milestone-barely-1-in-1000-stocks-achieve-is-it-a-buy",
+      "publisher": "Motley Fool",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How Beth Wozniak Powered The Transformation Of nVent Electric",
+      "url": "https://finance.yahoo.com/m/fec4ec8b-5391-3041-821e-1efedf9a6537/how-beth-wozniak-powered-the.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Earnings Preview: What to Expect From Pentairs Report",
+      "url": "https://finance.yahoo.com/m/c839d192-29fd-38d7-813b-596ecff942d3/earnings-preview%3A-what-to.html",
+      "publisher": "Barchart",
+      "date": "2026-01-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Climb on AI Spending Optimism and Strength in Energy Producers",
+      "url": "https://finance.yahoo.com/m/944134b3-920b-3f07-8408-844a40bc3a0c/stocks-climb-on-ai-spending.html",
+      "publisher": "Barchart",
+      "date": "2026-01-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jefferies Upgrades Pentair (PNR), Sees Earnings Compounding Through 2027",
+      "url": "/news/264654/jefferies-upgrades-pentair-pnr-sees-earnings-compounding-through-2027",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "This Dividend King Just Raised Its Payout for the 50th Time",
+      "url": "/news/259546/this-dividend-king-just-raised-its-payout-for-the-50th-time",
+      "publisher": "Motley Fool",
+      "date": "2025-12-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "5 Stocks Worth Watching on Their Recent Dividend Hikes",
+      "url": "/news/256209/5-stocks-worth-watching-on-their-recent-dividend-hikes",
+      "publisher": "Zacks",
+      "date": "2025-12-17",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jefferies Turns Bullish on 2 Industrial-Product Stocks, Citing Double-Digit Earnings Growth Potential",
+      "url": "https://finance.yahoo.com/news/jefferies-turns-bullish-2-industrial-110329469.html",
+      "publisher": "TipRanks",
+      "date": "2025-12-17",
+      "sentiment": "positive"
+    }
+  ]
 }

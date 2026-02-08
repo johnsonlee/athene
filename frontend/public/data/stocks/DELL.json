@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 7673560.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 69.76079685318216,
+    "stoch_k": 69.76079685318214,
     "stoch_d": 67.94997304952307,
     "trend_score": 44.53111353968736,
     "rsi_abs_score": 72.45529168965082,
@@ -6306,7 +6306,15 @@
     "technical_score": 53.540088036853966,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.25412469616997124,
+    "sentiment_pos": 0.15489999999999998,
+    "sentiment_neg": 0.01175,
+    "sentiment_neu": 0.83335,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 62.71
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.3630731102850062,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 82.5790553,
     "catalyst_timeline": 58.179101314215586,
     "downside_control": 45.83855251678083,
-    "composite_score": 65.15304081043098,
+    "composite_score": 65.14915176513254,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 64.4931081838054,
     "technical_score": 53.540088036853966,
-    "sentiment_score": 50.0,
+    "sentiment_score": 62.71,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Technology Hardware, Storage & Peripherals"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Larry Ellison and Jeff Bezos have seen more than $66 billion swiped from their net worths since the start of this year as AI-driven slump sees tech billionaires wealth free-fall",
+      "url": "https://finance.yahoo.com/news/tech-billionaires-watching-wealth-free-162338240.html",
+      "publisher": "Fortune",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Morgan Stanley Lowers Dell Technologies (DELL) PT To $111 Citing Slowest Hardware Budget Growth in 15 Years",
+      "url": "/news/301040/morgan-stanley-lowers-dell-technologies-dell-pt-to-111-citing-slowest-hardware-budget-growth-in-15-years",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "HP, Dell, Acer and Asus mull using Chinese memory chips amid supply crunch, Nikkei Asia reports",
+      "url": "https://finance.yahoo.com/news/hp-dell-acer-asus-mull-043537344.html",
+      "publisher": "Reuters",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Market Today, Feb. 4: Super Micro Computer Surges on Blowout Earnings Fueled by AI Server Demand",
+      "url": "/news/300371/stock-market-today-feb-4-super-micro-computer-surges-on-blowout-earnings-fueled-by-ai-server-demand",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Disneys new DAmaro-land:  a dream team succession saga comes to life",
+      "url": "https://finance.yahoo.com/news/disney-d-amaro-land-dream-165849499.html",
+      "publisher": "Fortune",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Dell Scion Who Wants to Shore Up the Texas Power Grid",
+      "url": "https://finance.yahoo.com/m/8df56012-275b-3198-8428-6a0a93f1f41d/the-dell-scion-who-wants-to.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Dell Technologies (DELL) Fell More Than Broader Market",
+      "url": "/news/298325/heres-why-dell-technologies-dell-fell-more-than-broader-market",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The AI in a Box Trade: Hardware Is the Next Boom",
+      "url": "/news/298122/the-ai-in-a-box-trade-hardware-is-the-next-boom",
+      "publisher": "MarketBeat",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Wall Street Analysts Think Dell Technologies (DELL) Is a Good Investment: Is It?",
+      "url": "/news/297549/wall-street-analysts-think-dell-technologies-dell-is-a-good-investment-is-it",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "IT Hardware Market Slows in 2026, Dell Technologies (DELL) Maintains AI Server Strength",
+      "url": "/news/296625/it-hardware-market-slows-in-2026-dell-technologies-dell-maintains-ai-server-strength",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Dell Technologies Inc. (DELL): A Bull Case Theory",
+      "url": "/news/296485/dell-technologies-inc-dell-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Will Dell Technologies (DELL) Beat Estimates Again in Its Next Earnings Report?",
+      "url": "/news/295983/will-dell-technologies-dell-beat-estimates-again-in-its-next-earnings-report",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Top 5 MarketRank Stocks Backed by Analysts and Big Institutions",
+      "url": "/news/295872/top-5-marketrank-stocks-backed-by-analysts-and-big-institutions",
+      "publisher": "MarketBeat",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Do Wall Street Analysts Like Dell Stock?",
+      "url": "https://finance.yahoo.com/m/b2afd83c-1029-30ae-94b7-bc687e3990b9/do-wall-street-analysts-like.html",
+      "publisher": "Barchart",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Elon Musk Says 'Saving The State' As Delaware Supreme Court Slashes Tesla Legal Fees By Over $100 Million",
+      "url": "/news/294699/elon-musk-says-saving-the-state-as-delaware-supreme-court-slashes-tesla-legal-fees-by-over-100-million",
+      "publisher": "Benzinga",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is Most-Watched Stock Dell Technologies Inc. (DELL) Worth Betting on Now?",
+      "url": "/news/293501/is-most-watched-stock-dell-technologies-inc-dell-worth-betting-on-now",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Apple (AAPL) Q1 Earnings and Revenues Top Estimates",
+      "url": "/news/292766/apple-aapl-q1-earnings-and-revenues-top-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Should You Hold or Fold Super Micro Computer Stock Before Q2 Earnings?",
+      "url": "/news/292145/should-you-hold-or-fold-super-micro-computer-stock-before-q2-earnings",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why Dell Technologies (DELL) is a Strong Value Stock",
+      "url": "/news/291902/heres-why-dell-technologies-dell-is-a-strong-value-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Investors Need to Take Advantage of These 2 Computer and Technology Stocks Now",
+      "url": "/news/291737/why-investors-need-to-take-advantage-of-these-2-computer-and-technology-stocks-now",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    }
+  ]
 }

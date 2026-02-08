@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 1285.530029296875,
-    "sma_20": 1388.7545104980472,
+    "sma_20": 1388.7545104980468,
     "sma_50": 1352.883603515625,
     "sma_200": 1344.8347467041017,
     "trend_alignment": 0.43214363247460064,
@@ -6286,10 +6286,10 @@
     "macd_histogram": -21.03003364316085,
     "macd_line": -19.083920161022434,
     "macd_histogram_pct": -1.6359037256145077,
-    "bb_position": 0.11488373985026323,
-    "bb_upper": 1522.7718084966277,
-    "bb_lower": 1254.7372124994668,
-    "bb_width": 0.19300358268578086,
+    "bb_position": 0.11488373985026494,
+    "bb_upper": 1522.7718084966273,
+    "bb_lower": 1254.7372124994663,
+    "bb_width": 0.1930035826857809,
     "hist_volatility": 0.38949846897827073,
     "volume_ratio": 0.9287580147233436,
     "avg_volume_20d": 421100.0,
@@ -6301,12 +6301,20 @@
     "rsi_abs_score": 55.32713794425553,
     "macd_abs_score": 20.0,
     "momentum_score": 37.66356897212776,
-    "volatility_score": 36.05809764951105,
+    "volatility_score": 36.05809764951104,
     "volume_score": 50.0,
     "technical_score": 41.47499919577856,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.007687716169474817,
+    "sentiment_pos": 0.11240000000000001,
+    "sentiment_neg": 0.0848,
+    "sentiment_neu": 0.80285,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 50.38
+  },
   "analyst": {
     "revision_momentum": -0.1111111111111111,
     "target_upside": 0.26990424183021794,
@@ -6327,7 +6335,7 @@
     "safety_score": 53.99825,
     "trend_score": 43.214363247460064,
     "momentum_score": 37.66356897212776,
-    "volatility_score": 36.05809764951105,
+    "volatility_score": 36.05809764951104,
     "volume_score": 50.0,
     "analyst_score": 60.89635483497079,
     "pe_score": 28.677917,
@@ -6345,15 +6353,15 @@
     "earnings_visibility": 60.79761415071428,
     "valuation_margin": 50.68900236666666,
     "catalyst_timeline": 45.73342870545586,
-    "downside_control": 48.543452147426656,
-    "composite_score": 51.08537715274721,
+    "downside_control": 48.54345214742665,
+    "composite_score": 51.08148810744878,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 59.94405884507936,
     "technical_score": 41.47499919577856,
-    "sentiment_score": 50.0,
+    "sentiment_score": 50.38,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Aerospace & Defense"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "UBS Cuts Price Target on TransDigm Group Incorporated (TDG) to $1,800, Keeps Buy Rating",
+      "url": "/news/303695/ubs-cuts-price-target-on-transdigm-group-incorporated-tdg-to-1800-keeps-buy-rating",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Down 8.7% in 4 Weeks, Here's Why TransDigm (TDG) Looks Ripe for a Turnaround",
+      "url": "/news/301576/down-87-in-4-weeks-heres-why-transdigm-tdg-looks-ripe-for-a-turnaround",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why SpaceX Is the Loser in Its Merger With xAI",
+      "url": "https://www.barrons.com/articles/spacex-xai-merger-musk-loser-d6a5973a?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "The Big Winners From SpaceX, xAI's Tie-up Are Twitter Shareholders. These Are the Losers.",
+      "url": "https://www.barrons.com/articles/spacex-xai-twitter-musk-d6a5973a?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "TransDigm (TDG) Q1 2026 Earnings Call Transcript",
+      "url": "/news/299716/transdigm-tdg-q1-2026-earnings-call-transcript",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PayPal downgraded, Five Below upgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/paypal-downgraded-five-below-upgraded-143348578.html",
+      "publisher": "The Fly",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Compared to Estimates, TransDigm (TDG) Q1 Earnings: A Look at Key Metrics",
+      "url": "/news/299505/compared-to-estimates-transdigm-tdg-q1-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here Are Wednesdays Top Wall Street Analyst Research Calls: AES Corp, Airbnb, Cloudflare, Devon Energy, Levi Strauss, Lumentum, PayPal, and More",
+      "url": "https://finance.yahoo.com/m/96ac2973-a352-341e-baca-bdf8192314a7/here-are-wednesday%E2%80%99s-top-wall.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Transdigm Group Q1 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/777de072-38bc-3d84-b152-309ff2aa9448/transdigm-group-q1-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TDG Q4 Deep Dive: Acquisitions and Distribution Dynamics Temper Margin Progress",
+      "url": "/news/298840/tdg-q4-deep-dive-acquisitions-and-distribution-dynamics-temper-margin-progress",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Safe-and-Steady Stocks with Exciting Potential",
+      "url": "/news/298833/3-safe-and-steady-stocks-with-exciting-potential",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "TransDigm Group Inc (TDG) Q1 2026 Earnings Call Highlights: Strong Start with Revenue and ...",
+      "url": "https://finance.yahoo.com/news/transdigm-group-inc-tdg-q1-230038810.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks Tumble on AI Disruption Fears",
+      "url": "https://finance.yahoo.com/m/2d280010-8635-3f1a-b487-d134aea3e092/stocks-tumble-on-ai.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Why TransDigm (TDG) Shares Are Sliding Today",
+      "url": "/news/298058/why-transdigm-tdg-shares-are-sliding-today",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: TransDigm Group Incorporated",
+      "url": "https://finance.yahoo.com/m/b6742d12-d8fc-31fe-9bcf-e43661b77bcf/analyst-report%3A-transdigm.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TransDigm's Q1 Earnings Surpass Estimates, Sales Increase Y/Y",
+      "url": "/news/297853/transdigms-q1-earnings-surpass-estimates-sales-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Software Stocks Retreat and Drag the Broader Market Lower",
+      "url": "https://finance.yahoo.com/m/a06579e4-a8c9-38b5-bd18-ff27c7b1d6a5/software-stocks-retreat-and.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "TransDigm Group (TDG) Q1 Earnings and Revenues Top Estimates",
+      "url": "/news/297376/transdigm-group-tdg-q1-earnings-and-revenues-top-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "TransDigm: Fiscal Q1 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/transdigm-fiscal-q1-earnings-snapshot-122624283.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TransDigm's (NYSE:TDG) Q4 CY2025: Beats On Revenue",
+      "url": "/news/297059/transdigms-nyse-tdg-q4-cy2025-beats-on-revenue",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    }
+  ]
 }

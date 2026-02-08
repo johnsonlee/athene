@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 41.11126668221407,
-    "stoch_d": 35.10869536115615,
+    "stoch_d": 35.108695361156144,
     "trend_score": 44.83154136709852,
     "rsi_abs_score": 68.00345257653197,
     "macd_abs_score": 40.23815760545785,
@@ -6306,7 +6306,15 @@
     "technical_score": 47.001117765681435,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.019105458409787276,
+    "sentiment_pos": 0.08305,
+    "sentiment_neg": 0.07625,
+    "sentiment_neu": 0.84055,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 49.04
+  },
   "analyst": {
     "revision_momentum": 0.2,
     "target_upside": 0.24032173194016387,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 46.152672452380955,
     "catalyst_timeline": 51.9311265859732,
     "downside_control": 47.046362871190055,
-    "composite_score": 55.632864339484904,
+    "composite_score": 55.62897529418647,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 65.63114488115079,
     "technical_score": 47.001117765681435,
-    "sentiment_score": 50.0,
+    "sentiment_score": 49.04,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Asset Management & Custody Banks"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "How the Software Panic Hit Private Credit-and Why Some BDC Stocks Might Be Worth Buying",
+      "url": "https://www.barrons.com/articles/software-selloff-private-credit-bdc-stocks-blackstone-blueowl-ares-8a2648f2?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Dow 50,000 sets table for inflation data, delayed January jobs report: What to watch this week",
+      "url": "https://finance.yahoo.com/news/dow-50000-sets-table-for-inflation-data-delayed-january-jobs-report-what-to-watch-this-week-123826626.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Super Bowl LX, Coinbase earnings, jobs data & CPI: What to Watch",
+      "url": "https://finance.yahoo.com/video/super-bowl-lx-coinbase-earnings-000012395.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jobs Report, CPI Data: What to Watch Next Week",
+      "url": "https://finance.yahoo.com/m/5e5a76be-cde7-3066-bdef-30523ee18e4d/jobs-report%2C-cpi-data%3A-what.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Apollo Set to Report Q4 Earnings: What's in the Cards for the Stock?",
+      "url": "/news/303090/apollo-set-to-report-q4-earnings-whats-in-the-cards-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "'Stay Long Detroit, Short Davos': Why BofA's Hartnett Sees A Main Street Boom Ahead Of The Midterms",
+      "url": "/news/302666/stay-long-detroit-short-davos-why-bofas-hartnett-sees-a-main-street-boom-ahead-of-the-midterms",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Private Markets' AI Panic: When 'Recurring Revenue' Isn't",
+      "url": "https://www.wsj.com/finance/investing/private-markets-ai-panic-when-recurring-revenue-isnt-37a8b46d?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "'I can do the math': Wall Street's private credit giants try to calm AI fears amid steep software sell-off",
+      "url": "https://finance.yahoo.com/news/i-can-do-the-math-wall-streets-private-credit-giants-try-to-calm-ai-fears-amid-steep-software-sell-off-165544396.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "'I can do it in math': Wall Street's private credit giants try to calm AI fears amid steep software sell-off",
+      "url": "https://finance.yahoo.com/news/i-can-do-it-in-math-wall-streets-private-credit-giants-try-to-calm-ai-fears-amid-steep-software-sell-off-165544679.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why the software stock sell-off may be bad news for private credit",
+      "url": "https://finance.yahoo.com/video/why-software-stock-sell-off-155238325.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Private Credit Giants Back A$1.4 Billion BGH Loan for Aspen Asia Deal",
+      "url": "https://finance.yahoo.com/news/private-credit-giants-back-1-132428776.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Paul Weiss law firm Chairman Brad Karp resigns after Epstein emails released",
+      "url": "https://finance.yahoo.com/news/paul-weiss-chairman-brad-karp-014540360.html",
+      "publisher": "Reuters",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "The Software Selloff Is Pummeling Alternative Managers. Three Stocks to Weather the Storm.",
+      "url": "https://www.barrons.com/articles/software-alternative-managers-three-stocks-80f978aa?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Countdown to Apollo Global Management (APO) Q4 Earnings: A Look at Estimates Beyond Revenue and EPS",
+      "url": "/news/299464/countdown-to-apollo-global-management-apo-q4-earnings-a-look-at-estimates-beyond-revenue-and-eps",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Apollo to Present at the BofA Securities Financial Services Conference",
+      "url": "/news/299076/apollo-to-present-at-the-bofa-securities-financial-services-conference",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Heard on the Street Tuesday Recap: Code Red",
+      "url": "https://finance.yahoo.com/m/af68f4b2-5e4e-3115-b526-4a59127f82c4/heard-on-the-street-tuesday.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Heard on the Street Recap: Code Red",
+      "url": "https://finance.yahoo.com/m/a39d2f87-7870-392a-b761-b2745ab03605/heard-on-the-street-recap%3A.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Private Equity Stocks Tumble On Software Rout - Expert Warns Of New 'Cockroaches'",
+      "url": "/news/298220/private-equity-stocks-tumble-on-software-rout-expert-warns-of-new-cockroaches",
+      "publisher": "Benzinga",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Blackstone Stock, Alternative Managers, BDCs Dive as Software Woes Infect Private Credit",
+      "url": "https://www.barrons.com/articles/private-credit-alternative-managers-stock-ai-9a07768f?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Josh Harris: Private Markets Individual-Investor Push Not Going to End Well",
+      "url": "https://finance.yahoo.com/m/a37b343a-1bad-35c8-9b2c-81a0b806f2b4/josh-harris%3A-private-markets%E2%80%99.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    }
+  ]
 }

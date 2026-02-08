@@ -6306,7 +6306,15 @@
     "technical_score": 53.91090636086301,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.04032340328513091,
+    "sentiment_pos": 0.054700000000000006,
+    "sentiment_neg": 0.03135,
+    "sentiment_neu": 0.91395,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 52.02
+  },
   "analyst": {
     "revision_momentum": 0.125,
     "target_upside": 0.1820148331273177,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 53.461164183333324,
     "catalyst_timeline": 53.186831780692145,
     "downside_control": 53.09973856214306,
-    "composite_score": 49.133890287020506,
+    "composite_score": 49.13000124172207,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 47.04364003373016,
     "technical_score": 53.91090636086301,
-    "sentiment_score": 50.0,
+    "sentiment_score": 52.02,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Real Estate",
     "industry": "Office REITs"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Cousins Properties Q4 FFO Meets Estimates, Revenues Beat",
+      "url": "/news/302843/cousins-properties-q4-ffo-meets-estimates-revenues-beat",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BXP Inc (BXP) Q4 2025 Earnings Call Highlights: Strong Leasing Activity and Strategic Asset ...",
+      "url": "https://finance.yahoo.com/news/bxp-inc-bxp-q4-2025-210333956.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: BXP, Inc.",
+      "url": "https://finance.yahoo.com/m/a023993e-cb40-39ca-9e8e-14690f690a61/analyst-report%3A-bxp%2C-inc..html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BXP Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/8696a2e0-c615-38a9-99e6-8008ff6bde22/bxp-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Boston Properties' Q4 Revenues and FFO Miss Estimates",
+      "url": "/news/290004/boston-properties-q4-revenues-and-ffo-miss-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Boston Properties (BXP) Q4 Earnings: Taking a Look at Key Metrics Versus Estimates",
+      "url": "/news/289304/boston-properties-bxp-q4-earnings-taking-a-look-at-key-metrics-versus-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Boston Properties (BXP) Q4 FFO and Revenues Lag Estimates",
+      "url": "/news/289289/boston-properties-bxp-q4-ffo-and-revenues-lag-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Boston Properties: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/boston-properties-q4-earnings-snapshot-225524955.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BXP Announces Fourth Quarter and Full Year 2025 Results",
+      "url": "https://www.businesswire.com/news/home/20260127182201/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Investors Should Retain BXP Stock in Their Portfolio Now",
+      "url": "/news/287124/heres-why-investors-should-retain-bxp-stock-in-their-portfolio-now",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Zacks Analyst Blog BXP, Cousins, SL Green and Highwoods",
+      "url": "/news/286470/the-zacks-analyst-blog-bxp-cousins-sl-green-and-highwoods",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How Are Office REITs Positioned in Q4 as Demand Gathers Steam?",
+      "url": "/news/285626/how-are-office-reits-positioned-in-q4-as-demand-gathers-steam",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Should BXP Stock be in Your Portfolio Pre-Q4 Earnings?",
+      "url": "/news/285235/should-bxp-stock-be-in-your-portfolio-pre-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Countdown to Boston Properties (BXP) Q4 Earnings: A Look at Estimates Beyond Revenue and EPS",
+      "url": "/news/283937/countdown-to-boston-properties-bxp-q4-earnings-a-look-at-estimates-beyond-revenue-and-eps",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BXP Announces 2025 Tax Treatment of Its Distributions",
+      "url": "https://www.businesswire.com/news/home/20260120083438/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Can Prologis Keep the Winning Streak Alive in Q4 Despite Challenges?",
+      "url": "/news/281343/can-prologis-keep-the-winning-streak-alive-in-q4-despite-challenges",
+      "publisher": "Zacks",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BXP Hits $1B Milestone Under Its Long-Term Asset Sale Plan Strategy",
+      "url": "/news/277508/bxp-hits-1b-milestone-under-its-long-term-asset-sale-plan-strategy",
+      "publisher": "Zacks",
+      "date": "2026-01-15",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BXP Announces Strategic Dispositions Totaling More than $1.0 Billion",
+      "url": "https://www.businesswire.com/news/home/20260114721960/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How Does the Starr Lease at 343 Madison Shape BXP's Growth Story?",
+      "url": "/news/271138/how-does-the-starr-lease-at-343-madison-shape-bxps-growth-story",
+      "publisher": "Zacks",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BXP and Starr Announce Lease Signing at BXP's 343 Madison Avenue in Midtown Manhattan",
+      "url": "https://www.businesswire.com/news/home/20260107258453/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-07",
+      "sentiment": "neutral"
+    }
+  ]
 }

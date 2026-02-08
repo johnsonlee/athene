@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 89.51654284037365,
-    "stoch_d": 91.8096029141002,
+    "stoch_d": 91.80960291410021,
     "trend_score": 67.09369799819618,
     "rsi_abs_score": 36.738481964318424,
     "macd_abs_score": 70.81697340151345,
@@ -6306,7 +6306,15 @@
     "technical_score": 59.026900281597406,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.430860004258359,
+    "sentiment_pos": 0.10885,
+    "sentiment_neg": 0.028700000000000003,
+    "sentiment_neu": 0.8624499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 71.54
+  },
   "analyst": null,
   "ranking": {
     "value_score": 59.31075449206349,
@@ -6334,14 +6342,14 @@
     "valuation_margin": 52.373226347619045,
     "catalyst_timeline": 57.9671425681112,
     "downside_control": 58.925169432947825,
-    "composite_score": 55.83235607023381,
+    "composite_score": 55.82846702493537,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 58.012965765873005,
     "technical_score": 59.026900281597406,
-    "sentiment_score": 50.0,
+    "sentiment_score": 71.54,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6357,5 +6365,146 @@
     "sector": "Financials",
     "industry": "Multi-line Insurance"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Super Bowl LX, Coinbase earnings, jobs data & CPI: What to Watch",
+      "url": "https://finance.yahoo.com/video/super-bowl-lx-coinbase-earnings-000012395.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Loews Hotels & Co Announces Americana by Loews Hotels in Arlington, Texas",
+      "url": "/news/283844/loews-hotels-co-announces-americana-by-loews-hotels-in-arlington-texas",
+      "publisher": "PR Newswire",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Loews Corporation to Release Fourth Quarter 2025 Results on February 9, 2026",
+      "url": "/news/281160/loews-corporation-to-release-fourth-quarter-2025-results-on-february-9-2026",
+      "publisher": "PR Newswire",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Versant set to trade on Nasdaq: LightShed's Rich Greenfield on what to expect",
+      "url": "https://www.youtube.com/watch?v=NN1rSIqUMFA",
+      "publisher": "CNBC TV",
+      "date": "2026-01-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Loews Stock: Is L Outperforming the Financial Services Sector?",
+      "url": "https://finance.yahoo.com/m/94513814-0995-3c05-961f-0df66dbf7942/loews-stock%3A-is-l.html",
+      "publisher": "Barchart",
+      "date": "2025-12-12",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Loews Corporation Comments on Delaware Supreme Court's Ruling",
+      "url": "/news/251513/loews-corporation-comments-on-delaware-supreme-courts-ruling",
+      "publisher": "PR Newswire",
+      "date": "2025-12-11",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jim Cramer on Loews Corporation: \"Good Opportunity Here\"",
+      "url": "/news/247514/jim-cramer-on-loews-corporation-good-opportunity-here",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stop Sleeping on These 3 Stocks (Seriously)",
+      "url": "/news/233449/stop-sleeping-on-these-3-stocks-seriously",
+      "publisher": "Motley Fool",
+      "date": "2025-11-19",
+      "sentiment": "negative"
+    },
+    {
+      "title": "LOEWS CORPORATION ANNOUNCES QUARTERLY DIVIDEND ON COMMON STOCK",
+      "url": "/news/226221/loews-corporation-announces-quarterly-dividend-on-common-stock",
+      "publisher": "PR Newswire",
+      "date": "2025-11-11",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Loews Corporation Elects Dino Robusto to Its Board of Directors",
+      "url": "/news/214671/loews-corporation-elects-dino-robusto-to-its-board-of-directors",
+      "publisher": "PR Newswire",
+      "date": "2025-11-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Loews: Q3 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/loews-q3-earnings-snapshot-110620226.html",
+      "publisher": "Associated Press Finance",
+      "date": "2025-11-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "LOEWS CORPORATION REPORTS NET INCOME OF $504 MILLION FOR THE THIRD QUARTER OF 2025",
+      "url": "/news/214626/loews-corporation-reports-net-income-of-504-million-for-the-third-quarter-of-2025",
+      "publisher": "PR Newswire",
+      "date": "2025-11-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Fed fallout, missing jobs numbers, and a busy earnings calendar: What to watch this week",
+      "url": "https://finance.yahoo.com/news/fed-fallout-missing-jobs-numbers-and-a-busy-earnings-calendar-what-to-watch-this-week-124032500.html",
+      "publisher": "Yahoo Finance",
+      "date": "2025-11-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "SNAP benefits expire, open enrollment, earnings: What to Watch",
+      "url": "https://finance.yahoo.com/video/snap-benefits-expire-open-enrollment-230000448.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2025-10-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Loews Corporation to Release Third Quarter 2025 Results on November 3, 2025",
+      "url": "/news/192148/loews-corporation-to-release-third-quarter-2025-results-on-november-3-2025",
+      "publisher": "PR Newswire",
+      "date": "2025-10-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is Loews Corporation Stock Outperforming the Dow?",
+      "url": "https://finance.yahoo.com/m/04520e45-8341-3767-a5e2-d0a56f677017/is-loews-corporation%C2%A0stock.html",
+      "publisher": "Barchart",
+      "date": "2025-09-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Do Wall Street Analysts Like Loews Stock?",
+      "url": "https://finance.yahoo.com/m/72b26650-6534-31d1-8277-21db48a65678/do-wall-street-analysts-like.html",
+      "publisher": "Barchart",
+      "date": "2025-08-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Loews Corporation Elects Jennifer VanBelle to Its Board of Directors",
+      "url": "/news/128757/loews-corporation-elects-jennifer-vanbelle-to-its-board-of-directors",
+      "publisher": "PR Newswire",
+      "date": "2025-08-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "LOEWS CORPORATION ANNOUNCES QUARTERLY DIVIDEND ON COMMON STOCK",
+      "url": "/news/128410/loews-corporation-announces-quarterly-dividend-on-common-stock",
+      "publisher": "PR Newswire",
+      "date": "2025-08-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Loews Corp.'s Q2 Earnings Jump As Investment Income And Insurance Underwriting Shine",
+      "url": "https://finance.yahoo.com/news/loewss-q2-earnings-jump-investment-123639949.html",
+      "publisher": "Benzinga",
+      "date": "2025-08-04",
+      "sentiment": "neutral"
+    }
+  ]
 }

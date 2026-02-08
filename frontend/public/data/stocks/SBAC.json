@@ -6306,12 +6306,20 @@
     "technical_score": 47.818512347118606,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.16998699726529193,
+    "sentiment_pos": 0.08335000000000001,
+    "sentiment_neg": 0.02235,
+    "sentiment_neu": 0.8943,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 58.5
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.2670133893991368,
     "consensus_rating": 2.26316,
-    "analyst_revision_count": 7.0,
+    "analyst_revision_count": 6.0,
     "analyst_count": 18.0,
     "analyst_upgrades": 0.0,
     "analyst_downgrades": 0.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 62.3408144,
     "catalyst_timeline": 48.79306578829387,
     "downside_control": 44.205055266235625,
-    "composite_score": 54.573274479043235,
+    "composite_score": 54.5693854337448,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 58.21457346628521,
     "technical_score": 47.818512347118606,
-    "sentiment_score": 50.0,
+    "sentiment_score": 58.5,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Real Estate",
     "industry": "Telecom Tower REITs"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Omega Healthcare Investors (OHI) Tops Q4 FFO and Revenue Estimates",
+      "url": "/news/300549/omega-healthcare-investors-ohi-tops-q4-ffo-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "SBA Communications Corporation Sets Date for Fourth Quarter 2025 Earnings Release",
+      "url": "https://www.businesswire.com/news/home/20260203650633/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Shorter DISH Lease Durations Lead to \"Cleanest\" 2026 Outlook for SBA Communications (SBAC)",
+      "url": "/news/282254/shorter-dish-lease-durations-lead-to-cleanest-2026-outlook-for-sba-communications-sbac",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What to Expect From SBA Communications Next Quarterly Earnings Report",
+      "url": "https://finance.yahoo.com/m/a1c2fb83-fcd6-31be-ae11-c68f3287d698/what-to-expect-from-sba.html",
+      "publisher": "Barchart",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "SBA Communications Corporation Announces Tax Reporting Information for 2025 Distributions",
+      "url": "https://www.businesswire.com/news/home/20260119429057/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "JPMorgan Lowers the Firm's PT on SBA Communications (SBAC) Stock",
+      "url": "/news/279315/jpmorgan-lowers-the-firms-pt-on-sba-communications-sbac-stock",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-16",
+      "sentiment": "negative"
+    },
+    {
+      "title": "SBA Communications price target lowered to $240 from $245 at JPMorgan",
+      "url": "https://finance.yahoo.com/news/sba-communications-price-target-lowered-122622923.html",
+      "publisher": "TipRanks",
+      "date": "2026-01-13",
+      "sentiment": "negative"
+    },
+    {
+      "title": "SBA Communications (SBAC) Upgraded to Buy: What Does It Mean for the Stock?",
+      "url": "/news/264540/sba-communications-sbac-upgraded-to-buy-what-does-it-mean-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2025-12-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why SBA Communications (SBAC) Has Promising Organic Growth Prospects",
+      "url": "/news/263455/heres-why-sba-communications-sbac-has-promising-organic-growth-prospects",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "4 Reasons Why You Should Add SBAC Stock to Your Portfolio Now",
+      "url": "/news/257796/4-reasons-why-you-should-add-sbac-stock-to-your-portfolio-now",
+      "publisher": "Zacks",
+      "date": "2025-12-18",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is SBA Communications Stock Underperforming the S&P 500?",
+      "url": "https://finance.yahoo.com/m/4e631222-f037-3b3e-969c-2809b6352ae1/is-sba-communications-stock.html",
+      "publisher": "Barchart",
+      "date": "2025-12-10",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is it Wise to Retain SBA Communications Stock in Your Portfolio Now?",
+      "url": "/news/245871/is-it-wise-to-retain-sba-communications-stock-in-your-portfolio-now",
+      "publisher": "Zacks",
+      "date": "2025-12-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Is SBA Communications (SBAC) Down 4.7% Since Last Earnings Report?",
+      "url": "/news/244592/why-is-sba-communications-sbac-down-47-since-last-earnings-report",
+      "publisher": "Zacks",
+      "date": "2025-12-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Barclays is Positive on SBA Communications Corporation (SBAC)",
+      "url": "/news/242790/barclays-is-positive-on-sba-communications-corporation-sbac",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "American Tower, Crown Castle downgraded as EchoStar disputes cloud tower leasing",
+      "url": "https://finance.yahoo.com/news/american-tower-crown-castle-downgraded-161659007.html",
+      "publisher": "Investing.com",
+      "date": "2025-12-01",
+      "sentiment": "negative"
+    },
+    {
+      "title": "SBA Communications Corporation to Speak at the UBS Global Media and Communications Conference",
+      "url": "https://www.businesswire.com/news/home/20251124598543/en/",
+      "publisher": "Business Wire",
+      "date": "2025-11-24",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "SBA Communications Corporation to Speak at the BofA Securities 2025 Leveraged Finance Conference",
+      "url": "https://www.businesswire.com/news/home/20251118010919/en",
+      "publisher": "Business Wire",
+      "date": "2025-11-18",
+      "sentiment": "positive"
+    },
+    {
+      "title": "SBA Communications' Q3 AFFO Beats Estimates, Revenues Grow Y/Y",
+      "url": "/news/216718/sba-communications-q3-affo-beats-estimates-revenues-grow-yy",
+      "publisher": "Zacks",
+      "date": "2025-11-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: SBA Communications Corporation",
+      "url": "https://finance.yahoo.com/m/19ccd546-a256-370a-9590-3d1a3ec7a881/analyst-report%3A-sba.html",
+      "publisher": "Morningstar Research",
+      "date": "2025-11-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "SBA Communications Corp (SBAC) Q3 2025 Earnings Call Highlights: Record Revenue Growth and ...",
+      "url": "https://finance.yahoo.com/news/sba-communications-corp-sbac-q3-050443928.html",
+      "publisher": "GuruFocus.com",
+      "date": "2025-11-04",
+      "sentiment": "positive"
+    }
+  ]
 }

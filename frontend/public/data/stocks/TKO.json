@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 914610.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 96.97629092503072,
+    "stoch_k": 96.97629092503074,
     "stoch_d": 85.06665265199939,
     "trend_score": 66.54941991438075,
     "rsi_abs_score": 71.08678459428154,
@@ -6306,7 +6306,15 @@
     "technical_score": 61.46610932385635,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.041086856687527366,
+    "sentiment_pos": 0.09095,
+    "sentiment_neg": 0.0502,
+    "sentiment_neu": 0.8589499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 52.05
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.08541764983482772,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 26.550703,
     "catalyst_timeline": 61.44898934500986,
     "downside_control": 60.16260195529395,
-    "composite_score": 46.51846364055967,
+    "composite_score": 46.51457459526124,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 46.06760964285714,
     "technical_score": 61.46610932385635,
-    "sentiment_score": 50.0,
+    "sentiment_score": 52.05,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Communication Services",
     "industry": "Movies & Entertainment"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "TKO Group Holdings to Participate in the Morgan Stanley Technology, Media & Telecom Conference",
+      "url": "https://www.businesswire.com/news/home/20260203732302/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "UBS discusses top themes for media in 2026",
+      "url": "https://finance.yahoo.com/news/ubs-discusses-top-themes-media-093003900.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "JPMorgan Updates TKO Group Holdings Model Ahead of the Q4 Release, Raises PT to $225",
+      "url": "/news/292460/jpmorgan-updates-tko-group-holdings-model-ahead-of-the-q4-release-raises-pt-to-225",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "UFC AND GOOD GREEK MOVING & STORAGE ANNOUNCE OFFICIAL PARTNERSHIP",
+      "url": "/news/290154/ufc-and-good-greek-moving-storage-announce-official-partnership",
+      "publisher": "PR Newswire",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "TKO to Announce Fourth Quarter and Full Year 2025 Results",
+      "url": "https://www.businesswire.com/news/home/20260128703999/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Disney's CEO succession drama is hurting the stock price",
+      "url": "https://finance.yahoo.com/news/disneys-ceo-succession-drama-is-hurting-the-stock-price-141914816.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-01-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Dana Whites Empire of Testosterone Now Stretches to the White House",
+      "url": "https://finance.yahoo.com/m/1d6fdd14-6912-3c24-9041-52122dd5ef84/dana-white%E2%80%99s-empire-of.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Film & Television Production Stocks to Watch Amid Dull Industry Trends",
+      "url": "/news/284154/3-film-television-production-stocks-to-watch-amid-dull-industry-trends",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "negative"
+    },
+    {
+      "title": "What You Need to Know Ahead of TKO Groups Earnings Release",
+      "url": "https://finance.yahoo.com/m/be05fec8-cc3c-3afe-aa74-41c01386020a/what-you-need-to-know-ahead.html",
+      "publisher": "Barchart",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FIFA 2026 World Cup to drive unprecedented attention to US live events",
+      "url": "https://finance.yahoo.com/news/fifa-2026-world-cup-drive-093504767.html",
+      "publisher": "Investing.com",
+      "date": "2026-01-17",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "WWE fans forced to switch platforms after major Netflix change",
+      "url": "https://finance.yahoo.com/m/de3efa24-a1c9-326f-8ce4-1b0a69c22a38/wwe-fans-forced-to-switch.html",
+      "publisher": "TheStreet",
+      "date": "2026-01-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Big Money Buyers Fight Over TKO Group Shares",
+      "url": "https://finance.yahoo.com/news/big-money-buyers-fight-over-180231573.html",
+      "publisher": "FX Empire",
+      "date": "2025-12-26",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Logan Paul auctions off $5.3 million Pokémon card, urging young people to invest more in nontraditional assets: Dont be afraid to take a risk",
+      "url": "https://finance.yahoo.com/news/logan-paul-auctions-off-5-165600270.html",
+      "publisher": "Fortune",
+      "date": "2025-12-25",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is TKO Group Stock Outperforming the S&P 500?",
+      "url": "https://finance.yahoo.com/m/5dec425c-885f-3fcd-836a-42a471411e2e/is-tko-group-stock.html",
+      "publisher": "Barchart",
+      "date": "2025-12-17",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Princess Cruises Kicks Off \"Pitch-Perfect Vacations\" with Fleetwide Broadcast of FIFA World Cup 26, on Sport 24 Special Event Channels, via IMG Deal",
+      "url": "/news/255106/princess-cruises-kicks-off-pitch-perfect-vacations-with-fleetwide-broadcast-of-fifa-world-cup-26-on-sport-24-special-event-channels-via-img-deal",
+      "publisher": "PR Newswire",
+      "date": "2025-12-16",
+      "sentiment": "positive"
+    },
+    {
+      "title": "SEABOURN SECURES DEAL WITH IMG TO BROADCAST FIFA WORLD CUP 26 LIVE ACROSS OCEAN FLEET, ON SPORT 24 SPECIAL EVENT CHANNELS",
+      "url": "/news/254803/seabourn-secures-deal-with-img-to-broadcast-fifa-world-cup-26-live-across-ocean-fleet-on-sport-24-special-event-channels",
+      "publisher": "PR Newswire",
+      "date": "2025-12-16",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Holland America Line Secures Deal with IMG to Broadcast FIFA World Cup 26 Fleetwide on Sport 24 Special Event Channels",
+      "url": "/news/254804/holland-america-line-secures-deal-with-img-to-broadcast-fifa-world-cup-26-fleetwide-on-sport-24-special-event-channels",
+      "publisher": "PR Newswire",
+      "date": "2025-12-16",
+      "sentiment": "positive"
+    },
+    {
+      "title": "On Location Unveils Star-Studded Roster for \"Starting 16\" FIFA World Cup 2026 Hospitality Captain Program",
+      "url": "/news/252170/on-location-unveils-star-studded-roster-for-starting-16-fifa-world-cup-2026-hospitality-captain-program",
+      "publisher": "PR Newswire",
+      "date": "2025-12-11",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ram Named Official Truck Partner of WWE, UFC and PBR",
+      "url": "/news/251578/ram-named-official-truck-partner-of-wwe-ufc-and-pbr",
+      "publisher": "PR Newswire",
+      "date": "2025-12-11",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TKO Holdings (TKO): Top Positive Contributor to Cooper Investors Global Equities Fund's 12-Month Returns",
+      "url": "/news/248309/tko-holdings-tko-top-positive-contributor-to-cooper-investors-global-equities-funds-12-month-returns",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-08",
+      "sentiment": "positive"
+    }
+  ]
 }

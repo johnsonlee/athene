@@ -6277,27 +6277,27 @@
   },
   "technical": {
     "close": 202.2899932861328,
-    "sma_20": 205.98249816894528,
-    "sma_50": 210.75742797851558,
+    "sma_20": 205.9824981689453,
+    "sma_50": 210.7574279785156,
     "sma_200": 228.57242767333983,
-    "trend_alignment": 0.36315800498163747,
+    "trend_alignment": 0.3631580049816374,
     "rsi": 42.38622473752632,
     "rsi_score": -0.15227550524947361,
     "macd_histogram": -0.2381689524936561,
     "macd_line": -1.9044645933147422,
     "macd_histogram_pct": -0.11773639843705647,
-    "bb_position": 0.25574019499243644,
-    "bb_upper": 213.54105837228724,
-    "bb_lower": 198.42393796560333,
-    "bb_width": 0.07339031491056566,
+    "bb_position": 0.25574019499243456,
+    "bb_upper": 213.54105837228727,
+    "bb_lower": 198.42393796560336,
+    "bb_width": 0.07339031491056565,
     "hist_volatility": 0.28697561285440004,
     "volume_ratio": 0.6751710908665016,
     "avg_volume_20d": 3948925.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 35.352928797901626,
-    "stoch_d": 38.39685350453578,
-    "trend_score": 36.315800498163746,
+    "stoch_d": 38.39685350453577,
+    "trend_score": 36.31580049816374,
     "rsi_abs_score": 64.86346968503159,
     "macd_abs_score": 44.55659003907359,
     "momentum_score": 54.71002986205259,
@@ -6306,7 +6306,15 @@
     "technical_score": 49.172966144017664,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.06368465024888888,
+    "sentiment_pos": 0.066,
+    "sentiment_neg": 0.03085,
+    "sentiment_neu": 0.9031499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 53.18
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.15922685253843497,
@@ -6325,7 +6333,7 @@
     "quality_score": 76.66139928000001,
     "growth_score": 75.32,
     "safety_score": 33.486,
-    "trend_score": 36.315800498163746,
+    "trend_score": 36.31580049816374,
     "momentum_score": 54.71002986205259,
     "volatility_score": 59.32608517976384,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 54.08514559999999,
     "catalyst_timeline": 50.00383831668306,
     "downside_control": 45.63881277696457,
-    "composite_score": 57.985242930010685,
+    "composite_score": 57.98135388471225,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 63.578241117333334,
     "technical_score": 49.172966144017664,
-    "sentiment_score": 50.0,
+    "sentiment_score": 53.18,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Property & Casualty Insurance"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "The Progressive Corporation (PGR): A Bull Case Theory",
+      "url": "/news/303621/the-progressive-corporation-pgr-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Insurance Stocks Gain Ground in Turbulent Markets. Boring Might Be the Way to Go.",
+      "url": "https://www.barrons.com/articles/insurance-stocks-travelers-markets-7ed3a034?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Progressive Corporation (PGR) Is a Trending Stock: Facts to Know Before Betting on It",
+      "url": "/news/301440/the-progressive-corporation-pgr-is-a-trending-stock-facts-to-know-before-betting-on-it",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MGIC Q4 Earnings Beat Estimates, Revenues Miss, Insurance in Force Up Y/Y",
+      "url": "/news/297825/mgic-q4-earnings-beat-estimates-revenues-miss-insurance-in-force-up-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Selective Insurance 4Q Earnings Beat Estimates on Solid Underwriting",
+      "url": "/news/293574/selective-insurance-4q-earnings-beat-estimates-on-solid-underwriting",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "negative"
+    },
+    {
+      "title": "AXIS Capital Reports Q4 Earnings Growth Despite Higher Expenses",
+      "url": "/news/291699/axis-capital-reports-q4-earnings-growth-despite-higher-expenses",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stock Market News for Jan 29, 2026",
+      "url": "/news/291673/stock-market-news-for-jan-29-2026",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Progressive CFO Sauerland to step down in July 2026",
+      "url": "https://finance.yahoo.com/m/6d2c10d6-661c-33f2-bcd5-13b749a13035/progressive-cfo-sauerland-to.html",
+      "publisher": "Life Insurance International",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is Progressive Corporation (PGR) One of the Best Inexpensive Stocks to Buy Now?",
+      "url": "/news/291144/is-progressive-corporation-pgr-one-of-the-best-inexpensive-stocks-to-buy-now",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Gold Rallies To $5,300, Memory Stocks Go Wild: What's Moving Markets Wednesday?",
+      "url": "/news/290536/gold-rallies-to-5300-memory-stocks-go-wild-whats-moving-markets-wednesday",
+      "publisher": "Benzinga",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Earnings Drive Early Market Moves",
+      "url": "/news/290438/earnings-drive-early-market-moves",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Big Earnings Day Sandwich Fed's Interest Rate Decision",
+      "url": "/news/290371/big-earnings-day-sandwich-feds-interest-rate-decision",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Progressive (PGR) Q4 Earnings: Taking a Look at Key Metrics Versus Estimates",
+      "url": "/news/290358/progressive-pgr-q4-earnings-taking-a-look-at-key-metrics-versus-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Progressive's Q4 Earnings & Revenues Beat Estimates on Higher Premiums",
+      "url": "/news/290360/progressives-q4-earnings-revenues-beat-estimates-on-higher-premiums",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: The Progressive Corporation",
+      "url": "https://finance.yahoo.com/m/21b33e4d-f2e7-38c5-a8c2-678372b3096b/analyst-report%3A-the.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Progressive (PGR) Q4 Earnings and Revenues Top Estimates",
+      "url": "/news/290150/progressive-pgr-q4-earnings-and-revenues-top-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Progressive: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/progressive-q4-earnings-snapshot-132622838.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Progressive Announces Plans For CFO Transition",
+      "url": "/news/289836/progressive-announces-plans-for-cfo-transition",
+      "publisher": "GlobeNewswire",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Progressive Reports December 2025 Results",
+      "url": "/news/289816/progressive-reports-december-2025-results",
+      "publisher": "GlobeNewswire",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Greg Abel Signals Shift as Berkshire Weighs Kraft Heinz Exit?",
+      "url": "/news/288694/greg-abel-signals-shift-as-berkshire-weighs-kraft-heinz-exit",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    }
+  ]
 }

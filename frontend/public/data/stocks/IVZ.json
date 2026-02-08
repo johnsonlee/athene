@@ -6306,7 +6306,15 @@
     "technical_score": 52.5884637214605,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.09517936823204995,
+    "sentiment_pos": 0.06620000000000001,
+    "sentiment_neg": 0.0262,
+    "sentiment_neu": 0.9076000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 54.76
+  },
   "analyst": {
     "revision_momentum": 0.16666666666666666,
     "target_upside": 0.11856823266219238,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 60.32434107142856,
     "catalyst_timeline": 56.20257678585146,
     "downside_control": 40.59125719658729,
-    "composite_score": 41.906400151926604,
+    "composite_score": 41.902511106628175,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 37.768760892857145,
     "technical_score": 52.5884637214605,
-    "sentiment_score": 50.0,
+    "sentiment_score": 54.76,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Asset Management & Custody Banks"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "'This probably seems overdone': Wall Street strategists weigh in on software stock sell-off",
+      "url": "https://finance.yahoo.com/news/this-probably-seems-overdone-wall-street-strategists-weigh-in-on-software-stock-sell-off-160003877.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Apollo Set to Report Q4 Earnings: What's in the Cards for the Stock?",
+      "url": "/news/303090/apollo-set-to-report-q4-earnings-whats-in-the-cards-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BEN's January AUM Rises 1.3% Sequentially: What's Driving Growth?",
+      "url": "/news/303075/bens-january-aum-rises-13-sequentially-whats-driving-growth",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ares Management Stock Falls as Q4 Earnings Miss, Expenses Rise Y/Y",
+      "url": "/news/301956/ares-management-stock-falls-as-q4-earnings-miss-expenses-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "IVZ or CG: Which Is the Better Value Stock Right Now?",
+      "url": "/news/301827/ivz-or-cg-which-is-the-better-value-stock-right-now",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "KKR & Co. Shares Fall as Q4 Earnings Miss Estimates, AUM Rises Y/Y",
+      "url": "/news/301812/kkr-co-shares-fall-as-q4-earnings-miss-estimates-aum-rises-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "T. Rowe Price Stock Down 6.4% as Q4 Earnings Miss, Expenses Rise Y/Y",
+      "url": "/news/300003/t-rowe-price-stock-down-64-as-q4-earnings-miss-expenses-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Invesco Real Estate Closes on $3 Billion in Loans in H2 2025",
+      "url": "/news/299314/invesco-real-estate-closes-on-3-billion-in-loans-in-h2-2025",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Skip the Super Bowl Parlay. These ETFs Offer a Way to Invest in Sports",
+      "url": "https://finance.yahoo.com/m/df8d6728-61e7-336b-8b80-49ce6ca957fb/skip-the-super-bowl-parlay..html",
+      "publisher": "The Daily Upside",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Reasons to Sell IVZ and 1 Stock to Buy Instead",
+      "url": "/news/298718/3-reasons-to-sell-ivz-and-1-stock-to-buy-instead",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Invesco Ltd.",
+      "url": "https://finance.yahoo.com/m/a98189e0-9620-3487-9c60-395fff019414/analyst-report%3A-invesco-ltd..html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "10 Investment Must Reads for This Week (Feb. 3, 2026)",
+      "url": "https://finance.yahoo.com/m/fd5f3520-183d-3f56-b021-22b5575aa097/10-investment-must-reads-for.html",
+      "publisher": "Wealth Management",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ares Management Set to Report Q4 Earnings: What's in the Cards?",
+      "url": "/news/297877/ares-management-set-to-report-q4-earnings-whats-in-the-cards",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "JPMorgan Flags A New ETF Fee Risk As Robinhood's Zero-Commission Era Backfires",
+      "url": "/news/297617/jpmorgan-flags-a-new-etf-fee-risk-as-robinhoods-zero-commission-era-backfires",
+      "publisher": "Benzinga",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "KKR & Co. to Post Q4 Earnings: Here's What to Expect From the Stock",
+      "url": "/news/297751/kkr-co-to-post-q4-earnings-heres-what-to-expect-from-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Invesco (IVZ) is a Top Growth Stock for the Long-Term",
+      "url": "/news/297605/why-invesco-ivz-is-a-top-growth-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "US brokers may charge fee from ETF managers as commission-free trading takes a toll",
+      "url": "https://finance.yahoo.com/news/us-brokers-may-charge-fee-104942737.html",
+      "publisher": "Reuters",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "RBC Capital Projects 37%-38% Margins for Invesco (IVZ) in 2026/2027",
+      "url": "/news/296876/rbc-capital-projects-37-38-margins-for-invesco-ivz-in-20262027",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "5 Must-Read Analyst Questions From Invesco's Q4 Earnings Call",
+      "url": "/news/296703/5-must-read-analyst-questions-from-invescos-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Invesco Closed-End Funds Declare Dividends",
+      "url": "/news/295879/invesco-closed-end-funds-declare-dividends",
+      "publisher": "PR Newswire",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    }
+  ]
 }

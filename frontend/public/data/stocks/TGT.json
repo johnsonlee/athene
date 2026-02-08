@@ -6277,19 +6277,19 @@
   },
   "technical": {
     "close": 115.55000305175781,
-    "sma_20": 108.59999923706054,
+    "sma_20": 108.59999923706057,
     "sma_50": 101.52979980468751,
-    "sma_200": 95.84474128723144,
-    "trend_alignment": 0.765518936265945,
+    "sma_200": 95.84474128723143,
+    "trend_alignment": 0.7655189362659451,
     "rsi": 66.61689871432033,
     "rsi_score": 0.33233797428640655,
     "macd_histogram": 0.5975905493898068,
     "macd_line": 3.272601982384728,
     "macd_histogram_pct": 0.5171705180502079,
-    "bb_position": 0.9335896971637556,
-    "bb_upper": 116.61449296253349,
-    "bb_lower": 100.5855055115876,
-    "bb_width": 0.14759657056678765,
+    "bb_position": 0.9335896971637538,
+    "bb_upper": 116.61449296253352,
+    "bb_lower": 100.58550551158763,
+    "bb_width": 0.1475965705667876,
     "hist_volatility": 0.3571218884458303,
     "volume_ratio": 1.1579042655491316,
     "avg_volume_20d": 6738640.0,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 89.19996071059478,
     "stoch_d": 87.08503246713,
-    "trend_score": 76.5518936265945,
+    "trend_score": 76.55189362659452,
     "rsi_abs_score": 63.47268359990308,
     "macd_abs_score": 65.25755777075312,
     "momentum_score": 64.3651206853281,
-    "volatility_score": 42.171675991715716,
+    "volatility_score": 42.17167599171572,
     "volume_score": 50.0,
-    "technical_score": 60.709439491919916,
+    "technical_score": 60.70943949191992,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.12327696094636079,
+    "sentiment_pos": 0.12925,
+    "sentiment_neg": 0.06405,
+    "sentiment_neu": 0.8067,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 56.16
+  },
   "analyst": {
     "revision_momentum": 0.045454545454545456,
     "target_upside": -0.13890090869753352,
@@ -6325,9 +6333,9 @@
     "quality_score": 67.65949954999999,
     "growth_score": 24.6,
     "safety_score": 41.887926863249746,
-    "trend_score": 76.5518936265945,
+    "trend_score": 76.55189362659452,
     "momentum_score": 64.3651206853281,
-    "volatility_score": 42.171675991715716,
+    "volatility_score": 42.17167599171572,
     "volume_score": 50.0,
     "analyst_score": 38.06176138428859,
     "pe_score": 77.12986928571428,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 73.65090857142857,
     "catalyst_timeline": 60.016877569621116,
     "downside_control": 45.77494042824482,
-    "composite_score": 56.102895708057694,
+    "composite_score": 56.099006662759265,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 54.638692380507095,
-    "technical_score": 60.709439491919916,
-    "sentiment_score": 50.0,
+    "technical_score": 60.70943949191992,
+    "sentiment_score": 56.16,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Staples",
     "industry": "Consumer Staples Merchandise Retail"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "57-year-old Dividend King makes $5 billion move to protect payout",
+      "url": "https://finance.yahoo.com/m/583986a1-964d-317c-a26e-b8370f9a4ca8/57-year-old-dividend-king.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why I am still taking these tech stocks to task",
+      "url": "https://finance.yahoo.com/news/why-i-am-still-taking-these-tech-stocks-to-task-133012952.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Target comes clean about identity crisis",
+      "url": "https://finance.yahoo.com/m/a834b606-340d-3c88-a7bd-e9183666a28b/target-comes-clean-about.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Target admits it made a huge mistake",
+      "url": "https://finance.yahoo.com/m/a834b606-340d-3c88-a7bd-e9183666a28b/target-admits-it-made-a-huge.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jennifer Garner-backed kids' food brand Once Upon a Farm rises 16% in Wall Street debut",
+      "url": "https://finance.yahoo.com/news/jennifer-garner-backed-kids-food-brand-once-upon-a-farm-rises-16-in-wall-street-debut-221123011.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jennifer Garners Once Upon a Farm Rises 17% After $198 Million IPO",
+      "url": "https://finance.yahoo.com/news/jennifer-garner-once-upon-farm-211304517.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Amazon.com Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/dfd83a36-2ecb-3a22-8ad3-98946ee36278/amazon.com-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Steve Madden down 9% as Jefferies downgrades stock on wholesale headwinds",
+      "url": "https://finance.yahoo.com/news/steve-madden-down-9-jefferies-172100662.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Target bets on beauty makeover as Ulta exit looms",
+      "url": "https://finance.yahoo.com/m/1a04ee86-8872-3ee9-b049-d74d9c9afaa4/target-bets-on-beauty.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "With New CEOs, Is Walmart or Target the Better Buy Going Forward?",
+      "url": "/news/301516/with-new-ceos-is-walmart-or-target-the-better-buy-going-forward",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "How Is Target Navigating a Value-Focused Retail Landscape?",
+      "url": "/news/301362/how-is-target-navigating-a-value-focused-retail-landscape",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Americas Best Financial Services of 2026",
+      "url": "https://finance.yahoo.com/m/7e8c65c2-d7fd-392f-8460-9e5b673a7a23/america%E2%80%99s-best-financial.html",
+      "publisher": "Time",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Costco solves problem that plagues Walmart and Target",
+      "url": "https://finance.yahoo.com/m/18a911ff-de1e-35af-a7a6-859134f194b5/costco-solves-problem-that.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Target Celebrates 10th Year of 1 Million Volunteer Hours, Deepens Community Vitalization Efforts for 2026 as Part of Company's Longstanding Commitment to Communities",
+      "url": "/news/299886/target-celebrates-10th-year-of-1-million-volunteer-hours-deepens-community-vitalization-efforts-for-2026-as-part-of-companys-longstanding-commitment-to-communities",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "WMT Joins the $1 Trillion Club: Can the Rally Continue for the Stock?",
+      "url": "/news/299388/wmt-joins-the-1-trillion-club-can-the-rally-continue-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Trinity One Metals Closes Acquisition of \"Silver-1\" Historic Silver Mine in Southern Ecuador",
+      "url": "https://finance.yahoo.com/news/trinity-one-metals-closes-acquisition-133000854.html",
+      "publisher": "TMX Newsfile",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Are Wall Street Analysts Predicting Target Stock Will Climb or Sink?",
+      "url": "https://finance.yahoo.com/m/7a7dd579-794b-32e3-b09d-044988327b22/are-wall-street-analysts.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Consumer Dividend Stocks to Buy for High-Yield Dividend Growth",
+      "url": "/news/298753/3-consumer-dividend-stocks-to-buy-for-high-yield-dividend-growth",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "New Target policy makes some shoppers uncomfortable",
+      "url": "https://finance.yahoo.com/m/e6f7eb7d-8174-3f22-86e7-8bd6a2050425/new-target-policy-makes-some.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Target (TGT) Rises As Market Takes a Dip: Key Facts",
+      "url": "/news/298327/target-tgt-rises-as-market-takes-a-dip-key-facts",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    }
+  ]
 }

@@ -6306,7 +6306,15 @@
     "technical_score": 62.36072712034874,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.24508281590050296,
+    "sentiment_pos": 0.1402,
+    "sentiment_neg": 0.00895,
+    "sentiment_neu": 0.85085,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 62.25
+  },
   "analyst": {
     "revision_momentum": -0.14285714285714285,
     "target_upside": 0.03108889236056858,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 73.17622679,
     "catalyst_timeline": 60.42604143890309,
     "downside_control": 41.90230344731024,
-    "composite_score": 66.35991537725457,
+    "composite_score": 66.35602633195613,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 65.94840221916667,
     "technical_score": 62.36072712034874,
-    "sentiment_score": 50.0,
+    "sentiment_score": 62.25,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Utilities",
     "industry": "Electric Utilities"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "WEC Energy Beats Q4 Earnings Estimates, to Add More Renewable Assets",
+      "url": "/news/303026/wec-energy-beats-q4-earnings-estimates-to-add-more-renewable-assets",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Duke Energy to Release Q4 Earnings: How to Approach the Stock Now?",
+      "url": "/news/302753/duke-energy-to-release-q4-earnings-how-to-approach-the-stock-now",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CMS Energy Q4 Earnings Surpass Estimates, Revenues Increase Y/Y",
+      "url": "/news/301513/cms-energy-q4-earnings-surpass-estimates-revenues-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Will Edison International (EIX) Beat Estimates Again in Its Next Earnings Report?",
+      "url": "/news/299897/will-edison-international-eix-beat-estimates-again-in-its-next-earnings-report",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Edison International (EIX) is a Top Value Stock for the Long-Term",
+      "url": "/news/297591/why-edison-international-eix-is-a-top-value-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Morgan Stanley Raises Edison (EIX) Price Target Amid Deleveraging and Wildfire Cost Securitization",
+      "url": "/news/296861/morgan-stanley-raises-edison-eix-price-target-amid-deleveraging-and-wildfire-cost-securitization",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Edison International (EIX) is a Top Growth Stock for the Long-Term",
+      "url": "/news/295754/why-edison-international-eix-is-a-top-growth-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "JPMorgan Revises Edison International (EIX) Assumptions Heading Into Earnings",
+      "url": "/news/294222/jpmorgan-revises-edison-international-eix-assumptions-heading-into-earnings",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Southern California Edison Delivers More Than 200 Offers to Eaton Fire Claimants",
+      "url": "https://www.businesswire.com/news/home/20260129189017/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Edison International (EIX) in Focus as Morgan Stanley Refreshes its Utilities Outlook",
+      "url": "/news/286343/edison-international-eix-in-focus-as-morgan-stanley-refreshes-its-utilities-outlook",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-25",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Advisory for Wednesday, Feb. 18: Edison International to Hold Conference Call on Fourth Quarter and Full-Year 2025 Financial Results",
+      "url": "https://www.businesswire.com/news/home/20260121671851/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Earnings Preview: What to Expect From Edison International's Report",
+      "url": "https://finance.yahoo.com/m/ad6c1a9a-089f-3163-8e89-7b2667147e49/earnings-preview%3A-what-to.html",
+      "publisher": "Barchart",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is Edison International (EIX) Stock Undervalued Right Now?",
+      "url": "/news/273782/is-edison-international-eix-stock-undervalued-right-now",
+      "publisher": "Zacks",
+      "date": "2026-01-12",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why You Should Add NI Stock to Your Portfolio Right Now",
+      "url": "/news/272355/heres-why-you-should-add-ni-stock-to-your-portfolio-right-now",
+      "publisher": "Zacks",
+      "date": "2026-01-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Are You a Value Investor? This 1 Stock Could Be the Perfect Pick",
+      "url": "/news/272137/are-you-a-value-investor-this-1-stock-could-be-the-perfect-pick",
+      "publisher": "Zacks",
+      "date": "2026-01-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why You Should Add FTS Stock to Your Portfolio Right Now",
+      "url": "/news/271284/heres-why-you-should-add-fts-stock-to-your-portfolio-right-now",
+      "publisher": "Zacks",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "All You Need to Know About Edison International (EIX) Rating Upgrade to Strong Buy",
+      "url": "/news/271160/all-you-need-to-know-about-edison-international-eix-rating-upgrade-to-strong-buy",
+      "publisher": "Zacks",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why Edison International (EIX) is a Strong Momentum Stock",
+      "url": "/news/270944/heres-why-edison-international-eix-is-a-strong-momentum-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "ED Benefits From Long-Term Capital Spending and Renewable Growth",
+      "url": "/news/270699/ed-benefits-from-long-term-capital-spending-and-renewable-growth",
+      "publisher": "Zacks",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Edison International (EIX) Target Trimmed as Morgan Stanley Flags Ongoing Wildfire Exposure",
+      "url": "/news/267748/edison-international-eix-target-trimmed-as-morgan-stanley-flags-ongoing-wildfire-exposure",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-05",
+      "sentiment": "neutral"
+    }
+  ]
 }

@@ -6270,9 +6270,9 @@
   "technical": {
     "close": 60.0,
     "sma_20": 64.27349967956543,
-    "sma_50": 65.84999977111818,
+    "sma_50": 65.84999977111816,
     "sma_200": 121.28600000381469,
-    "trend_alignment": 0.21036583171685477,
+    "trend_alignment": 0.210365831716855,
     "rsi": 35.69091063673413,
     "rsi_score": -0.2861817872653174,
     "macd_histogram": -0.541839507215164,
@@ -6287,18 +6287,26 @@
     "avg_volume_20d": 10383135.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 16.699586640722714,
-    "stoch_d": 13.94462428078837,
-    "trend_score": 21.03658317168548,
+    "stoch_k": 16.69958664072271,
+    "stoch_d": 13.944624280788368,
+    "trend_score": 21.0365831716855,
     "rsi_abs_score": 56.829092764080954,
     "macd_abs_score": 28.9540123196209,
     "momentum_score": 42.89155254185093,
     "volatility_score": 35.1185118309756,
     "volume_score": 50.0,
-    "technical_score": 36.20214308025604,
+    "technical_score": 36.20214308025605,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.07675138481260146,
+    "sentiment_pos": 0.06065,
+    "sentiment_neg": 0.04065,
+    "sentiment_neu": 0.8987,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 53.84
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.2833333333333333,
@@ -6317,7 +6325,7 @@
     "quality_score": 45.0,
     "growth_score": 44.0,
     "safety_score": 33.12325,
-    "trend_score": 21.03658317168548,
+    "trend_score": 21.0365831716855,
     "momentum_score": 42.89155254185093,
     "volatility_score": 35.1185118309756,
     "volume_score": 50.0,
@@ -6336,16 +6344,16 @@
     "current_ratio_score": 42.0,
     "earnings_visibility": 43.177,
     "valuation_margin": 56.34384825238095,
-    "catalyst_timeline": 41.789394404686966,
+    "catalyst_timeline": 41.78939440468697,
     "downside_control": 37.87926427464634,
-    "composite_score": 41.97166255215301,
+    "composite_score": 41.96777350685459,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 45.52785687698413,
-    "technical_score": 36.20214308025604,
-    "sentiment_score": 50.0,
+    "technical_score": 36.20214308025605,
+    "sentiment_score": 53.84,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6361,5 +6369,146 @@
     "sector": "Financials",
     "industry": "Transaction & Payment Processing Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Northcoast Downgrades Fiserv (FISV) to Neutral",
+      "url": "/news/303746/northcoast-downgrades-fiserv-fisv-to-neutral",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Fiserv, Inc. (FISV): A Bull Case Theory",
+      "url": "/news/303623/fiserv-inc-fisv-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Affirm Positions for Long-Term Growth. The Fintech Is More Than Just Buy Now, Pay Later.",
+      "url": "https://finance.yahoo.com/m/8db2a1e7-46c9-3ac4-814b-34163d49a8ac/affirm-positions-for.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Fiserv Gears Up to Report Q4 Earnings: Here's What You Should Know",
+      "url": "/news/303119/fiserv-gears-up-to-report-q4-earnings-heres-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Are Wall Street Analysts Bullish on Fiserv Stock?",
+      "url": "https://finance.yahoo.com/m/57c8cafc-08fb-3ae6-aa27-7571d1f11b6b/are-wall-street-analysts.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Affirm Q2 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/374f06b0-3e9d-3c76-82f9-ef47f948b3fe/affirm-q2-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Countdown to Fiserv (FISV) Q4 Earnings: Wall Street Forecasts for Key Metrics",
+      "url": "/news/301504/countdown-to-fiserv-fisv-q4-earnings-wall-street-forecasts-for-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Spire names new CEO to grow pay-by-bank",
+      "url": "https://finance.yahoo.com/m/fcf74148-27a5-3dd3-b294-0fa3e4839300/spire-names-new-ceo-to-grow.html",
+      "publisher": "Payments Dive",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Market Today, Feb. 3: PayPal Plunges After Earnings Miss and Weak 2026 Profit Outlook",
+      "url": "/news/298345/stock-market-today-feb-3-paypal-plunges-after-earnings-miss-and-weak-2026-profit-outlook",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Morgan Stanley Thinks This Stock Is the 'Best Fintech Asset'",
+      "url": "https://www.barrons.com/articles/sofi-technologies-affirm-stock-fintech-2f72f8e1?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Fiserv (FISV) Stock Is Falling After PayPal's Earnings Shock",
+      "url": "/news/297981/why-fiserv-fisv-stock-is-falling-after-paypals-earnings-shock",
+      "publisher": "Benzinga",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Analysts Estimate Fiserv (FISV) to Report a Decline in Earnings: What to Look Out for",
+      "url": "/news/297654/analysts-estimate-fiserv-fisv-to-report-a-decline-in-earnings-what-to-look-out-for",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "January Deep Freeze Impacts Small Business Foot Traffic, New Fiserv Data Shows",
+      "url": "/news/297230/january-deep-freeze-impacts-small-business-foot-traffic-new-fiserv-data-shows",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "From Wall Street to Washington: The CEO who is overhauling the IRS and SSA",
+      "url": "https://finance.yahoo.com/news/wall-street-washington-ceo-overhauling-121645269.html",
+      "publisher": "Fortune",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why some payments companies want to be banks",
+      "url": "https://finance.yahoo.com/m/b4e96771-fcc3-38b4-8afb-3d4776f9a367/why-some-payments-companies.html",
+      "publisher": "Payments Dive",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Intuit Leans On Affirm For BNPL Push",
+      "url": "https://finance.yahoo.com/news/intuit-leans-affirm-bnpl-push-163028542.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Overlooked and Undervalued: Why Fiserv Deserves Attention",
+      "url": "/news/294572/overlooked-and-undervalued-why-fiserv-deserves-attention",
+      "publisher": "Motley Fool",
+      "date": "2026-01-31",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Fiserv Stock: Buy, Sell, or Hold in 2026?",
+      "url": "/news/293984/fiserv-stock-buy-sell-or-hold-in-2026",
+      "publisher": "Motley Fool",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Giverny Capital Asset Management Sold Fiserv (FISV) in 2025",
+      "url": "/news/293424/heres-why-giverny-capital-asset-management-sold-fiserv-fisv-in-2025",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's What Hit Fiserv (FISV) in Q4",
+      "url": "/news/293345/heres-what-hit-fiserv-fisv-in-q4",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    }
+  ]
 }

@@ -6279,8 +6279,8 @@
     "close": 30.65999984741211,
     "sma_20": 27.653999996185306,
     "sma_50": 26.762400016784667,
-    "sma_200": 24.858182268142702,
-    "trend_alignment": 0.782128087267042,
+    "sma_200": 24.8581822681427,
+    "trend_alignment": 0.7821280872670421,
     "rsi": 74.30542803138373,
     "rsi_score": 0.48610856062767455,
     "macd_histogram": 0.36251415946305965,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 93.866728930945,
     "stoch_d": 94.8503664440652,
-    "trend_score": 78.2128087267042,
+    "trend_score": 78.21280872670421,
     "rsi_abs_score": 41.944801512125565,
     "macd_abs_score": 75.2355264807833,
     "momentum_score": 58.590163996454436,
@@ -6306,7 +6306,15 @@
     "technical_score": 58.46734868623554,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.2876685665764273,
+    "sentiment_pos": 0.17195,
+    "sentiment_neg": 0.00995,
+    "sentiment_neu": 0.8181,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 64.38
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.07632093933463796,
@@ -6325,7 +6333,7 @@
     "quality_score": 70.01269939999999,
     "growth_score": 85.225,
     "safety_score": 57.42245747598206,
-    "trend_score": 78.2128087267042,
+    "trend_score": 78.21280872670421,
     "momentum_score": 58.590163996454436,
     "volatility_score": 37.13228434643972,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 59.63486169999999,
     "catalyst_timeline": 63.6923322038227,
     "downside_control": 50.38021127336326,
-    "composite_score": 65.68821834191472,
+    "composite_score": 65.68432929661628,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 69.08526939852975,
     "technical_score": 58.46734868623554,
-    "sentiment_score": 50.0,
+    "sentiment_score": 64.38,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Energy",
     "industry": "Oil & Gas Exploration & Production"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Coterra Energy (CTRA) and Devon Energy (DVN) to Merge in an All-Stock Deal Worth $58 Billion",
+      "url": "/news/303510/coterra-energy-ctra-and-devon-energy-dvn-to-merge-in-an-all-stock-deal-worth-58-billion",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Coterra Energy (CTRA) Increases Yet Falls Behind Market: What Investors Need to Know",
+      "url": "/news/303456/coterra-energy-ctra-increases-yet-falls-behind-market-what-investors-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Halper Sadeh LLC Encourages PKST, CTRA, NFBK, FFWM Shareholders to Contact the Firm to Discuss Their Rights",
+      "url": "/news/300690/halper-sadeh-llc-encourages-pkst-ctra-nfbk-ffwm-shareholders-to-contact-the-firm-to-discuss-their-rights",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Coterra Energy downgraded to Neutral from Buy at Roth Capital",
+      "url": "https://finance.yahoo.com/news/coterra-energy-downgraded-neutral-buy-134019250.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Politics, Not Barrels, Are Driving Oil Again",
+      "url": "https://finance.yahoo.com/news/politics-not-barrels-driving-oil-154000680.html",
+      "publisher": "Oilprice.com",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Devon, Coterra Sign 'Blockbuster' Merger Deal",
+      "url": "https://www.rigzone.com/news/devon_coterra_sign_blockbuster_merger_deal-03-feb-2026-182914-article/",
+      "publisher": "Rigzone.com",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Adobe downgraded, Palantir upgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/adobe-downgraded-palantir-upgraded-wall-143444113.html",
+      "publisher": "The Fly",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Devon, Coterra Merger Redraws the 2026 U.S. Shale Playbook",
+      "url": "/news/297556/devon-coterra-merger-redraws-the-2026-us-shale-playbook",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Coterra Energy and Devon Energy Seal $58 Billion Merger Deal",
+      "url": "/news/297283/coterra-energy-and-devon-energy-seal-58-billion-merger-deal",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Devon Energy and Coterra Energy to merge in $58bn all-stock deal",
+      "url": "https://finance.yahoo.com/m/4aaf6fe6-c40e-38b7-bd6b-44e53d87a653/devon-energy-and-coterra.html",
+      "publisher": "Offshore Technology",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Devon Energy Touts Transformative Coterra Merger, Targets $1B Synergies and $5B+ Buyback",
+      "url": "https://finance.yahoo.com/m/464626d4-55c3-31cf-ab54-7bb706a5b7b6/devon-energy-touts.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "This $58 Billion Merger is Creating a New U.S. Oil and Gas Giant",
+      "url": "/news/296384/this-58-billion-merger-is-creating-a-new-us-oil-and-gas-giant",
+      "publisher": "Motley Fool",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Coterra Energy Calls Devon Merger Transformational, Targets $1B Synergies and $5B+ Buybacks",
+      "url": "https://finance.yahoo.com/m/4b7abd4c-2a42-397b-8297-570e616db36e/coterra-energy-calls-devon.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Devon Agrees to Buy US Shale Rival Coterra for $21.4 Billion",
+      "url": "https://finance.yahoo.com/news/devon-agrees-buy-oil-rival-132254969.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Devon Energy And Coterra Create Shale Giant With $58 Billion Merger",
+      "url": "https://finance.yahoo.com/m/ba243958-3d18-3727-8dd7-b1f7c392beab/devon-energy-and-coterra.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "KIMMERIDGE COMMENTS ON PROPOSED MERGER OF COTERRA AND DEVON",
+      "url": "/news/296237/kimmeridge-comments-on-proposed-merger-of-coterra-and-devon",
+      "publisher": "PR Newswire",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Financial Services Roundup: Market Talk",
+      "url": "https://finance.yahoo.com/m/17bc25df-65a6-3a5a-b943-2dec8468f16c/financial-services-roundup%3A.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Devon Energy CEO: Stars align to acquire Coterra for nearly $26 billion as merger mania returns to the oilfield",
+      "url": "https://finance.yahoo.com/news/devon-energy-ceo-stars-align-212036746.html",
+      "publisher": "Fortune",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Devon Energy to Buy Coterra for $21.5 Billion to Create Shale Giant",
+      "url": "https://finance.yahoo.com/m/99d8107b-062d-3188-8bc5-6e2bdc2c9bbe/devon-energy-to-buy-coterra.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Devon Energys merger with Coterra looks a little too defensive",
+      "url": "https://finance.yahoo.com/news/devon-energy-merger-coterra-looks-190908233.html",
+      "publisher": "Financial Times",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    }
+  ]
 }

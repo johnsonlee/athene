@@ -6306,7 +6306,15 @@
     "technical_score": 60.88921246468208,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.4630994199860382,
+    "sentiment_pos": 0.26535,
+    "sentiment_neg": 0.01115,
+    "sentiment_neu": 0.7235,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 73.15
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.0673968928132335,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 41.29053429523809,
     "catalyst_timeline": 62.23598493271559,
     "downside_control": 40.2671474837578,
-    "composite_score": 55.38517615291701,
+    "composite_score": 55.381287107618576,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 56.869965372222225,
     "technical_score": 60.88921246468208,
-    "sentiment_score": 50.0,
+    "sentiment_score": 73.15,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Utilities",
     "industry": "Multi-Utilities"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Xcel Energy pursuing large load tariffs in 4 states amid data center growth",
+      "url": "https://finance.yahoo.com/m/f8dc10d5-7c4b-3c2a-9970-37a7ecc1314c/xcel-energy-pursuing-large.html",
+      "publisher": "Utility Dive",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Xcel Energy Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/ec56a51e-9cd6-3433-9a51-f3af166e91e5/xcel-energy-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Top Stock Reports for SAP, McDonald's & Shopify",
+      "url": "/news/302210/top-stock-reports-for-sap-mcdonalds-shopify",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Xcel Energy Inks Dual Alliances with GE Vernova, NextEra to Support 6-GW Data Center Outlook, Generation Expansion",
+      "url": "https://finance.yahoo.com/m/daa2bb1e-f851-3c3d-b24e-8d071168e7e4/xcel-energy-inks-dual.html",
+      "publisher": "POWER Magazine",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Xcel Energy Inc (XEL) Q4 2025 Earnings Call Highlights: Strong Earnings Amid Strategic ...",
+      "url": "https://finance.yahoo.com/news/xcel-energy-inc-xel-q4-211050031.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "NextEra Energy, Inc. (NEE) is Attracting Investor Attention: Here is What You Should Know",
+      "url": "/news/299419/nextera-energy-inc-nee-is-attracting-investor-attention-here-is-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Xcel Energy and NextEra Energy Agree to Deliver Generation Solutions and Enable Large Load Across Xcel Energys Service Territories",
+      "url": "https://www.businesswire.com/news/home/20260204131879/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BMO Capital Highlights Earnings Visibility at NextEra Energy (NEE)",
+      "url": "/news/297380/bmo-capital-highlights-earnings-visibility-at-nextera-energy-nee",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Boring but Beautiful Dividend Stocks Perfect for Income-Focused Portfolios",
+      "url": "/news/296831/3-boring-but-beautiful-dividend-stocks-perfect-for-income-focused-portfolios",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "NANO Nuclear Energy Inc. (NNE): A Bull Case Theory",
+      "url": "/news/296387/nano-nuclear-energy-inc-nne-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "This Utility Stock Could Be the Next Big AI Winner",
+      "url": "/news/294965/this-utility-stock-could-be-the-next-big-ai-winner",
+      "publisher": "Motley Fool",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Argus Sees Long-Term Growth Tailwinds Building at NextEra Energy (NEE)",
+      "url": "/news/294437/argus-sees-long-term-growth-tailwinds-building-at-nextera-energy-nee",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "MarketBeat Week in Review - 01/26 - 01/30",
+      "url": "/news/294383/marketbeat-week-in-review-0126-0130",
+      "publisher": "MarketBeat",
+      "date": "2026-01-31",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "1 Stock I Plan to Load Up On in 2026",
+      "url": "/news/294206/1-stock-i-plan-to-load-up-on-in-2026",
+      "publisher": "Motley Fool",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "2026 Volatility Playbook: NVDA, B, NEM & More in AI, Gold & Power",
+      "url": "/news/294106/2026-volatility-playbook-nvda-b-nem-more-in-ai-gold-power",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Forget Tech Stocks: The Energy Stock That's Fueling the Data Center Explosion",
+      "url": "/news/293079/forget-tech-stocks-the-energy-stock-thats-fueling-the-data-center-explosion",
+      "publisher": "Motley Fool",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "NextEra Energy: Priced for Perfection, or Justified Premium?",
+      "url": "/news/292705/nextera-energy-priced-for-perfection-or-justified-premium",
+      "publisher": "MarketBeat",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "This High-Powered Energy Stock Delivered High-End Growth in 2025 with More to Come in 2026 and Beyond",
+      "url": "/news/292636/this-high-powered-energy-stock-delivered-high-end-growth-in-2025-with-more-to-come-in-2026-and-beyond",
+      "publisher": "Motley Fool",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "This Winning Fund Pro Likes J&J, Lowe's, and Utility Stocks",
+      "url": "https://www.barrons.com/articles/jnj-lowes-utilities-large-cap-stocks-e9ce45a7?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Wall Street Analysts Think NextEra (NEE) Is a Good Investment: Is It?",
+      "url": "/news/291866/wall-street-analysts-think-nextera-nee-is-a-good-investment-is-it",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    }
+  ]
 }

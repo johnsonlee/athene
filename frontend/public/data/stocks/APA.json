@@ -6306,7 +6306,15 @@
     "technical_score": 62.62881430817394,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.23574151098396426,
+    "sentiment_pos": 0.1674,
+    "sentiment_neg": 0.0676,
+    "sentiment_neu": 0.765,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 61.79
+  },
   "analyst": {
     "revision_momentum": 0.07142857142857142,
     "target_upside": -0.08958485069191555,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 69.8113769,
     "catalyst_timeline": 60.99216902233753,
     "downside_control": 55.03769644318764,
-    "composite_score": 61.24462395433638,
+    "composite_score": 61.24073490903795,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 60.232293453333334,
     "technical_score": 62.62881430817394,
-    "sentiment_score": 50.0,
+    "sentiment_score": 61.79,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Energy",
     "industry": "Oil & Gas Exploration & Production"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "APA Corporation Declares Cash Dividend on Common Shares",
+      "url": "/news/302135/apa-corporation-declares-cash-dividend-on-common-shares",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "RBC Raises APA Corp (APA) Price Target as Operational Stability Improves",
+      "url": "/news/296799/rbc-raises-apa-corp-apa-price-target-as-operational-stability-improves",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "APA (APA) Stock Sinks As Market Gains: Here's Why",
+      "url": "/news/296356/apa-apa-stock-sinks-as-market-gains-heres-why",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks Gain on US Manufacturing Strength",
+      "url": "https://finance.yahoo.com/m/fd077afd-6eb7-36bd-8cc3-d39c206200ed/stocks-gain-on-us.html",
+      "publisher": "Barchart",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stock Indexes Climb as Chip Makers and AI Infrastructure Stocks Rebound",
+      "url": "https://finance.yahoo.com/m/1374d656-6f72-314c-a8fc-52c418638b2c/stock-indexes-climb-as-chip.html",
+      "publisher": "Barchart",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What Are Wall Street Analysts' Target Price for APA Corporation Stock?",
+      "url": "https://finance.yahoo.com/m/9ef668da-98d2-37b1-8017-fd16d3185a26/what-are-wall-street.html",
+      "publisher": "Barchart",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Concerns Over AI Spending Weigh on Stocks",
+      "url": "https://finance.yahoo.com/m/847e6871-a324-397e-a746-c6933beb4d18/concerns-over-ai-spending.html",
+      "publisher": "Barchart",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "APA Corp. price target raised to $26 from $25 at RBC Capital",
+      "url": "https://finance.yahoo.com/news/apa-corp-price-target-raised-130518041.html",
+      "publisher": "TipRanks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "APA (APA) Stock Sinks As Market Gains: What You Should Know",
+      "url": "/news/287651/apa-apa-stock-sinks-as-market-gains-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bernstein Maintains Cautious Optimism on APA Amid Volatile Oil Outlook",
+      "url": "/news/286039/bernstein-maintains-cautious-optimism-on-apa-amid-volatile-oil-outlook",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-24",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks Recover on Strength in Megacap Tech and Consumer Sentiment",
+      "url": "https://finance.yahoo.com/m/a54841e3-8c22-3aeb-aff0-05f1f74a3dd5/stocks-recover-on-strength-in.html",
+      "publisher": "Barchart",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks Pressured by Weakness in Chip Makers",
+      "url": "https://finance.yahoo.com/m/6b1cbbbb-5b88-3a93-8195-2c69a8d5b2d9/stocks-pressured-by-weakness.html",
+      "publisher": "Barchart",
+      "date": "2026-01-23",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Natural Gas Prices Notch Best 2-Day Surge On Record Ahead Of Coldest Weather In A Nearly Century",
+      "url": "/news/282874/natural-gas-prices-notch-best-2-day-surge-on-record-ahead-of-coldest-weather-in-a-nearly-century",
+      "publisher": "Benzinga",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "APA Corporation Earnings Preview: What to Expect",
+      "url": "https://finance.yahoo.com/m/3e25fcee-019e-33db-a3cd-d0e9a21dddeb/apa-corporation-earnings.html",
+      "publisher": "Barchart",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "APA Corporation Provides Fourth-Quarter 2025 Supplemental Information and Schedules Results Conference Call for Feb. 26 at 10 a.m. Central Time",
+      "url": "/news/281561/apa-corporation-provides-fourth-quarter-2025-supplemental-information-and-schedules-results-conference-call-for-feb-26-at-10-am-central-time",
+      "publisher": "GlobeNewswire",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Do Options Traders Know Something About APA Stock We Don't?",
+      "url": "/news/278757/do-options-traders-know-something-about-apa-stock-we-dont",
+      "publisher": "Zacks",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Boosted by Chip Demand Optimism",
+      "url": "https://finance.yahoo.com/m/411311a1-d162-31e5-90e3-efce36fd14ba/stocks-boosted-by-chip-demand.html",
+      "publisher": "Barchart",
+      "date": "2026-01-15",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stock Indexes Settle Lower on Tech Weakness",
+      "url": "https://finance.yahoo.com/m/84d699ea-b799-3bb0-a0f5-d887325d38fb/stock-indexes-settle-lower-on.html",
+      "publisher": "Barchart",
+      "date": "2026-01-14",
+      "sentiment": "negative"
+    },
+    {
+      "title": "APA (APA) Stock Sinks As Market Gains: Here's Why",
+      "url": "/news/274351/apa-apa-stock-sinks-as-market-gains-heres-why",
+      "publisher": "Zacks",
+      "date": "2026-01-12",
+      "sentiment": "positive"
+    },
+    {
+      "title": "APA Corp (APA) Jumps 8.5% on LNG Demand Growth, Colder Season",
+      "url": "/news/271610/apa-corp-apa-jumps-85-on-lng-demand-growth-colder-season",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    }
+  ]
 }

@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 10647850.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 52.49184898496361,
+    "stoch_k": 52.49184898496362,
     "stoch_d": 46.03054229534825,
     "trend_score": 60.07980763652421,
     "rsi_abs_score": 72.55152372045072,
@@ -6306,7 +6306,15 @@
     "technical_score": 52.426344817069335,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.01885549147596716,
+    "sentiment_pos": 0.11034999999999999,
+    "sentiment_neg": 0.09885000000000001,
+    "sentiment_neu": 0.7908000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 50.94
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.21250797702616472,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 67.68067522142857,
     "catalyst_timeline": 58.34411767085086,
     "downside_control": 41.45489945746297,
-    "composite_score": 49.35076934045721,
+    "composite_score": 49.346880295158776,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 50.173777389462444,
     "technical_score": 52.426344817069335,
-    "sentiment_score": 50.0,
+    "sentiment_score": 50.94,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Health Care Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Layoffs surge just weeks into the new year",
+      "url": "https://finance.yahoo.com/m/d7835bf7-7798-3dfd-b434-531cd9351fbe/layoffs-surge-just-weeks-into.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CVS Pharmacy Now Accepting TrumpRx Discount Cards",
+      "url": "/news/303279/cvs-pharmacy-now-accepting-trumprx-discount-cards",
+      "publisher": "PR Newswire",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CVS Caremark Replaces Amgen And Eli Lilly's Branded Drugs, Expands Biosimilar Strategy For Weak Bone Disorder",
+      "url": "/news/303195/cvs-caremark-replaces-amgen-and-eli-lillys-branded-drugs-expands-biosimilar-strategy-for-weak-bone-disorder",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Aetna, a CVS Health company, receives Health Plan of the Year Award from Press Ganey",
+      "url": "/news/302031/aetna-a-cvs-health-company-receives-health-plan-of-the-year-award-from-press-ganey",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "FTC Settlement With Cigna's Pharmacy Benefit Manager Promises Cheaper Insulin, Boosts Dividend On Strong Quarterly Earnings",
+      "url": "/news/301838/ftc-settlement-with-cignas-pharmacy-benefit-manager-promises-cheaper-insulin-boosts-dividend-on-strong-quarterly-earnings",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cardinal Health Stock Jumps After Earnings. Its CEO Explains What Went Right.",
+      "url": "https://www.barrons.com/articles/cardinal-earnings-stock-price-ceo-360b636e?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cardinal Health Stock Roars Higher. Another Guidance Boost Can Do That.",
+      "url": "https://www.barrons.com/articles/cardinal-health-earnings-stock-price-360b636e?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What Analyst Projections for Key Metrics Reveal About CVS Health (CVS) Q4 Earnings",
+      "url": "/news/301488/what-analyst-projections-for-key-metrics-reveal-about-cvs-health-cvs-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "UnitedHealth, CVS, Humana Face Double Trouble As Trump's Medicare Cuts Are Just The StartPBM 'Spread Pricing' Comes Under Fire",
+      "url": "https://finance.yahoo.com/news/unitedhealth-cvs-humana-face-double-130105980.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "CVS Health Helps Customers Accelerate Biosimilar Adoption Through Formulary Changes - Supporting Affordable Options for Osteoporosis Care",
+      "url": "/news/301113/cvs-health-helps-customers-accelerate-biosimilar-adoption-through-formulary-changes-supporting-affordable-options-for-osteoporosis-care",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Aetna Launches Simplified, Digital-first, Benefits Onboarding Experience for Members in 2026",
+      "url": "/news/300982/aetna-launches-simplified-digital-first-benefits-onboarding-experience-for-members-in-2026",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CVS Health (CVS) Suffers a Larger Drop Than the General Market: Key Insights",
+      "url": "/news/300455/cvs-health-cvs-suffers-a-larger-drop-than-the-general-market-key-insights",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "How UnitedHealth's Comeback Ran Aground",
+      "url": "https://www.barrons.com/articles/unh-stock-unitedhealth-turnaround-6db7c259?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "UnitedHealth's Comeback Runs Aground. Medicare Is Still a Problem.",
+      "url": "https://www.barrons.com/articles/unh-stock-optum-medicare-advantage-unitedhealth-6db7c259?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Will Pharmacy and Consumer Wellness Segment Lead CVS' Q4 Earnings?",
+      "url": "/news/299361/will-pharmacy-and-consumer-wellness-segment-lead-cvs-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "UnitedHealth, CVS, Humana Face Double Trouble As Trump's Medicare Cuts Are Just The StartPBM 'Spread Pricing' Comes Under Fire",
+      "url": "https://finance.yahoo.com/news/unitedhealth-cvs-humana-face-double-114604435.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Banco Santander Strikes $12.3 Billion Deal for Webster Financial in U.S. Expansion",
+      "url": "https://finance.yahoo.com/m/ced59b5c-4f90-3fd2-b8a0-3cd22f8f6048/banco-santander-strikes-%2412.3.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "CVS Health (CVS) Expected to Beat Earnings Estimates: Should You Buy?",
+      "url": "/news/297680/cvs-health-cvs-expected-to-beat-earnings-estimates-should-you-buy",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CVS Health's (CVS) Path Forward: Policy Challenges, Analyst Views, and Dividend Stability",
+      "url": "/news/297087/cvs-healths-cvs-path-forward-policy-challenges-analyst-views-and-dividend-stability",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "UnitedHealth, CVS, Humana Face Double Trouble As Trump's Medicare Cuts Are Just The Start-PBM 'Spread Pricing' Comes Under Fire",
+      "url": "/news/296664/unitedhealth-cvs-humana-face-double-trouble-as-trumps-medicare-cuts-are-just-the-start-pbm-spread-pricing-comes-under-fire",
+      "publisher": "Benzinga",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    }
+  ]
 }

@@ -6279,8 +6279,8 @@
     "close": 10.5600004196167,
     "sma_20": 11.41300015449524,
     "sma_50": 12.853087902069092,
-    "sma_200": 13.859941439628601,
-    "trend_alignment": 0.18108307627743622,
+    "sma_200": 13.859941439628603,
+    "trend_alignment": 0.1810830762774362,
     "rsi": 21.74881747947719,
     "rsi_score": -0.5650236504104562,
     "macd_histogram": -0.017425341362710234,
@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 12.449817193255798,
-    "stoch_d": 10.003635422861919,
+    "stoch_d": 10.00363542286192,
     "trend_score": 18.10830762774362,
     "rsi_abs_score": 41.74881747947719,
     "macd_abs_score": 43.374682606465576,
@@ -6306,7 +6306,15 @@
     "technical_score": 38.18373457471114,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.10733171983912085,
+    "sentiment_pos": 0.1071,
+    "sentiment_neg": 0.05184999999999999,
+    "sentiment_neu": 0.8411,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 55.37
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.3257575757575757,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 70.33445725142857,
     "catalyst_timeline": 40.43710425191998,
     "downside_control": 57.61872545512247,
-    "composite_score": 46.78965092786802,
+    "composite_score": 46.78576188256959,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 52.57191229285714,
     "technical_score": 38.18373457471114,
-    "sentiment_score": 50.0,
+    "sentiment_score": 55.37,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Communication Services",
     "industry": "Movies & Entertainment"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "NFL May Sell Live Games To Streaming Platforms After $100 Million YouTube Deal, Raising Stakes For Disney, NBC And Traditional Partners",
+      "url": "/news/303485/nfl-may-sell-live-games-to-streaming-platforms-after-100-million-youtube-deal-raising-stakes-for-disney-nbc-and-traditional-partners",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Netflix Faces DOJ Antitrust Heat Over Nearly $83 Billion Warner Bros. Deal As Regulators Question Market Power Grab: Report",
+      "url": "/news/303462/netflix-faces-doj-antitrust-heat-over-nearly-83-billion-warner-bros-deal-as-regulators-question-market-power-grab-report",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "1 Value Stock for Long-Term Investors and 2 Facing Headwinds",
+      "url": "/news/303322/1-value-stock-for-long-term-investors-and-2-facing-headwinds",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Super Bowl Commercials Include These Movie Trailers: Here's The Movie Companies Shelling Out $8 Million To Get Fans To Theaters",
+      "url": "/news/302317/super-bowl-commercials-include-these-movie-trailers-heres-the-movie-companies-shelling-out-8-million-to-get-fans-to-theaters",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Trump Says He 'Shouldn't Be Involved' in Warner Bros. Deal",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-02-05-2026/card/trump-says-he-shouldn-t-be-involved-in-warner-bros-deal-EicxoOixKetVPKBU1etE?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Former NBC Cable President Tom Rogers on Netflix-WBD deal scrutiny, Disney leadership changes",
+      "url": "https://www.youtube.com/watch?v=LPFObylH76A",
+      "publisher": "CNBC TV",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Netflix Stock Surges As Trump Steps Aside On Warner Bros. Discovery Deal",
+      "url": "/news/301469/netflix-stock-surges-as-trump-steps-aside-on-warner-bros-discovery-deal",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Trump Steps Back From Hollywood's Biggest Bidding War For Warner Bros-Netflix Media Merger: 'The Justice Department Will Handle'",
+      "url": "/news/300773/trump-steps-back-from-hollywoods-biggest-bidding-war-for-warner-bros-netflix-media-merger-the-justice-department-will-handle",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Paramount to Report Fourth Quarter and Full Year 2025 Financial Results on February 25, 2026",
+      "url": "/news/300166/paramount-to-report-fourth-quarter-and-full-year-2025-financial-results-on-february-25-2026",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Netflix-Warner Bros Is a Marriage Made in Competition Heaven",
+      "url": "https://www.barrons.com/articles/netflix-anti-trust-hearing-warner-bros-deal-4d0b88e2?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Would Consider Revised Paramount Skydance Proposal: Nussbaum",
+      "url": "https://finance.yahoo.com/video/consider-revised-paramount-skydance-proposal-193225865.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Netflix, Warner Defend Proposed Deal in Senate Hearing",
+      "url": "https://www.wsj.com/business/media/netflix-warner-defend-proposed-deal-in-senate-hearing-16962434?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bob Iger's Second Time as CEO Wasn't Great for the Stock. He Still Leaves Behind A Strong Legacy.",
+      "url": "https://www.barrons.com/articles/bob-iger-disney-ceo-legacy-adb09314?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Blair Effron Discusses Paramount, Warner Acquisition",
+      "url": "https://finance.yahoo.com/video/blair-effron-discusses-paramount-warner-211500031.html",
+      "publisher": "WSJ",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Paramount Adviser Says of Warner Hostile Bid: 'We're Gonna Win'",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-02-03-2026/card/paramount-adviser-says-of-warner-hostile-bid-we-re-gonna-win--3V3bNVIQpG3kSGomTLU7?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Netflix Stock Lost 11% Last Month",
+      "url": "/news/296936/why-netflix-stock-lost-11-last-month",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Trump Threatens To Sue Trevor Noah Over 'False And Defamatory' Grammy Jokes",
+      "url": "/news/295273/trump-threatens-to-sue-trevor-noah-over-false-and-defamatory-grammy-jokes",
+      "publisher": "Benzinga",
+      "date": "2026-02-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "'Melania' documentary's $8 million box office is a win for the first lady - but not for Amazon",
+      "url": "https://www.marketwatch.com/story/melania-documentarys-8-million-box-office-is-a-win-for-the-first-lady-but-not-for-amazon-44256593?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "UBS discusses top themes for media in 2026",
+      "url": "https://finance.yahoo.com/news/ubs-discusses-top-themes-media-093003900.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Smartest Growth Stock to Buy With $1,000 Right Now",
+      "url": "/news/294613/the-smartest-growth-stock-to-buy-with-1000-right-now",
+      "publisher": "Motley Fool",
+      "date": "2026-01-31",
+      "sentiment": "positive"
+    }
+  ]
 }

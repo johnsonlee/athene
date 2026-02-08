@@ -6306,7 +6306,15 @@
     "technical_score": 57.584478474348984,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.08770531517387835,
+    "sentiment_pos": 0.10725,
+    "sentiment_neg": 0.023899999999999998,
+    "sentiment_neu": 0.8688499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 54.39
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.0012794125827445611,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 50.066700649999994,
     "catalyst_timeline": 55.8763553832127,
     "downside_control": 59.125640453763936,
-    "composite_score": 61.06295414882778,
+    "composite_score": 61.05906510352934,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 64.44938819284374,
     "technical_score": 57.584478474348984,
-    "sentiment_score": 50.0,
+    "sentiment_score": 54.39,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Building Products"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "3 Unpopular Stocks We're Skeptical Of",
+      "url": "/news/302657/3-unpopular-stocks-were-skeptical-of",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Allegion Schedules Webcast to Announce 2025 Fourth-Quarter, Full-Year Results",
+      "url": "https://www.businesswire.com/news/home/20260205187591/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Allegion's Board Increases Quarterly Dividend by 8%",
+      "url": "https://www.businesswire.com/news/home/20260204103976/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Johnson Controls Set to Report Q1 Earnings: What to Expect?",
+      "url": "/news/295842/johnson-controls-set-to-report-q1-earnings-what-to-expect",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stanley Black Gears Up to Report Q4 Earnings: What's in the Offing?",
+      "url": "/news/295843/stanley-black-gears-up-to-report-q4-earnings-whats-in-the-offing",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Zacks Industry Outlook Highlights Allegion, Resideo Technologies, Napco Security Technologies and Intellicheck",
+      "url": "/news/295235/zacks-industry-outlook-highlights-allegion-resideo-technologies-napco-security-technologies-and-intellicheck",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Illinois Tool Gears Up to Report Q4 Earnings: What's in the Cards?",
+      "url": "/news/293798/illinois-tool-gears-up-to-report-q4-earnings-whats-in-the-cards",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "4 Security & Safety Stocks to Consider on Prospering Industry Trends",
+      "url": "/news/293749/4-security-safety-stocks-to-consider-on-prospering-industry-trends",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Otis Stock to Report Q4 Earnings: Here's What You Need to Know",
+      "url": "/news/288816/otis-stock-to-report-q4-earnings-heres-what-you-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Parker-Hannifin Gears Up to Report Q2 Earnings: What's in the Offing?",
+      "url": "/news/288614/parker-hannifin-gears-up-to-report-q2-earnings-whats-in-the-offing",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Allegion Gains From Business Strength Despite Persisting Headwinds",
+      "url": "/news/287001/allegion-gains-from-business-strength-despite-persisting-headwinds",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Are Options Traders Betting on a Big Move in Allegion Stock?",
+      "url": "/news/284164/are-options-traders-betting-on-a-big-move-in-allegion-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jim Cramer on Allegion: \"It's Not That Expensive\"",
+      "url": "/news/283780/jim-cramer-on-allegion-its-not-that-expensive",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Schlage Named America's Most Trusted Lock Brand for Seventh Consecutive Year",
+      "url": "/news/281140/schlage-named-americas-most-trusted-lock-brand-for-seventh-consecutive-year",
+      "publisher": "PR Newswire",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3M Gears Up to Report Q4 Earnings: What's in the Offing?",
+      "url": "/news/278873/3m-gears-up-to-report-q4-earnings-whats-in-the-offing",
+      "publisher": "Zacks",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Allegion Earnings Preview: What to Expect",
+      "url": "https://finance.yahoo.com/m/fa778e0e-e18c-3e98-8010-c16b905658b9/allegion-earnings-preview%3A.html",
+      "publisher": "Barchart",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Allegion (ALLE) is a Strong Momentum Stock",
+      "url": "/news/276304/heres-why-allegion-alle-is-a-strong-momentum-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-14",
+      "sentiment": "positive"
+    },
+    {
+      "title": "1 Safe-and-Steady Stock with Impressive Fundamentals and 2 We Avoid",
+      "url": "/news/274858/1-safe-and-steady-stock-with-impressive-fundamentals-and-2-we-avoid",
+      "publisher": "StockStory",
+      "date": "2026-01-12",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Allegion (ALLE) is a Top Growth Stock for the Long-Term",
+      "url": "/news/270925/why-allegion-alle-is-a-top-growth-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is Allegion (ALLE) Outperforming Other Industrial Products Stocks This Year?",
+      "url": "/news/262534/is-allegion-alle-outperforming-other-industrial-products-stocks-this-year",
+      "publisher": "Zacks",
+      "date": "2025-12-26",
+      "sentiment": "neutral"
+    }
+  ]
 }

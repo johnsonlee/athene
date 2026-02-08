@@ -6295,8 +6295,8 @@
     "avg_volume_20d": 3815825.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 8.699771162232992,
-    "stoch_d": 9.74237761109671,
+    "stoch_k": 8.699771162232993,
+    "stoch_d": 9.742377611096709,
     "trend_score": 52.381731778849584,
     "rsi_abs_score": 44.949347490383545,
     "macd_abs_score": 20.0,
@@ -6306,7 +6306,15 @@
     "technical_score": 46.062883789898464,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.15757421987053985,
+    "sentiment_pos": 0.11745000000000001,
+    "sentiment_neg": 0.01135,
+    "sentiment_neu": 0.8712500000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 57.88
+  },
   "analyst": {
     "revision_momentum": -0.07692307692307693,
     "target_upside": 0.16548317381907995,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 71.24864864,
     "catalyst_timeline": 47.805425997828884,
     "downside_control": 64.44496437826636,
-    "composite_score": 58.09456712284154,
+    "composite_score": 58.0906780775431,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 59.11490090500243,
     "technical_score": 46.062883789898464,
-    "sentiment_score": 50.0,
+    "sentiment_score": 57.88,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Communication Services",
     "industry": "Broadcasting"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Is Wall Street Bullish or Bearish on Fox Corporation Stock?",
+      "url": "https://finance.yahoo.com/m/6b371783-a75f-31b0-900b-14f6ed5c3b0e/is-wall-street-bullish-or.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Morning Movers: Eli Lilly rises, Boston Scientific falls after quarterly results",
+      "url": "https://finance.yahoo.com/news/morning-movers-eli-lilly-rises-140052306.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FOXA Q4 Deep Dive: News, Sports, and Streaming Drive Broad-Based Growth",
+      "url": "/news/300854/foxa-q4-deep-dive-news-sports-and-streaming-drive-broad-based-growth",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Fox Corporation",
+      "url": "https://finance.yahoo.com/m/1d793d72-66dc-3f23-b190-a3625704eded/analyst-report%3A-fox.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Fox Corp (FOX) Q2 2026 Earnings Call Highlights: Revenue Growth Amidst Rising Costs",
+      "url": "https://finance.yahoo.com/news/fox-corp-fox-q2-2026-210208356.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Fox Corporation reports strong quarter, boosted by advertising and cable growth",
+      "url": "https://finance.yahoo.com/m/558c1e9b-07b3-307c-b12f-28070231fbd6/fox-corporation-reports.html",
+      "publisher": "Fox Business",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "FOXA Q2 Earnings Surpass Estimates, Revenues Increase Y/Y",
+      "url": "/news/299884/foxa-q2-earnings-surpass-estimates-revenues-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Fox Keeps Ads Growing Even Without Election Boost",
+      "url": "/news/299710/fox-keeps-ads-growing-even-without-election-boost",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "FOX Q2 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/cc94c367-9160-37a1-a68e-7f76a04fc857/fox-q2-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Fox (FOXA) Q2 2026 Earnings Call Transcript",
+      "url": "/news/299356/fox-foxa-q2-2026-earnings-call-transcript",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Compared to Estimates, Fox (FOXA) Q2 Earnings: A Look at Key Metrics",
+      "url": "/news/299500/compared-to-estimates-fox-foxa-q2-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Fox (FOXA) Beats Q2 Earnings and Revenue Estimates",
+      "url": "/news/299438/fox-foxa-beats-q2-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FOX's (NASDAQ:FOXA) Q4 CY2025 Sales Top Estimates",
+      "url": "/news/299152/foxs-nasdaq-foxa-q4-cy2025-sales-top-estimates",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Fox Revenue Climbs on Growth in Cable, Advertising",
+      "url": "https://www.wsj.com/business/media/fox-revenue-climbs-on-growth-in-cable-advertising-39ace4e4?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Fox: Fiscal Q2 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/fox-fiscal-q2-earnings-snapshot-130616995.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FOX REPORTS SECOND QUARTER FISCAL 2026 REVENUES OF $5.18 BILLION, NET INCOME OF $247 MILLION, AND ADJUSTED EBITDA OF $692 MILLION",
+      "url": "/news/299091/fox-reports-second-quarter-fiscal-2026-revenues-of-518-billion-net-income-of-247-million-and-adjusted-ebitda-of-692-million",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Fox and ASA Display Value and Momentum",
+      "url": "https://finance.yahoo.com/news/fox-asa-display-value-momentum-120212442.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Unveiling Fox (FOXA) Q2 Outlook: Wall Street Estimates for Key Metrics",
+      "url": "/news/297471/unveiling-fox-foxa-q2-outlook-wall-street-estimates-for-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What To Expect From FOX's (FOXA) Q4 Earnings",
+      "url": "/news/296552/what-to-expect-from-foxs-foxa-q4-earnings",
+      "publisher": "StockStory",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Disney Q1 Earnings Surpass Estimates, Revenues Increase Y/Y",
+      "url": "/news/295893/disney-q1-earnings-surpass-estimates-revenues-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    }
+  ]
 }

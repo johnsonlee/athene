@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 62.099998474121094,
     "sma_20": 58.577499389648445,
-    "sma_50": 62.79519958496093,
-    "sma_200": 69.12686737060548,
-    "trend_alignment": 0.39432521805587273,
+    "sma_50": 62.79519958496094,
+    "sma_200": 69.12686737060547,
+    "trend_alignment": 0.39432521805587284,
     "rsi": 56.41994703977964,
     "rsi_score": 0.12839894079559286,
     "macd_histogram": 0.7973797092472699,
@@ -6296,17 +6296,25 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 91.62133115579539,
-    "stoch_d": 77.54445447397794,
-    "trend_score": 39.43252180558727,
+    "stoch_d": 77.54445447397795,
+    "trend_score": 39.432521805587285,
     "rsi_abs_score": 74.00603707215424,
     "macd_abs_score": 76.76037992367009,
     "momentum_score": 75.38320849791216,
     "volatility_score": 39.65622800119257,
     "volume_score": 50.0,
-    "technical_score": 52.37596469128834,
+    "technical_score": 52.375964691288345,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.15089656164666898,
+    "sentiment_pos": 0.18385,
+    "sentiment_neg": 0.0475,
+    "sentiment_neu": 0.7686499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 57.54
+  },
   "analyst": {
     "revision_momentum": 0.08333333333333333,
     "target_upside": 0.046698872785829286,
@@ -6325,7 +6333,7 @@
     "quality_score": 48.53785771428571,
     "growth_score": 21.9,
     "safety_score": 72.23937500000001,
-    "trend_score": 39.43252180558727,
+    "trend_score": 39.432521805587285,
     "momentum_score": 75.38320849791216,
     "volatility_score": 39.65622800119257,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 74.57799484666667,
     "catalyst_timeline": 55.08835461247554,
     "downside_control": 64.18834045017888,
-    "composite_score": 56.42964674475134,
+    "composite_score": 56.4257576994529,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 53.61756135317461,
-    "technical_score": 52.37596469128834,
-    "sentiment_score": 50.0,
+    "technical_score": 52.375964691288345,
+    "sentiment_score": 57.54,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Semiconductors"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "3 Value Stocks That Fall Short",
+      "url": "/news/303372/3-value-stocks-that-fall-short",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Skyworks price target lowered to $75 from $85 at Craig-Hallum",
+      "url": "https://finance.yahoo.com/news/skyworks-price-target-lowered-75-140151860.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Skyworks Q1 Earnings Top Estimates, Revenues Down Y/Y, Shares Rise",
+      "url": "/news/299890/skyworks-q1-earnings-top-estimates-revenues-down-yy-shares-rise",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Skyworks Solutions Stock: Is Wall Street Bullish or Bearish?",
+      "url": "https://finance.yahoo.com/m/87aa4e34-b48a-3f64-9fb6-6614a189db05/skyworks-solutions-stock%3A-is.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Skyworks Solutions, Inc.",
+      "url": "https://finance.yahoo.com/m/229b6a8e-c334-3c88-9576-d7b7001b163e/analyst-report%3A-skyworks.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "SWKS Q4 Deep Dive: Broad Market Strength and Mobile Dynamics Shape Outlook",
+      "url": "/news/298812/swks-q4-deep-dive-broad-market-strength-and-mobile-dynamics-shape-outlook",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Skyworks Solutions Inc (SWKS) Q1 2026 Earnings Call Highlights: Strong Revenue and Strategic ...",
+      "url": "https://finance.yahoo.com/news/skyworks-solutions-inc-swks-q1-050303834.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Skyworks Solutions Q1 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/5192544e-d09b-3339-8e09-f1e2206ce407/skyworks-solutions-q1.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Skyworks SWKS Q1 2026 Earnings Call Transcript",
+      "url": "/news/298243/skyworks-swks-q1-2026-earnings-call-transcript",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Skyworks Solutions (SWKS) Q1 Earnings and Revenues Top Estimates",
+      "url": "/news/298265/skyworks-solutions-swks-q1-earnings-and-revenues-top-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Skyworks Solutions forecasts upbeat earnings as 5G adoption lifts chip demand",
+      "url": "https://finance.yahoo.com/news/skyworks-solutions-forecasts-upbeat-earnings-214509539.html",
+      "publisher": "Reuters",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Skyworks: Fiscal Q1 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/skyworks-fiscal-q1-earnings-snapshot-211211144.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Skyworks Solutions (NASDAQ:SWKS) Surprises With Strong Q4 But Inventory Levels Increase",
+      "url": "/news/298120/skyworks-solutions-nasdaq-swks-surprises-with-strong-q4-but-inventory-levels-increase",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Skyworks Delivers Strong Q1 FY26 Performance Driven by Mobile and Broad Markets",
+      "url": "/news/298069/skyworks-delivers-strong-q1-fy26-performance-driven-by-mobile-and-broad-markets",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Market Awaits JOLTS Jobs Report",
+      "url": "/news/297779/market-awaits-jolts-jobs-report",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Q4 Earnings, JOLTS & a Changing of the Disney Guard",
+      "url": "/news/297723/q4-earnings-jolts-a-changing-of-the-disney-guard",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Get Me Out: Traders Dump Software Stocks as AI Fears Take Hold",
+      "url": "https://finance.yahoo.com/news/traders-dump-software-stocks-ai-115502147.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Skyworks Solutions Earnings: What To Look For From SWKS",
+      "url": "/news/294933/skyworks-solutions-earnings-what-to-look-for-from-swks",
+      "publisher": "StockStory",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "B. Riley Cuts Skyworks (SWKS) Target as Android Weakness Weighs on Outlook",
+      "url": "/news/294220/b-riley-cuts-skyworks-swks-target-as-android-weakness-weighs-on-outlook",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-30",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Skyworks to Report Q1 Earnings: What's in Store for the Stock?",
+      "url": "/news/292378/skyworks-to-report-q1-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    }
+  ]
 }

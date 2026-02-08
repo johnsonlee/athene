@@ -6306,7 +6306,15 @@
     "technical_score": 42.743204488992625,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.17134387860141181,
+    "sentiment_pos": 0.13865,
+    "sentiment_neg": 0.034999999999999996,
+    "sentiment_neu": 0.8263999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 58.57
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.31958762886597936,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 65.10832793399999,
     "catalyst_timeline": 47.11480089614872,
     "downside_control": 35.25612973243717,
-    "composite_score": 54.638508339929885,
+    "composite_score": 54.63461929463145,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 67.06066422069279,
     "technical_score": 42.743204488992625,
-    "sentiment_score": 50.0,
+    "sentiment_score": 58.57,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Systems Software"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Stocks Supported by Tech Strength and Improvement in Consumer Sentiment",
+      "url": "https://finance.yahoo.com/m/7f0ffc34-b99f-3a23-bcbf-1ccd65b440e2/stocks-supported-by-tech.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Gen Digital Inc.",
+      "url": "https://finance.yahoo.com/m/d2f09c93-6f27-3dc4-b190-539d3bd158e0/analyst-report%3A-gen-digital.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Gen Digital Q3 Earnings Surpass Expectations, Revenues Rise Y/Y",
+      "url": "/news/302997/gen-digital-q3-earnings-surpass-expectations-revenues-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Rebound on Positive Tech Earnings",
+      "url": "https://finance.yahoo.com/m/74efc68b-365b-36b3-ab55-3f72026229cb/stocks-rebound-on-positive.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Compared to Estimates, Gen Digital (GEN) Q3 Earnings: A Look at Key Metrics",
+      "url": "/news/302875/compared-to-estimates-gen-digital-gen-q3-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Gen Digital Inc (GEN) Q3 2026 Earnings Call Highlights: Record Revenue and Strategic AI ...",
+      "url": "https://finance.yahoo.com/news/gen-digital-inc-gen-q3-050327200.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Gen Digital Q3 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/d6346567-093b-3344-b612-c4b5d5e3c35d/gen-digital-q3-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Gen Digital (GEN) Beats Q3 Earnings and Revenue Estimates",
+      "url": "/news/302240/gen-digital-gen-beats-q3-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Gen Digital: Fiscal Q3 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/gen-digital-fiscal-q3-earnings-212539920.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Gen Digital raises annual revenue forecast on strong security software demand",
+      "url": "https://finance.yahoo.com/news/gen-digital-raises-annual-revenue-210844189.html",
+      "publisher": "Reuters",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Gen Reports Strong Q3 FY26 Results and Raises FY26 Guidance",
+      "url": "/news/302051/gen-reports-strong-q3-fy26-results-and-raises-fy26-guidance",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Gen and Equifax Expand Partnership to Deliver Comprehensive Solutions for Consumers' Financial Lives",
+      "url": "/news/300193/gen-and-equifax-expand-partnership-to-deliver-comprehensive-solutions-for-consumers-financial-lives",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Gen Launches Agent Trust Hub for Safer Agentic Era",
+      "url": "/news/299246/gen-launches-agent-trust-hub-for-safer-agentic-era",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What To Expect From Gen Digital Inc (GEN) Q3 2026 Earnings",
+      "url": "https://finance.yahoo.com/news/expect-gen-digital-inc-gen-121855159.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analysts Estimate Mirion Technologies, Inc. (MIR) to Report a Decline in Earnings: What to Look Out for",
+      "url": "/news/297674/analysts-estimate-mirion-technologies-inc-mir-to-report-a-decline-in-earnings-what-to-look-out-for",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Avast Expands Scam Guardian Globally and Launches Deepfake Guard",
+      "url": "/news/296631/avast-expands-scam-guardian-globally-and-launches-deepfake-guard",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Gen Digital to Report Q3 Earnings: What's in Store for the Stock?",
+      "url": "/news/295835/gen-digital-to-report-q3-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "From AI-Powered Filers to Tax Refund Thieves: LifeLock Reveals New Insights on the High Cost Fraud Paying Americans Endure",
+      "url": "/news/295418/from-ai-powered-filers-to-tax-refund-thieves-lifelock-reveals-new-insights-on-the-high-cost-fraud-paying-americans-endure",
+      "publisher": "PR Newswire",
+      "date": "2026-02-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Gen Digital Stock Outlook: Is Wall Street Bullish or Bearish?",
+      "url": "https://finance.yahoo.com/m/f5fae4bf-a911-3292-80d7-0ba5c4a2a954/gen-digital-stock-outlook%3A-is.html",
+      "publisher": "Barchart",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Gen Digital (GEN) Reports Next Week: Wall Street Expects Earnings Growth",
+      "url": "/news/292014/gen-digital-gen-reports-next-week-wall-street-expects-earnings-growth",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    }
+  ]
 }

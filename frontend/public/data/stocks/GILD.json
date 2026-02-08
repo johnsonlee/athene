@@ -6277,19 +6277,19 @@
   },
   "technical": {
     "close": 152.5,
-    "sma_20": 136.082999420166,
+    "sma_20": 136.08299942016603,
     "sma_50": 127.83031494140624,
-    "sma_200": 115.89429580688476,
+    "sma_200": 115.89429580688477,
     "trend_alignment": 0.8405888070221275,
     "rsi": 82.19402476217938,
     "rsi_score": 0.6438804952435876,
     "macd_histogram": 1.6300049156206704,
     "macd_line": 7.060855651400516,
     "macd_histogram_pct": 1.0688556823742101,
-    "bb_position": 0.8908922339596014,
-    "bb_upper": 157.08239407881084,
-    "bb_lower": 115.08360476152116,
-    "bb_width": 0.30862627584813446,
+    "bb_position": 0.8908922339596007,
+    "bb_upper": 157.08239407881086,
+    "bb_lower": 115.08360476152119,
+    "bb_width": 0.3086262758481344,
     "hist_volatility": 0.25567489705821694,
     "volume_ratio": 1.030099961990718,
     "avg_volume_20d": 8261140.0,
@@ -6306,7 +6306,15 @@
     "technical_score": 58.17588412618764,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.08909833940628056,
+    "sentiment_pos": 0.05515,
+    "sentiment_neg": 0.027850000000000003,
+    "sentiment_neu": 0.917,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 54.45
+  },
   "analyst": {
     "revision_momentum": 0.1111111111111111,
     "target_upside": -0.06557377049180328,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 47.25774538666666,
     "catalyst_timeline": 61.03811762900803,
     "downside_control": 48.62632415058465,
-    "composite_score": 62.15281293644418,
+    "composite_score": 62.14892389114574,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 67.55197796416611,
     "technical_score": 58.17588412618764,
-    "sentiment_score": 50.0,
+    "sentiment_score": 54.45,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Biotechnology"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Jobs Report, CPI Data: What to Watch Next Week",
+      "url": "https://finance.yahoo.com/m/5e5a76be-cde7-3066-bdef-30523ee18e4d/jobs-report%2C-cpi-data%3A-what.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is Gilead Sciences (GILD) a 'Buy' Ahead of Its Upcoming Earnings Announcement?",
+      "url": "/news/303131/is-gilead-sciences-gild-a-buy-ahead-of-its-upcoming-earnings-announcement",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FDA Approves Label Update for Kite's Yescarta for Relapsed/Refractory Primary Central Nervous System Lymphoma",
+      "url": "https://www.businesswire.com/news/home/20260205203420/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "This Overlooked Biotech Giant Could Surprise Investors This Quarter",
+      "url": "https://finance.yahoo.com/m/ba42db3f-06b9-3319-bb15-3520e1e1585e/this-overlooked-biotech-giant.html",
+      "publisher": "Barchart",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Agios Pharmaceuticals (AGIO) Expected to Beat Earnings Estimates: Can the Stock Move Higher?",
+      "url": "/news/301708/agios-pharmaceuticals-agio-expected-to-beat-earnings-estimates-can-the-stock-move-higher",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ahead of Gilead (GILD) Q4 Earnings: Get Ready With Wall Street Estimates for Key Metrics",
+      "url": "/news/301483/ahead-of-gilead-gild-q4-earnings-get-ready-with-wall-street-estimates-for-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Should You Buy, Hold, or Sell GILD Stock Ahead of Q4 Earnings?",
+      "url": "/news/301507/should-you-buy-hold-or-sell-gild-stock-ahead-of-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Gilead Sciences (GILD) Rises As Market Takes a Dip: Key Facts",
+      "url": "/news/300472/gilead-sciences-gild-rises-as-market-takes-a-dip-key-facts",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Earnings Preview: Gilead Sciences (GILD) Q4 Earnings Expected to Decline",
+      "url": "/news/297653/earnings-preview-gilead-sciences-gild-q4-earnings-expected-to-decline",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Gilead Sciences Stock Surged 21% in a Month",
+      "url": "/news/297560/heres-why-gilead-sciences-stock-surged-21-in-a-month",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Gilead Sciences, Inc. (GILD): A Bull Case Theory",
+      "url": "/news/296365/gilead-sciences-inc-gild-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Implied Volatility Surging for Gilead Sciences Stock Options",
+      "url": "/news/295840/implied-volatility-surging-for-gilead-sciences-stock-options",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Truist Securities Raises Price Target on Gilead Sciences, Inc. (GILD) to $145, Keeps Buy Rating",
+      "url": "/news/294798/truist-securities-raises-price-target-on-gilead-sciences-inc-gild-to-145-keeps-buy-rating",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "UBS Turns More Bullish on Gilead Sciences, Inc. (GILD) Amid Positive Pharma Sector Outlook",
+      "url": "/news/294530/ubs-turns-more-bullish-on-gilead-sciences-inc-gild-amid-positive-pharma-sector-outlook",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Gilead Sciences, Inc.",
+      "url": "https://finance.yahoo.com/m/d48f9fb1-0711-3beb-a262-f232c8436fb7/analyst-report%3A-gilead.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Gilead Sciences (GILD) Advances While Market Declines: Some Information for Investors",
+      "url": "/news/294303/gilead-sciences-gild-advances-while-market-declines-some-information-for-investors",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dow Jones Leader Amgen Leads These Biotech Stocks Heading Into Q4 Earnings Season",
+      "url": "https://www.investors.com/research/ibd-industry-themes/dow-jones-amgenamgn-stock-biotech-stocks?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Cash-Producing Stocks with Warning Signs",
+      "url": "/news/293991/3-cash-producing-stocks-with-warning-signs",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Are Wall Street Analysts Predicting Gilead Sciences Stock Will Climb or Sink?",
+      "url": "https://finance.yahoo.com/m/579650c4-500d-3a18-885e-f9fb8bae28c6/are-wall-street-analysts.html",
+      "publisher": "Barchart",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pharma Stocks Are Close to 'Breaking Out.' Earnings Could Set Them Free.",
+      "url": "https://www.barrons.com/articles/pharma-stocks-breaking-out-earnings-merck-f25b1335?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    }
+  ]
 }

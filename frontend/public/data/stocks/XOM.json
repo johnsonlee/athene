@@ -6279,7 +6279,7 @@
     "close": 149.0500030517578,
     "sma_20": 136.87649955749515,
     "sma_50": 125.995,
-    "sma_200": 113.5222327423096,
+    "sma_200": 113.52223274230958,
     "trend_alignment": 0.8340782876800864,
     "rsi": 77.58679609976315,
     "rsi_score": 0.551735921995263,
@@ -6306,7 +6306,15 @@
     "technical_score": 59.294350362041854,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.10677023543217308,
+    "sentiment_pos": 0.045950000000000005,
+    "sentiment_neg": 0.0922,
+    "sentiment_neu": 0.8618500000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 44.66
+  },
   "analyst": {
     "revision_momentum": -0.058823529411764705,
     "target_upside": -0.054008721905400944,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 53.81753569999999,
     "catalyst_timeline": 58.44842521432406,
     "downside_control": 50.31160598546866,
-    "composite_score": 50.826649822217924,
+    "composite_score": 50.82276077691949,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 48.96305887380953,
     "technical_score": 59.294350362041854,
-    "sentiment_score": 50.0,
+    "sentiment_score": 44.66,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Energy",
     "industry": "Integrated Oil & Gas"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "BMO and UBS Raise Exxon Mobil (XOM) Price Targets",
+      "url": "/news/303761/bmo-and-ubs-raise-exxon-mobil-xom-price-targets",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "From AI Darlings To Dow Dinosaurs: Investors Flee Software For Old-Economy Stocks",
+      "url": "/news/303569/from-ai-darlings-to-dow-dinosaurs-investors-flee-software-for-old-economy-stocks",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Revenge of the Real. Why Energy, Materials and Staples Stocks Are Beating the Market.",
+      "url": "https://finance.yahoo.com/m/52f16a06-b250-3bb8-9447-6327ecee03c1/revenge-of-the-real.-why.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Exxon Mobil Stock Is Rising Today: What's Going?",
+      "url": "/news/303094/exxon-mobil-stock-is-rising-today-whats-going",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ExxonMobil's Permian Push: Here's What Investors Should Know",
+      "url": "/news/303030/exxonmobils-permian-push-heres-what-investors-should-know",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Shell Plc downgraded after soft trading update",
+      "url": "https://finance.yahoo.com/m/09b13fb9-ef0c-3abe-bfb2-2c858eb6ac30/shell-plc-downgraded-after.html",
+      "publisher": "Proactive",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Low Volatility ETFs to Watch Amid Major Tech Sell-Off Over AI Panic",
+      "url": "/news/302877/low-volatility-etfs-to-watch-amid-major-tech-sell-off-over-ai-panic",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Shell Q4 Earnings Miss as Lower Oil Prices Pressure Results",
+      "url": "/news/302710/shell-q4-earnings-miss-as-lower-oil-prices-pressure-results",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Trump Is Remaking the Global Oil Market, and Exxon and Chevron Want In",
+      "url": "https://finance.yahoo.com/news/trump-remaking-global-oil-market-110000436.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Big Tech to Spend $650 Billion This Year as AI Race Intensifies",
+      "url": "https://finance.yahoo.com/news/big-tech-spend-650-billion-012716850.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ConocoPhillips Earnings Hide A Quiet Shift: Are Energy ETFs Becoming LNG Bets?",
+      "url": "/news/302020/conocophillips-earnings-hide-a-quiet-shift-are-energy-etfs-becoming-lng-bets",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Laid Off? Here's How ETFs Fit Into Financial Planning After Job Loss",
+      "url": "/news/301998/laid-off-heres-how-etfs-fit-into-financial-planning-after-job-loss",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "As software sinks, US oil majors are regaining their lustre",
+      "url": "https://finance.yahoo.com/news/software-sinks-us-oil-majors-160427647.html",
+      "publisher": "Financial Times",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Comstock Resources to Report Q4 Earnings: What's in the Cards?",
+      "url": "/news/301773/comstock-resources-to-report-q4-earnings-whats-in-the-cards",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Important Factors to Watch Ahead of BP's Q4 Earnings Release",
+      "url": "/news/301767/important-factors-to-watch-ahead-of-bps-q4-earnings-release",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Agilyx, ExxonMobil and LyondellBasell to split up chemical recycling joint venture",
+      "url": "https://finance.yahoo.com/m/256c4cae-3463-39b7-bb2c-2a3753fd9474/agilyx%2C-exxonmobil-and.html",
+      "publisher": "Waste Dive",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ExxonMobil Guyana acquires FPSO ONE GUYANA for $2.32bn",
+      "url": "https://finance.yahoo.com/m/870bf52b-fe04-310a-a6a9-cce254cb7262/exxonmobil-guyana-acquires.html",
+      "publisher": "Offshore Technology",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The $100 Billion Bet on Venezuelan Oil Relies on a Broken State Company",
+      "url": "https://www.wsj.com/business/energy-oil/venezuela-oil-pdvsa-foreign-investment-a4da107e?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Nearly 20% of S&P 500 Stocks Hit 52-Week Highs Today",
+      "url": "https://finance.yahoo.com/m/b6e7c836-9b61-3160-9c2b-5aed8a0c5bc3/nearly-20%25-of-s%26p-500-stocks.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Shell Plans Major Pay Bump For CEO",
+      "url": "https://finance.yahoo.com/news/shell-plans-major-pay-bump-193336527.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    }
+  ]
 }

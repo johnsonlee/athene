@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 276.57000732421875,
-    "sma_20": 271.85249938964853,
+    "sma_20": 271.8524993896485,
     "sma_50": 262.6942010498047,
     "sma_200": 286.5663516235351,
     "trend_alignment": 0.49342500960593483,
@@ -6286,10 +6286,10 @@
     "macd_histogram": -0.14475903391354894,
     "macd_line": 3.7858452120451602,
     "macd_histogram_pct": -0.05234082875221179,
-    "bb_position": 0.6440915094045803,
-    "bb_upper": 288.2223325396518,
-    "bb_lower": 255.48266623964528,
-    "bb_width": 0.12043172813754592,
+    "bb_position": 0.644091509404583,
+    "bb_upper": 288.2223325396517,
+    "bb_lower": 255.48266623964523,
+    "bb_width": 0.12043172813754573,
     "hist_volatility": 0.4193570271943627,
     "volume_ratio": 0.4620152126960278,
     "avg_volume_20d": 1118145.0,
@@ -6301,12 +6301,20 @@
     "rsi_abs_score": 74.931466300729,
     "macd_abs_score": 47.38295856238941,
     "momentum_score": 61.1572124315592,
-    "volatility_score": 43.26304134226997,
+    "volatility_score": 43.26304134227001,
     "volume_score": 50.0,
-    "technical_score": 51.8025222860998,
+    "technical_score": 51.80252228609981,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.06971252036022042,
+    "sentiment_pos": 0.07895,
+    "sentiment_neg": 0.0267,
+    "sentiment_neu": 0.8943,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 53.49
+  },
   "analyst": {
     "revision_momentum": 0.3333333333333333,
     "target_upside": 0.15703076978703406,
@@ -6327,7 +6335,7 @@
     "safety_score": 65.352625,
     "trend_score": 49.34250096059348,
     "momentum_score": 61.1572124315592,
-    "volatility_score": 43.26304134226997,
+    "volatility_score": 43.26304134227001,
     "volume_score": 50.0,
     "analyst_score": 60.31407844216655,
     "pe_score": 65.686105,
@@ -6345,15 +6353,15 @@
     "earnings_visibility": 68.72366,
     "valuation_margin": 65.657239081,
     "catalyst_timeline": 55.63737918343192,
-    "downside_control": 59.41234995134049,
-    "composite_score": 65.08590930048679,
+    "downside_control": 59.4123499513405,
+    "composite_score": 65.08202025518835,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 68.61829423416667,
-    "technical_score": 51.8025222860998,
-    "sentiment_score": 50.0,
+    "technical_score": 51.80252228609981,
+    "sentiment_score": 53.49,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Communications Equipment"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "F5 (FFIV) Q1 Earnings: Taking a Look at Key Metrics Versus Estimates",
+      "url": "/news/302848/f5-ffiv-q1-earnings-taking-a-look-at-key-metrics-versus-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "F5 (FFIV) Reliance on International Sales: What Investors Need to Know",
+      "url": "/news/302838/f5-ffiv-reliance-on-international-sales-what-investors-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "LEVI & KORSINSKY, LLP: CYBERSECURITY BREACH PRACTICES AT CENTER OF F5, INC. SECURITIES LITIGATION",
+      "url": "/news/300331/levi-korsinsky-llp-cybersecurity-breach-practices-at-center-of-f5-inc-securities-litigation",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Reasons to Sell FFIV and 1 Stock to Buy Instead",
+      "url": "/news/298719/3-reasons-to-sell-ffiv-and-1-stock-to-buy-instead",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "5 Must-Read Analyst Questions From F5's Q4 Earnings Call",
+      "url": "/news/296732/5-must-read-analyst-questions-from-f5s-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "F5 (FFIV) Fell Following a Hacker Breach Confirmation",
+      "url": "/news/293348/f5-ffiv-fell-following-a-hacker-breach-confirmation",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cyber Security Stocks Gain as $190 Billion Move to Zero Trust Replaces Old Systems",
+      "url": "/news/292131/cyber-security-stocks-gain-as-190-billion-move-to-zero-trust-replaces-old-systems",
+      "publisher": "PR Newswire",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "F5 price target raised to $345 from $325 at RBC Capital",
+      "url": "https://finance.yahoo.com/news/f5-price-target-raised-345-151537101.html",
+      "publisher": "TipRanks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Rise Before the Open as Investors Weigh Big Tech Earnings, U.S. Economic Data and Apple Results in Focus",
+      "url": "https://finance.yahoo.com/m/578675b0-2f96-3cdc-8cd9-016a40fa63c2/stocks-rise-before-the-open.html",
+      "publisher": "Barchart",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "F5, Inc. Sued for Securities Law Violations - Contact the DJS Law Group to Discuss Your Rights - FFIV",
+      "url": "/news/291228/f5-inc-sued-for-securities-law-violations-contact-the-djs-law-group-to-discuss-your-rights-ffiv",
+      "publisher": "PR Newswire",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stocks Finish Mixed as Fed Keeps Interest Rates Steady",
+      "url": "https://finance.yahoo.com/m/6de3b3a0-2e33-3d40-8a18-16671e3a3446/stocks-finish-mixed-as-fed.html",
+      "publisher": "Barchart",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why F5 Stock Popped Today",
+      "url": "/news/290657/why-f5-stock-popped-today",
+      "publisher": "Motley Fool",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Gold Rallies To $5,300, Memory Stocks Go Wild: What's Moving Markets Wednesday?",
+      "url": "/news/290536/gold-rallies-to-5300-memory-stocks-go-wild-whats-moving-markets-wednesday",
+      "publisher": "Benzinga",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Are F5 (FFIV) Shares Soaring Today",
+      "url": "/news/290502/why-are-f5-ffiv-shares-soaring-today",
+      "publisher": "StockStory",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "F5 (FFIV) Upgraded to Strong Buy: Here's Why",
+      "url": "/news/290522/f5-ffiv-upgraded-to-strong-buy-heres-why",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks Mixed After the Fed Pauses Rate Cuts",
+      "url": "https://finance.yahoo.com/m/396af179-3604-3474-8571-1f8c6eb49f58/stocks-mixed-after-the-fed.html",
+      "publisher": "Barchart",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "S&P 500 breaches 7,000 as tech giants Microsoft and Meta prep earnings",
+      "url": "https://finance.yahoo.com/news/p-500-breaches-7-000-152125045.html",
+      "publisher": "Investing.com",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "F5 Stock Soars 9% as Q1 Earnings and Revenues Beat Estimates",
+      "url": "/news/289999/f5-stock-soars-9-as-q1-earnings-and-revenues-beat-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: F5, Inc.",
+      "url": "https://finance.yahoo.com/m/1e074e60-8128-3eb2-aa32-6d764190b20d/analyst-report%3A-f5%2C-inc..html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FFIV Q4 Deep Dive: AI Adoption, Hybrid Multi-Cloud, and Regulatory Tailwinds Drive Results",
+      "url": "/news/289482/ffiv-q4-deep-dive-ai-adoption-hybrid-multi-cloud-and-regulatory-tailwinds-drive-results",
+      "publisher": "StockStory",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    }
+  ]
 }

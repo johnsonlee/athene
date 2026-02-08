@@ -6279,8 +6279,8 @@
     "close": 82.55000305175781,
     "sma_20": 77.74449996948242,
     "sma_50": 78.07476181030275,
-    "sma_200": 69.84197298049929,
-    "trend_alignment": 0.7073663978456713,
+    "sma_200": 69.84197298049926,
+    "trend_alignment": 0.7073663978456718,
     "rsi": 74.33181630351662,
     "rsi_score": 0.48663632607033236,
     "macd_histogram": 0.6570588111522002,
@@ -6295,18 +6295,26 @@
     "avg_volume_20d": 2783370.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 94.87854400565737,
+    "stoch_k": 94.87854400565739,
     "stoch_d": 84.74602176861315,
-    "trend_score": 70.73663978456713,
+    "trend_score": 70.73663978456717,
     "rsi_abs_score": 41.87091435015347,
     "macd_abs_score": 69.4392874656873,
     "momentum_score": 55.655100907920385,
     "volatility_score": 64.20384038996896,
     "volume_score": 50.0,
-    "technical_score": 60.75829028574005,
+    "technical_score": 60.75829028574006,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.10327390884444118,
+    "sentiment_pos": 0.07565,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.9243499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 55.16
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.05996365838885528,
@@ -6325,7 +6333,7 @@
     "quality_score": 35.158666999999994,
     "growth_score": 77.27000000000001,
     "safety_score": 30.523449999999997,
-    "trend_score": 70.73663978456713,
+    "trend_score": 70.73663978456717,
     "momentum_score": 55.655100907920385,
     "volatility_score": 64.20384038996896,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 27.795964266666665,
     "catalyst_timeline": 60.39917327579023,
     "downside_control": 51.15509355849534,
-    "composite_score": 46.80501102320517,
+    "composite_score": 46.80112197790674,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 43.98976032222222,
-    "technical_score": 60.75829028574005,
-    "sentiment_score": 50.0,
+    "technical_score": 60.75829028574006,
+    "sentiment_score": 55.16,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Real Estate",
     "industry": "Health Care REITs"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Ventas Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/c551aa26-9571-3a4c-b16a-5eb65b507835/ventas-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Ventas, Inc.",
+      "url": "https://finance.yahoo.com/m/72ce3ef4-15d9-3434-aeea-c5d0b0e5b726/analyst-report%3A-ventas%2C-inc..html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ventas Inc (VTR) Q4 2025 Earnings Call Highlights: Strong Growth and Strategic Investments ...",
+      "url": "https://finance.yahoo.com/news/ventas-inc-vtr-q4-2025-210447094.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ventas Q4 FFO Meet, Revenues Beat Estimates, Same-Store Cash NOI Rises",
+      "url": "/news/303092/ventas-q4-ffo-meet-revenues-beat-estimates-same-store-cash-noi-rises",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ventas (VTR) Reports Q4 Earnings: What Key Metrics Have to Say",
+      "url": "/news/302324/ventas-vtr-reports-q4-earnings-what-key-metrics-have-to-say",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ventas (VTR) Matches Q4 FFO Estimates",
+      "url": "/news/302232/ventas-vtr-matches-q4-ffo-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ventas: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/ventas-q4-earnings-snapshot-213832936.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ventas Reports Fourth Quarter and Full Year 2025 Results, Provides 2026 Outlook and Increases Dividend",
+      "url": "https://www.businesswire.com/news/home/20260205017229/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ventas Stock: Is Wall Street Bullish or Bearish?",
+      "url": "https://finance.yahoo.com/m/a804eeb9-3978-3504-9465-f8db1768a549/ventas-stock%3A-is-wall-street.html",
+      "publisher": "Barchart",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ahead of Ventas (VTR) Q4 Earnings: Get Ready With Wall Street Estimates for Key Metrics",
+      "url": "/news/297497/ahead-of-ventas-vtr-q4-earnings-get-ready-with-wall-street-estimates-for-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What's in the Offing for Ventas Stock This Earnings Season?",
+      "url": "/news/295965/whats-in-the-offing-for-ventas-stock-this-earnings-season",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "January jobs data, Alphabet and Amazon earnings, more Warsh fallout: What to watch this week",
+      "url": "https://finance.yahoo.com/news/january-jobs-data-alphabet-and-amazon-earnings-more-warsh-fallout-what-to-watch-this-week-124723942.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ventas Stock Gains 10.9% in Three Months: Will it Continue to Rise?",
+      "url": "/news/282804/ventas-stock-gains-109-in-three-months-will-it-continue-to-rise",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ventas Announces Tax Treatment of 2025 Distributions",
+      "url": "https://www.businesswire.com/news/home/20260120286141/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ventas Announces Fourth Quarter 2025 Earnings Release Date and Conference Call",
+      "url": "https://www.businesswire.com/news/home/20260114361568/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ventas' Quarterly Earnings Preview: What You Need to Know",
+      "url": "https://finance.yahoo.com/m/1d7cf490-33e6-3036-864c-b4513b72d720/ventas%27-quarterly-earnings.html",
+      "publisher": "Barchart",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "4 Strong Buy Passive Income Dividend Stocks Goldman Sachs Loves in January",
+      "url": "https://finance.yahoo.com/m/f0f8d219-871a-3a3d-ab37-c3a9d960c735/4-strong-buy-passive-income.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-14",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ventas Stock Rallies 24.5% in Six Months: Will the Trend Last?",
+      "url": "/news/259880/ventas-stock-rallies-245-in-six-months-will-the-trend-last",
+      "publisher": "Zacks",
+      "date": "2025-12-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Longevity Shift: Healthcare REITs to Benefit From Global Aging",
+      "url": "/news/255367/the-longevity-shift-healthcare-reits-to-benefit-from-global-aging",
+      "publisher": "Zacks",
+      "date": "2025-12-16",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Key Reasons to Add Ventas Stock to Your Portfolio Right Now",
+      "url": "/news/251745/key-reasons-to-add-ventas-stock-to-your-portfolio-right-now",
+      "publisher": "Zacks",
+      "date": "2025-12-11",
+      "sentiment": "neutral"
+    }
+  ]
 }

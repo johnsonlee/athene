@@ -6306,7 +6306,15 @@
     "technical_score": 49.6521954706182,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.12840082740984712,
+    "sentiment_pos": 0.11145000000000001,
+    "sentiment_neg": 0.006750000000000001,
+    "sentiment_neu": 0.8817999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 56.42
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.4059048001606749,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 43.79918173333333,
     "catalyst_timeline": 54.345763096680706,
     "downside_control": 46.84641099087492,
-    "composite_score": 49.689340254579946,
+    "composite_score": 49.68545120928151,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 58.77543977777778,
     "technical_score": 49.6521954706182,
-    "sentiment_score": 50.0,
+    "sentiment_score": 56.42,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Health Care Supplies"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "West Pharmaceutical Services, Inc. (WST): A Bull Case Theory",
+      "url": "/news/303642/west-pharmaceutical-services-inc-wst-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "West Pharmaceutical Services Unveils Synchrony S1 Syringe System to Speed Drug Packaging Development",
+      "url": "https://finance.yahoo.com/m/b2207df5-d12e-3602-8d25-9d97fd190bb0/west-pharmaceutical-services.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "West Pharmaceutical Services (WST) Earnings Expected to Grow: Should You Buy?",
+      "url": "/news/301710/west-pharmaceutical-services-wst-earnings-expected-to-grow-should-you-buy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Reasons to Add Cooper Companies Stock to Your Portfolio Now",
+      "url": "/news/298005/reasons-to-add-cooper-companies-stock-to-your-portfolio-now",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why West Pharmaceutical (WST) Is a Great 'Buy the Bottom' Stock Now",
+      "url": "/news/293684/heres-why-west-pharmaceutical-wst-is-a-great-buy-the-bottom-stock-now",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "West to Host Fourth-Quarter and Full-Year 2025 Conference Call",
+      "url": "/news/291266/west-to-host-fourth-quarter-and-full-year-2025-conference-call",
+      "publisher": "PR Newswire",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "COO vs. WST: Which Stock Should Value Investors Buy Now?",
+      "url": "/news/290457/coo-vs-wst-which-stock-should-value-investors-buy-now",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "DraftKings, Abbott, And Applovin Are Among Top 10 Large Cap Losers Last Week (Jan. 19-Jan. 23): Are the Others in Your Portfolio?",
+      "url": "/news/286284/draftkings-abbott-and-applovin-are-among-top-10-large-cap-losers-last-week-jan-19-jan-23-are-the-others-in-your-portfolio",
+      "publisher": "Benzinga",
+      "date": "2026-01-25",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stocks Finish Mostly Higher Despite a Plunge in Intel",
+      "url": "https://finance.yahoo.com/m/a26c1321-951e-3161-ab20-9c0e41adaa8d/stocks-finish-mostly-higher.html",
+      "publisher": "Barchart",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "WST Launches Synchrony S1 Prefillable Syringe at Pharmapack",
+      "url": "/news/285676/wst-launches-synchrony-s1-prefillable-syringe-at-pharmapack",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Zacks Industry Outlook Highlights McKesson, Cardinal Health, West Pharmaceutical and Align Technology",
+      "url": "/news/284938/zacks-industry-outlook-highlights-mckesson-cardinal-health-west-pharmaceutical-and-align-technology",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "All You Need to Know About West Pharmaceutical (WST) Rating Upgrade to Strong Buy",
+      "url": "/news/284255/all-you-need-to-know-about-west-pharmaceutical-wst-rating-upgrade-to-strong-buy",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BD and Ypsomed Expand Partnership to Target Growing Biologics Market",
+      "url": "/news/284186/bd-and-ypsomed-expand-partnership-to-target-growing-biologics-market",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "4 Medical Supply Stocks Poised to Gain in a Prospering Industry",
+      "url": "/news/283927/4-medical-supply-stocks-poised-to-gain-in-a-prospering-industry",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Best Income Stocks to Buy for January 22nd",
+      "url": "/news/283838/best-income-stocks-to-buy-for-january-22nd",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "After Plunging 9.7% in 4 Weeks, Here's Why the Trend Might Reverse for West Pharmaceutical (WST)",
+      "url": "/news/282508/after-plunging-97-in-4-weeks-heres-why-the-trend-might-reverse-for-west-pharmaceutical-wst",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "West Synchrony S1 Prefillable Syringe System Commercially Available at Pharmapack",
+      "url": "/news/280713/west-synchrony-s1-prefillable-syringe-system-commercially-available-at-pharmapack",
+      "publisher": "PR Newswire",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Upslope Capital Management Exited West Pharmaceutical (WST) for Better Opportunities",
+      "url": "/news/280134/upslope-capital-management-exited-west-pharmaceutical-wst-for-better-opportunities",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-19",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Earnings Preview: What to Expect From West Pharmaceutical Services' Report",
+      "url": "https://finance.yahoo.com/m/a93c054c-9bca-3833-b460-3cda52de6bb3/earnings-preview%3A-what-to.html",
+      "publisher": "Barchart",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Reasons to Add West Pharmaceutical Stock to Your Portfolio Now",
+      "url": "/news/276605/reasons-to-add-west-pharmaceutical-stock-to-your-portfolio-now",
+      "publisher": "Zacks",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    }
+  ]
 }

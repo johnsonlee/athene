@@ -6278,7 +6278,7 @@
   "technical": {
     "close": 123.83000183105469,
     "sma_20": 127.30049972534182,
-    "sma_50": 125.01439971923827,
+    "sma_50": 125.01439971923828,
     "sma_200": 105.99775009155273,
     "trend_alignment": 0.6645944383783682,
     "rsi": 48.92803890751976,
@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 30.280054595300292,
-    "stoch_d": 23.205189204797414,
+    "stoch_d": 23.20518920479741,
     "trend_score": 66.45944383783682,
     "rsi_abs_score": 70.74962723526383,
     "macd_abs_score": 34.56010554596921,
@@ -6306,7 +6306,15 @@
     "technical_score": 52.07543561093118,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.14089294336927358,
+    "sentiment_pos": 0.13374999999999998,
+    "sentiment_neg": 0.06615,
+    "sentiment_neu": 0.8000999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 57.04
+  },
   "analyst": {
     "revision_momentum": -0.05555555555555555,
     "target_upside": 0.01752402487280951,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 58.31068981428571,
     "catalyst_timeline": 53.91654382009424,
     "downside_control": 39.91594157541781,
-    "composite_score": 52.00306113288001,
+    "composite_score": 51.99917208758158,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 60.267164223399995,
     "technical_score": 52.07543561093118,
-    "sentiment_score": 50.0,
+    "sentiment_score": 57.04,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 356,
-    "percentile": 0.3159922928709056,
+    "rank": 357,
+    "percentile": 0.3140655105973025,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Staples",
     "industry": "Consumer Staples Merchandise Retail"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Traders Chase AI Resistant Stocks During Slide in Tech",
+      "url": "https://finance.yahoo.com/news/traders-chase-ai-resistant-stocks-110000701.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Does Extreme Optimism, January Gains Spell SPX Trouble?",
+      "url": "/news/299145/does-extreme-optimism-january-gains-spell-spx-trouble",
+      "publisher": "Schaeffer's Research",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bookstore manager, 26, lives in Manhattan on $53K a year by cutting costs. Is a low-cost routine the key?",
+      "url": "https://finance.yahoo.com/news/bookstore-manager-26-lives-manhattan-131500133.html",
+      "publisher": "Moneywise",
+      "date": "2026-02-01",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Dollar Tree's Q3 Revenue & Comps Up: Can It Retain the Momentum?",
+      "url": "/news/290585/dollar-trees-q3-revenue-comps-up-can-it-retain-the-momentum",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How to Find Strong Retail and Wholesale Stocks Slated for Positive Earnings Surprises",
+      "url": "/news/290063/how-to-find-strong-retail-and-wholesale-stocks-slated-for-positive-earnings-surprises",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Do You Believe in Dollar Tree's (DLTR) Exceptional Earnings Growth?",
+      "url": "/news/289834/do-you-believe-in-dollar-trees-dltr-exceptional-earnings-growth",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Buy Walmart and 3 Retail Stocks Even as Consumer Confidence Dips",
+      "url": "/news/289991/buy-walmart-and-3-retail-stocks-even-as-consumer-confidence-dips",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "No Kid Hungry Announces Expanded Impact of the Mayors Alliance to End Childhood Hunger Through a $1.5 Million Investment by Dollar Tree",
+      "url": "/news/289782/no-kid-hungry-announces-expanded-impact-of-the-mayors-alliance-to-end-childhood-hunger-through-a-15-million-investment-by-dollar-tree",
+      "publisher": "PR Newswire",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Does Extreme Optimism, January Gains Spell SPX Trouble?",
+      "url": "/news/298121/does-extreme-optimism-january-gains-spell-spx-trouble",
+      "publisher": "Schaeffer's Research",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Five Below CEO Winnie Park on Transforming Brand: ICR Conference 2026",
+      "url": "https://finance.yahoo.com/news/five-below-ceo-winnie-park-233012545.html",
+      "publisher": "Exec Edge",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Discount Retail Stocks Are Soaring This Year. Should You Invest?",
+      "url": "/news/288940/discount-retail-stocks-are-soaring-this-year-should-you-invest",
+      "publisher": "Motley Fool",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How A Premium Coffee Brand Ends Up At Dollar Tree For $2",
+      "url": "https://finance.yahoo.com/m/c5d3e45a-3535-3b45-a7d2-8061f16384d0/how-a-premium-coffee-brand.html",
+      "publisher": "Money Digest",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dollar Tree squanders huge opportunity with customers",
+      "url": "https://finance.yahoo.com/m/fc998e32-966d-3ef7-baf6-9e473624ba71/dollar-tree-squanders-huge.html",
+      "publisher": "TheStreet",
+      "date": "2026-01-25",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Dollar Tree made a pricing move shoppers have been asking for",
+      "url": "https://finance.yahoo.com/m/fc998e32-966d-3ef7-baf6-9e473624ba71/dollar-tree-made-a-pricing.html",
+      "publisher": "TheStreet",
+      "date": "2026-01-25",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dollar Tree quietly makes change customers have wanted for years",
+      "url": "https://finance.yahoo.com/m/75567c58-50f8-3557-8242-6780aef1d4d0/dollar-tree-quietly-makes.html",
+      "publisher": "TheStreet",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dollar Tree adds a new, even lower price point",
+      "url": "https://finance.yahoo.com/m/75567c58-50f8-3557-8242-6780aef1d4d0/dollar-tree-adds-a-new%2C-even.html",
+      "publisher": "TheStreet",
+      "date": "2026-01-23",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Dollar Tree (DLTR) Earnings Beat Drives Margin Improvement",
+      "url": "/news/285455/dollar-tree-dltr-earnings-beat-drives-margin-improvement",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Trump's attack on the affordability crisis makes these stocks buyable",
+      "url": "https://finance.yahoo.com/news/trumps-attack-on-the-affordability-crisis-makes-these-stocks-buyable-143744052.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-01-23",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Dollar Tree's Quarterly Earnings Preview: What You Need to Know",
+      "url": "https://finance.yahoo.com/m/05e721b0-e66e-3925-bfbd-3268d99eb913/dollar-tree%27s-quarterly.html",
+      "publisher": "Barchart",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Zacks.com featured highlights include Industrial Logistics Properties, Plains GP, ASGN, California Water Service and Dollar Tree",
+      "url": "/news/284913/zackscom-featured-highlights-include-industrial-logistics-properties-plains-gp-asgn-california-water-service-and-dollar-tree",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    }
+  ]
 }

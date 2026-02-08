@@ -6277,19 +6277,19 @@
   },
   "technical": {
     "close": 199.60000610351562,
-    "sma_20": 188.44650039672857,
+    "sma_20": 188.4465003967286,
     "sma_50": 185.61297302246095,
-    "sma_200": 171.7734254455566,
-    "trend_alignment": 0.6961863677345249,
+    "sma_200": 171.77342544555663,
+    "trend_alignment": 0.6961863677345248,
     "rsi": 74.97038565463662,
     "rsi_score": 0.4994077130927323,
     "macd_histogram": 1.4288212091589743,
     "macd_line": 3.526240772728329,
     "macd_histogram_pct": 0.7158422672682513,
-    "bb_position": 1.0034303405028786,
-    "bb_upper": 199.52400686529558,
-    "bb_lower": 177.36899392816156,
-    "bb_width": 0.11756659258989682,
+    "bb_position": 1.0034303405028773,
+    "bb_upper": 199.5240068652956,
+    "bb_lower": 177.3689939281616,
+    "bb_width": 0.11756659258989681,
     "hist_volatility": 0.19535292125049905,
     "volume_ratio": 1.2532818845370284,
     "avg_volume_20d": 1852975.0,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 92.16358926581127,
     "stoch_d": 90.69882787310986,
-    "trend_score": 69.6186367734525,
+    "trend_score": 69.61863677345248,
     "rsi_abs_score": 40.08292016701748,
     "macd_abs_score": 68.23763400902376,
     "momentum_score": 54.16027708802062,
@@ -6306,7 +6306,15 @@
     "technical_score": 59.31076327037746,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.12671801465404206,
+    "sentiment_pos": 0.06785,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.93215,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 56.34
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": -0.003006012024048068,
@@ -6325,7 +6333,7 @@
     "quality_score": 90.0,
     "growth_score": 81.46428571428572,
     "safety_score": 19.62325,
-    "trend_score": 69.6186367734525,
+    "trend_score": 69.61863677345248,
     "momentum_score": 54.16027708802062,
     "volatility_score": 60.88544555967762,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 39.86392065333333,
     "catalyst_timeline": 58.13103730197897,
     "downside_control": 41.112304333951634,
-    "composite_score": 57.55367115378754,
+    "composite_score": 57.549782108489104,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 62.54815530634921,
     "technical_score": 59.31076327037746,
-    "sentiment_score": 50.0,
+    "sentiment_score": 56.34,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Real Estate",
     "industry": "Retail REITs"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "From AI Darlings To Dow Dinosaurs: Investors Flee Software For Old-Economy Stocks",
+      "url": "/news/303569/from-ai-darlings-to-dow-dinosaurs-investors-flee-software-for-old-economy-stocks",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Zacks Investment Ideas feature highlights: Alphabet, Amazon, AMD, Nvidia, Simon Property and Teradyne",
+      "url": "/news/302554/zacks-investment-ideas-feature-highlights-alphabet-amazon-amd-nvidia-simon-property-and-teradyne",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Simon Announces New $2.0 Billion Common Stock Repurchase Program",
+      "url": "/news/302092/simon-announces-new-20-billion-common-stock-repurchase-program",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Simon Property Group Announces Appointment of Martin J. Cicco to Board of Directors",
+      "url": "/news/302058/simon-property-group-announces-appointment-of-martin-j-cicco-to-board-of-directors",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Intriguing Stocks to Watch After Q4 Earnings: AMD, SPG, TER",
+      "url": "/news/300621/3-intriguing-stocks-to-watch-after-q4-earnings-amd-spg-ter",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "2 REITs That Look Attractive in a Stable Rate Environment",
+      "url": "/news/299853/2-reits-that-look-attractive-in-a-stable-rate-environment",
+      "publisher": "MarketBeat",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Transforming the Future of Luxury Retail: Simon Announces Major Redevelopments in Nashville, Denver & Tampa",
+      "url": "/news/299237/transforming-the-future-of-luxury-retail-simon-announces-major-redevelopments-in-nashville-denver-tampa",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Simon Property Q4 FFO Beats Estimates on Higher Revenues & Rent",
+      "url": "/news/297910/simon-property-q4-ffo-beats-estimates-on-higher-revenues-rent",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's My Favorite Stock to Buy With a Dividend Yield Over 4%",
+      "url": "/news/297726/heres-my-favorite-stock-to-buy-with-a-dividend-yield-over-4",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Simon Property Group Inc (SPG) Q4 2025 Earnings Call Highlights: Record FFO and Robust Leasing ...",
+      "url": "https://finance.yahoo.com/news/simon-property-group-inc-spg-050034247.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Simon Property Group, Inc.",
+      "url": "https://finance.yahoo.com/m/4324e90e-dc84-31d1-810c-62999cf4968b/analyst-report%3A-simon.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Simon Property Group Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/b27d44aa-1abc-36d0-a157-5a52e41f5002/simon-property-group-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Simon Property (SPG) Reports Q4 Earnings: What Key Metrics Have to Say",
+      "url": "/news/296332/simon-property-spg-reports-q4-earnings-what-key-metrics-have-to-say",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Simon Property (SPG) Q4 FFO and Revenues Surpass Estimates",
+      "url": "/news/296252/simon-property-spg-q4-ffo-and-revenues-surpass-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Simon Reports Fourth Quarter and Full Year 2025 Results",
+      "url": "/news/296140/simon-reports-fourth-quarter-and-full-year-2025-results",
+      "publisher": "PR Newswire",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Palantir, AMD, Amazon and More Stocks with Earnings This Week",
+      "url": "/news/295351/palantir-amd-amazon-and-more-stocks-with-earnings-this-week",
+      "publisher": "Benzinga",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "January jobs data, Alphabet and Amazon earnings, more Warsh fallout: What to watch this week",
+      "url": "https://finance.yahoo.com/news/january-jobs-data-alphabet-and-amazon-earnings-more-warsh-fallout-what-to-watch-this-week-124723942.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What to Expect From Simon Property Stock This Earnings Season?",
+      "url": "/news/292083/what-to-expect-from-simon-property-stock-this-earnings-season",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Morgan Stanley Viewed Simon Property Group, Inc. (SPG) as In-Line REIT Performer for 2026",
+      "url": "/news/291545/morgan-stanley-viewed-simon-property-group-inc-spg-as-in-line-reit-performer-for-2026",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Zacks Industry Outlook Highlights Simon, Regency and Urban Edge Properties",
+      "url": "/news/291217/zacks-industry-outlook-highlights-simon-regency-and-urban-edge-properties",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    }
+  ]
 }

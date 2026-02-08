@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 221.44000244140625,
     "sma_20": 204.57039184570314,
-    "sma_50": 188.20957824707028,
+    "sma_50": 188.2095782470703,
     "sma_200": 183.32772827148443,
-    "trend_alignment": 0.7862910662279228,
+    "trend_alignment": 0.7862910662279227,
     "rsi": 72.95276090795015,
     "rsi_score": 0.459055218159003,
     "macd_histogram": 1.357533809679035,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 83.98246008764029,
     "stoch_d": 86.08656458535683,
-    "trend_score": 78.62910662279228,
+    "trend_score": 78.62910662279226,
     "rsi_abs_score": 45.73226945773958,
     "macd_abs_score": 66.6957220559432,
     "momentum_score": 56.213995756841385,
@@ -6306,7 +6306,15 @@
     "technical_score": 56.26195224235617,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.13050079068786705,
+    "sentiment_pos": 0.0962,
+    "sentiment_neg": 0.01755,
+    "sentiment_neu": 0.8862500000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 56.53
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": -0.0065028901734103944,
@@ -6325,7 +6333,7 @@
     "quality_score": 88.9698,
     "growth_score": 50.17142857142857,
     "safety_score": 54.95944999999999,
-    "trend_score": 78.62910662279228,
+    "trend_score": 78.62910662279226,
     "momentum_score": 56.213995756841385,
     "volatility_score": 29.045107642330386,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 43.55420843809523,
     "catalyst_timeline": 60.01738500674949,
     "downside_control": 44.19868364634956,
-    "composite_score": 55.962597466251886,
+    "composite_score": 55.95870842095345,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 61.65919417460317,
     "technical_score": 56.26195224235617,
-    "sentiment_score": 50.0,
+    "sentiment_score": 56.53,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Semiconductors"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Texas Instruments Executes a $7.5B Deal and an AI Strategy Pivot",
+      "url": "/news/303545/texas-instruments-executes-a-75b-deal-and-an-ai-strategy-pivot",
+      "publisher": "MarketBeat",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Multi-Billion-Dollar VRU Detection Market Unlocking New Growth Opportunities",
+      "url": "/news/302668/multi-billion-dollar-vru-detection-market-unlocking-new-growth-opportunities",
+      "publisher": "PR Newswire",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Silicon Labs price target raised to $205 from $160 at RBC Capital",
+      "url": "https://finance.yahoo.com/news/silicon-labs-price-target-raised-130545923.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "2 Large-Cap Stocks Worth Your Attention and 1 Facing Challenges",
+      "url": "/news/303320/2-large-cap-stocks-worth-your-attention-and-1-facing-challenges",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Laid Off? Here's How ETFs Fit Into Financial Planning After Job Loss",
+      "url": "/news/301998/laid-off-heres-how-etfs-fit-into-financial-planning-after-job-loss",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is It Too Late to Buy Silicon Labs Stock?",
+      "url": "https://finance.yahoo.com/m/63824247-ddb1-366f-a65c-2155ebcd3791/is-it-too-late-to-buy-silicon.html",
+      "publisher": "Barchart",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Morning Movers: Eli Lilly rises, Boston Scientific falls after quarterly results",
+      "url": "https://finance.yahoo.com/news/morning-movers-eli-lilly-rises-140052306.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Texas Instruments to reshore Silicon Labs production in US$7.5 billion wireless play",
+      "url": "https://www.digitimes.com/news/a20260205VL209/texas-instruments-silicon-labs-wireless-acquisition-chips.html",
+      "publisher": "DigiTimes",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Texas Instruments makes a $7.5B deal no one saw coming",
+      "url": "https://finance.yahoo.com/m/59f8f07e-e241-3ec6-ae9e-abf2ddb1cc39/texas-instruments-makes-a.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Silicon Labs Stock Rockets On Texas Instruments Buyout",
+      "url": "https://www.investors.com/news/technology/silicon-labs-stock-rockets-texas-instruments-buyout?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks to Watch Wednesday Recap: AMD, Super Micro, Chipotle",
+      "url": "https://finance.yahoo.com/m/ecb85771-c50d-306c-b819-29336398a077/stocks-to-watch-wednesday.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Silicon Labs Stock Soars. Why Texas Instruments Is Paying a Big Premium for the Acquisition.",
+      "url": "https://finance.yahoo.com/m/02bead2d-ccd9-3a31-989d-573ce3ba6327/silicon-labs-stock-soars.-why.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Apple stock gains amid tech sell-off, Yum! Brands' mixed Q4 results",
+      "url": "https://finance.yahoo.com/video/apple-stock-gains-amid-tech-210604936.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Texas Instruments to acquire Silicon Labs in $7.5B all-cash deal",
+      "url": "https://finance.yahoo.com/m/edb66b14-5304-3714-9890-016c314faffa/texas-instruments-to-acquire.html",
+      "publisher": "Proactive",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Texas Instruments Agrees $7.5 Billion Silicon Labs Deal as Shares Jump 51%",
+      "url": "https://finance.yahoo.com/news/texas-instruments-agrees-7-5-193427908.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Texas Instruments to buy Silicon Labs in $7.5 billion deal",
+      "url": "https://www.youtube.com/watch?v=22wbU8Y4cFs",
+      "publisher": "CNBC TV",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Texas Instruments Incorporated",
+      "url": "https://finance.yahoo.com/m/116d6d19-7578-3875-8836-2bca23c9f9db/analyst-report%3A-texas.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Silicon Labs Stock Glows Green Today",
+      "url": "/news/299780/why-silicon-labs-stock-glows-green-today",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Texas Instruments to buy Silicon Labs, Enphase stock surges 40%",
+      "url": "https://finance.yahoo.com/video/texas-instruments-buy-silicon-labs-154207761.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Texas Instruments to Buy Silicon Labs for $231/Share, Targets $450M Synergies by 2030",
+      "url": "https://finance.yahoo.com/m/4b18bc4a-50db-31b0-a652-c7b3be4047e9/texas-instruments-to-buy.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    }
+  ]
 }

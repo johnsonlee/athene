@@ -6277,25 +6277,25 @@
   },
   "technical": {
     "close": 1230.260009765625,
-    "sma_20": 1139.820001220703,
+    "sma_20": 1139.8200012207033,
     "sma_50": 1040.4219995117187,
-    "sma_200": 764.4439250183107,
+    "sma_200": 764.4439250183106,
     "trend_alignment": 0.8786723078981197,
     "rsi": 65.19417365348173,
     "rsi_score": 0.30388347306963454,
     "macd_histogram": 2.745277377497274,
     "macd_line": 48.88436273707839,
     "macd_histogram_pct": 0.22314611185486496,
-    "bb_position": 0.9360862153162579,
-    "bb_upper": 1243.5151025200335,
-    "bb_lower": 1036.1248999213726,
-    "bb_width": 0.18194995909578177,
+    "bb_position": 0.9360862153162568,
+    "bb_upper": 1243.5151025200337,
+    "bb_lower": 1036.1248999213728,
+    "bb_width": 0.18194995909578174,
     "hist_volatility": 0.47908341282178274,
     "volume_ratio": 0.7324150789795034,
     "avg_volume_20d": 380795.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 83.30132742370478,
+    "stoch_k": 83.30132742370479,
     "stoch_d": 67.42701976497791,
     "trend_score": 87.86723078981197,
     "rsi_abs_score": 67.45631377025117,
@@ -6306,7 +6306,15 @@
     "technical_score": 61.71754775102481,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.5036522720037951,
+    "sentiment_pos": 0.30355,
+    "sentiment_neg": 0.0086,
+    "sentiment_neu": 0.68785,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 75.18
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": -0.027847772015671478,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 28.43970814235294,
     "catalyst_timeline": 66.27153700320264,
     "downside_control": 48.18467202181585,
-    "composite_score": 59.321771933675585,
+    "composite_score": 59.31788288837715,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 67.27885291862745,
     "technical_score": 61.71754775102481,
-    "sentiment_score": 50.0,
+    "sentiment_score": 75.18,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 117,
-    "percentile": 0.7764932562620424,
+    "rank": 116,
+    "percentile": 0.7784200385356455,
     "tier": "buy",
     "tier_raw": "buy",
     "tier_label": "Buy",
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Construction & Engineering"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Stifel Maintains Buy Rating On Comfort Systems USA (FIX) Citing Q4 Outperformance Potential",
+      "url": "/news/301035/stifel-maintains-buy-rating-on-comfort-systems-usa-fix-citing-q4-outperformance-potential",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "UBS Sees Strong Backlog Supporting Comfort Systems USA's (FIX) Long-Term Outlook",
+      "url": "/news/299285/ubs-sees-strong-backlog-supporting-comfort-systems-usas-fix-long-term-outlook",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Comfort Systems Soars 75% in 6 Months: Buy the Stock or Hold?",
+      "url": "/news/299323/comfort-systems-soars-75-in-6-months-buy-the-stock-or-hold",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Comfort Systems (FIX) Laps the Stock Market: Here's Why",
+      "url": "/news/296302/comfort-systems-fix-laps-the-stock-market-heres-why",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Comfort Systems' Dividend Hike Signals Confidence - Too Optimistic?",
+      "url": "/news/295762/comfort-systems-dividend-hike-signals-confidence-too-optimistic",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Comfort Systems (FIX) Is Considered a Good Investment by Brokers: Is That True?",
+      "url": "/news/293593/comfort-systems-fix-is-considered-a-good-investment-by-brokers-is-that-true",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "These 'Pick And Shovel' Names Are Riding The Data Center Train",
+      "url": "https://finance.yahoo.com/m/0a2f1853-24dd-35fa-84db-c978cae2f0fc/these-%27pick-and-shovel%27-names.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jim Cramer on Comfort Systems: \"It's a Great Company\"",
+      "url": "/news/292238/jim-cramer-on-comfort-systems-its-a-great-company",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Western Digital and These AI Stocks Were Tops as S&P 500 Soars to 7000 From 6000",
+      "url": "https://www.barrons.com/articles/western-digital-micron-seagate-sp500-7000-b812482e?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Comfort Systems (FIX) Surpasses Market Returns: Some Facts Worth Knowing",
+      "url": "/news/289220/comfort-systems-fix-surpasses-market-returns-some-facts-worth-knowing",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Comfort Systems' Cash Flow Strengthens: Capital Allocation in Focus?",
+      "url": "/news/286989/comfort-systems-cash-flow-strengthens-capital-allocation-in-focus",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Big Reasons to Love Comfort Systems (FIX)",
+      "url": "/news/286612/3-big-reasons-to-love-comfort-systems-fix",
+      "publisher": "StockStory",
+      "date": "2026-01-25",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Strong Revenue Report Lifts Comfort Systems (FIX) Shares",
+      "url": "/news/285450/strong-revenue-report-lifts-comfort-systems-fix-shares",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Comfort Systems (FIX) Outpaced the Stock Market Today",
+      "url": "/news/283175/why-comfort-systems-fix-outpaced-the-stock-market-today",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "For Data Centers, Power Is the New Real Estate",
+      "url": "/news/282740/for-data-centers-power-is-the-new-real-estate",
+      "publisher": "Motley Fool",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "'Follow The Money,' Not The Tariff Noise, Says Expert, Spotlights This New S&P Data Center Cooling Stock Among Top Picks",
+      "url": "/news/281900/follow-the-money-not-the-tariff-noise-says-expert-spotlights-this-new-sp-data-center-cooling-stock-among-top-picks",
+      "publisher": "Benzinga",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Comfort Systems' Data Center Exposure: A New Growth Engine?",
+      "url": "/news/281321/comfort-systems-data-center-exposure-a-new-growth-engine",
+      "publisher": "Zacks",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Comfort Systems vs. Quanta: Which Infrastructure Stock to Buy Now?",
+      "url": "/news/280411/comfort-systems-vs-quanta-which-infrastructure-stock-to-buy-now",
+      "publisher": "Zacks",
+      "date": "2026-01-19",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Brilliant Dividend Stocks to Buy Now and Hold for a Lifetime of Income",
+      "url": "/news/280147/3-brilliant-dividend-stocks-to-buy-now-and-hold-for-a-lifetime-of-income",
+      "publisher": "Motley Fool",
+      "date": "2026-01-19",
+      "sentiment": "positive"
+    },
+    {
+      "title": "2 Unpopular Stocks That Deserve a Second Chance and 1 We Ignore",
+      "url": "/news/280083/2-unpopular-stocks-that-deserve-a-second-chance-and-1-we-ignore",
+      "publisher": "StockStory",
+      "date": "2026-01-18",
+      "sentiment": "negative"
+    }
+  ]
 }

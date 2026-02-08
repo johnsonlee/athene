@@ -6306,7 +6306,15 @@
     "technical_score": 58.25886672472535,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.02582587366178139,
+    "sentiment_pos": 0.03465,
+    "sentiment_neg": 0.0638,
+    "sentiment_neu": 0.90155,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.29
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": -0.015020930805220375,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 47.502769690476185,
     "catalyst_timeline": 59.155636028916796,
     "downside_control": 40.43565333602944,
-    "composite_score": 51.950102903368276,
+    "composite_score": 51.94621385806984,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 51.73675009903741,
     "technical_score": 58.25886672472535,
-    "sentiment_score": 50.0,
+    "sentiment_score": 51.29,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Rail Transportation"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Is CSX Corporation (CSX) One of the Best Large Cap Stocks to Buy Under $50?",
+      "url": "/news/299904/is-csx-corporation-csx-one-of-the-best-large-cap-stocks-to-buy-under-50",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Sorfleet retires at CSX; Chand new CAO",
+      "url": "https://finance.yahoo.com/news/sorfleet-retires-csx-chand-cao-211117127.html",
+      "publisher": "FreightWaves",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CSX Announces Leadership Changes to its Executive Team",
+      "url": "/news/297306/csx-announces-leadership-changes-to-its-executive-team",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jim Cramer Makes Major Prediction For CSX Corporation (CSX)",
+      "url": "/news/294386/jim-cramer-makes-major-prediction-for-csx-corporation-csx",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-31",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Fidelis ready to proceed on Mason County, WV, data center site",
+      "url": "https://finance.yahoo.com/m/589edfaa-5e8c-3fe2-a321-bd9d34cd4043/fidelis-ready-to-proceed-on.html",
+      "publisher": "The Portsmouth Daily Times, Ohio",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CSX Corporation Stock: Is Wall Street Bullish or Bearish?",
+      "url": "https://finance.yahoo.com/m/5e790d3e-dbbc-383c-bcab-0b2d7c31413d/csx-corporation-stock%3A-is.html",
+      "publisher": "Barchart",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Intermodal competition weighs on Norfolk Southern quarterly earnings",
+      "url": "https://finance.yahoo.com/news/intermodal-competition-weighs-norfolk-southern-140300892.html",
+      "publisher": "FreightWaves",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Weak Volumes Drag Rail Revenue at UP, CSX Despite Pricing Gains",
+      "url": "https://finance.yahoo.com/m/b46082fe-6048-366b-96c3-f9b63599f995/weak-volumes-drag-rail.html",
+      "publisher": "Sourcing Journal",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "5 Insightful Analyst Questions From CSX's Q4 Earnings Call",
+      "url": "/news/291224/5-insightful-analyst-questions-from-csxs-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jim Cramer on CSX: \"This Is a Company That's Going to Do a Lot of Self-Help\"",
+      "url": "/news/289733/jim-cramer-on-csx-this-is-a-company-thats-going-to-do-a-lot-of-self-help",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Susquehanna Sees CSX Refocusing on Fundamentals Under New CEO",
+      "url": "/news/287427/susquehanna-sees-csx-refocusing-on-fundamentals-under-new-ceo",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Morning Movers: Nvidia up after report of potential China move on H200 chips",
+      "url": "https://finance.yahoo.com/news/morning-movers-nvidia-report-potential-135536896.html",
+      "publisher": "TipRanks",
+      "date": "2026-01-24",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: CSX Corporation",
+      "url": "https://finance.yahoo.com/m/9fcb80f6-d1f4-38d6-9ba2-a7bc8bbbbd0b/analyst-report%3A-csx.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks to Watch Friday Recap: Intel, Capital One, CSX, Booz Allen",
+      "url": "https://finance.yahoo.com/m/8d29abc7-4654-3b4d-801f-a6339e8e4e26/stocks-to-watch-friday-recap%3A.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Finish Mostly Higher Despite a Plunge in Intel",
+      "url": "https://finance.yahoo.com/m/a26c1321-951e-3161-ab20-9c0e41adaa8d/stocks-finish-mostly-higher.html",
+      "publisher": "Barchart",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CSX Stock Rises After Earnings Miss Estimates. Its the Outlook.",
+      "url": "https://finance.yahoo.com/m/b55c89ae-19f9-3c0e-b7e0-9570790c0f8b/csx-stock-rises-after.html",
+      "publisher": "Barrons.com",
+      "date": "2026-01-23",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stocks to Watch Friday: Intel, Capital One, CSX, Booz Allen",
+      "url": "https://finance.yahoo.com/m/8d29abc7-4654-3b4d-801f-a6339e8e4e26/stocks-to-watch-friday%3A.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Recover on Strength in Megacap Tech and Consumer Sentiment",
+      "url": "https://finance.yahoo.com/m/a54841e3-8c22-3aeb-aff0-05f1f74a3dd5/stocks-recover-on-strength-in.html",
+      "publisher": "Barchart",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks Pressured by Weakness in Chip Makers",
+      "url": "https://finance.yahoo.com/m/6b1cbbbb-5b88-3a93-8195-2c69a8d5b2d9/stocks-pressured-by-weakness.html",
+      "publisher": "Barchart",
+      "date": "2026-01-23",
+      "sentiment": "negative"
+    },
+    {
+      "title": "CSX Q4 Earnings & Revenues Lag Estimates, Both Down Year Over Year",
+      "url": "/news/285244/csx-q4-earnings-revenues-lag-estimates-both-down-year-over-year",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "negative"
+    }
+  ]
 }

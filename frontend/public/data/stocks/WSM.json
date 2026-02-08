@@ -6279,7 +6279,7 @@
     "close": 220.6699981689453,
     "sma_20": 210.22441635131835,
     "sma_50": 195.46761962890625,
-    "sma_200": 183.88512062072758,
+    "sma_200": 183.88512062072755,
     "trend_alignment": 0.7585520373856707,
     "rsi": 66.14967778143621,
     "rsi_score": 0.3229935556287242,
@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 978350.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 81.16578740955345,
+    "stoch_k": 81.16578740955346,
     "stoch_d": 73.77312127826566,
     "trend_score": 75.85520373856707,
     "rsi_abs_score": 64.78090221197861,
@@ -6306,7 +6306,15 @@
     "technical_score": 61.321671146381085,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.04055645388471461,
+    "sentiment_pos": 0.04215,
+    "sentiment_neg": 0.03105,
+    "sentiment_neu": 0.92675,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 47.97
+  },
   "analyst": {
     "revision_momentum": 0.08333333333333333,
     "target_upside": -0.07101101191824892,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 50.16204090833333,
     "catalyst_timeline": 58.67813799933441,
     "downside_control": 52.060130673570974,
-    "composite_score": 55.98787659731836,
+    "composite_score": 55.983987552019926,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 62.99915075694444,
     "technical_score": 61.321671146381085,
-    "sentiment_score": 50.0,
+    "sentiment_score": 47.97,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Homefurnishing Retail"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Williams-Sonoma, Inc. (WSM): A Bull Case Theory",
+      "url": "/news/299799/williams-sonoma-inc-wsm-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Williams-Sonoma, Inc. (WSM) Is a Trending Stock: Facts to Know Before Betting on It",
+      "url": "/news/299420/williams-sonoma-inc-wsm-is-a-trending-stock-facts-to-know-before-betting-on-it",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "WEST ELM LAUNCHES NEW COLLABORATION WITH PINK CHICKEN",
+      "url": "https://www.businesswire.com/news/home/20260202172138/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Williams-Sonoma (WSM) Suffers a Larger Drop Than the General Market: Key Insights",
+      "url": "/news/290944/williams-sonoma-wsm-suffers-a-larger-drop-than-the-general-market-key-insights",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "What to Expect From Williams-Sonoma's Q4 2025 Earnings Report",
+      "url": "https://finance.yahoo.com/m/848a6a13-1d42-30d5-befe-fef0d74db698/what-to-expect-from.html",
+      "publisher": "Barchart",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Williams-Sonoma (WSM) Stock Falls Amid Market Uptick: What Investors Need to Know",
+      "url": "/news/284726/williams-sonoma-wsm-stock-falls-amid-market-uptick-what-investors-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is WilliamsSonoma (WSM) Stock Outpacing Its Retail-Wholesale Peers This Year?",
+      "url": "/news/282522/is-williamssonoma-wsm-stock-outpacing-its-retail-wholesale-peers-this-year",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Investors Heavily Search Williams-Sonoma, Inc. (WSM): Here is What You Need to Know",
+      "url": "/news/282419/investors-heavily-search-williams-sonoma-inc-wsm-here-is-what-you-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Home Depot Stock Trading at a Premium: Should You Restrain Buying HD?",
+      "url": "/news/281271/home-depot-stock-trading-at-a-premium-should-you-restrain-buying-hd",
+      "publisher": "Zacks",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How Berkshire's Retail Arm Drives Its Service and Retailing Business",
+      "url": "/news/274016/how-berkshires-retail-arm-drives-its-service-and-retailing-business",
+      "publisher": "Zacks",
+      "date": "2026-01-12",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why 2026 Could Be the Year Mid-Cap Value Dividend Stocks Finally Win",
+      "url": "https://finance.yahoo.com/m/dbca78e3-8da7-396e-a589-dac5cfae82c1/why-2026-could-be-the-year.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "A US Traders Guide to the Supreme Courts Looming Tariff Ruling",
+      "url": "https://finance.yahoo.com/news/us-trader-guide-supreme-court-120000501.html",
+      "publisher": "Bloomberg",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Williams-Sonoma, Inc. (WSM) is Attracting Investor Attention: Here is What You Should Know",
+      "url": "/news/270792/williams-sonoma-inc-wsm-is-attracting-investor-attention-here-is-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "POTTERY BARN KIDS AND POTTERY BARN TEEN LAUNCH COLLABORATION WITH STONEY CLOVER LANE",
+      "url": "https://www.businesswire.com/news/home/20260108410933/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Furniture Retailer Stocks Skyrocket Following Trump's Tariff Pause Announcement",
+      "url": "https://finance.yahoo.com/news/furniture-retailer-stocks-skyrocket-following-183051290.html",
+      "publisher": "Benzinga",
+      "date": "2026-01-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Trump delays increases in tariffs for furniture for another year",
+      "url": "https://finance.yahoo.com/news/trump-delays-increases-tariffs-furniture-121059959.html",
+      "publisher": "TipRanks",
+      "date": "2026-01-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Three Home Goods Stocks Rally As Trump Delays Furniture Tariffs",
+      "url": "https://finance.yahoo.com/m/4b68563c-9752-3d1a-be40-1996d9a0826c/three-home-goods-stocks-rally.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks to Watch Friday: Tesla, Baidu, Micron, Wayfair",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-01-02-2026/card/stocks-to-watch-friday-rh-wayfair-tesla-nio-37eZDPyCVnCd4gR7SdNh?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Furniture Stocks Rise as Trump  Tariff Delay Gives 'Breathing Room' to Sector",
+      "url": "https://www.barrons.com/articles/furniture-stocks-trump-tariff-delay-86e0caf8?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Baidu, ASML, furniture stocks rise; Outlook Therapeutics sinks",
+      "url": "https://finance.yahoo.com/news/baidu-asml-furniture-stocks-rise-122957280.html",
+      "publisher": "Investing.com",
+      "date": "2026-01-02",
+      "sentiment": "neutral"
+    }
+  ]
 }

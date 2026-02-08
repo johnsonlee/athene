@@ -6278,7 +6278,7 @@
   "technical": {
     "close": 186.67999267578125,
     "sma_20": 206.67300033569333,
-    "sma_50": 206.29020080566403,
+    "sma_50": 206.29020080566406,
     "sma_200": 176.3418502044678,
     "trend_alignment": 0.5192568814724147,
     "rsi": 37.63423347474746,
@@ -6306,7 +6306,15 @@
     "technical_score": 41.86926072030441,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.007288778448109214,
+    "sentiment_pos": 0.12365,
+    "sentiment_neg": 0.07045,
+    "sentiment_neu": 0.8059,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 49.64
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.22134133276194554,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 70.964254625,
     "catalyst_timeline": 48.95506435524242,
     "downside_control": 54.821391063008065,
-    "composite_score": 56.27099536501593,
+    "composite_score": 56.26710631971749,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 61.46825183035714,
     "technical_score": 41.86926072030441,
-    "sentiment_score": 50.0,
+    "sentiment_score": 49.64,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "IT Consulting & Other Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Software ate the world. Now, Wall Street is worried AI will eat software.",
+      "url": "https://www.marketwatch.com/story/software-ate-the-world-now-wall-street-is-worried-ai-will-eat-software-88661ed5?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Salesforce stock gets brutal reality check amid software slump",
+      "url": "https://finance.yahoo.com/m/6e10af87-2c34-363a-a121-d6e1f70d76f3/salesforce-stock-gets-brutal.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stocks Mixed on Sector Rotation out of Tech",
+      "url": "https://finance.yahoo.com/m/d2e885bd-e047-3deb-9c46-4d88220b392d/stocks-mixed-on-sector.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Epam (EPAM) is a Strong Value Stock",
+      "url": "/news/299577/heres-why-epam-epam-is-a-strong-value-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Down 16% in 4 Weeks, Here's Why You Should You Buy the Dip in Epam (EPAM)",
+      "url": "/news/299540/down-16-in-4-weeks-heres-why-you-should-you-buy-the-dip-in-epam-epam",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Index Futures Steady After Tech-Led Selloff, U.S. ADP Jobs Report and Alphabet Earnings in Focus",
+      "url": "https://finance.yahoo.com/m/bf825e59-c634-35ae-ad25-5c90052b8217/stock-index-futures-steady.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Tumble on AI Disruption Fears",
+      "url": "https://finance.yahoo.com/m/2d280010-8635-3f1a-b487-d134aea3e092/stocks-tumble-on-ai.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Software Stocks Retreat and Drag the Broader Market Lower",
+      "url": "https://finance.yahoo.com/m/a06579e4-a8c9-38b5-bd18-ff27c7b1d6a5/software-stocks-retreat-and.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Why Epam (EPAM) is a Top Momentum Stock for the Long-Term",
+      "url": "/news/297622/why-epam-epam-is-a-top-momentum-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "EPAM Recognized as Leading Application Services IT Vendor for Third Consecutive Year",
+      "url": "/news/296832/epam-recognized-as-leading-application-services-it-vendor-for-third-consecutive-year",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here is Why Growth Investors Should Buy Epam (EPAM) Now",
+      "url": "/news/296025/here-is-why-growth-investors-should-buy-epam-epam-now",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why Epam (EPAM) is a Strong Growth Stock",
+      "url": "/news/293659/heres-why-epam-epam-is-a-strong-growth-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "EPAM Systems, Inc. (EPAM): A Bull Case Theory",
+      "url": "/news/289905/epam-systems-inc-epam-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "G vs. EPAM: Which Stock Should Value Investors Buy Now?",
+      "url": "/news/287228/g-vs-epam-which-stock-should-value-investors-buy-now",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "EPAM Announces Date for Fourth Quarter and Full Year 2025 Earnings Release and Conference Call",
+      "url": "/news/280460/epam-announces-date-for-fourth-quarter-and-full-year-2025-earnings-release-and-conference-call",
+      "publisher": "PR Newswire",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "EPAM Systems' Quarterly Earnings Preview: What You Need to Know",
+      "url": "https://finance.yahoo.com/m/cec1e4b7-1f6a-3b4f-a4a3-e661b6ffb263/epam-systems%27-quarterly.html",
+      "publisher": "Barchart",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "EPAM (EPAM) Stock Is Up, What You Need To Know",
+      "url": "/news/276644/epam-epam-stock-is-up-what-you-need-to-know",
+      "publisher": "StockStory",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Epam (EPAM) is a Strong Growth Stock",
+      "url": "/news/276286/heres-why-epam-epam-is-a-strong-growth-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-14",
+      "sentiment": "positive"
+    },
+    {
+      "title": "EPAM to Host Investor Day on March 12, 2026",
+      "url": "/news/274644/epam-to-host-investor-day-on-march-12-2026",
+      "publisher": "PR Newswire",
+      "date": "2026-01-13",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "G or EPAM: Which Is the Better Value Stock Right Now?",
+      "url": "/news/271110/g-or-epam-which-is-the-better-value-stock-right-now",
+      "publisher": "Zacks",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    }
+  ]
 }

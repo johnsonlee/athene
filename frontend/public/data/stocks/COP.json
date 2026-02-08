@@ -6306,7 +6306,15 @@
     "technical_score": 60.336297482478805,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.08695922751009556,
+    "sentiment_pos": 0.0873,
+    "sentiment_neg": 0.07915,
+    "sentiment_neu": 0.8336,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 54.35
+  },
   "analyst": {
     "revision_momentum": -0.13333333333333333,
     "target_upside": 0.06857461438394347,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 59.6076166,
     "catalyst_timeline": 61.4400243250269,
     "downside_control": 56.69223910470377,
-    "composite_score": 55.280933409340335,
+    "composite_score": 55.2770443640419,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 49.90972700327888,
     "technical_score": 60.336297482478805,
-    "sentiment_score": 50.0,
+    "sentiment_score": 54.35,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 260,
-    "percentile": 0.5009633911368016,
+    "rank": 261,
+    "percentile": 0.49903660886319845,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6369,5 +6377,146 @@
     "sector": "Energy",
     "industry": "Oil & Gas Exploration & Production"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "ConocoPhillips (COP) Plans $1 Billion Cost Cuts in 2026",
+      "url": "/news/303755/conocophillips-cop-plans-1-billion-cost-cuts-in-2026",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "ConocoPhillips (COP) Gets Higher Target at Roth Capital as Cost Cuts Progress",
+      "url": "/news/303571/conocophillips-cop-gets-higher-target-at-roth-capital-as-cost-cuts-progress",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "ConocoPhillips Stock Still Looks Cheap - What's The Best Play Here?",
+      "url": "https://finance.yahoo.com/m/904ed30e-d440-3455-ade3-c60b18709977/conocophillips-stock-still.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Forget Drilling: Conoco's Venezuela Play Is All About Dollar Signs",
+      "url": "/news/303103/forget-drilling-conocos-venezuela-play-is-all-about-dollar-signs",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "ExxonMobil's Permian Push: Here's What Investors Should Know",
+      "url": "/news/303030/exxonmobils-permian-push-heres-what-investors-should-know",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ConocoPhillips Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/f599ba8a-a70c-3db2-816c-5347a32bbbd9/conocophillips-q4-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ConocoPhillips Q4 2025 net income drops 39% to $1.4bn",
+      "url": "https://finance.yahoo.com/m/007c3f9b-cb51-359e-956e-d0e523112254/conocophillips-q4-2025-net.html",
+      "publisher": "Offshore Technology",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ConocoPhillips (COP) Q4 2025 Earnings Call Highlights: Strong Production Growth and Strategic ...",
+      "url": "https://finance.yahoo.com/news/conocophillips-cop-q4-2025-earnings-230304341.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "ConocoPhillips Earnings Hide A Quiet Shift: Are Energy ETFs Becoming LNG Bets?",
+      "url": "/news/302020/conocophillips-earnings-hide-a-quiet-shift-are-energy-etfs-becoming-lng-bets",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "ConocoPhillips Presses for Billions Owed by Venezuela",
+      "url": "https://www.ttnews.com/articles/conocophillips-venezuela",
+      "publisher": "Transport Topics",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Market Today, Feb. 5: S&P, Nasdaq fall after layoff data surprise; Alphabet details overspending",
+      "url": "https://finance.yahoo.com/m/553b0529-3a48-3db5-a1d7-2715b00b0272/stock-market-today%2C-feb.-5%3A.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Is ConocoPhillips Stock Falling Today?",
+      "url": "/news/301804/why-is-conocophillips-stock-falling-today",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Weekly Jobless Claims Exceed Expectations",
+      "url": "/news/301789/weekly-jobless-claims-exceed-expectations",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "As software sinks, US oil majors are regaining their lustre",
+      "url": "https://finance.yahoo.com/news/software-sinks-us-oil-majors-160427647.html",
+      "publisher": "Financial Times",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Smart Money Is Piling Into COP After Earnings Miss: The Marathon Deal Just Changed Everything",
+      "url": "https://finance.yahoo.com/m/b5998423-30ba-34a4-99e1-bf09d9aa8509/why-smart-money-is-piling.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jobless Claims Pop Up a Bit, Major Morning for Earnings",
+      "url": "/news/301755/jobless-claims-pop-up-a-bit-major-morning-for-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ConocoPhillips Stock Falls as Earnings Miss on Oil Slump. It Plans to Save $1 Billion in Costs.",
+      "url": "https://finance.yahoo.com/m/0a15e0bb-8d0b-37ee-864d-ba4f0f481c39/conocophillips-stock-falls-as.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "ConocoPhillips Misses Q4 Earnings Estimates on Lower Prices",
+      "url": "/news/301735/conocophillips-misses-q4-earnings-estimates-on-lower-prices",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Crypto stocks sink as bitcoin falls below $70K, Estée Lauder drops",
+      "url": "https://finance.yahoo.com/video/crypto-stocks-sink-bitcoin-falls-142845106.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ConocoPhillips Posts Lower 2025 Earnings but Keeps $12 Billion 2026 Capex Plan",
+      "url": "https://finance.yahoo.com/news/conocophillips-posts-lower-2025-earnings-130416046.html",
+      "publisher": "Oilprice.com",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    }
+  ]
 }

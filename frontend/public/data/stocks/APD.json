@@ -6306,7 +6306,15 @@
     "technical_score": 56.29956841397457,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.13523246784632698,
+    "sentiment_pos": 0.094,
+    "sentiment_neg": 0.03325,
+    "sentiment_neu": 0.8727499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 56.76
+  },
   "analyst": {
     "revision_momentum": -0.15384615384615385,
     "target_upside": 0.02430064990110199,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 49.48480571666666,
     "catalyst_timeline": 56.89783468599823,
     "downside_control": 43.08245896317243,
-    "composite_score": 40.96503243848882,
+    "composite_score": 40.96114339319038,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 38.822081430555556,
     "technical_score": 56.29956841397457,
-    "sentiment_score": 50.0,
+    "sentiment_score": 56.76,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Materials",
     "industry": "Industrial Gases"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Why Air Products and Chemicals (APD) is a Top Dividend Stock for Your Portfolio",
+      "url": "/news/303123/why-air-products-and-chemicals-apd-is-a-top-dividend-stock-for-your-portfolio",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is Air Products and Chemicals (APD) Outperforming Other Basic Materials Stocks This Year?",
+      "url": "/news/302924/is-air-products-and-chemicals-apd-outperforming-other-basic-materials-stocks-this-year",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Air Products and Chemicals (APD) Crossed Above the 200-Day Moving Average: What That Means for Investors",
+      "url": "/news/299528/air-products-and-chemicals-apd-crossed-above-the-200-day-moving-average-what-that-means-for-investors",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Air Products Expands NASA Partnership With $140M Contracts",
+      "url": "/news/295799/air-products-expands-nasa-partnership-with-140m-contracts",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why Air Products and Chemicals (APD) is a Strong Growth Stock",
+      "url": "/news/295757/heres-why-air-products-and-chemicals-apd-is-a-strong-growth-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's What Key Metrics Tell Us About Air Products and Chemicals (APD) Q1 Earnings",
+      "url": "/news/295687/heres-what-key-metrics-tell-us-about-air-products-and-chemicals-apd-q1-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Air Products and Chemicals Inc (APD) Q1 2026 Earnings Call Highlights: Strong EPS Growth Amidst ...",
+      "url": "https://finance.yahoo.com/news/air-products-chemicals-inc-apd-190140823.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Air Products and Chemicals, Inc.",
+      "url": "https://finance.yahoo.com/m/c95d8327-e1f8-3aaf-bfd4-6367e0d6ff41/analyst-report%3A-air-products.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Slip as Bond Yields Rise after Warsh Picked for Fed Chair",
+      "url": "https://finance.yahoo.com/m/f8b5dfd3-285a-3d21-816a-900fc4922606/stocks-slip-as-bond-yields.html",
+      "publisher": "Barchart",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Air Products and Chemicals Q1 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/b8ee1428-23ae-3d78-8c91-fce0f51f8bc5/air-products-and-chemicals-q1.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Fall as Trump Nominates Warsh for Fed Chair",
+      "url": "https://finance.yahoo.com/m/96f0d3f7-ea32-331b-bc1c-8802bac1fdd7/stocks-fall-as-trump.html",
+      "publisher": "Barchart",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "APD Q1 Earnings Beat Estimates on Lower Costs, Sales Up Y/Y",
+      "url": "/news/293681/apd-q1-earnings-beat-estimates-on-lower-costs-sales-up-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Air Products Outsmarts Weak Demand With Pricing Power, Cost Cuts",
+      "url": "/news/293235/air-products-outsmarts-weak-demand-with-pricing-power-cost-cuts",
+      "publisher": "Benzinga",
+      "date": "2026-01-30",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Air Products and Chemicals (APD) Q1 Earnings and Revenues Surpass Estimates",
+      "url": "/news/293282/air-products-and-chemicals-apd-q1-earnings-and-revenues-surpass-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Air Products Posts Higher Profit, Revenue on Pricing",
+      "url": "https://www.wsj.com/business/earnings/air-products-posts-higher-profit-revenue-on-pricing-76d4086c?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Air Products beats Q1 expectations, shares rise on strong base business",
+      "url": "https://finance.yahoo.com/news/air-products-beats-q1-expectations-113917926.html",
+      "publisher": "Investing.com",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Air Products Maintains FY26 Adj. EPS Outlook - Update",
+      "url": "https://www.rttnews.com/3615584/air-products-maintains-fy26-adj-eps-outlook-update.aspx",
+      "publisher": "RTT News",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Air Products and Chemicals: Fiscal Q1 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/air-products-chemicals-fiscal-q1-110719473.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Air Products Reports Fiscal 2026 First Quarter Results",
+      "url": "/news/293111/air-products-reports-fiscal-2026-first-quarter-results",
+      "publisher": "PR Newswire",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Air Products wins over $140M in NASA contracts to supply liquid hydrogen",
+      "url": "https://finance.yahoo.com/news/air-products-wins-over-140m-151036624.html",
+      "publisher": "TipRanks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    }
+  ]
 }

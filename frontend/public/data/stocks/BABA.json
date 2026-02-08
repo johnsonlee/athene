@@ -4217,6 +4217,14 @@
       "low": 159.5,
       "close": 162.50999450683594,
       "volume": 10950600
+    },
+    {
+      "date": "2026-02-08",
+      "open": 160.4600067138672,
+      "high": 162.86000061035156,
+      "low": 159.5,
+      "close": 162.50999450683594,
+      "volume": 10950600
     }
   ],
   "fundamental": {
@@ -4269,36 +4277,44 @@
   },
   "technical": {
     "close": 162.50999450683594,
-    "sma_20": 167.3494972229004,
-    "sma_50": 159.16479919433593,
-    "sma_200": 142.45391746520994,
-    "trend_alignment": 0.6508093218500608,
+    "sma_20": 167.9269966125488,
+    "sma_50": 159.2747991943359,
+    "sma_200": 142.68150440216064,
+    "trend_alignment": 0.6488213722077957,
     "rsi": 48.570859067205674,
     "rsi_score": -0.02858281865588651,
-    "macd_histogram": -1.6902014499642242,
-    "macd_line": 1.2444477417026008,
-    "macd_histogram_pct": -1.0400600006746825,
-    "bb_position": 0.3152257558503341,
-    "bb_upper": 180.44521502257516,
-    "bb_lower": 154.25377942322564,
-    "bb_width": 0.15650740536414015,
-    "hist_volatility": 0.5249522599850188,
-    "volume_ratio": 0.7755212173103848,
-    "avg_volume_20d": 14120310.0,
-    "daily_return": 0.03010902741755722,
-    "signed_volume_ratio": 0.7755212173103848,
-    "stoch_k": 12.596376137540052,
-    "stoch_d": 13.969663565540264,
-    "trend_score": 65.08093218500608,
+    "macd_histogram": -1.597193402455801,
+    "macd_line": 0.9381574385970737,
+    "macd_histogram_pct": -0.9828277991779856,
+    "bb_position": 0.2511612085458428,
+    "bb_upper": 178.8115578058763,
+    "bb_lower": 157.0424354192213,
+    "bb_width": 0.1296344413095294,
+    "hist_volatility": 0.5162847841700289,
+    "volume_ratio": 0.7768617144859745,
+    "avg_volume_20d": 14095945.0,
+    "daily_return": 0.0,
+    "signed_volume_ratio": 0.0,
+    "stoch_k": 17.288456601704723,
+    "stoch_d": 13.166656350071499,
+    "trend_score": 64.88213722077957,
     "rsi_abs_score": 70.49960134704398,
-    "macd_abs_score": 26.899099989879762,
-    "momentum_score": 48.69935066846187,
-    "volatility_score": 33.36595667773675,
-    "volume_score": 57.75521217310385,
-    "technical_score": 52.3583186262085,
+    "macd_abs_score": 27.757583012330215,
+    "momentum_score": 49.1285921796871,
+    "volatility_score": 37.70846231559902,
+    "volume_score": 50.0,
+    "technical_score": 51.74491128325981,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.07160320988186737,
+    "sentiment_pos": 0.03735,
+    "sentiment_neg": 0.08325,
+    "sentiment_neu": 0.8794000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 46.42
+  },
   "analyst": {
     "revision_momentum": -0.14285714285714285,
     "target_upside": 0.21699729247430927,
@@ -4317,10 +4333,10 @@
     "quality_score": 57.270070866071435,
     "growth_score": 31.0,
     "safety_score": 60.00206250000001,
-    "trend_score": 65.08093218500608,
-    "momentum_score": 48.69935066846187,
-    "volatility_score": 33.36595667773675,
-    "volume_score": 57.75521217310385,
+    "trend_score": 64.88213722077957,
+    "momentum_score": 49.1285921796871,
+    "volatility_score": 37.70846231559902,
+    "volume_score": 50.0,
     "analyst_score": 62.065096975219106,
     "pe_score": 60.957750000000004,
     "forward_pe_score": 63.81875142857143,
@@ -4336,23 +4352,23 @@
     "current_ratio_score": 65.976,
     "earnings_visibility": 44.13503543303572,
     "valuation_margin": 71.59216714285715,
-    "catalyst_timeline": 58.61512660956235,
-    "downside_control": 34.68400958886838,
-    "composite_score": 51.96359675872395,
+    "catalyst_timeline": 58.69194212522859,
+    "downside_control": 36.855262407799515,
+    "composite_score": 52.549198488939126,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 54.82947554553572,
-    "technical_score": 52.3583186262085,
-    "sentiment_score": 50.0,
+    "technical_score": 51.74491128325981,
+    "sentiment_score": 46.42,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 358,
-    "percentile": 0.31213872832369943,
+    "rank": 342,
+    "percentile": 0.34296724470134876,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -4361,5 +4377,146 @@
     "sector": "Consumer Cyclical",
     "industry": "Internet Retail"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "US-China Space Race Just Heated Up As Xi Jinping-Led Nation Wants Orbital Datacenters, Space Tourism",
+      "url": "/news/303780/us-china-space-race-just-heated-up-as-xi-jinping-led-nation-wants-orbital-datacenters-space-tourism",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Baidu Unveils First Dividend and $5 Billion Buyback Plan: ETFs in Focus",
+      "url": "/news/302797/baidu-unveils-first-dividend-and-5-billion-buyback-plan-etfs-in-focus",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Alibaba's Qwen App Stumbles As Lunar New Year Cash Lures Flood In",
+      "url": "/news/302568/alibabas-qwen-app-stumbles-as-lunar-new-year-cash-lures-flood-in",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Exclusive-Intel, AMD notify customers in China of lengthy waits for CPUs",
+      "url": "https://finance.yahoo.com/news/exclusive-intel-amd-notify-customers-053238727.html",
+      "publisher": "Reuters",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nvidia Stock Wobbles As AI 'Memory Crunch' Kills 2026 Gaming GPU Launch",
+      "url": "/news/301821/nvidia-stock-wobbles-as-ai-memory-crunch-kills-2026-gaming-gpu-launch",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Why Jefferies Still Sees Alibaba Group Holding Limited (BABA) as a Compelling Buy for 2026",
+      "url": "/news/301634/why-jefferies-still-sees-alibaba-group-holding-limited-baba-as-a-compelling-buy-for-2026",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nvidia Warns Trump Administration That China Chip Rules Would Wreck Export Plan",
+      "url": "https://finance.yahoo.com/m/53245baf-63bb-3c7c-b6da-d5c91dd49bce/nvidia-warns-trump.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Nippon Steel Slides 7.6% on $3.2 Billion Convertible Bond Consideration",
+      "url": "https://finance.yahoo.com/news/nippon-steel-slides-7-6-131940733.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Baidu Plans First Dividend, $5 Billion Buyback as AI Rally Fades",
+      "url": "https://finance.yahoo.com/news/baidu-plans-first-dividend-5-052407618.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Alibaba Group Holding Limited (BABA): A Bull Case Theory",
+      "url": "/news/300643/alibaba-group-holding-limited-baba-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Analyst Report: Trip.com Group Limited",
+      "url": "https://finance.yahoo.com/m/2e128999-4542-3542-a3c5-54aadea560ed/analyst-report%3A-trip.com.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Clearfield Q1 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/3c32ecaa-4dcb-38f7-b21f-7ba27ae13cfc/clearfield-q1-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NVIDIA vs. Palantir: One AI Stock is a Clear Buy Right Now",
+      "url": "/news/300161/nvidia-vs-palantir-one-ai-stock-is-a-clear-buy-right-now",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Elon Musks SpaceX Said to Open IPO Pitching to Non-US Banks",
+      "url": "https://finance.yahoo.com/news/elon-musk-spacex-said-open-171321243.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Nvidia Stock Has Been Caught Up in AI Drop",
+      "url": "https://finance.yahoo.com/m/18dd2dea-676c-3cf6-acce-c6f6f084f8ca/why-nvidia-stock-has-been.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Nvidia Stock Caught Up in AI Drop. What AMD Earnings Mean for the Chip Maker.",
+      "url": "https://www.barrons.com/articles/nvidia-stock-price-ai-chips-amd-46fefd5f?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Trump Approved Nvidia's H200 China Chip Sales - But State Department Review Is Holding Things Up: Report",
+      "url": "/news/298656/trump-approved-nvidias-h200-china-chip-sales-but-state-department-review-is-holding-things-up-report",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "ATI Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/4d6207bf-d6f0-332f-ab2d-0f423a410b27/ati-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Alibaba (BABA) Sees a More Significant Dip Than Broader Market: Some Facts to Know",
+      "url": "/news/298332/alibaba-baba-sees-a-more-significant-dip-than-broader-market-some-facts-to-know",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PayPal bulls set to win big as spooked investors 'puke in the hole': Analyst",
+      "url": "https://finance.yahoo.com/news/paypal-bulls-set-to-win-big-as-spooked-investors-puke-in-the-hole-analyst-181841351.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    }
+  ]
 }

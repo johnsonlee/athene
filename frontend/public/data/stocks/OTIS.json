@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 89.8499984741211,
     "sma_20": 89.27650032043455,
-    "sma_50": 88.5179998779297,
+    "sma_50": 88.51799987792971,
     "sma_200": 90.91442127227783,
-    "trend_alignment": 0.49598672142710143,
+    "trend_alignment": 0.4959867214271013,
     "rsi": 53.23481040760056,
     "rsi_score": 0.06469620815201126,
     "macd_histogram": 0.10655845791109533,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 79.86324001656344,
     "stoch_d": 78.73272306338458,
-    "trend_score": 49.59867214271014,
+    "trend_score": 49.59867214271013,
     "rsi_abs_score": 73.76436728532039,
     "macd_abs_score": 55.46489871231847,
     "momentum_score": 64.61463299881943,
@@ -6306,7 +6306,15 @@
     "technical_score": 57.24828319503822,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.05685467265770818,
+    "sentiment_pos": 0.046799999999999994,
+    "sentiment_neg": 0.03155,
+    "sentiment_neu": 0.92165,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 52.84
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.13522537562604348,
@@ -6325,7 +6333,7 @@
     "quality_score": 65.67614325714285,
     "growth_score": 57.095,
     "safety_score": 44.05961005222552,
-    "trend_score": 49.59867214271014,
+    "trend_score": 49.59867214271013,
     "momentum_score": 64.61463299881943,
     "volatility_score": 64.92145826289675,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 68.96569592857142,
     "catalyst_timeline": 55.88294159178234,
     "downside_control": 55.505160247268336,
-    "composite_score": 61.74201071614549,
+    "composite_score": 61.73812167084705,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 61.01909492806415,
     "technical_score": 57.24828319503822,
-    "sentiment_score": 50.0,
+    "sentiment_score": 52.84,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Industrial Machinery & Supplies & Components"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "5 Insightful Analyst Questions From Otis's Q4 Earnings Call",
+      "url": "/news/298675/5-insightful-analyst-questions-from-otiss-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Otis Worldwide Corporation (OTIS): A Bull Case Theory",
+      "url": "/news/296441/otis-worldwide-corporation-otis-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Otis Worldwide (OTIS) is a Strong Growth Stock",
+      "url": "/news/295751/heres-why-otis-worldwide-otis-is-a-strong-growth-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Otis Declares Quarterly Dividend of $0.42 per Share",
+      "url": "/news/292587/otis-declares-quarterly-dividend-of-042-per-share",
+      "publisher": "PR Newswire",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "OTIS Q4 Deep Dive: Service Segment Momentum and Modernization Backlog Shape 2026 Outlook",
+      "url": "/news/291225/otis-q4-deep-dive-service-segment-momentum-and-modernization-backlog-shape-2026-outlook",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Finish Mixed as Fed Keeps Interest Rates Steady",
+      "url": "https://finance.yahoo.com/m/6de3b3a0-2e33-3d40-8a18-16671e3a3446/stocks-finish-mixed-as-fed.html",
+      "publisher": "Barchart",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Otis Worldwide Corp (OTIS) Q4 2025 Earnings Call Highlights: Record Cash Flow and Modernization ...",
+      "url": "https://finance.yahoo.com/news/otis-worldwide-corp-otis-q4-210123012.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Gold Rallies To $5,300, Memory Stocks Go Wild: What's Moving Markets Wednesday?",
+      "url": "/news/290536/gold-rallies-to-5300-memory-stocks-go-wild-whats-moving-markets-wednesday",
+      "publisher": "Benzinga",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Otis Worldwide Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/74149f9f-6ebc-3cd2-aba5-2196a1f167fd/otis-worldwide-q4-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Otis Worldwide Q4 Earnings Meet Estimates, Sales Miss, Stock Down",
+      "url": "/news/290584/otis-worldwide-q4-earnings-meet-estimates-sales-miss-stock-down",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stocks Mixed After the Fed Pauses Rate Cuts",
+      "url": "https://finance.yahoo.com/m/396af179-3604-3474-8571-1f8c6eb49f58/stocks-mixed-after-the-fed.html",
+      "publisher": "Barchart",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Analyst Report: Otis Worldwide Corporation",
+      "url": "https://finance.yahoo.com/m/f4b498a4-c21e-39ed-80d5-43f24d0c6521/analyst-report%3A-otis.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CEO hot takes: Elevator manufacturer on robots, AI data centers, and an economic boom",
+      "url": "https://finance.yahoo.com/news/ceo-hot-takes-elevator-manufacturer-on-robots-ai-data-centers-and-an-economic-boom-143927670.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Otis Worldwide (OTIS) Reports Q4 Earnings: What Key Metrics Have to Say",
+      "url": "/news/290169/otis-worldwide-otis-reports-q4-earnings-what-key-metrics-have-to-say",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Otis Worldwide (OTIS) Q4 Earnings Match Estimates",
+      "url": "/news/289841/otis-worldwide-otis-q4-earnings-match-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Otis (NYSE:OTIS) Misses Q4 CY2025 Sales Expectations",
+      "url": "/news/289758/otis-nyse-otis-misses-q4-cy2025-sales-expectations",
+      "publisher": "StockStory",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Otis Worldwide: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/otis-worldwide-q4-earnings-snapshot-112620469.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "OTIS REPORTS FOURTH QUARTER AND FULL YEAR 2025 RESULTS",
+      "url": "/news/289598/otis-reports-fourth-quarter-and-full-year-2025-results",
+      "publisher": "PR Newswire",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Otis Stock to Report Q4 Earnings: Here's What You Need to Know",
+      "url": "/news/288816/otis-stock-to-report-q4-earnings-heres-what-you-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Otis (OTIS) Q4 Earnings Report Preview: What To Look For",
+      "url": "/news/287763/otis-otis-q4-earnings-report-preview-what-to-look-for",
+      "publisher": "StockStory",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    }
+  ]
 }

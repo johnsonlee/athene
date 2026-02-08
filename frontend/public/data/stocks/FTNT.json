@@ -6295,8 +6295,8 @@
     "avg_volume_20d": 7836010.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 68.17906237130504,
-    "stoch_d": 62.17032794504143,
+    "stoch_k": 68.17906237130502,
+    "stoch_d": 62.17032794504142,
     "trend_score": 44.395129357186846,
     "rsi_abs_score": 73.27568668450111,
     "macd_abs_score": 63.062987510757665,
@@ -6306,7 +6306,15 @@
     "technical_score": 52.80331255082207,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.1089883170529707,
+    "sentiment_pos": 0.0725,
+    "sentiment_neg": 0.013550000000000001,
+    "sentiment_neu": 0.91395,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 55.45
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.08748187530207824,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 44.88537342952381,
     "catalyst_timeline": 53.00643899081753,
     "downside_control": 44.83201161938606,
-    "composite_score": 54.888487020563495,
+    "composite_score": 54.88459797526506,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 62.15620930750262,
     "technical_score": 52.80331255082207,
-    "sentiment_score": 50.0,
+    "sentiment_score": 55.45,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Systems Software"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "MarketBeat Week in Review - 02/02 - 02/06",
+      "url": "/news/303521/marketbeat-week-in-review-0202-0206",
+      "publisher": "MarketBeat",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Fortinet Stock Jumps After Surprising Q4 Results And Outlook",
+      "url": "/news/302988/fortinet-stock-jumps-after-surprising-q4-results-and-outlook",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Fortinet Stock Rises After Earnings Beat. Why It Can Dodge the Tech Selloff.",
+      "url": "https://www.barrons.com/articles/fortinet-earnings-stock-price-0b1ee3f1?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Fortinet Q4 Earnings & Revenues Beat Estimates, Increase Y/Y",
+      "url": "/news/303033/fortinet-q4-earnings-revenues-beat-estimates-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Fortinet fourth quarter earnings beat driven by enterprise demand",
+      "url": "https://finance.yahoo.com/m/a918416a-33cc-3d91-bcc1-db466d55b7b6/fortinet-fourth-quarter.html",
+      "publisher": "Proactive",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Cybersecurity Firm Fortinet Earnings Beat Amid Mixed 2026 Outlook",
+      "url": "https://finance.yahoo.com/m/c2ed1a2d-36a8-3ffd-913e-df22c0034cf6/cybersecurity-firm-fortinet.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Market Today: Dow Rises, Bitcoin Bounces; Amazon Dives On Earnings (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/d5f6d70b-adbf-3412-b185-ebea8f943d91/stock-market-today%3A-dow.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Fortinet Inc (FTNT) Q4 2025 Earnings Call Highlights: Strong Growth in Billings and Revenue ...",
+      "url": "https://finance.yahoo.com/news/fortinet-inc-ftnt-q4-2025-050531036.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Fortinet Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/9c1fe9a5-7070-3a56-bd4d-ef2bdce34e38/fortinet-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Fortinet, Inc.",
+      "url": "https://finance.yahoo.com/m/01c68428-dcae-39cc-88b7-35aa7817fd5b/analyst-report%3A-fortinet%2C-inc..html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Fortinet (FTNT) Q4 Earnings: Taking a Look at Key Metrics Versus Estimates",
+      "url": "/news/302280/fortinet-ftnt-q4-earnings-taking-a-look-at-key-metrics-versus-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Fortinet (FTNT) Surpasses Q4 Earnings and Revenue Estimates",
+      "url": "/news/302228/fortinet-ftnt-surpasses-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Fortinet Reports Q4 Earnings, Revenue Above Estimates",
+      "url": "/news/302194/fortinet-reports-q4-earnings-revenue-above-estimates",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Fortinet: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/fortinet-q4-earnings-snapshot-212830749.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cybersecurity Firm Fortinet Earnings, Revenue, Billings Top Estimates",
+      "url": "https://www.investors.com/news/technology/fortinet-stock-fortinet-earnings-cybersecurity-news-q42025?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Fortinet Reports Strong Fourth Quarter and Full Year 2025 Financial Results",
+      "url": "/news/302073/fortinet-reports-strong-fourth-quarter-and-full-year-2025-financial-results",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stock Market Today, Feb. 5: S&P, Nasdaq fall after layoff data surprise; Alphabet details overspending",
+      "url": "https://finance.yahoo.com/m/553b0529-3a48-3db5-a1d7-2715b00b0272/stock-market-today%2C-feb.-5%3A.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PANW Trades at Premium Valuation: Buy, Sell or Hold the Stock?",
+      "url": "/news/301510/panw-trades-at-premium-valuation-buy-sell-or-hold-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CrowdStrike Plunges 22% in 3 Months: Time to Hold or Fold the Stock?",
+      "url": "/news/301253/crowdstrike-plunges-22-in-3-months-time-to-hold-or-fold-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jefferies Sees Modest Q4 Beat for Fortinet (FTNT), Remains Cautious on 2026",
+      "url": "/news/299133/jefferies-sees-modest-q4-beat-for-fortinet-ftnt-remains-cautious-on-2026",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    }
+  ]
 }

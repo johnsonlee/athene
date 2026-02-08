@@ -6306,7 +6306,15 @@
     "technical_score": 63.1688156149879,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.17533366723047736,
+    "sentiment_pos": 0.14615,
+    "sentiment_neg": 0.020499999999999997,
+    "sentiment_neu": 0.83335,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 58.77
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.008022097430857645,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 43.92046037142857,
     "catalyst_timeline": 60.01338931427459,
     "downside_control": 48.21440928002509,
-    "composite_score": 58.369715037857944,
+    "composite_score": 58.36582599255951,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 61.53001697619048,
     "technical_score": 63.1688156149879,
-    "sentiment_score": 50.0,
+    "sentiment_score": 58.77,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Engineering & Construction"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "This Under-the-Radar Stock Is Crushing the Market in 2025 and Is Joining the Nasdaq-100 Next Week. Should You Buy Shares Now?",
+      "url": "https://finance.yahoo.com/m/f0e3636e-d25e-33b0-960c-bb7f7298fdfe/this-under-the-radar-stock-is.html",
+      "publisher": "Barchart",
+      "date": "2025-12-17",
+      "sentiment": "negative"
+    },
+    {
+      "title": "MicroStrategy retains place in key index despite delisting threats",
+      "url": "https://finance.yahoo.com/m/cba38cdd-9ba2-335b-b438-621ce5281418/microstrategy-retains-place.html",
+      "publisher": "TheStreet",
+      "date": "2025-12-15",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Western Digital stock rises after inclusion in Nasdaq-100 Index",
+      "url": "https://finance.yahoo.com/news/western-digital-stock-rises-inclusion-141159374.html",
+      "publisher": "Investing.com",
+      "date": "2025-12-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "200% Surge? These 6 Stocks Just Crashed the Nasdaq 100 Party",
+      "url": "https://finance.yahoo.com/news/200-surge-6-stocks-just-120317669.html",
+      "publisher": "GuruFocus.com",
+      "date": "2025-12-15",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ferrovials US growth drive advances with addition in Nasdaq-100 Index",
+      "url": "https://finance.yahoo.com/m/0213e1d4-19d1-356d-9a85-76e91ab238e7/ferrovial%E2%80%99s-us-growth-drive.html",
+      "publisher": "World Construction Network",
+      "date": "2025-12-15",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Walmart was too late for a Nasdaq-100 spot - but these 6 stocks made the cut",
+      "url": "https://www.marketwatch.com/story/walmart-was-too-late-for-a-nasdaq-100-spot-but-these-6-stocks-made-the-cut-27aec306?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2025-12-13",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Ferrovial joins the Nasdaq-100 Index, achieving new milestone in global growth",
+      "url": "/news/253383/ferrovial-joins-the-nasdaq-100-index-achieving-new-milestone-in-global-growth",
+      "publisher": "PR Newswire",
+      "date": "2025-12-13",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bitcoin hoarding company Strategy remains in Nasdaq 100",
+      "url": "https://finance.yahoo.com/news/bitcoin-hoarder-company-strategy-remains-012159080.html",
+      "publisher": "Reuters",
+      "date": "2025-12-12",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ferrovial announces the termination of its existing share repurchase program and the implementation of a new share repurchase program",
+      "url": "/news/253316/ferrovial-announces-the-termination-of-its-existing-share-repurchase-program-and-the-implementation-of-a-new-share-repurchase-program",
+      "publisher": "PR Newswire",
+      "date": "2025-12-12",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BofA names Ferrovial its Top Pick for 2026 on strong pricing power",
+      "url": "https://finance.yahoo.com/news/bofa-names-ferrovial-top-pick-105924268.html",
+      "publisher": "Investing.com",
+      "date": "2025-12-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ferrovial announces the dividend per share amount for the cash dividend announced on 25 November 2025",
+      "url": "/news/244509/ferrovial-announces-the-dividend-per-share-amount-for-the-cash-dividend-announced-on-25-november-2025",
+      "publisher": "PR Newswire",
+      "date": "2025-12-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ferrovial wins $721M in Texas water projects",
+      "url": "https://finance.yahoo.com/m/587aad4a-83b3-323c-b547-72f916297a3c/ferrovial-wins-%24721m-in-texas.html",
+      "publisher": "Construction Dive",
+      "date": "2025-12-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Budimex completes $502m Warsaw West station reconstruction",
+      "url": "https://finance.yahoo.com/m/e4eacb08-9b64-363f-909a-5cfebd80ec4b/budimex-completes-%24502m.html",
+      "publisher": "World Construction Network",
+      "date": "2025-12-01",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Infrastructure construction projects are becoming smarter, says Ferrovial Construction CEO",
+      "url": "https://finance.yahoo.com/m/8d2c360b-f55f-3d06-909c-224065624164/infrastructure-construction.html",
+      "publisher": "Construction Dive",
+      "date": "2025-11-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ferrovial announces a change in the dividend payment date",
+      "url": "/news/217342/ferrovial-announces-a-change-in-the-dividend-payment-date",
+      "publisher": "PR Newswire",
+      "date": "2025-11-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ferrovial SE (FER) Q3 2025 Earnings Call Highlights: Strong Growth in North American Assets and ...",
+      "url": "https://finance.yahoo.com/news/ferrovial-se-fer-q3-2025-195341765.html",
+      "publisher": "GuruFocus.com",
+      "date": "2025-10-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "REPLACING Ferrovial delivers solid results in first nine months of 2025",
+      "url": "/news/209943/replacing-ferrovial-delivers-solid-results-in-first-nine-months-of-2025",
+      "publisher": "PR Newswire",
+      "date": "2025-10-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ferrovial delivers solid results in first nine months of 2025",
+      "url": "/news/207802/ferrovial-delivers-solid-results-in-first-nine-months-of-2025",
+      "publisher": "PR Newswire",
+      "date": "2025-10-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ferrovial announces a second 2025 interim scrip dividend",
+      "url": "/news/194097/ferrovial-announces-a-second-2025-interim-scrip-dividend",
+      "publisher": "PR Newswire",
+      "date": "2025-10-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Vertical Aerospace Presents its Blueprint for Sector Leadership",
+      "url": "/news/172991/vertical-aerospace-presents-its-blueprint-for-sector-leadership",
+      "publisher": "MarketBeat",
+      "date": "2025-09-23",
+      "sentiment": "neutral"
+    }
+  ]
 }

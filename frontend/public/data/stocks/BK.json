@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 124.31999969482422,
     "sma_20": 120.85070953369141,
-    "sma_50": 117.78447555541993,
+    "sma_50": 117.78447555541992,
     "sma_200": 102.99959476470949,
-    "trend_alignment": 0.7268850304376038,
+    "trend_alignment": 0.7268850304376039,
     "rsi": 62.29159738775871,
     "rsi_score": 0.24583194775517428,
     "macd_histogram": 0.2047656352178968,
@@ -6296,8 +6296,8 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 81.68066206411802,
-    "stoch_d": 62.79374100165299,
-    "trend_score": 72.68850304376038,
+    "stoch_d": 62.793741001653,
+    "trend_score": 72.68850304376039,
     "rsi_abs_score": 69.8958818285689,
     "macd_abs_score": 56.61771307353096,
     "momentum_score": 63.256797451049934,
@@ -6306,7 +6306,15 @@
     "technical_score": 63.975437352646836,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.24240745065592917,
+    "sentiment_pos": 0.15460000000000002,
+    "sentiment_neg": 0.0153,
+    "sentiment_neu": 0.8301000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 62.12
+  },
   "analyst": {
     "revision_momentum": 0.1111111111111111,
     "target_upside": 0.09395109395109401,
@@ -6325,7 +6333,7 @@
     "quality_score": 73.05114285714286,
     "growth_score": 72.53,
     "safety_score": 33.12325,
-    "trend_score": 72.68850304376038,
+    "trend_score": 72.68850304376039,
     "momentum_score": 63.256797451049934,
     "volatility_score": 65.95923602101868,
     "volume_score": 50.0,
@@ -6344,16 +6352,16 @@
     "current_ratio_score": 42.0,
     "earnings_visibility": 66.57417142857142,
     "valuation_margin": 47.2302465,
-    "catalyst_timeline": 62.46443995939093,
+    "catalyst_timeline": 62.46443995939094,
     "downside_control": 52.0183729031528,
-    "composite_score": 58.55519688846254,
+    "composite_score": 58.5513078431641,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 58.596864940476195,
     "technical_score": 63.975437352646836,
-    "sentiment_score": 50.0,
+    "sentiment_score": 62.12,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Asset Management & Custody Banks"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "BNY Mellon Municipal Bond Infrastructure Fund, Inc. (NYSE: DMB) Announces Distribution",
+      "url": "https://www.businesswire.com/news/home/20260203471261/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BNY Mellon High Yield Strategies Fund Sub-Adviser Name Change",
+      "url": "https://www.businesswire.com/news/home/20260203372881/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BNY Mellon (BK) EPS Growth Expected to Improve Amid Strategic Execution, Says RBC Capital",
+      "url": "/news/296878/bny-mellon-bk-eps-growth-expected-to-improve-amid-strategic-execution-says-rbc-capital",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "These players matter: BNY embraces role on small lenders AI journey",
+      "url": "https://finance.yahoo.com/m/9b911444-6e85-3c50-a6de-c70d0d6db4d2/%E2%80%98these-players-matter%E2%80%99%3A-bny.html",
+      "publisher": "Banking Dive",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Fed Paused Rate Cuts. That's Great News for These 2 Financial Stocks",
+      "url": "/news/294634/the-fed-paused-rate-cuts-thats-great-news-for-these-2-financial-stocks",
+      "publisher": "Motley Fool",
+      "date": "2026-01-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why many large-bank stocks look like bargains for long-term investors",
+      "url": "https://www.marketwatch.com/story/why-many-large-bank-stocks-look-like-bargains-for-long-term-investors-431d8611?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-01-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BNY joins Atlassian Williams F1 Team as Official Institutional Banking Partner",
+      "url": "/news/293156/bny-joins-atlassian-williams-f1-team-as-official-institutional-banking-partner",
+      "publisher": "PR Newswire",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bessent Calls Trump Accounts 'Rainy Day Funds' And Slams 'Out of Touch' Critics As JPMorgan, BofA Back Plan",
+      "url": "/news/291159/bessent-calls-trump-accounts-rainy-day-funds-and-slams-out-of-touch-critics-as-jpmorgan-bofa-back-plan",
+      "publisher": "Benzinga",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Goldman, BNY Shuffle Wealth Leadership Roles",
+      "url": "https://finance.yahoo.com/m/ef536466-607c-38a1-85a6-d92680cfdf21/goldman%2C-bny-shuffle-wealth.html",
+      "publisher": "The Daily Upside",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BNY Mellon (BK) Price Targets Raised by KBW and RBC Capital",
+      "url": "/news/290417/bny-mellon-bk-price-targets-raised-by-kbw-and-rbc-capital",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FITB or BK: Which Is the Better Value Stock Right Now?",
+      "url": "/news/290458/fitb-or-bk-which-is-the-better-value-stock-right-now",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BNY's Jim Crowley Shifts Roles in Wealth Management Leadership Shuffle",
+      "url": "https://www.barrons.com/advisor/articles/bny-jim-crowley-adam-vos-b3ba9e97?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BNY Aligns Leadership to Accelerate Growth in Wealth Solutions",
+      "url": "/news/288606/bny-aligns-leadership-to-accelerate-growth-in-wealth-solutions",
+      "publisher": "PR Newswire",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Crypto Currents: BitGo raises $212.8M in U.S. IPO",
+      "url": "https://finance.yahoo.com/news/crypto-currents-bitgo-raises-212-150111878.html",
+      "publisher": "TipRanks",
+      "date": "2026-01-24",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Truist Expects Core Revenue Growth to Drive BNY Mellon (BK) Profitability Despite Expense, Buyback Headwinds",
+      "url": "/news/284847/truist-expects-core-revenue-growth-to-drive-bny-mellon-bk-profitability-despite-expense-buyback-headwinds",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BNY Mellon Municipal Bond Closed-End Funds Declare Distributions",
+      "url": "https://www.businesswire.com/news/home/20260122987858/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BNY Mellon High Yield Strategies Fund Declares Dividend",
+      "url": "https://www.businesswire.com/news/home/20260122456669/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BNY to Speak at the BofA Securities Financial Services Conference",
+      "url": "/news/284575/bny-to-speak-at-the-bofa-securities-financial-services-conference",
+      "publisher": "PR Newswire",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BNY Mellon CEO on US Economy, Fed Independence",
+      "url": "https://finance.yahoo.com/video/bny-mellon-ceo-us-economy-152538644.html",
+      "publisher": "Bloomberg",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BNY's Q4 Earnings Call: Our Top 5 Analyst Questions",
+      "url": "/news/280632/bnys-q4-earnings-call-our-top-5-analyst-questions",
+      "publisher": "StockStory",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    }
+  ]
 }

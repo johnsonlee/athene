@@ -6278,7 +6278,7 @@
   "technical": {
     "close": 411.1099853515625,
     "sma_20": 428.7139984130859,
-    "sma_50": 444.38680053710937,
+    "sma_50": 444.3868005371093,
     "sma_200": 382.3025500488281,
     "trend_alignment": 0.5432673770412786,
     "rsi": 41.49313628620166,
@@ -6306,7 +6306,15 @@
     "technical_score": 49.29346451165871,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.018942968647377274,
+    "sentiment_pos": 0.06634999999999999,
+    "sentiment_neg": 0.05575,
+    "sentiment_neu": 0.8779,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 50.95
+  },
   "analyst": {
     "revision_momentum": -0.043478260869565216,
     "target_upside": 0.15054365011797324,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 11.875,
     "catalyst_timeline": 50.11851695817212,
     "downside_control": 55.55819161277594,
-    "composite_score": 29.521775593197454,
+    "composite_score": 29.517886547899018,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 33.35806460395834,
     "technical_score": 49.29346451165871,
-    "sentiment_score": 50.0,
+    "sentiment_score": 50.95,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Automobile Manufacturers"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "The Robot Revolution Is Real. Tesla, Hyundai, and More Stocks to Play It.",
+      "url": "https://www.barrons.com/articles/robot-stocks-tesla-nvidia-gm-ford-ai-humanoid-6629c2c3?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Waymo Says Bar Higher Than Human Driving For Autonomy Even As Tesla Says Cameras Are Enough: 'What Does It Take To Build A Safe Product?'",
+      "url": "/news/303777/waymo-says-bar-higher-than-human-driving-for-autonomy-even-as-tesla-says-cameras-are-enough-what-does-it-take-to-build-a-safe-product",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Tesla Officially Updates Free FSD Transfer Policy - Here's The Last Date For Placing Orders To Be Eligible",
+      "url": "/news/303775/tesla-officially-updates-free-fsd-transfer-policy-heres-the-last-date-for-placing-orders-to-be-eligible",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Elon Musk Admits It Would Take 'Staggeringly Enormous Amount Of Work For Tesla Valuation To Hit $100 Trillion: 'I'm Just Saying…'",
+      "url": "/news/303774/elon-musk-admits-it-would-take-staggeringly-enormous-amount-of-work-for-tesla-valuation-to-hit-100-trillion-im-just-saying",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Consumer Tech News (Feb 2-6): Big Tech Earnings Take Center Stage In U.S. Markets, Anthropic Launches New AI Tool & More",
+      "url": "/news/303773/consumer-tech-news-feb-2-6-big-tech-earnings-take-center-stage-in-us-markets-anthropic-launches-new-ai-tool-more",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Elon Musk's Tesla Reignites Roadster Hype With New Trademark Filings",
+      "url": "https://finance.yahoo.com/news/elon-musks-tesla-reignites-roadster-123102546.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Can Living on $4K a Year Really Work? A Look at Extreme Frugality and FIRE Strategies",
+      "url": "https://finance.yahoo.com/m/12ff1f69-3c31-3689-91bf-3ff9392775fb/can-living-on-%244k-a-year.html",
+      "publisher": "Investopedia",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Musk On Apple's Recruiting Tactics, Record iPhone Quarter, Tim Cook Successor And More: This Week In Appleverse",
+      "url": "/news/303762/musk-on-apples-recruiting-tactics-record-iphone-quarter-tim-cook-successor-and-more-this-week-in-appleverse",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Elon Musk warns the U.S. is 1,000% going to go bankrupt unless AI and robotics save the economy from crushing debt",
+      "url": "https://finance.yahoo.com/news/elon-musk-warns-u-1-184828930.html",
+      "publisher": "Fortune",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Elon's Big Nvidia Pivot Is A Gamble That Could Affect Both Companies",
+      "url": "https://finance.yahoo.com/m/504935d3-78c8-3d23-9a96-4b1e41df0f1a/elon%27s-big-nvidia-pivot-is-a.html",
+      "publisher": "Money Digest",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Elon Musk Warns US Will '1,000%' Go Bankrupt Over Soaring Debt, Says 'Interest Payments On National Debt Exceed Military Budget'",
+      "url": "/news/303629/elon-musk-warns-us-will-1000-go-bankrupt-over-soaring-debt-says-interest-payments-on-national-debt-exceed-military-budget",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "India-US trade deal gives tariff-free access to Harley bikes, no reprieve for Tesla",
+      "url": "https://finance.yahoo.com/news/india-us-trade-deal-gives-155720482.html",
+      "publisher": "Reuters",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Cathie Wood Adds Tesla Stock To Space ETF: Is This A Bet On SpaceX Merger?",
+      "url": "https://finance.yahoo.com/news/cathie-wood-adds-tesla-stock-153134601.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AI can make anyone rich: Mark Cuban says it could turn just one dude in a basement into a trillionaire",
+      "url": "https://finance.yahoo.com/news/ai-anyone-rich-mark-cuban-152003409.html",
+      "publisher": "Fortune",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Wolfe Sees Catalyst-Rich Year Ahead for Tesla (TSLA) Despite Fundamental Concerns",
+      "url": "/news/303591/wolfe-sees-catalyst-rich-year-ahead-for-tesla-tsla-despite-fundamental-concerns",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tesla Rival Nio Expects Its First Profitable Quarter",
+      "url": "https://finance.yahoo.com/news/tesla-rival-nio-expects-first-133110882.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "MarketBeat Week in Review - 02/02 - 02/06",
+      "url": "/news/303521/marketbeat-week-in-review-0202-0206",
+      "publisher": "MarketBeat",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ross Gerber Says Tesla Will Be 'Another Division' Of X Amid Ticker Symbol Speculation, SpaceX-xAI Merger",
+      "url": "https://finance.yahoo.com/news/ross-gerber-says-tesla-another-114622705.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "China Is Going All-In to Beat the U.S. on Humanoid Robots",
+      "url": "https://finance.yahoo.com/m/29138aa3-4a44-3c8f-ad48-df6156cbbc42/china-is-going-all-in-to-beat.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Musk Says Apple Once 'Carpet Bombed' Tesla Engineers With Recruiting Calls, Offering Double Pay During Now-Scrapped EV Program",
+      "url": "/news/303487/musk-says-apple-once-carpet-bombed-tesla-engineers-with-recruiting-calls-offering-double-pay-during-now-scrapped-ev-program",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    }
+  ]
 }

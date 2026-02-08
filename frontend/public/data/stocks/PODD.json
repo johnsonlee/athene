@@ -6277,36 +6277,44 @@
   },
   "technical": {
     "close": 241.92999267578125,
-    "sma_20": 266.3015007019043,
-    "sma_50": 284.2122024536133,
+    "sma_20": 266.30150070190433,
+    "sma_50": 284.21220245361326,
     "sma_200": 304.8890003204346,
-    "trend_alignment": 0.21443771811314316,
+    "trend_alignment": 0.21443771811314324,
     "rsi": 20.57223482720538,
     "rsi_score": -0.5885553034558924,
     "macd_histogram": -2.085366002867721,
     "macd_line": -12.534243201359146,
     "macd_histogram_pct": -0.8619708452859716,
-    "bb_position": 0.12128056267994265,
-    "bb_upper": 298.477705069158,
-    "bb_lower": 234.12529633465053,
-    "bb_width": 0.2416524449351227,
+    "bb_position": 0.12128056267994167,
+    "bb_upper": 298.4777050691581,
+    "bb_lower": 234.12529633465059,
+    "bb_width": 0.24165244493512286,
     "hist_volatility": 0.2436726879345385,
     "volume_ratio": 1.0530157861118714,
     "avg_volume_20d": 1041105.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 3.0299188899390384,
-    "stoch_d": 4.8102018345089785,
-    "trend_score": 21.443771811314317,
+    "stoch_k": 3.029918889939039,
+    "stoch_d": 4.810201834508978,
+    "trend_score": 21.443771811314324,
     "rsi_abs_score": 40.57223482720538,
     "macd_abs_score": 29.570437320710425,
     "momentum_score": 35.0713360739579,
-    "volatility_score": 42.38401116238511,
+    "volatility_score": 42.38401116238509,
     "volume_score": 50.0,
-    "technical_score": 35.43133459805869,
+    "technical_score": 35.43133459805868,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.20466923508941456,
+    "sentiment_pos": 0.12915000000000001,
+    "sentiment_neg": 0.0064,
+    "sentiment_neu": 0.86445,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 60.23
+  },
   "analyst": {
     "revision_momentum": 0.08333333333333333,
     "target_upside": 0.550035134129707,
@@ -6325,9 +6333,9 @@
     "quality_score": 71.7165013,
     "growth_score": 79.27000000000001,
     "safety_score": 57.373000000000005,
-    "trend_score": 21.443771811314317,
+    "trend_score": 21.443771811314324,
     "momentum_score": 35.0713360739579,
-    "volatility_score": 42.38401116238511,
+    "volatility_score": 42.38401116238509,
     "volume_score": 50.0,
     "analyst_score": 73.6263703930889,
     "pe_score": 14.868475428571431,
@@ -6344,16 +6352,16 @@
     "current_ratio_score": 84.355,
     "earnings_visibility": 72.431975195,
     "valuation_margin": 24.210154966666664,
-    "catalyst_timeline": 41.868147827836104,
-    "downside_control": 52.427551674357765,
-    "composite_score": 46.770802146794324,
+    "catalyst_timeline": 41.86814782783611,
+    "downside_control": 52.42755167435776,
+    "composite_score": 46.76691310149589,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 59.373012862222225,
-    "technical_score": 35.43133459805869,
-    "sentiment_score": 50.0,
+    "technical_score": 35.43133459805868,
+    "sentiment_score": 60.23,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Health Care Equipment"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Insulet Launches Omnipod 5 and Omnipod Discover in the Middle East to Transform Diabetes Care",
+      "url": "https://www.businesswire.com/news/home/20260205745251/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Insulet Corporation (PODD): A Bull Case Theory",
+      "url": "/news/296404/insulet-corporation-podd-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Reasons Why Hedge Funds Favor Insulet Corp (PODD)",
+      "url": "/news/293954/reasons-why-hedge-funds-favor-insulet-corp-podd",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Insulet Corporation",
+      "url": "https://finance.yahoo.com/m/48f0f77b-3a38-3744-a307-108feb348ed2/analyst-report%3A-insulet.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Target upgraded, Stryker downgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/target-upgraded-stryker-downgraded-wall-143753830.html",
+      "publisher": "The Fly",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here Are Tuesdays Top Wall Street Analyst Research Calls: Affirm Holdings, Alcoa, Block, Coinbase Global,CoreWeave, Datadog, Intuitive Surgical, and More",
+      "url": "https://finance.yahoo.com/m/dcd35300-3bbb-30b5-a962-034964a21c29/here-are-tuesday%E2%80%99s-top-wall.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Here's Why Insulet (PODD) is a Strong Growth Stock",
+      "url": "/news/287082/heres-why-insulet-podd-is-a-strong-growth-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: DexCom, Inc.",
+      "url": "https://finance.yahoo.com/m/98f913f8-47b1-3060-9090-cb1d97d90dc0/analyst-report%3A-dexcom%2C-inc..html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: DexCom, Inc.",
+      "url": "https://finance.yahoo.com/m/f2d84e9f-2f9a-305c-8a8e-0d0baefde742/analyst-report%3A-dexcom%2C-inc..html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What You Need To Know Ahead of Insulets Earnings Release",
+      "url": "https://finance.yahoo.com/m/91567139-c540-348a-8134-799b80f34174/what-you-need-to-know-ahead.html",
+      "publisher": "Barchart",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BVI appoints Jim Hollingshead as CEO",
+      "url": "https://finance.yahoo.com/m/0f45be6f-56ed-3e61-b2d6-bc3f9148bed1/bvi-appoints-jim-hollingshead.html",
+      "publisher": "MedTech Dive",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is Insulet (PODD) the Future of Diabetes Management?",
+      "url": "/news/281754/is-insulet-podd-the-future-of-diabetes-management",
+      "publisher": "Motley Fool",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "JPM26: Insulet presents optimistic growth plan heading into 2026",
+      "url": "https://finance.yahoo.com/m/e82326b8-cf88-3bab-a3bb-3d17a7b53cd1/jpm26%3A-insulet-presents.html",
+      "publisher": "Medical Device Network",
+      "date": "2026-01-15",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bernstein Reduces Firm's PT on Insulet (PODD) Stock",
+      "url": "/news/276513/bernstein-reduces-firms-pt-on-insulet-podd-stock",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Netflix initiated, Palantir upgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/netflix-initiated-palantir-upgraded-wall-144909530.html",
+      "publisher": "The Fly",
+      "date": "2026-01-12",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why Insulet (PODD) is a Strong Growth Stock",
+      "url": "/news/272144/heres-why-insulet-podd-is-a-strong-growth-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Insulet to Announce Fourth Quarter and Full Year 2025 Financial Results on February 18, 2026",
+      "url": "https://www.businesswire.com/news/home/20260109369927/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What Provides InsuletCorp. (PODD) With a Durable Competitive Advantage?",
+      "url": "/news/270724/what-provides-insuletcorp-podd-with-a-durable-competitive-advantage",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Insulet Redefines Diabetes at CES with \"Liveable Technology\" - A New Frontier in Human-Centered Connected Health",
+      "url": "https://www.businesswire.com/news/home/20260106462689/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is This the Right Time to Add PBH Stock to Your Portfolio?",
+      "url": "/news/265930/is-this-the-right-time-to-add-pbh-stock-to-your-portfolio",
+      "publisher": "Zacks",
+      "date": "2026-01-02",
+      "sentiment": "neutral"
+    }
+  ]
 }

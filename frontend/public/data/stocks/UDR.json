@@ -6277,27 +6277,27 @@
   },
   "technical": {
     "close": 37.54999923706055,
-    "sma_20": 37.08450012207032,
-    "sma_50": 36.24005386352539,
+    "sma_20": 37.08450012207031,
+    "sma_50": 36.240053863525404,
     "sma_200": 37.4286162185669,
-    "trend_alignment": 0.5217439018167095,
+    "trend_alignment": 0.5217439018167093,
     "rsi": 57.09380017570759,
     "rsi_score": 0.14187600351415186,
     "macd_histogram": -0.010727867800859103,
     "macd_line": 0.3061823407551003,
     "macd_histogram_pct": -0.028569555309793642,
-    "bb_position": 0.7365836947367843,
-    "bb_upper": 38.06829386049369,
-    "bb_lower": 36.100706383646944,
-    "bb_width": 0.053056869321955975,
+    "bb_position": 0.736583694736788,
+    "bb_upper": 38.06829386049368,
+    "bb_lower": 36.10070638364694,
+    "bb_width": 0.05305686932195598,
     "hist_volatility": 0.19947481730994962,
     "volume_ratio": 0.8576089310203787,
     "avg_volume_20d": 5195375.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 63.10165664033096,
+    "stoch_k": 63.10165664033095,
     "stoch_d": 59.23009929995347,
-    "trend_score": 52.17439018167095,
+    "trend_score": 52.17439018167093,
     "rsi_abs_score": 73.53433987700468,
     "macd_abs_score": 48.57152223451032,
     "momentum_score": 61.0529310557575,
@@ -6306,7 +6306,15 @@
     "technical_score": 58.27266573732283,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.05334957290266437,
+    "sentiment_pos": 0.039900000000000005,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.9601,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 52.67
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.06524633821571246,
@@ -6325,7 +6333,7 @@
     "quality_score": 41.855714285714285,
     "growth_score": 74.25,
     "safety_score": 47.79117028135373,
-    "trend_score": 52.17439018167095,
+    "trend_score": 52.17439018167093,
     "momentum_score": 61.0529310557575,
     "volatility_score": 71.52234683047152,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 25.389485593333333,
     "catalyst_timeline": 53.62781789937533,
     "downside_control": 56.95702756677378,
-    "composite_score": 45.08991506540368,
+    "composite_score": 45.086026020105244,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 47.823686336429475,
     "technical_score": 58.27266573732283,
-    "sentiment_score": 50.0,
+    "sentiment_score": 52.67,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Real Estate",
     "industry": "Multi-Family Residential REITs"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Do Wall Street Analysts Like UDR Stock?",
+      "url": "https://finance.yahoo.com/m/011d22e0-723f-3cde-8059-aad299a77417/do-wall-street-analysts-like.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "UDR Set to Report Q4 Earnings: What's in Store for the Stock?",
+      "url": "/news/301765/udr-set-to-report-q4-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "UDR (UDR) Q4 Earnings Preview: What You Should Know Beyond the Headline Estimates",
+      "url": "/news/299470/udr-udr-q4-earnings-preview-what-you-should-know-beyond-the-headline-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What's in Store for Equity Residential Stock in Q4 Earnings?",
+      "url": "/news/297692/whats-in-store-for-equity-residential-stock-in-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What's in Store for Mid-America Apartment Stock in Q4 Earnings?",
+      "url": "/news/295851/whats-in-store-for-mid-america-apartment-stock-in-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Should CPT Stock Be in Your Portfolio Ahead of Q4 Earnings?",
+      "url": "/news/295463/should-cpt-stock-be-in-your-portfolio-ahead-of-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "UDR, Inc. Announces Dates for Fourth Quarter and Full-Year 2025 Earnings Release, Webcast, and Conference Call",
+      "url": "https://www.businesswire.com/news/home/20260130704432/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Essex Property to Report Q4 Earnings: Here's What to Expect",
+      "url": "/news/293811/essex-property-to-report-q4-earnings-heres-what-to-expect",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What to Expect From AvalonBay Communities Stock in Q4 Earnings?",
+      "url": "/news/293793/what-to-expect-from-avalonbay-communities-stock-in-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "UDR Reports Tax Treatment of 2025 Distributions",
+      "url": "https://www.businesswire.com/news/home/20260120321192/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "UDR, Inc. (UDR): A Bull Case Theory",
+      "url": "/news/277298/udr-inc-udr-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "LaSalle completes $250M investment with Cortland",
+      "url": "https://finance.yahoo.com/m/8f35bb18-57bf-3dd6-a960-e5d5c21afc17/lasalle-completes-%24250m.html",
+      "publisher": "Multifamily Dive",
+      "date": "2026-01-12",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "UDRs Quarterly Earnings Preview: What You Need to Know",
+      "url": "https://finance.yahoo.com/m/5ffc9f35-e5b9-30a7-8d79-8eafa4e056ee/udr%E2%80%99s-quarterly-earnings.html",
+      "publisher": "Barchart",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "UDR, Inc. Appoints Ellen M. Goitia to Board of Directors",
+      "url": "https://www.businesswire.com/news/home/20260105967031/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Residential REITs to Consider for Steady Income in 2026",
+      "url": "/news/260988/3-residential-reits-to-consider-for-steady-income-in-2026",
+      "publisher": "Zacks",
+      "date": "2025-12-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "UDR Expands Joint Venture With LaSalle, Boosts Financial Flexibility",
+      "url": "/news/258697/udr-expands-joint-venture-with-lasalle-boosts-financial-flexibility",
+      "publisher": "Zacks",
+      "date": "2025-12-19",
+      "sentiment": "positive"
+    },
+    {
+      "title": "UDR, Inc. Declares Quarterly Dividends",
+      "url": "https://www.businesswire.com/news/home/20251218184906/en/",
+      "publisher": "Business Wire",
+      "date": "2025-12-18",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "UDR, Inc. Announces $230 Million Joint Venture Expansion",
+      "url": "https://www.businesswire.com/news/home/20251218288998/en/",
+      "publisher": "Business Wire",
+      "date": "2025-12-18",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "LaSalle Announces $230 Million Expansion of Joint Venture with UDR, Inc.",
+      "url": "/news/257944/lasalle-announces-230-million-expansion-of-joint-venture-with-udr-inc",
+      "publisher": "PR Newswire",
+      "date": "2025-12-18",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How Is UDR's Stock Performance Compared to Other Residential and Multisector Real Estate Stocks?",
+      "url": "https://finance.yahoo.com/m/9321991a-e369-3797-87f6-0c8b200d7bd4/how-is-udr%27s-stock.html",
+      "publisher": "Barchart",
+      "date": "2025-12-15",
+      "sentiment": "neutral"
+    }
+  ]
 }

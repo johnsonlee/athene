@@ -6279,8 +6279,8 @@
     "close": 156.27000427246094,
     "sma_20": 154.3708190917969,
     "sma_50": 152.37643218994143,
-    "sma_200": 146.47555179595946,
-    "trend_alignment": 0.5790484421431886,
+    "sma_200": 146.47555179595943,
+    "trend_alignment": 0.5790484421431888,
     "rsi": 56.03449057127836,
     "rsi_score": 0.12068981142556723,
     "macd_histogram": 0.5076312409421841,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 71.87693812588464,
     "stoch_d": 71.66328536632122,
-    "trend_score": 57.904844214318864,
+    "trend_score": 57.904844214318885,
     "rsi_abs_score": 74.27585660010514,
     "macd_abs_score": 60.62106013731713,
     "momentum_score": 67.44845836871113,
@@ -6306,7 +6306,15 @@
     "technical_score": 58.17995284477369,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.07458244027639259,
+    "sentiment_pos": 0.11885000000000001,
+    "sentiment_neg": 0.0697,
+    "sentiment_neu": 0.8115,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 53.73
+  },
   "analyst": {
     "revision_momentum": -0.2,
     "target_upside": 0.039866897037179175,
@@ -6325,7 +6333,7 @@
     "quality_score": 61.80928571428571,
     "growth_score": 15.5,
     "safety_score": 70.33475,
-    "trend_score": 57.904844214318864,
+    "trend_score": 57.904844214318885,
     "momentum_score": 67.44845836871113,
     "volatility_score": 52.86981034932343,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 74.52685622571428,
     "catalyst_timeline": 55.95463146774819,
     "downside_control": 58.688684052398514,
-    "composite_score": 57.001604545482536,
+    "composite_score": 56.9977155001841,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 55.55794923571428,
     "technical_score": 58.17995284477369,
-    "sentiment_score": 50.0,
+    "sentiment_score": 53.73,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Homebuilding"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Keefe Bruyette Maintains Market Perform on D.R. Horton, Inc. (DHI) While Trimming Price Target Amid Affordability and Incentive Pressures",
+      "url": "/news/303542/keefe-bruyette-maintains-market-perform-on-dr-horton-inc-dhi-while-trimming-price-target-amid-affordability-and-incentive-pressures",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Homebuilder stocks fall after potential antitrust probe report",
+      "url": "https://finance.yahoo.com/news/homebuilder-stocks-fall-potential-antitrust-175737004.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "A Key Takeaway From Earnings Season: Signs of Consumer Weakness",
+      "url": "https://finance.yahoo.com/m/014e1af8-29db-3db9-94ba-ea8224d66cd3/a-key-takeaway-from-earnings.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Are Wall Street Analysts Bullish on D.R. Horton Stock?",
+      "url": "https://finance.yahoo.com/m/15dc395a-0fd8-39f9-89b1-9e87023bbf8c/are-wall-street-analysts.html",
+      "publisher": "Barchart",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Builders pitch 'Trump home' policies, stoking gains for their stocks",
+      "url": "https://www.marketwatch.com/story/builders-pitch-trump-home-policies-stoking-gains-for-their-stocks-d3d3600b?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Does Extreme Optimism, January Gains Spell SPX Trouble?",
+      "url": "/news/299145/does-extreme-optimism-january-gains-spell-spx-trouble",
+      "publisher": "Schaeffer's Research",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "UBS Group Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/7224d534-dfe7-31d4-adaf-60b9f6636232/ubs-group-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Toll Brothers, IBD Stock Of The Day, Approaches Buy Point Amid Trump-Fueled Rally",
+      "url": "https://finance.yahoo.com/m/d4c19f8e-c340-36fb-8ce5-f922687bfb6c/toll-brothers%2C-ibd-stock-of.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "These Homebuilder Stocks Get a Boost Following Report of Plan to Build 'Trump Homes'",
+      "url": "https://finance.yahoo.com/m/17638541-a611-3260-b1fb-36de8309b694/these-homebuilder-stocks-get.html",
+      "publisher": "Investopedia",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "These Homebuilder Stocks Climb Following Report of Plan to Build 'Trump Homes'",
+      "url": "https://finance.yahoo.com/m/17638541-a611-3260-b1fb-36de8309b694/these-homebuilder-stocks.html",
+      "publisher": "Investopedia",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "D.R. Horton, Inc. (DHI): A Bull Case Theory",
+      "url": "/news/296476/dr-horton-inc-dhi-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Weyerhaeuser Q4 Loss Narrower Than Estimates, Revenues Miss, Stock Down",
+      "url": "/news/293889/weyerhaeuser-q4-loss-narrower-than-estimates-revenues-miss-stock-down",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "negative"
+    },
+    {
+      "title": "PulteGroup Q4 Earnings & Revenues Top Estimates, Stock Down",
+      "url": "/news/292388/pultegroup-q4-earnings-revenues-top-estimates-stock-down",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "NVR's Q4 Earnings & Homebuilding Revenues Top Estimates, Both Down Y/Y",
+      "url": "/news/292272/nvrs-q4-earnings-homebuilding-revenues-top-estimates-both-down-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "United Rentals' Q4 Earnings & Revenues Miss, Dividend Hiked by 10%",
+      "url": "/news/292220/united-rentals-q4-earnings-revenues-miss-dividend-hiked-by-10",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Does Extreme Optimism, January Gains Spell SPX Trouble?",
+      "url": "/news/298121/does-extreme-optimism-january-gains-spell-spx-trouble",
+      "publisher": "Schaeffer's Research",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "D.R. Horton (DHI) Q1 Earnings: Taking a Look at Key Metrics Versus Estimates",
+      "url": "/news/288478/dr-horton-dhi-q1-earnings-taking-a-look-at-key-metrics-versus-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "5 Must-Read Analyst Questions From D.R. Horton's Q4 Earnings Call",
+      "url": "/news/287811/5-must-read-analyst-questions-from-dr-hortons-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jim Cramer Discusses D.R. Horton (DHI) In Context of Interest Rates",
+      "url": "/news/286110/jim-cramer-discusses-dr-horton-dhi-in-context-of-interest-rates",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-24",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Dave Ramsey: Creative Financing Just Means Im Going to Do Stupid'",
+      "url": "https://finance.yahoo.com/m/cb4db59c-a43b-3313-ae0a-6ed3cb11baaf/dave-ramsey%3A-%E2%80%9Ccreative.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-24",
+      "sentiment": "negative"
+    }
+  ]
 }

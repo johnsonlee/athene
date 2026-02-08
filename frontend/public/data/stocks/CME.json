@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 302.2699890136719,
-    "sma_20": 284.88549957275393,
+    "sma_20": 284.885499572754,
     "sma_50": 277.3379656982422,
     "sma_200": 272.21186141967763,
     "trend_alignment": 0.6536938373509974,
@@ -6286,10 +6286,10 @@
     "macd_histogram": 1.8483920356458903,
     "macd_line": 6.966491751357523,
     "macd_histogram_pct": 0.6115036566075656,
-    "bb_position": 0.9219041669071999,
-    "bb_upper": 305.4879145339005,
-    "bb_lower": 264.28308461160736,
-    "bb_width": 0.14463645915319834,
+    "bb_position": 0.9219041669071986,
+    "bb_upper": 305.48791453390055,
+    "bb_lower": 264.2830846116074,
+    "bb_width": 0.1446364591531983,
     "hist_volatility": 0.13842874161263832,
     "volume_ratio": 1.2683398185300414,
     "avg_volume_20d": 2307820.0,
@@ -6301,12 +6301,20 @@
     "rsi_abs_score": 33.32685324650433,
     "macd_abs_score": 66.67255484911348,
     "momentum_score": 49.999704047808905,
-    "volatility_score": 60.83750261494521,
+    "volatility_score": 60.837502614945215,
     "volume_score": 50.0,
     "technical_score": 56.77822685786164,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.13500064497434097,
+    "sentiment_pos": 0.1051,
+    "sentiment_neg": 0.0295,
+    "sentiment_neu": 0.8654,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 56.75
+  },
   "analyst": {
     "revision_momentum": 0.1,
     "target_upside": 0.012339960962053854,
@@ -6327,7 +6335,7 @@
     "safety_score": 39.7636,
     "trend_score": 65.36938373509975,
     "momentum_score": 49.999704047808905,
-    "volatility_score": 60.83750261494521,
+    "volatility_score": 60.837502614945215,
     "volume_score": 50.0,
     "analyst_score": 49.29784795050783,
     "pe_score": 28.7343498,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 27.153367437142855,
     "catalyst_timeline": 56.121693573341645,
     "downside_control": 51.72116539224177,
-    "composite_score": 50.92737352187393,
+    "composite_score": 50.923484476575496,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 56.87874048333333,
     "technical_score": 56.77822685786164,
-    "sentiment_score": 50.0,
+    "sentiment_score": 56.75,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Financial Exchanges & Data"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "The Two Minutes That Made Traders Lose Faith in the Gas Market",
+      "url": "https://finance.yahoo.com/news/two-minutes-made-traders-lose-130007026.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Gold Closes Out Volatile Week on Higher Note",
+      "url": "https://finance.yahoo.com/m/e110db4e-fb66-3362-a5f3-af6d0ff156ca/gold-closes-out-volatile-week.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Record Trading Boosts This Financial Firm As Prediction Markets Tempt Exchanges",
+      "url": "https://finance.yahoo.com/m/07d9028b-4c80-35ba-b488-0b55351f799f/record-trading-boosts-this.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "5 Securities & Exchanges Stocks to Watch Amid Increased Volatility",
+      "url": "/news/303077/5-securities-exchanges-stocks-to-watch-amid-increased-volatility",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cboe Global's Q4 Earnings Beat Estimates on Higher Revenues",
+      "url": "/news/303011/cboe-globals-q4-earnings-beat-estimates-on-higher-revenues",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Asian and American Inflows Support Gold Uptick",
+      "url": "https://finance.yahoo.com/m/e110db4e-fb66-3362-a5f3-af6d0ff156ca/asian-and-american-inflows.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Pelican Bay Capital Management Sold CME Group (CME) in Q4",
+      "url": "/news/302667/pelican-bay-capital-management-sold-cme-group-cme-in-q4",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Copper Set for Weekly Loss But Fundamentals Still Strong",
+      "url": "https://finance.yahoo.com/m/e110db4e-fb66-3362-a5f3-af6d0ff156ca/copper-set-for-weekly-loss.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Exchange Giant CME Raises Gold, Silver Margins as Volatility Persists",
+      "url": "https://www.wsj.com/finance/commodities-futures/exchange-giant-cme-raises-gold-silver-margins-as-volatility-persists-c9281fb7?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Gold Holds Below $5,000 As Volatility Remains High, Exchange Operator CME Hikes Margins",
+      "url": "https://www.wsj.com/finance/commodities-futures/gold-falls-on-spillover-impact-from-cryptocurrencies-selloff-77d6f0fc?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bitcoin Falls To 16-Month Low, Stifel Warns Of Drop To $38,000. Clarity Talks Hit Snag.",
+      "url": "https://finance.yahoo.com/m/44b4e95d-cab2-323e-b4cb-4304489df75d/bitcoin-falls-to-16-month.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "ICE's Q4 Earnings and Revenues Top Estimates, Dividend Raised",
+      "url": "/news/301846/ices-q4-earnings-and-revenues-top-estimates-dividend-raised",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CME Q4 Deep Dive: Retail and Crypto Expansion Fuel Stable Results, New Products Ahead",
+      "url": "/news/300867/cme-q4-deep-dive-retail-and-crypto-expansion-fuel-stable-results-new-products-ahead",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Is The Crypto Market Down Today?",
+      "url": "https://finance.yahoo.com/m/e4348eaa-5ce1-3b9d-aaad-6e2b0f5ef5ee/why-is-the-crypto-market-down.html",
+      "publisher": "BeInCrypto",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CME Explores Launching Its Own Coin as 24/7 Trading for Crypto Funds Nears",
+      "url": "https://finance.yahoo.com/m/89b6916e-d5ac-3397-a76d-0a1900e24632/cme-explores-launching-its.html",
+      "publisher": "decrypt",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CME Group Inc (CME) Q4 2025 Earnings Call Highlights: Record Revenues and Strategic Expansions ...",
+      "url": "https://finance.yahoo.com/news/cme-group-inc-cme-q4-210324166.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Wall Street Is Eyeing a CME Coin, and It Could Matter More Than Stablecoins",
+      "url": "https://finance.yahoo.com/m/34b94383-ccd6-3928-9ab3-f5885b1285cf/wall-street-is-eyeing-a-cme.html",
+      "publisher": "BeInCrypto",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Record Trading Boosts This Financial Firm As Prediction Markets Tempt Exchanges",
+      "url": "https://www.investors.com/news/cme-group-earnings-cboe-stock-prediction-markets?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CME Group Eyes 'CME Coin' After JPMorgan Success-Chart Shows Breakout To $320",
+      "url": "/news/300068/cme-group-eyes-cme-coin-after-jpmorgan-success-chart-shows-breakout-to-320",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Wall Street giant CME Group is eyeing its own 'CME Coin,' CEO says",
+      "url": "https://finance.yahoo.com/m/e89bdb50-da77-3e65-9e14-7b37757969bb/wall-street-giant-cme-group.html",
+      "publisher": "CoinDesk",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    }
+  ]
 }

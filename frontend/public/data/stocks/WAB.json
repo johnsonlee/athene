@@ -6295,8 +6295,8 @@
     "avg_volume_20d": 714215.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 92.09826931562236,
-    "stoch_d": 86.90112728896244,
+    "stoch_k": 92.09826931562237,
+    "stoch_d": 86.90112728896246,
     "trend_score": 75.01444278882661,
     "rsi_abs_score": 43.52991441009897,
     "macd_abs_score": 63.28640448934257,
@@ -6306,7 +6306,15 @@
     "technical_score": 61.3331329931065,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.0767522053392082,
+    "sentiment_pos": 0.0741,
+    "sentiment_neg": 0.0059,
+    "sentiment_neu": 0.9199999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 53.84
+  },
   "analyst": {
     "revision_momentum": 0.1111111111111111,
     "target_upside": 0.02102955505034105,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 46.52689193333333,
     "catalyst_timeline": 59.91900205453569,
     "downside_control": 62.71463924115672,
-    "composite_score": 56.881298511670366,
+    "composite_score": 56.87740946637193,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 55.06236232539682,
     "technical_score": 61.3331329931065,
-    "sentiment_score": 50.0,
+    "sentiment_score": 53.84,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Construction Machinery & Heavy Transportation Equipment"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Wabtec Declares Regular Quarterly Common Dividend",
+      "url": "https://www.businesswire.com/news/home/20260205183428/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Unveiling Wabtec (WAB) Q4 Outlook: Wall Street Estimates for Key Metrics",
+      "url": "/news/302814/unveiling-wabtec-wab-q4-outlook-wall-street-estimates-for-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Sean Duffy Criticizes Gavin Newsom's California High Speed Rail Project Update, Slams 'Monstrous $135 Billion' Spend: 'Train To Nowhere'",
+      "url": "/news/302363/sean-duffy-criticizes-gavin-newsoms-california-high-speed-rail-project-update-slams-monstrous-135-billion-spend-train-to-nowhere",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Union Pacific Inks $1.2B Locomotive Modernization Deal With Wabtec",
+      "url": "/news/301628/union-pacific-inks-12b-locomotive-modernization-deal-with-wabtec",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Union Pacific, WAB Pens Largest Locomotive Modernization Deal",
+      "url": "/news/300005/union-pacific-wab-pens-largest-locomotive-modernization-deal",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Wabtec to Report Q4 Earnings: Is a Beat in Store for the Stock?",
+      "url": "/news/299747/wabtec-to-report-q4-earnings-is-a-beat-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Westinghouse Air Brake Technologies (WAB) Reports Next Week: Wall Street Expects Earnings Growth",
+      "url": "/news/299675/westinghouse-air-brake-technologies-wab-reports-next-week-wall-street-expects-earnings-growth",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Union Pacific and Wabtec Sign $1.2B Deal to Modernize Locomotives",
+      "url": "https://www.businesswire.com/news/home/20260204005826/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Union Pacific, Wabtec sign for $1.2B in locomotive upgrades",
+      "url": "https://finance.yahoo.com/news/union-pacific-wabtec-sign-1-110000017.html",
+      "publisher": "FreightWaves",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "HRI vs. WAB: Which Stock Is the Better Value Option?",
+      "url": "/news/295919/hri-vs-wab-which-stock-is-the-better-value-option",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Top 5 Railroad Equipment & Railcar Leasing Stocks: Picks & Shovels of Logistics",
+      "url": "https://finance.yahoo.com/m/b32ec520-09e8-3077-a603-aaf66ec324e0/top-5-railroad-equipment-%26.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is Southwest Airlines (LUV) Stock Outpacing Its Transportation Peers This Year?",
+      "url": "/news/293632/is-southwest-airlines-luv-stock-outpacing-its-transportation-peers-this-year",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AER vs. WAB: Which Stock Is the Better Value Option?",
+      "url": "/news/279138/aer-vs-wab-which-stock-is-the-better-value-option",
+      "publisher": "Zacks",
+      "date": "2026-01-16",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Wabtec Announces Fourth Quarter 2025 Earnings Release Date",
+      "url": "https://www.businesswire.com/news/home/20260116736255/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Top Research Reports for AbbVie, Intel & Boeing",
+      "url": "/news/276818/top-research-reports-for-abbvie-intel-boeing",
+      "publisher": "Zacks",
+      "date": "2026-01-14",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What to Expect From Westinghouse Air Brake Technologies' Next Quarterly Earnings Report",
+      "url": "https://finance.yahoo.com/m/41ec4843-3385-34d2-b75a-b63ab9678be2/what-to-expect-from.html",
+      "publisher": "Barchart",
+      "date": "2026-01-13",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Wabtec Kicks Off 2026 With $386 Million Order From New York's MTA",
+      "url": "/news/270936/wabtec-kicks-off-2026-with-386-million-order-from-new-yorks-mta",
+      "publisher": "Zacks",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "UPS vs. WAB: Which Dividend-Paying Transportation Stock Has an Edge?",
+      "url": "/news/269438/ups-vs-wab-which-dividend-paying-transportation-stock-has-an-edge",
+      "publisher": "Zacks",
+      "date": "2026-01-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Wabtec Secures $386 Million Order from New York's MTA for New Locomotives",
+      "url": "https://www.businesswire.com/news/home/20260107939662/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why Investors Should Bet on Wabtec Stock Right Now",
+      "url": "/news/264479/heres-why-investors-should-bet-on-wabtec-stock-right-now",
+      "publisher": "Zacks",
+      "date": "2025-12-30",
+      "sentiment": "neutral"
+    }
+  ]
 }

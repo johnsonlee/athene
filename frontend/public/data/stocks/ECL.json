@@ -6295,8 +6295,8 @@
     "avg_volume_20d": 1202845.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 92.28843639946322,
-    "stoch_d": 89.62072699912875,
+    "stoch_k": 92.28843639946321,
+    "stoch_d": 89.62072699912873,
     "trend_score": 62.11416620490853,
     "rsi_abs_score": 51.65807940961777,
     "macd_abs_score": 56.79695860354327,
@@ -6306,7 +6306,15 @@
     "technical_score": 59.20575840665697,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.14773860303078643,
+    "sentiment_pos": 0.1012,
+    "sentiment_neg": 0.008,
+    "sentiment_neu": 0.8907999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 57.39
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.0333069266007647,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 32.26329662156863,
     "catalyst_timeline": 56.46188438580292,
     "downside_control": 60.60307713240769,
-    "composite_score": 53.04339195901966,
+    "composite_score": 53.03950291372122,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 54.11967718464052,
     "technical_score": 59.20575840665697,
-    "sentiment_score": 50.0,
+    "sentiment_score": 57.39,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Materials",
     "industry": "Specialty Chemicals"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Countdown to Ecolab (ECL) Q4 Earnings: A Look at Estimates Beyond Revenue and EPS",
+      "url": "/news/301491/countdown-to-ecolab-ecl-q4-earnings-a-look-at-estimates-beyond-revenue-and-eps",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Can Sustained Strength in Water Drive ECL Stock Before Q4 Earnings?",
+      "url": "/news/299882/can-sustained-strength-in-water-drive-ecl-stock-before-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "International Flavors (IFF) Expected to Beat Earnings Estimates: What to Know Ahead of Q4 Release",
+      "url": "/news/299682/international-flavors-iff-expected-to-beat-earnings-estimates-what-to-know-ahead-of-q4-release",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CDP, Ecolab launch index to boost corporate water management",
+      "url": "https://finance.yahoo.com/m/7d523eac-2c9a-3c71-97d1-37958d91795a/cdp%2C-ecolab-launch-index-to.html",
+      "publisher": "ESG Dive",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ecolab (ECL) Earnings Expected to Grow: What to Know Ahead of Next Week's Release",
+      "url": "/news/297678/ecolab-ecl-earnings-expected-to-grow-what-to-know-ahead-of-next-weeks-release",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Erste Group Sees Limited Upside for Ecolab (ECL) at Current Valuation",
+      "url": "/news/297275/erste-group-sees-limited-upside-for-ecolab-ecl-at-current-valuation",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Here's Why You Should Retain Ecolab Stock in Your Portfolio Now",
+      "url": "/news/290589/heres-why-you-should-retain-ecolab-stock-in-your-portfolio-now",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Investors Need to Take Advantage of These 2 Basic Materials Stocks Now",
+      "url": "/news/290057/why-investors-need-to-take-advantage-of-these-2-basic-materials-stocks-now",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Ecolab Inc.",
+      "url": "https://finance.yahoo.com/m/9186c310-57c7-33df-a3a6-36d6fa5e6078/analyst-report%3A-ecolab-inc..html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ecolab (ECL) to Benefit From Favorable Macroeconomic Backdrop",
+      "url": "/news/285165/ecolab-ecl-to-benefit-from-favorable-macroeconomic-backdrop",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Gap CEO Richard Dickson on Partnering With Matt Damon on Water",
+      "url": "https://finance.yahoo.com/video/gap-ceo-richard-dickson-partnering-125200377.html",
+      "publisher": "WSJ",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ecolab and CDP Partner on New Benchmarks to Help Companies Improve Operational Water Performance",
+      "url": "https://www.businesswire.com/news/home/20260119981046/en/Ecolab",
+      "publisher": "Business Wire",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Earnings Preview: What To Expect From Ecolabs Report",
+      "url": "https://finance.yahoo.com/m/038339d0-2699-3c6e-9f41-0e31cb5a1202/earnings-preview%3A-what-to.html",
+      "publisher": "Barchart",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Water.org Partners with Gap Inc., Amazon, Starbucks, and Ecolab to Launch Get Blue, Advancing Water.org's Goal of Reaching 200 Million People by 2030",
+      "url": "/news/279943/waterorg-partners-with-gap-inc-amazon-starbucks-and-ecolab-to-launch-get-blue-advancing-waterorgs-goal-of-reaching-200-million-people-by-2030",
+      "publisher": "PR Newswire",
+      "date": "2026-01-19",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Strong Dividend Growers for Income Without Rate Risk",
+      "url": "/news/272181/3-strong-dividend-growers-for-income-without-rate-risk",
+      "publisher": "MarketBeat",
+      "date": "2026-01-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ecolab Earns Double A Rating from CDP for Leadership in Water and Climate Performance",
+      "url": "https://www.businesswire.com/news/home/20260108770136/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ecolab Schedules Webcast and Conference Call on February 10, 2026",
+      "url": "https://www.businesswire.com/news/home/20260105636671/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ecolab (ECL) Target Trimmed at Citi Amid Shifting Views on Chemicals",
+      "url": "/news/264667/ecolab-ecl-target-trimmed-at-citi-amid-shifting-views-on-chemicals",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AI Trades Next Leg Is All About Techs Pick-and-Shovel Stocks",
+      "url": "https://finance.yahoo.com/news/ai-trade-next-leg-tech-110007069.html",
+      "publisher": "Bloomberg",
+      "date": "2025-12-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Are Options Traders Betting on a Big Move in Ecolab Stock?",
+      "url": "/news/261697/are-options-traders-betting-on-a-big-move-in-ecolab-stock",
+      "publisher": "Zacks",
+      "date": "2025-12-24",
+      "sentiment": "neutral"
+    }
+  ]
 }

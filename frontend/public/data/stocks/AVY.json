@@ -6279,8 +6279,8 @@
     "close": 191.50999450683594,
     "sma_20": 187.86049957275387,
     "sma_50": 183.0299496459961,
-    "sma_200": 174.14653106689448,
-    "trend_alignment": 0.6214337182554951,
+    "sma_200": 174.1465310668945,
+    "trend_alignment": 0.621433718255495,
     "rsi": 62.43595589506658,
     "rsi_score": 0.24871911790133155,
     "macd_histogram": 0.30601512857031277,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 71.33836065037754,
     "stoch_d": 75.61883069367114,
-    "trend_score": 62.14337182554951,
+    "trend_score": 62.1433718255495,
     "rsi_abs_score": 69.79483087345339,
     "macd_abs_score": 56.49476707936762,
     "momentum_score": 63.144798976410506,
     "volatility_score": 70.12746590989292,
     "volume_score": 50.0,
-    "technical_score": 61.61194442256659,
+    "technical_score": 61.61194442256658,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.02645134492485646,
+    "sentiment_pos": 0.0168,
+    "sentiment_neg": 0.00645,
+    "sentiment_neu": 0.97675,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.32
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.09654848310793175,
@@ -6325,7 +6333,7 @@
     "quality_score": 77.0952,
     "growth_score": 44.425,
     "safety_score": 43.171128497836754,
-    "trend_score": 62.14337182554951,
+    "trend_score": 62.1433718255495,
     "momentum_score": 63.144798976410506,
     "volatility_score": 70.12746590989292,
     "volume_score": 50.0,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 59.50641932857142,
     "catalyst_timeline": 58.25424661651264,
     "downside_control": 56.27178916115945,
-    "composite_score": 59.28610329125167,
+    "composite_score": 59.28221424595324,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 59.57521847337688,
-    "technical_score": 61.61194442256659,
-    "sentiment_score": 50.0,
+    "technical_score": 61.61194442256658,
+    "sentiment_score": 51.32,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 119,
-    "percentile": 0.7726396917148363,
+    "rank": 118,
+    "percentile": 0.7745664739884393,
     "tier": "buy",
     "tier_raw": "buy",
     "tier_label": "Buy",
@@ -6369,5 +6377,146 @@
     "sector": "Materials",
     "industry": "Paper & Plastic Packaging Products & Materials"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "AMCR Q2 Earnings Top Estimates, Sales Miss as Volume Decline Continues",
+      "url": "/news/301888/amcr-q2-earnings-top-estimates-sales-miss-as-volume-decline-continues",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "AVY Q4 Deep Dive: High-Value Category Growth and Tariff Impacts Shape Outlook",
+      "url": "/news/300828/avy-q4-deep-dive-high-value-category-growth-and-tariff-impacts-shape-outlook",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Avery Dennison Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/7610d961-0401-3fb7-a935-83b2b1cf803c/avery-dennison-q4-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Avery Dennison Smashes 52-Week High After Resilient Quarter",
+      "url": "/news/299935/avery-dennison-smashes-52-week-high-after-resilient-quarter",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Avery Dennison (AVY) Q4 2025 Earnings Transcript",
+      "url": "/news/299797/avery-dennison-avy-q4-2025-earnings-transcript",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Avery Dennison Earnings Beat Estimates in Q4, Revenues Rise Y/Y",
+      "url": "/news/299774/avery-dennison-earnings-beat-estimates-in-q4-revenues-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Compared to Estimates, Avery Dennison (AVY) Q4 Earnings: A Look at Key Metrics",
+      "url": "/news/299515/compared-to-estimates-avery-dennison-avy-q4-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Avery Dennison (AVY) Beats Q4 Earnings Estimates",
+      "url": "/news/299219/avery-dennison-avy-beats-q4-earnings-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Avery Dennison: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/avery-dennison-q4-earnings-snapshot-120335576.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Avery Dennison (NYSE:AVY) Reports Sales Below Analyst Estimates In Q4 CY2025 Earnings",
+      "url": "/news/299103/avery-dennison-nyse-avy-reports-sales-below-analyst-estimates-in-q4-cy2025-earnings",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Avery Dennison Declares Quarterly Dividend",
+      "url": "https://www.businesswire.com/news/home/20260204190977/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Avery Dennison Announces Fourth Quarter and Full Year 2025 Results",
+      "url": "https://www.businesswire.com/news/home/20260204906972/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hubbell (HUBB) Q4 Earnings and Revenues Surpass Estimates",
+      "url": "/news/297407/hubbell-hubb-q4-earnings-and-revenues-surpass-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Avery Dennison (AVY) Q4 Earnings: What To Expect",
+      "url": "/news/296556/avery-dennison-avy-q4-earnings-what-to-expect",
+      "publisher": "StockStory",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Avery Dennison Corporation (AVY): A Bull Case Theory",
+      "url": "/news/296471/avery-dennison-corporation-avy-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Avery Dennison Stock to Report Q4 Earnings: Here's What to Expect",
+      "url": "/news/296056/avery-dennison-stock-to-report-q4-earnings-heres-what-to-expect",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Amcor Set to Report Q2 Earnings: What's in Store for the Stock?",
+      "url": "/news/295859/amcor-set-to-report-q2-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Avery's Quiet Shift From Materials to Margins",
+      "url": "https://finance.yahoo.com/news/averys-quiet-shift-materials-margins-101852398.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-01",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Earnings Preview: AptarGroup (ATR) Q4 Earnings Expected to Decline",
+      "url": "/news/292025/earnings-preview-aptargroup-atr-q4-earnings-expected-to-decline",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Avery Dennison (AVY) Earnings Expected to Grow: Should You Buy?",
+      "url": "/news/290315/avery-dennison-avy-earnings-expected-to-grow-should-you-buy",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    }
+  ]
 }

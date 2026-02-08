@@ -6279,8 +6279,8 @@
     "close": 67.5,
     "sma_20": 63.63050003051758,
     "sma_50": 63.27899993896485,
-    "sma_200": 66.86784420013429,
-    "trend_alignment": 0.5444272490262235,
+    "sma_200": 66.86784420013427,
+    "trend_alignment": 0.5444272490262237,
     "rsi": 68.15456151588752,
     "rsi_score": 0.3630912303177504,
     "macd_histogram": 0.6085940196630741,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 93.4236336084625,
     "stoch_d": 89.30137309428167,
-    "trend_score": 54.44272490262235,
+    "trend_score": 54.44272490262237,
     "rsi_abs_score": 59.167227755514936,
     "macd_abs_score": 71.02431154806831,
     "momentum_score": 65.09576965179163,
     "volatility_score": 54.277310670509124,
     "volume_score": 50.0,
-    "technical_score": 56.71701050042602,
+    "technical_score": 56.71701050042603,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.18859799543727188,
+    "sentiment_pos": 0.1373,
+    "sentiment_neg": 0.014050000000000002,
+    "sentiment_neu": 0.8486499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 59.43
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.08148148148148149,
@@ -6325,7 +6333,7 @@
     "quality_score": 47.9753125,
     "growth_score": 39.875,
     "safety_score": 41.185908229248696,
-    "trend_score": 54.44272490262235,
+    "trend_score": 54.44272490262237,
     "momentum_score": 65.09576965179163,
     "volatility_score": 54.277310670509124,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 56.45760206,
     "catalyst_timeline": 57.749462733219175,
     "downside_control": 46.98148283496367,
-    "composite_score": 48.69278485333468,
+    "composite_score": 48.68889580803624,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 48.78819377918307,
-    "technical_score": 56.71701050042602,
-    "sentiment_score": 50.0,
+    "technical_score": 56.71701050042603,
+    "sentiment_score": 59.43,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Staples",
     "industry": "Food Retail"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "From AI Darlings To Dow Dinosaurs: Investors Flee Software For Old-Economy Stocks",
+      "url": "/news/303569/from-ai-darlings-to-dow-dinosaurs-investors-flee-software-for-old-economy-stocks",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jennifer Garner-backed kids' food brand Once Upon a Farm rises 16% in Wall Street debut",
+      "url": "https://finance.yahoo.com/news/jennifer-garner-backed-kids-food-brand-once-upon-a-farm-rises-16-in-wall-street-debut-221123011.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jennifer Garner's Once Upon a Farm Rises Nearly 20% To Wrap Up Busy Week for IPOs",
+      "url": "https://www.barrons.com/articles/jennifer-garner-once-upon-farm-ipo-ae14b122?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jennifer Garners Once Upon a Farm Rises 17% After $198 Million IPO",
+      "url": "https://finance.yahoo.com/news/jennifer-garner-once-upon-farm-211304517.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Kroger quietly reduces a vital store service for customers",
+      "url": "https://finance.yahoo.com/m/79f790f2-0ae9-34c4-8ab9-d6c29f4e000a/kroger-quietly-reduces-a.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "How to Find Strong Retail and Wholesale Stocks Slated for Positive Earnings Surprises",
+      "url": "/news/302765/how-to-find-strong-retail-and-wholesale-stocks-slated-for-positive-earnings-surprises",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Aldi is coming to Colorado, and the disruption could lead to lower food prices",
+      "url": "https://finance.yahoo.com/news/aldi-coming-colorado-disruption-could-140417819.html",
+      "publisher": "The Conversation",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Kroger Announces Fourth Quarter Conference Call with Investors",
+      "url": "/news/302113/kroger-announces-fourth-quarter-conference-call-with-investors",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "These 2 Retail and Wholesale Stocks Could Beat Earnings: Why They Should Be on Your Radar",
+      "url": "/news/299379/these-2-retail-and-wholesale-stocks-could-beat-earnings-why-they-should-be-on-your-radar",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Kroger to shutter Georgia health clinics",
+      "url": "https://finance.yahoo.com/m/6a7311ae-6b2d-333a-8e63-8cf1364a1375/kroger-to-shutter-georgia.html",
+      "publisher": "Grocery Dive",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why the Market Dipped But Kroger (KR) Gained Today",
+      "url": "/news/298386/why-the-market-dipped-but-kroger-kr-gained-today",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BJ's, Kroger and 8 Other Stocks to Benefit From Retail's Slump",
+      "url": "https://www.barrons.com/articles/retail-stock-prices-bargains-fb69e07a?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Will Kroger (KR) Beat Estimates Again in Its Next Earnings Report?",
+      "url": "/news/297937/will-kroger-kr-beat-estimates-again-in-its-next-earnings-report",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Kroger (KR) is a Strong Momentum Stock",
+      "url": "/news/297623/heres-why-kroger-kr-is-a-strong-momentum-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Kroger doubles down on large-format stores as it chases growth",
+      "url": "https://finance.yahoo.com/m/8214f511-806a-310a-b3bd-62885af77aa3/kroger-doubles-down-on.html",
+      "publisher": "Grocery Dive",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Kroger Reveals Top Party Picks and Savings for the Big Game",
+      "url": "/news/295817/kroger-reveals-top-party-picks-and-savings-for-the-big-game",
+      "publisher": "PR Newswire",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Kroger Stock Outlook: Is Wall Street Bullish or Bearish?",
+      "url": "https://finance.yahoo.com/m/9b67619e-5cdf-32cd-8c72-a82494b74253/kroger-stock-outlook%3A-is-wall.html",
+      "publisher": "Barchart",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Kroger's Board of Directors Declares Quarterly Dividend",
+      "url": "/news/294187/krogers-board-of-directors-declares-quarterly-dividend",
+      "publisher": "PR Newswire",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Kroger Fuels Protein Goals with Expanded Simple Truth Line Now Featuring More Than 110 Items",
+      "url": "/news/291835/kroger-fuels-protein-goals-with-expanded-simple-truth-line-now-featuring-more-than-110-items",
+      "publisher": "PR Newswire",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Kroger (KR) is a Top Value Stock for the Long-Term",
+      "url": "/news/291899/why-kroger-kr-is-a-top-value-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    }
+  ]
 }

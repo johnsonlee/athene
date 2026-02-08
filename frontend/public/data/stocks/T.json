@@ -6277,19 +6277,19 @@
   },
   "technical": {
     "close": 27.1299991607666,
-    "sma_20": 24.788499736785887,
-    "sma_50": 24.566431007385255,
+    "sma_20": 24.78849973678589,
+    "sma_50": 24.56643100738525,
     "sma_200": 26.244146156311032,
-    "trend_alignment": 0.5888391009877895,
+    "trend_alignment": 0.5888391009877896,
     "rsi": 74.98092508795354,
     "rsi_score": 0.49961850175907074,
     "macd_histogram": 0.3754377347688437,
     "macd_line": 0.8217934976684766,
     "macd_histogram_pct": 1.3838472037690805,
-    "bb_position": 0.8566281401686924,
-    "bb_upper": 28.07133017029169,
-    "bb_lower": 21.505669303280083,
-    "bb_width": 0.2648672141004255,
+    "bb_position": 0.8566281401686918,
+    "bb_upper": 28.071330170291695,
+    "bb_lower": 21.505669303280087,
+    "bb_width": 0.26486721410042546,
     "hist_volatility": 0.2991830518072523,
     "volume_ratio": 0.7287740278508605,
     "avg_volume_20d": 51302185.0,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 92.77896679849772,
     "stoch_d": 93.81604675517701,
-    "trend_score": 58.88391009877895,
+    "trend_score": 58.883910098778955,
     "rsi_abs_score": 40.053409753730094,
     "macd_abs_score": 78.2577080565362,
     "momentum_score": 59.15555890513315,
@@ -6306,7 +6306,15 @@
     "technical_score": 52.62817966502858,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.163065357002942,
+    "sentiment_pos": 0.1125,
+    "sentiment_neg": 0.024149999999999998,
+    "sentiment_neu": 0.8633,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 58.15
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.10578695171396982,
@@ -6325,7 +6333,7 @@
     "quality_score": 73.60249999999999,
     "growth_score": 40.375,
     "safety_score": 45.45723523626272,
-    "trend_score": 58.88391009877895,
+    "trend_score": 58.883910098778955,
     "momentum_score": 59.15555890513315,
     "volatility_score": 36.08169481927477,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 79.2055013742857,
     "catalyst_timeline": 56.57625209758987,
     "downside_control": 44.08083950833062,
-    "composite_score": 60.532881877723426,
+    "composite_score": 60.52899283242499,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 61.61303152582397,
     "technical_score": 52.62817966502858,
-    "sentiment_score": 50.0,
+    "sentiment_score": 58.15,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Communication Services",
     "industry": "Integrated Telecommunication Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Should You Buy AT&T Stock After Its Amazon Leo Win?",
+      "url": "https://finance.yahoo.com/m/ac00cb4b-0d87-39b6-be85-f2c1202b6d8f/should-you-buy-at%26t-stock.html",
+      "publisher": "Barchart",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analysts See 14% Upside in AT&T (T) After Q4 results",
+      "url": "/news/303509/analysts-see-14-upside-in-att-t-after-q4-results",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Lumen Technologies, Inc.",
+      "url": "https://finance.yahoo.com/m/e8ecfc33-94d7-3678-ab72-eb545deb8ad0/analyst-report%3A-lumen.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 High-Yield Dividend Stocks Perfect For Those 60+ Years",
+      "url": "https://finance.yahoo.com/m/f1f5153b-0348-38b0-ade6-8c82e8d45ede/3-high-yield-dividend-stocks.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Crown Castle Inc.",
+      "url": "https://finance.yahoo.com/m/d60c5dbb-28e6-34be-97e3-668390f0915a/analyst-report%3A-crown-castle.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Amazon Announces $200B 2026 Capex Plan, Shares Slide Over 8% Premarket",
+      "url": "https://finance.yahoo.com/news/amazon-announces-200b-2026-capex-155235079.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "AT&T Becomes the First and Only Carrier to Launch a Kid's Smartphone - Designed by Kids and Parents",
+      "url": "/news/302479/att-becomes-the-first-and-only-carrier-to-launch-a-kids-smartphone-designed-by-kids-and-parents",
+      "publisher": "PR Newswire",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Can SpaceX Rival AST SpaceMobile Meet Its 2026 Launch Targets?",
+      "url": "/news/302248/can-spacex-rival-ast-spacemobile-meet-its-2026-launch-targets",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Telecom Stocks: The 1996 Law That Missed Its Mark  But Helped Create the Internet",
+      "url": "https://finance.yahoo.com/m/4c42e132-1a73-3567-be8b-e748dabe6b52/telecom-stocks%3A-the-1996-law.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Starlink fuels SpaceX growth with potential phone, more internet services",
+      "url": "https://finance.yahoo.com/news/starlink-fuels-spacex-growth-potential-110206417.html",
+      "publisher": "Reuters",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Verizon Sues T-Mobile Over $1,000 Savings Claims, Alleges Misleading Ads Despite Prior Regulatory Warnings",
+      "url": "/news/300739/verizon-sues-t-mobile-over-1000-savings-claims-alleges-misleading-ads-despite-prior-regulatory-warnings",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Analyst Report: Crown Castle Inc.",
+      "url": "https://finance.yahoo.com/m/4ac288c5-faf2-3562-8372-f8b59e2f6fc7/analyst-report%3A-crown-castle.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AT&T closes billion-dollar acquisition to win back customers",
+      "url": "https://finance.yahoo.com/m/68be4753-a23c-3686-9b44-30f6117a6665/at%26t-closes-billion-dollar.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "AT&T, Amazon Forge Cloud, Satellite Partnership. AST SpaceMobile Not Impacted, Says AT&T.",
+      "url": "https://www.investors.com/news/technology/att-amazon-forge-cloud-satellite-partnership-asts-gsat?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What's Happening With The Jump In Apple Stock?",
+      "url": "/news/300093/whats-happening-with-the-jump-in-apple-stock",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The five-day office comeback: Why stricter return-to-office mandates may push top performers out the door",
+      "url": "https://finance.yahoo.com/news/five-day-office-comeback-why-183000219.html",
+      "publisher": "Moneywise",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "TD Cowen Lowers AT&T (T) PT to $32 Following Mixed Q4 Results, Lower Promotional Activity",
+      "url": "/news/299907/td-cowen-lowers-att-t-pt-to-32-following-mixed-q4-results-lower-promotional-activity",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "These 2 Computer and Technology Stocks Could Beat Earnings: Why They Should Be on Your Radar",
+      "url": "/news/299377/these-2-computer-and-technology-stocks-could-beat-earnings-why-they-should-be-on-your-radar",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Lumen Reports Better-Than-Expected Q4 Earnings, Revenues Down Y/Y",
+      "url": "/news/299362/lumen-reports-better-than-expected-q4-earnings-revenues-down-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AT&T, AWS, and Amazon Leo Collaborate to Accelerate Modernization of Nation's Connectivity Infrastructure",
+      "url": "https://www.businesswire.com/news/home/20260204057385/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    }
+  ]
 }

@@ -3807,7 +3807,7 @@
     "close": 779.3499755859375,
     "sma_20": 701.1864990234376,
     "sma_50": 669.169111328125,
-    "sma_200": 582.0786846923829,
+    "sma_200": 582.0786846923828,
     "trend_alignment": 0.8367962837071211,
     "rsi": 67.59833340210119,
     "rsi_score": 0.3519666680420238,
@@ -3834,7 +3834,15 @@
     "technical_score": 60.87364045140341,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.17014065052400443,
+    "sentiment_pos": 0.1497,
+    "sentiment_neg": 0.04485,
+    "sentiment_neu": 0.8054499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 58.51
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.05023416950022452,
@@ -3874,14 +3882,14 @@
     "valuation_margin": 31.262467341176468,
     "catalyst_timeline": 66.16222143057165,
     "downside_control": 46.42893989028465,
-    "composite_score": 53.691937574490055,
+    "composite_score": 53.68804852919162,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 60.083683308709624,
     "technical_score": 60.87364045140341,
-    "sentiment_score": 50.0,
+    "sentiment_score": 58.51,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -3897,5 +3905,146 @@
     "sector": "Industrials",
     "industry": "Heavy Electrical Equipment"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Scott Strazik on How GE Vernova Is Riding the AI Power Surge",
+      "url": "https://www.barrons.com/articles/ge-vernova-stock-ceo-interview-scott-strazik-21030397?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "GE Vernova Stock Gets Energized With Relative Strength",
+      "url": "https://www.investors.com/research/swing-trading/ge-vernova-stock-energized-relative-strength?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Nvidia Shares Surge on Big Techs $650 Billion AI-Spending Plan",
+      "url": "https://finance.yahoo.com/news/nvidia-shares-surge-big-tech-180706782.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bloom Energy Is Already the Fuel-Cell King. It's Setting Its Sights Much Higher.",
+      "url": "https://www.barrons.com/articles/bloom-energy-earnings-stock-price-427c1612?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "GEV Stock Surges 9.7% in a Month: Time to Hold or Book Profits?",
+      "url": "/news/302876/gev-stock-surges-97-in-a-month-time-to-hold-or-book-profits",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Xcel Energy pursuing large load tariffs in 4 states amid data center growth",
+      "url": "https://finance.yahoo.com/m/f8dc10d5-7c4b-3c2a-9970-37a7ecc1314c/xcel-energy-pursuing-large.html",
+      "publisher": "Utility Dive",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Xcel Energy Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/ec56a51e-9cd6-3433-9a51-f3af166e91e5/xcel-energy-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Xcel Energy Inks Dual Alliances with GE Vernova, NextEra to Support 6-GW Data Center Outlook, Generation Expansion",
+      "url": "https://finance.yahoo.com/m/daa2bb1e-f851-3c3d-b24e-8d071168e7e4/xcel-energy-inks-dual.html",
+      "publisher": "POWER Magazine",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Xcel Energy Inc (XEL) Q4 2025 Earnings Call Highlights: Strong Earnings Amid Strategic ...",
+      "url": "https://finance.yahoo.com/news/xcel-energy-inc-xel-q4-211050031.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Catch Up on Trumps Breakneck Critical-Minerals Drive",
+      "url": "https://finance.yahoo.com/m/71382e32-ac70-3737-b255-13a6a906ebc5/catch-up-on-trump%E2%80%99s-breakneck.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "GE Vernova Inc. (GEV) Is a Trending Stock: Facts to Know Before Betting on It",
+      "url": "/news/301446/ge-vernova-inc-gev-is-a-trending-stock-facts-to-know-before-betting-on-it",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Heard on the Street Wednesday Recap: Tech Tantrum",
+      "url": "https://finance.yahoo.com/m/8125b7e3-2723-3344-af8d-52aff352f1b1/heard-on-the-street-wednesday.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Heard on the Street Recap: Tech Tantrum",
+      "url": "https://finance.yahoo.com/m/ac5d1e6f-b4fd-398a-b9fb-d1e3424f32f9/heard-on-the-street-recap%3A.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "GE Vernova Announces Closing of $2.6 Billion Public Offering of Senior Notes",
+      "url": "https://www.businesswire.com/news/home/20260204407754/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Should You Buy Shares of GE Vernova (GEV) In February?",
+      "url": "/news/299798/should-you-buy-shares-of-ge-vernova-gev-in-february",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "This Energy Stock Could Have Momentum in 2026 Beyond the AI Power Trade",
+      "url": "/news/299785/this-energy-stock-could-have-momentum-in-2026-beyond-the-ai-power-trade",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Baird upgrades GE Vernova, says overcapacity risks farther away than believed",
+      "url": "https://finance.yahoo.com/news/baird-upgrades-ge-vernova-says-151209049.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "PayPal downgraded, Five Below upgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/paypal-downgraded-five-below-upgraded-143348578.html",
+      "publisher": "The Fly",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "GE Vernova's Q4 Earnings Call: Our Top 5 Analyst Questions",
+      "url": "/news/298666/ge-vernovas-q4-earnings-call-our-top-5-analyst-questions",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Vance says US seeks to create a critical minerals trading bloc with its allies to counter China",
+      "url": "https://finance.yahoo.com/news/trump-administration-presses-efforts-ensure-050628124.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    }
+  ]
 }

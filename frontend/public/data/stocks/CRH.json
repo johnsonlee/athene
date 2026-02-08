@@ -6278,7 +6278,7 @@
   "technical": {
     "close": 127.12999725341797,
     "sma_20": 123.7974994659424,
-    "sma_50": 124.46259994506836,
+    "sma_50": 124.46259994506838,
     "sma_200": 109.52982780456543,
     "trend_alignment": 0.6700150304964752,
     "rsi": 56.384731464298625,
@@ -6295,8 +6295,8 @@
     "avg_volume_20d": 4392520.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 70.13880720850167,
-    "stoch_d": 54.56012329941433,
+    "stoch_k": 70.13880720850169,
+    "stoch_d": 54.560123299414336,
     "trend_score": 67.00150304964751,
     "rsi_abs_score": 74.03068797499097,
     "macd_abs_score": 58.661812458991065,
@@ -6306,7 +6306,15 @@
     "technical_score": 61.10947706014688,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.08158114387202399,
+    "sentiment_pos": 0.1119,
+    "sentiment_neg": 0.01045,
+    "sentiment_neu": 0.87765,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 54.08
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.10123495634389998,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 56.454528724999996,
     "catalyst_timeline": 60.039632143308225,
     "downside_control": 53.368520810116486,
-    "composite_score": 57.73024052717121,
+    "composite_score": 57.726351481872776,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 56.39704346130953,
     "technical_score": 61.10947706014688,
-    "sentiment_score": 50.0,
+    "sentiment_score": 54.08,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Materials",
     "industry": "Construction Materials"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "CRH Announces Date for Q4 and Full Year 2025 Results Conference Call",
+      "url": "https://www.businesswire.com/news/home/20260205102220/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CRH (CRH) Falls More Steeply Than Broader Market: What Investors Need to Know",
+      "url": "/news/294305/crh-crh-falls-more-steeply-than-broader-market-what-investors-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CRH (CRH) Stock Moves -1.72%: What You Should Know",
+      "url": "/news/281735/crh-crh-stock-moves-172-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Sakrete Celebrates 90-Year Legacy at World of Concrete 2026",
+      "url": "/news/281334/sakrete-celebrates-90-year-legacy-at-world-of-concrete-2026",
+      "publisher": "PR Newswire",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "AI Data Center Buildout In Focus With Major Industry Conference On Tap",
+      "url": "https://finance.yahoo.com/m/f0dd3ed1-e21f-35c9-b1a6-a2a7d0501004/ai-data-center-buildout-in.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CRH (CRH) Dips More Than Broader Market: What You Should Know",
+      "url": "/news/276911/crh-crh-dips-more-than-broader-market-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Fall on Weakness in Software and Credit Card Companies",
+      "url": "https://finance.yahoo.com/m/262f9b0b-f82e-3cfe-9703-9c2a493bbd6b/stocks-fall-on-weakness-in.html",
+      "publisher": "Barchart",
+      "date": "2026-01-13",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stock Indexes Slip as the Magnificent Seven Technology Stocks Retreat",
+      "url": "https://finance.yahoo.com/m/c8e83703-cdc0-3575-b0b5-bfa0870446bf/stock-indexes-slip-as-the.html",
+      "publisher": "Barchart",
+      "date": "2026-01-13",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CRH (CRH) Outpaces Stock Market Gains: What You Should Know",
+      "url": "/news/271584/crh-crh-outpaces-stock-market-gains-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Pebble Technology International Introduces PebbleTec Glass Tile",
+      "url": "/news/269716/pebble-technology-international-introduces-pebbletec-glass-tile",
+      "publisher": "PR Newswire",
+      "date": "2026-01-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CRH (CRH) Surpasses Market Returns: Some Facts Worth Knowing",
+      "url": "/news/266510/crh-crh-surpasses-market-returns-some-facts-worth-knowing",
+      "publisher": "Zacks",
+      "date": "2026-01-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Final Trades: Visa, CRH and the GPIQ",
+      "url": "https://www.youtube.com/watch?v=3yuZZBWdzME",
+      "publisher": "CNBC TV",
+      "date": "2025-12-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Surging Stocks Just Got the Ultimate Stamp of Approval From the S&P 500",
+      "url": "/news/259211/3-surging-stocks-just-got-the-ultimate-stamp-of-approval-from-the-sp-500",
+      "publisher": "MarketBeat",
+      "date": "2025-12-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jefferies Bullish on CRH plc (CRH), Cites Passive Capital Inflows and S&P500 Inclusion",
+      "url": "/news/256089/jefferies-bullish-on-crh-plc-crh-cites-passive-capital-inflows-and-sp500-inclusion",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-17",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CRH Acquires New Jersey Business North American Aggregates",
+      "url": "https://www.businesswire.com/news/home/20251216103959/en/",
+      "publisher": "Business Wire",
+      "date": "2025-12-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Solid Results and Improved Guidance Lifted CRH (CRH) in Q3",
+      "url": "/news/252715/solid-results-and-improved-guidance-lifted-crh-crh-in-q3",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-12",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Carvana Notches $33 Billion, 12-Day Run Ahead of S&P Entry",
+      "url": "https://finance.yahoo.com/news/carvana-track-record-12-day-170648790.html",
+      "publisher": "Bloomberg",
+      "date": "2025-12-10",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Carvana Stock Rallies-And May Have Further to Go Before Joining the S&P 500",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-12-08-2025/card/carvana-stock-rallies-and-may-have-further-to-go-before-joining-the-s-p-500-WEzgLHdLd0TnL9RIkESc?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2025-12-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks to Watch Monday: IBM, Boeing, Broadcom, CoreWeave",
+      "url": "https://finance.yahoo.com/m/a20f2217-8d50-32dd-9414-c3b3f71ac845/stocks-to-watch-monday%3A-ibm%2C.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2025-12-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Carvana to join S&P 500, Strategy buys more bitcoin",
+      "url": "https://finance.yahoo.com/video/carvana-joins-p-500-strategy-155336195.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2025-12-08",
+      "sentiment": "positive"
+    }
+  ]
 }

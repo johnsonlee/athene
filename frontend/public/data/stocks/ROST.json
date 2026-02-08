@@ -6279,8 +6279,8 @@
     "close": 190.74000549316406,
     "sma_20": 189.8504997253418,
     "sma_50": 184.8716394042969,
-    "sma_200": 155.36815784454342,
-    "trend_alignment": 0.7266268333385693,
+    "sma_200": 155.36815784454345,
+    "trend_alignment": 0.7266268333385691,
     "rsi": 58.70035023095067,
     "rsi_score": 0.17400700461901336,
     "macd_histogram": -0.2768847517811124,
@@ -6295,9 +6295,9 @@
     "avg_volume_20d": 2533720.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 58.3026073546949,
+    "stoch_k": 58.30260735469489,
     "stoch_d": 53.48061357441728,
-    "trend_score": 72.66268333385693,
+    "trend_score": 72.66268333385692,
     "rsi_abs_score": 72.40975483833454,
     "macd_abs_score": 43.87091402161258,
     "momentum_score": 58.14033442997356,
@@ -6306,7 +6306,15 @@
     "technical_score": 64.24281818444067,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.21674228049130712,
+    "sentiment_pos": 0.1498,
+    "sentiment_neg": 0.015050000000000003,
+    "sentiment_neu": 0.83515,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 60.84
+  },
   "analyst": {
     "revision_momentum": 0.07142857142857142,
     "target_upside": 0.045926391947153145,
@@ -6325,7 +6333,7 @@
     "quality_score": 81.8742,
     "growth_score": 59.37142857142857,
     "safety_score": 47.227050000000006,
-    "trend_score": 72.66268333385693,
+    "trend_score": 72.66268333385692,
     "momentum_score": 58.14033442997356,
     "volatility_score": 75.00956427645758,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 43.27411765,
     "catalyst_timeline": 60.83062390553417,
     "downside_control": 63.14949214146863,
-    "composite_score": 60.23614821095691,
+    "composite_score": 60.23225916565848,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 61.147291851190474,
     "technical_score": 64.24281818444067,
-    "sentiment_score": 50.0,
+    "sentiment_score": 60.84,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Apparel Retail"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Why Investors Need to Take Advantage of These 2 Retail and Wholesale Stocks Now",
+      "url": "/news/301433/why-investors-need-to-take-advantage-of-these-2-retail-and-wholesale-stocks-now",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Murphy USA (MUSA) Q4 Earnings Top Estimates",
+      "url": "/news/300516/murphy-usa-musa-q4-earnings-top-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Madison Asset Initiates MSA Safety Position",
+      "url": "/news/300309/madison-asset-initiates-msa-safety-position",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is Dillard's (DDS) Stock Outpacing Its Retail-Wholesale Peers This Year?",
+      "url": "/news/299579/is-dillards-dds-stock-outpacing-its-retail-wholesale-peers-this-year",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ross Stores Stock: Analyst Estimates & Ratings",
+      "url": "https://finance.yahoo.com/m/9fc645fa-e248-3a0d-b758-1d288d0bb381/ross-stores-stock%3A-analyst.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Will Ross Stores (ROST) Beat Estimates Again in Its Next Earnings Report?",
+      "url": "/news/295981/will-ross-stores-rost-beat-estimates-again-in-its-next-earnings-report",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How to Boost Your Portfolio with Top Retail and Wholesale Stocks Set to Beat Earnings",
+      "url": "/news/295566/how-to-boost-your-portfolio-with-top-retail-and-wholesale-stocks-set-to-beat-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ross Stores (ROST) Increases Despite Market Slip: Here's What You Need to Know",
+      "url": "/news/294294/ross-stores-rost-increases-despite-market-slip-heres-what-you-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "DG vs. ROST: Which Stock Is the Better Value Option?",
+      "url": "/news/290460/dg-vs-rost-which-stock-is-the-better-value-option",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "ROSS STORES ANNOUNCES THE PASSING OF FORMER CHAIRMAN AND CEO NORMAN A. FERBER",
+      "url": "/news/287517/ross-stores-announces-the-passing-of-former-chairman-and-ceo-norman-a-ferber",
+      "publisher": "PR Newswire",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bigger Tax Refunds Are Coming. Which Retailers Gain the Most.",
+      "url": "https://www.barrons.com/articles/tax-refunds-consumer-spending-retailers-4f09cf1d?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-24",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bernstein names Big Beautiful tax refunds winners",
+      "url": "https://finance.yahoo.com/news/bernstein-names-big-beautiful-tax-130054080.html",
+      "publisher": "Investing.com",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ross Stores' Q4 2025 Earnings: What to Expect",
+      "url": "https://finance.yahoo.com/m/aee1a4e4-4805-3884-a7e7-4469a2ba644c/ross-stores%27-q4-2025.html",
+      "publisher": "Barchart",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Winners And Losers Of Q3: Ross Stores (NASDAQ:ROST) Vs The Rest Of The Discount Retailer Stocks",
+      "url": "/news/285272/winners-and-losers-of-q3-ross-stores-nasdaq-rost-vs-the-rest-of-the-discount-retailer-stocks",
+      "publisher": "StockStory",
+      "date": "2026-01-21",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Why Ross Stores (ROST) Outpaced the Stock Market Today",
+      "url": "/news/283229/why-ross-stores-rost-outpaced-the-stock-market-today",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "2 Reasons to Watch ROST and 1 to Stay Cautious",
+      "url": "/news/282909/2-reasons-to-watch-rost-and-1-to-stay-cautious",
+      "publisher": "StockStory",
+      "date": "2026-01-20",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Ross Stores (ROST): Buy, Sell, or Hold Post Q3 Earnings?",
+      "url": "/news/281000/ross-stores-rost-buy-sell-or-hold-post-q3-earnings",
+      "publisher": "StockStory",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Costco Stock Rallies on December Sales: Buy, Hold or Take Profits?",
+      "url": "/news/280346/costco-stock-rallies-on-december-sales-buy-hold-or-take-profits",
+      "publisher": "Zacks",
+      "date": "2026-01-19",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's What Lifts Ross Stores (ROST)",
+      "url": "/news/278723/heres-what-lifts-ross-stores-rost",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ross Stores (ROST) Surpasses Market Returns: Some Facts Worth Knowing",
+      "url": "/news/278397/ross-stores-rost-surpasses-market-returns-some-facts-worth-knowing",
+      "publisher": "Zacks",
+      "date": "2026-01-15",
+      "sentiment": "positive"
+    }
+  ]
 }

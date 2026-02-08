@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 72.21316439630412,
-    "stoch_d": 77.63196583515096,
+    "stoch_d": 77.63196583515098,
     "trend_score": 80.16851637961369,
     "rsi_abs_score": 68.19511830492014,
     "macd_abs_score": 61.34991596372353,
@@ -6306,7 +6306,15 @@
     "technical_score": 62.90658465457707,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.07189109713932583,
+    "sentiment_pos": 0.055600000000000004,
+    "sentiment_neg": 0.024149999999999998,
+    "sentiment_neu": 0.92025,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 53.59
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.06997646051786868,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 66.9411926392857,
     "catalyst_timeline": 64.81506676911235,
     "downside_control": 53.570640325297305,
-    "composite_score": 54.85109467575457,
+    "composite_score": 54.84720563045613,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 53.597958449404764,
     "technical_score": 62.90658465457707,
-    "sentiment_score": 50.0,
+    "sentiment_score": 53.59,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Materials",
     "industry": "Specialty Chemicals"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "DuPont Launches Medical Grade Liquid Silicone Rubber Series",
+      "url": "/news/301734/dupont-launches-medical-grade-liquid-silicone-rubber-series",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Unveiling DuPont de Nemours (DD) Q4 Outlook: Wall Street Estimates for Key Metrics",
+      "url": "/news/301495/unveiling-dupont-de-nemours-dd-q4-outlook-wall-street-estimates-for-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "DuPont Expands Dairy Reverse Osmosis Portfolio with Mesh Wrapped FilmTec MXP RO-8038-FF Element",
+      "url": "/news/299247/dupont-expands-dairy-reverse-osmosis-portfolio-with-mesh-wrapped-filmtec-mxp-ro-8038-ff-element",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "DuPont Launches Liveo C6-8XX Liquid Silicone Rubber Series for Healthcare Applications",
+      "url": "/news/297301/dupont-launches-liveo-c6-8xx-liquid-silicone-rubber-series-for-healthcare-applications",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Eastman Chemical (EMN) Q4 Earnings and Revenues Miss Estimates",
+      "url": "/news/292820/eastman-chemical-emn-q4-earnings-and-revenues-miss-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "DuPont Launches AmberLite FPA57 Resin for Acid Purification",
+      "url": "/news/291465/dupont-launches-amberlite-fpa57-resin-for-acid-purification",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "DuPont Introduces DuPont AmberLite FPA57 Resin to Boost Efficiency in Organic Acid Purification",
+      "url": "/news/289943/dupont-introduces-dupont-amberlite-fpa57-resin-to-boost-efficiency-in-organic-acid-purification",
+      "publisher": "PR Newswire",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Eaton Stock Rises as Spin-Off Revealed. Why It's Going All-In on Planes and AI Data Centers.",
+      "url": "https://www.barrons.com/articles/eaton-stock-price-spin-off-planes-ai-6fd7c09e?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "DuPont Announces 3rd Annual Tyvek Sustainable Healthcare Packaging Awards Program",
+      "url": "/news/286825/dupont-announces-3rd-annual-tyvek-sustainable-healthcare-packaging-awards-program",
+      "publisher": "PR Newswire",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "DuPont de Nemours' Quarterly Earnings Preview: What You Need to Know",
+      "url": "https://finance.yahoo.com/m/835ee1ce-f11b-3ccb-a49a-f93818ca3aa2/dupont-de-nemours%27-quarterly.html",
+      "publisher": "Barchart",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "DuPont de Nemours (DD) Receives Outperform Rating From RBC Capital",
+      "url": "/news/285167/dupont-de-nemours-dd-receives-outperform-rating-from-rbc-capital",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "DuPont Schedules Fourth Quarter 2025 Earnings Conference Call",
+      "url": "/news/282150/dupont-schedules-fourth-quarter-2025-earnings-conference-call",
+      "publisher": "PR Newswire",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "DuPont Announces Appointment of D.G. Macpherson to Board of Directors",
+      "url": "/news/281544/dupont-announces-appointment-of-dg-macpherson-to-board-of-directors",
+      "publisher": "PR Newswire",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is the Options Market Predicting a Spike in DuPont de Nemours Stock?",
+      "url": "/news/271986/is-the-options-market-predicting-a-spike-in-dupont-de-nemours-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "DuPont's Decade of Restructuring Yields Meager Returns",
+      "url": "https://www.wsj.com/business/duponts-decade-of-restructuring-yields-meager-returns-a04380b0?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Materials sector is emerging as a surprise winner on the S&P 500 in the first trading days of 2026",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-record-nasdaq-sp500-higher-metals-surge/card/materials-sector-is-emerging-as-a-surprise-winner-on-the-s-p-500-in-the-first-trading-days-of-2026-ZimbRAgrLTQ3QyDSpE1R?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-01-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BBDO International CEO: The biggest risks are the ones not taken",
+      "url": "https://finance.yahoo.com/news/bbdo-international-ceo-biggest-risks-100414862.html",
+      "publisher": "Fortune",
+      "date": "2025-12-19",
+      "sentiment": "negative"
+    },
+    {
+      "title": "How Is Qnity Electronics Stock Performance Compared to Other Semiconductor Stocks?",
+      "url": "https://finance.yahoo.com/m/7e4357b4-6936-3add-a8c7-d5b377a363c3/how-is-qnity-electronics%E2%80%99.html",
+      "publisher": "Barchart",
+      "date": "2025-12-18",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jim Cramer Says \"Do Not Sell DuPont (DD)\"",
+      "url": "/news/256462/jim-cramer-says-do-not-sell-dupont-dd",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-17",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "These stocks could land big profits from filling Big Tech's critical water needs",
+      "url": "https://www.marketwatch.com/story/these-stocks-could-land-big-profits-from-filling-big-techs-critical-water-needs-2e0e214b?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2025-12-12",
+      "sentiment": "positive"
+    }
+  ]
 }

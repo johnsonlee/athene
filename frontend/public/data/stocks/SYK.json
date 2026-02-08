@@ -6277,27 +6277,27 @@
   },
   "technical": {
     "close": 358.2900085449219,
-    "sma_20": 360.04850311279296,
+    "sma_20": 360.0485031127929,
     "sma_50": 358.6625012207031,
-    "sma_200": 373.3239791870117,
-    "trend_alignment": 0.4591991898438981,
+    "sma_200": 373.3239791870118,
+    "trend_alignment": 0.45919918984389785,
     "rsi": 48.28488889795364,
     "rsi_score": -0.03430222204092715,
     "macd_histogram": -0.16539224095837446,
     "macd_line": 0.4462682433756413,
     "macd_histogram_pct": -0.04616155544779525,
-    "bb_position": 0.39314362238413025,
-    "bb_upper": 368.2768120219372,
-    "bb_lower": 351.8201942036487,
-    "bb_width": 0.045706669173772606,
+    "bb_position": 0.39314362238413375,
+    "bb_upper": 368.27681202193713,
+    "bb_lower": 351.82019420364867,
+    "bb_width": 0.04570666917377261,
     "hist_volatility": 0.22485296359311135,
     "volume_ratio": 0.9399625295385861,
     "avg_volume_20d": 2124340.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 36.51041908810478,
-    "stoch_d": 39.74171305279923,
-    "trend_score": 45.91991898438981,
+    "stoch_d": 39.741713052799234,
+    "trend_score": 45.91991898438978,
     "rsi_abs_score": 70.29942222856755,
     "macd_abs_score": 47.691922227610235,
     "momentum_score": 58.99567222808889,
@@ -6306,7 +6306,15 @@
     "technical_score": 55.60659573594684,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.22472332456454383,
+    "sentiment_pos": 0.15555000000000002,
+    "sentiment_neg": 0.02765,
+    "sentiment_neu": 0.8168,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 61.24
+  },
   "analyst": {
     "revision_momentum": 0.1,
     "target_upside": 0.193167545842753,
@@ -6325,7 +6333,7 @@
     "quality_score": 64.26769999999999,
     "growth_score": 79.64285714285714,
     "safety_score": 56.770250000000004,
-    "trend_score": 45.91991898438981,
+    "trend_score": 45.91991898438978,
     "momentum_score": 58.99567222808889,
     "volatility_score": 70.65959186101617,
     "volume_score": 50.0,
@@ -6344,23 +6352,23 @@
     "current_ratio_score": 77.432,
     "earnings_visibility": 70.57258357142857,
     "valuation_margin": 40.25608126274509,
-    "catalyst_timeline": 55.37253281378743,
+    "catalyst_timeline": 55.37253281378742,
     "downside_control": 66.84747627915242,
-    "composite_score": 59.39867097750774,
+    "composite_score": 59.3947819322093,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 61.353475338001864,
     "technical_score": 55.60659573594684,
-    "sentiment_score": 50.0,
+    "sentiment_score": 61.24,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 114,
-    "percentile": 0.7822736030828517,
+    "rank": 113,
+    "percentile": 0.7842003853564548,
     "tier": "buy",
     "tier_raw": "buy",
     "tier_label": "Buy",
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Health Care Equipment"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Can Intuitive Surgical Sustain Robust Top-line Growth in 2026?",
+      "url": "/news/301764/can-intuitive-surgical-sustain-robust-top-line-growth-in-2026",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stryker declares an $0.88 per share quarterly dividend",
+      "url": "/news/299050/stryker-declares-an-088-per-share-quarterly-dividend",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Mercury Systems Q2 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/1d954de9-ff4b-3f12-8b4a-7478267f42d7/mercury-systems-q2-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Piper Sandler Maintains Overweight Rating on Stryker Corporation (SYK)",
+      "url": "/news/293956/piper-sandler-maintains-overweight-rating-on-stryker-corporation-syk",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-30",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Health Care Roundup: Market Talk",
+      "url": "https://finance.yahoo.com/m/fe5b55c2-abf6-3e72-8787-288be67de535/health-care-roundup%3A-market.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "SYK Stock Gains as Q4 Earnings & Sales Beat on Strong Mako Adoption",
+      "url": "/news/293738/syk-stock-gains-as-q4-earnings-sales-beat-on-strong-mako-adoption",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stryker enters 2026 with strong momentum after FY25 revenue eclipses $25bn",
+      "url": "https://finance.yahoo.com/m/fc98a241-66b4-367c-a8ac-409fc6bd384a/stryker-enters-2026-with.html",
+      "publisher": "Medical Device Network",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stryker Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/2f5d0dcc-47b4-388e-a803-67365819e8d6/stryker-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stryker Corp (SYK) Q4 2025 Earnings Call Highlights: Record Revenue and Robust Growth Amid ...",
+      "url": "https://finance.yahoo.com/news/stryker-corp-syk-q4-2025-050406989.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Stryker Corporation",
+      "url": "https://finance.yahoo.com/m/28087911-980e-34ac-9f58-9e14089bb6ca/analyst-report%3A-stryker.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Compared to Estimates, Stryker (SYK) Q4 Earnings: A Look at Key Metrics",
+      "url": "/news/292839/compared-to-estimates-stryker-syk-q4-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stryker (SYK) Surpasses Q4 Earnings and Revenue Estimates",
+      "url": "/news/292740/stryker-syk-surpasses-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stryker's (NYSE:SYK) Q4 CY2025 Sales Top Estimates",
+      "url": "/news/292683/strykers-nyse-syk-q4-cy2025-sales-top-estimates",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stryker shares higher as fourth quarter results beat expectations",
+      "url": "https://finance.yahoo.com/news/stryker-shares-higher-fourth-quarter-215641569.html",
+      "publisher": "Investing.com",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stryker: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/stryker-q4-earnings-snapshot-212913989.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stryker reports 2025 operating results and 2026 outlook",
+      "url": "/news/292568/stryker-reports-2025-operating-results-and-2026-outlook",
+      "publisher": "GlobeNewswire",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "SYK's Q4 Results Likely to Reflect Procedure Growth and Capital Demand",
+      "url": "/news/290006/syks-q4-results-likely-to-reflect-procedure-growth-and-capital-demand",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What To Expect From Stryker's (SYK) Q4 Earnings",
+      "url": "/news/289368/what-to-expect-from-strykers-syk-q4-earnings",
+      "publisher": "StockStory",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Target upgraded, Stryker downgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/target-upgraded-stryker-downgraded-wall-143753830.html",
+      "publisher": "The Fly",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "AVNS & Siemens Healthineers Team Up on Advanced Integrated Pain Care",
+      "url": "/news/287146/avns-siemens-healthineers-team-up-on-advanced-integrated-pain-care",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    }
+  ]
 }

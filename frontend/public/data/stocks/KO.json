@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 97.43450953726581,
-    "stoch_d": 95.17757184813053,
+    "stoch_d": 95.17757184813054,
     "trend_score": 68.75675793428093,
     "rsi_abs_score": 26.207151068695964,
     "macd_abs_score": 69.7237317978804,
@@ -6306,7 +6306,15 @@
     "technical_score": 56.733074804192434,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.09549749384771067,
+    "sentiment_pos": 0.0917,
+    "sentiment_neg": 0.04095,
+    "sentiment_neu": 0.8674,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 54.77
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": -0.00037960268252563756,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 40.045808574999995,
     "catalyst_timeline": 56.66923271797923,
     "downside_control": 47.08237769988902,
-    "composite_score": 57.1332155993873,
+    "composite_score": 57.12932655408886,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 61.294129085097,
     "technical_score": 56.733074804192434,
-    "sentiment_score": 50.0,
+    "sentiment_score": 54.77,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Staples",
     "industry": "Soft Drinks & Non-alcoholic Beverages"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Consumer Staples Are Massively Outperforming the Market-Here's Why",
+      "url": "/news/303818/consumer-staples-are-massively-outperforming-the-market-heres-why",
+      "publisher": "MarketBeat",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dow 50,000 sets table for inflation data, delayed January jobs report: What to watch this week",
+      "url": "https://finance.yahoo.com/news/dow-50000-sets-table-for-inflation-data-delayed-january-jobs-report-what-to-watch-this-week-123826626.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "What to Expect in Markets This Week: January Jobs Report, Inflation and Retail Sales Data; Earnings From Cisco, Coca-Cola, McDonalds",
+      "url": "https://finance.yahoo.com/m/a9ca561d-8175-34ea-a04c-40cec25e75cb/what-to-expect-in-markets.html",
+      "publisher": "Investopedia",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Follow the smart money to the makers of these favorite snack foods and drinks",
+      "url": "https://finance.yahoo.com/m/2f6099f2-72b8-341a-b4f8-2758226f52d9/follow-the-smart-money-to-the.html",
+      "publisher": "MarketWatch",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's How Much Traders Expect Coca-Cola Stock Could Move After Earnings Tuesday",
+      "url": "https://finance.yahoo.com/m/653529ad-f676-310e-88b7-4311a3be6976/here%27s-how-much-traders.html",
+      "publisher": "Investopedia",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Super Bowl LX, Coinbase earnings, jobs data & CPI: What to Watch",
+      "url": "https://finance.yahoo.com/video/super-bowl-lx-coinbase-earnings-000012395.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jobs Report, CPI Data: What to Watch Next Week",
+      "url": "https://finance.yahoo.com/m/5e5a76be-cde7-3066-bdef-30523ee18e4d/jobs-report%2C-cpi-data%3A-what.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Earnings live: Amazon, Reddit stocks sink to cap jam-packed earnings week",
+      "url": "https://finance.yahoo.com/news/live/earnings-live-amazon-reddit-stocks-sink-to-cap-jam-packed-earnings-week-213155571.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Coca Cola Retires Minute Maid Frozen Juice After 80 Years",
+      "url": "https://finance.yahoo.com/news/coca-cola-retires-minute-maid-170117048.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Rotation into Consumer Staples: Defensive Strength in an Uncertain 2026",
+      "url": "/news/303136/the-rotation-into-consumer-staples-defensive-strength-in-an-uncertain-2026",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Coca-Cola Pre-Q4 Earnings: Does It Offer a Buying Opportunity Now?",
+      "url": "/news/303095/coca-cola-pre-q4-earnings-does-it-offer-a-buying-opportunity-now",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Pre-Markets Open in Green to Close the Week",
+      "url": "/news/303074/pre-markets-open-in-green-to-close-the-week",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pre-Markets Rebounding Ahead of Super Bowl Sunday",
+      "url": "/news/303013/pre-markets-rebounding-ahead-of-super-bowl-sunday",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Low Volatility ETFs to Watch Amid Major Tech Sell-Off Over AI Panic",
+      "url": "/news/302877/low-volatility-etfs-to-watch-amid-major-tech-sell-off-over-ai-panic",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Tech stock shakeout clouds market ahead of economic data deluge",
+      "url": "https://finance.yahoo.com/news/tech-stock-shakeout-clouds-market-110520808.html",
+      "publisher": "Reuters",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Deutsche Bank Lifts Coca-Cola (KO) Target Ahead of Q4 Earnings",
+      "url": "/news/301966/deutsche-bank-lifts-coca-cola-ko-target-ahead-of-q4-earnings",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PepsiCo's Productivity Strategy: A Catalyst for EPS Expansion?",
+      "url": "/news/301967/pepsicos-productivity-strategy-a-catalyst-for-eps-expansion",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Minute Maid is discontinuing frozen juices after 80 years",
+      "url": "https://finance.yahoo.com/m/b6efd575-8188-39bc-a874-d9a4cd6cee99/minute-maid-is-discontinuing.html",
+      "publisher": "USA TODAY",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pepsi Pops as Investors Take Notice of Key Strategic Initiatives",
+      "url": "/news/301753/pepsi-pops-as-investors-take-notice-of-key-strategic-initiatives",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Mid Cap Dividend Stocks Are Gaining an Edge Over Large Caps This Year",
+      "url": "https://finance.yahoo.com/m/cf0e32d6-82eb-3375-8e40-0291e3d92714/why-mid-cap-dividend-stocks.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    }
+  ]
 }

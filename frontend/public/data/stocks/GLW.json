@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 93.43652046441294,
-    "stoch_d": 85.69204777243672,
+    "stoch_d": 85.69204777243671,
     "trend_score": 94.5049572521975,
     "rsi_abs_score": 37.0116320366175,
     "macd_abs_score": 80.0,
@@ -6306,7 +6306,15 @@
     "technical_score": 59.70323198115187,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.048844964108933527,
+    "sentiment_pos": 0.06515,
+    "sentiment_neg": 0.02865,
+    "sentiment_neu": 0.9061999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 52.44
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": -0.017681728880157142,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 43.596531,
     "catalyst_timeline": 67.28587522488952,
     "downside_control": 39.635012499999995,
-    "composite_score": 56.94227667885842,
+    "composite_score": 56.93838763355999,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 62.04819726190476,
     "technical_score": 59.70323198115187,
-    "sentiment_score": 50.0,
+    "sentiment_score": 52.44,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Electronic Components"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Corning (GLW) Jumps 18.3%, Hits All-Time High on Stellar Earnings, New Billion-Dollar Deal",
+      "url": "/news/303515/corning-glw-jumps-183-hits-all-time-high-on-stellar-earnings-new-billion-dollar-deal",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why a 175-Year-Old Glassmaker Is Suddenly an AI Superstar",
+      "url": "https://finance.yahoo.com/m/fe09553a-3a5a-3969-9cd6-a6c627cd66e8/why-a-175-year-old-glassmaker.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Corning Stock Has First Record Close Since the Dot-Com Bubble",
+      "url": "https://finance.yahoo.com/m/83746cf4-83ed-3eb7-a000-56ff95bcfe38/corning-stock-has-first.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Corning Stock on Track for First Record Close Since the Dot-Com Bubble",
+      "url": "https://www.barrons.com/articles/corning-stock-price-record-high-bubble-dot-com-ai-e59c4fd7?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Corning Stock Is on Track for First Record Closing High Since 2000",
+      "url": "https://finance.yahoo.com/m/83746cf4-83ed-3eb7-a000-56ff95bcfe38/corning-stock-is-on-track-for.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Corning Stock Is on Track for First Record High Since 2000",
+      "url": "https://www.barrons.com/articles/corning-stock-price-record-high-e59c4fd7?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NETGEAR Q4 Earnings & Revenues Beat Estimates, Q1 Guidance Provided",
+      "url": "/news/301436/netgear-q4-earnings-revenues-beat-estimates-q1-guidance-provided",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Corning (GLW) Among Hidden Winners To Watch In AI Investing Space",
+      "url": "https://finance.yahoo.com/m/054473d4-a0b8-3b21-88fd-ad7918c8adee/corning-%28glw%29-among-hidden.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Corning (GLW) is a Top Growth Stock for the Long-Term",
+      "url": "/news/299596/why-corning-glw-is-a-top-growth-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "5 Insightful Analyst Questions From Corning's Q4 Earnings Call",
+      "url": "/news/298661/5-insightful-analyst-questions-from-cornings-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Corning Incorporated",
+      "url": "https://finance.yahoo.com/m/d29e69bf-efcd-3c99-bf28-10784bca8cf4/analyst-report%3A-corning.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Should Corning Be in Your Portfolio Post Strong Q4 Earnings?",
+      "url": "/news/297518/should-corning-be-in-your-portfolio-post-strong-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Trump announces $12bn critical mineral stockpile to reduce reliance on China",
+      "url": "https://finance.yahoo.com/m/2d289dbc-dc93-3b72-a483-d8a9f64c7881/trump-announces-%2412bn.html",
+      "publisher": "Mining Technology",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Is Wall Street Bullish or Bearish on Corning Stock?",
+      "url": "https://finance.yahoo.com/m/3caf3629-f1c9-31e6-9a9a-56c19b75d52e/is-wall-street-bullish-or.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Corning (GLW) Climbs 6.87% on Rare Earths Devt Support",
+      "url": "/news/296641/corning-glw-climbs-687-on-rare-earths-devt-support",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "This Super Semiconductor Company Just Struck a $6 Billion AI Deal With Meta Platforms",
+      "url": "/news/296337/this-super-semiconductor-company-just-struck-a-6-billion-ai-deal-with-meta-platforms",
+      "publisher": "Motley Fool",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Trump Unveils $12 Billion Critical-Minerals Stockpile Plan",
+      "url": "https://finance.yahoo.com/news/trump-unveils-12-billion-critical-192003613.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Trump Reportedly Set To Launch $12 Billion Critical Mineral Stockpile To Counter China: AAPL, GM, GOOG, BA In Focus",
+      "url": "/news/295395/trump-reportedly-set-to-launch-12-billion-critical-mineral-stockpile-to-counter-china-aapl-gm-goog-ba-in-focus",
+      "publisher": "Benzinga",
+      "date": "2026-02-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Trump to Launch $12 Billion Critical Mineral Stockpile to Blunt Reliance on China",
+      "url": "https://finance.yahoo.com/news/trump-launches-12-billion-minerals-120104530.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Jim Cramer Discusses Major Potential Catalyst For Corning (GLW)",
+      "url": "/news/294387/jim-cramer-discusses-major-potential-catalyst-for-corning-glw",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-31",
+      "sentiment": "neutral"
+    }
+  ]
 }

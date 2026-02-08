@@ -6279,7 +6279,7 @@
     "close": 231.52999877929688,
     "sma_20": 200.73799896240237,
     "sma_50": 190.5688003540039,
-    "sma_200": 178.48543685913086,
+    "sma_200": 178.48543685913083,
     "trend_alignment": 0.837227880203867,
     "rsi": 83.65427333795041,
     "rsi_score": 0.6730854667590083,
@@ -6306,7 +6306,15 @@
     "technical_score": 56.78273986473787,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.0558622652535118,
+    "sentiment_pos": 0.07635,
+    "sentiment_neg": 0.05135000000000001,
+    "sentiment_neu": 0.8723000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 52.79
+  },
   "analyst": {
     "revision_momentum": 0.1875,
     "target_upside": 0.006349069235088321,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 37.397343255,
     "catalyst_timeline": 61.76218408172784,
     "downside_control": 39.22471659500523,
-    "composite_score": 46.0522512763358,
+    "composite_score": 46.048362231037366,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 45.94253604583333,
     "technical_score": 56.78273986473787,
-    "sentiment_score": 50.0,
+    "sentiment_score": 52.79,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Staples",
     "industry": "Packaged Foods & Meats"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Hershey Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/98cc071b-d437-37d0-9a2f-09ea66cf19e0/hershey-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Newell Q4 Earnings Meet Estimates, Core Sales Decline 4.1% Y/Y",
+      "url": "/news/303219/newell-q4-earnings-meet-estimates-core-sales-decline-41-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Philip Morris Q4 Earnings Beat Estimates, Revenues Grow 6.8% Y/Y",
+      "url": "/news/303046/philip-morris-q4-earnings-beat-estimates-revenues-grow-68-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hershey positions for lower volume sensitivity from inflation pricing",
+      "url": "https://finance.yahoo.com/m/5158fd51-d633-3e5b-90b8-a3e30886573b/hershey-positions-for-%E2%80%9Clower.html",
+      "publisher": "Just Food",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "The Hershey Company (HSY) Climbs to 52-Week High Ahead of Dividends",
+      "url": "/news/302412/the-hershey-company-hsy-climbs-to-52-week-high-ahead-of-dividends",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "HSY Q4 Deep Dive: Category Investment and Cocoa Dynamics Shape Recovery Path",
+      "url": "/news/302491/hsy-q4-deep-dive-category-investment-and-cocoa-dynamics-shape-recovery-path",
+      "publisher": "StockStory",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: The Hershey Company",
+      "url": "https://finance.yahoo.com/m/1141c793-5289-3207-be15-ad946f6d1dbd/analyst-report%3A-the-hershey.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hershey Stock Continues to Soar. This Is Why.",
+      "url": "https://www.barrons.com/articles/hershey-stock-earnings-41f7db9e?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Hershey Co (HSY) Q4 2025 Earnings Call Highlights: Navigating Growth Amid Cocoa Challenges",
+      "url": "https://finance.yahoo.com/news/hershey-co-hsy-q4-2025-210547358.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Nasdaq drags major indexes lower as Alphabet spending plans spook investors",
+      "url": "https://finance.yahoo.com/m/a2c71fad-25ff-3f3f-8ed6-ca2b119ca9ee/nasdaq-drags-major-indexes.html",
+      "publisher": "Proactive",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Cocoa Prices Settle Sharply Higher as Demand Fears Ease",
+      "url": "https://finance.yahoo.com/m/015533c3-e4e5-3a4c-b041-c707e28bd1c4/cocoa-prices-settle-sharply.html",
+      "publisher": "Barchart",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Deutsche Bank Lifts Hershey (HSY) Target but Stays on the Sidelines Ahead of Q4",
+      "url": "/news/301948/deutsche-bank-lifts-hershey-hsy-target-but-stays-on-the-sidelines-ahead-of-q4",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Good Sign For Valentine's Day? Hershey Jumps Past Buy Point On Earnings, Outlook",
+      "url": "https://finance.yahoo.com/m/d43e72c4-55ee-3b0a-83bb-e53e9ad60da7/good-sign-for-valentine%27s.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cocoa Prices Rise as Hershey Allays Cocoa Demand Concerns",
+      "url": "https://finance.yahoo.com/m/88b8abf5-fb21-3b84-a0a3-11762e6dac5b/cocoa-prices-rise-as-hershey.html",
+      "publisher": "Barchart",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Hershey (HSY) Is Up 1.86% in One Week: What You Should Know",
+      "url": "/news/301865/hershey-hsy-is-up-186-in-one-week-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hershey shares jump after strong Q4, optimistic 2026 outlook",
+      "url": "https://finance.yahoo.com/m/f7525136-5ffc-3993-9785-23793aacb65b/hershey-shares-jump-after.html",
+      "publisher": "Proactive",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Weekly Jobless Claims Exceed Expectations",
+      "url": "/news/301789/weekly-jobless-claims-exceed-expectations",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hershey Says It Is Coping With Food Stamp Clampdown",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-02-05-2026/card/hershey-says-it-is-coping-with-food-stamp-clampdown-Udp1jx1EzOVuemBGjAqI?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jobless Claims Pop Up a Bit, Major Morning for Earnings",
+      "url": "/news/301755/jobless-claims-pop-up-a-bit-major-morning-for-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hershey Q4 Earnings Top Estimates, Organic Sales Rise on Pricing",
+      "url": "/news/301667/hershey-q4-earnings-top-estimates-organic-sales-rise-on-pricing",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    }
+  ]
 }

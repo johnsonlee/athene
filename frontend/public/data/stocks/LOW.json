@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 278.3800048828125,
-    "sma_20": 273.54370574951173,
+    "sma_20": 273.5437057495118,
     "sma_50": 256.4411950683594,
     "sma_200": 239.813928604126,
     "trend_alignment": 0.7000368232848428,
@@ -6286,27 +6286,35 @@
     "macd_histogram": -0.41663103741205276,
     "macd_line": 5.844873976241786,
     "macd_histogram_pct": -0.14966270209939783,
-    "bb_position": 0.8070597858444915,
-    "bb_upper": 281.4188808070331,
-    "bb_lower": 265.6685306919904,
-    "bb_width": 0.057578916217014095,
+    "bb_position": 0.8070597858444878,
+    "bb_upper": 281.41888080703313,
+    "bb_lower": 265.66853069199044,
+    "bb_width": 0.05757891621701408,
     "hist_volatility": 0.23520393707427747,
     "volume_ratio": 0.7620091022156075,
     "avg_volume_20d": 2902590.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 77.83137094180097,
+    "stoch_k": 77.83137094180098,
     "stoch_d": 72.7246535992962,
     "trend_score": 70.00368232848429,
     "rsi_abs_score": 67.7885058837196,
     "macd_abs_score": 43.758432447515055,
     "momentum_score": 55.77346916561733,
-    "volatility_score": 67.19119053567985,
+    "volatility_score": 67.19119053567987,
     "volume_score": 50.0,
     "technical_score": 61.17138355536646,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.004420561738791883,
+    "sentiment_pos": 0.12115000000000001,
+    "sentiment_neg": 0.10170000000000001,
+    "sentiment_neu": 0.7772,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 50.22
+  },
   "analyst": {
     "revision_momentum": 0.09090909090909091,
     "target_upside": 0.01300380774480927,
@@ -6327,7 +6335,7 @@
     "safety_score": 39.76390277527719,
     "trend_score": 70.00368232848429,
     "momentum_score": 55.77346916561733,
-    "volatility_score": 67.19119053567985,
+    "volatility_score": 67.19119053567987,
     "volume_score": 50.0,
     "analyst_score": 54.257418088420664,
     "pe_score": 57.388242500000004,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 70.17843065,
     "catalyst_timeline": 58.225456958252224,
     "downside_control": 55.34826399664355,
-    "composite_score": 60.04024164750718,
+    "composite_score": 60.036352602208744,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 56.051489730055444,
     "technical_score": 61.17138355536646,
-    "sentiment_score": 50.0,
+    "sentiment_score": 50.22,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Home Improvement Retail"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Lowe's makes major change to how you interact with its stores",
+      "url": "https://finance.yahoo.com/m/c29f4cc1-f8cc-3fc6-8b1e-c58f1b4c8f64/lowe%27s-makes-major-change-to.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Lowe's (LOW) Gains But Lags Market: What You Should Know",
+      "url": "/news/303432/lowes-low-gains-but-lags-market-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Callaway Golf and Albany International have been highlighted as Zacks Bull and Bear of the Day",
+      "url": "/news/301666/callaway-golf-and-albany-international-have-been-highlighted-as-zacks-bull-and-bear-of-the-day",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Lowe's Launches MyLowe's Rewards Kids Club to Build Stronger Connections with Families",
+      "url": "/news/301120/lowes-launches-mylowes-rewards-kids-club-to-build-stronger-connections-with-families",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Lowe's Companies, Inc. (LOW) Is a Trending Stock: Facts to Know Before Betting on It",
+      "url": "/news/299405/lowes-companies-inc-low-is-a-trending-stock-facts-to-know-before-betting-on-it",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Here's Why Home Depot's Pro Strategy Is a Long-Term Growth Lever",
+      "url": "/news/299346/heres-why-home-depots-pro-strategy-is-a-long-term-growth-lever",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "TD Cowen Reviews Lowe's (LOW) within Broader Hardlines Reset",
+      "url": "/news/297396/td-cowen-reviews-lowes-low-within-broader-hardlines-reset",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Home Depot finds a new way to beat Lowe's",
+      "url": "https://finance.yahoo.com/m/bf28c6f9-1dcb-329a-999e-2f84b52d471b/home-depot-finds-a-new-way-to.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-01",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "From janitor to CEO: 4 lessons on rising up the corporate ranks, and why they matter for todays workers",
+      "url": "https://finance.yahoo.com/news/janitor-ceo-4-lessons-rising-121500201.html",
+      "publisher": "Moneywise",
+      "date": "2026-02-01",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "This Winning Fund Pro Likes J&J, Lowe's, and Utility Stocks",
+      "url": "https://www.barrons.com/articles/jnj-lowes-utilities-large-cap-stocks-e9ce45a7?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Sherwin-Williams Stock Slips. Earnings Paint a Grim Picture of Customer Spending.",
+      "url": "https://www.barrons.com/articles/sherwin-williams-earnings-stock-price-52531217?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "3 Reasons to Sell LOW and 1 Stock to Buy Instead",
+      "url": "/news/292943/3-reasons-to-sell-low-and-1-stock-to-buy-instead",
+      "publisher": "StockStory",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Home Depot makes two major changes to win back customers",
+      "url": "https://finance.yahoo.com/m/870e1794-c963-3b30-b81d-9fac363fd5c2/home-depot-makes-two-major.html",
+      "publisher": "TheStreet",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why Lowe's (LOW) Fell More Than Broader Market",
+      "url": "/news/290924/heres-why-lowes-low-fell-more-than-broader-market",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Synchrony Financial Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/d2356639-038d-36e8-bd02-c8ad30a47a11/synchrony-financial-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "It's Cold Outside. And That Just Might Warm Up These Stocks.",
+      "url": "https://www.barrons.com/articles/home-depot-lowes-costco-tractor-supply-snow-storm-sales-25ac653e?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is Home Depot Still a Long-Term Winner Despite 2025 EPS Decline?",
+      "url": "/news/288623/is-home-depot-still-a-long-term-winner-despite-2025-eps-decline",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Winter Storm Fern Threatens Disruptions Across US: Here Are Businesses, Stocks Likely To Be Impacted",
+      "url": "/news/286271/winter-storm-fern-threatens-disruptions-across-us-here-are-businesses-stocks-likely-to-be-impacted",
+      "publisher": "Benzinga",
+      "date": "2026-01-25",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Is Lowe's (LOW) a Buy as Wall Street Analysts Look Optimistic?",
+      "url": "/news/284003/is-lowes-low-a-buy-as-wall-street-analysts-look-optimistic",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Home Depot and Lowe's quietly gain new rival",
+      "url": "https://finance.yahoo.com/m/57122fef-d91d-37a7-b5d5-2a3dfdd0ce4a/home-depot-and-lowe%27s-quietly.html",
+      "publisher": "TheStreet",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    }
+  ]
 }

@@ -6279,8 +6279,8 @@
     "close": 238.3800048828125,
     "sma_20": 223.1235023498535,
     "sma_50": 206.95820098876953,
-    "sma_200": 204.2756324005127,
-    "trend_alignment": 0.7391987957443253,
+    "sma_200": 204.27563240051273,
+    "trend_alignment": 0.7391987957443252,
     "rsi": 76.81890887052256,
     "rsi_score": 0.5363781774104512,
     "macd_histogram": 1.119306881383773,
@@ -6306,7 +6306,15 @@
     "technical_score": 57.15049678419174,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.15784230699696816,
+    "sentiment_pos": 0.0959,
+    "sentiment_neg": 0.0097,
+    "sentiment_neu": 0.8943999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 57.89
+  },
   "analyst": {
     "revision_momentum": 0.07142857142857142,
     "target_upside": 0.006795872136924258,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 43.7126261,
     "catalyst_timeline": 58.073138098011704,
     "downside_control": 45.41103784476888,
-    "composite_score": 47.53999927349161,
+    "composite_score": 47.536110228193174,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 48.723136159092945,
     "technical_score": 57.15049678419174,
-    "sentiment_score": 50.0,
+    "sentiment_score": 57.89,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Industrial Conglomerates"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Transforming Physical Security with AI: Ambient.ai CEO Shikhar Shrestha, Live at NYSE",
+      "url": "https://finance.yahoo.com/m/c87becb7-c52d-32f9-baec-4bb2b5b007bd/transforming-physical.html",
+      "publisher": "Exec Edge",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Quantum Computing 2026 Outlook: 2 Stocks for Long-Term Upside",
+      "url": "/news/303228/quantum-computing-2026-outlook-2-stocks-for-long-term-upside",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jim Cramer Discusses Honeywell (HON)'s Aerospace Spinoff",
+      "url": "/news/302686/jim-cramer-discusses-honeywell-hons-aerospace-spinoff",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Robot Revolution Is Real. Tesla, Hyundai, and More Stocks to Play It.",
+      "url": "https://www.barrons.com/articles/ai-robots-tesla-hyundai-stocks-6629c2c3?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "SSUMY or HON: Which Is the Better Value Stock Right Now?",
+      "url": "/news/301826/ssumy-or-hon-which-is-the-better-value-stock-right-now",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "2 Top Dow Stocks to Buy Now for Calm in the Storm",
+      "url": "https://finance.yahoo.com/m/5329ac41-2970-3c76-bdef-6af431e4379d/2-top-dow-stocks-to-buy-now.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "HONEYWELL ANNOUNCES PARTICIPATION AT UPCOMING INVESTOR CONFERENCES",
+      "url": "/news/299040/honeywell-announces-participation-at-upcoming-investor-conferences",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Prediction: 5 Quantum Computing Stocks That Will Be Worth More Than IonQ 5 Years From Now",
+      "url": "/news/298887/prediction-5-quantum-computing-stocks-that-will-be-worth-more-than-ionq-5-years-from-now",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Honeywell International Inc. (HON): A Bull Case Theory",
+      "url": "/news/298518/honeywell-international-inc-hon-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Zacks Analyst Blog Highlights Exxon Mobil, Lockheed Martin, Honeywell International and AMREP",
+      "url": "/news/297869/the-zacks-analyst-blog-highlights-exxon-mobil-lockheed-martin-honeywell-international-and-amrep",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Top Stock Reports for Exxon Mobil, Lockheed Martin & Honeywell",
+      "url": "/news/296233/top-stock-reports-for-exxon-mobil-lockheed-martin-honeywell",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "These Industrials Lead Dow Jones Stocks Through January; Apple, Microsoft Lag",
+      "url": "https://finance.yahoo.com/m/d209d769-399b-387a-a489-b0b99b5dabf5/these-industrials-lead-dow.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Jim Cramer Is Enthusiastic About Honeywell's (HON) Quantum Spinoff",
+      "url": "/news/294522/jim-cramer-is-enthusiastic-about-honeywells-hon-quantum-spinoff",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "GE Vernova, Honeywell, And Two Others Hit Highs And Buy Points",
+      "url": "https://www.investors.com/stock-lists/new-highs/ge-vernova-stock-gev-honeywell-hon-ciena-cien-dht?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Heard on the Street Thursday Recap: Gold Swings",
+      "url": "https://finance.yahoo.com/m/9e49bb7e-fbf6-38c0-8cdc-21667deadca9/heard-on-the-street-thursday.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "HON Q4 Deep Dive: Portfolio Simplification, Automation Momentum, and Margin Management",
+      "url": "/news/293186/hon-q4-deep-dive-portfolio-simplification-automation-momentum-and-margin-management",
+      "publisher": "StockStory",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Was the Market Down Today?",
+      "url": "https://finance.yahoo.com/m/ebdff55b-13e2-3753-98c8-0fa563372f1c/why-was-the-market-down-today%3F.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Honeywell International Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/0710ee33-b617-3f84-9620-87d141ec695d/honeywell-international-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Microsoft Rout Weighs on the Broader Market",
+      "url": "https://finance.yahoo.com/m/57cec5ad-0d77-3a09-b508-a7dd475295fe/microsoft-rout-weighs-on-the.html",
+      "publisher": "Barchart",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Honeywell International Inc (HON) Q4 2025 Earnings Call Highlights: Strong Growth and Strategic ...",
+      "url": "https://finance.yahoo.com/news/honeywell-international-inc-hon-q4-210223530.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    }
+  ]
 }

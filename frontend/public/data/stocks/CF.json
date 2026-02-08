@@ -6295,8 +6295,8 @@
     "avg_volume_20d": 2396060.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 63.36279818813773,
-    "stoch_d": 72.52942668356849,
+    "stoch_k": 63.36279818813774,
+    "stoch_d": 72.5294266835685,
     "trend_score": 63.3558927632375,
     "rsi_abs_score": 71.5809987288448,
     "macd_abs_score": 43.00965254492427,
@@ -6306,7 +6306,15 @@
     "technical_score": 54.07149824809998,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.17604653976992216,
+    "sentiment_pos": 0.11995,
+    "sentiment_neg": 0.0164,
+    "sentiment_neu": 0.86365,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 58.8
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": -0.017702936096718486,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 71.46511776571428,
     "catalyst_timeline": 55.53906128733517,
     "downside_control": 60.570522833780636,
-    "composite_score": 72.05771800622193,
+    "composite_score": 72.0538289609235,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 78.46868252173938,
     "technical_score": 54.07149824809998,
-    "sentiment_score": 50.0,
+    "sentiment_score": 58.8,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Materials",
     "industry": "Fertilizers & Agricultural Chemicals"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Fairholme Focused Income Fund's Strategic Move: Significant Addition of CF Industries Holdings Inc",
+      "url": "https://finance.yahoo.com/news/fairholme-focused-income-funds-strategic-220636118.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PayPal downgraded, Five Below upgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/paypal-downgraded-five-below-upgraded-143348578.html",
+      "publisher": "The Fly",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Booking Is February's Seasonal Leader, With Nvidia And 5 Stocks Joining The Trade",
+      "url": "/news/295803/booking-is-februarys-seasonal-leader-with-nvidia-and-5-stocks-joining-the-trade",
+      "publisher": "Benzinga",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CF Industries Holdings, Inc. Declares Quarterly Dividend and Confirms Dates for Fourth Quarter 2025 Results and Conference Call",
+      "url": "https://www.businesswire.com/news/home/20260127485733/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Gold and Silver Aren't the Only Hot Commodities. Agricultural Stocks to Consider.",
+      "url": "https://www.barrons.com/articles/agricultural-stocks-commodities-technical-analysis-9d525ecd?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CF & POET Partner to Advance Low-Carbon Pathway for U.S. Ethanol",
+      "url": "/news/288265/cf-poet-partner-to-advance-low-carbon-pathway-for-us-ethanol",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CF Industries, POET, and Major Agriculture Co-Operatives Launch Low-Carbon Fertilizer Pilot to Cut Ethanol Production Carbon Intensity",
+      "url": "https://www.businesswire.com/news/home/20260126055599/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-26",
+      "sentiment": "negative"
+    },
+    {
+      "title": "CF Industries Gains on Healthy Nitrogen Demand and Higher Prices",
+      "url": "/news/287126/cf-industries-gains-on-healthy-nitrogen-demand-and-higher-prices",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why CF Industries (CF) is a Top Momentum Stock for the Long-Term",
+      "url": "/news/287103/why-cf-industries-cf-is-a-top-momentum-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Zacks Industry Outlook Highlights Nutrien, CF Industries Holdings and Intrepid Potash",
+      "url": "/news/286475/zacks-industry-outlook-highlights-nutrien-cf-industries-holdings-and-intrepid-potash",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Top Fertilizer Stocks to Watch From a Promising Industry",
+      "url": "/news/285205/3-top-fertilizer-stocks-to-watch-from-a-promising-industry",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CF Industries Holdings, Inc. Announces Planned Schedule for Quarterly Financial Results to be Released in 2026",
+      "url": "https://www.businesswire.com/news/home/20260121700364/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: CF Industries Holdings, Inc.",
+      "url": "https://finance.yahoo.com/m/2f161943-1b4d-3ab7-b85e-9f389b1bdc84/analyst-report%3A-cf-industries.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CF Industries and Shake Shack have been highlighted as Zacks Bull and Bear of the Day",
+      "url": "/news/280227/cf-industries-and-shake-shack-have-been-highlighted-as-zacks-bull-and-bear-of-the-day",
+      "publisher": "Zacks",
+      "date": "2026-01-19",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Bull of the Day: CF Industries (CF)",
+      "url": "/news/280051/bull-of-the-day-cf-industries-cf",
+      "publisher": "Zacks",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Earnings Preview: What to Expect From CF Industries Report",
+      "url": "https://finance.yahoo.com/m/0268a505-a6dd-3f1f-96e2-980fd65f1dfe/earnings-preview%3A-what-to.html",
+      "publisher": "Barchart",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Strength Seen in Nutrien (NTR): Can Its 7.9% Jump Turn into More Strength?",
+      "url": "/news/277017/strength-seen-in-nutrien-ntr-can-its-79-jump-turn-into-more-strength",
+      "publisher": "Zacks",
+      "date": "2026-01-15",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Best Value Stocks to Buy for Jan.13",
+      "url": "/news/274417/best-value-stocks-to-buy-for-jan13",
+      "publisher": "Zacks",
+      "date": "2026-01-13",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CF Industries Holdings, Inc. (CF) Expands Ammonia Strategy Amid Analyst Downgrades",
+      "url": "/news/271257/cf-industries-holdings-inc-cf-expands-ammonia-strategy-amid-analyst-downgrades",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CF Industries (CF) is a Top-Ranked Momentum Stock: Should You Buy?",
+      "url": "/news/269616/cf-industries-cf-is-a-top-ranked-momentum-stock-should-you-buy",
+      "publisher": "Zacks",
+      "date": "2026-01-07",
+      "sentiment": "neutral"
+    }
+  ]
 }

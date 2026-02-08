@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 190.7100067138672,
     "sma_20": 185.5205017089844,
-    "sma_50": 181.3095867919922,
-    "sma_200": 178.0840464019776,
-    "trend_alignment": 0.5960281811146215,
+    "sma_50": 181.30958679199222,
+    "sma_200": 178.08404640197756,
+    "trend_alignment": 0.5960281811146217,
     "rsi": 62.018634484526956,
     "rsi_score": 0.24037268969053913,
     "macd_histogram": 0.6981310408162311,
@@ -6296,17 +6296,25 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 83.2928975468371,
-    "stoch_d": 80.85167928135813,
-    "trend_score": 59.602818111462156,
+    "stoch_d": 80.85167928135812,
+    "trend_score": 59.60281811146218,
     "rsi_abs_score": 70.08695586083113,
     "macd_abs_score": 61.651735832400185,
     "momentum_score": 65.86934584661566,
     "volatility_score": 59.34048368547434,
     "volume_score": 50.0,
-    "technical_score": 59.50974592451821,
+    "technical_score": 59.509745924518214,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.29048669580400555,
+    "sentiment_pos": 0.1312,
+    "sentiment_neg": 0.0147,
+    "sentiment_neu": 0.8541000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 64.52
+  },
   "analyst": {
     "revision_momentum": null,
     "target_upside": 0.06968695925751137,
@@ -6325,7 +6333,7 @@
     "quality_score": 59.37571428571428,
     "growth_score": 64.07142857142857,
     "safety_score": 45.615986614125994,
-    "trend_score": 59.602818111462156,
+    "trend_score": 59.60281811146218,
     "momentum_score": 65.86934584661566,
     "volatility_score": 59.34048368547434,
     "volume_score": 50.0,
@@ -6344,16 +6352,16 @@
     "current_ratio_score": 50.88799999999999,
     "earnings_visibility": 60.25807142857143,
     "valuation_margin": 61.70175444,
-    "catalyst_timeline": 59.86473743190971,
+    "catalyst_timeline": 59.86473743190972,
     "downside_control": 55.20247054494005,
-    "composite_score": 60.778120034395826,
+    "composite_score": 60.77423098909739,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 58.940230784729955,
-    "technical_score": 59.50974592451821,
-    "sentiment_score": 50.0,
+    "technical_score": 59.509745924518214,
+    "sentiment_score": 64.52,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Health Care Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Why Quest Diagnostics (DGX) is a Top Growth Stock for the Long-Term",
+      "url": "/news/302946/why-quest-diagnostics-dgx-is-a-top-growth-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's How Quest Diagnostics Is Placed Ahead of Q4 Earnings",
+      "url": "/news/302951/heres-how-quest-diagnostics-is-placed-ahead-of-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Quest Diagnostics (DGX) is a Strong Value Stock",
+      "url": "/news/301610/heres-why-quest-diagnostics-dgx-is-a-strong-value-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is Contineum Therapeutics, Inc. (CTNM) Stock Outpacing Its Medical Peers This Year?",
+      "url": "/news/299578/is-contineum-therapeutics-inc-ctnm-stock-outpacing-its-medical-peers-this-year",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "DaVita Stock Up Following Q4 Earnings & Revenue Beat, Margins Expand",
+      "url": "/news/297715/davita-stock-up-following-q4-earnings-revenue-beat-margins-expand",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Quest Diagnostics Launches Novel Flow Cytometry MRD Blood Test for Myeloma, Enabling Ultrasensitive Detection of Residual Disease",
+      "url": "/news/295405/quest-diagnostics-launches-novel-flow-cytometry-mrd-blood-test-for-myeloma-enabling-ultrasensitive-detection-of-residual-disease",
+      "publisher": "PR Newswire",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Spotify upgraded, Pinterest downgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/spotify-upgraded-pinterest-downgraded-wall-145401832.html",
+      "publisher": "The Fly",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "How TEM Is Capitalizing on AI-Driven Pathology Market Growth",
+      "url": "/news/287078/how-tem-is-capitalizing-on-ai-driven-pathology-market-growth",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Quest Diagnostics Named to Fortune's World's Most Admired Companies List for 12th Consecutive Year",
+      "url": "/news/282873/quest-diagnostics-named-to-fortunes-worlds-most-admired-companies-list-for-12th-consecutive-year",
+      "publisher": "PR Newswire",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Quest Diagnostics Incorporated",
+      "url": "https://finance.yahoo.com/m/d6c3cd69-795b-3f63-87f8-8981ec12e845/analyst-report%3A-quest.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Sonora Quest and Laboratory Sciences of Arizona Announce Jennifer Erickson as CEO-Elect",
+      "url": "/news/277358/sonora-quest-and-laboratory-sciences-of-arizona-announce-jennifer-erickson-as-ceo-elect",
+      "publisher": "PR Newswire",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Reasons to Sell DGX and 1 Stock to Buy Instead",
+      "url": "/news/275856/3-reasons-to-sell-dgx-and-1-stock-to-buy-instead",
+      "publisher": "StockStory",
+      "date": "2026-01-13",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Quest Diagnostics (DGX) is a Top Value Stock for the Long-Term",
+      "url": "/news/273793/why-quest-diagnostics-dgx-is-a-top-value-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-01-12",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Clinical Labs Hope to Head Off Looming Medicare Cuts",
+      "url": "https://www.barrons.com/articles/labs-medicare-cuts-congress-0efdafcd?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is it the Right Time to Add STERIS Stock to Your Portfolio?",
+      "url": "/news/272058/is-it-the-right-time-to-add-steris-stock-to-your-portfolio",
+      "publisher": "Zacks",
+      "date": "2026-01-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tempus AI Stock Surges 82.4% in a Year: What's Driving It?",
+      "url": "/news/271911/tempus-ai-stock-surges-824-in-a-year-whats-driving-it",
+      "publisher": "Zacks",
+      "date": "2026-01-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Quanterix Appoints Everett Cunningham as President and CEO Effective January 19, 2026",
+      "url": "https://www.businesswire.com/news/home/20260108322508/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Quest Diagnostics to Release Fourth Quarter and Full Year 2025 Financial Results on February 10, 2026",
+      "url": "/news/270801/quest-diagnostics-to-release-fourth-quarter-and-full-year-2025-financial-results-on-february-10-2026",
+      "publisher": "PR Newswire",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is Boston Scientific Stock a Smart Pick for Your Portfolio Right Now?",
+      "url": "/news/270720/is-boston-scientific-stock-a-smart-pick-for-your-portfolio-right-now",
+      "publisher": "Zacks",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is This the Right Time to Add Resmed Stock to Your Portfolio?",
+      "url": "/news/270630/is-this-the-right-time-to-add-resmed-stock-to-your-portfolio",
+      "publisher": "Zacks",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    }
+  ]
 }

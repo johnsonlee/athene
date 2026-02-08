@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 159.1699981689453,
     "sma_20": 149.8649154663086,
-    "sma_50": 145.44472290039067,
+    "sma_50": 145.44472290039064,
     "sma_200": 151.6755944061279,
-    "trend_alignment": 0.5975894041774588,
+    "trend_alignment": 0.597589404177459,
     "rsi": 76.07323393325416,
     "rsi_score": 0.5214646786650832,
     "macd_histogram": 1.1636808231157239,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 94.63855386217472,
     "stoch_d": 93.22555504820659,
-    "trend_score": 59.758940417745876,
+    "trend_score": 59.7589404177459,
     "rsi_abs_score": 37.85353213349168,
     "macd_abs_score": 68.46639602157227,
     "momentum_score": 53.159964077531974,
     "volatility_score": 58.325016628297334,
     "volume_score": 50.0,
-    "technical_score": 55.54067467424282,
+    "technical_score": 55.54067467424283,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.25390966182838004,
+    "sentiment_pos": 0.14995,
+    "sentiment_neg": 0.02085,
+    "sentiment_neu": 0.8291999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 62.7
+  },
   "analyst": {
     "revision_momentum": 0.1111111111111111,
     "target_upside": 0.06804045988565693,
@@ -6325,7 +6333,7 @@
     "quality_score": 83.212498875,
     "growth_score": 37.825,
     "safety_score": 46.52341796288191,
-    "trend_score": 59.758940417745876,
+    "trend_score": 59.7589404177459,
     "momentum_score": 53.159964077531974,
     "volatility_score": 58.325016628297334,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 49.05122333333333,
     "catalyst_timeline": 56.652684030594145,
     "downside_control": 52.862265188676886,
-    "composite_score": 55.85343250371782,
+    "composite_score": 55.84954345841938,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 57.306536032854154,
-    "technical_score": 55.54067467424282,
-    "sentiment_score": 50.0,
+    "technical_score": 55.54067467424283,
+    "sentiment_score": 62.7,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Staples",
     "industry": "Personal Care Products"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Procter & Gamble (PG) Stock \"Just Won't Quit,\" Says Jim Cramer",
+      "url": "/news/303581/procter-gamble-pg-stock-just-wont-quit-says-jim-cramer",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Wall Streets Hidden Warning: Why Smart Money Is Fleeing to These 5 Safe Havens",
+      "url": "https://finance.yahoo.com/m/92b07419-2b5e-3b29-a744-188d81ced943/wall-street%E2%80%99s-hidden-warning%3A.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here is What to Know Beyond Why Procter & Gamble Company (The) (PG) is a Trending Stock",
+      "url": "/news/302779/here-is-what-to-know-beyond-why-procter-gamble-company-the-pg-is-a-trending-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Mid Cap Dividend Stocks Are Gaining an Edge Over Large Caps This Year",
+      "url": "https://finance.yahoo.com/m/cf0e32d6-82eb-3375-8e40-0291e3d92714/why-mid-cap-dividend-stocks.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Downy Partners With Meijer to Bring Warmth to Children in Need Through Operation Warm",
+      "url": "https://www.businesswire.com/news/home/20260205897765/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Walmart, Costco, XLP Surge As BofA Flags Record Inflows Into Consumer Staples Amid Tech Selloff",
+      "url": "/news/300751/walmart-costco-xlp-surge-as-bofa-flags-record-inflows-into-consumer-staples-amid-tech-selloff",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Staples Stocks Are Stretched. One of the Market's Hottest Sectors Looks Way Too Frothy.",
+      "url": "https://www.barrons.com/articles/staples-stocks-walmart-costco-coke-382e6ae8?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Can Beauty & Personal Care Innovation Drive Procter & Gamble's Growth?",
+      "url": "/news/299761/can-beauty-personal-care-innovation-drive-procter-gambles-growth",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Gillette Venus Announces Partnership with U.S. Figure Skating at the Olympic Winter Games Milano Cortina 2026, for Unbelievably Smooth Skin",
+      "url": "https://www.businesswire.com/news/home/20260204269526/en/With",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Old Spices Most Sophisticated Cologne-Infused Scents Arrive Nationwide: Introducing the Spice Alchemist Collection",
+      "url": "https://www.businesswire.com/news/home/20260204485127/en/New",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Procter & Gamble Company (PG): A Bull Case Theory",
+      "url": "/news/298520/the-procter-gamble-company-pg-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PepsiCo CEO reveals how he is tackling weight-loss drugs and consumer affordability challenges",
+      "url": "https://finance.yahoo.com/news/pepsico-ceo-reveals-how-he-is-tackling-weight-loss-drugs-and-consumer-affordability-challenges-213011648.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PepsiCo to cut prices of Lay's, Doritos as consumers push back",
+      "url": "https://finance.yahoo.com/video/pepsico-cut-prices-lays-doritos-180303942.html",
+      "publisher": "Reuters Videos",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Walmart Joins $1 Trillion Club as Tech, Frugal Shoppers Fuel Gains",
+      "url": "https://finance.yahoo.com/news/walmart-joins-1-trillion-club-145237206.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "New Graphic Packaging CEO announces comprehensive business review",
+      "url": "https://finance.yahoo.com/m/fe9ba66e-2e64-3664-89be-3d9083ee73f5/new-graphic-packaging-ceo.html",
+      "publisher": "Packaging Dive",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Old Spice Delivers 'Unrivaled Freshness' with Immersive Fan Experience at Super Bowl LX in San Francisco",
+      "url": "https://www.businesswire.com/news/home/20260203973067/en/New,",
+      "publisher": "Business Wire",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Gillette and Lay-Up Youth Basketball Advance Coach Development to Support the Next Generation",
+      "url": "https://www.businesswire.com/news/home/20260201829775/en/Toronto",
+      "publisher": "Business Wire",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PepsiCo tops quarterly revenue estimates on resilient demand for sodas",
+      "url": "https://finance.yahoo.com/news/pepsico-tops-quarterly-revenue-estimates-110755011.html",
+      "publisher": "Reuters",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What Does Wall Street Think About The Procter & Gamble Company (PG)?",
+      "url": "/news/296789/what-does-wall-street-think-about-the-procter-gamble-company-pg",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "P&G brands to serve more Olympic and Paralympic Winter Games athletes than ever before with top-performing household and personal care products and services at Olympic and Paralympic Winter Games Milano Cortina 2026",
+      "url": "https://www.businesswire.com/news/home/20260202542748/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    }
+  ]
 }

@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 69.97000122070312,
-    "sma_20": 71.57749977111817,
+    "sma_20": 71.57749977111818,
     "sma_50": 68.53060005187989,
     "sma_200": 74.25385007858276,
     "trend_alignment": 0.45411864539175567,
@@ -6286,10 +6286,10 @@
     "macd_histogram": -0.5592231374501959,
     "macd_line": 0.6621921769370118,
     "macd_histogram_pct": -0.7992327107245065,
-    "bb_position": 0.25605082668367957,
-    "bb_upper": 74.87224049223276,
-    "bb_lower": 68.28275905000358,
-    "bb_width": 0.0920607937312735,
+    "bb_position": 0.2560508266836774,
+    "bb_upper": 74.87224049223278,
+    "bb_lower": 68.28275905000359,
+    "bb_width": 0.09206079373127347,
     "hist_volatility": 0.26537465176087127,
     "volume_ratio": 0.6101185762844097,
     "avg_volume_20d": 5998670.0,
@@ -6301,12 +6301,20 @@
     "rsi_abs_score": 69.76630341449172,
     "macd_abs_score": 30.511509339132402,
     "momentum_score": 50.13890637681206,
-    "volatility_score": 58.31219988959637,
+    "volatility_score": 58.312199889596386,
     "volume_score": 50.0,
     "technical_score": 50.32767125271556,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.2498622075246236,
+    "sentiment_pos": 0.1513,
+    "sentiment_neg": 0.011300000000000001,
+    "sentiment_neu": 0.8374,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 62.49
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.21480634557667574,
@@ -6327,7 +6335,7 @@
     "safety_score": 48.79910004913669,
     "trend_score": 45.41186453917557,
     "momentum_score": 50.13890637681206,
-    "volatility_score": 58.31219988959637,
+    "volatility_score": 58.312199889596386,
     "volume_score": 50.0,
     "analyst_score": 65.15752436186938,
     "pe_score": 35.93006435294118,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 35.24001288862745,
     "catalyst_timeline": 53.90582952778569,
     "downside_control": 56.00169499080995,
-    "composite_score": 58.10764108183026,
+    "composite_score": 58.10375203653182,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 65.1909929128502,
     "technical_score": 50.32767125271556,
-    "sentiment_score": 50.0,
+    "sentiment_score": 62.49,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Health Care Equipment"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Wearables future in healthcare likely to hinge on actionable insights",
+      "url": "https://finance.yahoo.com/m/0557e1c8-5ab3-3dd0-9955-14a9fc213e23/wearables%E2%80%99-future-in.html",
+      "publisher": "Medical Device Network",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "DXCM Upgrades Stelo With AI-Powered Smart Meal Logging Features",
+      "url": "/news/301919/dxcm-upgrades-stelo-with-ai-powered-smart-meal-logging-features",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "DexCom (DXCM) Reports Next Week: Wall Street Expects Earnings Growth",
+      "url": "/news/301687/dexcom-dxcm-reports-next-week-wall-street-expects-earnings-growth",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Pharma, Specialty Units Likely to Drive Cardinal Health's Q2 Earnings",
+      "url": "/news/300065/pharma-specialty-units-likely-to-drive-cardinal-healths-q2-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "DexCom (DXCM) is a Top-Ranked Growth Stock: Should You Buy?",
+      "url": "/news/299599/dexcom-dxcm-is-a-top-ranked-growth-stock-should-you-buy",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Investors Need to Take Advantage of These 2 Medical Stocks Now",
+      "url": "/news/299378/why-investors-need-to-take-advantage-of-these-2-medical-stocks-now",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stelo Adds Enhanced Smart Meal Logging Features as Dexcom Continues to Transform Personal Glucose Management",
+      "url": "https://www.businesswire.com/news/home/20260204086490/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "GE HealthCare Stock Before Q4 Earnings: To Buy or Not to Buy?",
+      "url": "/news/297837/ge-healthcare-stock-before-q4-earnings-to-buy-or-not-to-buy",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Should You Buy, Sell, or Hold McKesson Before Q3 Earnings?",
+      "url": "/news/297559/should-you-buy-sell-or-hold-mckesson-before-q3-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Q4 Preliminary Figures and 2026 Guidance Make DexCom (DXCM) Look Attractive",
+      "url": "/news/293958/q4-preliminary-figures-and-2026-guidance-make-dexcom-dxcm-look-attractive",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Senseonics wins CE mark for one-year CGM",
+      "url": "https://finance.yahoo.com/m/aa47b3c8-f057-3072-8cd3-d08a53cc57cf/senseonics-wins-ce-mark-for.html",
+      "publisher": "MedTech Dive",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "HALPER SADEH LLC ENCOURAGES DEXCOM, INC. SHAREHOLDERS TO CONTACT THE FIRM TO DISCUSS THEIR RIGHTS",
+      "url": "/news/292657/halper-sadeh-llc-encourages-dexcom-inc-shareholders-to-contact-the-firm-to-discuss-their-rights",
+      "publisher": "PR Newswire",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Will Revvity Q4 Earnings Benefit From Early Signs of Demand Recovery?",
+      "url": "/news/292427/will-revvity-q4-earnings-benefit-from-early-signs-of-demand-recovery",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Can Specialty and International Momentum Support Cencora's Q1 Results?",
+      "url": "/news/291701/can-specialty-and-international-momentum-support-cencoras-q1-results",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Former Stock Picks Are Quietly Flashing Buy Signals Again",
+      "url": "https://www.barrons.com/articles/former-stock-picks-bristow-group-cal-maine-foods-dexcom-flash-buy-signals-2692c1ad?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why DexCom (DXCM) is a Strong Momentum Stock",
+      "url": "/news/290256/heres-why-dexcom-dxcm-is-a-strong-momentum-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "SYK's Q4 Results Likely to Reflect Procedure Growth and Capital Demand",
+      "url": "/news/290006/syks-q4-results-likely-to-reflect-procedure-growth-and-capital-demand",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "HCA Healthcare Q4 Earnings Beat Estimates on Strong Patient Volumes",
+      "url": "/news/288908/hca-healthcare-q4-earnings-beat-estimates-on-strong-patient-volumes",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Barclays Downgrades Dexcom (DXCM) to Underweight Citing Intensifying Competition in Core Segments",
+      "url": "/news/288200/barclays-downgrades-dexcom-dxcm-to-underweight-citing-intensifying-competition-in-core-segments",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dexcom Schedules Fourth Quarter and Fiscal Year 2025 Earnings Release and Conference Call for February 12, 2026 at 4:30 p.m. Eastern Time.",
+      "url": "https://www.businesswire.com/news/home/20260127817991/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    }
+  ]
 }

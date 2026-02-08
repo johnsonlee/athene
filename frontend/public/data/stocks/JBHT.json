@@ -6306,7 +6306,15 @@
     "technical_score": 60.596468537196785,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.03124658377105917,
+    "sentiment_pos": 0.08005,
+    "sentiment_neg": 0.08195,
+    "sentiment_neu": 0.8380000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.56
+  },
   "analyst": {
     "revision_momentum": 0.05555555555555555,
     "target_upside": -0.05664516695186695,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 46.48606162499999,
     "catalyst_timeline": 60.56166706139197,
     "downside_control": 44.38686413527373,
-    "composite_score": 52.29918651694645,
+    "composite_score": 52.29529747164802,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 54.0839643875,
     "technical_score": 60.596468537196785,
-    "sentiment_score": 50.0,
+    "sentiment_score": 51.56,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 0.9441666666666666,
     "data_quality_penalty": 0.0,
-    "rank": 348,
-    "percentile": 0.33140655105973027,
+    "rank": 349,
+    "percentile": 0.32947976878612717,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Cargo Ground Transportation"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Kirby Q4 Earnings Surpass Estimates, Increase Year Over Year",
+      "url": "/news/301929/kirby-q4-earnings-surpass-estimates-increase-year-over-year",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Canadian National Stock Rises 2.8% Since Q4 Earnings Release",
+      "url": "/news/301585/canadian-national-stock-rises-28-since-q4-earnings-release",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Old Dominion Beats on Q4 Earnings and Revenues, Hikes Dividend",
+      "url": "/news/299770/old-dominion-beats-on-q4-earnings-and-revenues-hikes-dividend",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: J.B. Hunt Transport Services, Inc.",
+      "url": "https://finance.yahoo.com/m/9cb65184-2bfb-31df-acb2-22299a075f76/analyst-report%3A-j.b.-hunt.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Landstar Q4 Earnings Beat Estimates, Revenues Miss, Both Down Y/Y",
+      "url": "/news/297993/landstar-q4-earnings-beat-estimates-revenues-miss-both-down-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Canadian Pacific Q4 Earnings & Revenues Miss Estimates, Improve Y/Y",
+      "url": "/news/297714/canadian-pacific-q4-earnings-revenues-miss-estimates-improve-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Schneider Q4 Earnings Miss Estimates, Down Year Over Year",
+      "url": "/news/293864/schneider-q4-earnings-miss-estimates-down-year-over-year",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Norfolk Southern Q4 Earnings Top Estimates, Increase Year Over Year",
+      "url": "/news/292426/norfolk-southern-q4-earnings-top-estimates-increase-year-over-year",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Southwest Airlines Q4 Earnings Beat Estimates, Revenues Lag",
+      "url": "/news/292419/southwest-airlines-q4-earnings-beat-estimates-revenues-lag",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "C.H. Robinson Q4 Earnings Surpass Estimates, Increase Year Over Year",
+      "url": "/news/292395/ch-robinson-q4-earnings-surpass-estimates-increase-year-over-year",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "JetBlue Shares Rise 6.6% Since Fourth-Quarter Earnings Release",
+      "url": "/news/292044/jetblue-shares-rise-66-since-fourth-quarter-earnings-release",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why JB Hunt (JBHT) is a Top Momentum Stock for the Long-Term",
+      "url": "/news/291950/why-jb-hunt-jbht-is-a-top-momentum-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ryanair Earnings Came Ahead of Estimates in Q3, Revenues Up Y/Y",
+      "url": "/news/290607/ryanair-earnings-came-ahead-of-estimates-in-q3-revenues-up-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "J.B. Hunt Transport Services, Inc. Announces Participation in Upcoming Investor Conferences",
+      "url": "https://www.businesswire.com/news/home/20260127568280/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Union Pacific's Q4 Earnings & Revenues Lag Estimates, Down Y/Y",
+      "url": "/news/288945/union-pacifics-q4-earnings-revenues-lag-estimates-down-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "UPS Q4 Earnings & Revenues Surpass Estimates, Down Year Over Year",
+      "url": "/news/288844/ups-q4-earnings-revenues-surpass-estimates-down-year-over-year",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "American Airlines Misses on Q4 Earnings & Revenues, Expects Loss in Q1",
+      "url": "/news/288663/american-airlines-misses-on-q4-earnings-revenues-expects-loss-in-q1",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Alaska Air Q4 Earnings Beat Estimates, Revenues Increase Y/Y",
+      "url": "/news/286760/alaska-air-q4-earnings-beat-estimates-revenues-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CEOs Flag Jittery US Consumers as Global Tensions Intensify",
+      "url": "https://finance.yahoo.com/news/ceos-wary-jittery-us-consumer-120000220.html",
+      "publisher": "Bloomberg",
+      "date": "2026-01-23",
+      "sentiment": "negative"
+    },
+    {
+      "title": "CSX Q4 Earnings & Revenues Lag Estimates, Both Down Year Over Year",
+      "url": "/news/285244/csx-q4-earnings-revenues-lag-estimates-both-down-year-over-year",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "negative"
+    }
+  ]
 }

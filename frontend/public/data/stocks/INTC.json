@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 61.09309038169886,
-    "stoch_d": 56.295107299716506,
+    "stoch_d": 56.29510729971652,
     "trend_score": 88.02889772563898,
     "rsi_abs_score": 71.74201937145158,
     "macd_abs_score": 45.41274573622742,
@@ -6306,7 +6306,15 @@
     "technical_score": 57.79759734219265,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.037975985551650444,
+    "sentiment_pos": 0.0257,
+    "sentiment_neg": 0.0369,
+    "sentiment_neu": 0.9374,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.9
+  },
   "analyst": {
     "revision_momentum": 0.25,
     "target_upside": -0.051195888515516964,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 55.396952776666666,
     "catalyst_timeline": 61.65254097500589,
     "downside_control": 43.109091193761834,
-    "composite_score": 42.584490098269555,
+    "composite_score": 42.58060105297112,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 43.61684816722222,
     "technical_score": 57.79759734219265,
-    "sentiment_score": 50.0,
+    "sentiment_score": 51.9,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Semiconductors"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "The Robot Revolution Is Real. Tesla, Hyundai, and More Stocks to Play It.",
+      "url": "https://finance.yahoo.com/m/2f4b559e-b426-3efd-911e-0deb2a756756/the-robot-revolution-is-real..html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Elon Musk's Tesla Reignites Roadster Hype With New Trademark Filings",
+      "url": "https://finance.yahoo.com/news/elon-musks-tesla-reignites-roadster-123102546.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Intel, AMD Warn China Customers Of Months-Long CPU Delays",
+      "url": "https://finance.yahoo.com/news/intel-amd-warn-china-customers-213138002.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Intel chief says the company is going to make GPUs at scale",
+      "url": "https://finance.yahoo.com/m/f8b64cfb-b8fa-339b-affc-385edb21148d/intel-chief-says-the-company.html",
+      "publisher": "Digital Trends",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Big Tech companies are starting to look like IBM in the 1960s",
+      "url": "https://finance.yahoo.com/news/big-tech-companies-are-starting-to-look-like-ibm-in-the-1960s-150030684.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ross Gerber Says Tesla Will Be 'Another Division' Of X Amid Ticker Symbol Speculation, SpaceX-xAI Merger",
+      "url": "https://finance.yahoo.com/news/ross-gerber-says-tesla-another-114622705.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NVIDIA CEO Jensen Huang Unveils Biggest-Ever Dassault Partnership to Power AI Virtual Twins",
+      "url": "https://finance.yahoo.com/m/4ee86ed7-dc52-3dfe-b1b8-df35bc8bf622/nvidia-ceo-jensen-huang.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Dow Industrials Have Tilted More Toward Financials",
+      "url": "https://finance.yahoo.com/m/8d4d0775-c0cf-3062-87c5-0dd384dbb03c/the-dow-industrials-have.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Vista Equity Partners and Intel to lead investment in AI chip startup SambaNova, sources say",
+      "url": "https://finance.yahoo.com/news/exclusive-vista-equity-partners-intel-210312440.html",
+      "publisher": "Reuters",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Intel (INTC) Stock Is Up Today",
+      "url": "/news/303258/why-intel-intc-stock-is-up-today",
+      "publisher": "StockStory",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Intel Warns of Six-Month CPU Backlogs in China",
+      "url": "https://finance.yahoo.com/news/intel-warns-six-month-cpu-160525982.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Here is What to Know Beyond Why Intel Corporation (INTC) is a Trending Stock",
+      "url": "/news/302773/here-is-what-to-know-beyond-why-intel-corporation-intc-is-a-trending-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What's Going On With Nvidia, AMD And Other Chip Stocks On Friday?",
+      "url": "/news/302617/whats-going-on-with-nvidia-amd-and-other-chip-stocks-on-friday",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Micron Rallies 315% in a Year: Is the Stock Still Worth Buying?",
+      "url": "/news/302701/micron-rallies-315-in-a-year-is-the-stock-still-worth-buying",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Global chip sales expected to hit $1 trillion this year, industry group says",
+      "url": "https://finance.yahoo.com/news/global-chip-sales-expected-hit-130145163.html",
+      "publisher": "Reuters",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Intel and AMD Warn China Clients of Prolonged CPU Shortages",
+      "url": "https://finance.yahoo.com/news/intel-amd-warn-china-clients-121112357.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Mobileye Announces Participation in Upcoming First Quarter 2026 Investor Conferences",
+      "url": "https://www.businesswire.com/news/home/20260206697983/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Intel, AMD Warn China Customers Of Months-Long CPU Delays",
+      "url": "/news/302494/intel-amd-warn-china-customers-of-months-long-cpu-delays",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Exclusive-Intel, AMD notify customers in China of lengthy waits for CPUs",
+      "url": "https://finance.yahoo.com/news/exclusive-intel-amd-notify-customers-053238727.html",
+      "publisher": "Reuters",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Big Tech to Spend $650 Billion This Year as AI Race Intensifies",
+      "url": "https://finance.yahoo.com/news/big-tech-spend-650-billion-012716850.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    }
+  ]
 }

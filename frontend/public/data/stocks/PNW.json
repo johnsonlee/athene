@@ -6306,7 +6306,15 @@
     "technical_score": 60.52871423723703,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.22265591297875806,
+    "sentiment_pos": 0.09570000000000001,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.9042999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 61.13
+  },
   "analyst": {
     "revision_momentum": -0.25,
     "target_upside": 0.03721129170230971,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 61.33112224999999,
     "catalyst_timeline": 55.68019536846071,
     "downside_control": 45.277727919624695,
-    "composite_score": 53.711385991942905,
+    "composite_score": 53.707496946644476,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 50.52800314880952,
     "technical_score": 60.52871423723703,
-    "sentiment_score": 50.0,
+    "sentiment_score": 61.13,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Utilities",
     "industry": "Multi-Utilities"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "NiSource to Report Q4 Earnings: What's in Store for the Stock?",
+      "url": "/news/299442/nisource-to-report-q4-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Xcel Energy to Report Q4 Earnings: What's in Store for the Stock?",
+      "url": "/news/297762/xcel-energy-to-report-q4-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Zacks.com featured highlights include Universal Health Services, Pinnacle West Capital and Methanex",
+      "url": "/news/297724/zackscom-featured-highlights-include-universal-health-services-pinnacle-west-capital-and-methanex",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "American Electric Banks on Investments and Renewables for Growth",
+      "url": "/news/297388/american-electric-banks-on-investments-and-renewables-for-growth",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Entergy's Grid and Renewable Investments Strengthen Growth Outlook",
+      "url": "/news/295665/entergys-grid-and-renewable-investments-strengthen-growth-outlook",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Sales Growth Stocks to Bet on for Robust Returns in 2026",
+      "url": "/news/295608/3-sales-growth-stocks-to-bet-on-for-robust-returns-in-2026",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Spire to Report Q1 Earnings: What's in Store for the Stock?",
+      "url": "/news/292279/spire-to-report-q1-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Zacks Industry Outlook Highlights NextEra, Ameren, Alliant Energy and Pinnacle West Capital",
+      "url": "/news/289508/zacks-industry-outlook-highlights-nextera-ameren-alliant-energy-and-pinnacle-west-capital",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "4 Utility Stocks to Buy From the Flourishing Electric Power Industry",
+      "url": "/news/288338/4-utility-stocks-to-buy-from-the-flourishing-electric-power-industry",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pinnacle West Sets Date for 2025 Fourth-Quarter and Full-Year Financial Results, Webcast/Conference Call",
+      "url": "https://www.businesswire.com/news/home/20260126696630/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pinnacle West (PNW) Upgraded to Buy: Here's What You Should Know",
+      "url": "/news/285597/pinnacle-west-pnw-upgraded-to-buy-heres-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NextEra Energy to Report Q4 Earnings: Buy, Sell or Hold the Stock?",
+      "url": "/news/285529/nextera-energy-to-report-q4-earnings-buy-sell-or-hold-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What to Expect From Pinnacle West Capital's Next Quarterly Earnings Report",
+      "url": "https://finance.yahoo.com/m/52154702-7cf7-3de3-884b-afca0bbbf6bd/what-to-expect-from-pinnacle.html",
+      "publisher": "Barchart",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "UBS Makes Modest Price Target Increase on Pinnacle West (PNW)",
+      "url": "/news/261375/ubs-makes-modest-price-target-increase-on-pinnacle-west-pnw",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is Pinnacle West Capital Stock Underperforming the Dow?",
+      "url": "https://finance.yahoo.com/m/569da71e-b613-3c05-bc5d-5393923cfae0/is-pinnacle-west-capital.html",
+      "publisher": "Barchart",
+      "date": "2025-12-17",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pinnacle West Declares Quarterly Dividend",
+      "url": "https://www.businesswire.com/news/home/20251209856566/en/",
+      "publisher": "Business Wire",
+      "date": "2025-12-10",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Pinnacle West Capital Corporation",
+      "url": "https://finance.yahoo.com/m/3b13ee66-16fd-37f6-8ac9-9924a4996769/analyst-report%3A-pinnacle-west.html",
+      "publisher": "Morningstar Research",
+      "date": "2025-12-01",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Are Wall Street Analysts Predicting Pinnacle West Capital Stock Will Climb or Sink?",
+      "url": "https://finance.yahoo.com/m/adce453c-df03-3d83-b398-5e3e160154e1/are-wall-street-analysts.html",
+      "publisher": "Barchart",
+      "date": "2025-11-18",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pinnacle West Capital Corp (PNW) Q3 2025 Earnings Call Highlights: Strong Financial Performance ...",
+      "url": "https://finance.yahoo.com/news/pinnacle-west-capital-corp-pnw-230135275.html",
+      "publisher": "GuruFocus.com",
+      "date": "2025-11-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Pinnacle West Capital Corporation",
+      "url": "https://finance.yahoo.com/m/34354676-b7af-3415-a806-13995ccc16ab/analyst-report%3A-pinnacle-west.html",
+      "publisher": "Morningstar Research",
+      "date": "2025-11-03",
+      "sentiment": "neutral"
+    }
+  ]
 }

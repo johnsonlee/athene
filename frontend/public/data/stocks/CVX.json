@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 180.86000061035156,
     "sma_20": 171.0049987792969,
-    "sma_50": 159.55199981689452,
+    "sma_50": 159.55199981689455,
     "sma_200": 150.5013159942627,
-    "trend_alignment": 0.7615489945875281,
+    "trend_alignment": 0.761548994587528,
     "rsi": 73.85301086800263,
     "rsi_score": 0.47706021736005255,
     "macd_histogram": 0.7539103948454482,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 86.85109942109429,
     "stoch_d": 87.9167466882541,
-    "trend_score": 76.15489945875281,
+    "trend_score": 76.1548994587528,
     "rsi_abs_score": 43.21156956959264,
     "macd_abs_score": 62.92118755254358,
     "momentum_score": 53.066378561068106,
@@ -6306,7 +6306,15 @@
     "technical_score": 60.05466806390787,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.007238166681748059,
+    "sentiment_pos": 0.09795000000000001,
+    "sentiment_neg": 0.06605,
+    "sentiment_neu": 0.836,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 50.36
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": -0.007519628441888829,
@@ -6325,7 +6333,7 @@
     "quality_score": 43.48892857142857,
     "growth_score": 19.0,
     "safety_score": 49.14093749999999,
-    "trend_score": 76.15489945875281,
+    "trend_score": 76.1548994587528,
     "momentum_score": 53.066378561068106,
     "volatility_score": 56.441423289807965,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 56.38638776666666,
     "catalyst_timeline": 58.48949340288887,
     "downside_control": 54.00135411847119,
-    "composite_score": 47.55361574953452,
+    "composite_score": 47.549726704236086,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 42.61768921031746,
     "technical_score": 60.05466806390787,
-    "sentiment_score": 50.0,
+    "sentiment_score": 50.36,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Energy",
     "industry": "Integrated Oil & Gas"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "HSBC Downgrades Chevron (CVX), JPMorgan Stays Positive",
+      "url": "/news/303760/hsbc-downgrades-chevron-cvx-jpmorgan-stays-positive",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Chevron Corporation (CVX) Gets Higher Target at Argus Research as Shareholder Returns Stand Out",
+      "url": "/news/303564/chevron-corporation-cvx-gets-higher-target-at-argus-research-as-shareholder-returns-stand-out",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Revenge of the Real. Why Energy, Materials and Staples Stocks Are Beating the Market.",
+      "url": "https://finance.yahoo.com/m/52f16a06-b250-3bb8-9447-6327ecee03c1/revenge-of-the-real.-why.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Exxon Mobil Stock Is Rising Today: What's Going?",
+      "url": "/news/303094/exxon-mobil-stock-is-rising-today-whats-going",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ExxonMobil's Permian Push: Here's What Investors Should Know",
+      "url": "/news/303030/exxonmobils-permian-push-heres-what-investors-should-know",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Can FuelCell Energy Improve ROI at Fossil Power Plants?",
+      "url": "/news/302732/can-fuelcell-energy-improve-roi-at-fossil-power-plants",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Shell Q4 Earnings Miss as Lower Oil Prices Pressure Results",
+      "url": "/news/302710/shell-q4-earnings-miss-as-lower-oil-prices-pressure-results",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Trump Is Remaking the Global Oil Market, and Exxon and Chevron Want In",
+      "url": "https://finance.yahoo.com/news/trump-remaking-global-oil-market-110000436.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Shell Pumps Out Dividend Hike Despite Slippery Oil Prices",
+      "url": "https://finance.yahoo.com/m/a6f4d331-2fa8-3110-b768-1543bc79f94a/shell-pumps-out-dividend-hike.html",
+      "publisher": "The Daily Upside",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Shell Misses Q4 Profit Target; This Other UK Oil Giant Is In A Buy Zone",
+      "url": "https://finance.yahoo.com/m/c0753b6f-514b-3084-807c-889a7a0f60f1/shell-misses-q4-profit.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "As software sinks, US oil majors are regaining their lustre",
+      "url": "https://finance.yahoo.com/news/software-sinks-us-oil-majors-160427647.html",
+      "publisher": "Financial Times",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Comstock Resources to Report Q4 Earnings: What's in the Cards?",
+      "url": "/news/301773/comstock-resources-to-report-q4-earnings-whats-in-the-cards",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Important Factors to Watch Ahead of BP's Q4 Earnings Release",
+      "url": "/news/301767/important-factors-to-watch-ahead-of-bps-q4-earnings-release",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Chevron Reshuffles Top Leadership as Senior Executives Announce Retirements",
+      "url": "https://finance.yahoo.com/news/chevron-reshuffles-top-leadership-senior-154605415.html",
+      "publisher": "Oilprice.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Chevron Announces Senior Leadership Changes",
+      "url": "https://www.businesswire.com/news/home/20260205452968/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Chevron strikes deal for oil exploration off Syrian coast",
+      "url": "https://finance.yahoo.com/m/7ead1f3c-b623-395e-bbd7-8bf96066220d/chevron-strikes-deal-for-oil.html",
+      "publisher": "Offshore Technology",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "The $100 Billion Bet on Venezuelan Oil Relies on a Broken State Company",
+      "url": "https://www.wsj.com/business/energy-oil/venezuela-oil-pdvsa-foreign-investment-a4da107e?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "2 No-Brainer Dividend Stocks to Buy Right Now",
+      "url": "/news/300293/2-no-brainer-dividend-stocks-to-buy-right-now",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Chevron vs. ExxonMobil: Which Oil Dividend Giant Is the Better Buy for Income Investors?",
+      "url": "/news/299855/chevron-vs-exxonmobil-which-oil-dividend-giant-is-the-better-buy-for-income-investors",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Syria signs landmark offshore oil field deal with Chevron and a Qatari investor",
+      "url": "https://finance.yahoo.com/news/syria-signs-landmark-offshore-oil-144503044.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    }
+  ]
 }

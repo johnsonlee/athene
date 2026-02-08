@@ -6279,8 +6279,8 @@
     "close": 40.41999816894531,
     "sma_20": 51.883500099182136,
     "sma_50": 56.975200195312496,
-    "sma_200": 66.46098695755006,
-    "trend_alignment": 0.0839529516944732,
+    "sma_200": 66.46098695755005,
+    "trend_alignment": 0.08395295169447328,
     "rsi": 14.1720393577717,
     "rsi_score": -0.7165592128445659,
     "macd_histogram": -1.516504119248928,
@@ -6296,17 +6296,25 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 7.32011258976901,
-    "stoch_d": 6.081398051074668,
-    "trend_score": 8.39529516944732,
+    "stoch_d": 6.081398051074669,
+    "trend_score": 8.395295169447328,
     "rsi_abs_score": 35.0,
     "macd_abs_score": 20.0,
     "momentum_score": 27.5,
     "volatility_score": 19.0,
     "volume_score": 50.0,
-    "technical_score": 24.568588550834196,
+    "technical_score": 24.5685885508342,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.10208110560541302,
+    "sentiment_pos": 0.06284999999999999,
+    "sentiment_neg": 0.10800000000000001,
+    "sentiment_neu": 0.8291499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 44.9
+  },
   "analyst": {
     "revision_momentum": -0.2916666666666667,
     "target_upside": 0.2617516081147946,
@@ -6325,7 +6333,7 @@
     "quality_score": 76.6860762,
     "growth_score": 70.41499999999999,
     "safety_score": 57.53959667357364,
-    "trend_score": 8.39529516944732,
+    "trend_score": 8.395295169447328,
     "momentum_score": 27.5,
     "volatility_score": 19.0,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 64.01591376666667,
     "catalyst_timeline": 31.858790536517,
     "downside_control": 44.98993950103604,
-    "composite_score": 53.63289610370196,
+    "composite_score": 53.62900705840352,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 68.97075366693696,
-    "technical_score": 24.568588550834196,
-    "sentiment_score": 50.0,
+    "technical_score": 24.5685885508342,
+    "sentiment_score": 44.9,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Transaction & Payment Processing Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Gartner, Stellantis, And Novo Nordisk Are Among Top 10 Large Cap Losers Last Week (Feb. 2-Feb. 6): Are the Others in Your Portfolio?",
+      "url": "/news/303783/gartner-stellantis-and-novo-nordisk-are-among-top-10-large-cap-losers-last-week-feb-2-feb-6-are-the-others-in-your-portfolio",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Investing.coms stocks of the week",
+      "url": "https://finance.yahoo.com/news/investing-com-stocks-week-093005101.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Software Stocks Sell-Off: Are They Deals or Traps?",
+      "url": "/news/303451/software-stocks-sell-off-are-they-deals-or-traps",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Market Survives AI Panic, Even as Tech Collapses. Its a Monster of Our Own Making.",
+      "url": "https://finance.yahoo.com/m/1211e459-28e6-303d-a253-d08a44b4af08/stock-market-survives-ai.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Affirm CEO says 'demise' of the American consumer is 'greatly exaggerated'",
+      "url": "https://finance.yahoo.com/news/affirm-ceo-says-demise-of-the-american-consumer-is-greatly-exaggerated-212858612.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Shuffle Board: PayPal Replaces CEO",
+      "url": "https://finance.yahoo.com/m/5ecec165-48e1-39d8-8511-2ba8575ef32e/shuffle-board%3A-paypal.html",
+      "publisher": "Sourcing Journal",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Affirm Positions for Long-Term Growth. The Fintech Is More Than Just Buy Now, Pay Later.",
+      "url": "https://finance.yahoo.com/m/8db2a1e7-46c9-3ac4-814b-34163d49a8ac/affirm-positions-for.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Fortune 500 Power Moves: Which executives gained and lost power this week",
+      "url": "https://finance.yahoo.com/news/fortune-500-power-moves-executives-164500551.html",
+      "publisher": "Fortune",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Robinhood Stock Surges As Bitcoin Rebounds Above $68,000",
+      "url": "/news/302967/robinhood-stock-surges-as-bitcoin-rebounds-above-68000",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pelosi's Uncanny PayPal Timing Saves Her From Losing 55% Of Annual Salary",
+      "url": "https://finance.yahoo.com/m/0bc513f0-fa0e-3798-9284-209e9d63c00e/pelosi%27s-uncanny-paypal.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Ex-PayPal President David Marcus Says 'Defensive' BNPL Strategy Handed PYPL's Market Share To Rivals, Leading To Stagnant Growth",
+      "url": "https://finance.yahoo.com/news/ex-paypal-president-david-marcus-104619089.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cathie Wood Loads Up On Coinbase, Circle, Robinhood As Crypto Market Gripped By 'Extreme Fear' Amid Bitcoin Crash",
+      "url": "https://finance.yahoo.com/news/cathie-wood-loads-coinbase-circle-023114763.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Tackling tax planning",
+      "url": "https://www.youtube.com/watch?v=H8SFO9FjPXI",
+      "publisher": "CNBC TV",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Salesforce stock gets brutal reality check amid software slump",
+      "url": "https://finance.yahoo.com/m/6e10af87-2c34-363a-a121-d6e1f70d76f3/salesforce-stock-gets-brutal.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "PayPal Holdings, Inc. (PYPL): A Bull Case Theory",
+      "url": "/news/300663/paypal-holdings-inc-pypl-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PayPal Leadership Shake-Up - Former HP Exec Hired As New CEO",
+      "url": "https://finance.yahoo.com/news/paypal-leadership-shake-former-hp-223115840.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Of The Day: Did PayPal Sellers Capitulate?",
+      "url": "/news/300126/stock-of-the-day-did-paypal-sellers-capitulate",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PayPal reports growth in Q4 profit",
+      "url": "https://finance.yahoo.com/m/36caf470-6863-3d9b-b738-9f419c73365a/paypal-reports-growth-in-q4.html",
+      "publisher": "Electronic Payments",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Block doubles down on European ambitions",
+      "url": "https://finance.yahoo.com/m/d7bc3d61-d951-370b-960f-22dba6c18281/block-doubles-down-on.html",
+      "publisher": "American Banker",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Pelosi's Uncanny PayPal Timing Saves Her From Losing 55% Of Annual Salary",
+      "url": "/news/300023/pelosis-uncanny-paypal-timing-saves-her-from-losing-55-of-annual-salary",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    }
+  ]
 }

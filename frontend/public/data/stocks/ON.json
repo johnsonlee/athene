@@ -6277,8 +6277,8 @@
   },
   "technical": {
     "close": 65.19999694824219,
-    "sma_20": 61.74449996948243,
-    "sma_50": 58.00200012207031,
+    "sma_20": 61.744499969482426,
+    "sma_50": 58.002000122070314,
     "sma_200": 51.850450019836416,
     "trend_alignment": 0.7816137217430219,
     "rsi": 61.806499170893225,
@@ -6286,10 +6286,10 @@
     "macd_histogram": 0.05591846289382585,
     "macd_line": 1.6582264485401197,
     "macd_histogram_pct": 0.0857645176551399,
-    "bb_position": 0.9417390011148202,
-    "bb_upper": 65.65574277353538,
-    "bb_lower": 57.83325716542949,
-    "bb_width": 0.12669121317643192,
+    "bb_position": 0.941739001114822,
+    "bb_upper": 65.65574277353537,
+    "bb_lower": 57.83325716542948,
+    "bb_width": 0.1266912131764318,
     "hist_volatility": 0.4730245118874348,
     "volume_ratio": 1.3986434579771083,
     "avg_volume_20d": 9294220.0,
@@ -6301,12 +6301,20 @@
     "rsi_abs_score": 70.23545058037475,
     "macd_abs_score": 54.288225882757,
     "momentum_score": 62.261838231565875,
-    "volatility_score": 39.67966035583379,
+    "volatility_score": 39.67966035583381,
     "volume_score": 50.0,
     "technical_score": 60.06289519292718,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.1301115835427378,
+    "sentiment_pos": 0.1014,
+    "sentiment_neg": 0.047099999999999996,
+    "sentiment_neu": 0.8515,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 56.51
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": -0.0030674846625767306,
@@ -6327,7 +6335,7 @@
     "safety_score": 65.66499999999999,
     "trend_score": 78.16137217430219,
     "momentum_score": 62.261838231565875,
-    "volatility_score": 39.67966035583379,
+    "volatility_score": 39.67966035583381,
     "volume_score": 50.0,
     "analyst_score": 48.12349607361963,
     "pe_score": 8.561646666666665,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 54.614914163333324,
     "catalyst_timeline": 61.80667064794876,
     "downside_control": 59.019699053375064,
-    "composite_score": 48.41013498186709,
+    "composite_score": 48.40624593656865,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 46.49571404444444,
     "technical_score": 60.06289519292718,
-    "sentiment_score": 50.0,
+    "sentiment_score": 56.51,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Semiconductors"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Dow 50,000 sets table for inflation data, delayed January jobs report: What to watch this week",
+      "url": "https://finance.yahoo.com/news/dow-50000-sets-table-for-inflation-data-delayed-january-jobs-report-what-to-watch-this-week-123826626.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "onsemi (ON) Reports Q4: Everything You Need To Know Ahead Of Earnings",
+      "url": "/news/303683/onsemi-on-reports-q4-everything-you-need-to-know-ahead-of-earnings",
+      "publisher": "StockStory",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Super Bowl LX, Coinbase earnings, jobs data & CPI: What to Watch",
+      "url": "https://finance.yahoo.com/video/super-bowl-lx-coinbase-earnings-000012395.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "RF-Based VRU Safety Platforms Positioned for Institutional-Scale Growth",
+      "url": "/news/302713/rf-based-vru-safety-platforms-positioned-for-institutional-scale-growth",
+      "publisher": "PR Newswire",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PBCM Sold on Semiconductor (ON) Due to Persistent Downturn in EV Demand",
+      "url": "/news/302639/pbcm-sold-on-semiconductor-on-due-to-persistent-downturn-in-ev-demand",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Analyst Report: ON Semiconductor Corporation",
+      "url": "https://finance.yahoo.com/m/6437d6ed-4363-3465-ac9c-34e1156a0b52/analyst-report%3A-on.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ON Set to Report Q4 Earnings: What's in Store for the Stock?",
+      "url": "/news/301958/on-set-to-report-q4-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Coherent Shines at Q2 Earnings: Should Investors Buy the Stock Now?",
+      "url": "/news/301916/coherent-shines-at-q2-earnings-should-investors-buy-the-stock-now",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "M/A-Com (MTSI) Tops Q1 Earnings and Revenue Estimates",
+      "url": "/news/301421/ma-com-mtsi-tops-q1-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Volatile Stocks We Think Twice About",
+      "url": "/news/301388/3-volatile-stocks-we-think-twice-about",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ahead of ON Semiconductor Corp. (ON) Q4 Earnings: Get Ready With Wall Street Estimates for Key Metrics",
+      "url": "/news/299454/ahead-of-on-semiconductor-corp-on-q4-earnings-get-ready-with-wall-street-estimates-for-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "1 S&P 500 Stock with Impressive Fundamentals and 2 We Ignore",
+      "url": "/news/295152/1-sp-500-stock-with-impressive-fundamentals-and-2-we-ignore",
+      "publisher": "StockStory",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "ON Semiconductor Corp. (ON) Sees a More Significant Dip Than Broader Market: Some Facts to Know",
+      "url": "/news/294286/on-semiconductor-corp-on-sees-a-more-significant-dip-than-broader-market-some-facts-to-know",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Are Wall Street Analysts Bullish on ON Semiconductor Stock?",
+      "url": "https://finance.yahoo.com/m/dff1cb9c-bc7f-3bab-9dc5-3d091d309fd2/are-wall-street-analysts.html",
+      "publisher": "Barchart",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What Anthropic and OpenAI's Recent News Mean for AI Stock Investors",
+      "url": "/news/292995/what-anthropic-and-openais-recent-news-mean-for-ai-stock-investors",
+      "publisher": "Motley Fool",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ON Semiconductor Corp. (ON) Suffers a Larger Drop Than the General Market: Key Insights",
+      "url": "/news/292829/on-semiconductor-corp-on-suffers-a-larger-drop-than-the-general-market-key-insights",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "MaxLinear (MXL) Tops Q4 Earnings and Revenue Estimates",
+      "url": "/news/292757/maxlinear-mxl-tops-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Intel, Micron, These Other Chip Stocks Are Rallying. Thank Texas Instruments and ASML.",
+      "url": "https://finance.yahoo.com/m/c9999509-419c-3444-a8c1-bdb4979655f1/intel%2C-micron%2C-these-other.html",
+      "publisher": "Barrons.com",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks Mixed After the Fed Pauses Rate Cuts",
+      "url": "https://finance.yahoo.com/m/396af179-3604-3474-8571-1f8c6eb49f58/stocks-mixed-after-the-fed.html",
+      "publisher": "Barchart",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Texas Instruments, ASML Lift Chip Stocks Higher",
+      "url": "/news/289689/texas-instruments-asml-lift-chip-stocks-higher",
+      "publisher": "Benzinga",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    }
+  ]
 }

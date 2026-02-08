@@ -6278,7 +6278,7 @@
   "technical": {
     "close": 131.17999267578125,
     "sma_20": 121.38349952697754,
-    "sma_50": 116.53933639526367,
+    "sma_50": 116.53933639526369,
     "sma_200": 103.80766716003419,
     "trend_alignment": 0.7852744440089143,
     "rsi": 78.66063167514575,
@@ -6306,7 +6306,15 @@
     "technical_score": 58.84559143690098,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.04947397652315876,
+    "sentiment_pos": 0.04045,
+    "sentiment_neg": 0.05445,
+    "sentiment_neu": 0.9051,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 47.53
+  },
   "analyst": {
     "revision_momentum": 0.027777777777777776,
     "target_upside": -0.035676170147888445,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 43.33913582941176,
     "catalyst_timeline": 59.3372262454762,
     "downside_control": 47.8831922811148,
-    "composite_score": 52.40901249462634,
+    "composite_score": 52.4051234493279,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 56.3371214386295,
     "technical_score": 58.84559143690098,
-    "sentiment_score": 50.0,
+    "sentiment_score": 47.53,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 342,
-    "percentile": 0.34296724470134876,
+    "rank": 343,
+    "percentile": 0.34104046242774566,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Staples",
     "industry": "Consumer Staples Merchandise Retail"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Why I am still taking these tech stocks to task",
+      "url": "https://finance.yahoo.com/news/why-i-am-still-taking-these-tech-stocks-to-task-133012952.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Price elasticity is largest 'friction point' in snacks: PepsiCo CEO",
+      "url": "https://finance.yahoo.com/video/price-elasticity-largest-friction-point-130049273.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Investing.coms stocks of the week",
+      "url": "https://finance.yahoo.com/news/investing-com-stocks-week-093005101.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "A Tech Bust Gave Way to a Broader Rally. What Comes Next Could Be Ugly.",
+      "url": "https://www.barrons.com/articles/tech-bust-broader-rally-crypto-silver-fde38403?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Walmart Invests $330M to Update Louisiana Distribution Center",
+      "url": "https://www.ttnews.com/articles/walmart-louisiana-investment",
+      "publisher": "Transport Topics",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jennifer Garner-backed kids' food brand Once Upon a Farm rises 16% in Wall Street debut",
+      "url": "https://finance.yahoo.com/news/jennifer-garner-backed-kids-food-brand-once-upon-a-farm-rises-16-in-wall-street-debut-221123011.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jennifer Garners Once Upon a Farm Rises 17% After $198 Million IPO",
+      "url": "https://finance.yahoo.com/news/jennifer-garner-once-upon-farm-211304517.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Revenge of the Real. Why Energy, Materials and Staples Stocks Are Beating the Market.",
+      "url": "https://finance.yahoo.com/m/52f16a06-b250-3bb8-9447-6327ecee03c1/revenge-of-the-real.-why.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Wall Streets Hidden Warning: Why Smart Money Is Fleeing to These 5 Safe Havens",
+      "url": "https://finance.yahoo.com/m/92b07419-2b5e-3b29-a744-188d81ced943/wall-street%E2%80%99s-hidden-warning%3A.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Buying Walmart Stock At A Discount Is In Reach With This Put Strategy",
+      "url": "https://www.investors.com/research/options/walmart-stock-wmt-retailer-discount-shares-options-trade-investing-markets?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Affirm Positions for Long-Term Growth. The Fintech Is More Than Just Buy Now, Pay Later.",
+      "url": "https://finance.yahoo.com/m/8db2a1e7-46c9-3ac4-814b-34163d49a8ac/affirm-positions-for.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Affirm Stock Slips After Earnings. Analysts Say That's Unwarranted.",
+      "url": "https://www.barrons.com/articles/affirm-earnings-stock-price-c89b2ec4?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "These 2 Retail and Wholesale Stocks Could Beat Earnings: Why They Should Be on Your Radar",
+      "url": "/news/302763/these-2-retail-and-wholesale-stocks-could-beat-earnings-why-they-should-be-on-your-radar",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Aldi is coming to Colorado, and the disruption could lead to lower food prices",
+      "url": "https://finance.yahoo.com/news/aldi-coming-colorado-disruption-could-140417819.html",
+      "publisher": "The Conversation",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "The Weekly Closeout: Layoffs jump in January and Walmart hits $1 trillion market cap",
+      "url": "https://finance.yahoo.com/m/c4f36766-43c9-3b02-a2f1-63687f7ed455/the-weekly-closeout%3A-layoffs.html",
+      "publisher": "Retail Dive",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Walmarts $1T valuation: A bet on high-income shoppers",
+      "url": "https://finance.yahoo.com/m/78949b54-045f-3ee3-ae64-94b4e0591ef4/walmart%E2%80%99s-%241t-valuation%3A-a.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PriceSmart Annual Meeting: Shareholders Re-Elect 11 Directors, OK Pay Plan and EY Auditor in Landslides",
+      "url": "https://finance.yahoo.com/m/af7a0e5d-f8ca-3ff7-a65d-54b80310b382/pricesmart-annual-meeting%3A.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Big Tech to Spend $650 Billion This Year as AI Race Intensifies",
+      "url": "https://finance.yahoo.com/news/big-tech-spend-650-billion-012716850.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Amazon.com Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/dfd83a36-2ecb-3a22-8ad3-98946ee36278/amazon.com-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Walmart Inc. (WMT): A Bull Case Theory",
+      "url": "/news/302308/walmart-inc-wmt-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    }
+  ]
 }

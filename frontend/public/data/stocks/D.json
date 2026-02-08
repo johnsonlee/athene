@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 62.33000183105469,
-    "sma_20": 60.73600025177003,
+    "sma_20": 60.73600025177004,
     "sma_50": 59.73421241760255,
     "sma_200": 57.96611177444457,
     "trend_alignment": 0.5961284772980523,
@@ -6286,10 +6286,10 @@
     "macd_histogram": 0.20665699408208194,
     "macd_line": 0.7482243280427738,
     "macd_histogram_pct": 0.33155300499144086,
-    "bb_position": 0.857467318599885,
-    "bb_upper": 62.965576910033484,
-    "bb_lower": 58.506423593506575,
-    "bb_width": 0.07341861989663956,
+    "bb_position": 0.8574673185998833,
+    "bb_upper": 62.96557691003349,
+    "bb_lower": 58.50642359350658,
+    "bb_width": 0.07341861989663954,
     "hist_volatility": 0.16655871043141504,
     "volume_ratio": 0.635427093760427,
     "avg_volume_20d": 5754240.0,
@@ -6306,7 +6306,15 @@
     "technical_score": 61.51528231842654,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.2528315989914434,
+    "sentiment_pos": 0.24695,
+    "sentiment_neg": 0.07780000000000001,
+    "sentiment_neu": 0.67525,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 62.64
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.018771057275790176,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 57.025838963333335,
     "catalyst_timeline": 57.6043663046362,
     "downside_control": 47.752553479958706,
-    "composite_score": 58.39108253488976,
+    "composite_score": 58.38719348959133,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 57.877901556944444,
     "technical_score": 61.51528231842654,
-    "sentiment_score": 50.0,
+    "sentiment_score": 62.64,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Utilities",
     "industry": "Multi-Utilities"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Xcel Energy Q4 Earnings and Revenues Lag Estimates, Expenses Rise",
+      "url": "/news/301833/xcel-energy-q4-earnings-and-revenues-lag-estimates-expenses-rise",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Do Wall Street Analysts Like Dominion Energy Stock?",
+      "url": "https://finance.yahoo.com/m/a3615ae2-926c-3d78-a019-be61a812c007/do-wall-street-analysts-like.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Forget AI Stocks: This Energy Stock Has AI-Sized Upside Without the Tech Stock Risk Profile",
+      "url": "/news/298914/forget-ai-stocks-this-energy-stock-has-ai-sized-upside-without-the-tech-stock-risk-profile",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Dominion Energy (D) Ascends While Market Falls: Some Facts to Note",
+      "url": "/news/298379/dominion-energy-d-ascends-while-market-falls-some-facts-to-note",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Want to Make Over $1,000 of Passive Income in 2026? Consider These 5 High-Yield Energy and Utilities Stocks.",
+      "url": "/news/295437/want-to-make-over-1000-of-passive-income-in-2026-consider-these-5-high-yield-energy-and-utilities-stocks",
+      "publisher": "Motley Fool",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Dominion Energy (D) Declares Quarterly Dividend of $0.6675 per Share",
+      "url": "/news/291915/dominion-energy-d-declares-quarterly-dividend-of-06675-per-share",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "NextEra Energy's Q4 Earnings Surpass Estimates, Revenues Lag",
+      "url": "/news/288684/nextera-energys-q4-earnings-surpass-estimates-revenues-lag",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Why Dominion Energy (D) Outpaced the Stock Market Today",
+      "url": "/news/287611/why-dominion-energy-d-outpaced-the-stock-market-today",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "IDACORP Gains From Regulated Infrastructure, Clean Energy Initiative",
+      "url": "/news/287132/idacorp-gains-from-regulated-infrastructure-clean-energy-initiative",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "How CMS Is Positioned for Growth on Stable Utilities and Renewables",
+      "url": "/news/287131/how-cms-is-positioned-for-growth-on-stable-utilities-and-renewables",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CEG vs. D: Which Stock Benefits More From Rising Power Demand?",
+      "url": "/news/286812/ceg-vs-d-which-stock-benefits-more-from-rising-power-demand",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Winter Storm Fern Threatens Disruptions Across US: Here Are Businesses, Stocks Likely To Be Impacted",
+      "url": "/news/286271/winter-storm-fern-threatens-disruptions-across-us-here-are-businesses-stocks-likely-to-be-impacted",
+      "publisher": "Benzinga",
+      "date": "2026-01-25",
+      "sentiment": "negative"
+    },
+    {
+      "title": "The AI Energy Trade: Can Utility Stocks Be Winners in 2026? (NEE, SO, D)",
+      "url": "/news/286147/the-ai-energy-trade-can-utility-stocks-be-winners-in-2026-nee-so-d",
+      "publisher": "Motley Fool",
+      "date": "2026-01-24",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Worried About a Market Crash in 2026? Buy These 3 Stocks",
+      "url": "https://finance.yahoo.com/m/f80bff1b-e499-367e-88f4-83bd081d17ef/worried-about-a-market-crash.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-23",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Dominion Energy Declares Quarterly Dividend of 66.75 Cents",
+      "url": "https://www.businesswire.com/news/home/20260123990684/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Dominion Energy (D) Stock Slides as Market Rises: Facts to Know Before You Trade",
+      "url": "/news/284755/dominion-energy-d-stock-slides-as-market-rises-facts-to-know-before-you-trade",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "How America's Data Center Boom Is Rewriting The Power Stock Playbook",
+      "url": "/news/282328/how-americas-data-center-boom-is-rewriting-the-power-stock-playbook",
+      "publisher": "Benzinga",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dominion Energy Charitable Foundation Spring Grant Cycle Now Open",
+      "url": "https://www.businesswire.com/news/home/20260120915706/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Trump Is Winning the Fight Against Offshore Wind Despite Court Losses",
+      "url": "https://finance.yahoo.com/news/trump-winning-fight-against-offshore-130032578.html",
+      "publisher": "Bloomberg",
+      "date": "2026-01-18",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Dominion Energy, Inc.",
+      "url": "https://finance.yahoo.com/m/e42025ee-8af4-3a83-982e-ac379ce75530/analyst-report%3A-dominion.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-16",
+      "sentiment": "positive"
+    }
+  ]
 }

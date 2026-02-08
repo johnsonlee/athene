@@ -6277,36 +6277,44 @@
   },
   "technical": {
     "close": 23.209999084472656,
-    "sma_20": 21.701999950408933,
-    "sma_50": 20.881401176452638,
-    "sma_200": 18.11149309635162,
-    "trend_alignment": 0.7866183016047213,
+    "sma_20": 21.701999950408936,
+    "sma_50": 20.88140117645264,
+    "sma_200": 18.111493096351623,
+    "trend_alignment": 0.7866183016047211,
     "rsi": 75.56379277799753,
     "rsi_score": 0.5112758555599507,
     "macd_histogram": 0.13822972705415115,
     "macd_line": 0.5939812395306419,
     "macd_histogram_pct": 0.5955611051558636,
-    "bb_position": 1.0117833701499002,
-    "bb_upper": 23.175278706635453,
-    "bb_lower": 20.228721194182413,
-    "bb_width": 0.13577354710101353,
+    "bb_position": 1.011783370149899,
+    "bb_upper": 23.175278706635456,
+    "bb_lower": 20.228721194182416,
+    "bb_width": 0.1357735471010135,
     "hist_volatility": 0.20383260542880918,
     "volume_ratio": 0.9123836659924067,
     "avg_volume_20d": 16551480.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 95.39470497009262,
+    "stoch_k": 95.39470497009263,
     "stoch_d": 93.78592244001021,
-    "trend_score": 78.66183016047214,
+    "trend_score": 78.6618301604721,
     "rsi_abs_score": 38.87241444400493,
     "macd_abs_score": 66.43341657733795,
     "momentum_score": 52.65291551067144,
-    "volatility_score": 57.03523644994678,
+    "volatility_score": 57.03523644994679,
     "volume_score": 50.0,
-    "technical_score": 60.80147099133243,
+    "technical_score": 60.80147099133242,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.310996134244506,
+    "sentiment_pos": 0.1169,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.8831,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 65.55
+  },
   "analyst": {
     "revision_momentum": -0.125,
     "target_upside": 0.03403705299439893,
@@ -6325,9 +6333,9 @@
     "quality_score": 67.27834285714286,
     "growth_score": 64.0,
     "safety_score": 33.12325,
-    "trend_score": 78.66183016047214,
+    "trend_score": 78.6618301604721,
     "momentum_score": 52.65291551067144,
-    "volatility_score": 57.03523644994678,
+    "volatility_score": 57.03523644994679,
     "volume_score": 50.0,
     "analyst_score": 48.150605282205944,
     "pe_score": 46.55044,
@@ -6345,15 +6353,15 @@
     "earnings_visibility": 60.17975142857143,
     "valuation_margin": 52.496425447619046,
     "catalyst_timeline": 60.80053509533495,
-    "downside_control": 48.29977296749201,
-    "composite_score": 56.26527618234873,
+    "downside_control": 48.29977296749202,
+    "composite_score": 56.26138713705029,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 56.21017406349207,
-    "technical_score": 60.80147099133243,
-    "sentiment_score": 50.0,
+    "technical_score": 60.80147099133242,
+    "sentiment_score": 65.55,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Regional Banks"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "KEY FAMILY WEALTH WINS 'BEST EDUCATIONAL INITIATIVE' AWARD AT THE 2026 PRIVATE ASSET MANAGEMENT AWARDS",
+      "url": "/news/302937/key-family-wealth-wins-best-educational-initiative-award-at-the-2026-private-asset-management-awards",
+      "publisher": "PR Newswire",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "KEYCORP TO PRESENT AT THE UBS FINANCIAL SERVICES CONFERENCE & THE BANK OF AMERICA SECURITIES FINANCIAL SERVICES CONFERENCE",
+      "url": "/news/295367/keycorp-to-present-at-the-ubs-financial-services-conference-the-bank-of-america-securities-financial-services-conference",
+      "publisher": "PR Newswire",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Are Wall Street Analysts Bullish on KeyCorp Stock?",
+      "url": "https://finance.yahoo.com/m/70b135a4-0130-3c22-a051-e955dea06c74/are-wall-street-analysts.html",
+      "publisher": "Barchart",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "5 Revealing Analyst Questions From KeyCorp's Q4 Earnings Call",
+      "url": "/news/287795/5-revealing-analyst-questions-from-keycorps-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ALLY Q4 Earnings Beat as Revenues Grow Y/Y & Provisions Decline",
+      "url": "/news/284367/ally-q4-earnings-beat-as-revenues-grow-yy-provisions-decline",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TFC Q4 Earnings Beat Despite Y/Y Rise in Expenses, Stock Dips",
+      "url": "/news/282853/tfc-q4-earnings-beat-despite-yy-rise-in-expenses-stock-dips",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "KeyCorp (KEY) Stock Trades Up, Here Is Why",
+      "url": "/news/282684/keycorp-key-stock-trades-up-here-is-why",
+      "publisher": "StockStory",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Zions Stock Rises 1.7% as Q4 Earnings Beat on NII & Fee Income Growth",
+      "url": "/news/282769/zions-stock-rises-17-as-q4-earnings-beat-on-nii-fee-income-growth",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "KeyCorp names new lead independent director",
+      "url": "https://finance.yahoo.com/m/9253bc37-9e68-3ae9-b9f4-cc89e8e5f12c/keycorp-names-new-lead.html",
+      "publisher": "Banking Dive",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "KEY Q4 Deep Dive: Organic Growth and Strategic Investments Drive Solid Results",
+      "url": "/news/281902/key-q4-deep-dive-organic-growth-and-strategic-investments-drive-solid-results",
+      "publisher": "StockStory",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Compared to Estimates, KeyCorp (KEY) Q4 Earnings: A Look at Key Metrics",
+      "url": "/news/281763/compared-to-estimates-keycorp-key-q4-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "KeyCorp, facing activist investor heat, tweaks board lineup",
+      "url": "https://finance.yahoo.com/m/3654dd19-2952-3bc6-a8b9-e3a43157f801/keycorp%2C-facing-activist.html",
+      "publisher": "American Banker",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "KeyCorp (KEY) Q4 2025 Earnings Call Highlights: Strong Revenue Growth and Strategic Investments",
+      "url": "https://finance.yahoo.com/news/keycorp-key-q4-2025-earnings-190057656.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "KeyCorp Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/6e85c234-04cc-3eb2-af62-2e84eb9ad334/keycorp-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "KEY Q4 Earnings Beat as NII Jumps, Stock Down on Rise in Provisions",
+      "url": "/news/281219/key-q4-earnings-beat-as-nii-jumps-stock-down-on-rise-in-provisions",
+      "publisher": "Zacks",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "KeyCorp's (NYSE:KEY) Q4 CY2025: Beats On Revenue",
+      "url": "/news/280847/keycorps-nyse-key-q4-cy2025-beats-on-revenue",
+      "publisher": "StockStory",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "KeyCorp Board of Directors Update",
+      "url": "/news/280759/keycorp-board-of-directors-update",
+      "publisher": "PR Newswire",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "KEYCORP REPORTS FOURTH QUARTER 2025 NET INCOME OF $474 MILLION, OR $.43 PER DILUTED COMMON SHARE",
+      "url": "/news/280750/keycorp-reports-fourth-quarter-2025-net-income-of-474-million-or-43-per-diluted-common-share",
+      "publisher": "PR Newswire",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Citizens Financial to Post Q4 Earnings: What's in Store for the Stock?",
+      "url": "/news/280395/citizens-financial-to-post-q4-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stable NII & Loan Growth to Support U.S. Bancorp's Q4 Earnings",
+      "url": "/news/280385/stable-nii-loan-growth-to-support-us-bancorps-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-01-19",
+      "sentiment": "positive"
+    }
+  ]
 }

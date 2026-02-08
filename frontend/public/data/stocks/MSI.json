@@ -6279,8 +6279,8 @@
     "close": 422.17999267578125,
     "sma_20": 402.7489974975586,
     "sma_50": 385.6271948242188,
-    "sma_200": 418.7902349853516,
-    "trend_alignment": 0.5581700860781038,
+    "sma_200": 418.79023498535156,
+    "trend_alignment": 0.5581700860781039,
     "rsi": 76.73838033103871,
     "rsi_score": 0.5347676066207743,
     "macd_histogram": 1.8284170223644463,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 96.56628696705391,
     "stoch_d": 93.68864531583225,
-    "trend_score": 55.81700860781038,
+    "trend_score": 55.81700860781039,
     "rsi_abs_score": 36.523239337922575,
     "macd_abs_score": 63.32723633334635,
     "momentum_score": 49.92523783563446,
     "volatility_score": 66.13430304303081,
     "volume_score": 50.0,
-    "technical_score": 54.94953454163961,
+    "technical_score": 54.94953454163962,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.18975998291172153,
+    "sentiment_pos": 0.2064,
+    "sentiment_neg": 0.019700000000000002,
+    "sentiment_neu": 0.7739,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 59.49
+  },
   "analyst": {
     "revision_momentum": 1.0,
     "target_upside": 0.1902506040077692,
@@ -6325,7 +6333,7 @@
     "quality_score": 82.8912,
     "growth_score": 50.95,
     "safety_score": 36.78099866353779,
-    "trend_score": 55.81700860781038,
+    "trend_score": 55.81700860781039,
     "momentum_score": 49.92523783563446,
     "volatility_score": 66.13430304303081,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 47.98915845333333,
     "catalyst_timeline": 60.41984718117711,
     "downside_control": 50.27629525598529,
-    "composite_score": 58.26434377496997,
+    "composite_score": 58.26045472967154,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 58.68452511048533,
-    "technical_score": 54.94953454163961,
-    "sentiment_score": 50.0,
+    "technical_score": 54.94953454163962,
+    "sentiment_score": 59.49,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Communications Equipment"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Exploring Analyst Estimates for Motorola (MSI) Q4 Earnings, Beyond Revenue and EPS",
+      "url": "/news/302815/exploring-analyst-estimates-for-motorola-msi-q4-earnings-beyond-revenue-and-eps",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Axon Tased By AI Software Fears As Investors Shoot First",
+      "url": "https://finance.yahoo.com/m/3c7039f8-da84-391a-8286-4b40cd5e72c7/axon-tased-by-ai-software.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Motorola to Report Q4 Earnings: Can Strong Revenues Drive Growth?",
+      "url": "/news/301758/motorola-to-report-q4-earnings-can-strong-revenues-drive-growth",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "InterDigital (IDCC) Q4 Earnings and Revenues Beat Estimates",
+      "url": "/news/301647/interdigital-idcc-q4-earnings-and-revenues-beat-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Reasons MSI Has Explosive Upside Potential",
+      "url": "/news/298713/3-reasons-msi-has-explosive-upside-potential",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Celestica Surpasses Q4 Earnings Estimates on Higher Revenues",
+      "url": "/news/292321/celestica-surpasses-q4-earnings-estimates-on-higher-revenues",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nokia Q4 Earnings Beat Estimates on Healthy Top-Line Growth",
+      "url": "/news/291802/nokia-q4-earnings-beat-estimates-on-healthy-top-line-growth",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Motorola Solutions to Issue Fourth-Quarter and Full-Year 2025 Earnings Results on February 11",
+      "url": "https://www.businesswire.com/news/home/20260128885269/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "GLW Q4 Earnings Beat Estimates on Strength in Optical Communication",
+      "url": "/news/290595/glw-q4-earnings-beat-estimates-on-strength-in-optical-communication",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "New Motorola Solutions AI Offerings Help Public Safety Agencies Reclaim Hours Every Day",
+      "url": "https://www.businesswire.com/news/home/20260128213950/en/Assist",
+      "publisher": "Business Wire",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Q3 Safety & Security Services Earnings Review: First Prize Goes to Motorola Solutions (NYSE:MSI)",
+      "url": "/news/289574/q3-safety-security-services-earnings-review-first-prize-goes-to-motorola-solutions-nyse-msi",
+      "publisher": "StockStory",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "ERIC or MSI: Which Is the Better Value Stock Right Now?",
+      "url": "/news/287232/eric-or-msi-which-is-the-better-value-stock-right-now",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "MSI's Silvus Unveils Advanced Radio Systems: Will it Boost Prospects?",
+      "url": "/news/287079/msis-silvus-unveils-advanced-radio-systems-will-it-boost-prospects",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ericsson Q4 Earnings Beat Estimates Despite Lower Revenues",
+      "url": "/news/285473/ericsson-q4-earnings-beat-estimates-despite-lower-revenues",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Viasat Powers KLM's Fast, Free In-Flight Wi-Fi Rollout in Europe",
+      "url": "/news/285155/viasat-powers-klms-fast-free-in-flight-wi-fi-rollout-in-europe",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "2 Top Dividend Stocks to Buy on the Dip in 2026 and Hold Forever",
+      "url": "/news/284979/2-top-dividend-stocks-to-buy-on-the-dip-in-2026-and-hold-forever",
+      "publisher": "Motley Fool",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Silvus Technologies Unveils StreamCaster MINI 5200 Tactical MANET Radio",
+      "url": "https://www.businesswire.com/news/home/20260122973744/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jim Cramer Believes Motorola Could Possibly \"Give Axon a Run for the Money\"",
+      "url": "/news/283877/jim-cramer-believes-motorola-could-possibly-give-axon-a-run-for-the-money",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "GILT Wins $11M VHTS Contract in APAC for Next-Gen Satellite Networks",
+      "url": "/news/282371/gilt-wins-11m-vhts-contract-in-apac-for-next-gen-satellite-networks",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Do You Believe in the Growth Potential of Motorola (MSI)?",
+      "url": "/news/280212/do-you-believe-in-the-growth-potential-of-motorola-msi",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-19",
+      "sentiment": "positive"
+    }
+  ]
 }

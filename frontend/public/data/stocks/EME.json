@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 764.3499755859375,
-    "sma_20": 709.9177947998046,
+    "sma_20": 709.9177947998047,
     "sma_50": 658.7480187988281,
     "sma_200": 598.1432736206056,
     "trend_alignment": 0.8079898719829165,
@@ -6286,17 +6286,17 @@
     "macd_histogram": 2.881638713080239,
     "macd_line": 26.110904908913994,
     "macd_histogram_pct": 0.37700514229378035,
-    "bb_position": 0.9589619210235015,
-    "bb_upper": 769.2170288895818,
-    "bb_lower": 650.6185607100274,
-    "bb_width": 0.16705943849878976,
+    "bb_position": 0.9589619210235005,
+    "bb_upper": 769.2170288895819,
+    "bb_lower": 650.6185607100275,
+    "bb_width": 0.16705943849878974,
     "hist_volatility": 0.3754266981966763,
     "volume_ratio": 1.0991417579165434,
     "avg_volume_20d": 337900.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 83.53421616523215,
-    "stoch_d": 72.8870623280593,
+    "stoch_k": 83.53421616523214,
+    "stoch_d": 72.88706232805929,
     "trend_score": 80.79898719829166,
     "rsi_abs_score": 60.21058588863466,
     "macd_abs_score": 61.92512855734451,
@@ -6306,7 +6306,15 @@
     "technical_score": 60.3981475205105,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.2002130024744383,
+    "sentiment_pos": 0.1403,
+    "sentiment_neg": 0.0104,
+    "sentiment_neu": 0.8493,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 60.01
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": -0.016157519460979947,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 45.17388765,
     "catalyst_timeline": 62.81791180590126,
     "downside_control": 52.94122377059459,
-    "composite_score": 60.7981219807204,
+    "composite_score": 60.79423293542197,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 66.92581054166668,
     "technical_score": 60.3981475205105,
-    "sentiment_score": 50.0,
+    "sentiment_score": 60.01,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Construction & Engineering"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "EMCOR (EME) Shares Skyrocket, What You Need To Know",
+      "url": "/news/303377/emcor-eme-shares-skyrocket-what-you-need-to-know",
+      "publisher": "StockStory",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "1 Industrials Stock with Exciting Potential and 2 We Brush Off",
+      "url": "/news/303371/1-industrials-stock-with-exciting-potential-and-2-we-brush-off",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Emcor Group (EME) Is Up 3.82% in One Week: What You Should Know",
+      "url": "/news/301859/emcor-group-eme-is-up-382-in-one-week-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Palantir and Woodward Jumped on Earnings Beats-Here Are 3 More Setups to Watch",
+      "url": "/news/300321/palantir-and-woodward-jumped-on-earnings-beats-here-are-3-more-setups-to-watch",
+      "publisher": "MarketBeat",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tom Gardner's 2026 Outlook: Volatility, Government Scrutiny, and Two AI-Adjacent Stocks",
+      "url": "/news/300294/tom-gardners-2026-outlook-volatility-government-scrutiny-and-two-ai-adjacent-stocks",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Earnings Storm Brewing: What's In Store For Google Stock, Nvidia, And Beyond?",
+      "url": "https://finance.yahoo.com/m/b66b502a-c59f-3b30-a51d-d8045e10412e/earnings-storm-brewing%3A.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "EMCOR's Project Mix Lifts Margins: Is Execution the Key?",
+      "url": "/news/297995/emcors-project-mix-lifts-margins-is-execution-the-key",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "EMCOR Group, Inc. (EME) is Attracting Investor Attention: Here is What You Should Know",
+      "url": "/news/297454/emcor-group-inc-eme-is-attracting-investor-attention-here-is-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Sterling Ramps Up Mission-Critical Projects: Visibility Strengthens?",
+      "url": "/news/296015/sterling-ramps-up-mission-critical-projects-visibility-strengthens",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Emcor Group (EME) Registers a Bigger Fall Than the Market: Important Facts to Note",
+      "url": "/news/294277/emcor-group-eme-registers-a-bigger-fall-than-the-market-important-facts-to-note",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is It Worth Investing in Emcor Group (EME) Based on Wall Street's Bullish Views?",
+      "url": "/news/293609/is-it-worth-investing-in-emcor-group-eme-based-on-wall-streets-bullish-views",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why Emcor Group (EME) is a Strong Growth Stock",
+      "url": "/news/290230/heres-why-emcor-group-eme-is-a-strong-growth-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's How Much You'd Have If You Invested $1000 in Emcor Group a Decade Ago",
+      "url": "/news/290009/heres-how-much-youd-have-if-you-invested-1000-in-emcor-group-a-decade-ago",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Are Construction Stocks Lagging  Dycom Industries (DY) This Year?",
+      "url": "/news/288511/are-construction-stocks-lagging-dycom-industries-dy-this-year",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Is Dycom's Surge in Engineering Work Hinting at Bigger Builds Ahead?",
+      "url": "/news/287758/is-dycoms-surge-in-engineering-work-hinting-at-bigger-builds-ahead",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Comfort Systems' Cash Flow Strengthens: Capital Allocation in Focus?",
+      "url": "/news/286989/comfort-systems-cash-flow-strengthens-capital-allocation-in-focus",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is Geographic Expansion Supporting Sterling's Backlog Growth?",
+      "url": "/news/286943/is-geographic-expansion-supporting-sterlings-backlog-growth",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's My Top AI Stock to Buy Right Now",
+      "url": "/news/286121/heres-my-top-ai-stock-to-buy-right-now",
+      "publisher": "Motley Fool",
+      "date": "2026-01-24",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Emcor Group (EME) Stock Falls Amid Market Uptick: What Investors Need to Know",
+      "url": "/news/285890/emcor-group-eme-stock-falls-amid-market-uptick-what-investors-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "EMCOR Group, Inc. (EME) Is a Trending Stock: Facts to Know Before Betting on It",
+      "url": "/news/285293/emcor-group-inc-eme-is-a-trending-stock-facts-to-know-before-betting-on-it",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    }
+  ]
 }

@@ -6306,7 +6306,15 @@
     "technical_score": 61.03506243280932,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.28613110895900734,
+    "sentiment_pos": 0.19975,
+    "sentiment_neg": 0.031,
+    "sentiment_neu": 0.76925,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 64.31
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.1857707509881422,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 53.88364179999999,
     "catalyst_timeline": 57.33373942101565,
     "downside_control": 56.6924370366597,
-    "composite_score": 56.32297292320236,
+    "composite_score": 56.31908387790392,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 60.08052560714285,
     "technical_score": 61.03506243280932,
-    "sentiment_score": 50.0,
+    "sentiment_score": 64.31,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Utilities",
     "industry": "Multi-Utilities"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Xcel Energy pursuing large load tariffs in 4 states amid data center growth",
+      "url": "https://finance.yahoo.com/m/f8dc10d5-7c4b-3c2a-9970-37a7ecc1314c/xcel-energy-pursuing-large.html",
+      "publisher": "Utility Dive",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Xcel Energy Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/ec56a51e-9cd6-3433-9a51-f3af166e91e5/xcel-energy-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Xcel Energy Inks Dual Alliances with GE Vernova, NextEra to Support 6-GW Data Center Outlook, Generation Expansion",
+      "url": "https://finance.yahoo.com/m/daa2bb1e-f851-3c3d-b24e-8d071168e7e4/xcel-energy-inks-dual.html",
+      "publisher": "POWER Magazine",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Xcel Energy Inc (XEL) Q4 2025 Earnings Call Highlights: Strong Earnings Amid Strategic ...",
+      "url": "https://finance.yahoo.com/news/xcel-energy-inc-xel-q4-211050031.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Xcel Energy Inc.",
+      "url": "https://finance.yahoo.com/m/39c01e7e-ec6d-3da5-b350-59ec5f6c7e81/analyst-report%3A-xcel-energy.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Xcel Energy Q4 Earnings and Revenues Lag Estimates, Expenses Rise",
+      "url": "/news/301833/xcel-energy-q4-earnings-and-revenues-lag-estimates-expenses-rise",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Xcel (XEL) Reports Q4 Earnings: What Key Metrics Have to Say",
+      "url": "/news/301525/xcel-xel-reports-q4-earnings-what-key-metrics-have-to-say",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is Wall Street Bullish or Bearish on Xcel Energy Stock?",
+      "url": "https://finance.yahoo.com/m/13495846-aa92-304a-b36f-8cdb1423750f/is-wall-street-bullish-or.html",
+      "publisher": "Barchart",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Xcel Energy (XEL) Misses Q4 Earnings and Revenue Estimates",
+      "url": "/news/301183/xcel-energy-xel-misses-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Xcel: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/xcel-q4-earnings-snapshot-112342735.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Xcel Energy 2025 Year End Earnings Report",
+      "url": "https://www.businesswire.com/news/home/20260205283532/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Xcel Energy and NextEra Energy Agree to Deliver Generation Solutions and Enable Large Load Across Xcel Energys Service Territories",
+      "url": "https://www.businesswire.com/news/home/20260204131879/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "GE Vernova Secures Turbine, Wind Orders In Xcel Deal",
+      "url": "/news/297880/ge-vernova-secures-turbine-wind-orders-in-xcel-deal",
+      "publisher": "Benzinga",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Xcel Energy to Report Q4 Earnings: What's in Store for the Stock?",
+      "url": "/news/297762/xcel-energy-to-report-q4-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analysts Estimate Duke Energy (DUK) to Report a Decline in Earnings: What to Look Out for",
+      "url": "/news/297677/analysts-estimate-duke-energy-duk-to-report-a-decline-in-earnings-what-to-look-out-for",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Gear Up for Xcel (XEL) Q4 Earnings: Wall Street Estimates for Key Metrics",
+      "url": "/news/297485/gear-up-for-xcel-xel-q4-earnings-wall-street-estimates-for-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Xcel Energy and GE Vernova Announce Strategic Alliance Agreement to Advance the Future of Energy",
+      "url": "https://www.businesswire.com/news/home/20260203523551/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "January jobs data, Alphabet and Amazon earnings, more Warsh fallout: What to watch this week",
+      "url": "https://finance.yahoo.com/news/january-jobs-data-alphabet-and-amazon-earnings-more-warsh-fallout-what-to-watch-this-week-124723942.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Xcel Energy (XEL) Reports Next Week: Wall Street Expects Earnings Growth",
+      "url": "/news/291988/xcel-energy-xel-reports-next-week-wall-street-expects-earnings-growth",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "NextEra Energy's Q4 Earnings Surpass Estimates, Revenues Lag",
+      "url": "/news/288684/nextera-energys-q4-earnings-surpass-estimates-revenues-lag",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "negative"
+    }
+  ]
 }

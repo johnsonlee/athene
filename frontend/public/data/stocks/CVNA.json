@@ -6278,7 +6278,7 @@
   "technical": {
     "close": 403.6700134277344,
     "sma_20": 436.85449981689453,
-    "sma_50": 432.97919921875,
+    "sma_50": 432.97919921874995,
     "sma_200": 359.07670051574706,
     "trend_alignment": 0.5947424524594946,
     "rsi": 43.341734765471635,
@@ -6306,7 +6306,15 @@
     "technical_score": 44.600549980624535,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.051172682641167984,
+    "sentiment_pos": 0.05345,
+    "sentiment_neg": 0.06174999999999999,
+    "sentiment_neu": 0.8848499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 47.44
+  },
   "analyst": {
     "revision_momentum": 0.21052631578947367,
     "target_upside": 0.238635519112146,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 23.22847778095238,
     "catalyst_timeline": 53.422070030538464,
     "downside_control": 34.69394550468018,
-    "composite_score": 48.61677937054927,
+    "composite_score": 48.61289032525083,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 63.626794794645754,
     "technical_score": 44.600549980624535,
-    "sentiment_score": 50.0,
+    "sentiment_score": 47.44,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Automotive Retail"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "These 2 Retail and Wholesale Stocks Could Beat Earnings: Why They Should Be on Your Radar",
+      "url": "/news/302764/these-2-retail-and-wholesale-stocks-could-beat-earnings-why-they-should-be-on-your-radar",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Investors Heavily Search Carvana Co. (CVNA): Here is What You Need to Know",
+      "url": "/news/301458/investors-heavily-search-carvana-co-cvna-here-is-what-you-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Carvana Co. (CVNA): A Bull Case Theory",
+      "url": "/news/299810/carvana-co-cvna-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Investors Who Lost Money In Carvana Stock Should Contact Block & Leviton LLP To Potentially Recover Losses",
+      "url": "https://www.newsfilecorp.com/release/282559/Investors-Who-Lost-Money-In-Carvana-Stock-Should-Contact-Block-Leviton-LLP-To-Potentially-Recover-Losses",
+      "publisher": "Newsfile",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "What's Going On With Carvana Stock Today?",
+      "url": "/news/297728/whats-going-on-with-carvana-stock-today",
+      "publisher": "Benzinga",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Revisiting Hertz's Amazon Partnership 5 Months Later: The Good, the Bad, the Risk",
+      "url": "/news/297519/revisiting-hertzs-amazon-partnership-5-months-later-the-good-the-bad-the-risk",
+      "publisher": "MarketBeat",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Carvana Expands Same-Day Delivery to Eugene",
+      "url": "https://www.businesswire.com/news/home/20260204809750/en/Carvana",
+      "publisher": "Business Wire",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Carvana Rides $9 Billion Loan Engine as Used-Car Demand Stays Firm",
+      "url": "https://finance.yahoo.com/news/carvana-rides-9-billion-loan-190331823.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Carvana (CVNA) Declines More Than Market: Some Information for Investors",
+      "url": "/news/294304/carvana-cvna-declines-more-than-market-some-information-for-investors",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Carvana (CVNA) Stock Is Falling Friday: What's Driving The Action?",
+      "url": "/news/293790/carvana-cvna-stock-is-falling-friday-whats-driving-the-action",
+      "publisher": "Benzinga",
+      "date": "2026-01-30",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Why Carvana (CVNA) is a Top Momentum Stock for the Long-Term",
+      "url": "/news/293679/why-carvana-cvna-is-a-top-momentum-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Carvana Drops 14% After $1B Accounting Allegations",
+      "url": "/news/292521/carvana-drops-14-after-1b-accounting-allegations",
+      "publisher": "MarketBeat",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Of The Day: Is This The Bottom For Carvana?",
+      "url": "/news/292386/stock-of-the-day-is-this-the-bottom-for-carvana",
+      "publisher": "Benzinga",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Carvana stock defended at BTIG amid DriveTime allegations",
+      "url": "https://finance.yahoo.com/news/carvana-stock-defended-btig-amid-163354225.html",
+      "publisher": "Investing.com",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Whats actually driving Carvanas margins?",
+      "url": "https://finance.yahoo.com/m/d8a42c8b-6144-339e-ba32-cbdd6c2283ca/what%E2%80%99s-actually-driving.html",
+      "publisher": "CFO.com",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Carvana Rebounds as Wall Street Pushes Back",
+      "url": "https://finance.yahoo.com/news/carvana-rebounds-wall-street-pushes-154353801.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Carvana stock rises as analysts defend company following short report",
+      "url": "https://finance.yahoo.com/news/carvana-stock-rises-analysts-defend-152802145.html",
+      "publisher": "Investing.com",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Carvana Stock Bounces Back: What's Going On Today?",
+      "url": "/news/291837/carvana-stock-bounces-back-whats-going-on-today",
+      "publisher": "Benzinga",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Carvana Plunges 15% As Ghost of Accounting Grift Allegations Haunts Car Dealer",
+      "url": "https://finance.yahoo.com/m/c88f69b3-821c-349d-bc18-f01ba02a5623/carvana-plunges-15%25-as-ghost.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Here's Why Carvana (CVNA) is a Strong Growth Stock",
+      "url": "/news/291932/heres-why-carvana-cvna-is-a-strong-growth-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    }
+  ]
 }

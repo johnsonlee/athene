@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 127.41999816894531,
-    "sma_20": 124.63947792053223,
+    "sma_20": 124.63947792053222,
     "sma_50": 123.75085601806643,
     "sma_200": 142.37198650360105,
     "trend_alignment": 0.4116629958094779,
@@ -6286,10 +6286,10 @@
     "macd_histogram": 0.3888276589551515,
     "macd_line": 0.5341123458018728,
     "macd_histogram_pct": 0.30515434354315996,
-    "bb_position": 0.9317029151288233,
-    "bb_upper": 127.85988731663667,
-    "bb_lower": 121.41906852442779,
-    "bb_width": 0.051675591872387586,
+    "bb_position": 0.9317029151288254,
+    "bb_upper": 127.85988731663666,
+    "bb_lower": 121.41906852442777,
+    "bb_width": 0.05167559187238759,
     "hist_volatility": 0.2206607109412875,
     "volume_ratio": 0.8814108723783167,
     "avg_volume_20d": 4683060.0,
@@ -6306,7 +6306,15 @@
     "technical_score": 56.256263295814854,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.20759151951771201,
+    "sentiment_pos": 0.14245000000000002,
+    "sentiment_neg": 0.0205,
+    "sentiment_neu": 0.83705,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 60.38
+  },
   "analyst": {
     "revision_momentum": -0.14285714285714285,
     "target_upside": 0.13796892167634592,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 49.91810226,
     "catalyst_timeline": 54.19209487428411,
     "downside_control": 61.46363179895587,
-    "composite_score": 57.024706913568764,
+    "composite_score": 57.02081786827033,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 64.3845086244281,
     "technical_score": 56.256263295814854,
-    "sentiment_score": 50.0,
+    "sentiment_score": 60.38,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Pharmaceuticals"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Pelican Bay Capital Management Bets on Zoetis (ZTS) to Capitalize on Expanding Pet Care Market",
+      "url": "/news/302673/pelican-bay-capital-management-bets-on-zoetis-zts-to-capitalize-on-expanding-pet-care-market",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Zoetis Declares Second Quarter 2026 Dividend",
+      "url": "https://www.businesswire.com/news/home/20260205858886/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Do Wall Street Analysts Like Zoetis Stock?",
+      "url": "https://finance.yahoo.com/m/0d1eca1c-8f84-33c0-a512-c8fbd3ee2d00/do-wall-street-analysts-like.html",
+      "publisher": "Barchart",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Zoetis (ZTS) Expected to Beat Earnings Estimates: Should You Buy?",
+      "url": "/news/301709/zoetis-zts-expected-to-beat-earnings-estimates-should-you-buy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Zoetis (ZTS) is a Strong Momentum Stock",
+      "url": "/news/301651/heres-why-zoetis-zts-is-a-strong-momentum-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Zoetis Inc. (ZTS): A Bull Case Theory",
+      "url": "/news/300039/zoetis-inc-zts-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Zoetis (ZTS) Registers a Bigger Fall Than the Market: Important Facts to Note",
+      "url": "/news/298409/zoetis-zts-registers-a-bigger-fall-than-the-market-important-facts-to-note",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "SGIOY vs. ZTS: Which Stock Is the Better Value Option?",
+      "url": "/news/297849/sgioy-vs-zts-which-stock-is-the-better-value-option",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "5 Drug/Biotech Stocks Likely to Outperform Q4 Earnings Estimates",
+      "url": "/news/297684/5-drugbiotech-stocks-likely-to-outperform-q4-earnings-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Zoetis (ZTS) is a Strong Growth Stock",
+      "url": "/news/297604/heres-why-zoetis-zts-is-a-strong-growth-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Zoetis (ZTS) Traded Lower Due to Reduced 2026 Outlook",
+      "url": "/news/297175/zoetis-zts-traded-lower-due-to-reduced-2026-outlook",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Zoetis Inc. (ZTS) Sees Mixed Analyst Sentiment as Targets Are Trimmed",
+      "url": "/news/294537/zoetis-inc-zts-sees-mixed-analyst-sentiment-as-targets-are-trimmed",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-31",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Zoetis (ZTS) is a Top-Ranked Value Stock: Should You Buy?",
+      "url": "/news/293624/zoetis-zts-is-a-top-ranked-value-stock-should-you-buy",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Zoetis (ZTS) Dips More Than Broader Market: What You Should Know",
+      "url": "/news/291002/zoetis-zts-dips-more-than-broader-market-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Gold and Silver Arent the Only Hot Commodities. Agricultural Stocks to Consider.",
+      "url": "https://finance.yahoo.com/m/6c849133-d9fd-364d-8e31-09fedecbe2d9/gold-and-silver-aren%E2%80%99t-the.html",
+      "publisher": "Barrons.com",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Investors Need to Take Advantage of These 2 Medical Stocks Now",
+      "url": "/news/288355/why-investors-need-to-take-advantage-of-these-2-medical-stocks-now",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Piper Sandler Flags Near-Term Uncertainty for Zoetis (ZTS) Despite Long-Term Appeal",
+      "url": "/news/287457/piper-sandler-flags-near-term-uncertainty-for-zoetis-zts-despite-long-term-appeal",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-26",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Alphabet upgraded, Micron initiated: Wall Streets top analyst calls",
+      "url": "https://finance.yahoo.com/news/alphabet-upgraded-micron-initiated-wall-144146903.html",
+      "publisher": "TipRanks",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "2 Healthcare Stocks Poised for a Comeback in 2026",
+      "url": "/news/284355/2-healthcare-stocks-poised-for-a-comeback-in-2026",
+      "publisher": "Motley Fool",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "This Could Be One of the Best Healthcare Stock Buying Opportunities I've Seen in Years",
+      "url": "/news/284205/this-could-be-one-of-the-best-healthcare-stock-buying-opportunities-ive-seen-in-years",
+      "publisher": "Motley Fool",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    }
+  ]
 }

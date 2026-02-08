@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 165.0399932861328,
     "sma_20": 161.78599929809573,
-    "sma_50": 155.4913513183594,
+    "sma_50": 155.49135131835942,
     "sma_200": 127.83048782348634,
-    "trend_alignment": 0.7610023638741877,
+    "trend_alignment": 0.7610023638741875,
     "rsi": 63.9702633691758,
     "rsi_score": 0.27940526738351595,
     "macd_histogram": -0.015815584304195607,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 73.85547461344666,
     "stoch_d": 70.39669567164098,
-    "trend_score": 76.10023638741878,
+    "trend_score": 76.10023638741875,
     "rsi_abs_score": 68.72081564157695,
     "macd_abs_score": 49.52085600619312,
     "momentum_score": 59.12083582388503,
@@ -6306,7 +6306,15 @@
     "technical_score": 65.18424435735787,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.08882369120139845,
+    "sentiment_pos": 0.09045,
+    "sentiment_neg": 0.03365,
+    "sentiment_neu": 0.8759,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 54.44
+  },
   "analyst": {
     "revision_momentum": 0.16666666666666666,
     "target_upside": -0.17595734367426075,
@@ -6325,7 +6333,7 @@
     "quality_score": 85.85300000000001,
     "growth_score": 37.1,
     "safety_score": 65.0483125,
-    "trend_score": 76.10023638741878,
+    "trend_score": 76.10023638741875,
     "momentum_score": 59.12083582388503,
     "volatility_score": 73.08961346983364,
     "volume_score": 50.0,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 47.027045275,
     "catalyst_timeline": 58.1083311668405,
     "downside_control": 71.10668889547505,
-    "composite_score": 59.27665693361957,
+    "composite_score": 59.272767888321134,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 61.434766895833334,
     "technical_score": 65.18424435735787,
-    "sentiment_score": 50.0,
+    "sentiment_score": 54.44,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 120,
-    "percentile": 0.7707129094412332,
+    "rank": 119,
+    "percentile": 0.7726396917148363,
     "tier": "buy",
     "tier_raw": "buy",
     "tier_label": "Buy",
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Air Freight & Logistics"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "LYFT to Report Q4 Earnings: Is a Beat in Store for the Stock?",
+      "url": "/news/302741/lyft-to-report-q4-earnings-is-a-beat-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Copa Holdings to Report Q4 Earnings: What's in Store for the Stock?",
+      "url": "/news/301841/copa-holdings-to-report-q4-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Wabtec to Report Q4 Earnings: Is a Beat in Store for the Stock?",
+      "url": "/news/299747/wabtec-to-report-q4-earnings-is-a-beat-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Truist Sees Improving Freight Trends Supporting Expeditors' (EXPD) Outlook",
+      "url": "/news/297349/truist-sees-improving-freight-trends-supporting-expeditors-expd-outlook",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Schneider National (SNDR) Misses Q4 Earnings and Revenue Estimates",
+      "url": "/news/292730/schneider-national-sndr-misses-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "3 Transportation Stocks Set to Carve a Beat in This Earnings Season",
+      "url": "/news/291623/3-transportation-stocks-set-to-carve-a-beat-in-this-earnings-season",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Will Expeditors International (EXPD) Beat Estimates Again in Its Next Earnings Report?",
+      "url": "/news/287296/will-expeditors-international-expd-beat-estimates-again-in-its-next-earnings-report",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "DHLGY vs. EXPD: Which Stock Should Value Investors Buy Now?",
+      "url": "/news/287237/dhlgy-vs-expd-which-stock-should-value-investors-buy-now",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "C.H. Robinson to Report Q4 Earnings: What's in Store for the Stock?",
+      "url": "/news/286934/ch-robinson-to-report-q4-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Cash-Producing Stocks We Find Risky",
+      "url": "/news/286553/3-cash-producing-stocks-we-find-risky",
+      "publisher": "StockStory",
+      "date": "2026-01-25",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Expeditors International Earnings Preview: What to Expect",
+      "url": "https://finance.yahoo.com/m/3391b63c-7f3e-30d3-ac5a-f017f28f91a3/expeditors-international.html",
+      "publisher": "Barchart",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "6 Reasons Why You Should Add Ryanair Stock to Your Portfolio",
+      "url": "/news/276593/6-reasons-why-you-should-add-ryanair-stock-to-your-portfolio",
+      "publisher": "Zacks",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Delta Beats Q4 Earnings & Sales Estimates, Inks Deal on Fleet-Upgrade",
+      "url": "/news/275290/delta-beats-q4-earnings-sales-estimates-inks-deal-on-fleet-upgrade",
+      "publisher": "Zacks",
+      "date": "2026-01-13",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CNI Achieves Robust Grain Performance Record in December",
+      "url": "/news/275265/cni-achieves-robust-grain-performance-record-in-december",
+      "publisher": "Zacks",
+      "date": "2026-01-13",
+      "sentiment": "positive"
+    },
+    {
+      "title": "FDX vs. EXPD: Which Dividend-Paying Stock Reigns Supreme Currently?",
+      "url": "/news/274916/fdx-vs-expd-which-dividend-paying-stock-reigns-supreme-currently",
+      "publisher": "Zacks",
+      "date": "2026-01-13",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Allegiant Signs $1.5B Cash-and-Stock Deal to Purchase Sun Country",
+      "url": "/news/274099/allegiant-signs-15b-cash-and-stock-deal-to-purchase-sun-country",
+      "publisher": "Zacks",
+      "date": "2026-01-12",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ODFL Stock Down 4.2% Y/Y: Will the Plunge Continue Throughout 2026?",
+      "url": "/news/273603/odfl-stock-down-42-yy-will-the-plunge-continue-throughout-2026",
+      "publisher": "Zacks",
+      "date": "2026-01-12",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Investors Should Avoid SkyWest Stock for Now",
+      "url": "/news/273494/heres-why-investors-should-avoid-skywest-stock-for-now",
+      "publisher": "Zacks",
+      "date": "2026-01-12",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Air Lease Reports Active Fleet and Sales Strategy in Q4 2025",
+      "url": "/news/272378/air-lease-reports-active-fleet-and-sales-strategy-in-q4-2025",
+      "publisher": "Zacks",
+      "date": "2026-01-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "DHLGY or EXPD: Which Is the Better Value Stock Right Now?",
+      "url": "/news/272343/dhlgy-or-expd-which-is-the-better-value-stock-right-now",
+      "publisher": "Zacks",
+      "date": "2026-01-09",
+      "sentiment": "positive"
+    }
+  ]
 }

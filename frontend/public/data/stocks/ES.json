@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 2671780.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 5.0528858559482455,
+    "stoch_k": 5.052885855948246,
     "stoch_d": 8.375403206485625,
     "trend_score": 52.032253869596126,
     "rsi_abs_score": 64.87660457340773,
@@ -6306,7 +6306,15 @@
     "technical_score": 54.73895009359052,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.27867327047650753,
+    "sentiment_pos": 0.22805,
+    "sentiment_neg": 0.01,
+    "sentiment_neu": 0.76195,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 63.93
+  },
   "analyst": {
     "revision_momentum": -0.16666666666666666,
     "target_upside": 0.09115201900237531,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 66.53033766,
     "catalyst_timeline": 51.37578302664484,
     "downside_control": 49.07395407454625,
-    "composite_score": 54.65337007509663,
+    "composite_score": 54.649481029798196,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 51.51265747930875,
     "technical_score": 54.73895009359052,
-    "sentiment_score": 50.0,
+    "sentiment_score": 63.93,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Utilities",
     "industry": "Electric Utilities"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Duke Energy to Release Q4 Earnings: How to Approach the Stock Now?",
+      "url": "/news/302753/duke-energy-to-release-q4-earnings-how-to-approach-the-stock-now",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Eversource Energy (ES) Reports Next Week: Wall Street Expects Earnings Growth",
+      "url": "/news/301718/eversource-energy-es-reports-next-week-wall-street-expects-earnings-growth",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Eversource Stock: Analyst Estimates & Ratings",
+      "url": "https://finance.yahoo.com/m/747b3eb2-800b-39cb-8f2a-82d04538cda4/eversource-stock%3A-analyst.html",
+      "publisher": "Barchart",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NiSource to Report Q4 Earnings: What's in Store for the Stock?",
+      "url": "/news/299442/nisource-to-report-q4-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Xcel Energy to Report Q4 Earnings: What's in Store for the Stock?",
+      "url": "/news/297762/xcel-energy-to-report-q4-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Eversource Energy (ES) Positions for Long-Term Growth With Utility Investments",
+      "url": "/news/297209/eversource-energy-es-positions-for-long-term-growth-with-utility-investments",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Will Eversource (ES) Beat Estimates Again in Its Next Earnings Report?",
+      "url": "/news/292357/will-eversource-es-beat-estimates-again-in-its-next-earnings-report",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Eversource Energy (ES) Raises its Quarterly Dividend to $0.7875 per Share",
+      "url": "/news/291918/eversource-energy-es-raises-its-quarterly-dividend-to-07875-per-share",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Eversource Energy Increases Common Dividend",
+      "url": "https://www.businesswire.com/news/home/20260127661320/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Eversource Energy Schedules Fourth Quarter Earnings Call",
+      "url": "https://www.businesswire.com/news/home/20260122131798/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Nike Stock Could Join an Exclusive Club. What to Know About the 'Dividend Aristocrats'",
+      "url": "https://finance.yahoo.com/m/ca1d0cfa-0000-375d-9fe7-874c4965a3f4/nike-stock-could-join-an.html",
+      "publisher": "Investopedia",
+      "date": "2026-01-19",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Eversource Energy",
+      "url": "https://finance.yahoo.com/m/68c32e71-2cce-3ffc-b971-992cc88ecdbd/analyst-report%3A-eversource.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-18",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Eversource Energy",
+      "url": "https://finance.yahoo.com/m/348c3848-c586-399d-a494-471ef0033490/analyst-report%3A-eversource.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-15",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Eversource Energy Earnings Preview: What to Expect",
+      "url": "https://finance.yahoo.com/m/37bcad97-c727-37c1-a376-56edaf476680/eversource-energy-earnings.html",
+      "publisher": "Barchart",
+      "date": "2026-01-14",
+      "sentiment": "positive"
+    },
+    {
+      "title": "UBS Trims Eversource (ES) Target but Sees Constructive Regulatory Progress",
+      "url": "/news/269880/ubs-trims-eversource-es-target-but-sees-constructive-regulatory-progress",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why Eversource Energy (ES) is a Strong Momentum Stock",
+      "url": "/news/262572/heres-why-eversource-energy-es-is-a-strong-momentum-stock",
+      "publisher": "Zacks",
+      "date": "2025-12-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Trump stops offshore wind projects. 'The pause could last weeks to months,' analysts warn.",
+      "url": "https://www.marketwatch.com/story/trump-stops-offshore-wind-projects-the-pause-could-last-weeks-to-months-analysts-warn-99339b81?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2025-12-23",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Eversource Energy to Benefit From Strategic Infrastructure Investments",
+      "url": "/news/260916/eversource-energy-to-benefit-from-strategic-infrastructure-investments",
+      "publisher": "Zacks",
+      "date": "2025-12-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Offshore wind stocks slide after US suspends East Coast project leases",
+      "url": "https://finance.yahoo.com/news/offshore-wind-stocks-slide-us-170040485.html",
+      "publisher": "Investing.com",
+      "date": "2025-12-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Trims Price Target on Eversource Energy (ES) Amid Model Updates in the Utilities Sector",
+      "url": "/news/259151/analyst-trims-price-target-on-eversource-energy-es-amid-model-updates-in-the-utilities-sector",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-20",
+      "sentiment": "positive"
+    }
+  ]
 }

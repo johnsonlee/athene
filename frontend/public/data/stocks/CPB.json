@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 7459140.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 96.19850930557095,
+    "stoch_k": 96.19850930557097,
     "stoch_d": 89.79973843968139,
     "trend_score": 46.46300409866096,
     "rsi_abs_score": 70.26698873769784,
@@ -6306,7 +6306,15 @@
     "technical_score": 54.7569534322132,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.11953508303254286,
+    "sentiment_pos": 0.06305,
+    "sentiment_neg": 0.0705,
+    "sentiment_neu": 0.8664999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 44.02
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.040582726326743035,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 76.47837535428572,
     "catalyst_timeline": 54.153964217780796,
     "downside_control": 46.24893567810546,
-    "composite_score": 54.99003665014123,
+    "composite_score": 54.98614760484279,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 53.43636926657599,
     "technical_score": 54.7569534322132,
-    "sentiment_score": 50.0,
+    "sentiment_score": 44.02,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Staples",
     "industry": "Packaged Foods & Meats"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "What Are Wall Street Analysts' Target Price for Campbell's Stock?",
+      "url": "https://finance.yahoo.com/m/38306c6e-4523-3cd3-aea1-816cb8e431b5/what-are-wall-street.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ron DeSantis Says Florida Health Department Tested 'Bread Products' For Herbicides And Found Glyphosate In 6 Out Of 8 Samples",
+      "url": "/news/302365/ron-desantis-says-florida-health-department-tested-bread-products-for-herbicides-and-found-glyphosate-in-6-out-of-8-samples",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Heard on the Street Wednesday Recap: Tech Tantrum",
+      "url": "https://finance.yahoo.com/m/8125b7e3-2723-3344-af8d-52aff352f1b1/heard-on-the-street-wednesday.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Where is The Campbell's Company (CPB) Headed According to the Street?",
+      "url": "/news/300712/where-is-the-campbells-company-cpb-headed-according-to-the-street",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Heard on the Street Recap: Tech Tantrum",
+      "url": "https://finance.yahoo.com/m/ac5d1e6f-b4fd-398a-b9fb-d1e3424f32f9/heard-on-the-street-recap%3A.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "3 Ultra-High-Yield Dividend Stocks -- Sporting an Average Yield of 7.97% -- That Are Screaming Buys in February",
+      "url": "/news/298775/3-ultra-high-yield-dividend-stocks-sporting-an-average-yield-of-797-that-are-screaming-buys-in-february",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Plant Closure Means Cape Cod Chips Won't Be Made on Cape Cod",
+      "url": "https://finance.yahoo.com/news/plant-closure-means-cape-cod-163532540.html",
+      "publisher": "IEN",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Campbells to shutter Cape Cod potato chip plant",
+      "url": "https://finance.yahoo.com/m/0b66ff11-5cdd-3bfb-83da-e23c360a396d/campbell%E2%80%99s-to-shutter-cape.html",
+      "publisher": "Food Dive",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Campbells to close US snacks plant",
+      "url": "https://finance.yahoo.com/m/00ddb01d-a4da-3ccc-9089-506648da0199/campbell%E2%80%99s-to-close-us-snacks.html",
+      "publisher": "Just Food",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cape Cod Potato Chips closes Hyannis factory, promises to 'honor the brand's heritage'",
+      "url": "https://finance.yahoo.com/m/c5daacd9-8ab4-3fd7-bac9-4cb9abf7bcca/cape-cod-potato-chips-closes.html",
+      "publisher": "Cape Cod Times",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What to Expect From Campbell's Q2 2026 Earnings Report",
+      "url": "https://finance.yahoo.com/m/4397eb0a-5a0b-3c34-9385-2aece631eb3a/what-to-expect-from.html",
+      "publisher": "Barchart",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Campbell's (CPB) Stock Trades Down, Here Is Why",
+      "url": "/news/279041/campbells-cpb-stock-trades-down-here-is-why",
+      "publisher": "StockStory",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks With Juicy Dividends Are Tempting. But How Risky Are They?",
+      "url": "https://www.barrons.com/articles/stocks-juicy-dividends-how-risky-are-they-bonds-yields-fb71158f?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-16",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Better Buy: Wayfair or BrownForman as Their Stocks Diverge to 52Week Highs and Lows?",
+      "url": "https://finance.yahoo.com/m/e6b8d3ee-2c3a-3bc4-b8b3-422bf55f877c/better-buy%3A-wayfair-or.html",
+      "publisher": "Barchart",
+      "date": "2026-01-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "These Stocks Are the Markets Biggest Winners and Losers in 2025",
+      "url": "https://finance.yahoo.com/news/stocks-market-biggest-winners-losers-110007084.html",
+      "publisher": "Bloomberg",
+      "date": "2025-12-31",
+      "sentiment": "negative"
+    },
+    {
+      "title": "7 Unbeatable Stocks I'm Eager to Buy in 2026",
+      "url": "/news/263193/7-unbeatable-stocks-im-eager-to-buy-in-2026",
+      "publisher": "Motley Fool",
+      "date": "2025-12-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Q3 Earnings Outperformers: Campbell's (NASDAQ:CPB) And The Rest Of The Shelf-Stable Food Stocks",
+      "url": "/news/263675/q3-earnings-outperformers-campbells-nasdaq-cpb-and-the-rest-of-the-shelf-stable-food-stocks",
+      "publisher": "StockStory",
+      "date": "2025-12-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Heard on the Street Recap: A Dose of Optimism",
+      "url": "https://finance.yahoo.com/m/e869fd3c-808f-3b2f-aae0-628938a59ce2/heard-on-the-street-recap%3A-a.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2025-12-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "UPS and 11 Other Stocks With Sky-High Dividends and No Clear Answers",
+      "url": "https://www.barrons.com/articles/ups-ford-fedex-dividend-stocks-high-yields-78632236?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2025-12-23",
+      "sentiment": "negative"
+    },
+    {
+      "title": "3 Consumer Stocks That Concern Us",
+      "url": "/news/260220/3-consumer-stocks-that-concern-us",
+      "publisher": "StockStory",
+      "date": "2025-12-21",
+      "sentiment": "neutral"
+    }
+  ]
 }

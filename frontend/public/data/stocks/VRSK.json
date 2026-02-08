@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 179.10000610351562,
     "sma_20": 210.66400070190434,
-    "sma_50": 216.58242523193363,
+    "sma_50": 216.58242523193366,
     "sma_200": 257.7130711364746,
-    "trend_alignment": 0.1450904573044498,
+    "trend_alignment": 0.14509045730444975,
     "rsi": 16.018877702691146,
     "rsi_score": -0.6796224459461772,
     "macd_histogram": -4.4374392027403955,
@@ -6296,17 +6296,25 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 4.480814115448002,
-    "stoch_d": 5.24193694652376,
-    "trend_score": 14.509045730444981,
+    "stoch_d": 5.241936946523759,
+    "trend_score": 14.509045730444974,
     "rsi_abs_score": 36.01887770269114,
     "macd_abs_score": 20.0,
     "momentum_score": 28.00943885134557,
     "volatility_score": 31.300407731240895,
     "volume_score": 50.0,
-    "technical_score": 29.015626920785348,
+    "technical_score": 29.015626920785344,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.3208746801734346,
+    "sentiment_pos": 0.0294,
+    "sentiment_neg": 0.08314999999999999,
+    "sentiment_neu": 0.8874000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 33.96
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.39586823003908433,
@@ -6325,7 +6333,7 @@
     "quality_score": 90.0,
     "growth_score": 51.875,
     "safety_score": 43.2717182742333,
-    "trend_score": 14.509045730444981,
+    "trend_score": 14.509045730444974,
     "momentum_score": 28.00943885134557,
     "volatility_score": 31.300407731240895,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 38.33179255833333,
     "catalyst_timeline": 33.158784181517966,
     "downside_control": 37.85581890082113,
-    "composite_score": 44.95067783186307,
+    "composite_score": 44.94678878656464,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 59.572087453457776,
-    "technical_score": 29.015626920785348,
-    "sentiment_score": 50.0,
+    "technical_score": 29.015626920785344,
+    "sentiment_score": 33.96,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Research & Consulting Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Stock Market Survives AI Panic, Even as Tech Collapses. Its a Monster of Our Own Making.",
+      "url": "https://finance.yahoo.com/m/1211e459-28e6-303d-a253-d08a44b4af08/stock-market-survives-ai.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "New Insurance Industry Report: Reduced Catastrophe Losses Drive Continued Industry Improvements",
+      "url": "/news/302604/new-insurance-industry-report-reduced-catastrophe-losses-drive-continued-industry-improvements",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Analyst Report: Verisk Analytics, Inc.",
+      "url": "https://finance.yahoo.com/m/1aeffb4d-e7b5-3cfa-92f5-c16332b2e4b1/analyst-report%3A-verisk.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Software ate the world. Now, Wall Street is worried AI will eat software.",
+      "url": "https://www.marketwatch.com/story/software-ate-the-world-now-wall-street-is-worried-ai-will-eat-software-88661ed5?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "BMO upgrades Verisk as valuation and AI fears misprice its moat",
+      "url": "https://finance.yahoo.com/news/bmo-upgrades-verisk-valuation-ai-165246393.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Verisk Estimates Insured Losses for Winter Storm Fern Could Reach USD 4 Billion",
+      "url": "/news/298006/verisk-estimates-insured-losses-for-winter-storm-fern-could-reach-usd-4-billion",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Analyst Report: Verisk Analytics, Inc.",
+      "url": "https://finance.yahoo.com/m/d2893a30-d730-3d05-afca-00f922e8a075/analyst-report%3A-verisk.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Verisk Analytics, Inc.",
+      "url": "https://finance.yahoo.com/m/bc10cb11-5a0d-3332-a57f-9d601ee54a1d/analyst-report%3A-verisk.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Verisk to Announce Fiscal Fourth-Quarter 2025 and Full-Year 2025 Results on February 18, 2026",
+      "url": "/news/282208/verisk-to-announce-fiscal-fourth-quarter-2025-and-full-year-2025-results-on-february-18-2026",
+      "publisher": "GlobeNewswire",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Verisk Analytics' Q4 2025 Earnings: What to Expect",
+      "url": "https://finance.yahoo.com/m/b6704056-d636-3bb5-90fb-b42e562dbd05/verisk-analytics%27-q4-2025.html",
+      "publisher": "Barchart",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Are Options Traders Betting on a Big Move in Verisk Analytics Stock?",
+      "url": "/news/281130/are-options-traders-betting-on-a-big-move-in-verisk-analytics-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Philip Erdoes, Entrepreneur and Venture Capitalist, Dies at 62",
+      "url": "https://finance.yahoo.com/m/d751ddf3-dc03-3570-aa1c-7b96bcaba488/philip-erdoes%2C-entrepreneur.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-10",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Reasons Why You Should Hold Verisk Analytics Stock in Your Portfolio",
+      "url": "/news/272251/reasons-why-you-should-hold-verisk-analytics-stock-in-your-portfolio",
+      "publisher": "Zacks",
+      "date": "2026-01-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Verisk Announces Sale of its Marketing Solutions Business to ActiveProspect",
+      "url": "/news/271435/verisk-announces-sale-of-its-marketing-solutions-business-to-activeprospect",
+      "publisher": "GlobeNewswire",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Should You Invest in Verisk Analytics (VRSK)?",
+      "url": "/news/270736/should-you-invest-in-verisk-analytics-vrsk",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Settle Lower as Weakness in Big Tech Weighs",
+      "url": "https://finance.yahoo.com/m/c21ec0cd-72f9-3b60-bd04-5ed64c8fd22d/stocks-settle-lower-as.html",
+      "publisher": "Barchart",
+      "date": "2025-12-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stock Market Today: Dow Down From Record Highs; Nvidia, Tesla Slide (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/c8724be0-478d-3edd-b88e-d793d8d6166b/stock-market-today%3A-dow-down.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2025-12-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Verisk Ends Effort to Acquire AccuLynx",
+      "url": "/news/263382/verisk-ends-effort-to-acquire-acculynx",
+      "publisher": "GlobeNewswire",
+      "date": "2025-12-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Verisk Analytics, Inc.",
+      "url": "https://finance.yahoo.com/m/0d0a168a-ee8a-362f-9764-55f91ffc0bb1/analyst-report%3A-verisk.html",
+      "publisher": "Morningstar Research",
+      "date": "2025-12-18",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FactSet Earnings Beat Estimates in Q1, Revenues Increase Y/Y",
+      "url": "/news/257784/factset-earnings-beat-estimates-in-q1-revenues-increase-yy",
+      "publisher": "Zacks",
+      "date": "2025-12-18",
+      "sentiment": "positive"
+    }
+  ]
 }

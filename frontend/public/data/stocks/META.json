@@ -6306,7 +6306,15 @@
     "technical_score": 46.88991368098655,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.08932868112700333,
+    "sentiment_pos": 0.12050000000000001,
+    "sentiment_neg": 0.0856,
+    "sentiment_neu": 0.7938500000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 54.47
+  },
   "analyst": {
     "revision_momentum": null,
     "target_upside": 0.2925951682641429,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 42.130735964285705,
     "catalyst_timeline": 57.53377884332623,
     "downside_control": 50.060877130807974,
-    "composite_score": 60.798420343681855,
+    "composite_score": 60.79453129838342,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 70.02944663690477,
     "technical_score": 46.88991368098655,
-    "sentiment_score": 50.0,
+    "sentiment_score": 54.47,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Communication Services",
     "industry": "Interactive Media & Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Thomson Reuters CEO Says AI Is Delivering Tangible Gains",
+      "url": "https://finance.yahoo.com/news/thomson-reuters-ceo-says-ai-163138862.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "AI Killed Software, Now It's Killing Jobs: January Sees Most Cuts Since 2009",
+      "url": "https://finance.yahoo.com/news/ai-killed-software-now-killing-160133411.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "'This probably seems overdone': Wall Street strategists weigh in on software stock sell-off",
+      "url": "https://finance.yahoo.com/news/this-probably-seems-overdone-wall-street-strategists-weigh-in-on-software-stock-sell-off-160003877.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Meta Platforms (META) Child Safety Lawsuit Proceeds as AI Data Center Deal Advances",
+      "url": "/news/303805/meta-platforms-meta-child-safety-lawsuit-proceeds-as-ai-data-center-deal-advances",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Google and Meta Just Rewrote Broadcom's AI Story-While Shares Drop",
+      "url": "/news/303785/google-and-meta-just-rewrote-broadcoms-ai-story-while-shares-drop",
+      "publisher": "MarketBeat",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Amazon Defends Massive AI Spending, Says New AWS Capacity Being Monetized Quickly: Andy Jassy Sees Very 'Unusual' Opportunity",
+      "url": "https://finance.yahoo.com/news/amazon-defends-massive-ai-spending-143139992.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Dow 50,000 sets table for inflation data, delayed January jobs report: What to watch this week",
+      "url": "https://finance.yahoo.com/news/dow-50000-sets-table-for-inflation-data-delayed-january-jobs-report-what-to-watch-this-week-123826626.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Metas multi-million-dollar Super Bowl ads may not just be about its smart glassesbut about selling Wall Street on Zuckerbergs AI future",
+      "url": "https://finance.yahoo.com/news/meta-multi-million-dollar-super-120300436.html",
+      "publisher": "Fortune",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Dan Ives Says Software Selloff Is Worst He's Seen In 25 Years As Microsoft, Salesforce Face Brutal AI Reckoning",
+      "url": "https://finance.yahoo.com/news/dan-ives-says-software-selloff-003125036.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Jim Cramer On Amazon Stock Slip: Not Saying Downside Overdone, 'I Figure Tomorrow's Pretty Ugly'",
+      "url": "https://finance.yahoo.com/news/jim-cramer-amazon-stock-slip-233145336.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Her Husband Brings In $156K, But They Struggle With Groceries Due To His $700 Monthly Vices. She Calls Him An Addict, Dave Ramsey Disagrees",
+      "url": "https://finance.yahoo.com/news/her-husband-brings-156k-struggle-183131125.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Maybe I Wasnt So Wrong About Reddit After All",
+      "url": "https://finance.yahoo.com/m/a2362cdd-556d-3f4a-a783-494179e02997/maybe-i-wasn%E2%80%99t-so-wrong-about.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bitcoin To Fall To $54K? Veteran Trader Questions Whether Strategy Investors Can Hold On",
+      "url": "https://finance.yahoo.com/news/bitcoin-fall-54k-veteran-trader-164602291.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Nvidias Jensen Huang Thinks Meta Platforms Is AIs Profit Pioneer",
+      "url": "https://finance.yahoo.com/m/4f57ca03-d610-3cb7-b55d-93e7aa6581d8/why-nvidia%E2%80%99s-jensen-huang.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Big Tech companies are starting to look like IBM in the 1960s",
+      "url": "https://finance.yahoo.com/news/big-tech-companies-are-starting-to-look-like-ibm-in-the-1960s-150030684.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Big Tech Dominates Market Coverage as AI Narrative Intensifies",
+      "url": "https://finance.yahoo.com/m/a9098eda-657d-30c6-9364-cbe941713509/big-tech-dominates-market.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "'It's existential': How Big Tech found itself in a $650 billion spending spiral",
+      "url": "https://www.marketwatch.com/story/its-existential-how-big-tech-found-itself-in-a-650-billion-spending-spiral-346caa4d?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tech stocks have been shaky, but these 20 companies could still see rocketing sales growth",
+      "url": "https://www.marketwatch.com/story/tech-stocks-have-been-shaky-but-these-20-companies-could-still-see-rocketing-sales-growth-148195c9?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Big Techs AI Push Is Costing a Lot More Than the Moon Landing",
+      "url": "https://finance.yahoo.com/m/f2e491e1-516b-37a7-8f08-dd299fb384c8/big-tech%E2%80%99s-ai-push-is-costing.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why a 175-Year-Old Glassmaker Is Suddenly an AI Superstar",
+      "url": "https://finance.yahoo.com/m/fe09553a-3a5a-3969-9cd6-a6c627cd66e8/why-a-175-year-old-glassmaker.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    }
+  ]
 }

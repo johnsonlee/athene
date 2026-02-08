@@ -6306,7 +6306,15 @@
     "technical_score": 58.548820319616844,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.1963060135805192,
+    "sentiment_pos": 0.1283,
+    "sentiment_neg": 0.016499999999999997,
+    "sentiment_neu": 0.8552,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 59.82
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": -0.003038558256496145,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 71.99330543142857,
     "catalyst_timeline": 59.13695069977329,
     "downside_control": 61.06435272432354,
-    "composite_score": 67.09613122203763,
+    "composite_score": 67.09224217673919,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 68.25423322004465,
     "technical_score": 58.548820319616844,
-    "sentiment_score": 50.0,
+    "sentiment_score": 59.82,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Aerospace & Defense"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Textron, Boise Cascade, Martin Marietta Materials, Energy Recovery, and Hubbell Shares Skyrocket, What You Need To Know",
+      "url": "/news/303411/textron-boise-cascade-martin-marietta-materials-energy-recovery-and-hubbell-shares-skyrocket-what-you-need-to-know",
+      "publisher": "StockStory",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "5 Must-Read Analyst Questions From Textron's Q4 Earnings Call",
+      "url": "/news/298680/5-must-read-analyst-questions-from-textrons-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TransDigm's Q1 Earnings Surpass Estimates, Sales Increase Y/Y",
+      "url": "/news/297853/transdigms-q1-earnings-surpass-estimates-sales-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Woodward's Q1 Earnings & Revenues Beat Estimates, Up Y/Y, Stock Rises",
+      "url": "/news/297256/woodwards-q1-earnings-revenues-beat-estimates-up-yy-stock-rises",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Textron Elects Cristina Mndez to Board of Directors",
+      "url": "https://www.businesswire.com/news/home/20260130686318/en/Cristina",
+      "publisher": "Business Wire",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Textron (TXT) is a Top Momentum Stock for the Long-Term",
+      "url": "/news/293672/why-textron-txt-is-a-top-momentum-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "How to Boost Your Portfolio with Top Aerospace Stocks Set to Beat Earnings",
+      "url": "/news/293487/how-to-boost-your-portfolio-with-top-aerospace-stocks-set-to-beat-earnings",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Hexcel's Q4 Earnings Beat Estimates, Revenues Increase Y/Y",
+      "url": "/news/292061/hexcels-q4-earnings-beat-estimates-revenues-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why Textron (TXT) is a Strong Value Stock",
+      "url": "/news/291891/heres-why-textron-txt-is-a-strong-value-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Company News for Jan 29, 2026",
+      "url": "/news/291696/company-news-for-jan-29-2026",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Textron Inc.",
+      "url": "https://finance.yahoo.com/m/881469a1-ca65-3573-9369-d01c394805ed/analyst-report%3A-textron-inc..html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TXT Q4 Deep Dive: Management Leans on MV-75 Acceleration and Aviation Execution Amid Cautious Guidance",
+      "url": "/news/292073/txt-q4-deep-dive-management-leans-on-mv-75-acceleration-and-aviation-execution-amid-cautious-guidance",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Textron Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/36a097f9-2972-36fd-9596-d728da0c3d24/textron-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Textron Stock Wilted by Nearly 8% on Wednesday",
+      "url": "/news/291019/why-textron-stock-wilted-by-nearly-8-on-wednesday",
+      "publisher": "Motley Fool",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Textrons Earnings Show a Challenge to Trumps Push for a Bigger Military",
+      "url": "https://finance.yahoo.com/m/9453c558-ae99-3e98-8296-818802809db9/textron%E2%80%99s-earnings-show-a.html",
+      "publisher": "Barrons.com",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks Finish Mixed as Fed Keeps Interest Rates Steady",
+      "url": "https://finance.yahoo.com/m/6de3b3a0-2e33-3d40-8a18-16671e3a3446/stocks-finish-mixed-as-fed.html",
+      "publisher": "Barchart",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Textron Inc (TXT) Q4 2025 Earnings Call Highlights: Record Revenue and Strong Aviation Growth",
+      "url": "https://finance.yahoo.com/news/textron-inc-txt-q4-2025-190122659.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "AI Defense Firm Soars On Air Force Contract; Two Top Names Report",
+      "url": "https://www.investors.com/news/general-dynamics-air-force-ai-robotics-palladyne-ai-pdyn-stock-gd-stock-earnings-textron?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks Mixed After the Fed Pauses Rate Cuts",
+      "url": "https://finance.yahoo.com/m/396af179-3604-3474-8571-1f8c6eb49f58/stocks-mixed-after-the-fed.html",
+      "publisher": "Barchart",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Textron (TXT) Reports Q4 Earnings: What Key Metrics Have to Say",
+      "url": "/news/290172/textron-txt-reports-q4-earnings-what-key-metrics-have-to-say",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    }
+  ]
 }

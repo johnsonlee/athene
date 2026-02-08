@@ -6306,7 +6306,15 @@
     "technical_score": 62.26520613797067,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.15553288620624559,
+    "sentiment_pos": 0.1453,
+    "sentiment_neg": 0.0434,
+    "sentiment_neu": 0.81125,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 57.78
+  },
   "analyst": {
     "revision_momentum": 0.125,
     "target_upside": 0.08207431604736634,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 49.830122274999994,
     "catalyst_timeline": 61.195810500514106,
     "downside_control": 45.99430071063077,
-    "composite_score": 55.7375376532897,
+    "composite_score": 55.73364860799126,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 53.44604177678571,
     "technical_score": 62.26520613797067,
-    "sentiment_score": 50.0,
+    "sentiment_score": 57.78,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Utilities",
     "industry": "Electric Utilities"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Entergy to report full year 2025 financial results on Feb. 12",
+      "url": "/news/301742/entergy-to-report-full-year-2025-financial-results-on-feb-12",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Entergy's Grid and Renewable Investments Strengthen Growth Outlook",
+      "url": "/news/295665/entergys-grid-and-renewable-investments-strengthen-growth-outlook",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Entergy announces quarterly dividend payment to shareholders",
+      "url": "/news/293979/entergy-announces-quarterly-dividend-payment-to-shareholders",
+      "publisher": "PR Newswire",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Will Entergy (ETR) Beat Estimates Again in Its Next Earnings Report?",
+      "url": "/news/287302/will-entergy-etr-beat-estimates-again-in-its-next-earnings-report",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Winter Storm Fern Threatens Disruptions Across US: Here Are Businesses, Stocks Likely To Be Impacted",
+      "url": "/news/286271/winter-storm-fern-threatens-disruptions-across-us-here-are-businesses-stocks-likely-to-be-impacted",
+      "publisher": "Benzinga",
+      "date": "2026-01-25",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Entergy (ETR) - Among the Best Performing Utility Stocks in 2025",
+      "url": "/news/280587/entergy-etr-among-the-best-performing-utility-stocks-in-2025",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-19",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Entergys Quarterly Earnings Preview: What You Need to Know",
+      "url": "https://finance.yahoo.com/m/ede0a6ba-c270-3aa4-8634-16d8fec992fc/entergy%E2%80%99s-quarterly-earnings.html",
+      "publisher": "Barchart",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Entergy (ETR) is a Strong Momentum Stock",
+      "url": "/news/276300/heres-why-entergy-etr-is-a-strong-momentum-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-14",
+      "sentiment": "positive"
+    },
+    {
+      "title": "5 Once-Sleepy Dividend Utility Companies Are Striking Massive Deals With Big Tech",
+      "url": "https://finance.yahoo.com/m/0828e44c-51e5-3fe4-8415-2d4e5f7d4cc9/5-once-sleepy-dividend.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-12",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Entergy and NiSource Could Be Winners as Utilities Spend $1 Trillion on AI. Dividend Investors Not So Much",
+      "url": "https://www.barrons.com/articles/utilities-ai-capex-stock-dividends-a52c752c?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Meta Signs Multi-Gigawatt Nuclear Deals for AI Data Centers",
+      "url": "https://finance.yahoo.com/news/meta-signs-multi-gigawatt-nuclear-112234780.html",
+      "publisher": "Bloomberg",
+      "date": "2026-01-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Utilities Stocks Are Your Best Friend in 2026",
+      "url": "https://finance.yahoo.com/m/7b67108f-308b-3573-ba36-3ca5b5d94c92/why-utilities-stocks-are-your.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Passive Income Dividend Giants Dominate JP Morgans 2026 Energy Top Picks",
+      "url": "https://finance.yahoo.com/m/138abf7d-406b-39ed-ad45-e029167357da/passive-income-dividend.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Algonquin Power & Utilities Corp. Appoints Peter Norgeot as Chief Operating Officer",
+      "url": "https://www.businesswire.com/news/home/20260105132566/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Could Utility Stocks Be the Next Big AI Winners?",
+      "url": "/news/266684/could-utility-stocks-be-the-next-big-ai-winners",
+      "publisher": "Motley Fool",
+      "date": "2026-01-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Amazon Data Centers Arent Raising Your Electric BillsThey May Be Lowering Them",
+      "url": "https://finance.yahoo.com/m/275ec9f7-2f11-3ad7-ac6d-897dff60dffa/amazon-data-centers-aren%E2%80%99t.html",
+      "publisher": "POWER Magazine",
+      "date": "2025-12-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "ETR to Gain From Strategic Nuclear Expansion & Renewable Transition",
+      "url": "/news/262697/etr-to-gain-from-strategic-nuclear-expansion-renewable-transition",
+      "publisher": "Zacks",
+      "date": "2025-12-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "KeyBanc Retains An Overweight Rating On Entergy Corporation (ETR)",
+      "url": "/news/259334/keybanc-retains-an-overweight-rating-on-entergy-corporation-etr",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-21",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Utilities Repriced for the AI Era, Monopoly Power Meets Surging Data Center Demand",
+      "url": "https://finance.yahoo.com/m/5ba27588-d952-36be-872b-e2b1cd4df0f2/utilities-repriced-for-the-ai.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2025-12-20",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Entergy (ETR) Price Target Trimmed to $86 by Analyst",
+      "url": "/news/259154/entergy-etr-price-target-trimmed-to-86-by-analyst",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-20",
+      "sentiment": "neutral"
+    }
+  ]
 }

@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 94.73428437142321,
-    "stoch_d": 76.83955000274028,
+    "stoch_d": 76.83955000274027,
     "trend_score": 66.15498274852152,
     "rsi_abs_score": 65.91718025697863,
     "macd_abs_score": 67.59637559039957,
@@ -6306,7 +6306,15 @@
     "technical_score": 63.09230108055991,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.07571560124846935,
+    "sentiment_pos": 0.06755,
+    "sentiment_neg": 0.022899999999999997,
+    "sentiment_neu": 0.90955,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 53.79
+  },
   "analyst": {
     "revision_momentum": null,
     "target_upside": 0.08207431604736634,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 35.604754199999995,
     "catalyst_timeline": 60.677066226469734,
     "downside_control": 60.80103515917254,
-    "composite_score": 48.978236471471135,
+    "composite_score": 48.9743474261727,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 43.982354880952386,
     "technical_score": 63.09230108055991,
-    "sentiment_score": 50.0,
+    "sentiment_score": 53.79,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Real Estate",
     "industry": "Health Care REITs"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Analyst Report: Welltower Inc.",
+      "url": "https://finance.yahoo.com/m/a3884656-ef14-36ea-84cd-7f403535ff14/analyst-report%3A-welltower-inc..html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Welltower Gears Up to Report Q4 Earnings: What's in the Cards?",
+      "url": "/news/303080/welltower-gears-up-to-report-q4-earnings-whats-in-the-cards",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Digital Realty's Q4 Core FFO & Revenues Top Estimates, Rentals Rise",
+      "url": "/news/302798/digital-realtys-q4-core-ffo-revenues-top-estimates-rentals-rise",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What Makes Welltower (WELL) an Attractive Investment?",
+      "url": "/news/302612/what-makes-welltower-well-an-attractive-investment",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Welltower Stock Outlook: Is Wall Street Bullish or Bearish?",
+      "url": "https://finance.yahoo.com/m/691e4fc6-d958-32cf-9035-5ab689f88bde/welltower-stock-outlook%3A-is.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Three Companies Control Schwabs US REIT Returns As Debt Maturity Cliff Threatens 2026 Returns",
+      "url": "https://finance.yahoo.com/m/67dd5240-5419-3093-bf1d-c6f1abf95c3d/three-companies-control.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Welltower (WELL) Q4 Earnings Preview: What You Should Know Beyond the Headline Estimates",
+      "url": "/news/301481/welltower-well-q4-earnings-preview-what-you-should-know-beyond-the-headline-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 REITs to Buy Now: Picks From a Standout Real Estate Portfolio Manager",
+      "url": "https://www.barrons.com/articles/3-reits-buy-now-real-estate-portfolio-manager-32898823?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Healthpeak Q4 FFO Beats Estimates, Same-Store NOI Rises Y/Y",
+      "url": "/news/297394/healthpeak-q4-ffo-beats-estimates-same-store-noi-rises-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What's in the Offing for Ventas Stock This Earnings Season?",
+      "url": "/news/295965/whats-in-the-offing-for-ventas-stock-this-earnings-season",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Forget Tech Stocks: The Healthcare REIT Benefiting from AI-Driven Medical Advances",
+      "url": "/news/295404/forget-tech-stocks-the-healthcare-reit-benefiting-from-ai-driven-medical-advances",
+      "publisher": "Motley Fool",
+      "date": "2026-02-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "What's in Store for Crown Castle Stock This Earnings Season?",
+      "url": "/news/293830/whats-in-store-for-crown-castle-stock-this-earnings-season",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What's in the Cards for Healthpeak Properties This Earnings Season?",
+      "url": "/news/292146/whats-in-the-cards-for-healthpeak-properties-this-earnings-season",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Welltower Inc.",
+      "url": "https://finance.yahoo.com/m/efb0a19c-3e91-3b98-ab83-9d7fd431488b/analyst-report%3A-welltower-inc..html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Alexandria to Post Q4 Earnings: What to Expect From the Stock?",
+      "url": "/news/284214/alexandria-to-post-q4-earnings-what-to-expect-from-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Welltower Announces Date of Fourth Quarter 2025 Earnings Release, Conference Call and Webcast",
+      "url": "/news/280903/welltower-announces-date-of-fourth-quarter-2025-earnings-release-conference-call-and-webcast",
+      "publisher": "PR Newswire",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Welltower Stock Gains 19.4% in 6 Months: Will it Continue to Rise?",
+      "url": "/news/280370/welltower-stock-gains-194-in-6-months-will-it-continue-to-rise",
+      "publisher": "Zacks",
+      "date": "2026-01-19",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Welltower Stock Looks Ready to Roar Higher",
+      "url": "/news/279321/welltower-stock-looks-ready-to-roar-higher",
+      "publisher": "Schaeffer's Research",
+      "date": "2026-01-16",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What You Need To Know Ahead of Welltowers Earnings Release",
+      "url": "https://finance.yahoo.com/m/09515dd4-9248-331b-b71b-dba308ef480e/what-you-need-to-know-ahead.html",
+      "publisher": "Barchart",
+      "date": "2026-01-13",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "REITs Should Bounce Back in 2026. 3 Stocks to Consider Buying Now.",
+      "url": "https://www.barrons.com/articles/reits-stocks-buy-now-welltower-bxp-b60b56d5?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2025-12-29",
+      "sentiment": "neutral"
+    }
+  ]
 }

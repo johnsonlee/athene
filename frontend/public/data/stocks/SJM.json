@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 91.25350920289057,
-    "stoch_d": 90.05409669835925,
+    "stoch_d": 90.05409669835923,
     "trend_score": 58.51724706808669,
     "rsi_abs_score": 53.80918484071691,
     "macd_abs_score": 66.4564561995946,
@@ -6306,7 +6306,15 @@
     "technical_score": 57.996707882481736,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.04300676293192287,
+    "sentiment_pos": 0.05550000000000001,
+    "sentiment_neg": 0.0309,
+    "sentiment_neu": 0.9135500000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 52.15
+  },
   "analyst": {
     "revision_momentum": -0.14285714285714285,
     "target_upside": 0.03186923568623865,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 70.01404657,
     "catalyst_timeline": 55.45772310331985,
     "downside_control": 49.074014297876744,
-    "composite_score": 49.417103838474816,
+    "composite_score": 49.41321479317638,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 44.295870266159994,
     "technical_score": 57.996707882481736,
-    "sentiment_score": 50.0,
+    "sentiment_score": 52.15,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Staples",
     "industry": "Packaged Foods & Meats"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "The J.M. Smucker Co. Announces the Election of Katie Williams to Chief Marketing Officer",
+      "url": "/news/301307/the-jm-smucker-co-announces-the-election-of-katie-williams-to-chief-marketing-officer",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's What Analysts Are Saying About The J.M. Smucker Company (SJM)",
+      "url": "/news/300713/heres-what-analysts-are-saying-about-the-jm-smucker-company-sjm",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The J.M. Smucker Co. to Present at the 2026 Consumer Analyst Group of New York (CAGNY) Conference and Sets Date to Report Third Quarter Earnings",
+      "url": "/news/290788/the-jm-smucker-co-to-present-at-the-2026-consumer-analyst-group-of-new-york-cagny-conference-and-sets-date-to-report-third-quarter-earnings",
+      "publisher": "PR Newswire",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "J. M. Smucker's Q3 2026 Earnings: What to Expect",
+      "url": "https://finance.yahoo.com/m/69c67fc7-78ad-3158-83a1-6c7e2680c681/j.-m.-smucker%27s-q3-2026.html",
+      "publisher": "Barchart",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Morgan Stanley Cuts Smucker (SJM) Target After Strong Run, Flags Margin Recovery Risk",
+      "url": "/news/283270/morgan-stanley-cuts-smucker-sjm-target-after-strong-run-flags-margin-recovery-risk",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How to Boost Your Portfolio with Top Consumer Staples Stocks Set to Beat Earnings",
+      "url": "/news/282387/how-to-boost-your-portfolio-with-top-consumer-staples-stocks-set-to-beat-earnings",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Simply Good Foods brings back former CEO",
+      "url": "https://finance.yahoo.com/m/3dde3125-9f40-3896-9c60-7f3e060c8433/simply-good-foods-brings-back.html",
+      "publisher": "Food Dive",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 S&P 500 Stocks We Find Risky",
+      "url": "/news/280851/3-sp-500-stocks-we-find-risky",
+      "publisher": "StockStory",
+      "date": "2026-01-19",
+      "sentiment": "negative"
+    },
+    {
+      "title": "The J.M. Smucker Co. Declares Dividend",
+      "url": "/news/279405/the-jm-smucker-co-declares-dividend",
+      "publisher": "PR Newswire",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Honeywell upgraded by JPMorgan, OpenAI to begin testing ads",
+      "url": "https://finance.yahoo.com/video/honeywell-upgraded-jpmorgan-openai-begin-205444316.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: The J. M. Smucker Company",
+      "url": "https://finance.yahoo.com/m/56a11837-4c51-33d7-9144-107e4942bb26/analyst-report%3A-the-j.-m..html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "J.M. Smucker's Pet Food Sales Soft: Is Demand Normalizing Yet?",
+      "url": "/news/273651/jm-smuckers-pet-food-sales-soft-is-demand-normalizing-yet",
+      "publisher": "Zacks",
+      "date": "2026-01-12",
+      "sentiment": "negative"
+    },
+    {
+      "title": "5 Under-the-Radar Consumer Staples Stocks With Pricing Power",
+      "url": "/news/271507/5-under-the-radar-consumer-staples-stocks-with-pricing-power",
+      "publisher": "MarketBeat",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: The J. M. Smucker Company",
+      "url": "https://finance.yahoo.com/m/fefb9bea-eeeb-31c9-9b57-c207b18d4c36/analyst-report%3A-the-j.-m..html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "J.M. Smucker's Coffee Sales Rise: Is Pricing Still the Key Driver?",
+      "url": "/news/265975/jm-smuckers-coffee-sales-rise-is-pricing-still-the-key-driver",
+      "publisher": "Zacks",
+      "date": "2026-01-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Value Stocks That Concern Us",
+      "url": "/news/265648/3-value-stocks-that-concern-us",
+      "publisher": "StockStory",
+      "date": "2025-12-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Mission Produce reveals CEO transition as sales hit $1.4bn",
+      "url": "https://finance.yahoo.com/m/934e502c-783f-39a1-9cbc-4ae131de9d5b/mission-produce-reveals-ceo.html",
+      "publisher": "Just Food",
+      "date": "2025-12-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BofA Sees Steady Earnings Momentum Building at J.M. Smucker (SJM)",
+      "url": "/news/255489/bofa-sees-steady-earnings-momentum-building-at-jm-smucker-sjm",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is J. M. Smucker Stock Underperforming the Dow?",
+      "url": "https://finance.yahoo.com/m/25707035-e01e-333a-a900-fd021ec8f367/is-j.-m.-smucker-stock.html",
+      "publisher": "Barchart",
+      "date": "2025-12-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Cheapest Dividend Aristocrats for a Lifetime of Income",
+      "url": "https://finance.yahoo.com/m/3a6f3c4e-61bc-35fb-9989-48dd53e24be5/3-cheapest-dividend.html",
+      "publisher": "Barchart",
+      "date": "2025-12-12",
+      "sentiment": "neutral"
+    }
+  ]
 }

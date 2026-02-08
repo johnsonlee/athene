@@ -6279,8 +6279,8 @@
     "close": 44.099998474121094,
     "sma_20": 43.54924488067627,
     "sma_50": 42.372911911010746,
-    "sma_200": 41.05678136825562,
-    "trend_alignment": 0.5936729207039789,
+    "sma_200": 41.05678136825561,
+    "trend_alignment": 0.5936729207039793,
     "rsi": 62.471216866533325,
     "rsi_score": 0.2494243373306665,
     "macd_histogram": -0.0020685598485965517,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 70.36666964417084,
     "stoch_d": 69.63876531567783,
-    "trend_score": 59.367292070397895,
+    "trend_score": 59.36729207039792,
     "rsi_abs_score": 69.77014819342668,
     "macd_abs_score": 49.76546939680617,
     "momentum_score": 59.76780879511642,
     "volatility_score": 76.76593108208407,
     "volume_score": 50.0,
-    "technical_score": 61.09371647607111,
+    "technical_score": 61.09371647607112,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.09969206639849824,
+    "sentiment_pos": 0.1045,
+    "sentiment_neg": 0.0103,
+    "sentiment_neu": 0.8852,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 54.98
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.06575963718820858,
@@ -6325,7 +6333,7 @@
     "quality_score": 56.45723214285714,
     "growth_score": 77.55,
     "safety_score": 20.883968749999994,
-    "trend_score": 59.367292070397895,
+    "trend_score": 59.36729207039792,
     "momentum_score": 59.76780879511642,
     "volatility_score": 76.76593108208407,
     "volume_score": 50.0,
@@ -6344,16 +6352,16 @@
     "current_ratio_score": 16.380000000000003,
     "earnings_visibility": 63.43808482142856,
     "valuation_margin": 52.169265691666666,
-    "catalyst_timeline": 57.80688818178952,
+    "catalyst_timeline": 57.806888181789525,
     "downside_control": 47.1064849748126,
-    "composite_score": 56.146509159879564,
+    "composite_score": 56.14262011458115,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 54.1325181359127,
-    "technical_score": 61.09371647607111,
-    "sentiment_score": 50.0,
+    "technical_score": 61.09371647607112,
+    "sentiment_score": 54.98,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Utilities",
     "industry": "Multi-Utilities"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Exelon (EXC) Expected to Beat Earnings Estimates: What to Know Ahead of Q4 Release",
+      "url": "/news/301701/exelon-exc-expected-to-beat-earnings-estimates-what-to-know-ahead-of-q4-release",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is Wall Street Bullish or Bearish on NiSource Stock?",
+      "url": "https://finance.yahoo.com/m/f0dbecf1-3f4a-3534-b005-bbea19822b77/is-wall-street-bullish-or.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NiSource (NI) Reports Next Week: What You Should Expect",
+      "url": "/news/299688/nisource-ni-reports-next-week-what-you-should-expect",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NiSource to Report Q4 Earnings: What's in Store for the Stock?",
+      "url": "/news/299442/nisource-to-report-q4-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "American Electric Banks on Investments and Renewables for Growth",
+      "url": "/news/297388/american-electric-banks-on-investments-and-renewables-for-growth",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Entergy's Grid and Renewable Investments Strengthen Growth Outlook",
+      "url": "/news/295665/entergys-grid-and-renewable-investments-strengthen-growth-outlook",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "NiSource to Release Full-Year 2025 Financial Results and Host Conference Call on February 11",
+      "url": "https://www.businesswire.com/news/home/20260128591795/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: NiSource Inc.",
+      "url": "https://finance.yahoo.com/m/0653bfdc-2dab-307a-ba93-65c8267ff482/analyst-report%3A-nisource-inc..html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MISO regulators seek stakeholder review for DOE emergency orders cost allocation",
+      "url": "https://finance.yahoo.com/m/2c7feeb4-622b-3425-a815-2b4764308886/miso-regulators-seek.html",
+      "publisher": "Utility Dive",
+      "date": "2026-01-26",
+      "sentiment": "negative"
+    },
+    {
+      "title": "NiSource Declares Common Stock Dividend",
+      "url": "https://www.businesswire.com/news/home/20260122995854/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "OGE Rides on Expanding Renewable Portfolio & Infrastructure Spending",
+      "url": "/news/278826/oge-rides-on-expanding-renewable-portfolio-infrastructure-spending",
+      "publisher": "Zacks",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's What to Expect From NiSources Next Earnings Report",
+      "url": "https://finance.yahoo.com/m/fac19dae-b6b6-37e7-8d75-04139572c7c3/here%27s-what-to-expect-from.html",
+      "publisher": "Barchart",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Entergy and NiSource Could Be Winners as Utilities Spend $1 Trillion on AI. Dividend Investors Not So Much",
+      "url": "https://www.barrons.com/articles/utilities-ai-capex-stock-dividends-a52c752c?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why You Should Add NI Stock to Your Portfolio Right Now",
+      "url": "/news/272355/heres-why-you-should-add-ni-stock-to-your-portfolio-right-now",
+      "publisher": "Zacks",
+      "date": "2026-01-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ED Benefits From Long-Term Capital Spending and Renewable Growth",
+      "url": "/news/270699/ed-benefits-from-long-term-capital-spending-and-renewable-growth",
+      "publisher": "Zacks",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "EIX to Gain From Infrastructure Upgradation & Renewable Expansion",
+      "url": "/news/264173/eix-to-gain-from-infrastructure-upgradation-renewable-expansion",
+      "publisher": "Zacks",
+      "date": "2025-12-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CMS Energy Poised to Gain From Renewable Expansion & Investments",
+      "url": "/news/262444/cms-energy-poised-to-gain-from-renewable-expansion-investments",
+      "publisher": "Zacks",
+      "date": "2025-12-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Zacks Analyst Blog Highlights Invesco, Johnson & Johnson, NiSource, Bunge Global and Morgan Stanley",
+      "url": "/news/261786/the-zacks-analyst-blog-highlights-invesco-johnson-johnson-nisource-bunge-global-and-morgan-stanley",
+      "publisher": "Zacks",
+      "date": "2025-12-24",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Federal Order Delays NIPSCOs R.M. Schahfer Generating Stations Retirement",
+      "url": "https://www.businesswire.com/news/home/20251223317808/en/",
+      "publisher": "Business Wire",
+      "date": "2025-12-24",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why You Should Add Ameren to Your Portfolio Right Now",
+      "url": "/news/261253/heres-why-you-should-add-ameren-to-your-portfolio-right-now",
+      "publisher": "Zacks",
+      "date": "2025-12-23",
+      "sentiment": "neutral"
+    }
+  ]
 }

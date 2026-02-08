@@ -6306,7 +6306,15 @@
     "technical_score": 56.27868185077602,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.11924132404270953,
+    "sentiment_pos": 0.0951,
+    "sentiment_neg": 0.016,
+    "sentiment_neu": 0.8888999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 55.96
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.11274969835098533,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 23.418341615999996,
     "catalyst_timeline": 57.94184050005113,
     "downside_control": 42.51214366238377,
-    "composite_score": 49.0832719070343,
+    "composite_score": 49.079382861735866,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 56.125197833333324,
     "technical_score": 56.27868185077602,
-    "sentiment_score": 50.0,
+    "sentiment_score": 55.96,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Investment Banking & Brokerage"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Solid Equity, Options Trading to Aid HOOD Q4 Earnings Amid Crypto Slump",
+      "url": "/news/302664/solid-equity-options-trading-to-aid-hood-q4-earnings-amid-crypto-slump",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Interactive Brokers Group, Inc. (IBKR): A Bull Case Theory",
+      "url": "/news/300671/interactive-brokers-group-inc-ibkr-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Shares of Interactive Brokers Stock Popped 16.4% Last Month",
+      "url": "/news/300599/why-shares-of-interactive-brokers-stock-popped-164-last-month",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Pain in software may continue, says iCapital's Basak",
+      "url": "https://www.youtube.com/watch?v=P10bCRXO-us",
+      "publisher": "CNBC TV",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Earnings Storm Brewing: What's In Store For Google Stock, Nvidia, And Beyond?",
+      "url": "https://www.investors.com/research/breakout-stocks-technical-analysis/google-stock-nvidia-arista-networks-lead-flurry-of-upcoming-earnings-reports?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Should Investors Buy Robinhood Stock Ahead of Q4 Earnings Release?",
+      "url": "/news/299390/should-investors-buy-robinhood-stock-ahead-of-q4-earnings-release",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Interactive Brokers reports January DARTs 27% higher than prior year",
+      "url": "https://finance.yahoo.com/news/interactive-brokers-reports-january-darts-171018687.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Robinhood Offers New Product Suite in UK: Will It Drive Growth?",
+      "url": "/news/297801/robinhood-offers-new-product-suite-in-uk-will-it-drive-growth",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Interactive Brokers Launches Registered Retirement Income Funds (RRIF)",
+      "url": "https://www.businesswire.com/news/home/20260203105030/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Interactive Brokers Group to Present at BofA Securities 2026 Financial Services Conference",
+      "url": "https://www.businesswire.com/news/home/20260203206282/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Grab These 4 Stocks With Solid Net Profit Margins for Better Returns",
+      "url": "/news/297369/grab-these-4-stocks-with-solid-net-profit-margins-for-better-returns",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Interactive Brokers Group Stock Crept Higher on Monday",
+      "url": "/news/296434/why-interactive-brokers-group-stock-crept-higher-on-monday",
+      "publisher": "Motley Fool",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Interactive Brokers Group Reports Brokerage Metrics and Other Financial Information for January 2026, includes Reg.-NMS Execution Statistics",
+      "url": "https://www.businesswire.com/news/home/20260202146738/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Are You Looking for a Top Momentum Pick? Why Interactive Brokers Group, Inc. (IBKR) is a Great Choice",
+      "url": "/news/295956/are-you-looking-for-a-top-momentum-pick-why-interactive-brokers-group-inc-ibkr-is-a-great-choice",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why Interactive Brokers Group, Inc. (IBKR) is a Strong Growth Stock",
+      "url": "/news/295752/heres-why-interactive-brokers-group-inc-ibkr-is-a-strong-growth-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Interactive Brokers Group to Present at UBS Financial Services Conference",
+      "url": "https://www.businesswire.com/news/home/20260202256794/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's How Much You'd Have If You Invested $1000 in Interactive Brokers Group, Inc. a Decade Ago",
+      "url": "/news/295509/heres-how-much-youd-have-if-you-invested-1000-in-interactive-brokers-group-inc-a-decade-ago",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "LPL Financial Dips Despite Q4 Earnings Beat, Revenues & Costs Rise Y/Y",
+      "url": "/news/293940/lpl-financial-dips-despite-q4-earnings-beat-revenues-costs-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Interactive Brokers Stock: Analyst Estimates & Ratings",
+      "url": "https://finance.yahoo.com/m/3ba5585a-1eb6-35a7-9ec2-c17192dc3ef9/interactive-brokers-stock%3A.html",
+      "publisher": "Barchart",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here Are 3 Fintech Stocks That Are Diving Into Prediction Markets",
+      "url": "/news/293033/here-are-3-fintech-stocks-that-are-diving-into-prediction-markets",
+      "publisher": "Motley Fool",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    }
+  ]
 }

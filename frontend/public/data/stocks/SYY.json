@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 86.52999877929688,
-    "sma_20": 80.64049987792968,
+    "sma_20": 80.6404998779297,
     "sma_50": 76.47758392333984,
     "sma_200": 76.07045894622804,
     "trend_alignment": 0.7008798938916206,
@@ -6286,16 +6286,16 @@
     "macd_histogram": 0.5545516486579354,
     "macd_line": 2.9168026293289557,
     "macd_histogram_pct": 0.6408779111073062,
-    "bb_position": 0.852183145996664,
-    "bb_upper": 89.00191490916315,
-    "bb_lower": 72.27908484669622,
-    "bb_width": 0.2073750793680752,
+    "bb_position": 0.8521831459966631,
+    "bb_upper": 89.00191490916316,
+    "bb_lower": 72.27908484669624,
+    "bb_width": 0.20737507936807514,
     "hist_volatility": 0.4368406700872427,
     "volume_ratio": 0.7105423601292014,
     "avg_volume_20d": 4625340.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 94.71345525163252,
+    "stoch_k": 94.71345525163254,
     "stoch_d": 92.39902086718723,
     "trend_score": 70.08798938916206,
     "rsi_abs_score": 40.68458165315687,
@@ -6306,7 +6306,15 @@
     "technical_score": 53.612447008432824,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.21372531606255768,
+    "sentiment_pos": 0.15265,
+    "sentiment_neg": 0.024399999999999998,
+    "sentiment_neu": 0.8230000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 60.69
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.04010169883277474,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 61.35057754285714,
     "catalyst_timeline": 58.3400108737766,
     "downside_control": 40.06828730100728,
-    "composite_score": 54.51669741086576,
+    "composite_score": 54.512808365567324,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 61.26267671000476,
     "technical_score": 53.612447008432824,
-    "sentiment_score": 50.0,
+    "sentiment_score": 60.69,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Staples",
     "industry": "Food Distributors"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Is Wall Street Bullish or Bearish on Sysco Stock?",
+      "url": "https://finance.yahoo.com/m/1c148cee-2670-3583-acd4-0df76d314282/is-wall-street-bullish-or.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Truck drivers win $52M whistleblower retaliation verdict against Sysco",
+      "url": "https://finance.yahoo.com/news/truck-drivers-win-52m-whistleblower-120000539.html",
+      "publisher": "FreightWaves",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Sysco Corporation",
+      "url": "https://finance.yahoo.com/m/e8850e0b-6665-39a1-8fae-36c5825f3fe4/analyst-report%3A-sysco.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jim Cramer on Sysco: \"The Business Is Clearly Doing Better Than People Thought\"",
+      "url": "/news/297742/jim-cramer-on-sysco-the-business-is-clearly-doing-better-than-people-thought",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "4 Miscellaneous Food Stocks Poised for Growth in a Difficult Market",
+      "url": "/news/297635/4-miscellaneous-food-stocks-poised-for-growth-in-a-difficult-market",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Sysco Corporation (SYY) Declined on Investor Worry About the Restaurant Macro Environment, Consumer Weakness",
+      "url": "/news/297164/sysco-corporation-syy-declined-on-investor-worry-about-the-restaurant-macro-environment-consumer-weakness",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Sysco to Webcast Presentation at the CAGNY 2026 Conference",
+      "url": "/news/297156/sysco-to-webcast-presentation-at-the-cagny-2026-conference",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Sysco's Q4 Earnings Call: Our Top 5 Analyst Questions",
+      "url": "/news/296729/syscos-q4-earnings-call-our-top-5-analyst-questions",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why Sysco (SYY) is a Strong Momentum Stock",
+      "url": "/news/295774/heres-why-sysco-syy-is-a-strong-momentum-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Sysco (SYY) is a Top Value Stock for the Long-Term",
+      "url": "/news/293630/why-sysco-syy-is-a-top-value-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Look beyond the S&P 500 at this group of stocks that is less pricey, and less concentrated",
+      "url": "https://www.marketwatch.com/story/look-beyond-the-s-p-500-at-this-group-of-stocks-that-is-less-pricey-and-less-concentrated-d7335bb4?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "SYY Q4 Deep Dive: Productivity Initiatives and International Growth Drive Momentum",
+      "url": "/news/289533/syy-q4-deep-dive-productivity-initiatives-and-international-growth-drive-momentum",
+      "publisher": "StockStory",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Sysco Corporation",
+      "url": "https://finance.yahoo.com/m/56813047-d09e-37f6-b82d-bb2f6e9b771f/analyst-report%3A-sysco.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Sysco Stock Surged Today",
+      "url": "/news/289139/why-sysco-stock-surged-today",
+      "publisher": "Motley Fool",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Sysco Corp (SYY) Q2 2026 Earnings Call Highlights: Strong Revenue Growth and Strategic ...",
+      "url": "https://finance.yahoo.com/news/sysco-corp-syy-q2-2026-210549261.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Sysco Q2 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/bc8d4946-5eaf-3ce5-aa7d-680a3eb57591/sysco-q2-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Is Sysco (SYY) Stock Rocketing Higher Today",
+      "url": "/news/288963/why-is-sysco-syy-stock-rocketing-higher-today",
+      "publisher": "StockStory",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Market Today, Jan 27: Tech lifts S&P 500 to fresh record as American Airlines meltdown, Trump Medicare surprise weigh heavy",
+      "url": "https://finance.yahoo.com/m/e4d49948-e24d-391d-b933-92f1d186439b/stock-market-today%2C-jan-27%3A.html",
+      "publisher": "TheStreet",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "S&P 500 Hits New Records, GM Stock Jumps 8% On Earnings: What's Moving Markets Tuesday?",
+      "url": "/news/288796/sp-500-hits-new-records-gm-stock-jumps-8-on-earnings-whats-moving-markets-tuesday",
+      "publisher": "Benzinga",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "SYY Q2 Earnings Top Estimates on Margin Strength & Local Volume Growth",
+      "url": "/news/288706/syy-q2-earnings-top-estimates-on-margin-strength-local-volume-growth",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    }
+  ]
 }

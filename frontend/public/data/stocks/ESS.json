@@ -6295,8 +6295,8 @@
     "avg_volume_20d": 644295.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 75.69017306987527,
-    "stoch_d": 59.640810650664626,
+    "stoch_k": 75.69017306987529,
+    "stoch_d": 59.64081065066463,
     "trend_score": 48.81203560320587,
     "rsi_abs_score": 73.99483217172025,
     "macd_abs_score": 59.88471871968764,
@@ -6306,7 +6306,15 @@
     "technical_score": 58.75817035812735,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.25087180692647076,
+    "sentiment_pos": 0.14100000000000001,
+    "sentiment_neg": 0.03685,
+    "sentiment_neu": 0.82215,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 62.54
+  },
   "analyst": {
     "revision_momentum": -0.2857142857142857,
     "target_upside": 0.09664419127334728,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 42.49363883333333,
     "catalyst_timeline": 53.47991418050462,
     "downside_control": 50.6372102825908,
-    "composite_score": 48.905924380168834,
+    "composite_score": 48.9020353348704,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 46.23335236111111,
     "technical_score": 58.75817035812735,
-    "sentiment_score": 50.0,
+    "sentiment_score": 62.54,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Real Estate",
     "industry": "Multi-Family Residential REITs"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Camden's Q4 FFO Beats Estimates, Revenues Up Y/Y, Dividend Raised",
+      "url": "/news/302803/camdens-q4-ffo-beats-estimates-revenues-up-yy-dividend-raised",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Equity Residential Q4 FFO & Revenues Miss Estimates but Increase Y/Y",
+      "url": "/news/302799/equity-residential-q4-ffo-revenues-miss-estimates-but-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Essex Property Trust Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/207163e0-3435-3219-be41-4f580f70bebc/essex-property-trust-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Essex Property Trust Inc (ESS) Q4 2025 Earnings Call Highlights: Strong Revenue Growth and ...",
+      "url": "https://finance.yahoo.com/news/essex-property-trust-inc-ess-230330689.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Essex Property Trust, Inc.",
+      "url": "https://finance.yahoo.com/m/d9e75b74-5d35-3f1f-a668-2b49be52be1d/analyst-report%3A-essex.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Essex Property Q4 Core FFO Lags Estimates, Revenues Beat & Rise Y/Y",
+      "url": "/news/301582/essex-property-q4-core-ffo-lags-estimates-revenues-beat-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Mid-America Apartment's Q4 FFO Beats Estimates, Revenues Grow Y/Y",
+      "url": "/news/301583/mid-america-apartments-q4-ffo-beats-estimates-revenues-grow-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AvalonBay Q4 FFO Tops Estimates, Revenues Grow Y/Y, Dividend Raised",
+      "url": "/news/301416/avalonbay-q4-ffo-tops-estimates-revenues-grow-yy-dividend-raised",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's What Key Metrics Tell Us About Essex Property Trust (ESS) Q4 Earnings",
+      "url": "/news/300587/heres-what-key-metrics-tell-us-about-essex-property-trust-ess-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Essex Property Trust (ESS) Lags Q4 FFO Estimates",
+      "url": "/news/300402/essex-property-trust-ess-lags-q4-ffo-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Essex Property Trust: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/essex-property-trust-q4-earnings-213014945.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Essex Announces Fourth Quarter and Full-Year 2025 Results and Provides 2026 Guidance",
+      "url": "https://www.businesswire.com/news/home/20260204718800/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How Are Residential REITs Positioned Ahead of Q4 Earnings?",
+      "url": "/news/297868/how-are-residential-reits-positioned-ahead-of-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Essex Property to Report Q4 Earnings: Here's What to Expect",
+      "url": "/news/293811/essex-property-to-report-q4-earnings-heres-what-to-expect",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "LCNB (LCNB) Q4 Earnings Miss Estimates",
+      "url": "/news/292873/lcnb-lcnb-q4-earnings-miss-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "General Mills Elects Joan Bottarini To Its Board of Directors",
+      "url": "https://www.businesswire.com/news/home/20260127379870/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Prologis Q4 FFO Meets Estimates, Rental Revenues Rise Y/Y",
+      "url": "/news/282656/prologis-q4-ffo-meets-estimates-rental-revenues-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Essex Reports Characteristics of 2025 Dividends",
+      "url": "https://www.businesswire.com/news/home/20260116547187/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Barclays Raises the Firm's PT on Essex Property Trust (ESS) Stock",
+      "url": "/news/279314/barclays-raises-the-firms-pt-on-essex-property-trust-ess-stock",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-16",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Essex Announces Release and Conference Call Dates for Its Fourth Quarter 2025 Earnings",
+      "url": "https://www.businesswire.com/news/home/20260115663775/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    }
+  ]
 }

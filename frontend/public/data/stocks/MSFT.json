@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 401.1400146484375,
     "sma_20": 444.0235015869141,
-    "sma_50": 467.36280151367185,
+    "sma_50": 467.3628015136718,
     "sma_200": 485.98262924194336,
-    "trend_alignment": 0.24944724684933348,
+    "trend_alignment": 0.24944724684933353,
     "rsi": 29.134423906023716,
     "rsi_score": -0.4173115218795257,
     "macd_histogram": -5.508752982640004,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 6.924095494021887,
     "stoch_d": 5.763973275123915,
-    "trend_score": 24.944724684933348,
+    "trend_score": 24.94472468493335,
     "rsi_abs_score": 49.13442390602371,
     "macd_abs_score": 21.9008845484989,
     "momentum_score": 35.5176542272613,
     "volatility_score": 27.142675999735314,
     "volume_score": 50.0,
-    "technical_score": 33.56724887360546,
+    "technical_score": 33.567248873605465,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.14348324557318928,
+    "sentiment_pos": 0.06135,
+    "sentiment_neg": 0.11379999999999998,
+    "sentiment_neu": 0.8249000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 42.83
+  },
   "analyst": {
     "revision_momentum": -0.04,
     "target_upside": 0.49573714912499384,
@@ -6325,7 +6333,7 @@
     "quality_score": 90.00000000000001,
     "growth_score": 84.35,
     "safety_score": 57.5876875,
-    "trend_score": 24.944724684933348,
+    "trend_score": 24.94472468493335,
     "momentum_score": 35.5176542272613,
     "volatility_score": 27.142675999735314,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 56.33329642142857,
     "catalyst_timeline": 43.805017898897574,
     "downside_control": 46.56155452496029,
-    "composite_score": 61.87519130779357,
+    "composite_score": 61.871302262495135,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 74.20361785119047,
-    "technical_score": 33.56724887360546,
-    "sentiment_score": 50.0,
+    "technical_score": 33.567248873605465,
+    "sentiment_score": 42.83,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Systems Software"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "'This probably seems overdone': Wall Street strategists weigh in on software stock sell-off",
+      "url": "https://finance.yahoo.com/news/this-probably-seems-overdone-wall-street-strategists-weigh-in-on-software-stock-sell-off-160003877.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Software Stock Panic Will Be a Buying OpportunityEventually",
+      "url": "https://finance.yahoo.com/m/5a3b302c-e67d-3dcf-89b3-e36e6b2b16c6/the-software-stock-panic-will.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "The Dow Surged Past 50,000. How It Got There, and Where It Goes Next.",
+      "url": "https://finance.yahoo.com/m/d4d07bd1-e873-3a77-8c7a-e7616a7fd512/the-dow-surged-past-50%2C000..html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AI Fear Grips Wall Street as a New Stock Market Reality Sets In",
+      "url": "https://finance.yahoo.com/news/ai-fear-grips-wall-street-140007396.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Dow 50,000 sets table for inflation data, delayed January jobs report: What to watch this week",
+      "url": "https://finance.yahoo.com/news/dow-50000-sets-table-for-inflation-data-delayed-january-jobs-report-what-to-watch-this-week-123826626.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Analysis-Investors chase cheaper, smaller companies as risk aversion hits tech sector",
+      "url": "https://finance.yahoo.com/news/analysis-investors-chase-cheaper-smaller-110318617.html",
+      "publisher": "Reuters",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "5 big analyst AI moves: Microsoft stock downgraded as its time for a break",
+      "url": "https://finance.yahoo.com/news/5-big-analyst-ai-moves-093503505.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Barclays Remains Bullish on Microsoft Corporation (MSFT)",
+      "url": "/news/303706/barclays-remains-bullish-on-microsoft-corporation-msft",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dan Ives Says Software Selloff Is Worst He's Seen In 25 Years As Microsoft, Salesforce Face Brutal AI Reckoning",
+      "url": "https://finance.yahoo.com/news/dan-ives-says-software-selloff-003125036.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "3 Contrarian \"Buy the Dip\" Picks-and One Area to Avoid",
+      "url": "/news/303668/3-contrarian-buy-the-dip-picks-and-one-area-to-avoid",
+      "publisher": "MarketBeat",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Techs AI Push Risks a Bond Market Blowback: Credit Weekly",
+      "url": "https://finance.yahoo.com/news/tech-ai-push-risks-bond-190132451.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "AI leaders argue software will adapt  not die  but valuations are stretched",
+      "url": "https://finance.yahoo.com/m/fa65a9f1-551e-31c6-b3ea-e49100fd91d8/ai-leaders-argue-software.html",
+      "publisher": "Fox Business",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Microsoft (MSFT) Has a Lot of Firepower, Says Jim Cramer",
+      "url": "/news/303584/microsoft-msft-has-a-lot-of-firepower-says-jim-cramer",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Big Tech companies are starting to look like IBM in the 1960s",
+      "url": "https://finance.yahoo.com/news/big-tech-companies-are-starting-to-look-like-ibm-in-the-1960s-150030684.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Big Tech Dominates Market Coverage as AI Narrative Intensifies",
+      "url": "https://finance.yahoo.com/m/a9098eda-657d-30c6-9364-cbe941713509/big-tech-dominates-market.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "'It's existential': How Big Tech found itself in a $650 billion spending spiral",
+      "url": "https://www.marketwatch.com/story/its-existential-how-big-tech-found-itself-in-a-650-billion-spending-spiral-346caa4d?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Software stocks have been crushed. Here's how to play the sector as the dust settles.",
+      "url": "https://www.marketwatch.com/story/software-stocks-have-been-crushed-heres-how-to-play-the-sector-as-the-dust-settles-c0175f8a?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Old favorite software stocks take beating as fear of AI's impact grows",
+      "url": "https://finance.yahoo.com/m/b15f6503-2bde-3eb5-b29b-89cbd23845db/old-favorite-software-stocks.html",
+      "publisher": "Detroit Free Press",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Big Techs AI Push Is Costing a Lot More Than the Moon Landing",
+      "url": "https://finance.yahoo.com/m/f2e491e1-516b-37a7-8f08-dd299fb384c8/big-tech%E2%80%99s-ai-push-is-costing.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "WEC Energy Group Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/c7237d8b-3695-3abc-87de-d9989423c6ee/wec-energy-group-q4-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    }
+  ]
 }

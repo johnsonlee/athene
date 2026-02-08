@@ -6279,7 +6279,7 @@
     "close": 202.47000122070312,
     "sma_20": 181.60050048828123,
     "sma_50": 166.3677749633789,
-    "sma_200": 154.67319576263426,
+    "sma_200": 154.67319576263424,
     "trend_alignment": 0.8410443532564216,
     "rsi": 73.42630744064333,
     "rsi_score": 0.4685261488128665,
@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 2493330.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 84.07624940988751,
+    "stoch_k": 84.07624940988752,
     "stoch_d": 89.0331850335584,
     "trend_score": 84.10443532564216,
     "rsi_abs_score": 44.40633916619868,
@@ -6306,7 +6306,15 @@
     "technical_score": 58.16391091204018,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.05841140103485589,
+    "sentiment_pos": 0.05595,
+    "sentiment_neg": 0.03745,
+    "sentiment_neu": 0.9066000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 52.92
+  },
   "analyst": {
     "revision_momentum": 0.047619047619047616,
     "target_upside": -0.024546846446387112,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 29.378180415686273,
     "catalyst_timeline": 61.316331047514424,
     "downside_control": 47.00738147773494,
-    "composite_score": 47.62877688694921,
+    "composite_score": 47.624887841650775,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 52.612633679738565,
     "technical_score": 58.16391091204018,
-    "sentiment_score": 50.0,
+    "sentiment_score": 52.92,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Cargo Ground Transportation"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Old Dominion Freight Line, Inc. (ODFL): A Bull Case Theory",
+      "url": "/news/303643/old-dominion-freight-line-inc-odfl-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "This Transport Stock Skidded 25% on an Accounting Error",
+      "url": "https://www.barrons.com/articles/hub-stock-accounting-error-53515dd9?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Dow Theory Sends a Buy Signal as Transportation Stocks Rally",
+      "url": "https://finance.yahoo.com/m/3db04dd8-c259-3d7c-9666-14e3492afbec/%E2%80%98dow-theory%E2%80%99-sends-a-buy.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Transportation Stocks Are Trucking Along. That's Great for the Broader Market.",
+      "url": "https://www.barrons.com/articles/market-rally-dow-theory-transportation-stocks-f0fdf0d0?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Old Dominion reports nearly 9% YoY drop in Q4 operating income",
+      "url": "https://finance.yahoo.com/m/d931b7ce-acf4-3bc9-837f-f04c82b240b5/old-dominion-reports-nearly.html",
+      "publisher": "Trucking Dive",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Why Old Dominion Freight Line (ODFL) Stock Is Trading Lower Today",
+      "url": "/news/301800/why-old-dominion-freight-line-odfl-stock-is-trading-lower-today",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Old Dominion (ODFL) Climbs 9.89% as Morgan Stanley Hikes PT",
+      "url": "/news/300746/old-dominion-odfl-climbs-989-as-morgan-stanley-hikes-pt",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ODFL Q4 Deep Dive: Freight Volumes Decline, Market Share Opportunity Emerges",
+      "url": "/news/300760/odfl-q4-deep-dive-freight-volumes-decline-market-share-opportunity-emerges",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Old Dominion Freight Line Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/7866c675-1b67-303a-a7e7-5424ac0a0512/old-dominion-freight-line-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Old Dominion Freight Line, Inc.",
+      "url": "https://finance.yahoo.com/m/576689e1-dbcf-3371-afa8-3be88b596806/analyst-report%3A-old-dominion.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "This trucker is finally seeing signs of a bottom, and providing a boost to transport stocks",
+      "url": "https://www.marketwatch.com/story/this-trucker-is-finally-seeing-signs-of-a-bottom-and-providing-a-boost-to-transport-stocks-44a45d38?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Old Dominion Freight Line Inc (ODFL) Q4 2025 Earnings Call Highlights: Navigating Revenue ...",
+      "url": "https://finance.yahoo.com/news/old-dominion-freight-line-inc-210531454.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Old Dominion hoping stars align in 2026",
+      "url": "https://finance.yahoo.com/news/old-dominion-hoping-stars-align-192058523.html",
+      "publisher": "FreightWaves",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Old Dominion Proves Pricing Power In A Tough Trucking Market",
+      "url": "/news/299789/old-dominion-proves-pricing-power-in-a-tough-trucking-market",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Old Dominion (ODFL) Q4 2025 Earnings Transcript",
+      "url": "/news/299756/old-dominion-odfl-q4-2025-earnings-transcript",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Old Dominion Beats on Q4 Earnings and Revenues, Hikes Dividend",
+      "url": "/news/299770/old-dominion-beats-on-q4-earnings-and-revenues-hikes-dividend",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Old Dominion (ODFL) Q4 Earnings: Taking a Look at Key Metrics Versus Estimates",
+      "url": "/news/299507/old-dominion-odfl-q4-earnings-taking-a-look-at-key-metrics-versus-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "First look: Old Dominion posts Q4 beat",
+      "url": "https://finance.yahoo.com/news/first-look-old-dominion-posts-132246402.html",
+      "publisher": "FreightWaves",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Old Dominion Freight Line (ODFL) Q4 Earnings and Revenues Beat Estimates",
+      "url": "/news/299277/old-dominion-freight-line-odfl-q4-earnings-and-revenues-beat-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Old Dominion Freight Line (NASDAQ:ODFL) Posts Q4 CY2025 Sales In Line With Estimates",
+      "url": "/news/299148/old-dominion-freight-line-nasdaq-odfl-posts-q4-cy2025-sales-in-line-with-estimates",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    }
+  ]
 }

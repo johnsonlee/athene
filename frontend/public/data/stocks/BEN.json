@@ -6277,18 +6277,18 @@
   },
   "technical": {
     "close": 27.200000762939453,
-    "sma_20": 26.116499900817868,
+    "sma_20": 26.11649990081787,
     "sma_50": 24.588135757446288,
     "sma_200": 23.066045312881474,
-    "trend_alignment": 0.7275406647717058,
+    "trend_alignment": 0.7275406647717059,
     "rsi": 64.80403442075848,
     "rsi_score": 0.29608068841516966,
     "macd_histogram": 0.06497393620670722,
     "macd_line": 0.7621416640593104,
     "macd_histogram_pct": 0.23887475876557882,
-    "bb_position": 0.8295233584477508,
-    "bb_upper": 27.76054247677593,
-    "bb_lower": 24.472457324859803,
+    "bb_position": 0.8295233584477497,
+    "bb_upper": 27.760542476775935,
+    "bb_lower": 24.472457324859807,
     "bb_width": 0.12590068211296407,
     "hist_volatility": 0.30332851987026105,
     "volume_ratio": 0.7808145058291337,
@@ -6306,7 +6306,15 @@
     "technical_score": 60.599230257305386,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.11985871944690904,
+    "sentiment_pos": 0.06645,
+    "sentiment_neg": 0.0039,
+    "sentiment_neu": 0.92965,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 55.99
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": -0.007352941176470562,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 56.452190971428564,
     "catalyst_timeline": 59.207388303212184,
     "downside_control": 56.814325187222195,
-    "composite_score": 56.239940666776775,
+    "composite_score": 56.23605162147834,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 56.967748766666666,
     "technical_score": 60.599230257305386,
-    "sentiment_score": 50.0,
+    "sentiment_score": 55.99,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Asset Management & Custody Banks"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Analyst Report: Franklin Resources, Inc.",
+      "url": "https://finance.yahoo.com/m/0d12d908-2475-3ed8-8bdc-63b24a61c6cc/analyst-report%3A-franklin.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BEN's January AUM Rises 1.3% Sequentially: What's Driving Growth?",
+      "url": "/news/303075/bens-january-aum-rises-13-sequentially-whats-driving-growth",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Franklin Resources AGM: Shareholders OK Bigger Equity Plans; Management Touts $1.66T AUM",
+      "url": "https://finance.yahoo.com/m/c48b3ba1-820d-3dd9-90cd-a66d22c16712/franklin-resources-agm%3A.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Franklin Resources, Inc. Announces Preliminary Month-End Assets Under Management",
+      "url": "https://www.businesswire.com/news/home/20260204729570/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Implied Volatility Surging for Franklin Stock Options",
+      "url": "/news/299649/implied-volatility-surging-for-franklin-stock-options",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Franklin Resources (BEN) is a Top Momentum Stock for the Long-Term",
+      "url": "/news/299611/why-franklin-resources-ben-is-a-top-momentum-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Franklin Resources, Inc. Announces Quarterly Dividend",
+      "url": "https://www.businesswire.com/news/home/20260203319431/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "KKR & Co. to Post Q4 Earnings: Here's What to Expect From the Stock",
+      "url": "/news/297751/kkr-co-to-post-q4-earnings-heres-what-to-expect-from-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Franklin Resources (BEN) is a Top Value Stock for the Long-Term",
+      "url": "/news/297596/why-franklin-resources-ben-is-a-top-value-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Franklin Resources (BEN) Reports First-Quarter 2026 Earnings Surpassing Wall Street Expectations",
+      "url": "/news/296870/franklin-resources-ben-reports-first-quarter-2026-earnings-surpassing-wall-street-expectations",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Franklin Resources Inc (BEN) Q1 2026 Earnings Call Highlights: Record Inflows and Strategic ...",
+      "url": "https://finance.yahoo.com/news/franklin-resources-inc-ben-q1-230032383.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Franklin Resources Q1 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/9d5fb324-28f5-3d67-88d2-1f0a627e2990/franklin-resources-q1.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Franklin Resources, Inc.",
+      "url": "https://finance.yahoo.com/m/83b7f2d4-fe00-3f1d-97ff-b98b0e103068/analyst-report%3A-franklin.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Franklin Stock Rises 1.7% as Q1 Earnings Beat, AUM Rises Sequentially",
+      "url": "/news/293967/franklin-stock-rises-17-as-q1-earnings-beat-aum-rises-sequentially",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Franklin Resources (BEN) Q1 Earnings: Taking a Look at Key Metrics Versus Estimates",
+      "url": "/news/293745/franklin-resources-ben-q1-earnings-taking-a-look-at-key-metrics-versus-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Franklin Resources (NYSE:BEN) Reports Bullish Q4 CY2025",
+      "url": "/news/294075/franklin-resources-nyse-ben-reports-bullish-q4-cy2025",
+      "publisher": "StockStory",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Franklin Resources (BEN) Q1 Earnings and Revenues Surpass Estimates",
+      "url": "/news/293643/franklin-resources-ben-q1-earnings-and-revenues-surpass-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Franklin Resources: Fiscal Q1 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/franklin-resources-fiscal-q1-earnings-133929152.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Franklin Resources, Inc. Announces First Quarter Results",
+      "url": "https://www.businesswire.com/news/home/20260129257546/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Do Wall Street Analysts Like Franklin Resources Stock?",
+      "url": "https://finance.yahoo.com/m/4216c8e0-26dd-3f57-96bc-0f97e07b621f/do-wall-street-analysts-like.html",
+      "publisher": "Barchart",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    }
+  ]
 }

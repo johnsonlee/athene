@@ -6306,7 +6306,15 @@
     "technical_score": 58.37882002499114,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.09123155170833935,
+    "sentiment_pos": 0.0518,
+    "sentiment_neg": 0.0056500000000000005,
+    "sentiment_neu": 0.94255,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 54.56
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.0662136764493278,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 31.331655870588232,
     "catalyst_timeline": 56.73786053352983,
     "downside_control": 51.89558977057604,
-    "composite_score": 52.994079177457465,
+    "composite_score": 52.99019013215903,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 58.587251948255876,
     "technical_score": 58.37882002499114,
-    "sentiment_score": 50.0,
+    "sentiment_score": 54.56,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Electrical Components & Equipment"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Rockwell Automation Stock Dips After Earnings Beat: Why Bulls See a Fast Rebound",
+      "url": "/news/303628/rockwell-automation-stock-dips-after-earnings-beat-why-bulls-see-a-fast-rebound",
+      "publisher": "MarketBeat",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Rockwell Automation price target raised to $450 from $430 at BofA",
+      "url": "https://finance.yahoo.com/news/rockwell-automation-price-target-raised-152022986.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Rockwell Automation Q1 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/192aa88f-672c-38ba-a156-9b947df9379d/rockwell-automation-q1.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ROK Q1 Deep Dive: Margin Expansion Amid Cautious Outlook and Mixed Guidance",
+      "url": "/news/302471/rok-q1-deep-dive-margin-expansion-amid-cautious-outlook-and-mixed-guidance",
+      "publisher": "StockStory",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Rockwell Automation Inc (ROK) Q1 2026 Earnings Call Highlights: Strong Sales Growth and Margin ...",
+      "url": "https://finance.yahoo.com/news/rockwell-automation-inc-rok-q1-210641451.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Rockwell Automation, Inc.",
+      "url": "https://finance.yahoo.com/m/e02a181e-6ec0-3460-9f13-81ca7d2ce900/analyst-report%3A-rockwell.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What's Going On With Rockwell Automation Stock Thursday?",
+      "url": "/news/301829/whats-going-on-with-rockwell-automation-stock-thursday",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ROK Q1 Earnings Surpass Estimates, Increase Y/Y on Higher Volumes",
+      "url": "/news/301915/rok-q1-earnings-surpass-estimates-increase-yy-on-higher-volumes",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Rockwell Automation (ROK) Q1 Earnings: How Key Metrics Compare to Wall Street Estimates",
+      "url": "/news/301531/rockwell-automation-rok-q1-earnings-how-key-metrics-compare-to-wall-street-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Rockwell Automation (ROK) Q1 Earnings and Revenues Beat Estimates",
+      "url": "/news/301340/rockwell-automation-rok-q1-earnings-and-revenues-beat-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Rockwell Automation Lifts Guidance as Profit Jumps",
+      "url": "https://www.wsj.com/business/retail/rockwell-automation-lifts-guidance-as-profit-jumps-a97aecdc?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Rockwell Automation's (NYSE:ROK) Q4 CY2025 Sales Beat Estimates But Stock Drops",
+      "url": "/news/301091/rockwell-automations-nyse-rok-q4-cy2025-sales-beat-estimates-but-stock-drops",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Rockwell Automation: Fiscal Q1 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/rockwell-automation-fiscal-q1-earnings-121355031.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Rockwell Automation Reports First Quarter 2026 Results",
+      "url": "https://www.businesswire.com/news/home/20260205378243/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Kimball Electronics (KE) Q2 Earnings Meet Estimates",
+      "url": "/news/300491/kimball-electronics-ke-q2-earnings-meet-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Palmer Luckey says AI will make hardware so cheap youll be able to buy a Ford F-150 for $1,000",
+      "url": "https://finance.yahoo.com/news/palmer-luckey-says-ai-hardware-180926728.html",
+      "publisher": "Fortune",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Oppenheimer Sees Rockwell Automation, Inc. (ROK)'s Operational Gains Largely Priced In",
+      "url": "/news/299480/oppenheimer-sees-rockwell-automation-inc-roks-operational-gains-largely-priced-in",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Rockwell Automation (ROK) To Report Earnings Tomorrow: Here Is What To Expect",
+      "url": "/news/298534/rockwell-automation-rok-to-report-earnings-tomorrow-here-is-what-to-expect",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Rockwell Automation Set to Report Q1 Earnings: What's in Store?",
+      "url": "/news/297917/rockwell-automation-set-to-report-q1-earnings-whats-in-store",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Rockwell Automation (ROK) Q1 Earnings on the Horizon: Analysts' Insights on Key Performance Measures",
+      "url": "/news/297475/rockwell-automation-rok-q1-earnings-on-the-horizon-analysts-insights-on-key-performance-measures",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    }
+  ]
 }

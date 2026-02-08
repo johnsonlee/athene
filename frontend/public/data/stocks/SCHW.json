@@ -6279,8 +6279,8 @@
     "close": 105.08000183105469,
     "sma_20": 103.15250053405762,
     "sma_50": 99.94980041503906,
-    "sma_200": 93.7671441268921,
-    "trend_alignment": 0.6443207504401902,
+    "sma_200": 93.76714412689209,
+    "trend_alignment": 0.6443207504401903,
     "rsi": 59.1491560642872,
     "rsi_score": 0.18298312128574395,
     "macd_histogram": -0.0693290523803709,
@@ -6296,17 +6296,25 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 71.29633323360261,
-    "stoch_d": 64.5427667475632,
-    "trend_score": 64.43207504401902,
+    "stoch_d": 64.54276674756322,
+    "trend_score": 64.43207504401903,
     "rsi_abs_score": 72.09559075499897,
     "macd_abs_score": 46.701130035578196,
     "momentum_score": 59.39836039528858,
     "volatility_score": 69.78137992712973,
     "volume_score": 50.0,
-    "technical_score": 61.10540661721822,
+    "technical_score": 61.10540661721823,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.2534695265383706,
+    "sentiment_pos": 0.1413,
+    "sentiment_neg": 0.032100000000000004,
+    "sentiment_neu": 0.8266,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 62.67
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.16102017510468217,
@@ -6325,7 +6333,7 @@
     "quality_score": 81.5430013,
     "growth_score": 85.45,
     "safety_score": 33.133799999999994,
-    "trend_score": 64.43207504401902,
+    "trend_score": 64.43207504401903,
     "momentum_score": 59.39836039528858,
     "volatility_score": 69.78137992712973,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 35.13807766666666,
     "catalyst_timeline": 58.14403827937042,
     "downside_control": 53.20927698906946,
-    "composite_score": 57.759040252868004,
+    "composite_score": 57.75515120756957,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 61.78972511222222,
-    "technical_score": 61.10540661721822,
-    "sentiment_score": 50.0,
+    "technical_score": 61.10540661721823,
+    "sentiment_score": 62.67,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Investment Banking & Brokerage"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "These 7 Stocks Are Analyst Favorites For Magnificent Earnings Growth; Google Test Entry As Data Center Play Shines",
+      "url": "https://finance.yahoo.com/m/2b47c372-177e-3051-aa01-406a8d82b220/these-7-stocks-are-analyst.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Solid Equity, Options Trading to Aid HOOD Q4 Earnings Amid Crypto Slump",
+      "url": "/news/302664/solid-equity-options-trading-to-aid-hood-q4-earnings-amid-crypto-slump",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Charles Schwab Corporation (SCHW): A Bull Case Theory",
+      "url": "/news/302302/the-charles-schwab-corporation-schw-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Schwab CEO says prediction markets can aid investors, but sports betting is counter to our mission",
+      "url": "https://finance.yahoo.com/m/930c740d-b0cb-36ee-8bc2-dbce7f4ef8de/schwab-ceo-says-prediction.html",
+      "publisher": "The Block",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Schwab CEO says firm is 'winning' with Gen Z by rejecting the 'gambling' model of Robinhood and FanDuel",
+      "url": "https://finance.yahoo.com/news/schwab-ceo-says-firm-is-winning-with-gen-z-by-rejecting-the-gambling-model-of-robinhood-and-fanduel-231105142.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Charles Schwab CEO: How prediction markets can help (& hurt) investors",
+      "url": "https://finance.yahoo.com/video/charles-schwab-ceo-prediction-markets-213412298.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Squawk Pod: Sen. Thom Tillis, Charles Schwab CEO, & Fed Politics - 02/04/26  Audio Only",
+      "url": "https://www.youtube.com/watch?v=YMENIzKq7Ss",
+      "publisher": "CNBC TV",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Charles Schwab CEO Rick Wurster on the state of investing: We're winning with the young investors",
+      "url": "https://www.youtube.com/watch?v=04Io91i547s",
+      "publisher": "CNBC TV",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Should Investors Buy Robinhood Stock Ahead of Q4 Earnings Release?",
+      "url": "/news/299390/should-investors-buy-robinhood-stock-ahead-of-q4-earnings-release",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Robinhood Offers New Product Suite in UK: Will It Drive Growth?",
+      "url": "/news/297801/robinhood-offers-new-product-suite-in-uk-will-it-drive-growth",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "JPMorgan Flags A New ETF Fee Risk As Robinhood's Zero-Commission Era Backfires",
+      "url": "/news/297617/jpmorgan-flags-a-new-etf-fee-risk-as-robinhoods-zero-commission-era-backfires",
+      "publisher": "Benzinga",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Here's Why The Charles Schwab Corporation (SCHW) is a Strong Value Stock",
+      "url": "/news/297581/heres-why-the-charles-schwab-corporation-schw-is-a-strong-value-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "UBS Sees Strong Cash Generation and Capital Growth at Charles Schwab (SCHW)",
+      "url": "/news/296883/ubs-sees-strong-cash-generation-and-capital-growth-at-charles-schwab-schw",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Brokerage Firms May Start Charging ETF Distribution Fees. Who Will Pay.",
+      "url": "https://www.barrons.com/advisor/articles/brokerage-firms-may-start-charging-etf-distribution-fees-who-will-pay-033d76d9?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Are Wall Street Analysts Predicting Charles Schwab Stock Will Climb or Sink?",
+      "url": "https://finance.yahoo.com/m/7b61b5b3-ff56-3bfe-96cf-9595f6cdb035/are-wall-street-analysts.html",
+      "publisher": "Barchart",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Charles Schwab (SCHW): Expecting Continued Earnings Momentum in 2026",
+      "url": "/news/295219/charles-schwab-schw-expecting-continued-earnings-momentum-in-2026",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "LPL Financial Dips Despite Q4 Earnings Beat, Revenues & Costs Rise Y/Y",
+      "url": "/news/293940/lpl-financial-dips-despite-q4-earnings-beat-revenues-costs-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Schwab Taps Neesha Hathi for New Role Leading Combined Wealth and Banking Operations",
+      "url": "https://www.barrons.com/advisor/articles/schwab-neesha-hathi-wealth-banking-4296594e?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Charles Schwab Boosts Dividend After Year of Strong Growth",
+      "url": "https://www.barrons.com/advisor/articles/charles-schwab-increases-dividend-stock-d859800c?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Erika Kirk Vows Turning Point Will Match 'Dollar-For-Dollar' On $1,000 Trump Accounts For Employees' Newborn Children",
+      "url": "/news/293611/erika-kirk-vows-turning-point-will-match-dollar-for-dollar-on-1000-trump-accounts-for-employees-newborn-children",
+      "publisher": "Benzinga",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    }
+  ]
 }

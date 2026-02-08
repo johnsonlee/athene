@@ -6279,8 +6279,8 @@
     "close": 106.62999725341797,
     "sma_20": 107.78249931335449,
     "sma_50": 107.03046829223635,
-    "sma_200": 107.55547275543213,
-    "trend_alignment": 0.4895529722618269,
+    "sma_200": 107.55547275543215,
+    "trend_alignment": 0.4895529722618267,
     "rsi": 46.529983529424236,
     "rsi_score": -0.06940032941151529,
     "macd_histogram": -0.28548163561286866,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 32.83580956502018,
     "stoch_d": 38.0495779346913,
-    "trend_score": 48.955297226182694,
+    "trend_score": 48.95529722618267,
     "rsi_abs_score": 69.07098847059696,
     "macd_abs_score": 40.80672317906963,
     "momentum_score": 54.9388558248333,
@@ -6306,7 +6306,15 @@
     "technical_score": 56.46379325550561,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.19079478576071984,
+    "sentiment_pos": 0.16394999999999998,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.83605,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 59.54
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.07849573290818723,
@@ -6325,7 +6333,7 @@
     "quality_score": 64.89168571428571,
     "growth_score": 68.75,
     "safety_score": 31.834249999999997,
-    "trend_score": 48.955297226182694,
+    "trend_score": 48.95529722618267,
     "momentum_score": 54.9388558248333,
     "volatility_score": 76.47773670100406,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 40.875528,
     "catalyst_timeline": 53.209603402869575,
     "downside_control": 57.6027980051506,
-    "composite_score": 49.15232377875539,
+    "composite_score": 49.14843473345695,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 54.69646238095238,
     "technical_score": 56.46379325550561,
-    "sentiment_score": 50.0,
+    "sentiment_score": 59.54,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Real Estate",
     "industry": "Multi-Family Residential REITs"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Camden Property Trust (CPT) Q4 2025 Earnings Call Highlights: Exceeding Expectations and ...",
+      "url": "https://finance.yahoo.com/news/camden-property-trust-cpt-q4-230031490.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Camden Property Trust Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/06416a88-3157-3b5d-9127-813859ae8a27/camden-property-trust-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Camden's Q4 FFO Beats Estimates, Revenues Up Y/Y, Dividend Raised",
+      "url": "/news/302803/camdens-q4-ffo-beats-estimates-revenues-up-yy-dividend-raised",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's What Key Metrics Tell Us About Camden (CPT) Q4 Earnings",
+      "url": "/news/302275/heres-what-key-metrics-tell-us-about-camden-cpt-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Camden (CPT) Beats Q4 FFO Estimates",
+      "url": "/news/302242/camden-cpt-beats-q4-ffo-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Camden: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/camden-q4-earnings-snapshot-212643726.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Camden Property Trust Announces Fourth Quarter 2025 Operating Results, 2026 Financial Outlook, and First Quarter 2026 Dividend",
+      "url": "https://www.businesswire.com/news/home/20260205207921/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "How Are Residential REITs Positioned Ahead of Q4 Earnings?",
+      "url": "/news/297868/how-are-residential-reits-positioned-ahead-of-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Should CPT Stock Be in Your Portfolio Ahead of Q4 Earnings?",
+      "url": "/news/295463/should-cpt-stock-be-in-your-portfolio-ahead-of-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Camden Property Trust Announces Tax Characteristics of 2025 Distributions",
+      "url": "https://www.businesswire.com/news/home/20260121670934/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What to Expect From Camden Property Trusts Q4 2025 Earnings Report",
+      "url": "https://finance.yahoo.com/m/7a79a96b-7d6e-3bd6-966e-ae84ffdd0f85/what-to-expect-from-camden.html",
+      "publisher": "Barchart",
+      "date": "2026-01-13",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Camden Property Trust Announces Fourth Quarter 2025 Earnings Release and Conference Call Dates",
+      "url": "https://www.businesswire.com/news/home/20260112429834/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-12",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Camden Stock Rallies 7.3% in Three Months: Will It Continue to Gain?",
+      "url": "/news/267112/camden-stock-rallies-73-in-three-months-will-it-continue-to-gain",
+      "publisher": "Zacks",
+      "date": "2026-01-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Residential REITs to Consider for Steady Income in 2026",
+      "url": "/news/260988/3-residential-reits-to-consider-for-steady-income-in-2026",
+      "publisher": "Zacks",
+      "date": "2025-12-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Camden Property Trust Announces Dual Listing on NYSE Texas",
+      "url": "https://www.businesswire.com/news/home/20251218286319/en",
+      "publisher": "Business Wire",
+      "date": "2025-12-18",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is Camden Property Trust Stock Underperforming the Nasdaq?",
+      "url": "https://finance.yahoo.com/m/ed0e7769-6766-3145-9583-748716d8ee44/is-camden-property-trust.html",
+      "publisher": "Barchart",
+      "date": "2025-12-16",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Camden Property Trust Announces Fourth Quarter 2025 Dividend",
+      "url": "https://www.businesswire.com/news/home/20251203603822/en",
+      "publisher": "Business Wire",
+      "date": "2025-12-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is Camden Property Trust (CPT) One of the Best Dividend Stocks in the Real Estate Sector?",
+      "url": "/news/242788/is-camden-property-trust-cpt-one-of-the-best-dividend-stocks-in-the-real-estate-sector",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Brinker upgraded, Coinbase downgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/brinker-upgraded-coinbase-downgraded-wall-143621890.html",
+      "publisher": "The Fly",
+      "date": "2025-11-25",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here Are Tuesdays Top Wall Street Analyst Research Calls: Applied Materials, CDW, Exact Sciences, Harley-Davidson, Oshkosh, ServiceNow and More",
+      "url": "https://finance.yahoo.com/m/382ff28f-2216-320e-8c90-0e86370044a8/here-are-tuesday%E2%80%99s-top-wall.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2025-11-25",
+      "sentiment": "positive"
+    }
+  ]
 }

@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 2278830.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 89.99328117337836,
+    "stoch_k": 89.99328117337838,
     "stoch_d": 74.58403845367658,
     "trend_score": 44.47873094524502,
     "rsi_abs_score": 74.88900735832631,
@@ -6306,7 +6306,15 @@
     "technical_score": 57.93442077886502,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.07125437018649383,
+    "sentiment_pos": 0.07825,
+    "sentiment_neg": 0.020200000000000003,
+    "sentiment_neu": 0.90155,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 53.56
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.11222333444555671,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 61.47005761428571,
     "catalyst_timeline": 54.81545207901925,
     "downside_control": 62.73592066964823,
-    "composite_score": 56.649203845648415,
+    "composite_score": 56.64531480034998,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 58.22602440251923,
     "technical_score": 57.93442077886502,
-    "sentiment_score": 50.0,
+    "sentiment_score": 53.56,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Health Care Equipment"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Can Intuitive Surgical Sustain Robust Top-line Growth in 2026?",
+      "url": "/news/301764/can-intuitive-surgical-sustain-robust-top-line-growth-in-2026",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Unveiling Zimmer (ZBH) Q4 Outlook: Wall Street Estimates for Key Metrics",
+      "url": "/news/301489/unveiling-zimmer-zbh-q4-outlook-wall-street-estimates-for-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Earnings Preview: QuidelOrtho (QDEL) Q4 Earnings Expected to Decline",
+      "url": "/news/299661/earnings-preview-quidelortho-qdel-q4-earnings-expected-to-decline",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Zimmer Biomet to Report Q4 Earnings: Here's What to Expect",
+      "url": "/news/297856/zimmer-biomet-to-report-q4-earnings-heres-what-to-expect",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Zimmer Biomet (ZBH) Earnings Expected to Grow: What to Know Ahead of Next Week's Release",
+      "url": "/news/297665/zimmer-biomet-zbh-earnings-expected-to-grow-what-to-know-ahead-of-next-weeks-release",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Reasons ZBH is Risky and 1 Stock to Buy Instead",
+      "url": "/news/296708/3-reasons-zbh-is-risky-and-1-stock-to-buy-instead",
+      "publisher": "StockStory",
+      "date": "2026-02-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Here Are Tuesdays Top Wall Street Analyst Research Calls: Affirm Holdings, Alcoa, Block, Coinbase Global,CoreWeave, Datadog, Intuitive Surgical, and More",
+      "url": "https://finance.yahoo.com/m/dcd35300-3bbb-30b5-a962-034964a21c29/here-are-tuesday%E2%80%99s-top-wall.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Zimmer Biomet Holdings (ZBH)'s 2026 Expectations Remain Cautious Amid Internal Reset",
+      "url": "/news/282077/zimmer-biomet-holdings-zbhs-2026-expectations-remain-cautious-amid-internal-reset",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-21",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Q3 Rundown: Zimmer Biomet (NYSE:ZBH) Vs Other Surgical Equipment & Consumables - Diversified Stocks",
+      "url": "/news/282372/q3-rundown-zimmer-biomet-nyse-zbh-vs-other-surgical-equipment-consumables-diversified-stocks",
+      "publisher": "StockStory",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Zimmer Biomet Holdings, Inc.",
+      "url": "https://finance.yahoo.com/m/11b154e9-6306-315d-ba83-81531a51f9eb/analyst-report%3A-zimmer-biomet.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Zimmer Biomet (ZBH) is a Strong Value Stock",
+      "url": "/news/277609/heres-why-zimmer-biomet-zbh-is-a-strong-value-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-15",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Zimmer Biomet Announces Webcast and Conference Call of Fourth Quarter 2025 Financial Results",
+      "url": "/news/277151/zimmer-biomet-announces-webcast-and-conference-call-of-fourth-quarter-2025-financial-results",
+      "publisher": "PR Newswire",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "JPM26: Zimmer Biomet doubles down on orthopaedic robotics and specialised sales force in US",
+      "url": "https://finance.yahoo.com/m/fb4890ac-8703-3485-8704-f999a693053e/jpm26%3A-zimmer-biomet-doubles.html",
+      "publisher": "Medical Device Network",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "JPM26: Zimmer Biomet reveals plans for largest patient campaign in its history",
+      "url": "https://finance.yahoo.com/m/6b1c9955-bcea-3b03-b5c0-db415f515561/jpm26%3A-zimmer-biomet-reveals.html",
+      "publisher": "Medical Device Network",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "JPM26: Zimmer Biomet in midst of largest patient campaign in its history",
+      "url": "https://finance.yahoo.com/m/6b1c9955-bcea-3b03-b5c0-db415f515561/jpm26%3A-zimmer-biomet-in-midst.html",
+      "publisher": "Medical Device Network",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "da Vinci 5 Expands Globally: Can ISRG Beat Overseas Cost Hurdles?",
+      "url": "/news/275932/da-vinci-5-expands-globally-can-isrg-beat-overseas-cost-hurdles",
+      "publisher": "Zacks",
+      "date": "2026-01-14",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Zimmer Biomets Q3 2025 Earnings: What to Expect",
+      "url": "https://finance.yahoo.com/m/4491daf5-76ec-3bef-8923-6d770de061d2/zimmer-biomet%E2%80%99s-q3-2025.html",
+      "publisher": "Barchart",
+      "date": "2026-01-13",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "S&P 500 Rallies to a New Record High on US Economic Optimism",
+      "url": "https://finance.yahoo.com/m/78714529-8429-3795-b457-6fcd715bcd8a/s%26p-500-rallies-to-a-new.html",
+      "publisher": "Barchart",
+      "date": "2026-01-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here Are Tuesdays Top Wall Street Analyst Research Calls: AT&T, CoreWeave, Digital Realty, Palantir Technologies, ServiceNow, Shopify, SoFi Technologies, and More",
+      "url": "https://finance.yahoo.com/m/c0552195-b29c-3730-b1d4-ed6c47322552/here-are-tuesday%E2%80%99s-top-wall.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is ISRG's 20% Procedure Growth the New Normal or a Peak?",
+      "url": "/news/262396/is-isrgs-20-procedure-growth-the-new-normal-or-a-peak",
+      "publisher": "Zacks",
+      "date": "2025-12-26",
+      "sentiment": "positive"
+    }
+  ]
 }

@@ -6306,7 +6306,15 @@
     "technical_score": 57.86589001042266,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.03691613016079902,
+    "sentiment_pos": 0.048,
+    "sentiment_neg": 0.01905,
+    "sentiment_neu": 0.93295,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.85
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.07950912025335734,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 68.44945620761905,
     "catalyst_timeline": 53.07979497782769,
     "downside_control": 62.28347591569749,
-    "composite_score": 54.42415392197801,
+    "composite_score": 54.42026487667958,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 54.40232874444444,
     "technical_score": 57.86589001042266,
-    "sentiment_score": 50.0,
+    "sentiment_score": 51.85,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Reinsurance"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "American International to Report Q4 Earnings: Key Estimates to Note",
+      "url": "/news/303220/american-international-to-report-q4-earnings-key-estimates-to-note",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "EG Q4 Deep Dive: Portfolio Reshaping and Underwriting Discipline Offset by Market Headwinds",
+      "url": "/news/301989/eg-q4-deep-dive-portfolio-reshaping-and-underwriting-discipline-offset-by-market-headwinds",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Everest Group Ltd (EG) Q4 2025 Earnings Call Highlights: Navigating Challenges with Strategic Moves",
+      "url": "https://finance.yahoo.com/news/everest-group-ltd-eg-q4-190444780.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Everest Q4 Earnings Miss, Revenues Top Estimates, Premiums Down Y/Y",
+      "url": "/news/301932/everest-q4-earnings-miss-revenues-top-estimates-premiums-down-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's What Key Metrics Tell Us About Everest Group (EG) Q4 Earnings",
+      "url": "/news/300586/heres-what-key-metrics-tell-us-about-everest-group-eg-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Everest Group (EG) Misses Q4 Earnings Estimates",
+      "url": "/news/300424/everest-group-eg-misses-q4-earnings-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Everest Group: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/everest-group-q4-earnings-snapshot-213640174.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Everest Group (NYSE:EG) Reports Sales Below Analyst Estimates In Q4 CY2025 Earnings",
+      "url": "/news/300280/everest-group-nyse-eg-reports-sales-below-analyst-estimates-in-q4-cy2025-earnings",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Everest Reports Fourth Quarter and Full-Year 2025 Results",
+      "url": "https://www.businesswire.com/news/home/20260204637654/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Will These 4 Insurance Stocks Insure a Q4 Earnings Beat?",
+      "url": "/news/297992/will-these-4-insurance-stocks-insure-a-q4-earnings-beat",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Unum Group Gears Up to Report Q4 Earnings: Here's What to Expect",
+      "url": "/news/297941/unum-group-gears-up-to-report-q4-earnings-heres-what-to-expect",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Everest Group (EG) Q4 Earnings: What To Expect",
+      "url": "/news/296587/everest-group-eg-q4-earnings-what-to-expect",
+      "publisher": "StockStory",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is a Beat in the Cards for Everest Group This Earnings Season?",
+      "url": "/news/295852/is-a-beat-in-the-cards-for-everest-group-this-earnings-season",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "eClerx Services Ltd (BOM:532927) Q3 2026 Earnings Call Highlights: Robust Revenue Growth Amidst ...",
+      "url": "https://finance.yahoo.com/news/eclerx-services-ltd-bom-532927-170158695.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Zacks Industry Outlook Highlights American International, Prudential Financial, Markel, Principal Financial Group and Everest",
+      "url": "/news/291231/zacks-industry-outlook-highlights-american-international-prudential-financial-markel-principal-financial-group-and-everest",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "5 Multiline Insurers to Watch Amid Prudent Underwriting and Pricing",
+      "url": "/news/290575/5-multiline-insurers-to-watch-amid-prudent-underwriting-and-pricing",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Everest Group (EG) Reports Next Week: Wall Street Expects Earnings Growth",
+      "url": "/news/290322/everest-group-eg-reports-next-week-wall-street-expects-earnings-growth",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Vulcan Value Partners' Investment Journey with Everest Group Ltd. (EG)",
+      "url": "/news/288041/vulcan-value-partners-investment-journey-with-everest-group-ltd-eg",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Everest Appoints Christopher Kujawa as Executive Vice President and Chief Human Resources Officer",
+      "url": "https://www.businesswire.com/news/home/20260114043676/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Everest Group to Hold Fourth Quarter 2025 Earnings Conference Call on Thursday, February 5, 2026",
+      "url": "https://www.businesswire.com/news/home/20260106531444/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-06",
+      "sentiment": "neutral"
+    }
+  ]
 }

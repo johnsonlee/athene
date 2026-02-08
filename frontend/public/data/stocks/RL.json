@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 342.8900146484375,
     "sma_20": 357.73549957275395,
-    "sma_50": 360.5185803222657,
+    "sma_50": 360.5185803222656,
     "sma_200": 310.11358024597166,
-    "trend_alignment": 0.5850564882941999,
+    "trend_alignment": 0.5850564882942,
     "rsi": 38.976747588479526,
     "rsi_score": -0.22046504823040947,
     "macd_histogram": -2.3377722526684845,
@@ -6295,9 +6295,9 @@
     "avg_volume_20d": 665190.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 37.63800285550808,
+    "stoch_k": 37.638002855508084,
     "stoch_d": 33.833525227931055,
-    "trend_score": 58.50564882941999,
+    "trend_score": 58.50564882942,
     "rsi_abs_score": 60.77209710617543,
     "macd_abs_score": 32.27322689726594,
     "momentum_score": 46.52266200172069,
@@ -6306,7 +6306,15 @@
     "technical_score": 53.23244588580831,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.07450733415340756,
+    "sentiment_pos": 0.10305,
+    "sentiment_neg": 0.0486,
+    "sentiment_neu": 0.84825,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 53.73
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.21321706669777485,
@@ -6325,7 +6333,7 @@
     "quality_score": 79.6224,
     "growth_score": 75.215,
     "safety_score": 53.8318963207776,
-    "trend_score": 58.50564882941999,
+    "trend_score": 58.50564882942,
     "momentum_score": 46.52266200172069,
     "volatility_score": 58.61976318233053,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 53.334135828571426,
     "catalyst_timeline": 52.83005990985151,
     "downside_control": 58.52474892546621,
-    "composite_score": 62.64939621280657,
+    "composite_score": 62.645507167508136,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 68.58946245463171,
     "technical_score": 53.23244588580831,
-    "sentiment_score": 50.0,
+    "sentiment_score": 53.73,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Apparel, Accessories & Luxury Goods"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Ralph Lauren Stitches A Blowout Quarter, Raises Outlook",
+      "url": "https://finance.yahoo.com/news/ralph-lauren-stitches-blowout-quarter-163107677.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ralph Lauren Q3 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/ca9e62da-ef60-3b91-842c-db8b91bee026/ralph-lauren-q3-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ralph Lauren beats holiday forecasts and raises full-year outlook",
+      "url": "https://finance.yahoo.com/m/f0b379fb-dbb9-380a-94ce-33551a67243d/ralph-lauren-beats-holiday.html",
+      "publisher": "Retail Insight Network",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "RL Q4 Deep Dive: Brand Elevation and Pricing Drive Results Amid Margin Pressures",
+      "url": "/news/303304/rl-q4-deep-dive-brand-elevation-and-pricing-drive-results-amid-margin-pressures",
+      "publisher": "StockStory",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Growth Scare Hits Markets Edgy From Tech Selloff",
+      "url": "https://finance.yahoo.com/m/0d2019b3-aa05-3e39-bec5-678db9f5188c/growth-scare-hits-markets.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stock Market Today: Nasdaq, Dow Sink But Small Caps Take It On Chin (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/e263e442-296b-39d8-8185-e01b4d948dbe/stock-market-today%3A-nasdaq%2C.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ralph Lauren Corp (RL) Q3 2026 Earnings Call Highlights: Strong Global Growth and Strategic ...",
+      "url": "https://finance.yahoo.com/news/ralph-lauren-corp-rl-q3-210425563.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Ralph Lauren Corporation",
+      "url": "https://finance.yahoo.com/m/d3b4f883-45ae-39e4-803a-03db24d7ada9/analyst-report%3A-ralph-lauren.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Peloton stock sinks 30% as CFO departs, Tapestry tops Q2 estimates",
+      "url": "https://finance.yahoo.com/video/peloton-stock-sinks-30-cfo-205012809.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stock Market Today: Dow, Nasdaq Struggle; Animal Health Name Soars (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/e263e442-296b-39d8-8185-e01b4d948dbe/stock-market-today%3A-dow%2C.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stock Market Today: Nasdaq Gets Clobbered But Off Lows; Candy Giant Breaks Out (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/e263e442-296b-39d8-8185-e01b4d948dbe/stock-market-today%3A-nasdaq.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Snap-on's Q4 Earnings Beat Estimates, Higher Organic Sales Aid",
+      "url": "/news/301973/snap-ons-q4-earnings-beat-estimates-higher-organic-sales-aid",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ralph Lauren Stitches A Blowout Quarter, Raises Outlook",
+      "url": "/news/301836/ralph-lauren-stitches-a-blowout-quarter-raises-outlook",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "RL Beats Q3 Earnings & Revenue Estimates on Strong Holiday Result",
+      "url": "/news/301904/rl-beats-q3-earnings-revenue-estimates-on-strong-holiday-result",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Weekly Jobless Claims Exceed Expectations",
+      "url": "/news/301789/weekly-jobless-claims-exceed-expectations",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ralph Lauren Q3 earnings beat, shares slide on tariff-driven margin outlook",
+      "url": "https://finance.yahoo.com/m/a086d349-e968-3da6-8402-7044f0c7d296/ralph-lauren-q3-earnings.html",
+      "publisher": "Proactive",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ralph Lauren Q3 earnings beat but shares slide on tariff-driven margin outlook",
+      "url": "https://finance.yahoo.com/m/a086d349-e968-3da6-8402-7044f0c7d296/ralph-lauren-q3-earnings-beat.html",
+      "publisher": "Proactive",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jobless Claims Pop Up a Bit, Major Morning for Earnings",
+      "url": "/news/301755/jobless-claims-pop-up-a-bit-major-morning-for-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ralph Lauren's Earnings Were Strong. Investors Were Still Disappointed.",
+      "url": "https://www.barrons.com/articles/ralph-lauren-earnings-stock-price-77dc38ef?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ralph Lauren (RL) Q3 Earnings: Taking a Look at Key Metrics Versus Estimates",
+      "url": "/news/301555/ralph-lauren-rl-q3-earnings-taking-a-look-at-key-metrics-versus-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    }
+  ]
 }

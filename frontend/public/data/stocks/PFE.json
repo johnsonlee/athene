@@ -6306,7 +6306,15 @@
     "technical_score": 60.65796369659648,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.02138493181873754,
+    "sentiment_pos": 0.07705,
+    "sentiment_neg": 0.0481,
+    "sentiment_neu": 0.87485,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.07
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.010286554004408565,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 69.85281241428571,
     "catalyst_timeline": 58.453966367631025,
     "downside_control": 49.20487886445463,
-    "composite_score": 55.4508784220469,
+    "composite_score": 55.44698937674846,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 51.09004283738094,
     "technical_score": 60.65796369659648,
-    "sentiment_score": 50.0,
+    "sentiment_score": 51.07,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Pharmaceuticals"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Pfizer CEO discusses the company's GLP-1 weigh-loss drug pipeline",
+      "url": "https://finance.yahoo.com/video/pfizer-ceo-discusses-companys-glp-130050715.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TrumpRx Is Here. Most People Won't Benefit.",
+      "url": "https://www.barrons.com/articles/trumprx-drug-discounts-who-benefits-05c323d5?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "3 High-Yield Dividend Stocks Perfect For Retirees",
+      "url": "https://finance.yahoo.com/m/5f4d1936-691e-3c34-bf9a-dd825be1c6c4/3-high-yield-dividend-stocks.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "TrumpRx launches to slash drug prices for cash-paying US patients",
+      "url": "https://finance.yahoo.com/m/4ef79b4d-689c-35f0-ab20-5a55317cbcf8/trumprx-launches-to-slash.html",
+      "publisher": "Pharmaceutical Technology",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Pfizer Bets Big on Obesity and Oncology With 2026 Pipeline Push",
+      "url": "/news/303069/pfizer-bets-big-on-obesity-and-oncology-with-2026-pipeline-push",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "China Biotech Lights Up. U.S. Stocks Prepare For A New Powerhouse.",
+      "url": "https://finance.yahoo.com/m/dfa6d3be-8b8d-3855-a4f9-84f680d8ff75/china-biotech-lights-up.-u.s..html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "5 High-Yield Stocks (6%-8%) Every Retiree Should Consider Now",
+      "url": "https://finance.yahoo.com/m/85ac535a-0a2a-37a8-8d90-018916fbeb55/5-high-yield-stocks-%286%25-8%25%29.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "White Houses online service for drug sales debuts with limited impact on prices",
+      "url": "https://finance.yahoo.com/m/1088b5dd-808a-3743-8369-c6d52e9afac6/white-house%E2%80%99s-online-service.html",
+      "publisher": "BioPharma Dive",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "FDA Grants Priority Review for HYMPAVZI (marstacimab) sBLA for the Treatment of Two Hemophilia A or B Patient Populations with Significant Medical Need",
+      "url": "https://www.businesswire.com/news/home/20260205107500/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Trump Says People Will 'Save A Lot Of Money And Be Healthy' With Launch Of TrumpRx Website - But Will It Actually Fill Prescriptions?",
+      "url": "/news/302366/trump-says-people-will-save-a-lot-of-money-and-be-healthy-with-launch-of-trumprx-website-but-will-it-actually-fill-prescriptions",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Trump launches TrumpRX website offering discounted prescription drugs",
+      "url": "https://finance.yahoo.com/m/5cacec23-a6d3-382d-a4dd-6885927e81c3/trump-launches-%E2%80%98trumprx%E2%80%99.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Adaptive Biotechnologies Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/a8cf2ff9-b58e-37ae-8816-3c471940f077/adaptive-biotechnologies-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pfizer Launches Cost Savings Program on TrumpRx Lowering Drug Costs for Millions of Americans",
+      "url": "https://www.businesswire.com/news/home/20260128273980/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Pfizer Pops on Q4 Results-But This May Be the Catalyst That Matters Most",
+      "url": "/news/302203/pfizer-pops-on-q4-results-but-this-may-be-the-catalyst-that-matters-most",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TrumpRx's launch is hours away. Here's why it may not lower drug prices for most Americans.",
+      "url": "https://www.marketwatch.com/story/trumprxs-launch-is-hours-away-heres-why-it-may-not-lower-drug-prices-for-most-americans-9d398952?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bristol Myers Earnings Reveal Struggling Legacy Drug Business. Why the Stock Is Rising.",
+      "url": "https://finance.yahoo.com/m/7b757a0e-b906-3bf4-817c-a121d2a115a2/bristol-myers-earnings-reveal.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Bristol-Myers Stock Up as Q4 Earnings and Revenues Beat Estimates",
+      "url": "/news/301770/bristol-myers-stock-up-as-q4-earnings-and-revenues-beat-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "This Medical Technology Leader Sees Growth Into The 2040s",
+      "url": "https://finance.yahoo.com/m/1dc44dac-5a8b-33e4-83cc-b0992cdf9338/this-medical-technology.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Week Ahead: Inflation Data Hits Amid Earnings Season",
+      "url": "/news/301191/the-week-ahead-inflation-data-hits-amid-earnings-season",
+      "publisher": "Schaeffer's Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Rapid Innovation is Reshaping Oncology: Stocks in Focus",
+      "url": "/news/301304/rapid-innovation-is-reshaping-oncology-stocks-in-focus",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    }
+  ]
 }

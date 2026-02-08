@@ -6306,7 +6306,15 @@
     "technical_score": 61.74268523852318,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.3209912285903075,
+    "sentiment_pos": 0.2299,
+    "sentiment_neg": 0.004,
+    "sentiment_neu": 0.7661,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 66.05
+  },
   "analyst": {
     "revision_momentum": -0.16666666666666666,
     "target_upside": 0.0327926245769635,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 50.71163060892856,
     "catalyst_timeline": 55.83820279686622,
     "downside_control": 57.82235863875875,
-    "composite_score": 60.58110366710134,
+    "composite_score": 60.5772146218029,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 63.47933967124999,
     "technical_score": 61.74268523852318,
-    "sentiment_score": 50.0,
+    "sentiment_score": 66.05,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Utilities",
     "industry": "Gas Utilities"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Strong Demand Lifts Atmos Energy Corporation (ATO) First-Quarter Profit Despite Extreme Winter Conditions",
+      "url": "/news/303560/strong-demand-lifts-atmos-energy-corporation-ato-first-quarter-profit-despite-extreme-winter-conditions",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Atmos Energy Shareholders Approve All 8 Proposals, Elect 12 Directors at Annual Meeting",
+      "url": "https://finance.yahoo.com/m/05ed19f8-0a81-3f73-8c7d-7d9f15a5fe02/atmos-energy-shareholders.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Company News for Feb 5, 2026",
+      "url": "/news/300777/company-news-for-feb-5-2026",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Atmos Energy Q1 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/89454060-18f9-3738-840a-b53739b6c88a/atmos-energy-q1-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Atmos Energy Corp (ATO) Q1 2026 Earnings Call Highlights: Strong Customer Growth and Strategic ...",
+      "url": "https://finance.yahoo.com/news/atmos-energy-corp-ato-q1-210120366.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Atmos Energy Corporation",
+      "url": "https://finance.yahoo.com/m/a26749a9-fa3c-3ada-b561-3454810abfeb/analyst-report%3A-atmos-energy.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Atmos Energy Q1 Earnings Beat Estimates, Revenues Increase Y/Y",
+      "url": "/news/299857/atmos-energy-q1-earnings-beat-estimates-revenues-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Atmos (ATO) Reports Q1 Earnings: What Key Metrics Have to Say",
+      "url": "/news/298445/atmos-ato-reports-q1-earnings-what-key-metrics-have-to-say",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Atmos Energy (ATO) Q1 Earnings Surpass Estimates",
+      "url": "/news/298417/atmos-energy-ato-q1-earnings-surpass-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Atmos: Fiscal Q1 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/atmos-fiscal-q1-earnings-snapshot-221018850.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Atmos Energy Declares Regular Quarterly Dividend",
+      "url": "https://www.businesswire.com/news/home/20260203134499/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Atmos Energy Corporation Reports Earnings for Fiscal 2026 First Quarter; Affirms Fiscal 2026 Guidance",
+      "url": "https://www.businesswire.com/news/home/20260203215165/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BofA and Barclays Update Views on Atmos Energy (ATO) After Estimate Revisions",
+      "url": "/news/297352/bofa-and-barclays-update-views-on-atmos-energy-ato-after-estimate-revisions",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Atmos Energy to Release Q1 Earnings: Here's What You Need to Know",
+      "url": "/news/295712/atmos-energy-to-release-q1-earnings-heres-what-you-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Investors Need to Take Advantage of These 2 Utilities Stocks Now",
+      "url": "/news/295572/why-investors-need-to-take-advantage-of-these-2-utilities-stocks-now",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Countdown to Atmos (ATO) Q1 Earnings: A Look at Estimates Beyond Revenue and EPS",
+      "url": "/news/291816/countdown-to-atmos-ato-q1-earnings-a-look-at-estimates-beyond-revenue-and-eps",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Atmos Energy (ATO) Reports Next Week: Wall Street Expects Earnings Growth",
+      "url": "/news/288577/atmos-energy-ato-reports-next-week-wall-street-expects-earnings-growth",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Atmos Energy (ATO) Gains Support From Utility Sector Repricing, Morgan Stanley Says",
+      "url": "/news/287446/atmos-energy-ato-gains-support-from-utility-sector-repricing-morgan-stanley-says",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "SR vs. ATO: Which Stock Should Value Investors Buy Now?",
+      "url": "/news/285549/sr-vs-ato-which-stock-should-value-investors-buy-now",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Utility Gas Inflation Is Soaring. This Stock Is a Clear Winner",
+      "url": "/news/281411/utility-gas-inflation-is-soaring-this-stock-is-a-clear-winner",
+      "publisher": "MarketBeat",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    }
+  ]
 }

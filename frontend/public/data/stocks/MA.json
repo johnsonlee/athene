@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 72.21077957737255,
-    "stoch_d": 76.28196932824757,
+    "stoch_d": 76.28196932824756,
     "trend_score": 47.032550340089266,
     "rsi_abs_score": 71.8945184047013,
     "macd_abs_score": 63.741800868815275,
@@ -6306,7 +6306,15 @@
     "technical_score": 56.005152484094424,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.1270053646841311,
+    "sentiment_pos": 0.07495,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.92505,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 56.35
+  },
   "analyst": {
     "revision_momentum": 0.3,
     "target_upside": 0.21277836498159416,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 23.013946728571426,
     "catalyst_timeline": 59.63539711135121,
     "downside_control": 50.96370190054918,
-    "composite_score": 56.82844421931555,
+    "composite_score": 56.824555174017114,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 60.770618650168274,
     "technical_score": 56.005152484094424,
-    "sentiment_score": 50.0,
+    "sentiment_score": 56.35,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Transaction & Payment Processing Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Strong Top-Line Growth Drives Analyst Sentiment on Mastercard (MA)",
+      "url": "/news/303801/strong-top-line-growth-drives-analyst-sentiment-on-mastercard-ma",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Affirm Q2 Earnings Beat Estimates on Higher Transactions",
+      "url": "/news/303235/affirm-q2-earnings-beat-estimates-on-higher-transactions",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ondo wants to rebuild prime brokerage on-chain  and perps are the first step",
+      "url": "https://finance.yahoo.com/m/67cd9853-7ab8-39b6-8dcd-2b0bf17c034f/ondo-wants-to-rebuild-prime.html",
+      "publisher": "CoinDesk",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Visa takes a fresh crack at China's elusive payments market",
+      "url": "https://finance.yahoo.com/m/21a9c501-a6a2-3f42-a37a-e2e369dc1709/visa-takes-a-fresh-crack-at.html",
+      "publisher": "American Banker",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Mastercard Teamed up with Noah Kahan for Music Video Launch During Grammys",
+      "url": "https://finance.yahoo.com/video/mastercard-teamed-noah-kahan-music-153428004.html",
+      "publisher": "NYSE",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here is What to Know Beyond Why Mastercard Incorporated (MA) is a Trending Stock",
+      "url": "/news/301451/here-is-what-to-know-beyond-why-mastercard-incorporated-ma-is-a-trending-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Vault Payment Solutions taps Thredd to drive expansion",
+      "url": "https://finance.yahoo.com/m/a18ad467-9a35-3ebe-b367-629ac78752b3/vault-payment-solutions-taps.html",
+      "publisher": "Electronic Payments",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Corpay Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/ce502c8a-d740-3786-9a5a-cbc5972977e0/corpay-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Top 5 Analyst Questions From Mastercard's Q4 Earnings Call",
+      "url": "/news/300810/the-top-5-analyst-questions-from-mastercards-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Visa-UnionPay Link-Up: A Turning Point in Cross-Border Money Flow?",
+      "url": "/news/299950/visa-unionpay-link-up-a-turning-point-in-cross-border-money-flow",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Could Buying American Express (AXP) Today Set You Up for Life?",
+      "url": "/news/299745/could-buying-american-express-axp-today-set-you-up-for-life",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What Are Wall Street Analysts' Target Price for Mastercard Stock?",
+      "url": "https://finance.yahoo.com/m/0b9b7337-002c-37a3-ae30-640f1c86f18b/what-are-wall-street.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Mastercard Stock Is Still a Buy Despite Cap and Competition Headwinds",
+      "url": "/news/298194/heres-why-mastercard-stock-is-still-a-buy-despite-cap-and-competition-headwinds",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Affirm to Report Q2 Earnings: Will Higher GMV & Consumers Help?",
+      "url": "/news/297920/affirm-to-report-q2-earnings-will-higher-gmv-consumers-help",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Adobe downgraded, Palantir upgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/adobe-downgraded-palantir-upgraded-wall-143444113.html",
+      "publisher": "The Fly",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here Are Tuesdays Top Wall Street Analyst Research Calls: Adobe, Disney, Exxon Mobil, Lockheed Martin, Mastercard, Palantir Technologies, SoFi Technologies, and More",
+      "url": "https://finance.yahoo.com/m/32379009-b2a2-3dea-bf90-1187d0eecb43/here-are-tuesday%E2%80%99s-top-wall.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bank of England explores alternatives to card payments  report",
+      "url": "https://finance.yahoo.com/m/a53982d8-4a84-3fa2-b03f-3cbe7ea9b5e2/bank-of-england-explores.html",
+      "publisher": "Retail Banker International",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "USDC Dominated $10 Trillion Stablecoin Surge in January, Yet Circles Stock Keeps Sliding",
+      "url": "https://finance.yahoo.com/m/9cdbc6db-bf3d-34d2-9c91-91df5b822328/usdc-dominated-%2410-trillion.html",
+      "publisher": "BeInCrypto",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's What Analysts Are Saying About Mastercard Incorporated (MA) Post Earnings",
+      "url": "/news/296795/heres-what-analysts-are-saying-about-mastercard-incorporated-ma-post-earnings",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Mastercard Incorporated (MA): A Bull Case Theory",
+      "url": "/news/296536/mastercard-incorporated-ma-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    }
+  ]
 }

@@ -6306,7 +6306,15 @@
     "technical_score": 59.14781891186723,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.06838509078884555,
+    "sentiment_pos": 0.07730000000000001,
+    "sentiment_neg": 0.042749999999999996,
+    "sentiment_neu": 0.87995,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 53.42
+  },
   "analyst": {
     "revision_momentum": 0.14285714285714285,
     "target_upside": 0.1220438460210599,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 75.42812207,
     "catalyst_timeline": 62.71890326611048,
     "downside_control": 46.33805225147941,
-    "composite_score": 56.52584867181845,
+    "composite_score": 56.52195962652002,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 53.96336339166667,
     "technical_score": 59.14781891186723,
-    "sentiment_score": 50.0,
+    "sentiment_score": 53.42,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Staples",
     "industry": "Agricultural Products & Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "BG Q4 Deep Dive: Viterra Integration Boosts Scale, But Margin Pressures and Cautious Outlook Remain",
+      "url": "/news/300824/bg-q4-deep-dive-viterra-integration-boosts-scale-but-margin-pressures-and-cautious-outlook-remain",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Bunge Global Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/6ad77d30-e3f8-361e-8424-d555d8b86569/bunge-global-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bunge Global SA (BG) Q4 2025 Earnings Call Highlights: Navigating Challenges and Unlocking Synergies",
+      "url": "https://finance.yahoo.com/news/bunge-global-sa-bg-q4-190115569.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jim Cramer on Bunge Global: \"This One, I'm Not as Close to as I Used to Be\"",
+      "url": "/news/299970/jim-cramer-on-bunge-global-this-one-im-not-as-close-to-as-i-used-to-be",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Grain Companies Hope for a More Stable 2026",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-02-04-2026/card/grain-companies-hope-for-a-more-stable-2026-Yq9IoFmU7xr5roqzCjc7?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BG Q4 Earnings Top, Sales Surge Y/Y on Higher Volumes",
+      "url": "/news/299602/bg-q4-earnings-top-sales-surge-yy-on-higher-volumes",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bunge Global (BG) Q4 2025 Earnings Call Transcript",
+      "url": "/news/299337/bunge-global-bg-q4-2025-earnings-call-transcript",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bunge Global (BG) Q4 Earnings: Taking a Look at Key Metrics Versus Estimates",
+      "url": "/news/299494/bunge-global-bg-q4-earnings-taking-a-look-at-key-metrics-versus-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bunge CEO Flags Limited Market Visibility, Issues Soft Outlook",
+      "url": "/news/299315/bunge-ceo-flags-limited-market-visibility-issues-soft-outlook",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Bunge Global (BG) Surpasses Q4 Earnings and Revenue Estimates",
+      "url": "/news/299112/bunge-global-bg-surpasses-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bunge Global (NYSE:BG) Exceeds Q4 CY2025 Expectations",
+      "url": "/news/299121/bunge-global-nyse-bg-exceeds-q4-cy2025-expectations",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bunge Global: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/bunge-global-q4-earnings-snapshot-111744348.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bunge Reports Fourth Quarter and Full-Year 2025 Results",
+      "url": "https://www.businesswire.com/news/home/20260204125074/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bunge Ready to Report Q4 Earnings: What's in Store for the Stock?",
+      "url": "/news/297882/bunge-ready-to-report-q4-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bunge Global (BG) To Report Earnings Tomorrow: Here Is What To Expect",
+      "url": "/news/296550/bunge-global-bg-to-report-earnings-tomorrow-here-is-what-to-expect",
+      "publisher": "StockStory",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "January jobs data, Alphabet and Amazon earnings, more Warsh fallout: What to watch this week",
+      "url": "https://finance.yahoo.com/news/january-jobs-data-alphabet-and-amazon-earnings-more-warsh-fallout-what-to-watch-this-week-124723942.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "1 Tried-and-True Stock That Just Hit New 3-Year Highs",
+      "url": "https://finance.yahoo.com/m/f61faa03-8f55-3bd9-8742-6d72788a9584/1-tried-and-true-stock-that.html",
+      "publisher": "Barchart",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bunge Global (BG) is a Great Momentum Stock: Should You Buy?",
+      "url": "/news/287265/bunge-global-bg-is-a-great-momentum-stock-should-you-buy",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "This Value Stock ETF Is Crushing the S&P 500. Here's Its Secret Weapon.",
+      "url": "https://www.barrons.com/articles/micron-technology-value-etf-stock-market-8a8648bd?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-22",
+      "sentiment": "negative"
+    },
+    {
+      "title": "RPM Q2 Earnings & Sales Miss Estimates, Adjusted EBIT Down Y/Y",
+      "url": "/news/272445/rpm-q2-earnings-sales-miss-estimates-adjusted-ebit-down-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-09",
+      "sentiment": "negative"
+    }
+  ]
 }

@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 121.93000030517578,
     "sma_20": 111.90800018310546,
-    "sma_50": 106.58346252441407,
+    "sma_50": 106.58346252441406,
     "sma_200": 87.94904556274412,
-    "trend_alignment": 0.8417491612167651,
+    "trend_alignment": 0.8417491612167654,
     "rsi": 78.15304023296153,
     "rsi_score": 0.5630608046592306,
     "macd_histogram": 1.0966776601135289,
@@ -6296,8 +6296,8 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 91.6263946529379,
-    "stoch_d": 87.55974990471435,
-    "trend_score": 84.17491612167652,
+    "stoch_d": 87.55974990471437,
+    "trend_score": 84.17491612167653,
     "rsi_abs_score": 33.69391953407694,
     "macd_abs_score": 70.9914827036252,
     "momentum_score": 52.34270111885107,
@@ -6306,7 +6306,15 @@
     "technical_score": 60.75106175514664,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.027258500851015385,
+    "sentiment_pos": 0.07305,
+    "sentiment_neg": 0.07294999999999999,
+    "sentiment_neu": 0.85405,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.36
+  },
   "analyst": {
     "revision_momentum": 0.1875,
     "target_upside": 0.0046748134175345945,
@@ -6325,7 +6333,7 @@
     "quality_score": 88.8468,
     "growth_score": 31.775,
     "safety_score": 35.696250000000006,
-    "trend_score": 84.17491612167652,
+    "trend_score": 84.17491612167653,
     "momentum_score": 52.34270111885107,
     "volatility_score": 48.97888291494178,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 57.56631903690476,
     "catalyst_timeline": 63.08473449449481,
     "downside_control": 45.74826993724126,
-    "composite_score": 56.937217858585484,
+    "composite_score": 56.93332881328705,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 57.68397253075397,
     "technical_score": 60.75106175514664,
-    "sentiment_score": 50.0,
+    "sentiment_score": 51.36,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Pharmaceuticals"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Merck & Co., Inc. (MRK): A Bull Case Theory",
+      "url": "/news/303633/merck-co-inc-mrk-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Dow Industrials Have Tilted More Toward Financials",
+      "url": "https://finance.yahoo.com/m/8d4d0775-c0cf-3062-87c5-0dd384dbb03c/the-dow-industrials-have.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Big-Name Earnings, Selloffs Highlight Busy Week on Wall Street",
+      "url": "/news/303135/big-name-earnings-selloffs-highlight-busy-week-on-wall-street",
+      "publisher": "Schaeffer's Research",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Pfizer Bets Big on Obesity and Oncology With 2026 Pipeline Push",
+      "url": "/news/303069/pfizer-bets-big-on-obesity-and-oncology-with-2026-pipeline-push",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Merck's Subdued 2026 Outlook: What it Means After Q4 Results?",
+      "url": "/news/303048/mercks-subdued-2026-outlook-what-it-means-after-q4-results",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Low Volatility ETFs to Watch Amid Major Tech Sell-Off Over AI Panic",
+      "url": "/news/302877/low-volatility-etfs-to-watch-amid-major-tech-sell-off-over-ai-panic",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "White Houses online service for drug sales debuts with limited impact on prices",
+      "url": "https://finance.yahoo.com/m/1088b5dd-808a-3743-8369-c6d52e9afac6/white-house%E2%80%99s-online-service.html",
+      "publisher": "BioPharma Dive",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Scotiabank Lifts Merck (MRK) Target as Execution Continues to Impress",
+      "url": "/news/301974/scotiabank-lifts-merck-mrk-target-as-execution-continues-to-impress",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Merck veteran Perlmutter-led Eikon Therapeutics valued at $860 million in Nasdaq debut",
+      "url": "https://finance.yahoo.com/news/merck-veteran-perlmutter-led-eikon-175203362.html",
+      "publisher": "Reuters",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Should You Buy, Hold, or Sell GILD Stock Ahead of Q4 Earnings?",
+      "url": "/news/301507/should-you-buy-hold-or-sell-gild-stock-ahead-of-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AstraZeneca to Report Q4 Earnings: What's in Store for the Stock?",
+      "url": "/news/301403/astrazeneca-to-report-q4-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Rapid Innovation is Reshaping Oncology: Stocks in Focus",
+      "url": "/news/301304/rapid-innovation-is-reshaping-oncology-stocks-in-focus",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "J.P. Morgan Healthcare Conference 2026 Report",
+      "url": "https://finance.yahoo.com/m/254ec794-e878-326a-9362-ef28b85c2483/j.p.-morgan-healthcare.html",
+      "publisher": "Pharmaceutical Technology",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Big Pharma CEOs set sights on massive growth in years to come",
+      "url": "https://finance.yahoo.com/m/f11fcdb4-9358-3d9b-96b8-d482cf62a11a/big-pharma-ceos-set-sights-on.html",
+      "publisher": "Pharma Voice",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jim Cramer on Merck & Co.: \"This Is One of My Favorite Pharmaceutical Stocks\"",
+      "url": "/news/300082/jim-cramer-on-merck-co-this-is-one-of-my-favorite-pharmaceutical-stocks",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "S&P 500 Slips, Nasdaq Drops as Traders Dump Chips",
+      "url": "/news/299790/sp-500-slips-nasdaq-drops-as-traders-dump-chips",
+      "publisher": "Schaeffer's Research",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stock Market Today: Dow Rises But Nasdaq Lags On Surprise Jobs Data; Eli Lilly Soars (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/95eff06b-9fa2-3b22-b1b7-24055bf9706b/stock-market-today%3A-dow-rises.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Merck & Co., Inc. Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/339052be-59d3-3370-8c6a-b77ed4d3df42/merck-%26-co.%2C-inc.-q4-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MRK Q4 Deep Dive: Pipeline Expansion and New Product Launches Shape Guidance",
+      "url": "/news/298817/mrk-q4-deep-dive-pipeline-expansion-and-new-product-launches-shape-guidance",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Tumble on AI Disruption Fears",
+      "url": "https://finance.yahoo.com/m/2d280010-8635-3f1a-b487-d134aea3e092/stocks-tumble-on-ai.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    }
+  ]
 }

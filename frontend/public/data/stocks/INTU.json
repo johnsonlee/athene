@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 443.7699890136719,
-    "sma_20": 520.489501953125,
+    "sma_20": 520.4895019531251,
     "sma_50": 602.0861779785157,
     "sma_200": 674.3054150390625,
     "trend_alignment": 0.10498815337506273,
@@ -6286,17 +6286,17 @@
     "macd_histogram": -7.06614666503949,
     "macd_line": -49.05211488718123,
     "macd_histogram_pct": -1.5922993532628889,
-    "bb_position": 0.16883700224071682,
-    "bb_upper": 636.322963811112,
-    "bb_lower": 404.656040095138,
-    "bb_width": 0.4450943253353798,
+    "bb_position": 0.16883700224071635,
+    "bb_upper": 636.3229638111121,
+    "bb_lower": 404.6560400951381,
+    "bb_width": 0.4450943253353797,
     "hist_volatility": 0.5663334010746065,
     "volume_ratio": 0.9514379467458095,
     "avg_volume_20d": 3827680.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 18.76961619109615,
-    "stoch_d": 17.138846987833716,
+    "stoch_d": 17.13884698783372,
     "trend_score": 10.498815337506272,
     "rsi_abs_score": 43.94860698040475,
     "macd_abs_score": 20.0,
@@ -6306,7 +6306,15 @@
     "technical_score": 27.45086852100527,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.03536928087154777,
+    "sentiment_pos": 0.09385,
+    "sentiment_neg": 0.09275,
+    "sentiment_neu": 0.81335,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.77
+  },
   "analyst": {
     "revision_momentum": 0.125,
     "target_upside": 0.8027356513509251,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 59.75925622733333,
     "catalyst_timeline": 39.51874188277086,
     "downside_control": 41.970497396537965,
-    "composite_score": 52.388688986081625,
+    "composite_score": 52.38479994078319,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 61.99790051213572,
     "technical_score": 27.45086852100527,
-    "sentiment_score": 50.0,
+    "sentiment_score": 51.77,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 0.9441666666666666,
     "data_quality_penalty": 0.0,
-    "rank": 344,
-    "percentile": 0.33911368015414256,
+    "rank": 345,
+    "percentile": 0.3371868978805395,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Application Software"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "3 Oversold Software Stocks You Should Buy on the Dip Now",
+      "url": "https://finance.yahoo.com/m/c4e948d3-c2a8-3998-90e9-944c9b79a50a/3-oversold-software-stocks.html",
+      "publisher": "Barchart",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dow Jones Tops 50,000 For First Time Ever, Decoupling From Tech: This Week On Wall Street",
+      "url": "/news/303276/dow-jones-tops-50000-for-first-time-ever-decoupling-from-tech-this-week-on-wall-street",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Shuffle Board: PayPal Replaces CEO",
+      "url": "https://finance.yahoo.com/m/5ecec165-48e1-39d8-8511-2ba8575ef32e/shuffle-board%3A-paypal.html",
+      "publisher": "Sourcing Journal",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tax Season Just Got a Lot Easier For Small Business Owners Thanks to Intuits Automated Payroll Platform (And Its Currently 50% Off)",
+      "url": "https://finance.yahoo.com/m/b8aa777e-2744-358a-ba86-49799b90c61b/tax-season-just-got-a-lot.html",
+      "publisher": "Variety",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Tackling tax planning",
+      "url": "https://www.youtube.com/watch?v=H8SFO9FjPXI",
+      "publisher": "CNBC TV",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Intuit Inc. (INTU): A Bull Case Theory",
+      "url": "/news/302309/intuit-inc-intu-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why one Anthropic update wiped billions off software stocks",
+      "url": "https://finance.yahoo.com/m/f7268c8b-74af-3150-9e60-a163fd211795/why-one-anthropic-update.html",
+      "publisher": "FastCompany",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Anthropic launches Opus 4.6 in another hit to the software market",
+      "url": "https://finance.yahoo.com/news/anthropic-launches-opus-46-in-another-hit-to-the-software-market-180016086.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Big Tech CEOs seek to quell AI worries hammering software stocks",
+      "url": "https://finance.yahoo.com/news/big-tech-ceos-seek-to-quell-ai-worries-hammering-software-stocks-170124972.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "OpenAI debuts Frontier platform for AI agents, sending software stocks lower",
+      "url": "https://finance.yahoo.com/news/openai-debuts-frontier-platform-for-ai-agents-sending-software-stocks-lower-162100732.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "OpenAI Introduces an Enterprise Platform for AI Agents",
+      "url": "https://www.barrons.com/articles/openai-ai-agent-builder-frontier-de420da3?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "US software stocks mixed after bruising selloff on AI disruption fears",
+      "url": "https://finance.yahoo.com/news/us-software-stocks-stabilize-bruising-121536263.html",
+      "publisher": "Reuters",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Salesforce stock gets brutal reality check amid software slump",
+      "url": "https://finance.yahoo.com/m/6e10af87-2c34-363a-a121-d6e1f70d76f3/salesforce-stock-gets-brutal.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Why the Market Dipped But Intuit (INTU) Gained Today",
+      "url": "/news/300457/why-the-market-dipped-but-intuit-intu-gained-today",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks to Watch Wednesday Recap: AMD, Super Micro, Chipotle",
+      "url": "https://finance.yahoo.com/m/ecb85771-c50d-306c-b819-29336398a077/stocks-to-watch-wednesday.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jim Cramer on Intuit: \"This Is a Very Good Company\"",
+      "url": "/news/299962/jim-cramer-on-intuit-this-is-a-very-good-company",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Do Stock Sell-Offs Pay Off? These Experts Warn Not to Bottom Feed on New Lows",
+      "url": "https://finance.yahoo.com/m/d5471702-ea0d-3f73-8cfe-28eec028c482/do-stock-sell-offs-pay-off%3F.html",
+      "publisher": "Investopedia",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "The Software Crash In Numbers: These Stocks Are Getting Hit Hardest",
+      "url": "/news/299911/the-software-crash-in-numbers-these-stocks-are-getting-hit-hardest",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "AI Won't Kill the Software Business, Just Its Growth Story",
+      "url": "https://www.wsj.com/tech/ai/ai-wont-kill-the-software-business-just-its-growth-story-05673e07?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bitcoin's correlation with troubled software stock sector is growing",
+      "url": "https://finance.yahoo.com/m/5524885a-4935-331a-a5bc-cbf80a5274cc/bitcoin%27s-correlation-with.html",
+      "publisher": "CoinDesk",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    }
+  ]
 }

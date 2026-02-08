@@ -6279,8 +6279,8 @@
     "close": 454.760009765625,
     "sma_20": 408.6414978027344,
     "sma_50": 400.8075988769531,
-    "sma_200": 416.49068161010746,
-    "trend_alignment": 0.6606212763056946,
+    "sma_200": 416.4906816101075,
+    "trend_alignment": 0.6606212763056944,
     "rsi": 74.68565404016451,
     "rsi_score": 0.4937130808032901,
     "macd_histogram": 6.381972214101017,
@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 2044615.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 93.38220177182623,
+    "stoch_k": 93.38220177182622,
     "stoch_d": 91.79547341303531,
     "trend_score": 66.06212763056945,
     "rsi_abs_score": 40.88016868753938,
@@ -6306,7 +6306,15 @@
     "technical_score": 54.380605780451354,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.03795089686420348,
+    "sentiment_pos": 0.06265000000000001,
+    "sentiment_neg": 0.03945,
+    "sentiment_neu": 0.8978999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.9
+  },
   "analyst": {
     "revision_momentum": 0.23076923076923078,
     "target_upside": 0.03351218224997803,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 38.109890625,
     "catalyst_timeline": 58.417022086794546,
     "downside_control": 46.41119229287864,
-    "composite_score": 52.19455170467957,
+    "composite_score": 52.19066265938113,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 56.750572187500005,
     "technical_score": 54.380605780451354,
-    "sentiment_score": 50.0,
+    "sentiment_score": 51.9,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 352,
-    "percentile": 0.3236994219653179,
+    "rank": 353,
+    "percentile": 0.3217726396917148,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Building Products"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Veralto's Earnings Impress, But Guidance Tempers Sentiment",
+      "url": "/news/303226/veraltos-earnings-impress-but-guidance-tempers-sentiment",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Is ARM Stock a Buy, Hold, or Sell After Stellar Q3 Earnings?",
+      "url": "/news/303218/is-arm-stock-a-buy-hold-or-sell-after-stellar-q3-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Maximus' Q1 Earnings Surpass Estimates, Revenues Fall Short",
+      "url": "/news/303130/maximus-q1-earnings-surpass-estimates-revenues-fall-short",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "WEX Stock Barely Moves Since Q4 Earnings and Revenue Beat",
+      "url": "/news/303120/wex-stock-barely-moves-since-q4-earnings-and-revenue-beat",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Trane Technologies to Present at the Citi Global Industrial Tech and Mobility Conference",
+      "url": "https://www.businesswire.com/news/home/20260206682105/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Trane Technologies to Present at the Barclays Industrial Select Conference",
+      "url": "https://www.businesswire.com/news/home/20260206704103/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Corpay's Q4 Earnings and Revenues Surpass Estimates, Increase Y/Y",
+      "url": "/news/301899/corpays-q4-earnings-and-revenues-surpass-estimates-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is SoFi Stock a Buy, Hold, or Sell After Impressive Q4 Earnings?",
+      "url": "/news/301873/is-sofi-stock-a-buy-hold-or-sell-after-impressive-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "H&R Block Stock Declines 7.1% Since Reporting Fiscal Q2 Loss",
+      "url": "/news/301874/hr-block-stock-declines-71-since-reporting-fiscal-q2-loss",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Trane Technologies's Q4 Earnings Call: Our Top 5 Analyst Questions",
+      "url": "/news/300870/trane-technologiess-q4-earnings-call-our-top-5-analyst-questions",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Oppenheimer Highlights Strong Bookings After Trane Technologies' (TT) Q4 Beat",
+      "url": "/news/299271/oppenheimer-highlights-strong-bookings-after-trane-technologies-tt-q4-beat",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Trane Technologies Increases Dividend by 12%, Declares Quarterly Dividend",
+      "url": "https://www.businesswire.com/news/home/20260203742579/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jim Cramer Breaks Down Trane Technologies' Post-Earnings Rally",
+      "url": "/news/297746/jim-cramer-breaks-down-trane-technologies-post-earnings-rally",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Top Stock Reports for Exxon Mobil, Lockheed Martin & Honeywell",
+      "url": "/news/296233/top-stock-reports-for-exxon-mobil-lockheed-martin-honeywell",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "ManpowerGroup Stock Rises 9.1% Since Q4 Earnings and Revenue Beat",
+      "url": "/news/295927/manpowergroup-stock-rises-91-since-q4-earnings-and-revenue-beat",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Robert Half's (RHI) Q4 Earnings Surpass Estimates, Decline Y/Y",
+      "url": "/news/293780/robert-halfs-rhi-q4-earnings-surpass-estimates-decline-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Trane Technologies Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/ddc84ada-63ed-38ab-8c24-ffc650b9e3eb/trane-technologies-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TT Q4 Deep Dive: Commercial HVAC and Data Center Demand Drive Results, Backlog Hits High",
+      "url": "/news/294066/tt-q4-deep-dive-commercial-hvac-and-data-center-demand-drive-results-backlog-hits-high",
+      "publisher": "StockStory",
+      "date": "2026-01-30",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Trane Technologies PLC (TT) Q4 2025 Earnings Call Highlights: Record Bookings and Strategic ...",
+      "url": "https://finance.yahoo.com/news/trane-technologies-plc-tt-q4-211015399.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Is Trane Technologies (TT) Stock Soaring Today",
+      "url": "/news/292261/why-is-trane-technologies-tt-stock-soaring-today",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    }
+  ]
 }

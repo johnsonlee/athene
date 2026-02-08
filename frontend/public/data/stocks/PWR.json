@@ -6306,7 +6306,15 @@
     "technical_score": 60.51022771350132,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.20281256524316,
+    "sentiment_pos": 0.1553,
+    "sentiment_neg": 0.0341,
+    "sentiment_neu": 0.8106,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 60.14
+  },
   "analyst": {
     "revision_momentum": 0.4,
     "target_upside": -0.03564188856743621,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 31.624689017647057,
     "catalyst_timeline": 63.82104558152582,
     "downside_control": 46.543795981755764,
-    "composite_score": 49.87700813331058,
+    "composite_score": 49.873119088012146,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 52.87335728970588,
     "technical_score": 60.51022771350132,
-    "sentiment_score": 50.0,
+    "sentiment_score": 60.14,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Construction & Engineering"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Are Construction Stocks Lagging  Quanta Services (PWR) This Year?",
+      "url": "/news/302917/are-construction-stocks-lagging-quanta-services-pwr-this-year",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Jacobs Wins Texas Coastal Storm Surge Barrier Design Contract",
+      "url": "/news/301920/jacobs-wins-texas-coastal-storm-surge-barrier-design-contract",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "KBR Wins $149M Air Force Contract, Boosts Defense Digital Franchise",
+      "url": "/news/299995/kbr-wins-149m-air-force-contract-boosts-defense-digital-franchise",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Comfort Systems Soars 75% in 6 Months: Buy the Stock or Hold?",
+      "url": "/news/299323/comfort-systems-soars-75-in-6-months-buy-the-stock-or-hold",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Quanta Services, Inc. (PWR): A Bull Case Theory",
+      "url": "/news/298463/quanta-services-inc-pwr-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Quanta Services (PWR) Advances While Market Declines: Some Information for Investors",
+      "url": "/news/298383/quanta-services-pwr-advances-while-market-declines-some-information-for-investors",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "EMCOR's Project Mix Lifts Margins: Is Execution the Key?",
+      "url": "/news/297995/emcors-project-mix-lifts-margins-is-execution-the-key",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Comfort Systems' Dividend Hike Signals Confidence - Too Optimistic?",
+      "url": "/news/295762/comfort-systems-dividend-hike-signals-confidence-too-optimistic",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "S&P 500 Stealth AI Data Center Play, In A Buy Zone, Is IBD Stock Of The Day",
+      "url": "https://www.investors.com/research/ibd-stock-of-the-day/sp-500-ai-data-center-quanta-services-buy-zone?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Dow Jones Futures Fall With Trump Fed Pick Due; Sandisk Soars, Tesla Rises On SpaceX Buzz",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-trump-fed-pick-sandisk-tesla-spacex?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dow Jones Futures Fall With Trump Fed Pick Due; Tesla Pops, Sandisk Soars",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-apple-earnings-sandisk-soars-google-nvidia?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Parker-Hannifin Tops Q2 Earnings & Sales Estimates, Raises 26' View",
+      "url": "/news/292319/parker-hannifin-tops-q2-earnings-sales-estimates-raises-26-view",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "A. O. Smith Earnings Surpass Estimates in Q4, Sales Miss",
+      "url": "/news/292286/a-o-smith-earnings-surpass-estimates-in-q4-sales-miss",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Tetra Tech Surpasses Q1 Earnings & Revenues Estimates, Raises 26' View",
+      "url": "/news/292278/tetra-tech-surpasses-q1-earnings-revenues-estimates-raises-26-view",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Quanta Services Announces Fourth Quarter And Full-Year 2025 Earnings Release & Webcast Schedule",
+      "url": "/news/290002/quanta-services-announces-fourth-quarter-and-full-year-2025-earnings-release-webcast-schedule",
+      "publisher": "PR Newswire",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Quanta Services (PWR) Outperforms Broader Market: What You Need to Know",
+      "url": "/news/289235/quanta-services-pwr-outperforms-broader-market-what-you-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Wolfe Research Bullish on Quanta Services (PWR) Amid Accelerating Power Demand",
+      "url": "/news/287170/wolfe-research-bullish-on-quanta-services-pwr-amid-accelerating-power-demand",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-26",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Comfort Systems' Cash Flow Strengthens: Capital Allocation in Focus?",
+      "url": "/news/286989/comfort-systems-cash-flow-strengthens-capital-allocation-in-focus",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is Geographic Expansion Supporting Sterling's Backlog Growth?",
+      "url": "/news/286943/is-geographic-expansion-supporting-sterlings-backlog-growth",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Darden upgraded, Trade Desk downgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/darden-upgraded-trade-desk-downgraded-144108413.html",
+      "publisher": "The Fly",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    }
+  ]
 }

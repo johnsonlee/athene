@@ -6279,8 +6279,8 @@
     "close": 80.27999877929688,
     "sma_20": 80.24750022888183,
     "sma_50": 84.9861441040039,
-    "sma_200": 77.13245653152468,
-    "trend_alignment": 0.5159497300973881,
+    "sma_200": 77.13245653152467,
+    "trend_alignment": 0.5159497300973884,
     "rsi": 48.11757473450884,
     "rsi_score": -0.03764850530982315,
     "macd_histogram": -0.035780301706685336,
@@ -6295,18 +6295,26 @@
     "avg_volume_20d": 15420845.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 51.19528911518975,
-    "stoch_d": 35.14204744737262,
-    "trend_score": 51.59497300973881,
+    "stoch_k": 51.19528911518976,
+    "stoch_d": 35.142047447372626,
+    "trend_score": 51.594973009738844,
     "rsi_abs_score": 70.18230231415619,
     "macd_abs_score": 47.77153075169748,
     "momentum_score": 58.976916532926836,
     "volatility_score": 38.53450610373561,
     "volume_score": 50.0,
-    "technical_score": 50.878468083546814,
+    "technical_score": 50.87846808354682,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.1317775649083745,
+    "sentiment_pos": 0.07885,
+    "sentiment_neg": 0.0248,
+    "sentiment_neu": 0.8962999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 56.59
+  },
   "analyst": {
     "revision_momentum": 0.03225806451612903,
     "target_upside": 0.43248629795714993,
@@ -6325,7 +6333,7 @@
     "quality_score": 81.4520013,
     "growth_score": 64.0,
     "safety_score": 65.7855,
-    "trend_score": 51.59497300973881,
+    "trend_score": 51.594973009738844,
     "momentum_score": 58.976916532926836,
     "volatility_score": 38.53450610373561,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 57.363613163333326,
     "catalyst_timeline": 55.71051402410278,
     "downside_control": 56.87100091556034,
-    "composite_score": 61.66112362721033,
+    "composite_score": 61.657234581911894,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 67.98237802611112,
-    "technical_score": 50.878468083546814,
-    "sentiment_score": 50.0,
+    "technical_score": 50.87846808354682,
+    "sentiment_score": 56.59,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Technology",
     "industry": "Semiconductors"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Tech stocks have been shaky, but these 20 companies could still see rocketing sales growth",
+      "url": "https://www.marketwatch.com/story/tech-stocks-have-been-shaky-but-these-20-companies-could-still-see-rocketing-sales-growth-148195c9?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Chip Stocks Soar as Nvidia CEO Huang Says Demand Is 'Through the Roof'",
+      "url": "https://finance.yahoo.com/m/7b36b1a9-81a7-38ba-bdcc-e53cd0b232ea/chip-stocks-soar-as-nvidia.html",
+      "publisher": "Investopedia",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Nvidia Shares Surge on Big Techs $650 Billion AI-Spending Plan",
+      "url": "https://finance.yahoo.com/news/nvidia-shares-surge-big-tech-180706782.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Amazon Announces $200B 2026 Capex Plan, Shares Slide Over 8% Premarket",
+      "url": "https://finance.yahoo.com/news/amazon-announces-200b-2026-capex-155235079.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Should You Buy, Sell, or Hold ALAB Stock Before Q4 Earnings Release?",
+      "url": "/news/303009/should-you-buy-sell-or-hold-alab-stock-before-q4-earnings-release",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Market Today: Dow Rallies, Bitcoin Bounces; Amazon Dives On Earnings Results (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/d5f6d70b-adbf-3412-b185-ebea8f943d91/stock-market-today%3A-dow.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Credo Technology Slips 32% in a Month: Hold the Stock or Cut Losses?",
+      "url": "/news/302840/credo-technology-slips-32-in-a-month-hold-the-stock-or-cut-losses",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "What's Going On With Nvidia, AMD And Other Chip Stocks On Friday?",
+      "url": "/news/302617/whats-going-on-with-nvidia-amd-and-other-chip-stocks-on-friday",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Index Futures Climb After Tech Rout, Amazon Slips on CapEx Blowout",
+      "url": "https://finance.yahoo.com/m/2334f854-a77f-3c9c-862b-303f96bef555/stock-index-futures-climb.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Amazon's big spending forecast is good news for these suppliers",
+      "url": "https://www.marketwatch.com/livecoverage/amazon-earnings-stock-results-amzn-guidance-q4/card/amazon-s-big-spending-forecast-is-good-news-for-these-suppliers-JBPHBbb2KD0oNoQU7xai?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Insight Enterprises Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/2696fb7b-bb49-3997-a3fc-c880ae2569cb/insight-enterprises-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NVIDIA Trades at a Premium Valuation: Should You Still Buy the Stock?",
+      "url": "/news/301346/nvidia-trades-at-a-premium-valuation-should-you-still-buy-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Benchmark Reiterates Hold on Marvell (MRVL) After Celestial AI Deal",
+      "url": "/news/300719/benchmark-reiterates-hold-on-marvell-mrvl-after-celestial-ai-deal",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Marvell Technology, Inc. (MRVL): A Bull Case Theory",
+      "url": "/news/300644/marvell-technology-inc-mrvl-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Marvell Technology (MRVL) Fell More Than Broader Market",
+      "url": "/news/300454/heres-why-marvell-technology-mrvl-fell-more-than-broader-market",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jim Cramer on Marvell: \"They're an Excellent Company, But They're a Derivative Company\"",
+      "url": "/news/300050/jim-cramer-on-marvell-theyre-an-excellent-company-but-theyre-a-derivative-company",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "These 2 Computer and Technology Stocks Could Beat Earnings: Why They Should Be on Your Radar",
+      "url": "/news/299377/these-2-computer-and-technology-stocks-could-beat-earnings-why-they-should-be-on-your-radar",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "RBC Reiterates Outperform on Marvell (MRVL) as AI Infrastructure Thesis Strengthens",
+      "url": "/news/298923/rbc-reiterates-outperform-on-marvell-mrvl-as-ai-infrastructure-thesis-strengthens",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stock Index Futures Steady After Tech-Led Selloff, U.S. ADP Jobs Report and Alphabet Earnings in Focus",
+      "url": "https://finance.yahoo.com/m/bf825e59-c634-35ae-ad25-5c90052b8217/stock-index-futures-steady.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Marvell Technology (MRVL) Declines More Than Market: Some Information for Investors",
+      "url": "/news/298367/marvell-technology-mrvl-declines-more-than-market-some-information-for-investors",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    }
+  ]
 }

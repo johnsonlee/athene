@@ -6306,7 +6306,15 @@
     "technical_score": 59.465690871929866,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.03512382386940879,
+    "sentiment_pos": 0.06765,
+    "sentiment_neg": 0.0901,
+    "sentiment_neu": 0.8422499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 48.24
+  },
   "analyst": {
     "revision_momentum": 0.07142857142857142,
     "target_upside": 0.025701485498703217,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 58.097809840000004,
     "catalyst_timeline": 61.94043389982808,
     "downside_control": 49.810673786585696,
-    "composite_score": 60.772149052154305,
+    "composite_score": 60.76826000685587,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 61.63920829877833,
     "technical_score": 59.465690871929866,
-    "sentiment_score": 50.0,
+    "sentiment_score": 48.24,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Communications Equipment"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Dow 50,000 sets table for inflation data, delayed January jobs report: What to watch this week",
+      "url": "https://finance.yahoo.com/news/dow-50000-sets-table-for-inflation-data-delayed-january-jobs-report-what-to-watch-this-week-123826626.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "What to Expect in Markets This Week: January Jobs Report, Inflation and Retail Sales Data; Earnings From Cisco, Coca-Cola, McDonalds",
+      "url": "https://finance.yahoo.com/m/a9ca561d-8175-34ea-a04c-40cec25e75cb/what-to-expect-in-markets.html",
+      "publisher": "Investopedia",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Market Week: Mapping Out A Deeply Divided Rally",
+      "url": "https://www.investors.com/research/investing-action-plan/stock-market-cisco-systems-robinhood-dow-jones?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Super Bowl LX, Coinbase earnings, jobs data & CPI: What to Watch",
+      "url": "https://finance.yahoo.com/video/super-bowl-lx-coinbase-earnings-000012395.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Business Lookahead: Near, far, wherever markets are",
+      "url": "https://finance.yahoo.com/video/business-lookahead-near-far-wherever-201503374.html",
+      "publisher": "Reuters Videos",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pre-Markets Open in Green to Close the Week",
+      "url": "/news/303074/pre-markets-open-in-green-to-close-the-week",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cisco Stock Holds Strong Amid Tech Selling As Earnings Come Into Focus",
+      "url": "https://www.investors.com/research/earnings-preview/cisco-stock-holds-strong-amid-tech-selling-as-earnings-come-into-focus?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Pre-Markets Rebounding Ahead of Super Bowl Sunday",
+      "url": "/news/303013/pre-markets-rebounding-ahead-of-super-bowl-sunday",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Low Volatility ETFs to Watch Amid Major Tech Sell-Off Over AI Panic",
+      "url": "/news/302877/low-volatility-etfs-to-watch-amid-major-tech-sell-off-over-ai-panic",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Countdown to Cisco (CSCO) Q2 Earnings: Wall Street Forecasts for Key Metrics",
+      "url": "/news/302812/countdown-to-cisco-csco-q2-earnings-wall-street-forecasts-for-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tech stock shakeout clouds market ahead of economic data deluge",
+      "url": "https://finance.yahoo.com/news/tech-stock-shakeout-clouds-market-110520808.html",
+      "publisher": "Reuters",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Bulls facing a 'make-or-break' moment as the S&P 500 nears a line in the sand",
+      "url": "https://www.marketwatch.com/story/bulls-facing-a-make-or-break-moment-as-the-s-p-500-nears-a-line-in-the-sand-4f63d63e?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Intel Just Announced That It Will Make GPUs. Should You Buy INTC Stock Here?",
+      "url": "https://finance.yahoo.com/m/c1033b45-7c0c-3f83-a353-a44d5c44f31a/intel-just-announced-that-it.html",
+      "publisher": "Barchart",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Big Tech CEOs seek to quell AI worries hammering software stocks",
+      "url": "https://finance.yahoo.com/news/big-tech-ceos-seek-to-quell-ai-worries-hammering-software-stocks-170124972.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "OpenAI debuts Frontier platform for AI agents, sending software stocks lower",
+      "url": "https://finance.yahoo.com/news/openai-debuts-frontier-platform-for-ai-agents-sending-software-stocks-lower-162100732.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "The $194B Shift: How Quantum Risk Redefines Value",
+      "url": "/news/301334/the-194b-shift-how-quantum-risk-redefines-value",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "NetScout Systems (NTCT) Q3 Earnings and Revenues Surpass Estimates",
+      "url": "/news/301418/netscout-systems-ntct-q3-earnings-and-revenues-surpass-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Corning (GLW) Among Hidden Winners To Watch In AI Investing Space",
+      "url": "https://finance.yahoo.com/m/054473d4-a0b8-3b21-88fd-ad7918c8adee/corning-%28glw%29-among-hidden.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Fears That AI Will Kill Software Are Exaggerated but Can Still Cause Pain",
+      "url": "https://finance.yahoo.com/m/37023917-4604-3030-8029-341d065027d3/fears-that-ai-will-kill.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Cisco Just (Finally) Set New All-Time Highs. Is CSCO Stock a Buy for February 2026?",
+      "url": "https://finance.yahoo.com/m/117a3436-9a8f-3cab-a41b-c75809f12da5/cisco-just-%28finally%29-set-new.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    }
+  ]
 }

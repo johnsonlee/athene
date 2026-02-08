@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 69.57338346628438,
-    "stoch_d": 66.23585393772288,
+    "stoch_d": 66.2358539377229,
     "trend_score": 60.88591548197218,
     "rsi_abs_score": 68.73495421247681,
     "macd_abs_score": 76.57084756566118,
@@ -6306,7 +6306,15 @@
     "technical_score": 57.69900407773014,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.15547570118935786,
+    "sentiment_pos": 0.09609999999999999,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.9038999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 57.77
+  },
   "analyst": {
     "revision_momentum": -0.45454545454545453,
     "target_upside": 0.12029874633235524,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 58.80888358571427,
     "catalyst_timeline": 57.82101575048789,
     "downside_control": 37.37180687481333,
-    "composite_score": 52.56868667227221,
+    "composite_score": 52.56479762697377,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 56.004893364285714,
     "technical_score": 57.69900407773014,
-    "sentiment_score": 50.0,
+    "sentiment_score": 57.77,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Casinos & Gaming"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "MGM Resorts International Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/ce922ba8-ffad-387f-b978-52b1b8961a95/mgm-resorts-international-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MGM Resorts Q4 Earnings & Revenues Top Estimates, Rise Y/Y",
+      "url": "/news/303217/mgm-resorts-q4-earnings-revenues-top-estimates-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: MGM Resorts International",
+      "url": "https://finance.yahoo.com/m/f085a75a-af33-37da-88cd-4144bc44ffe2/analyst-report%3A-mgm-resorts.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MGM Sees Clear Path to Las Vegas Growth",
+      "url": "https://finance.yahoo.com/news/mgm-sees-clear-path-las-113454722.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "MGM Resorts down in Las Vegas in Q4, though CEO remains optimistic",
+      "url": "https://finance.yahoo.com/m/3f83e5d9-3120-3320-8e06-545293d3abcb/mgm-resorts-down-in-las-vegas.html",
+      "publisher": "Hotel Dive",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "MGM Resorts International (MGM) Q4 2025 Earnings Call Highlights: Strong Digital Growth and ...",
+      "url": "https://finance.yahoo.com/news/mgm-resorts-international-mgm-q4-050247755.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "MGM (MGM) Reports Q4 Earnings: What Key Metrics Have to Say",
+      "url": "/news/302352/mgm-mgm-reports-q4-earnings-what-key-metrics-have-to-say",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MGM Resorts (MGM) Tops Q4 Earnings and Revenue Estimates",
+      "url": "/news/302289/mgm-resorts-mgm-tops-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "MGM: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/mgm-q4-earnings-snapshot-220257758.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MGM RESORTS INTERNATIONAL REPORTS FOURTH QUARTER AND FULL YEAR 2025 RESULTS",
+      "url": "/news/302112/mgm-resorts-international-reports-fourth-quarter-and-full-year-2025-results",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Wynn Resorts (WYNN) Expected to Beat Earnings Estimates: Can the Stock Move Higher?",
+      "url": "/news/301673/wynn-resorts-wynn-expected-to-beat-earnings-estimates-can-the-stock-move-higher",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MGM Resorts International Updates Earnings Release Date",
+      "url": "/news/300386/mgm-resorts-international-updates-earnings-release-date",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: MGM Resorts International",
+      "url": "https://finance.yahoo.com/m/1a18e86c-44e8-3cdb-8e51-a7959cf769f7/analyst-report%3A-mgm-resorts.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Software Stocks Plummet, Bitcoin Erases Post-Trump Election Rally: What's Moving Markets Wednesday?",
+      "url": "/news/299928/software-stocks-plummet-bitcoin-erases-post-trump-election-rally-whats-moving-markets-wednesday",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Is MGM Resorts (MGM) Stock Rocketing Higher Today",
+      "url": "/news/299825/why-is-mgm-resorts-mgm-stock-rocketing-higher-today",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MGM Stock Jumps on Sports Betting Results. Can It Fend Off Prediction Markets?",
+      "url": "https://www.barrons.com/articles/mgm-resorts-earnings-stock-jumps-betmgm-96b9f778?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MGM Resorts (MGM) Earnings Expected to Grow: Should You Buy?",
+      "url": "/news/299673/mgm-resorts-mgm-earnings-expected-to-grow-should-you-buy",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BETMGM FY 2025 BUSINESS UPDATE",
+      "url": "/news/298929/betmgm-fy-2025-business-update",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "LVS' Singapore EBITDA Flow-Through Strengthens: What's Supporting It?",
+      "url": "/news/297969/lvs-singapore-ebitda-flow-through-strengthens-whats-supporting-it",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "MGM Resorts Stock: Analyst Estimates & Ratings",
+      "url": "https://finance.yahoo.com/m/582d9757-5f93-38e5-a1f4-45fd31e8d595/mgm-resorts-stock%3A-analyst.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    }
+  ]
 }

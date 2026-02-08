@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 87.22566209779448,
-    "stoch_d": 74.89375824562117,
+    "stoch_d": 74.89375824562119,
     "trend_score": 53.25690901938531,
     "rsi_abs_score": 68.7653841820484,
     "macd_abs_score": 67.05298986929407,
@@ -6306,7 +6306,15 @@
     "technical_score": 57.1763943663032,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.15970869289187306,
+    "sentiment_pos": 0.1111,
+    "sentiment_neg": 0.03785,
+    "sentiment_neu": 0.851,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 57.99
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.12651943160417733,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 79.34181689285712,
     "catalyst_timeline": 59.9636612172432,
     "downside_control": 58.843774164589675,
-    "composite_score": 63.58680921720239,
+    "composite_score": 63.58292017190396,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 60.018371220238095,
     "technical_score": 57.1763943663032,
-    "sentiment_score": 50.0,
+    "sentiment_score": 57.99,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Health Care Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Will Declining Medical Membership Affect Humana's Q4 Earnings?",
+      "url": "/news/303221/will-declining-medical-membership-affect-humanas-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Centene Incurs Q4 Loss, Revenues Up YoY due to PDP Business Strength",
+      "url": "/news/303215/centene-incurs-q4-loss-revenues-up-yoy-due-to-pdp-business-strength",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Molina Healthcare Incurs a Loss in Q4 as Medical Costs Surge",
+      "url": "/news/302966/molina-healthcare-incurs-a-loss-in-q4-as-medical-costs-surge",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Cigna Group Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/918329f7-c65c-30b9-b257-2aeced0adf02/cigna-group-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CI Q4 Deep Dive: PBM Model Transition and Specialty Growth Drive Positive Results",
+      "url": "/news/302492/ci-q4-deep-dive-pbm-model-transition-and-specialty-growth-drive-positive-results",
+      "publisher": "StockStory",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Trump Touts Drug Cost Savings as He Launches TrumpRx Website",
+      "url": "https://finance.yahoo.com/news/trump-touts-drug-cost-savings-005659592.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Cigna Group (CI) Q4 2025 Earnings Call Highlights: Strong Revenue Growth and Strategic ...",
+      "url": "https://finance.yahoo.com/news/cigna-group-ci-q4-2025-210446057.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cigna Q4 Earnings Beat Estimates on Higher Specialty Volumes",
+      "url": "/news/301939/cigna-q4-earnings-beat-estimates-on-higher-specialty-volumes",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FTC Settlement With Cigna's Pharmacy Benefit Manager Promises Cheaper Insulin, Boosts Dividend On Strong Quarterly Earnings",
+      "url": "/news/301838/ftc-settlement-with-cignas-pharmacy-benefit-manager-promises-cheaper-insulin-boosts-dividend-on-strong-quarterly-earnings",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cigna earnings: COO talks results, making healthcare more affordable",
+      "url": "https://finance.yahoo.com/video/cigna-earnings-coo-talks-results-165245851.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cigna's Reassurances About PBM Business Lift Stock",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-02-05-2026/card/cigna-s-reassurances-about-pbm-business-lift-stock-AWDjH30dw6saKoJCfclY?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: The Cigna Group",
+      "url": "https://finance.yahoo.com/m/f6b4fc4a-f7f8-3982-8866-1623dc60f080/analyst-report%3A-the-cigna.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cigna (CI) Reports Q4 Earnings: What Key Metrics Have to Say",
+      "url": "/news/301553/cigna-ci-reports-q4-earnings-what-key-metrics-have-to-say",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "UnitedHealth, CVS, Humana Face Double Trouble As Trump's Medicare Cuts Are Just The StartPBM 'Spread Pricing' Comes Under Fire",
+      "url": "https://finance.yahoo.com/news/unitedhealth-cvs-humana-face-double-130105980.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Cigna (CI) Q4 Earnings and Revenues Beat Estimates",
+      "url": "/news/301173/cigna-ci-q4-earnings-and-revenues-beat-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Google Shows the AI Trade Isn't Dying, Just Changing. How to Play It.",
+      "url": "https://www.barrons.com/articles/google-stock-ai-trade-things-to-know-today-fa010953?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cigna: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/cigna-q4-earnings-snapshot-111525923.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cigna Revenue Lifted by Growth in its Evernorth Unit",
+      "url": "https://www.wsj.com/business/earnings/cigna-revenue-lifted-by-growth-in-its-evernorth-unit-14899d3c?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cigna's (NYSE:CI) Q4 CY2025 Sales Beat Estimates",
+      "url": "/news/301042/cignas-nyse-ci-q4-cy2025-sales-beat-estimates",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Cigna Group Reports Strong Fourth Quarter and Full Year 2025 Results, Establishes 2026 Outlook and Increases Dividend",
+      "url": "/news/300922/the-cigna-group-reports-strong-fourth-quarter-and-full-year-2025-results-establishes-2026-outlook-and-increases-dividend",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    }
+  ]
 }

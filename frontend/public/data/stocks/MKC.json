@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 67.41999816894531,
     "sma_20": 64.8564998626709,
-    "sma_50": 65.84586769104004,
-    "sma_200": 68.44508445739743,
-    "trend_alignment": 0.49772724567781096,
+    "sma_50": 65.84586769104006,
+    "sma_200": 68.44508445739744,
+    "trend_alignment": 0.4977272456778107,
     "rsi": 57.90181229003292,
     "rsi_score": 0.15803624580065845,
     "macd_histogram": 0.588155107992535,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 87.59889776299863,
     "stoch_d": 79.18736217072825,
-    "trend_score": 49.7727245677811,
+    "trend_score": 49.77272456778107,
     "rsi_abs_score": 72.96873139697695,
     "macd_abs_score": 70.58562275214021,
     "momentum_score": 71.77717707455858,
     "volatility_score": 33.85000836537907,
     "volume_score": 50.0,
-    "technical_score": 53.23497216577772,
+    "technical_score": 53.234972165777705,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.013792794392197752,
+    "sentiment_pos": 0.09390000000000001,
+    "sentiment_neg": 0.065,
+    "sentiment_neu": 0.8412000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 50.69
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.06793236428359535,
@@ -6325,7 +6333,7 @@
     "quality_score": 60.76143,
     "growth_score": 50.025,
     "safety_score": 44.15837201163461,
-    "trend_score": 49.7727245677811,
+    "trend_score": 49.77272456778107,
     "momentum_score": 71.77717707455858,
     "volatility_score": 33.85000836537907,
     "volume_score": 50.0,
@@ -6344,16 +6352,16 @@
     "current_ratio_score": 26.879999999999995,
     "earnings_visibility": 54.7959645,
     "valuation_margin": 58.25578445,
-    "catalyst_timeline": 57.34377607672284,
+    "catalyst_timeline": 57.34377607672283,
     "downside_control": 40.93325705655205,
-    "composite_score": 52.998650138086354,
+    "composite_score": 52.994761092787925,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 54.62367377732693,
-    "technical_score": 53.23497216577772,
-    "sentiment_score": 50.0,
+    "technical_score": 53.234972165777705,
+    "sentiment_score": 50.69,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Staples",
     "industry": "Packaged Foods & Meats"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Barclays Reviews McCormick (MKC) as ERP and Tax Pressures Come Into Focus",
+      "url": "/news/297319/barclays-reviews-mccormick-mkc-as-erp-and-tax-pressures-come-into-focus",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "McCormick tackles $50M tariff hit through pricing, other measures",
+      "url": "https://finance.yahoo.com/m/ac2b19da-9d52-337e-8847-511c123fa8f0/mccormick-tackles-%2450m-tariff.html",
+      "publisher": "Supply Chain Dive",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Earnings Impact of Tariffs",
+      "url": "/news/292643/the-earnings-impact-of-tariffs",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Top 5 Analyst Questions From McCormick's Q4 Earnings Call",
+      "url": "/news/292075/the-top-5-analyst-questions-from-mccormicks-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BofA Stays Positive on McCormick (MKC) Despite Weaker Q4 Results",
+      "url": "/news/289137/bofa-stays-positive-on-mccormick-mkc-despite-weaker-q4-results",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "McCormick & Company to Present at Consumer Analyst Group of New York Conference",
+      "url": "/news/287461/mccormick-company-to-present-at-consumer-analyst-group-of-new-york-conference",
+      "publisher": "PR Newswire",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Are consumer staples stocks still worth investing in?",
+      "url": "https://finance.yahoo.com/video/consumer-staples-stocks-still-worth-130050805.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-01-25",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Your Favorite Spices May Get a Bit More Expensive Soon. Here's the Reason Why",
+      "url": "https://finance.yahoo.com/m/32bdfb07-e0ce-3af4-bdde-967895355c87/your-favorite-spices-may-get.html",
+      "publisher": "Investopedia",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CEOs Flag Jittery US Consumers as Global Tensions Intensify",
+      "url": "https://finance.yahoo.com/news/ceos-wary-jittery-us-consumer-120000220.html",
+      "publisher": "Bloomberg",
+      "date": "2026-01-23",
+      "sentiment": "negative"
+    },
+    {
+      "title": "McCormick Q4 Earnings Lag Estimates, Organic Sales Grow",
+      "url": "/news/285313/mccormick-q4-earnings-lag-estimates-organic-sales-grow",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Company News for Jan 23, 2026",
+      "url": "/news/285299/company-news-for-jan-23-2026",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MKC Q4 Deep Dive: Margin Pressures Offset Modest Sales Growth as Guidance Clouds Outlook",
+      "url": "/news/284963/mkc-q4-deep-dive-margin-pressures-offset-modest-sales-growth-as-guidance-clouds-outlook",
+      "publisher": "StockStory",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks Settle Higher as Global Tensions Cool and the Economy Expands",
+      "url": "https://finance.yahoo.com/m/dffe4b1e-be8d-3e45-8b5c-99550bc25c05/stocks-settle-higher-as.html",
+      "publisher": "Barchart",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Meta's bullish call, Alibaba's AI chip unit, McCormick earnings",
+      "url": "https://finance.yahoo.com/video/metas-bullish-call-alibabas-ai-205048593.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: McCormick & Company, Incorporated",
+      "url": "https://finance.yahoo.com/m/9d77c7c7-7e24-341f-a3fb-009dfa0c0d77/analyst-report%3A-mccormick-%26.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Russell 2000 Extends Records, Meta Jumps 5%: What's Moving Markets Thursday?",
+      "url": "/news/284458/russell-2000-extends-records-meta-jumps-5-whats-moving-markets-thursday",
+      "publisher": "Benzinga",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "McCormick Raises Prices as Higher Costs Hurt Profitability",
+      "url": "https://finance.yahoo.com/m/3e83db41-bfec-3af2-b833-5325c914cc75/mccormick-raises-prices-as.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-22",
+      "sentiment": "negative"
+    },
+    {
+      "title": "McCormick & Co Inc (MKC) Q4 2025 Earnings Call Highlights: Navigating Growth Amid Inflation ...",
+      "url": "https://finance.yahoo.com/news/mccormick-co-inc-mkc-q4-190125943.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Procter & Gamble Q2 Earnings Beat Estimates, Organic Sales Flat Y/Y",
+      "url": "/news/284448/procter-gamble-q2-earnings-beat-estimates-organic-sales-flat-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "McCormick & Company, Incorporated Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/ed47b574-e4ef-3686-af93-4ed94e702d28/mccormick-%26-company%2C.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    }
+  ]
 }

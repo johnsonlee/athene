@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 108.69999694824219,
     "sma_20": 110.2805000305176,
-    "sma_50": 110.30461441040039,
-    "sma_200": 111.93110473632814,
-    "trend_alignment": 0.4637522324959777,
+    "sma_50": 110.30461441040038,
+    "sma_200": 111.93110473632812,
+    "trend_alignment": 0.46375223249597786,
     "rsi": 47.313933262188904,
     "rsi_score": -0.05372133475622192,
     "macd_histogram": -0.4137713683326978,
@@ -6295,18 +6295,26 @@
     "avg_volume_20d": 13269010.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 42.817294905034814,
-    "stoch_d": 35.58346827531554,
-    "trend_score": 46.37522324959777,
+    "stoch_k": 42.81729490503482,
+    "stoch_d": 35.583468275315546,
+    "trend_score": 46.37522324959779,
     "rsi_abs_score": 69.61975328353223,
     "macd_abs_score": 37.98363891560834,
     "momentum_score": 53.801696099570286,
     "volatility_score": 47.54879333806992,
     "volume_score": 50.0,
-    "technical_score": 49.5628344723644,
+    "technical_score": 49.56283447236441,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.09510171918671505,
+    "sentiment_pos": 0.1024,
+    "sentiment_neg": 0.050949999999999995,
+    "sentiment_neu": 0.84655,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 54.76
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.19595216191352344,
@@ -6325,7 +6333,7 @@
     "quality_score": 59.14857142857144,
     "growth_score": 43.275000000000006,
     "safety_score": 46.25768921631731,
-    "trend_score": 46.37522324959777,
+    "trend_score": 46.37522324959779,
     "momentum_score": 53.801696099570286,
     "volatility_score": 47.54879333806992,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 70.96577972857142,
     "catalyst_timeline": 52.1469410149536,
     "downside_control": 47.19497238315808,
-    "composite_score": 55.42718596703607,
+    "composite_score": 55.42329692173763,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 55.64134237897775,
-    "technical_score": 49.5628344723644,
-    "sentiment_score": 50.0,
+    "technical_score": 49.56283447236441,
+    "sentiment_score": 54.76,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Communication Services",
     "industry": "Movies & Entertainment"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Netflix Stock Tanks 39%  Is It Too Cheap to Ignore?",
+      "url": "https://finance.yahoo.com/m/4e83dc1d-bf0f-3f85-b3b2-9065a2ca44c7/netflix-stock-tanks-39%25-%E2%80%94-is.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Youve vanquished your rival in a CEO succession race. Now, how do you lead them?",
+      "url": "https://finance.yahoo.com/news/ve-vanquished-rival-ceo-succession-120000441.html",
+      "publisher": "Fortune",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "NFL May Sell Live Games To Streaming Platforms After $100 Million YouTube Deal, Raising Stakes For Disney, NBC And Traditional Partners",
+      "url": "/news/303485/nfl-may-sell-live-games-to-streaming-platforms-after-100-million-youtube-deal-raising-stakes-for-disney-nbc-and-traditional-partners",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Earnings live: Amazon, Reddit stocks sink to cap jam-packed earnings week",
+      "url": "https://finance.yahoo.com/news/live/earnings-live-amazon-reddit-stocks-sink-to-cap-jam-packed-earnings-week-213155571.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Big-Name Earnings, Selloffs Highlight Busy Week on Wall Street",
+      "url": "/news/303135/big-name-earnings-selloffs-highlight-busy-week-on-wall-street",
+      "publisher": "Schaeffer's Research",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Disney sidelines streaming in 2026",
+      "url": "https://finance.yahoo.com/m/d5c14f2e-747e-33a2-9a79-5c624349447a/disney-sidelines-streaming-in.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Earnings live: Amazon stock sinks, Philip Morris retreats, Reddit spikes as Wall Street focuses on guidance",
+      "url": "https://finance.yahoo.com/news/live/earnings-live-amazon-stock-sinks-philip-morris-retreats-reddit-spikes-as-wall-street-focuses-on-guidance-140858850.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Walt Disney Company (DIS) Is a Trending Stock: Facts to Know Before Betting on It",
+      "url": "/news/302794/the-walt-disney-company-dis-is-a-trending-stock-facts-to-know-before-betting-on-it",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Disneys Bob Iger achieves an essential feat for outgoing CEOs: giving his successor a clean slate",
+      "url": "https://finance.yahoo.com/news/disney-bob-iger-achieves-essential-103234398.html",
+      "publisher": "Fortune",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Walt Disney's CEO Roller Coaster: Why Josh D'Amaro Can Smooth the Ride",
+      "url": "https://www.barrons.com/articles/walt-disney-stock-ceo-josh-damaro-0c981a8e?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Super Bowl Commercials Include These Movie Trailers: Here's The Movie Companies Shelling Out $8 Million To Get Fans To Theaters",
+      "url": "/news/302317/super-bowl-commercials-include-these-movie-trailers-heres-the-movie-companies-shelling-out-8-million-to-get-fans-to-theaters",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "InterDigital Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/989167f9-297d-361d-8697-699c66d52b58/interdigital-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Earnings live: Strategy gets caught in bitcoin crash, Amazon stock plunges, Roblox surges",
+      "url": "https://finance.yahoo.com/news/live/earnings-live-strategy-gets-caught-in-bitcoin-crash-amazon-stock-plunges-roblox-surges-213043924.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Earnings live: Strategy gets caught in bitcoin crash, Amazon stock plunges, Reddit wavers",
+      "url": "https://finance.yahoo.com/news/live/earnings-live-strategy-gets-caught-in-bitcoin-crash-amazon-stock-plunges-reddit-wavers-213043638.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "FuboTV price target cut, but analysts remain bullish",
+      "url": "https://finance.yahoo.com/m/df3ae04d-6f22-326b-aaf8-7aeb53dee46b/fubotv-price-target-cut%2C-but.html",
+      "publisher": "Proactive",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Josh DAmaro Is the New Disney CEO. Should You Buy, Sell, or Hold DIS Stock Here?",
+      "url": "https://finance.yahoo.com/m/6f6997b3-a96d-3e6d-b054-1adc7bd662b5/josh-d%E2%80%99amaro-is-the-new.html",
+      "publisher": "Barchart",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Netflix, ESPN Battle NBC for Olympic Documentary Viewers",
+      "url": "https://finance.yahoo.com/m/bce918e1-d6aa-36b6-8218-f9a2e24e931d/netflix%2C-espn-battle-nbc-for.html",
+      "publisher": "Sportico",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "The Muppet Show revival is universally loved and perfectly timed for Disney",
+      "url": "https://qz.com/the-muppet-show-revival-disney-parks",
+      "publisher": "Quartz",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Former NBC Cable President Tom Rogers on Netflix-WBD deal scrutiny, Disney leadership changes",
+      "url": "https://www.youtube.com/watch?v=LPFObylH76A",
+      "publisher": "CNBC TV",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Microsoft downgraded, Snap upgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/microsoft-downgraded-snap-upgraded-wall-151235143.html",
+      "publisher": "The Fly",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    }
+  ]
 }

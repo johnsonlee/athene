@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 13096010.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 17.51979304649322,
+    "stoch_k": 17.519793046493223,
     "stoch_d": 12.600628403800219,
     "trend_score": 65.19137174676214,
     "rsi_abs_score": 67.49171949308936,
@@ -6306,7 +6306,15 @@
     "technical_score": 46.482390887383744,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.23827690837151783,
+    "sentiment_pos": 0.1587,
+    "sentiment_neg": 0.028000000000000004,
+    "sentiment_neu": 0.81325,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 61.91
+  },
   "analyst": {
     "revision_momentum": 0.125,
     "target_upside": 0.2368788078984072,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 47.91201772933333,
     "catalyst_timeline": 55.54984243729955,
     "downside_control": 40.44313238006427,
-    "composite_score": 61.161812450170295,
+    "composite_score": 61.15792340487186,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 71.49343650847177,
     "technical_score": 46.482390887383744,
-    "sentiment_score": 50.0,
+    "sentiment_score": 61.91,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Electronic Components"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "These 7 Stocks Are Analyst Favorites For Magnificent Earnings Growth; Google Test Entry As Data Center Play Shines",
+      "url": "https://finance.yahoo.com/m/2b47c372-177e-3051-aa01-406a8d82b220/these-7-stocks-are-analyst.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Tech stocks have been shaky, but these 20 companies could still see rocketing sales growth",
+      "url": "https://www.marketwatch.com/story/tech-stocks-have-been-shaky-but-these-20-companies-could-still-see-rocketing-sales-growth-148195c9?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Nvidia Shares Surge on Big Techs $650 Billion AI-Spending Plan",
+      "url": "https://finance.yahoo.com/news/nvidia-shares-surge-big-tech-180706782.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "5 Growth Stocks to Buy in February to Enhance Your Portfolio Returns",
+      "url": "/news/302751/5-growth-stocks-to-buy-in-february-to-enhance-your-portfolio-returns",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "ASYS Stock Plunges 27% After Q1 Earnings & Revenues Miss Estimates",
+      "url": "/news/302740/asys-stock-plunges-27-after-q1-earnings-revenues-miss-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Qualys Q4 Earnings Surpass Expectations, Revenues Increase Y/Y",
+      "url": "/news/302746/qualys-q4-earnings-surpass-expectations-revenues-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "MTSI Q1 Earnings Surpass Expectations, Revenues Rise Y/Y",
+      "url": "/news/302745/mtsi-q1-earnings-surpass-expectations-revenues-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Micron Rallies 315% in a Year: Is the Stock Still Worth Buying?",
+      "url": "/news/302701/micron-rallies-315-in-a-year-is-the-stock-still-worth-buying",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Amphenol Corporation (APH): A Bull Case Theory",
+      "url": "/news/302296/amphenol-corporation-aph-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Amphenol Stock Is a Buy Even With a Higher P/E of 29.36X",
+      "url": "/news/301914/heres-why-amphenol-stock-is-a-buy-even-with-a-higher-pe-of-2936x",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Are Wall Street Analysts Predicting Amphenol Stock Will Climb or Sink?",
+      "url": "https://finance.yahoo.com/m/0b559d4e-d256-3553-9b8a-f28dcacc8aed/are-wall-street-analysts.html",
+      "publisher": "Barchart",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Vishay Intertechnology Stock Falls 4% as Q4 Earnings Miss Estimates",
+      "url": "/news/301348/vishay-intertechnology-stock-falls-4-as-q4-earnings-miss-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Amphenol Announces First Quarter 2026 Dividend",
+      "url": "https://www.businesswire.com/news/home/20260205708457/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "SNAP's Q4 Earnings Surpass Estimates, Revenues Increase Y/Y",
+      "url": "/news/301295/snaps-q4-earnings-surpass-estimates-revenues-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Corning (GLW) Among Hidden Winners To Watch In AI Investing Space",
+      "url": "https://finance.yahoo.com/m/054473d4-a0b8-3b21-88fd-ad7918c8adee/corning-%28glw%29-among-hidden.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Madison Asset Initiates MSA Safety Position",
+      "url": "/news/300309/madison-asset-initiates-msa-safety-position",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Amphenol Announces Board Succession Plan",
+      "url": "https://www.businesswire.com/news/home/20260204322066/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Amphenol Stock Dropped 17% After Earnings: Opportunity or Trap?",
+      "url": "/news/299485/amphenol-stock-dropped-17-after-earnings-opportunity-or-trap",
+      "publisher": "MarketBeat",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Amphenol (APH) is a Top Momentum Stock for the Long-Term",
+      "url": "/news/299616/why-amphenol-aph-is-a-top-momentum-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is Amphenol (APH) Stock Outpacing Its Computer and Technology Peers This Year?",
+      "url": "/news/299558/is-amphenol-aph-stock-outpacing-its-computer-and-technology-peers-this-year",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    }
+  ]
 }

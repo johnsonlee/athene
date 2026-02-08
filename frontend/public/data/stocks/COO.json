@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 52.866617838541664,
-    "stoch_d": 41.46662394205728,
+    "stoch_d": 41.46662394205729,
     "trend_score": 60.31364469222774,
     "rsi_abs_score": 74.40771764403009,
     "macd_abs_score": 47.769062313289346,
@@ -6306,7 +6306,15 @@
     "technical_score": 60.55618844870102,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.14159288263183667,
+    "sentiment_pos": 0.11855,
+    "sentiment_neg": 0.027000000000000003,
+    "sentiment_neu": 0.8544499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 57.08
+  },
   "analyst": {
     "revision_momentum": -0.07692307692307693,
     "target_upside": 0.1388550548112059,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 55.91928689999999,
     "catalyst_timeline": 56.71715081268042,
     "downside_control": 68.85036791057608,
-    "composite_score": 52.859056104854524,
+    "composite_score": 52.855167059556095,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 50.05993729761904,
     "technical_score": 60.55618844870102,
-    "sentiment_score": 50.0,
+    "sentiment_score": 57.08,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Health Care Supplies"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "CooperCompanies Announces Release Date for First Quarter 2026",
+      "url": "/news/302134/coopercompanies-announces-release-date-for-first-quarter-2026",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Align Technology (ALGN) Surpasses Q4 Earnings and Revenue Estimates",
+      "url": "/news/300393/align-technology-algn-surpasses-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Reasons to Add Cooper Companies Stock to Your Portfolio Now",
+      "url": "/news/298005/reasons-to-add-cooper-companies-stock-to-your-portfolio-now",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Will The Cooper Companies (COO) Beat Estimates Again in Its Next Earnings Report?",
+      "url": "/news/297933/will-the-cooper-companies-coo-beat-estimates-again-in-its-next-earnings-report",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Diamond Hill Large Cap Fund Purchased Cooper Companies (COO) Betting on the Resilient Contact Lens Industry",
+      "url": "/news/297157/diamond-hill-large-cap-fund-purchased-cooper-companies-coo-betting-on-the-resilient-contact-lens-industry",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BD & Envetec Showcase Closed-Loop Recycling Solution for Lab Plastics",
+      "url": "/news/295964/bd-envetec-showcase-closed-loop-recycling-solution-for-lab-plastics",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "1 Healthcare Stock to Own for Decades and 2 We Question",
+      "url": "/news/294079/1-healthcare-stock-to-own-for-decades-and-2-we-question",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CONMED Stock Up Post Q4 Earnings and Revenue Beat, Gross Margin Up",
+      "url": "/news/292366/conmed-stock-up-post-q4-earnings-and-revenue-beat-gross-margin-up",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "COO vs. WST: Which Stock Should Value Investors Buy Now?",
+      "url": "/news/290457/coo-vs-wst-which-stock-should-value-investors-buy-now",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why You Should Add Merit Medical Stock to Your Portfolio Now",
+      "url": "/news/288872/heres-why-you-should-add-merit-medical-stock-to-your-portfolio-now",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why The Cooper Companies (COO) is a Top Growth Stock for the Long-Term",
+      "url": "/news/288522/why-the-cooper-companies-coo-is-a-top-growth-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why The Cooper Companies (COO) is a Strong Value Stock",
+      "url": "/news/287058/heres-why-the-cooper-companies-coo-is-a-strong-value-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "WST Launches Synchrony S1 Prefillable Syringe at Pharmapack",
+      "url": "/news/285676/wst-launches-synchrony-s1-prefillable-syringe-at-pharmapack",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What You Need to Know Ahead of The Cooper Companies' Earnings Release",
+      "url": "https://finance.yahoo.com/m/b33d8c6d-6e96-324c-a4da-b3382d99ecef/what-you-need-to-know-ahead.html",
+      "publisher": "Barchart",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why You Should Retain Integer Holdings Stock in Your Portfolio",
+      "url": "/news/284203/heres-why-you-should-retain-integer-holdings-stock-in-your-portfolio",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BD and Ypsomed Expand Partnership to Target Growing Biologics Market",
+      "url": "/news/284186/bd-and-ypsomed-expand-partnership-to-target-growing-biologics-market",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BD Gets FDA 510(k) Approval for EnCor EnCompass Breast Biopsy System",
+      "url": "/news/282724/bd-gets-fda-510k-approval-for-encor-encompass-breast-biopsy-system",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Reasons to Add West Pharmaceutical Stock to Your Portfolio Now",
+      "url": "/news/276605/reasons-to-add-west-pharmaceutical-stock-to-your-portfolio-now",
+      "publisher": "Zacks",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Judge Denies Teva Bid To Pause Paragard Copper Contraceptive Device Lawsuit Trial",
+      "url": "/news/275094/judge-denies-teva-bid-to-pause-paragard-copper-contraceptive-device-lawsuit-trial",
+      "publisher": "Benzinga",
+      "date": "2026-01-13",
+      "sentiment": "negative"
+    },
+    {
+      "title": "COO or WST: Which Is the Better Value Stock Right Now?",
+      "url": "/news/273953/coo-or-wst-which-is-the-better-value-stock-right-now",
+      "publisher": "Zacks",
+      "date": "2026-01-12",
+      "sentiment": "positive"
+    }
+  ]
 }

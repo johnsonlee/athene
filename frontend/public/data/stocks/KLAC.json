@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 1442.949951171875,
-    "sma_20": 1481.2789855957037,
+    "sma_20": 1481.2789855957035,
     "sma_50": 1341.5109912109374,
     "sma_200": 1042.0698352050783,
     "trend_alignment": 0.7769634042835777,
@@ -6286,17 +6286,17 @@
     "macd_histogram": -24.181593986411286,
     "macd_line": 15.632101003917342,
     "macd_histogram_pct": -1.675844263813342,
-    "bb_position": 0.40294025136566014,
+    "bb_position": 0.40294025136566086,
     "bb_upper": 1678.7297051943524,
-    "bb_lower": 1283.828265997055,
-    "bb_width": 0.26659491090969994,
+    "bb_lower": 1283.8282659970546,
+    "bb_width": 0.2665949109097003,
     "hist_volatility": 0.7938283749347529,
     "volume_ratio": 1.0942484224602655,
     "avg_volume_20d": 1435780.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 29.537187488321685,
-    "stoch_d": 18.791057056146236,
+    "stoch_d": 18.79105705614624,
     "trend_score": 77.69634042835777,
     "rsi_abs_score": 72.7298891435092,
     "macd_abs_score": 20.0,
@@ -6306,7 +6306,15 @@
     "technical_score": 51.01838550003371,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.1475077754633345,
+    "sentiment_pos": 0.11065,
+    "sentiment_neg": 0.028499999999999998,
+    "sentiment_neu": 0.8608499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 57.38
+  },
   "analyst": {
     "revision_momentum": 0.22727272727272727,
     "target_upside": 0.17814200076232714,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 36.409665038095234,
     "catalyst_timeline": 60.503597630485736,
     "downside_control": 39.80846315676728,
-    "composite_score": 57.8472307652462,
+    "composite_score": 57.843341719947766,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 66.11667174076908,
     "technical_score": 51.01838550003371,
-    "sentiment_score": 50.0,
+    "sentiment_score": 57.38,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Semiconductor Materials & Equipment"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Citi Remains Bullish on KLA (KLAC) Amid Persistent Phase 2 Upcycle in Wafer Fab Equipment and Potential Upside",
+      "url": "/news/303798/citi-remains-bullish-on-kla-klac-amid-persistent-phase-2-upcycle-in-wafer-fab-equipment-and-potential-upside",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Momentum Anomaly Stocks to Buy as Tech Rout Spooks Markets",
+      "url": "/news/302739/3-momentum-anomaly-stocks-to-buy-as-tech-rout-spooks-markets",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "KLA Declares Regular Cash Dividend",
+      "url": "/news/302185/kla-declares-regular-cash-dividend",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ROK Q1 Earnings Surpass Estimates, Increase Y/Y on Higher Volumes",
+      "url": "/news/301915/rok-q1-earnings-surpass-estimates-increase-yy-on-higher-volumes",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Fortive Q4 Earnings & Sales Surpass Estimates, Increase Y/Y, Stock Up",
+      "url": "/news/301886/fortive-q4-earnings-sales-surpass-estimates-increase-yy-stock-up",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Flex's Q3 Earnings & Revenues Surpass Estimates, Increase Y/Y",
+      "url": "/news/301875/flexs-q3-earnings-revenues-surpass-estimates-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cirrus Logic Q3 Earnings & Revenues Surpass Estimates, Rise Y/Y",
+      "url": "/news/299736/cirrus-logic-q3-earnings-revenues-surpass-estimates-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why KLA (KLAC) International Revenue Trends Deserve Your Attention",
+      "url": "/news/299475/why-kla-klac-international-revenue-trends-deserve-your-attention",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Tumble on AI Disruption Fears",
+      "url": "https://finance.yahoo.com/m/2d280010-8635-3f1a-b487-d134aea3e092/stocks-tumble-on-ai.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "KLA Sank After Earnings-Then Analysts Started Raising Targets",
+      "url": "/news/297790/kla-sank-after-earnings-then-analysts-started-raising-targets",
+      "publisher": "MarketBeat",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "5 Momentum Picks for February After Wall Street's Solid Start to 2026",
+      "url": "/news/297554/5-momentum-picks-for-february-after-wall-streets-solid-start-to-2026",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "KLA Corporation (KLAC): A Bull Case Theory",
+      "url": "/news/296394/kla-corporation-klac-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "KLA Corp. price target raised to $1,751 from $1,697 at Morgan Stanley",
+      "url": "https://finance.yahoo.com/news/kla-corp-price-target-raised-132052109.html",
+      "publisher": "TipRanks",
+      "date": "2026-01-31",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: KLA Corporation",
+      "url": "https://finance.yahoo.com/m/5136c946-c6c1-3085-b698-cd2df5ce88b0/analyst-report%3A-kla.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Chip-Gear Maker KLA Tops Estimates But Stock Falls",
+      "url": "https://finance.yahoo.com/m/f01a3ed2-b4e6-3ddc-9585-ccd980b5a6fb/chip-gear-maker-kla-tops.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "KLA's Rich Valuation Offsets Its Strong Market Position: Analyst",
+      "url": "/news/293795/klas-rich-valuation-offsets-its-strong-market-position-analyst",
+      "publisher": "Benzinga",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why KLA's Stock Crashed Today",
+      "url": "/news/293786/why-klas-stock-crashed-today",
+      "publisher": "Motley Fool",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "KLA Q2 Earnings Surpass Estimates, Revenues Increase Y/Y, Shares Fall",
+      "url": "/news/293831/kla-q2-earnings-surpass-estimates-revenues-increase-yy-shares-fall",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks Slip as Bond Yields Rise after Warsh Picked for Fed Chair",
+      "url": "https://finance.yahoo.com/m/f8b5dfd3-285a-3d21-816a-900fc4922606/stocks-slip-as-bond-yields.html",
+      "publisher": "Barchart",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "KLA Stock Dives After Earnings Beat. What's Hitting the Chip-Gear Favorite.",
+      "url": "https://www.barrons.com/articles/kla-stock-price-earnings-6ef0fec7?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    }
+  ]
 }

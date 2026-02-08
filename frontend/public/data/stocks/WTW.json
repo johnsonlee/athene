@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 330.0400085449219,
     "sma_20": 324.61350097656253,
-    "sma_50": 325.8420941162109,
+    "sma_50": 325.84209411621094,
     "sma_200": 319.8181405639649,
-    "trend_alignment": 0.5383133243903966,
+    "trend_alignment": 0.5383133243903965,
     "rsi": 54.163301444551294,
     "rsi_score": 0.08326602889102588,
     "macd_histogram": 1.262485301579516,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 52.16696325032366,
     "stoch_d": 62.59027069258119,
-    "trend_score": 53.831332439039656,
+    "trend_score": 53.83133243903965,
     "rsi_abs_score": 74.4143110111859,
     "macd_abs_score": 62.06312317365364,
     "momentum_score": 68.23871709241978,
@@ -6306,7 +6306,15 @@
     "technical_score": 57.938119188141584,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.03908928546720492,
+    "sentiment_pos": 0.07085,
+    "sentiment_neg": 0.07065,
+    "sentiment_neu": 0.8584999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.95
+  },
   "analyst": {
     "revision_momentum": 0.07692307692307693,
     "target_upside": 0.1483456550721124,
@@ -6325,7 +6333,7 @@
     "quality_score": 74.14522612500001,
     "growth_score": 21.700000000000003,
     "safety_score": 50.4716170963157,
-    "trend_score": 53.831332439039656,
+    "trend_score": 53.83133243903965,
     "momentum_score": 68.23871709241978,
     "volatility_score": 56.58552164351879,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 47.255042857142854,
     "catalyst_timeline": 57.320912089064194,
     "downside_control": 54.16657081097517,
-    "composite_score": 50.58208947388123,
+    "composite_score": 50.578200428582804,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 49.579593637715526,
     "technical_score": 57.938119188141584,
-    "sentiment_score": 50.0,
+    "sentiment_score": 51.95,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Insurance Brokers"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "MKL Q4 Earnings Beat Estimates, Revenues & Premiums Rise Y/Y",
+      "url": "/news/301268/mkl-q4-earnings-beat-estimates-revenues-premiums-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Prudential Financial Q4 Earnings Miss, Revenues Beat, Dividend Raised",
+      "url": "/news/299476/prudential-financial-q4-earnings-miss-revenues-beat-dividend-raised",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Voya Financial Q4 Earnings Miss Estimates, Revenues Rise Y/Y",
+      "url": "/news/299425/voya-financial-q4-earnings-miss-estimates-revenues-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "WTW posts 41% decline in Q4 2025 profit",
+      "url": "https://finance.yahoo.com/m/43dda811-28eb-368d-87d9-9e2e513e373b/wtw-posts-41%25-decline-in-q4.html",
+      "publisher": "Life Insurance International",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Willis Towers Watson Public Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/d3578bd5-fcb2-3010-b57e-20b6b7fcee5c/willis-towers-watson-public.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Willis Towers Watson PLC (WTW) Q4 2025 Earnings Call Highlights: Strong Organic Growth and ...",
+      "url": "https://finance.yahoo.com/news/willis-towers-watson-plc-wtw-210155316.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Willis Towers Q4 Earnings & Revenues Beat Estimates on Lower Expenses",
+      "url": "/news/297712/willis-towers-q4-earnings-revenues-beat-estimates-on-lower-expenses",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Willis Towers Watson: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/willis-towers-watson-q4-earnings-150627720.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Compared to Estimates, Willis Towers Watson (WTW) Q4 Earnings: A Look at Key Metrics",
+      "url": "/news/297546/compared-to-estimates-willis-towers-watson-wtw-q4-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Willis Towers Watson (WTW) Beats Q4 Earnings and Revenue Estimates",
+      "url": "/news/297195/willis-towers-watson-wtw-beats-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "WTW Reports Fourth Quarter and Full Year 2025 Earnings",
+      "url": "/news/296913/wtw-reports-fourth-quarter-and-full-year-2025-earnings",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Watch These 5 Insurance Stocks for Q4 Earnings: Beat or Miss?",
+      "url": "/news/295832/watch-these-5-insurance-stocks-for-q4-earnings-beat-or-miss",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "WTW launches Rewards AI, providing compensation intelligence with generative AI",
+      "url": "/news/295527/wtw-launches-rewards-ai-providing-compensation-intelligence-with-generative-ai",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What's in the Cards for Willis Towers This Earnings Season?",
+      "url": "/news/291882/whats-in-the-cards-for-willis-towers-this-earnings-season",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Seeking Clues to Willis Towers Watson (WTW) Q4 Earnings? A Peek Into Wall Street Projections for Key Metrics",
+      "url": "/news/291830/seeking-clues-to-willis-towers-watson-wtw-q4-earnings-a-peek-into-wall-street-projections-for-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "2025 Natural Catastrophe losses should not lull market into false sense of security, warns Willis",
+      "url": "/news/291201/2025-natural-catastrophe-losses-should-not-lull-market-into-false-sense-of-security-warns-willis",
+      "publisher": "GlobeNewswire",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Willis Responds to Explosive Data Center Growth by Redefining How Risk is Managed",
+      "url": "/news/290245/willis-responds-to-explosive-data-center-growth-by-redefining-how-risk-is-managed",
+      "publisher": "GlobeNewswire",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "WTW Completes Acquisition of Newfront",
+      "url": "/news/288702/wtw-completes-acquisition-of-newfront",
+      "publisher": "GlobeNewswire",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Trump Just Shocked Medicare Stocks - Will Seth Klarman Seize This Moment?",
+      "url": "/news/288687/trump-just-shocked-medicare-stocks-will-seth-klarman-seize-this-moment",
+      "publisher": "Benzinga",
+      "date": "2026-01-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Despite cost constraints, employers continue to invest in leave programs, WTW survey finds",
+      "url": "/news/287109/despite-cost-constraints-employers-continue-to-invest-in-leave-programs-wtw-survey-finds",
+      "publisher": "GlobeNewswire",
+      "date": "2026-01-26",
+      "sentiment": "negative"
+    }
+  ]
 }

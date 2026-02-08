@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 18.660688270107656,
-    "stoch_d": 18.482821482201786,
+    "stoch_d": 18.482821482201782,
     "trend_score": 78.30016844038272,
     "rsi_abs_score": 72.65989584590582,
     "macd_abs_score": 20.0,
@@ -6306,7 +6306,15 @@
     "technical_score": 52.34790567526787,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.03160116057449667,
+    "sentiment_pos": 0.10089999999999999,
+    "sentiment_neg": 0.07195,
+    "sentiment_neu": 0.8271499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.58
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.13163371488033304,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 58.73038175999999,
     "catalyst_timeline": 58.387583238830956,
     "downside_control": 54.75355932470038,
-    "composite_score": 68.48818159114006,
+    "composite_score": 68.48429254584163,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 76.53287295333334,
     "technical_score": 52.34790567526787,
-    "sentiment_score": 50.0,
+    "sentiment_score": 51.58,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Materials",
     "industry": "Gold"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "3 Contrarian \"Buy the Dip\" Picks-and One Area to Avoid",
+      "url": "/news/303668/3-contrarian-buy-the-dip-picks-and-one-area-to-avoid",
+      "publisher": "MarketBeat",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Jim Cramer on Investing in Newmont While Holding AEM: \"No Need, You Own the Best\"",
+      "url": "/news/303483/jim-cramer-on-investing-in-newmont-while-holding-aem-no-need-you-own-the-best",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Gold Miner Stocks Plunge: Buy the Dip",
+      "url": "/news/303418/gold-miner-stocks-plunge-buy-the-dip",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Revenge of the Real. Why Energy, Materials and Staples Stocks Are Beating the Market.",
+      "url": "https://finance.yahoo.com/m/52f16a06-b250-3bb8-9447-6327ecee03c1/revenge-of-the-real.-why.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "These 2 Basic Materials Stocks Could Beat Earnings: Why They Should Be on Your Radar",
+      "url": "/news/302767/these-2-basic-materials-stocks-could-beat-earnings-why-they-should-be-on-your-radar",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Basic Materials Roundup: Market Talk",
+      "url": "https://finance.yahoo.com/m/42c0d05d-a943-334f-bd6f-d2bec73e8066/basic-materials-roundup%3A.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Linde Q4 Earnings Beat on Higher Americas Pricing, Revenues Rise Y/Y",
+      "url": "/news/301762/linde-q4-earnings-beat-on-higher-americas-pricing-revenues-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Albemarle to Post Q4 Earnings: What's in the Offing for the Stock?",
+      "url": "/news/301373/albemarle-to-post-q4-earnings-whats-in-the-offing-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Barrick Aims for IPO of North American Gold Assets This Year",
+      "url": "https://finance.yahoo.com/m/f2d99797-bae6-3df0-9c13-10dc6105a4e3/barrick-aims-for-ipo-of-north.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ronald Muhlenkamp's Strategic Exit from JD.com Inc: A 13F Filing Insight",
+      "url": "https://finance.yahoo.com/news/ronald-muhlenkamps-strategic-exit-jd-001626925.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Zacks Analyst Blog Highlights Agnico Eagle Mines, Kinross Gold and Newmont",
+      "url": "/news/299755/the-zacks-analyst-blog-highlights-agnico-eagle-mines-kinross-gold-and-newmont",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Newmont Corporation (NEM) is a Top Growth Stock for the Long-Term",
+      "url": "/news/299593/why-newmont-corporation-nem-is-a-top-growth-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's How Much a $1000 Investment in Newmont Corporation Made 10 Years Ago Would Be Worth Today",
+      "url": "/news/299321/heres-how-much-a-1000-investment-in-newmont-corporation-made-10-years-ago-would-be-worth-today",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "NEM's Robust Cash Flow Drives Investor Returns: Can It Keep Growing?",
+      "url": "/news/299205/nems-robust-cash-flow-drives-investor-returns-can-it-keep-growing",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Barrick Mining Pops 51% in 3 Months: Here's How to Play the Stock",
+      "url": "/news/299200/barrick-mining-pops-51-in-3-months-heres-how-to-play-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Should You Buy Gold Stocks Newmont and Barrick on the Dip?",
+      "url": "/news/298670/should-you-buy-gold-stocks-newmont-and-barrick-on-the-dip",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Tumble on AI Disruption Fears",
+      "url": "https://finance.yahoo.com/m/2d280010-8635-3f1a-b487-d134aea3e092/stocks-tumble-on-ai.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Newmont Stock Jumps As Gold Stages Powerful Rebound",
+      "url": "/news/297710/newmont-stock-jumps-as-gold-stages-powerful-rebound",
+      "publisher": "Benzinga",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Software Stocks Retreat and Drag the Broader Market Lower",
+      "url": "https://finance.yahoo.com/m/a06579e4-a8c9-38b5-bd18-ff27c7b1d6a5/software-stocks-retreat-and.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Nasdaq Slips, Gold and Silver Stage Substantial Recovery",
+      "url": "https://finance.yahoo.com/m/e2a821b3-72dd-368c-9e69-12718b55c208/nasdaq-slips%2C-gold-and-silver.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    }
+  ]
 }

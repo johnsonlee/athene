@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 8562825.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 84.3050540193687,
+    "stoch_k": 84.30505401936871,
     "stoch_d": 81.63490322852545,
     "trend_score": 71.35054673662069,
     "rsi_abs_score": 68.8782154644629,
@@ -6306,7 +6306,15 @@
     "technical_score": 64.13775966592884,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.16815264868086532,
+    "sentiment_pos": 0.1217,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.8783,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 58.41
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.033591731266149796,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 63.85231510999999,
     "catalyst_timeline": 60.97458563919024,
     "downside_control": 63.81835448257357,
-    "composite_score": 63.84944263901098,
+    "composite_score": 63.845553593712545,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 61.50456786215527,
     "technical_score": 64.13775966592884,
-    "sentiment_score": 50.0,
+    "sentiment_score": 58.41,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Real Estate",
     "industry": "Hotel & Resort REITs"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "From AI Darlings To Dow Dinosaurs: Investors Flee Software For Old-Economy Stocks",
+      "url": "/news/303569/from-ai-darlings-to-dow-dinosaurs-investors-flee-software-for-old-economy-stocks",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Welltower Gears Up to Report Q4 Earnings: What's in the Cards?",
+      "url": "/news/303080/welltower-gears-up-to-report-q4-earnings-whats-in-the-cards",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Digital Realty's Q4 Core FFO & Revenues Top Estimates, Rentals Rise",
+      "url": "/news/302798/digital-realtys-q4-core-ffo-revenues-top-estimates-rentals-rise",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Should VNO Stock Be in Your Portfolio Ahead of Q4 Earnings?",
+      "url": "/news/299352/should-vno-stock-be-in-your-portfolio-ahead-of-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Host Hotels (HST) is a Top Value Stock for the Long-Term",
+      "url": "/news/297574/why-host-hotels-hst-is-a-top-value-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Should You Hold DLR Stock in Your Portfolio Ahead of Q4 Earnings?",
+      "url": "/news/295467/should-you-hold-dlr-stock-in-your-portfolio-ahead-of-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is Wall Street Bullish or Bearish on Host Hotels & Resorts Stock?",
+      "url": "https://finance.yahoo.com/m/9bc05238-4413-3e8d-ab0d-60954b47e7ff/is-wall-street-bullish-or.html",
+      "publisher": "Barchart",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Host Hotels Rises 13.9% in Three Months: Will the Trend Last?",
+      "url": "/news/290095/host-hotels-rises-139-in-three-months-will-the-trend-last",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Should BXP Stock be in Your Portfolio Pre-Q4 Earnings?",
+      "url": "/news/285235/should-bxp-stock-be-in-your-portfolio-pre-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What to Expect From Host Hotels & Resorts Q4 2025 Earnings Report",
+      "url": "https://finance.yahoo.com/m/5aed285a-6e57-3598-8671-05c4a12d5ec4/what-to-expect-from-host.html",
+      "publisher": "Barchart",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Invitation Homes Acquires ResiBuilt to Expand In-House Development",
+      "url": "/news/280234/invitation-homes-acquires-resibuilt-to-expand-in-house-development",
+      "publisher": "Zacks",
+      "date": "2026-01-19",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Vornado Reports First Lease at Sunset Pier 94 Studios With Paramount",
+      "url": "/news/278874/vornado-reports-first-lease-at-sunset-pier-94-studios-with-paramount",
+      "publisher": "Zacks",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "HST vs. EXR: Which Stock Is the Better Value Option?",
+      "url": "/news/277882/hst-vs-exr-which-stock-is-the-better-value-option",
+      "publisher": "Zacks",
+      "date": "2026-01-15",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BXP Hits $1B Milestone Under Its Long-Term Asset Sale Plan Strategy",
+      "url": "/news/277508/bxp-hits-1b-milestone-under-its-long-term-asset-sale-plan-strategy",
+      "publisher": "Zacks",
+      "date": "2026-01-15",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Crown Castle Terminates Agreement With DISH on Payment Default",
+      "url": "/news/276092/crown-castle-terminates-agreement-with-dish-on-payment-default",
+      "publisher": "Zacks",
+      "date": "2026-01-14",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Zacks.com featured highlights include Arista Networks, Corning, Banco Bilbao Vizcaya Argentaria, Assurant and Host Hotels & Resorts",
+      "url": "/news/275097/zackscom-featured-highlights-include-arista-networks-corning-banco-bilbao-vizcaya-argentaria-assurant-and-host-hotels-resorts",
+      "publisher": "Zacks",
+      "date": "2026-01-13",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Highwoods Banks on Acquisitions, Boosts Long-Term Growth Trajectory",
+      "url": "/news/274830/highwoods-banks-on-acquisitions-boosts-long-term-growth-trajectory",
+      "publisher": "Zacks",
+      "date": "2026-01-13",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Lamar Advertising Stock Gains 8.8% in 3 Months: Will the Trend Last?",
+      "url": "/news/273824/lamar-advertising-stock-gains-88-in-3-months-will-the-trend-last",
+      "publisher": "Zacks",
+      "date": "2026-01-12",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Are Investors Undervaluing Host Hotels & Resorts (HST) Right Now?",
+      "url": "/news/273779/are-investors-undervaluing-host-hotels-resorts-hst-right-now",
+      "publisher": "Zacks",
+      "date": "2026-01-12",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Buy 5 Stocks With High ROE as U.S. Economy Appears on Firm Footing",
+      "url": "/news/273808/buy-5-stocks-with-high-roe-as-us-economy-appears-on-firm-footing",
+      "publisher": "Zacks",
+      "date": "2026-01-12",
+      "sentiment": "neutral"
+    }
+  ]
 }

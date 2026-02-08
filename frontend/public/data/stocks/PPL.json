@@ -6295,8 +6295,8 @@
     "avg_volume_20d": 8338755.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 34.91308760181562,
-    "stoch_d": 24.865827302194596,
+    "stoch_k": 34.913087601815626,
+    "stoch_d": 24.8658273021946,
     "trend_score": 52.90914097017673,
     "rsi_abs_score": 72.96072626532674,
     "macd_abs_score": 40.23096382411083,
@@ -6306,7 +6306,15 @@
     "technical_score": 56.70443844935756,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.06528310359289785,
+    "sentiment_pos": 0.07815,
+    "sentiment_neg": 0.045799999999999993,
+    "sentiment_neu": 0.87605,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 53.26
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.11358574610244984,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 56.15017807857142,
     "catalyst_timeline": 54.671058735119836,
     "downside_control": 47.10419292116668,
-    "composite_score": 57.20213845935402,
+    "composite_score": 57.19824941405558,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 57.95836738318452,
     "technical_score": 56.70443844935756,
-    "sentiment_score": 50.0,
+    "sentiment_score": 53.26,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Utilities",
     "industry": "Electric Utilities"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "PPL Corporation Announces 2026 Virtual Annual Meeting",
+      "url": "/news/302542/ppl-corporation-announces-2026-virtual-annual-meeting",
+      "publisher": "PR Newswire",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why PPL (PPL) Dipped More Than Broader Market Today",
+      "url": "/news/300505/why-ppl-ppl-dipped-more-than-broader-market-today",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Should You Buy, Sell or Hold AES Stock After a 9.2% Rise in a Month?",
+      "url": "/news/299734/should-you-buy-sell-or-hold-aes-stock-after-a-92-rise-in-a-month",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "North American Company Secures Strategic Rare Earth Deal in Kazakhstan",
+      "url": "https://finance.yahoo.com/news/north-american-company-secures-strategic-120000966.html",
+      "publisher": "Oilprice.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is Wall Street Bullish or Bearish on PPL Corporation Stock?",
+      "url": "https://finance.yahoo.com/m/bbb6bf70-dc65-38a3-82ca-50db79634077/is-wall-street-bullish-or.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PPL Corporation and PPL Electric Utilities Joint Statement Regarding Governor Shapiro's Budget Address",
+      "url": "/news/298432/ppl-corporation-and-ppl-electric-utilities-joint-statement-regarding-governor-shapiros-budget-address",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PPL Corporation to Conduct Webcast on 2025 Earnings Results",
+      "url": "/news/293222/ppl-corporation-to-conduct-webcast-on-2025-earnings-results",
+      "publisher": "PR Newswire",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why PPL (PPL) Fell More Than Broader Market",
+      "url": "/news/292831/heres-why-ppl-ppl-fell-more-than-broader-market",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PPL vs. CMS: Which Utility Stock Offers Greater Upside Potential?",
+      "url": "/news/290034/ppl-vs-cms-which-utility-stock-offers-greater-upside-potential",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "How CMS Is Positioned for Growth on Stable Utilities and Renewables",
+      "url": "/news/287131/how-cms-is-positioned-for-growth-on-stable-utilities-and-renewables",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PPL (PPL) Stock Drops Despite Market Gains: Important Facts to Note",
+      "url": "/news/285910/ppl-ppl-stock-drops-despite-market-gains-important-facts-to-note",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "negative"
+    },
+    {
+      "title": "PPL (PPL) Stock Drops Despite Market Gains: Important Facts to Note",
+      "url": "/news/284751/ppl-ppl-stock-drops-despite-market-gains-important-facts-to-note",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "negative"
+    },
+    {
+      "title": "PPL Corporation statement on Trump-Shapiro call for new power auction to spur construction of power plants paid for by data centers",
+      "url": "/news/280881/ppl-corporation-statement-on-trump-shapiro-call-for-new-power-auction-to-spur-construction-of-power-plants-paid-for-by-data-centers",
+      "publisher": "PR Newswire",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: PPL Corporation",
+      "url": "https://finance.yahoo.com/m/ed8d0ab5-682b-3a73-8317-3534d90c4537/analyst-report%3A-ppl.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "GE Vernova shares rise as Trump, governors push for PJM power auction",
+      "url": "https://finance.yahoo.com/news/ge-vernova-shares-rise-trump-143549039.html",
+      "publisher": "Investing.com",
+      "date": "2026-01-16",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PPL Outperforms Its Industry in the Last Month: How to Play the Stock?",
+      "url": "/news/278753/ppl-outperforms-its-industry-in-the-last-month-how-to-play-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-16",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PPL Corporation Earnings Preview: What to Expect",
+      "url": "https://finance.yahoo.com/m/89f9d96d-f8b8-33b2-b173-31000289edf2/ppl-corporation-earnings.html",
+      "publisher": "Barchart",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PPL (PPL) Gains As Market Dips: What You Should Know",
+      "url": "/news/276875/ppl-ppl-gains-as-market-dips-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-01-14",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PPL (PPL) Suffers a Larger Drop Than the General Market: Key Insights",
+      "url": "/news/270092/ppl-ppl-suffers-a-larger-drop-than-the-general-market-key-insights",
+      "publisher": "Zacks",
+      "date": "2026-01-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Premier Plus Lending Expands Footprint with New Palm Desert Headquarters Following Strongest Year on Record",
+      "url": "/news/268182/premier-plus-lending-expands-footprint-with-new-palm-desert-headquarters-following-strongest-year-on-record",
+      "publisher": "PR Newswire",
+      "date": "2026-01-06",
+      "sentiment": "positive"
+    }
+  ]
 }

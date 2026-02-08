@@ -6306,7 +6306,15 @@
     "technical_score": 48.1292418373948,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.2672802969867393,
+    "sentiment_pos": 0.155,
+    "sentiment_neg": 0.012750000000000001,
+    "sentiment_neu": 0.8322499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 63.36
+  },
   "analyst": {
     "revision_momentum": 0.1,
     "target_upside": 0.2736788476680098,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 63.087644175,
     "catalyst_timeline": 52.215931658581944,
     "downside_control": 54.36554874773735,
-    "composite_score": 64.21407424752375,
+    "composite_score": 64.21018520222532,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 70.2275468125,
     "technical_score": 48.1292418373948,
-    "sentiment_score": 50.0,
+    "sentiment_score": 63.36,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Electronic Manufacturing Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Here's Why TE Connectivity (TEL) is a Strong Growth Stock",
+      "url": "/news/302941/heres-why-te-connectivity-tel-is-a-strong-growth-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: TE Connectivity plc",
+      "url": "https://finance.yahoo.com/m/ca81dbfc-b931-3a79-9bfd-b905782550c6/analyst-report%3A-te.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Amphenol Stock Is a Buy Even With a Higher P/E of 29.36X",
+      "url": "/news/301914/heres-why-amphenol-stock-is-a-buy-even-with-a-higher-pe-of-2936x",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TE Connectivity maintains top score for LGBTQ+ workplace inclusion",
+      "url": "/news/299243/te-connectivity-maintains-top-score-for-lgbtq-workplace-inclusion",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Buy Amphenol on the Dip After Robust Q4 Earnings and Solid Guidance",
+      "url": "/news/295489/buy-amphenol-on-the-dip-after-robust-q4-earnings-and-solid-guidance",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Zacks.com featured highlights include Arista Networks, Corning, Banco Bilbao Vizcaya Argentaria, The TJX and TE Connectivity",
+      "url": "/news/293070/zackscom-featured-highlights-include-arista-networks-corning-banco-bilbao-vizcaya-argentaria-the-tjx-and-te-connectivity",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TE Connectivity (TEL) Upgraded to Strong Buy: Here's What You Should Know",
+      "url": "/news/292311/te-connectivity-tel-upgraded-to-strong-buy-heres-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "5 Stocks With High ROE to Buy as Markets Bask in Economic Strength",
+      "url": "/news/292124/5-stocks-with-high-roe-to-buy-as-markets-bask-in-economic-strength",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "New Strong Buy Stocks for January 29th",
+      "url": "/news/291290/new-strong-buy-stocks-for-january-29th",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Best Income Stocks to Buy for January 29th",
+      "url": "/news/291195/best-income-stocks-to-buy-for-january-29th",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Unlocking TE Connectivity (TEL) International Revenues: Trends, Surprises, and Prospects",
+      "url": "/news/288441/unlocking-te-connectivity-tel-international-revenues-trends-surprises-and-prospects",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here Are Tuesdays Top Wall Street Analyst Research Calls: Affirm Holdings, Alcoa, Block, Coinbase Global,CoreWeave, Datadog, Intuitive Surgical, and More",
+      "url": "https://finance.yahoo.com/m/dcd35300-3bbb-30b5-a962-034964a21c29/here-are-tuesday%E2%80%99s-top-wall.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "TE Connectivity announces pricing of $750 million senior notes offerings",
+      "url": "/news/287552/te-connectivity-announces-pricing-of-750-million-senior-notes-offerings",
+      "publisher": "PR Newswire",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here is Why Growth Investors Should Buy TE Connectivity (TEL) Now",
+      "url": "/news/287338/here-is-why-growth-investors-should-buy-te-connectivity-tel-now",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Buy Amphenol Stock Before Q4 Earnings Report? Here's What to Know",
+      "url": "/news/286866/buy-amphenol-stock-before-q4-earnings-report-heres-what-to-know",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "This founder cracked firefighting  now hes creating an AI gold mine",
+      "url": "https://finance.yahoo.com/news/founder-cracked-firefighting-now-creating-232036347.html",
+      "publisher": "TechCrunch",
+      "date": "2026-01-25",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Consumer Tech News (Jan 19-23): Netflix & Warner Bros. Deal Sparks Trump Investment Criticism, OpenAI Revenue Surges Past $20B & More",
+      "url": "/news/286319/consumer-tech-news-jan-19-23-netflix-warner-bros-deal-sparks-trump-investment-criticism-openai-revenue-surges-past-20b-more",
+      "publisher": "Benzinga",
+      "date": "2026-01-25",
+      "sentiment": "negative"
+    },
+    {
+      "title": "TE Connectivity named to Fortune's World's Most Admired Companies list for ninth year",
+      "url": "/news/283814/te-connectivity-named-to-fortunes-worlds-most-admired-companies-list-for-ninth-year",
+      "publisher": "PR Newswire",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "2 Intriguing Stocks to Watch After Earnings: HAL,TEL",
+      "url": "/news/283230/2-intriguing-stocks-to-watch-after-earnings-haltel",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: TE Connectivity plc",
+      "url": "https://finance.yahoo.com/m/2c65e205-b021-3804-813b-bdad50e1274a/analyst-report%3A-te.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    }
+  ]
 }

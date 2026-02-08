@@ -6277,27 +6277,27 @@
   },
   "technical": {
     "close": 172.13999938964844,
-    "sma_20": 169.39050064086916,
-    "sma_50": 165.33970764160156,
+    "sma_20": 169.39050064086913,
+    "sma_50": 165.33970764160154,
     "sma_200": 159.57871704101566,
-    "trend_alignment": 0.5983386340580161,
+    "trend_alignment": 0.5983386340580162,
     "rsi": 58.1965836554449,
     "rsi_score": 0.16393167310889795,
     "macd_histogram": 0.031437088684733494,
     "macd_line": 1.1640270625482287,
     "macd_histogram_pct": 0.018262512371441282,
-    "bb_position": 0.8267070579201928,
-    "bb_upper": 173.59839680063152,
-    "bb_lower": 165.1826044811068,
-    "bb_width": 0.04968278792308037,
+    "bb_position": 0.8267070579201962,
+    "bb_upper": 173.5983968006315,
+    "bb_lower": 165.18260448110678,
+    "bb_width": 0.049682787923080375,
     "hist_volatility": 0.24494308278027985,
     "volume_ratio": 0.8443626723643342,
     "avg_volume_20d": 1263675.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 71.06224705227777,
+    "stoch_k": 71.06224705227775,
     "stoch_d": 57.57893100513236,
-    "trend_score": 59.833863405801615,
+    "trend_score": 59.83386340580162,
     "rsi_abs_score": 72.76239144118857,
     "macd_abs_score": 50.91312561857207,
     "momentum_score": 61.83775852988032,
@@ -6306,7 +6306,15 @@
     "technical_score": 60.019542902534695,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.10436287867614355,
+    "sentiment_pos": 0.1056,
+    "sentiment_neg": 0.0472,
+    "sentiment_neu": 0.8472500000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 55.22
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.07180202161031726,
@@ -6325,7 +6333,7 @@
     "quality_score": 58.10275,
     "growth_score": 47.575,
     "safety_score": 35.700450000000004,
-    "trend_score": 59.833863405801615,
+    "trend_score": 59.83386340580162,
     "momentum_score": 61.83775852988032,
     "volatility_score": 67.59028160915058,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 50.49727361666667,
     "catalyst_timeline": 55.65755230702236,
     "downside_control": 53.55960974137259,
-    "composite_score": 51.750125310153706,
+    "composite_score": 51.74623626485527,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 49.73489301388889,
     "technical_score": 60.019542902534695,
-    "sentiment_score": 50.0,
+    "sentiment_score": 55.22,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Investment Banking & Brokerage"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "5 Insightful Analyst Questions From Raymond James's Q4 Earnings Call",
+      "url": "/news/298772/5-insightful-analyst-questions-from-raymond-jamess-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Blackstone Stock, Alternative Managers, BDCs Dive as Software Woes Infect Private Credit",
+      "url": "https://finance.yahoo.com/m/3628e2bc-3672-3ede-bfba-50f8025a8a76/blackstone-stock%2C-alternative.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Raymond James launches dedicated ESOP advisory unit",
+      "url": "https://finance.yahoo.com/m/5cf34a73-96b2-3355-af10-98aad02ea6e1/raymond-james-launches.html",
+      "publisher": "Financial Planning",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Raymond James (RJF) Reports Mixed Q1 Fiscal 2026 Results With Solid Revenue Growth",
+      "url": "/news/296860/raymond-james-rjf-reports-mixed-q1-fiscal-2026-results-with-solid-revenue-growth",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Raymond James Lands $1B, Four-Advisor Team from Merrill",
+      "url": "https://finance.yahoo.com/m/3ccda564-73d8-3b2b-8821-28a059c8e7b4/raymond-james-lands-%241b%2C.html",
+      "publisher": "Wealth Management",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Raymond James Wealth Unit Shines in Weak Quarter for Investment Bank Business",
+      "url": "https://finance.yahoo.com/m/daedd129-7234-345f-a928-23e9bf5bff62/raymond-james-wealth-unit.html",
+      "publisher": "Barrons.com",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Raymond James Boosted Fiscal Q1 Recruiting Budget By 22%",
+      "url": "https://finance.yahoo.com/m/fc67853e-cf55-3d8a-a114-e81426c495eb/raymond-james-boosted-fiscal.html",
+      "publisher": "Wealth Management",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Raymond James Q1 Earnings Beat on Higher Revenues, IB Weakness Ails",
+      "url": "/news/291488/raymond-james-q1-earnings-beat-on-higher-revenues-ib-weakness-ails",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "RJF Q4 Deep Dive: Adviser Recruiting and Lending Fuel Growth Amid Market Pressures",
+      "url": "/news/292140/rjf-q4-deep-dive-adviser-recruiting-and-lending-fuel-growth-amid-market-pressures",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Raymond James Financial Inc (RJF) Q1 2026 Earnings Call Highlights: Record Revenues and ...",
+      "url": "https://finance.yahoo.com/news/raymond-james-financial-inc-rjf-050113756.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Raymond James Financial Q1 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/07f54acf-6017-323f-93eb-c030f256da03/raymond-james-financial-q1.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Raymond James Financial, Inc.",
+      "url": "https://finance.yahoo.com/m/67cfb9dd-250c-392c-9456-87667c6717fe/analyst-report%3A-raymond-james.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's What Key Metrics Tell Us About Raymond James Financial (RJF) Q1 Earnings",
+      "url": "/news/291022/heres-what-key-metrics-tell-us-about-raymond-james-financial-rjf-q1-earnings",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Raymond James (NYSE:RJF) Misses Q4 CY2025 Revenue Estimates",
+      "url": "/news/290883/raymond-james-nyse-rjf-misses-q4-cy2025-revenue-estimates",
+      "publisher": "StockStory",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Raymond James Financial, Inc. (RJF) Q1 Earnings and Revenues Top Estimates",
+      "url": "/news/290890/raymond-james-financial-inc-rjf-q1-earnings-and-revenues-top-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Raymond James Financial Reports Fiscal First Quarter of 2026 Results",
+      "url": "/news/290782/raymond-james-financial-reports-fiscal-first-quarter-of-2026-results",
+      "publisher": "GlobeNewswire",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Raymond James Beats Earnings Estimates. Client Assets Hit Record $1.8 Trillion.",
+      "url": "https://finance.yahoo.com/m/daedd129-7234-345f-a928-23e9bf5bff62/raymond-james-beats-earnings.html",
+      "publisher": "Barrons.com",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Raymond James Beat Earnings Estimates. Client Assets Hit Record $1.8 Trillion.",
+      "url": "https://www.barrons.com/advisor/articles/raymond-james-earnings-record-assets-2aa5614b?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Gold Rallies To $5,300, Memory Stocks Go Wild: What's Moving Markets Wednesday?",
+      "url": "/news/290536/gold-rallies-to-5300-memory-stocks-go-wild-whats-moving-markets-wednesday",
+      "publisher": "Benzinga",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Raymond James Launches Proprietary Digital AI Agent to Bolster Operational Excellence",
+      "url": "/news/289047/raymond-james-launches-proprietary-digital-ai-agent-to-bolster-operational-excellence",
+      "publisher": "GlobeNewswire",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    }
+  ]
 }

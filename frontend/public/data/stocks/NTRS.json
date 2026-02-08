@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 152.14999389648438,
     "sma_20": 148.6449996948242,
-    "sma_50": 142.06437408447263,
+    "sma_50": 142.0643740844726,
     "sma_200": 125.87487026214598,
-    "trend_alignment": 0.7347551130134171,
+    "trend_alignment": 0.7347551130134173,
     "rsi": 61.01429599327994,
     "rsi_score": 0.22028591986559876,
     "macd_histogram": -0.19242479994969042,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 59.28718460231261,
     "stoch_d": 56.05264570788232,
-    "trend_score": 73.47551130134171,
+    "trend_score": 73.47551130134174,
     "rsi_abs_score": 70.78999280470404,
     "macd_abs_score": 44.33823845434054,
     "momentum_score": 57.56411562952229,
@@ -6306,7 +6306,15 @@
     "technical_score": 60.72397000572555,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.5224080222696766,
+    "sentiment_pos": 0.29495,
+    "sentiment_neg": 0.0094,
+    "sentiment_neu": 0.6957,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 76.12
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.031876437725928325,
@@ -6325,7 +6333,7 @@
     "quality_score": 70.22111428571428,
     "growth_score": 57.51428571428571,
     "safety_score": 33.12325,
-    "trend_score": 73.47551130134171,
+    "trend_score": 73.47551130134174,
     "momentum_score": 57.56411562952229,
     "volatility_score": 57.0604096323317,
     "volume_score": 50.0,
@@ -6344,16 +6352,16 @@
     "current_ratio_score": 42.0,
     "earnings_visibility": 58.70331,
     "valuation_margin": 47.7029812,
-    "catalyst_timeline": 59.60081399114752,
+    "catalyst_timeline": 59.600813991147525,
     "downside_control": 47.799548944849754,
-    "composite_score": 53.61162703998179,
+    "composite_score": 53.607737994683355,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 54.26537338095238,
     "technical_score": 60.72397000572555,
-    "sentiment_score": 50.0,
+    "sentiment_score": 76.12,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Asset Management & Custody Banks"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Goldman Sachs Raises Northern Trust (NTRS) PT to $148 Despite Maintaining a Sell Rating",
+      "url": "/news/299110/goldman-sachs-raises-northern-trust-ntrs-pt-to-148-despite-maintaining-a-sell-rating",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "TD Cowen Maintains Buy Rating on Northern Trust (NTRS) After Strong Q4 Results",
+      "url": "/news/296872/td-cowen-maintains-buy-rating-on-northern-trust-ntrs-after-strong-q4-results",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Financial Advisors Who Integrate Direct Indexing Report Higher Client Retention and Wallet Share",
+      "url": "https://www.businesswire.com/news/home/20260202439526/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Northern Trust Asset Management Appoints Gijsbert de Lange as Chief Innovation Strategist",
+      "url": "https://www.businesswire.com/news/home/20260128771359/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "5 Must-Read Analyst Questions From Northern Trust's Q4 Earnings Call",
+      "url": "/news/291191/5-must-read-analyst-questions-from-northern-trusts-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Northern Trust Universe Data: Global Markets Deliver Steady Fourth Quarter Gains to U.S. Institutional Investors",
+      "url": "https://www.businesswire.com/news/home/20260128042844/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Northern Trust Corporation (NTRS) is a Top Momentum Stock for the Long-Term",
+      "url": "/news/290252/why-northern-trust-corporation-ntrs-is-a-top-momentum-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Northern Trust Appoints Katie Pries as Country Executive for Canada",
+      "url": "https://www.businesswire.com/news/home/20260128956709/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Northern Trust Corporation (NTRS) Is Up 2.10% in One Week: What You Should Know",
+      "url": "/news/287269/northern-trust-corporation-ntrs-is-up-210-in-one-week-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Northern Trust (NTRS) Upgraded to Strong Buy: Here's Why",
+      "url": "/news/287273/northern-trust-ntrs-upgraded-to-strong-buy-heres-why",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Northern Trust Corporation",
+      "url": "https://finance.yahoo.com/m/1c75c850-2ba3-3164-9cc0-2bbda7fefc7f/analyst-report%3A-northern.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Best Momentum Stocks to Buy for January 26th",
+      "url": "/news/287123/best-momentum-stocks-to-buy-for-january-26th",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Northern Trust Corporation (NTRS) is a Great Dividend Stock Right Now",
+      "url": "/news/285570/why-northern-trust-corporation-ntrs-is-a-great-dividend-stock-right-now",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "USB or NTRS: Which Is the Better Value Stock Right Now?",
+      "url": "/news/285548/usb-or-ntrs-which-is-the-better-value-stock-right-now",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Company News for Jan 23, 2026",
+      "url": "/news/285299/company-news-for-jan-23-2026",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NTRS Q4 Deep Dive: Wealth Management and AI Productivity Drive Outperformance",
+      "url": "/news/284920/ntrs-q4-deep-dive-wealth-management-and-ai-productivity-drive-outperformance",
+      "publisher": "StockStory",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Northern Trust Corporation",
+      "url": "https://finance.yahoo.com/m/3bcfa24b-951c-305d-ab52-6c898e12c0a6/analyst-report%3A-northern.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks Settle Higher as Global Tensions Cool and the Economy Expands",
+      "url": "https://finance.yahoo.com/m/dffe4b1e-be8d-3e45-8b5c-99550bc25c05/stocks-settle-higher-as.html",
+      "publisher": "Barchart",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Northern Trust Corp (NTRS) Q4 2025 Earnings Call Highlights: Strong Financial Performance and ...",
+      "url": "https://finance.yahoo.com/news/northern-trust-corp-ntrs-q4-210037355.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "NTRS Q4 Earnings Beat on Y/Y NII & AUM Growth Despite High Costs",
+      "url": "/news/284342/ntrs-q4-earnings-beat-on-yy-nii-aum-growth-despite-high-costs",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    }
+  ]
 }

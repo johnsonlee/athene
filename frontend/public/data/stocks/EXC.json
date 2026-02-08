@@ -6306,7 +6306,15 @@
     "technical_score": 58.31572541147348,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.35857838975352846,
+    "sentiment_pos": 0.16125,
+    "sentiment_neg": 0.0378,
+    "sentiment_neu": 0.8009999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 67.93
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.11662531017369732,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 67.32775831999999,
     "catalyst_timeline": 56.19042929557341,
     "downside_control": 50.68103576220637,
-    "composite_score": 62.84263306579005,
+    "composite_score": 62.83874402049161,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 61.80490582619048,
     "technical_score": 58.31572541147348,
-    "sentiment_score": 50.0,
+    "sentiment_score": 67.93,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Utilities",
     "industry": "Electric Utilities"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "NEW REPORT: Utility-Generated Power Can Save Customers $20B, Reduce Risks of Outages",
+      "url": "https://www.businesswire.com/news/home/20260206542697/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "ComEd Announces $70 Million in EV Rebates Available to Boost EV Adoption Across Northern Illinois",
+      "url": "https://www.businesswire.com/news/home/20260206939565/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Exelon (EXC) Expected to Beat Earnings Estimates: What to Know Ahead of Q4 Release",
+      "url": "/news/301701/exelon-exc-expected-to-beat-earnings-estimates-what-to-know-ahead-of-q4-release",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Exelon (EXC) is a Strong Momentum Stock",
+      "url": "/news/301654/heres-why-exelon-exc-is-a-strong-momentum-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Walker-Miller Energy Services and ComEd Honored with Prestigious Industry Award for Energy Saving Kit Marketing and Portal Campaign",
+      "url": "/news/297959/walker-miller-energy-services-and-comed-honored-with-prestigious-industry-award-for-energy-saving-kit-marketing-and-portal-campaign",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "ComEd and Walker-Miller Honored with Prestigious Industry Award for Energy Saving Kit Marketing and Portal Campaign",
+      "url": "https://www.businesswire.com/news/home/20260202977612/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why Exelon (EXC) is a Strong Value Stock",
+      "url": "/news/295735/heres-why-exelon-exc-is-a-strong-value-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Atmos Energy to Release Q1 Earnings: Here's What You Need to Know",
+      "url": "/news/295712/atmos-energy-to-release-q1-earnings-heres-what-you-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "ComEd Reminds Income-Eligible Customers to Take Advantage of Latest Program Designed to Provide Bill Relief",
+      "url": "https://www.businesswire.com/news/home/20260130358144/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Are Wall Street Analysts Bullish on Exelon Stock?",
+      "url": "https://finance.yahoo.com/m/6cb3cb8b-f921-364b-8593-e68ba089a2a8/are-wall-street-analysts.html",
+      "publisher": "Barchart",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Exelon (EXC) Downgraded to 'Peer Perform' at Wolfe Research",
+      "url": "/news/291926/exelon-exc-downgraded-to-peer-perform-at-wolfe-research",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ComEd Keeps Power Affordable and Reliable for Customers, While Delivering Clean Energy Advancements in 2025",
+      "url": "https://www.businesswire.com/news/home/20260127152585/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Winter Storm Fern To Impact Energy, Utility Stocks-Antero Resources, Energy Transfer, Exelon In Focus",
+      "url": "/news/286494/winter-storm-fern-to-impact-energy-utility-stocks-antero-resources-energy-transfer-exelon-in-focus",
+      "publisher": "Benzinga",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "A 'Crippling' Winter Storm is Coming. Utilities Are at Risk.",
+      "url": "https://www.barrons.com/articles/winter-storm-utilities-risk-data-center-50ff0ce4?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-22",
+      "sentiment": "negative"
+    },
+    {
+      "title": "PJM cost concerns bleed into transmission planning",
+      "url": "https://finance.yahoo.com/m/57eb9a8f-5e15-3995-9ecf-7a092b1ca6aa/pjm-cost-concerns-bleed-into.html",
+      "publisher": "Utility Dive",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Earnings Preview: What To Expect From Exelons Report",
+      "url": "https://finance.yahoo.com/m/71986158-2661-30cb-9679-49422d06d0f4/earnings-preview%3A-what-to.html",
+      "publisher": "Barchart",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Constellation Energy: Current Price Levels Leave No Room for Error",
+      "url": "https://finance.yahoo.com/news/constellation-energy-current-price-levels-191601152.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-18",
+      "sentiment": "negative"
+    },
+    {
+      "title": "ComEd Files Four-Year Grid Plan to Sustain Reliability, Maintain Affordability and Adapt to Rising Energy Demands",
+      "url": "https://www.businesswire.com/news/home/20260116231757/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-16",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Exelon Corporation",
+      "url": "https://finance.yahoo.com/m/fba004c2-171b-3c4c-861e-ab05e8628eb4/analyst-report%3A-exelon.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Will Exelon (EXC) Beat Estimates Again in Its Next Earnings Report?",
+      "url": "/news/276570/will-exelon-exc-beat-estimates-again-in-its-next-earnings-report",
+      "publisher": "Zacks",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    }
+  ]
 }

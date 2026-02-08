@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 63.91999816894531,
     "sma_20": 63.930999946594234,
-    "sma_50": 63.924838180542004,
+    "sma_50": 63.924838180542,
     "sma_200": 66.56209106445313,
-    "trend_alignment": 0.4602669930558956,
+    "trend_alignment": 0.4602669930558957,
     "rsi": 51.227271904458455,
     "rsi_score": 0.024545438089169095,
     "macd_histogram": -0.0012292767073772137,
@@ -6295,18 +6295,26 @@
     "avg_volume_20d": 14240400.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 50.38122022885679,
-    "stoch_d": 45.96351173698582,
-    "trend_score": 46.02669930558956,
+    "stoch_k": 50.3812202288568,
+    "stoch_d": 45.96351173698583,
+    "trend_score": 46.02669930558957,
     "rsi_abs_score": 72.35909033312092,
     "macd_abs_score": 49.90384255768217,
     "momentum_score": 61.13146644540154,
     "volatility_score": 54.455432714950106,
     "volume_score": 50.0,
-    "technical_score": 53.03853626828735,
+    "technical_score": 53.03853626828736,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.08501381610882913,
+    "sentiment_pos": 0.07825,
+    "sentiment_neg": 0.03305,
+    "sentiment_neu": 0.8886499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 54.25
+  },
   "analyst": {
     "revision_momentum": 0.045454545454545456,
     "target_upside": 0.17021276595744672,
@@ -6325,7 +6333,7 @@
     "quality_score": 61.38500129999999,
     "growth_score": 25.75,
     "safety_score": 54.760949999999994,
-    "trend_score": 46.02669930558956,
+    "trend_score": 46.02669930558957,
     "momentum_score": 61.13146644540154,
     "volatility_score": 54.455432714950106,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 44.343607799999994,
     "catalyst_timeline": 54.13380110121129,
     "downside_control": 57.88545740724251,
-    "composite_score": 47.33479437202462,
+    "composite_score": 47.33090532672618,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 47.89653022333333,
-    "technical_score": 53.03853626828735,
-    "sentiment_score": 50.0,
+    "technical_score": 53.03853626828736,
+    "sentiment_score": 54.25,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Apparel, Accessories & Luxury Goods"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Nike (NKE) Rises But Trails Market: What Investors Should Know",
+      "url": "/news/303429/nike-nke-rises-but-trails-market-what-investors-should-know",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TN layoffs increased more than 67% in January from a year earlier",
+      "url": "https://finance.yahoo.com/m/0f58e112-64e1-394f-a81b-e21498bbc008/tn-layoffs-increased-more.html",
+      "publisher": "The Tennessean",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Nikes EEOC Probe Reflects How Trumps Administration Is Challenging Diversity Initiatives",
+      "url": "https://finance.yahoo.com/m/217f3168-b4d5-3cc2-a229-f80bb53964a7/nike%E2%80%99s-eeoc-probe-reflects.html",
+      "publisher": "Footwear News",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Nike North America sales growth and inventory reset support turnaround: analysts",
+      "url": "https://finance.yahoo.com/m/42ceee2c-4e6f-3b87-b3e6-7240b0efe9a0/nike-north-america-sales.html",
+      "publisher": "Proactive",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Nike Faces U.S. Probe Over DEI Practices",
+      "url": "https://finance.yahoo.com/news/nike-faces-u-probe-over-183705104.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nike Rises 5% as EEOC Probes Company's DEI Practices",
+      "url": "https://finance.yahoo.com/news/nike-rises-5-eeoc-probes-111628131.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nike Under Probe For Alleged Discrimination Against White Employees",
+      "url": "/news/300756/nike-under-probe-for-alleged-discrimination-against-white-employees",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nike faces federal probe over allegations of discrimination against white workers",
+      "url": "https://www.marketwatch.com/story/nike-faces-federal-probe-over-allegations-of-discrimination-against-white-workers-f09b909a?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is It Really a Good Sign When Executives Buy Their Own Stock? We Ran the Numbers",
+      "url": "https://finance.yahoo.com/m/cbb50b6f-5524-35c5-b207-00ea51b9d377/is-it-really-a-good-sign-when.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Nike Calls EEOC Action Over White Worker Discrimination Claims a Surprising and Unusual Escalation",
+      "url": "https://finance.yahoo.com/m/b7f4f89d-2484-3912-93ff-39520f027cb0/nike-calls-eeoc-action-over.html",
+      "publisher": "Footwear News",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Nike Is Investigated for Alleged Discrimination Against White Workers",
+      "url": "https://www.wsj.com/lifestyle/workplace/nike-subpoenaed-over-alleged-discrimination-against-white-workers-e8f1bb0e?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Amazon, UPS and Other Major Companies Are Making Big Job Cuts. Is AI To Blame?",
+      "url": "https://finance.yahoo.com/m/f9df8c6a-06cc-3f81-ac3c-c2a67767336a/amazon%2C-ups-and-other-major.html",
+      "publisher": "Investopedia",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Nikes diversity initiatives under EEOC scrutiny for alleged discrimination against White workers",
+      "url": "https://finance.yahoo.com/m/924c993b-2408-39ac-8484-ae23fcdb7557/nike%E2%80%99s-diversity-initiatives.html",
+      "publisher": "Fox Business",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nike Subpoenaed Over Alleged Discrimination Against White Workers",
+      "url": "https://www.wsj.com/business/retail/nike-subpoenaed-over-alleged-discrimination-against-white-workers-e8f1bb0e?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Can NIKE Reignite Growth Amid Ongoing Wholesale Reset Pressures?",
+      "url": "/news/300059/can-nike-reignite-growth-amid-ongoing-wholesale-reset-pressures",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Dow is outpacing the S&P 500 and Nasdaq as tech selloff picks up steam",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-sp500-nasdaq-up-after-software-dive-amd-down-alphabet-gold/card/the-dow-is-outpacing-the-s-p-500-and-nasdaq-as-tech-selloff-picks-up-steam-9OJTt00oXp4ON70GSlpK?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Claires names chief brand officer",
+      "url": "https://finance.yahoo.com/m/b75a0965-d3fd-3569-8dae-0b21ce71f472/claire%E2%80%99s-names-chief-brand.html",
+      "publisher": "Retail Dive",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nike Revives ACG Line as Standalone Outdoor Brand",
+      "url": "https://finance.yahoo.com/news/nike-revives-acg-line-standalone-061011704.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "2 Volatile Stocks for Long-Term Investors and 1 We Ignore",
+      "url": "/news/296825/2-volatile-stocks-for-long-term-investors-and-1-we-ignore",
+      "publisher": "StockStory",
+      "date": "2026-02-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "U.S. Olympic gold medalist went from $200,000-a-year sponsorship at 20 years old to $12-an-hour internship by 30",
+      "url": "https://finance.yahoo.com/news/u-olympic-gold-medalist-went-134049283.html",
+      "publisher": "Fortune",
+      "date": "2026-02-01",
+      "sentiment": "neutral"
+    }
+  ]
 }

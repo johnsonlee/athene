@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 195.6199951171875,
     "sma_20": 205.6349998474121,
-    "sma_50": 212.092200012207,
-    "sma_200": 237.67845741271972,
-    "trend_alignment": 0.2792903028138623,
+    "sma_50": 212.09220001220703,
+    "sma_200": 237.67845741271975,
+    "trend_alignment": 0.27929030281386213,
     "rsi": 42.69928092777072,
     "rsi_score": -0.14601438144458556,
     "macd_histogram": -1.4635356159881328,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 53.96769079426225,
     "stoch_d": 40.86290507604899,
-    "trend_score": 27.92903028138623,
+    "trend_score": 27.929030281386215,
     "rsi_abs_score": 65.23913711332487,
     "macd_abs_score": 31.277714554858832,
     "momentum_score": 48.25842583409185,
     "volatility_score": 23.268184328481137,
     "volume_score": 50.0,
-    "technical_score": 37.509873700339654,
+    "technical_score": 37.50987370033965,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.03802645767626905,
+    "sentiment_pos": 0.06895,
+    "sentiment_neg": 0.04925,
+    "sentiment_neu": 0.8817999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.9
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.2652080564359472,
@@ -6325,7 +6333,7 @@
     "quality_score": 59.11,
     "growth_score": 54.285714285714285,
     "safety_score": 40.49328349099317,
-    "trend_score": 27.92903028138623,
+    "trend_score": 27.929030281386215,
     "momentum_score": 48.25842583409185,
     "volatility_score": 23.268184328481137,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 46.662455566666665,
     "catalyst_timeline": 47.01952393993959,
     "downside_control": 34.043220172921146,
-    "composite_score": 44.69803984751872,
+    "composite_score": 44.694150802220285,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 51.87513157518276,
-    "technical_score": 37.509873700339654,
-    "sentiment_score": 50.0,
+    "technical_score": 37.50987370033965,
+    "sentiment_score": 51.9,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Research & Consulting Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Equifax Inc. (EFX) Unveils Credit Card Origination and Employment Insight Solutions",
+      "url": "/news/303720/equifax-inc-efx-unveils-credit-card-origination-and-employment-insight-solutions",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Equifax Inc.",
+      "url": "https://finance.yahoo.com/m/2bbe4fd9-149f-3a0f-a8ca-260af5c2d800/analyst-report%3A-equifax-inc..html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dive Deposits: CFPB tamps down on complaint portal",
+      "url": "https://finance.yahoo.com/m/750008ef-a27f-3508-be10-cfa21adffb7c/dive-deposits%3A-cfpb-tamps.html",
+      "publisher": "Banking Dive",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Why one Anthropic update wiped billions off software stocks",
+      "url": "https://finance.yahoo.com/m/f7268c8b-74af-3150-9e60-a163fd211795/why-one-anthropic-update.html",
+      "publisher": "FastCompany",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "IQVIA Q4 Earnings & Revenues Beat Estimates, Increase Y/Y",
+      "url": "/news/301900/iqvia-q4-earnings-revenues-beat-estimates-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Morning Movers: Eli Lilly rises, Boston Scientific falls after quarterly results",
+      "url": "https://finance.yahoo.com/news/morning-movers-eli-lilly-rises-140052306.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Software ate the world. Now, Wall Street is worried AI will eat software.",
+      "url": "https://www.marketwatch.com/story/software-ate-the-world-now-wall-street-is-worried-ai-will-eat-software-88661ed5?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Equifax Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/51a9262e-cf76-3d14-a04a-d241eb3e4f77/equifax-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "EFX Q4 Deep Dive: AI-Powered Expansion and Government Momentum Offset Margin Headwinds",
+      "url": "/news/300885/efx-q4-deep-dive-ai-powered-expansion-and-government-momentum-offset-margin-headwinds",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Salesforce stock gets brutal reality check amid software slump",
+      "url": "https://finance.yahoo.com/m/6e10af87-2c34-363a-a121-d6e1f70d76f3/salesforce-stock-gets-brutal.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Gen and Equifax Expand Partnership to Deliver Comprehensive Solutions for Consumers' Financial Lives",
+      "url": "/news/300193/gen-and-equifax-expand-partnership-to-deliver-comprehensive-solutions-for-consumers-financial-lives",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Equifax Inc (EFX) Q4 2025 Earnings Call Highlights: Strong Financial Performance Amid Market ...",
+      "url": "https://finance.yahoo.com/news/equifax-inc-efx-q4-2025-210500721.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Equifax Inc.",
+      "url": "https://finance.yahoo.com/m/2e59fc04-11a0-3285-bce9-791d8d13e835/analyst-report%3A-equifax-inc..html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Equifax (EFX) Q4 2025 Earnings Call Transcript",
+      "url": "/news/299718/equifax-efx-q4-2025-earnings-call-transcript",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Equifax Q4 Earnings Beat Estimates, Revenues Jump 9% Y/Y",
+      "url": "/news/299775/equifax-q4-earnings-beat-estimates-revenues-jump-9-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Equifax (EFX) Reports Q4 Earnings: What Key Metrics Have to Say",
+      "url": "/news/299509/equifax-efx-reports-q4-earnings-what-key-metrics-have-to-say",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why the AI-driven software stock crash probably isn't over",
+      "url": "https://finance.yahoo.com/news/why-the-ai-driven-software-stock-crash-probably-isnt-over-125809330.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Equifax (EFX) Beats Q4 Earnings and Revenue Estimates",
+      "url": "/news/299192/equifax-efx-beats-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Equifax Revenue Rises Despite Weak Hiring, Mortgage Markets",
+      "url": "https://www.wsj.com/business/earnings/equifax-revenue-rises-despite-weak-hiring-mortgage-markets-0a9f2c39?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Equifax: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/equifax-q4-earnings-snapshot-114724718.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    }
+  ]
 }

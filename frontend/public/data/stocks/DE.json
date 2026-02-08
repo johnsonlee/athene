@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 583.1099853515625,
     "sma_20": 530.1034957885743,
-    "sma_50": 495.9023376464844,
+    "sma_50": 495.9023376464845,
     "sma_200": 488.35727996826176,
-    "trend_alignment": 0.7771449721247149,
+    "trend_alignment": 0.7771449721247147,
     "rsi": 79.88712404814676,
     "rsi_score": 0.5977424809629351,
     "macd_histogram": 5.488340002774635,
@@ -6296,8 +6296,8 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 94.70380355489789,
-    "stoch_d": 93.56412543361495,
-    "trend_score": 77.71449721247149,
+    "stoch_d": 93.56412543361496,
+    "trend_score": 77.71449721247147,
     "rsi_abs_score": 30.22575190370648,
     "macd_abs_score": 71.61827993169847,
     "momentum_score": 50.922015917702474,
@@ -6306,7 +6306,15 @@
     "technical_score": 57.54084048964736,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.07340120726958432,
+    "sentiment_pos": 0.038900000000000004,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.9611000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 53.67
+  },
   "analyst": {
     "revision_momentum": 0.14285714285714285,
     "target_upside": -0.09108058513831012,
@@ -6325,7 +6333,7 @@
     "quality_score": 67.85251368571429,
     "growth_score": 44.65357142857143,
     "safety_score": 49.99338257718476,
-    "trend_score": 77.71449721247149,
+    "trend_score": 77.71449721247147,
     "momentum_score": 50.922015917702474,
     "volatility_score": 44.74943275297588,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 43.639592574999995,
     "catalyst_timeline": 56.77594435990636,
     "downside_control": 46.71242229952409,
-    "composite_score": 49.486845258104445,
+    "composite_score": 49.48295621280601,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 53.24998395746076,
     "technical_score": 57.54084048964736,
-    "sentiment_score": 50.0,
+    "sentiment_score": 53.67,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Agricultural & Farm Machinery"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "From AI Darlings To Dow Dinosaurs: Investors Flee Software For Old-Economy Stocks",
+      "url": "/news/303569/from-ai-darlings-to-dow-dinosaurs-investors-flee-software-for-old-economy-stocks",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Traders Chase AI Resistant Stocks During Slide in Tech",
+      "url": "https://finance.yahoo.com/news/traders-chase-ai-resistant-stocks-110000701.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here is What to Know Beyond Why Deere & Company (DE) is a Trending Stock",
+      "url": "/news/302782/here-is-what-to-know-beyond-why-deere-company-de-is-a-trending-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What AGCO's Upbeat 2026 Outlook Means for Deere Stock",
+      "url": "https://www.barrons.com/articles/agco-earnings-stock-price-7458ec81?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Deere (DE) Soars 4.1%: Is Further Upside Left in the Stock?",
+      "url": "/news/301280/deere-de-soars-41-is-further-upside-left-in-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Revisiting Stock Picks Berkshire Hathaway, Deere, Vita Coco. What the Charts Say.",
+      "url": "https://www.barrons.com/articles/revisiting-stock-picks-berkshire-hathaway-deere-vita-coco-charts-12c2f711?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Farm Machinery Deere Stock Gets RS Rating Lift",
+      "url": "https://www.investors.com/news/farm-machinery-deer-stock-gets-rs-rating-lift?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Deere to Announce First Quarter 2026 Financial Results",
+      "url": "/news/299643/deere-to-announce-first-quarter-2026-financial-results",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why the Market Dipped But Deere (DE) Gained Today",
+      "url": "/news/298328/why-the-market-dipped-but-deere-de-gained-today",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Deere to open two facilities in $20B US manufacturing drive",
+      "url": "https://finance.yahoo.com/m/ad0a2d29-47ae-3cfe-8b96-aace44360295/deere-to-open-two-facilities.html",
+      "publisher": "Supply Chain Dive",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Five AI Value Stocks for Investors to Consider",
+      "url": "https://www.barrons.com/articles/five-ai-value-stocks-for-investors-to-consider-f5ea4c83?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Deere calls back nearly 100 laid-off Iowa employees after Trump visit",
+      "url": "https://finance.yahoo.com/m/c462bc79-79c2-3643-8fe4-6845349ea68a/deere-calls-back-nearly-100.html",
+      "publisher": "The Des Moines Register",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "John Deere plans to open two new facilities in US",
+      "url": "https://finance.yahoo.com/m/eae12d50-0c7c-3a96-8115-3d813be55e99/john-deere%C2%A0plans%C2%A0to-open%C2%A0two.html",
+      "publisher": "World Construction Network",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Deere & Co Invests $70 Million In North Carolina Facility As Trump Hails 'Only Excavator Entirely Made' In US",
+      "url": "/news/289465/deere-co-invests-70-million-in-north-carolina-facility-as-trump-hails-only-excavator-entirely-made-in-us",
+      "publisher": "Benzinga",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Deere to Open Two New U.S. Facilities",
+      "url": "https://www.wsj.com/business/deere-to-open-two-new-u-s-facilities-ef1875fd?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "John Deere Announces Major Expansion with Two New U.S. Facilities Coming",
+      "url": "/news/289142/john-deere-announces-major-expansion-with-two-new-us-facilities-coming",
+      "publisher": "PR Newswire",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Trump notes $70 million factory investment by tractor maker Deere in North Carolina",
+      "url": "https://finance.yahoo.com/news/trump-notes-70-million-factory-225413012.html",
+      "publisher": "Reuters",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Gold and Silver Arent the Only Hot Commodities. Agricultural Stocks to Consider.",
+      "url": "https://finance.yahoo.com/m/6c849133-d9fd-364d-8e31-09fedecbe2d9/gold-and-silver-aren%E2%80%99t-the.html",
+      "publisher": "Barrons.com",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Otis Stock to Report Q4 Earnings: Here's What You Need to Know",
+      "url": "/news/288816/otis-stock-to-report-q4-earnings-heres-what-you-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Parker-Hannifin Gears Up to Report Q2 Earnings: What's in the Offing?",
+      "url": "/news/288614/parker-hannifin-gears-up-to-report-q2-earnings-whats-in-the-offing",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    }
+  ]
 }

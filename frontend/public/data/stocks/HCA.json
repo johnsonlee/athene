@@ -6306,7 +6306,15 @@
     "technical_score": 61.254621070565214,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.22594673849112926,
+    "sentiment_pos": 0.15184999999999998,
+    "sentiment_neg": 0.02295,
+    "sentiment_neu": 0.8252,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 61.3
+  },
   "analyst": {
     "revision_momentum": -0.06666666666666667,
     "target_upside": 0.08832147341984094,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 75.912341125,
     "catalyst_timeline": 63.90857965347206,
     "downside_control": 48.96001376177796,
-    "composite_score": 67.71075466540644,
+    "composite_score": 67.706865620108,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 66.70128349383529,
     "technical_score": 61.254621070565214,
-    "sentiment_score": 50.0,
+    "sentiment_score": 61.3,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Health Care Facilities"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Diamond Hill Capital's Strategic Moves: HCA Healthcare Inc. Reduced by 1.25%",
+      "url": "https://finance.yahoo.com/news/diamond-hill-capitals-strategic-moves-220334141.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Centene Incurs Q4 Loss, Revenues Up YoY due to PDP Business Strength",
+      "url": "/news/303215/centene-incurs-q4-loss-revenues-up-yoy-due-to-pdp-business-strength",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ensign Group Q4 Earnings Beat Estimates on Growing Occupancy",
+      "url": "/news/303100/ensign-group-q4-earnings-beat-estimates-on-growing-occupancy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why HCA Healthcare (HCA) is a Top Momentum Stock for the Long-Term",
+      "url": "/news/297624/why-hca-healthcare-hca-is-a-top-momentum-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "5 Insightful Analyst Questions From HCA Healthcare's Q4 Earnings Call",
+      "url": "/news/296734/5-insightful-analyst-questions-from-hca-healthcares-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "HCA Healthcare, Inc. (HCA): A Bull Case Theory",
+      "url": "/news/296418/hca-healthcare-inc-hca-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why HCA Healthcare (HCA) is a Top Value Stock for the Long-Term",
+      "url": "/news/295731/why-hca-healthcare-hca-is-a-top-value-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why HCA Healthcare (HCA) is a Top Stock for the Long-Term",
+      "url": "/news/295683/why-hca-healthcare-hca-is-a-top-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Investors Need to Take Advantage of These 2 Medical Stocks Now",
+      "url": "/news/295571/why-investors-need-to-take-advantage-of-these-2-medical-stocks-now",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Forget AI Stocks: This Hospital Chain Is the Real Winner of AI-Enhanced Healthcare",
+      "url": "/news/294751/forget-ai-stocks-this-hospital-chain-is-the-real-winner-of-ai-enhanced-healthcare",
+      "publisher": "Motley Fool",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "RBC Capital Boosts HCA Healthcare (HCA) PT to $555 on Robust 2026 Guidance",
+      "url": "/news/294399/rbc-capital-boosts-hca-healthcare-hca-pt-to-555-on-robust-2026-guidance",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Top Research Reports for Meta, Palantir and Amphenol",
+      "url": "/news/294326/top-research-reports-for-meta-palantir-and-amphenol",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why HCA Healthcare (HCA) is a Strong Growth Stock",
+      "url": "/news/293655/heres-why-hca-healthcare-hca-is-a-strong-growth-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "ResMed Q2 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/2fdae2ce-4ae3-3583-bef9-7da4beb18b13/resmed-q2-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "HCA Healthcare price target raised to $555 from $525 at RBC Capital",
+      "url": "https://finance.yahoo.com/news/hca-healthcare-price-target-raised-151103087.html",
+      "publisher": "TipRanks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "HCA Healthcare Hospitals Named on America's 50 Best Hospitals List for 2026 by Healthgrades",
+      "url": "https://www.businesswire.com/news/home/20260129695092/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "HCA could lose $1B from ACA subsidy lapse, Medicaid state payment decline",
+      "url": "https://finance.yahoo.com/m/ed1de076-e53c-38eb-8422-23d60e1b5ada/hca-could-lose-%241b-from-aca.html",
+      "publisher": "Healthcare Dive",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Hospital Operator HCA Healthcare Is Set For Solid Growth, Higher Value-Analyst",
+      "url": "/news/290559/hospital-operator-hca-healthcare-is-set-for-solid-growth-higher-value-analyst",
+      "publisher": "Benzinga",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stock Market News for Jan 28, 2026",
+      "url": "/news/289900/stock-market-news-for-jan-28-2026",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "HCA Q4 Deep Dive: Cost Discipline, Outpatient Investments, and Policy Headwinds Define Outlook",
+      "url": "/news/289441/hca-q4-deep-dive-cost-discipline-outpatient-investments-and-policy-headwinds-define-outlook",
+      "publisher": "StockStory",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    }
+  ]
 }

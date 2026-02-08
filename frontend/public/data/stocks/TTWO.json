@@ -6277,19 +6277,19 @@
   },
   "technical": {
     "close": 195.58999633789062,
-    "sma_20": 230.25550003051762,
+    "sma_20": 230.2555000305176,
     "sma_50": 241.58160064697267,
-    "sma_200": 239.39365005493158,
-    "trend_alignment": 0.2191747402096813,
+    "sma_200": 239.3936500549316,
+    "trend_alignment": 0.21917474020968122,
     "rsi": 18.912203110301107,
     "rsi_score": -0.6217559377939779,
     "macd_histogram": -5.013604956458295,
     "macd_line": -13.168462177958617,
     "macd_histogram_pct": -2.5633238152922013,
-    "bb_position": 0.06554107828743129,
+    "bb_position": 0.06554107828743162,
     "bb_upper": 270.1505303316345,
-    "bb_lower": 190.36046972940073,
-    "bb_width": 0.34652835911263163,
+    "bb_lower": 190.3604697294007,
+    "bb_width": 0.3465283591126318,
     "hist_volatility": 0.3853103503680303,
     "volume_ratio": 1.1800115821878143,
     "avg_volume_20d": 2624720.0,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 7.541320118220018,
     "stoch_d": 6.990709007570074,
-    "trend_score": 21.91747402096813,
+    "trend_score": 21.917474020968122,
     "rsi_abs_score": 38.91220311030111,
     "macd_abs_score": 20.0,
     "momentum_score": 29.456101555150553,
     "volatility_score": 31.165746812478282,
     "volume_score": 50.0,
-    "technical_score": 31.645222035331262,
+    "technical_score": 31.64522203533126,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.1609528422538729,
+    "sentiment_pos": 0.09535,
+    "sentiment_neg": 0.02255,
+    "sentiment_neu": 0.8821,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 58.05
+  },
   "analyst": {
     "revision_momentum": 0.14285714285714285,
     "target_upside": 0.4315660309831791,
@@ -6325,7 +6333,7 @@
     "quality_score": 10.0,
     "growth_score": 61.45,
     "safety_score": 43.41012470719201,
-    "trend_score": 21.91747402096813,
+    "trend_score": 21.917474020968122,
     "momentum_score": 29.456101555150553,
     "volatility_score": 31.165746812478282,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 41.6230595,
     "catalyst_timeline": 40.5377810884234,
     "downside_control": 42.301380727950544,
-    "composite_score": 33.65543715770264,
+    "composite_score": 33.65154811240421,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 38.85207452477174,
-    "technical_score": 31.645222035331262,
-    "sentiment_score": 50.0,
+    "technical_score": 31.64522203533126,
+    "sentiment_score": 58.05,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Communication Services",
     "industry": "Interactive Home Entertainment"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Jim Cramer on Take-Two: \"I Do Think That You're Getting a Chance to Buy It\"",
+      "url": "/news/303484/jim-cramer-on-take-two-i-do-think-that-youre-getting-a-chance-to-buy-it",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Top Analyst Reports for AMD, Constellation Energy & Freeport-McMoRan",
+      "url": "/news/303417/top-analyst-reports-for-amd-constellation-energy-freeport-mcmoran",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Take-Two, Mondelez Get Analyst Attention",
+      "url": "https://www.barrons.com/articles/take-two-mondelez-get-analyst-attention-cb192831?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Week Ahead: Inflation Data Hits Amid Earnings Season",
+      "url": "/news/301191/the-week-ahead-inflation-data-hits-amid-earnings-season",
+      "publisher": "Schaeffer's Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Wells Fargo Raises Take-Two Interactive (TTWO) PT To $301 Following Q3 Bookings Beat",
+      "url": "/news/301036/wells-fargo-raises-take-two-interactive-ttwo-pt-to-301-following-q3-bookings-beat",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Take-Two Sees AI As Production Aid, Not Business Threat",
+      "url": "https://www.investors.com/news/technology/take-two-ai-not-business-threat-ceo-strauss-zelnick?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Take-Two (TTWO) Shares Are Sliding Today",
+      "url": "/news/300103/why-take-two-ttwo-shares-are-sliding-today",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Nasdaq sinks as AMD fuels further tech slide",
+      "url": "https://finance.yahoo.com/m/db324ea2-bb9f-3379-8672-1d488ac2c2ce/nasdaq-sinks-as-amd-fuels.html",
+      "publisher": "Proactive",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Take-Two Misses Q3 Earnings Estimates, Raises FY26 Sales View",
+      "url": "/news/299901/take-two-misses-q3-earnings-estimates-raises-fy26-sales-view",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Take-Two Stock Drops Despite Raised Outlook. Why It Could Be a Buying Opportunity.",
+      "url": "https://finance.yahoo.com/m/fc0a75ce-ed39-370c-b72a-fdc346a57c95/take-two-stock-drops-despite.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Take-Two Interactive raises 2026 guidance as Q3 bookings surge",
+      "url": "https://finance.yahoo.com/m/31c1bb8f-338b-3da9-a827-449cb3261277/take-two-interactive-raises.html",
+      "publisher": "Proactive",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Software Stocks Slide Again as AI Threats Rattle Investors",
+      "url": "https://finance.yahoo.com/news/software-stocks-now-sentenced-trial-094443717.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stock Index Futures Steady After Tech-Led Selloff, U.S. ADP Jobs Report and Alphabet Earnings in Focus",
+      "url": "https://finance.yahoo.com/m/bf825e59-c634-35ae-ad25-5c90052b8217/stock-index-futures-steady.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AMD shares dip, Super Micro's pop after earnings, and other early movers",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-sp500-nasdaq-up-after-software-dive-amd-down-alphabet-gold/card/amd-shares-dip-super-micro-s-pop-after-earnings-and-other-early-movers-JeLwuDOpjzCjWGprHeco?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "These Stocks Are Todays Movers: AMD, Super Micro, Enphase, Alphabet, Chipotle, Silicon Labs, Take-Two, Novo Nordisk, and More",
+      "url": "https://finance.yahoo.com/m/3acfa691-aa38-35b3-b0c2-a3a1f63535ba/these-stocks-are-today%E2%80%99s.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "TTWO Q4 Deep Dive: Mobile and Franchise Momentum Outpace Analyst Expectations",
+      "url": "/news/298818/ttwo-q4-deep-dive-mobile-and-franchise-momentum-outpace-analyst-expectations",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Take-Two Interactive Software Inc (TTWO) Q3 2026 Earnings Call Highlights: Surpassing Guidance ...",
+      "url": "https://finance.yahoo.com/news/two-interactive-software-inc-ttwo-050259188.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Take-Two Interactive Software, Inc.",
+      "url": "https://finance.yahoo.com/m/64db97ad-db9f-3f6f-872a-f8e260753722/analyst-report%3A-take-two.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Take-Two Interactive Software Q3 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/b17123b7-9ccd-3360-812f-4ecfebeab6b2/take-two-interactive-software.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Take-Two (TTWO) Q3 Earnings: How Key Metrics Compare to Wall Street Estimates",
+      "url": "/news/298398/take-two-ttwo-q3-earnings-how-key-metrics-compare-to-wall-street-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    }
+  ]
 }

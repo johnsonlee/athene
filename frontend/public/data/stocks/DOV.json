@@ -6306,7 +6306,15 @@
     "technical_score": 60.44218696530861,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.1853927881208956,
+    "sentiment_pos": 0.0844,
+    "sentiment_neg": 0.00435,
+    "sentiment_neu": 0.9112500000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 59.27
+  },
   "analyst": {
     "revision_momentum": 0.1,
     "target_upside": 0.019404453187874468,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 51.22138176666667,
     "catalyst_timeline": 61.98655969502687,
     "downside_control": 60.16704601345275,
-    "composite_score": 55.86587339788887,
+    "composite_score": 55.86198435259043,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 53.89501218650794,
     "technical_score": 60.44218696530861,
-    "sentiment_score": 50.0,
+    "sentiment_score": 59.27,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Industrial Machinery & Supplies & Components"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Jim Cramer Says Stocks Like Dover Are \"Catching Up With the Rest of the Market\"",
+      "url": "/news/303476/jim-cramer-says-stocks-like-dover-are-catching-up-with-the-rest-of-the-market",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Seaport Maintains Buy Rating on Dover Corporation (DOV)",
+      "url": "/news/302419/seaport-maintains-buy-rating-on-dover-corporation-dov",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The 5 Most Interesting Analyst Questions From Dover's Q4 Earnings Call",
+      "url": "/news/300808/the-5-most-interesting-analyst-questions-from-dovers-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Dover Corporation (DOV) is a Top Momentum Stock for the Long-Term",
+      "url": "/news/297627/why-dover-corporation-dov-is-a-top-momentum-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Does Dover Corp. (DOV) Have a Long Runway for Growth?",
+      "url": "/news/297155/does-dover-corp-dov-have-a-long-runway-for-growth",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Dover Corporation",
+      "url": "https://finance.yahoo.com/m/09b81ef2-c8a2-32f7-bdef-d8d50e6329c4/analyst-report%3A-dover.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "DOV Q4 Deep Dive: Margin Expansion and Order Growth Shape Outlook Amid Cautious Guidance",
+      "url": "/news/294058/dov-q4-deep-dive-margin-expansion-and-order-growth-shape-outlook-amid-cautious-guidance",
+      "publisher": "StockStory",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Dover Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/4cb55bcb-3108-336d-ac52-58e37de8e2c9/dover-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dover Corp (DOV) Q4 2025 Earnings Call Highlights: Strong Organic Growth and Strategic ...",
+      "url": "https://finance.yahoo.com/news/dover-corp-dov-q4-2025-230117785.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Dover Q4 Earnings Surpass Estimates, Revenues Increase 9% Y/Y",
+      "url": "/news/292466/dover-q4-earnings-surpass-estimates-revenues-increase-9-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Dover (DOV) Q4 Earnings: How Key Metrics Compare to Wall Street Estimates",
+      "url": "/news/291864/dover-dov-q4-earnings-how-key-metrics-compare-to-wall-street-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dover's (NYSE:DOV) Q4 CY2025 Sales Beat Estimates",
+      "url": "/news/291691/dovers-nyse-dov-q4-cy2025-sales-beat-estimates",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dover Corporation (DOV) Surpasses Q4 Earnings and Revenue Estimates",
+      "url": "/news/291620/dover-corporation-dov-surpasses-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dover Reports Fourth Quarter and Full Year 2025 Results",
+      "url": "/news/291299/dover-reports-fourth-quarter-and-full-year-2025-results",
+      "publisher": "PR Newswire",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "SWEP Introduces All-Stainless Product Supporting Electronics, Semiconductor and Next-Generation Refrigerant Applications",
+      "url": "/news/290759/swep-introduces-all-stainless-product-supporting-electronics-semiconductor-and-next-generation-refrigerant-applications",
+      "publisher": "PR Newswire",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "A. O. Smith Gears Up to Report Q4 Earnings: What to Expect?",
+      "url": "/news/290384/a-o-smith-gears-up-to-report-q4-earnings-what-to-expect",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jim Cramer on Dover: \"Let's Wait for the Quarter\"",
+      "url": "/news/289732/jim-cramer-on-dover-lets-wait-for-the-quarter",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dover (DOV) Q4 Earnings Report Preview: What To Look For",
+      "url": "/news/289345/dover-dov-q4-earnings-report-preview-what-to-look-for",
+      "publisher": "StockStory",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TWG Launches the New Pullmaster 40 M/H Winch for the Fishing and Towing Industry",
+      "url": "/news/289036/twg-launches-the-new-pullmaster-40-mh-winch-for-the-fishing-and-towing-industry",
+      "publisher": "PR Newswire",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dover Gears Up to Report Q4 Earnings: Here's What to Expect",
+      "url": "/news/288863/dover-gears-up-to-report-q4-earnings-heres-what-to-expect",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    }
+  ]
 }

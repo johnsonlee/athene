@@ -6306,7 +6306,15 @@
     "technical_score": 54.3567827353431,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.13355665927088511,
+    "sentiment_pos": 0.08995,
+    "sentiment_neg": 0.00945,
+    "sentiment_neu": 0.9006000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 56.68
+  },
   "analyst": {
     "revision_momentum": 0.3333333333333333,
     "target_upside": 0.020690348693968925,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 60.38892375,
     "catalyst_timeline": 57.405488752771504,
     "downside_control": 47.47774637778618,
-    "composite_score": 58.32505431539447,
+    "composite_score": 58.32116527009603,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 61.35550665499441,
     "technical_score": 54.3567827353431,
-    "sentiment_score": 50.0,
+    "sentiment_score": 56.68,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Aerospace & Defense"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Huntington Ingalls Industries Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/e50fc8e6-94b5-30ef-a697-39bcfdade78d/huntington-ingalls-industries.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Huntington Ingalls (HII) Shares Skyrocket, What You Need To Know",
+      "url": "/news/303058/huntington-ingalls-hii-shares-skyrocket-what-you-need-to-know",
+      "publisher": "StockStory",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Huntington Ingalls (HII) is a Top Growth Stock for the Long-Term",
+      "url": "/news/302948/why-huntington-ingalls-hii-is-a-top-growth-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "HII Q4 Deep Dive: Shipbuilding Throughput, Margin Stagnation, and Strategic Investments Shape Outlook",
+      "url": "/news/302462/hii-q4-deep-dive-shipbuilding-throughput-margin-stagnation-and-strategic-investments-shape-outlook",
+      "publisher": "StockStory",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Huntington Ingalls Industries Inc (HII) Q4 2025 Earnings Call Highlights: Record Revenue and ...",
+      "url": "https://finance.yahoo.com/news/huntington-ingalls-industries-inc-hii-210137680.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Huntington Ingalls Industries, Inc.",
+      "url": "https://finance.yahoo.com/m/4bca99cb-acd4-3eac-bd42-785189e604ff/analyst-report%3A-huntington.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Strong Newport News Shipbuilding Performance Drives HII's Q4 Results",
+      "url": "/news/301867/strong-newport-news-shipbuilding-performance-drives-hiis-q4-results",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Are Aerospace Stocks Lagging  Huntington Ingalls Industries (HII) This Year?",
+      "url": "/news/301611/are-aerospace-stocks-lagging-huntington-ingalls-industries-hii-this-year",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Huntington Ingalls (HII) Q4 Earnings: Taking a Look at Key Metrics Versus Estimates",
+      "url": "/news/301549/huntington-ingalls-hii-q4-earnings-taking-a-look-at-key-metrics-versus-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Huntington Ingalls (HII) Q4 Earnings and Revenues Top Estimates",
+      "url": "/news/301370/huntington-ingalls-hii-q4-earnings-and-revenues-top-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Huntington Ingalls (NYSE:HII) Surprises With Strong Q4 CY2025 But Stock Drops 10.7%",
+      "url": "/news/301283/huntington-ingalls-nyse-hii-surprises-with-strong-q4-cy2025-but-stock-drops-107",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Huntington Ingalls: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/huntington-ingalls-q4-earnings-snapshot-123306330.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "HII Reports Fourth Quarter and Full Year 2025 Results",
+      "url": "/news/301027/hii-reports-fourth-quarter-and-full-year-2025-results",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "HII's Newport News Shipbuilding Completes Successful Builder's Sea Trials of John F. Kennedy (CVN 79)",
+      "url": "/news/299996/hiis-newport-news-shipbuilding-completes-successful-builders-sea-trials-of-john-f-kennedy-cvn-79",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Wall Street's Insights Into Key Metrics Ahead of Huntington Ingalls (HII) Q4 Earnings",
+      "url": "/news/299473/wall-streets-insights-into-key-metrics-ahead-of-huntington-ingalls-hii-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "RTX Outperforms Industry in the Past 6 Months: How to Play the Stock?",
+      "url": "/news/299331/rtx-outperforms-industry-in-the-past-6-months-how-to-play-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "HII Declares Quarterly Dividend",
+      "url": "/news/299138/hii-declares-quarterly-dividend",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What To Expect From Huntington Ingalls's (HII) Q4 Earnings",
+      "url": "/news/298620/what-to-expect-from-huntington-ingallss-hii-q4-earnings",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "HII Hosts U.S. Marine Corps Leaders at Ingalls Shipbuilding",
+      "url": "/news/297977/hii-hosts-us-marine-corps-leaders-at-ingalls-shipbuilding",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Aerospace and defense ETF rally, outperforming S&P 500",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-sp500-record-nasdaq-dow-up-gold-silver-rally-amd-earnings/card/aerospace-and-defense-etf-rally-outperforming-s-p-500-NrkUZiUC6VUX25B4NAWF?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    }
+  ]
 }

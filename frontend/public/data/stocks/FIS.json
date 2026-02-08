@@ -6306,7 +6306,15 @@
     "technical_score": 31.493844819019046,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.23590483086913097,
+    "sentiment_pos": 0.1333,
+    "sentiment_neg": 0.034999999999999996,
+    "sentiment_neu": 0.8317500000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 61.8
+  },
   "analyst": {
     "revision_momentum": 0.5,
     "target_upside": 0.569420373579819,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 48.92755292,
     "catalyst_timeline": 44.236178819623134,
     "downside_control": 42.200332266140734,
-    "composite_score": 43.22874193762202,
+    "composite_score": 43.22485289232358,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 52.366643418465515,
     "technical_score": 31.493844819019046,
-    "sentiment_score": 50.0,
+    "sentiment_score": 61.8,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Transaction & Payment Processing Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Here's Why Fidelity National Information Services (FIS) is a Strong Value Stock",
+      "url": "/news/301613/heres-why-fidelity-national-information-services-fis-is-a-strong-value-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Fidelity National Information Services Stock: Analyst Estimates & Ratings",
+      "url": "https://finance.yahoo.com/m/34f5cffe-637b-3f15-a0a2-da1903d672b3/fidelity-national-information.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PayPal Shares Fall as Q4 Earnings & Revenues Miss Estimates",
+      "url": "/news/297955/paypal-shares-fall-as-q4-earnings-revenues-miss-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Fidelity National Information Services (FIS) to Report Q4 Results: Wall Street Expects Earnings Growth",
+      "url": "/news/297673/fidelity-national-information-services-fis-to-report-q4-results-wall-street-expects-earnings-growth",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "FIS Announces Increase to Quarterly Dividend",
+      "url": "https://www.businesswire.com/news/home/20260129354074/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Fidelity National Information Services, Inc.",
+      "url": "https://finance.yahoo.com/m/07a5ceaa-2619-3bfe-9567-f38ebbdcfec2/analyst-report%3A-fidelity.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Fidelity National Information Services Stock: Buy, Sell, or Hold in 2026?",
+      "url": "/news/285487/fidelity-national-information-services-stock-buy-sell-or-hold-in-2026",
+      "publisher": "Motley Fool",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FIS Appoints Anil Chakravarthy to the Board of Directors",
+      "url": "https://www.businesswire.com/news/home/20260122490917/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "GPN's Worldpay Expands Its Solutions Reach via Regions Bank Partnership",
+      "url": "/news/284393/gpns-worldpay-expands-its-solutions-reach-via-regions-bank-partnership",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Should Value Investors Buy Fidelity National Information Services (FIS) Stock?",
+      "url": "/news/282518/should-value-investors-buy-fidelity-national-information-services-fis-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's What Wall Street Thinks About Fidelity National Information Services (FIS)",
+      "url": "/news/280088/heres-what-wall-street-thinks-about-fidelity-national-information-services-fis",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FinTech and Crypto 2026 outlook: Mizuho lists 6 key themes",
+      "url": "https://finance.yahoo.com/news/fintech-crypto-2026-outlook-mizuho-175711945.html",
+      "publisher": "Investing.com",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Halper Sadeh LLC Encourages Fidelity National Information Services, Inc. Shareholders to Contact the Firm to Discuss Their Rights",
+      "url": "https://www.businesswire.com/news/home/20260115192997/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-15",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Trump's Credit Card Push Has Winners And Losers, Goldman Says",
+      "url": "/news/276695/trumps-credit-card-push-has-winners-and-losers-goldman-says",
+      "publisher": "Benzinga",
+      "date": "2026-01-14",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What You Need to Know Ahead of Fidelity National's Earnings Release",
+      "url": "https://finance.yahoo.com/m/6d4d24c6-bfb4-3bc3-8e5a-c5541febf53e/what-you-need-to-know-ahead.html",
+      "publisher": "Barchart",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Trump Targets Card Swipe Fees After Interest Rate Threats",
+      "url": "https://finance.yahoo.com/news/trump-targets-card-swipe-fees-180235142.html",
+      "publisher": "Bloomberg",
+      "date": "2026-01-13",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Global Payments Reshapes Itself With Worldpay Deal and Strategic Exit",
+      "url": "/news/275189/global-payments-reshapes-itself-with-worldpay-deal-and-strategic-exit",
+      "publisher": "Zacks",
+      "date": "2026-01-13",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "From Human to AI-Led Transactions: FIS Expands Banks' Capabilities",
+      "url": "/news/275181/from-human-to-ai-led-transactions-fis-expands-banks-capabilities",
+      "publisher": "Zacks",
+      "date": "2026-01-13",
+      "sentiment": "positive"
+    },
+    {
+      "title": "FIS teams with Visa, Mastercard on agentic commerce",
+      "url": "https://finance.yahoo.com/m/f2e2e8bf-a56d-3c65-95ad-f9f15c4a95ab/fis-teams-with-visa%2C.html",
+      "publisher": "Payments Dive",
+      "date": "2026-01-13",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why analysts think Trumps 10% credit card fee cap is a low-probability risk",
+      "url": "https://finance.yahoo.com/news/why-analysts-think-trump-10-133926934.html",
+      "publisher": "Investing.com",
+      "date": "2026-01-12",
+      "sentiment": "positive"
+    }
+  ]
 }

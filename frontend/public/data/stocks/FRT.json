@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 105.76000213623047,
-    "sma_20": 102.25750007629394,
+    "sma_20": 102.25750007629395,
     "sma_50": 100.31217651367189,
     "sma_200": 95.87053730010986,
     "trend_alignment": 0.6287185615981508,
@@ -6286,17 +6286,17 @@
     "macd_histogram": 0.38336125660335696,
     "macd_line": 1.070150800781306,
     "macd_histogram_pct": 0.36248227010202366,
-    "bb_position": 1.0163969716356112,
-    "bb_upper": 105.64878841871283,
-    "bb_lower": 98.86621173387505,
-    "bb_width": 0.06632840309783951,
+    "bb_position": 1.0163969716356092,
+    "bb_upper": 105.64878841871284,
+    "bb_lower": 98.86621173387506,
+    "bb_width": 0.0663284030978395,
     "hist_volatility": 0.16826436404295836,
     "volume_ratio": 1.138157572191989,
     "avg_volume_20d": 815880.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 95.55434452785225,
-    "stoch_d": 87.7668614944254,
+    "stoch_d": 87.76686149442541,
     "trend_score": 62.871856159815074,
     "rsi_abs_score": 57.60238705558531,
     "macd_abs_score": 61.56205675255059,
@@ -6306,7 +6306,15 @@
     "technical_score": 61.08882788915103,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.08421979069273555,
+    "sentiment_pos": 0.1383,
+    "sentiment_neg": 0.0187,
+    "sentiment_neu": 0.843,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 54.21
+  },
   "analyst": {
     "revision_momentum": 0.2,
     "target_upside": 0.06845688350983353,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 44.6680711,
     "catalyst_timeline": 59.31338744481492,
     "downside_control": 55.46673630497597,
-    "composite_score": 53.39621725784222,
+    "composite_score": 53.39232821254378,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 52.701618900934214,
     "technical_score": 61.08882788915103,
-    "sentiment_score": 50.0,
+    "sentiment_score": 54.21,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Real Estate",
     "industry": "Retail REITs"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Regency Centers Q4 FFO Meet Estimates, Same-Property NOI Rises",
+      "url": "/news/303036/regency-centers-q4-ffo-meet-estimates-same-property-noi-rises",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "UPST Set to Report Q4 Earnings: What's in Store for the Stock?",
+      "url": "/news/303004/upst-set-to-report-q4-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Federal Realty Sells Misora at Santana Row as Part of Ongoing Capital Recycling Program",
+      "url": "/news/302220/federal-realty-sells-misora-at-santana-row-as-part-of-ongoing-capital-recycling-program",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "UDR Set to Report Q4 Earnings: What's in Store for the Stock?",
+      "url": "/news/301765/udr-set-to-report-q4-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Regency Centers to Post Q4 Earnings: What's in Store for the Stock?",
+      "url": "/news/299738/regency-centers-to-post-q4-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "American Assets Trust (AAT) Lags Q4 FFO Estimates",
+      "url": "/news/298368/american-assets-trust-aat-lags-q4-ffo-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Simon Property Q4 FFO Beats Estimates on Higher Revenues & Rent",
+      "url": "/news/297910/simon-property-q4-ffo-beats-estimates-on-higher-revenues-rent",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Zacks Analyst Blog Cushman & Wakefield's, Simon Property, Regency Centers, Kimco  and Federal Realty Investment",
+      "url": "/news/289472/the-zacks-analyst-blog-cushman-wakefields-simon-property-regency-centers-kimco-and-federal-realty-investment",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Retail REITs That Appear Well Poised to Surpass Q4 Expectations",
+      "url": "/news/288708/retail-reits-that-appear-well-poised-to-surpass-q4-expectations",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Federal Realty Investment Trust Releases Tax Status of 2025 Distributions",
+      "url": "/news/285794/federal-realty-investment-trust-releases-tax-status-of-2025-distributions",
+      "publisher": "PR Newswire",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Could Buying AGNC Investment Stock Today Set You Up for Life?",
+      "url": "/news/282867/could-buying-agnc-investment-stock-today-set-you-up-for-life",
+      "publisher": "Motley Fool",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Federal Realty (FRT) Target Cut Slightly as Scotiabank Refreshes REIT Outlook",
+      "url": "/news/280537/federal-realty-frt-target-cut-slightly-as-scotiabank-refreshes-reit-outlook",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-19",
+      "sentiment": "negative"
+    },
+    {
+      "title": "The Best High-Yield Stocks to Buy With $500 Right Now",
+      "url": "/news/279684/the-best-high-yield-stocks-to-buy-with-500-right-now",
+      "publisher": "Motley Fool",
+      "date": "2026-01-17",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What to Expect From Federal Realty Investment's Next Quarterly Earnings Report",
+      "url": "https://finance.yahoo.com/m/be399f4e-92c0-3120-82f8-d4dd96d7b57d/what-to-expect-from-federal.html",
+      "publisher": "Barchart",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Federal Realty price target raised to $107 from $106 at Barclays",
+      "url": "https://finance.yahoo.com/news/federal-realty-price-target-raised-141404694.html",
+      "publisher": "TipRanks",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Federal Realty Investment Trust Announces Fourth Quarter 2025 Earnings Release Date and Conference Call Information",
+      "url": "/news/271376/federal-realty-investment-trust-announces-fourth-quarter-2025-earnings-release-date-and-conference-call-information",
+      "publisher": "PR Newswire",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Best Dividend Aristocrats to Buy in 2026",
+      "url": "https://finance.yahoo.com/m/d1364995-8fcb-31a8-bca1-d2e7eaa4bb75/3-best-dividend-aristocrats.html",
+      "publisher": "Barchart",
+      "date": "2026-01-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "7 REITs That Should Be on Every Investor's Radar -- Plus 5 Promising REIT ETFs",
+      "url": "/news/265870/7-reits-that-should-be-on-every-investors-radar-plus-5-promising-reit-etfs",
+      "publisher": "Motley Fool",
+      "date": "2026-01-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Dividend Kings Poised for Explosive Growth as Inflation Eases",
+      "url": "/news/265071/3-dividend-kings-poised-for-explosive-growth-as-inflation-eases",
+      "publisher": "Motley Fool",
+      "date": "2025-12-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stifel Lifts Federal Realty (FRT) Target After $170M Asset Sale",
+      "url": "/news/264649/stifel-lifts-federal-realty-frt-target-after-170m-asset-sale",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-30",
+      "sentiment": "positive"
+    }
+  ]
 }

@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 3170190.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 57.0933967901742,
+    "stoch_k": 57.09339679017419,
     "stoch_d": 53.510592611062734,
     "trend_score": 47.09033518165672,
     "rsi_abs_score": 72.87312363816493,
@@ -6306,7 +6306,15 @@
     "technical_score": 52.81168761711717,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.0478289091804494,
+    "sentiment_pos": 0.07535,
+    "sentiment_neg": 0.0571,
+    "sentiment_neu": 0.8675499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 52.39
+  },
   "analyst": {
     "revision_momentum": -0.5,
     "target_upside": -0.07910892825820029,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 77.93633213571428,
     "catalyst_timeline": 49.05259733035183,
     "downside_control": 63.72172809947959,
-    "composite_score": 54.772512609534076,
+    "composite_score": 54.76862356423565,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 53.38751011309523,
     "technical_score": 52.81168761711717,
-    "sentiment_score": 50.0,
+    "sentiment_score": 52.39,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Homebuilding"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Goldman Sachs Maintains Neutral on Lennar Corporation (LEN) as Incentives and Demand Uncertainty Cloud 2026 Outlook",
+      "url": "/news/303543/goldman-sachs-maintains-neutral-on-lennar-corporation-len-as-incentives-and-demand-uncertainty-cloud-2026-outlook",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Lennar (LEN) Stock Falls Amid Market Uptick: What Investors Need to Know",
+      "url": "/news/303454/lennar-len-stock-falls-amid-market-uptick-what-investors-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Homebuilder stocks fall after potential antitrust probe report",
+      "url": "https://finance.yahoo.com/news/homebuilder-stocks-fall-potential-antitrust-175737004.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "1 Dividend Stock to Buy Now as Trump Tackles Housing Affordability",
+      "url": "https://finance.yahoo.com/m/a565abdb-3550-3d52-96e0-91d67509cb9a/1-dividend-stock-to-buy-now.html",
+      "publisher": "Barchart",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "2 Stocks to Buy Now for a New Trump Homes Project",
+      "url": "https://finance.yahoo.com/m/013b6fab-57c8-3a62-a908-f6c7e447dec0/2-stocks-to-buy-now-for-a-new.html",
+      "publisher": "Barchart",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Builders pitch 'Trump home' policies, stoking gains for their stocks",
+      "url": "https://www.marketwatch.com/story/builders-pitch-trump-home-policies-stoking-gains-for-their-stocks-d3d3600b?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Lennar, Taylor Morrison Plan 1 Million 'Trump Homes' Project To Address Housing Affordability: Report",
+      "url": "/news/298890/lennar-taylor-morrison-plan-1-million-trump-homes-project-to-address-housing-affordability-report",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "These Homebuilder Stocks Get a Boost Following Report of Plan to Build 'Trump Homes'",
+      "url": "https://finance.yahoo.com/m/17638541-a611-3260-b1fb-36de8309b694/these-homebuilder-stocks-get.html",
+      "publisher": "Investopedia",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "These Homebuilder Stocks Climb Following Report of Plan to Build 'Trump Homes'",
+      "url": "https://finance.yahoo.com/m/17638541-a611-3260-b1fb-36de8309b694/these-homebuilder-stocks.html",
+      "publisher": "Investopedia",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "'Trump Home' reports, Novo warning, USIran tension lifts oil prices",
+      "url": "https://finance.yahoo.com/video/trump-home-reports-novo-warning-210147790.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Builders Push Trump Homes in Pitch for a Million Houses",
+      "url": "https://finance.yahoo.com/news/builders-push-trump-homes-win-151454860.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Homebuilding stocks gain on reports of \"Trump Homes\" plan",
+      "url": "https://finance.yahoo.com/news/homebuilding-stocks-gain-reports-trump-155524390.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Lennar (LEN) Dips More Than Broader Market: What You Should Know",
+      "url": "/news/294313/lennar-len-dips-more-than-broader-market-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Weyerhaeuser Q4 Loss Narrower Than Estimates, Revenues Miss, Stock Down",
+      "url": "/news/293889/weyerhaeuser-q4-loss-narrower-than-estimates-revenues-miss-stock-down",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "negative"
+    },
+    {
+      "title": "PulteGroup Q4 Earnings & Revenues Top Estimates, Stock Down",
+      "url": "/news/292388/pultegroup-q4-earnings-revenues-top-estimates-stock-down",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "NVR's Q4 Earnings & Homebuilding Revenues Top Estimates, Both Down Y/Y",
+      "url": "/news/292272/nvrs-q4-earnings-homebuilding-revenues-top-estimates-both-down-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "United Rentals' Q4 Earnings & Revenues Miss, Dividend Hiked by 10%",
+      "url": "/news/292220/united-rentals-q4-earnings-revenues-miss-dividend-hiked-by-10",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Lennars Quarterly Earnings Preview: What You Need to Know",
+      "url": "https://finance.yahoo.com/m/70cdf5fe-d395-3815-85b0-dccfb6d172e0/lennar%E2%80%99s-quarterly-earnings.html",
+      "publisher": "Barchart",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Lennar Corporation Declares Quarterly Dividends",
+      "url": "/news/283007/lennar-corporation-declares-quarterly-dividends",
+      "publisher": "PR Newswire",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Housing Policy was Afterthought in Trump's Davos Speech. No News Is Good News for Builders.",
+      "url": "https://www.barrons.com/articles/housing-policy-trump-davos-builders-72aa8290?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    }
+  ]
 }

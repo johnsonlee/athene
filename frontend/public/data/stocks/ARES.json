@@ -6277,19 +6277,19 @@
   },
   "technical": {
     "close": 130.4600067138672,
-    "sma_20": 152.19500236511232,
+    "sma_20": 152.1950023651123,
     "sma_50": 161.48665847778318,
-    "sma_200": 164.37472499847408,
-    "trend_alignment": 0.1949751069895433,
+    "sma_200": 164.3747249984741,
+    "trend_alignment": 0.19497510698954318,
     "rsi": 32.042043618182106,
     "rsi_score": -0.3591591276363579,
     "macd_histogram": -2.943730886870923,
     "macd_line": -9.566996127264503,
     "macd_histogram_pct": -2.256423988485063,
-    "bb_position": 0.15062076674734687,
-    "bb_upper": 183.3001648684708,
-    "bb_lower": 121.08983986175383,
-    "bb_width": 0.4087540592001558,
+    "bb_position": 0.15062076674734734,
+    "bb_upper": 183.30016486847077,
+    "bb_lower": 121.0898398617538,
+    "bb_width": 0.4087540592001559,
     "hist_volatility": 0.6491977842163441,
     "volume_ratio": 1.744744962037616,
     "avg_volume_20d": 3869620.0,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 16.681494350643348,
     "stoch_d": 15.15978088705645,
-    "trend_score": 19.49751069895433,
+    "trend_score": 19.49751069895432,
     "rsi_abs_score": 52.450452341818526,
     "macd_abs_score": 20.0,
     "momentum_score": 36.225226170909266,
     "volatility_score": 20.727275336644297,
     "volume_score": 50.0,
-    "technical_score": 30.862276128287938,
+    "technical_score": 30.862276128287935,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.03838720158773881,
+    "sentiment_pos": 0.09175,
+    "sentiment_neg": 0.0936,
+    "sentiment_neu": 0.8145,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.92
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.3797332515713628,
@@ -6325,7 +6333,7 @@
     "quality_score": 56.77714285714285,
     "growth_score": 44.75,
     "safety_score": 32.411784999999995,
-    "trend_score": 19.49751069895433,
+    "trend_score": 19.49751069895432,
     "momentum_score": 36.225226170909266,
     "volatility_score": 20.727275336644297,
     "volume_score": 50.0,
@@ -6344,16 +6352,16 @@
     "current_ratio_score": 42.0,
     "earnings_visibility": 54.42207142857143,
     "valuation_margin": 27.862550299999995,
-    "catalyst_timeline": 40.511166834311204,
+    "catalyst_timeline": 40.5111668343112,
     "downside_control": 32.12085905049664,
-    "composite_score": 35.21320925612102,
+    "composite_score": 35.20932021082259,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 42.32929177380952,
-    "technical_score": 30.862276128287938,
-    "sentiment_score": 50.0,
+    "technical_score": 30.862276128287935,
+    "sentiment_score": 51.92,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Asset Management & Custody Banks"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Private Markets Push for Worlds Wealthy Runs Into AI Meltdown",
+      "url": "https://finance.yahoo.com/news/private-markets-push-world-wealthy-120000784.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Deal Dispatch: SpaceX Ties Up With xAI, Kirin Sells Four Roses Bourbon, Billionaire's Mining Merger Collapses",
+      "url": "/news/303389/deal-dispatch-spacex-ties-up-with-xai-kirin-sells-four-roses-bourbon-billionaires-mining-merger-collapses",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Ares Management Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/efb26bd7-8d4a-33c2-aef0-45e30fe8fad8/ares-management-q4-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ARES Q4 Deep Dive: Private Credit Growth and Software Exposure Under Investor Scrutiny",
+      "url": "/news/303105/ares-q4-deep-dive-private-credit-growth-and-software-exposure-under-investor-scrutiny",
+      "publisher": "StockStory",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ares Management Corp (ARES) Q4 2025 Earnings Call Highlights: Record Growth and Strategic Expansion",
+      "url": "https://finance.yahoo.com/news/ares-management-corp-ares-q4-230055790.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ares Sees Investment Opportunities in AI Disruption",
+      "url": "https://finance.yahoo.com/m/c907c982-ef94-3c00-9d01-0d419a5f207c/ares-sees-investment.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Blue Owl Dismisses Software Debt Fears After Shares Slide",
+      "url": "https://finance.yahoo.com/m/18610a11-54fe-3f41-a828-6be02fb4940c/%E2%80%8Bblue-owl-dismisses-software.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Analyst Report: Ares Management Corporation",
+      "url": "https://finance.yahoo.com/m/f96b637c-2649-3df1-9c78-37e2e037d74a/analyst-report%3A-ares.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ares Management Stock Falls as Q4 Earnings Miss, Expenses Rise Y/Y",
+      "url": "/news/301956/ares-management-stock-falls-as-q4-earnings-miss-expenses-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "'I can do the math': Wall Street's private credit giants try to calm AI fears amid steep software sell-off",
+      "url": "https://finance.yahoo.com/news/i-can-do-the-math-wall-streets-private-credit-giants-try-to-calm-ai-fears-amid-steep-software-sell-off-165544396.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "'I can do it in math': Wall Street's private credit giants try to calm AI fears amid steep software sell-off",
+      "url": "https://finance.yahoo.com/news/i-can-do-it-in-math-wall-streets-private-credit-giants-try-to-calm-ai-fears-amid-steep-software-sell-off-165544679.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ares Is Well-Hedged Against AI Change, Arougheti Says",
+      "url": "https://finance.yahoo.com/video/ares-well-hedged-against-ai-155839542.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why the software stock sell-off may be bad news for private credit",
+      "url": "https://finance.yahoo.com/video/why-software-stock-sell-off-155238325.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Ares and Blue Owl Say They Had a Good 2025. The Stock Market Is Worried About 2026.",
+      "url": "https://www.barrons.com/articles/ares-stock-price-blue-owl-private-credit-earnings-software-selloff-f0c7f0c8?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ares Management (ARES) Q4 Earnings: Taking a Look at Key Metrics Versus Estimates",
+      "url": "/news/301532/ares-management-ares-q4-earnings-taking-a-look-at-key-metrics-versus-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ares (NYSE:ARES) Misses Q4 CY2025 Sales Expectations",
+      "url": "/news/301302/ares-nyse-ares-misses-q4-cy2025-sales-expectations",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Ares Management (ARES) Q4 Earnings and Revenues Miss Estimates",
+      "url": "/news/301206/ares-management-ares-q4-earnings-and-revenues-miss-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Ares Management: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/ares-management-q4-earnings-snapshot-113734658.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ares Announces Record Fourth Quarter and Full-Year 2025 U.S. Direct Lending Origination Activity",
+      "url": "/news/300954/ares-announces-record-fourth-quarter-and-full-year-2025-us-direct-lending-origination-activity",
+      "publisher": "ACCESSWIRE",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ares Management Corporation Reports Fourth Quarter and Full Year 2025 Results",
+      "url": "https://www.businesswire.com/news/home/20260205286648/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    }
+  ]
 }

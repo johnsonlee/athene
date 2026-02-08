@@ -6277,36 +6277,44 @@
   },
   "technical": {
     "close": 22.5,
-    "sma_20": 25.904500102996828,
-    "sma_50": 26.00320003509521,
+    "sma_20": 25.904500102996824,
+    "sma_50": 26.003200035095215,
     "sma_200": 27.67050472259522,
-    "trend_alignment": 0.2414709661506374,
+    "trend_alignment": 0.24147096615063735,
     "rsi": 19.244867253870915,
     "rsi_score": -0.6151026549225818,
     "macd_histogram": -0.47895591828017137,
     "macd_line": -0.7056682202607902,
     "macd_histogram_pct": -2.128692970134095,
-    "bb_position": -0.1085521969666997,
-    "bb_upper": 28.70171299612777,
-    "bb_lower": 23.107287209865884,
-    "bb_width": 0.21596347213875328,
+    "bb_position": -0.10855219696669906,
+    "bb_upper": 28.701712996127767,
+    "bb_lower": 23.10728720986588,
+    "bb_width": 0.2159634721387533,
     "hist_volatility": 0.36708478088875485,
     "volume_ratio": 2.183848676323408,
     "avg_volume_20d": 4191545.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 6.728168832586483,
-    "stoch_d": 9.007005082725296,
-    "trend_score": 24.14709661506374,
+    "stoch_d": 9.007005082725295,
+    "trend_score": 24.147096615063735,
     "rsi_abs_score": 39.244867253870915,
     "macd_abs_score": 20.0,
     "momentum_score": 29.622433626935457,
-    "volatility_score": 35.261816590482766,
+    "volatility_score": 35.26181659048276,
     "volume_score": 50.0,
-    "technical_score": 33.183222390696315,
+    "technical_score": 33.18322239069631,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.08379557981562416,
+    "sentiment_pos": 0.0605,
+    "sentiment_neg": 0.020999999999999998,
+    "sentiment_neu": 0.9185000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 54.19
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.5644444444444445,
@@ -6325,9 +6333,9 @@
     "quality_score": 53.87175,
     "growth_score": 39.45,
     "safety_score": 70.331,
-    "trend_score": 24.14709661506374,
+    "trend_score": 24.147096615063735,
     "momentum_score": 29.622433626935457,
-    "volatility_score": 35.261816590482766,
+    "volatility_score": 35.26181659048276,
     "volume_score": 50.0,
     "analyst_score": 70.01444444444445,
     "pe_score": 41.948049999999995,
@@ -6344,16 +6352,16 @@
     "current_ratio_score": 75.512,
     "earnings_visibility": 45.8692625,
     "valuation_margin": 64.6278142857143,
-    "catalyst_timeline": 42.71639746864437,
+    "catalyst_timeline": 42.71639746864436,
     "downside_control": 59.39292248857241,
-    "composite_score": 51.6337610193933,
+    "composite_score": 51.629871974094854,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 57.4942369047619,
-    "technical_score": 33.183222390696315,
-    "sentiment_score": 50.0,
+    "technical_score": 33.18322239069631,
+    "sentiment_score": 54.19,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Communication Services",
     "industry": "Publishing"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "News Corp. price target lowered to $32.40 from $38 at Morgan Stanley",
+      "url": "https://finance.yahoo.com/news/news-corp-price-target-lowered-155546595.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Analyst Report: News Corporation",
+      "url": "https://finance.yahoo.com/m/b16a5667-f30e-3dd7-9f49-428174672909/analyst-report%3A-news.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "News Corporation Q2 Earnings Surpass Estimates, Revenues Rise Y/Y",
+      "url": "/news/303081/news-corporation-q2-earnings-surpass-estimates-revenues-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "News Corporation Stock: Is Wall Street Bullish or Bearish?",
+      "url": "https://finance.yahoo.com/m/8f69374b-eec9-3a10-ad5a-ab33199e6af1/news-corporation-stock%3A-is.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NWSA Q4 Deep Dive: Digital Growth, AI Content Licensing, and Real Estate Momentum",
+      "url": "/news/302648/nwsa-q4-deep-dive-digital-growth-ai-content-licensing-and-real-estate-momentum",
+      "publisher": "StockStory",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "News Corp (NWS) Q2 2026 Earnings Call Highlights: Strong Revenue Growth Amidst Challenging ...",
+      "url": "https://finance.yahoo.com/news/news-corp-nws-q2-2026-050200718.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: News Corporation",
+      "url": "https://finance.yahoo.com/m/03b58835-4c4d-3529-b942-917b23b32da2/analyst-report%3A-news.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "News Q2 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/d0fc669e-6aa6-3cf2-9def-ae93ba0a4f2a/news-q2-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "News Corp Revenue Rises on Growth at Dow Jones, Real-Estate Divisions",
+      "url": "https://www.wsj.com/business/media/newscorp-nwsa-q2-earnings-report-2026-0da8ac65?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Compared to Estimates, News Corp. (NWSA) Q2 Earnings: A Look at Key Metrics",
+      "url": "/news/302279/compared-to-estimates-news-corp-nwsa-q2-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "News Corp's (NASDAQ:NWSA) Q4 CY2025 Sales Beat Estimates",
+      "url": "/news/302166/news-corps-nasdaq-nwsa-q4-cy2025-sales-beat-estimates",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "News Corp to Host Dow Jones Investor Briefing",
+      "url": "https://www.businesswire.com/news/home/20260205223958/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "News Corporation Reports Second Quarter Results for Fiscal 2026",
+      "url": "https://www.businesswire.com/news/home/20260205829341/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Software ate the world. Now, Wall Street is worried AI will eat software.",
+      "url": "https://www.marketwatch.com/story/software-ate-the-world-now-wall-street-is-worried-ai-will-eat-software-88661ed5?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Inventory Gains Slow Down in January: Realtor.com Monthly Housing Report",
+      "url": "/news/300920/inventory-gains-slow-down-in-january-realtorcom-monthly-housing-report",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Seeking Clues to News Corp. (NWSA) Q2 Earnings? A Peek Into Wall Street Projections for Key Metrics",
+      "url": "/news/299450/seeking-clues-to-news-corp-nwsa-q2-earnings-a-peek-into-wall-street-projections-for-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NYC Rent Growth Persists as Renter Mobility Hits Historic Lows",
+      "url": "/news/299021/nyc-rent-growth-persists-as-renter-mobility-hits-historic-lows",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "News Corp (NWSA) To Report Earnings Tomorrow: Here Is What To Expect",
+      "url": "/news/298563/news-corp-nwsa-to-report-earnings-tomorrow-here-is-what-to-expect",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: News Corporation",
+      "url": "https://finance.yahoo.com/m/f817ee4d-6da1-36a2-b0fe-b955c8625100/analyst-report%3A-news.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NWSA's Q2 Earnings Coming Up: Time to Buy, Sell or Hold the Stock?",
+      "url": "/news/295884/nwsas-q2-earnings-coming-up-time-to-buy-sell-or-hold-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    }
+  ]
 }

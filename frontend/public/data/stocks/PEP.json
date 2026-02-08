@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 98.73275825427262,
-    "stoch_d": 97.15207820119643,
+    "stoch_d": 97.15207820119645,
     "trend_score": 77.6570052981268,
     "rsi_abs_score": 20.0,
     "macd_abs_score": 80.0,
@@ -6306,7 +6306,15 @@
     "technical_score": 56.932125520587846,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.12431814833486668,
+    "sentiment_pos": 0.1316,
+    "sentiment_neg": 0.06905,
+    "sentiment_neu": 0.79925,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 56.22
+  },
   "analyst": {
     "revision_momentum": 0.1111111111111111,
     "target_upside": -0.0028740688603437685,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 50.593313085714286,
     "catalyst_timeline": 58.97272371445693,
     "downside_control": 39.441178319833405,
-    "composite_score": 57.42474450041023,
+    "composite_score": 57.42085545511179,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 63.02746806672332,
     "technical_score": 56.932125520587846,
-    "sentiment_score": 50.0,
+    "sentiment_score": 56.22,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Staples",
     "industry": "Soft Drinks & Non-alcoholic Beverages"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Price elasticity is largest 'friction point' in snacks: PepsiCo CEO",
+      "url": "https://finance.yahoo.com/video/price-elasticity-largest-friction-point-130049273.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pepsi (PEP) Stock Is Crazy, Says Jim Cramer",
+      "url": "/news/303586/pepsi-pep-stock-is-crazy-says-jim-cramer",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "MarketBeat Week in Review - 02/02 - 02/06",
+      "url": "/news/303521/marketbeat-week-in-review-0202-0206",
+      "publisher": "MarketBeat",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's How Much Traders Expect Coca-Cola Stock Could Move After Earnings Tuesday",
+      "url": "https://finance.yahoo.com/m/653529ad-f676-310e-88b7-4311a3be6976/here%27s-how-much-traders.html",
+      "publisher": "Investopedia",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How snack makers are trying to win back fed-up consumers",
+      "url": "https://finance.yahoo.com/m/82f547df-1734-377c-89b1-c331d7092525/how-snack-makers-are-trying.html",
+      "publisher": "NBC News",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Earnings live: Amazon, Reddit stocks sink to cap jam-packed earnings week",
+      "url": "https://finance.yahoo.com/news/live/earnings-live-amazon-reddit-stocks-sink-to-cap-jam-packed-earnings-week-213155571.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Coca-Cola Pre-Q4 Earnings: Does It Offer a Buying Opportunity Now?",
+      "url": "/news/303095/coca-cola-pre-q4-earnings-does-it-offer-a-buying-opportunity-now",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 High-Yield Dividend Stocks Perfect For Baby Boomers",
+      "url": "https://finance.yahoo.com/m/4b28c1e9-bb58-318e-87b7-c6f5f6bb0b08/3-high-yield-dividend-stocks.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Earnings live: Amazon stock sinks, Philip Morris retreats, Reddit spikes as Wall Street focuses on guidance",
+      "url": "https://finance.yahoo.com/news/live/earnings-live-amazon-stock-sinks-philip-morris-retreats-reddit-spikes-as-wall-street-focuses-on-guidance-140858850.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Capital Rotation: Why Smart Money is Chasing Functional Wellness",
+      "url": "/news/302696/capital-rotation-why-smart-money-is-chasing-functional-wellness",
+      "publisher": "PR Newswire",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "How PepsiCo is adapting to consumer use of GLP-1 drugs",
+      "url": "https://finance.yahoo.com/video/pepsico-adapting-consumer-glp-1-123054099.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Blood Tests and Better-for-You Soda: Super Bowl Ads May Be Healthiest Yet",
+      "url": "https://finance.yahoo.com/m/f64630ea-7079-3353-81aa-20ab90a8d31e/blood-tests-and.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PepsiCo plans price cuts amid consumer anger",
+      "url": "https://finance.yahoo.com/m/08d3e486-9922-3a52-8a2e-ec74fae56ba7/pepsico-plans-price-cuts-amid.html",
+      "publisher": "Retail Insight Network",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Earnings live: Strategy gets caught in bitcoin crash, Amazon stock plunges, Roblox surges",
+      "url": "https://finance.yahoo.com/news/live/earnings-live-strategy-gets-caught-in-bitcoin-crash-amazon-stock-plunges-roblox-surges-213043924.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Earnings live: Strategy gets caught in bitcoin crash, Amazon stock plunges, Reddit wavers",
+      "url": "https://finance.yahoo.com/news/live/earnings-live-strategy-gets-caught-in-bitcoin-crash-amazon-stock-plunges-reddit-wavers-213043638.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "UBS Lifts PepsiCo (PEP) Target After Solid Q4 Execution",
+      "url": "/news/301963/ubs-lifts-pepsico-pep-target-after-solid-q4-execution",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Pizza Hut closing 250 US stores as parent company considers selling the brand",
+      "url": "https://finance.yahoo.com/news/pizza-hut-closing-250-us-185821739.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PepsiCo's Productivity Strategy: A Catalyst for EPS Expansion?",
+      "url": "/news/301967/pepsicos-productivity-strategy-a-catalyst-for-eps-expansion",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "E.l.f. Beauty CEO rejects growth fears, points to 'great momentum' following Hailey Bieber deal",
+      "url": "https://finance.yahoo.com/news/elf-beauty-ceo-rejects-growth-fears-points-to-great-momentum-following-hailey-bieber-deal-173549661.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Pepsi Pops as Investors Take Notice of Key Strategic Initiatives",
+      "url": "/news/301753/pepsi-pops-as-investors-take-notice-of-key-strategic-initiatives",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    }
+  ]
 }

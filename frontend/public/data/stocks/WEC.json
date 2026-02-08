@@ -6306,7 +6306,15 @@
     "technical_score": 60.54996660987092,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.3122920491203296,
+    "sentiment_pos": 0.20855,
+    "sentiment_neg": 0.0059499999999999996,
+    "sentiment_neu": 0.7855000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 65.61
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.08598097289535091,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 51.25604385238095,
     "catalyst_timeline": 56.40497258706574,
     "downside_control": 52.25162525383157,
-    "composite_score": 53.926222377085715,
+    "composite_score": 53.92233333178728,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 48.94003713888888,
     "technical_score": 60.54996660987092,
-    "sentiment_score": 50.0,
+    "sentiment_score": 65.61,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 303,
-    "percentile": 0.41811175337186895,
+    "rank": 304,
+    "percentile": 0.4161849710982659,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6369,5 +6377,146 @@
     "sector": "Utilities",
     "industry": "Electric Utilities"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "WEC Energy Group Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/c7237d8b-3695-3abc-87de-d9989423c6ee/wec-energy-group-q4-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: WEC Energy Group, Inc.",
+      "url": "https://finance.yahoo.com/m/14493178-beb2-31ea-858a-aa244f75faf5/analyst-report%3A-wec-energy.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "WEC Energy Beats Q4 Earnings Estimates, to Add More Renewable Assets",
+      "url": "/news/303026/wec-energy-beats-q4-earnings-estimates-to-add-more-renewable-assets",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "WEC Energy Group Inc (WEC) Q4 2025 Earnings Call Highlights: Robust Growth and Strategic ...",
+      "url": "https://finance.yahoo.com/news/wec-energy-group-inc-wec-010335298.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: WEC Energy Group, Inc.",
+      "url": "https://finance.yahoo.com/m/31665f20-a3ca-3591-a377-47f6f4b4ba3f/analyst-report%3A-wec-energy.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "WEC Energy Group (WEC) Q4 Earnings and Revenues Top Estimates",
+      "url": "/news/301337/wec-energy-group-wec-q4-earnings-and-revenues-top-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "WEC Energy: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/wec-energy-q4-earnings-snapshot-121033454.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "WEC Energy Group posts 2025 results",
+      "url": "/news/300983/wec-energy-group-posts-2025-results",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "New Nuclear Power Generation Proposed at Closed Wisconsin Site",
+      "url": "https://finance.yahoo.com/m/aadf41fb-dd46-318a-81d8-26478a5b8f87/new-nuclear-power-generation.html",
+      "publisher": "POWER Magazine",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "January jobs data, Alphabet and Amazon earnings, more Warsh fallout: What to watch this week",
+      "url": "https://finance.yahoo.com/news/january-jobs-data-alphabet-and-amazon-earnings-more-warsh-fallout-what-to-watch-this-week-124723942.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "WEC Energy Group to announce 2025 fourth-quarter and year-end financial results Feb. 5",
+      "url": "/news/292127/wec-energy-group-to-announce-2025-fourth-quarter-and-year-end-financial-results-feb-5",
+      "publisher": "PR Newswire",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "WEC Energy Group (WEC) Expected to Beat Earnings Estimates: Should You Buy?",
+      "url": "/news/291995/wec-energy-group-wec-expected-to-beat-earnings-estimates-should-you-buy",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why WEC Energy (WEC) is Poised to Beat Earnings Estimates Again",
+      "url": "/news/290544/why-wec-energy-wec-is-poised-to-beat-earnings-estimates-again",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Longtime head of We Energies' corporate parent is retiring",
+      "url": "https://finance.yahoo.com/m/0013d9a8-0c92-3892-81b8-a510ef46db4d/longtime-head-of-we-energies%27.html",
+      "publisher": "Milwaukee Journal Sentinel",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Klappa to retire, named Chairman Emeritus",
+      "url": "/news/284588/klappa-to-retire-named-chairman-emeritus",
+      "publisher": "PR Newswire",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Wisconsin Electric declares quarterly dividends",
+      "url": "/news/284465/wisconsin-electric-declares-quarterly-dividends",
+      "publisher": "PR Newswire",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "WEC Energy Group raises quarterly dividend by 6.7 percent",
+      "url": "/news/284460/wec-energy-group-raises-quarterly-dividend-by-67-percent",
+      "publisher": "PR Newswire",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What to Expect From WEC Energy's Q4 2025 Earnings Report",
+      "url": "https://finance.yahoo.com/m/55355b49-9ceb-3894-8b8e-d50e1d7ade71/what-to-expect-from-wec.html",
+      "publisher": "Barchart",
+      "date": "2026-01-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Barclays Analyst Lowers Price Target On WEC Energy Group, Inc. (WEC)",
+      "url": "/news/259335/barclays-analyst-lowers-price-target-on-wec-energy-group-inc-wec",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PCG or WEC: Which Is the Better Value Stock Right Now?",
+      "url": "/news/255422/pcg-or-wec-which-is-the-better-value-stock-right-now",
+      "publisher": "Zacks",
+      "date": "2025-12-16",
+      "sentiment": "positive"
+    }
+  ]
 }

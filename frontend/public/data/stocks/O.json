@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 63.22999954223633,
     "sma_20": 60.983532142639156,
-    "sma_50": 58.49878997802735,
+    "sma_50": 58.498789978027354,
     "sma_200": 56.749993724823,
-    "trend_alignment": 0.652595183201715,
+    "trend_alignment": 0.6525951832017148,
     "rsi": 70.564410349405,
     "rsi_score": 0.41128820698809987,
     "macd_histogram": 0.1939163116761986,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 86.37147221109961,
     "stoch_d": 90.1782360760458,
-    "trend_score": 65.2595183201715,
+    "trend_score": 65.25951832017148,
     "rsi_abs_score": 52.41965102166601,
     "macd_abs_score": 60.16710078602272,
     "momentum_score": 56.293375903844364,
@@ -6306,7 +6306,15 @@
     "technical_score": 60.29044667501263,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.08900100929542909,
+    "sentiment_pos": 0.1068,
+    "sentiment_neg": 0.03135,
+    "sentiment_neu": 0.8618499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 54.45
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.012177763719753331,
@@ -6325,7 +6333,7 @@
     "quality_score": 53.33687499999999,
     "growth_score": 67.14428571428572,
     "safety_score": 46.920732770824316,
-    "trend_score": 65.2595183201715,
+    "trend_score": 65.25951832017148,
     "momentum_score": 56.293375903844364,
     "volatility_score": 69.12289203903937,
     "volume_score": 50.0,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 38.92274795,
     "catalyst_timeline": 56.53922268193028,
     "downside_control": 61.415543721479544,
-    "composite_score": 52.130799701945634,
+    "composite_score": 52.1269106566472,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 52.90107044106963,
     "technical_score": 60.29044667501263,
-    "sentiment_score": 50.0,
+    "sentiment_score": 54.45,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 353,
-    "percentile": 0.3217726396917148,
+    "rank": 354,
+    "percentile": 0.3198458574181118,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6369,5 +6377,146 @@
     "sector": "Real Estate",
     "industry": "Retail REITs"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "3 High-Yield Dividend Stocks Perfect For Baby Boomers",
+      "url": "https://finance.yahoo.com/m/4b28c1e9-bb58-318e-87b7-c6f5f6bb0b08/3-high-yield-dividend-stocks.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "UPST Set to Report Q4 Earnings: What's in Store for the Stock?",
+      "url": "/news/303004/upst-set-to-report-q4-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Low Volatility ETFs to Watch Amid Major Tech Sell-Off Over AI Panic",
+      "url": "/news/302877/low-volatility-etfs-to-watch-amid-major-tech-sell-off-over-ai-panic",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "UDR Set to Report Q4 Earnings: What's in Store for the Stock?",
+      "url": "/news/301765/udr-set-to-report-q4-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Realty Income Corporation",
+      "url": "https://finance.yahoo.com/m/b1fcd2f0-2f3c-344f-a18a-d59303a6ea88/analyst-report%3A-realty-income.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Realty Income Corp. (O) Gains As Market Dips: What You Should Know",
+      "url": "/news/300452/realty-income-corp-o-gains-as-market-dips-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "My 3 Favorite High-Yield Dividend Stocks to Buy in February (1 Currently Yields 6.8%)",
+      "url": "/news/300207/my-3-favorite-high-yield-dividend-stocks-to-buy-in-february-1-currently-yields-68",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Regency Centers to Post Q4 Earnings: What's in Store for the Stock?",
+      "url": "/news/299738/regency-centers-to-post-q4-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Investors Need to Take Advantage of These 2 Finance Stocks Now",
+      "url": "/news/299383/why-investors-need-to-take-advantage-of-these-2-finance-stocks-now",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Consumer Dividend Stocks to Buy for High-Yield Dividend Growth",
+      "url": "/news/298753/3-consumer-dividend-stocks-to-buy-for-high-yield-dividend-growth",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Deutsche Bank Points to Structural REIT Lag Despite Improved Setup for Realty Income Corporation (O)",
+      "url": "/news/298151/deutsche-bank-points-to-structural-reit-lag-despite-improved-setup-for-realty-income-corporation-o",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Realty Income Corporation (O): A Bull Case Theory",
+      "url": "/news/296383/realty-income-corporation-o-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Realty Income Has Made 650 Consecutive Monthly Payments and the Streak Looks Secure",
+      "url": "https://finance.yahoo.com/m/e076ec80-acc3-3dd3-b428-9e6a2e5fad7c/realty-income-has-made-650.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "I Nailed This Bold Prediction for Realty Income. Here are 2 More Things I Still See Ahead in 2026.",
+      "url": "/news/295101/i-nailed-this-bold-prediction-for-realty-income-here-are-2-more-things-i-still-see-ahead-in-2026",
+      "publisher": "Motley Fool",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why I Just Can't Stop Buying This 5.3%-Yielding Passive Income Powerhouse",
+      "url": "/news/294730/why-i-just-cant-stop-buying-this-53-yielding-passive-income-powerhouse",
+      "publisher": "Motley Fool",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "My 5 Favorite Ultra-High-Yield Dividend Stocks to Buy for 2026",
+      "url": "/news/294476/my-5-favorite-ultra-high-yield-dividend-stocks-to-buy-for-2026",
+      "publisher": "Motley Fool",
+      "date": "2026-01-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Realty Income Gains 7.8% in a Month: What Should Investors Do?",
+      "url": "/news/293764/realty-income-gains-78-in-a-month-what-should-investors-do",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Realty Income Announces 2025 Dividend Tax Allocation",
+      "url": "/news/292544/realty-income-announces-2025-dividend-tax-allocation",
+      "publisher": "PR Newswire",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What to Expect From Simon Property Stock This Earnings Season?",
+      "url": "/news/292083/what-to-expect-from-simon-property-stock-this-earnings-season",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "10 Dividend Stocks to Buy Today and Hold Forever",
+      "url": "/news/291398/10-dividend-stocks-to-buy-today-and-hold-forever",
+      "publisher": "Motley Fool",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    }
+  ]
 }

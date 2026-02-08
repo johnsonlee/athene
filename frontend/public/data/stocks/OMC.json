@@ -6277,19 +6277,19 @@
   },
   "technical": {
     "close": 69.87000274658203,
-    "sma_20": 76.11850013732912,
+    "sma_20": 76.11850013732911,
     "sma_50": 76.75136245727538,
     "sma_200": 74.52691154479983,
-    "trend_alignment": 0.39368441845199786,
+    "trend_alignment": 0.3936844184519978,
     "rsi": 33.715477835482034,
     "rsi_score": -0.32569044329035934,
     "macd_histogram": -1.0467075566942436,
     "macd_line": -2.2712038091741675,
     "macd_histogram_pct": -1.498078596748656,
-    "bb_position": 0.1391672608133776,
-    "bb_upper": 84.7769403398898,
-    "bb_lower": 67.46005993476844,
-    "bb_width": 0.22749897034070737,
+    "bb_position": 0.13916726081337844,
+    "bb_upper": 84.77694033988979,
+    "bb_lower": 67.46005993476842,
+    "bb_width": 0.2274989703407074,
     "hist_volatility": 0.4626255842595603,
     "volume_ratio": 0.8682627479851209,
     "avg_volume_20d": 4129280.0,
@@ -6306,7 +6306,15 @@
     "technical_score": 38.80280628216448,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.09614063668217689,
+    "sentiment_pos": 0.10734999999999999,
+    "sentiment_neg": 0.027700000000000002,
+    "sentiment_neu": 0.86495,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 54.81
+  },
   "analyst": {
     "revision_momentum": -0.5,
     "target_upside": 0.5099470445112351,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 75.04491285249999,
     "catalyst_timeline": 45.17280753661366,
     "downside_control": 41.540977235943465,
-    "composite_score": 53.72537767888014,
+    "composite_score": 53.72148863358171,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 59.29932602243903,
     "technical_score": 38.80280628216448,
-    "sentiment_score": 50.0,
+    "sentiment_score": 54.81,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Communication Services",
     "industry": "Advertising"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Software Stocks Slide Again as AI Threats Rattle Investors",
+      "url": "https://finance.yahoo.com/news/software-stocks-now-sentenced-trial-094443717.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Anthropic's new AI tools deepen selloff in data analytics and software stocks, investors say",
+      "url": "https://finance.yahoo.com/news/anthropics-ai-tools-deepen-selloff-054551832.html",
+      "publisher": "Reuters",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Omnicom Group, Verisk, DXC, Genpact, and Grid Dynamics Shares Plummet, What You Need To Know",
+      "url": "/news/297925/omnicom-group-verisk-dxc-genpact-and-grid-dynamics-shares-plummet-what-you-need-to-know",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "AI concerns pummel European software stocks",
+      "url": "https://finance.yahoo.com/news/ai-concerns-pummel-european-software-123226284.html",
+      "publisher": "Reuters",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Publicis Says Account Wins, AI Demand Lift Top Line",
+      "url": "https://www.wsj.com/business/earnings/publicis-says-account-wins-ai-demand-lift-top-line-1e003dca?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Omnicom Appoints Jantzen Bridges as Global President of its Enterprise Transformation Consultancy",
+      "url": "/news/291690/omnicom-appoints-jantzen-bridges-as-global-president-of-its-enterprise-transformation-consultancy",
+      "publisher": "PR Newswire",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Reasons to Avoid OMC and 1 Stock to Buy Instead",
+      "url": "/news/288824/3-reasons-to-avoid-omc-and-1-stock-to-buy-instead",
+      "publisher": "StockStory",
+      "date": "2026-01-26",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Omnicom Group (OMC) Stock Trades Up, Here Is Why",
+      "url": "/news/276651/omnicom-group-omc-stock-trades-up-here-is-why",
+      "publisher": "StockStory",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "6 stocks and ETFs that these unsung market heroes see outperforming in 2026",
+      "url": "https://finance.yahoo.com/m/70ca3308-dee7-30c8-9d98-c636d81a8990/6-stocks-and-etfs-that-these.html",
+      "publisher": "MarketWatch",
+      "date": "2026-01-13",
+      "sentiment": "positive"
+    },
+    {
+      "title": "6 stocks and ETFs that these unsung market heroes see outperforming in 2026",
+      "url": "https://www.marketwatch.com/story/6-stocks-and-etfs-that-these-unsung-market-heroes-see-outperforming-in-2026-0aef8bb8?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-01-12",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Evolving Digital Marketing Demands to Offer Support to Omnicom (OMC)",
+      "url": "/news/272745/evolving-digital-marketing-demands-to-offer-support-to-omnicom-omc",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-10",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Acuity Brands to Post Q1 Earnings: Here's What You Must Know",
+      "url": "/news/269833/acuity-brands-to-post-q1-earnings-heres-what-you-must-know",
+      "publisher": "Zacks",
+      "date": "2026-01-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Omnicom Unveils the New Omni: an AI-Driven Marketing Intelligence Platform Delivering Measurable Sales Growth for Brands",
+      "url": "/news/269692/omnicom-unveils-the-new-omni-an-ai-driven-marketing-intelligence-platform-delivering-measurable-sales-growth-for-brands",
+      "publisher": "PR Newswire",
+      "date": "2026-01-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "McCann Remembers John J. Dooner, Jr.",
+      "url": "/news/268738/mccann-remembers-john-j-dooner-jr",
+      "publisher": "PR Newswire",
+      "date": "2026-01-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is Omnicom Group (OMC) Stock Undervalued Right Now?",
+      "url": "/news/268679/is-omnicom-group-omc-stock-undervalued-right-now",
+      "publisher": "Zacks",
+      "date": "2026-01-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "OMNICOM MEDIA STUDY REVEALS NEW RULES FOR BRAND GROWTH IN THE ERA OF FRAGMENTED INFLUENCE",
+      "url": "/news/267489/omnicom-media-study-reveals-new-rules-for-brand-growth-in-the-era-of-fragmented-influence",
+      "publisher": "PR Newswire",
+      "date": "2026-01-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Flywheel Accelerates Its Connected Commerce Vision with Integration of TPN",
+      "url": "/news/267220/flywheel-accelerates-its-connected-commerce-vision-with-integration-of-tpn",
+      "publisher": "PR Newswire",
+      "date": "2026-01-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PayPal downgraded, Costco upgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/paypal-downgraded-costco-upgraded-wall-144935003.html",
+      "publisher": "The Fly",
+      "date": "2026-01-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's What to Expect From Omnicom's Next Earnings Report",
+      "url": "https://finance.yahoo.com/m/94a75c77-5844-3cbf-9137-d899b30a787a/here%27s-what-to-expect-from.html",
+      "publisher": "Barchart",
+      "date": "2026-01-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Reasons Why Investors Should Bet on Omnicom Stock Right Now",
+      "url": "/news/264478/reasons-why-investors-should-bet-on-omnicom-stock-right-now",
+      "publisher": "Zacks",
+      "date": "2025-12-30",
+      "sentiment": "neutral"
+    }
+  ]
 }

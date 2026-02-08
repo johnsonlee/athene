@@ -6306,7 +6306,15 @@
     "technical_score": 57.54382399746261,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.16435328482056755,
+    "sentiment_pos": 0.10395000000000001,
+    "sentiment_neg": 0.0108,
+    "sentiment_neu": 0.8852499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 58.22
+  },
   "analyst": {
     "revision_momentum": 0.3333333333333333,
     "target_upside": -0.013761467889908343,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 74.37147712857143,
     "catalyst_timeline": 59.57736229895977,
     "downside_control": 40.18854720617141,
-    "composite_score": 59.329765064750106,
+    "composite_score": 59.32587601945167,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 59.27088094047619,
     "technical_score": 57.54382399746261,
-    "sentiment_score": 50.0,
+    "sentiment_score": 58.22,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 0.8325,
     "data_quality_penalty": 0.0,
-    "rank": 116,
-    "percentile": 0.7784200385356455,
+    "rank": 115,
+    "percentile": 0.7803468208092486,
     "tier": "buy",
     "tier_raw": "buy",
     "tier_label": "Buy",
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Staples",
     "industry": "Tobacco"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Analyst Report: Philip Morris International Inc.",
+      "url": "https://finance.yahoo.com/m/10bea129-583c-3815-bc39-c378c74839e0/analyst-report%3A-philip-morris.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "5 High-Yield Stocks (6%-8%) Every Retiree Should Consider Now",
+      "url": "https://finance.yahoo.com/m/85ac535a-0a2a-37a8-8d90-018916fbeb55/5-high-yield-stocks-%286%25-8%25%29.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "5 Insightful Analyst Questions From Altria's Q4 Earnings Call",
+      "url": "/news/300851/5-insightful-analyst-questions-from-altrias-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Can Pricing Power Offset Soft Cigarette Volumes at Altria?",
+      "url": "/news/299782/can-pricing-power-offset-soft-cigarette-volumes-at-altria",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Altria to Present at the 2026 Consumer Analyst Group of New York Conference",
+      "url": "https://www.businesswire.com/news/home/20260203023657/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Altria Group, Inc. (MO) is Attracting Investor Attention: Here is What You Should Know",
+      "url": "/news/299410/altria-group-inc-mo-is-attracting-investor-attention-here-is-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Walmart, Verizon, Altria, and Other Safe Dividend Stocks Jumped Today",
+      "url": "/news/298524/why-walmart-verizon-altria-and-other-safe-dividend-stocks-jumped-today",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why Altria (MO) is a Strong Growth Stock",
+      "url": "/news/297609/heres-why-altria-mo-is-a-strong-growth-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Altria (MO) is a Top Momentum Stock for the Long-Term",
+      "url": "/news/295771/why-altria-mo-is-a-top-momentum-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stifel Cuts Altria Group (MO) Price Target by $4",
+      "url": "/news/295161/stifel-cuts-altria-group-mo-price-target-by-4",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Is Altria Becoming More Than an Income Stock?",
+      "url": "/news/294766/is-altria-becoming-more-than-an-income-stock",
+      "publisher": "MarketBeat",
+      "date": "2026-02-01",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Altria (MO) Eyes Second-Half Profit Lift From U.S. Tobacco Tax Rebate",
+      "url": "/news/294228/altria-mo-eyes-second-half-profit-lift-from-us-tobacco-tax-rebate",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Smartest Dividend Stock to Buy With $10,000 Right Now",
+      "url": "/news/294112/the-smartest-dividend-stock-to-buy-with-10000-right-now",
+      "publisher": "Motley Fool",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Altria or Philip Morris: Which Stock Looks Stronger in Today's Market?",
+      "url": "/news/293760/altria-or-philip-morris-which-stock-looks-stronger-in-todays-market",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Company News for Jan 30, 2026",
+      "url": "/news/293380/company-news-for-jan-30-2026",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Altria Group Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/b368d11b-161d-33b2-ab3c-5a209d792fb1/altria-group-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MO Q4 Deep Dive: Margin Compression and Smoke-Free Expansion Shape Outlook",
+      "url": "/news/294083/mo-q4-deep-dive-margin-compression-and-smoke-free-expansion-shape-outlook",
+      "publisher": "StockStory",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Altria Group, Inc.",
+      "url": "https://finance.yahoo.com/m/c2af5a2c-27fc-3385-9374-495a58e4b086/analyst-report%3A-altria-group%2C.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Altria Stock Dropped Today",
+      "url": "/news/292712/why-altria-stock-dropped-today",
+      "publisher": "Motley Fool",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Altria Group Inc (MO) Q4 2025 Earnings Call Highlights: Strong EPS Growth Amidst Volume Declines",
+      "url": "https://finance.yahoo.com/news/altria-group-inc-mo-q4-210111658.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    }
+  ]
 }

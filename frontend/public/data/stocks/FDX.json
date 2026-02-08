@@ -6295,8 +6295,8 @@
     "avg_volume_20d": 2070450.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 97.242649603368,
-    "stoch_d": 96.71480099290977,
+    "stoch_k": 97.24264960336801,
+    "stoch_d": 96.7148009929098,
     "trend_score": 90.57349641827385,
     "rsi_abs_score": 20.0,
     "macd_abs_score": 78.68269503948925,
@@ -6306,7 +6306,15 @@
     "technical_score": 59.156387917759076,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.043494679833870876,
+    "sentiment_pos": 0.0712,
+    "sentiment_neg": 0.05589999999999999,
+    "sentiment_neu": 0.8728999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 52.17
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": -0.12249817187119144,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 66.43758116000001,
     "catalyst_timeline": 60.655368991478085,
     "downside_control": 47.602771858126275,
-    "composite_score": 56.878589580969674,
+    "composite_score": 56.87470053567124,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 56.72864251733864,
     "technical_score": 59.156387917759076,
-    "sentiment_score": 50.0,
+    "sentiment_score": 52.17,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Air Freight & Logistics"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "The New Ways High Schools Are Teaching Teens About Money",
+      "url": "https://finance.yahoo.com/m/df5be533-13ba-3d87-b413-453907d3a982/the-new-ways-high-schools-are.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "From AI Darlings To Dow Dinosaurs: Investors Flee Software For Old-Economy Stocks",
+      "url": "/news/303569/from-ai-darlings-to-dow-dinosaurs-investors-flee-software-for-old-economy-stocks",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Tom Gayner's Strategic Moves: FedEx Corp Exit and Portfolio Adjustments",
+      "url": "https://finance.yahoo.com/news/tom-gayners-strategic-moves-fedex-230018066.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Traders Chase AI Resistant Stocks During Slide in Tech",
+      "url": "https://finance.yahoo.com/news/traders-chase-ai-resistant-stocks-110000701.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dun & Bradstreet and FedEx Dataworks to Launch Predictive Insights Tracking U.S. Retail Supply and Demand",
+      "url": "/news/302034/dun-bradstreet-and-fedex-dataworks-to-launch-predictive-insights-tracking-us-retail-supply-and-demand",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Canadian e-commerce shipping platform acquires Warehowz",
+      "url": "https://finance.yahoo.com/news/canadian-e-commerce-shipping-platform-193235346.html",
+      "publisher": "FreightWaves",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FedEx preparing major sort center expansion at Memphis air hub",
+      "url": "https://finance.yahoo.com/news/fedex-preparing-major-sort-center-141725434.html",
+      "publisher": "FreightWaves",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FedEx (FDX) Increases Despite Market Slip: Here's What You Need to Know",
+      "url": "/news/300527/fedex-fdx-increases-despite-market-slip-heres-what-you-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "These hot S&P 500 stocks show where investors are heading as they run away from tech",
+      "url": "https://www.marketwatch.com/story/these-hot-s-p-500-stocks-show-where-investors-are-heading-as-they-run-away-from-tech-0fcd53f6?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Should Investors Bet on UPS Stock Post Q4 Earnings Beat?",
+      "url": "/news/299385/should-investors-bet-on-ups-stock-post-q4-earnings-beat",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FedEx deploys SAF at Dallas, New York City airports",
+      "url": "https://finance.yahoo.com/m/df44303d-95a2-3c00-8047-56872569ab5c/fedex-deploys-saf-at-dallas%2C.html",
+      "publisher": "ESG Dive",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FedEx (FDX) Soars 5.4%: Is Further Upside Left in the Stock?",
+      "url": "/news/298776/fedex-fdx-soars-54-is-further-upside-left-in-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Unpopular Stocks We Steer Clear Of",
+      "url": "/news/298743/3-unpopular-stocks-we-steer-clear-of",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks Tumble on AI Disruption Fears",
+      "url": "https://finance.yahoo.com/m/2d280010-8635-3f1a-b487-d134aea3e092/stocks-tumble-on-ai.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Buy FedEx Stock Ahead of Its Analyst Day, Wells Fargo Says",
+      "url": "https://finance.yahoo.com/m/49a6fc61-9d2f-3dad-b06a-81604ef7bec4/buy-fedex-stock-ahead-of-its.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analysts Expect This S&P 500 Leader To Deliver Good Outlook",
+      "url": "https://finance.yahoo.com/m/ea9fafe0-d65a-3cf4-b578-933cd0b4bbf1/analysts-expect-this-s%26p-500.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Software Stocks Retreat and Drag the Broader Market Lower",
+      "url": "https://finance.yahoo.com/m/a06579e4-a8c9-38b5-bd18-ff27c7b1d6a5/software-stocks-retreat-and.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Veho to flex delivery speed for price-sensitive e-commerce sellers",
+      "url": "https://finance.yahoo.com/news/veho-flex-delivery-speed-price-160911347.html",
+      "publisher": "FreightWaves",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nasdaq Slips, Gold and Silver Stage Substantial Recovery",
+      "url": "https://finance.yahoo.com/m/e2a821b3-72dd-368c-9e69-12718b55c208/nasdaq-slips%2C-gold-and-silver.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Robert Kiyosaki Says When Walmart Has A Sale, Poor People Buy Everything. When The Market Crashes, They Sell. The Rich Do The Opposite",
+      "url": "https://finance.yahoo.com/news/robert-kiyosaki-says-walmart-sale-144611088.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    }
+  ]
 }

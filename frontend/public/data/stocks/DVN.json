@@ -6295,8 +6295,8 @@
     "avg_volume_20d": 12466305.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 96.08809829230745,
-    "stoch_d": 95.26194953230771,
+    "stoch_k": 96.08809829230746,
+    "stoch_d": 95.26194953230774,
     "trend_score": 81.10464016398276,
     "rsi_abs_score": 35.63439319860214,
     "macd_abs_score": 75.32749701727968,
@@ -6306,7 +6306,15 @@
     "technical_score": 57.89766822570648,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.2678022468666667,
+    "sentiment_pos": 0.1796,
+    "sentiment_neg": 0.0124,
+    "sentiment_neu": 0.808,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 63.39
+  },
   "analyst": {
     "revision_momentum": 0.11764705882352941,
     "target_upside": 0.04998858708057516,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 65.7131781,
     "catalyst_timeline": 63.985721550541854,
     "downside_control": 49.80759470598983,
-    "composite_score": 60.250951007818855,
+    "composite_score": 60.24706196252042,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 59.57006548635706,
     "technical_score": 57.89766822570648,
-    "sentiment_score": 50.0,
+    "sentiment_score": 63.39,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Energy",
     "industry": "Oil & Gas Exploration & Production"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Halper Sadeh LLC is Investigating Whether MPX, DVN, MCFT are Obtaining Fair Prices for its Shareholders",
+      "url": "/news/303346/halper-sadeh-llc-is-investigating-whether-mpx-dvn-mcft-are-obtaining-fair-prices-for-its-shareholders",
+      "publisher": "PR Newswire",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Coterra Energy downgraded to Neutral from Buy at Roth Capital",
+      "url": "https://finance.yahoo.com/news/coterra-energy-downgraded-neutral-buy-134019250.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here Are Wednesdays Top Wall Street Analyst Research Calls: AES Corp, Airbnb, Cloudflare, Devon Energy, Levi Strauss, Lumentum, PayPal, and More",
+      "url": "https://finance.yahoo.com/m/96ac2973-a352-341e-baca-bdf8192314a7/here-are-wednesday%E2%80%99s-top-wall.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Devon Energy (DVN) Gains As Market Dips: What You Should Know",
+      "url": "/news/298351/devon-energy-dvn-gains-as-market-dips-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Politics, Not Barrels, Are Driving Oil Again",
+      "url": "https://finance.yahoo.com/news/politics-not-barrels-driving-oil-154000680.html",
+      "publisher": "Oilprice.com",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Devon, Coterra Sign 'Blockbuster' Merger Deal",
+      "url": "https://www.rigzone.com/news/devon_coterra_sign_blockbuster_merger_deal-03-feb-2026-182914-article/",
+      "publisher": "Rigzone.com",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Adobe downgraded, Palantir upgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/adobe-downgraded-palantir-upgraded-wall-143444113.html",
+      "publisher": "The Fly",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Should You Invest in Devon Energy (DVN) Based on Bullish Wall Street Views?",
+      "url": "/news/297535/should-you-invest-in-devon-energy-dvn-based-on-bullish-wall-street-views",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Devon, Coterra Merger Redraws the 2026 U.S. Shale Playbook",
+      "url": "/news/297556/devon-coterra-merger-redraws-the-2026-us-shale-playbook",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Coterra Energy and Devon Energy Seal $58 Billion Merger Deal",
+      "url": "/news/297283/coterra-energy-and-devon-energy-seal-58-billion-merger-deal",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Devons relocation highlights corporate energy flight from Oklahoma",
+      "url": "https://finance.yahoo.com/m/80cfb6d5-e7d9-3a90-95be-94b92ae247cd/devon%E2%80%99s-relocation-highlights.html",
+      "publisher": "The Oklahoman",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Devon Energy and Coterra Energy to merge in $58bn all-stock deal",
+      "url": "https://finance.yahoo.com/m/4aaf6fe6-c40e-38b7-bd6b-44e53d87a653/devon-energy-and-coterra.html",
+      "publisher": "Offshore Technology",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "UBS Reaffirms Buy on Devon Energy (DVN) as Cost Cuts Accelerate",
+      "url": "/news/296844/ubs-reaffirms-buy-on-devon-energy-dvn-as-cost-cuts-accelerate",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Devon Energy Touts Transformative Coterra Merger, Targets $1B Synergies and $5B+ Buyback",
+      "url": "https://finance.yahoo.com/m/464626d4-55c3-31cf-ab54-7bb706a5b7b6/devon-energy-touts.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "This $58 Billion Merger is Creating a New U.S. Oil and Gas Giant",
+      "url": "/news/296384/this-58-billion-merger-is-creating-a-new-us-oil-and-gas-giant",
+      "publisher": "Motley Fool",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Coterra Energy Calls Devon Merger Transformational, Targets $1B Synergies and $5B+ Buybacks",
+      "url": "https://finance.yahoo.com/m/4b7abd4c-2a42-397b-8297-570e616db36e/coterra-energy-calls-devon.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Devon Agrees to Buy US Shale Rival Coterra for $21.4 Billion",
+      "url": "https://finance.yahoo.com/news/devon-agrees-buy-oil-rival-132254969.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Devon Energy And Coterra Create Shale Giant With $58 Billion Merger",
+      "url": "https://www.investors.com/news/devon-energy-coterra-energy-merger-creates-shale-oil-giant?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "KIMMERIDGE COMMENTS ON PROPOSED MERGER OF COTERRA AND DEVON",
+      "url": "/news/296237/kimmeridge-comments-on-proposed-merger-of-coterra-and-devon",
+      "publisher": "PR Newswire",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Financial Services Roundup: Market Talk",
+      "url": "https://finance.yahoo.com/m/17bc25df-65a6-3a5a-b943-2dec8468f16c/financial-services-roundup%3A.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    }
+  ]
 }

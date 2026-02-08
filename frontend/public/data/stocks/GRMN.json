@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 202.3300018310547,
-    "sma_20": 205.90750045776363,
+    "sma_20": 205.90750045776366,
     "sma_50": 204.71034912109377,
     "sma_200": 215.17835983276368,
     "trend_alignment": 0.434243755785609,
@@ -6286,10 +6286,10 @@
     "macd_histogram": -0.556413294283661,
     "macd_line": -1.2691049784160953,
     "macd_histogram_pct": -0.2750028612900748,
-    "bb_position": 0.2945641369120016,
-    "bb_upper": 214.61459417775478,
-    "bb_lower": 197.20040673777248,
-    "bb_width": 0.08457286597752835,
+    "bb_position": 0.294564136912,
+    "bb_upper": 214.6145941777548,
+    "bb_lower": 197.2004067377725,
+    "bb_width": 0.08457286597752833,
     "hist_volatility": 0.3027631088102067,
     "volume_ratio": 0.7552819305968502,
     "avg_volume_20d": 951830.0,
@@ -6306,7 +6306,15 @@
     "technical_score": 50.65063534325837,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.3379556380565604,
+    "sentiment_pos": 0.13474999999999998,
+    "sentiment_neg": 0.0066,
+    "sentiment_neu": 0.8586500000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 66.9
+  },
   "analyst": {
     "revision_momentum": 0.6666666666666666,
     "target_upside": 0.1540552562645183,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 46.841438483333334,
     "catalyst_timeline": 54.613174749536526,
     "downside_control": 66.49952424268626,
-    "composite_score": 60.180291686214744,
+    "composite_score": 60.17640264091631,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 64.52639204134921,
     "technical_score": 50.65063534325837,
-    "sentiment_score": 50.0,
+    "sentiment_score": 66.9,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Consumer Electronics"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Garmin unveils Varia RearVue 820, its brightest and most powerful radar tail light for cyclists",
+      "url": "/news/296969/garmin-unveils-varia-rearvue-820-its-brightest-and-most-powerful-radar-tail-light-for-cyclists",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Garmin (GRMN) Outperforms Broader Market: What You Need to Know",
+      "url": "/news/296349/garmin-grmn-outperforms-broader-market-what-you-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "DAKT vs. GRMN: Which Stock Is the Better Value Option?",
+      "url": "/news/295926/dakt-vs-grmn-which-stock-is-the-better-value-option",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Garmin (GRMN) Stock Sinks As Market Gains: Here's Why",
+      "url": "/news/289274/garmin-grmn-stock-sinks-as-market-gains-heres-why",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Barclays Turns More Constructive on Garmin (GRMN) as Valuation Looks Undemanding",
+      "url": "/news/287441/barclays-turns-more-constructive-on-garmin-grmn-as-valuation-looks-undemanding",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Garmins Q4 2025 Earnings: What to Expect",
+      "url": "https://finance.yahoo.com/m/59449cc6-9a59-3982-b2ec-c4ed9d13b1a5/garmin%E2%80%99s-q4-2025-earnings%3A.html",
+      "publisher": "Barchart",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Introducing the Approach G82, the ultimate warmup tool with Garmin's largest golf handheld display and new putting metrics",
+      "url": "/news/280768/introducing-the-approach-g82-the-ultimate-warmup-tool-with-garmins-largest-golf-handheld-display-and-new-putting-metrics",
+      "publisher": "PR Newswire",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Garmin tees up Approach J1, the first GPS watch specifically designed for junior golfers",
+      "url": "/news/280766/garmin-tees-up-approach-j1-the-first-gps-watch-specifically-designed-for-junior-golfers",
+      "publisher": "PR Newswire",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Garmin unveils revolutionary Xero L60i laser rangefinder with superior optics, GPS and onboard mapping technology",
+      "url": "/news/280765/garmin-unveils-revolutionary-xero-l60i-laser-rangefinder-with-superior-optics-gps-and-onboard-mapping-technology",
+      "publisher": "PR Newswire",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here Are Fridays Top Wall Street Analyst Research Calls: ConocoPhillips, Devon Energy, Garmin, Honeywell, HP, PepsiCo, Rocket Labs, Seagate, and More",
+      "url": "https://finance.yahoo.com/m/cf7a3407-ecf6-3a03-ba86-14300a6101e2/here-are-friday%E2%80%99s-top-wall.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-16",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Garmin Ltd. schedules fourth quarter 2025 earnings call",
+      "url": "/news/275786/garmin-ltd-schedules-fourth-quarter-2025-earnings-call",
+      "publisher": "PR Newswire",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why the Market Dipped But Garmin (GRMN) Gained Today",
+      "url": "/news/275599/why-the-market-dipped-but-garmin-grmn-gained-today",
+      "publisher": "Zacks",
+      "date": "2026-01-13",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stay connected on the water with quatix 8 Pro nautical smartwatch from Garmin, featuring inReach technology",
+      "url": "/news/274517/stay-connected-on-the-water-with-quatix-8-pro-nautical-smartwatch-from-garmin-featuring-inreach-technology",
+      "publisher": "PR Newswire",
+      "date": "2026-01-13",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Wearable Wellness Devices Dominate CES as FDA Loosens Rules",
+      "url": "https://finance.yahoo.com/m/43211618-2b73-3694-940b-a8a775a629da/wearable-wellness-devices.html",
+      "publisher": "The Daily Upside",
+      "date": "2026-01-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Garmin (GRMN) Beats Stock Market Upswing: What Investors Need to Know",
+      "url": "/news/268959/garmin-grmn-beats-stock-market-upswing-what-investors-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-01-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "KE vs. GRMN: Which Stock Should Value Investors Buy Now?",
+      "url": "/news/268577/ke-vs-grmn-which-stock-should-value-investors-buy-now",
+      "publisher": "Zacks",
+      "date": "2026-01-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Garmin introduces Unified Cabin 2026, headlined by an AI/LLM-based conversational, multi-intent, multi-lingual virtual assistant",
+      "url": "/news/267919/garmin-introduces-unified-cabin-2026-headlined-by-an-aillm-based-conversational-multi-intent-multi-lingual-virtual-assistant",
+      "publisher": "PR Newswire",
+      "date": "2026-01-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Garmin and Meta announce automotive OEM proof of concept with Garmin Unified Cabin and Meta Neural Band",
+      "url": "/news/267918/garmin-and-meta-announce-automotive-oem-proof-of-concept-with-garmin-unified-cabin-and-meta-neural-band",
+      "publisher": "PR Newswire",
+      "date": "2026-01-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Garmin teams up with Qualcomm to deliver Nexus automotive-grade multi-domain computing platform",
+      "url": "/news/267917/garmin-teams-up-with-qualcomm-to-deliver-nexus-automotive-grade-multi-domain-computing-platform",
+      "publisher": "PR Newswire",
+      "date": "2026-01-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Boost the audio experience with purpose-built JL Audio AP Amplifiers from Garmin",
+      "url": "/news/266874/boost-the-audio-experience-with-purpose-built-jl-audio-ap-amplifiers-from-garmin",
+      "publisher": "PR Newswire",
+      "date": "2026-01-05",
+      "sentiment": "positive"
+    }
+  ]
 }

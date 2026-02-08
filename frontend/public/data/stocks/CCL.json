@@ -6279,8 +6279,8 @@
     "close": 33.9900016784668,
     "sma_20": 30.380500316619873,
     "sma_50": 29.488000335693357,
-    "sma_200": 27.777950115203858,
-    "trend_alignment": 0.7816550489048238,
+    "sma_200": 27.77795011520386,
+    "trend_alignment": 0.7816550489048237,
     "rsi": 66.9979167742398,
     "rsi_score": 0.3399583354847959,
     "macd_histogram": 0.43187534320710047,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 89.05185791716133,
     "stoch_d": 82.4063044728357,
-    "trend_score": 78.16550489048238,
+    "trend_score": 78.16550489048237,
     "rsi_abs_score": 62.40583303212857,
     "macd_abs_score": 76.55892859137604,
     "momentum_score": 69.48238081175231,
     "volatility_score": 23.15269934348145,
     "volume_score": 50.0,
-    "technical_score": 58.924905579366694,
+    "technical_score": 58.92490557936669,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.14801608280427622,
+    "sentiment_pos": 0.10654999999999999,
+    "sentiment_neg": 0.02225,
+    "sentiment_neu": 0.8712,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 57.4
+  },
   "analyst": {
     "revision_momentum": 0.05,
     "target_upside": 0.11797587525742859,
@@ -6325,7 +6333,7 @@
     "quality_score": 70.04694022857143,
     "growth_score": 72.78,
     "safety_score": 24.808857298732434,
-    "trend_score": 78.16550489048238,
+    "trend_score": 78.16550489048237,
     "momentum_score": 69.48238081175231,
     "volatility_score": 23.15269934348145,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 68.92502242571429,
     "catalyst_timeline": 65.70566724630466,
     "downside_control": 27.81623349633208,
-    "composite_score": 61.196710833021825,
+    "composite_score": 61.19282178772339,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 62.58920554974649,
-    "technical_score": 58.924905579366694,
-    "sentiment_score": 50.0,
+    "technical_score": 58.92490557936669,
+    "sentiment_score": 57.4,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Hotels, Resorts & Cruise Lines"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Carnival Leads Three More Stocks To New Highs",
+      "url": "https://finance.yahoo.com/m/b316d5a8-8fec-343b-9317-8bcf6fd47f14/carnival-leads-three-more.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's What Analysts Are Saying About Carnival Corporation & plc (CCL)",
+      "url": "/news/302386/heres-what-analysts-are-saying-about-carnival-corporation-plc-ccl",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Royal Caribbean, IBD Stock Of The Day, Builds A Handle",
+      "url": "https://finance.yahoo.com/m/f1490e24-3f20-37d7-a540-407f4d71837d/royal-caribbean%2C-ibd-stock-of.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Holland America Line Opens Nearly Three Dozen 2027-2028 Voyages Across Hawaii, Mexico, Panama Canal and Pacific Coast",
+      "url": "/news/301327/holland-america-line-opens-nearly-three-dozen-2027-2028-voyages-across-hawaii-mexico-panama-canal-and-pacific-coast",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Carnival Corporation (CCL) Is a Trending Stock: Facts to Know Before Betting on It",
+      "url": "/news/301447/carnival-corporation-ccl-is-a-trending-stock-facts-to-know-before-betting-on-it",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Don't You Dare Buy the Cheapest Cruise Line Stock",
+      "url": "/news/299217/dont-you-dare-buy-the-cheapest-cruise-line-stock",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Caribbean Capacity Surges, Can Carnival Defend Yields in 2026?",
+      "url": "/news/299389/caribbean-capacity-surges-can-carnival-defend-yields-in-2026",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Of The Day: Is The Carnival Rally Over Already?",
+      "url": "/news/297350/stock-of-the-day-is-the-carnival-rally-over-already",
+      "publisher": "Benzinga",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Holland America Line Marks 100 Years of Caribbean Cruising with Special Anniversary Offers Including a $100 Onboard Credit for Two",
+      "url": "/news/297316/holland-america-line-marks-100-years-of-caribbean-cruising-with-special-anniversary-offers-including-a-100-onboard-credit-for-two",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Carnival Corporation & plc (CCL) Delivers Record Results, Restores Dividend, and Gains Analyst Confidence Despite Industry Headwinds\"",
+      "url": "/news/297085/carnival-corporation-plc-ccl-delivers-record-results-restores-dividend-and-gains-analyst-confidence-despite-industry-headwinds",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Carnival (CCL) Climbs 8% on Dividend Payment, Upbeat Outlook",
+      "url": "/news/296639/carnival-ccl-climbs-8-on-dividend-payment-upbeat-outlook",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Carnival Corporation & plc",
+      "url": "https://finance.yahoo.com/m/357da0bb-b4a9-3895-82e0-de6677ed7eae/analyst-report%3A-carnival.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Carnival Shares Surge As Royal Caribbean's 2026 Outlook Ignites Cruise Sector",
+      "url": "/news/295885/carnival-shares-surge-as-royal-caribbeans-2026-outlook-ignites-cruise-sector",
+      "publisher": "Benzinga",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "RCL Best Booking Streak Ever: Signal of Strong Cruise Demand in 2026?",
+      "url": "/news/295825/rcl-best-booking-streak-ever-signal-of-strong-cruise-demand-in-2026",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why Carnival (CCL) is a Strong Value Stock",
+      "url": "/news/295737/heres-why-carnival-ccl-is-a-strong-value-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "I Predicted That Carnival Stock Would Beat the Market in 2025. Can It Repeat in 2026?",
+      "url": "/news/294718/i-predicted-that-carnival-stock-would-beat-the-market-in-2025-can-it-repeat-in-2026",
+      "publisher": "Motley Fool",
+      "date": "2026-02-01",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hotel stocks - here are winners and losers from weak dollar",
+      "url": "https://finance.yahoo.com/news/hotel-stocks-winners-losers-weak-093004918.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-01",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Here's Why Carnival (CCL) Fell More Than Broader Market",
+      "url": "/news/294279/heres-why-carnival-ccl-fell-more-than-broader-market",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Carnival (CCL) Moves 8.5% Higher: Will This Strength Last?",
+      "url": "/news/293651/carnival-ccl-moves-85-higher-will-this-strength-last",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Microsoft Rout Weighs on the Broader Market",
+      "url": "https://finance.yahoo.com/m/57cec5ad-0d77-3a09-b508-a7dd475295fe/microsoft-rout-weighs-on-the.html",
+      "publisher": "Barchart",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    }
+  ]
 }

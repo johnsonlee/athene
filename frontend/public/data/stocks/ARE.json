@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 55.900001525878906,
-    "sma_20": 56.14300003051758,
+    "sma_20": 56.143000030517584,
     "sma_50": 51.62000503540039,
     "sma_200": 66.4471527671814,
     "trend_alignment": 0.40373818415179025,
@@ -6286,17 +6286,17 @@
     "macd_histogram": -0.2984162123792169,
     "macd_line": 0.7726620425885855,
     "macd_histogram_pct": -0.5338393635661443,
-    "bb_position": 0.465386640513856,
-    "bb_upper": 59.65318378970952,
-    "bb_lower": 52.63281627132563,
-    "bb_width": 0.12504439582081187,
+    "bb_position": 0.465386640513855,
+    "bb_upper": 59.65318378970953,
+    "bb_lower": 52.63281627132564,
+    "bb_width": 0.12504439582081184,
     "hist_volatility": 0.35412250602953677,
     "volume_ratio": 0.6353440805540238,
     "avg_volume_20d": 2792660.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 37.865083010015596,
-    "stoch_d": 32.39344376493138,
+    "stoch_d": 32.39344376493137,
     "trend_score": 40.373818415179024,
     "rsi_abs_score": 74.51490258795081,
     "macd_abs_score": 34.49240954650784,
@@ -6306,7 +6306,15 @@
     "technical_score": 47.69834448514682,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.022135215144693004,
+    "sentiment_pos": 0.0502,
+    "sentiment_neg": 0.05305,
+    "sentiment_neu": 0.8967,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.11
+  },
   "analyst": {
     "revision_momentum": -0.09090909090909091,
     "target_upside": 0.07334525939177104,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 55.14254527619046,
     "catalyst_timeline": 48.306753241865806,
     "downside_control": 60.06041410531823,
-    "composite_score": 41.99684965319893,
+    "composite_score": 41.9929606079005,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 43.5224043468254,
     "technical_score": 47.69834448514682,
-    "sentiment_score": 50.0,
+    "sentiment_score": 51.11,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Real Estate",
     "industry": "Office REITs"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Alexandria Real Estate Equities Inc (ARE) Q4 2025 Earnings Call Highlights: Strong Leasing ...",
+      "url": "https://finance.yahoo.com/news/alexandria-real-estate-equities-inc-010152589.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Alexandria Real Estate Equities, Inc. Announces Cash Tender Offers",
+      "url": "/news/289277/alexandria-real-estate-equities-inc-announces-cash-tender-offers",
+      "publisher": "PR Newswire",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Alexandria Real Estate Equities Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/c8328b42-b040-37dc-932f-c6d70190e304/alexandria-real-estate.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Alexandria's Q4 AFFO & Revenues Beat Estimates, Occupancy Decline Y/Y",
+      "url": "/news/288721/alexandrias-q4-affo-revenues-beat-estimates-occupancy-decline-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Alexandria Real Estate Equities (ARE) Stock Fell Amid Dividend Cut Concerns",
+      "url": "/news/288395/alexandria-real-estate-equities-are-stock-fell-amid-dividend-cut-concerns",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Compared to Estimates, Alexandria Real Estate Equities (ARE) Q4 Earnings: A Look at Key Metrics",
+      "url": "/news/287624/compared-to-estimates-alexandria-real-estate-equities-are-q4-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Alexandria Real Estate Equities (ARE) Reports Q4 Loss, Beats Revenue Estimates",
+      "url": "/news/287547/alexandria-real-estate-equities-are-reports-q4-loss-beats-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Alexandria Real Estate Equities: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/alexandria-real-estate-equities-q4-212530725.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Alexandria Real Estate Equities, Inc. Reports 4Q25 and 2025 Net Loss per Share - Diluted of $6.35 and $8.44, respectively; and 4Q25 and 2025 FFO per Share - Diluted, as Adjusted, of $2.16 and $9.01, respectively",
+      "url": "/news/287423/alexandria-real-estate-equities-inc-reports-4q25-and-2025-net-loss-per-share-diluted-of-635-and-844-respectively-and-4q25-and-2025-ffo-per-share-diluted-as-adjusted-of-216-and-901-respectively",
+      "publisher": "PR Newswire",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Alexandria Real Estate Equities, Inc. Sued for Securities Law Violations - Contact the DJS Law Group to Discuss Your Rights - ARE",
+      "url": "/news/286530/alexandria-real-estate-equities-inc-sued-for-securities-law-violations-contact-the-djs-law-group-to-discuss-your-rights-are",
+      "publisher": "PR Newswire",
+      "date": "2026-01-26",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Alexandria Real Estate Equities, Inc. Announces Tax Treatment of Year 2025 Distributions",
+      "url": "/news/285134/alexandria-real-estate-equities-inc-announces-tax-treatment-of-year-2025-distributions",
+      "publisher": "PR Newswire",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Alexandria to Post Q4 Earnings: What to Expect From the Stock?",
+      "url": "/news/284214/alexandria-to-post-q4-earnings-what-to-expect-from-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Gear Up for Alexandria Real Estate Equities (ARE) Q4 Earnings: Wall Street Estimates for Key Metrics",
+      "url": "/news/282460/gear-up-for-alexandria-real-estate-equities-are-q4-earnings-wall-street-estimates-for-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Top Picks 2026- Alexandria Real Estate Equities Inc. ARE",
+      "url": "https://finance.yahoo.com/news/top-picks-2026-alexandria-real-050100916.html",
+      "publisher": "MoneyShow",
+      "date": "2026-01-19",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Should You Buy the 3 Highest-Paying Dividend Stocks in the S&P 500?",
+      "url": "/news/279147/should-you-buy-the-3-highest-paying-dividend-stocks-in-the-sp-500",
+      "publisher": "Motley Fool",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Alexandria Real Estate Equities, Inc. (ARE): A Bear Case Theory",
+      "url": "/news/277258/alexandria-real-estate-equities-inc-are-a-bear-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Alexandria Real Estate Equities, Inc. Sued for Securities Law Violations - Contact the DJS Law Group to Discuss Your Rights - ARE",
+      "url": "/news/275682/alexandria-real-estate-equities-inc-sued-for-securities-law-violations-contact-the-djs-law-group-to-discuss-your-rights-are",
+      "publisher": "PR Newswire",
+      "date": "2026-01-14",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Jim Cramer on Alexandria Real Estate: \"It's Been Suffering From Muted Tenant Demand for a While\"",
+      "url": "/news/270435/jim-cramer-on-alexandria-real-estate-its-been-suffering-from-muted-tenant-demand-for-a-while",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Alexandria Real Estate Equities, Inc. Celebrates 32 Years of Pioneering Leadership in Life Science Real Estate and Consequential Impact on Advancing Human Health",
+      "url": "/news/267071/alexandria-real-estate-equities-inc-celebrates-32-years-of-pioneering-leadership-in-life-science-real-estate-and-consequential-impact-on-advancing-human-health",
+      "publisher": "PR Newswire",
+      "date": "2026-01-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Alexandria Real Estate Equities, Inc. Sued for Securities Law Violations - Contact the DJS Law Group to Discuss Your Rights - ARE",
+      "url": "/news/263159/alexandria-real-estate-equities-inc-sued-for-securities-law-violations-contact-the-djs-law-group-to-discuss-your-rights-are",
+      "publisher": "PR Newswire",
+      "date": "2025-12-29",
+      "sentiment": "negative"
+    }
+  ]
 }

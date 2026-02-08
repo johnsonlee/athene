@@ -6306,7 +6306,15 @@
     "technical_score": 57.95642230761101,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.04600633389631916,
+    "sentiment_pos": 0.10674999999999998,
+    "sentiment_neg": 0.0672,
+    "sentiment_neu": 0.8261,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 52.3
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.08785231580682377,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 48.4407640047619,
     "catalyst_timeline": 60.89160013641029,
     "downside_control": 54.15654440425319,
-    "composite_score": 56.863893182470406,
+    "composite_score": 56.86000413717197,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 60.86311905158731,
     "technical_score": 57.95642230761101,
-    "sentiment_score": 50.0,
+    "sentiment_score": 52.3,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Materials",
     "industry": "Copper"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Moderately bullish activity in Freeport McMoRan with shares up 2.39%",
+      "url": "https://finance.yahoo.com/news/moderately-bullish-activity-freeport-mcmoran-152054560.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Copper, Lithium, and Uranium Miners Delivered 127% While The S&P Returned 14%",
+      "url": "https://finance.yahoo.com/m/7062ea4c-200a-34fc-954d-e0ae96ce6515/copper%2C-lithium%2C-and-uranium.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Top Analyst Reports for AMD, Constellation Energy & Freeport-McMoRan",
+      "url": "/news/303417/top-analyst-reports-for-amd-constellation-energy-freeport-mcmoran",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Revenge of the Real. Why Energy, Materials and Staples Stocks Are Beating the Market.",
+      "url": "https://finance.yahoo.com/m/52f16a06-b250-3bb8-9447-6327ecee03c1/revenge-of-the-real.-why.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Should You Buy, Sell or Hold FCX Stock After a 47% Rally in 6 Months?",
+      "url": "/news/302711/should-you-buy-sell-or-hold-fcx-stock-after-a-47-rally-in-6-months",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Project Vault: ETFs to Gain as Trump Pushes $12B Into Rare Earth Reserve",
+      "url": "/news/299544/project-vault-etfs-to-gain-as-trump-pushes-12b-into-rare-earth-reserve",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Want Better Returns? Don't Ignore These 2 Basic Materials Stocks Set to Beat Earnings",
+      "url": "/news/299381/want-better-returns-dont-ignore-these-2-basic-materials-stocks-set-to-beat-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks Tumble on AI Disruption Fears",
+      "url": "https://finance.yahoo.com/m/2d280010-8635-3f1a-b487-d134aea3e092/stocks-tumble-on-ai.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Software Stocks Retreat and Drag the Broader Market Lower",
+      "url": "https://finance.yahoo.com/m/a06579e4-a8c9-38b5-bd18-ff27c7b1d6a5/software-stocks-retreat-and.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Nasdaq Slips, Gold and Silver Stage Substantial Recovery",
+      "url": "https://finance.yahoo.com/m/e2a821b3-72dd-368c-9e69-12718b55c208/nasdaq-slips%2C-gold-and-silver.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Gold and Silver Prices Jump",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-02-03-2026/card/gold-and-silver-prices-jump-NigutbrICwF68NYmsHMx?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Forget Energy  Copper Is AIs Real Bottleneck. Here Are the 2 Miners to Profit Most.",
+      "url": "https://finance.yahoo.com/m/1bb0a3ba-b9b6-3abe-a46d-4e6b19fca6f4/forget-energy-%E2%80%94-copper-is.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Booking Is February's Seasonal Leader, With Nvidia And 5 Stocks Joining The Trade",
+      "url": "/news/295803/booking-is-februarys-seasonal-leader-with-nvidia-and-5-stocks-joining-the-trade",
+      "publisher": "Benzinga",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "2 Mining Stocks Rebounding After Gold's Fall From Records",
+      "url": "/news/295787/2-mining-stocks-rebounding-after-golds-fall-from-records",
+      "publisher": "Schaeffer's Research",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Trumps Dollar Yo-Yo Has Stock Investors Looking Overseas",
+      "url": "https://finance.yahoo.com/news/trump-dollar-yo-yo-stock-140000978.html",
+      "publisher": "Bloomberg",
+      "date": "2026-01-31",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Olin Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/8c276797-565e-3749-996d-f33787a7fcad/olin-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Slip as Bond Yields Rise after Warsh Picked for Fed Chair",
+      "url": "https://finance.yahoo.com/m/f8b5dfd3-285a-3d21-816a-900fc4922606/stocks-slip-as-bond-yields.html",
+      "publisher": "Barchart",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Top Copper Stocks to Watch as Copper Prices Skyrocket: BHP, FCX, SCCO",
+      "url": "https://finance.yahoo.com/m/6189f0e1-01c4-323e-a5e2-0903c0f4726b/3-top-copper-stocks-to-watch.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks Fall as Trump Nominates Warsh for Fed Chair",
+      "url": "https://finance.yahoo.com/m/96f0d3f7-ea32-331b-bc1c-8802bac1fdd7/stocks-fall-as-trump.html",
+      "publisher": "Barchart",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Premarket trades: Warsh takes a bite of Apple shares, while Sandisk soars and miners slump",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-and-nasdaq-set-to-open-lower-on-expectations-warsh-to-get-top-fed-job/card/premarket-trades-warsh-takes-a-bite-of-apple-shares-while-sandisk-soars-and-miners-slump-epErgXw6Wxzm877dYUod?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    }
+  ]
 }

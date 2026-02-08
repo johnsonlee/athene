@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 31.782615638473413,
-    "stoch_d": 22.38894659884086,
+    "stoch_d": 22.388946598840864,
     "trend_score": 59.59897229391184,
     "rsi_abs_score": 70.58966070521028,
     "macd_abs_score": 46.59638304970127,
@@ -6306,7 +6306,15 @@
     "technical_score": 63.05759825141028,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.04193062801624305,
+    "sentiment_pos": 0.0403,
+    "sentiment_neg": 0.0596,
+    "sentiment_neu": 0.9000999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 52.1
+  },
   "analyst": {
     "revision_momentum": -0.6666666666666666,
     "target_upside": 0.01590696430958425,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 54.4351942,
     "catalyst_timeline": 52.022710979762074,
     "downside_control": 78.791575,
-    "composite_score": 57.89181848562057,
+    "composite_score": 57.88792944032213,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 54.7596135,
     "technical_score": 63.05759825141028,
-    "sentiment_score": 50.0,
+    "sentiment_score": 52.1,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Health Care Equipment"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Analyst Report: Hologic, Inc.",
+      "url": "https://finance.yahoo.com/m/9bac4645-a57d-3f82-9b4d-6eb5a4a0c5da/analyst-report%3A-hologic%2C-inc..html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hologic Receives FDA Approval for Aptima HPV Assay Primary Screening Option, Expanding Cervical Health Portfolio",
+      "url": "https://www.businesswire.com/news/home/20260126336815/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Robert Olstein's Strategic Moves: Exiting Hologic Inc with a -1.44% Impact",
+      "url": "https://finance.yahoo.com/news/robert-olsteins-strategic-moves-exiting-180228490.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hologic (HOLX) International Revenue Performance Explored",
+      "url": "/news/295658/hologic-holx-international-revenue-performance-explored",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hologic, Inc. (HOLX) is Attracting Investor Attention: Here is What You Should Know",
+      "url": "/news/295603/hologic-inc-holx-is-attracting-investor-attention-here-is-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "HOLX Stock Slips on Q1 Earnings and Revenue Miss, Margins Crash",
+      "url": "/news/293433/holx-stock-slips-on-q1-earnings-and-revenue-miss-margins-crash",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Blackstone Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/fb00eac8-a35b-3213-9510-077fe70d86d5/blackstone-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Compared to Estimates, Hologic (HOLX) Q1 Earnings: A Look at Key Metrics",
+      "url": "/news/292843/compared-to-estimates-hologic-holx-q1-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hologic (HOLX) Misses Q1 Earnings and Revenue Estimates",
+      "url": "/news/292743/hologic-holx-misses-q1-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Hologic: Fiscal Q1 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/hologic-fiscal-q1-earnings-snapshot-211912538.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hologic (NASDAQ:HOLX) Misses Q4 CY2025 Revenue Estimates",
+      "url": "/news/292671/hologic-nasdaq-holx-misses-q4-cy2025-revenue-estimates",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Hologic Announces Financial Results for First Quarter of Fiscal 2026",
+      "url": "https://www.businesswire.com/news/home/20260129059441/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Will Revvity Q4 Earnings Benefit From Early Signs of Demand Recovery?",
+      "url": "/news/292427/will-revvity-q4-earnings-benefit-from-early-signs-of-demand-recovery",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "SYK's Q4 Results Likely to Reflect Procedure Growth and Capital Demand",
+      "url": "/news/290006/syks-q4-results-likely-to-reflect-procedure-growth-and-capital-demand",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Medtech M&A took off in the second half of 2025: report",
+      "url": "https://finance.yahoo.com/m/eeb99c2a-f6d2-3053-8d1b-9b0f13aa0d0e/medtech-m%26a-took-off-in-the.html",
+      "publisher": "MedTech Dive",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hologic (HOLX) Q4 Earnings: What To Expect",
+      "url": "/news/289353/hologic-holx-q4-earnings-what-to-expect",
+      "publisher": "StockStory",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stay Ahead of the Game With Hologic (HOLX) Q1 Earnings: Wall Street's Insights on Key Metrics",
+      "url": "/news/286961/stay-ahead-of-the-game-with-hologic-holx-q1-earnings-wall-streets-insights-on-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analysts consider potential Qiagen deal amid reported strategic review",
+      "url": "https://finance.yahoo.com/news/analysts-consider-potential-qiagen-deal-212001548.html",
+      "publisher": "Investing.com",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Danaher Gears Up to Post Q4 Earnings: What Lies Ahead for the Stock?",
+      "url": "/news/285242/danaher-gears-up-to-post-q4-earnings-what-lies-ahead-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Hologic (HOLX) Earnings Expected to Grow: What to Know Ahead of Next Week's Release",
+      "url": "/news/284110/hologic-holx-earnings-expected-to-grow-what-to-know-ahead-of-next-weeks-release",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    }
+  ]
 }

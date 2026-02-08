@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 45.462248485703526,
-    "stoch_d": 53.44189874775314,
+    "stoch_d": 53.44189874775316,
     "trend_score": 72.39584083052873,
     "rsi_abs_score": 74.89729205251295,
     "macd_abs_score": 33.15911007181964,
@@ -6306,7 +6306,15 @@
     "technical_score": 57.42043135801068,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.1717327573552441,
+    "sentiment_pos": 0.0944,
+    "sentiment_neg": 0.01855,
+    "sentiment_neu": 0.88705,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 58.59
+  },
   "analyst": {
     "revision_momentum": 0.038461538461538464,
     "target_upside": 0.18405472964083666,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 50.324503783714285,
     "catalyst_timeline": 60.812281746068706,
     "downside_control": 54.62869159265163,
-    "composite_score": 43.0949300689668,
+    "composite_score": 43.09104102366836,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 43.45612305309524,
     "technical_score": 57.42043135801068,
-    "sentiment_score": 50.0,
+    "sentiment_score": 58.59,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Semiconductors"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Tech stocks have been shaky, but these 20 companies could still see rocketing sales growth",
+      "url": "https://www.marketwatch.com/story/tech-stocks-have-been-shaky-but-these-20-companies-could-still-see-rocketing-sales-growth-148195c9?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Microchip Technology Says the Slump Is Ending-The Stock Is Starting to Agree",
+      "url": "/news/303419/microchip-technology-says-the-slump-is-ending-the-stock-is-starting-to-agree",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Microchip Q3 Earnings Beat Estimates, Sales Rise Y/Y, Shares Drop",
+      "url": "/news/303156/microchip-q3-earnings-beat-estimates-sales-rise-yy-shares-drop",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MCHP Q4 Deep Dive: Automotive and Industrial Ethernet Drive Outlook Amid Inventory Recovery",
+      "url": "/news/302642/mchp-q4-deep-dive-automotive-and-industrial-ethernet-drive-outlook-amid-inventory-recovery",
+      "publisher": "StockStory",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bank of Americas SSI Points to 12% Upside for the S&P 500  Here Are 2 Stocks to Play the Call",
+      "url": "https://finance.yahoo.com/news/bank-america-ssi-points-12-105714648.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Microchip Technology Inc (MCHP) Q3 2026 Earnings Call Highlights: Strong Sales Growth and ...",
+      "url": "https://finance.yahoo.com/news/microchip-technology-inc-mchp-q3-050408370.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Microchip Technology Incorporated",
+      "url": "https://finance.yahoo.com/m/6560dd5c-8172-3ffb-9738-11aab5169ddc/analyst-report%3A-microchip.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Microchip Technology Q3 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/032b2260-7932-3424-962b-67f93bb84ee1/microchip-technology-q3.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Compared to Estimates, Microchip Tech (MCHP) Q3 Earnings: A Look at Key Metrics",
+      "url": "/news/302283/compared-to-estimates-microchip-tech-mchp-q3-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Microchip Tech forecasts quarterly profit below estimates as memory shortages bite",
+      "url": "https://finance.yahoo.com/news/microchip-tech-forecasts-quarterly-profit-223806211.html",
+      "publisher": "Reuters",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Microchip Technology (MCHP) Q3 Earnings and Revenues Top Estimates",
+      "url": "/news/302246/microchip-technology-mchp-q3-earnings-and-revenues-top-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Microchip Technology (NASDAQ:MCHP) Beats Q4 Sales Targets",
+      "url": "/news/302172/microchip-technology-nasdaq-mchp-beats-q4-sales-targets",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Microchip Technology Stock Falls Despite Topping Quarterly Estimates",
+      "url": "https://www.investors.com/news/technology/microchip-stock-mchp-fiscal-q3-2026-earnings?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Microchip Tech: Fiscal Q3 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/microchip-tech-fiscal-q3-earnings-213027289.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Microchip Technology Announces Quarterly Cash Dividend on Common Stock of 45.5 Cents Per Share",
+      "url": "/news/302123/microchip-technology-announces-quarterly-cash-dividend-on-common-stock-of-455-cents-per-share",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Microchip Technology Announces Financial Results for Third Quarter of Fiscal Year 2026",
+      "url": "/news/302126/microchip-technology-announces-financial-results-for-third-quarter-of-fiscal-year-2026",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Zacks Analyst Blog Highlights Lattice Semiconductor, Microchip Technology and STMicroelectronics",
+      "url": "/news/301787/the-zacks-analyst-blog-highlights-lattice-semiconductor-microchip-technology-and-stmicroelectronics",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Microchip Technology and Hyundai Motor Group Collaborate to Explore 10BASE-T1S Single Pair Ethernet for Future Automotive Connectivity",
+      "url": "/news/301138/microchip-technology-and-hyundai-motor-group-collaborate-to-explore-10base-t1s-single-pair-ethernet-for-future-automotive-connectivity",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Slip Before the Open as Tech-Led Selloff Continues, Amazon Earnings on Tap",
+      "url": "https://finance.yahoo.com/m/d6bfc45e-b377-336e-a9c9-92a038f8134b/stocks-slip-before-the-open.html",
+      "publisher": "Barchart",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Post-Quantum Cryptography Stocks Eyeing 40%+ Earnings Growth in 2026",
+      "url": "/news/300070/3-post-quantum-cryptography-stocks-eyeing-40-earnings-growth-in-2026",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    }
+  ]
 }

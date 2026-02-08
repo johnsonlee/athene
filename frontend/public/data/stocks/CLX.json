@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 119.36000061035156,
     "sma_20": 112.04342651367186,
-    "sma_50": 105.42070526123047,
-    "sma_200": 116.31611629486083,
-    "trend_alignment": 0.5964234207632206,
+    "sma_50": 105.42070526123048,
+    "sma_200": 116.3161162948608,
+    "trend_alignment": 0.5964234207632209,
     "rsi": 76.99681834582283,
     "rsi_score": 0.5399363669164566,
     "macd_histogram": 0.724890414608466,
@@ -6295,18 +6295,26 @@
     "avg_volume_20d": 2404275.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 85.45568550571187,
+    "stoch_k": 85.45568550571188,
     "stoch_d": 84.56070567483638,
-    "trend_score": 59.642342076322066,
+    "trend_score": 59.64234207632209,
     "rsi_abs_score": 36.00636330835434,
     "macd_abs_score": 66.60971528445518,
     "momentum_score": 51.30803929640476,
     "volatility_score": 55.572801253097275,
     "volume_score": 50.0,
-    "technical_score": 54.3996746624375,
+    "technical_score": 54.399674662437505,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.03804532834866515,
+    "sentiment_pos": 0.08825000000000001,
+    "sentiment_neg": 0.07215,
+    "sentiment_neu": 0.8396000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.9
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": -0.036528150134048254,
@@ -6325,7 +6333,7 @@
     "quality_score": 82.7490018,
     "growth_score": 27.05,
     "safety_score": 39.500009332912185,
-    "trend_score": 59.642342076322066,
+    "trend_score": 59.64234207632209,
     "momentum_score": 51.30803929640476,
     "volatility_score": 55.572801253097275,
     "volume_score": 50.0,
@@ -6344,16 +6352,16 @@
     "current_ratio_score": 29.16,
     "earnings_visibility": 55.07485027,
     "valuation_margin": 72.45875278571427,
-    "catalyst_timeline": 51.33318508633434,
+    "catalyst_timeline": 51.333185086334346,
     "downside_control": 46.894921587901415,
-    "composite_score": 57.31997100376806,
+    "composite_score": 57.316081958469624,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 58.13199639467767,
-    "technical_score": 54.3996746624375,
-    "sentiment_score": 50.0,
+    "technical_score": 54.399674662437505,
+    "sentiment_score": 51.9,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Staples",
     "industry": "Household Products"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Clorox (CLX) Is Consistent, Says Jim Cramer",
+      "url": "/news/303589/clorox-clx-is-consistent-says-jim-cramer",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: The Clorox Company",
+      "url": "https://finance.yahoo.com/m/70431e07-a3c4-3f6a-af70-b10d116cc40e/analyst-report%3A-the-clorox.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Investors Need to Take Advantage of These 2 Consumer Staples Stocks Now",
+      "url": "/news/302769/why-investors-need-to-take-advantage-of-these-2-consumer-staples-stocks-now",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BofA Flags Margin Uncertainty for Clorox (CLX) After Q2 Earnings Miss",
+      "url": "/news/301945/bofa-flags-margin-uncertainty-for-clorox-clx-after-q2-earnings-miss",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Clorox to Present at 2026 CAGNY Conference",
+      "url": "/news/300222/clorox-to-present-at-2026-cagny-conference",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Dividend Stocks I'm Piling Into in 2026 For Reliable Income",
+      "url": "/news/299792/3-dividend-stocks-im-piling-into-in-2026-for-reliable-income",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Can Beauty & Personal Care Innovation Drive Procter & Gamble's Growth?",
+      "url": "/news/299761/can-beauty-personal-care-innovation-drive-procter-gambles-growth",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Clorox Q2 Earnings Miss Estimates, Lower Organic Sales Hurt",
+      "url": "/news/299347/clorox-q2-earnings-miss-estimates-lower-organic-sales-hurt",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Clorox Faces Profit Squeeze From Inventory Reset In 2026",
+      "url": "/news/299019/clorox-faces-profit-squeeze-from-inventory-reset-in-2026",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Consumer Dividend Stocks to Buy for High-Yield Dividend Growth",
+      "url": "/news/298753/3-consumer-dividend-stocks-to-buy-for-high-yield-dividend-growth",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: The Clorox Company",
+      "url": "https://finance.yahoo.com/m/9203f34e-2045-39f4-9f4e-219fdaf1d5eb/analyst-report%3A-the-clorox.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CLX Q4 Deep Dive: Flat Sales Amid Margin Pressure as Clorox Invests in Innovation and Integration",
+      "url": "/news/298804/clx-q4-deep-dive-flat-sales-amid-margin-pressure-as-clorox-invests-in-innovation-and-integration",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Clorox Co (CLX) Q2 2026 Earnings Call Highlights: Navigating Challenges with Strategic ...",
+      "url": "https://finance.yahoo.com/news/clorox-co-clx-q2-2026-050205272.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Clorox Company (CLX): A Bull Case Theory",
+      "url": "/news/298519/the-clorox-company-clx-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Clorox Q2 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/82b88552-8b37-39d9-8b99-9060b9b65892/clorox-q2-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Clorox (CLX) Q2 2026 Earnings Call Transcript",
+      "url": "/news/298342/clorox-clx-q2-2026-earnings-call-transcript",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Clorox (CLX) Reports Q2 Earnings: What Key Metrics Have to Say",
+      "url": "/news/298422/clorox-clx-reports-q2-earnings-what-key-metrics-have-to-say",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Clorox (CLX) Misses Q2 Earnings Estimates",
+      "url": "/news/298304/clorox-clx-misses-q2-earnings-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Clorox Posts Lower Profit on Sales Volume Declines",
+      "url": "https://www.wsj.com/business/earnings/clorox-posts-lower-profit-on-sales-volume-declines-878f3f57?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Clorox: Fiscal Q2 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/clorox-fiscal-q2-earnings-snapshot-215222369.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    }
+  ]
 }

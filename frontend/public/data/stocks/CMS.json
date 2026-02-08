@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 72.83999633789062,
     "sma_20": 71.46249961853027,
-    "sma_50": 71.03999938964843,
+    "sma_50": 71.03999938964844,
     "sma_200": 71.18387802124025,
-    "trend_alignment": 0.5359025409601722,
+    "trend_alignment": 0.5359025409601721,
     "rsi": 60.117025959736154,
     "rsi_score": 0.20234051919472307,
     "macd_histogram": 0.19413070638539182,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 68.03541219007883,
     "stoch_d": 65.60323452583816,
-    "trend_score": 53.59025409601722,
+    "trend_score": 53.59025409601721,
     "rsi_abs_score": 71.4180818281847,
     "macd_abs_score": 59.16291584793803,
     "momentum_score": 65.29049883806137,
     "volatility_score": 78.11762438462569,
     "volume_score": 50.0,
-    "technical_score": 61.287750757148714,
+    "technical_score": 61.28775075714871,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.3350443381590142,
+    "sentiment_pos": 0.27605,
+    "sentiment_neg": 0.03005,
+    "sentiment_neu": 0.6939,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 66.75
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.08456891817682587,
@@ -6325,7 +6333,7 @@
     "quality_score": 57.18974942857143,
     "growth_score": 78.9,
     "safety_score": 44.553220729747565,
-    "trend_score": 53.59025409601722,
+    "trend_score": 53.59025409601721,
     "momentum_score": 65.29049883806137,
     "volatility_score": 78.11762438462569,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 56.34848158,
     "catalyst_timeline": 58.36856211383619,
     "downside_control": 59.09162676715599,
-    "composite_score": 61.29108247872664,
+    "composite_score": 61.28719343342821,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 60.23463695785428,
-    "technical_score": 61.287750757148714,
-    "sentiment_score": 50.0,
+    "technical_score": 61.28775075714871,
+    "sentiment_score": 66.75,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Utilities",
     "industry": "Multi-Utilities"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "CMS Energy Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/b9e391c0-9032-3ea1-948d-eb46c147297c/cms-energy-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: CMS Energy Corporation",
+      "url": "https://finance.yahoo.com/m/1dbdb280-b1a9-3ce0-b773-064f7e1a7ba7/analyst-report%3A-cms-energy.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CMS Energy Corp (CMS) Q4 2025 Earnings Call Highlights: Strong EPS Growth and Ambitious ...",
+      "url": "https://finance.yahoo.com/news/cms-energy-corp-cms-q4-210949524.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CMS Energy Q4 Earnings Surpass Estimates, Revenues Increase Y/Y",
+      "url": "/news/301513/cms-energy-q4-earnings-surpass-estimates-revenues-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CMS Energy (CMS) Q4 Earnings and Revenues Beat Estimates",
+      "url": "/news/301249/cms-energy-cms-q4-earnings-and-revenues-beat-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CMS Energy's Board of Directors Increases Quarterly Dividend on Common Stock to 57 Cents Per Share",
+      "url": "/news/301076/cms-energys-board-of-directors-increases-quarterly-dividend-on-common-stock-to-57-cents-per-share",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CMS Energy: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/cms-energy-q4-earnings-snapshot-115205515.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CMS Energy Exceeds Earnings Guidance in 2025, Raises 2026 Adjusted EPS Guidance",
+      "url": "/news/300945/cms-energy-exceeds-earnings-guidance-in-2025-raises-2026-adjusted-eps-guidance",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ahead of CMS Energy (CMS) Q4 Earnings: Get Ready With Wall Street Estimates for Key Metrics",
+      "url": "/news/299458/ahead-of-cms-energy-cms-q4-earnings-get-ready-with-wall-street-estimates-for-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Consumers Energy Connecting with Customers After Brutal Cold Drives Up Energy Use and Bills",
+      "url": "/news/296014/consumers-energy-connecting-with-customers-after-brutal-cold-drives-up-energy-use-and-bills",
+      "publisher": "PR Newswire",
+      "date": "2026-02-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Consumers Energy Shields Customers from Michigan's Worst Weather in Generations",
+      "url": "/news/292512/consumers-energy-shields-customers-from-michigans-worst-weather-in-generations",
+      "publisher": "PR Newswire",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "CMS Energy (CMS) Reports Next Week: Wall Street Expects Earnings Growth",
+      "url": "/news/292022/cms-energy-cms-reports-next-week-wall-street-expects-earnings-growth",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Will CMS Energy (CMS) Beat Estimates Again in Its Next Earnings Report?",
+      "url": "/news/290551/will-cms-energy-cms-beat-estimates-again-in-its-next-earnings-report",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PPL vs. CMS: Which Utility Stock Offers Greater Upside Potential?",
+      "url": "/news/290034/ppl-vs-cms-which-utility-stock-offers-greater-upside-potential",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Despite Winter Chill, Consumers Energy Connects Customers to Dollars to Reduce Heating Costs",
+      "url": "/news/287934/despite-winter-chill-consumers-energy-connects-customers-to-dollars-to-reduce-heating-costs",
+      "publisher": "PR Newswire",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "How CMS Is Positioned for Growth on Stable Utilities and Renewables",
+      "url": "/news/287131/how-cms-is-positioned-for-growth-on-stable-utilities-and-renewables",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Grand Rapids-Based ICCF Community Homes Joins Consumers Energy's Renewable Energy Program",
+      "url": "/news/282841/grand-rapids-based-iccf-community-homes-joins-consumers-energys-renewable-energy-program",
+      "publisher": "PR Newswire",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CMS Energy to Announce Year-End Results on February 5",
+      "url": "/news/278257/cms-energy-to-announce-year-end-results-on-february-5",
+      "publisher": "PR Newswire",
+      "date": "2026-01-15",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Consumers Energy Stands with Customers on Energy Costs, Continues Its Commitment, Provides $5 Million to Lower Bills",
+      "url": "/news/273138/consumers-energy-stands-with-customers-on-energy-costs-continues-its-commitment-provides-5-million-to-lower-bills",
+      "publisher": "PR Newswire",
+      "date": "2026-01-12",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Consumers Energy Starts Operating Muskegon Solar, Helping Meet Michigan's Energy Needs",
+      "url": "/news/267242/consumers-energy-starts-operating-muskegon-solar-helping-meet-michigans-energy-needs",
+      "publisher": "PR Newswire",
+      "date": "2026-01-05",
+      "sentiment": "positive"
+    }
+  ]
 }

@@ -6279,8 +6279,8 @@
     "close": 25.649999618530273,
     "sma_20": 29.79250020980835,
     "sma_50": 29.704000091552736,
-    "sma_200": 31.629691715240483,
-    "trend_alignment": 0.23875942030496217,
+    "sma_200": 31.62969171524048,
+    "trend_alignment": 0.23875942030496225,
     "rsi": 18.39319476287477,
     "rsi_score": -0.6321361047425046,
     "macd_histogram": -0.6082315512323468,
@@ -6296,8 +6296,8 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 4.610298914344422,
-    "stoch_d": 5.356136264795505,
-    "trend_score": 23.875942030496216,
+    "stoch_d": 5.356136264795504,
+    "trend_score": 23.875942030496226,
     "rsi_abs_score": 38.39319476287477,
     "macd_abs_score": 20.0,
     "momentum_score": 29.196597381437385,
@@ -6306,7 +6306,15 @@
     "technical_score": 32.749695601245776,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.1248430766197879,
+    "sentiment_pos": 0.06825,
+    "sentiment_neg": 0.013250000000000001,
+    "sentiment_neu": 0.9185000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 56.24
+  },
   "analyst": {
     "revision_momentum": null,
     "target_upside": 0.13060428849902542,
@@ -6325,7 +6333,7 @@
     "quality_score": 53.87175,
     "growth_score": 39.45,
     "safety_score": 70.331,
-    "trend_score": 23.875942030496216,
+    "trend_score": 23.875942030496226,
     "momentum_score": 29.196597381437385,
     "volatility_score": 34.13966888832845,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 60.913449625,
     "catalyst_timeline": 39.885791952889264,
     "downside_control": 58.041600333249264,
-    "composite_score": 49.15530195165672,
+    "composite_score": 49.15141290635828,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 56.60976635416666,
     "technical_score": 32.749695601245776,
-    "sentiment_score": 50.0,
+    "sentiment_score": 56.24,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Communication Services",
     "industry": "Publishing"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "News Corp. price target lowered to $32.40 from $38 at Morgan Stanley",
+      "url": "https://finance.yahoo.com/news/news-corp-price-target-lowered-155546595.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Analyst Report: News Corporation",
+      "url": "https://finance.yahoo.com/m/b16a5667-f30e-3dd7-9f49-428174672909/analyst-report%3A-news.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "News Corporation Stock: Is Wall Street Bullish or Bearish?",
+      "url": "https://finance.yahoo.com/m/8f69374b-eec9-3a10-ad5a-ab33199e6af1/news-corporation-stock%3A-is.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "News Corp (NWS) Q2 2026 Earnings Call Highlights: Strong Revenue Growth Amidst Challenging ...",
+      "url": "https://finance.yahoo.com/news/news-corp-nws-q2-2026-050200718.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: News Corporation",
+      "url": "https://finance.yahoo.com/m/03b58835-4c4d-3529-b942-917b23b32da2/analyst-report%3A-news.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "News Q2 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/d0fc669e-6aa6-3cf2-9def-ae93ba0a4f2a/news-q2-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "News Corp Revenue Rises on Growth at Dow Jones, Real-Estate Divisions",
+      "url": "https://finance.yahoo.com/m/8697609f-f81c-37a2-a04f-fd708388a2f3/news-corp-revenue-rises-on.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "News Corp to Host Dow Jones Investor Briefing",
+      "url": "https://www.businesswire.com/news/home/20260205223958/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "News Corporation Reports Second Quarter Results for Fiscal 2026",
+      "url": "https://www.businesswire.com/news/home/20260205829341/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Inventory Gains Slow Down in January: Realtor.com Monthly Housing Report",
+      "url": "/news/300920/inventory-gains-slow-down-in-january-realtorcom-monthly-housing-report",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "NYC Rent Growth Persists as Renter Mobility Hits Historic Lows",
+      "url": "/news/299021/nyc-rent-growth-persists-as-renter-mobility-hits-historic-lows",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: News Corporation",
+      "url": "https://finance.yahoo.com/m/f817ee4d-6da1-36a2-b0fe-b955c8625100/analyst-report%3A-news.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: News Corporation",
+      "url": "https://finance.yahoo.com/m/8d9f8b00-5ce6-39f0-8c87-3069087b187c/analyst-report%3A-news.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nearly 44% of U.S. Homes for Sale Now Carry HOA Fees as Dues Continue to Climb, Realtor.com Finds",
+      "url": "/news/287939/nearly-44-of-us-homes-for-sale-now-carry-hoa-fees-as-dues-continue-to-climb-realtorcom-finds",
+      "publisher": "PR Newswire",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "West Assured: The California Post Launches",
+      "url": "/news/286946/west-assured-the-california-post-launches",
+      "publisher": "PR Newswire",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "U.S. Luxury Housing Diverges Sharply Across Local Markets",
+      "url": "/news/286570/us-luxury-housing-diverges-sharply-across-local-markets",
+      "publisher": "PR Newswire",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Realtor.com Unveils Realtor.com+: A First-of-Its-Kind Collaborative Home Search Experience",
+      "url": "/news/282602/realtorcom-unveils-realtorcom-a-first-of-its-kind-collaborative-home-search-experience",
+      "publisher": "PR Newswire",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "News Corp to Report Fiscal 2026 Second Quarter Earnings",
+      "url": "https://www.businesswire.com/news/home/20260120294140/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dow Jones Factiva Surpasses 8,000 Licensed Sources for GenAI Use",
+      "url": "https://www.businesswire.com/news/home/20260120489743/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ChatGPT Is Introducing Ads This Year. Why It Makes Sense.",
+      "url": "https://finance.yahoo.com/m/0f57d6d9-adb4-3acc-b9e9-04f443930417/chatgpt-is-introducing-ads.html",
+      "publisher": "Barrons.com",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    }
+  ]
 }

@@ -6306,7 +6306,15 @@
     "technical_score": 60.3056339686496,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.10863851633266423,
+    "sentiment_pos": 0.0983,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.9017,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 55.43
+  },
   "analyst": {
     "revision_momentum": -0.07142857142857142,
     "target_upside": 0.02158510463008737,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 52.55584266666666,
     "catalyst_timeline": 59.67106729504371,
     "downside_control": 46.90195120036745,
-    "composite_score": 57.029633283992155,
+    "composite_score": 57.02574423869372,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 58.45048174603174,
     "technical_score": 60.3056339686496,
-    "sentiment_score": 50.0,
+    "sentiment_score": 55.43,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Diversified Banks"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Are You Looking for a High-Growth Dividend Stock?",
+      "url": "/news/303122/are-you-looking-for-a-high-growth-dividend-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "UBS Nudges U.S. Bancorp (USB) Target Higher while Holding a Neutral View",
+      "url": "/news/301951/ubs-nudges-us-bancorp-usb-target-higher-while-holding-a-neutral-view",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "U.S. Bank Adds Industry Veterans to Its Payments: Merchant and Institutional Leadership Team",
+      "url": "https://www.businesswire.com/news/home/20260204358051/en/Peter",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "U.S. Bank Freight Payment Index: Tight Capacity Pushes Freight Rates Higher Despite Soft Volumes",
+      "url": "https://www.businesswire.com/news/home/20260203234006/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "U.S. Bank Business Shield Visa Card Offers Intro 0% APR for up to 18 Billing Cycles",
+      "url": "https://www.businesswire.com/news/home/20260202080988/en/The",
+      "publisher": "Business Wire",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "U.S. Bancorp Stock: Is Wall Street Bullish or Bearish?",
+      "url": "https://finance.yahoo.com/m/42bff603-7db9-3146-b6e1-b7708edd81f4/u.s.-bancorp-stock%3A-is-wall.html",
+      "publisher": "Barchart",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Business People: U.S. Bancorp President & CEO Gunjan Kedia to add chair to her titles",
+      "url": "https://finance.yahoo.com/m/09a955ab-5b96-3795-9d5a-0db2124c6d0f/business-people%3A-u.s.-bancorp.html",
+      "publisher": "Pioneer Press, St. Paul, Minn.",
+      "date": "2026-02-01",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "U.S. Bancorp Announces Leadership Changes in Its Operations Function",
+      "url": "https://www.businesswire.com/news/home/20260129841620/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "U.S. Bancorp (USB) Is Up 1.97% in One Week: What You Should Know",
+      "url": "/news/292301/us-bancorp-usb-is-up-197-in-one-week-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "U.S. Bancorp Appoints Gunjan Kedia Chairman of the Board of Directors Effective in April 2026",
+      "url": "https://www.businesswire.com/news/home/20260128626177/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Payments Made Convenient with Elavon Live Payments and Microsoft 365",
+      "url": "https://www.businesswire.com/news/home/20260127696520/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The 5 Most Interesting Analyst Questions From U.S. Bancorp's Q4 Earnings Call",
+      "url": "/news/287854/the-5-most-interesting-analyst-questions-from-us-bancorps-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "TD Cowen Maintains a Constructive View on U.S. Bancorp (USB)",
+      "url": "/news/286314/td-cowen-maintains-a-constructive-view-on-us-bancorp-usb",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-25",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "US Bancorp (USB) Gained Strong Buy from Raymond James Following BTIG Acquisition Announcement",
+      "url": "/news/286215/us-bancorp-usb-gained-strong-buy-from-raymond-james-following-btig-acquisition-announcement",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-24",
+      "sentiment": "positive"
+    },
+    {
+      "title": "USB or NTRS: Which Is the Better Value Stock Right Now?",
+      "url": "/news/285548/usb-or-ntrs-which-is-the-better-value-stock-right-now",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "TD Cowen Cites Expanding Balance Sheets, Shifting Fed Leadership as Key Catalysts for US Bancorp (USB)",
+      "url": "/news/284839/td-cowen-cites-expanding-balance-sheets-shifting-fed-leadership-as-key-catalysts-for-us-bancorp-usb",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "U.S. Bancorp Q4 Earnings Beat on Y/Y Rise in Fee Income, Shares Fall",
+      "url": "/news/282831/us-bancorp-q4-earnings-beat-on-yy-rise-in-fee-income-shares-fall",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why U.S. Bancorp (USB) is a Great Dividend Stock Right Now",
+      "url": "/news/282717/why-us-bancorp-usb-is-a-great-dividend-stock-right-now",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "U.S. Bancorp (USB) Expands Capital Markets Reach With BTIG Deal",
+      "url": "/news/282086/us-bancorp-usb-expands-capital-markets-reach-with-btig-deal",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "USB Q4 Deep Dive: Deposit Growth, Payments Momentum, and BTIG Acquisition Shape 2026 Outlook",
+      "url": "/news/281896/usb-q4-deep-dive-deposit-growth-payments-momentum-and-btig-acquisition-shape-2026-outlook",
+      "publisher": "StockStory",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    }
+  ]
 }

@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 79.94607291472863,
-    "stoch_d": 77.27179520630017,
+    "stoch_d": 77.27179520630018,
     "trend_score": 45.991582580565506,
     "rsi_abs_score": 73.1914860592809,
     "macd_abs_score": 57.924630960855886,
@@ -6306,7 +6306,15 @@
     "technical_score": 58.10924224807268,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.21736193123538614,
+    "sentiment_pos": 0.0618,
+    "sentiment_neg": 0.017099999999999997,
+    "sentiment_neu": 0.9211,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 60.87
+  },
   "analyst": {
     "revision_momentum": -0.5,
     "target_upside": 0.2169680111265646,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 68.35079894,
     "catalyst_timeline": 53.77223633437632,
     "downside_control": 69.30440189510209,
-    "composite_score": 63.60798887481102,
+    "composite_score": 63.604099829512585,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 63.96449500830123,
     "technical_score": 58.10924224807268,
-    "sentiment_score": 50.0,
+    "sentiment_score": 60.87,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Real Estate",
     "industry": "Hotel & Resort REITs"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Analyst Sentiment on VICI Properties (VICI) Remains Strong Amid Stable Fundamentals and Strong Balance Sheet",
+      "url": "/news/303807/analyst-sentiment-on-vici-properties-vici-remains-strong-amid-stable-fundamentals-and-strong-balance-sheet",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "VICI Properties Inc. (VICI) Ascends While Market Falls: Some Facts to Note",
+      "url": "/news/300539/vici-properties-inc-vici-ascends-while-market-falls-some-facts-to-note",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "VICI Properties Inc (VICI) is Trading Close to its 52-Week Lows",
+      "url": "/news/294581/vici-properties-inc-vici-is-trading-close-to-its-52-week-lows",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-31",
+      "sentiment": "negative"
+    },
+    {
+      "title": "What Are Wall Street Analysts' Target Price for VICI Properties Stock?",
+      "url": "https://finance.yahoo.com/m/c18c39b4-c3fd-3969-ac5c-85b483d52392/what-are-wall-street.html",
+      "publisher": "Barchart",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "VICI Properties Inc. (VICI) Falls More Steeply Than Broader Market: What Investors Need to Know",
+      "url": "/news/291003/vici-properties-inc-vici-falls-more-steeply-than-broader-market-what-investors-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "This $25 Dividend Stock Could Be Your Ticket to Financial Freedom",
+      "url": "/news/286540/this-25-dividend-stock-could-be-your-ticket-to-financial-freedom",
+      "publisher": "Motley Fool",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "5 Dividend Stocks Yielding 5% or More to Buy Right Now for Passive Income",
+      "url": "/news/286083/5-dividend-stocks-yielding-5-or-more-to-buy-right-now-for-passive-income",
+      "publisher": "Motley Fool",
+      "date": "2026-01-24",
+      "sentiment": "positive"
+    },
+    {
+      "title": "VICI Properties Inc. Announces Tax Treatment of 2025 Distributions",
+      "url": "https://www.businesswire.com/news/home/20260123430245/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 REITs Every Investor Should Know About",
+      "url": "/news/280410/3-reits-every-investor-should-know-about",
+      "publisher": "Motley Fool",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Earnings Preview: What to Expect From VICI Properties' Report",
+      "url": "https://finance.yahoo.com/m/7f55b42b-4647-3bec-ac2e-9e18f98ea4f5/earnings-preview%3A-what-to.html",
+      "publisher": "Barchart",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Investing $10,000 in Each of These 5 Ultra-High-Yield Dividend Stocks Could Generate Over $3,700 in Passive Income in 2026",
+      "url": "/news/279737/investing-10000-in-each-of-these-5-ultra-high-yield-dividend-stocks-could-generate-over-3700-in-passive-income-in-2026",
+      "publisher": "Motley Fool",
+      "date": "2026-01-18",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Monthly Payouts & Expanding Reach: Can Realty Income Deliver?",
+      "url": "/news/277997/monthly-payouts-expanding-reach-can-realty-income-deliver",
+      "publisher": "Zacks",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "VICI Properties Inc. (VICI): A Bull Case Theory",
+      "url": "/news/277302/vici-properties-inc-vici-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "VICI Properties Inc. (VICI) Ascends While Market Falls: Some Facts to Note",
+      "url": "/news/276897/vici-properties-inc-vici-ascends-while-market-falls-some-facts-to-note",
+      "publisher": "Zacks",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "VICI Properties (VICI) Target Lowered at Cantor Fitzgerald as 2026 REIT Outlook Improves",
+      "url": "/news/274220/vici-properties-vici-target-lowered-at-cantor-fitzgerald-as-2026-reit-outlook-improves",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-12",
+      "sentiment": "positive"
+    },
+    {
+      "title": "How Much Monthly Income Does a $2 Million Portfolio Produce at Age 60?",
+      "url": "https://finance.yahoo.com/m/9002444f-45e2-357e-981e-42ef1658a030/how-much-monthly-income-does.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-12",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 High-Yield Dividend Stocks Wall Street Thinks Will Soar 26% or More in 2026",
+      "url": "/news/272882/3-high-yield-dividend-stocks-wall-street-thinks-will-soar-26-or-more-in-2026",
+      "publisher": "Motley Fool",
+      "date": "2026-01-11",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "VICI Properties Inc. (VICI) Exceeds Market Returns: Some Facts to Consider",
+      "url": "/news/271589/vici-properties-inc-vici-exceeds-market-returns-some-facts-to-consider",
+      "publisher": "Zacks",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Overlooked Sector Paying 5%+ Yields That Wall Street Keeps Quiet About",
+      "url": "https://finance.yahoo.com/m/c7b39149-097a-3784-ac37-8f0fcaf4c7a4/the-overlooked-sector-paying.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "VICI Properties Inc. Announces Release Date for Fourth Quarter and Full Year 2025 Results",
+      "url": "https://www.businesswire.com/news/home/20260108764754/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    }
+  ]
 }

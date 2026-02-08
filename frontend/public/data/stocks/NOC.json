@@ -6295,8 +6295,8 @@
     "avg_volume_20d": 1032005.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 91.71174339277997,
-    "stoch_d": 86.85707372799905,
+    "stoch_k": 91.71174339277998,
+    "stoch_d": 86.85707372799907,
     "trend_score": 80.01920215282861,
     "rsi_abs_score": 55.654786969291095,
     "macd_abs_score": 52.446553626417824,
@@ -6306,7 +6306,15 @@
     "technical_score": 60.15076703631298,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.13926927330965802,
+    "sentiment_pos": 0.136,
+    "sentiment_neg": 0.0529,
+    "sentiment_neu": 0.8111499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 56.96
+  },
   "analyst": {
     "revision_momentum": 0.08333333333333333,
     "target_upside": 0.05766383212759654,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 52.25654705,
     "catalyst_timeline": 61.85768086373818,
     "downside_control": 47.041147514287225,
-    "composite_score": 58.865364875663204,
+    "composite_score": 58.86147583036477,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 60.25814565484635,
     "technical_score": 60.15076703631298,
-    "sentiment_score": 50.0,
+    "sentiment_score": 56.96,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Aerospace & Defense"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Pentagon poised to curb some defense contractors' payouts under Trump order",
+      "url": "https://finance.yahoo.com/news/pentagon-poised-curb-defense-contractors-212134373.html",
+      "publisher": "Reuters",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Huntington Ingalls Industries, Inc.",
+      "url": "https://finance.yahoo.com/m/4bca99cb-acd4-3eac-bd42-785189e604ff/analyst-report%3A-huntington.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Strong Newport News Shipbuilding Performance Drives HII's Q4 Results",
+      "url": "/news/301867/strong-newport-news-shipbuilding-performance-drives-hiis-q4-results",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is LMT Stock a Buy, Hold or Sell After 17.8% Rise in a Month?",
+      "url": "/news/301267/is-lmt-stock-a-buy-hold-or-sell-after-178-rise-in-a-month",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "These hot S&P 500 stocks show where investors are heading as they run away from tech",
+      "url": "https://www.marketwatch.com/story/these-hot-s-p-500-stocks-show-where-investors-are-heading-as-they-run-away-from-tech-0fcd53f6?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Boeing Stock Surges 2.2% in a Month: What Should Investors Know?",
+      "url": "/news/299733/boeing-stock-surges-22-in-a-month-what-should-investors-know",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Defense ETFs in Focus: Q4 Earnings & 2026 Spending Boost",
+      "url": "/news/297945/defense-etfs-in-focus-q4-earnings-2026-spending-boost",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Boeing Secures a $2.81B Contract to Upgrade South Korea's F-15 Fleet",
+      "url": "/news/297884/boeing-secures-a-281b-contract-to-upgrade-south-koreas-f-15-fleet",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "RTX Secures a $1.03B Contract to Supply LTAMDS System to U.S. Army",
+      "url": "/news/297876/rtx-secures-a-103b-contract-to-supply-ltamds-system-to-us-army",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Top 5 Analyst Questions From Northrop Grumman's Q4 Earnings Call",
+      "url": "/news/296718/the-top-5-analyst-questions-from-northrop-grummans-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Kratos Stock Keeps Going Down",
+      "url": "/news/295972/why-kratos-stock-keeps-going-down",
+      "publisher": "Motley Fool",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ondas Eyes NATO, UK Expansion With Rotron Aero Deal",
+      "url": "/news/295892/ondas-eyes-nato-uk-expansion-with-rotron-aero-deal",
+      "publisher": "Benzinga",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Defense Behemoths: Winners and Loser During Q4 Earnings Cycle",
+      "url": "/news/295837/defense-behemoths-winners-and-loser-during-q4-earnings-cycle",
+      "publisher": "MarketBeat",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Tightrope for Defense Contractors: Satisfying Investors and President Trump",
+      "url": "https://www.wsj.com/politics/national-security/the-tightrope-for-defense-contractors-satisfying-investors-and-president-trump-fc3bf75a?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The War on Defense Stock Dividends",
+      "url": "https://www.barrons.com/articles/war-on-defense-stock-dividends-30801380?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-30",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stock Market Today: Dow, Russell 2000 Edge Up; Gold Stocks Cool, But Defense Firms, Meta, BKV Rally (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/ce704e57-e7b0-34b2-87ce-0e6fdacd4d2e/stock-market-today%3A-dow%2C.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stock Market Today: Dow Cuts Losses; Defense Firms, Meta Up As BKV Emerges (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/ce704e57-e7b0-34b2-87ce-0e6fdacd4d2e/stock-market-today%3A-dow-cuts.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Lockheed's Q4 Earnings Miss Estimates, Sales Increase Year Over Year",
+      "url": "/news/292270/lockheeds-q4-earnings-miss-estimates-sales-increase-year-over-year",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Northrop Grumman price target raised to $750 from $715 at RBC Capital",
+      "url": "https://finance.yahoo.com/news/northrop-grumman-price-target-raised-150531901.html",
+      "publisher": "TipRanks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "L3Harris Q4 Earnings Surpass Estimates, Revenues Rise Y/Y",
+      "url": "/news/291952/l3harris-q4-earnings-surpass-estimates-revenues-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    }
+  ]
 }

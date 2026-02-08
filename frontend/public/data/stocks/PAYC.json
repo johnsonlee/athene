@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 130.97000122070312,
     "sma_20": 142.65599899291993,
-    "sma_50": 153.96539978027346,
+    "sma_50": 153.96539978027343,
     "sma_200": 203.67193267822267,
-    "trend_alignment": 0.1476370891084791,
+    "trend_alignment": 0.14763708910847925,
     "rsi": 30.829320579004456,
     "rsi_score": -0.38341358841991086,
     "macd_histogram": -0.8186968526800866,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 27.676311492330036,
     "stoch_d": 23.33749574741221,
-    "trend_score": 14.763708910847912,
+    "trend_score": 14.763708910847924,
     "rsi_abs_score": 50.995184694805346,
     "macd_abs_score": 33.12346134554356,
     "momentum_score": 42.05932302017445,
     "volatility_score": 30.838789868157406,
     "volume_score": 50.0,
-    "technical_score": 33.21466755293819,
+    "technical_score": 33.214667552938195,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.010959144200529153,
+    "sentiment_pos": 0.06655,
+    "sentiment_neg": 0.0595,
+    "sentiment_neu": 0.87395,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 49.45
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.4507139039474689,
@@ -6325,7 +6333,7 @@
     "quality_score": 84.7212006,
     "growth_score": 77.28571428571428,
     "safety_score": 64.4325236862611,
-    "trend_score": 14.763708910847912,
+    "trend_score": 14.763708910847924,
     "momentum_score": 42.05932302017445,
     "volatility_score": 30.838789868157406,
     "volume_score": 50.0,
@@ -6344,16 +6352,16 @@
     "current_ratio_score": 55.258,
     "earnings_visibility": 78.12403723285715,
     "valuation_margin": 62.50353263333333,
-    "catalyst_timeline": 41.39181022543788,
+    "catalyst_timeline": 41.39181022543789,
     "downside_control": 52.31469703316278,
-    "composite_score": 61.25190215573515,
+    "composite_score": 61.248013110436716,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 74.5122373497919,
-    "technical_score": 33.21466755293819,
-    "sentiment_score": 50.0,
+    "technical_score": 33.214667552938195,
+    "sentiment_score": 49.45,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Human Resource & Employment Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Software stocks have been crushed. Here's how to play the sector as the dust settles.",
+      "url": "https://www.marketwatch.com/story/software-stocks-have-been-crushed-heres-how-to-play-the-sector-as-the-dust-settles-c0175f8a?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Paycom (PAYC) Soars 4.4%: Is Further Upside Left in the Stock?",
+      "url": "/news/301333/paycom-payc-soars-44-is-further-upside-left-in-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "1 Cash-Heavy Stock Worth Your Attention and 2 We Turn Down",
+      "url": "/news/295124/1-cash-heavy-stock-worth-your-attention-and-2-we-turn-down",
+      "publisher": "StockStory",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "New Study Proves Significant ROI from Paycoms Full-Solution Automation",
+      "url": "https://www.businesswire.com/news/home/20260128582867/en/Paycom",
+      "publisher": "Business Wire",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Paycom Software (PAYC): BMO Capital Highlights Contraction in Broader Software Multiples",
+      "url": "/news/286898/paycom-software-payc-bmo-capital-highlights-contraction-in-broader-software-multiples",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bear of the Day: HubSpot (HUBS)",
+      "url": "/news/286546/bear-of-the-day-hubspot-hubs",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jeff York Returns as Paycoms Chief Sales Officer",
+      "url": "https://www.businesswire.com/news/home/20260123915414/en/Jeff",
+      "publisher": "Business Wire",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Paycom Software, Inc. Announces Fourth Quarter and Year-End 2025 Earnings Release Date and Conference Call",
+      "url": "https://www.businesswire.com/news/home/20260121977510/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Software Stocks: From Market Leaders to AI Victims",
+      "url": "/news/281824/software-stocks-from-market-leaders-to-ai-victims",
+      "publisher": "Zacks",
+      "date": "2026-01-20",
+      "sentiment": "negative"
+    },
+    {
+      "title": "I'm Watching These 2 SaaS Stocks While Everyone Else Panics About AI",
+      "url": "/news/281065/im-watching-these-2-saas-stocks-while-everyone-else-panics-about-ai",
+      "publisher": "Motley Fool",
+      "date": "2026-01-20",
+      "sentiment": "negative"
+    },
+    {
+      "title": "3 Small-Cap Stocks We Think Twice About",
+      "url": "/news/279362/3-small-cap-stocks-we-think-twice-about",
+      "publisher": "StockStory",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Paycom Software Earnings Preview: What to Expect",
+      "url": "https://finance.yahoo.com/m/3c293e24-b999-38c7-9064-1c435ecc9dc3/paycom-software-earnings.html",
+      "publisher": "Barchart",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Paycom Software (PAYC) Fell Along with Peers",
+      "url": "/news/275997/paycom-software-payc-fell-along-with-peers",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TD Cowen Lowers PT on Paycom Software (PAYC) Stock",
+      "url": "/news/272954/td-cowen-lowers-pt-on-paycom-software-payc-stock",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-11",
+      "sentiment": "negative"
+    },
+    {
+      "title": "3 Stocks That Benefit if Companies Cut Costs in 2026",
+      "url": "/news/272463/3-stocks-that-benefit-if-companies-cut-costs-in-2026",
+      "publisher": "MarketBeat",
+      "date": "2026-01-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Down 72% From All-Time Highs, Is This Software Stock a Buy as It Aggressively Buys Back Its Stock?",
+      "url": "/news/266722/down-72-from-all-time-highs-is-this-software-stock-a-buy-as-it-aggressively-buys-back-its-stock",
+      "publisher": "Motley Fool",
+      "date": "2026-01-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Paycom price target lowered to $185 from $191 at Citi",
+      "url": "https://finance.yahoo.com/news/paycom-price-target-lowered-185-113534512.html",
+      "publisher": "TipRanks",
+      "date": "2025-12-24",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Why Paycom (PAYC) Shares Are Sliding Today",
+      "url": "/news/261339/why-paycom-payc-shares-are-sliding-today",
+      "publisher": "StockStory",
+      "date": "2025-12-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "NBA Champion Jalen Williams Joins Forces With Paycom",
+      "url": "https://www.businesswire.com/news/home/20251223618744/en",
+      "publisher": "Business Wire",
+      "date": "2025-12-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Reasons to Sell PAYC and 1 Stock to Buy Instead",
+      "url": "/news/261272/3-reasons-to-sell-payc-and-1-stock-to-buy-instead",
+      "publisher": "StockStory",
+      "date": "2025-12-22",
+      "sentiment": "neutral"
+    }
+  ]
 }

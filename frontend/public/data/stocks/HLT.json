@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 314.3800048828125,
-    "sma_20": 301.2770004272461,
+    "sma_20": 301.27700042724604,
     "sma_50": 292.09579895019533,
     "sma_200": 269.1814336395264,
     "trend_alignment": 0.7021258653904372,
@@ -6286,10 +6286,10 @@
     "macd_histogram": 1.2275239213364104,
     "macd_line": 5.416925863687254,
     "macd_histogram_pct": 0.3904586494913947,
-    "bb_position": 1.0243400033178625,
-    "bb_upper": 313.7717599083601,
-    "bb_lower": 288.7822409461321,
-    "bb_width": 0.08294532581906322,
+    "bb_position": 1.024340003317865,
+    "bb_upper": 313.77175990836,
+    "bb_lower": 288.78224094613205,
+    "bb_width": 0.08294532581906323,
     "hist_volatility": 0.18942346445793704,
     "volume_ratio": 0.8784906277634935,
     "avg_volume_20d": 1956310.0,
@@ -6306,7 +6306,15 @@
     "technical_score": 60.90538526560288,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.12188066934469595,
+    "sentiment_pos": 0.08095,
+    "sentiment_neg": 0.023350000000000003,
+    "sentiment_neu": 0.8957,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 56.09
+  },
   "analyst": {
     "revision_momentum": 0.2857142857142857,
     "target_upside": -0.02983650359437622,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 44.32033282941176,
     "catalyst_timeline": 58.979148328336805,
     "downside_control": 53.55305861203836,
-    "composite_score": 58.17175459259615,
+    "composite_score": 58.167865547297716,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 60.64542201640277,
     "technical_score": 60.90538526560288,
-    "sentiment_score": 50.0,
+    "sentiment_score": 56.09,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Hotels, Resorts & Cruise Lines"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Super Bowl LX, Coinbase earnings, jobs data & CPI: What to Watch",
+      "url": "https://finance.yahoo.com/video/super-bowl-lx-coinbase-earnings-000012395.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Gear Up for Hilton Worldwide (HLT) Q4 Earnings: Wall Street Estimates for Key Metrics",
+      "url": "/news/302821/gear-up-for-hilton-worldwide-hlt-q4-earnings-wall-street-estimates-for-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Mattel Gears Up to Post Q4 Earnings: What Lies Ahead for the Stock?",
+      "url": "/news/301845/mattel-gears-up-to-post-q4-earnings-what-lies-ahead-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Marriott to Report Q4 Earnings: What to Expect From the Stock?",
+      "url": "/news/301847/marriott-to-report-q4-earnings-what-to-expect-from-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hyatt Hotels (H) Reports Next Week: Wall Street Expects Earnings Growth",
+      "url": "/news/301717/hyatt-hotels-h-reports-next-week-wall-street-expects-earnings-growth",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Hasbro Prepares to Unveil Q4 Earnings: Key Things to Watch",
+      "url": "/news/301349/hasbro-prepares-to-unveil-q4-earnings-key-things-to-watch",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hilton Worldwide Holdings Inc. (HLT) Reports Next Week: Wall Street Expects Earnings Growth",
+      "url": "/news/299681/hilton-worldwide-holdings-inc-hlt-reports-next-week-wall-street-expects-earnings-growth",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Boyd Gaming Set to Report Q4 Earnings: Can Gaming Momentum Persist?",
+      "url": "/news/297411/boyd-gaming-set-to-report-q4-earnings-can-gaming-momentum-persist",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Roblox Prepares to Report Q4 Earnings: Key Things to Watch",
+      "url": "/news/295834/roblox-prepares-to-report-q4-earnings-key-things-to-watch",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Can InterContinental Hotels Be the Leader of the Pack?",
+      "url": "/news/294527/can-intercontinental-hotels-be-the-leader-of-the-pack",
+      "publisher": "Motley Fool",
+      "date": "2026-01-31",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What Should You Expect From Las Vegas Sands' Q4 Earnings?",
+      "url": "/news/288905/what-should-you-expect-from-las-vegas-sands-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Royal Caribbean Prepares to Unveil Q4 Results: Key Things to Watch",
+      "url": "/news/288674/royal-caribbean-prepares-to-unveil-q4-results-key-things-to-watch",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hilton Delivers Strong 6.7% Net Unit Growth in 2025, Closes Year with Record 520,000 Rooms Under Development",
+      "url": "https://www.businesswire.com/news/home/20260126116177/en/ACME",
+      "publisher": "Business Wire",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Winter Storm Fern Threatens Disruptions Across US: Here Are Businesses, Stocks Likely To Be Impacted",
+      "url": "/news/286271/winter-storm-fern-threatens-disruptions-across-us-here-are-businesses-stocks-likely-to-be-impacted",
+      "publisher": "Benzinga",
+      "date": "2026-01-25",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Is Hilton Worldwide Holdings Inc. (HLT) One of the Best Stocks to Buy According to Billionaire Bill Ackman?",
+      "url": "/news/286226/is-hilton-worldwide-holdings-inc-hlt-one-of-the-best-stocks-to-buy-according-to-billionaire-bill-ackman",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-24",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Winter Storm Fern Is Gathering Force. Businesses Are Bracing for Its Impact.",
+      "url": "https://finance.yahoo.com/m/3ce77ca1-6276-31be-b1a5-ca46ca3c1e43/winter-storm-fern-is.html",
+      "publisher": "Barrons.com",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Hilton Worldwide Holdings Inc. (HLT) is a Top Momentum Stock for the Long-Term",
+      "url": "/news/285414/why-hilton-worldwide-holdings-inc-hlt-is-a-top-momentum-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Will Hilton Worldwide (HLT) Beat Estimates Again in Its Next Earnings Report?",
+      "url": "/news/284312/will-hilton-worldwide-hlt-beat-estimates-again-in-its-next-earnings-report",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Hilton Worldwide Holdings Inc. (HLT) is a Top Growth Stock for the Long-Term",
+      "url": "/news/282537/why-hilton-worldwide-holdings-inc-hlt-is-a-top-growth-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why We Gather: Hilton Reveals Behavioral, Emotional and Cultural Drivers Defining 2026 Meetings and Events",
+      "url": "https://www.businesswire.com/news/home/20260120099200/en/Hilton",
+      "publisher": "Business Wire",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    }
+  ]
 }

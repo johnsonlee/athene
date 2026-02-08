@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 208.44000244140625,
-    "sma_20": 232.50400009155274,
+    "sma_20": 232.5040000915527,
     "sma_50": 221.51739959716798,
     "sma_200": 179.62579978942873,
     "trend_alignment": 0.6237372888459739,
@@ -6286,17 +6286,17 @@
     "macd_histogram": -5.606645518376526,
     "macd_line": -2.807933825225433,
     "macd_histogram_pct": -2.689812633231276,
-    "bb_position": 0.20630130810516792,
+    "bb_position": 0.2063013081051682,
     "bb_upper": 273.47115165578805,
-    "bb_lower": 191.5368485273174,
-    "bb_width": 0.35239954192705286,
+    "bb_lower": 191.53684852731737,
+    "bb_width": 0.35239954192705303,
     "hist_volatility": 0.8695748080878243,
     "volume_ratio": 1.1603229768286616,
     "avg_volume_20d": 46866520.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 16.273175056066314,
-    "stoch_d": 14.652455718236446,
+    "stoch_d": 14.652455718236448,
     "trend_score": 62.37372888459739,
     "rsi_abs_score": 63.71215120249764,
     "macd_abs_score": 20.0,
@@ -6306,7 +6306,15 @@
     "technical_score": 45.068941345753856,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.19576395843528396,
+    "sentiment_pos": 0.1163,
+    "sentiment_neg": 0.02195,
+    "sentiment_neu": 0.8616999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 59.79
+  },
   "analyst": {
     "revision_momentum": 0.08333333333333333,
     "target_upside": 0.4176741508347726,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 48.99233322571428,
     "catalyst_timeline": 55.075331283357215,
     "downside_control": 48.822390625000004,
-    "composite_score": 56.056755070958644,
+    "composite_score": 56.05286602566021,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 66.94746552559523,
     "technical_score": 45.068941345753856,
-    "sentiment_score": 50.0,
+    "sentiment_score": 59.79,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Semiconductors"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "The Robot Revolution Is Real. Tesla, Hyundai, and More Stocks to Play It.",
+      "url": "https://finance.yahoo.com/m/2f4b559e-b426-3efd-911e-0deb2a756756/the-robot-revolution-is-real..html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Consumer Tech News (Feb 2-6): Big Tech Earnings Take Center Stage In U.S. Markets, Anthropic Launches New AI Tool & More",
+      "url": "/news/303773/consumer-tech-news-feb-2-6-big-tech-earnings-take-center-stage-in-us-markets-anthropic-launches-new-ai-tool-more",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "5 big analyst AI moves: Microsoft stock downgraded as its time for a break",
+      "url": "https://finance.yahoo.com/news/5-big-analyst-ai-moves-093503505.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's What UBS and Truist Are Saying About Advanced Micro Devices (AMD)",
+      "url": "/news/303713/heres-what-ubs-and-truist-are-saying-about-advanced-micro-devices-amd",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Intel, AMD Warn China Customers Of Months-Long CPU Delays",
+      "url": "https://finance.yahoo.com/news/intel-amd-warn-china-customers-213138002.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Intel chief says the company is going to make GPUs at scale",
+      "url": "https://finance.yahoo.com/m/f8b64cfb-b8fa-339b-affc-385edb21148d/intel-chief-says-the-company.html",
+      "publisher": "Digital Trends",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Baird Highlights AI GPU and Server Strength atAdvanced Micro Devices, Inc (AMD)",
+      "url": "/news/303600/baird-highlights-ai-gpu-and-server-strength-atadvanced-micro-devices-inc-amd",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jim Cramer Discusses Key Factor For Advanced Micro Devices (AMD)",
+      "url": "/news/303595/jim-cramer-discusses-key-factor-for-advanced-micro-devices-amd",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Palantir, Strategy, Amazon And More: 5 Stocks Investors Couldn't Stop Buzzing About This Week",
+      "url": "/news/303573/palantir-strategy-amazon-and-more-5-stocks-investors-couldnt-stop-buzzing-about-this-week",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Wall Street's wild week rattles investors' confidence while highlighting a growing divide within markets",
+      "url": "https://www.marketwatch.com/story/wall-streets-wild-week-rattles-investors-confidence-while-highlighting-a-growing-divide-within-markets-e54b7922?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "AI chips: How AMD's product pipeline stacks up with competitors",
+      "url": "https://finance.yahoo.com/video/ai-chips-amds-product-pipeline-130041711.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tech stocks have been shaky, but these 20 companies could still see rocketing sales growth",
+      "url": "https://www.marketwatch.com/story/tech-stocks-have-been-shaky-but-these-20-companies-could-still-see-rocketing-sales-growth-148195c9?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "MarketBeat Week in Review - 02/02 - 02/06",
+      "url": "/news/303521/marketbeat-week-in-review-0202-0206",
+      "publisher": "MarketBeat",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Wealthy Families Are Worried About Geopolitics. But They're Not Rushing to AI, Crypto, or Gold",
+      "url": "https://www.barrons.com/articles/wealthy-families-are-worried-about-geopolitics-but-they-arent-rushing-to-ai-crypto-or-gold-62ce6f59?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dow closes above 50,000, Nvidia soars as traders focus on AI spending",
+      "url": "https://finance.yahoo.com/video/dow-closes-above-50-000-235453952.html",
+      "publisher": "Reuters Videos",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Market Today: Dow Closes Above 50,000 As Nvidia Lands Atop Blue Chips (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/d5f6d70b-adbf-3412-b185-ebea8f943d91/stock-market-today%3A-dow.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Top Analyst Reports for AMD, Constellation Energy & Freeport-McMoRan",
+      "url": "/news/303417/top-analyst-reports-for-amd-constellation-energy-freeport-mcmoran",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Earnings live: Amazon, Reddit stocks sink to cap jam-packed earnings week",
+      "url": "https://finance.yahoo.com/news/live/earnings-live-amazon-reddit-stocks-sink-to-cap-jam-packed-earnings-week-213155571.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Top Funds Like Google  But Go Bonkers For These Three Stocks",
+      "url": "https://finance.yahoo.com/m/da3245ba-9015-31b0-a441-d953bc51dce7/top-funds-like-google-%E2%80%94-but.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Chip Stocks Soar as Nvidia CEO Huang Says Demand Is 'Through the Roof'",
+      "url": "https://finance.yahoo.com/m/7b36b1a9-81a7-38ba-bdcc-e53cd0b232ea/chip-stocks-soar-as-nvidia.html",
+      "publisher": "Investopedia",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    }
+  ]
 }

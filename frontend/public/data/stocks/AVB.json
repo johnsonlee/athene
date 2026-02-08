@@ -6277,19 +6277,19 @@
   },
   "technical": {
     "close": 173.8300018310547,
-    "sma_20": 176.81750030517577,
-    "sma_50": 178.1492694091797,
+    "sma_20": 176.8175003051758,
+    "sma_50": 178.14926940917974,
     "sma_200": 187.9027072906494,
-    "trend_alignment": 0.41229141714283524,
+    "trend_alignment": 0.4122914171428351,
     "rsi": 45.32586670039146,
     "rsi_score": -0.09348266599217084,
     "macd_histogram": -0.41055518874806696,
     "macd_line": -1.5565154665539467,
     "macd_histogram_pct": -0.23618200795227823,
-    "bb_position": 0.2544066716422826,
-    "bb_upper": 182.8997063937908,
-    "bb_lower": 170.73529421656073,
-    "bb_width": 0.06879642657675329,
+    "bb_position": 0.25440667164228026,
+    "bb_upper": 182.89970639379084,
+    "bb_lower": 170.73529421656076,
+    "bb_width": 0.06879642657675328,
     "hist_volatility": 0.26746167226907264,
     "volume_ratio": 1.334961334961335,
     "avg_volume_20d": 1351350.0,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 28.628185814795152,
     "stoch_d": 29.264361408741074,
-    "trend_score": 41.22914171428352,
+    "trend_score": 41.229141714283514,
     "rsi_abs_score": 68.22810669027402,
     "macd_abs_score": 41.59544980119304,
     "momentum_score": 54.91177824573353,
@@ -6306,7 +6306,15 @@
     "technical_score": 51.25396403901405,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.02789494765787383,
+    "sentiment_pos": 0.0351,
+    "sentiment_neg": 0.0162,
+    "sentiment_neu": 0.9487,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.39
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.11028015877581537,
@@ -6325,7 +6333,7 @@
     "quality_score": 68.76857071428572,
     "growth_score": 28.75,
     "safety_score": 32.74065,
-    "trend_score": 41.22914171428352,
+    "trend_score": 41.229141714283514,
     "momentum_score": 54.91177824573353,
     "volatility_score": 62.05844025504467,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 49.93952033333333,
     "catalyst_timeline": 49.29439966286012,
     "downside_control": 48.7018635382567,
-    "composite_score": 47.528454882693225,
+    "composite_score": 47.52456583739479,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 47.67330149206349,
     "technical_score": 51.25396403901405,
-    "sentiment_score": 50.0,
+    "sentiment_score": 51.39,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Real Estate",
     "industry": "Multi-Family Residential REITs"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "AvalonBay Communities Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/6f3d6822-65ba-3dbc-836b-75a8725ac1f2/avalonbay-communities-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AvalonBay Communities Inc (AVB) Q4 2025 Earnings Call Highlights: Record Low Turnover and ...",
+      "url": "https://finance.yahoo.com/news/avalonbay-communities-inc-avb-q4-010305415.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Analyst Report: AvalonBay Communities, Inc.",
+      "url": "https://finance.yahoo.com/m/90102d26-c0c2-38ca-8a41-311cc84c1e18/analyst-report%3A-avalonbay.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Essex Property Q4 Core FFO Lags Estimates, Revenues Beat & Rise Y/Y",
+      "url": "/news/301582/essex-property-q4-core-ffo-lags-estimates-revenues-beat-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Mid-America Apartment's Q4 FFO Beats Estimates, Revenues Grow Y/Y",
+      "url": "/news/301583/mid-america-apartments-q4-ffo-beats-estimates-revenues-grow-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AvalonBay Q4 FFO Tops Estimates, Revenues Grow Y/Y, Dividend Raised",
+      "url": "/news/301416/avalonbay-q4-ffo-tops-estimates-revenues-grow-yy-dividend-raised",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "AvalonBay (AVB) Q4 Earnings: Taking a Look at Key Metrics Versus Estimates",
+      "url": "/news/300513/avalonbay-avb-q4-earnings-taking-a-look-at-key-metrics-versus-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AvalonBay Communities (AVB) Beats Q4 FFO Estimates",
+      "url": "/news/300417/avalonbay-communities-avb-beats-q4-ffo-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AvalonBay: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/avalonbay-q4-earnings-snapshot-214040589.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AvalonBay Communities, Inc. Announces 2025 Operating Results, 1.7% Dividend Increase and Initial 2026 Outlook",
+      "url": "https://www.businesswire.com/news/home/20260203076798/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "How Are Residential REITs Positioned Ahead of Q4 Earnings?",
+      "url": "/news/297868/how-are-residential-reits-positioned-ahead-of-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What to Expect From AvalonBay Communities Stock in Q4 Earnings?",
+      "url": "/news/293793/what-to-expect-from-avalonbay-communities-stock-in-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Giants like Blackstone are betting on built-to-rent housing as home prices soar. How to get in on the action in 2026",
+      "url": "https://finance.yahoo.com/news/giants-blackstone-betting-built-rent-203300423.html",
+      "publisher": "Moneywise",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "AvalonBay Communities Announces 2025 Dividend Income Tax Treatment",
+      "url": "https://www.businesswire.com/news/home/20260120762939/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AvalonBay Communities, Inc. Announces Fourth Quarter 2025 Earnings Release Date",
+      "url": "https://www.businesswire.com/news/home/20260108228078/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What to Expect From AvalonBay Communities' Q4 2025 Earnings Report",
+      "url": "https://finance.yahoo.com/m/be716ea1-30d1-395d-9991-c219524faff4/what-to-expect-from-avalonbay.html",
+      "publisher": "Barchart",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 High-Yield REIT Stocks to Buy With $500 and Hold Forever",
+      "url": "/news/261571/3-high-yield-reit-stocks-to-buy-with-500-and-hold-forever",
+      "publisher": "Motley Fool",
+      "date": "2025-12-24",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How Is UDR's Stock Performance Compared to Other Residential and Multisector Real Estate Stocks?",
+      "url": "https://finance.yahoo.com/m/9321991a-e369-3797-87f6-0c8b200d7bd4/how-is-udr%27s-stock.html",
+      "publisher": "Barchart",
+      "date": "2025-12-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AvalonBay Trims '25 Outlook as Rent Trends Cool & Operating Costs Rise",
+      "url": "/news/249522/avalonbay-trims-25-outlook-as-rent-trends-cool-operating-costs-rise",
+      "publisher": "Zacks",
+      "date": "2025-12-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "AvalonBay Communities Stock: Is AVB Underperforming the Real Estate Sector?",
+      "url": "https://finance.yahoo.com/m/c9705ab1-573c-3ed8-a801-6c9994503e2b/avalonbay-communities-stock%3A.html",
+      "publisher": "Barchart",
+      "date": "2025-12-09",
+      "sentiment": "neutral"
+    }
+  ]
 }

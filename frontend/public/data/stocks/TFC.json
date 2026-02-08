@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 55.810001373291016,
-    "sma_20": 51.58249988555909,
+    "sma_20": 51.58249988555908,
     "sma_50": 50.181200180053715,
     "sma_200": 44.47314138412476,
     "trend_alignment": 0.7751994425935876,
@@ -6286,17 +6286,17 @@
     "macd_histogram": 0.5173364464296681,
     "macd_line": 1.5431829171842821,
     "macd_histogram_pct": 0.9269601033861464,
-    "bb_position": 0.9625458816219574,
-    "bb_upper": 56.15231842216331,
-    "bb_lower": 47.012681348954864,
-    "bb_width": 0.17718484163205822,
+    "bb_position": 0.9625458816219582,
+    "bb_upper": 56.152318422163304,
+    "bb_lower": 47.01268134895486,
+    "bb_width": 0.17718484163205825,
     "hist_volatility": 0.21058124908482814,
     "volume_ratio": 0.6505035605044001,
     "avg_volume_20d": 11375495.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 94.32632909671277,
-    "stoch_d": 93.71973950713846,
+    "stoch_d": 93.71973950713847,
     "trend_score": 77.51994425935877,
     "rsi_abs_score": 34.707474325590994,
     "macd_abs_score": 71.4044015507922,
@@ -6306,7 +6306,15 @@
     "technical_score": 59.471812528191506,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.026574625754330856,
+    "sentiment_pos": 0.07135,
+    "sentiment_neg": 0.0172,
+    "sentiment_neu": 0.91145,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.33
+  },
   "analyst": {
     "revision_momentum": -0.08333333333333333,
     "target_upside": 0.0034044078122199913,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 53.247248133333336,
     "catalyst_timeline": 58.90055536076919,
     "downside_control": 45.30577340169479,
-    "composite_score": 53.526485354364716,
+    "composite_score": 53.52259630906628,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 54.030539634920636,
     "technical_score": 59.471812528191506,
-    "sentiment_score": 50.0,
+    "sentiment_score": 51.33,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Diversified Banks"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Buy the weakness in this major chip stock, Truist says",
+      "url": "https://finance.yahoo.com/news/buy-weakness-major-chip-stock-160040649.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Truist launches AI-enabled receivables platform to accelerate cash application and minimize exceptions",
+      "url": "/news/297150/truist-launches-ai-enabled-receivables-platform-to-accelerate-cash-application-and-minimize-exceptions",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Q4 Earnings Highs And Lows: Truist Financial (NYSE:TFC) Vs The Rest Of The Diversified Banks Stocks",
+      "url": "/news/295038/q4-earnings-highs-and-lows-truist-financial-nyse-tfc-vs-the-rest-of-the-diversified-banks-stocks",
+      "publisher": "StockStory",
+      "date": "2026-02-01",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Are Wall Street Analysts Bullish on Truist Financial Stock?",
+      "url": "https://finance.yahoo.com/m/38bcabe5-eec2-32d0-ae5e-891d22a82bff/are-wall-street-analysts.html",
+      "publisher": "Barchart",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Truist to speak at the UBS Financial Services Conference and BofA Securities Financial Services Conference",
+      "url": "/news/289857/truist-to-speak-at-the-ubs-financial-services-conference-and-bofa-securities-financial-services-conference",
+      "publisher": "PR Newswire",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "5 Insightful Analyst Questions From Truist Financial's Q4 Earnings Call",
+      "url": "/news/289512/5-insightful-analyst-questions-from-truist-financials-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Truist declares common and preferred stock dividends",
+      "url": "/news/288922/truist-declares-common-and-preferred-stock-dividends",
+      "publisher": "PR Newswire",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Do Wall Street Analysts Like Intel Stock?",
+      "url": "https://finance.yahoo.com/m/76584806-c4a2-3757-9306-c9d5f5383931/do-wall-street-analysts-like.html",
+      "publisher": "Barchart",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Which Bank Stock to Buy Post Q4 Earnings: Bank of America or Truist?",
+      "url": "/news/288188/which-bank-stock-to-buy-post-q4-earnings-bank-of-america-or-truist",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Truist Financial price target raised to $58 from $54 at Argus",
+      "url": "https://finance.yahoo.com/news/truist-financial-price-target-raised-134601098.html",
+      "publisher": "TipRanks",
+      "date": "2026-01-24",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tech, Media & Telecom Roundup: Market Talk",
+      "url": "https://finance.yahoo.com/m/b240c140-26f8-38d0-91e9-15f9845494f6/tech%2C-media-%26-telecom.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Truist Financial price target raised to $60 from $59 at TD Cowen",
+      "url": "https://finance.yahoo.com/news/truist-financial-price-target-raised-144212742.html",
+      "publisher": "TipRanks",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TD Cowen Cites Asset Repricing, Potential Fed Shifts as Key Bullish Catalysts for Truist Financial (TFC)",
+      "url": "/news/284852/td-cowen-cites-asset-repricing-potential-fed-shifts-as-key-bullish-catalysts-for-truist-financial-tfc",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Company News for Jan 22, 2026",
+      "url": "/news/284016/company-news-for-jan-22-2026",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TFC Q4 Deep Dive: Digital Investments, Loan Growth, and Strategic Branch Expansion Shape Outlook",
+      "url": "/news/283363/tfc-q4-deep-dive-digital-investments-loan-growth-and-strategic-branch-expansion-shape-outlook",
+      "publisher": "StockStory",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The One Metric Bulls Watch in Palantir Before Earnings",
+      "url": "/news/283119/the-one-metric-bulls-watch-in-palantir-before-earnings",
+      "publisher": "MarketBeat",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Truist settles 15-year-old legal saga, causing earnings hit",
+      "url": "https://finance.yahoo.com/m/6935ef9a-7874-3412-9d63-62e448a2fe02/truist-settles-15-year-old.html",
+      "publisher": "American Banker",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Truist Financial (TFC) Reports Q4 Earnings: What Key Metrics Have to Say",
+      "url": "/news/283086/truist-financial-tfc-reports-q4-earnings-what-key-metrics-have-to-say",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Truist Financial Corporation (TFC) Tops Q4 Earnings Estimates",
+      "url": "/news/283053/truist-financial-corporation-tfc-tops-q4-earnings-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Truist Financial Corp (TFC) Q4 2025 Earnings Call Highlights: Strong Net Income and Strategic ...",
+      "url": "https://finance.yahoo.com/news/truist-financial-corp-tfc-q4-190244349.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    }
+  ]
 }

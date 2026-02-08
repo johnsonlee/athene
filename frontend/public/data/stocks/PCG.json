@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 22909935.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 96.02089877482858,
+    "stoch_k": 96.02089877482857,
     "stoch_d": 91.59584188301986,
     "trend_score": 58.899727194227744,
     "rsi_abs_score": 68.60476809879324,
@@ -6306,7 +6306,15 @@
     "technical_score": 58.846424159792306,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.30875128733529533,
+    "sentiment_pos": 0.16870000000000002,
+    "sentiment_neg": 0.0075,
+    "sentiment_neu": 0.8238,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 65.44
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.2804878048780489,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 74.93596844999999,
     "catalyst_timeline": 63.91784418755134,
     "downside_control": 39.93289314907321,
-    "composite_score": 63.31546987458969,
+    "composite_score": 63.31158082929125,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 60.74488561309523,
     "technical_score": 58.846424159792306,
-    "sentiment_score": 50.0,
+    "sentiment_score": 65.44,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Utilities",
     "industry": "Multi-Utilities"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "PG&E Corporation (PCG): A Bull Case Theory",
+      "url": "/news/303614/pge-corporation-pcg-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PG&E Corporation, Lockheed Martin, Salesforce, and Wells Fargo Announce the Launch of EMBERPOINT LLC",
+      "url": "/news/303524/pge-corporation-lockheed-martin-salesforce-and-wells-fargo-announce-the-launch-of-emberpoint-llc",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Super Bowl LX's Super Schools Scores Big for Bay Area Students",
+      "url": "/news/302255/super-bowl-lxs-super-schools-scores-big-for-bay-area-students",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PG&E Accelerating Home Electrification for Customers via SPAN Edge",
+      "url": "/news/301772/pge-accelerating-home-electrification-for-customers-via-span-edge",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PG&E (PCG) Earnings Expected to Grow: Should You Buy?",
+      "url": "/news/301715/pge-pcg-earnings-expected-to-grow-should-you-buy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Itron, PG&E expand collaboration to create more reliable, flexible grid",
+      "url": "https://finance.yahoo.com/news/itron-pg-e-expand-collaboration-135037917.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Oakland-Area High School Seniors Graduate from Financial Education Program Earning $7,000 PG&E College Scholarships",
+      "url": "/news/298041/oakland-area-high-school-seniors-graduate-from-financial-education-program-earning-7000-pge-college-scholarships",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PG&E Powers Up for Super Bowl 60: Ensuring Safe, Reliable Energy Across the Bay Area",
+      "url": "/news/296239/pge-powers-up-for-super-bowl-60-ensuring-safe-reliable-energy-across-the-bay-area",
+      "publisher": "PR Newswire",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why PG&E (PCG) is a Top Growth Stock for the Long-Term",
+      "url": "/news/295750/why-pge-pcg-is-a-top-growth-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Meet the Future of Autonomous Wildfire Response: XPRIZE Wildfire Announces Finalist Teams Advancing in $11M Competition",
+      "url": "/news/291264/meet-the-future-of-autonomous-wildfire-response-xprize-wildfire-announces-finalist-teams-advancing-in-11m-competition",
+      "publisher": "PR Newswire",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Morgan Stanley Updates PG&E (PCG) Outlook Amid Data Center Growth and Utility Sector Laggard Performance",
+      "url": "/news/291139/morgan-stanley-updates-pge-pcg-outlook-amid-data-center-growth-and-utility-sector-laggard-performance",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What Are Wall Street Analysts' Target Price for PG&E Corporation Stock?",
+      "url": "https://finance.yahoo.com/m/cc7b70cb-4013-3f6b-b0b6-2769c39a015b/what-are-wall-street.html",
+      "publisher": "Barchart",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Waymo, Zeekr-Built 'Ojai' Robotaxi Crashes In Los Angeles During Testing With On-Board Safety Driver",
+      "url": "/news/289468/waymo-zeekr-built-ojai-robotaxi-crashes-in-los-angeles-during-testing-with-on-board-safety-driver",
+      "publisher": "Benzinga",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "More Bill Relief in 2026: PG&E Increases Bill Credit for REACH Program, Puts $50 Million Toward Helping Customers Catch Up on Late Energy Bills",
+      "url": "/news/288883/more-bill-relief-in-2026-pge-increases-bill-credit-for-reach-program-puts-50-million-toward-helping-customers-catch-up-on-late-energy-bills",
+      "publisher": "PR Newswire",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Lockheed Martin, PG&E partner to launch 'Emberpoint' to provide advanced wildfire protection",
+      "url": "https://www.youtube.com/watch?v=3b4uZl-4puQ",
+      "publisher": "CNBC TV",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Lockheed Martin, PG&E, Salesforce and Wells Fargo team up to help battle wildfires",
+      "url": "https://finance.yahoo.com/news/lockheed-martin-pg-e-salesforce-185814487.html",
+      "publisher": "LA Times",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Lockheed Martin, PG&E Corporation, Salesforce and Wells Fargo Launch EMBERPOINT to Transform America's Wildfire Prevention, Detection and Response",
+      "url": "/news/287277/lockheed-martin-pge-corporation-salesforce-and-wells-fargo-launch-emberpoint-to-transform-americas-wildfire-prevention-detection-and-response",
+      "publisher": "PR Newswire",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PG&E (PCG) is a Top-Ranked Value Stock: Should You Buy?",
+      "url": "/news/287063/pge-pcg-is-a-top-ranked-value-stock-should-you-buy",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PG&E Corporation Schedules Fourth Quarter and Full Year 2025 Earnings Release and Conference Call",
+      "url": "/news/278287/pge-corporation-schedules-fourth-quarter-and-full-year-2025-earnings-release-and-conference-call",
+      "publisher": "PR Newswire",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's What to Expect From PG&E's Next Earnings Report",
+      "url": "https://finance.yahoo.com/m/46221101-5861-39dd-9519-eba24b4a860a/here%27s-what-to-expect-from.html",
+      "publisher": "Barchart",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    }
+  ]
 }

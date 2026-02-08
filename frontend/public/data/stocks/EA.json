@@ -6306,7 +6306,15 @@
     "technical_score": 59.40449301277906,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.043688079435879865,
+    "sentiment_pos": 0.09469999999999999,
+    "sentiment_neg": 0.05725,
+    "sentiment_neu": 0.84805,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 52.18
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.05,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 33.54694371666666,
     "catalyst_timeline": 52.68308092072305,
     "downside_control": 68.25251509190846,
-    "composite_score": 44.916698336817184,
+    "composite_score": 44.91280929151875,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 42.86288106439505,
     "technical_score": 59.40449301277906,
-    "sentiment_score": 50.0,
+    "sentiment_score": 52.18,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Communication Services",
     "industry": "Interactive Home Entertainment"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "2 Internet Stocks to Research Further and 1 That Underwhelm",
+      "url": "/news/302455/2-internet-stocks-to-research-further-and-1-that-underwhelm",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Software Crash In Numbers: These Stocks Are Getting Hit Hardest",
+      "url": "/news/299911/the-software-crash-in-numbers-these-stocks-are-getting-hit-hardest",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Electronic Arts posts strong Q3 revenue as Battlefield 6 tops sales",
+      "url": "https://finance.yahoo.com/m/e5b32f09-7703-31cb-88cf-1b7a793bb936/electronic-arts-posts-strong.html",
+      "publisher": "Proactive",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Electronic Arts Q3 Earnings and Revenues Increase Year Over Year",
+      "url": "/news/299360/electronic-arts-q3-earnings-and-revenues-increase-year-over-year",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Electronic Arts Inc.",
+      "url": "https://finance.yahoo.com/m/740af505-2007-3ba7-a315-931681dcda7d/analyst-report%3A-electronic.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Electronic Arts (EA) Reports Q3 Earnings: What Key Metrics Have to Say",
+      "url": "/news/298392/electronic-arts-ea-reports-q3-earnings-what-key-metrics-have-to-say",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Electronic Arts (EA) Beats Q3 Earnings and Revenue Estimates",
+      "url": "/news/298280/electronic-arts-ea-beats-q3-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "EA beats quarterly bookings estimates powered by new 'Battlefield' game",
+      "url": "https://finance.yahoo.com/news/ea-beats-quarterly-bookings-estimates-215857856.html",
+      "publisher": "Reuters",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Electronic Arts beats revenue estimates as Battlefield 6 drives record bookings",
+      "url": "https://finance.yahoo.com/news/electronic-arts-beats-revenue-estimates-214455769.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Electronic Arts: Fiscal Q3 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/electronic-arts-fiscal-q3-earnings-213255344.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "EA's Third-Quarter Profit Falls, Despite Higher Revenue",
+      "url": "https://www.wsj.com/business/earnings/eas-third-quarter-profit-falls-despite-higher-revenue-30e263bd?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Electronic Arts Reports Q3 FY26 Results",
+      "url": "https://www.businesswire.com/news/home/20260203380209/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Get Me Out: Traders Dump Software Stocks as AI Fears Take Hold",
+      "url": "https://finance.yahoo.com/news/traders-dump-software-stocks-ai-115502147.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "EA SPORTS Madden NFL 26 Simulation Reveals Seattle Seahawks to Win Super Bowl LX",
+      "url": "https://www.businesswire.com/news/home/20260202068244/en/EA",
+      "publisher": "Business Wire",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Palantir, AMD, Amazon and More Stocks with Earnings This Week",
+      "url": "/news/295351/palantir-amd-amazon-and-more-stocks-with-earnings-this-week",
+      "publisher": "Benzinga",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Earnings To Watch: Electronic Arts (EA) Reports Q4 Results Tomorrow",
+      "url": "/news/294915/earnings-to-watch-electronic-arts-ea-reports-q4-results-tomorrow",
+      "publisher": "StockStory",
+      "date": "2026-02-01",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "January jobs data, Alphabet and Amazon earnings, more Warsh fallout: What to watch this week",
+      "url": "https://finance.yahoo.com/news/january-jobs-data-alphabet-and-amazon-earnings-more-warsh-fallout-what-to-watch-this-week-124723942.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Electronic Arts Set to Post Q3 Earnings: How to Play the Stock",
+      "url": "/news/293809/electronic-arts-set-to-post-q3-earnings-how-to-play-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ahead of Electronic Arts (EA) Q3 Earnings: Get Ready With Wall Street Estimates for Key Metrics",
+      "url": "/news/291822/ahead-of-electronic-arts-ea-q3-earnings-get-ready-with-wall-street-estimates-for-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is Take-Two Interactive the Last Pure-Play Gaming Stock?",
+      "url": "/news/291632/is-take-two-interactive-the-last-pure-play-gaming-stock",
+      "publisher": "MarketBeat",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    }
+  ]
 }

@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 122.69000244140625,
     "sma_20": 115.83341979980469,
-    "sma_50": 114.19683639526367,
-    "sma_200": 95.16651157379151,
-    "trend_alignment": 0.7739332396047087,
+    "sma_50": 114.19683639526369,
+    "sma_200": 95.1665115737915,
+    "trend_alignment": 0.7739332396047088,
     "rsi": 64.54639517885342,
     "rsi_score": 0.2909279035770683,
     "macd_histogram": 0.6068276968810489,
@@ -6295,9 +6295,9 @@
     "avg_volume_20d": 15541785.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 81.05360177336934,
+    "stoch_k": 81.05360177336935,
     "stoch_d": 73.58119510519232,
-    "trend_score": 77.39332396047087,
+    "trend_score": 77.39332396047088,
     "rsi_abs_score": 68.3175233748026,
     "macd_abs_score": 64.86506000500846,
     "momentum_score": 66.59129168990553,
@@ -6306,7 +6306,15 @@
     "technical_score": 62.91541783005743,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.03104646191624733,
+    "sentiment_pos": 0.0715,
+    "sentiment_neg": 0.03895,
+    "sentiment_neu": 0.8895500000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.55
+  },
   "analyst": {
     "revision_momentum": 0.07692307692307693,
     "target_upside": 0.1003341755644307,
@@ -6325,7 +6333,7 @@
     "quality_score": 58.429186375,
     "growth_score": 36.525,
     "safety_score": 33.12325,
-    "trend_score": 77.39332396047087,
+    "trend_score": 77.39332396047088,
     "momentum_score": 66.59129168990553,
     "volatility_score": 48.600165674722525,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 55.11840245714285,
     "catalyst_timeline": 63.50621048702362,
     "downside_control": 45.48051235120838,
-    "composite_score": 51.019222298303674,
+    "composite_score": 51.01533325300524,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 47.62332462678572,
     "technical_score": 62.91541783005743,
-    "sentiment_score": 50.0,
+    "sentiment_score": 51.55,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Diversified Banks"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Inside the Risks of Investing in Art",
+      "url": "https://finance.yahoo.com/video/inside-risks-investing-art-150656272.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Trump Ally Mullin Buys 10 Stocks, Including These $5 Billion Companies You've Probably Never Heard Of",
+      "url": "https://finance.yahoo.com/m/91b1be9a-cc6f-3bbd-8531-d17ef43c3a18/trump-ally-mullin-buys-10.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Chipotle CEO Says Higher-Income Customers Give Company 'Confidence' To Keep Raising Prices: Report",
+      "url": "/news/303699/chipotle-ceo-says-higher-income-customers-give-company-confidence-to-keep-raising-prices-report",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Citi cuts Coinbase price target to $400 after stock's 65% plunge from record high",
+      "url": "https://finance.yahoo.com/m/66b05c82-9826-3146-ba9c-447c88db58ed/citi-cuts-coinbase-price.html",
+      "publisher": "CoinDesk",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Citi flags lingering risks to Novo despite strong weight-loss portfolio",
+      "url": "https://finance.yahoo.com/m/38474736-1608-3515-ab8a-147d6ea19053/citi-flags-lingering-risks-to.html",
+      "publisher": "Proactive",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Trump Ally Mullin Buys 10 Stocks, Including These $5 Billion Companies You've Probably Never Heard Of",
+      "url": "/news/302331/trump-ally-mullin-buys-10-stocks-including-these-5-billion-companies-youve-probably-never-heard-of",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Evercore Stock Rises as Q4 Earnings Beat, Revenue Reaches Record Level",
+      "url": "/news/301922/evercore-stock-rises-as-q4-earnings-beat-revenue-reaches-record-level",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Citigroup Announces Full Redemption of Series X Preferred Stock",
+      "url": "https://www.businesswire.com/news/home/20260204916487/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "7 Bank Stocks With Solid-and Growing-Dividends",
+      "url": "https://www.barrons.com/articles/7-bank-stocks-growing-dividends-144d4aae?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Citigroup Celebrates Black History Month by Ringing Opening Bell",
+      "url": "https://finance.yahoo.com/video/citigroup-celebrates-black-history-month-153032804.html",
+      "publisher": "NYSE",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is Citigroup (C) a Buy as Wall Street Analysts Look Optimistic?",
+      "url": "/news/299523/is-citigroup-c-a-buy-as-wall-street-analysts-look-optimistic",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "NYSE Content Update: Disney Names New CEO After Ringing Bell on Main Street USA",
+      "url": "/news/299223/nyse-content-update-disney-names-new-ceo-after-ringing-bell-on-main-street-usa",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Citigroup Finance Chief Says You Shouldnt Bet Against the U.S.",
+      "url": "https://finance.yahoo.com/m/ba03300f-5b27-33ec-8d6e-889c6499457c/citigroup-finance-chief-says.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Citigroup CFO on How the Company Uses AI",
+      "url": "https://finance.yahoo.com/video/citigroup-cfo-company-uses-ai-224600506.html",
+      "publisher": "WSJ",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Opening Day: York Space Systems, Ethos make public debuts",
+      "url": "https://finance.yahoo.com/news/opening-day-york-space-systems-164023856.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Citi pilots AI-assisted collaboration feature for employees",
+      "url": "https://finance.yahoo.com/m/32781cb8-c072-3cd0-be07-317f3f62fb82/citi-pilots-ai-assisted.html",
+      "publisher": "CIO Dive",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Indonesia FM Blasts Citi, Defends MSCI Downgrade",
+      "url": "https://finance.yahoo.com/video/indonesia-fm-blasts-citi-defends-150829805.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's What Lifted Citigroup (C) in Q4",
+      "url": "/news/297063/heres-what-lifted-citigroup-c-in-q4",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Apple CEO Tim Cook Just Gave Great News to Micron Investors",
+      "url": "/news/296666/apple-ceo-tim-cook-just-gave-great-news-to-micron-investors",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Citigroup (C) is a Great Dividend Stock Right Now",
+      "url": "/news/295934/why-citigroup-c-is-a-great-dividend-stock-right-now",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    }
+  ]
 }

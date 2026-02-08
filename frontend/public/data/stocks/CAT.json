@@ -6279,7 +6279,7 @@
     "close": 726.2000122070312,
     "sma_20": 659.9051239013672,
     "sma_50": 617.6644897460939,
-    "sma_200": 476.2997032165527,
+    "sma_200": 476.29970321655264,
     "trend_alignment": 0.8722840651257524,
     "rsi": 71.21608670777627,
     "rsi_score": 0.42432173415552543,
@@ -6306,7 +6306,15 @@
     "technical_score": 61.3791047193587,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.06097897264392543,
+    "sentiment_pos": 0.06035,
+    "sentiment_neg": 0.0154,
+    "sentiment_neu": 0.92425,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 53.05
+  },
   "analyst": {
     "revision_momentum": null,
     "target_upside": -0.06706141558799235,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 37.058098975,
     "catalyst_timeline": 62.56977234314813,
     "downside_control": 41.66557739388302,
-    "composite_score": 51.25566527800564,
+    "composite_score": 51.2517762327072,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 54.04333454177757,
     "technical_score": 61.3791047193587,
-    "sentiment_score": 50.0,
+    "sentiment_score": 53.05,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Construction Machinery & Heavy Transportation Equipment"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "The Dow Surged Past 50,000. How It Got There, and Where It Goes Next.",
+      "url": "https://finance.yahoo.com/m/d4d07bd1-e873-3a77-8c7a-e7616a7fd512/the-dow-surged-past-50%2C000..html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "From AI Darlings To Dow Dinosaurs: Investors Flee Software For Old-Economy Stocks",
+      "url": "/news/303569/from-ai-darlings-to-dow-dinosaurs-investors-flee-software-for-old-economy-stocks",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Review & Preview: 50,000 Sighs of Relief",
+      "url": "https://finance.yahoo.com/m/8ad51648-a7a7-3b17-8c27-e01b63b2753a/review-%26-preview%3A-50%2C000.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stock Market Today: Dow Closes Above 50,000 As Nvidia Lands Atop Blue Chips (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/d5f6d70b-adbf-3412-b185-ebea8f943d91/stock-market-today%3A-dow.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Heard on the Street Recap: Blue-Chip Rally",
+      "url": "https://finance.yahoo.com/m/a68aa3f0-6300-342f-bf96-10291fa8f53e/heard-on-the-street-recap%3A.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Stocks That Punch Above Their Weight in the Dow",
+      "url": "https://finance.yahoo.com/m/b20ff39c-4cc8-37f8-bdf8-dad8f96592c4/the-stocks-that-punch-above.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Dow Surged Past 50,000. How Caterpillar and These Other Stocks Got It There.",
+      "url": "https://www.barrons.com/articles/dow-jones-industrial-average-50000-first-time-caterpillar-stock-ff67c63d?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Top Dow Contributors Over the Past 10,000 Points: Goldman, Caterpillar, IBM",
+      "url": "https://finance.yahoo.com/m/1b882369-7dff-30f5-a716-9c5bcbfc0e17/top-dow-contributors-over-the.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Dow Crosses 50,000 Level",
+      "url": "https://finance.yahoo.com/m/a5387891-48ee-3aa9-b644-cf1da2317ad8/dow-crosses-50%2C000-level.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dow soars 1,000 points, Caterpillar & Under Armour jump",
+      "url": "https://finance.yahoo.com/video/dow-soars-1-000-points-190851310.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Market Today: Dow Soars 1,000 Points As Nvidia Spikes; Data Center Play Hits Buy Zone (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/d5f6d70b-adbf-3412-b185-ebea8f943d91/stock-market-today%3A-dow-soars.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Should You Buy, Sell or Hold Caterpillar Stock Post Q4 Earnings?",
+      "url": "/news/303201/should-you-buy-sell-or-hold-caterpillar-stock-post-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Dow Climbs Back Toward 50,000. Nvidia and Caterpillar Are Leading a Furious Rally.",
+      "url": "https://www.barrons.com/livecoverage/stock-market-news-today-020626/card/the-dow-climbs-back-toward-50-000-nvidia-and-caterpillar-are-leading-a-furious-rally--mGKaScEpZ9pI31zmzAzg?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Nvidia and Microsoft Lead Wall Street Rally After Massive Sell-Off",
+      "url": "https://finance.yahoo.com/news/nvidia-microsoft-lead-wall-street-171257432.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Caterpillar (CAT) Is Playing a Key Role In the Data Center Industry, Says Jim Cramer",
+      "url": "/news/302689/caterpillar-cat-is-playing-a-key-role-in-the-data-center-industry-says-jim-cramer",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here Are Fridays Top Wall Street Analyst Research Calls: Amazon.com, Caterpillar, Estee Lauder,  JPMorgan, Norfolk Southern, Roku, Snap, Vistra, and More",
+      "url": "https://finance.yahoo.com/m/2c0413d3-07a7-364e-97b6-23d3281ed969/here-are-friday%E2%80%99s-top-wall.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Kodiak Gas Services to Buy DPS for $675M, Expanding Into Behind-the-Meter Power for Data Centers",
+      "url": "https://finance.yahoo.com/m/14e2569f-c9ad-3e77-a0d5-a43fa57aaf60/kodiak-gas-services-to-buy.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Caterpillar's Key Stock Score Surges 22 Points As Record Earnings, AI Data Center Demand Drive Massive Backlog",
+      "url": "/news/301167/caterpillars-key-stock-score-surges-22-points-as-record-earnings-ai-data-center-demand-drive-massive-backlog",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "The Top 5 Analyst Questions From Caterpillar's Q4 Earnings Call",
+      "url": "/news/300804/the-top-5-analyst-questions-from-caterpillars-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Nearly 20% of S&P 500 Stocks Hit 52-Week Highs Today",
+      "url": "https://finance.yahoo.com/m/b6e7c836-9b61-3160-9c2b-5aed8a0c5bc3/nearly-20%25-of-s%26p-500-stocks.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    }
+  ]
 }

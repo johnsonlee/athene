@@ -6277,8 +6277,8 @@
   },
   "technical": {
     "close": 191.35000610351562,
-    "sma_20": 219.50100097656247,
-    "sma_50": 241.3501382446289,
+    "sma_20": 219.5010009765625,
+    "sma_50": 241.35013824462888,
     "sma_200": 252.01406745910646,
     "trend_alignment": 0.16945321306605318,
     "rsi": 21.907763616965866,
@@ -6286,17 +6286,17 @@
     "macd_histogram": -3.0780159724037013,
     "macd_line": -14.959579917990595,
     "macd_histogram_pct": -1.6085789779063664,
-    "bb_position": 0.12431741512701774,
-    "bb_upper": 256.967463366035,
-    "bb_lower": 182.0345385870899,
-    "bb_width": 0.3413785105560688,
+    "bb_position": 0.12431741512701731,
+    "bb_upper": 256.9674633660351,
+    "bb_lower": 182.03453858708994,
+    "bb_width": 0.34137851055606894,
     "hist_volatility": 0.44651295648293293,
     "volume_ratio": 1.0729389074757434,
     "avg_volume_20d": 12713585.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 7.650420810745379,
-    "stoch_d": 10.730837555876258,
+    "stoch_k": 7.650420810745378,
+    "stoch_d": 10.730837555876256,
     "trend_score": 16.94532130660532,
     "rsi_abs_score": 41.907763616965866,
     "macd_abs_score": 20.0,
@@ -6306,7 +6306,15 @@
     "technical_score": 29.909280761053235,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.09825060252724539,
+    "sentiment_pos": 0.09204999999999999,
+    "sentiment_neg": 0.13225,
+    "sentiment_neu": 0.7757,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 45.09
+  },
   "analyst": {
     "revision_momentum": 0.038461538461538464,
     "target_upside": 0.7245884504834074,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 67.65403376333333,
     "catalyst_timeline": 40.03329800381651,
     "downside_control": 51.17677784955081,
-    "composite_score": 58.40164935490481,
+    "composite_score": 58.397760309606376,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 69.52387341850924,
     "technical_score": 29.909280761053235,
-    "sentiment_score": 50.0,
+    "sentiment_score": 45.09,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Application Software"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "'This probably seems overdone': Wall Street strategists weigh in on software stock sell-off",
+      "url": "https://finance.yahoo.com/news/this-probably-seems-overdone-wall-street-strategists-weigh-in-on-software-stock-sell-off-160003877.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Software Stock Panic Will Be a Buying OpportunityEventually",
+      "url": "https://finance.yahoo.com/m/5a3b302c-e67d-3dcf-89b3-e36e6b2b16c6/the-software-stock-panic-will.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "How the Software Panic Hit Private Credit-and Why Some BDC Stocks Might Be Worth Buying",
+      "url": "https://www.barrons.com/articles/software-selloff-private-credit-bdc-stocks-blackstone-blueowl-ares-8a2648f2?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "AI Fear Grips Wall Street as a New Stock Market Reality Sets In",
+      "url": "https://finance.yahoo.com/news/ai-fear-grips-wall-street-140007396.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "What Do Analysts Think About Salesforce, Inc. (CRM)?",
+      "url": "/news/303714/what-do-analysts-think-about-salesforce-inc-crm",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dan Ives Says Software Selloff Is Worst He's Seen In 25 Years As Microsoft, Salesforce Face Brutal AI Reckoning",
+      "url": "https://finance.yahoo.com/news/dan-ives-says-software-selloff-003125036.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "AI leaders argue software will adapt  not die  but valuations are stretched",
+      "url": "https://finance.yahoo.com/m/fa65a9f1-551e-31c6-b3ea-e49100fd91d8/ai-leaders-argue-software.html",
+      "publisher": "Fox Business",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Salesforce, Inc. (CRM): A Bull Case Theory",
+      "url": "/news/303636/salesforce-inc-crm-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Salesforce Stock Hits New 52-Week Lows: Could MrBeast Save Things With Super Bowl Commercial?",
+      "url": "/news/303579/salesforce-stock-hits-new-52-week-lows-could-mrbeast-save-things-with-super-bowl-commercial",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Software stocks have been crushed. Here's how to play the sector as the dust settles.",
+      "url": "https://www.marketwatch.com/story/software-stocks-have-been-crushed-heres-how-to-play-the-sector-as-the-dust-settles-c0175f8a?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Old favorite software stocks take beating as fear of AI's impact grows",
+      "url": "https://finance.yahoo.com/m/b15f6503-2bde-3eb5-b29b-89cbd23845db/old-favorite-software-stocks.html",
+      "publisher": "Detroit Free Press",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Harness The Wisdom Of The Crowd To Help Your Business",
+      "url": "https://finance.yahoo.com/m/8b0ce54a-402a-34d0-b11e-1d48241ad2ab/harness-the-wisdom-of-the.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "How Golub Capital Sees Private Credit Surviving the Software Apocalypse",
+      "url": "https://www.barrons.com/articles/ai-software-golub-capital-salesforce-d72fb1ab?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "AI trade splinters as investors get more selective",
+      "url": "https://finance.yahoo.com/news/ai-trade-splinters-investors-more-150101291.html",
+      "publisher": "Reuters",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Market News for Feb 6, 2026",
+      "url": "/news/302936/stock-market-news-for-feb-6-2026",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Software Apocalypse Will Be a Buying Opportunity-Eventually",
+      "url": "https://www.barrons.com/articles/software-stock-selloff-anthropic-ai-claude-microsoft-salesforce-105f5ca2?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Low Volatility ETFs to Watch Amid Major Tech Sell-Off Over AI Panic",
+      "url": "/news/302877/low-volatility-etfs-to-watch-amid-major-tech-sell-off-over-ai-panic",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Salesforce (CRM) Being Down Was Shocking, Says Jim Cramer",
+      "url": "/news/302695/salesforce-crm-being-down-was-shocking-says-jim-cramer",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stock Market Today: Dow Rises, Bitcoin Bounces; Amazon Dives On Earnings (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/d5f6d70b-adbf-3412-b185-ebea8f943d91/stock-market-today%3A-dow.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Dan Ives Says Software Selloff Is Worst He's Seen In 25 Years As Microsoft, Salesforce Face Brutal AI Reckoning",
+      "url": "/news/302364/dan-ives-says-software-selloff-is-worst-hes-seen-in-25-years-as-microsoft-salesforce-face-brutal-ai-reckoning",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    }
+  ]
 }

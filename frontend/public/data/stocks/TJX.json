@@ -6306,7 +6306,15 @@
     "technical_score": 62.39003426823285,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.17544486988400393,
+    "sentiment_pos": 0.12669999999999998,
+    "sentiment_neg": 0.0063,
+    "sentiment_neu": 0.867,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 58.77
+  },
   "analyst": {
     "revision_momentum": 0.043478260869565216,
     "target_upside": 0.08430642884640052,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 39.91434041764706,
     "catalyst_timeline": 61.18167485900183,
     "downside_control": 52.38284555226505,
-    "composite_score": 57.09529078569771,
+    "composite_score": 57.09140174039928,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 58.944245327240274,
     "technical_score": 62.39003426823285,
-    "sentiment_score": 50.0,
+    "sentiment_score": 58.77,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Apparel Retail"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Wall Streets Hidden Warning: Why Smart Money Is Fleeing to These 5 Safe Havens",
+      "url": "https://finance.yahoo.com/m/92b07419-2b5e-3b29-a744-188d81ced943/wall-street%E2%80%99s-hidden-warning%3A.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Steve Madden down 9% as Jefferies downgrades stock on wholesale headwinds",
+      "url": "https://finance.yahoo.com/news/steve-madden-down-9-jefferies-172100662.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TJX (TJX) Rises As Market Takes a Dip: Key Facts",
+      "url": "/news/300443/tjx-tjx-rises-as-market-takes-a-dip-key-facts",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "These 2 Retail and Wholesale Stocks Could Beat Earnings: Why They Should Be on Your Radar",
+      "url": "/news/299379/these-2-retail-and-wholesale-stocks-could-beat-earnings-why-they-should-be-on-your-radar",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TJX (TJX) Advances While Market Declines: Some Information for Investors",
+      "url": "/news/298357/tjx-tjx-advances-while-market-declines-some-information-for-investors",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Will TJX (TJX) Beat Estimates Again in Its Next Earnings Report?",
+      "url": "/news/295984/will-tjx-tjx-beat-estimates-again-in-its-next-earnings-report",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TJX Companies Stock Outlook: Is Wall Street Bullish or Bearish?",
+      "url": "https://finance.yahoo.com/m/e6539008-7fcb-3a92-a1b2-5162594b5320/tjx-companies-stock-outlook%3A.html",
+      "publisher": "Barchart",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Zacks.com featured highlights include Arista Networks, Corning, Banco Bilbao Vizcaya Argentaria, The TJX and TE Connectivity",
+      "url": "/news/293070/zackscom-featured-highlights-include-arista-networks-corning-banco-bilbao-vizcaya-argentaria-the-tjx-and-te-connectivity",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "5 Stocks With High ROE to Buy as Markets Bask in Economic Strength",
+      "url": "/news/292124/5-stocks-with-high-roe-to-buy-as-markets-bask-in-economic-strength",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Best Consumer Stock to Buy Right Now: Nike or TJX Companies??",
+      "url": "/news/290037/best-consumer-stock-to-buy-right-now-nike-or-tjx-companies",
+      "publisher": "Motley Fool",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Investors Heavily Search The TJX Companies, Inc. (TJX): Here is What You Need to Know",
+      "url": "/news/290079/investors-heavily-search-the-tjx-companies-inc-tjx-here-is-what-you-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "These 2 Retail and Wholesale Stocks Could Beat Earnings: Why They Should Be on Your Radar",
+      "url": "/news/290058/these-2-retail-and-wholesale-stocks-could-beat-earnings-why-they-should-be-on-your-radar",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Buy Walmart and 3 Retail Stocks Even as Consumer Confidence Dips",
+      "url": "/news/289991/buy-walmart-and-3-retail-stocks-even-as-consumer-confidence-dips",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "TJX (TJX) Stock Falls Amid Market Uptick: What Investors Need to Know",
+      "url": "/news/287573/tjx-tjx-stock-falls-amid-market-uptick-what-investors-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Winning Stocks to Buy Thanks to One Big Beautiful Bill Tax Refunds",
+      "url": "https://finance.yahoo.com/m/9b93967d-8947-336c-a245-f951e1f1bb22/3-winning-stocks-to-buy.html",
+      "publisher": "Barchart",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Should You Invest in TJX (TJX) Based on Bullish Wall Street Views?",
+      "url": "/news/287022/should-you-invest-in-tjx-tjx-based-on-bullish-wall-street-views",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is TJX Companies the Smartest Off-Price Retail Stock to Buy and Hold??",
+      "url": "/news/286171/is-tjx-companies-the-smartest-off-price-retail-stock-to-buy-and-hold",
+      "publisher": "Motley Fool",
+      "date": "2026-01-24",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Tractor Supply Q4 Earnings on the Horizon: Time to Accumulate Shares?",
+      "url": "/news/285633/tractor-supply-q4-earnings-on-the-horizon-time-to-accumulate-shares",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "TJX (TJX) Stock Declines While Market Improves: Some Information for Investors",
+      "url": "/news/284704/tjx-tjx-stock-declines-while-market-improves-some-information-for-investors",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 stock winners this portfolio manager anticipates for 2026",
+      "url": "https://finance.yahoo.com/video/3-stock-winners-portfolio-manager-123024371.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    }
+  ]
 }

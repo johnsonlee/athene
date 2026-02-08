@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 94.58411185166301,
-    "stoch_d": 89.71682705221812,
+    "stoch_d": 89.71682705221814,
     "trend_score": 81.27932012619958,
     "rsi_abs_score": 33.62462916713264,
     "macd_abs_score": 72.30046523905058,
@@ -6306,7 +6306,15 @@
     "technical_score": 59.51505381808379,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.038834103421519175,
+    "sentiment_pos": 0.06405,
+    "sentiment_neg": 0.03225,
+    "sentiment_neu": 0.9037000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.94
+  },
   "analyst": {
     "revision_momentum": 0.1875,
     "target_upside": -0.01597031779319248,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 61.69958355357142,
     "catalyst_timeline": 61.41450450837677,
     "downside_control": 42.590357714472326,
-    "composite_score": 61.62062166559387,
+    "composite_score": 61.61673262029544,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 62.753040461309524,
     "technical_score": 59.51505381808379,
-    "sentiment_score": 50.0,
+    "sentiment_score": 51.94,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Pharmaceuticals"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Bristol Myers price target raised to $40 from $37 at Morgan Stanley",
+      "url": "https://finance.yahoo.com/news/bristol-myers-price-target-raised-154539884.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jim Cramer Discusses Bristol Myers's (BMY) Cobenfy Drug",
+      "url": "/news/303588/jim-cramer-discusses-bristol-myerss-bmy-cobenfy-drug",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Biogen Stock Rises Even as Multiple Sclerosis Revenue Tumbles. It Sees Continued Declines in the Portfolio.",
+      "url": "https://www.barrons.com/articles/biogen-earnings-stock-price-multiple-sclerosis-97907d44?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BMS reports flat revenue growth for full-year 2025",
+      "url": "https://finance.yahoo.com/m/d769cfd6-5587-349b-8909-d86f6fcb7062/bms-reports-flat-revenue.html",
+      "publisher": "Pharmaceutical Technology",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bristol Myers Squibb Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/8fd1a664-c958-3a66-9e34-53496d71ee02/bristol-myers-squibb-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BMY Q4 Deep Dive: Growth Portfolio Offsets Legacy Pressure, Pipeline Readouts in Focus",
+      "url": "/news/302458/bmy-q4-deep-dive-growth-portfolio-offsets-legacy-pressure-pipeline-readouts-in-focus",
+      "publisher": "StockStory",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bristol Myers Expects Sales To Decline This Year; So Why Is The Stock Rising?",
+      "url": "https://finance.yahoo.com/m/51aba24a-7d9e-3931-b7ca-00acc74dc972/bristol-myers-expects-sales.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Bristol-Myers Squibb Company",
+      "url": "https://finance.yahoo.com/m/740888e9-1fd4-362a-b02c-fb792967acaa/analyst-report%3A-bristol-myers.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bristol-Myers Squibb Co (BMY) Q4 2025 Earnings Call Highlights: Strong Growth in New Products ...",
+      "url": "https://finance.yahoo.com/news/bristol-myers-squibb-co-bmy-190409164.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bristol Myers Earnings Reveal Struggling Legacy Drug Business. Why the Stock Is Rising.",
+      "url": "https://finance.yahoo.com/m/7b757a0e-b906-3bf4-817c-a121d2a115a2/bristol-myers-earnings-reveal.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Weekly Jobless Claims Exceed Expectations",
+      "url": "/news/301789/weekly-jobless-claims-exceed-expectations",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bristol Myers Just Crushed Earnings, and the Real Catalyst Hasnt Even Hit Yet",
+      "url": "https://finance.yahoo.com/m/78ab21d4-b040-35ce-8891-6a87213c2ef7/bristol-myers-just-crushed.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Bristol-Myers Stock Up as Q4 Earnings and Revenues Beat Estimates",
+      "url": "/news/301770/bristol-myers-stock-up-as-q4-earnings-and-revenues-beat-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jobless Claims Pop Up a Bit, Major Morning for Earnings",
+      "url": "/news/301755/jobless-claims-pop-up-a-bit-major-morning-for-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bristol Myers Stock Rises on Earnings. This Drug Portfolio Continues to Be a Drag.",
+      "url": "https://finance.yahoo.com/m/7b757a0e-b906-3bf4-817c-a121d2a115a2/bristol-myers-stock-rises-on.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Bristol Myers Flags Data-Rich 2026 After Solid Quarter",
+      "url": "/news/301468/bristol-myers-flags-data-rich-2026-after-solid-quarter",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "This Medical Technology Leader Sees Growth Into The 2040s",
+      "url": "https://www.investors.com/stock-lists/sector-leaders/medical-technology-halozyme-stock-halo-buy-zone-earnings-growth-investing-markets?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bristol Myers (BMY) Reports Q4 Earnings: What Key Metrics Have to Say",
+      "url": "/news/301561/bristol-myers-bmy-reports-q4-earnings-what-key-metrics-have-to-say",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "These Stocks Are Todays Movers: Alphabet, Strategy, Qualcomm, Broadcom, Estee Lauder, Bristol Myers, Amazon, and More",
+      "url": "https://finance.yahoo.com/m/f2607ae6-cb53-3ca8-84c2-3e856211fc90/these-stocks-are-today%E2%80%99s.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bristol Myers Rises Inside A Buy Zone On Street-Beating 2026 Outlook",
+      "url": "https://www.investors.com/news/technology/bristol-myers-squibb-stock-bristol-myers-squibb-earnings-q4-2025?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    }
+  ]
 }

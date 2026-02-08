@@ -6306,7 +6306,15 @@
     "technical_score": 34.16969849678378,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.11307681268968568,
+    "sentiment_pos": 0.07010000000000001,
+    "sentiment_neg": 0.10540000000000001,
+    "sentiment_neu": 0.8244999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 44.35
+  },
   "analyst": {
     "revision_momentum": 0.08333333333333333,
     "target_upside": 0.3854082298857795,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 62.46879285714286,
     "catalyst_timeline": 43.43630652926438,
     "downside_control": 45.73623994907628,
-    "composite_score": 57.85883788775437,
+    "composite_score": 57.85494884245593,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 68.5764416398549,
     "technical_score": 34.16969849678378,
-    "sentiment_score": 50.0,
+    "sentiment_score": 44.35,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Hotels, Resorts & Cruise Lines"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Stock Market Survives AI Panic, Even as Tech Collapses. Its a Monster of Our Own Making.",
+      "url": "https://finance.yahoo.com/m/1211e459-28e6-303d-a253-d08a44b4af08/stock-market-survives-ai.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "AI Fears Slam Booking and Expedia Stock. Why They Can Bounce Back.",
+      "url": "https://www.barrons.com/articles/booking-expedia-stock-travel-ai-fe421427?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Down 18.4% in 4 Weeks, Here's Why You Should You Buy the Dip in Booking Holdings (BKNG)",
+      "url": "/news/302900/down-184-in-4-weeks-heres-why-you-should-you-buy-the-dip-in-booking-holdings-bkng",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How to Find Strong Retail and Wholesale Stocks Slated for Positive Earnings Surprises",
+      "url": "/news/302765/how-to-find-strong-retail-and-wholesale-stocks-slated-for-positive-earnings-surprises",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Booking Holdings Inc. (BKNG): A Bull Case Theory",
+      "url": "/news/300017/booking-holdings-inc-bkng-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Booking Holdings Inc.",
+      "url": "https://finance.yahoo.com/m/d087fbd7-5b71-3859-8204-335beb67e286/analyst-report%3A-booking.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PayPal downgraded, Five Below upgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/paypal-downgraded-five-below-upgraded-143348578.html",
+      "publisher": "The Fly",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Booking: Mizuho says AI fears overblown, sell-off presents opportunity",
+      "url": "https://finance.yahoo.com/news/booking-mizuho-says-ai-fears-134248342.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Booking Holdings (BKNG) Declines More Than Market: Some Information for Investors",
+      "url": "/news/298384/booking-holdings-bkng-declines-more-than-market-some-information-for-investors",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Tumble on AI Disruption Fears",
+      "url": "https://finance.yahoo.com/m/2d280010-8635-3f1a-b487-d134aea3e092/stocks-tumble-on-ai.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Kayak CEO Steve Hafner Exits Post After 22 Years",
+      "url": "https://finance.yahoo.com/news/kayak-ceo-steve-hafner-exits-140226605.html",
+      "publisher": "Skift",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "KAYAK appoints Peer Bueller as Chief Executive Officer",
+      "url": "/news/297297/kayak-appoints-peer-bueller-as-chief-executive-officer",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Booking Is February's Seasonal Leader, With Nvidia And 5 Stocks Joining The Trade",
+      "url": "/news/295803/booking-is-februarys-seasonal-leader-with-nvidia-and-5-stocks-joining-the-trade",
+      "publisher": "Benzinga",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "5 minutes with Booking Holdings CHRO",
+      "url": "https://finance.yahoo.com/m/402ee50e-5df6-3e7c-b0b2-b3b1205fbd3b/5-minutes-with-booking.html",
+      "publisher": "HR Dive",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hotel stocks - here are winners and losers from weak dollar",
+      "url": "https://finance.yahoo.com/news/hotel-stocks-winners-losers-weak-093004918.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-01",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Booking Holdings (BKNG) Suffers a Larger Drop Than the General Market: Key Insights",
+      "url": "/news/290969/booking-holdings-bkng-suffers-a-larger-drop-than-the-general-market-key-insights",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "KAYAK for Business Simplifies Corporate Travel Planning with New Events Feature",
+      "url": "/news/290530/kayak-for-business-simplifies-corporate-travel-planning-with-new-events-feature",
+      "publisher": "PR Newswire",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "OpenTable reveals Valentine's Day Dining Trends 2026",
+      "url": "/news/290456/opentable-reveals-valentines-day-dining-trends-2026",
+      "publisher": "PR Newswire",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Love at first bite: OpenTable Reveals Valentine's Day Dining Trends and Canada's Top 100 Romantic Restaurants for 2026",
+      "url": "/news/289969/love-at-first-bite-opentable-reveals-valentines-day-dining-trends-and-canadas-top-100-romantic-restaurants-for-2026",
+      "publisher": "GlobeNewswire",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Booking Holdings Inc. (BKNG) Is a Trending Stock: Facts to Know Before Betting on It",
+      "url": "/news/290085/booking-holdings-inc-bkng-is-a-trending-stock-facts-to-know-before-betting-on-it",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    }
+  ]
 }

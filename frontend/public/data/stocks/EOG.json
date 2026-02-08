@@ -6278,8 +6278,8 @@
   "technical": {
     "close": 113.69999694824219,
     "sma_20": 109.36042404174806,
-    "sma_50": 107.06475326538086,
-    "sma_200": 111.16849609375001,
+    "sma_50": 107.06475326538089,
+    "sma_200": 111.16849609375,
     "trend_alignment": 0.5544772596002868,
     "rsi": 60.53319533465981,
     "rsi_score": 0.21066390669319618,
@@ -6306,7 +6306,15 @@
     "technical_score": 57.15663410215294,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.06848548168176415,
+    "sentiment_pos": 0.09685,
+    "sentiment_neg": 0.07105,
+    "sentiment_neu": 0.8321,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 53.42
+  },
   "analyst": {
     "revision_momentum": -0.07692307692307693,
     "target_upside": 0.16974494283201405,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 61.34070104999999,
     "catalyst_timeline": 58.22782674658033,
     "downside_control": 61.79096111618688,
-    "composite_score": 60.45638574014509,
+    "composite_score": 60.45249669484665,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 59.50861447166666,
     "technical_score": 57.15663410215294,
-    "sentiment_score": 50.0,
+    "sentiment_score": 53.42,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Energy",
     "industry": "Oil & Gas Exploration & Production"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Coterra Energy downgraded to Neutral from Buy at Roth Capital",
+      "url": "https://finance.yahoo.com/news/coterra-energy-downgraded-neutral-buy-134019250.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "EOG Resources, Inc. (EOG) Resources Hit by Downgrade, Eyes Utica Upside",
+      "url": "/news/297083/eog-resources-inc-eog-resources-hit-by-downgrade-eyes-utica-upside",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "EOG Resources (EOG) Outlook Adjusted as RBC Trims 2026 Oil Assumptions",
+      "url": "/news/296847/eog-resources-eog-outlook-adjusted-as-rbc-trims-2026-oil-assumptions",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Are Wall Street Analysts Predicting EOG Resources Stock Will Climb or Sink?",
+      "url": "https://finance.yahoo.com/m/5ec096ee-99d4-3a6a-bb77-31cee99244a2/are-wall-street-analysts.html",
+      "publisher": "Barchart",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "EOG Resources (EOG) Price Target Raised to $127 at Wells Fargo",
+      "url": "/news/293834/eog-resources-eog-price-target-raised-to-127-at-wells-fargo",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Morgan Stanley Notes Strong Q4 Operations for EOG Resources, Inc. (EOG) but Soft Cash Flow",
+      "url": "/news/291486/morgan-stanley-notes-strong-q4-operations-for-eog-resources-inc-eog-but-soft-cash-flow",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Senator Made 73% On Nvidia Stock, But Investors Missed Out As Disclosure Missed Deadlines",
+      "url": "/news/290469/senator-made-73-on-nvidia-stock-but-investors-missed-out-as-disclosure-missed-deadlines",
+      "publisher": "Benzinga",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Winter Storm Fern To Impact Energy, Utility Stocks-Antero Resources, Energy Transfer, Exelon In Focus",
+      "url": "/news/286494/winter-storm-fern-to-impact-energy-utility-stocks-antero-resources-energy-transfer-exelon-in-focus",
+      "publisher": "Benzinga",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Scotiabank Lowers EOG Resources (EOG) PT to $123, Cites Stable Production, Sector-Wide Adjustments",
+      "url": "/news/284848/scotiabank-lowers-eog-resources-eog-pt-to-123-cites-stable-production-sector-wide-adjustments",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why American Shale Know-How Is Becoming a Global Export",
+      "url": "https://finance.yahoo.com/news/why-american-shale-know-becoming-000000316.html",
+      "publisher": "Oilprice.com",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "EOG Resources (EOG) Price Target Lowered by $7",
+      "url": "/news/283301/eog-resources-eog-price-target-lowered-by-7",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-21",
+      "sentiment": "negative"
+    },
+    {
+      "title": "EOG Resources' Q4 2025 Earnings: What to Expect",
+      "url": "https://finance.yahoo.com/m/e9dbf39d-efc3-313d-93f1-96bd2ab405a6/eog-resources%27-q4-2025.html",
+      "publisher": "Barchart",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Rebound as President Trump Eases Rhetoric on Greenland",
+      "url": "https://finance.yahoo.com/m/2ff66b4b-2a92-3149-8b88-84ab472b3a34/stocks-rebound-as-president.html",
+      "publisher": "Barchart",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "KeyBanc Downgrades EOG Resources (EOG) to Sector Weight, RBC Capital Lowers PT",
+      "url": "/news/280039/keybanc-downgrades-eog-resources-eog-to-sector-weight-rbc-capital-lowers-pt",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-19",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Crude Oil Price Will Likely Remain Soft: Will ExxonMobil Suffer?",
+      "url": "/news/278040/crude-oil-price-will-likely-remain-soft-will-exxonmobil-suffer",
+      "publisher": "Zacks",
+      "date": "2026-01-15",
+      "sentiment": "negative"
+    },
+    {
+      "title": "EOG Resources Schedules Conference Call and Webcast of Fourth Quarter and Full Year 2025 Results for February 25, 2026",
+      "url": "/news/275397/eog-resources-schedules-conference-call-and-webcast-of-fourth-quarter-and-full-year-2025-results-for-february-25-2026",
+      "publisher": "PR Newswire",
+      "date": "2026-01-13",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How to Find Strong Oils and Energy Stocks Slated for Positive Earnings Surprises",
+      "url": "/news/271995/how-to-find-strong-oils-and-energy-stocks-slated-for-positive-earnings-surprises",
+      "publisher": "Zacks",
+      "date": "2026-01-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "EOG Resources (EOG) Price Target Cut by $18",
+      "url": "/news/271621/eog-resources-eog-price-target-cut-by-18",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Why These 3 Oil Stocks Surged After Venezuelan President Maduro's Capture",
+      "url": "/news/270985/why-these-3-oil-stocks-surged-after-venezuelan-president-maduros-capture",
+      "publisher": "Motley Fool",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Oil Glut, Wind Freeze, and Energy Policy in the Year Ahead",
+      "url": "/news/270765/oil-glut-wind-freeze-and-energy-policy-in-the-year-ahead",
+      "publisher": "Motley Fool",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    }
+  ]
 }

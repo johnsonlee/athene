@@ -6277,19 +6277,19 @@
   },
   "technical": {
     "close": 31.3700008392334,
-    "sma_20": 29.300663948059082,
+    "sma_20": 29.30066394805908,
     "sma_50": 27.64440368652344,
-    "sma_200": 29.290530681610104,
-    "trend_alignment": 0.6400502534468873,
+    "sma_200": 29.290530681610107,
+    "trend_alignment": 0.6400502534468872,
     "rsi": 73.1792703876345,
     "rsi_score": 0.4635854077526901,
     "macd_histogram": 0.18679318428423186,
     "macd_line": 0.9209078701872677,
     "macd_histogram_pct": 0.5954516394230247,
-    "bb_position": 0.9911703983935581,
-    "bb_upper": 31.407200598010274,
-    "bb_lower": 27.19412729810789,
-    "bb_width": 0.14378763933031843,
+    "bb_position": 0.991170398393559,
+    "bb_upper": 31.40720059801027,
+    "bb_lower": 27.194127298107887,
+    "bb_width": 0.14378763933031846,
     "hist_volatility": 0.25058355697236917,
     "volume_ratio": 0.7873123884099682,
     "avg_volume_20d": 39102395.0,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 96.34668040106827,
     "stoch_d": 90.82040858333121,
-    "trend_score": 64.00502534468873,
+    "trend_score": 64.00502534468872,
     "rsi_abs_score": 45.09804291462339,
     "macd_abs_score": 66.43177459134537,
     "momentum_score": 55.76490875298438,
-    "volatility_score": 50.99774561660895,
+    "volatility_score": 50.997745616608945,
     "volume_score": 50.0,
-    "technical_score": 56.130529352623725,
+    "technical_score": 56.13052935262372,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.20527802242930057,
+    "sentiment_pos": 0.14965,
+    "sentiment_neg": 0.06055000000000001,
+    "sentiment_neu": 0.7898,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 60.26
+  },
   "analyst": {
     "revision_momentum": 0.1,
     "target_upside": 0.03602167676123682,
@@ -6325,9 +6333,9 @@
     "quality_score": 74.53275000000001,
     "growth_score": 26.5,
     "safety_score": 41.91163887081486,
-    "trend_score": 64.00502534468873,
+    "trend_score": 64.00502534468872,
     "momentum_score": 55.76490875298438,
-    "volatility_score": 50.99774561660895,
+    "volatility_score": 50.997745616608945,
     "volume_score": 50.0,
     "analyst_score": 50.31891302996493,
     "pe_score": 69.56285062500001,
@@ -6344,16 +6352,16 @@
     "current_ratio_score": 37.92,
     "earnings_visibility": 50.3019125,
     "valuation_margin": 79.6950372475,
-    "catalyst_timeline": 57.202884712763804,
+    "catalyst_timeline": 57.2028847127638,
     "downside_control": 49.76940767311357,
-    "composite_score": 60.46533648429316,
+    "composite_score": 60.461447438994725,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 57.87135048041297,
-    "technical_score": 56.130529352623725,
-    "sentiment_score": 50.0,
+    "technical_score": 56.13052935262372,
+    "sentiment_score": 60.26,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Communication Services",
     "industry": "Cable & Satellite"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "EXCLUSIVE: Should The Day After Super Bowl Be A Holiday? 55% Say This",
+      "url": "/news/303779/exclusive-should-the-day-after-super-bowl-be-a-holiday-55-say-this",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Comcast Corporation (CMCSA): A Bull Case Theory",
+      "url": "/news/303638/comcast-corporation-cmcsa-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Salesforce Stock Hits New 52-Week Lows: Could MrBeast Save Things With Super Bowl Commercial?",
+      "url": "/news/303579/salesforce-stock-hits-new-52-week-lows-could-mrbeast-save-things-with-super-bowl-commercial",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "NFL May Sell Live Games To Streaming Platforms After $100 Million YouTube Deal, Raising Stakes For Disney, NBC And Traditional Partners",
+      "url": "/news/303485/nfl-may-sell-live-games-to-streaming-platforms-after-100-million-youtube-deal-raising-stakes-for-disney-nbc-and-traditional-partners",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Roku Could Get Lift From Winter Olympics, Amazon Ads",
+      "url": "https://finance.yahoo.com/m/753f5538-439a-3279-9b02-18e0dfa7778a/roku-could-get-lift-from.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Google Vs. Amazon Vs. OpenAI Vs. Anthropic: Super Bowl Commercials Ramp Up AI Battle",
+      "url": "/news/303259/google-vs-amazon-vs-openai-vs-anthropic-super-bowl-commercials-ramp-up-ai-battle",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Trump Accounts Get Super Bowl Commercial: Kids Promote President's New Initiative - 'That's Free Money'",
+      "url": "/news/303155/trump-accounts-get-super-bowl-commercial-kids-promote-presidents-new-initiative-thats-free-money",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Super Bowl Commercials Include These Movie Trailers: Here's The Movie Companies Shelling Out $8 Million To Get Fans To Theaters",
+      "url": "/news/302317/super-bowl-commercials-include-these-movie-trailers-heres-the-movie-companies-shelling-out-8-million-to-get-fans-to-theaters",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Netflix leader drops harsh reality check for worried subscribers",
+      "url": "https://finance.yahoo.com/m/8a3f60e6-1713-3ef9-963c-bb26bc79da48/netflix-leader-drops-harsh.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Netflix, ESPN Battle NBC for Olympic Documentary Viewers",
+      "url": "https://finance.yahoo.com/m/bce918e1-d6aa-36b6-8218-f9a2e24e931d/netflix%2C-espn-battle-nbc-for.html",
+      "publisher": "Sportico",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "The Top 5 Analyst Questions From Comcast's Q4 Earnings Call",
+      "url": "/news/300848/the-top-5-analyst-questions-from-comcasts-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Trump Won't Attend Super Bowl LX: Here's How President Will Still Be Part Of NBC's Pre-Game Coverage",
+      "url": "/news/300495/trump-wont-attend-super-bowl-lx-heres-how-president-will-still-be-part-of-nbcs-pre-game-coverage",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Should You Buy the 3 Highest-Paying Dividend Stocks in the Nasdaq?",
+      "url": "/news/300390/should-you-buy-the-3-highest-paying-dividend-stocks-in-the-nasdaq",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Dealmaking 3: Super Bowl LX & Top Issues Behind Big Game",
+      "url": "https://finance.yahoo.com/m/70980df1-f2fc-3c74-ae35-06b22c9ee5a6/the-dealmaking-3%3A-super-bowl.html",
+      "publisher": "CorpGov.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "UBS Lowers Comcast (CMCSA) PT to $32 Citing Broadband Go-to-Market Transition",
+      "url": "/news/299905/ubs-lowers-comcast-cmcsa-pt-to-32-citing-broadband-go-to-market-transition",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Super Bowl Commercial Made Using AI Promotes This Company: 'Our Message Is Ultimately Pro-Human'",
+      "url": "/news/299836/super-bowl-commercial-made-using-ai-promotes-this-company-our-message-is-ultimately-pro-human",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Washington Post lays off one-third of its newsroom",
+      "url": "https://finance.yahoo.com/m/618a547d-a3f6-3bef-af92-0e2b57697b15/washington-post-lays-off.html",
+      "publisher": "NBC News",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Washington Post begins sweeping layoffs",
+      "url": "https://finance.yahoo.com/m/618a547d-a3f6-3bef-af92-0e2b57697b15/washington-post-begins.html",
+      "publisher": "NBC News",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Super Bowl LX ads feature AI, weight-loss drugs and celebs from George Clooney to Kendall Jenner",
+      "url": "https://finance.yahoo.com/news/super-bowl-lx-ads-feature-045629915.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Stocks Under $50 We Approach with Caution",
+      "url": "/news/298735/3-stocks-under-50-we-approach-with-caution",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    }
+  ]
 }

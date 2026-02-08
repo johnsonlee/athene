@@ -6306,7 +6306,15 @@
     "technical_score": 40.741589847375685,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.05041446830938868,
+    "sentiment_pos": 0.04035,
+    "sentiment_neg": 0.03205,
+    "sentiment_neu": 0.9275499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 52.52
+  },
   "analyst": {
     "revision_momentum": -0.07142857142857142,
     "target_upside": 0.19312561819980226,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 56.2302981,
     "catalyst_timeline": 44.85848592500156,
     "downside_control": 40.880532446495195,
-    "composite_score": 41.3163953642693,
+    "composite_score": 41.31250631897086,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 45.363029674114614,
     "technical_score": 40.741589847375685,
-    "sentiment_score": 50.0,
+    "sentiment_score": 52.52,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Real Estate",
     "industry": "Telecom Tower REITs"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Is Crown Castle Inc. (CCI) One of the Best 52-Week Low Blue Chip Stocks to Buy Right Now?",
+      "url": "/news/303717/is-crown-castle-inc-cci-one-of-the-best-52-week-low-blue-chip-stocks-to-buy-right-now",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Crown Castle Inc.",
+      "url": "https://finance.yahoo.com/m/d60c5dbb-28e6-34be-97e3-668390f0915a/analyst-report%3A-crown-castle.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ventas Q4 FFO Meet, Revenues Beat Estimates, Same-Store Cash NOI Rises",
+      "url": "/news/303092/ventas-q4-ffo-meet-revenues-beat-estimates-same-store-cash-noi-rises",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Crown Castle price target lowered to $95 from $110 at JPMorgan",
+      "url": "https://finance.yahoo.com/news/crown-castle-price-target-lowered-130514512.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Crown Castle Q4 AFFO & Sales Beat Estimates, Services Revenues Rise",
+      "url": "/news/301876/crown-castle-q4-affo-sales-beat-estimates-services-revenues-rise",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Crown Castle Inc.",
+      "url": "https://finance.yahoo.com/m/4ac288c5-faf2-3562-8372-f8b59e2f6fc7/analyst-report%3A-crown-castle.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Crown Castle Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/21428b0f-6b8b-30c1-a25e-743177f6a366/crown-castle-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Crown Castle (CCI) Q4 2025 Earnings Transcript",
+      "url": "/news/300493/crown-castle-cci-q4-2025-earnings-transcript",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's What Key Metrics Tell Us About Crown Castle (CCI) Q4 Earnings",
+      "url": "/news/300569/heres-what-key-metrics-tell-us-about-crown-castle-cci-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Crown Castle (CCI) Tops Q4 FFO and Revenue Estimates",
+      "url": "/news/300422/crown-castle-cci-tops-q4-ffo-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Crown Castle Shares Slide After Q4 Results, Weak FY26 Guidance",
+      "url": "/news/300333/crown-castle-shares-slide-after-q4-results-weak-fy26-guidance",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Crown Castle: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/crown-castle-q4-earnings-snapshot-214753411.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Crown Castle Reports Fourth Quarter and Full Year 2025 Results and Provides Outlook for Full Year 2026",
+      "url": "/news/300236/crown-castle-reports-fourth-quarter-and-full-year-2025-results-and-provides-outlook-for-full-year-2026",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Countdown to Crown Castle (CCI) Q4 Earnings: Wall Street Forecasts for Key Metrics",
+      "url": "/news/297479/countdown-to-crown-castle-cci-q4-earnings-wall-street-forecasts-for-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Crown Castle Stock: Analyst Estimates & Ratings",
+      "url": "https://finance.yahoo.com/m/ec35d32c-789b-3f08-bf90-aef62ba6a3f7/crown-castle-stock%3A-analyst.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Palantir, AMD, Amazon and More Stocks with Earnings This Week",
+      "url": "/news/295351/palantir-amd-amazon-and-more-stocks-with-earnings-this-week",
+      "publisher": "Benzinga",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Wall Street Has a Bullish Sentiment on Crown Castle Inc (CCI)",
+      "url": "/news/294586/wall-street-has-a-bullish-sentiment-on-crown-castle-inc-cci",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-31",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What's in Store for Crown Castle Stock This Earnings Season?",
+      "url": "/news/293830/whats-in-store-for-crown-castle-stock-this-earnings-season",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "KeyBanc, UBS, and Scotiabank Lower Crown Castle (CCI) Price Targets",
+      "url": "/news/286196/keybanc-ubs-and-scotiabank-lower-crown-castle-cci-price-targets",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-24",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Crown Castle Earnings Preview: What to Expect",
+      "url": "https://finance.yahoo.com/m/41295736-325f-339a-8517-e48ed1311a67/crown-castle-earnings.html",
+      "publisher": "Barchart",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    }
+  ]
 }

@@ -6306,7 +6306,15 @@
     "technical_score": 58.525777276927386,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.27151277751403646,
+    "sentiment_pos": 0.07339999999999999,
+    "sentiment_neg": 0.10855,
+    "sentiment_neu": 0.81805,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 63.58
+  },
   "analyst": {
     "revision_momentum": -0.3333333333333333,
     "target_upside": -0.03400309119010816,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 76.52099879142857,
     "catalyst_timeline": 54.7432638261415,
     "downside_control": 55.74567798767352,
-    "composite_score": 52.056859148578276,
+    "composite_score": 52.05297010327984,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 49.737301484577884,
     "technical_score": 58.525777276927386,
-    "sentiment_score": 50.0,
+    "sentiment_score": 63.58,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 0.8883333333333334,
     "data_quality_penalty": 0.0,
-    "rank": 354,
-    "percentile": 0.3198458574181118,
+    "rank": 355,
+    "percentile": 0.3179190751445087,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Staples",
     "industry": "Brewers"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Follow the smart money to the makers of these favorite snack foods and drinks",
+      "url": "https://finance.yahoo.com/m/2f6099f2-72b8-341a-b4f8-2758226f52d9/follow-the-smart-money-to-the.html",
+      "publisher": "MarketWatch",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Molson Coors Beverage Company (TAP): A Bull Case Theory",
+      "url": "/news/300632/molson-coors-beverage-company-tap-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is Boston Beer's Innovation Pipeline Driving New Category Share?",
+      "url": "/news/287139/is-boston-beers-innovation-pipeline-driving-new-category-share",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Reasons to Sell TAP and 1 Stock to Buy Instead",
+      "url": "/news/285762/3-reasons-to-sell-tap-and-1-stock-to-buy-instead",
+      "publisher": "StockStory",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Plunge on Greenland Crisis and Soaring Bond Yields",
+      "url": "https://finance.yahoo.com/m/cb1bdf7c-0b2c-353a-b282-37c38d2db7c0/stocks-plunge-on-greenland.html",
+      "publisher": "Barchart",
+      "date": "2026-01-20",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stocks Finish Slightly Lower as Bond Yields Climb",
+      "url": "https://finance.yahoo.com/m/2f0dcf53-6ce6-3e76-b5c2-f4c2ad46c649/stocks-finish-slightly-lower.html",
+      "publisher": "Barchart",
+      "date": "2026-01-16",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Why Molson Coors (TAP) Shares Are Sliding Today",
+      "url": "/news/279392/why-molson-coors-tap-shares-are-sliding-today",
+      "publisher": "StockStory",
+      "date": "2026-01-16",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks Climb on Renewed Optimism for AI Spending",
+      "url": "https://finance.yahoo.com/m/d5ef5a34-5fb7-3002-a327-fc7eca70e59a/stocks-climb-on-renewed.html",
+      "publisher": "Barchart",
+      "date": "2026-01-16",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Molson Coorss Quarterly Earnings Preview: What You Need to Know",
+      "url": "https://finance.yahoo.com/m/b7b740df-a5d7-3d84-906e-498148b6ee6a/molson-coors%E2%80%99s-quarterly.html",
+      "publisher": "Barchart",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Low-Volatility Stocks We're Skeptical Of",
+      "url": "/news/277244/3-low-volatility-stocks-were-skeptical-of",
+      "publisher": "StockStory",
+      "date": "2026-01-14",
+      "sentiment": "negative"
+    },
+    {
+      "title": "1 S&P 500 Stock to Own for Decades and 2 We Question",
+      "url": "/news/275836/1-sp-500-stock-to-own-for-decades-and-2-we-question",
+      "publisher": "StockStory",
+      "date": "2026-01-13",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "One Beer Maker Bets on Vodka Tea Innovation as Its Rival Defends Legacy Brands",
+      "url": "https://finance.yahoo.com/m/cd28b16c-8fab-3331-8547-bc55ddc05393/one-beer-maker-bets-on-vodka.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-13",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Watch This Overlooked Stock Chart as the Secular Commodity Bull Run Heats Up",
+      "url": "https://finance.yahoo.com/m/8a72c15f-7933-31e2-a8a6-2bb67cbcdc25/watch-this-overlooked-stock.html",
+      "publisher": "Barchart",
+      "date": "2026-01-12",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "2 Unprofitable Stocks for Long-Term Investors and 1 That Underwhelm",
+      "url": "/news/273201/2-unprofitable-stocks-for-long-term-investors-and-1-that-underwhelm",
+      "publisher": "StockStory",
+      "date": "2026-01-11",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Are ICE Raids Hurting Corona Sales? Constellation Brands Investors Are Wondering Aloud.",
+      "url": "https://www.barrons.com/articles/ice-raids-hurting-corona-sales-constellation-brands-f7fde60e?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-09",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Molson Coors Beverage Company Announces 2025 Fourth Quarter and Full Year Earnings Date and Participation at the 2026 Consumer Analyst Group of New York (CAGNY) Conference",
+      "url": "https://www.businesswire.com/news/home/20260109265430/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Consumer Stocks with Warning Signs",
+      "url": "/news/272600/3-consumer-stocks-with-warning-signs",
+      "publisher": "StockStory",
+      "date": "2026-01-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "3 Stocks Under $50 We Find Risky",
+      "url": "/news/267211/3-stocks-under-50-we-find-risky",
+      "publisher": "StockStory",
+      "date": "2026-01-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Vice Stocks Enter 26 With a Harsh Hangover",
+      "url": "https://finance.yahoo.com/m/4de69e9d-df22-3ad6-af6a-45651e692d7f/vice-stocks-enter-%E2%80%9926-with-a.html",
+      "publisher": "The Daily Upside",
+      "date": "2026-01-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Is Volume Decline the Real Risk Behind Molson Coors' 2025 Outlook?",
+      "url": "/news/265338/is-volume-decline-the-real-risk-behind-molson-coors-2025-outlook",
+      "publisher": "Zacks",
+      "date": "2025-12-31",
+      "sentiment": "negative"
+    }
+  ]
 }

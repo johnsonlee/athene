@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 70.82947895281235,
-    "stoch_d": 56.73479695287004,
+    "stoch_d": 56.734796952870035,
     "trend_score": 68.16491619609629,
     "rsi_abs_score": 59.3075763647422,
     "macd_abs_score": 58.99349307659071,
@@ -6306,7 +6306,15 @@
     "technical_score": 55.89325206452986,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.10960510821564279,
+    "sentiment_pos": 0.10640000000000001,
+    "sentiment_neg": 0.06765,
+    "sentiment_neu": 0.8259000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 44.52
+  },
   "analyst": {
     "revision_momentum": 1.0,
     "target_upside": -0.23275868098243302,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 32.14882392,
     "catalyst_timeline": 55.87154509167627,
     "downside_control": 57.44711259212578,
-    "composite_score": 59.02711917994538,
+    "composite_score": 59.023230134646944,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 68.85521993333333,
     "technical_score": 55.89325206452986,
-    "sentiment_score": 50.0,
+    "sentiment_score": 44.52,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 128,
-    "percentile": 0.7552986512524085,
+    "rank": 127,
+    "percentile": 0.7572254335260116,
     "tier": "buy",
     "tier_raw": "buy",
     "tier_label": "Buy",
@@ -6369,5 +6377,146 @@
     "sector": "Energy",
     "industry": "Oil & Gas Exploration & Production"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Jim Cramer on Texas Pacific: \"My Problem Is, in the End, It Is Going to Trade\"",
+      "url": "/news/294459/jim-cramer-on-texas-pacific-my-problem-is-in-the-end-it-is-going-to-trade",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-31",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Trump's Iran Threat Reignites Oil Rally - These Energy Stocks Are Surging",
+      "url": "/news/289889/trumps-iran-threat-reignites-oil-rally-these-energy-stocks-are-surging",
+      "publisher": "Benzinga",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Texas Pacific Land Corporation Sets Dates for Fourth Quarter and Full Year 2025 Earnings Release and Conference Call",
+      "url": "https://www.businesswire.com/news/home/20260121268373/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Strength Seen in FuelCell Energy (FCEL): Can Its 7.5% Jump Turn into More Strength?",
+      "url": "/news/282550/strength-seen-in-fuelcell-energy-fcel-can-its-75-jump-turn-into-more-strength",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jim Cramer on Texas Pacific: \"We're Not Inclined to Like the Oil Stocks This Year\"",
+      "url": "/news/280163/jim-cramer-on-texas-pacific-were-not-inclined-to-like-the-oil-stocks-this-year",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-19",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Texas Pacific Lands Q4 2025 Earnings: What to Expect",
+      "url": "https://finance.yahoo.com/m/931a777b-e81a-37f3-b835-ceb88c439062/texas-pacific-land%E2%80%99s-q4-2025.html",
+      "publisher": "Barchart",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Google ex-CEO Eric Schmidt jumps into the AI data center business with a failed, 150-year-old Texas railroad turned oil giant",
+      "url": "https://finance.yahoo.com/news/google-ex-ceo-eric-schmidt-120000504.html",
+      "publisher": "Fortune",
+      "date": "2026-01-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "It's a Risk-Off Day After Christmas on Wall Street",
+      "url": "https://finance.yahoo.com/m/98978b2f-6f49-3c52-97c9-8563aad6eac0/it%27s-a-risk-off-day-after.html",
+      "publisher": "Barrons.com",
+      "date": "2025-12-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Indexes Slip the Day After Christmas. Risk Is Clearly Off.",
+      "url": "https://www.barrons.com/livecoverage/stock-market-today-122625/card/indexes-slip-the-day-after-christmas-risk-is-clearly-off--LHO8HNf5uymyFN1Fx4K6?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2025-12-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Texas Pacific Land (TPL) Signs Data Center Deal with Bolt Data & Energy",
+      "url": "/news/260600/texas-pacific-land-tpl-signs-data-center-deal-with-bolt-data-energy",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Is No One Talking About This Monster 3-for-1 Stock Split That Goes Into Effect Before the End of 2025?",
+      "url": "/news/257121/why-is-no-one-talking-about-this-monster-3-for-1-stock-split-that-goes-into-effect-before-the-end-of-2025",
+      "publisher": "Motley Fool",
+      "date": "2025-12-18",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stocks Settle Sharply Lower as Tech Stocks Routed",
+      "url": "https://finance.yahoo.com/m/8b903064-d85d-369e-8085-98879b0b46fe/stocks-settle-sharply-lower.html",
+      "publisher": "Barchart",
+      "date": "2025-12-17",
+      "sentiment": "negative"
+    },
+    {
+      "title": "A Deal To Build AI Data Centers In The Texas Desert Sent This Stock Soaring",
+      "url": "https://finance.yahoo.com/m/dde29767-c42a-3739-a010-56e7d9c49836/a-deal-to-build-ai-data.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2025-12-17",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Retreat as AI Infrastructure Companies and Chip Makers Fall",
+      "url": "https://finance.yahoo.com/m/dcbf4e6d-55a0-37a0-88e8-bb0bc313ca00/stocks-retreat-as-ai.html",
+      "publisher": "Barchart",
+      "date": "2025-12-17",
+      "sentiment": "positive"
+    },
+    {
+      "title": "This Texas Landowner Is the S&P 500's Top Stock Today. It's an Unusual AI Play.",
+      "url": "https://www.barrons.com/articles/texas-pacific-land-stock-ai-data-centers-ddd48c8d?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2025-12-17",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks Mixed with Energy Producers Higher and Homebuilders Lower",
+      "url": "https://finance.yahoo.com/m/c8417b6a-8101-3d2f-b4b3-9aa35e27ed6e/stocks-mixed-with-energy.html",
+      "publisher": "Barchart",
+      "date": "2025-12-17",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Texas Pacific Land Stock: Is TPL Underperforming the Energy Sector?",
+      "url": "https://finance.yahoo.com/m/b43d3d2c-bfda-3070-b063-5893ec37ac5b/texas-pacific-land-stock%3A-is.html",
+      "publisher": "Barchart",
+      "date": "2025-12-17",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bolt and TPL Announce Strategic Agreement to Pursue Data Center Development in West Texas",
+      "url": "https://www.businesswire.com/news/home/20251217990544/en/",
+      "publisher": "Business Wire",
+      "date": "2025-12-17",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Texas Pacific Land Corporation (TPL): A Bull Case Theory",
+      "url": "/news/246432/texas-pacific-land-corporation-tpl-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Texas Pacific Land Corporation Announces Effective Date of Previously Announced Three-for-One Stock Split",
+      "url": "https://www.businesswire.com/news/home/20251202587261/en/",
+      "publisher": "Business Wire",
+      "date": "2025-12-02",
+      "sentiment": "positive"
+    }
+  ]
 }

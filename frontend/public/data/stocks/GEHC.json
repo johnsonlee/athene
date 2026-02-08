@@ -6306,7 +6306,15 @@
     "technical_score": 55.005138575466404,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.16943668268047007,
+    "sentiment_pos": 0.10405,
+    "sentiment_neg": 0.028149999999999998,
+    "sentiment_neu": 0.86785,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 58.47
+  },
   "analyst": {
     "revision_momentum": -0.07692307692307693,
     "target_upside": 0.17792932424054547,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 65.28715527499999,
     "catalyst_timeline": 57.96008180404457,
     "downside_control": 52.644967293791204,
-    "composite_score": 57.34700989570167,
+    "composite_score": 57.34312085040323,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 56.720211197399436,
     "technical_score": 55.005138575466404,
-    "sentiment_score": 50.0,
+    "sentiment_score": 58.47,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Health Care Equipment"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Are Wall Street Analysts Bullish on GE HealthCare Technologies Stock?",
+      "url": "https://finance.yahoo.com/m/5abaf06a-0246-34c1-b60a-87dc6942a680/are-wall-street-analysts.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "GE HealthCare and Diagnoly integrate AI solutions for foetal ultrasound",
+      "url": "https://finance.yahoo.com/m/7472d60a-8e32-3b5e-abd7-3a2b31737c3d/ge-healthcare-and-diagnoly.html",
+      "publisher": "Medical Device Network",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: GE HealthCare Technologies Inc.",
+      "url": "https://finance.yahoo.com/m/cacbefd6-a9d2-3d79-aa33-cdf84dbb1719/analyst-report%3A-ge-healthcare.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Morning Movers: Eli Lilly rises, Boston Scientific falls after quarterly results",
+      "url": "https://finance.yahoo.com/news/morning-movers-eli-lilly-rises-140052306.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "GEHC Q4 Deep Dive: Product Pipeline and Service Recurring Revenue Drive Outlook",
+      "url": "/news/300850/gehc-q4-deep-dive-product-pipeline-and-service-recurring-revenue-drive-outlook",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "GE HealthCare Stock Jumps. Why Earnings Were a Relief.",
+      "url": "https://finance.yahoo.com/m/d69e5470-1e4c-32cb-bfc7-e01542a331a1/ge-healthcare-stock-jumps..html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "GE HealthCare Technologies Inc (GEHC) Q4 2025 Earnings Call Highlights: Strong Revenue Growth ...",
+      "url": "https://finance.yahoo.com/news/ge-healthcare-technologies-inc-gehc-210225858.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "GE HealthCare reports FY25 revenue of $20.6bn amid strong imaging demand",
+      "url": "https://finance.yahoo.com/m/19810444-4c3d-3d88-b93d-1f2a9fb7c8b2/ge-healthcare-reports-fy25.html",
+      "publisher": "Medical Device Network",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "GE HealthCare Beats Earnings But Margin Pressure, Tariff Costs Could Weigh On Profitability",
+      "url": "/news/299929/ge-healthcare-beats-earnings-but-margin-pressure-tariff-costs-could-weigh-on-profitability",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "GE HealthCare Q4 Earnings and Revenues Beat Estimates, Net Margin Falls",
+      "url": "/news/299781/ge-healthcare-q4-earnings-and-revenues-beat-estimates-net-margin-falls",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "GE HealthCare (GEHC) Q4 2025 Earnings Transcript",
+      "url": "/news/299479/ge-healthcare-gehc-q4-2025-earnings-transcript",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "GE HealthCare Technologies Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/58b22919-6b5d-3260-9c6f-7bcee5f6d76e/ge-healthcare-technologies-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Market Today: Dow Rises On Surprise Jobs Data; AMD Plunges On Earnings (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/95eff06b-9fa2-3b22-b1b7-24055bf9706b/stock-market-today%3A-dow-rises.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Compared to Estimates, GE HealthCare (GEHC) Q4 Earnings: A Look at Key Metrics",
+      "url": "/news/299496/compared-to-estimates-ge-healthcare-gehc-q4-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "GE HealthCare Technologies (GEHC) Q4 Earnings and Revenues Beat Estimates",
+      "url": "/news/299161/ge-healthcare-technologies-gehc-q4-earnings-and-revenues-beat-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "GE HealthCare Stock Rises. Why Earnings Were a Relief.",
+      "url": "https://www.barrons.com/articles/ge-healthcare-earnings-stock-price-e27dc8d9?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "GE HealthCare offers forecast-beating profit outlook after Q4 beat",
+      "url": "https://finance.yahoo.com/news/ge-healthcare-offers-forecast-beating-120129647.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "GE HealthCare Technologies Posts Lower Profit, Despite Higher Revenue",
+      "url": "https://www.wsj.com/business/earnings/ge-healthcare-technologies-posts-lower-profit-despite-higher-revenue-36957ea4?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "GE HealthCare's (NASDAQ:GEHC) Q4 CY2025: Beats On Revenue",
+      "url": "/news/299122/ge-healthcares-nasdaq-gehc-q4-cy2025-beats-on-revenue",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "GE HealthCare: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/ge-healthcare-q4-earnings-snapshot-113512391.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    }
+  ]
 }

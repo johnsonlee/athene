@@ -6306,7 +6306,15 @@
     "technical_score": 61.650647907382194,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.2824185373191476,
+    "sentiment_pos": 0.19195,
+    "sentiment_neg": 0.0358,
+    "sentiment_neu": 0.77225,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 64.12
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": -0.04065546567102263,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 67.51581834285713,
     "catalyst_timeline": 63.73373022834252,
     "downside_control": 55.17348995744735,
-    "composite_score": 63.41486850891695,
+    "composite_score": 63.41097946361852,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 64.77640278571428,
     "technical_score": 61.650647907382194,
-    "sentiment_score": 50.0,
+    "sentiment_score": 64.12,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Materials",
     "industry": "Steel"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "From AI Darlings To Dow Dinosaurs: Investors Flee Software For Old-Economy Stocks",
+      "url": "/news/303569/from-ai-darlings-to-dow-dinosaurs-investors-flee-software-for-old-economy-stocks",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "UBS Points to Pricing Strength Behind Nucor's (NUE) Share Gains",
+      "url": "/news/297247/ubs-points-to-pricing-strength-behind-nucors-nue-share-gains",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "White House Gets Community Noted On X: Graph On US Steel Production Called Misleading",
+      "url": "/news/296218/white-house-gets-community-noted-on-x-graph-on-us-steel-production-called-misleading",
+      "publisher": "Benzinga",
+      "date": "2026-02-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Trumps Dollar Yo-Yo Has Stock Investors Looking Overseas",
+      "url": "https://finance.yahoo.com/news/trump-dollar-yo-yo-stock-140000978.html",
+      "publisher": "Bloomberg",
+      "date": "2026-01-31",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jim Cramer Sees Strong Fundamentals Underneath Nucor's Mixed Quarter Results",
+      "url": "/news/292233/jim-cramer-sees-strong-fundamentals-underneath-nucors-mixed-quarter-results",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PayPal downgraded, UPS upgraded: Wall Streets top analyst calls",
+      "url": "https://finance.yahoo.com/news/paypal-downgraded-ups-upgraded-wall-144103429.html",
+      "publisher": "TipRanks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "How to Find Strong Basic Materials Stocks Slated for Positive Earnings Surprises",
+      "url": "/news/291739/how-to-find-strong-basic-materials-stocks-slated-for-positive-earnings-surprises",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "CMC vs. NUE: Which US Steel Giant Is the Better Buy Right Now?",
+      "url": "/news/290574/cmc-vs-nue-which-us-steel-giant-is-the-better-buy-right-now",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Nucor (NUE) is a Top Momentum Stock for the Long-Term",
+      "url": "/news/290248/why-nucor-nue-is-a-top-momentum-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PayPal downgraded, UPS upgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/paypal-downgraded-ups-upgraded-wall-143913385.html",
+      "publisher": "The Fly",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Nucor Corp (NUE) Q4 2025 Earnings Call Highlights: Strong Backlogs and Strategic Growth Amid ...",
+      "url": "https://finance.yahoo.com/news/nucor-corp-nue-q4-2025-210505219.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "American Airlines stock tumbles, Nucor misses Q4 sales estimates",
+      "url": "https://finance.yahoo.com/video/american-airlines-stock-tumbles-nucor-misses-q4-sales-estimates-204043270.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-01-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Nucor Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/28d1c3f2-0e0c-3106-b41a-fc209f073b48/nucor-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Steel Tariffs Not Hurting U.S. Manufacturing, Nucor Chief Says",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-01-27-2026/card/steel-tariffs-not-hurting-u-s-manufacturing-nucor-chief-says-zMZJXK1360dyzlvnsZpF?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Can Commercial Metals' Recent Acquisitions Fuel Long-Term Growth?",
+      "url": "/news/288890/can-commercial-metals-recent-acquisitions-fuel-long-term-growth",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Nucor's Q4 Earnings Miss on Lower Volumes, Revenues Beat",
+      "url": "/news/288633/nucors-q4-earnings-miss-on-lower-volumes-revenues-beat",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "10 Earnings Reports That Might Fly Under the Radar Next Week",
+      "url": "/news/288447/10-earnings-reports-that-might-fly-under-the-radar-next-week",
+      "publisher": "Schaeffer's Research",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Nucor (NUE) is a Strong Value Stock",
+      "url": "/news/288503/heres-why-nucor-nue-is-a-strong-value-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stock Index Futures Gain on Tech Boost, FOMC Meeting and Earnings in Focus",
+      "url": "https://finance.yahoo.com/m/fd7b3f34-27ca-3dbe-a2d9-bff7269f0ee5/stock-index-futures-gain-on.html",
+      "publisher": "Barchart",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Healthcare stocks slide, and other early market movers",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-sp500-nasdaq-up-dow-down-on-health-insurers-gold-above-5000/card/healthcare-stocks-slide-and-other-early-market-movers-Y3v9V7YTYAj0hmjSeClS?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    }
+  ]
 }

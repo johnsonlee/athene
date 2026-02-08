@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 75.4327406161343,
-    "stoch_d": 71.76122562611161,
+    "stoch_d": 71.76122562611162,
     "trend_score": 39.96755224632979,
     "rsi_abs_score": 74.75777378124238,
     "macd_abs_score": 62.47345133139274,
@@ -6306,7 +6306,15 @@
     "technical_score": 55.486434963988536,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.022142911020541244,
+    "sentiment_pos": 0.09204999999999999,
+    "sentiment_neg": 0.049,
+    "sentiment_neu": 0.8589,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.11
+  },
   "analyst": {
     "revision_momentum": null,
     "target_upside": null,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 37.38483496190476,
     "catalyst_timeline": 54.27431648026473,
     "downside_control": 61.57765414239575,
-    "composite_score": 58.05949521442589,
+    "composite_score": 58.05560616912745,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 62.664965501587304,
     "technical_score": 55.486434963988536,
-    "sentiment_score": 50.0,
+    "sentiment_score": 51.11,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Insurance Brokers"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Are Wall Street Analysts Predicting Erie Indemnity Stock Will Climb or Sink?",
+      "url": "https://finance.yahoo.com/m/8e9afb01-04d4-3fe4-85d6-672dda9e644f/are-wall-street-analysts.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Erie Indemnity to host fourth quarter and year-end 2025 pre-recorded conference call and webcast",
+      "url": "/news/297641/erie-indemnity-to-host-fourth-quarter-and-year-end-2025-pre-recorded-conference-call-and-webcast",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Erie Indemnity's (ERIE) Long Dividend Record Reflects Operating Consistency",
+      "url": "/news/297263/erie-indemnitys-erie-long-dividend-record-reflects-operating-consistency",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Willis Towers Watson (WTW) Beats Q4 Earnings and Revenue Estimates",
+      "url": "/news/297195/willis-towers-watson-wtw-beats-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Arthur J. Gallagher (AJG) Q4 Earnings and Revenues Beat Estimates",
+      "url": "/news/292758/arthur-j-gallagher-ajg-q4-earnings-and-revenues-beat-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Erie Indemnity's Q4 2025 Earnings: What to Expect",
+      "url": "https://finance.yahoo.com/m/7989fb5f-0519-3818-adb2-485ad0d53f1f/erie-indemnity%27s-q4-2025.html",
+      "publisher": "Barchart",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nike Stock Could Join an Exclusive Club. What to Know About the 'Dividend Aristocrats'",
+      "url": "https://finance.yahoo.com/m/ca1d0cfa-0000-375d-9fe7-874c4965a3f4/nike-stock-could-join-an.html",
+      "publisher": "Investopedia",
+      "date": "2026-01-19",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks Settle Mixed on Strength in Chip Makers and Weakness in Megacap Tech",
+      "url": "https://finance.yahoo.com/m/0c9e7800-c994-3252-8b1e-b5eb558ae229/stocks-settle-mixed-on.html",
+      "publisher": "Barchart",
+      "date": "2026-01-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks Give Up Early Gains as Megacap Tech Shares Fall",
+      "url": "https://finance.yahoo.com/m/bca75bc9-7ac6-3a1d-b715-fc93b6b29014/stocks-give-up-early-gains-as.html",
+      "publisher": "Barchart",
+      "date": "2026-01-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Income Investors Can Trust Erie Indemnitys Fortress Balance Sheet and Low Payout",
+      "url": "https://finance.yahoo.com/m/5f5505d8-f17c-3a73-8eef-f7c2cb99e0f8/income-investors-can-trust.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2025-12-19",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is Erie Indemnity Stock Underperforming the S&P 500?",
+      "url": "https://finance.yahoo.com/m/41d3aba6-be78-36e2-bc7c-f6274cf87392/is-erie-indemnity-stock.html",
+      "publisher": "Barchart",
+      "date": "2025-12-12",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Erie Indemnity Approves Management Fee Rate and Dividend Increase, Declares Regular Dividends",
+      "url": "/news/252265/erie-indemnity-approves-management-fee-rate-and-dividend-increase-declares-regular-dividends",
+      "publisher": "PR Newswire",
+      "date": "2025-12-11",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Q3 Earnings Highs And Lows: Erie Indemnity (NASDAQ:ERIE) Vs The Rest Of The Property & Casualty Insurance Stocks",
+      "url": "/news/240820/q3-earnings-highs-and-lows-erie-indemnity-nasdaq-erie-vs-the-rest-of-the-property-casualty-insurance-stocks",
+      "publisher": "StockStory",
+      "date": "2025-11-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Is Wall Street Bullish or Bearish on Erie Indemnity Stock?",
+      "url": "https://finance.yahoo.com/m/5d1863c2-d4f3-3ef1-a8e7-838faa87fc1b/is-wall-street-bullish-or.html",
+      "publisher": "Barchart",
+      "date": "2025-11-10",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Reasons ERIE Has Explosive Upside Potential",
+      "url": "/news/220399/3-reasons-erie-has-explosive-upside-potential",
+      "publisher": "StockStory",
+      "date": "2025-11-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Erie Indemnity Co (ERIE) Q3 2025 Earnings Call Highlights: Strong Income Growth Amidst Weather ...",
+      "url": "https://finance.yahoo.com/news/erie-indemnity-co-erie-q3-210111444.html",
+      "publisher": "GuruFocus.com",
+      "date": "2025-10-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Erie Indemnity (ERIE) Shares Are Trading Lower Today",
+      "url": "/news/213658/why-erie-indemnity-erie-shares-are-trading-lower-today",
+      "publisher": "StockStory",
+      "date": "2025-10-31",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Erie Indemnity (ERIE) Q3 Earnings Surpass Estimates",
+      "url": "/news/212411/erie-indemnity-erie-q3-earnings-surpass-estimates",
+      "publisher": "Zacks",
+      "date": "2025-10-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Erie Indemnity (NASDAQ:ERIE) Misses Q3 Revenue Estimates",
+      "url": "/news/212312/erie-indemnity-nasdaq-erie-misses-q3-revenue-estimates",
+      "publisher": "StockStory",
+      "date": "2025-10-30",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Erie Indemnity: Q3 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/erie-indemnity-q3-earnings-snapshot-202437649.html",
+      "publisher": "Associated Press Finance",
+      "date": "2025-10-30",
+      "sentiment": "neutral"
+    }
+  ]
 }

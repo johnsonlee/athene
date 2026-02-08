@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 21.829999923706055,
     "sma_20": 20.99499988555908,
-    "sma_50": 20.529026374816894,
-    "sma_200": 20.770669670104983,
-    "trend_alignment": 0.5826047159189948,
+    "sma_50": 20.529026374816898,
+    "sma_200": 20.770669670104986,
+    "trend_alignment": 0.5826047159189944,
     "rsi": 68.03531349009748,
     "rsi_score": 0.3607062698019496,
     "macd_histogram": 0.09865814144168222,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 94.08043151985952,
     "stoch_d": 89.97451379446785,
-    "trend_score": 58.260471591899474,
+    "trend_score": 58.260471591899446,
     "rsi_abs_score": 59.50112222772706,
     "macd_abs_score": 63.7984587478795,
     "momentum_score": 61.64979048780328,
     "volatility_score": 69.16824751832027,
     "volume_score": 50.0,
-    "technical_score": 59.80672812757488,
+    "technical_score": 59.80672812757487,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.10089743139273676,
+    "sentiment_pos": 0.12610000000000002,
+    "sentiment_neg": 0.00745,
+    "sentiment_neu": 0.86645,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 55.04
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.06504809894640412,
@@ -6325,7 +6333,7 @@
     "quality_score": 62.8051753125,
     "growth_score": 47.2,
     "safety_score": 57.36802916873229,
-    "trend_score": 58.260471591899474,
+    "trend_score": 58.260471591899446,
     "momentum_score": 61.64979048780328,
     "volatility_score": 69.16824751832027,
     "volume_score": 50.0,
@@ -6344,16 +6352,16 @@
     "current_ratio_score": 70.088,
     "earnings_visibility": 52.15877629687499,
     "valuation_margin": 53.52358523333333,
-    "catalyst_timeline": 57.4135287274389,
+    "catalyst_timeline": 57.413528727438894,
     "downside_control": 66.22344150305787,
-    "composite_score": 57.03029956102517,
+    "composite_score": 57.02641051572673,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 56.361479455274235,
-    "technical_score": 59.80672812757488,
-    "sentiment_score": 50.0,
+    "technical_score": 59.80672812757487,
+    "sentiment_score": 55.04,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Real Estate",
     "industry": "Retail REITs"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Regency Centers Q4 FFO Meet Estimates, Same-Property NOI Rises",
+      "url": "/news/303036/regency-centers-q4-ffo-meet-estimates-same-property-noi-rises",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Regency Centers (REG) Q4 FFO Match Estimates",
+      "url": "/news/302243/regency-centers-reg-q4-ffo-match-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Kimco Realty Stock Outlook: Is Wall Street Bullish or Bearish?",
+      "url": "https://finance.yahoo.com/m/9c94c396-0d07-33b6-80e9-6cf380c8ba77/kimco-realty-stock-outlook%3A.html",
+      "publisher": "Barchart",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Zacks Analyst Blog Cushman & Wakefield's, Simon Property, Regency Centers, Kimco  and Federal Realty Investment",
+      "url": "/news/289472/the-zacks-analyst-blog-cushman-wakefields-simon-property-regency-centers-kimco-and-federal-realty-investment",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Retail REITs That Appear Well Poised to Surpass Q4 Expectations",
+      "url": "/news/288708/retail-reits-that-appear-well-poised-to-surpass-q4-expectations",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Kimco Realty Corporation Announces 2025 Dividend Tax Treatment",
+      "url": "/news/283102/kimco-realty-corporation-announces-2025-dividend-tax-treatment",
+      "publisher": "GlobeNewswire",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Kimco Realty Appoints David Jamieson to its Board of Directors",
+      "url": "/news/283031/kimco-realty-appoints-david-jamieson-to-its-board-of-directors",
+      "publisher": "GlobeNewswire",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Can Realty Income's Broad Reach Shield It and Drive Superior Returns?",
+      "url": "/news/282673/can-realty-incomes-broad-reach-shield-it-and-drive-superior-returns",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Kimco Realty (KIM) Derives Support from Upcoming Catalysts in Second Half of 2026",
+      "url": "/news/282255/kimco-realty-kim-derives-support-from-upcoming-catalysts-in-second-half-of-2026",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Kimco Realty Earnings Preview: What to Expect",
+      "url": "https://finance.yahoo.com/m/3d152d6d-8cc2-3aa7-a6e0-7d59102a743f/kimco-realty-earnings.html",
+      "publisher": "Barchart",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Realty Income's Strategic Partnerships: Will it Boost Growth?",
+      "url": "/news/275245/realty-incomes-strategic-partnerships-will-it-boost-growth",
+      "publisher": "Zacks",
+      "date": "2026-01-13",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Kimco Realty Corporation",
+      "url": "https://finance.yahoo.com/m/4b52babb-30bf-37e2-8d38-fcc2e2d232ac/analyst-report%3A-kimco-realty.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Kimco Realty Corporation",
+      "url": "https://finance.yahoo.com/m/f6dd9aca-7a38-3672-87d2-b0f58d33e643/analyst-report%3A-kimco-realty.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Kimco Realty price target raised to $23.50 from $22 at Morgan Stanley",
+      "url": "https://finance.yahoo.com/news/kimco-realty-price-target-raised-134125829.html",
+      "publisher": "TipRanks",
+      "date": "2026-01-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TCW Concentrated Large Cap Growth Fund Added Kimco Realty Corporation (KIM) to Reduce Exposure to Discretionary Consumer Spend",
+      "url": "/news/263467/tcw-concentrated-large-cap-growth-fund-added-kimco-realty-corporation-kim-to-reduce-exposure-to-discretionary-consumer-spend",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Kimco Realty Invites You to Join Its Fourth Quarter Earnings Conference Call",
+      "url": "/news/253797/kimco-realty-invites-you-to-join-its-fourth-quarter-earnings-conference-call",
+      "publisher": "GlobeNewswire",
+      "date": "2025-12-15",
+      "sentiment": "positive"
+    },
+    {
+      "title": "How Is Kimco Realty's Stock Performance Compared to Other Real Estate Stocks?",
+      "url": "https://finance.yahoo.com/m/8f02664b-d637-3cce-9332-edf6da75f0c1/how-is-kimco-realty%27s-stock.html",
+      "publisher": "Barchart",
+      "date": "2025-12-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Kimco Earns Credit Rating Upgrade, Boosts Shareholder Confidence",
+      "url": "/news/246086/kimco-earns-credit-rating-upgrade-boosts-shareholder-confidence",
+      "publisher": "Zacks",
+      "date": "2025-12-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Kimco Realty Achieves 'A3' Credit Rating from Moody's",
+      "url": "/news/244962/kimco-realty-achieves-a3-credit-rating-from-moodys",
+      "publisher": "GlobeNewswire",
+      "date": "2025-12-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Realty Income's $800M CityCenter Bet: Will Diversification Pay Off?",
+      "url": "/news/243266/realty-incomes-800m-citycenter-bet-will-diversification-pay-off",
+      "publisher": "Zacks",
+      "date": "2025-12-02",
+      "sentiment": "negative"
+    }
+  ]
 }

@@ -6306,7 +6306,15 @@
     "technical_score": 48.79548660213592,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.25617001821269064,
+    "sentiment_pos": 0.1369,
+    "sentiment_neg": 0.016499999999999997,
+    "sentiment_neu": 0.8465999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 62.81
+  },
   "analyst": {
     "revision_momentum": 0.3333333333333333,
     "target_upside": 0.13810021716399906,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 51.01055441249999,
     "catalyst_timeline": 50.748257796613906,
     "downside_control": 42.060920398920445,
-    "composite_score": 54.40053408397923,
+    "composite_score": 54.396645038680795,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 57.22553760708333,
     "technical_score": 48.79548660213592,
-    "sentiment_score": 50.0,
+    "sentiment_score": 62.81,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Utilities",
     "industry": "Water Utilities"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Analyst Report: American Water Works Company, Inc.",
+      "url": "https://finance.yahoo.com/m/69e04555-7e06-31e6-9bac-20f46b677913/analyst-report%3A-american.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Iowa American Water Announces Launch of 2026 American Water Charitable Foundation Water and Environment Grant Program",
+      "url": "/news/301988/iowa-american-water-announces-launch-of-2026-american-water-charitable-foundation-water-and-environment-grant-program",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "New Jersey American Water Opens 2026 Fire and EMS Grant Program for Volunteer Departments",
+      "url": "/news/300241/new-jersey-american-water-opens-2026-fire-and-ems-grant-program-for-volunteer-departments",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "California American Water Announces New Southern California Principal of Business Development, Agatha Kotani",
+      "url": "/news/299998/california-american-water-announces-new-southern-california-principal-of-business-development-agatha-kotani",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Rebecca Losli Named to Honorary Commanders Class of 2027 at Scott Air Force Base",
+      "url": "/news/299730/rebecca-losli-named-to-honorary-commanders-class-of-2027-at-scott-air-force-base",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "New Jersey American Water Plans for Temporary Treatment Change in Water Treatment Plants Serving Coastal Part of the State",
+      "url": "/news/298109/new-jersey-american-water-plans-for-temporary-treatment-change-in-water-treatment-plants-serving-coastal-part-of-the-state",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "American Water Charitable Foundation Launches 2026 Water and Environment Grant Program",
+      "url": "/news/295847/american-water-charitable-foundation-launches-2026-water-and-environment-grant-program",
+      "publisher": "PR Newswire",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analysts Love These 3 High-Dividend-Yield Winners in Choppy Markets",
+      "url": "/news/295487/analysts-love-these-3-high-dividend-yield-winners-in-choppy-markets",
+      "publisher": "MarketBeat",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "A Water Quality Message for Iowa American Water Customers",
+      "url": "/news/292709/a-water-quality-message-for-iowa-american-water-customers",
+      "publisher": "PR Newswire",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Indiana American Water Installs First Drinking Water PFAS Treatment System in Indiana",
+      "url": "/news/292107/indiana-american-water-installs-first-drinking-water-pfas-treatment-system-in-indiana",
+      "publisher": "PR Newswire",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CWT or AWK: Which Is the Better Value Stock Right Now?",
+      "url": "/news/292215/cwt-or-awk-which-is-the-better-value-stock-right-now",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ben Keith named Iowa American Water Director of Business Development and Government Affairs",
+      "url": "/news/290687/ben-keith-named-iowa-american-water-director-of-business-development-and-government-affairs",
+      "publisher": "PR Newswire",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pennsylvania American Water Urges Customers to Be Prepared during Sub-Freezing Weather",
+      "url": "/news/289981/pennsylvania-american-water-urges-customers-to-be-prepared-during-sub-freezing-weather",
+      "publisher": "PR Newswire",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "New Jersey American Water Plans for Temporary Treatment Change in Water Treatment Plants Serving Central and Northern Parts of the State",
+      "url": "/news/289076/new-jersey-american-water-plans-for-temporary-treatment-change-in-water-treatment-plants-serving-central-and-northern-parts-of-the-state",
+      "publisher": "PR Newswire",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Illinois American Water Files Rate Request Driven by Approximately $577 Million in Investments to Provide Safe, Clean, Reliable and Affordable Service",
+      "url": "/news/288994/illinois-american-water-files-rate-request-driven-by-approximately-577-million-in-investments-to-provide-safe-clean-reliable-and-affordable-service",
+      "publisher": "PR Newswire",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "American Water Charitable Foundation Donated $5.7 Million in 2025 to Support and Strengthen Communities",
+      "url": "/news/288734/american-water-charitable-foundation-donated-57-million-in-2025-to-support-and-strengthen-communities",
+      "publisher": "PR Newswire",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "California American Water Invests Nearly $5 Million in Sacramento Community Water Supply with New Contempo Well Installation",
+      "url": "/news/288398/california-american-water-invests-nearly-5-million-in-sacramento-community-water-supply-with-new-contempo-well-installation",
+      "publisher": "PR Newswire",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "New Jersey American Water Readies for Winter Storm",
+      "url": "/news/285525/new-jersey-american-water-readies-for-winter-storm",
+      "publisher": "PR Newswire",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Iowa American Water Urges Customers to Prepare for the Forecasted Bitterly Cold Weather Cold",
+      "url": "/news/284665/iowa-american-water-urges-customers-to-prepare-for-the-forecasted-bitterly-cold-weather-cold",
+      "publisher": "PR Newswire",
+      "date": "2026-01-22",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Here's What to Expect From American Water Works' Next Earnings Report",
+      "url": "https://finance.yahoo.com/m/4fc48cef-fdea-360e-ba5f-902f49f0256f/here%27s-what-to-expect-from.html",
+      "publisher": "Barchart",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    }
+  ]
 }

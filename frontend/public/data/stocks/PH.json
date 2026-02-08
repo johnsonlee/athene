@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 976.489990234375,
     "sma_20": 943.3658111572265,
-    "sma_50": 906.642459716797,
-    "sma_200": 767.1974566650392,
-    "trend_alignment": 0.7672081313192425,
+    "sma_50": 906.6424597167969,
+    "sma_200": 767.1974566650393,
+    "trend_alignment": 0.7672081313192426,
     "rsi": 67.91468983391218,
     "rsi_score": 0.35829379667824357,
     "macd_histogram": 2.1967533639291794,
@@ -6296,8 +6296,8 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 83.59973473984913,
-    "stoch_d": 83.63212275736707,
-    "trend_score": 76.72081313192425,
+    "stoch_d": 83.63212275736706,
+    "trend_score": 76.72081313192426,
     "rsi_abs_score": 59.838868465045906,
     "macd_abs_score": 58.124106201544166,
     "momentum_score": 58.981487333295036,
@@ -6306,7 +6306,15 @@
     "technical_score": 64.25461648359547,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.26179216692950513,
+    "sentiment_pos": 0.1557,
+    "sentiment_neg": 0.0066500000000000005,
+    "sentiment_neu": 0.83765,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 63.09
+  },
   "analyst": {
     "revision_momentum": 0.045454545454545456,
     "target_upside": 0.0752798287744882,
@@ -6325,7 +6333,7 @@
     "quality_score": 78.41647612499999,
     "growth_score": 44.42857142857143,
     "safety_score": 44.077999999999996,
-    "trend_score": 76.72081313192425,
+    "trend_score": 76.72081313192426,
     "momentum_score": 58.981487333295036,
     "volatility_score": 67.71963172014841,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 35.1574679372549,
     "catalyst_timeline": 62.429310056678894,
     "downside_control": 58.510644758022266,
-    "composite_score": 54.702325744196095,
+    "composite_score": 54.698436698897666,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 53.063908975688605,
     "technical_score": 64.25461648359547,
-    "sentiment_score": 50.0,
+    "sentiment_score": 63.09,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Industrial Machinery & Supplies & Components"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Flowserve's Q4 Earnings Surpass Estimates, Revenues Increase Y/Y",
+      "url": "/news/303187/flowserves-q4-earnings-surpass-estimates-revenues-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Griffon's Earnings & Revenues Top Estimates in Q1, Increase Y/Y",
+      "url": "/news/303173/griffons-earnings-revenues-top-estimates-in-q1-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Parker-Hannifin (PH) Set for Incremental Margins Despite Market Challenges",
+      "url": "/news/302431/parker-hannifin-ph-set-for-incremental-margins-despite-market-challenges",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "EnerSys' Q3 Earnings Beat Estimates, Decrease Year Over Year",
+      "url": "/news/301898/enersys-q3-earnings-beat-estimates-decrease-year-over-year",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "5 Must-Read Analyst Questions From Parker-Hannifin's Q4 Earnings Call",
+      "url": "/news/300819/5-must-read-analyst-questions-from-parker-hannifins-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Powell Industries Q1 Earnings Surpass Estimates, Increase Y/Y",
+      "url": "/news/300030/powell-industries-q1-earnings-surpass-estimates-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Emerson Q1 Earnings Top Estimates, Intelligent Devices Sales Rise",
+      "url": "/news/300031/emerson-q1-earnings-top-estimates-intelligent-devices-sales-rise",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Johnson Controls Q1 Earnings & Revenues Top Estimates, Increase Y/Y",
+      "url": "/news/300027/johnson-controls-q1-earnings-revenues-top-estimates-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Truist Highlights Margin Strength After Parker-Hannifin's (PH) Q2 Earnings Beat",
+      "url": "/news/299257/truist-highlights-margin-strength-after-parker-hannifins-ph-q2-earnings-beat",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's What Lifted Parker-Hannifin Corporation (PH) in Q4",
+      "url": "/news/299029/heres-what-lifted-parker-hannifin-corporation-ph-in-q4",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Parker-Hannifin (PH) is a Great Momentum Stock: Should You Buy?",
+      "url": "/news/297901/parker-hannifin-ph-is-a-great-momentum-stock-should-you-buy",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Reasons Growth Investors Will Love Parker-Hannifin (PH)",
+      "url": "/news/296027/3-reasons-growth-investors-will-love-parker-hannifin-ph",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Parker-Hannifin (PH) Crossed Above the 20-Day Moving Average: What That Means for Investors",
+      "url": "/news/293616/parker-hannifin-ph-crossed-above-the-20-day-moving-average-what-that-means-for-investors",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Parker-Hannifin Q2 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/38e0dab2-d76e-378a-9519-2f6d8a73c9b6/parker-hannifin-q2-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PH Q4 Deep Dive: Margin Expansion and Filtration Group Acquisition Drive Guidance Increase",
+      "url": "/news/294061/ph-q4-deep-dive-margin-expansion-and-filtration-group-acquisition-drive-guidance-increase",
+      "publisher": "StockStory",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stifel Revises Parker-Hannifin (PH) Outlook in Diversified Industrials Review",
+      "url": "/news/292745/stifel-revises-parker-hannifin-ph-outlook-in-diversified-industrials-review",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Parker Hannifin Corp (PH) Q2 2026 Earnings Call Highlights: Record Sales and Raised Guidance ...",
+      "url": "https://finance.yahoo.com/news/parker-hannifin-corp-ph-q2-230111508.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Parker-Hannifin Corporation",
+      "url": "https://finance.yahoo.com/m/4f3e2de4-3191-3b63-8751-3e31c71d6f96/analyst-report%3A.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Parker-Hannifin Tops Q2 Earnings & Sales Estimates, Raises 26' View",
+      "url": "/news/292319/parker-hannifin-tops-q2-earnings-sales-estimates-raises-26-view",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Parker Hannifin Raises Outlook On Aerospace Momentum",
+      "url": "/news/292051/parker-hannifin-raises-outlook-on-aerospace-momentum",
+      "publisher": "Benzinga",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    }
+  ]
 }

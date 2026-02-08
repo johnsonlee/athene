@@ -6306,7 +6306,15 @@
     "technical_score": 58.76004463854045,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.2775083603520667,
+    "sentiment_pos": 0.25215,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.74785,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 63.88
+  },
   "analyst": {
     "revision_momentum": 0.1111111111111111,
     "target_upside": 0.0755080848538793,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 59.36852478,
     "catalyst_timeline": 57.1549260667413,
     "downside_control": 51.50727658107385,
-    "composite_score": 54.47909195146802,
+    "composite_score": 54.475202906169585,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 50.85071571666666,
     "technical_score": 58.76004463854045,
-    "sentiment_score": 50.0,
+    "sentiment_score": 63.88,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Utilities",
     "industry": "Multi-Utilities"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "DTE Energy Board of Directors declares quarterly dividend",
+      "url": "/news/302108/dte-energy-board-of-directors-declares-quarterly-dividend",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "DTE Energy schedules full year 2025 earnings release, conference call",
+      "url": "/news/293892/dte-energy-schedules-full-year-2025-earnings-release-conference-call",
+      "publisher": "PR Newswire",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: DTE Energy Company",
+      "url": "https://finance.yahoo.com/m/44be7cb4-77ee-3e35-86bd-3e69f675ece5/analyst-report%3A-dte-energy.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "DTE Energy's Quarterly Earnings Preview: What You Need to Know",
+      "url": "https://finance.yahoo.com/m/63396443-3a4b-319f-b254-015c9a8440a4/dte-energy%27s-quarterly.html",
+      "publisher": "Barchart",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "DTE Energy donates $15 million to help Michigan families stay safe and warm this winter",
+      "url": "/news/271381/dte-energy-donates-15-million-to-help-michigan-families-stay-safe-and-warm-this-winter",
+      "publisher": "PR Newswire",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Duke Energy Stock Falls 6.1% in Three Months: What Should You Do?",
+      "url": "/news/268719/duke-energy-stock-falls-61-in-three-months-what-should-you-do",
+      "publisher": "Zacks",
+      "date": "2026-01-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "UBS Analyst Maintains A Buy On DTE Energy Company (DTE)",
+      "url": "/news/259340/ubs-analyst-maintains-a-buy-on-dte-energy-company-dte",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: DTE Energy Company",
+      "url": "https://finance.yahoo.com/m/3e6c5aa3-9c0f-31a9-ad6f-873dfca03c6e/analyst-report%3A-dte-energy.html",
+      "publisher": "Morningstar Research",
+      "date": "2025-12-19",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Oracle and OpenAI Win Michigan Approval to Power New Data Center",
+      "url": "https://finance.yahoo.com/news/oracle-openai-win-michigan-approval-200230319.html",
+      "publisher": "Bloomberg",
+      "date": "2025-12-19",
+      "sentiment": "positive"
+    },
+    {
+      "title": "JPMorgan Updates Models for North American Utilities Group, Including DTE Energy (DTE)",
+      "url": "/news/256905/jpmorgan-updates-models-for-north-american-utilities-group-including-dte-energy-dte",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-18",
+      "sentiment": "positive"
+    },
+    {
+      "title": "How Is DTE Energy Stock Performance Compared to Other Utilities - Regulated Electric Stocks?",
+      "url": "https://finance.yahoo.com/m/7b0bf2db-266c-3002-87e6-d569666e9f33/how-is-dte-energy-stock.html",
+      "publisher": "Barchart",
+      "date": "2025-12-17",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Improve Your Retirement Income with These 3 Top-Ranked Dividend Stocks",
+      "url": "/news/255206/improve-your-retirement-income-with-these-3-top-ranked-dividend-stocks",
+      "publisher": "Zacks",
+      "date": "2025-12-16",
+      "sentiment": "positive"
+    },
+    {
+      "title": "DTE Energy Pushes Ahead With Significant Clean Energy Investments",
+      "url": "/news/246063/dte-energy-pushes-ahead-with-significant-clean-energy-investments",
+      "publisher": "Zacks",
+      "date": "2025-12-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "DTE Energy sets 2026 annual meeting date",
+      "url": "/news/244870/dte-energy-sets-2026-annual-meeting-date",
+      "publisher": "PR Newswire",
+      "date": "2025-12-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "DTE Energy Board of Directors declares quarterly dividend",
+      "url": "/news/243668/dte-energy-board-of-directors-declares-quarterly-dividend",
+      "publisher": "PR Newswire",
+      "date": "2025-12-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PPL Underperforms Its Industry in Six Months: How to Play the Stock?",
+      "url": "/news/235250/ppl-underperforms-its-industry-in-six-months-how-to-play-the-stock",
+      "publisher": "Zacks",
+      "date": "2025-11-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What Are Wall Street Analysts' Target Price for DTE Energy Stock?",
+      "url": "https://finance.yahoo.com/m/0ed84b09-a4e9-3694-979a-0f0f3a4fa0d8/what-are-wall-street.html",
+      "publisher": "Barchart",
+      "date": "2025-11-18",
+      "sentiment": "positive"
+    },
+    {
+      "title": "DTE Energy offers some relief to federal government workers, even after shutdown ends",
+      "url": "https://finance.yahoo.com/m/eab551ff-b81c-3a17-b1f8-feeae6d48078/dte-energy-offers-some-relief.html",
+      "publisher": "Detroit Free Press",
+      "date": "2025-11-14",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: DTE Energy Company",
+      "url": "https://finance.yahoo.com/m/b6a88196-0395-3d33-b3a0-95a7ee588d37/analyst-report%3A-dte-energy.html",
+      "publisher": "Morningstar Research",
+      "date": "2025-11-11",
+      "sentiment": "positive"
+    },
+    {
+      "title": "OpenAI, Oracle Bring Stargate AI Expansion To Michigan",
+      "url": "https://finance.yahoo.com/news/openai-oracle-bring-stargate-ai-195559881.html",
+      "publisher": "GuruFocus.com",
+      "date": "2025-11-02",
+      "sentiment": "neutral"
+    }
+  ]
 }

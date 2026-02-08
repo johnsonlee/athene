@@ -6306,19 +6306,27 @@
     "technical_score": 58.639070356073105,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.16645387308602355,
+    "sentiment_pos": 0.10405,
+    "sentiment_neg": 0.0,
+    "sentiment_neu": 0.89595,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 58.32
+  },
   "analyst": {
     "revision_momentum": 0.2857142857142857,
     "target_upside": 0.12461059190031153,
-    "consensus_rating": 1.47368,
+    "consensus_rating": 1.38889,
     "analyst_revision_count": 7.0,
     "analyst_count": 17.0,
     "analyst_upgrades": 2.0,
     "analyst_downgrades": 0.0,
     "revision_momentum_score": 65.71428571428571,
     "target_upside_score": 62.953271028037385,
-    "consensus_score": 78.73696,
-    "analyst_score": 68.00359914552737
+    "consensus_score": 81.11108,
+    "analyst_score": 68.59712914552738
   },
   "ranking": {
     "value_score": 31.645800712418303,
@@ -6329,7 +6337,7 @@
     "momentum_score": 68.12730846823294,
     "volatility_score": 39.10687278621475,
     "volume_score": 50.0,
-    "analyst_score": 68.00359914552737,
+    "analyst_score": 68.59712914552738,
     "pe_score": 30.173699999999997,
     "forward_pe_score": 29.37717647058824,
     "pb_score": 15.0,
@@ -6344,23 +6352,23 @@
     "current_ratio_score": 46.885999999999996,
     "earnings_visibility": 78.4777125,
     "valuation_margin": 29.226740213725492,
-    "catalyst_timeline": 63.449258514162786,
+    "catalyst_timeline": 63.50861151416278,
     "downside_control": 40.46184690804898,
-    "composite_score": 54.66180763485433,
+    "composite_score": 54.67720831455589,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 60.13612983159359,
     "technical_score": 58.639070356073105,
-    "sentiment_score": 50.0,
+    "sentiment_score": 58.32,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 282,
-    "percentile": 0.45857418111753373,
+    "rank": 281,
+    "percentile": 0.4605009633911368,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Aerospace & Defense"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Scott Strazik on How GE Vernova Is Riding the AI Power Surge",
+      "url": "https://finance.yahoo.com/m/987789d9-caa0-3c4e-ab17-45bac234211a/scott-strazik-on-how-ge.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "GE Aerospace (GE) a Strong Buy, Analysts See 17% Upside",
+      "url": "/news/303690/ge-aerospace-ge-a-strong-buy-analysts-see-17-upside",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Apple, GE Aerospace Lead Five Stocks Flashing Buy Signals",
+      "url": "https://www.investors.com/news/apple-stock-ge-aerospace-stocks-buy-signals?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "GE Aerospace, GE Vernova, International Paper, Lincoln Electric, and Griffon Shares Skyrocket, What You Need To Know",
+      "url": "/news/303403/ge-aerospace-ge-vernova-international-paper-lincoln-electric-and-griffon-shares-skyrocket-what-you-need-to-know",
+      "publisher": "StockStory",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "GE Aerospace Board of Directors Authorizes Quarterly Dividend",
+      "url": "/news/303171/ge-aerospace-board-of-directors-authorizes-quarterly-dividend",
+      "publisher": "PR Newswire",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Boeing, IBD Stock Of The Day, Back In Buy Zone On India, Saudi Arabia Deal Buzz",
+      "url": "https://finance.yahoo.com/m/6517a4d6-273c-3e97-9047-f559b3fa1e7f/boeing%2C-ibd-stock-of-the-day%2C.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here is What to Know Beyond Why GE Aerospace (GE) is a Trending Stock",
+      "url": "/news/302780/here-is-what-to-know-beyond-why-ge-aerospace-ge-is-a-trending-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Big Tech to Spend $650 Billion This Year as AI Race Intensifies",
+      "url": "https://finance.yahoo.com/news/big-tech-spend-650-billion-012716850.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "GE Aerospace's Commercial Engines Unit Gains Momentum: Can It Sustain?",
+      "url": "/news/301897/ge-aerospaces-commercial-engines-unit-gains-momentum-can-it-sustain",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 High-Risk Stocks That Soared in 2025 But Can Still Fly Higher",
+      "url": "/news/302801/3-high-risk-stocks-that-soared-in-2025-but-can-still-fly-higher",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Sterling Buys $3 Million of Vanguard 0-3 Month Treasury Bill ETF",
+      "url": "/news/300376/sterling-buys-3-million-of-vanguard-0-3-month-treasury-bill-etf",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Rolls-Royce Pushes Trent 1000 XE to Win Back 787 Customers",
+      "url": "https://finance.yahoo.com/news/rolls-royce-pushes-trent-1000-202422363.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Should You Buy Shares of GE Vernova (GEV) In February?",
+      "url": "/news/299798/should-you-buy-shares-of-ge-vernova-gev-in-february",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "GE HealthCare Stock Jumps. Why Earnings Were a Relief.",
+      "url": "https://finance.yahoo.com/m/d69e5470-1e4c-32cb-bfc7-e01542a331a1/ge-healthcare-stock-jumps..html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "GE HealthCare Technologies Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/58b22919-6b5d-3260-9c6f-7bcee5f6d76e/ge-healthcare-technologies-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "GE Aerospace Stock Outlook: Is Wall Street Bullish or Bearish?",
+      "url": "https://finance.yahoo.com/m/70e0e596-d33f-34be-bfae-3286c7e05349/ge-aerospace-stock-outlook%3A.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "GE Aerospace Plans $300 Million Upgrade In Singapore Repair Facility",
+      "url": "/news/299160/ge-aerospace-plans-300-million-upgrade-in-singapore-repair-facility",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "GE HealthCare Stock Rises. Why Earnings Were a Relief.",
+      "url": "https://www.barrons.com/articles/ge-healthcare-earnings-stock-price-e27dc8d9?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "US$300M to Bolster GE Aerospace's Engine Repair Capabilities in Singapore",
+      "url": "/news/298878/us300m-to-bolster-ge-aerospaces-engine-repair-capabilities-in-singapore",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Move Over SpaceX: This Startup Launches Rockets From Supersonic Fighter Jets   EXCLUSIVE",
+      "url": "/news/297512/move-over-spacex-this-startup-launches-rockets-from-supersonic-fighter-jets-exclusive",
+      "publisher": "Benzinga",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    }
+  ]
 }

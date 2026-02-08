@@ -5624,7 +5624,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 90.73095476209168,
-    "stoch_d": 87.8900225945309,
+    "stoch_d": 87.89002259453092,
     "trend_score": 48.167583845950666,
     "rsi_abs_score": 62.50492911922966,
     "macd_abs_score": 61.49638124876543,
@@ -5634,7 +5634,15 @@
     "technical_score": 56.79368575018065,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.04256774082685916,
+    "sentiment_pos": 0.0653,
+    "sentiment_neg": 0.04385,
+    "sentiment_neu": 0.89085,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 52.13
+  },
   "analyst": {
     "revision_momentum": -0.5,
     "target_upside": -0.007170435741864259,
@@ -5674,14 +5682,14 @@
     "valuation_margin": 60.309286699999994,
     "catalyst_timeline": 51.02034835280177,
     "downside_control": 59.36835861679002,
-    "composite_score": 54.739809252581026,
+    "composite_score": 54.73592020728259,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 53.17452684071431,
     "technical_score": 56.79368575018065,
-    "sentiment_score": 50.0,
+    "sentiment_score": 52.13,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -5697,5 +5705,146 @@
     "sector": "Consumer Staples",
     "industry": "Personal Care Products"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Jefferies Downgrades Kenvue (KVUE) to Hold With $18 PT Over Limited Upside, Litigation Risks",
+      "url": "/news/299909/jefferies-downgrades-kenvue-kvue-to-hold-with-18-pt-over-limited-upside-litigation-risks",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Kenvue to Announce Fourth Quarter and Full Year 2025 Results on February 17, 2026",
+      "url": "https://www.businesswire.com/news/home/20260204640806/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Johnson & Johnson",
+      "url": "https://finance.yahoo.com/m/23c59ec0-fd03-39a7-8549-3307946d7bc3/analyst-report%3A-johnson-%26.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "January jobs data, Alphabet and Amazon earnings, more Warsh fallout: What to watch this week",
+      "url": "https://finance.yahoo.com/news/january-jobs-data-alphabet-and-amazon-earnings-more-warsh-fallout-what-to-watch-this-week-124723942.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "All It Takes Is $13,000 Invested in Each of These 2 Dividend Kings to Help Generate $1,000 in Passive Income in 2026",
+      "url": "/news/294715/all-it-takes-is-13000-invested-in-each-of-these-2-dividend-kings-to-help-generate-1000-in-passive-income-in-2026",
+      "publisher": "Motley Fool",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "1 Super-Safe High-Yield Dividend King Stock to Buy Even if There's a Stock Market Sell-Off in 2026",
+      "url": "/news/294555/1-super-safe-high-yield-dividend-king-stock-to-buy-even-if-theres-a-stock-market-sell-off-in-2026",
+      "publisher": "Motley Fool",
+      "date": "2026-01-31",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Spotify upgraded, Pinterest downgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/spotify-upgraded-pinterest-downgraded-wall-145401832.html",
+      "publisher": "The Fly",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here Are Fridays Top Wall Street Analyst Research Calls: Broadcom, Circle Internet, Kenvue, Medtronic, Sandisk, Southwest Airlines, Spotify, and More",
+      "url": "https://finance.yahoo.com/m/2c13c3ab-cfdf-3d81-93ad-aefc3042dc8e/here-are-friday%E2%80%99s-top-wall.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Kimberly-Clark and Kenvue Shareholders Overwhelmingly Approve Kimberly-Clark's Acquisition of Kenvue",
+      "url": "/news/291681/kimberly-clark-and-kenvue-shareholders-overwhelmingly-approve-kimberly-clarks-acquisition-of-kenvue",
+      "publisher": "PR Newswire",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Kenvue Is Headed for a Merger Vote on January 29. How Should You Play KVUE Stock Here?",
+      "url": "https://finance.yahoo.com/m/03dfb62a-e9f9-3274-9d80-f32230484a0a/kenvue-is-headed-for-a-merger.html",
+      "publisher": "Barchart",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Kenvue Stock: Analyst Estimates & Ratings",
+      "url": "https://finance.yahoo.com/m/72fc521a-5805-320d-ad8e-a6a19a3a556c/kenvue-stock%3A-analyst.html",
+      "publisher": "Barchart",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Kimberly-Clark Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/b5a4a39b-876d-33e7-9b0a-a8e83ebc9f4c/kimberly-clark-q4-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Kenvue Declares Quarterly Cash Dividend",
+      "url": "https://www.businesswire.com/news/home/20260128947345/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Kimberly-Clark Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/fe7feea9-b582-3bcb-a69f-299afef41d48/kimberly-clark-q4-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Kimberly-Clark Corporation",
+      "url": "https://finance.yahoo.com/m/0f3d8372-f812-3e85-827b-c7379849c0a8/analyst-report%3A.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Kimberly-Clark Posts Higher Profit Ahead of Kenvue Vote",
+      "url": "https://www.wsj.com/business/earnings/kimberly-clark-posts-higher-profit-ahead-of-kenvue-vote-4c2d7441?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Procter & Gamble (PG) Tops Q2 Earnings Estimates",
+      "url": "/news/283796/procter-gamble-pg-tops-q2-earnings-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Johnson & Johnson",
+      "url": "https://finance.yahoo.com/m/bea5c9e4-afba-3359-8fae-22264202c08d/analyst-report%3A-johnson-%26.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Consumer Staples Are Exploding Higher in 2026: Buy 5 High-Yielding Dividend Kings Now",
+      "url": "https://finance.yahoo.com/m/f43c3f0e-c2bd-3e1e-ae23-b21d6be95335/consumer-staples-are.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ISS Backs Kenvue (KVUE) Deal, Investors Debate Tylenol and Litigation Risks",
+      "url": "/news/282082/iss-backs-kenvue-kvue-deal-investors-debate-tylenol-and-litigation-risks",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-21",
+      "sentiment": "negative"
+    }
+  ]
 }

@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 338.9800109863281,
-    "sma_20": 356.06199951171874,
+    "sma_20": 356.0619995117188,
     "sma_50": 350.7947283935547,
     "sma_200": 341.94835052490225,
     "trend_alignment": 0.47527523765916185,
@@ -6286,10 +6286,10 @@
     "macd_histogram": -3.0245250096663883,
     "macd_line": -5.282611793731007,
     "macd_histogram_pct": -0.8922428791202012,
-    "bb_position": 0.2690144420947494,
-    "bb_upper": 393.038312403968,
-    "bb_lower": 319.08568661946947,
-    "bb_width": 0.20769592342320317,
+    "bb_position": 0.2690144420947487,
+    "bb_upper": 393.03831240396806,
+    "bb_lower": 319.0856866194695,
+    "bb_width": 0.20769592342320312,
     "hist_volatility": 0.5991887874904893,
     "volume_ratio": 1.066814792126855,
     "avg_volume_20d": 1926295.0,
@@ -6301,12 +6301,20 @@
     "rsi_abs_score": 66.0797792476572,
     "macd_abs_score": 29.116356813196983,
     "momentum_score": 47.59806803042709,
-    "volatility_score": 26.234948117235078,
+    "volatility_score": 26.23494811723508,
     "volume_score": 50.0,
     "technical_score": 43.78466716235,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.03867962461511585,
+    "sentiment_pos": 0.0653,
+    "sentiment_neg": 0.07715,
+    "sentiment_neu": 0.8574999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 48.07
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.16231046079414707,
@@ -6327,7 +6335,7 @@
     "safety_score": 53.162804235439594,
     "trend_score": 47.527523765916186,
     "momentum_score": 47.59806803042709,
-    "volatility_score": 26.234948117235078,
+    "volatility_score": 26.23494811723508,
     "volume_score": 50.0,
     "analyst_score": 59.48063935335417,
     "pe_score": 75.97838825,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 78.18695625357142,
     "catalyst_timeline": 50.20162311496974,
     "downside_control": 46.1606628529012,
-    "composite_score": 60.611034676995956,
+    "composite_score": 60.60714563169752,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 65.72964321434982,
     "technical_score": 43.78466716235,
-    "sentiment_score": 50.0,
+    "sentiment_score": 48.07,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Managed Health Care"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Will Declining Medical Membership Affect Humana's Q4 Earnings?",
+      "url": "/news/303221/will-declining-medical-membership-affect-humanas-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Centene Incurs Q4 Loss, Revenues Up YoY due to PDP Business Strength",
+      "url": "/news/303215/centene-incurs-q4-loss-revenues-up-yoy-due-to-pdp-business-strength",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ensign Group Q4 Earnings Beat Estimates on Growing Occupancy",
+      "url": "/news/303100/ensign-group-q4-earnings-beat-estimates-on-growing-occupancy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "S&P 500 Health Insurer Dives As ACA Enrollment Implodes",
+      "url": "https://finance.yahoo.com/m/5bd6723b-bcab-32a9-837f-700a9d2d94c8/s%26p-500-health-insurer-dives.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Molina Healthcare Incurs a Loss in Q4 as Medical Costs Surge",
+      "url": "/news/302966/molina-healthcare-incurs-a-loss-in-q4-as-medical-costs-surge",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "UnitedHealth, CVS, Humana Face Double Trouble As Trump's Medicare Cuts Are Just The StartPBM 'Spread Pricing' Comes Under Fire",
+      "url": "https://finance.yahoo.com/news/unitedhealth-cvs-humana-face-double-114604435.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "5 Revealing Analyst Questions From Elevance Health's Q4 Earnings Call",
+      "url": "/news/298794/5-revealing-analyst-questions-from-elevance-healths-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Can Centene's Q4 Earnings Escape Membership & Cost Headwinds?",
+      "url": "/news/297971/can-centenes-q4-earnings-escape-membership-cost-headwinds",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Adobe downgraded, Palantir upgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/adobe-downgraded-palantir-upgraded-wall-143444113.html",
+      "publisher": "The Fly",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "UnitedHealth, CVS, Humana Face Double Trouble As Trump's Medicare Cuts Are Just The Start-PBM 'Spread Pricing' Comes Under Fire",
+      "url": "/news/296664/unitedhealth-cvs-humana-face-double-trouble-as-trumps-medicare-cuts-are-just-the-start-pbm-spread-pricing-comes-under-fire",
+      "publisher": "Benzinga",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Is the Options Market Predicting a Spike in Elevance Health Stock?",
+      "url": "/news/295899/is-the-options-market-predicting-a-spike-in-elevance-health-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Will Rising Costs Hit Molina's Q4 Earnings? Key Insights Here",
+      "url": "/news/295870/will-rising-costs-hit-molinas-q4-earnings-key-insights-here",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Barclays Adjusts Elevance Health (ELV) PT to $393 While Maintaining Overweight Rating",
+      "url": "/news/294406/barclays-adjusts-elevance-health-elv-pt-to-393-while-maintaining-overweight-rating",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-31",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Health Insurance Stock Could Rebound Off Historically Bullish Signal",
+      "url": "/news/292483/health-insurance-stock-could-rebound-off-historically-bullish-signal",
+      "publisher": "Schaeffer's Research",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Healthcare ETFs in Focus as UnitedHealth Rises 4% Post Mixed Q4 Results",
+      "url": "/news/291833/healthcare-etfs-in-focus-as-unitedhealth-rises-4-post-mixed-q4-results",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Trump's Flat Rate Medicare Advantage Proposal Is 'Shock To The System,' Risking 20% Earnings Hit, Delaying Healthcare Turnaround",
+      "url": "/news/291158/trumps-flat-rate-medicare-advantage-proposal-is-shock-to-the-system-risking-20-earnings-hit-delaying-healthcare-turnaround",
+      "publisher": "Benzinga",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "ELV Q4 Deep Dive: Margin Pressures and Membership Shifts Shape 2026 Outlook",
+      "url": "/news/291222/elv-q4-deep-dive-margin-pressures-and-membership-shifts-shape-2026-outlook",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stocks Finish Mixed as Fed Keeps Interest Rates Steady",
+      "url": "https://finance.yahoo.com/m/6de3b3a0-2e33-3d40-8a18-16671e3a3446/stocks-finish-mixed-as-fed.html",
+      "publisher": "Barchart",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Elevance Health Inc (ELV) Q4 2025 Earnings Call Highlights: Strong Financial Performance Amid ...",
+      "url": "https://finance.yahoo.com/news/elevance-health-inc-elv-q4-210232814.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Elevance Health, Inc.",
+      "url": "https://finance.yahoo.com/m/a40f27d3-db3e-38e6-aeca-6427b6c393f8/analyst-report%3A-elevance.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    }
+  ]
 }

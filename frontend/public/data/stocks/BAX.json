@@ -6279,8 +6279,8 @@
     "close": 21.729999542236328,
     "sma_20": 20.189499950408937,
     "sma_50": 19.598999900817873,
-    "sma_200": 24.0747327041626,
-    "trend_alignment": 0.4659286080764877,
+    "sma_200": 24.074732704162603,
+    "trend_alignment": 0.46592860807648756,
     "rsi": 68.61591178060083,
     "rsi_score": 0.3723182356120165,
     "macd_histogram": 0.20040127524480228,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 93.08640475245213,
     "stoch_d": 89.4175982703955,
-    "trend_score": 46.592860807648776,
+    "trend_score": 46.592860807648755,
     "rsi_abs_score": 57.875447014317686,
     "macd_abs_score": 71.33349835249317,
     "momentum_score": 64.60447268340542,
     "volatility_score": 40.95450885158809,
     "volume_score": 50.0,
-    "technical_score": 51.55010181763387,
+    "technical_score": 51.550101817633866,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.07420000732078884,
+    "sentiment_pos": 0.13315,
+    "sentiment_neg": 0.034999999999999996,
+    "sentiment_neu": 0.8318,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 53.71
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.01242521859180854,
@@ -6325,7 +6333,7 @@
     "quality_score": 24.49666666666667,
     "growth_score": 45.25,
     "safety_score": 69.16725,
-    "trend_score": 46.592860807648776,
+    "trend_score": 46.592860807648755,
     "momentum_score": 64.60447268340542,
     "volatility_score": 40.95450885158809,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 71.74119759999999,
     "catalyst_timeline": 52.93496574671241,
     "downside_control": 56.33426382773821,
-    "composite_score": 50.82799166009136,
+    "composite_score": 50.82410261479292,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 51.58011466666667,
-    "technical_score": 51.55010181763387,
-    "sentiment_score": 50.0,
+    "technical_score": 51.550101817633866,
+    "sentiment_score": 53.71,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Health Care Equipment"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Here's What Hit Baxter (BAX) in Q4",
+      "url": "/news/297065/heres-what-hit-baxter-bax-in-q4",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Are Wall Street Analysts Predicting Baxter International Stock Will Climb or Sink?",
+      "url": "https://finance.yahoo.com/m/302b6676-6573-3d34-a842-6459d0aeb6f9/are-wall-street-analysts.html",
+      "publisher": "Barchart",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Reasons to Retain Baxter International Stock in Your Portfolio Now",
+      "url": "/news/290005/reasons-to-retain-baxter-international-stock-in-your-portfolio-now",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AVNS & Siemens Healthineers Team Up on Advanced Integrated Pain Care",
+      "url": "/news/287146/avns-siemens-healthineers-team-up-on-advanced-integrated-pain-care",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Business people: James Lawrence to chair Metropolitan Airports Commission board",
+      "url": "https://finance.yahoo.com/m/b95fe40c-c26d-3121-889e-6259dc8bd48d/business-people%3A-james.html",
+      "publisher": "Pioneer Press, St. Paul, Minn.",
+      "date": "2026-01-25",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Baxter to Host Fourth-Quarter 2025 Financial Results Conference Call for Investors",
+      "url": "https://www.businesswire.com/news/home/20260121058248/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What You Need To Know Ahead of Baxter International's Earnings Release",
+      "url": "https://finance.yahoo.com/m/dfa59602-3e9c-383e-a27a-407b7a190a8f/what-you-need-to-know-ahead.html",
+      "publisher": "Barchart",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Baxter Unveils Dynamo Smart Stretcher to Improve Hospital Safety",
+      "url": "/news/276421/baxter-unveils-dynamo-smart-stretcher-to-improve-hospital-safety",
+      "publisher": "Zacks",
+      "date": "2026-01-14",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Baxter Introduces the Dynamo Series, a New Smart Stretcher to Help Address Common Challenges in Hospital Settings",
+      "url": "https://www.businesswire.com/news/home/20260112252075/en/Dynamo",
+      "publisher": "Business Wire",
+      "date": "2026-01-13",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Baxter (BAX) Stock Is Trading Lower Today",
+      "url": "/news/274091/why-baxter-bax-stock-is-trading-lower-today",
+      "publisher": "StockStory",
+      "date": "2026-01-12",
+      "sentiment": "negative"
+    },
+    {
+      "title": "MUSC Health and Baxter Announce Strategic Partnership to Transform Bedside Care Delivery and Address Critical Nursing Challenges",
+      "url": "https://www.businesswire.com/news/home/20260108293816/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Baxter to Present at J.P. Morgan 2026 Healthcare Conference",
+      "url": "https://www.businesswire.com/news/home/20260106609846/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Artisan Mid Cap Value Fund's Views on Baxter International (BAX)",
+      "url": "/news/266905/artisan-mid-cap-value-funds-views-on-baxter-international-bax",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What Do Analysts Think About Baxter International Inc. (BAX)?",
+      "url": "/news/266005/what-do-analysts-think-about-baxter-international-inc-bax",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Reasons to Retain Baxter International Stock in Your Portfolio Now",
+      "url": "/news/262394/reasons-to-retain-baxter-international-stock-in-your-portfolio-now",
+      "publisher": "Zacks",
+      "date": "2025-12-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Baxter International Inc. (BAX): A Bull Case Theory",
+      "url": "/news/257482/baxter-international-inc-bax-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-18",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BAX Highlights EMR-Integrated Smart Pumps Boost Patient Safety & Care",
+      "url": "/news/254295/bax-highlights-emr-integrated-smart-pumps-boost-patient-safety-care",
+      "publisher": "Zacks",
+      "date": "2025-12-15",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Baxter International Inc. Sued for Securities Law Violations - Contact the DJS Law Group to Discuss Your Rights BAX",
+      "url": "https://www.businesswire.com/news/home/20251215575708/en/",
+      "publisher": "Business Wire",
+      "date": "2025-12-15",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Investors in Baxter International, Inc. Should Contact Levi & Korsinsky Before December 15, 2025 to Discuss Your Rights - BAX",
+      "url": "/news/252727/investors-in-baxter-international-inc-should-contact-levi-korsinsky-before-december-15-2025-to-discuss-your-rights-bax",
+      "publisher": "PR Newswire",
+      "date": "2025-12-12",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Baxter International Stock: Is BAX Underperforming the Health Care Sector?",
+      "url": "https://finance.yahoo.com/m/065161a4-cf8e-3242-b72d-4301ee79bc71/baxter-international-stock%3A.html",
+      "publisher": "Barchart",
+      "date": "2025-12-12",
+      "sentiment": "positive"
+    }
+  ]
 }

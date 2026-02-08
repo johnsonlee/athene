@@ -6278,7 +6278,7 @@
   "technical": {
     "close": 65.26000213623047,
     "sma_20": 62.9980001449585,
-    "sma_50": 59.899224548339845,
+    "sma_50": 59.89922454833984,
     "sma_200": 55.55748836517334,
     "trend_alignment": 0.7149616995694814,
     "rsi": 67.87545318644754,
@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 3244270.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 83.77503564150264,
+    "stoch_k": 83.77503564150263,
     "stoch_d": 83.2841854417301,
     "trend_score": 71.49616995694814,
     "rsi_abs_score": 59.948731077946874,
@@ -6306,7 +6306,15 @@
     "technical_score": 58.9823655370038,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.02229829439569322,
+    "sentiment_pos": 0.05134999999999999,
+    "sentiment_neg": 0.05495,
+    "sentiment_neu": 0.8936999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 48.89
+  },
   "analyst": {
     "revision_momentum": 0.16666666666666666,
     "target_upside": 0.04964756359178662,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 66.11314310714285,
     "catalyst_timeline": 59.157315370609226,
     "downside_control": 59.93991778881006,
-    "composite_score": 51.04020636669857,
+    "composite_score": 51.03631732140013,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 47.875019302827376,
     "technical_score": 58.9823655370038,
-    "sentiment_score": 50.0,
+    "sentiment_score": 48.89,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Staples",
     "industry": "Packaged Foods & Meats"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "MarketBeat Week in Review - 02/02 - 02/06",
+      "url": "/news/303521/marketbeat-week-in-review-0202-0206",
+      "publisher": "MarketBeat",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tyson Foods AGM: Shareholders Elect Directors, Approve Pay Plan, Reject Waste Lagoon Proposal",
+      "url": "https://finance.yahoo.com/m/e32b49d4-89bb-38f5-9da7-c48e9ac89522/tyson-foods-agm%3A-shareholders.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Investors Heavily Search Tyson Foods, Inc. (TSN): Here is What You Need to Know",
+      "url": "/news/302785/investors-heavily-search-tyson-foods-inc-tsn-here-is-what-you-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tyson Foods Announces Quarterly Dividend",
+      "url": "/news/300595/tyson-foods-announces-quarterly-dividend",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tyson Foods price target raised to $67 from $63 at JPMorgan",
+      "url": "https://finance.yahoo.com/news/tyson-foods-price-target-raised-133730754.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tyson Foods Stock: Is Wall Street Bullish or Bearish?",
+      "url": "https://finance.yahoo.com/m/a2a55505-b180-38df-9d46-9e4aefae2fee/tyson-foods-stock%3A-is-wall.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The U.S. Government Just Told 340 Million Americans to Eat More of What Tyson Foods Sells",
+      "url": "/news/297998/the-us-government-just-told-340-million-americans-to-eat-more-of-what-tyson-foods-sells",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tyson yet to feel impact from Nebraska plant closure as beef volumes decline",
+      "url": "https://finance.yahoo.com/m/6c63fee2-e2da-3643-95c4-a4dcc1d32517/tyson-yet-to-feel-impact-from.html",
+      "publisher": "Just Food",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tyson Customers Flock to Chicken While Beef Flounders",
+      "url": "https://finance.yahoo.com/m/291d9f3e-147f-3480-bb00-a60ad4604c13/tyson-customers-flock-to.html",
+      "publisher": "The Daily Upside",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Tyson Foods, Inc.",
+      "url": "https://finance.yahoo.com/m/3d87dc70-9394-304d-b20f-893f4ae11646/analyst-report%3A-tyson-foods%2C.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Tyson Foods Looks Like a Tasty Treat for Income Investors Right Now",
+      "url": "/news/296265/why-tyson-foods-looks-like-a-tasty-treat-for-income-investors-right-now",
+      "publisher": "MarketBeat",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Big Tech and Pharma Earnings: What to Watch This Week",
+      "url": "https://finance.yahoo.com/m/1521e877-0a57-3347-a784-96c8c490471a/big-tech-and-pharma-earnings%3A.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tyson Foods, Disney, NXP Semiconductors: Earnings movers",
+      "url": "https://finance.yahoo.com/video/tyson-foods-disney-nxp-semiconductors-220659411.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tyson Foods Inc (TSN) Q1 2026 Earnings Call Highlights: Strong Sales Growth Amid Beef Segment ...",
+      "url": "https://finance.yahoo.com/news/tyson-foods-inc-tsn-q1-210103607.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Tyson Foods Q1 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/be659cbf-04b0-3587-ae6c-852b716d190c/tyson-foods-q1-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tyson Foods Stock Rises After Earnings. Chicken and Beef Are Trending in Opposite Directions.",
+      "url": "https://finance.yahoo.com/m/b32a3dd2-27ec-34ae-83eb-fc1486c7e9d8/tyson-foods-stock-rises-after.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tyson Expects Pressure on Cattle Herds for Foreseeable Future",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-02-02-2026/card/tyson-expects-pressure-on-cattle-herds-for-foreseeable-future-10qUzP5wCl8vD53SenEW?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Tyson Foods Q1 Earnings Miss Estimates, Sales Grow 5.1% Y/Y",
+      "url": "/news/295898/tyson-foods-q1-earnings-miss-estimates-sales-grow-51-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Market Awaits January Manufacturing Numbers",
+      "url": "/news/295895/market-awaits-january-manufacturing-numbers",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Chicken Is Tyson's Bright Spot As Beef Losses Turn 'Unacceptable,' CEO Says",
+      "url": "/news/295802/chicken-is-tysons-bright-spot-as-beef-losses-turn-unacceptable-ceo-says",
+      "publisher": "Benzinga",
+      "date": "2026-02-02",
+      "sentiment": "negative"
+    }
+  ]
 }

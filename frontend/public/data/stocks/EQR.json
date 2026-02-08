@@ -6277,19 +6277,19 @@
   },
   "technical": {
     "close": 63.88999938964844,
-    "sma_20": 61.77599983215332,
-    "sma_50": 61.43439331054688,
+    "sma_20": 61.775999832153325,
+    "sma_50": 61.43439331054687,
     "sma_200": 63.40218547821047,
-    "trend_alignment": 0.5282047025030971,
+    "trend_alignment": 0.5282047025030974,
     "rsi": 60.03566608349112,
     "rsi_score": 0.20071332166982245,
     "macd_histogram": 0.2085025471734483,
     "macd_line": 0.48909902145114614,
     "macd_histogram_pct": 0.3263461404997763,
-    "bb_position": 1.0235699015894526,
-    "bb_upper": 63.794832036867,
-    "bb_lower": 59.757167627439635,
-    "bb_width": 0.06535975816494728,
+    "bb_position": 1.0235699015894508,
+    "bb_upper": 63.79483203686701,
+    "bb_lower": 59.75716762743964,
+    "bb_width": 0.06535975816494727,
     "hist_volatility": 0.2325951939248007,
     "volume_ratio": 1.471674817264689,
     "avg_volume_20d": 2583655.0,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 65.21962607091945,
     "stoch_d": 66.97349927822687,
-    "trend_score": 52.82047025030971,
+    "trend_score": 52.82047025030974,
     "rsi_abs_score": 71.47503374155622,
     "macd_abs_score": 60.65865351249441,
     "momentum_score": 66.06684362702532,
     "volatility_score": 66.1293217194789,
     "volume_score": 50.0,
-    "technical_score": 58.89205850709629,
+    "technical_score": 58.892058507096294,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.0687940239821563,
+    "sentiment_pos": 0.029449999999999997,
+    "sentiment_neg": 0.013250000000000001,
+    "sentiment_neu": 0.9573,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 53.44
+  },
   "analyst": {
     "revision_momentum": -0.14285714285714285,
     "target_upside": 0.07998121771795272,
@@ -6325,7 +6333,7 @@
     "quality_score": 70.385715,
     "growth_score": 35.9,
     "safety_score": 33.19095,
-    "trend_score": 52.82047025030971,
+    "trend_score": 52.82047025030974,
     "momentum_score": 66.06684362702532,
     "volatility_score": 66.1293217194789,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 47.759213333333335,
     "catalyst_timeline": 54.80577563789561,
     "downside_control": 53.58004075792183,
-    "composite_score": 54.509096317406986,
+    "composite_score": 54.50520727210855,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 49.56658227777778,
-    "technical_score": 58.89205850709629,
-    "sentiment_score": 50.0,
+    "technical_score": 58.892058507096294,
+    "sentiment_score": 53.44,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Real Estate",
     "industry": "Multi-Family Residential REITs"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Equity Residential Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/6f2bafa7-5613-3c50-9006-0d5ba1e34aa1/equity-residential-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Equity Residential",
+      "url": "https://finance.yahoo.com/m/8a2873dc-fe58-3eb2-b60b-940c0cbce5f0/analyst-report%3A-equity.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Equity Residential (EQR) Q4 2025 Earnings Call Highlights: Strong Occupancy and Strategic ...",
+      "url": "https://finance.yahoo.com/news/equity-residential-eqr-q4-2025-210345705.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Equity Residential Q4 FFO & Revenues Miss Estimates but Increase Y/Y",
+      "url": "/news/302799/equity-residential-q4-ffo-revenues-miss-estimates-but-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's What Key Metrics Tell Us About Equity Residential (EQR) Q4 Earnings",
+      "url": "/news/302285/heres-what-key-metrics-tell-us-about-equity-residential-eqr-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Equity Residential (EQR) Q4 FFO and Revenues Miss Estimates",
+      "url": "/news/302241/equity-residential-eqr-q4-ffo-and-revenues-miss-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Equity Residential: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/equity-residential-q4-earnings-snapshot-213640599.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Equity Residential Reports Fourth Quarter 2025 Results",
+      "url": "https://www.businesswire.com/news/home/20260205461247/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Curious about Equity Residential (EQR) Q4 Performance? Explore Wall Street Estimates for Key Metrics",
+      "url": "/news/299443/curious-about-equity-residential-eqr-q4-performance-explore-wall-street-estimates-for-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "How Are Residential REITs Positioned Ahead of Q4 Earnings?",
+      "url": "/news/297868/how-are-residential-reits-positioned-ahead-of-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What's in Store for Equity Residential Stock in Q4 Earnings?",
+      "url": "/news/297692/whats-in-store-for-equity-residential-stock-in-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What's in Store for Mid-America Apartment Stock in Q4 Earnings?",
+      "url": "/news/295851/whats-in-store-for-mid-america-apartment-stock-in-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Sierra Bancorp (BSRR) Q4 Earnings Beat Estimates",
+      "url": "/news/295624/sierra-bancorp-bsrr-q4-earnings-beat-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Should CPT Stock Be in Your Portfolio Ahead of Q4 Earnings?",
+      "url": "/news/295463/should-cpt-stock-be-in-your-portfolio-ahead-of-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Two Harbors Investment Q4 Earnings on the Deck: Here's What to Expect",
+      "url": "/news/293907/two-harbors-investment-q4-earnings-on-the-deck-heres-what-to-expect",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Essex Property to Report Q4 Earnings: Here's What to Expect",
+      "url": "/news/293811/essex-property-to-report-q4-earnings-heres-what-to-expect",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What to Expect From AvalonBay Communities Stock in Q4 Earnings?",
+      "url": "/news/293793/what-to-expect-from-avalonbay-communities-stock-in-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Invesco Mortgage Set to Post Q4 Earnings: What's in Store for the Stock?",
+      "url": "/news/290582/invesco-mortgage-set-to-post-q4-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Annaly Set to Report Q4 Earnings: What's in Store for the Stock?",
+      "url": "/news/286926/annaly-set-to-report-q4-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Equity Residential Reports 2025 Dividend Income Tax Treatment",
+      "url": "https://www.businesswire.com/news/home/20260123237167/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    }
+  ]
 }

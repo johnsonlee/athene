@@ -6279,8 +6279,8 @@
     "close": 63.91999816894531,
     "sma_20": 58.610144805908206,
     "sma_50": 55.495970611572275,
-    "sma_200": 62.79112699508667,
-    "trend_alignment": 0.6001518199145688,
+    "sma_200": 62.79112699508668,
+    "trend_alignment": 0.6001518199145687,
     "rsi": 78.24497511188504,
     "rsi_score": 0.5648995022377008,
     "macd_histogram": 0.6047228611985624,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 85.73345816718835,
     "stoch_d": 88.45883422946902,
-    "trend_score": 60.01518199145688,
+    "trend_score": 60.01518199145687,
     "rsi_abs_score": 33.51004977622992,
     "macd_abs_score": 71.69093112925867,
     "momentum_score": 52.600490452744296,
@@ -6306,7 +6306,15 @@
     "technical_score": 52.38385395186155,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.04894374089703414,
+    "sentiment_pos": 0.027899999999999998,
+    "sentiment_neg": 0.049049999999999996,
+    "sentiment_neu": 0.9230499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 47.55
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.12640801001251561,
@@ -6325,7 +6333,7 @@
     "quality_score": 49.284285714285716,
     "growth_score": 19.0,
     "safety_score": 40.15645000000001,
-    "trend_score": 60.01518199145688,
+    "trend_score": 60.01518199145687,
     "momentum_score": 52.600490452744296,
     "volatility_score": 42.99576109300604,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 51.59096084285714,
     "catalyst_timeline": 54.53548088647268,
     "downside_control": 46.3948316639509,
-    "composite_score": 44.75579048614304,
+    "composite_score": 44.751901440844605,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 41.48570975,
     "technical_score": 52.38385395186155,
-    "sentiment_score": 50.0,
+    "sentiment_score": 47.55,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Building Products"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Carrier Global Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/1b3dd769-ec85-3391-ae0c-9412be28cd23/carrier-global-q4-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CARR Q4 Deep Dive: Residential Weakness Offsets Data Center and Aftermarket Momentum",
+      "url": "/news/302468/carr-q4-deep-dive-residential-weakness-offsets-data-center-and-aftermarket-momentum",
+      "publisher": "StockStory",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Carrier Global Corp (CARR) Q4 2025 Earnings Call Highlights: Navigating Market Challenges with ...",
+      "url": "https://finance.yahoo.com/news/carrier-global-corp-carr-q4-190519809.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Carrier Global Q4 Earnings & Revenues Miss Estimates, Stock Down",
+      "url": "/news/301985/carrier-global-q4-earnings-revenues-miss-estimates-stock-down",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Carrier Global (CARR) Reports Q4 Earnings: What Key Metrics Have to Say",
+      "url": "/news/301565/carrier-global-carr-reports-q4-earnings-what-key-metrics-have-to-say",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Carrier Global (NYSE:CARR) Misses Q4 CY2025 Revenue Estimates",
+      "url": "/news/301194/carrier-global-nyse-carr-misses-q4-cy2025-revenue-estimates",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Carrier Stock Drops. AI Wasn't Enough to Save Earnings.",
+      "url": "https://www.barrons.com/articles/carrier-global-earnings-stock-price-0780945e?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Carrier Global (CARR) Q4 Earnings and Revenues Miss Estimates",
+      "url": "/news/301176/carrier-global-carr-q4-earnings-and-revenues-miss-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Carrier Global: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/carrier-global-q4-earnings-snapshot-112016403.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Carrier Reports 2025 Results and Announces 2026 Outlook",
+      "url": "/news/300935/carrier-reports-2025-results-and-announces-2026-outlook",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Carrier Global Stock Outlook: Is Wall Street Bullish or Bearish?",
+      "url": "https://finance.yahoo.com/m/902fa90c-4982-3f17-ac74-2b57fcd56bc2/carrier-global-stock-outlook%3A.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Comfort Systems Soars 75% in 6 Months: Buy the Stock or Hold?",
+      "url": "/news/299323/comfort-systems-soars-75-in-6-months-buy-the-stock-or-hold",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Carrier Global (CARR) Reports Earnings Tomorrow: What To Expect",
+      "url": "/news/298555/carrier-global-carr-reports-earnings-tomorrow-what-to-expect",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CARR to Report Q4 Earnings: What's in Store for the Stock?",
+      "url": "/news/298043/carr-to-report-q4-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jim Cramer on Carrier Global: \"I Think You Buy It Now and Put It Away\"",
+      "url": "/news/296090/jim-cramer-on-carrier-global-i-think-you-buy-it-now-and-put-it-away",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Carrier Introduces Generative AI Feature in Abound to Elevate Building Operations Insights",
+      "url": "/news/295446/carrier-introduces-generative-ai-feature-in-abound-to-elevate-building-operations-insights",
+      "publisher": "PR Newswire",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "1 Cash-Producing Stock Worth Your Attention and 2 We Question",
+      "url": "/news/295014/1-cash-producing-stock-worth-your-attention-and-2-we-question",
+      "publisher": "StockStory",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "January jobs data, Alphabet and Amazon earnings, more Warsh fallout: What to watch this week",
+      "url": "https://finance.yahoo.com/news/january-jobs-data-alphabet-and-amazon-earnings-more-warsh-fallout-what-to-watch-this-week-124723942.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analysts Estimate Carrier Global (CARR) to Report a Decline in Earnings: What to Look Out for",
+      "url": "/news/292008/analysts-estimate-carrier-global-carr-to-report-a-decline-in-earnings-what-to-look-out-for",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Carrier Global Corporation (CARR): A Bull Case Theory",
+      "url": "/news/289963/carrier-global-corporation-carr-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    }
+  ]
 }

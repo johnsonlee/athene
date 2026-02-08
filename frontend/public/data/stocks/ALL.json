@@ -6277,19 +6277,19 @@
   },
   "technical": {
     "close": 207.5500030517578,
-    "sma_20": 199.58300094604493,
+    "sma_20": 199.58300094604496,
     "sma_50": 204.37451721191405,
     "sma_200": 201.32549545288086,
-    "trend_alignment": 0.539036704080677,
+    "trend_alignment": 0.5390367040806772,
     "rsi": 56.83935742239859,
     "rsi_score": 0.13678714844797185,
     "macd_histogram": 1.7676544084378993,
     "macd_line": 1.0831548477987383,
     "macd_histogram_pct": 0.8516764068642726,
-    "bb_position": 0.8127743959482545,
-    "bb_upper": 212.31902123561963,
-    "bb_lower": 186.84698065647024,
-    "bb_width": 0.12762630313408044,
+    "bb_position": 0.8127743959482534,
+    "bb_upper": 212.31902123561966,
+    "bb_lower": 186.84698065647027,
+    "bb_width": 0.1276263031340804,
     "hist_volatility": 0.31665920046589896,
     "volume_ratio": 1.1275001818314059,
     "avg_volume_20d": 2062350.0,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 74.03071134637894,
     "stoch_d": 82.28184567189655,
-    "trend_score": 53.903670408067704,
+    "trend_score": 53.90367040806772,
     "rsi_abs_score": 73.71244980432098,
     "macd_abs_score": 70.27514610296409,
     "momentum_score": 71.99379795364254,
     "volatility_score": 47.859507107472055,
     "volume_score": 50.0,
-    "technical_score": 57.34114193000748,
+    "technical_score": 57.34114193000749,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.19328588573219535,
+    "sentiment_pos": 0.14185,
+    "sentiment_neg": 0.032600000000000004,
+    "sentiment_neu": 0.82555,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 59.66
+  },
   "analyst": {
     "revision_momentum": -0.16666666666666666,
     "target_upside": 0.15634786798361835,
@@ -6325,7 +6333,7 @@
     "quality_score": 78.589875,
     "growth_score": 72.375,
     "safety_score": 33.39895,
-    "trend_score": 53.903670408067704,
+    "trend_score": 53.90367040806772,
     "momentum_score": 71.99379795364254,
     "volatility_score": 47.859507107472055,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 65.63711098666667,
     "catalyst_timeline": 59.431322381702216,
     "downside_control": 42.95376856612081,
-    "composite_score": 63.3798658366092,
+    "composite_score": 63.37597679131076,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 65.83142832222222,
-    "technical_score": 57.34114193000748,
-    "sentiment_score": 50.0,
+    "technical_score": 57.34114193000749,
+    "sentiment_score": 59.66,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Property & Casualty Insurance"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "As Copart Flails, This Rival Bids Up A Breakout. Day Of Judgment Nears.",
+      "url": "https://finance.yahoo.com/m/3a9c087a-d13d-332f-ac9a-71defbe99235/as-copart-flails%2C-this-rival.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Allstate profit doubles to $3.8bn in Q4 2025",
+      "url": "https://finance.yahoo.com/m/16ca9356-9f19-3402-9624-bdebee359cca/allstate-profit-doubles-to.html",
+      "publisher": "Life Insurance International",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Allstate Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/74e58207-00e8-3de3-ab1d-c1492f678fbf/allstate-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Allstate Corp (ALL) Q4 2025 Earnings Call Highlights: Strong Financial Performance and ...",
+      "url": "https://finance.yahoo.com/news/allstate-corp-q4-2025-earnings-210259353.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: The Allstate Corporation",
+      "url": "https://finance.yahoo.com/m/ec3a9ea5-1033-35bb-a39a-c5c98a0e43ba/analyst-report%3A-the-allstate.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Allstate Q4 Earnings Beat Estimates on Property-Liability Unit Strength",
+      "url": "/news/301947/allstate-q4-earnings-beat-estimates-on-property-liability-unit-strength",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "ALL Q4 Deep Dive: Expense Reductions and Product Expansion Drive Margin Recovery",
+      "url": "/news/301889/all-q4-deep-dive-expense-reductions-and-product-expansion-drive-margin-recovery",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's What Key Metrics Tell Us About Allstate (ALL) Q4 Earnings",
+      "url": "/news/300647/heres-what-key-metrics-tell-us-about-allstate-all-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Allstate (ALL) Q4 Earnings Top Estimates",
+      "url": "/news/300438/allstate-all-q4-earnings-top-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Allstate Enhances Customer Value, Lowers Prices for 7.8 Million Customers in 2025",
+      "url": "/news/300336/allstate-enhances-customer-value-lowers-prices-for-78-million-customers-in-2025",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Allstate (NYSE:ALL) Reports Strong Q4 CY2025",
+      "url": "/news/300339/allstate-nyse-all-reports-strong-q4-cy2025",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Allstate: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/allstate-q4-earnings-snapshot-215208986.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Will These 4 Insurance Stocks Insure a Q4 Earnings Beat?",
+      "url": "/news/297992/will-these-4-insurance-stocks-insure-a-q4-earnings-beat",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Allstate Corporation (ALL) Gains Analyst Confidence as Catastrophe Losses Ease and Earnings Outlook Strengthens",
+      "url": "/news/297082/allstate-corporation-all-gains-analyst-confidence-as-catastrophe-losses-ease-and-earnings-outlook-strengthens",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Mamdani warns NYC faces fiscal crisis greater than Great Recession. His plan? Raise taxes on richest New Yorkers",
+      "url": "https://finance.yahoo.com/news/mamdani-warns-nyc-faces-fiscal-113300728.html",
+      "publisher": "Moneywise",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Allstate (ALL) Price Target Lifted on Improving Earnings Visibility",
+      "url": "/news/296846/allstate-all-price-target-lifted-on-improving-earnings-visibility",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What To Expect From Allstate's (ALL) Q4 Earnings",
+      "url": "/news/296577/what-to-expect-from-allstates-all-q4-earnings",
+      "publisher": "StockStory",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Aptiv Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/ba1f6bf8-0fc2-355d-95e8-7aa52661eb80/aptiv-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is a Beat in the Cards for Everest Group This Earnings Season?",
+      "url": "/news/295852/is-a-beat-in-the-cards-for-everest-group-this-earnings-season",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Arch Capital Group (ACGL) Reports Next Week: Wall Street Expects Earnings Growth",
+      "url": "/news/295805/arch-capital-group-acgl-reports-next-week-wall-street-expects-earnings-growth",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    }
+  ]
 }

@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 93.48084205926212,
-    "stoch_d": 87.86957495071604,
+    "stoch_d": 87.86957495071603,
     "trend_score": 74.24639370630406,
     "rsi_abs_score": 45.67069804375748,
     "macd_abs_score": 65.87722807127953,
@@ -6306,7 +6306,15 @@
     "technical_score": 59.99414671554525,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.053355888280826144,
+    "sentiment_pos": 0.06555,
+    "sentiment_neg": 0.04485,
+    "sentiment_neu": 0.8895500000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 52.67
+  },
   "analyst": {
     "revision_momentum": 0.125,
     "target_upside": -0.018253370174997962,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 53.92502654285714,
     "catalyst_timeline": 58.681079085157265,
     "downside_control": 47.780977264798864,
-    "composite_score": 50.95271297372171,
+    "composite_score": 50.94882392842327,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 48.40052688095238,
     "technical_score": 59.99414671554525,
-    "sentiment_score": 50.0,
+    "sentiment_score": 52.67,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Materials",
     "industry": "Paper & Plastic Packaging Products & Materials"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "AMCR Q2 Earnings Top Estimates, Sales Miss as Volume Decline Continues",
+      "url": "/news/301888/amcr-q2-earnings-top-estimates-sales-miss-as-volume-decline-continues",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BALL's Q4 Earnings Beat Estimates, Sales Up Y/Y on Higher Volumes",
+      "url": "/news/297919/balls-q4-earnings-beat-estimates-sales-up-yy-on-higher-volumes",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "5 Must-Read Analyst Questions From Packaging Corporation of America's Q4 Earnings Call",
+      "url": "/news/296721/5-must-read-analyst-questions-from-packaging-corporation-of-americas-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Amcor Set to Report Q2 Earnings: What's in Store for the Stock?",
+      "url": "/news/295859/amcor-set-to-report-q2-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Packaging Corp. price target raised to $255 from $238 at BofA",
+      "url": "https://finance.yahoo.com/news/packaging-corp-price-target-raised-145041978.html",
+      "publisher": "TipRanks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Greif price target raised to $75 from $74 at BofA",
+      "url": "https://finance.yahoo.com/news/greif-price-target-raised-75-145030490.html",
+      "publisher": "TipRanks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Packaging Corp. price target lowered to $270 from $273 at Truist",
+      "url": "https://finance.yahoo.com/news/packaging-corp-price-target-lowered-144518953.html",
+      "publisher": "TipRanks",
+      "date": "2026-01-30",
+      "sentiment": "negative"
+    },
+    {
+      "title": "IP Earnings Miss Estimates in Q4, Sales Beat and Rise Y/Y",
+      "url": "/news/292332/ip-earnings-miss-estimates-in-q4-sales-beat-and-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Packaging Corporation of America Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/42bd9fd0-6e68-3a17-a1d1-5c6264fc9f43/packaging-corporation-of.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Unpopular Stocks That Concern Us",
+      "url": "/news/292921/3-unpopular-stocks-that-concern-us",
+      "publisher": "StockStory",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Packaging Corp of America (PKG) Q4 2025 Earnings Call Highlights: Strong Sales Growth Amid ...",
+      "url": "https://finance.yahoo.com/news/packaging-corp-america-pkg-q4-210051212.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Packaging Corporation of America",
+      "url": "https://finance.yahoo.com/m/0a8f3746-589e-3460-8048-73caa97934e5/analyst-report%3A-packaging.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Packaging Corp Earnings Miss Estimates in Q4, Sales Increase Y/Y",
+      "url": "/news/290581/packaging-corp-earnings-miss-estimates-in-q4-sales-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PCA details efficiency gains at upgraded Greif mills",
+      "url": "https://finance.yahoo.com/m/cd4c0ce8-5e94-33d2-b058-a510d18c4fb4/pca-details-efficiency-gains.html",
+      "publisher": "Packaging Dive",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stock Market Today: Dow Jones, Nasdaq Futures Gain As Investors Await Fed Decision, Jerome Powell's Speech-Starbucks, Seagate, Tesla In Focus",
+      "url": "/news/289538/stock-market-today-dow-jones-nasdaq-futures-gain-as-investors-await-fed-decision-jerome-powells-speech-starbucks-seagate-tesla-in-focus",
+      "publisher": "Benzinga",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Packaging Corp. (PKG) Q4 Earnings: Taking a Look at Key Metrics Versus Estimates",
+      "url": "/news/289294/packaging-corp-pkg-q4-earnings-taking-a-look-at-key-metrics-versus-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Packaging Corp. (PKG) Misses Q4 Earnings and Revenue Estimates",
+      "url": "/news/289286/packaging-corp-pkg-misses-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Packaging Corp.: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/packaging-corp-q4-earnings-snapshot-224404034.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Packaging Corporation of America (NYSE:PKG) Misses Q4 CY2025 Sales Expectations",
+      "url": "/news/289121/packaging-corporation-of-america-nyse-pkg-misses-q4-cy2025-sales-expectations",
+      "publisher": "StockStory",
+      "date": "2026-01-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Packaging Corporation of America Reports Fourth Quarter and Full Year 2025 Results",
+      "url": "https://www.businesswire.com/news/home/20260127537087/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    }
+  ]
 }

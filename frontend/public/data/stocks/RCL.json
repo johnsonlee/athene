@@ -6306,7 +6306,15 @@
     "technical_score": 58.03413846886357,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.2185294066962857,
+    "sentiment_pos": 0.14135,
+    "sentiment_neg": 0.01225,
+    "sentiment_neu": 0.8463499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 60.93
+  },
   "analyst": {
     "revision_momentum": 0.045454545454545456,
     "target_upside": 0.06609195402298851,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 50.47847516428571,
     "catalyst_timeline": 64.63608649066612,
     "downside_control": 19.087187941063785,
-    "composite_score": 57.2000296862624,
+    "composite_score": 57.19614064096396,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 62.67713054784695,
     "technical_score": 58.03413846886357,
-    "sentiment_score": 50.0,
+    "sentiment_score": 60.93,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Hotels, Resorts & Cruise Lines"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Stock Market Week: Mapping Out A Deeply Divided Rally",
+      "url": "https://www.investors.com/research/investing-action-plan/stock-market-cisco-systems-robinhood-dow-jones?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Apple, GE Aerospace Lead Five Stocks Flashing Buy Signals",
+      "url": "https://www.investors.com/news/apple-stock-ge-aerospace-stocks-buy-signals?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Carnival Leads Three More Stocks To New Highs",
+      "url": "https://finance.yahoo.com/m/b316d5a8-8fec-343b-9317-8bcf6fd47f14/carnival-leads-three-more.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Royal Caribbean Stock Surges Friday: What Investors Are Watching",
+      "url": "/news/303224/royal-caribbean-stock-surges-friday-what-investors-are-watching",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Popular cruise line abruptly shuts down, cancels all sailings",
+      "url": "https://finance.yahoo.com/m/62f086d8-9a08-3fcc-9938-fd50d4a87f9d/popular-cruise-line-abruptly.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Royal Caribbean, IBD Stock Of The Day, Builds A Handle",
+      "url": "https://www.investors.com/research/ibd-stock-of-the-day/royal-caribbean-ibd-stock-of-the-day-buy-point-earnings-rcl-stock-cruise-lines?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Royal Caribbean (RCL) is a Strong Growth Stock",
+      "url": "/news/301643/heres-why-royal-caribbean-rcl-is-a-strong-growth-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's How Much a $1000 Investment in Royal Caribbean Made 10 Years Ago Would Be Worth Today",
+      "url": "/news/301393/heres-how-much-a-1000-investment-in-royal-caribbean-made-10-years-ago-would-be-worth-today",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BofA Reworks Credit Cards to Fuel Ambitious Consumer Profit Plan",
+      "url": "https://finance.yahoo.com/news/bofa-reworks-credit-cards-fuel-114000513.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "5 Revealing Analyst Questions From Royal Caribbean's Q4 Earnings Call",
+      "url": "/news/300840/5-revealing-analyst-questions-from-royal-caribbeans-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Royal Caribbean (RCL) is a Strong Value Stock",
+      "url": "/news/299569/heres-why-royal-caribbean-rcl-is-a-strong-value-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Royal Caribbean Cruises Ltd. (RCL) Is a Trending Stock: Facts to Know Before Betting on It",
+      "url": "/news/299406/royal-caribbean-cruises-ltd-rcl-is-a-trending-stock-facts-to-know-before-betting-on-it",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How to Find Strong Consumer Discretionary Stocks Slated for Positive Earnings Surprises",
+      "url": "/news/299382/how-to-find-strong-consumer-discretionary-stocks-slated-for-positive-earnings-surprises",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Don't You Dare Buy the Cheapest Cruise Line Stock",
+      "url": "/news/299217/dont-you-dare-buy-the-cheapest-cruise-line-stock",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Caribbean Capacity Surges, Can Carnival Defend Yields in 2026?",
+      "url": "/news/299389/caribbean-capacity-surges-can-carnival-defend-yields-in-2026",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Of The Day: Is The Carnival Rally Over Already?",
+      "url": "/news/297350/stock-of-the-day-is-the-carnival-rally-over-already",
+      "publisher": "Benzinga",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Royal Caribbean Cruises Ltd.",
+      "url": "https://finance.yahoo.com/m/6b1d01ad-b857-3044-a34f-600f5de7d1d7/analyst-report%3A-royal.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jim Cramer Says Royal Caribbean's Full-Year Forecast for 2026 Is \"Spectacular\"",
+      "url": "/news/296095/jim-cramer-says-royal-caribbeans-full-year-forecast-for-2026-is-spectacular",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Carnival Shares Surge As Royal Caribbean's 2026 Outlook Ignites Cruise Sector",
+      "url": "/news/295885/carnival-shares-surge-as-royal-caribbeans-2026-outlook-ignites-cruise-sector",
+      "publisher": "Benzinga",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "RCL Best Booking Streak Ever: Signal of Strong Cruise Demand in 2026?",
+      "url": "/news/295825/rcl-best-booking-streak-ever-signal-of-strong-cruise-demand-in-2026",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    }
+  ]
 }

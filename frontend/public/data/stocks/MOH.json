@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 2269985.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 6.7806233028401,
+    "stoch_k": 6.780623302840099,
     "stoch_d": 7.810054439727018,
     "trend_score": 14.773766036979902,
     "rsi_abs_score": 41.72918279781466,
@@ -6306,7 +6306,15 @@
     "technical_score": 27.491507230766167,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.08317784533621915,
+    "sentiment_pos": 0.0858,
+    "sentiment_neg": 0.0376,
+    "sentiment_neu": 0.8766,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 54.16
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.3095961129668995,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 79.56850942857142,
     "catalyst_timeline": 39.79650190058841,
     "downside_control": 38.7676375,
-    "composite_score": 50.65386726631771,
+    "composite_score": 50.649978221019275,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 55.79883404761905,
     "technical_score": 27.491507230766167,
-    "sentiment_score": 50.0,
+    "sentiment_score": 54.16,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Managed Health Care"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Molina Healthcare Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/b5869506-968f-3fa6-b865-9fad463f1cf9/molina-healthcare-q4-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks to Watch Friday: Amazon, Roblox, Stellantis, Strategy",
+      "url": "https://finance.yahoo.com/m/b9ddf50a-9f85-33bb-abac-388ab9931b3d/stocks-to-watch-friday%3A.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Molina Healthcare Stock Notches Lowest Close in Six Years. Why Its Earnings Outlook Is So Bleak.",
+      "url": "https://finance.yahoo.com/m/c7fe7ab4-d49e-3836-8704-26cd1cf0da9e/molina-healthcare-stock.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Amazon, Strategy, Robinhood, Novo Nordisk, Molina, Stellantis, Hub Group, and More Stock Market Movers",
+      "url": "https://finance.yahoo.com/m/c18863ff-041f-35f2-8054-0ec3d92baa4a/amazon%2C-strategy%2C-robinhood%2C.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Should You Buy the Dip in This Oversold Michael Burry Stock?",
+      "url": "https://finance.yahoo.com/m/ffa4541f-a784-3c03-9f51-d0780354c723/should-you-buy-the-dip-in.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Molina Healthcare Inc (MOH) Q4 2025 Earnings Call Highlights: Navigating Challenges and Seizing ...",
+      "url": "https://finance.yahoo.com/news/molina-healthcare-inc-moh-q4-190126135.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Tech Bounces As Software Sell-Off Eases, Dow Jones Hits Records: What's Moving Markets Friday?",
+      "url": "/news/303167/tech-bounces-as-software-sell-off-eases-dow-jones-hits-records-whats-moving-markets-friday",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "FDA warns against illegal copycat drugs, Molina stock sinks",
+      "url": "https://finance.yahoo.com/video/fda-warns-against-illegal-copycat-181256473.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "These Stocks Are Todays Movers: Amazon, Strategy, Robinhood, Novo Nordisk, Molina, Stellantis, Hub Group, and More",
+      "url": "https://finance.yahoo.com/m/c18863ff-041f-35f2-8054-0ec3d92baa4a/these-stocks-are-today%E2%80%99s.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Molina, Centene Fall on Concerns About Medicaid Business",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-02-06-2026/card/molina-centene-fall-on-concerns-about-medicaid-business-NDTlN1Q40rBrXXVNfzVK?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Molina Healthcare, Inc.",
+      "url": "https://finance.yahoo.com/m/60381243-966f-39c2-a8d3-824838b178a6/analyst-report%3A-molina.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "S&P 500 Health Insurer Dives As ACA Enrollment Implodes",
+      "url": "https://www.investors.com/news/sp-500-health-insurance-stocks-aca-enrollment-centene-molina?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Molina Healthcare Incurs a Loss in Q4 as Medical Costs Surge",
+      "url": "/news/302966/molina-healthcare-incurs-a-loss-in-q4-as-medical-costs-surge",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Burry says he's 'happy' as insurer he's championed, Molina, dives nearly 30%",
+      "url": "https://www.marketwatch.com/story/burry-says-hes-happy-as-insurer-hes-championed-molina-dives-nearly-30-31e234b6?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Molina Healthcare Stock Falls 27%. Why Its Earnings Outlook Is So Bleak.",
+      "url": "https://www.barrons.com/articles/molina-healthcare-earnings-stock-price-5a29806e?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Index Futures Climb After Tech Rout, Amazon Slips on CapEx Blowout",
+      "url": "https://finance.yahoo.com/m/2334f854-a77f-3c9c-862b-303f96bef555/stock-index-futures-climb.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "These Stocks Are Today's Movers: Amazon, Strategy, Novo Nordisk, Molina Healthcare, Strategy, Roblox, Hub Group, and More",
+      "url": "https://www.barrons.com/articles/stock-movers-6654979f?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Premarket movers: Amazon, Stellantis, Strategy, Molina Healthcare",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-and-nasdaq-set-to-extend-losses-on-amazon-s-aggressive-spending-plans/card/premarket-movers-amazon-stellantis-strategy-molina-healthcare-0L9rT3VQZNQYdjVYduRi?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stock Market Today: Dow, S&P 500 and Nasdaq set for gains; Amazon slumps, bitcoin rises",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-and-nasdaq-set-to-extend-losses-on-amazon-s-aggressive-spending-plans?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Molina (MOH) Q4 Earnings: How Key Metrics Compare to Wall Street Estimates",
+      "url": "/news/302278/molina-moh-q4-earnings-how-key-metrics-compare-to-wall-street-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    }
+  ]
 }

@@ -6277,25 +6277,25 @@
   },
   "technical": {
     "close": 283.5199890136719,
-    "sma_20": 304.11200103759774,
+    "sma_20": 304.1120010375977,
     "sma_50": 313.97880004882813,
     "sma_200": 324.1760499572753,
-    "trend_alignment": 0.32349222906349223,
+    "trend_alignment": 0.3234922290634923,
     "rsi": 38.21692021336354,
     "rsi_score": -0.23566159573272927,
     "macd_histogram": -3.3049317982926985,
     "macd_line": -10.788561580981536,
     "macd_histogram_pct": -1.1656785857639578,
-    "bb_position": 0.23624485124243008,
-    "bb_upper": 343.1482286163302,
-    "bb_lower": 265.0757734588653,
+    "bb_position": 0.23624485124243083,
+    "bb_upper": 343.14822861633013,
+    "bb_lower": 265.0757734588652,
     "bb_width": 0.256722703777194,
     "hist_volatility": 0.44000272638590343,
     "volume_ratio": 1.1670847926683556,
     "avg_volume_20d": 2435470.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 26.121071301845426,
+    "stoch_k": 26.121071301845422,
     "stoch_d": 18.926798350083924,
     "trend_score": 32.349222906349226,
     "rsi_abs_score": 59.860304256036244,
@@ -6306,7 +6306,15 @@
     "technical_score": 38.049338126634396,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.21291602977523505,
+    "sentiment_pos": 0.097,
+    "sentiment_neg": 0.01105,
+    "sentiment_neu": 0.8919499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 60.65
+  },
   "analyst": {
     "revision_momentum": 0.5,
     "target_upside": 0.3755643340857789,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 31.919823264761902,
     "catalyst_timeline": 49.14062742415891,
     "downside_control": 50.40427682571982,
-    "composite_score": 52.2248149257843,
+    "composite_score": 52.220925880485865,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 63.49853605396826,
     "technical_score": 38.049338126634396,
-    "sentiment_score": 50.0,
+    "sentiment_score": 60.65,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 351,
-    "percentile": 0.325626204238921,
+    "rank": 352,
+    "percentile": 0.3236994219653179,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Application Software"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Strength Seen in OptimizeRx (OPRX): Can Its 7.5% Jump Turn into More Strength?",
+      "url": "/news/301083/strength-seen-in-optimizerx-oprx-can-its-75-jump-turn-into-more-strength",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cadence (CDNS) Is Considered a Good Investment by Brokers: Is That True?",
+      "url": "/news/299511/cadence-cdns-is-considered-a-good-investment-by-brokers-is-that-true",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Nvidia's Huang Says It's 'Illogical' to Think AI Will Replace Software Tools",
+      "url": "https://finance.yahoo.com/m/8dede680-1bde-36d4-8d3f-8b4cc1a7fc3b/nvidia%27s-huang-says-it%27s.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nvidia CEO Jensen Huang Says It's 'Illogical' to Think AI Will Replace Software Tools",
+      "url": "https://finance.yahoo.com/m/8dede680-1bde-36d4-8d3f-8b4cc1a7fc3b/nvidia-ceo-jensen-huang-says.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Cadence Design Systems, Inc.",
+      "url": "https://finance.yahoo.com/m/ec9d7ba3-deed-3805-a92b-4f041d178e2c/analyst-report%3A-cadence.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cadence Design Systems (CDNS) Stock Sinks As Market Gains: What You Should Know",
+      "url": "/news/296303/cadence-design-systems-cdns-stock-sinks-as-market-gains-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cadence Design Systems, Inc. (CDNS) is Attracting Investor Attention: Here is What You Should Know",
+      "url": "/news/295596/cadence-design-systems-inc-cdns-is-attracting-investor-attention-here-is-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Lightmatter advances AI infrastructure with photonic interconnects in 2026",
+      "url": "https://www.digitimes.com/news/a20260128VL203/infrastructure-2026-cpo-taiwan-bandwidth.html",
+      "publisher": "DigiTimes",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cadence & Lightmatter Team Up to Scale Optical Connectivity for AI",
+      "url": "/news/288405/cadence-lightmatter-team-up-to-scale-optical-connectivity-for-ai",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cadence Design Systems: A Deep Dive Into Its Market Potential",
+      "url": "/news/287658/cadence-design-systems-a-deep-dive-into-its-market-potential",
+      "publisher": "Motley Fool",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cadence Design Systems (CDNS) Exceeds Market Returns: Some Facts to Consider",
+      "url": "/news/287596/cadence-design-systems-cdns-exceeds-market-returns-some-facts-to-consider",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "A Hidden Monopoly: Why AI Can't Exist Without Cadence",
+      "url": "/news/283840/a-hidden-monopoly-why-ai-cant-exist-without-cadence",
+      "publisher": "MarketBeat",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cadence Unveils HiFi iQ DSP to Power Next-Gen Voice AI and Audio",
+      "url": "/news/283964/cadence-unveils-hifi-iq-dsp-to-power-next-gen-voice-ai-and-audio",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cadence Design Systems (CDNS) Outperforms Broader Market: What You Need to Know",
+      "url": "/news/283199/cadence-design-systems-cdns-outperforms-broader-market-what-you-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Markets Rally As Trump Drops Greenland's Tariff Threat: These 10 Stocks Are Soaring",
+      "url": "/news/282895/markets-rally-as-trump-drops-greenlands-tariff-threat-these-10-stocks-are-soaring",
+      "publisher": "Benzinga",
+      "date": "2026-01-21",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Nvidia, Broadcom, Marvell Poised To Benefit From AI-Driven Semiconductor Upswing, JPMorgan Says",
+      "url": "/news/282680/nvidia-broadcom-marvell-poised-to-benefit-from-ai-driven-semiconductor-upswing-jpmorgan-says",
+      "publisher": "Benzinga",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cadence Unveils Tensilica HiFi iQ DSP Purpose-Built for Next-Generation Voice AI and Audio Applications",
+      "url": "https://www.businesswire.com/news/home/20260121788959/en/As",
+      "publisher": "Business Wire",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "2 of Wall Street's Favorite Stocks with Solid Fundamentals and 1 Facing Challenges",
+      "url": "/news/280303/2-of-wall-streets-favorite-stocks-with-solid-fundamentals-and-1-facing-challenges",
+      "publisher": "StockStory",
+      "date": "2026-01-18",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is CDNS Worth Adding Despite Breakeven Returns in the Past Six Months?",
+      "url": "/news/278921/is-cdns-worth-adding-despite-breakeven-returns-in-the-past-six-months",
+      "publisher": "Zacks",
+      "date": "2026-01-16",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Cadence Design Systems' Q4 2025 Earnings: What to Expect",
+      "url": "https://finance.yahoo.com/m/55731960-3229-3454-b7c7-3f53284191ee/cadence-design-systems%27-q4.html",
+      "publisher": "Barchart",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    }
+  ]
 }

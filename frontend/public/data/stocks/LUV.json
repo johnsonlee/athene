@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 96.66010472416407,
-    "stoch_d": 97.35427836772189,
+    "stoch_d": 97.3542783677219,
     "trend_score": 93.28821441773502,
     "rsi_abs_score": 28.68090230015997,
     "macd_abs_score": 80.0,
@@ -6306,7 +6306,15 @@
     "technical_score": 58.08859967034449,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.15392144001724176,
+    "sentiment_pos": 0.17335,
+    "sentiment_neg": 0.036699999999999997,
+    "sentiment_neu": 0.7899499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 57.7
+  },
   "analyst": {
     "revision_momentum": 0.125,
     "target_upside": -0.06008109104312566,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 58.75430322,
     "catalyst_timeline": 63.772298919479624,
     "downside_control": 25.0151027663682,
-    "composite_score": 48.94938924728451,
+    "composite_score": 48.94550020198607,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 50.2230146051576,
     "technical_score": 58.08859967034449,
-    "sentiment_score": 50.0,
+    "sentiment_score": 57.7,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Passenger Airlines"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Southwest Airlines adds a policy Delta and United passengers hate",
+      "url": "https://finance.yahoo.com/m/afb83b0e-9823-305e-8e30-5e99000a1901/southwest-airlines-adds-a.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Dow Theory Sends a Buy Signal as Transportation Stocks Rally",
+      "url": "https://finance.yahoo.com/m/3db04dd8-c259-3d7c-9666-14e3492afbec/%E2%80%98dow-theory%E2%80%99-sends-a-buy.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What Makes Southwest Airlines (LUV) a Strong Momentum Stock: Buy Now?",
+      "url": "/news/303143/what-makes-southwest-airlines-luv-a-strong-momentum-stock-buy-now",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Zacks.com featured highlights include Archrock, Southwest Airlines, Ford Motor, Seagate Technology and Texas Capital Bancshares",
+      "url": "/news/302600/zackscom-featured-highlights-include-archrock-southwest-airlines-ford-motor-seagate-technology-and-texas-capital-bancshares",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Susquehanna Lifts PT on Southwest Airlines Co. (LUV) to $55 From $45 - Here's Why",
+      "url": "/news/302380/susquehanna-lifts-pt-on-southwest-airlines-co-luv-to-55-from-45-heres-why",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "This Airline Stock Is Soaring in 2026. Elliott Investment Management Reduced Its Stake.",
+      "url": "https://www.barrons.com/articles/airline-southwest-elliott-investment-management-stock-7759a411?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Market Today: Nasdaq Leads Stocks Down Again; Alphabet Cuts Losses After Earnings News (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/e263e442-296b-39d8-8185-e01b4d948dbe/stock-market-today%3A-nasdaq.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "SOUTHWEST AIRLINES DECLARES 188th QUARTERLY DIVIDEND",
+      "url": "/news/301423/southwest-airlines-declares-188th-quarterly-dividend",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Union Pacific Inks $1.2B Locomotive Modernization Deal With Wabtec",
+      "url": "/news/301628/union-pacific-inks-12b-locomotive-modernization-deal-with-wabtec",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Looking for Leaders? 5 Stocks With Relative Price Strength",
+      "url": "/news/301363/looking-for-leaders-5-stocks-with-relative-price-strength",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ryanair's Traffic Numbers for January 2026 Improve Year Over Year",
+      "url": "/news/299954/ryanairs-traffic-numbers-for-january-2026-improve-year-over-year",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jim Cramer Notes \"Southwest Took a Big Risk With Some New Policies\"",
+      "url": "/news/297744/jim-cramer-notes-southwest-took-a-big-risk-with-some-new-policies",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "The Zacks Rank Explained: How to Find Strong Buy Transportation Stocks",
+      "url": "/news/297452/the-zacks-rank-explained-how-to-find-strong-buy-transportation-stocks",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Southwest Airlines (LUV) Posts $7.4B Revenue for Q4 2025 as EPS Beats Guidance",
+      "url": "/news/296900/southwest-airlines-luv-posts-74b-revenue-for-q4-2025-as-eps-beats-guidance",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Gain on US Manufacturing Strength",
+      "url": "https://finance.yahoo.com/m/fd077afd-6eb7-36bd-8cc3-d39c206200ed/stocks-gain-on-us.html",
+      "publisher": "Barchart",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Best Momentum Stocks to Buy for February 2nd",
+      "url": "/news/295831/best-momentum-stocks-to-buy-for-february-2nd",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Southwest Airlines (LUV) is a Top Momentum Stock for the Long-Term",
+      "url": "/news/295776/why-southwest-airlines-luv-is-a-top-momentum-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "This 1 Overlooked Airline Stock to Be the Best Bet on a Turnaround in 2026",
+      "url": "https://finance.yahoo.com/m/bd298c04-bdf4-3e8a-bd7b-c10259dd9237/this-1-overlooked-airline.html",
+      "publisher": "Barchart",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "New Strong Buy Stocks for February 2nd",
+      "url": "/news/295179/new-strong-buy-stocks-for-february-2nd",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Best Value Stocks to Buy for February 2nd",
+      "url": "/news/295130/best-value-stocks-to-buy-for-february-2nd",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    }
+  ]
 }

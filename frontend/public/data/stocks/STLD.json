@@ -6306,7 +6306,15 @@
     "technical_score": 61.327963886870904,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.33257808390251214,
+    "sentiment_pos": 0.24184999999999998,
+    "sentiment_neg": 0.0163,
+    "sentiment_neu": 0.74185,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 66.63
+  },
   "analyst": {
     "revision_momentum": -0.2,
     "target_upside": -0.036513661742180875,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 63.76189952,
     "catalyst_timeline": 65.26280551565961,
     "downside_control": 49.89457908247971,
-    "composite_score": 63.87645886594628,
+    "composite_score": 63.87256982064785,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 67.12644764761906,
     "technical_score": 61.327963886870904,
-    "sentiment_score": 50.0,
+    "sentiment_score": 66.63,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Materials",
     "industry": "Steel"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "25 Stocks to Buy for a Profitable February",
+      "url": "/news/297429/25-stocks-to-buy-for-a-profitable-february",
+      "publisher": "Schaeffer's Research",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "White House Gets Community Noted On X: Graph On US Steel Production Called Misleading",
+      "url": "/news/296218/white-house-gets-community-noted-on-x-graph-on-us-steel-production-called-misleading",
+      "publisher": "Benzinga",
+      "date": "2026-02-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "BlueScope Steel Open to Better Offers After Spurning $8.8 Billion Takeover Bid",
+      "url": "https://www.wsj.com/business/bluescope-steel-open-to-better-offers-after-spurning-8-8-billion-takeover-bid-f228a6e2?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why Steel Dynamics (STLD) is a Strong Momentum Stock",
+      "url": "/news/290250/heres-why-steel-dynamics-stld-is-a-strong-momentum-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Investors Need to Take Advantage of These 2 Basic Materials Stocks Now",
+      "url": "/news/290060/why-investors-need-to-take-advantage-of-these-2-basic-materials-stocks-now",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here's Why Steel Dynamics (STLD) is a Strong Value Stock",
+      "url": "/news/288499/heres-why-steel-dynamics-stld-is-a-strong-value-stock",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Company News for Jan 27, 2026",
+      "url": "/news/287971/company-news-for-jan-27-2026",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Steel Dynamics Inc (STLD) Q4 2025 Earnings Call Highlights: Record Steel Shipments and Strong ...",
+      "url": "https://finance.yahoo.com/news/steel-dynamics-inc-stld-q4-230033800.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Steel Dynamics Reinforces Outlook: Higher Highs Coming",
+      "url": "/news/287346/steel-dynamics-reinforces-outlook-higher-highs-coming",
+      "publisher": "MarketBeat",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Steel Dynamics Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/34a444e5-6551-39fa-ac8f-0d2a8f1d9240/steel-dynamics-q4-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Steel Dynamics Smashes 52-Week High On Record Steel Shipments",
+      "url": "/news/286873/steel-dynamics-smashes-52-week-high-on-record-steel-shipments",
+      "publisher": "Benzinga",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Steel Dynamics (STLD) Q4 Earnings: How Key Metrics Compare to Wall Street Estimates",
+      "url": "/news/287025/steel-dynamics-stld-q4-earnings-how-key-metrics-compare-to-wall-street-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Steel Dynamics Tops Q4 Earnings, Misses Revenue Estimates",
+      "url": "/news/287033/steel-dynamics-tops-q4-earnings-misses-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Steel Dynamics (STLD) Q4 Earnings Top Estimates",
+      "url": "/news/286996/steel-dynamics-stld-q4-earnings-top-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Steel Dynamics Falls on Earnings Beat. It Still Offers Hope for the Sector in 2026.",
+      "url": "https://www.barrons.com/articles/steel-dynamics-stock-price-earnings-6b5cf43a?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Steel Dynamics: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/steel-dynamics-q4-earnings-snapshot-132418612.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Steel Dynamics shares rise as fourth quarter earnings beat expectations",
+      "url": "https://finance.yahoo.com/news/steel-dynamics-shares-rise-fourth-125743678.html",
+      "publisher": "Investing.com",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Steel Dynamics Reports Fourth Quarter and Annual 2025 Results",
+      "url": "/news/286639/steel-dynamics-reports-fourth-quarter-and-annual-2025-results",
+      "publisher": "PR Newswire",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Meta Earnings, Fed Decision, Venezuela Testimony: What to Watch This Week",
+      "url": "https://finance.yahoo.com/m/f833fbd6-34ab-3296-a9ea-3ed840ee3be1/meta-earnings%2C-fed-decision%2C.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Big Tech earnings, Fed meeting feature as markets end January with busiest week of Q1: What to watch",
+      "url": "https://finance.yahoo.com/news/big-tech-earnings-fed-meeting-feature-as-markets-end-january-with-busiest-week-of-q1-what-to-watch-125211822.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-01-25",
+      "sentiment": "neutral"
+    }
+  ]
 }

@@ -6306,7 +6306,15 @@
     "technical_score": 56.46054763156056,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.18423441554250977,
+    "sentiment_pos": 0.09004999999999999,
+    "sentiment_neg": 0.07925,
+    "sentiment_neu": 0.8307,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 59.21
+  },
   "analyst": {
     "revision_momentum": -0.2,
     "target_upside": 0.018675721561969463,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 61.38768737142857,
     "catalyst_timeline": 55.8111793801398,
     "downside_control": 57.02232507930663,
-    "composite_score": 57.130133092077344,
+    "composite_score": 57.12624404677891,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 58.02672614285714,
     "technical_score": 56.46054763156056,
-    "sentiment_score": 50.0,
+    "sentiment_score": 59.21,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Staples",
     "industry": "Distillers & Vintners"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Zacks Industry Outlook Highlights Anheuser-Busch InBev , Constellation Brands, Brown-Forman and The Boston Beer",
+      "url": "/news/293091/zacks-industry-outlook-highlights-anheuser-busch-inbev-constellation-brands-brown-forman-and-the-boston-beer",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Top 4 Alcohol Stocks to Track Amid Inflation & Tariff Headwinds",
+      "url": "/news/292387/top-4-alcohol-stocks-to-track-amid-inflation-tariff-headwinds",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is Boston Beer's Innovation Pipeline Driving New Category Share?",
+      "url": "/news/287139/is-boston-beers-innovation-pipeline-driving-new-category-share",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "AB InBev Leverages Premiumization and Digital Expansion to Fuel Growth",
+      "url": "/news/287005/ab-inbev-leverages-premiumization-and-digital-expansion-to-fuel-growth",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Brown-Forman Advances on Strong Brands and Premiumization",
+      "url": "/news/282865/brown-forman-advances-on-strong-brands-and-premiumization",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Brown-Forman (BF.B) Stock Is Trading Lower Today",
+      "url": "/news/279397/why-brown-forman-bfb-stock-is-trading-lower-today",
+      "publisher": "StockStory",
+      "date": "2026-01-16",
+      "sentiment": "negative"
+    },
+    {
+      "title": "1 Cash-Producing Stock on Our Buy List and 2 We Turn Down",
+      "url": "/news/279374/1-cash-producing-stock-on-our-buy-list-and-2-we-turn-down",
+      "publisher": "StockStory",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Mid-Cap Stocks We Find Risky",
+      "url": "/news/277247/3-mid-cap-stocks-we-find-risky",
+      "publisher": "StockStory",
+      "date": "2026-01-14",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Why Brown-Forman (BF.B) Stock Is Trading Up Today",
+      "url": "/news/276777/why-brown-forman-bfb-stock-is-trading-up-today",
+      "publisher": "StockStory",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Fundsmith Equity Fund Sold Brown-Forman Corporation (BF-B)",
+      "url": "/news/274548/heres-why-fundsmith-equity-fund-sold-brown-forman-corporation-bf-b",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-13",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Unpacking Q3 Earnings: Brown-Forman (NYSE:BF.B) In The Context Of Other Beverages, Alcohol, and Tobacco Stocks",
+      "url": "/news/272667/unpacking-q3-earnings-brown-forman-nyse-bfb-in-the-context-of-other-beverages-alcohol-and-tobacco-stocks",
+      "publisher": "StockStory",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Market Today: Chips take a breather",
+      "url": "https://finance.yahoo.com/m/ef4f1c68-06af-3f81-a0eb-e31bae4f8cae/stock-market-today%3A-chips.html",
+      "publisher": "TheStreet",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jim Cramer Discusses Brown-Forman (BF-B) & Alcohol Industry",
+      "url": "/news/263969/jim-cramer-discusses-brown-forman-bf-b-alcohol-industry",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "4 reasons Americans aren't drinking as much alcohol this holiday season - or any at all",
+      "url": "https://www.marketwatch.com/story/4-reasons-americans-arent-drinking-as-much-alcohol-this-holiday-season-or-any-at-all-6859a49b?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2025-12-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "1 Consumer Stock to Target This Week and 2 We Question",
+      "url": "/news/260325/1-consumer-stock-to-target-this-week-and-2-we-question",
+      "publisher": "StockStory",
+      "date": "2025-12-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Brown-Forman (BF.B) Stock Trades Down, Here Is Why",
+      "url": "/news/256575/brown-forman-bfb-stock-trades-down-here-is-why",
+      "publisher": "StockStory",
+      "date": "2025-12-17",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Brown-Forman (BF-B) Faces U.S. Demand Weakness Despite Product Gains, RBC Capital Maintains Neutral Rating",
+      "url": "/news/253690/brown-forman-bf-b-faces-us-demand-weakness-despite-product-gains-rbc-capital-maintains-neutral-rating",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-14",
+      "sentiment": "negative"
+    },
+    {
+      "title": "BTIG thinks Apple stock is poised to drop, PepsiCo nears settlement",
+      "url": "https://finance.yahoo.com/video/btig-thinks-apple-stock-poised-204301445.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2025-12-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Brown-Forman's Q2 Earnings Miss Estimates, Gross Margin Expands Y/Y",
+      "url": "/news/246178/brown-formans-q2-earnings-miss-estimates-gross-margin-expands-yy",
+      "publisher": "Zacks",
+      "date": "2025-12-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Why Jack Daniel's parent Brown-Forman is reporting lower sales, profit",
+      "url": "https://finance.yahoo.com/m/c1d0aea3-66aa-3df8-b214-df51beb2c1c7/why-jack-daniel%27s-parent.html",
+      "publisher": "The Courier Journal",
+      "date": "2025-12-04",
+      "sentiment": "positive"
+    }
+  ]
 }

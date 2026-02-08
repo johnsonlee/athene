@@ -6306,7 +6306,15 @@
     "technical_score": 62.62990513735854,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.1158944772571887,
+    "sentiment_pos": 0.11615,
+    "sentiment_neg": 0.039749999999999994,
+    "sentiment_neu": 0.8441000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 55.79
+  },
   "analyst": {
     "revision_momentum": -0.07692307692307693,
     "target_upside": 0.01861993428258497,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 37.8029568,
     "catalyst_timeline": 60.818219325445064,
     "downside_control": 47.25965672909592,
-    "composite_score": 49.17469906128248,
+    "composite_score": 49.170810015984046,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 49.48249191666667,
     "technical_score": 62.62990513735854,
-    "sentiment_score": 50.0,
+    "sentiment_score": 55.79,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Real Estate",
     "industry": "Industrial REITs"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "EastGroup Properties Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/9afa6e54-f20d-341b-b795-ea46cf752f92/eastgroup-properties-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Crown Castle Q4 AFFO & Sales Beat Estimates, Services Revenues Rise",
+      "url": "/news/301876/crown-castle-q4-affo-sales-beat-estimates-services-revenues-rise",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Three Companies Control Schwabs US REIT Returns As Debt Maturity Cliff Threatens 2026 Returns",
+      "url": "https://finance.yahoo.com/m/67dd5240-5419-3093-bf1d-c6f1abf95c3d/three-companies-control.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stock Market Today, Feb. 4: Palantir Slides as Valuation Concerns Override Strong Quarter",
+      "url": "/news/300412/stock-market-today-feb-4-palantir-slides-as-valuation-concerns-override-strong-quarter",
+      "publisher": "Motley Fool",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What Are Wall Street Analysts' Target Price for Prologis Stock?",
+      "url": "https://finance.yahoo.com/m/65e5d0bf-a955-3801-b1f9-a87a79af2621/what-are-wall-street.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Prologis Might Fund Data Centers With New Pool of Investor Capital",
+      "url": "https://finance.yahoo.com/m/9831e938-2c1c-3ce8-90fc-4d3dd9f22bb7/prologis-might-fund-data.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Forget AI Stocks: This REIT Could Be Your Ticket to AI Profits",
+      "url": "/news/294837/forget-ai-stocks-this-reit-could-be-your-ticket-to-ai-profits",
+      "publisher": "Motley Fool",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Afraid of an AI Correction This Year? This Industrial Stock Has AI Upside With Value Pricing",
+      "url": "/news/293753/afraid-of-an-ai-correction-this-year-this-industrial-stock-has-ai-upside-with-value-pricing",
+      "publisher": "Motley Fool",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Prologis forecasts moderate global rent growth in 2026",
+      "url": "https://finance.yahoo.com/news/prologis-forecasts-moderate-global-rent-163401659.html",
+      "publisher": "FreightWaves",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "These 2 Finance Stocks Could Beat Earnings: Why They Should Be on Your Radar",
+      "url": "/news/291731/these-2-finance-stocks-could-beat-earnings-why-they-should-be-on-your-radar",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Freedom Capital Raised Prologis, Inc. (PLD)'s Target to $138, Cites Portfolio Strength Despite Downgrade",
+      "url": "/news/291504/freedom-capital-raised-prologis-inc-plds-target-to-138-cites-portfolio-strength-despite-downgrade",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "10 Dividend Stocks to Buy Today and Hold Forever",
+      "url": "/news/291398/10-dividend-stocks-to-buy-today-and-hold-forever",
+      "publisher": "Motley Fool",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 REITs Every Investor Should Know About",
+      "url": "/news/290593/3-reits-every-investor-should-know-about",
+      "publisher": "Motley Fool",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Prologis Announces Tax Treatment of 2025 Dividends",
+      "url": "/news/289128/prologis-announces-tax-treatment-of-2025-dividends",
+      "publisher": "PR Newswire",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "2 Stocks I'd Happily Hold Through Any Stock Market Crash",
+      "url": "/news/288326/2-stocks-id-happily-hold-through-any-stock-market-crash",
+      "publisher": "Motley Fool",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Prediction: These 2 Top Stocks Will Be the Largest REIT Dividend Payers in 2026",
+      "url": "/news/287833/prediction-these-2-top-stocks-will-be-the-largest-reit-dividend-payers-in-2026",
+      "publisher": "Motley Fool",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Industrial REIT Prologis Is a Data Center Play. Why Some Analysts Don't See It as a Buy.",
+      "url": "https://www.barrons.com/articles/reit-prologis-data-center-stock-898bb7fd?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Plymouth Industrial Announces Acquisition Approval by Stockholders",
+      "url": "/news/286999/plymouth-industrial-announces-acquisition-approval-by-stockholders",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Safe Dividend Stocks Yielding At Least 3% to Buy Without Hesitation Right Now",
+      "url": "/news/286359/3-safe-dividend-stocks-yielding-at-least-3-to-buy-without-hesitation-right-now",
+      "publisher": "Motley Fool",
+      "date": "2026-01-25",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Beyond the Hype: 3 Unexpected AI Stocks Hiding in Plain Sight",
+      "url": "/news/286279/beyond-the-hype-3-unexpected-ai-stocks-hiding-in-plain-sight",
+      "publisher": "Motley Fool",
+      "date": "2026-01-25",
+      "sentiment": "negative"
+    }
+  ]
 }

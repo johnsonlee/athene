@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 27.35720972834082,
-    "stoch_d": 34.637947329342325,
+    "stoch_d": 34.63794732934233,
     "trend_score": 44.1501890580033,
     "rsi_abs_score": 68.53779358369147,
     "macd_abs_score": 41.03764045792438,
@@ -6306,12 +6306,20 @@
     "technical_score": 54.00007906815466,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.0444891584605055,
+    "sentiment_pos": 0.03585000000000001,
+    "sentiment_neg": 0.014150000000000001,
+    "sentiment_neu": 0.95,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 52.22
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.09361991977597824,
     "consensus_rating": 2.4,
-    "analyst_revision_count": 12.0,
+    "analyst_revision_count": 11.0,
     "analyst_count": 24.0,
     "analyst_upgrades": 1.0,
     "analyst_downgrades": 1.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 42.74145883333333,
     "catalyst_timeline": 50.409295186704995,
     "downside_control": 51.636197933383464,
-    "composite_score": 44.37808527764006,
+    "composite_score": 44.374196232341625,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 42.173099444444446,
     "technical_score": 54.00007906815466,
-    "sentiment_score": 50.0,
+    "sentiment_score": 52.22,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Real Estate",
     "industry": "Multi-Family Residential REITs"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Mid-America Apartment Communities Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/f9bb78a9-d706-3ff7-bea0-b276bb0bba65/mid-america-apartment.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Camden's Q4 FFO Beats Estimates, Revenues Up Y/Y, Dividend Raised",
+      "url": "/news/302803/camdens-q4-ffo-beats-estimates-revenues-up-yy-dividend-raised",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Equity Residential Q4 FFO & Revenues Miss Estimates but Increase Y/Y",
+      "url": "/news/302799/equity-residential-q4-ffo-revenues-miss-estimates-but-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Mid-America Apartment Communities Inc (MAA) Q4 2025 Earnings Call Highlights: Navigating Supply ...",
+      "url": "https://finance.yahoo.com/news/mid-america-apartment-communities-inc-210805687.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Essex Property Q4 Core FFO Lags Estimates, Revenues Beat & Rise Y/Y",
+      "url": "/news/301582/essex-property-q4-core-ffo-lags-estimates-revenues-beat-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Mid-America Apartment's Q4 FFO Beats Estimates, Revenues Grow Y/Y",
+      "url": "/news/301583/mid-america-apartments-q4-ffo-beats-estimates-revenues-grow-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AvalonBay Q4 FFO Tops Estimates, Revenues Grow Y/Y, Dividend Raised",
+      "url": "/news/301416/avalonbay-q4-ffo-tops-estimates-revenues-grow-yy-dividend-raised",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Mid-America Apartment Communities (MAA) Surpasses Q4 FFO Estimates",
+      "url": "/news/300404/mid-america-apartment-communities-maa-surpasses-q4-ffo-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Mid-America Apartment Communities: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/mid-america-apartment-communities-q4-213642991.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MAA REPORTS FOURTH QUARTER AND FULL YEAR 2025 RESULTS",
+      "url": "/news/300224/maa-reports-fourth-quarter-and-full-year-2025-results",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How Are Residential REITs Positioned Ahead of Q4 Earnings?",
+      "url": "/news/297868/how-are-residential-reits-positioned-ahead-of-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What's in Store for Mid-America Apartment Stock in Q4 Earnings?",
+      "url": "/news/295851/whats-in-store-for-mid-america-apartment-stock-in-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MAA settles RealPage suit for $53M",
+      "url": "https://finance.yahoo.com/m/7d9f45fe-a778-3325-806e-a0af62a5d6fd/maa-settles-realpage-suit-for.html",
+      "publisher": "Multifamily Dive",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Barclays Raises MAA Price Target in 2026 REIT Outlook, Keeps Equal Weight Rating",
+      "url": "/news/283264/barclays-raises-maa-price-target-in-2026-reit-outlook-keeps-equal-weight-rating",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MAA Announces Taxable Composition of 2025 Distributions",
+      "url": "/news/281628/maa-announces-taxable-composition-of-2025-distributions",
+      "publisher": "PR Newswire",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MAA Announces Date of Fourth Quarter and Full-Year 2025 Earnings Release, Conference Call",
+      "url": "/news/276741/maa-announces-date-of-fourth-quarter-and-full-year-2025-earnings-release-conference-call",
+      "publisher": "PR Newswire",
+      "date": "2026-01-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Mid-America Apartments Q4 2025 Earnings: What to Expect",
+      "url": "https://finance.yahoo.com/m/6c443de6-515b-30a6-9dbb-098640061111/mid-america-apartment%E2%80%99s-q4.html",
+      "publisher": "Barchart",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Evercore ISI Trims MAA Target as NAREIT Highlights Mixed REIT Signals",
+      "url": "/news/261379/evercore-isi-trims-maa-target-as-nareit-highlights-mixed-reit-signals",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Brilliant High-Yield Dividend Stocks to Buy Now and Hold for the Long Term",
+      "url": "/news/259498/3-brilliant-high-yield-dividend-stocks-to-buy-now-and-hold-for-the-long-term",
+      "publisher": "Motley Fool",
+      "date": "2025-12-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is Mid-America Apartment's Latest Dividend Hike Sustainable?",
+      "url": "/news/257790/is-mid-america-apartments-latest-dividend-hike-sustainable",
+      "publisher": "Zacks",
+      "date": "2025-12-18",
+      "sentiment": "neutral"
+    }
+  ]
 }

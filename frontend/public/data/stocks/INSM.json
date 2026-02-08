@@ -6306,7 +6306,15 @@
     "technical_score": 49.51199481905097,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.08497741175738158,
+    "sentiment_pos": 0.10899999999999999,
+    "sentiment_neg": 0.01755,
+    "sentiment_neu": 0.8734500000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 54.25
+  },
   "analyst": {
     "revision_momentum": 0.125,
     "target_upside": 0.4246630188175629,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 27.368,
     "catalyst_timeline": 56.74628268717014,
     "downside_control": 50.099294013771306,
-    "composite_score": 36.737208294108726,
+    "composite_score": 36.73331924881029,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 38.01095,
     "technical_score": 49.51199481905097,
-    "sentiment_score": 50.0,
+    "sentiment_score": 54.25,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Healthcare",
     "industry": "Biotechnology"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Insmed to Host Fourth-Quarter and Full-Year 2025 Financial Results Conference Call on Thursday, February 19, 2026",
+      "url": "/news/300985/insmed-to-host-fourth-quarter-and-full-year-2025-financial-results-conference-call-on-thursday-february-19-2026",
+      "publisher": "PR Newswire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Druckenmiller Connection: Meet the Man Behind Bessent and Warsh",
+      "url": "https://www.barrons.com/articles/stan-druckenmiller-bessent-warsh-fed-chair-507bd26b?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Insmed to Present Multiple Abstracts on Treprostinil Palmitil Inhalation Powder (TPIP) at Pulmonary Vascular Research Institute (PVRI) 2026 Congress",
+      "url": "/news/289670/insmed-to-present-multiple-abstracts-on-treprostinil-palmitil-inhalation-powder-tpip-at-pulmonary-vascular-research-institute-pvri-2026-congress",
+      "publisher": "PR Newswire",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here Are Fridays Top Wall Street Analyst Research Calls: Applied Materials, e.l.f. Beauty, Fortinet, Freeport MacMoRan, Procter & Gamble, Spotify, and More",
+      "url": "https://finance.yahoo.com/m/0ba8449c-4e0b-3d57-8a7f-3fc0a9128a4b/here-are-friday%E2%80%99s-top-wall.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Weighs Patent Cliff Risks Against Insmed's (INSM) Growth Story",
+      "url": "/news/279938/analyst-weighs-patent-cliff-risks-against-insmeds-insm-growth-story",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-19",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Insmed CEO Will Lewis talks its rare disease drug pipeline",
+      "url": "https://www.youtube.com/watch?v=T_dDSR_lBsQ",
+      "publisher": "CNBC TV",
+      "date": "2026-01-12",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "INSM Stock Jumps on 2025 Preliminary Sales, 2026 Goals Announced",
+      "url": "/news/273774/insm-stock-jumps-on-2025-preliminary-sales-2026-goals-announced",
+      "publisher": "Zacks",
+      "date": "2026-01-12",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "S&P 500 Rallies to a New Record High on US Economic Optimism",
+      "url": "https://finance.yahoo.com/m/78714529-8429-3795-b457-6fcd715bcd8a/s%26p-500-rallies-to-a-new.html",
+      "publisher": "Barchart",
+      "date": "2026-01-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Healthcare dealmakers head to San Francisco hoping for megamergers in 2026",
+      "url": "https://finance.yahoo.com/news/healthcare-dealmakers-head-san-francisco-161902747.html",
+      "publisher": "Reuters",
+      "date": "2026-01-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Insmed Maps Aggressive 2026 As Newly Approved Lung Disease Drug Gains Traction, Pipeline Advances",
+      "url": "/news/272180/insmed-maps-aggressive-2026-as-newly-approved-lung-disease-drug-gains-traction-pipeline-advances",
+      "publisher": "Benzinga",
+      "date": "2026-01-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stock Market Today: Dow Up After Surprise Jobs Data; Trump Tariff Ruling Looms (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/65691893-e5d5-354f-b975-263ca1148ad8/stock-market-today%3A-dow-up.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Insmed Provides Business Update at 44th Annual J.P. Morgan Healthcare Conference",
+      "url": "/news/271781/insmed-provides-business-update-at-44th-annual-jp-morgan-healthcare-conference",
+      "publisher": "PR Newswire",
+      "date": "2026-01-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Insmeds ginormous lung drug sales; J&Js US pricing deal",
+      "url": "https://finance.yahoo.com/m/671bb6d5-1cc6-3099-b8ce-812e3302ebb5/insmed%E2%80%99s-%E2%80%98ginormous%E2%80%99-lung.html",
+      "publisher": "BioPharma Dive",
+      "date": "2026-01-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jim Cramer on Insmed: \"This One Is Worth Keeping an Eye On\"",
+      "url": "/news/270432/jim-cramer-on-insmed-this-one-is-worth-keeping-an-eye-on",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stock Market Today: Dow Jumps After U.S. Ousts Maduro; Energy Shines, Nvidia Rallies Ahead (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/9234f1a1-8d09-358c-92e7-ce06825d8c54/stock-market-today%3A-dow-jumps.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bet on These 3 Small-Cap ETFs to Ride the January Effect",
+      "url": "/news/267227/bet-on-these-3-small-cap-etfs-to-ride-the-january-effect",
+      "publisher": "Zacks",
+      "date": "2026-01-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "INSM Stock Up 78% in 6 Months: Here's What You Need to Know",
+      "url": "/news/265980/insm-stock-up-78-in-6-months-heres-what-you-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-01-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Insmed To Present at the 44th Annual J.P. Morgan Healthcare Conference",
+      "url": "/news/265860/insmed-to-present-at-the-44th-annual-jp-morgan-healthcare-conference",
+      "publisher": "PR Newswire",
+      "date": "2026-01-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ultragenyx (RARE) Moves 15.5% Higher: Will This Strength Last?",
+      "url": "/news/265073/ultragenyx-rare-moves-155-higher-will-this-strength-last",
+      "publisher": "Zacks",
+      "date": "2025-12-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks Fall Slightly in Thin Holiday Trade",
+      "url": "https://finance.yahoo.com/m/8cb1ee45-2f0b-3e23-8258-1ca33cfe7a4d/stocks-fall-slightly-in-thin.html",
+      "publisher": "Barchart",
+      "date": "2025-12-30",
+      "sentiment": "positive"
+    }
+  ]
 }

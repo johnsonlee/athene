@@ -6279,8 +6279,8 @@
     "close": 13.800000190734863,
     "sma_20": 13.766500043869017,
     "sma_50": 13.552399997711182,
-    "sma_200": 11.850533747673033,
-    "trend_alignment": 0.6723083507339436,
+    "sma_200": 11.850533747673035,
+    "trend_alignment": 0.6723083507339433,
     "rsi": 52.63572887679652,
     "rsi_score": 0.0527145775359304,
     "macd_histogram": -0.017271514698830412,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 61.52974152733787,
     "stoch_d": 61.276497851920325,
-    "trend_score": 67.23083507339436,
+    "trend_score": 67.23083507339433,
     "rsi_abs_score": 73.34501021375756,
     "macd_abs_score": 44.371102452877814,
     "momentum_score": 58.85805633331769,
     "volatility_score": 67.19557275521656,
     "volume_score": 50.0,
-    "technical_score": 61.265781973056924,
+    "technical_score": 61.26578197305692,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.060278477998981415,
+    "sentiment_pos": 0.08645,
+    "sentiment_neg": 0.05665,
+    "sentiment_neu": 0.8568999999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 53.01
+  },
   "analyst": {
     "revision_momentum": 0.1111111111111111,
     "target_upside": -0.00942028985507252,
@@ -6325,7 +6333,7 @@
     "quality_score": 40.74257182857143,
     "growth_score": 77.5,
     "safety_score": 50.8412654871708,
-    "trend_score": 67.23083507339436,
+    "trend_score": 67.23083507339433,
     "momentum_score": 58.85805633331769,
     "volatility_score": 67.19557275521656,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 84.39952556285714,
     "catalyst_timeline": 56.61675877835236,
     "downside_control": 56.1075257363581,
-    "composite_score": 65.05908953151553,
+    "composite_score": 65.05520048621709,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 63.221462615053206,
-    "technical_score": 61.265781973056924,
-    "sentiment_score": 50.0,
+    "technical_score": 61.26578197305692,
+    "sentiment_score": 53.01,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Automobile Manufacturers"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "The Robot Revolution Is Real. Tesla, Hyundai, and More Stocks to Play It.",
+      "url": "https://www.barrons.com/articles/robot-stocks-tesla-nvidia-gm-ford-ai-humanoid-6629c2c3?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Consumer Tech News (Feb 2-6): Big Tech Earnings Take Center Stage In U.S. Markets, Anthropic Launches New AI Tool & More",
+      "url": "/news/303773/consumer-tech-news-feb-2-6-big-tech-earnings-take-center-stage-in-us-markets-anthropic-launches-new-ai-tool-more",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What to Expect in Markets This Week: January Jobs Report, Inflation and Retail Sales Data; Earnings From Cisco, Coca-Cola, McDonalds",
+      "url": "https://finance.yahoo.com/m/a9ca561d-8175-34ea-a04c-40cec25e75cb/what-to-expect-in-markets.html",
+      "publisher": "Investopedia",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Toyota makes seismic leadership change as tariffs eat into profits",
+      "url": "https://finance.yahoo.com/m/606d89b5-0660-31c2-af5b-8ace1b3cc775/toyota-makes-seismic.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Super Bowl LX, Coinbase earnings, jobs data & CPI: What to Watch",
+      "url": "https://finance.yahoo.com/video/super-bowl-lx-coinbase-earnings-000012395.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Tesla Stock Rises to End a Tough Week on a High Note",
+      "url": "https://finance.yahoo.com/m/c7477c18-b154-3038-8eec-e86469fca4ec/tesla-stock-rises-to-end-a.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stellantis Stock Drops 24% After Earnings. There Goes the Dividend.",
+      "url": "https://finance.yahoo.com/m/2adb445f-5178-3f90-883f-8878451ccc9f/stellantis-stock-drops-24%25.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stellantis Is the Latest Automaker Wrecked by EVs. How To Play STLA Stock Now.",
+      "url": "https://finance.yahoo.com/m/910f2b7e-6c3d-3ef4-a086-b9768d8b6f14/stellantis-is-the-latest.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Toyota Smashes Earnings Estimates. Its Getting a New CEO.",
+      "url": "https://finance.yahoo.com/m/dc46ea92-e333-3ce7-b68c-edd5a47101fd/toyota-smashes-earnings.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stellantis takes massive $26B hit after moving away from EVs",
+      "url": "https://finance.yahoo.com/m/c8e4b7d2-3352-3259-b890-4a3d40693fd1/stellantis-takes-massive-%2426b.html",
+      "publisher": "Fox Business",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pre-Markets Open in Green to Close the Week",
+      "url": "/news/303074/pre-markets-open-in-green-to-close-the-week",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "5 Reasons GM Expects North America Margins to Improve in 2026",
+      "url": "/news/303045/5-reasons-gm-expects-north-america-margins-to-improve-in-2026",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jeep Maker Stellantis Books $26 Billion Charges in EV Reset",
+      "url": "https://finance.yahoo.com/m/8ef1cd69-6f5e-3582-8ec0-b448e5d860ad/jeep-maker-stellantis-books.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Pre-Markets Rebounding Ahead of Super Bowl Sunday",
+      "url": "/news/303013/pre-markets-rebounding-ahead-of-super-bowl-sunday",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jeep maker Stellantis announces a reset of its business and massive charges. Shares crumble",
+      "url": "https://finance.yahoo.com/m/9fa1cd10-0b8b-3b7b-8731-c07e7e175ad4/jeep-maker-stellantis.html",
+      "publisher": "CNN Business",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stellantis Shares Are Tumbling to Their Lowest Point in Over 5 Years. Here's Why",
+      "url": "https://finance.yahoo.com/m/da8cf62b-8c5a-353c-b384-ac15a28b5d62/stellantis-shares-are.html",
+      "publisher": "Investopedia",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Asbury Q4 Earnings Miss Expectations, Revenues Rise Y/Y",
+      "url": "/news/302880/asbury-q4-earnings-miss-expectations-revenues-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "How Stellantis's $26 Billion EV Hit Stacks Up Against Some Notorious Writedowns",
+      "url": "https://finance.yahoo.com/m/a910998a-0f53-37ad-a134-49afa38b72b8/how-stellantis%27s-%2426-billion.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stellantis stock collapses as Jeep maker takes $26 billion hit in latest EV pivot",
+      "url": "https://finance.yahoo.com/news/stellantis-stock-collapses-as-jeep-maker-takes-26-billion-hit-in-latest-ev-pivot-134546771.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Saying Goodbye To The Ford F-150 Lightning",
+      "url": "https://finance.yahoo.com/m/54bb90c1-b0e3-38c6-96ab-3ff0acef9ad4/saying-goodbye-to-the-ford.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    }
+  ]
 }

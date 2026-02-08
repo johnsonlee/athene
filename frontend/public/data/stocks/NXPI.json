@@ -6279,8 +6279,8 @@
     "close": 224.32000732421875,
     "sma_20": 231.85500106811526,
     "sma_50": 227.29407867431644,
-    "sma_200": 216.10931518554685,
-    "trend_alignment": 0.5321155556266831,
+    "sma_200": 216.10931518554682,
+    "trend_alignment": 0.5321155556266832,
     "rsi": 46.12682161183213,
     "rsi_score": -0.07746356776335744,
     "macd_histogram": -1.698518653256654,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 46.158164946442014,
     "stoch_d": 46.35744373365761,
-    "trend_score": 53.21155556266831,
+    "trend_score": 53.21155556266832,
     "rsi_abs_score": 68.7887751282825,
     "macd_abs_score": 31.14221693697355,
     "momentum_score": 49.965496032628025,
     "volatility_score": 49.259228948634274,
     "volume_score": 50.0,
-    "technical_score": 50.80496126831575,
+    "technical_score": 50.80496126831576,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.06048111275743167,
+    "sentiment_pos": 0.09565,
+    "sentiment_neg": 0.07095,
+    "sentiment_neu": 0.83345,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 53.02
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.14122681883024255,
@@ -6325,7 +6333,7 @@
     "quality_score": 74.45039940000001,
     "growth_score": 43.9,
     "safety_score": 56.446608629590315,
-    "trend_score": 53.21155556266831,
+    "trend_score": 53.21155556266832,
     "momentum_score": 49.965496032628025,
     "volatility_score": 49.259228948634274,
     "volume_score": 50.0,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 64.295974034,
     "catalyst_timeline": 54.24870779861665,
     "downside_control": 54.621875636733684,
-    "composite_score": 59.48341760324906,
+    "composite_score": 59.47952855795062,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 61.2835865742514,
-    "technical_score": 50.80496126831575,
-    "sentiment_score": 50.0,
+    "technical_score": 50.80496126831576,
+    "sentiment_score": 53.02,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 110,
-    "percentile": 0.789980732177264,
+    "rank": 109,
+    "percentile": 0.791907514450867,
     "tier": "buy",
     "tier_raw": "buy",
     "tier_label": "Buy",
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Semiconductors"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Multi-Billion-Dollar VRU Detection Market Unlocking New Growth Opportunities",
+      "url": "/news/302668/multi-billion-dollar-vru-detection-market-unlocking-new-growth-opportunities",
+      "publisher": "PR Newswire",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why NXP Semiconductors' Post-Earnings Dip Could Be a Buying Window",
+      "url": "/news/299749/why-nxp-semiconductors-post-earnings-dip-could-be-a-buying-window",
+      "publisher": "MarketBeat",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NXP CEO says demand for 'physical AI' boosting outlook",
+      "url": "https://finance.yahoo.com/news/nxp-ceo-says-demand-physical-100725739.html",
+      "publisher": "Reuters",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks to Watch Tuesday Recap: PayPal, PepsiCo, AMD, Disney",
+      "url": "https://finance.yahoo.com/m/9234fa62-b0cf-3ed2-ba67-8ebb3210dc74/stocks-to-watch-tuesday.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Tumble on AI Disruption Fears",
+      "url": "https://finance.yahoo.com/m/2d280010-8635-3f1a-b487-d134aea3e092/stocks-tumble-on-ai.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Analyst Report: NXP Semiconductors N.V.",
+      "url": "https://finance.yahoo.com/m/5d369622-8063-3cc1-9f70-00dc344d2b57/analyst-report%3A-nxp.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NXP Semiconductors NV (NXPI) Q4 2025 Earnings Call Highlights: Strong Revenue Growth and ...",
+      "url": "https://finance.yahoo.com/news/nxp-semiconductors-nv-nxpi-q4-190207748.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "NXP Semiconductors Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/450576d4-c790-3b67-91ee-1bef09eed802/nxp-semiconductors-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NXPI Q4 Deep Dive: Automotive and Industrial Growth Offset by Portfolio Shifts and Market Skepticism",
+      "url": "/news/298017/nxpi-q4-deep-dive-automotive-and-industrial-growth-offset-by-portfolio-shifts-and-market-skepticism",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why NXP Semiconductors (NXPI) Shares Are Getting Obliterated Today",
+      "url": "/news/297799/why-nxp-semiconductors-nxpi-shares-are-getting-obliterated-today",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Software Stocks Retreat and Drag the Broader Market Lower",
+      "url": "https://finance.yahoo.com/m/a06579e4-a8c9-38b5-bd18-ff27c7b1d6a5/software-stocks-retreat-and.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Will Qualcomm's Next-Generation Snapdragon Elite Chip Fuel Its Shares?",
+      "url": "/news/297707/will-qualcomms-next-generation-snapdragon-elite-chip-fuel-its-shares",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Nasdaq Slips, Gold and Silver Stage Substantial Recovery",
+      "url": "https://finance.yahoo.com/m/e2a821b3-72dd-368c-9e69-12718b55c208/nasdaq-slips%2C-gold-and-silver.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks to Watch Tuesday: PayPal, PepsiCo, AMD, Disney",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-02-03-2026/card/stocks-to-watch-tuesday-palantir-teradyne-amd-1M4ooWKZ5ukuV7KWaO2N?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NXP Semiconductors' Q4 Earnings and Revenues Beat Estimates",
+      "url": "/news/297378/nxp-semiconductors-q4-earnings-and-revenues-beat-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Teradyne's 'blowout' guidance sees stock surge, and other early movers",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-sp500-record-nasdaq-dow-up-gold-silver-rally-amd-earnings/card/teradyne-s-blowout-guidance-sees-stock-surge-and-other-early-movers-cC7Xun11oYCbYxya0kvo?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "These Stocks Are Todays Movers: Palantir, Teradyne, Tesla, AMD, NXP Semiconductors, and More",
+      "url": "https://finance.yahoo.com/m/e9fc8b56-cb47-3ea3-b443-ba365c4733a4/these-stocks-are-today%E2%80%99s.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks to Watch Tuesday: Palantir, Teradyne, AMD",
+      "url": "https://finance.yahoo.com/m/9234fa62-b0cf-3ed2-ba67-8ebb3210dc74/stocks-to-watch-tuesday%3A.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Palantir, Teradyne, Caterpillar, NXP Semiconductors And Disney: Why These 5 Stocks Are On Investors' Radars Today",
+      "url": "/news/296446/palantir-teradyne-caterpillar-nxp-semiconductors-and-disney-why-these-5-stocks-are-on-investors-radars-today",
+      "publisher": "Benzinga",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NXP (NXPI) Q4 Earnings: Taking a Look at Key Metrics Versus Estimates",
+      "url": "/news/296330/nxp-nxpi-q4-earnings-taking-a-look-at-key-metrics-versus-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    }
+  ]
 }

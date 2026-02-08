@@ -6277,59 +6277,67 @@
   },
   "technical": {
     "close": 223.16000366210938,
-    "sma_20": 216.44730758666992,
+    "sma_20": 216.4473075866699,
     "sma_50": 208.19746337890624,
-    "sma_200": 187.62174713134766,
-    "trend_alignment": 0.7207927769652456,
+    "sma_200": 187.6217471313477,
+    "trend_alignment": 0.7207927769652455,
     "rsi": 61.26408069469218,
     "rsi_score": 0.22528161389384366,
     "macd_histogram": 0.16306286934277137,
     "macd_line": 1.583451123168544,
     "macd_histogram_pct": 0.07306993487491953,
-    "bb_position": 0.7730911670874129,
-    "bb_upper": 228.73751848406377,
-    "bb_lower": 204.15709668927607,
-    "bb_width": 0.11356307486035692,
+    "bb_position": 0.7730911670874141,
+    "bb_upper": 228.73751848406374,
+    "bb_lower": 204.15709668927605,
+    "bb_width": 0.11356307486035694,
     "hist_volatility": 0.34092968775127275,
     "volume_ratio": 1.0164700119829615,
     "avg_volume_20d": 2858225.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 63.926167111075884,
-    "stoch_d": 44.2712678359954,
-    "trend_score": 72.07927769652456,
+    "stoch_d": 44.271267835995396,
+    "trend_score": 72.07927769652454,
     "rsi_abs_score": 70.61514351371547,
     "macd_abs_score": 53.653496743745976,
     "momentum_score": 62.13432012873072,
     "volatility_score": 48.8749283011672,
     "volume_score": 50.0,
-    "technical_score": 60.039065007810024,
+    "technical_score": 60.03906500781002,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.0916706404951471,
+    "sentiment_pos": 0.10445,
+    "sentiment_neg": 0.014299999999999998,
+    "sentiment_neu": 0.88125,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 54.58
+  },
   "analyst": {
-    "revision_momentum": 0.25,
+    "revision_momentum": 0.3333333333333333,
     "target_upside": 0.1090697257573042,
-    "consensus_rating": null,
-    "analyst_revision_count": 4.0,
+    "consensus_rating": 1.36364,
+    "analyst_revision_count": 3.0,
     "analyst_count": 20.0,
     "analyst_upgrades": 1.0,
     "analyst_downgrades": 0.0,
-    "revision_momentum_score": 64.16666666666667,
+    "revision_momentum_score": 67.77777777777777,
     "target_upside_score": 61.0883670908765,
-    "consensus_score": 50.0,
-    "analyst_score": 59.54759514847345
+    "consensus_score": 81.81808000000001,
+    "analyst_score": 68.94655959291788
   },
   "ranking": {
     "value_score": 18.85946745396825,
     "quality_score": 82.71120072,
     "growth_score": 72.78428571428572,
     "safety_score": 59.21175000000001,
-    "trend_score": 72.07927769652456,
+    "trend_score": 72.07927769652454,
     "momentum_score": 62.13432012873072,
     "volatility_score": 48.8749283011672,
     "volume_score": 50.0,
-    "analyst_score": 59.54759514847345,
+    "analyst_score": 68.94655959291788,
     "pe_score": 16.247057599999998,
     "forward_pe_score": 17.87446142857143,
     "pb_score": 15.0,
@@ -6344,23 +6352,23 @@
     "current_ratio_score": 81.765,
     "earnings_visibility": 77.21032296514286,
     "valuation_margin": 18.460840236190474,
-    "catalyst_timeline": 60.22811929737287,
+    "catalyst_timeline": 61.168015741817314,
     "downside_control": 56.379001745175074,
-    "composite_score": 53.76019823575723,
+    "composite_score": 54.061775534903234,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 59.56664850806349,
-    "technical_score": 60.039065007810024,
-    "sentiment_score": 50.0,
+    "technical_score": 60.03906500781002,
+    "sentiment_score": 54.58,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 307,
-    "percentile": 0.41040462427745666,
+    "rank": 298,
+    "percentile": 0.4277456647398844,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Aerospace & Defense"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Why Is Howmet (HWM) Stock Rocketing Higher Today",
+      "url": "/news/303404/why-is-howmet-hwm-stock-rocketing-higher-today",
+      "publisher": "StockStory",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Howmet Aerospace to Host Technology and Markets Day on March 10, 2026",
+      "url": "/news/302572/howmet-aerospace-to-host-technology-and-markets-day-on-march-10-2026",
+      "publisher": "PR Newswire",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "1 Industrials Stock to Own for Decades and 2 We Question",
+      "url": "/news/302447/1-industrials-stock-to-own-for-decades-and-2-we-question",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "GE Aerospace's Commercial Engines Unit Gains Momentum: Can It Sustain?",
+      "url": "/news/301897/ge-aerospaces-commercial-engines-unit-gains-momentum-can-it-sustain",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Howmet (HWM) Earnings Expected to Grow: Should You Buy?",
+      "url": "/news/301699/howmet-hwm-earnings-expected-to-grow-should-you-buy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Huntington Ingalls (HII) Q4 Earnings and Revenues Top Estimates",
+      "url": "/news/301370/huntington-ingalls-hii-q4-earnings-and-revenues-top-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Howmet (HWM) Dips More Than Broader Market: What You Should Know",
+      "url": "/news/300514/howmet-hwm-dips-more-than-broader-market-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Do Wall Street Analysts Like Howmet Aerospace Stock?",
+      "url": "https://finance.yahoo.com/m/b424b97d-7b7e-3e1a-987f-fcbe98f045a3/do-wall-street-analysts-like.html",
+      "publisher": "Barchart",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Lockheed Martin (LMT) Q4 Earnings Beat Estimates (Revised)",
+      "url": "/news/292054/lockheed-martin-lmt-q4-earnings-beat-estimates-revised",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Lockheed Martin (LMT) Q4 Earnings Lag Estimates",
+      "url": "/news/291695/lockheed-martin-lmt-q4-earnings-lag-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Here's Why Howmet (HWM) Fell More Than Broader Market",
+      "url": "/news/290991/heres-why-howmet-hwm-fell-more-than-broader-market",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Howmet Aerospace Inc. (HWM): A Bull Case Theory",
+      "url": "/news/289924/howmet-aerospace-inc-hwm-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Howmet Aerospace Inc. (HWM) Combines Dividend Growth With Aerospace Sector Momentum",
+      "url": "/news/289636/howmet-aerospace-inc-hwm-combines-dividend-growth-with-aerospace-sector-momentum",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Northrop Grumman (NOC) Q4 Earnings and Revenues Surpass Estimates",
+      "url": "/news/288219/northrop-grumman-noc-q4-earnings-and-revenues-surpass-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Howmet (HWM) Surpasses Market Returns: Some Facts Worth Knowing",
+      "url": "/news/283218/howmet-hwm-surpasses-market-returns-some-facts-worth-knowing",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Howmet Aerospace Board Approves Common Stock Dividend",
+      "url": "/news/280956/howmet-aerospace-board-approves-common-stock-dividend",
+      "publisher": "PR Newswire",
+      "date": "2026-01-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Howmet vs. L3Harris: Which Aerospace & Defense Stock Has Greater Upside?",
+      "url": "/news/280408/howmet-vs-l3harris-which-aerospace-defense-stock-has-greater-upside",
+      "publisher": "Zacks",
+      "date": "2026-01-19",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Howmet's Margins Expand Despite Rising Costs: Will the Momentum Sustain?",
+      "url": "/news/278888/howmets-margins-expand-despite-rising-costs-will-the-momentum-sustain",
+      "publisher": "Zacks",
+      "date": "2026-01-16",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What You Need To Know Ahead of Howmet Aerospace's Earnings Release",
+      "url": "https://finance.yahoo.com/m/7f0cd05e-7849-39f0-bf5f-1ebe4e179260/what-you-need-to-know-ahead.html",
+      "publisher": "Barchart",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Howmet (HWM) Outpaces Stock Market Gains: What You Should Know",
+      "url": "/news/278385/howmet-hwm-outpaces-stock-market-gains-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-01-15",
+      "sentiment": "positive"
+    }
+  ]
 }

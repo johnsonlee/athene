@@ -6277,36 +6277,44 @@
   },
   "technical": {
     "close": 132.35000610351562,
-    "sma_20": 130.26650047302246,
+    "sma_20": 130.2665004730225,
     "sma_50": 128.2572264099121,
-    "sma_200": 111.98729160308841,
-    "trend_alignment": 0.6953426034659449,
+    "sma_200": 111.9872916030884,
+    "trend_alignment": 0.6953426034659451,
     "rsi": 55.47275393217835,
     "rsi_score": 0.10945507864356699,
     "macd_histogram": 0.0806169501195172,
     "macd_line": 0.8283367269443147,
     "macd_histogram_pct": 0.0609119353243277,
-    "bb_position": 0.6727876395745195,
-    "bb_upper": 136.29559386078935,
-    "bb_lower": 124.23740708525555,
-    "bb_width": 0.09256552322928939,
+    "bb_position": 0.6727876395745171,
+    "bb_upper": 136.29559386078938,
+    "bb_lower": 124.23740708525558,
+    "bb_width": 0.09256552322928938,
     "hist_volatility": 0.32987500080275506,
     "volume_ratio": 0.6465520051282608,
     "avg_volume_20d": 2300975.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 70.75603771756029,
-    "stoch_d": 63.826135056940984,
-    "trend_score": 69.5342603465945,
+    "stoch_d": 63.82613505694099,
+    "trend_score": 69.53426034659451,
     "rsi_abs_score": 74.66907224747516,
     "macd_abs_score": 53.045596766216384,
     "momentum_score": 63.857334506845774,
-    "volatility_score": 53.070944338864685,
+    "volatility_score": 53.07094433886469,
     "volume_score": 50.0,
     "technical_score": 60.63166732380502,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.32639233001581225,
+    "sentiment_pos": 0.17375000000000002,
+    "sentiment_neg": 0.05675,
+    "sentiment_neu": 0.7694,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 66.32
+  },
   "analyst": {
     "revision_momentum": -0.4,
     "target_upside": 0.09557990177559506,
@@ -6325,9 +6333,9 @@
     "quality_score": 66.62314165714285,
     "growth_score": 48.6,
     "safety_score": 33.12325,
-    "trend_score": 69.5342603465945,
+    "trend_score": 69.53426034659451,
     "momentum_score": 63.857334506845774,
-    "volatility_score": 53.070944338864685,
+    "volatility_score": 53.07094433886469,
     "volume_score": 50.0,
     "analyst_score": 46.61894817655208,
     "pe_score": 48.53368666666667,
@@ -6344,16 +6352,16 @@
     "current_ratio_score": 42.0,
     "earnings_visibility": 53.109471248571424,
     "valuation_margin": 54.9961026,
-    "catalyst_timeline": 59.231054302999226,
+    "catalyst_timeline": 59.23105430299923,
     "downside_control": 45.7871291508297,
-    "composite_score": 53.15689333683123,
+    "composite_score": 53.153004291532795,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 52.82334466380953,
     "technical_score": 60.63166732380502,
-    "sentiment_score": 50.0,
+    "sentiment_score": 66.32,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Asset Management & Custody Banks"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "State Street Corporation (STT) Could Be a Great Choice",
+      "url": "/news/299849/state-street-corporation-stt-could-be-a-great-choice",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "State Street ETF Grows to Five Times Former Size Thanks To One Investor",
+      "url": "https://finance.yahoo.com/m/227aa192-cffb-394b-8af3-29fc9910730d/state-street-etf-grows-to.html",
+      "publisher": "Wealth Management",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Truist Adjusts State Street (STT) Outlook Following Strong Fee Growth, Higher Expense Forecasts",
+      "url": "/news/299115/truist-adjusts-state-street-stt-outlook-following-strong-fee-growth-higher-expense-forecasts",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "State Street (STT) Beats Q4 Earnings Estimates as Revenue Rises 7% Year-Over-Year",
+      "url": "/news/296882/state-street-stt-beats-q4-earnings-estimates-as-revenue-rises-7-year-over-year",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Fed Paused Rate Cuts. That's Great News for These 2 Financial Stocks",
+      "url": "/news/294634/the-fed-paused-rate-cuts-thats-great-news-for-these-2-financial-stocks",
+      "publisher": "Motley Fool",
+      "date": "2026-01-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why many large-bank stocks look like bargains for long-term investors",
+      "url": "https://www.marketwatch.com/story/why-many-large-bank-stocks-look-like-bargains-for-long-term-investors-431d8611?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-01-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "State Street to Speak at the BofA Securities Financial Services Conference",
+      "url": "https://www.businesswire.com/news/home/20260129831940/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "State Street, in Collaboration with ADIO, to Create 300+ New Jobs With Launch of New Al Ain Operations Hub",
+      "url": "https://www.businesswire.com/news/home/20260126413248/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "5 Dividend ETFs to Hold Even During a Market Downturn",
+      "url": "https://finance.yahoo.com/m/a458e6b2-ed21-3125-aedf-343782dd5585/5-dividend-etfs-to-hold-even.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "5 Revealing Analyst Questions From State Street's Q4 Earnings Call",
+      "url": "/news/284921/5-revealing-analyst-questions-from-state-streets-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ETF Edge: Using active fixed income ETFs to navigate economic uncertainty",
+      "url": "https://www.youtube.com/watch?v=D45VQCFci2w",
+      "publisher": "CNBC TV",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Charles River Wealth to Expand Capabilities Supporting Private Assets within Unified Managed Accounts (UMA)",
+      "url": "https://www.businesswire.com/news/home/20260122773485/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "State Street and QNB Group Sign Strategic Agreement to Launch New Custody Servicing Model",
+      "url": "https://www.businesswire.com/news/home/20260121467446/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "S&P 500 Profit Beats Draw Worst Stock Price Reaction on Record",
+      "url": "https://finance.yahoo.com/news/p-500-profit-beats-draw-090535841.html",
+      "publisher": "Bloomberg",
+      "date": "2026-01-21",
+      "sentiment": "negative"
+    },
+    {
+      "title": "3 Value Stocks We're Skeptical Of",
+      "url": "/news/281976/3-value-stocks-were-skeptical-of",
+      "publisher": "StockStory",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "State Street reports 5% decline in Q4 2025 profit",
+      "url": "https://finance.yahoo.com/m/5090dbbc-6d51-33b1-881c-e2a9d7ca2c49/state-street%C2%A0reports.html",
+      "publisher": "Private Banker International",
+      "date": "2026-01-19",
+      "sentiment": "positive"
+    },
+    {
+      "title": "State Street Corp (STT) Q4 2025 Earnings Call Highlights: Record Revenue and Strategic Growth ...",
+      "url": "https://finance.yahoo.com/news/state-street-corp-stt-q4-010109697.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-18",
+      "sentiment": "positive"
+    },
+    {
+      "title": "STT Q4 Deep Dive: Product Expansion and Tech Investments Meet Cautious Market Response",
+      "url": "/news/280057/stt-q4-deep-dive-product-expansion-and-tech-investments-meet-cautious-market-response",
+      "publisher": "StockStory",
+      "date": "2026-01-17",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stocks Finish Slightly Lower as Bond Yields Climb",
+      "url": "https://finance.yahoo.com/m/2f0dcf53-6ce6-3e76-b5c2-f4c2ad46c649/stocks-finish-slightly-lower.html",
+      "publisher": "Barchart",
+      "date": "2026-01-16",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Analyst Report: State Street Corporation",
+      "url": "https://finance.yahoo.com/m/6c8fc45f-f799-3640-bd40-3cd1cae238d6/analyst-report%3A-state-street.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    }
+  ]
 }

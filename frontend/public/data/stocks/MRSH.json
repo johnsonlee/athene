@@ -6306,7 +6306,15 @@
     "technical_score": 54.47777257471,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.16949439913305936,
+    "sentiment_pos": 0.09465,
+    "sentiment_neg": 0.014799999999999999,
+    "sentiment_neu": 0.89055,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 58.47
+  },
   "analyst": {
     "revision_momentum": 0.13333333333333333,
     "target_upside": 0.11873750202669836,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 40.72743224285714,
     "catalyst_timeline": 55.03025863249685,
     "downside_control": 55.38550820374644,
-    "composite_score": 54.82811896966202,
+    "composite_score": 54.824229924363586,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 57.90981277128707,
     "technical_score": 54.47777257471,
-    "sentiment_score": 50.0,
+    "sentiment_score": 58.47,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Insurance Brokers"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "The Top 5 Analyst Questions From Marsh & McLennan's Q4 Earnings Call",
+      "url": "/news/300877/the-top-5-analyst-questions-from-marsh-mclennans-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Aflac Gears Up for Q4 Earnings: Can Higher Premiums Help it Quack?",
+      "url": "/news/295763/aflac-gears-up-for-q4-earnings-can-higher-premiums-help-it-quack",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Marsh McLennan Agency Acquires Robinson & Son",
+      "url": "https://www.businesswire.com/news/home/20260202514514/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MRSH Q4 Deep Dive: Digital Infrastructure and AI Drive Strategic Shifts Amid Industry Headwinds",
+      "url": "/news/293978/mrsh-q4-deep-dive-digital-infrastructure-and-ai-drive-strategic-shifts-amid-industry-headwinds",
+      "publisher": "StockStory",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Marsh (MRSH) Q4 2025 Earnings Call Highlights: Strong Revenue Growth Amid Competitive Pressures",
+      "url": "https://finance.yahoo.com/news/marsh-mrsh-q4-2025-earnings-210402911.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Marsh Q4 Earnings Beat Estimates on Consulting Unit Strength",
+      "url": "/news/292280/marsh-q4-earnings-beat-estimates-on-consulting-unit-strength",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Marsh & McLennan Companies, Inc.",
+      "url": "https://finance.yahoo.com/m/9b668496-817c-37ff-837c-0c4388a06b74/analyst-report%3A-marsh-%26.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Compared to Estimates, Marsh (MRSH) Q4 Earnings: A Look at Key Metrics",
+      "url": "/news/291855/compared-to-estimates-marsh-mrsh-q4-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Marsh (MRSH) Q4 Earnings and Revenues Beat Estimates",
+      "url": "/news/291644/marsh-mrsh-q4-earnings-and-revenues-beat-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Marsh & McLennan's (NYSE:MRSH) Q4 CY2025 Sales Beat Estimates",
+      "url": "/news/291405/marsh-mclennans-nyse-mrsh-q4-cy2025-sales-beat-estimates",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Marsh Reports Solid Fourth Quarter and Full-Year 2025 Results",
+      "url": "https://www.businesswire.com/news/home/20260128020560/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Marsh & McLennan (MRSH) Q4 Earnings Report Preview: What To Look For",
+      "url": "/news/289458/marsh-mclennan-mrsh-q4-earnings-report-preview-what-to-look-for",
+      "publisher": "StockStory",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Marsh McLennan Agency Launches Secure Harbor Group Captive to Help Senior Living Clients Manage Challenging Market Conditions",
+      "url": "https://www.businesswire.com/news/home/20260127530721/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ahead of Marsh (MRSH) Q4 Earnings: Get Ready With Wall Street Estimates for Key Metrics",
+      "url": "/news/286964/ahead-of-marsh-mrsh-q4-earnings-get-ready-with-wall-street-estimates-for-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Big Tech earnings, Fed meeting feature as markets end January with busiest week of Q1: What to watch",
+      "url": "https://finance.yahoo.com/news/big-tech-earnings-fed-meeting-feature-as-markets-end-january-with-busiest-week-of-q1-what-to-watch-125211822.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-01-25",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Marsh Gears Up to Report Q4 Earnings: Key Estimates to Note",
+      "url": "/news/285657/marsh-gears-up-to-report-q4-earnings-key-estimates-to-note",
+      "publisher": "Zacks",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Marsh (MRSH) Reports Next Week: Wall Street Expects Earnings Growth",
+      "url": "/news/284096/marsh-mrsh-reports-next-week-wall-street-expects-earnings-growth",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Deep Shifts in Human Sentiment Are Redefining Economic, Health, and Workplace Norms, Oliver Wyman Forum Report Finds",
+      "url": "https://www.businesswire.com/news/home/20260119411770/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Davos CEO Brief for Monday, January 19, 2026",
+      "url": "https://finance.yahoo.com/video/davos-ceo-brief-monday-january-224600583.html",
+      "publisher": "WSJ",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Marsh CEO John Doyle Lays Out the Biggest Risks of 2026",
+      "url": "https://finance.yahoo.com/video/marsh-mclennan-ceo-john-doyle-212200870.html",
+      "publisher": "WSJ",
+      "date": "2026-01-19",
+      "sentiment": "negative"
+    }
+  ]
 }

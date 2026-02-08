@@ -6306,7 +6306,15 @@
     "technical_score": 58.23707330118665,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.14558141258781723,
+    "sentiment_pos": 0.10164999999999999,
+    "sentiment_neg": 0.0355,
+    "sentiment_neu": 0.8628500000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 57.28
+  },
   "analyst": {
     "revision_momentum": 0.18181818181818182,
     "target_upside": 0.23346897253306212,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 61.792432524999995,
     "catalyst_timeline": 60.0367009231024,
     "downside_control": 56.573975883881346,
-    "composite_score": 57.2452943990689,
+    "composite_score": 57.24140535377046,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 60.00208424702381,
     "technical_score": 58.23707330118665,
-    "sentiment_score": 50.0,
+    "sentiment_score": 57.28,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Casinos & Gaming"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Wynn Resorts (WYNN) Expected to Beat Earnings Estimates: Can the Stock Move Higher?",
+      "url": "/news/301673/wynn-resorts-wynn-expected-to-beat-earnings-estimates-can-the-stock-move-higher",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MGM Stock Jumps on Sports Betting Results. Can It Fend Off Prediction Markets?",
+      "url": "https://www.barrons.com/articles/mgm-resorts-earnings-stock-jumps-betmgm-96b9f778?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Wynn Resorts Recognized on FORTUNE Magazines Worlds Most Admired Companies List for 18th Consecutive Year",
+      "url": "https://www.businesswire.com/news/home/20260204781549/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Reasons WYNN is Risky and 1 Stock to Buy Instead",
+      "url": "/news/298708/3-reasons-wynn-is-risky-and-1-stock-to-buy-instead",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "LVS' Singapore EBITDA Flow-Through Strengthens: What's Supporting It?",
+      "url": "/news/297969/lvs-singapore-ebitda-flow-through-strengthens-whats-supporting-it",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Wynn Resorts Stock Flashing Bull Signal Ahead of Earnings",
+      "url": "/news/296066/wynn-resorts-stock-flashing-bull-signal-ahead-of-earnings",
+      "publisher": "Schaeffer's Research",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "These 2 Consumer Discretionary Stocks Could Beat Earnings: Why They Should Be on Your Radar",
+      "url": "/news/295564/these-2-consumer-discretionary-stocks-could-beat-earnings-why-they-should-be-on-your-radar",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nevada reports December statewide gaming win down 1.55% to $1.44B",
+      "url": "https://finance.yahoo.com/news/nevada-reports-december-statewide-gaming-145027257.html",
+      "publisher": "TipRanks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "1 Mid-Cap Stock for Long-Term Investors and 2 Facing Headwinds",
+      "url": "/news/289555/1-mid-cap-stock-for-long-term-investors-and-2-facing-headwinds",
+      "publisher": "StockStory",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Wynn Resorts Announces Fourth Quarter Earnings Release Date",
+      "url": "/news/285955/wynn-resorts-announces-fourth-quarter-earnings-release-date",
+      "publisher": "PR Newswire",
+      "date": "2026-01-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Cash-Producing Stocks with Warning Signs",
+      "url": "/news/280310/3-cash-producing-stocks-with-warning-signs",
+      "publisher": "StockStory",
+      "date": "2026-01-18",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Here's What to Expect From Wynn Resorts' Next Earnings Report",
+      "url": "https://finance.yahoo.com/m/e7d25633-4a3a-38ee-8e3a-b426cc17f939/here%27s-what-to-expect-from.html",
+      "publisher": "Barchart",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CFOs On the Move: Week ending Jan. 16",
+      "url": "https://finance.yahoo.com/m/b8e9172b-e49a-3a4d-808e-5372050096fe/cfos-on-the-move%3A-week-ending.html",
+      "publisher": "CFO.com",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Wynn Resorts taps new CFO",
+      "url": "https://finance.yahoo.com/m/4ef8201e-7d3f-3e0a-afeb-141aded04c18/wynn-resorts-taps-new-cfo.html",
+      "publisher": "Hotel Dive",
+      "date": "2026-01-13",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Craig Fullalove to Succeed Julie Cameron-Doe as Chief Financial Officer at Wynn Resorts",
+      "url": "https://www.businesswire.com/news/home/20260109320880/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Investors Need to Take Advantage of These 2 Consumer Discretionary Stocks Now",
+      "url": "/news/269482/why-investors-need-to-take-advantage-of-these-2-consumer-discretionary-stocks-now",
+      "publisher": "Zacks",
+      "date": "2026-01-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Macau Gaming Revenue Falls Short; Las Vegas Sands, Wynn Resorts, MGM In Focus",
+      "url": "https://www.investors.com/news/macau-gaming-revenue-las-vegas-sands-wynn-resorts-mgm?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-01-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "LVS, WYNN or PENN: Which Gaming Stock Offers the Best 2026 Setup?",
+      "url": "/news/258738/lvs-wynn-or-penn-which-gaming-stock-offers-the-best-2026-setup",
+      "publisher": "Zacks",
+      "date": "2025-12-19",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Gap, Coinbase, Hyatt, MGM Resorts: Top Analyst Calls",
+      "url": "https://finance.yahoo.com/video/gap-coinbase-hyatt-mgm-resorts-160046865.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2025-12-17",
+      "sentiment": "positive"
+    },
+    {
+      "title": "James Bay Resources Limited Enters an Investor Agreement for US Litigation Funding",
+      "url": "https://finance.yahoo.com/news/james-bay-resources-limited-enters-210100369.html",
+      "publisher": "TMX Newsfile",
+      "date": "2025-12-16",
+      "sentiment": "positive"
+    }
+  ]
 }

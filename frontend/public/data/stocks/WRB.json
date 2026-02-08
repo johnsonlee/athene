@@ -6279,8 +6279,8 @@
     "close": 70.41000366210938,
     "sma_20": 68.51350059509278,
     "sma_50": 69.26707794189453,
-    "sma_200": 70.97507419586181,
-    "trend_alignment": 0.5006377125039713,
+    "sma_200": 70.97507419586182,
+    "trend_alignment": 0.500637712503971,
     "rsi": 57.212626075221344,
     "rsi_score": 0.14425252150442688,
     "macd_histogram": 0.43801819622526944,
@@ -6296,17 +6296,25 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 83.99164385517498,
-    "stoch_d": 87.73963720197688,
-    "trend_score": 50.063771250397124,
+    "stoch_d": 87.73963720197689,
+    "trend_score": 50.0637712503971,
     "rsi_abs_score": 73.45116174734505,
     "macd_abs_score": 66.8314480921051,
     "momentum_score": 70.14130491972509,
     "volatility_score": 71.14756644674065,
     "volume_score": 50.0,
-    "technical_score": 60.2910361403848,
+    "technical_score": 60.29103614038479,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.04035656944918177,
+    "sentiment_pos": 0.05125,
+    "sentiment_neg": 0.0385,
+    "sentiment_neu": 0.9102499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 52.02
+  },
   "analyst": {
     "revision_momentum": -0.14285714285714285,
     "target_upside": -0.02002556455048994,
@@ -6325,7 +6333,7 @@
     "quality_score": 68.5902507375,
     "growth_score": 26.875,
     "safety_score": 36.5492,
-    "trend_score": 50.063771250397124,
+    "trend_score": 50.0637712503971,
     "momentum_score": 70.14130491972509,
     "volatility_score": 71.14756644674065,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 51.33464430000001,
     "catalyst_timeline": 54.151881522301636,
     "downside_control": 55.99151496701109,
-    "composite_score": 51.13645192901256,
+    "composite_score": 51.13256288371413,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 48.20620213791667,
-    "technical_score": 60.2910361403848,
-    "sentiment_score": 50.0,
+    "technical_score": 60.29103614038479,
+    "sentiment_score": 52.02,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Property & Casualty Insurance"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "2 Reasons to Like WRB and 1 to Stay Skeptical",
+      "url": "/news/296818/2-reasons-to-like-wrb-and-1-to-stay-skeptical",
+      "publisher": "StockStory",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: W. R. Berkley Corporation",
+      "url": "https://finance.yahoo.com/m/282c0b3f-c7b9-3f88-ac26-ec342e3cb259/analyst-report%3A-w.-r.-berkley.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "5 Must-Read Analyst Questions From W. R. Berkley's Q4 Earnings Call",
+      "url": "/news/295004/5-must-read-analyst-questions-from-w-r-berkleys-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Insiders Are Still Scooping Up Under Armour and WR Berkley Shares",
+      "url": "https://finance.yahoo.com/m/ddeec0a1-2739-39e6-b3c1-10f51510ee61/insiders-are-still-scooping.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Progressive's Q4 Earnings & Revenues Beat Estimates on Higher Premiums",
+      "url": "/news/290360/progressives-q4-earnings-revenues-beat-estimates-on-higher-premiums",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "W.R. Berkley Q4 Earnings Miss Estimate, Revenues Up Y/Y",
+      "url": "/news/288938/wr-berkley-q4-earnings-miss-estimate-revenues-up-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Brown & Brown Q4 Earnings Top Estimates on Strong Investment Income",
+      "url": "/news/288485/brown-brown-q4-earnings-top-estimates-on-strong-investment-income",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "GameStop CEO Picks Up 1M Shares, and Other Insiders Return to the Buy Window",
+      "url": "https://finance.yahoo.com/m/bd1d3c04-db0f-3ccd-94c7-4bd07c9656d8/gamestop-ceo-picks-up-1m.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "WRB Q4 Deep Dive: Management Focuses on Technology, Distribution, and Underwriting Discipline",
+      "url": "/news/287796/wrb-q4-deep-dive-management-focuses-on-technology-distribution-and-underwriting-discipline",
+      "publisher": "StockStory",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "WR Berkley Corp (WRB) Q4 2025 Earnings Call Highlights: Record Earnings and Strategic ...",
+      "url": "https://finance.yahoo.com/news/wr-berkley-corp-wrb-q4-050032864.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "W.R. Berkley Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/81abc74a-0318-34aa-aa9d-ff6b40a0ea45/w.r.-berkley-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Compared to Estimates, W.R. Berkley (WRB) Q4 Earnings: A Look at Key Metrics",
+      "url": "/news/287673/compared-to-estimates-wr-berkley-wrb-q4-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: W. R. Berkley Corporation",
+      "url": "https://finance.yahoo.com/m/a97ae645-a63f-38e0-a224-47c20ad8df17/analyst-report%3A-w.-r.-berkley.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "W.R. Berkley (WRB) Q4 Earnings and Revenues Lag Estimates",
+      "url": "/news/287541/wr-berkley-wrb-q4-earnings-and-revenues-lag-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "negative"
+    },
+    {
+      "title": "W. R. Berkley (NYSE:WRB) Misses Q4 CY2025 Sales Expectations",
+      "url": "/news/287490/w-r-berkley-nyse-wrb-misses-q4-cy2025-sales-expectations",
+      "publisher": "StockStory",
+      "date": "2026-01-26",
+      "sentiment": "negative"
+    },
+    {
+      "title": "W.R. Berkley: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/w-r-berkley-q4-earnings-212720225.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "W. R. Berkley Corporation Reports Fourth Quarter and Full Year 2025 Results",
+      "url": "https://www.businesswire.com/news/home/20260126383511/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Market Today: Dow Jones, S&P 500 Futures Slip As Investors Brace For Mega-Cap Earnings-Brand Engagement, Nucor In Focus",
+      "url": "/news/286567/stock-market-today-dow-jones-sp-500-futures-slip-as-investors-brace-for-mega-cap-earnings-brand-engagement-nucor-in-focus",
+      "publisher": "Benzinga",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Big Tech earnings, Fed meeting feature as markets end January with busiest week of Q1: What to watch",
+      "url": "https://finance.yahoo.com/news/big-tech-earnings-fed-meeting-feature-as-markets-end-january-with-busiest-week-of-q1-what-to-watch-125211822.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-01-25",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "W. R. Berkley (WRB) Reports Earnings Tomorrow: What To Expect",
+      "url": "/news/286191/w-r-berkley-wrb-reports-earnings-tomorrow-what-to-expect",
+      "publisher": "StockStory",
+      "date": "2026-01-24",
+      "sentiment": "neutral"
+    }
+  ]
 }

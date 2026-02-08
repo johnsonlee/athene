@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 80.6500015258789,
     "sma_20": 80.01350021362305,
-    "sma_50": 79.93797561645509,
+    "sma_50": 79.93797561645508,
     "sma_200": 80.87449176788331,
-    "trend_alignment": 0.501725643754967,
+    "trend_alignment": 0.5017256437549671,
     "rsi": 52.53454725853893,
     "rsi_score": 0.05069094517077857,
     "macd_histogram": 0.056778679393711395,
@@ -6296,8 +6296,8 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 52.1892477289626,
-    "stoch_d": 51.93028301310717,
-    "trend_score": 50.1725643754967,
+    "stoch_d": 51.93028301310718,
+    "trend_score": 50.172564375496705,
     "rsi_abs_score": 73.27418308097725,
     "macd_abs_score": 53.52006685179617,
     "momentum_score": 63.39712496638671,
@@ -6306,7 +6306,15 @@
     "technical_score": 58.67990147829381,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.05938371599158135,
+    "sentiment_pos": 0.1286,
+    "sentiment_neg": 0.0058000000000000005,
+    "sentiment_neu": 0.8656,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 52.97
+  },
   "analyst": {
     "revision_momentum": 0.16666666666666666,
     "target_upside": 0.11593304401735888,
@@ -6325,7 +6333,7 @@
     "quality_score": 65.53042857142859,
     "growth_score": 88.6,
     "safety_score": 33.43615625,
-    "trend_score": 50.1725643754967,
+    "trend_score": 50.172564375496705,
     "momentum_score": 63.39712496638671,
     "volatility_score": 73.04497337864395,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 55.591733,
     "catalyst_timeline": 56.901028719061244,
     "downside_control": 52.94616944429659,
-    "composite_score": 61.87396166283848,
+    "composite_score": 61.870072617540046,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 62.71030398809525,
     "technical_score": 58.67990147829381,
-    "sentiment_score": 50.0,
+    "sentiment_score": 52.97,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Utilities",
     "industry": "Electric Utilities"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Morgan Stanley Raises its Price Target on Public Service Enterprise Group Inc. (PEG) to $92 and kept an Overweight rating.",
+      "url": "/news/303532/morgan-stanley-raises-its-price-target-on-public-service-enterprise-group-inc-peg-to-92-and-kept-an-overweight-rating",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "PSEG To Announce Fourth Quarter and Full Year 2025 Financial Results On February 26",
+      "url": "/news/297040/pseg-to-announce-fourth-quarter-and-full-year-2025-financial-results-on-february-26",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Vistra vs. Public Service Enterprise: Which Utility Stock Stands Out?",
+      "url": "/news/293492/vistra-vs-public-service-enterprise-which-utility-stock-stands-out",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "GEV vs. PEG: Which Grid-Focused Energy Stock Is the Better Buy?",
+      "url": "/news/291702/gev-vs-peg-which-grid-focused-energy-stock-is-the-better-buy",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PSE&G Energy Efficiency Programs Deliver More Than $900 Million in Annual Utility Bill Savings for New Jersey Customers",
+      "url": "/news/288117/pseg-energy-efficiency-programs-deliver-more-than-900-million-in-annual-utility-bill-savings-for-new-jersey-customers",
+      "publisher": "PR Newswire",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Utility Stocks Beware. Politics Are Starting to Eat Into Profits.",
+      "url": "https://www.barrons.com/articles/utility-stocks-electricity-rates-prices-dcae4c73?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Buy 3 Low-Beta Utility Stocks to Dodge Prevailing Market Volatility",
+      "url": "/news/283928/buy-3-low-beta-utility-stocks-to-dodge-prevailing-market-volatility",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PSEG Elects Geisha J. Williams to Board of Directors",
+      "url": "/news/283006/pseg-elects-geisha-j-williams-to-board-of-directors",
+      "publisher": "PR Newswire",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's What to Expect From Public Service Enterprise's Next Earnings Report",
+      "url": "https://finance.yahoo.com/m/24af0df2-66e0-3b8f-85bc-3cf624a2840f/here%27s-what-to-expect-from.html",
+      "publisher": "Barchart",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Public Service Enterprise Group Incorporated",
+      "url": "https://finance.yahoo.com/m/acea6cf3-1b13-3bea-9d85-c5d5ec4da556/analyst-report%3A-public.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why You Should Include PEG Stock in Your Portfolio Now",
+      "url": "/news/267056/heres-why-you-should-include-peg-stock-in-your-portfolio-now",
+      "publisher": "Zacks",
+      "date": "2026-01-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PSEG Long Island Contract Extension Approved by N.Y. State Comptroller",
+      "url": "/news/264112/pseg-long-island-contract-extension-approved-by-ny-state-comptroller",
+      "publisher": "PR Newswire",
+      "date": "2025-12-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PSE&G Ranked #1 for Residential Electric in the East among Large Utilities in J.D. Power 2025 Customer Satisfaction Study for 4th Consecutive Year",
+      "url": "/news/256532/pseg-ranked-1-for-residential-electric-in-the-east-among-large-utilities-in-jd-power-2025-customer-satisfaction-study-for-4th-consecutive-year",
+      "publisher": "PR Newswire",
+      "date": "2025-12-17",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Public Service Enterprise Group (PEG) - Among the Best Energy Stocks for a Retirement Portfolio",
+      "url": "/news/251056/public-service-enterprise-group-peg-among-the-best-energy-stocks-for-a-retirement-portfolio",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-10",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PSE&G and the PSEG Foundation Launch $1.5 Million Community Relief Initiative to Provide Support in Times of Need",
+      "url": "/news/248167/pseg-and-the-pseg-foundation-launch-15-million-community-relief-initiative-to-provide-support-in-times-of-need",
+      "publisher": "PR Newswire",
+      "date": "2025-12-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is Public Service Enterprise Stock Underperforming the S&P 500?",
+      "url": "https://finance.yahoo.com/m/f8edb2d5-d4ef-3fa7-8572-3c77ce40f4c5/is-public-service-enterprise.html",
+      "publisher": "Barchart",
+      "date": "2025-12-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Is PSEG (PEG) Down 1.4% Since Last Earnings Report?",
+      "url": "/news/244597/why-is-pseg-peg-down-14-since-last-earnings-report",
+      "publisher": "Zacks",
+      "date": "2025-12-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Public Service Enterprise Group (PEG) Declares Dividend of $0.63 per Share",
+      "url": "/news/236768/public-service-enterprise-group-peg-declares-dividend-of-063-per-share",
+      "publisher": "Insider Monkey",
+      "date": "2025-11-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PSEG Gains Momentum Through Smart Investments and Clean Energy Plans",
+      "url": "/news/234993/pseg-gains-momentum-through-smart-investments-and-clean-energy-plans",
+      "publisher": "Zacks",
+      "date": "2025-11-20",
+      "sentiment": "positive"
+    },
+    {
+      "title": "PSEG Declares Regular Quarterly Dividend for the Fourth Quarter of 2025",
+      "url": "/news/232590/pseg-declares-regular-quarterly-dividend-for-the-fourth-quarter-of-2025",
+      "publisher": "PR Newswire",
+      "date": "2025-11-18",
+      "sentiment": "neutral"
+    }
+  ]
 }

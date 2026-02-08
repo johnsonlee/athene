@@ -6277,10 +6277,10 @@
   },
   "technical": {
     "close": 238.00999450683594,
-    "sma_20": 220.25100097656252,
+    "sma_20": 220.25100097656255,
     "sma_50": 209.5853973388672,
     "sma_200": 192.0509532928467,
-    "trend_alignment": 0.7792218743892692,
+    "trend_alignment": 0.779221874389269,
     "rsi": 81.52548976399888,
     "rsi_score": 0.6305097952799775,
     "macd_histogram": 1.7245326229015534,
@@ -6288,8 +6288,8 @@
     "macd_histogram_pct": 0.7245631119293282,
     "bb_position": 0.9743696488568498,
     "bb_upper": 238.96951888034238,
-    "bb_lower": 201.53248307278267,
-    "bb_width": 0.169974418466064,
+    "bb_lower": 201.53248307278272,
+    "bb_width": 0.16997441846606373,
     "hist_volatility": 0.1997567159090647,
     "volume_ratio": 0.9197456857402362,
     "avg_volume_20d": 1376250.0,
@@ -6297,16 +6297,24 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 96.69096934898745,
     "stoch_d": 94.05630769171032,
-    "trend_score": 77.92218743892691,
+    "trend_score": 77.9221874389269,
     "rsi_abs_score": 26.949020472002246,
     "macd_abs_score": 68.36844667893992,
     "momentum_score": 47.65873357547108,
-    "volatility_score": 53.22176506532906,
+    "volatility_score": 53.22176506532908,
     "volume_score": 50.0,
     "technical_score": 58.31862931738521,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.06363300464500365,
+    "sentiment_pos": 0.0581,
+    "sentiment_neg": 0.028149999999999998,
+    "sentiment_neu": 0.91375,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 53.18
+  },
   "analyst": {
     "revision_momentum": -0.4444444444444444,
     "target_upside": -0.03365404814923739,
@@ -6325,9 +6333,9 @@
     "quality_score": 70.06714285714287,
     "growth_score": 65.225,
     "safety_score": 33.12325,
-    "trend_score": 77.92218743892691,
+    "trend_score": 77.9221874389269,
     "momentum_score": 47.65873357547108,
-    "volatility_score": 53.22176506532906,
+    "volatility_score": 53.22176506532908,
     "volume_score": 50.0,
     "analyst_score": 35.607179592516346,
     "pe_score": 48.65195333333333,
@@ -6345,15 +6353,15 @@
     "earnings_visibility": 62.23782142857142,
     "valuation_margin": 52.108783428571435,
     "catalyst_timeline": 55.15781006069143,
-    "downside_control": 46.11775225979935,
-    "composite_score": 54.540728805899015,
+    "downside_control": 46.11775225979936,
+    "composite_score": 54.53683976060058,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 57.12919571428572,
     "technical_score": 58.31862931738521,
-    "sentiment_score": 50.0,
+    "sentiment_score": 53.18,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Regional Banks"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "M&T Bank Appoints Jeff Carpenter Regional President for Massachusetts",
+      "url": "/news/295208/mt-bank-appoints-jeff-carpenter-regional-president-for-massachusetts",
+      "publisher": "PR Newswire",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Truist Sees Slightly Better Long-Term Earnings Power at M&T Bank (MTB)",
+      "url": "/news/287481/truist-sees-slightly-better-long-term-earnings-power-at-mt-bank-mtb",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "3 Reasons MTB is Risky and 1 Stock to Buy Instead",
+      "url": "/news/286676/3-reasons-mtb-is-risky-and-1-stock-to-buy-instead",
+      "publisher": "StockStory",
+      "date": "2026-01-25",
+      "sentiment": "negative"
+    },
+    {
+      "title": "The Top 5 Analyst Questions From M&T Bank's Q4 Earnings Call",
+      "url": "/news/284929/the-top-5-analyst-questions-from-mt-banks-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-01-23",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Huntington Stock Falls as Q4 Earnings Lag Estimates, Expenses Rise Y/Y",
+      "url": "/news/284392/huntington-stock-falls-as-q4-earnings-lag-estimates-expenses-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "negative"
+    },
+    {
+      "title": "M&T Bank Corporation Announces Quarterly Preferred Stock Dividends",
+      "url": "/news/283047/mt-bank-corporation-announces-quarterly-preferred-stock-dividends",
+      "publisher": "PR Newswire",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Scott Black's Strategic Moves: M&T Bank Corp Leads the Way with 1.48% Portfolio Impact",
+      "url": "https://finance.yahoo.com/news/scott-blacks-strategic-moves-m-180122620.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Zions Stock Rises 1.7% as Q4 Earnings Beat on NII & Fee Income Growth",
+      "url": "/news/282769/zions-stock-rises-17-as-q4-earnings-beat-on-nii-fee-income-growth",
+      "publisher": "Zacks",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "KEY Q4 Earnings Beat as NII Jumps, Stock Down on Rise in Provisions",
+      "url": "/news/281219/key-q4-earnings-beat-as-nii-jumps-stock-down-on-rise-in-provisions",
+      "publisher": "Zacks",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BOK Financial Q4 Earnings Beat Estimates on Higher NII & Fee Income",
+      "url": "/news/280381/bok-financial-q4-earnings-beat-estimates-on-higher-nii-fee-income",
+      "publisher": "Zacks",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MTB Q4 Deep Dive: Loan Growth, Fee Momentum, and Deposit Mix Shape Outlook",
+      "url": "/news/280016/mtb-q4-deep-dive-loan-growth-fee-momentum-and-deposit-mix-shape-outlook",
+      "publisher": "StockStory",
+      "date": "2026-01-17",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks to Watch Friday Recap: J.B. Hunt, Salesforce, PNC",
+      "url": "https://finance.yahoo.com/m/330000a2-6ff5-3122-b4eb-70477dd82a50/stocks-to-watch-friday-recap%3A.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "M&T Bank Corp (MTB) Q4 2025 Earnings Call Highlights: Record Net Income and Strategic ...",
+      "url": "https://finance.yahoo.com/news/m-t-bank-corp-mtb-190026834.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MTB Q4 Earnings Beat Estimates on Higher NII & Fee Income, Stock Down",
+      "url": "/news/279295/mtb-q4-earnings-beat-estimates-on-higher-nii-fee-income-stock-down",
+      "publisher": "Zacks",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks to Watch Friday: J.B. Hunt, PNC, Verizon",
+      "url": "https://finance.yahoo.com/m/330000a2-6ff5-3122-b4eb-70477dd82a50/stocks-to-watch-friday%3A-j.b..html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Earnings Data Deluge",
+      "url": "/news/279122/earnings-data-deluge",
+      "publisher": "Zacks",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pre-Markets Lower on Bank Earnings, Ahead of Bigger Week",
+      "url": "/news/279023/pre-markets-lower-on-bank-earnings-ahead-of-bigger-week",
+      "publisher": "Zacks",
+      "date": "2026-01-16",
+      "sentiment": "negative"
+    },
+    {
+      "title": "M&T Bank Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/95c27a77-00f2-3740-8236-cbde680eaefe/m%26t-bank-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's What Key Metrics Tell Us About M&T Bank (MTB) Q4 Earnings",
+      "url": "/news/278913/heres-what-key-metrics-tell-us-about-mt-bank-mtb-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "M&T Bank Profit Rises on Higher Net Interest Income",
+      "url": "https://www.wsj.com/business/earnings/m-t-bank-profit-rises-on-higher-net-interest-income-4d0eb3ee?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-16",
+      "sentiment": "positive"
+    }
+  ]
 }

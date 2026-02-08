@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 173.36000061035156,
-    "sma_20": 182.15150222778328,
+    "sma_20": 182.15150222778325,
     "sma_50": 182.61380065917967,
     "sma_200": 170.56619613647464,
     "trend_alignment": 0.49277105461773685,
@@ -6286,17 +6286,17 @@
     "macd_histogram": -1.3243945410779268,
     "macd_line": -2.8074845237191823,
     "macd_histogram_pct": -0.7639562392795961,
-    "bb_position": 0.20133676707978848,
-    "bb_upper": 196.86958709459444,
-    "bb_lower": 167.43341736097213,
-    "bb_width": 0.1616026734537271,
+    "bb_position": 0.20133676707978942,
+    "bb_upper": 196.8695870945944,
+    "bb_lower": 167.4334173609721,
+    "bb_width": 0.16160267345372714,
     "hist_volatility": 0.3644697318390979,
     "volume_ratio": 1.2861258247374778,
     "avg_volume_20d": 914685.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 36.489504548454654,
-    "stoch_d": 32.73277773509735,
+    "stoch_d": 32.73277773509734,
     "trend_score": 49.27710546177369,
     "rsi_abs_score": 62.94229653969754,
     "macd_abs_score": 31.040656410806058,
@@ -6306,7 +6306,15 @@
     "technical_score": 46.94106949809745,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.15803452427719059,
+    "sentiment_pos": 0.07715,
+    "sentiment_neg": 0.0050999999999999995,
+    "sentiment_neu": 0.9177500000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 57.9
+  },
   "analyst": {
     "revision_momentum": 0.3,
     "target_upside": 0.18251038301799713,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 32.20497667619047,
     "catalyst_timeline": 55.11502513571146,
     "downside_control": 44.71254118774235,
-    "composite_score": 49.60686667487904,
+    "composite_score": 49.60297762958061,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 61.67001056349207,
     "technical_score": 46.94106949809745,
-    "sentiment_score": 50.0,
+    "sentiment_score": 57.9,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Transaction & Payment Processing Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Here's Why Jack Henry (JKHY) is a Strong Growth Stock",
+      "url": "/news/301646/heres-why-jack-henry-jkhy-is-a-strong-growth-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Here Are Thursdays Top Wall Street Analyst Research Calls: CAVA Group, DigitalOcean, Fox Corp, Jack Henry, Microsoft, Qualcomm, Snap, Zoom Communications, and More",
+      "url": "https://finance.yahoo.com/m/7943495b-3e50-307f-bf36-03b396f8bb9a/here-are-thursday%E2%80%99s-top-wall.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jack Henry & Associates Inc (JKHY) Q2 2026 Earnings Call Highlights: Record Revenue and ...",
+      "url": "https://finance.yahoo.com/news/jack-henry-associates-inc-jkhy-210228863.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Jack Henry & Associates, Inc.",
+      "url": "https://finance.yahoo.com/m/ebb17a6d-c5a0-33e5-bcea-514803a29174/analyst-report%3A-jack-henry-%26.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jack Henry & Associates Q2 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/95d0a59a-c364-3aba-ac52-787e34d6c839/jack-henry-%26-associates-q2.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jack Henry & Associates Shares Rise as Q2 Earnings Beat Estimates",
+      "url": "/news/299585/jack-henry-associates-shares-rise-as-q2-earnings-beat-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Jack Henry & Associates, Inc.",
+      "url": "https://finance.yahoo.com/m/aa8259ce-e4f9-3fae-8076-24f77f317f50/analyst-report%3A-jack-henry-%26.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jack Henry (JKHY) Reports Q2 Earnings: What Key Metrics Have to Say",
+      "url": "/news/298436/jack-henry-jkhy-reports-q2-earnings-what-key-metrics-have-to-say",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jack Henry (JKHY) Q2 Earnings and Revenues Top Estimates",
+      "url": "/news/298284/jack-henry-jkhy-q2-earnings-and-revenues-top-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jack Henry (NASDAQ:JKHY) Beats Q4 CY2025 Sales Expectations",
+      "url": "/news/298226/jack-henry-nasdaq-jkhy-beats-q4-cy2025-sales-expectations",
+      "publisher": "StockStory",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jack Henry second-quarter profit rises on strong bank tech demand",
+      "url": "https://finance.yahoo.com/news/jack-henry-second-quarter-profit-215253743.html",
+      "publisher": "Reuters",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jack Henry: Fiscal Q2 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/jack-henry-fiscal-q2-earnings-215223091.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jack Henry & Associates, Inc. Reports Second Quarter Fiscal 2026 Results",
+      "url": "/news/298145/jack-henry-associates-inc-reports-second-quarter-fiscal-2026-results",
+      "publisher": "PR Newswire",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jack Henry (JKHY) Reports Q4: Everything You Need To Know Ahead Of Earnings",
+      "url": "/news/294882/jack-henry-jkhy-reports-q4-everything-you-need-to-know-ahead-of-earnings",
+      "publisher": "StockStory",
+      "date": "2026-02-01",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jack Henry (JKHY) Moves to Buy: Rationale Behind the Upgrade",
+      "url": "/news/293849/jack-henry-jkhy-moves-to-buy-rationale-behind-the-upgrade",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "JKHY Gears Up to Report Q2 Earnings: What's in the Cards?",
+      "url": "/news/292181/jkhy-gears-up-to-report-q2-earnings-whats-in-the-cards",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Earnings Preview: CDW (CDW) Q4 Earnings Expected to Decline",
+      "url": "/news/290312/earnings-preview-cdw-cdw-q4-earnings-expected-to-decline",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jack Henry's transaction enrichment, powered by Bud Financial, brings greater clarity and accuracy to digital banking experiences",
+      "url": "/news/289948/jack-henrys-transaction-enrichment-powered-by-bud-financial-brings-greater-clarity-and-accuracy-to-digital-banking-experiences",
+      "publisher": "PR Newswire",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jack Henry Announces Fiscal 2026 Second Quarter Deconversion Revenue Results",
+      "url": "/news/289061/jack-henry-announces-fiscal-2026-second-quarter-deconversion-revenue-results",
+      "publisher": "PR Newswire",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jack Henry (JKHY) Earnings Expected to Grow: Should You Buy?",
+      "url": "/news/288556/jack-henry-jkhy-earnings-expected-to-grow-should-you-buy",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    }
+  ]
 }

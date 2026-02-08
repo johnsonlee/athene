@@ -6277,27 +6277,27 @@
   },
   "technical": {
     "close": 129.69000244140625,
-    "sma_20": 146.83300094604493,
+    "sma_20": 146.8330009460449,
     "sma_50": 150.8540005493164,
-    "sma_200": 153.83507141113282,
-    "trend_alignment": 0.2699831154091987,
+    "sma_200": 153.83507141113284,
+    "trend_alignment": 0.26998311540919856,
     "rsi": 27.67628189861325,
     "rsi_score": -0.446474362027735,
     "macd_histogram": -2.427011617693271,
     "macd_line": -6.482747569084097,
     "macd_histogram_pct": -1.8713945346633725,
-    "bb_position": 0.1168629461324892,
-    "bb_upper": 169.2048889318083,
-    "bb_lower": 124.46111296028155,
-    "bb_width": 0.3047256112947542,
+    "bb_position": 0.11686294613248983,
+    "bb_upper": 169.20488893180828,
+    "bb_lower": 124.46111296028153,
+    "bb_width": 0.30472561129475423,
     "hist_volatility": 0.38803510624019244,
     "volume_ratio": 1.9839170827190729,
     "avg_volume_20d": 5877665.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 9.949049735881982,
+    "stoch_k": 9.94904973588198,
     "stoch_d": 10.61799959991235,
-    "trend_score": 26.99831154091987,
+    "trend_score": 26.998311540919858,
     "rsi_abs_score": 47.676281898613254,
     "macd_abs_score": 20.0,
     "momentum_score": 33.83814094930663,
@@ -6306,7 +6306,15 @@
     "technical_score": 34.45320454301243,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.08237126749872477,
+    "sentiment_pos": 0.0736,
+    "sentiment_neg": 0.10295000000000001,
+    "sentiment_neu": 0.8233499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 45.88
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.2684092836764593,
@@ -6325,7 +6333,7 @@
     "quality_score": 84.79980019999999,
     "growth_score": 91.0,
     "safety_score": 37.0887,
-    "trend_score": 26.99831154091987,
+    "trend_score": 26.998311540919858,
     "momentum_score": 33.83814094930663,
     "volatility_score": 31.01134397972243,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 27.52871857333333,
     "catalyst_timeline": 41.26037036938659,
     "downside_control": 37.90700659695837,
-    "composite_score": 49.45034391049104,
+    "composite_score": 49.44645486519261,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 63.13077887111111,
     "technical_score": 34.45320454301243,
-    "sentiment_score": 50.0,
+    "sentiment_score": 45.88,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Asset Management & Custody Banks"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "How the Software Panic Hit Private Credit-and Why Some BDC Stocks Might Be Worth Buying",
+      "url": "https://www.barrons.com/articles/software-selloff-private-credit-bdc-stocks-blackstone-blueowl-ares-8a2648f2?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Blackstone Finalizing A$5 Billion Loan for Australian Data Center Expansion",
+      "url": "https://finance.yahoo.com/news/blackstone-finalizing-5-billion-loan-172345854.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "'Stay Long Detroit, Short Davos': Why BofA's Hartnett Sees A Main Street Boom Ahead Of The Midterms",
+      "url": "/news/302666/stay-long-detroit-short-davos-why-bofas-hartnett-sees-a-main-street-boom-ahead-of-the-midterms",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Blackstone affiliate secures nod for stake buy in Indias Federal Bank",
+      "url": "https://finance.yahoo.com/m/dffe1853-e16e-35f4-b422-af57b75a336f/blackstone-affiliate-secures.html",
+      "publisher": "Retail Banker International",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Private Markets' AI Panic: When 'Recurring Revenue' Isn't",
+      "url": "https://www.wsj.com/finance/investing/private-markets-ai-panic-when-recurring-revenue-isnt-37a8b46d?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Ares Management Stock Falls as Q4 Earnings Miss, Expenses Rise Y/Y",
+      "url": "/news/301956/ares-management-stock-falls-as-q4-earnings-miss-expenses-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Why the software stock sell-off may be bad news for private credit",
+      "url": "https://finance.yahoo.com/video/why-software-stock-sell-off-155238325.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Private Credit Giants Back A$1.4 Billion BGH Loan for Aspen Asia Deal",
+      "url": "https://finance.yahoo.com/news/private-credit-giants-back-1-132428776.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "5 Revealing Analyst Questions From Blackstone's Q4 Earnings Call",
+      "url": "/news/300792/5-revealing-analyst-questions-from-blackstones-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Software Selloff Is Pummeling Alternative Managers. Three Stocks to Weather the Storm.",
+      "url": "https://www.barrons.com/articles/software-alternative-managers-three-stocks-80f978aa?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Blackstone Inc.",
+      "url": "https://finance.yahoo.com/m/55abddfd-7d80-3ced-bab3-fd7a4ac9e415/analyst-report%3A-blackstone.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Private Equity Stocks Tumble On Software Rout - Expert Warns Of New 'Cockroaches'",
+      "url": "/news/298220/private-equity-stocks-tumble-on-software-rout-expert-warns-of-new-cockroaches",
+      "publisher": "Benzinga",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "AI Disruption Fears Roil Software Industry, and the Stock Market",
+      "url": "https://finance.yahoo.com/m/7327311b-eb19-331f-9c82-4ce6d198d664/ai-disruption-fears-roil.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Software Slump Drags Down Private-Fund Managers",
+      "url": "https://www.wsj.com/finance/investing/software-slump-drags-down-private-fund-managers-6f840d0c?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "\"2026 shoule be the year of the IPO,\" says Blackstones Gray",
+      "url": "https://finance.yahoo.com/news/2026-shoule-ipo-says-blackstone-183736897.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jon Gray on Investing in AI During Rapid Change",
+      "url": "https://finance.yahoo.com/video/jon-gray-investing-ai-during-171300735.html",
+      "publisher": "WSJ",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Blackstone's Jon Gray Sees Disruption Risk in Private Credit",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-02-03-2026/card/blackstone-s-jon-gray-sees-disruption-risk-in-private-credit-HUvx4asOrQGb5LTRMquM?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Blackstone's Jon Gray Sees U.S. Economy as 'Battleship' After Turbulent Year",
+      "url": "https://finance.yahoo.com/video/blackstones-jon-gray-sees-u-152700933.html",
+      "publisher": "WSJ",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Blackstone (BX) Reports Strong Q4 Earnings, Citizens Maintains Market Outperform Rating",
+      "url": "/news/296858/blackstone-bx-reports-strong-q4-earnings-citizens-maintains-market-outperform-rating",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Lazard Shares Gain as Q4 Earnings Beat Estimates, AUM Rise Y/Y",
+      "url": "/news/293932/lazard-shares-gain-as-q4-earnings-beat-estimates-aum-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    }
+  ]
 }

@@ -6295,7 +6295,7 @@
     "avg_volume_20d": 7369170.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 14.331895744037318,
+    "stoch_k": 14.33189574403732,
     "stoch_d": 11.76748407667096,
     "trend_score": 20.556264129034137,
     "rsi_abs_score": 48.53066127242352,
@@ -6306,7 +6306,15 @@
     "technical_score": 31.685625610840862,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.01620775725138553,
+    "sentiment_pos": 0.061349999999999995,
+    "sentiment_neg": 0.054000000000000006,
+    "sentiment_neu": 0.8846,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 50.81
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.4032461240310077,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 40.316154299999994,
     "catalyst_timeline": 41.55213597846257,
     "downside_control": 36.28521538595032,
-    "composite_score": 41.5990696037596,
+    "composite_score": 41.595180558461166,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 49.00231620238095,
     "technical_score": 31.685625610840862,
-    "sentiment_score": 50.0,
+    "sentiment_score": 50.81,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Asset Management & Custody Banks"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Consumer Tech News (Feb 2-6): Big Tech Earnings Take Center Stage In U.S. Markets, Anthropic Launches New AI Tool & More",
+      "url": "/news/303773/consumer-tech-news-feb-2-6-big-tech-earnings-take-center-stage-in-us-markets-anthropic-launches-new-ai-tool-more",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "KKR & Co. Inc. Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/b14c78b7-89b1-3e48-9be3-a8251030ae3d/kkr-%26-co.-inc.-q4-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "KKR to Add Sports Franchise Exposure Through Arctos Acquisition",
+      "url": "/news/303097/kkr-to-add-sports-franchise-exposure-through-arctos-acquisition",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Are Options Traders Betting on a Big Move in KKR Stock?",
+      "url": "/news/302752/are-options-traders-betting-on-a-big-move-in-kkr-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Private Markets' AI Panic: When 'Recurring Revenue' Isn't",
+      "url": "https://www.wsj.com/finance/investing/private-markets-ai-panic-when-recurring-revenue-isnt-37a8b46d?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "KKR Forms A$600m Energy Transition Strategic Partnership with HMC",
+      "url": "https://www.businesswire.com/news/home/20260205961730/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "KKR Bets On Sports Investments With $1.4 Billion Arctos Buyout",
+      "url": "/news/301930/kkr-bets-on-sports-investments-with-14-billion-arctos-buyout",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "KKR Executives Downplay Impact of AI Disruption",
+      "url": "https://finance.yahoo.com/m/39870f05-12fb-3801-8871-f8d36d6e5581/kkr-executives-downplay.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Software's Freefall Continues, Bitcoin Dips To 16-Month Lows: What's Moving Markets Thursday?",
+      "url": "/news/301895/softwares-freefall-continues-bitcoin-dips-to-16-month-lows-whats-moving-markets-thursday",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Analyst Report: KKR & Co. Inc.",
+      "url": "https://finance.yahoo.com/m/734eaf4e-079f-32eb-9654-8c4530f455fe/analyst-report%3A-kkr-%26-co.-inc..html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "KKR & Co. Shares Fall as Q4 Earnings Miss Estimates, AUM Rises Y/Y",
+      "url": "/news/301812/kkr-co-shares-fall-as-q4-earnings-miss-estimates-aum-rises-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why the software stock sell-off may be bad news for private credit",
+      "url": "https://finance.yahoo.com/video/why-software-stock-sell-off-155238325.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Compared to Estimates, KKR & Co. (KKR) Q4 Earnings: A Look at Key Metrics",
+      "url": "/news/301535/compared-to-estimates-kkr-co-kkr-q4-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "KKR to Acquire Pro Sports Investor Arctos in $1.4 Billion Deal",
+      "url": "https://www.wsj.com/business/deals/kkr-to-acquire-pro-sports-investor-arctos-in-1-4-billion-deal-3e884d11?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "KKR & Co. Inc. Reports Fourth Quarter 2025 Results",
+      "url": "https://www.businesswire.com/news/home/20260205483801/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "KKR to Acquire Arctos, Establishing a New Platform for Sports, GP Solutions and Secondaries in a Strategic Transaction Initially Valued at $1.4 Billion",
+      "url": "https://www.businesswire.com/news/home/20260204778743/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "KKR-Singtel Sign $5.1 Billion Data Center Deal in Southeast Asia",
+      "url": "/news/298918/kkr-singtel-sign-51-billion-data-center-deal-in-southeast-asia",
+      "publisher": "Benzinga",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "KKR Makes AI Play With Nearly $11 Billion Asia Data-Center Deal",
+      "url": "https://finance.yahoo.com/m/787880d2-a6e5-3cfe-b6fe-78429479d048/kkr-makes-ai-play-with-nearly.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "KKR Makes AI Play With $10.9 Billion Asia Data-Center Deal",
+      "url": "https://finance.yahoo.com/m/787880d2-a6e5-3cfe-b6fe-78429479d048/kkr-makes-ai-play-with-%2410.9.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "KKR-Led Consortium with Singtel Group to Fully Acquire ST Telemedia Global Data Centres at S$13.8 Billion Enterprise Value",
+      "url": "https://www.businesswire.com/news/home/20260202441025/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    }
+  ]
 }

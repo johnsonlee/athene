@@ -6277,36 +6277,44 @@
   },
   "technical": {
     "close": 226.7899932861328,
-    "sma_20": 224.7034996032715,
+    "sma_20": 224.70349960327147,
     "sma_50": 220.09856109619142,
-    "sma_200": 221.7195597076416,
-    "trend_alignment": 0.5380836680372089,
+    "sma_200": 221.71955970764162,
+    "trend_alignment": 0.5380836680372088,
     "rsi": 57.81146832538201,
     "rsi_score": 0.1562293665076402,
     "macd_histogram": -0.25949428803895147,
     "macd_line": 1.9673957069702794,
     "macd_histogram_pct": -0.11442051930023067,
-    "bb_position": 0.6161477741128484,
-    "bb_upper": 233.68556447191932,
-    "bb_lower": 215.72143473462367,
-    "bb_width": 0.07994592771813736,
+    "bb_position": 0.6161477741128499,
+    "bb_upper": 233.6855644719193,
+    "bb_lower": 215.72143473462364,
+    "bb_width": 0.07994592771813737,
     "hist_volatility": 0.18575766729652676,
     "volume_ratio": 0.939374617211031,
     "avg_volume_20d": 2383820.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 58.92160041275784,
-    "stoch_d": 59.18077998670525,
-    "trend_score": 53.80836680372089,
+    "stoch_d": 59.18077998670524,
+    "trend_score": 53.80836680372087,
     "rsi_abs_score": 73.0319721722326,
     "macd_abs_score": 44.63948701749423,
     "momentum_score": 58.835729594863416,
-    "volatility_score": 68.04857890419451,
+    "volatility_score": 68.0485789041945,
     "volume_score": 50.0,
-    "technical_score": 57.40294470041419,
+    "technical_score": 57.40294470041418,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.2753738444727632,
+    "sentiment_pos": 0.035199999999999995,
+    "sentiment_neg": 0.22454999999999997,
+    "sentiment_neu": 0.74025,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 36.23
+  },
   "analyst": {
     "revision_momentum": 0.17647058823529413,
     "target_upside": 0.12879756603024828,
@@ -6325,9 +6333,9 @@
     "quality_score": 73.6051,
     "growth_score": 69.1,
     "safety_score": 29.21922891618702,
-    "trend_score": 53.80836680372089,
+    "trend_score": 53.80836680372087,
     "momentum_score": 58.835729594863416,
-    "volatility_score": 68.04857890419451,
+    "volatility_score": 68.0485789041945,
     "volume_score": 50.0,
     "analyst_score": 63.53739189091749,
     "pe_score": 36.10015,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 46.876224324999995,
     "catalyst_timeline": 54.85114882895017,
     "downside_control": 52.250171173057225,
-    "composite_score": 53.77757910722657,
+    "composite_score": 53.773690061928136,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 57.080562720737404,
-    "technical_score": 57.40294470041419,
-    "sentiment_score": 50.0,
+    "technical_score": 57.40294470041418,
+    "sentiment_score": 36.23,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 305,
-    "percentile": 0.4142581888246628,
+    "rank": 306,
+    "percentile": 0.4123314065510597,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Environmental & Facilities Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Waste Management, Inc. (WM): A Bull Case Theory",
+      "url": "/news/303647/waste-management-inc-wm-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "The 5 Most Interesting Analyst Questions From Waste Management's Q4 Earnings Call",
+      "url": "/news/298673/the-5-most-interesting-analyst-questions-from-waste-managements-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Waste Management's \"Boring\" Business Is Powering a Quiet Rally",
+      "url": "/news/294040/waste-managements-boring-business-is-powering-a-quiet-rally",
+      "publisher": "MarketBeat",
+      "date": "2026-01-30",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Waste Management Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/ba2cf001-7b9e-3f9e-98d1-6b5384e0b951/waste-management-q4-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-30",
+      "sentiment": "negative"
+    },
+    {
+      "title": "WM Q4 Deep Dive: Margin Expansion and Cost Discipline Offset Revenue Miss",
+      "url": "/news/293990/wm-q4-deep-dive-margin-expansion-and-cost-discipline-offset-revenue-miss",
+      "publisher": "StockStory",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Waste Management Inc (WM) Q4 2025 Earnings Call Highlights: Record Cash Flow and Strategic ...",
+      "url": "https://finance.yahoo.com/news/waste-management-inc-wm-q4-210837727.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Waste Management Stock Falls After Disappointing Q4 Results",
+      "url": "/news/292468/waste-management-stock-falls-after-disappointing-q4-results",
+      "publisher": "Benzinga",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "WM Earnings Miss Estimates in Q4, Revenues Rise 14% Y/Y",
+      "url": "/news/292448/wm-earnings-miss-estimates-in-q4-revenues-rise-14-yy",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "VEOEY or WM: Which Is the Better Value Stock Right Now?",
+      "url": "/news/292214/veoey-or-wm-which-is-the-better-value-stock-right-now",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Waste Management, Inc.",
+      "url": "https://finance.yahoo.com/m/6be54d52-81b4-3fa3-8756-bb72badd76cc/analyst-report%3A-waste.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Waste Management (WM) Q4 Earnings: Taking a Look at Key Metrics Versus Estimates",
+      "url": "/news/291038/waste-management-wm-q4-earnings-taking-a-look-at-key-metrics-versus-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Waste Management (WM) Q4 Earnings and Revenues Lag Estimates",
+      "url": "/news/291009/waste-management-wm-q4-earnings-and-revenues-lag-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Waste Management (NYSE:WM) Misses Q4 CY2025 Sales Expectations",
+      "url": "/news/290869/waste-management-nyse-wm-misses-q4-cy2025-sales-expectations",
+      "publisher": "StockStory",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Waste Management: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/waste-management-q4-earnings-snapshot-220710969.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "WM Announces Fourth Quarter and Full-Year 2025 Earnings",
+      "url": "https://www.businesswire.com/news/home/20260128627591/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Gold Rallies To $5,300, Memory Stocks Go Wild: What's Moving Markets Wednesday?",
+      "url": "/news/290536/gold-rallies-to-5300-memory-stocks-go-wild-whats-moving-markets-wednesday",
+      "publisher": "Benzinga",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Waste Management (WM) To Report Earnings Tomorrow: Here Is What To Expect",
+      "url": "/news/287767/waste-management-wm-to-report-earnings-tomorrow-here-is-what-to-expect",
+      "publisher": "StockStory",
+      "date": "2026-01-26",
+      "sentiment": "negative"
+    },
+    {
+      "title": "3 Dividend-Backed Consumer Staples to Reinforce Your Portfolio",
+      "url": "/news/287453/3-dividend-backed-consumer-staples-to-reinforce-your-portfolio",
+      "publisher": "MarketBeat",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tesla, Microsoft, Meta, SanDisk And More: Stocks With Earnings This Week",
+      "url": "/news/286769/tesla-microsoft-meta-sandisk-and-more-stocks-with-earnings-this-week",
+      "publisher": "Benzinga",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Top 5 Waste Management & Landfill Stocks: Trash = Cash",
+      "url": "https://finance.yahoo.com/m/dabcb845-0ff4-3c40-a6c4-da0aa7e93f36/top-5-waste-management-%26.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-25",
+      "sentiment": "negative"
+    }
+  ]
 }

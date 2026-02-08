@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 75.75930341794019,
-    "stoch_d": 72.71329369822669,
+    "stoch_d": 72.7132936982267,
     "trend_score": 65.38751689981183,
     "rsi_abs_score": 69.55936828687442,
     "macd_abs_score": 56.25387647375873,
@@ -6306,7 +6306,15 @@
     "technical_score": 62.64951468855973,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.09368936132929308,
+    "sentiment_pos": 0.1021,
+    "sentiment_neg": 0.012750000000000001,
+    "sentiment_neu": 0.88515,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 54.68
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": -9.522902580711471e-05,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 60.10796859285714,
     "catalyst_timeline": 57.82003582483218,
     "downside_control": 63.42893277749158,
-    "composite_score": 60.21478710550546,
+    "composite_score": 60.21089806020702,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 58.08932535356282,
     "technical_score": 62.64951468855973,
-    "sentiment_score": 50.0,
+    "sentiment_score": 54.68,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Health Care Equipment"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Dow 50,000 sets table for inflation data, delayed January jobs report: What to watch this week",
+      "url": "https://finance.yahoo.com/news/dow-50000-sets-table-for-inflation-data-delayed-january-jobs-report-what-to-watch-this-week-123826626.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "BD Earnings: What To Look For From BDX",
+      "url": "/news/303675/bd-earnings-what-to-look-for-from-bdx",
+      "publisher": "StockStory",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Can Sustained Product Demand Drive BDX Stock Before Q1 Earnings?",
+      "url": "/news/301760/can-sustained-product-demand-drive-bdx-stock-before-q1-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Countdown to Becton Dickinson (BDX) Q1 Earnings: A Look at Estimates Beyond Revenue and EPS",
+      "url": "/news/299468/countdown-to-becton-dickinson-bdx-q1-earnings-a-look-at-estimates-beyond-revenue-and-eps",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Citi bullish on Becton Dickinson after Life Sciences sale",
+      "url": "https://finance.yahoo.com/news/citi-bullish-becton-dickinson-life-173030524.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Staar Surgical (STAA) to Report Q4 Results: Wall Street Expects Earnings Growth",
+      "url": "/news/297660/staar-surgical-staa-to-report-q4-results-wall-street-expects-earnings-growth",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Piper Sandler Highlights Upcoming Segment Transition at Becton Dickinson (BDX)",
+      "url": "/news/297239/piper-sandler-highlights-upcoming-segment-transition-at-becton-dickinson-bdx",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Becton, Dickinson and Company (BDX): A Bull Case Theory",
+      "url": "/news/296449/becton-dickinson-and-company-bdx-a-bull-case-theory",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Steven Romick's Strategic Moves: A Closer Look at Becton Dickinson & Co",
+      "url": "https://finance.yahoo.com/news/steven-romicks-strategic-moves-closer-230031394.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BD & Envetec Showcase Closed-Loop Recycling Solution for Lab Plastics",
+      "url": "/news/295964/bd-envetec-showcase-closed-loop-recycling-solution-for-lab-plastics",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Earnings Preview: Becton Dickinson (BDX) Q1 Earnings Expected to Decline",
+      "url": "/news/295811/earnings-preview-becton-dickinson-bdx-q1-earnings-expected-to-decline",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Becton, Dickinson Shareholders Approve All Proposals at Annual Meeting, Recap Record FY2025",
+      "url": "https://finance.yahoo.com/m/dd0d7c9d-1361-368a-bbb0-5b635846d035/becton%2C-dickinson.html",
+      "publisher": "MarketBeat",
+      "date": "2026-01-31",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BD and Envetec Demonstrate Closed-Loop Recycling Solution for Laboratory Plastics in Health Care",
+      "url": "/news/291296/bd-and-envetec-demonstrate-closed-loop-recycling-solution-for-laboratory-plastics-in-health-care",
+      "publisher": "PR Newswire",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BD Board Declares Dividend, Authorizes 10 Million Additional Share Repurchases; BD Completed $250 Million Repurchase to Date in FY26",
+      "url": "/news/289037/bd-board-declares-dividend-authorizes-10-million-additional-share-repurchases-bd-completed-250-million-repurchase-to-date-in-fy26",
+      "publisher": "PR Newswire",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BDX Introduces BD Research Cloud 7.0 for Advanced Flow Cytometry",
+      "url": "/news/288791/bdx-introduces-bd-research-cloud-70-for-advanced-flow-cytometry",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BDX vs. SAUHY: Which Stock Is the Better Value Option?",
+      "url": "/news/288761/bdx-vs-sauhy-which-stock-is-the-better-value-option",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Becton Dickinson (BDX) is a Top Value Stock for the Long-Term",
+      "url": "/news/288513/why-becton-dickinson-bdx-is-a-top-value-stock-for-the-long-term",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Target upgraded, Stryker downgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/target-upgraded-stryker-downgraded-wall-143753830.html",
+      "publisher": "The Fly",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BD to Announce Financial Results for its First Quarter of Fiscal 2026",
+      "url": "/news/288306/bd-to-announce-financial-results-for-its-first-quarter-of-fiscal-2026",
+      "publisher": "PR Newswire",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Waters Shareholders Approve Combination with BD's Biosciences & Diagnostic Solutions Business",
+      "url": "/news/288304/waters-shareholders-approve-combination-with-bds-biosciences-diagnostic-solutions-business",
+      "publisher": "PR Newswire",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    }
+  ]
 }

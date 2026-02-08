@@ -6278,7 +6278,7 @@
   "technical": {
     "close": 448.239990234375,
     "sma_20": 449.9990005493164,
-    "sma_50": 430.6534741210938,
+    "sma_50": 430.65347412109384,
     "sma_200": 450.26809173583985,
     "trend_alignment": 0.5168914639195578,
     "rsi": 51.49932393892344,
@@ -6306,7 +6306,15 @@
     "technical_score": 55.75899397518017,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.018017433118819277,
+    "sentiment_pos": 0.034050000000000004,
+    "sentiment_neg": 0.00385,
+    "sentiment_neu": 0.9621000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 50.9
+  },
   "analyst": {
     "revision_momentum": 0.14285714285714285,
     "target_upside": 0.15339996430483668,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 41.04710849166666,
     "catalyst_timeline": 56.62305779329793,
     "downside_control": 54.383869497689986,
-    "composite_score": 54.767200174310794,
+    "composite_score": 54.76331112901236,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 52.10990167921014,
     "technical_score": 55.75899397518017,
-    "sentiment_score": 50.0,
+    "sentiment_score": 50.9,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Materials",
     "industry": "Industrial Gases"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Linde price target raised to $530 from $495 at Morgan Stanley",
+      "url": "https://finance.yahoo.com/news/linde-price-target-raised-530-155535580.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Amazon downgraded, Roblox upgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/amazon-downgraded-roblox-upgraded-wall-144121688.html",
+      "publisher": "The Fly",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Linde Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/96516d6f-3100-3371-a378-7744ea846eaf/linde-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Linde PLC (LIN) Q4 2025 Earnings Call Highlights: Record Performance Amidst Challenges",
+      "url": "https://finance.yahoo.com/news/linde-plc-lin-q4-2025-210114697.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Linde plc",
+      "url": "https://finance.yahoo.com/m/3e834187-9b75-3d91-b671-7a442a09cfb5/analyst-report%3A-linde-plc.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "More Investments in U.S. Space Sector Is Coming, Linde Says",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-02-05-2026/card/more-investments-in-u-s-space-sector-is-coming-linde-says-ynEr28wgu6UPcHlX4fsc?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "More Investments in U.S. Space Sector Are Coming, Linde Says",
+      "url": "https://finance.yahoo.com/m/6df2f1c2-61f4-3ede-b92e-de044ca1007e/more-investments-in-u.s..html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Linde Q4 Earnings Beat on Higher Americas Pricing, Revenues Rise Y/Y",
+      "url": "/news/301762/linde-q4-earnings-beat-on-higher-americas-pricing-revenues-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Linde (LIN) Q4 Earnings: Taking a Look at Key Metrics Versus Estimates",
+      "url": "/news/301550/linde-lin-q4-earnings-taking-a-look-at-key-metrics-versus-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Linde (LIN) Surpasses Q4 Earnings and Revenue Estimates",
+      "url": "/news/301162/linde-lin-surpasses-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Linde Guides Q1, FY26 Adj. EPS In Line With Estimates - Update",
+      "url": "https://www.rttnews.com/3617903/linde-guides-q1-fy26-adj-eps-in-line-with-estimates-update.aspx",
+      "publisher": "RTT News",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Linde Reports Full-Year and Fourth-Quarter 2025 Results",
+      "url": "https://www.businesswire.com/news/home/20260205319632/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Amazon.com headlines earnings slate",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-sp500-nasdaq-mixed-amid-ai-software-angst-silver-dives-amazon-earnings/card/amazon-com-headlines-earnings-slate-AO5HCfSzab6Mb6APxkEU?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Market Today: Dow, S&P 500 and Nasdaq mixed as AI spending and disruption weigh on tech sector after Alphabet results; silver dives; bitcoin falls near 70k; Amazon.com earnings on tap.",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-sp500-nasdaq-mixed-amid-ai-software-angst-silver-dives-amazon-earnings?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Can Sustained Strength in Water Drive ECL Stock Before Q4 Earnings?",
+      "url": "/news/299882/can-sustained-strength-in-water-drive-ecl-stock-before-q4-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Linde plc",
+      "url": "https://finance.yahoo.com/m/a8a3d9ff-44d5-38c4-8d81-8e8752633c0b/analyst-report%3A-linde-plc.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ecolab (ECL) Earnings Expected to Grow: What to Know Ahead of Next Week's Release",
+      "url": "/news/297678/ecolab-ecl-earnings-expected-to-grow-what-to-know-ahead-of-next-weeks-release",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Linde's (LIN) Global Expansion and Hydrogen Strategy Shape Its Long-Term Outlook",
+      "url": "/news/297365/lindes-lin-global-expansion-and-hydrogen-strategy-shape-its-long-term-outlook",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Seeking Clues to Linde (LIN) Q4 Earnings? A Peek Into Wall Street Projections for Key Metrics",
+      "url": "/news/295635/seeking-clues-to-linde-lin-q4-earnings-a-peek-into-wall-street-projections-for-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Linde Set to Report Q4 Earnings: What's in Store for the Stock?",
+      "url": "/news/295664/linde-set-to-report-q4-earnings-whats-in-store-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    }
+  ]
 }

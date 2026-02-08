@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 73.6170263973703,
-    "stoch_d": 79.499542172945,
+    "stoch_d": 79.49954217294501,
     "trend_score": 51.12127237173401,
     "rsi_abs_score": 72.99903141716706,
     "macd_abs_score": 57.769258785696074,
@@ -6306,7 +6306,15 @@
     "technical_score": 60.256250145564586,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.024816333123185853,
+    "sentiment_pos": 0.11239999999999999,
+    "sentiment_neg": 0.07515,
+    "sentiment_neu": 0.8124499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 51.24
+  },
   "analyst": {
     "revision_momentum": -0.1111111111111111,
     "target_upside": 0.08792184724689167,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 50.91661345,
     "catalyst_timeline": 54.41589727869607,
     "downside_control": 49.18040774021118,
-    "composite_score": 56.64661628005045,
+    "composite_score": 56.642727234752016,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 56.32734305357143,
     "technical_score": 60.256250145564586,
-    "sentiment_score": 50.0,
+    "sentiment_score": 51.24,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Utilities",
     "industry": "Electric Utilities"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Xcel Energy (XEL) Misses Q4 Earnings and Revenue Estimates",
+      "url": "/news/301183/xcel-energy-xel-misses-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Southern Company Stock: Analyst Estimates & Ratings",
+      "url": "https://finance.yahoo.com/m/96c5175b-c362-3263-9ea5-b49c16788800/southern-company-stock%3A.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Southern Co. (SO) Stock Drops Despite Market Gains: Important Facts to Note",
+      "url": "/news/296317/southern-co-so-stock-drops-despite-market-gains-important-facts-to-note",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Southern Company (The) (SO) is Attracting Investor Attention: Here is What You Should Know",
+      "url": "/news/291755/southern-company-the-so-is-attracting-investor-attention-here-is-what-you-should-know",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Southern Company announces quarterly dividend",
+      "url": "/news/290673/southern-company-announces-quarterly-dividend",
+      "publisher": "PR Newswire",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Trump Administration Official Criticizes 'Greedy' Nuclear Industry Request",
+      "url": "https://www.barrons.com/articles/nuclear-energy-trump-ai-subsidies-267f8c79?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "The $7 Trillion Data Centre Boom Has A 100GW Power Problem",
+      "url": "https://finance.yahoo.com/news/7-trillion-data-centre-boom-110000119.html",
+      "publisher": "Oilprice.com",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Southern Company (SO) Target Lifted as RBC Updates Utility Models",
+      "url": "/news/289146/southern-company-so-target-lifted-as-rbc-updates-utility-models",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Georgia Power restores power to nearly all customers impacted by Winter Storm Fern",
+      "url": "/news/287585/georgia-power-restores-power-to-nearly-all-customers-impacted-by-winter-storm-fern",
+      "publisher": "PR Newswire",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "IDACORP Gains From Regulated Infrastructure, Clean Energy Initiative",
+      "url": "/news/287132/idacorp-gains-from-regulated-infrastructure-clean-energy-initiative",
+      "publisher": "Zacks",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The AI Energy Trade: Can Utility Stocks Be Winners in 2026? (NEE, SO, D)",
+      "url": "/news/286147/the-ai-energy-trade-can-utility-stocks-be-winners-in-2026-nee-so-d",
+      "publisher": "Motley Fool",
+      "date": "2026-01-24",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: Waste Connections, Inc.",
+      "url": "https://finance.yahoo.com/m/e0de6eff-7895-3673-b3c2-0a79372169e5/analyst-report%3A-waste.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-23",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Southern Co. (SO) Stock Falls Amid Market Uptick: What Investors Need to Know",
+      "url": "/news/284732/southern-co-so-stock-falls-amid-market-uptick-what-investors-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NextEra Energy vs. Southern Company: Which Is a Better Utility Pick?",
+      "url": "/news/284207/nextera-energy-vs-southern-company-which-is-a-better-utility-pick",
+      "publisher": "Zacks",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Southern Company ranked No. 1 in industry on FORTUNE's 2026 World's Most Admired Companies list",
+      "url": "/news/282628/southern-company-ranked-no-1-in-industry-on-fortunes-2026-worlds-most-admired-companies-list",
+      "publisher": "PR Newswire",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Final Trades: Toast, Southern Company, the IGV and the TBT",
+      "url": "https://www.youtube.com/watch?v=Tt6pv6CqRR4",
+      "publisher": "CNBC TV",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Southern CEO Womack on Power Demands, Trump's PJM Plan",
+      "url": "https://finance.yahoo.com/video/southern-ceo-womack-power-demands-141714620.html",
+      "publisher": "Bloomberg",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What You Need to Know Ahead of Southern Company's Earnings Release",
+      "url": "https://finance.yahoo.com/m/b3d99d20-d031-32ac-9957-81ad1276e3c8/what-you-need-to-know-ahead.html",
+      "publisher": "Barchart",
+      "date": "2026-01-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Southern Company's Stability Makes It a Wise Hold Right Now",
+      "url": "/news/280230/southern-companys-stability-makes-it-a-wise-hold-right-now",
+      "publisher": "Zacks",
+      "date": "2026-01-19",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Southern Company fourth-quarter 2025 earnings to be released February 19",
+      "url": "/news/277719/southern-company-fourth-quarter-2025-earnings-to-be-released-february-19",
+      "publisher": "PR Newswire",
+      "date": "2026-01-15",
+      "sentiment": "neutral"
+    }
+  ]
 }

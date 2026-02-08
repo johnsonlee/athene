@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 384.32000732421875,
     "sma_20": 345.9815017700196,
-    "sma_50": 336.1640020751954,
+    "sma_50": 336.16400207519536,
     "sma_200": 300.82633346557617,
-    "trend_alignment": 0.8003677693126867,
+    "trend_alignment": 0.8003677693126869,
     "rsi": 75.55488714063688,
     "rsi_score": 0.5110977428127376,
     "macd_histogram": 4.3038698365767445,
@@ -6296,17 +6296,25 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 94.65211128532546,
-    "stoch_d": 88.74172354731165,
-    "trend_score": 80.03677693126868,
+    "stoch_d": 88.74172354731164,
+    "trend_score": 80.03677693126869,
     "rsi_abs_score": 38.89022571872624,
     "macd_abs_score": 74.29799290131386,
     "momentum_score": 56.59410931002005,
     "volatility_score": 36.19658149951813,
     "volume_score": 50.0,
-    "technical_score": 58.228582172290245,
+    "technical_score": 58.22858217229025,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.14848599989086383,
+    "sentiment_pos": 0.1484,
+    "sentiment_neg": 0.039850000000000003,
+    "sentiment_neu": 0.81175,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 57.42
+  },
   "analyst": {
     "revision_momentum": -0.07142857142857142,
     "target_upside": -0.08930058284762696,
@@ -6325,7 +6333,7 @@
     "quality_score": 84.5892,
     "growth_score": 76.64285714285714,
     "safety_score": 42.23802824886462,
-    "trend_score": 80.03677693126868,
+    "trend_score": 80.03677693126869,
     "momentum_score": 56.59410931002005,
     "volatility_score": 36.19658149951813,
     "volume_score": 50.0,
@@ -6344,23 +6352,23 @@
     "current_ratio_score": 51.44,
     "earnings_visibility": 78.18980857142857,
     "valuation_margin": 46.647591346666665,
-    "catalyst_timeline": 59.893493472766906,
+    "catalyst_timeline": 59.89349347276691,
     "downside_control": 40.72419146225741,
-    "composite_score": 59.123887666557884,
+    "composite_score": 59.11999862125945,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 66.23223939104277,
-    "technical_score": 58.228582172290245,
-    "sentiment_score": 50.0,
+    "technical_score": 58.22858217229025,
+    "sentiment_score": 57.42,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 126,
-    "percentile": 0.7591522157996147,
+    "rank": 125,
+    "percentile": 0.7610789980732178,
     "tier": "buy",
     "tier_raw": "buy",
     "tier_label": "Buy",
@@ -6369,5 +6377,146 @@
     "sector": "Health Care",
     "industry": "Biotechnology"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "The Dow Surged Past 50,000. How It Got There, and Where It Goes Next.",
+      "url": "https://finance.yahoo.com/m/d4d07bd1-e873-3a77-8c7a-e7616a7fd512/the-dow-surged-past-50%2C000..html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Review & Preview: 50,000 Sighs of Relief",
+      "url": "https://finance.yahoo.com/m/8ad51648-a7a7-3b17-8c27-e01b63b2753a/review-%26-preview%3A-50%2C000.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Stocks That Punch Above Their Weight in the Dow",
+      "url": "https://finance.yahoo.com/m/b20ff39c-4cc8-37f8-bdf8-dad8f96592c4/the-stocks-that-punch-above.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CVS Caremark Replaces Amgen And Eli Lilly's Branded Drugs, Expands Biosimilar Strategy For Weak Bone Disorder",
+      "url": "/news/303195/cvs-caremark-replaces-amgen-and-eli-lillys-branded-drugs-expands-biosimilar-strategy-for-weak-bone-disorder",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stock Market Today, Feb. 6: U.S. stocks snap three day losing streak as Russell 2000 adds 2%",
+      "url": "https://finance.yahoo.com/m/94b48945-7cbc-3bda-ad62-e0bd7840ba3f/stock-market-today%2C-feb.-6%3A.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Health Care Roundup: Market Talk",
+      "url": "https://finance.yahoo.com/m/d187e4ce-8bb2-3064-acf3-5125a9ac4f8e/health-care-roundup%3A-market.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "RBC Lifts Amgen (AMGN) Target After Strong Q4, Cites Key Drug Momentum",
+      "url": "/news/301961/rbc-lifts-amgen-amgn-target-after-strong-q4-cites-key-drug-momentum",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Zacks Investment Ideas feature highlights: Amgen, Apple and Microsoft",
+      "url": "/news/301733/zacks-investment-ideas-feature-highlights-amgen-apple-and-microsoft",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Generate, an AI-driven Flagship startup, pitches an IPO",
+      "url": "https://finance.yahoo.com/m/5bf4ba4f-ed85-3b3b-9b22-1fa75f0a0e41/generate%2C-an-ai-driven.html",
+      "publisher": "BioPharma Dive",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stock Market News for Feb 5, 2026",
+      "url": "/news/300775/stock-market-news-for-feb-5-2026",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The most valuable up-and-coming GLP-1s",
+      "url": "https://finance.yahoo.com/m/cd53fe93-e7ff-3228-a566-db9693bb002d/the-most-valuable.html",
+      "publisher": "Pharma Voice",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Big Pharmas most valuable up-and-coming GLP-1s",
+      "url": "https://finance.yahoo.com/m/cd53fe93-e7ff-3228-a566-db9693bb002d/big-pharma%E2%80%99s-most-valuable.html",
+      "publisher": "Pharma Voice",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Rotation Trade a Boon for Dow 30 Today",
+      "url": "/news/300563/rotation-trade-a-boon-for-dow-30-today",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Health Care Roundup: Market Talk",
+      "url": "https://finance.yahoo.com/m/d133a9d1-9a4b-3830-a1a4-a7078e6da469/health-care-roundup%3A-market.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stock Market Today: Nasdaq Sinks As Tech Sell-Off Intensifies; Alphabet Beats Wall Street Forecasts (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/95eff06b-9fa2-3b22-b1b7-24055bf9706b/stock-market-today%3A-nasdaq.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Broader Market Falls as Chipmakers and AI Stocks Tumble",
+      "url": "https://finance.yahoo.com/m/995b7094-7146-381e-bcbc-93a963bd8fbe/broader-market-falls-as.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nasdaq, S&P 500 Settle Lower on Extended Tech Rotation",
+      "url": "/news/300248/nasdaq-sp-500-settle-lower-on-extended-tech-rotation",
+      "publisher": "Schaeffer's Research",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Amgen Tops Buy Zone On Positive 2026 Outlook Amid Sharpening Obesity Focus",
+      "url": "https://www.investors.com/news/technology/amgen-stock-amgen-earnings-q4-2025?mod=IBD_FV",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Amgen (AMGN) Stock Hits 52-Week Highs: Buy Signal?",
+      "url": "/news/300094/amgen-amgn-stock-hits-52-week-highs-buy-signal",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Today's Market: Dow Climbs 350 Points, Nasdaq Falls 1% as Tech Stocks Struggle",
+      "url": "https://finance.yahoo.com/news/todays-market-dow-climbs-350-172108146.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    }
+  ]
 }

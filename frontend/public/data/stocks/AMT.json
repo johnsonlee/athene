@@ -6306,7 +6306,15 @@
     "technical_score": 47.61221113640515,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.14388781252133775,
+    "sentiment_pos": 0.078,
+    "sentiment_neg": 0.038,
+    "sentiment_neu": 0.884,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 57.19
+  },
   "analyst": {
     "revision_momentum": -0.2222222222222222,
     "target_upside": 0.2553278449232206,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 39.776910666666666,
     "catalyst_timeline": 48.489914254682176,
     "downside_control": 46.96635620292554,
-    "composite_score": 49.9136026893969,
+    "composite_score": 49.90971364409847,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 57.11699513438556,
     "technical_score": 47.61221113640515,
-    "sentiment_score": 50.0,
+    "sentiment_score": 57.19,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Real Estate",
     "industry": "Telecom Tower REITs"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Can SpaceX Rival AST SpaceMobile Meet Its 2026 Launch Targets?",
+      "url": "/news/302248/can-spacex-rival-ast-spacemobile-meet-its-2026-launch-targets",
+      "publisher": "MarketBeat",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Maile Kaiser of CoreSite Honored as a CRN Channel Chief",
+      "url": "https://www.businesswire.com/news/home/20260205906868/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Is Wall Street Bullish or Bearish on American Tower Stock?",
+      "url": "https://finance.yahoo.com/m/6ab1f871-2b70-3514-ae89-a44e656967ae/is-wall-street-bullish-or.html",
+      "publisher": "Barchart",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why the Market Dipped But American Tower (AMT) Gained Today",
+      "url": "/news/300542/why-the-market-dipped-but-american-tower-amt-gained-today",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Forget AI Stocks: This Infrastructure REIT Is Wall Street's Secret Weapon",
+      "url": "/news/297271/forget-ai-stocks-this-infrastructure-reit-is-wall-streets-secret-weapon",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Strong Analyst Sentiment on American Tower (AMT) Amid Favorable 2026 Outlook",
+      "url": "/news/296621/strong-analyst-sentiment-on-american-tower-amt-amid-favorable-2026-outlook",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "American Tower (AMT) Registers a Bigger Fall Than the Market: Important Facts to Note",
+      "url": "/news/291004/american-tower-amt-registers-a-bigger-fall-than-the-market-important-facts-to-note",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jim Cramer on American Tower: \"I Think That Stock Is No Longer as Investible as It Was at One Time\"",
+      "url": "/news/290480/jim-cramer-on-american-tower-i-think-that-stock-is-no-longer-as-investible-as-it-was-at-one-time",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "The $7 Trillion Data Centre Boom Has A 100GW Power Problem",
+      "url": "https://finance.yahoo.com/news/7-trillion-data-centre-boom-110000119.html",
+      "publisher": "Oilprice.com",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "American Tower Plans Fourth Quarter and Full Year 2025 Earnings Release and Conference Call",
+      "url": "https://www.businesswire.com/news/home/20260127220423/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Space Stock Boom: Why Retail and Wall Street Are Aligning",
+      "url": "/news/288974/space-stock-boom-why-retail-and-wall-street-are-aligning",
+      "publisher": "MarketBeat",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Prediction: These 2 Top Stocks Will Be the Largest REIT Dividend Payers in 2026",
+      "url": "/news/287833/prediction-these-2-top-stocks-will-be-the-largest-reit-dividend-payers-in-2026",
+      "publisher": "Motley Fool",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "UBS Lowers American Tower (AMT) Price Target, BMO Capital Downgrades Rating",
+      "url": "/news/286200/ubs-lowers-american-tower-amt-price-target-bmo-capital-downgrades-rating",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-24",
+      "sentiment": "negative"
+    },
+    {
+      "title": "For Data Centers, Power Is the New Real Estate",
+      "url": "/news/282740/for-data-centers-power-is-the-new-real-estate",
+      "publisher": "Motley Fool",
+      "date": "2026-01-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Reasons Why American Tower Corporation (AMT) is Strongly Favored by Hedge Funds",
+      "url": "/news/282241/reasons-why-american-tower-corporation-amt-is-strongly-favored-by-hedge-funds",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "American Tower Corporation Announces Tax Reporting Information for 2025 Distributions",
+      "url": "https://www.businesswire.com/news/home/20260120450492/en/",
+      "publisher": "Business Wire",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "American Tower's Quarterly Earnings Preview: What You Need to Know",
+      "url": "https://finance.yahoo.com/m/88853667-36b8-3ab3-bbb5-8eba8c69c2ff/american-tower%27s-quarterly.html",
+      "publisher": "Barchart",
+      "date": "2026-01-20",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Mizuho Reduces the Firm's PT on American Tower (AMT) stock",
+      "url": "/news/279307/mizuho-reduces-the-firms-pt-on-american-tower-amt-stock",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pentagon Deal Sends AST SpaceMobile Soaring-Is This the Next Leg Up?",
+      "url": "/news/279252/pentagon-deal-sends-ast-spacemobile-soaring-is-this-the-next-leg-up",
+      "publisher": "MarketBeat",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AMT's CoreSite Launches Native 400G AWS Direct Connect in Chicago",
+      "url": "/news/279225/amts-coresite-launches-native-400g-aws-direct-connect-in-chicago",
+      "publisher": "Zacks",
+      "date": "2026-01-16",
+      "sentiment": "neutral"
+    }
+  ]
 }

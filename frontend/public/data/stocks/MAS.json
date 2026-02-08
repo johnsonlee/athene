@@ -6278,9 +6278,9 @@
   "technical": {
     "close": 72.87000274658203,
     "sma_20": 69.28050079345702,
-    "sma_50": 66.42080024719239,
+    "sma_50": 66.42080024719237,
     "sma_200": 66.3362174987793,
-    "trend_alignment": 0.6458658085532687,
+    "trend_alignment": 0.6458658085532688,
     "rsi": 67.43630922903249,
     "rsi_score": 0.34872618458064975,
     "macd_histogram": 0.3950624913501444,
@@ -6295,18 +6295,26 @@
     "avg_volume_20d": 2381340.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 93.01508639533813,
-    "stoch_d": 87.95593046834102,
-    "trend_score": 64.58658085532687,
+    "stoch_k": 93.01508639533814,
+    "stoch_d": 87.95593046834104,
+    "trend_score": 64.58658085532689,
     "rsi_abs_score": 61.178334158709035,
     "macd_abs_score": 65.63220412638192,
     "momentum_score": 63.40526914254548,
     "volatility_score": 50.151915479847766,
     "volume_score": 50.0,
-    "technical_score": 58.42793809533126,
+    "technical_score": 58.427938095331264,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.012235494624448864,
+    "sentiment_pos": 0.057050000000000003,
+    "sentiment_neg": 0.02225,
+    "sentiment_neu": 0.9207000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 50.61
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.0017839989021544592,
@@ -6325,7 +6333,7 @@
     "quality_score": 87.332,
     "growth_score": 52.910000000000004,
     "safety_score": 56.69360044719835,
-    "trend_score": 64.58658085532687,
+    "trend_score": 64.58658085532689,
     "momentum_score": 63.40526914254548,
     "volatility_score": 50.151915479847766,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 74.0714750857143,
     "catalyst_timeline": 57.28968199402354,
     "downside_control": 52.25882738905692,
-    "composite_score": 66.31612814926748,
+    "composite_score": 66.31223910396906,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 69.69288266086824,
-    "technical_score": 58.42793809533126,
-    "sentiment_score": 50.0,
+    "technical_score": 58.427938095331264,
+    "sentiment_score": 50.61,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Industrials",
     "industry": "Building Products"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Stay Ahead of the Game With Masco (MAS) Q4 Earnings: Wall Street's Insights on Key Metrics",
+      "url": "/news/301487/stay-ahead-of-the-game-with-masco-mas-q4-earnings-wall-streets-insights-on-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Masco to Report Q4 Earnings: Here's What Investors Must Know",
+      "url": "/news/301347/masco-to-report-q4-earnings-heres-what-investors-must-know",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analysts Estimate Masco (MAS) to Report a Decline in Earnings: What to Look Out for",
+      "url": "/news/297663/analysts-estimate-masco-mas-to-report-a-decline-in-earnings-what-to-look-out-for",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Home Construction Materials Stocks Q3 Highlights: Masco (NYSE:MAS)",
+      "url": "/news/296685/home-construction-materials-stocks-q3-highlights-masco-nyse-mas",
+      "publisher": "StockStory",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Wells Fargo Bullish on Masco (MAS) Ahead of Q4 2025 Results Announcement",
+      "url": "/news/282079/wells-fargo-bullish-on-masco-mas-ahead-of-q4-2025-results-announcement",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What to Expect From Masco's Q4 2025 Earnings Report",
+      "url": "https://finance.yahoo.com/m/2461da2e-b99b-307b-baee-68037e5db47c/what-to-expect-from-masco%27s.html",
+      "publisher": "Barchart",
+      "date": "2026-01-13",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Masco Corporation Announces Date for Earnings Release and Conference Call for 2025 Fourth Quarter and Full Year",
+      "url": "https://www.businesswire.com/news/home/20260112736981/en",
+      "publisher": "Business Wire",
+      "date": "2026-01-12",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Masco (MAS) Stock Is Up Today",
+      "url": "/news/271006/why-masco-mas-stock-is-up-today",
+      "publisher": "StockStory",
+      "date": "2026-01-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Low-Volatility Stocks We Find Risky",
+      "url": "/news/269075/3-low-volatility-stocks-we-find-risky",
+      "publisher": "StockStory",
+      "date": "2026-01-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Masco (MAS): Buy, Sell, or Hold Post Q3 Earnings?",
+      "url": "/news/268121/masco-mas-buy-sell-or-hold-post-q3-earnings",
+      "publisher": "StockStory",
+      "date": "2026-01-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Profitable Stocks with Open Questions",
+      "url": "/news/258260/3-profitable-stocks-with-open-questions",
+      "publisher": "StockStory",
+      "date": "2025-12-18",
+      "sentiment": "positive"
+    },
+    {
+      "title": "How Is Mascos Stock Performance Compared to Other Homebuilders?",
+      "url": "https://finance.yahoo.com/m/ad4dc56f-9549-3eeb-a5fb-4f802d830715/how-is-masco%E2%80%99s-stock.html",
+      "publisher": "Barchart",
+      "date": "2025-12-17",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is Builders FirstSource Stock Underperforming the S&P 500?",
+      "url": "https://finance.yahoo.com/m/dab3b458-9c80-31af-a910-2b2620208ceb/is-builders-firstsource-stock.html",
+      "publisher": "Barchart",
+      "date": "2025-12-11",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Masco Corporation Announces New Executive Committee to Accelerate Growth",
+      "url": "https://www.businesswire.com/news/home/20251208527659/en",
+      "publisher": "Business Wire",
+      "date": "2025-12-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Owens Corning (OC) Up 6.7% Since Last Earnings Report: Can It Continue?",
+      "url": "/news/247151/owens-corning-oc-up-67-since-last-earnings-report-can-it-continue",
+      "publisher": "Zacks",
+      "date": "2025-12-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "2 Cash-Producing Stocks to Target This Week and 1 We Avoid",
+      "url": "/news/246539/2-cash-producing-stocks-to-target-this-week-and-1-we-avoid",
+      "publisher": "StockStory",
+      "date": "2025-12-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "TopBuild (BLD) Up 10.9% Since Last Earnings Report: Can It Continue?",
+      "url": "/news/245961/topbuild-bld-up-109-since-last-earnings-report-can-it-continue",
+      "publisher": "Zacks",
+      "date": "2025-12-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Argus is Positive on Masco Corporation (MAS)",
+      "url": "/news/242793/argus-is-positive-on-masco-corporation-mas",
+      "publisher": "Insider Monkey",
+      "date": "2025-12-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why Is Masco (MAS) Down 0.9% Since Last Earnings Report?",
+      "url": "/news/241017/why-is-masco-mas-down-09-since-last-earnings-report",
+      "publisher": "Zacks",
+      "date": "2025-11-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dycom Q3 Earnings & Revenues Surpass Estimates, Stock Up",
+      "url": "/news/235395/dycom-q3-earnings-revenues-surpass-estimates-stock-up",
+      "publisher": "Zacks",
+      "date": "2025-11-20",
+      "sentiment": "neutral"
+    }
+  ]
 }

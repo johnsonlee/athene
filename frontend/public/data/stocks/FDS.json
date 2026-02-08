@@ -6296,7 +6296,7 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 6.9027539070306565,
-    "stoch_d": 8.379804569300994,
+    "stoch_d": 8.379804569300992,
     "trend_score": 7.296544125313058,
     "rsi_abs_score": 38.2124344787664,
     "macd_abs_score": 20.0,
@@ -6306,7 +6306,15 @@
     "technical_score": 25.753588000771444,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.202935553597855,
+    "sentiment_pos": 0.153,
+    "sentiment_neg": 0.0412,
+    "sentiment_neu": 0.8058500000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 60.15
+  },
   "analyst": {
     "revision_momentum": 0.1111111111111111,
     "target_upside": 0.5049199305421571,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 49.10997989999999,
     "catalyst_timeline": 35.030139718050435,
     "downside_control": 47.0427586761827,
-    "composite_score": 50.521579108871784,
+    "composite_score": 50.51769006357335,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 64.48596856021437,
     "technical_score": 25.753588000771444,
-    "sentiment_score": 50.0,
+    "sentiment_score": 60.15,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Financials",
     "industry": "Financial Exchanges & Data"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Wall Streets wild week rattles investors confidence while highlighting a growing divide within markets",
+      "url": "https://finance.yahoo.com/m/c3403153-ced0-3806-acac-ba5af7026c10/wall-street%E2%80%99s-wild-week.html",
+      "publisher": "MarketWatch",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "AutoNation Revenue Declines on Weaker New, Used Vehicle Sales",
+      "url": "https://finance.yahoo.com/m/62220efd-53f1-3dbb-badd-21dc9931dd5b/autonation-revenue-declines.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Fortinet Stock Rises After Earnings Beat. Why It Can Dodge the Tech Selloff.",
+      "url": "https://finance.yahoo.com/m/a394db15-7a30-3409-8b80-907dd374135d/fortinet-stock-rises-after.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Philip Morris Stock Edges Up. Why Soft Revenue Isnt a Drag for the Tobacco Giant.",
+      "url": "https://finance.yahoo.com/m/81816284-1a4a-39a4-971a-2e3bce617d5f/philip-morris-stock-edges-up..html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Consumer Sentiment Improves in February",
+      "url": "https://finance.yahoo.com/m/c93bb1c7-188e-32da-b9e9-86c2ce96e170/consumer-sentiment-improves.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "4 reasons why tech stocks went into meltdown mode this week",
+      "url": "https://finance.yahoo.com/m/96c7ac3c-6300-3ae0-b3a2-44cd5bd2be45/4-reasons-why-tech-stocks.html",
+      "publisher": "CNN Business",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Anthropic's New Model Can Run Financial Analyses. Financial Data Stocks Tumble.",
+      "url": "https://www.barrons.com/articles/anthropic-financial-research-stocks-01721769?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FactSet Declares Dividend",
+      "url": "/news/301014/factset-declares-dividend",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Uber Q4 Results Called 'Rock Solid.' Here's Why The Stock Fell Anyway.",
+      "url": "https://finance.yahoo.com/m/8fc305b6-fbea-3189-83ff-f0539a226bfb/uber-q4-results-called-%27rock.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "SMCI Stock Rallies 16% as AI Boom Boosts Earnings. This Is a Worry for Super Micro.",
+      "url": "https://finance.yahoo.com/m/24f9a0b5-b41d-3861-8857-de7f2f4cc19f/smci-stock-rallies-16%25-as-ai.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks Mixed on Sector Rotation out of Tech",
+      "url": "https://finance.yahoo.com/m/d2e885bd-e047-3deb-9c46-4d88220b392d/stocks-mixed-on-sector.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Boston Scientific Profit, Sales Rise but Issues Soft Guidance",
+      "url": "https://finance.yahoo.com/m/f5160dcc-3d20-39a6-ba6e-cc39edd30e0b/boston-scientific-profit%2C.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Uber Stock Wavers As Profit Guidance Miss Overshadows Strong Growth",
+      "url": "https://finance.yahoo.com/m/8fc305b6-fbea-3189-83ff-f0539a226bfb/uber-stock-wavers-as-profit.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "AI Threatens a Wall Street Cash Cow: Financial and Legal Data",
+      "url": "https://www.wsj.com/finance/stocks/ai-threatens-a-wall-street-cash-cow-financial-and-legal-data-6782657e?mod=wsj_FV",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Fox Revenue Climbs on Growth in Cable, Advertising",
+      "url": "https://finance.yahoo.com/m/164fe5ad-13ea-391f-84e9-04cbc3b18dd3/fox-revenue-climbs-on-growth.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "FactSet Launches AI Doc Ingest for Cobalt, Transforming Private Capital Data Collection with AI-Powered Automation",
+      "url": "/news/299075/factset-launches-ai-doc-ingest-for-cobalt-transforming-private-capital-data-collection-with-ai-powered-automation",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "New York Times Profit Rises on Bundle Subscription Growth",
+      "url": "https://finance.yahoo.com/m/accb4934-3053-39c8-95e6-84a8571985b9/new-york-times-profit-rises.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "SMCI Stock Rallies 11% as AI Boom Boosts Earnings. This Remains a Worry for Super Micro.",
+      "url": "https://finance.yahoo.com/m/24f9a0b5-b41d-3861-8857-de7f2f4cc19f/smci-stock-rallies-11%25-as-ai.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Analyst Report: FactSet Research Systems Inc.",
+      "url": "https://finance.yahoo.com/m/dff95bcb-0bc0-3124-bc1c-2c9709eeecfd/analyst-report%3A-factset.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Gartner and other IT stocks got slammed on Tuesday",
+      "url": "https://www.marketwatch.com/story/why-gartner-and-other-it-stocks-got-slammed-on-tuesday-d0c74924?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    }
+  ]
 }

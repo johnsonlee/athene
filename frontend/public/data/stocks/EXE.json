@@ -6277,7 +6277,7 @@
   },
   "technical": {
     "close": 110.37000274658203,
-    "sma_20": 107.39000053405762,
+    "sma_20": 107.3900005340576,
     "sma_50": 110.51119995117188,
     "sma_200": 106.69757083892823,
     "trend_alignment": 0.5341949402967439,
@@ -6286,27 +6286,35 @@
     "macd_histogram": 0.4339408183140087,
     "macd_line": 0.4280447585785083,
     "macd_histogram_pct": 0.39316916509494887,
-    "bb_position": 0.6863576292291381,
-    "bb_upper": 115.3853861398176,
-    "bb_lower": 99.39461492829764,
-    "bb_width": 0.14890372597073084,
+    "bb_position": 0.686357629229139,
+    "bb_upper": 115.38538613981758,
+    "bb_lower": 99.39461492829763,
+    "bb_width": 0.14890372597073087,
     "hist_volatility": 0.35985892643252865,
     "volume_ratio": 0.5437869794706722,
     "avg_volume_20d": 3195185.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 62.92978907754596,
-    "stoch_d": 65.6270579187894,
+    "stoch_k": 62.929789077545955,
+    "stoch_d": 65.62705791878942,
     "trend_score": 53.41949402967438,
     "rsi_abs_score": 74.18653045260835,
     "macd_abs_score": 62.32922912737372,
     "momentum_score": 68.25787978999104,
-    "volatility_score": 41.79436075379914,
+    "volatility_score": 41.794360753799126,
     "volume_score": 50.0,
-    "technical_score": 54.862084296659454,
+    "technical_score": 54.86208429665945,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.39627152004968225,
+    "sentiment_pos": 0.26815,
+    "sentiment_neg": 0.07189999999999999,
+    "sentiment_neu": 0.65995,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 69.81
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.20503760079731806,
@@ -6327,7 +6335,7 @@
     "safety_score": 67.6191670662176,
     "trend_score": 53.41949402967438,
     "momentum_score": 68.25787978999104,
-    "volatility_score": 41.79436075379914,
+    "volatility_score": 41.794360753799126,
     "volume_score": 50.0,
     "analyst_score": 65.06457541813899,
     "pe_score": 30.334565050000002,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 58.7670014,
     "catalyst_timeline": 61.57719492378044,
     "downside_control": 55.12902917300251,
-    "composite_score": 58.036257945300044,
+    "composite_score": 58.032368900001615,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 60.555727287053045,
-    "technical_score": 54.862084296659454,
-    "sentiment_score": 50.0,
+    "technical_score": 54.86208429665945,
+    "sentiment_score": 69.81,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Energy",
     "industry": "Oil & Gas Exploration & Production"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Analysts Cut Expand Energy (EXE) Price Targets, Stay Positive",
+      "url": "/news/303758/analysts-cut-expand-energy-exe-price-targets-stay-positive",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Expand Energy Provides 2025 Fourth Quarter and Full Year Earnings Conference Call Information",
+      "url": "/news/300148/expand-energy-provides-2025-fourth-quarter-and-full-year-earnings-conference-call-information",
+      "publisher": "GlobeNewswire",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Late-January Cold Sparks Sudden Natural Gas Price Rally",
+      "url": "/news/295465/late-january-cold-sparks-sudden-natural-gas-price-rally",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Expand Energy (EXE) Price Target Cut to $137 at Piper Sandler",
+      "url": "/news/293839/expand-energy-exe-price-target-cut-to-137-at-piper-sandler",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Leucipa Rollout Strengthens Baker Hughes' Digital Energy Footprint",
+      "url": "/news/293578/leucipa-rollout-strengthens-baker-hughes-digital-energy-footprint",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Can Broker Signals Help Navigate Oil's Wild Price Swings?",
+      "url": "/news/293354/can-broker-signals-help-navigate-oils-wild-price-swings",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Barclays Maintains Overweight Rating on Expand Energy (EXE) Citing Durable Cash Return Models",
+      "url": "/news/291140/barclays-maintains-overweight-rating-on-expand-energy-exe-citing-durable-cash-return-models",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Energy ETFs to Gain as Arctic Blast Ignites US Natural Gas Price Rally",
+      "url": "/news/290642/energy-etfs-to-gain-as-arctic-blast-ignites-us-natural-gas-price-rally",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Zacks Analyst Blog Expand, Comstock and Antero",
+      "url": "/news/289494/the-zacks-analyst-blog-expand-comstock-and-antero",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Why U.S. Natural Gas Prices Just Exploded to Multi-Year Highs",
+      "url": "/news/288302/why-us-natural-gas-prices-just-exploded-to-multi-year-highs",
+      "publisher": "Zacks",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Palantir and 5 More Stocks to Play Trump's Plan to Invest in America",
+      "url": "https://www.barrons.com/articles/trump-investments-government-palantir-apple-98f5e987?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Winter Storm Fern To Impact Energy, Utility Stocks-Antero Resources, Energy Transfer, Exelon In Focus",
+      "url": "/news/286494/winter-storm-fern-to-impact-energy-utility-stocks-antero-resources-energy-transfer-exelon-in-focus",
+      "publisher": "Benzinga",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "As US Faces Severe Cold and Snow, These Stocks Are Heating Up",
+      "url": "https://finance.yahoo.com/m/c788e1c3-7bd5-3574-9d1e-92ab8747a8f1/as-us-faces-severe-cold-and.html",
+      "publisher": "Investopedia",
+      "date": "2026-01-22",
+      "sentiment": "negative"
+    },
+    {
+      "title": "How Volatility Skew Could Be Favorably Mispricing Expand Energy (EXE) Call Options",
+      "url": "https://finance.yahoo.com/m/1d5cb83a-bf0e-3c79-b105-749b4bb452e2/how-volatility-skew-could-be.html",
+      "publisher": "Barchart",
+      "date": "2026-01-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Natural Gas Prices Soar as Dangerous Freeze Takes Hold Across Massive Swath of the US",
+      "url": "https://finance.yahoo.com/news/natural-gas-prices-soar-dangerous-211514211.html",
+      "publisher": "Bloomberg",
+      "date": "2026-01-21",
+      "sentiment": "negative"
+    },
+    {
+      "title": "US Natural Gas Futures Surge Over 50% as Severe Cold Threatens Supply",
+      "url": "https://finance.yahoo.com/news/us-natural-gas-futures-surge-192620910.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-01-21",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stocks Rebound as President Trump Eases Rhetoric on Greenland",
+      "url": "https://finance.yahoo.com/m/2ff66b4b-2a92-3149-8b88-84ab472b3a34/stocks-rebound-as-president.html",
+      "publisher": "Barchart",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Expand Energy Earnings Preview: What to Expect",
+      "url": "https://finance.yahoo.com/m/b3c1b3d1-f7bf-3bfd-893a-a76cf070c6b8/expand-energy-earnings.html",
+      "publisher": "Barchart",
+      "date": "2026-01-21",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stocks Plunge on Greenland Crisis and Soaring Bond Yields",
+      "url": "https://finance.yahoo.com/m/cb1bdf7c-0b2c-353a-b282-37c38d2db7c0/stocks-plunge-on-greenland.html",
+      "publisher": "Barchart",
+      "date": "2026-01-20",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Natural Gas Hovers Near $3 as Storage and Weather Set the Tone",
+      "url": "/news/280219/natural-gas-hovers-near-3-as-storage-and-weather-set-the-tone",
+      "publisher": "Zacks",
+      "date": "2026-01-19",
+      "sentiment": "positive"
+    }
+  ]
 }

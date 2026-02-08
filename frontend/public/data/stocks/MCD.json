@@ -6279,8 +6279,8 @@
     "close": 327.1600036621094,
     "sma_20": 313.70350189208983,
     "sma_50": 311.4159313964844,
-    "sma_200": 304.3070751953125,
-    "trend_alignment": 0.5996283867151595,
+    "sma_200": 304.30707519531245,
+    "trend_alignment": 0.5996283867151597,
     "rsi": 72.73299065195043,
     "rsi_score": 0.4546598130390086,
     "macd_histogram": 1.7769540732795694,
@@ -6297,7 +6297,7 @@
     "signed_volume_ratio": 0.0,
     "stoch_k": 91.66354586989803,
     "stoch_d": 88.04598867604115,
-    "trend_score": 59.962838671515954,
+    "trend_score": 59.962838671515975,
     "rsi_abs_score": 46.34762617453879,
     "macd_abs_score": 65.64717899524237,
     "momentum_score": 55.99740258489058,
@@ -6306,7 +6306,15 @@
     "technical_score": 59.003359045670535,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.00023555623296273896,
+    "sentiment_pos": 0.051500000000000004,
+    "sentiment_neg": 0.02705,
+    "sentiment_neu": 0.9214499999999999,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 50.01
+  },
   "analyst": {
     "revision_momentum": 0.2222222222222222,
     "target_upside": 0.039246851693360965,
@@ -6325,7 +6333,7 @@
     "quality_score": 84.968999,
     "growth_score": 45.35,
     "safety_score": 34.966219033636875,
-    "trend_score": 59.962838671515954,
+    "trend_score": 59.962838671515975,
     "momentum_score": 55.99740258489058,
     "volatility_score": 71.07643334374288,
     "volume_score": 50.0,
@@ -6346,21 +6354,21 @@
     "valuation_margin": 56.207065125,
     "catalyst_timeline": 56.89518461554931,
     "downside_control": 55.974397856606956,
-    "composite_score": 59.31244602709424,
+    "composite_score": 59.3085569817958,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 59.213164444227374,
     "technical_score": 59.003359045670535,
-    "sentiment_score": 50.0,
+    "sentiment_score": 50.01,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 0.8883333333333334,
     "data_quality_penalty": 0.0,
-    "rank": 118,
-    "percentile": 0.7745664739884393,
+    "rank": 117,
+    "percentile": 0.7764932562620424,
     "tier": "buy",
     "tier_raw": "buy",
     "tier_label": "Buy",
@@ -6369,5 +6377,146 @@
     "sector": "Consumer Discretionary",
     "industry": "Restaurants"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Dow 50,000 sets table for inflation data, delayed January jobs report: What to watch this week",
+      "url": "https://finance.yahoo.com/news/dow-50000-sets-table-for-inflation-data-delayed-january-jobs-report-what-to-watch-this-week-123826626.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
+    {
+      "title": "What to Expect in Markets This Week: January Jobs Report, Inflation and Retail Sales Data; Earnings From Cisco, Coca-Cola, McDonalds",
+      "url": "https://finance.yahoo.com/m/a9ca561d-8175-34ea-a04c-40cec25e75cb/what-to-expect-in-markets.html",
+      "publisher": "Investopedia",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Super Bowl LX, Coinbase earnings, jobs data & CPI: What to Watch",
+      "url": "https://finance.yahoo.com/video/super-bowl-lx-coinbase-earnings-000012395.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "McDonald's Earnings Could Cement Its Defensive Appeal",
+      "url": "/news/303285/mcdonalds-earnings-could-cement-its-defensive-appeal",
+      "publisher": "MarketBeat",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Burger King revives iconic kids' meal toys after 22 years",
+      "url": "https://finance.yahoo.com/m/8809703e-b7c7-31d9-9a81-7dbda084cf9b/burger-king-revives-iconic.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "McDonald's to Post Q4 Earnings: What's in the Cards for the Stock?",
+      "url": "/news/303200/mcdonalds-to-post-q4-earnings-whats-in-the-cards-for-the-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "McDonald's Stock: Analyst Estimates & Ratings",
+      "url": "https://finance.yahoo.com/m/c919eae5-f28a-30fe-bf63-bccf616b95d1/mcdonald%27s-stock%3A-analyst.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Exploring Analyst Estimates for McDonald's (MCD) Q4 Earnings, Beyond Revenue and EPS",
+      "url": "/news/302822/exploring-analyst-estimates-for-mcdonalds-mcd-q4-earnings-beyond-revenue-and-eps",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Zacks Analyst Blog Highlights SAP, McDonald's, Shopify, Comstock and SIFCO Industries",
+      "url": "/news/302616/the-zacks-analyst-blog-highlights-sap-mcdonalds-shopify-comstock-and-sifco-industries",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tech stock shakeout clouds market ahead of economic data deluge",
+      "url": "https://finance.yahoo.com/news/tech-stock-shakeout-clouds-market-110520808.html",
+      "publisher": "Reuters",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "2 Restaurant Stocks on Our Watchlist and 1 We Brush Off",
+      "url": "/news/303370/2-restaurant-stocks-on-our-watchlist-and-1-we-brush-off",
+      "publisher": "StockStory",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Top Stock Reports for SAP, McDonald's & Shopify",
+      "url": "/news/302210/top-stock-reports-for-sap-mcdonalds-shopify",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "The Utah Mom Who Got the World Hooked on Dirty Soda",
+      "url": "https://finance.yahoo.com/m/d85b5144-fcba-31a3-9ddc-423e297cc2bd/the-utah-mom-who-got-the.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Restaurant Brands (QSR) Earnings Expected to Grow: Should You Buy?",
+      "url": "/news/301711/restaurant-brands-qsr-earnings-expected-to-grow-should-you-buy",
+      "publisher": "Zacks",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "McDonalds appoints field, finance execs",
+      "url": "https://finance.yahoo.com/m/dedb2d6d-7ad6-3c82-97f8-1d9684227f0e/mcdonald%E2%80%99s-appoints-field%2C.html",
+      "publisher": "Restaurant Dive",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "McDONALD'S ANNOUNCES QUARTERLY CASH DIVIDEND",
+      "url": "/news/300303/mcdonalds-announces-quarterly-cash-dividend",
+      "publisher": "PR Newswire",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Lamb Weston Holdings, Inc.",
+      "url": "https://finance.yahoo.com/m/5fd17ed9-30e9-35c6-9356-b47cdd5b6aba/analyst-report%3A-lamb-weston.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "McDonald's (MCD) Earnings Expected to Grow: Should You Buy?",
+      "url": "/news/299677/mcdonalds-mcd-earnings-expected-to-grow-should-you-buy",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Chinas big food chains retreat from deep discounts  report",
+      "url": "https://finance.yahoo.com/m/29be7529-7809-31ba-afaf-aba3a6c5d0fb/china%E2%80%99s-big-food-chains.html",
+      "publisher": "Verdict Food Service",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Loek Beckers named CFO of McDonalds USA",
+      "url": "https://finance.yahoo.com/m/44e3c184-0573-357c-8daa-e0dcc11f092a/loek-beckers-named-cfo-of.html",
+      "publisher": "Nation's Restaurant News",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    }
+  ]
 }

@@ -6279,8 +6279,8 @@
     "close": 149.64999389648438,
     "sma_20": 159.94249954223636,
     "sma_50": 163.7031658935547,
-    "sma_200": 179.06377910614015,
-    "trend_alignment": 0.2883917904846463,
+    "sma_200": 179.06377910614012,
+    "trend_alignment": 0.2883917904846464,
     "rsi": 41.69566468353067,
     "rsi_score": -0.16608670632938655,
     "macd_histogram": -1.318539162741999,
@@ -6296,8 +6296,8 @@
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
     "stoch_k": 29.901920032322927,
-    "stoch_d": 19.841902331885485,
-    "trend_score": 28.83917904846463,
+    "stoch_d": 19.841902331885482,
+    "trend_score": 28.83917904846464,
     "rsi_abs_score": 64.03479762023682,
     "macd_abs_score": 29.28376996472793,
     "momentum_score": 46.65928379248237,
@@ -6306,7 +6306,15 @@
     "technical_score": 37.43287812610137,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.06618360558851362,
+    "sentiment_pos": 0.05525,
+    "sentiment_neg": 0.07035,
+    "sentiment_neu": 0.8744,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 46.69
+  },
   "analyst": {
     "revision_momentum": 0.125,
     "target_upside": 0.5569662545940527,
@@ -6325,7 +6333,7 @@
     "quality_score": 57.93300000000001,
     "growth_score": 15.0,
     "safety_score": 38.794012241009284,
-    "trend_score": 28.83917904846463,
+    "trend_score": 28.83917904846464,
     "momentum_score": 46.65928379248237,
     "volatility_score": 23.916696369086367,
     "volume_score": 50.0,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 39.989992580000006,
     "catalyst_timeline": 45.61413094597241,
     "downside_control": 32.856606291514346,
-    "composite_score": 34.35756825893266,
+    "composite_score": 34.35367921363422,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 40.13452959820186,
     "technical_score": 37.43287812610137,
-    "sentiment_score": 50.0,
+    "sentiment_score": 46.69,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Utilities",
     "industry": "Electric Utilities"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Here Are Fridays Top Wall Street Analyst Research Calls: Amazon.com, Caterpillar, Estee Lauder,  JPMorgan, Norfolk Southern, Roku, Snap, Vistra, and More",
+      "url": "https://finance.yahoo.com/m/2c0413d3-07a7-364e-97b6-23d3281ed969/here-are-friday%E2%80%99s-top-wall.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Heard on the Street Wednesday Recap: Tech Tantrum",
+      "url": "https://finance.yahoo.com/m/8125b7e3-2723-3344-af8d-52aff352f1b1/heard-on-the-street-wednesday.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Analyst Report: Vistra Corp.",
+      "url": "https://finance.yahoo.com/m/0356c3b0-b6a4-396d-9734-76552ce08e13/analyst-report%3A-vistra-corp..html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Vistra Corp. (VST) Falls More Steeply Than Broader Market: What Investors Need to Know",
+      "url": "/news/300446/vistra-corp-vst-falls-more-steeply-than-broader-market-what-investors-need-to-know",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Heard on the Street Recap: Tech Tantrum",
+      "url": "https://finance.yahoo.com/m/ac5d1e6f-b4fd-398a-b9fb-d1e3424f32f9/heard-on-the-street-recap%3A.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-04",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Here is What to Know Beyond Why Vistra Corp. (VST) is a Trending Stock",
+      "url": "/news/299395/here-is-what-to-know-beyond-why-vistra-corp-vst-is-a-trending-stock",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here Are Congresswoman Nancy Pelosi's Initial Stock Moves in 2026: They Include Nvidia, Alphabet, and Amazon Stocks, and Others",
+      "url": "/news/294860/here-are-congresswoman-nancy-pelosis-initial-stock-moves-in-2026-they-include-nvidia-alphabet-and-amazon-stocks-and-others",
+      "publisher": "Motley Fool",
+      "date": "2026-02-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Vistra Corp. (VST) Powers Ahead with Strategic Acquisitions and Analyst Upgrades",
+      "url": "/news/294743/vistra-corp-vst-powers-ahead-with-strategic-acquisitions-and-analyst-upgrades",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-01",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Vistra vs. Public Service Enterprise: Which Utility Stock Stands Out?",
+      "url": "/news/293492/vistra-vs-public-service-enterprise-which-utility-stock-stands-out",
+      "publisher": "Zacks",
+      "date": "2026-01-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's Why Vistra Corp. (VST) Fell More Than Broader Market",
+      "url": "/news/292786/heres-why-vistra-corp-vst-fell-more-than-broader-market",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Frozen Assets: Winter Storm Fern Is Heating Up These 3 Energy Winners",
+      "url": "/news/290910/frozen-assets-winter-storm-fern-is-heating-up-these-3-energy-winners",
+      "publisher": "MarketBeat",
+      "date": "2026-01-28",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ray Dalio's Bridgewater cut stake in dividend stock by 59%",
+      "url": "https://finance.yahoo.com/m/c6b7c015-4a47-3597-8fab-030ae71b87b6/ray-dalio%27s-bridgewater-cut.html",
+      "publisher": "TheStreet",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Meta's $6 billion Corning deal is its latest move to bolster its AI supply chain",
+      "url": "https://www.marketwatch.com/livecoverage/meta-earnings-results-stock-ai-capex-zuckerberg/card/meta-s-6-billion-corning-deal-is-its-latest-move-to-bolster-its-ai-supply-chain-orZiYeGeNRKNxTPcP3GN?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-01-28",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AI Power Needs Are Soaring: Is Vistra Energy, Vertiv, or Constellation The Better Buy?",
+      "url": "https://finance.yahoo.com/m/ab698b61-8e3e-30f0-86a7-451625650355/ai-power-needs-are-soaring%3A.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Nancy Pelosi Just Doubled Down on AI Again",
+      "url": "https://finance.yahoo.com/m/07a8297b-d7a2-32f9-bcf2-f1f1c00c3552/nancy-pelosi-just-doubled.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AI Stocks Still Face a China Risk",
+      "url": "https://finance.yahoo.com/m/baed0610-c790-3572-a619-5b262c16d2eb/ai-stocks-still-face-a-china.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-01-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Pelosi's Bullish 2026 Buy List: AI, Power & Dividends",
+      "url": "/news/287537/pelosis-bullish-2026-buy-list-ai-power-dividends",
+      "publisher": "MarketBeat",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nancy Pelosi Discloses New Stock Trades: Here's What She's Loading Up On - And What's She's Selling",
+      "url": "/news/287345/nancy-pelosi-discloses-new-stock-trades-heres-what-shes-loading-up-on-and-whats-shes-selling",
+      "publisher": "Benzinga",
+      "date": "2026-01-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Mixed Analyst Sentiment on Vistra (VST) Amid Increasing Regulatory Risk and Long-Term Contract Wins",
+      "url": "/news/287176/mixed-analyst-sentiment-on-vistra-vst-amid-increasing-regulatory-risk-and-long-term-contract-wins",
+      "publisher": "Insider Monkey",
+      "date": "2026-01-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Nvidias rally shows DeepSeek fears were unfounded a year later",
+      "url": "https://finance.yahoo.com/news/nvidia-rally-shows-deepseek-fears-152216506.html",
+      "publisher": "Bloomberg",
+      "date": "2026-01-26",
+      "sentiment": "negative"
+    }
+  ]
 }

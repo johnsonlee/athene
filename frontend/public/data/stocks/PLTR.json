@@ -6277,8 +6277,8 @@
   },
   "technical": {
     "close": 135.89999389648438,
-    "sma_20": 159.50599975585936,
-    "sma_50": 172.387799987793,
+    "sma_20": 159.5059997558594,
+    "sma_50": 172.38779998779296,
     "sma_200": 160.30302505493165,
     "trend_alignment": 0.2502181281788055,
     "rsi": 31.770627663733602,
@@ -6286,10 +6286,10 @@
     "macd_histogram": -2.7341387258303875,
     "macd_line": -10.886421188644448,
     "macd_histogram_pct": -2.0118755324691135,
-    "bb_position": 0.12417206058781248,
-    "bb_upper": 190.91133632596095,
-    "bb_lower": 128.10066318575778,
-    "bb_width": 0.3937825112305586,
+    "bb_position": 0.12417206058781204,
+    "bb_upper": 190.91133632596097,
+    "bb_lower": 128.1006631857578,
+    "bb_width": 0.3937825112305585,
     "hist_volatility": 0.6257363810861621,
     "volume_ratio": 1.1847989406238835,
     "avg_volume_20d": 52434635.0,
@@ -6306,7 +6306,15 @@
     "technical_score": 32.63024943345031,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.08917126090661824,
+    "sentiment_pos": 0.08795,
+    "sentiment_neg": 0.0431,
+    "sentiment_neu": 0.8689,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 54.46
+  },
   "analyst": {
     "revision_momentum": 0.5,
     "target_upside": 0.4643119941133186,
@@ -6346,14 +6354,14 @@
     "valuation_margin": 9.674999999999999,
     "catalyst_timeline": 41.88638463440088,
     "downside_control": 49.60908508146057,
-    "composite_score": 47.19632540455794,
+    "composite_score": 47.1924363592595,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 66.50339416666667,
     "technical_score": 32.63024943345031,
-    "sentiment_score": 50.0,
+    "sentiment_score": 54.46,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6369,5 +6377,146 @@
     "sector": "Information Technology",
     "industry": "Application Software"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Consumer Tech News (Feb 2-6): Big Tech Earnings Take Center Stage In U.S. Markets, Anthropic Launches New AI Tool & More",
+      "url": "/news/303773/consumer-tech-news-feb-2-6-big-tech-earnings-take-center-stage-in-us-markets-anthropic-launches-new-ai-tool-more",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Palantir, (PLTR) Cognizant Partner to Accelerate AI-Driven Healthcare Modernization",
+      "url": "/news/303747/palantir-pltr-cognizant-partner-to-accelerate-ai-driven-healthcare-modernization",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Peter Thiel Once Said Brilliant Thinking Is 'Rare' But Even Rarer And In 'Shorter Supply' Is This Personality Trait",
+      "url": "/news/303617/peter-thiel-once-said-brilliant-thinking-is-rare-but-even-rarer-and-in-shorter-supply-is-this-personality-trait",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Strong Palantir (PLTR) Results Fail to Shift RBC's Bearish Stance",
+      "url": "/news/303599/strong-palantir-pltr-results-fail-to-shift-rbcs-bearish-stance",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Palantir, Strategy, Amazon And More: 5 Stocks Investors Couldn't Stop Buzzing About This Week",
+      "url": "/news/303573/palantir-strategy-amazon-and-more-5-stocks-investors-couldnt-stop-buzzing-about-this-week",
+      "publisher": "Benzinga",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Software stocks have been crushed. Here's how to play the sector as the dust settles.",
+      "url": "https://www.marketwatch.com/story/software-stocks-have-been-crushed-heres-how-to-play-the-sector-as-the-dust-settles-c0175f8a?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-07",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Tech stocks have been shaky, but these 20 companies could still see rocketing sales growth",
+      "url": "https://www.marketwatch.com/story/tech-stocks-have-been-shaky-but-these-20-companies-could-still-see-rocketing-sales-growth-148195c9?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "MarketBeat Week in Review - 02/02 - 02/06",
+      "url": "/news/303521/marketbeat-week-in-review-0202-0206",
+      "publisher": "MarketBeat",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "PLTR and SNOW: Daniel Ives Names His Top AI Stocks to Buy Amid a Software Garage Sale",
+      "url": "https://finance.yahoo.com/news/pltr-snow-daniel-ives-names-110612294.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-07",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Software Stocks Sell-Off: Are They Deals or Traps?",
+      "url": "/news/303451/software-stocks-sell-off-are-they-deals-or-traps",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Palmer Luckey-backed Erebor receives US national banking charter, WSJ reports",
+      "url": "https://finance.yahoo.com/news/palmer-luckey-backed-erebor-receives-225304165.html",
+      "publisher": "Reuters",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Earnings live: Amazon, Reddit stocks sink to cap jam-packed earnings week",
+      "url": "https://finance.yahoo.com/news/live/earnings-live-amazon-reddit-stocks-sink-to-cap-jam-packed-earnings-week-213155571.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Dow Jones Tops 50,000 For First Time Ever, Decoupling From Tech: This Week On Wall Street",
+      "url": "/news/303276/dow-jones-tops-50000-for-first-time-ever-decoupling-from-tech-this-week-on-wall-street",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Palantir May Be Truly Iconic. Overvalued, High-Risk PLTR Stock Isnt.",
+      "url": "https://finance.yahoo.com/m/e8e58b78-30b0-34d7-b6ca-058ea4791b06/palantir-may-be-%E2%80%98truly.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "BigBear.ai Stock Plunges 40%+: Buy the Dip or a Warning Sign?",
+      "url": "/news/303263/bigbearai-stock-plunges-40-buy-the-dip-or-a-warning-sign",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Palantir Technologies valuation concerns weighing on stock despite strong fundamentals, Jefferies says",
+      "url": "https://finance.yahoo.com/m/73f36ed4-d7ab-3513-9f40-67e071c5e0e5/palantir-technologies%E2%80%99.html",
+      "publisher": "Proactive",
+      "date": "2026-02-06",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Stock Market Today: Dow Touches 50,000 As Nvidia Jumps; Palantir, Tesla Rebound (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/d5f6d70b-adbf-3412-b185-ebea8f943d91/stock-market-today%3A-dow.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nvidia Shares Surge on Big Techs $650 Billion AI-Spending Plan",
+      "url": "https://finance.yahoo.com/news/nvidia-shares-surge-big-tech-180706782.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Palantir CEO Takes Shots At Circular AI Investments",
+      "url": "https://finance.yahoo.com/news/palantir-ceo-takes-shots-circular-153105202.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Wall Street Is Cozying Up to Palantir Stock After Q4. Does That Make PLTR a Buy Here?",
+      "url": "https://finance.yahoo.com/m/b3e89bae-94ab-330d-97b5-fad9ab956119/wall-street-is-cozying-up-to.html",
+      "publisher": "Barchart",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    }
+  ]
 }
