@@ -122,16 +122,17 @@ TREND_DOWNTREND = 25
 # < 25 = Strong Downtrend
 
 # ---------- Capital Flow ETFs (global asset class tracking) ----------
+# shares_source: "ishares" | "spdr_gold" | None (proxy-only)
 CAPITAL_FLOW_ETFS = {
-    "SPY":     {"id": "usEquity",   "label_zh": "美股",   "label_en": "US Equity",   "type": "risk"},
-    "VGK":     {"id": "euEquity",   "label_zh": "欧股",   "label_en": "EU Equity",   "type": "risk"},
-    "EWJ":     {"id": "jpEquity",   "label_zh": "日股",   "label_en": "JP Equity",   "type": "risk"},
-    "EEM":     {"id": "emEquity",   "label_zh": "新兴",   "label_en": "EM Equity",   "type": "risk"},
-    "BTC-USD": {"id": "crypto",     "label_zh": "加密",   "label_en": "Crypto",      "type": "risk", "volume_in_usd": True},
-    "GLD":     {"id": "gold",       "label_zh": "黄金",   "label_en": "Gold",        "type": "safe"},
-    "TLT":     {"id": "usTreasury", "label_zh": "美债",   "label_en": "US Treasury", "type": "safe"},
-    "BIL":     {"id": "cash",       "label_zh": "现金",   "label_en": "Cash",        "type": "safe"},
-    "LQD":     {"id": "corpBond",   "label_zh": "公司债", "label_en": "Corp Bond",   "type": "safe"},
+    "SPY":     {"id": "usEquity",   "label_zh": "美股",   "label_en": "US Equity",   "type": "risk", "shares_source": None},
+    "VGK":     {"id": "euEquity",   "label_zh": "欧股",   "label_en": "EU Equity",   "type": "risk", "shares_source": None},
+    "EWJ":     {"id": "jpEquity",   "label_zh": "日股",   "label_en": "JP Equity",   "type": "risk", "shares_source": "ishares", "ishares_id": 239665, "ishares_slug": "ishares-msci-japan-etf"},
+    "EEM":     {"id": "emEquity",   "label_zh": "新兴",   "label_en": "EM Equity",   "type": "risk", "shares_source": "ishares", "ishares_id": 239637, "ishares_slug": "ishares-msci-emerging-markets-etf"},
+    "IBIT":    {"id": "crypto",     "label_zh": "加密",   "label_en": "Crypto",      "type": "risk", "shares_source": "ishares", "ishares_id": 333011, "ishares_slug": "ishares-bitcoin-trust-etf"},
+    "GLD":     {"id": "gold",       "label_zh": "黄金",   "label_en": "Gold",        "type": "safe", "shares_source": "spdr_gold"},
+    "TLT":     {"id": "usTreasury", "label_zh": "美债",   "label_en": "US Treasury", "type": "safe", "shares_source": "ishares", "ishares_id": 239454, "ishares_slug": "ishares-20-plus-year-treasury-bond-etf"},
+    "BIL":     {"id": "cash",       "label_zh": "现金",   "label_en": "Cash",        "type": "safe", "shares_source": None},
+    "LQD":     {"id": "corpBond",   "label_zh": "公司债", "label_en": "Corp Bond",   "type": "safe", "shares_source": "ishares", "ishares_id": 239566, "ishares_slug": "ishares-iboxx-investment-grade-corporate-bond-etf"},
 }
 CAPITAL_FLOW_LOOKBACK_WEEKS = 52  # snapshots per window in timeline (~1 year)
 CAPITAL_FLOW_WINDOW_DAYS = 5      # default trading days per window
@@ -144,31 +145,14 @@ CAPITAL_FLOW_WINDOWS = {
     "1M": 22,   # 1 month (~22 trading days)
 }
 
-# Signal fusion weights (3 independent volume-price signals)
-CF_WEIGHT_CMF = 0.40              # Chaikin Money Flow (close position × volume)
-CF_WEIGHT_OBV = 0.30              # OBV slope (cumulative volume trend)
-CF_WEIGHT_RDV = 0.30              # Return × Dollar Volume (raw price-volume flow)
+# RFI tanh normalization scale (empirically tuned for real fund flows in $B)
+RFI_TANH_SCALE = 10.0             # tanh((risk_net - safe_net) / scale)
 
-# Cross-asset consistency: boost/penalize confidence
-CF_CONSISTENCY_BOOST = 1.3        # multiplier when risk/safe signals agree
-CF_CONSISTENCY_PENALTY = 0.7      # multiplier when signals are contradictory
-
-# Risk Flow Index (RFI) thresholds: (risk_net - safe_net) / (|risk_net| + |safe_net|)
+# Risk Flow Index (RFI) thresholds: tanh-normalized, range [-1, +1]
 RFI_RISK_ON = 0.3                 # RFI >  0.3 → Risk-On (capital flooding risk assets)
-RFI_NEUTRAL_HIGH = 0.3            # RFI  0 ~ 0.3 → Neutral rotation
 RFI_MILD_RISK_OFF = -0.3          # RFI -0.3 ~ 0 → Mild risk-off
-RFI_RISK_OFF = -0.3               # RFI < -0.3 → Risk-Off (capital fleeing risk assets)
-RFI_PANIC = -0.7                  # RFI < -0.7 → Panic deleveraging
-
-# CFTC COT mapping: futures contract keywords → node IDs
-CFTC_CONTRACT_MAP = {
-    "E-MINI S&P 500":    "usEquity",
-    "GOLD":              "gold",
-    "U.S. TREASURY BONDS": "usTreasury",
-    "EURO FX":           "euEquity",
-    "JAPANESE YEN":      "jpEquity",
-}
-CFTC_REPORT_URL = "https://www.cftc.gov/dea/newcot/FinFutL.txt"
+RFI_RISK_OFF = -0.6               # RFI < -0.6 → Risk-Off (capital fleeing risk assets)
+RFI_PANIC = -0.8                  # RFI < -0.8 → Panic deleveraging
 
 # ---------- Data collection ----------
 PRICE_HISTORY_DAYS = 365         # 1 year of daily OHLCV

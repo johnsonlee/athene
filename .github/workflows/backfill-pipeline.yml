@@ -244,6 +244,11 @@ jobs:
           [ "${{ inputs.force_collect }}" = "true" ] && ARGS="$ARGS --force"
           python -m engine.collect capital_flow_etfs $ARGS
 
+      - name: Backfill shares outstanding
+        run: |
+          source .venv/bin/activate
+          python -m engine.collect capital_flow_etfs --backfill-shares
+
       - name: Commit capital flow ETFs data
         run: |
           git config user.name "github-actions[bot]"

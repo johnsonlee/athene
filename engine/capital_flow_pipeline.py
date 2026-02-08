@@ -4,7 +4,7 @@ Run independently of the main stock scoring pipeline:
     python -m engine.capital_flow_pipeline
     python -m engine.capital_flow_pipeline --window 5 --lookback 52
 
-Data collection runs daily (OHLCV from yfinance).
+Data collection runs daily (OHLCV + shares outstanding from yfinance).
 Analysis window is configurable:
   --window   Trading days per snapshot (default 5 = weekly)
   --lookback Number of snapshots in timeline (default 52 = ~1 year)
@@ -13,7 +13,6 @@ Analysis window is configurable:
 from __future__ import annotations
 
 import argparse
-import sys
 import time
 
 from engine.utils.market_calendar import us_market_date
@@ -21,8 +20,6 @@ from engine.collectors.capital_flow import (
     collect_capital_flow_etfs,
     load_capital_flow_etfs_from_collected,
 )
-from engine.collectors.cftc import collect_cftc_cot
-from engine.collectors.ici import collect_ici_flows
 from engine.analyzers.capital_flow import analyze_capital_flows
 from engine.exporters.capital_flow_exporter import export_capital_flows
 from engine.utils.logger import get_logger
@@ -49,7 +46,7 @@ def run(window_days: int | None = None, lookback_weeks: int | None = None) -> No
     run_date = us_market_date()
 
     # Step 1: Load ETF price data (prefer stored daily slices, fallback to live)
-    log.info("Step 1/5: Loading global asset class ETF data...")
+    log.info("Step 1/3: Loading global asset class ETF data...")
     cf_prices = load_capital_flow_etfs_from_collected(
         lookback_weeks=lookback_weeks,
         end_date=run_date,
@@ -83,38 +80,20 @@ def run(window_days: int | None = None, lookback_weeks: int | None = None) -> No
         log.error("No ETF data available — aborting")
         return
 
-    # Step 2: Collect CFTC COT data (optional)
-    log.info("Step 2/5: Collecting CFTC COT data (optional)...")
-    cftc_data = None
-    try:
-        cftc_data = collect_cftc_cot()
-    except Exception as e:
-        log.warning(f"CFTC data unavailable: {e}")
-
-    # Step 3: Collect ICI fund flow data (optional)
-    log.info("Step 3/5: Collecting ICI fund flow data (optional)...")
-    ici_data = None
-    try:
-        ici_data = collect_ici_flows()
-    except Exception as e:
-        log.warning(f"ICI data unavailable: {e}")
-
-    # Step 4: Analyze with multi-signal fusion at multiple windows
-    log.info("Step 4/5: Analyzing capital flows (multi-signal fusion)...")
+    # Step 2: Analyze with direct fund flows at multiple windows
+    log.info("Step 2/3: Analyzing capital flows (direct fund flows)...")
     all_window_results: dict[str, list] = {}
     for label, wdays in windows_to_run.items():
         log.info(f"  Window {label} ({wdays} trading days)...")
         phases = analyze_capital_flows(
             cf_prices,
-            cftc_data=cftc_data,
-            ici_data=ici_data,
             lookback_weeks=lookback_weeks,
             window_days=wdays,
         )
         all_window_results[label] = phases
 
-    # Step 5: Export
-    log.info("Step 5/5: Exporting capital flow data...")
+    # Step 3: Export
+    log.info("Step 3/3: Exporting capital flow data...")
     export_capital_flows(all_window_results, run_date)
 
     elapsed = time.time() - start_time
@@ -122,8 +101,6 @@ def run(window_days: int | None = None, lookback_weeks: int | None = None) -> No
     log.info("=" * 50)
     log.info(f"Capital Flow Pipeline complete in {elapsed:.1f}s")
     log.info(f"  ETFs collected: {len(cf_prices)}")
-    log.info(f"  CFTC contracts: {len(cftc_data) if cftc_data else 0}")
-    log.info(f"  ICI categories: {len(ici_data) if ici_data else 0}")
     log.info(f"  Windows: {list(all_window_results.keys())}")
     log.info(f"  Total phases exported: {total_phases}")
     log.info("=" * 50)
