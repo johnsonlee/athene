@@ -62,7 +62,7 @@ function Metric({ label, value, signal }: { label: string; value: string; signal
 
 export function ScoreBreakdown({ detail }: Props) {
   const { t } = useI18n();
-  const { fundamental: fund, technical: tech, sentiment: sent, ranking } = detail;
+  const { fundamental: fund, technical: tech, sentiment: sent, analyst: ana, ranking } = detail;
   if (!ranking) return null;
 
   // --- Fundamental drivers ---
@@ -131,7 +131,24 @@ export function ScoreBreakdown({ detail }: Props) {
     sentDrivers.push({ label: t('metric.newsVolume'), value: t('detail.articles', { count: sent.news_count }), signal: 'neutral', explanation: t('driver.newsVolume', { count: sent.news_count }) });
   }
 
-  const allDrivers = [...fundDrivers, ...techDrivers, ...sentDrivers];
+  // --- Analyst drivers ---
+  const analystDrivers: Driver[] = [];
+  if (ana) {
+    if (ana.revision_momentum != null) {
+      const signal = ana.revision_momentum > 0.2 ? 'bullish' : ana.revision_momentum < -0.2 ? 'bearish' : 'neutral';
+      analystDrivers.push({ label: t('analyst.revMomentum'), value: formatRatio(ana.revision_momentum), signal, explanation: t(`driver.revMomentum.${signal}` as any) });
+    }
+    if (ana.target_upside != null) {
+      const signal = ana.target_upside > 0.10 ? 'bullish' : ana.target_upside < 0 ? 'bearish' : 'neutral';
+      analystDrivers.push({ label: t('analyst.targetUpside'), value: formatPercent(ana.target_upside), signal, explanation: t(`driver.targetUpside.${signal}` as any) });
+    }
+    if (ana.consensus_rating != null) {
+      const signal = ana.consensus_rating < 2.5 ? 'bullish' : ana.consensus_rating > 3.5 ? 'bearish' : 'neutral';
+      analystDrivers.push({ label: t('analyst.consensus'), value: formatRatio(ana.consensus_rating), signal, explanation: t(`driver.consensus.${signal}` as any) });
+    }
+  }
+
+  const allDrivers = [...fundDrivers, ...techDrivers, ...sentDrivers, ...analystDrivers];
   const bullishCount = allDrivers.filter(d => d.signal === 'bullish').length;
   const bearishCount = allDrivers.filter(d => d.signal === 'bearish').length;
   const keyBullish = allDrivers.filter(d => d.signal === 'bullish').slice(0, 3);
@@ -144,7 +161,7 @@ export function ScoreBreakdown({ detail }: Props) {
   const factors = [
     { name: t('detail.earningsVisibility'), score: ranking.earnings_visibility, weight: fmtWeight(ranking.weight_earnings_visibility, '30%'), drivers: fundDrivers.filter(d => ['ROE', 'ROA', t('metric.roe'), t('metric.roa'), t('metric.revGrowth'), t('metric.earnGrowth'), t('metric.profitMargin')].some(k => d.label.includes(k) || k.includes(d.label))) },
     { name: t('detail.valuationMargin'), score: ranking.valuation_margin, weight: fmtWeight(ranking.weight_valuation_margin, '25%'), drivers: fundDrivers.filter(d => ['P/E', 'P/B', 'P/S', t('metric.pe'), t('metric.pb'), t('metric.ps')].some(k => d.label.includes(k) || k.includes(d.label))) },
-    { name: t('detail.catalystTimeline'), score: ranking.catalyst_timeline, weight: fmtWeight(ranking.weight_catalyst_timeline, '20%'), drivers: [...techDrivers, ...sentDrivers] },
+    { name: t('detail.catalystTimeline'), score: ranking.catalyst_timeline, weight: fmtWeight(ranking.weight_catalyst_timeline, '20%'), drivers: [...techDrivers, ...sentDrivers, ...analystDrivers] },
     { name: t('detail.downsideControl'), score: ranking.downside_control, weight: fmtWeight(ranking.weight_downside_control, '25%'), drivers: fundDrivers.filter(d => [t('metric.debtEquity'), 'Debt'].some(k => d.label.includes(k) || k.includes(d.label))) },
   ];
 

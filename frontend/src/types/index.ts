@@ -91,6 +91,11 @@ export interface FundamentalData {
   current_price?: number | null;
   high_52w?: number | null;
   low_52w?: number | null;
+  total_debt?: number | null;
+  total_cash?: number | null;
+  ebitda?: number | null;
+  fcf_yield?: number | null;
+  current_ratio?: number | null;
   // Sub-scores (from scored pipeline)
   value_score?: number | null;
   quality_score?: number | null;
@@ -150,6 +155,20 @@ export interface HeadlineItem {
   sentiment?: 'positive' | 'negative' | 'neutral';
 }
 
+export interface AnalystData {
+  revision_momentum: number | null;
+  target_upside: number | null;
+  consensus_rating: number | null;
+  analyst_revision_count: number | null;
+  analyst_count: number | null;
+  analyst_upgrades: number | null;
+  analyst_downgrades: number | null;
+  revision_momentum_score?: number | null;
+  target_upside_score?: number | null;
+  consensus_score?: number | null;
+  analyst_score?: number | null;
+}
+
 export interface CompanyProfile {
   longBusinessSummary?: string;
   fullTimeEmployees?: number;
@@ -165,6 +184,7 @@ export interface StockDetail {
   fundamental: FundamentalData | null;
   technical: TechnicalData | null;
   sentiment: SentimentData | null;
+  analyst: AnalystData | null;
   ranking: RankedStock | null;
   headlines: HeadlineItem[];
 }

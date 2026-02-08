@@ -3,7 +3,9 @@ import { useStockDetail } from '../../hooks/useStockDetail';
 import { LoadingSpinner } from '../common/LoadingSpinner';
 import { ScoreBadge } from '../common/ScoreBadge';
 import { CompanyProfile } from './CompanyProfile';
+import { AnalystConsensus } from './AnalystConsensus';
 import { PriceChart } from './PriceChart';
+import { RecentNews } from './RecentNews';
 import { ScoreBreakdown } from './ScoreBreakdown';
 import { formatScore, formatPrice } from '../../lib/formatters';
 import { useI18n } from '../../lib/i18n';
@@ -47,10 +49,16 @@ export function StockDetailPage() {
       </div>
 
       {/* Company Profile */}
-      <CompanyProfile profile={data.profile} fundamental={data.fundamental} ranking={data.ranking} />
+      <CompanyProfile profile={data.profile} ranking={data.ranking} />
 
       {/* Price Chart + Indicators */}
       <PriceChart prices={data.prices} ticker={ticker!} />
+
+      {/* Analyst Consensus */}
+      <AnalystConsensus analyst={data.analyst ?? null} />
+
+      {/* Recent News */}
+      <RecentNews headlines={data.headlines} />
 
       {/* Score Breakdown */}
       <ScoreBreakdown detail={data} />
