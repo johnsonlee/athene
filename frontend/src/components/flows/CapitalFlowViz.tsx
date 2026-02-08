@@ -196,6 +196,8 @@ function NodeBox({ data, pos, locale, isDark }: {
 function computeRfi(riskNet: number, safeNet: number): number {
   const total = Math.abs(riskNet) + Math.abs(safeNet);
   if (total < 0.5) return 0;
+  // Both sides negative — no rotation signal
+  if (riskNet < 0 && safeNet < 0) return 0;
   return (riskNet - safeNet) / total;
 }
 

@@ -159,7 +159,12 @@ def _compute_rfi(risk_net: float, safe_net: float, scale: float = RFI_TANH_SCALE
 
     tanh((risk_net - safe_net) / scale) — smooth, bounded [-1, +1],
     no saturation at extremes unlike the ratio-based formula.
+
+    When both risk and safe are net outflow, RFI is forced to 0.0 —
+    the difference in bleed rates has no directional rotation meaning.
     """
+    if risk_net < 0 and safe_net < 0:
+        return 0.0
     return round(math.tanh((risk_net - safe_net) / scale), 4)
 
 
