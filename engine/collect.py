@@ -263,34 +263,6 @@ def _skip_if_exists(name: str, args: argparse.Namespace) -> bool:
     return False
 
 
-def _weekdays_in_range(start: str, end: str) -> list[str]:
-    """Return list of weekday date strings (Mon-Fri) between start and end inclusive."""
-    from datetime import date as _date, timedelta
-    s = _date.fromisoformat(start)
-    e = _date.fromisoformat(end)
-    result = []
-    d = s
-    while d <= e:
-        if d.weekday() < 5:  # Mon=0 .. Fri=4
-            result.append(d.isoformat())
-        d += timedelta(days=1)
-    return result
-
-
-def _all_dates_collected(name: str, start: str, end: str) -> bool:
-    """Return True if all weekdays in [start, end] already have collected data for name."""
-    for date_str in _weekdays_in_range(start, end):
-        if not _already_collected(name, date_str):
-            return False
-    return True
-
-
-def _dates_missing(name: str, start: str, end: str) -> set[str]:
-    """Return the set of weekday dates in [start, end] missing collected data for name."""
-    return {
-        date_str for date_str in _weekdays_in_range(start, end)
-        if not _already_collected(name, date_str)
-    }
 
 
 # ── CLI commands ──────────────────────────────────────────────────
@@ -343,16 +315,7 @@ def _backfill_prices(args: argparse.Namespace) -> None:
     force = getattr(args, "force", False)
     label = f"{start_date} to {end_date}" if start_date and end_date else "365 days"
 
-    # Skip entire API call if all dates already collected
-    if not force and start_date and end_date:
-        if _all_dates_collected("prices", start_date, end_date):
-            log.info(f"All dates in {label} already have prices — skipping (use --force to overwrite)")
-            return
-        missing = _dates_missing("prices", start_date, end_date)
-        log.info(f"Backfilling prices for {len(tickers)} tickers ({label}, {len(missing)} dates missing)...")
-    else:
-        missing = None
-        log.info(f"Backfilling prices for {len(tickers)} tickers ({label})...")
+    log.info(f"Backfilling prices for {len(tickers)} tickers ({label})...")
 
     prices = collect_prices(tickers, start_date=start_date, end_date=end_date)
 
@@ -361,9 +324,6 @@ def _backfill_prices(args: argparse.Namespace) -> None:
         for date_val, row in df.iterrows():
             date_str = pd.Timestamp(date_val).strftime("%Y-%m-%d")
             if not _is_trading_day(date_str):
-                continue
-            # Skip dates that already have data (unless --force)
-            if not force and missing is not None and date_str not in missing:
                 continue
             # Skip individual ticker/date if already collected
             if not force and _ticker_already_collected("prices", date_str, ticker):
@@ -489,16 +449,7 @@ def _backfill_capital_flow_etfs(args: argparse.Namespace) -> None:
     force = getattr(args, "force", False)
     label = f"{start_date} to {end_date}" if start_date and end_date else "all available"
 
-    # Skip entire API call if all dates already collected
-    if not force and start_date and end_date:
-        if _all_dates_collected("capital_flow_etfs", start_date, end_date):
-            log.info(f"All dates in {label} already have capital_flow_etfs — skipping (use --force to overwrite)")
-            return
-        missing = _dates_missing("capital_flow_etfs", start_date, end_date)
-        log.info(f"Backfilling capital flow ETF data ({label}, {len(missing)} dates missing)...")
-    else:
-        missing = None
-        log.info(f"Backfilling capital flow ETF data ({label})...")
+    log.info(f"Backfilling capital flow ETF data ({label})...")
 
     etf_prices = collect_capital_flow_etfs(start_date=start_date, end_date=end_date)
 
@@ -507,8 +458,6 @@ def _backfill_capital_flow_etfs(args: argparse.Namespace) -> None:
         for date_val, row in df.iterrows():
             date_str = pd.Timestamp(date_val).strftime("%Y-%m-%d")
             if not _is_trading_day(date_str):
-                continue
-            if not force and missing is not None and date_str not in missing:
                 continue
             if not force and _ticker_already_collected("capital_flow_etfs", date_str, ticker):
                 continue
@@ -544,16 +493,7 @@ def _backfill_sector_etfs(args: argparse.Namespace) -> None:
     force = getattr(args, "force", False)
     label = f"{start_date} to {end_date}" if start_date and end_date else "365 days"
 
-    # Skip entire API call if all dates already collected
-    if not force and start_date and end_date:
-        if _all_dates_collected("sector_etfs", start_date, end_date):
-            log.info(f"All dates in {label} already have sector_etfs — skipping (use --force to overwrite)")
-            return
-        missing = _dates_missing("sector_etfs", start_date, end_date)
-        log.info(f"Backfilling sector ETF data ({label}, {len(missing)} dates missing)...")
-    else:
-        missing = None
-        log.info(f"Backfilling sector ETF data ({label})...")
+    log.info(f"Backfilling sector ETF data ({label})...")
 
     etf_prices = collect_sector_etfs(start_date=start_date, end_date=end_date)
 
@@ -562,8 +502,6 @@ def _backfill_sector_etfs(args: argparse.Namespace) -> None:
         for date_val, row in df.iterrows():
             date_str = pd.Timestamp(date_val).strftime("%Y-%m-%d")
             if not _is_trading_day(date_str):
-                continue
-            if not force and missing is not None and date_str not in missing:
                 continue
             if not force and _ticker_already_collected("sector_etfs", date_str, ticker):
                 continue

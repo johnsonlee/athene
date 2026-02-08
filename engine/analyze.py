@@ -85,10 +85,10 @@ SNAPSHOT_FILES = [
 
 
 def _snapshot_results(run_date: str) -> None:
-    """Archive analysis output files to snapshots/YYYY/MM/DD_{HHmmss}/ for debugging."""
+    """Archive analysis output files to snapshots/YYYY/MM/DD/HHmmss/ for debugging."""
     y, m, d = run_date.split("-")
     ts = datetime.now(timezone.utc).strftime("%H%M%S")
-    snap_dir = os.path.join(SNAPSHOT_DIR, y, m, f"{d}_{ts}")
+    snap_dir = os.path.join(SNAPSHOT_DIR, y, m, d, ts)
     copied = 0
     for fname in SNAPSHOT_FILES:
         src = os.path.join(OUTPUT_DIR, fname)
