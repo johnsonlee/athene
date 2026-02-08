@@ -11,26 +11,20 @@ on:
         description: 'End date (YYYY-MM-DD), e.g. 2024-12-31'
         required: false
         default: ''
-      skip_snapshot:
-        description: 'Skip today snapshot collection (fundamentals/news/analyst/macro)'
-        required: false
-        type: boolean
-        default: false
-      skip_analyze:
-        description: 'Skip analyze + deploy (useful for incremental backfill)'
-        required: false
-        type: boolean
-        default: false
       force_collect:
         description: 'Force re-fetch collected data even if it already exists'
         required: false
         type: boolean
         default: false
+      trigger_daily:
+        description: 'Trigger daily pipeline after backfill completes'
+        required: false
+        type: boolean
+        default: true
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
+  actions: write
 
 concurrency:
   group: daily-pipeline
@@ -269,141 +263,14 @@ jobs:
             sleep $((attempt * 3))
           done
 
-  # ── Snapshot: today's fundamentals/news/analyst/macro ──────
-  snapshot:
-    needs: setup
-    if: inputs.skip_snapshot != true
+  # ── Trigger daily pipeline for collect + analyze + deploy ──
+  trigger-daily:
+    needs: [backfill-prices, backfill-sector-etfs, backfill-capital-flow-etfs]
+    if: ${{ !failure() && !cancelled() && inputs.trigger_daily != false }}
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 5
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          ref: main
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Cache venv
-        uses: actions/cache@v4
-        with:
-          path: .venv
-          key: venv-${{ runner.os }}-py3.12-${{ hashFiles('requirements.txt') }}
-
-      - name: Install dependencies
-        run: |
-          test -d .venv || python -m venv .venv
-          source .venv/bin/activate
-          pip install -r requirements.txt
-
-      - name: Collect snapshots (parallel)
-        run: |
-          source .venv/bin/activate
-          RUN_DATE="${{ needs.setup.outputs.run_date }}"
-          FORCE_FLAG=""
-          [ "${{ inputs.force_collect }}" = "true" ] && FORCE_FLAG="--force"
-
-          python -m engine.collect fundamentals --date "$RUN_DATE" $FORCE_FLAG &
-          PID_FUND=$!
-          python -m engine.collect news --date "$RUN_DATE" $FORCE_FLAG &
-          PID_NEWS=$!
-          python -m engine.collect analyst --date "$RUN_DATE" $FORCE_FLAG &
-          PID_ANALYST=$!
-          python -m engine.collect macro --date "$RUN_DATE" $FORCE_FLAG &
-          PID_MACRO=$!
-
-          FAIL=0
-          wait $PID_FUND    || FAIL=1
-          wait $PID_NEWS    || FAIL=1
-          wait $PID_ANALYST || FAIL=1
-          wait $PID_MACRO   || FAIL=1
-          [ $FAIL -eq 0 ] || exit 1
-
-      - name: Commit snapshot data
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          RUN_DATE="${{ needs.setup.outputs.run_date }}"
-          for attempt in 1 2 3 4 5; do
-            git fetch origin main
-            git reset origin/main
-            DATE_DIR="collected/${RUN_DATE:0:4}/${RUN_DATE:5:2}/${RUN_DATE:8:2}"
-            git add -f "$DATE_DIR/fundamentals.json" "$DATE_DIR/news.json" "$DATE_DIR/analyst.json" "$DATE_DIR/macro.json"
-            if git diff --staged --quiet; then
-              echo "No snapshot changes"
-              break
-            fi
-            git commit -m "backfill: snapshots $RUN_DATE [skip ci]"
-            git push origin main && break
-            echo "Push failed (attempt $attempt), retrying..."
-            sleep $((attempt * 3))
-          done
-
-  # ── Analyze + export ───────────────────────────────────────
-  analyze:
-    needs: [backfill-prices, backfill-sector-etfs, backfill-capital-flow-etfs, snapshot]
-    if: ${{ !failure() && !cancelled() && inputs.skip_analyze != true }}
-    runs-on: ubuntu-latest
-    timeout-minutes: 30
-    outputs:
-      data_changed: ${{ steps.commit.outputs.data_changed }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          ref: main
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Cache venv
-        uses: actions/cache@v4
-        with:
-          path: .venv
-          key: venv-${{ runner.os }}-py3.12-${{ hashFiles('requirements.txt') }}
-
-      - name: Install dependencies
-        run: |
-          test -d .venv || python -m venv .venv
-          source .venv/bin/activate
-          pip install -r requirements.txt
-
-      - name: Run analysis
-        run: |
-          source .venv/bin/activate
-          python -m engine.analyze
-
-      - name: Commit analysis data
-        id: commit
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          DATA_CHANGED=false
-          for attempt in 1 2 3 4 5; do
-            git fetch origin main
-            git reset origin/main
-            git add -f frontend/public/data/
-            [ -d snapshots ] && git add -f snapshots/
-            if git diff --staged --quiet; then
-              echo "No analysis data changes"
-              break
-            fi
-            git commit -m "data: update $(date -u +%Y-%m-%d) rankings"
-            if git push origin main; then
-              DATA_CHANGED=true
-              break
-            fi
-            echo "Push failed (attempt $attempt), retrying..."
-            sleep $((attempt * 3))
-          done
-          echo "data_changed=$DATA_CHANGED" >> "$GITHUB_OUTPUT"
-
-  # ── Deploy ─────────────────────────────────────────────────
-  deploy:
-    needs: analyze
-    if: ${{ !failure() && !cancelled() && needs.analyze.outputs.data_changed == 'true' }}
-    uses: ./.github/workflows/deploy-pages.yml
+      - name: Trigger daily pipeline
+        run: gh workflow run daily-pipeline.yml --repo "${{ github.repository }}" -f force=true
+        env:
+          GH_TOKEN: ${{ github.token }}
