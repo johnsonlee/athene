@@ -96,7 +96,7 @@ export function PriceChart({ prices, ticker }: Props) {
   const syncingRef = useRef(false);
 
   const { theme } = useTheme();
-  const { t } = useI18n();
+  const { t, locale } = useI18n();
   const isDark = theme === 'dark';
 
   const displayPrices = useMemo(() => aggregateBars(prices, interval), [prices, interval]);
@@ -125,7 +125,8 @@ export function PriceChart({ prices, ticker }: Props) {
 
     const isMobile = window.innerWidth < 640;
     const mainHeight = isMobile ? 220 : 300;
-    const subHeight = isMobile ? 80 : 100;
+    const subHeight = isMobile ? 100 : 120;
+    const timeAxisHeight = 26;
 
     const charts: IChartApi[] = [];
     const primarySeries: ISeriesApi<SeriesType>[] = [];
@@ -134,14 +135,20 @@ export function PriceChart({ prices, ticker }: Props) {
     const text = isDark ? '#64748b' : '#333';
     const gridColor = isDark ? 'rgba(6,182,212,0.06)' : '#f0f0f0';
     const border = isDark ? 'rgba(6,182,212,0.12)' : '#e5e7eb';
+    const upC = locale === 'zh' ? '#ef4444' : '#16a34a';
+    const downC = locale === 'zh' ? '#16a34a' : '#ef4444';
+    const upCAlpha = locale === 'zh' ? 'rgba(239,68,68,' : 'rgba(22,163,74,';
+    const downCAlpha = locale === 'zh' ? 'rgba(22,163,74,' : 'rgba(239,68,68,';
 
     containers.forEach((el, i) => {
+      const isLast = i === containers.length - 1;
+      const h = panelTypes[i] === 'main' ? mainHeight : subHeight + (isLast ? timeAxisHeight : 0);
       const chart = createChart(el, {
         width: el.clientWidth,
-        height: panelTypes[i] === 'main' ? mainHeight : subHeight,
+        height: h,
         layout: { background: { color: bg }, textColor: text, attributionLogo: false },
         grid: { vertLines: { color: gridColor }, horzLines: { color: gridColor } },
-        rightPriceScale: { borderColor: border },
+        rightPriceScale: { borderColor: border, minimumWidth: 80, scaleMargins: { top: 0.08, bottom: 0.08 } },
         timeScale: {
           visible: i === containers.length - 1,
           timeVisible: false,
@@ -174,12 +181,12 @@ export function PriceChart({ prices, ticker }: Props) {
       if (type === 'main') {
         // Candlestick + SMA + BB + Volume
         const candle = chart.addSeries(CandlestickSeries, {
-          upColor: '#16a34a',
-          downColor: '#ef4444',
-          borderUpColor: '#16a34a',
-          borderDownColor: '#ef4444',
-          wickUpColor: '#16a34a',
-          wickDownColor: '#ef4444',
+          upColor: upC,
+          downColor: downC,
+          borderUpColor: upC,
+          borderDownColor: downC,
+          wickUpColor: upC,
+          wickDownColor: downC,
         });
         candle.setData(
           displayPrices.map((p) => ({ time: p.date, open: p.open, high: p.high, low: p.low, close: p.close }))
@@ -187,77 +194,153 @@ export function PriceChart({ prices, ticker }: Props) {
         primarySeries.push(candle);
 
         if (overlays.sma20) {
-          chart.addSeries(LineSeries, { color: '#f59e0b', lineWidth: 1, lastValueVisible: false }).setData(
+          chart.addSeries(LineSeries, { color: '#f59e0b', lineWidth: 1, lastValueVisible: false, priceLineVisible: false }).setData(
             indicators.filter((d) => d.sma20 != null).map((d) => ({ time: d.date, value: d.sma20! }))
           );
         }
         if (overlays.sma50) {
-          chart.addSeries(LineSeries, { color: '#3b82f6', lineWidth: 1, lastValueVisible: false }).setData(
+          chart.addSeries(LineSeries, { color: '#3b82f6', lineWidth: 1, lastValueVisible: false, priceLineVisible: false }).setData(
             indicators.filter((d) => d.sma50 != null).map((d) => ({ time: d.date, value: d.sma50! }))
           );
         }
         if (overlays.dc) {
-          chart.addSeries(LineSeries, { color: 'rgba(156,163,175,0.5)', lineWidth: 1 }).setData(
+          chart.addSeries(LineSeries, { color: 'rgba(156,163,175,0.5)', lineWidth: 1, lastValueVisible: false, priceLineVisible: false }).setData(
             indicators.filter((d) => d.dcUpper != null).map((d) => ({ time: d.date, value: d.dcUpper! }))
           );
-          chart.addSeries(LineSeries, { color: 'rgba(156,163,175,0.5)', lineWidth: 1 }).setData(
+          chart.addSeries(LineSeries, { color: 'rgba(156,163,175,0.5)', lineWidth: 1, lastValueVisible: false, priceLineVisible: false }).setData(
             indicators.filter((d) => d.dcLower != null).map((d) => ({ time: d.date, value: d.dcLower! }))
           );
         }
         const vol = chart.addSeries(HistogramSeries, {
           priceFormat: { type: 'volume' },
           priceScaleId: 'vol',
+          priceLineVisible: false,
         });
         chart.priceScale('vol').applyOptions({ scaleMargins: { top: 0.8, bottom: 0 } });
         vol.setData(
           displayPrices.map((p) => ({
             time: p.date,
             value: p.volume,
-            color: p.close >= p.open ? 'rgba(22,163,74,0.3)' : 'rgba(239,68,68,0.3)',
+            color: p.close >= p.open ? `${upCAlpha}0.3)` : `${downCAlpha}0.3)`,
           }))
         );
       } else if (type === 'rsi') {
         addTimeRef(chart);
-        const rsi = chart.addSeries(LineSeries, { color: '#8b5cf6', lineWidth: 2 });
-        rsi.setData(
-          indicators.filter((d) => d.rsi != null).map((d) => ({ time: d.date, value: d.rsi! }))
-        );
-        rsi.createPriceLine({ price: 70, color: '#ef4444', lineWidth: 1, lineStyle: 2, axisLabelVisible: false, title: '' });
-        rsi.createPriceLine({ price: 30, color: '#16a34a', lineWidth: 1, lineStyle: 2, axisLabelVisible: false, title: '' });
-        primarySeries.push(rsi);
+        const rsi6 = chart.addSeries(LineSeries, { color: '#f59e0b', lineWidth: 1, priceLineVisible: false, lastValueVisible: false });
+        rsi6.setData(indicators.filter((d) => d.rsi6 != null).map((d) => ({ time: d.date, value: d.rsi6! })));
+        const rsi14 = chart.addSeries(LineSeries, { color: '#8b5cf6', lineWidth: 2 });
+        rsi14.setData(indicators.filter((d) => d.rsi != null).map((d) => ({ time: d.date, value: d.rsi! })));
+        const rsi24 = chart.addSeries(LineSeries, { color: '#3b82f6', lineWidth: 1, priceLineVisible: false, lastValueVisible: false });
+        rsi24.setData(indicators.filter((d) => d.rsi24 != null).map((d) => ({ time: d.date, value: d.rsi24! })));
+        rsi14.createPriceLine({ price: 80, color: '#ef4444', lineWidth: 1, lineStyle: 2, axisLabelVisible: false, title: '' });
+        rsi14.createPriceLine({ price: 50, color: '#9ca3af', lineWidth: 1, lineStyle: 2, axisLabelVisible: false, title: '' });
+        rsi14.createPriceLine({ price: 20, color: '#16a34a', lineWidth: 1, lineStyle: 2, axisLabelVisible: false, title: '' });
+        primarySeries.push(rsi14);
       } else if (type === 'macd') {
         addTimeRef(chart);
-        const macdHist = chart.addSeries(HistogramSeries, {});
+        const macdHist = chart.addSeries(HistogramSeries, { priceLineVisible: false });
         macdHist.setData(
           indicators
             .filter((d) => d.macdHist != null)
             .map((d) => ({
               time: d.date,
               value: d.macdHist!,
-              color: d.macdHist! >= 0 ? 'rgba(22,163,74,0.5)' : 'rgba(239,68,68,0.5)',
+              color: d.macdHist! >= 0 ? `${upCAlpha}0.5)` : `${downCAlpha}0.5)`,
             }))
         );
-        chart.addSeries(LineSeries, { color: '#3b82f6', lineWidth: 2 }).setData(
+        chart.addSeries(LineSeries, { color: '#3b82f6', lineWidth: 2, priceLineVisible: false }).setData(
           indicators.filter((d) => d.macdLine != null).map((d) => ({ time: d.date, value: d.macdLine! }))
         );
-        chart.addSeries(LineSeries, { color: '#f97316', lineWidth: 2 }).setData(
+        chart.addSeries(LineSeries, { color: '#f97316', lineWidth: 2, priceLineVisible: false }).setData(
           indicators.filter((d) => d.macdSignal != null).map((d) => ({ time: d.date, value: d.macdSignal! }))
         );
         macdHist.createPriceLine({ price: 0, color: '#9ca3af', lineWidth: 1, lineStyle: 2, axisLabelVisible: false, title: '' });
         primarySeries.push(macdHist);
       } else if (type === 'kdj') {
         addTimeRef(chart);
-        const stK = chart.addSeries(LineSeries, { color: '#3b82f6', lineWidth: 2 });
+        const stK = chart.addSeries(LineSeries, { color: '#3b82f6', lineWidth: 2, priceLineVisible: false });
         stK.setData(
           indicators.filter((d) => d.stochK != null).map((d) => ({ time: d.date, value: d.stochK! }))
         );
-        chart.addSeries(LineSeries, { color: '#f97316', lineWidth: 2 }).setData(
+        chart.addSeries(LineSeries, { color: '#f97316', lineWidth: 2, priceLineVisible: false }).setData(
           indicators.filter((d) => d.stochD != null).map((d) => ({ time: d.date, value: d.stochD! }))
         );
         stK.createPriceLine({ price: 80, color: '#ef4444', lineWidth: 1, lineStyle: 2, axisLabelVisible: false, title: '' });
+        stK.createPriceLine({ price: 50, color: '#9ca3af', lineWidth: 1, lineStyle: 2, axisLabelVisible: false, title: '' });
         stK.createPriceLine({ price: 20, color: '#16a34a', lineWidth: 1, lineStyle: 2, axisLabelVisible: false, title: '' });
         primarySeries.push(stK);
       }
+    });
+
+    // --- Crosshair legends (tooltip) ---
+    const indicatorMap = new Map<string, (typeof indicators)[0]>();
+    indicators.forEach((d) => indicatorMap.set(d.date, d));
+    const priceMap = new Map<string, (typeof displayPrices)[0]>();
+    displayPrices.forEach((p) => priceMap.set(p.date, p));
+
+    const legendColor = isDark ? 'rgba(255,255,255,0.65)' : 'rgba(0,0,0,0.55)';
+    const legendEls: HTMLDivElement[] = [];
+    containers.forEach((el) => {
+      const legend = document.createElement('div');
+      legend.style.cssText = `font-size:11px;line-height:1.4;min-height:16px;font-family:ui-monospace,monospace;color:${legendColor};padding:0 0 2px 4px`;
+      el.parentNode!.insertBefore(legend, el);
+      legendEls.push(legend);
+    });
+
+    const fmtTime = (t: unknown): string => {
+      if (typeof t === 'string') return t;
+      if (t && typeof t === 'object' && 'year' in t) {
+        const bd = t as { year: number; month: number; day: number };
+        return `${bd.year}-${String(bd.month).padStart(2, '0')}-${String(bd.day).padStart(2, '0')}`;
+      }
+      return '';
+    };
+
+    const updateLegend = (legend: HTMLDivElement, type: string, dateStr: string) => {
+      const ind = indicatorMap.get(dateStr);
+      if (type === 'main') {
+        const p = priceMap.get(dateStr);
+        if (p) {
+          legend.innerHTML =
+            `O:<b>${p.open.toFixed(2)}</b> H:<b>${p.high.toFixed(2)}</b> L:<b>${p.low.toFixed(2)}</b> C:<b>${p.close.toFixed(2)}</b>`;
+        } else { legend.innerHTML = ''; }
+      } else if (type === 'rsi' && ind) {
+        const parts: string[] = [];
+        if (ind.rsi6 != null) parts.push(`<span style="color:#f59e0b">6: <b>${ind.rsi6.toFixed(1)}</b></span>`);
+        if (ind.rsi != null) parts.push(`<span style="color:#8b5cf6">14: <b>${ind.rsi.toFixed(1)}</b></span>`);
+        if (ind.rsi24 != null) parts.push(`<span style="color:#3b82f6">24: <b>${ind.rsi24.toFixed(1)}</b></span>`);
+        legend.innerHTML = parts.join(' ');
+      } else if (type === 'macd' && ind) {
+        const parts: string[] = [];
+        if (ind.macdLine != null) parts.push(`<span style="color:#3b82f6">MACD: <b>${ind.macdLine.toFixed(3)}</b></span>`);
+        if (ind.macdSignal != null) parts.push(`<span style="color:#f97316">Signal: <b>${ind.macdSignal.toFixed(3)}</b></span>`);
+        if (ind.macdHist != null) parts.push(`<span style="color:${ind.macdHist >= 0 ? upC : downC}">Hist: <b>${ind.macdHist.toFixed(3)}</b></span>`);
+        legend.innerHTML = parts.join(' ');
+      } else if (type === 'kdj' && ind) {
+        const parts: string[] = [];
+        if (ind.stochK != null) parts.push(`<span style="color:#3b82f6">%K: <b>${ind.stochK.toFixed(1)}</b></span>`);
+        if (ind.stochD != null) parts.push(`<span style="color:#f97316">%D: <b>${ind.stochD.toFixed(1)}</b></span>`);
+        legend.innerHTML = parts.join(' ');
+      } else { legend.innerHTML = ''; }
+    };
+
+    // Show latest values by default
+    const latestDate = displayPrices[displayPrices.length - 1]?.date;
+    if (latestDate) {
+      charts.forEach((_, ci) => updateLegend(legendEls[ci], panelTypes[ci], latestDate));
+    }
+
+    charts.forEach((chart, ci) => {
+      const legend = legendEls[ci];
+      const type = panelTypes[ci];
+      chart.subscribeCrosshairMove((param) => {
+        if (!param.time) {
+          // Mouse left chart — restore latest values
+          if (latestDate) updateLegend(legend, type, latestDate);
+          return;
+        }
+        updateLegend(legend, type, fmtTime(param.time));
+      });
     });
 
     // Sync visible time ranges
@@ -293,25 +376,31 @@ export function PriceChart({ prices, ticker }: Props) {
     chartsRef.current = charts;
 
     // Set initial visible range
-    const to = displayPrices[displayPrices.length - 1].date;
     if (range === 'All') {
       charts.forEach((c) => c.timeScale().fitContent());
     } else {
       const fromDate = new Date();
       fromDate.setDate(fromDate.getDate() - RANGE_DAYS[range]);
       const from = fromDate.toISOString().slice(0, 10);
+      const to = displayPrices[displayPrices.length - 1].date;
       charts.forEach((c) => {
         c.timeScale().setVisibleRange({ from, to } as any);
       });
+      // Scroll so rightOffset takes effect after setVisibleRange
+      charts.forEach((c) => c.timeScale().scrollToRealTime());
     }
 
     // Resize handler
     const handleResize = () => {
+      const mobileNow = window.innerWidth < 640;
+      const mH = mobileNow ? 220 : 300;
+      const sH = mobileNow ? 80 : 100;
       containers.forEach((el, i) => {
         if (el && charts[i]) {
+          const last = i === containers.length - 1;
           charts[i].applyOptions({
             width: el.clientWidth,
-            height: panelTypes[i] === 'main' ? (window.innerWidth < 640 ? 220 : 300) : (window.innerWidth < 640 ? 80 : 100),
+            height: panelTypes[i] === 'main' ? mH : sH + (last ? timeAxisHeight : 0),
           });
         }
       });
@@ -320,11 +409,12 @@ export function PriceChart({ prices, ticker }: Props) {
 
     return () => {
       window.removeEventListener('resize', handleResize);
+      legendEls.forEach((el) => el.remove());
       charts.forEach((c) => c.remove());
       chartsRef.current = [];
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [displayPrices, indicators, isDark, visiblePanels.rsi, visiblePanels.macd, visiblePanels.kdj, overlays.sma20, overlays.sma50, overlays.dc]);
+  }, [displayPrices, indicators, isDark, locale, visiblePanels.rsi, visiblePanels.macd, visiblePanels.kdj, overlays.sma20, overlays.sma50, overlays.dc]);
 
   // Handle range change without recreating charts
   useEffect(() => {
@@ -336,7 +426,10 @@ export function PriceChart({ prices, ticker }: Props) {
       fromDate.setDate(fromDate.getDate() - RANGE_DAYS[range]);
       const from = fromDate.toISOString().slice(0, 10);
       const to = displayPrices[displayPrices.length - 1].date;
-      chartsRef.current.forEach((c) => c.timeScale().setVisibleRange({ from, to } as any));
+      chartsRef.current.forEach((c) => {
+        c.timeScale().setVisibleRange({ from, to } as any);
+        c.timeScale().scrollToRealTime();
+      });
     }
   }, [range, displayPrices]);
 
@@ -435,9 +528,9 @@ export function PriceChart({ prices, ticker }: Props) {
       </div>
 
       {/* Indicator sub-charts — only rendered when visible */}
-      {visiblePanels.rsi && <div ref={rsiRef} />}
-      {visiblePanels.macd && <div ref={macdRef} />}
-      {visiblePanels.kdj && <div ref={kdjRef} />}
+      {visiblePanels.rsi && <div ref={rsiRef} className="mt-1.5" />}
+      {visiblePanels.macd && <div ref={macdRef} className="mt-1.5" />}
+      {visiblePanels.kdj && <div ref={kdjRef} className="mt-1.5" />}
     </div>
   );
 }

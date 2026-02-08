@@ -347,7 +347,7 @@ const translations = {
     'factor.analyst': 'Analyst',
 
     // Chart labels
-    'chart.rsi14': 'RSI (14)',
+    'chart.rsi14': 'RSI (6, 14, 24)',
     'chart.macd1226': 'MACD (12, 26, 9)',
     'chart.stochastic': 'Stochastic (14, 3, 3)',
     'chart.signal': 'Signal',
@@ -906,7 +906,7 @@ const translations = {
     'factor.analyst': '分析师',
 
     // Chart labels
-    'chart.rsi14': 'RSI (14)',
+    'chart.rsi14': 'RSI (6, 14, 24)',
     'chart.macd1226': 'MACD (12, 26, 9)',
     'chart.stochastic': '随机指标 (14, 3, 3)',
     'chart.signal': '信号线',

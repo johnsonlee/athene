@@ -10,7 +10,9 @@ export interface IndicatorBar {
   volume: number;
   sma20: number | null;
   sma50: number | null;
+  rsi6: number | null;
   rsi: number | null;
+  rsi24: number | null;
   macdLine: number | null;
   macdSignal: number | null;
   macdHist: number | null;
@@ -227,7 +229,9 @@ export function computeIndicators(prices: PriceInput[]): IndicatorBar[] {
 
   const sma20 = sma(closes, 20);
   const sma50 = sma(closes, 50);
-  const rsi = computeRSI(closes);
+  const rsi6 = computeRSI(closes, 6);
+  const rsi = computeRSI(closes, 14);
+  const rsi24 = computeRSI(closes, 24);
   const macd = computeMACD(closes);
   const dc = computeDonchian(highs, lows);
   const stoch = computeStochastic(highs, lows, closes);
@@ -238,7 +242,9 @@ export function computeIndicators(prices: PriceInput[]): IndicatorBar[] {
     volume: p.volume,
     sma20: sma20[i],
     sma50: sma50[i],
+    rsi6: rsi6[i],
     rsi: rsi[i],
+    rsi24: rsi24[i],
     macdLine: macd.line[i],
     macdSignal: macd.signal[i],
     macdHist: macd.histogram[i],
