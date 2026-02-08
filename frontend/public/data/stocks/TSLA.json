@@ -6271,8 +6271,8 @@
     "debt_equity_score": 83.338875,
     "fcf_yield_score": 32.01633295243256,
     "current_ratio_score": 80.82000000000001,
-    "safety_score": 69.20599621140764,
-    "fundamental_score": 33.35872634623986,
+    "safety_score": 69.20268750000001,
+    "fundamental_score": 33.35806460395834,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 49.29346451165871,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": -0.041119283592301284,
-    "sentiment_pos": 0.06999999999999999,
-    "sentiment_neg": 0.076,
-    "sentiment_neu": 0.8540000000000001,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 47.94
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": -0.043478260869565216,
     "target_upside": 0.15054365011797324,
@@ -6332,7 +6324,7 @@
     "value_score": 13.333333333333334,
     "quality_score": 35.69731256875,
     "growth_score": 21.9,
-    "safety_score": 69.20599621140764,
+    "safety_score": 69.20268750000001,
     "trend_score": 54.32673770412786,
     "momentum_score": 49.056861833508115,
     "volatility_score": 41.3919232518396,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 29.520596885312496,
     "valuation_margin": 11.875,
     "catalyst_timeline": 50.11851695817212,
-    "downside_control": 55.558687919487085,
-    "composite_score": 29.521874854539686,
+    "downside_control": 55.55819161277594,
+    "composite_score": 29.521775593197454,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 33.35872634623986,
+    "fundamental_score": 33.35806460395834,
     "technical_score": 49.29346451165871,
-    "sentiment_score": 47.94,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Consumer Discretionary",
     "industry": "Automobile Manufacturers"
   },
-  "headlines": [
-    {
-      "title": "Elon Musk warns the U.S. is 1,000% going to go bankrupt unless AI and robotics save the economy from crushing debt",
-      "url": "https://finance.yahoo.com/news/elon-musk-warns-u-1-184828930.html",
-      "publisher": "Fortune",
-      "date": "2026-02-07",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Elon's Big Nvidia Pivot Is A Gamble That Could Affect Both Companies",
-      "url": "https://finance.yahoo.com/m/504935d3-78c8-3d23-9a96-4b1e41df0f1a/elon%27s-big-nvidia-pivot-is-a.html",
-      "publisher": "Money Digest",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Elon Musk Warns US Will '1,000%' Go Bankrupt Over Soaring Debt, Says 'Interest Payments On National Debt Exceed Military Budget'",
-      "url": "/news/303629/elon-musk-warns-us-will-1000-go-bankrupt-over-soaring-debt-says-interest-payments-on-national-debt-exceed-military-budget",
-      "publisher": "Benzinga",
-      "date": "2026-02-07",
-      "sentiment": "negative"
-    },
-    {
-      "title": "India-US trade deal gives tariff-free access to Harley bikes, no reprieve for Tesla",
-      "url": "https://finance.yahoo.com/news/india-us-trade-deal-gives-155720482.html",
-      "publisher": "Reuters",
-      "date": "2026-02-07",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Cathie Wood Adds Tesla Stock To Space ETF: Is This A Bet On SpaceX Merger?",
-      "url": "https://finance.yahoo.com/news/cathie-wood-adds-tesla-stock-153134601.html",
-      "publisher": "Benzinga",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "AI can make anyone rich: Mark Cuban says it could turn just one dude in a basement into a trillionaire",
-      "url": "https://finance.yahoo.com/news/ai-anyone-rich-mark-cuban-152003409.html",
-      "publisher": "Fortune",
-      "date": "2026-02-07",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Wolfe Sees Catalyst-Rich Year Ahead for Tesla (TSLA) Despite Fundamental Concerns",
-      "url": "/news/303591/wolfe-sees-catalyst-rich-year-ahead-for-tesla-tsla-despite-fundamental-concerns",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Tesla Rival Nio Expects Its First Profitable Quarter",
-      "url": "https://finance.yahoo.com/news/tesla-rival-nio-expects-first-133110882.html",
-      "publisher": "Benzinga",
-      "date": "2026-02-07",
-      "sentiment": "positive"
-    },
-    {
-      "title": "MarketBeat Week in Review - 02/02 - 02/06",
-      "url": "/news/303521/marketbeat-week-in-review-0202-0206",
-      "publisher": "MarketBeat",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Ross Gerber Says Tesla Will Be 'Another Division' Of X Amid Ticker Symbol Speculation, SpaceX-xAI Merger",
-      "url": "https://finance.yahoo.com/news/ross-gerber-says-tesla-another-114622705.html",
-      "publisher": "Benzinga",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "China Is Going All-In to Beat the U.S. on Humanoid Robots",
-      "url": "https://finance.yahoo.com/m/29138aa3-4a44-3c8f-ad48-df6156cbbc42/china-is-going-all-in-to-beat.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Musk Says Apple Once 'Carpet Bombed' Tesla Engineers With Recruiting Calls, Offering Double Pay During Now-Scrapped EV Program",
-      "url": "/news/303487/musk-says-apple-once-carpet-bombed-tesla-engineers-with-recruiting-calls-offering-double-pay-during-now-scrapped-ev-program",
-      "publisher": "Benzinga",
-      "date": "2026-02-07",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Tesla Engineering VP Lars Moravy Urges Ted Cruz-Led Senate Commerce Committee To Build Federal Self-Driving Framework: 'We Must Modernize'",
-      "url": "https://finance.yahoo.com/news/tesla-engineering-vp-lars-moravy-043109953.html",
-      "publisher": "Benzinga",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Elon Musk warns America will 1,000% go bankrupt, fail as a country due to crazy debt  protect your finances",
-      "url": "https://finance.yahoo.com/news/elon-musk-warns-america-1-221300883.html",
-      "publisher": "Moneywise",
-      "date": "2026-02-06",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Tesla ramping up hiring to support Musks solar manufacturing plan",
-      "url": "https://finance.yahoo.com/news/tesla-ramping-hiring-support-musk-215958332.html",
-      "publisher": "Investing.com",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Apple to Allow Third-Party AI Chatbots in CarPlay",
-      "url": "https://finance.yahoo.com/m/ee889a3f-d2f2-3d33-88e5-1b565308845f/apple-to-allow-third-party-ai.html",
-      "publisher": "24/7 Wall St.",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Deal Dispatch: SpaceX Ties Up With xAI, Kirin Sells Four Roses Bourbon, Billionaire's Mining Merger Collapses",
-      "url": "/news/303389/deal-dispatch-spacex-ties-up-with-xai-kirin-sells-four-roses-bourbon-billionaires-mining-merger-collapses",
-      "publisher": "Benzinga",
-      "date": "2026-02-06",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Tesla executives say company is hiring to support Musks expanded solar strategy",
-      "url": "https://finance.yahoo.com/news/tesla-executives-hiring-ramping-support-212918559.html",
-      "publisher": "Reuters",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Tesla Needs Bridges, but Elon Musk Refuses to Build Them (Inside Orchard)",
-      "url": "https://www.aboveavalon.com/notes/2026/2/6/tesla-needs-bridges-but-elon-musk-refuses-to-build-them",
-      "publisher": "Above Avalon",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Tesla's stock rallies to end a rough week",
-      "url": "https://www.marketwatch.com/story/teslas-stock-rallies-to-end-a-rough-week-c1f1d5e5?mod=mw_FV",
-      "publisher": "MarketWatch",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

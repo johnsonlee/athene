@@ -6271,8 +6271,8 @@
     "debt_equity_score": 79.783875,
     "fcf_yield_score": 35.0,
     "current_ratio_score": 85.0,
-    "safety_score": 69.51849621140761,
-    "fundamental_score": 64.20505089704344,
+    "safety_score": 69.5151875,
+    "fundamental_score": 64.20438915476191,
     "fund_data_completeness": 0.9166666666666666
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 59.5031716912371,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.0947342211290871,
-    "sentiment_pos": 0.058199999999999995,
-    "sentiment_neg": 0.02055,
-    "sentiment_neu": 0.9212999999999999,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 54.74
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.5,
     "target_upside": 0.05807356950950329,
@@ -6332,7 +6324,7 @@
     "value_score": 68.03040661904764,
     "quality_score": 90.0,
     "growth_score": 25.175,
-    "safety_score": 69.51849621140761,
+    "safety_score": 69.5151875,
     "trend_score": 58.67587732724011,
     "momentum_score": 64.1767211574334,
     "volatility_score": 63.23696072917525,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 58.19125,
     "valuation_margin": 60.93212198571429,
     "catalyst_timeline": 59.55148158839224,
-    "downside_control": 65.42731854108743,
-    "composite_score": 62.278551681062595,
+    "downside_control": 65.42682223437629,
+    "composite_score": 62.27845241972036,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 64.20505089704344,
+    "fundamental_score": 64.20438915476191,
     "technical_score": 59.5031716912371,
-    "sentiment_score": 54.74,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Consumer Discretionary",
     "industry": "Homebuilding"
   },
-  "headlines": [
-    {
-      "title": "NVR's Q4 Earnings & Homebuilding Revenues Top Estimates, Both Down Y/Y",
-      "url": "/news/292272/nvrs-q4-earnings-homebuilding-revenues-top-estimates-both-down-yy",
-      "publisher": "Zacks",
-      "date": "2026-01-29",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Here Are Thursdays Top Wall Street Analyst Research Calls: Agnico Eagle, First Solar, Fortinet, General Motors, NVR, StoneCo, Werner Enterprises, Zillow, and More",
-      "url": "https://finance.yahoo.com/m/16082003-3475-3b00-962c-452d2f46b6bb/here-are-thursday%E2%80%99s-top-wall.html",
-      "publisher": "24/7 Wall St.",
-      "date": "2026-01-29",
-      "sentiment": "positive"
-    },
-    {
-      "title": "NVR (NYSE:NVR) Delivers Impressive Q4 CY2025",
-      "url": "/news/290811/nvr-nyse-nvr-delivers-impressive-q4-cy2025",
-      "publisher": "StockStory",
-      "date": "2026-01-28",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Gold Rallies To $5,300, Memory Stocks Go Wild: What's Moving Markets Wednesday?",
-      "url": "/news/290536/gold-rallies-to-5300-memory-stocks-go-wild-whats-moving-markets-wednesday",
-      "publisher": "Benzinga",
-      "date": "2026-01-28",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "NVR (NVR) Q4 Earnings and Revenues Beat Estimates",
-      "url": "/news/290337/nvr-nvr-q4-earnings-and-revenues-beat-estimates",
-      "publisher": "Zacks",
-      "date": "2026-01-28",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "NVR: Q4 Earnings Snapshot",
-      "url": "https://finance.yahoo.com/news/nvr-q4-earnings-snapshot-141731616.html",
-      "publisher": "Associated Press Finance",
-      "date": "2026-01-28",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "NVR, INC. ANNOUNCES FOURTH QUARTER AND FULL YEAR RESULTS",
-      "url": "/news/289929/nvr-inc-announces-fourth-quarter-and-full-year-results",
-      "publisher": "PR Newswire",
-      "date": "2026-01-28",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Will Any of These 3 High-Priced Stocks Split Their Stock?",
-      "url": "/news/286126/will-any-of-these-3-high-priced-stocks-split-their-stock",
-      "publisher": "Motley Fool",
-      "date": "2026-01-24",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "NVR Is Set to Report Q4 Earnings: What's in Store for the Stock?",
-      "url": "/news/285485/nvr-is-set-to-report-q4-earnings-whats-in-store-for-the-stock",
-      "publisher": "Zacks",
-      "date": "2026-01-23",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Earnings Preview: Meritage Homes (MTH) Q4 Earnings Expected to Decline",
-      "url": "/news/282575/earnings-preview-meritage-homes-mth-q4-earnings-expected-to-decline",
-      "publisher": "Zacks",
-      "date": "2026-01-21",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "NVR price target lowered to $8,400 from $9,200 at BofA",
-      "url": "https://finance.yahoo.com/news/nvr-price-target-lowered-8-132023694.html",
-      "publisher": "TipRanks",
-      "date": "2026-01-17",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Top Stock Reports for Meta, Bank of America & Procter & Gamble",
-      "url": "/news/267634/top-stock-reports-for-meta-bank-of-america-procter-gamble",
-      "publisher": "Zacks",
-      "date": "2026-01-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "NVR (NVR) Upgraded to Buy: Here's Why",
-      "url": "/news/263772/nvr-nvr-upgraded-to-buy-heres-why",
-      "publisher": "Zacks",
-      "date": "2025-12-29",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "NVR Inc.s Q4 2025 Earnings: What to Expect",
-      "url": "https://finance.yahoo.com/m/798e703d-82ce-37f6-9533-11dfe3469e9a/nvr-inc.%E2%80%99s-q4-2025-earnings%3A.html",
-      "publisher": "Barchart",
-      "date": "2025-12-24",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "LEN vs. NVR: Which Stock Should Value Investors Buy Now?",
-      "url": "/news/257688/len-vs-nvr-which-stock-should-value-investors-buy-now",
-      "publisher": "Zacks",
-      "date": "2025-12-18",
-      "sentiment": "positive"
-    },
-    {
-      "title": "2 Profitable Stocks to Keep an Eye On and 1 We Find Risky",
-      "url": "/news/252516/2-profitable-stocks-to-keep-an-eye-on-and-1-we-find-risky",
-      "publisher": "StockStory",
-      "date": "2025-12-11",
-      "sentiment": "positive"
-    },
-    {
-      "title": "3 Reasons NVR is Risky and 1 Stock to Buy Instead",
-      "url": "/news/252191/3-reasons-nvr-is-risky-and-1-stock-to-buy-instead",
-      "publisher": "StockStory",
-      "date": "2025-12-10",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Is NVR Stock Underperforming the S&P 500?",
-      "url": "https://finance.yahoo.com/m/5d18d2fc-361c-3a81-a5fc-b2628acb1f26/is-nvr-stock-underperforming.html",
-      "publisher": "Barchart",
-      "date": "2025-12-10",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Q3 Rundown: NVR (NYSE:NVR) Vs Other Home Builders Stocks",
-      "url": "/news/250291/q3-rundown-nvr-nyse-nvr-vs-other-home-builders-stocks",
-      "publisher": "StockStory",
-      "date": "2025-12-09",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Here's What Investors Must Know Ahead of Toll Brothers' Q4 Earnings",
-      "url": "/news/247182/heres-what-investors-must-know-ahead-of-toll-brothers-q4-earnings",
-      "publisher": "Zacks",
-      "date": "2025-12-05",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

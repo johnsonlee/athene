@@ -6271,8 +6271,8 @@
     "debt_equity_score": 65.196,
     "fcf_yield_score": 44.5292588592419,
     "current_ratio_score": 83.625,
-    "safety_score": 61.53705871140762,
-    "fundamental_score": 44.688115868471996,
+    "safety_score": 61.53375,
+    "fundamental_score": 44.687454126190474,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,38 +6306,30 @@
     "technical_score": 60.96592609366829,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.2986810944253818,
-    "sentiment_pos": 0.21655000000000002,
-    "sentiment_neg": 0.02585,
-    "sentiment_neu": 0.7576,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 64.93
-  },
+  "sentiment": null,
   "analyst": {
-    "revision_momentum": -0.05263157894736842,
+    "revision_momentum": -0.05555555555555555,
     "target_upside": -0.0601503759398496,
     "consensus_rating": null,
-    "analyst_revision_count": 19.0,
+    "analyst_revision_count": 18.0,
     "analyst_count": 16.0,
     "analyst_upgrades": 0.0,
     "analyst_downgrades": 1.0,
-    "revision_momentum_score": 46.8421052631579,
+    "revision_momentum_score": 46.666666666666664,
     "target_upside_score": 32.96992481203008,
     "consensus_score": 50.0,
-    "analyst_score": 42.776315789473685
+    "analyst_score": 42.70614035087719
   },
   "ranking": {
     "value_score": 38.904816504761904,
     "quality_score": 37.89,
     "growth_score": 45.15,
-    "safety_score": 61.53705871140762,
+    "safety_score": 61.53375,
     "trend_score": 85.93791098622597,
     "momentum_score": 68.42137765891088,
     "volatility_score": 23.29069750063618,
     "volume_score": 50.0,
-    "analyst_score": 42.776315789473685,
+    "analyst_score": 42.70614035087719,
     "pe_score": 5.0,
     "forward_pe_score": 31.005675000000004,
     "pb_score": 30.7674488,
@@ -6352,23 +6344,23 @@
     "current_ratio_score": 83.625,
     "earnings_visibility": 41.519999999999996,
     "valuation_margin": 38.904816504761904,
-    "catalyst_timeline": 65.71186814487018,
-    "downside_control": 42.4138781060219,
-    "composite_score": 44.63652101749136,
+    "catalyst_timeline": 65.68847633200468,
+    "downside_control": 42.41222375031809,
+    "composite_score": 44.628518324229745,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 44.688115868471996,
+    "fundamental_score": 44.687454126190474,
     "technical_score": 60.96592609366829,
-    "sentiment_score": 64.93,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 482,
-    "percentile": 0.07321772639691715,
+    "rank": 483,
+    "percentile": 0.07129094412331406,
     "tier": "sell",
     "tier_raw": "sell",
     "tier_label": "Sell",
@@ -6377,146 +6369,5 @@
     "sector": "Information Technology",
     "industry": "Communications Equipment"
   },
-  "headlines": [
-    {
-      "title": "AI Data Center Boom Powers Big Rally Ciena Stock, And A Return To S&P 500",
-      "url": "https://www.investors.com/research/the-new-america/ciena-stock-ai-data-center-networking?mod=IBD_FV",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Microchip Q3 Earnings Beat Estimates, Sales Rise Y/Y, Shares Drop",
-      "url": "/news/303156/microchip-q3-earnings-beat-estimates-sales-rise-yy-shares-drop",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "5 Growth Stocks to Buy in February to Enhance Your Portfolio Returns",
-      "url": "/news/302751/5-growth-stocks-to-buy-in-february-to-enhance-your-portfolio-returns",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Best Growth Stocks to Buy for February 6th",
-      "url": "/news/302464/best-growth-stocks-to-buy-for-february-6th",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "FORM's Q4 Earnings Surpass Estimates, Revenues Up Y/Y, Shares Fall",
-      "url": "/news/301912/forms-q4-earnings-surpass-estimates-revenues-up-yy-shares-fall",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "APPS Q3 Earnings Beat Estimates, Revenues Up Y/Y, Shares Fall",
-      "url": "/news/301849/apps-q3-earnings-beat-estimates-revenues-up-yy-shares-fall",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Ciena Announces Reporting Date and Web Broadcast for Fiscal First Quarter 2026 Results",
-      "url": "https://www.businesswire.com/news/home/20260205776167/en/",
-      "publisher": "Business Wire",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "This AI stock is the newest member of the S&P 500",
-      "url": "https://www.marketwatch.com/story/this-ai-stock-just-got-called-up-to-the-s-p-500-8b5407a9?mod=mw_FV",
-      "publisher": "MarketWatch",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Ciena Set to Join S&P 500; Arrowhead Pharmaceuticals to Join S&P MidCap 400; ADT and OneSpaWorld Holdings to Join S&P SmallCap 600",
-      "url": "/news/300385/ciena-set-to-join-sp-500-arrowhead-pharmaceuticals-to-join-sp-midcap-400-adt-and-onespaworld-holdings-to-join-sp-smallcap-600",
-      "publisher": "PR Newswire",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "LITE Q2 Earnings Beat Estimates, Revenues Up Y/Y, Shares Rise",
-      "url": "/news/299851/lite-q2-earnings-beat-estimates-revenues-up-yy-shares-rise",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Best Growth Stocks to Buy for February 4th",
-      "url": "/news/298874/best-growth-stocks-to-buy-for-february-4th",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Should Corning Be in Your Portfolio Post Strong Q4 Earnings?",
-      "url": "/news/297518/should-corning-be-in-your-portfolio-post-strong-q4-earnings",
-      "publisher": "Zacks",
-      "date": "2026-02-03",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Best Growth Stocks to Buy for February 2nd",
-      "url": "/news/295242/best-growth-stocks-to-buy-for-february-2nd",
-      "publisher": "Zacks",
-      "date": "2026-02-02",
-      "sentiment": "positive"
-    },
-    {
-      "title": "After Corning Breaks Out, This Fiber Optics Peer Lights Up. Both Shine On This Elite Screen.",
-      "url": "https://www.investors.com/research/ibd-stock-analysis/ciena-stock-cien-breaks-out-fiber-optics-corning-glw-analysis-investing-markets?mod=IBD_FV",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-01-30",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "The Best AI Stock That Nobody's Talking About for 2026",
-      "url": "/news/294043/the-best-ai-stock-that-nobodys-talking-about-for-2026",
-      "publisher": "Motley Fool",
-      "date": "2026-01-30",
-      "sentiment": "positive"
-    },
-    {
-      "title": "GE Vernova, Honeywell, And Two Others Hit Highs And Buy Points",
-      "url": "https://www.investors.com/stock-lists/new-highs/ge-vernova-stock-gev-honeywell-hon-ciena-cien-dht?mod=IBD_FV",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-01-30",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Calix Share Price Decreases 11.9% Despite Strong Q4 Earnings Growth",
-      "url": "/news/294021/calix-share-price-decreases-119-despite-strong-q4-earnings-growth",
-      "publisher": "Zacks",
-      "date": "2026-01-30",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Can Corning's Multi-Year AI-Focused Deal With Meta Boost Its Shares?",
-      "url": "/news/293825/can-cornings-multi-year-ai-focused-deal-with-meta-boost-its-shares",
-      "publisher": "Zacks",
-      "date": "2026-01-30",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Ciena vs. Nokia: Which Optical Networking Stock is the Better Buy?",
-      "url": "/news/293725/ciena-vs-nokia-which-optical-networking-stock-is-the-better-buy",
-      "publisher": "Zacks",
-      "date": "2026-01-30",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Lumentum's Q2 Earnings Loom: Should the Stock Be in Your Portfolio?",
-      "url": "/news/293665/lumentums-q2-earnings-loom-should-the-stock-be-in-your-portfolio",
-      "publisher": "Zacks",
-      "date": "2026-01-30",
-      "sentiment": "negative"
-    }
-  ]
+  "headlines": []
 }

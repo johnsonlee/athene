@@ -6271,8 +6271,8 @@
     "debt_equity_score": 87.049875,
     "fcf_yield_score": 10.0,
     "current_ratio_score": 85.0,
-    "safety_score": 73.15149621140762,
-    "fundamental_score": 36.57111883950375,
+    "safety_score": 73.14818749999999,
+    "fundamental_score": 36.570457097222224,
     "fund_data_completeness": 0.8333333333333334
   },
   "technical": {
@@ -6306,20 +6306,12 @@
     "technical_score": 53.17706190716865,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.0645711598998674,
-    "sentiment_pos": 0.031,
-    "sentiment_neg": 0.008,
-    "sentiment_neu": 0.961,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 53.23
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": -0.24408680809558642,
     "consensus_rating": 2.95833,
-    "analyst_revision_count": 6.0,
+    "analyst_revision_count": 5.0,
     "analyst_count": 20.0,
     "analyst_upgrades": 0.0,
     "analyst_downgrades": 0.0,
@@ -6332,7 +6324,7 @@
     "value_score": 51.763278388888885,
     "quality_score": 10.0,
     "growth_score": 24.0,
-    "safety_score": 73.15149621140762,
+    "safety_score": 73.14818749999999,
     "trend_score": 85.11398240785135,
     "momentum_score": 46.14289061604416,
     "volatility_score": 19.0,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 16.027,
     "valuation_margin": 46.195983516666665,
     "catalyst_timeline": 54.945939802389546,
-    "downside_control": 44.636724431711144,
-    "composite_score": 34.14289362973341,
+    "downside_control": 44.636228125,
+    "composite_score": 34.14279436839117,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 36.57111883950375,
+    "fundamental_score": 36.570457097222224,
     "technical_score": 53.17706190716865,
-    "sentiment_score": 53.23,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Health Care",
     "industry": "Biotechnology"
   },
-  "headlines": [
-    {
-      "title": "Super Bowl LX, Coinbase earnings, jobs data & CPI: What to Watch",
-      "url": "https://finance.yahoo.com/video/super-bowl-lx-coinbase-earnings-000012395.html",
-      "publisher": "Yahoo Finance Video",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Earnings live: Amazon, Reddit stocks sink to cap jam-packed earnings week",
-      "url": "https://finance.yahoo.com/news/live/earnings-live-amazon-reddit-stocks-sink-to-cap-jam-packed-earnings-week-213155571.html",
-      "publisher": "Yahoo Finance",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Moderna faces $5 billion mRNA patent lawsuit after 'Star Trek' ruling",
-      "url": "https://finance.yahoo.com/m/938d2ee0-95cc-3e29-96cb-fc3bdc950498/moderna-faces-%245-billion-mrna.html",
-      "publisher": "TheStreet",
-      "date": "2026-02-06",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Roivant Sciences Q3 Earnings Call Highlights",
-      "url": "https://finance.yahoo.com/m/ba1ccf52-3e9f-35cb-b122-7651e80de9f4/roivant-sciences-q3-earnings.html",
-      "publisher": "MarketBeat",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Immunovant Q3 Earnings Call Highlights",
-      "url": "https://finance.yahoo.com/m/c224605f-1be1-36d8-b7d7-9021d3039e46/immunovant-q3-earnings-call.html",
-      "publisher": "MarketBeat",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Moderna (MRNA) Expected to Beat Earnings Estimates: What to Know Ahead of Q4 Release",
-      "url": "/news/302974/moderna-mrna-expected-to-beat-earnings-estimates-what-to-know-ahead-of-q4-release",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Here is What to Know Beyond Why Moderna, Inc. (MRNA) is a Trending Stock",
-      "url": "/news/302792/here-is-what-to-know-beyond-why-moderna-inc-mrna-is-a-trending-stock",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Incyte Gears Up to Report Q4 Earnings: Is a Beat in the Cards?",
-      "url": "/news/302730/incyte-gears-up-to-report-q4-earnings-is-a-beat-in-the-cards",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Neurocrine Biosciences to Report Q4 Earnings: What's in the Cards?",
-      "url": "/news/301570/neurocrine-biosciences-to-report-q4-earnings-whats-in-the-cards",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "AstraZeneca to Report Q4 Earnings: What's in Store for the Stock?",
-      "url": "/news/301403/astrazeneca-to-report-q4-earnings-whats-in-store-for-the-stock",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Tom Gardner's 2026 Outlook: Volatility, Government Scrutiny, and Two AI-Adjacent Stocks",
-      "url": "/news/300294/tom-gardners-2026-outlook-volatility-government-scrutiny-and-two-ai-adjacent-stocks",
-      "publisher": "Motley Fool",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Jim Cramer on Moderna: \"Even Though the Stock's on the Mend, There Are Many Pharma and Biotech Names That I Like Better\"",
-      "url": "/news/299975/jim-cramer-on-moderna-even-though-the-stocks-on-the-mend-there-are-many-pharma-and-biotech-names-that-i-like-better",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "GSK Q4 Earnings Call Highlights",
-      "url": "https://finance.yahoo.com/m/f0fc845b-5e2b-335f-97d0-e5d87a3b281a/gsk-q4-earnings-call.html",
-      "publisher": "MarketBeat",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Amgen (AMGN) Q4 Earnings and Revenues Beat Estimates",
-      "url": "/news/298262/amgen-amgn-q4-earnings-and-revenues-beat-estimates",
-      "publisher": "Zacks",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Are Wall Street Analysts Bullish on Moderna Stock?",
-      "url": "https://finance.yahoo.com/m/2093b8c4-af7b-3e9a-893f-e8e869525cee/are-wall-street-analysts.html",
-      "publisher": "Barchart",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "These 2 Medical Stocks Could Beat Earnings: Why They Should Be on Your Radar",
-      "url": "/news/297413/these-2-medical-stocks-could-beat-earnings-why-they-should-be-on-your-radar",
-      "publisher": "Zacks",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "CRSP to Report Q4 Earnings: Is a Beat in Store for the Stock?",
-      "url": "/news/297385/crsp-to-report-q4-earnings-is-a-beat-in-store-for-the-stock",
-      "publisher": "Zacks",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "New Drugs Take Center Stage as Biogen Heads Into Q4 Earnings",
-      "url": "/news/297277/new-drugs-take-center-stage-as-biogen-heads-into-q4-earnings",
-      "publisher": "Zacks",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Moderna (MRNA) Stock Falls Amid Market Uptick: What Investors Need to Know",
-      "url": "/news/296292/moderna-mrna-stock-falls-amid-market-uptick-what-investors-need-to-know",
-      "publisher": "Zacks",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Viking Therapeutics to Report Q4 Earnings: Here's What to Know",
-      "url": "/news/293480/viking-therapeutics-to-report-q4-earnings-heres-what-to-know",
-      "publisher": "Zacks",
-      "date": "2026-01-30",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

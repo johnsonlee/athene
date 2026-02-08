@@ -6271,8 +6271,8 @@
     "debt_equity_score": 71.1575,
     "fcf_yield_score": 44.929729206615946,
     "current_ratio_score": 85.0,
-    "safety_score": 65.20530871140761,
-    "fundamental_score": 63.49919779624978,
+    "safety_score": 65.202,
+    "fundamental_score": 63.49853605396826,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 38.049338126634396,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.21291602977523502,
-    "sentiment_pos": 0.097,
-    "sentiment_neg": 0.01105,
-    "sentiment_neu": 0.8919499999999999,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 60.65
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.5,
     "target_upside": 0.3755643340857789,
@@ -6332,7 +6324,7 @@
     "value_score": 35.23274421587302,
     "quality_score": 79.25400000000002,
     "growth_score": 71.495,
-    "safety_score": 65.20530871140761,
+    "safety_score": 65.202,
     "trend_score": 32.349222906349226,
     "momentum_score": 42.43756273478844,
     "volatility_score": 28.066512171465472,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 75.28035,
     "valuation_margin": 31.919823264761902,
     "catalyst_timeline": 49.14062742415891,
-    "downside_control": 50.40477313243096,
-    "composite_score": 52.22491418712654,
+    "downside_control": 50.40427682571982,
+    "composite_score": 52.2248149257843,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 63.49919779624978,
+    "fundamental_score": 63.49853605396826,
     "technical_score": 38.049338126634396,
-    "sentiment_score": 60.65,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Information Technology",
     "industry": "Application Software"
   },
-  "headlines": [
-    {
-      "title": "Strength Seen in OptimizeRx (OPRX): Can Its 7.5% Jump Turn into More Strength?",
-      "url": "/news/301083/strength-seen-in-optimizerx-oprx-can-its-75-jump-turn-into-more-strength",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Cadence (CDNS) Is Considered a Good Investment by Brokers: Is That True?",
-      "url": "/news/299511/cadence-cdns-is-considered-a-good-investment-by-brokers-is-that-true",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Nvidia's Huang Says It's 'Illogical' to Think AI Will Replace Software Tools",
-      "url": "https://finance.yahoo.com/m/8dede680-1bde-36d4-8d3f-8b4cc1a7fc3b/nvidia%27s-huang-says-it%27s.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Nvidia CEO Jensen Huang Says It's 'Illogical' to Think AI Will Replace Software Tools",
-      "url": "https://finance.yahoo.com/m/8dede680-1bde-36d4-8d3f-8b4cc1a7fc3b/nvidia-ceo-jensen-huang-says.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Analyst Report: Cadence Design Systems, Inc.",
-      "url": "https://finance.yahoo.com/m/ec9d7ba3-deed-3805-a92b-4f041d178e2c/analyst-report%3A-cadence.html",
-      "publisher": "Morningstar Research",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Cadence Design Systems (CDNS) Stock Sinks As Market Gains: What You Should Know",
-      "url": "/news/296303/cadence-design-systems-cdns-stock-sinks-as-market-gains-what-you-should-know",
-      "publisher": "Zacks",
-      "date": "2026-02-02",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Cadence Design Systems, Inc. (CDNS) is Attracting Investor Attention: Here is What You Should Know",
-      "url": "/news/295596/cadence-design-systems-inc-cdns-is-attracting-investor-attention-here-is-what-you-should-know",
-      "publisher": "Zacks",
-      "date": "2026-02-02",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Lightmatter advances AI infrastructure with photonic interconnects in 2026",
-      "url": "https://www.digitimes.com/news/a20260128VL203/infrastructure-2026-cpo-taiwan-bandwidth.html",
-      "publisher": "DigiTimes",
-      "date": "2026-01-27",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Cadence & Lightmatter Team Up to Scale Optical Connectivity for AI",
-      "url": "/news/288405/cadence-lightmatter-team-up-to-scale-optical-connectivity-for-ai",
-      "publisher": "Zacks",
-      "date": "2026-01-27",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Cadence Design Systems: A Deep Dive Into Its Market Potential",
-      "url": "/news/287658/cadence-design-systems-a-deep-dive-into-its-market-potential",
-      "publisher": "Motley Fool",
-      "date": "2026-01-26",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Cadence Design Systems (CDNS) Exceeds Market Returns: Some Facts to Consider",
-      "url": "/news/287596/cadence-design-systems-cdns-exceeds-market-returns-some-facts-to-consider",
-      "publisher": "Zacks",
-      "date": "2026-01-26",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "A Hidden Monopoly: Why AI Can't Exist Without Cadence",
-      "url": "/news/283840/a-hidden-monopoly-why-ai-cant-exist-without-cadence",
-      "publisher": "MarketBeat",
-      "date": "2026-01-22",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Cadence Unveils HiFi iQ DSP to Power Next-Gen Voice AI and Audio",
-      "url": "/news/283964/cadence-unveils-hifi-iq-dsp-to-power-next-gen-voice-ai-and-audio",
-      "publisher": "Zacks",
-      "date": "2026-01-22",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Cadence Design Systems (CDNS) Outperforms Broader Market: What You Need to Know",
-      "url": "/news/283199/cadence-design-systems-cdns-outperforms-broader-market-what-you-need-to-know",
-      "publisher": "Zacks",
-      "date": "2026-01-21",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Markets Rally As Trump Drops Greenland's Tariff Threat: These 10 Stocks Are Soaring",
-      "url": "/news/282895/markets-rally-as-trump-drops-greenlands-tariff-threat-these-10-stocks-are-soaring",
-      "publisher": "Benzinga",
-      "date": "2026-01-21",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Nvidia, Broadcom, Marvell Poised To Benefit From AI-Driven Semiconductor Upswing, JPMorgan Says",
-      "url": "/news/282680/nvidia-broadcom-marvell-poised-to-benefit-from-ai-driven-semiconductor-upswing-jpmorgan-says",
-      "publisher": "Benzinga",
-      "date": "2026-01-21",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Cadence Unveils Tensilica HiFi iQ DSP Purpose-Built for Next-Generation Voice AI and Audio Applications",
-      "url": "https://www.businesswire.com/news/home/20260121788959/en/As",
-      "publisher": "Business Wire",
-      "date": "2026-01-21",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "2 of Wall Street's Favorite Stocks with Solid Fundamentals and 1 Facing Challenges",
-      "url": "/news/280303/2-of-wall-streets-favorite-stocks-with-solid-fundamentals-and-1-facing-challenges",
-      "publisher": "StockStory",
-      "date": "2026-01-18",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Is CDNS Worth Adding Despite Breakeven Returns in the Past Six Months?",
-      "url": "/news/278921/is-cdns-worth-adding-despite-breakeven-returns-in-the-past-six-months",
-      "publisher": "Zacks",
-      "date": "2026-01-16",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Cadence Design Systems' Q4 2025 Earnings: What to Expect",
-      "url": "https://finance.yahoo.com/m/55731960-3229-3454-b7c7-3f53284191ee/cadence-design-systems%27-q4.html",
-      "publisher": "Barchart",
-      "date": "2026-01-16",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

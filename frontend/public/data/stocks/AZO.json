@@ -6271,8 +6271,8 @@
     "debt_equity_score": 50.0,
     "fcf_yield_score": 45.662136813689855,
     "current_ratio_score": 36.599999999999994,
-    "safety_score": 34.95762711825254,
-    "fundamental_score": 56.84289698499972,
+    "safety_score": 34.95431840684492,
+    "fundamental_score": 56.842235242718196,
     "fund_data_completeness": 0.8333333333333334
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 53.78431874849083,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.11918577784093606,
-    "sentiment_pos": 0.10270000000000001,
-    "sentiment_neg": 0.0353,
-    "sentiment_neu": 0.8619999999999999,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 55.96
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.15014967701276186,
@@ -6332,7 +6324,7 @@
     "value_score": 68.8756816111111,
     "quality_score": 69.8045991,
     "growth_score": 46.76428571428572,
-    "safety_score": 34.95762711825254,
+    "safety_score": 34.95431840684492,
     "trend_score": 48.23793661246625,
     "momentum_score": 60.56406010062619,
     "volatility_score": 55.71859867281552,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 57.126332722142855,
     "valuation_margin": 65.74970448333333,
     "catalyst_timeline": 55.316688314762835,
-    "downside_control": 47.01943386866021,
-    "composite_score": 57.266590425663864,
+    "downside_control": 47.018937561949066,
+    "composite_score": 57.26649116432163,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 56.84289698499972,
+    "fundamental_score": 56.842235242718196,
     "technical_score": 53.78431874849083,
-    "sentiment_score": 55.96,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Consumer Discretionary",
     "industry": "Automotive Retail"
   },
-  "headlines": [
-    {
-      "title": "Is It Worth Investing in AutoZone (AZO) Based on Wall Street's Bullish Views?",
-      "url": "/news/299525/is-it-worth-investing-in-autozone-azo-based-on-wall-streets-bullish-views",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Why AutoZone (AZO) Dipped More Than Broader Market Today",
-      "url": "/news/298354/why-autozone-azo-dipped-more-than-broader-market-today",
-      "publisher": "Zacks",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Jim Cramer on AutoZone: \"I Am Not Backing Away\"",
-      "url": "/news/297735/jim-cramer-on-autozone-i-am-not-backing-away",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "AutoZone (AZO) Showing Ambition Towards Accelerating Store Growth",
-      "url": "/news/295563/autozone-azo-showing-ambition-towards-accelerating-store-growth",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-02",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Is Most-Watched Stock AutoZone, Inc. (AZO) Worth Betting on Now?",
-      "url": "/news/295604/is-most-watched-stock-autozone-inc-azo-worth-betting-on-now",
-      "publisher": "Zacks",
-      "date": "2026-02-02",
-      "sentiment": "positive"
-    },
-    {
-      "title": "3 Market-Beating Stocks with Exciting Potential",
-      "url": "/news/292292/3-market-beating-stocks-with-exciting-potential",
-      "publisher": "StockStory",
-      "date": "2026-01-28",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Jim Cramer on AutoZone: \"At This Point, I Just Don't See a Lot of Downside\"",
-      "url": "/news/289728/jim-cramer-on-autozone-at-this-point-i-just-dont-see-a-lot-of-downside",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-28",
-      "sentiment": "negative"
-    },
-    {
-      "title": "These 3 Stocks Just Saw Major Insider Moves-Time to Be Bullish or Bearish?",
-      "url": "/news/289151/these-3-stocks-just-saw-major-insider-moves-time-to-be-bullish-or-bearish",
-      "publisher": "MarketBeat",
-      "date": "2026-01-27",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "AutoZone (AZO) Beats Stock Market Upswing: What Investors Need to Know",
-      "url": "/news/287601/autozone-azo-beats-stock-market-upswing-what-investors-need-to-know",
-      "publisher": "Zacks",
-      "date": "2026-01-26",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Winter Storm Fern Threatens Disruptions Across US: Here Are Businesses, Stocks Likely To Be Impacted",
-      "url": "/news/286271/winter-storm-fern-threatens-disruptions-across-us-here-are-businesses-stocks-likely-to-be-impacted",
-      "publisher": "Benzinga",
-      "date": "2026-01-25",
-      "sentiment": "negative"
-    },
-    {
-      "title": "What to Expect From AutoZone's Next Quarterly Earnings Report",
-      "url": "https://finance.yahoo.com/m/825bfd72-619a-3a5b-bdd6-954519288d58/what-to-expect-from.html",
-      "publisher": "Barchart",
-      "date": "2026-01-22",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "AutoZone, Inc. (AZO) is Attracting Investor Attention: Here is What You Should Know",
-      "url": "/news/282411/autozone-inc-azo-is-attracting-investor-attention-here-is-what-you-should-know",
-      "publisher": "Zacks",
-      "date": "2026-01-21",
-      "sentiment": "positive"
-    },
-    {
-      "title": "2 Consumer Stocks with Competitive Advantages and 1 Facing Challenges",
-      "url": "/news/280856/2-consumer-stocks-with-competitive-advantages-and-1-facing-challenges",
-      "publisher": "StockStory",
-      "date": "2026-01-19",
-      "sentiment": "positive"
-    },
-    {
-      "title": "This Dirt Cheap Stock Could Make You Filthy Rich",
-      "url": "/news/279948/this-dirt-cheap-stock-could-make-you-filthy-rich",
-      "publisher": "Motley Fool",
-      "date": "2026-01-19",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Jim Cramer on AutoZone: \"This Company Always Pivots and Always Pivots Well\"",
-      "url": "/news/279848/jim-cramer-on-autozone-this-company-always-pivots-and-always-pivots-well",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-18",
-      "sentiment": "positive"
-    },
-    {
-      "title": "AutoZone (AZO) Increases Despite Market Slip: Here's What You Need to Know",
-      "url": "/news/279465/autozone-azo-increases-despite-market-slip-heres-what-you-need-to-know",
-      "publisher": "Zacks",
-      "date": "2026-01-16",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Here's What Negatively Impacted AutoZone (AZO) in Q4",
-      "url": "/news/278744/heres-what-negatively-impacted-autozone-azo-in-q4",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-16",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "AutoZone buys former Rite Aid store in Lima",
-      "url": "https://finance.yahoo.com/m/f9dd58f0-32ea-3e92-b62d-03cb69cbc3e5/autozone-buys-former-rite-aid.html",
-      "publisher": "The Lima News, Ohio",
-      "date": "2026-01-15",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Morgan Stanley names 3 highest conviction ideas in retail for 2026",
-      "url": "https://finance.yahoo.com/news/morgan-stanley-names-3-highest-135154406.html",
-      "publisher": "Investing.com",
-      "date": "2026-01-15",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "3 Reasons We're Fans of AutoZone (AZO)",
-      "url": "/news/277530/3-reasons-were-fans-of-autozone-azo",
-      "publisher": "StockStory",
-      "date": "2026-01-14",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

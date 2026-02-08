@@ -6271,8 +6271,8 @@
     "debt_equity_score": 26.780166666666666,
     "fcf_yield_score": 46.18635208144103,
     "current_ratio_score": 55.81,
-    "safety_score": 38.12473475212813,
-    "fundamental_score": 56.54192959748445,
+    "safety_score": 38.12142604072051,
+    "fundamental_score": 56.541267855202925,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 50.86064853635982,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.12216652289027972,
-    "sentiment_pos": 0.13825,
-    "sentiment_neg": 0.06074999999999999,
-    "sentiment_neu": 0.8009000000000001,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 56.11
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.1424219345011424,
@@ -6332,7 +6324,7 @@
     "value_score": 42.48933058823528,
     "quality_score": 85.878,
     "growth_score": 50.125,
-    "safety_score": 38.12473475212813,
+    "safety_score": 38.12142604072051,
     "trend_score": 44.244898913353644,
     "momentum_score": 54.23078069255516,
     "volatility_score": 56.5897232729359,
@@ -6353,22 +6345,22 @@
     "earnings_visibility": 67.18145,
     "valuation_margin": 37.72979917647058,
     "catalyst_timeline": 52.05690008549567,
-    "downside_control": 48.073168703759606,
-    "composite_score": 51.296156821911765,
+    "downside_control": 48.072672397048464,
+    "composite_score": 51.29605756056953,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 56.54192959748445,
+    "fundamental_score": 56.541267855202925,
     "technical_score": 50.86064853635982,
-    "sentiment_score": 56.11,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 371,
-    "percentile": 0.28709055876685935,
+    "rank": 372,
+    "percentile": 0.28516377649325625,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6377,146 +6369,5 @@
     "sector": "Consumer Discretionary",
     "industry": "Restaurants"
   },
-  "headlines": [
-    {
-      "title": "Chipotle CEO Says Higher-Income Customers Give Company 'Confidence' To Keep Raising Prices: Report",
-      "url": "/news/303699/chipotle-ceo-says-higher-income-customers-give-company-confidence-to-keep-raising-prices-report",
-      "publisher": "Benzinga",
-      "date": "2026-02-08",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Earnings live: Amazon, Reddit stocks sink to cap jam-packed earnings week",
-      "url": "https://finance.yahoo.com/news/live/earnings-live-amazon-reddit-stocks-sink-to-cap-jam-packed-earnings-week-213155571.html",
-      "publisher": "Yahoo Finance",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "How Chipotle plans to win back value-seeking consumers",
-      "url": "https://finance.yahoo.com/m/643fba96-9530-339e-b6e7-3f9ffc2f0a4e/how-chipotle-plans-to-win.html",
-      "publisher": "Nation's Restaurant News",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "A Key Takeaway From Earnings Season: Signs of Consumer Weakness",
-      "url": "https://finance.yahoo.com/m/014e1af8-29db-3db9-94ba-ea8224d66cd3/a-key-takeaway-from-earnings.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-06",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Earnings live: Amazon stock sinks, Philip Morris retreats, Reddit spikes as Wall Street focuses on guidance",
-      "url": "https://finance.yahoo.com/news/live/earnings-live-amazon-stock-sinks-philip-morris-retreats-reddit-spikes-as-wall-street-focuses-on-guidance-140858850.html",
-      "publisher": "Yahoo Finance",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Earnings live: Strategy gets caught in bitcoin crash, Amazon stock plunges, Roblox surges",
-      "url": "https://finance.yahoo.com/news/live/earnings-live-strategy-gets-caught-in-bitcoin-crash-amazon-stock-plunges-roblox-surges-213043924.html",
-      "publisher": "Yahoo Finance",
-      "date": "2026-02-05",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Earnings live: Strategy gets caught in bitcoin crash, Amazon stock plunges, Reddit wavers",
-      "url": "https://finance.yahoo.com/news/live/earnings-live-strategy-gets-caught-in-bitcoin-crash-amazon-stock-plunges-reddit-wavers-213043638.html",
-      "publisher": "Yahoo Finance",
-      "date": "2026-02-05",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Yum China Q4 Earnings & Revenues Top Estimates, Both Up YoY",
-      "url": "/news/301910/yum-china-q4-earnings-revenues-top-estimates-both-up-yoy",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "BJRI or CMG: Which Is the Better Value Stock Right Now?",
-      "url": "/news/301823/bjri-or-cmg-which-is-the-better-value-stock-right-now",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Morning Movers: Eli Lilly rises, Boston Scientific falls after quarterly results",
-      "url": "https://finance.yahoo.com/news/morning-movers-eli-lilly-rises-140052306.html",
-      "publisher": "TipRanks",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Earnings live: Qualcomm stock dives as memory chip shortage weighs on outlook, Alphabet slides, Peloton falls",
-      "url": "https://finance.yahoo.com/news/live/earnings-live-qualcomm-stock-dives-as-memory-chip-shortage-weighs-on-outlook-alphabet-slides-peloton-falls-133307862.html",
-      "publisher": "Yahoo Finance",
-      "date": "2026-02-05",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Chipotle pokes fun at AI Super Bowl ads to spotlight real ingredients",
-      "url": "https://finance.yahoo.com/m/00b5a62e-d286-3009-8853-afc0cad54bdc/chipotle-pokes-fun-at-ai.html",
-      "publisher": "Marketing Dive",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Company News for Feb 5, 2026",
-      "url": "/news/300777/company-news-for-feb-5-2026",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Chipotle Mexican Grill, Inc. (CMG): A Bull Case Theory",
-      "url": "/news/300667/chipotle-mexican-grill-inc-cmg-a-bull-case-theory",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "The 2 Biggest Risks for Chipotle Stock in 2026",
-      "url": "/news/300604/the-2-biggest-risks-for-chipotle-stock-in-2026",
-      "publisher": "Motley Fool",
-      "date": "2026-02-04",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Is Chipotle's 2026 Playbook the Secret Sauce for a Reversal?",
-      "url": "/news/300337/is-chipotles-2026-playbook-the-secret-sauce-for-a-reversal",
-      "publisher": "MarketBeat",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Stocks to Watch Wednesday Recap: AMD, Super Micro, Chipotle",
-      "url": "https://finance.yahoo.com/m/ecb85771-c50d-306c-b819-29336398a077/stocks-to-watch-wednesday.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Earnings live: Qualcomm stock dives as memory chip shortage weighs on outlook, Alphabet boosts AI spending",
-      "url": "https://finance.yahoo.com/news/live/earnings-live-qualcomm-stock-dives-as-memory-chip-shortage-weighs-on-outlook-alphabet-boosts-ai-spending-213250088.html",
-      "publisher": "Yahoo Finance",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Jim Cramer on Chipotle: \"I Think That Wall Street's Going to Be Wrong Here\"",
-      "url": "/news/300074/jim-cramer-on-chipotle-i-think-that-wall-streets-going-to-be-wrong-here",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-04",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Chipotle sharpens its focus on emerging technology, loyalty",
-      "url": "https://finance.yahoo.com/m/07f6d5d5-674a-3b11-82b4-5eabb62d7e74/chipotle-sharpens-its-focus.html",
-      "publisher": "Nation's Restaurant News",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    }
-  ]
+  "headlines": []
 }

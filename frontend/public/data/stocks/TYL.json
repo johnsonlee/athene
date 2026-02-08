@@ -6271,8 +6271,8 @@
     "debt_equity_score": 83.3025,
     "fcf_yield_score": 55.844273302728,
     "current_ratio_score": 46.288000000000004,
-    "safety_score": 56.69994536277161,
-    "fundamental_score": 58.00883277104638,
+    "safety_score": 56.69663665136399,
+    "fundamental_score": 58.00817102876485,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 28.55264688301149,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.1110413496610384,
-    "sentiment_pos": 0.10355,
-    "sentiment_neg": 0.0,
-    "sentiment_neu": 0.89645,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 55.55
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.2222222222222222,
     "target_upside": 0.7224056265250466,
@@ -6332,7 +6324,7 @@
     "value_score": 56.72100965111111,
     "quality_score": 56.10244714285714,
     "growth_score": 62.63142857142857,
-    "safety_score": 56.69994536277161,
+    "safety_score": 56.69663665136399,
     "trend_score": 11.66843892274522,
     "momentum_score": 33.09244733603041,
     "volatility_score": 25.621905026893998,
@@ -6353,22 +6345,22 @@
     "earnings_visibility": 57.76608135714285,
     "valuation_margin": 52.70930289533333,
     "catalyst_timeline": 38.49855714439608,
-    "downside_control": 45.605277558449835,
-    "composite_score": 47.44438860618996,
+    "downside_control": 45.60478125173869,
+    "composite_score": 47.444289344847725,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 58.00883277104638,
+    "fundamental_score": 58.00817102876485,
     "technical_score": 28.55264688301149,
-    "sentiment_score": 55.55,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 447,
-    "percentile": 0.14065510597302505,
+    "rank": 448,
+    "percentile": 0.13872832369942195,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6377,146 +6369,5 @@
     "sector": "Information Technology",
     "industry": "Application Software"
   },
-  "headlines": [
-    {
-      "title": "Exploring Analyst Estimates for Tyler Technologies (TYL) Q4 Earnings, Beyond Revenue and EPS",
-      "url": "/news/302811/exploring-analyst-estimates-for-tyler-technologies-tyl-q4-earnings-beyond-revenue-and-eps",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Tyler Technologies (TYL) Surges 3.4%: Is This an Indication of Further Gains?",
-      "url": "/news/301331/tyler-technologies-tyl-surges-34-is-this-an-indication-of-further-gains",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Tyler Technologies (TYL) Earnings Expected to Grow: Should You Buy?",
-      "url": "/news/299655/tyler-technologies-tyl-earnings-expected-to-grow-should-you-buy",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Tyler Technologies Announces $1 Billion Share Repurchase Plan",
-      "url": "https://www.businesswire.com/news/home/20260204423341/en/",
-      "publisher": "Business Wire",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Tyler Technologies to acquire For The Record for $212.5M",
-      "url": "https://finance.yahoo.com/news/tyler-technologies-acquire-record-212-155509259.html",
-      "publisher": "TipRanks",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "NYSE Content Advisory: Pre-Market Update + AstraZeneca Climbs Nearly 1% After Historic NYSE Transfer",
-      "url": "/news/297276/nyse-content-advisory-pre-market-update-astrazeneca-climbs-nearly-1-after-historic-nyse-transfer",
-      "publisher": "PR Newswire",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "For The Record Will Be Acquired by Tyler Technologies",
-      "url": "/news/295896/for-the-record-will-be-acquired-by-tyler-technologies",
-      "publisher": "PR Newswire",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Tyler Technologies to Acquire For The Record",
-      "url": "https://www.businesswire.com/news/home/20260201576237/en/",
-      "publisher": "Business Wire",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Here's Why Tyler Technologies (TYL) Was Initiated as a Defensive Software Play",
-      "url": "/news/289399/heres-why-tyler-technologies-tyl-was-initiated-as-a-defensive-software-play",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-28",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Tyler Technologies Schedules Fourth Quarter 2025 Earnings Conference Call and Webcast",
-      "url": "https://www.businesswire.com/news/home/20260127918878/en/",
-      "publisher": "Business Wire",
-      "date": "2026-01-27",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Analyst Report: Tyler Technologies, Inc.",
-      "url": "https://finance.yahoo.com/m/2ab9c1c9-cbf7-3bde-94a2-9ed448f02beb/analyst-report%3A-tyler.html",
-      "publisher": "Morningstar Research",
-      "date": "2026-01-20",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Tyler Technologies to Participate in January and February Investor Conferences",
-      "url": "https://www.businesswire.com/news/home/20260114793756/en/",
-      "publisher": "Business Wire",
-      "date": "2026-01-14",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Tyler Technologies Earnings Preview: What to Expect",
-      "url": "https://finance.yahoo.com/m/4a19593c-bcbc-31be-9561-77b10de644c5/tyler-technologies-earnings.html",
-      "publisher": "Barchart",
-      "date": "2026-01-14",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Tyler Technologies (TYL) is a Top-Ranked Growth Stock: Should You Buy?",
-      "url": "/news/275010/tyler-technologies-tyl-is-a-top-ranked-growth-stock-should-you-buy",
-      "publisher": "Zacks",
-      "date": "2026-01-13",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Tyler Technologies Becomes Sole Payment Processing Partner for Chesterfield County, Virginia",
-      "url": "https://www.businesswire.com/news/home/20260113833104/en/",
-      "publisher": "Business Wire",
-      "date": "2026-01-13",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Here Are Tuesdays Top Wall Street Analyst Research Calls: Adobe, AMD, Disney, Five Below, Intel, Reddit, KLA Corp, PayPal, Super Micro Computer and More",
-      "url": "https://finance.yahoo.com/m/c567a5d1-4265-34c3-9c12-05f6602fb6bd/here-are-tuesday%E2%80%99s-top-wall.html",
-      "publisher": "24/7 Wall St.",
-      "date": "2026-01-13",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Tyler Technologies (TYL) is an Incredible Growth Stock: 3 Reasons Why",
-      "url": "/news/274059/tyler-technologies-tyl-is-an-incredible-growth-stock-3-reasons-why",
-      "publisher": "Zacks",
-      "date": "2026-01-12",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Alphabet upgraded, Nike downgraded: Wall Street's top analyst calls",
-      "url": "https://finance.yahoo.com/news/alphabet-upgraded-nike-downgraded-wall-143555511.html",
-      "publisher": "The Fly",
-      "date": "2026-01-08",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Here Are Thursdays Top Wall Street Analyst Research Calls: Alphabet, Coinbase Global, Digital Realty Trust, Intuit, Reddit, Roku, Tyler Technologies, and More",
-      "url": "https://finance.yahoo.com/m/2302f6ce-4801-3785-bf61-71890357b885/here-are-thursday%E2%80%99s-top-wall.html",
-      "publisher": "24/7 Wall St.",
-      "date": "2026-01-08",
-      "sentiment": "positive"
-    },
-    {
-      "title": "TD Cowen Initiates Tyler Technologies (TYL) With Buy, Sees Strong Cloud-Driven Growth",
-      "url": "/news/270188/td-cowen-initiates-tyler-technologies-tyl-with-buy-sees-strong-cloud-driven-growth",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-08",
-      "sentiment": "positive"
-    }
-  ]
+  "headlines": []
 }

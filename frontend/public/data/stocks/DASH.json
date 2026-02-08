@@ -6229,7 +6229,7 @@
   ],
   "fundamental": {
     "pe": 91.69347,
-    "forward_pe": 30.00263,
+    "forward_pe": 29.629593,
     "pb": 8.280917,
     "ps": 6.224322,
     "roe": 0.100430004,
@@ -6257,10 +6257,10 @@
     "fcf_yield": -0.023092899539954387,
     "fcf_debt_ratio": -0.557606721426721,
     "pe_score": 7.491958999999998,
-    "forward_pe_score": 39.40836117647059,
+    "forward_pe_score": 39.89111494117647,
     "pb_score": 20.157249,
     "ps_score": 39.25226,
-    "value_score": 32.93929005882354,
+    "value_score": 33.10020798039216,
     "roe_score": 50.837144,
     "roa_score": 40.6,
     "margin_score": 45.22857142857143,
@@ -6271,8 +6271,8 @@
     "debt_equity_score": 77.154375,
     "fcf_yield_score": 20.762840184018245,
     "current_ratio_score": 80.225,
-    "safety_score": 65.81624621140762,
-    "fundamental_score": 58.220429071273124,
+    "safety_score": 65.8129375,
+    "fundamental_score": 58.25999680938376,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 34.61541979540948,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.05134824153149652,
-    "sentiment_pos": 0.0918,
-    "sentiment_neg": 0.0807,
-    "sentiment_neu": 0.82735,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 52.57
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.15384615384615385,
     "target_upside": 0.5207979393872966,
@@ -6329,17 +6321,17 @@
     "analyst_score": 73.28568244980208
   },
   "ranking": {
-    "value_score": 32.93929005882354,
+    "value_score": 33.10020798039216,
     "quality_score": 48.032857714285726,
     "growth_score": 89.65,
-    "safety_score": 65.81624621140762,
+    "safety_score": 65.8129375,
     "trend_score": 21.062940872587895,
     "momentum_score": 32.8761066121979,
     "volatility_score": 42.1685277498687,
     "volume_score": 50.0,
     "analyst_score": 73.28568244980208,
     "pe_score": 7.491958999999998,
-    "forward_pe_score": 39.40836117647059,
+    "forward_pe_score": 39.89111494117647,
     "pb_score": 20.157249,
     "ps_score": 39.25226,
     "roe_score": 50.837144,
@@ -6351,24 +6343,24 @@
     "fcf_yield_score": 20.762840184018245,
     "current_ratio_score": 80.225,
     "earnings_visibility": 64.88542865714285,
-    "valuation_margin": 28.347787017647057,
+    "valuation_margin": 28.396062394117646,
     "catalyst_timeline": 42.199472993458784,
-    "downside_control": 53.39571609419144,
-    "composite_score": 45.53175306318013,
+    "downside_control": 53.3952197874803,
+    "composite_score": 45.54734329919083,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 58.220429071273124,
+    "fundamental_score": 58.25999680938376,
     "technical_score": 34.61541979540948,
-    "sentiment_score": 52.57,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 471,
-    "percentile": 0.09441233140655106,
+    "rank": 472,
+    "percentile": 0.09248554913294797,
     "tier": "hold",
     "tier_raw": "sell",
     "tier_label": "Hold",
@@ -6377,146 +6369,5 @@
     "sector": "Consumer Discretionary",
     "industry": "Specialized Consumer Services"
   },
-  "headlines": [
-    {
-      "title": "Tech stocks have been shaky, but these 20 companies could still see rocketing sales growth",
-      "url": "https://www.marketwatch.com/story/tech-stocks-have-been-shaky-but-these-20-companies-could-still-see-rocketing-sales-growth-148195c9?mod=mw_FV",
-      "publisher": "MarketWatch",
-      "date": "2026-02-07",
-      "sentiment": "positive"
-    },
-    {
-      "title": "A Key Takeaway From Earnings Season: Signs of Consumer Weakness",
-      "url": "https://finance.yahoo.com/m/014e1af8-29db-3db9-94ba-ea8224d66cd3/a-key-takeaway-from-earnings.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-06",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Growth Scare Hits Markets Edgy From Tech Selloff",
-      "url": "https://finance.yahoo.com/m/0d2019b3-aa05-3e39-bec5-678db9f5188c/growth-scare-hits-markets.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-05",
-      "sentiment": "negative"
-    },
-    {
-      "title": "DoorDash, Inc. (DASH)'s Buy Rating Upheld as Investments Signal Long-Term Growth Potential",
-      "url": "/news/301590/doordash-inc-dashs-buy-rating-upheld-as-investments-signal-long-term-growth-potential",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "UBER Q4 Earnings Miss Estimates, Decrease Year Over Year",
-      "url": "/news/300088/uber-q4-earnings-miss-estimates-decrease-year-over-year",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Grubhub drops delivery fees on $50+ orders: Could Wonder be eyeing more market share?",
-      "url": "https://finance.yahoo.com/m/95caa853-f17d-3fe3-b1df-9d5d64172edd/grubhub-drops-delivery-fees.html",
-      "publisher": "Nation's Restaurant News",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "DoorDash: The Pullback Is Noise, Not a Thesis Break",
-      "url": "https://finance.yahoo.com/news/doordash-pullback-noise-not-thesis-121243023.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "DoorDash, Inc. (DASH): A Bull Case Theory",
-      "url": "/news/296395/doordash-inc-dash-a-bull-case-theory",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Grubhub waives delivery and service fees on restaurant orders over $50",
-      "url": "https://finance.yahoo.com/news/grubhub-waives-delivery-fees-restaurant-182243806.html",
-      "publisher": "TechCrunch",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "DoorDash Stock: Analyst Estimates & Ratings",
-      "url": "https://finance.yahoo.com/m/29860af4-6610-3092-9351-4851b55d98d3/doordash-stock%3A-analyst.html",
-      "publisher": "Barchart",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "2 S&P 500 Stocks on Our Watchlist and 1 We Avoid",
-      "url": "/news/295145/2-sp-500-stocks-on-our-watchlist-and-1-we-avoid",
-      "publisher": "StockStory",
-      "date": "2026-02-01",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Minivan sales surge 21% in 2025 as millennial dads lead demand for cars offering the 'best bang for your buck'",
-      "url": "https://finance.yahoo.com/news/minivan-sales-surge-21-in-2025-as-millennial-dads-lead-demand-for-cars-offering-the-best-bang-for-your-buck-143022892.html",
-      "publisher": "Yahoo Finance",
-      "date": "2026-01-31",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Panera, Krispy Kreme contend with security breach lawsuits as data breaches are on the rise",
-      "url": "https://finance.yahoo.com/m/561938d3-8f67-38e5-8605-232b73b2af7b/panera%2C-krispy-kreme-contend.html",
-      "publisher": "Nation's Restaurant News",
-      "date": "2026-01-30",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Serve Robotics vs. Teradyne: Which Robotics Stock Is the Better Buy?",
-      "url": "/news/293477/serve-robotics-vs-teradyne-which-robotics-stock-is-the-better-buy",
-      "publisher": "Zacks",
-      "date": "2026-01-30",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Grubhub to drop delivery and service fees on orders above $50 in US",
-      "url": "https://finance.yahoo.com/m/065d2737-dd37-3e08-85c2-40ed2e1a0fb9/grubhub-to-drop-delivery-and.html",
-      "publisher": "Verdict Food Service",
-      "date": "2026-01-30",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Does cutting Starbucks, DoorDash really save money? We asked experts.",
-      "url": "https://finance.yahoo.com/m/ca76a322-0fc0-31fd-839b-2c048137238c/does-cutting-starbucks%2C.html",
-      "publisher": "USA TODAY",
-      "date": "2026-01-30",
-      "sentiment": "positive"
-    },
-    {
-      "title": "1-800-Flowers.com Inc (FLWS) Q2 2026 Earnings Call Highlights: Strategic Shifts Amid Revenue ...",
-      "url": "https://finance.yahoo.com/news/1-800-flowers-com-inc-190334535.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-01-29",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "3 Reasons to Hold FVRR Stock Despite a 34% Decline in 6 Months",
-      "url": "/news/288846/3-reasons-to-hold-fvrr-stock-despite-a-34-decline-in-6-months",
-      "publisher": "Zacks",
-      "date": "2026-01-27",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Amazon grocery push sinks Kroger, Instacart, delivery stocks",
-      "url": "https://finance.yahoo.com/news/amazon-grocery-push-sinks-kroger-153729445.html",
-      "publisher": "Investing.com",
-      "date": "2026-01-27",
-      "sentiment": "positive"
-    },
-    {
-      "title": "KeyBanc Maintains Overweight Rating on DoorDash (DASH) While Raising 2026 EBITDA Estimates",
-      "url": "/news/288196/keybanc-maintains-overweight-rating-on-doordash-dash-while-raising-2026-ebitda-estimates",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-27",
-      "sentiment": "negative"
-    }
-  ]
+  "headlines": []
 }

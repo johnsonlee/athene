@@ -6271,8 +6271,8 @@
     "debt_equity_score": 15.0,
     "fcf_yield_score": 31.886080099889586,
     "current_ratio_score": 82.705,
-    "safety_score": 44.42209876135241,
-    "fundamental_score": 51.0248333994927,
+    "safety_score": 44.41879004994479,
+    "fundamental_score": 51.02417165721118,
     "fund_data_completeness": 0.9166666666666666
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 39.47592549535596,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.14117839791147474,
-    "sentiment_pos": 0.10840000000000001,
-    "sentiment_neg": 0.01345,
-    "sentiment_neu": 0.87815,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 57.06
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.08333333333333333,
     "target_upside": 0.493174061433447,
@@ -6332,7 +6324,7 @@
     "value_score": 24.602653688888893,
     "quality_score": 66.63250074999999,
     "growth_score": 64.0,
-    "safety_score": 44.42209876135241,
+    "safety_score": 44.41879004994479,
     "trend_score": 26.80138872556651,
     "momentum_score": 45.48274140278948,
     "volatility_score": 38.953432284245814,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 59.739875112499995,
     "valuation_margin": 22.003796106666666,
     "catalyst_timeline": 47.88574123809157,
-    "downside_control": 41.325329656839735,
-    "composite_score": 40.172926840494995,
+    "downside_control": 41.32483335012859,
+    "composite_score": 40.17282757915276,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 51.0248333994927,
+    "fundamental_score": 51.02417165721118,
     "technical_score": 39.47592549535596,
-    "sentiment_score": 57.06,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Healthcare",
     "industry": "Biotechnology"
   },
-  "headlines": [
-    {
-      "title": "Do Options Traders Know Something About Alnylam Pharmaceuticals Stock We Don't?",
-      "url": "/news/302744/do-options-traders-know-something-about-alnylam-pharmaceuticals-stock-we-dont",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Alnylam Pharmaceuticals (ALNY) Earnings Expected to Grow: Should You Buy?",
-      "url": "/news/301704/alnylam-pharmaceuticals-alny-earnings-expected-to-grow-should-you-buy",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Analyst Views Diverge as  Alnylam Pharmaceuticals, Inc. (ALNY) Targets $5.1B Revenue and Long-Term Growth",
-      "url": "/news/294485/analyst-views-diverge-as-alnylam-pharmaceuticals-inc-alny-targets-51b-revenue-and-long-term-growth",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-31",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Analyst Report: Alnylam Pharmaceuticals, Inc.",
-      "url": "https://finance.yahoo.com/m/8e5f8d26-1fc7-332c-b018-634f948782df/analyst-report%3A-alnylam.html",
-      "publisher": "Morningstar Research",
-      "date": "2026-01-29",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Phillip Allen Sharp Improved Human Health With Breakthroughs",
-      "url": "https://finance.yahoo.com/m/2c4b14fc-d526-3aca-a51b-b5944e76fa4e/phillip-allen-sharp-improved.html",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-01-29",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Alnylam Pharmaceuticals Projects 2026 Revenue Around $5.3 Billion as It Focuses on a New Five-Year Strategy",
-      "url": "/news/292456/alnylam-pharmaceuticals-projects-2026-revenue-around-53-billion-as-it-focuses-on-a-new-five-year-strategy",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-29",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Alnylam to Webcast Conference Call Discussing Fourth Quarter and Full Year 2025 Financial Results",
-      "url": "https://www.businesswire.com/news/home/20260129185762/en/",
-      "publisher": "Business Wire",
-      "date": "2026-01-29",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Should You Buy Alnylam Pharmaceuticals Before Feb. 12?",
-      "url": "/news/289536/should-you-buy-alnylam-pharmaceuticals-before-feb-12",
-      "publisher": "Motley Fool",
-      "date": "2026-01-28",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Wells Fargo Raises Alnylam (ALNY) Revenue Estimates for Amvuttra Despite Projected Margin Compression",
-      "url": "/news/288199/wells-fargo-raises-alnylam-alny-revenue-estimates-for-amvuttra-despite-projected-margin-compression",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-27",
-      "sentiment": "positive"
-    },
-    {
-      "title": "JPM26: 2025 a breakout year for rare disease biotechs",
-      "url": "https://finance.yahoo.com/m/8f14c30b-b170-369e-890f-27a0b11a1b58/jpm26%3A-2025-a-%E2%80%9Cbreakout-year%E2%80%9D.html",
-      "publisher": "Clinical Trials Arena",
-      "date": "2026-01-14",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Alnylam Pharmaceuticals CEO on Development Goals, Profitability",
-      "url": "https://finance.yahoo.com/video/alnylam-pharmaceuticals-ceo-development-goals-000351546.html",
-      "publisher": "Bloomberg",
-      "date": "2026-01-12",
-      "sentiment": "positive"
-    },
-    {
-      "title": "JPM Preannouncements: Why Alnylam And Sarepta Lost, But Day One Won",
-      "url": "https://finance.yahoo.com/m/46871d11-8f1b-3c57-8fe7-97bc22a117a0/jpm-preannouncements%3A-why.html",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-01-12",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Alnylam Pharmaceuticals Unveils Alnylam 2030 as Amvuttra Drives Breakout Growth at JPMorgan Conf.",
-      "url": "https://finance.yahoo.com/m/c21e0086-6261-34b2-94ec-eb49937aef2f/alnylam-pharmaceuticals.html",
-      "publisher": "MarketBeat",
-      "date": "2026-01-12",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Alnylam Lays Out 2030 Vision, Bets On TTR Leadership And Pipeline Scale",
-      "url": "/news/274046/alnylam-lays-out-2030-vision-bets-on-ttr-leadership-and-pipeline-scale",
-      "publisher": "Benzinga",
-      "date": "2026-01-12",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Gold, Silver Spike To Record Highs As Fed Independence Falters: What's Moving Markets Monday?",
-      "url": "/news/273961/gold-silver-spike-to-record-highs-as-fed-independence-falters-whats-moving-markets-monday",
-      "publisher": "Benzinga",
-      "date": "2026-01-12",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Equity Indexes Recover Early Losses as Precious Metals Reach New Record Highs",
-      "url": "https://finance.yahoo.com/m/b8a57aed-a1b4-3de0-9a35-8912570f7640/equity-indexes-recover-early.html",
-      "publisher": "Barchart",
-      "date": "2026-01-12",
-      "sentiment": "positive"
-    },
-    {
-      "title": "JPM Preannouncements Take Their Toll As Alnylam Slides, Tempus, Day One Pop",
-      "url": "https://www.investors.com/news/technology/alnylam-preannouncement-biotech-companies-jpm?mod=IBD_FV",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-01-12",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "AbbVie buys into PD-1/VEGF sweepstakes; Alnylam and Vertex set expectations",
-      "url": "https://finance.yahoo.com/m/0bde043c-d553-3ccd-bf4d-18cae76c848c/abbvie-buys-into-pd-1%2Fvegf.html",
-      "publisher": "BioPharma Dive",
-      "date": "2026-01-12",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Alnylam Launches \"Alnylam 2030\" Strategy to Drive Next Era of Growth and Patient Impact",
-      "url": "https://www.businesswire.com/news/home/20260111699710/en",
-      "publisher": "Business Wire",
-      "date": "2026-01-11",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Walmart To Join Nasdaq 100 on Jan. 20 as AstraZeneca Exits",
-      "url": "https://finance.yahoo.com/news/walmart-join-nasdaq-100-jan-020910743.html",
-      "publisher": "Bloomberg",
-      "date": "2026-01-09",
-      "sentiment": "positive"
-    }
-  ]
+  "headlines": []
 }

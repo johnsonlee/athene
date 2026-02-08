@@ -6271,8 +6271,8 @@
     "debt_equity_score": 56.8105,
     "fcf_yield_score": 72.44576141016637,
     "current_ratio_score": 38.46,
-    "safety_score": 51.7546894164908,
-    "fundamental_score": 44.08771668079816,
+    "safety_score": 51.75138070508318,
+    "fundamental_score": 44.08705493851664,
     "fund_data_completeness": 0.8333333333333334
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 24.216555994906916,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.03940379085615177,
-    "sentiment_pos": 0.05825,
-    "sentiment_neg": 0.0253,
-    "sentiment_neu": 0.9164999999999999,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 51.97
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.7155827702702703,
@@ -6332,7 +6324,7 @@
     "value_score": 62.29711519,
     "quality_score": 10.0,
     "growth_score": 60.65,
-    "safety_score": 51.7546894164908,
+    "safety_score": 51.75138070508318,
     "trend_score": 3.585667246077226,
     "momentum_score": 30.92951368330295,
     "volatility_score": 19.310008580464313,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 31.4085,
     "valuation_margin": 55.110134556999995,
     "catalyst_timeline": 33.895458092938014,
-    "downside_control": 41.52970469954327,
-    "composite_score": 35.389546031906335,
+    "downside_control": 41.52920839283212,
+    "composite_score": 35.3894467705641,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 44.08771668079816,
+    "fundamental_score": 44.08705493851664,
     "technical_score": 24.216555994906916,
-    "sentiment_score": 51.97,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Technology",
     "industry": "Software - Application"
   },
-  "headlines": [
-    {
-      "title": "3 Oversold Software Stocks You Should Buy on the Dip Now",
-      "url": "https://finance.yahoo.com/m/c4e948d3-c2a8-3998-90e9-944c9b79a50a/3-oversold-software-stocks.html",
-      "publisher": "Barchart",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Software stocks have been crushed. Here's how to play the sector as the dust settles.",
-      "url": "https://www.marketwatch.com/story/software-stocks-have-been-crushed-heres-how-to-play-the-sector-as-the-dust-settles-c0175f8a?mod=mw_FV",
-      "publisher": "MarketWatch",
-      "date": "2026-02-07",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Atlassian's (TEAM) Maintained at Buy by Canaccord Genuity",
-      "url": "/news/303491/atlassians-team-maintained-at-buy-by-canaccord-genuity",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Atlassian Shares Slide 8% as AI R&D Spend Hits $826 Million",
-      "url": "https://finance.yahoo.com/news/atlassian-shares-slide-8-ai-172519145.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Analyst Report: Atlassian Corporation",
-      "url": "https://finance.yahoo.com/m/954af10d-8077-3bf1-b7a1-1551ef1af99a/analyst-report%3A-atlassian.html",
-      "publisher": "Morningstar Research",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Atlassian Q2 Earnings Surpass Expectations, Revenues Rise Y/Y",
-      "url": "/news/302991/atlassian-q2-earnings-surpass-expectations-revenues-rise-yy",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "TEAM Q4 Deep Dive: AI Adoption and Enterprise Expansion Shape Results",
-      "url": "/news/302641/team-q4-deep-dive-ai-adoption-and-enterprise-expansion-shape-results",
-      "publisher": "StockStory",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Atlassian Posts Strong Quarter Fueled By Cloud Demand",
-      "url": "/news/302486/atlassian-posts-strong-quarter-fueled-by-cloud-demand",
-      "publisher": "Benzinga",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Atlassian Q2 Earnings Call Highlights",
-      "url": "https://finance.yahoo.com/m/cf51f6de-8ab8-306b-aafb-bb980ca34d62/atlassian-q2-earnings-call.html",
-      "publisher": "MarketBeat",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Atlassian Corp (TEAM) Q2 2026 Earnings Call Highlights: Record Cloud Revenue and AI Integration ...",
-      "url": "https://finance.yahoo.com/news/atlassian-corp-team-q2-2026-050118956.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Atlassian (TEAM) Reports Q2 Earnings: What Key Metrics Have to Say",
-      "url": "/news/302345/atlassian-team-reports-q2-earnings-what-key-metrics-have-to-say",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Atlassian raises annual revenue forecast on resilient software spending",
-      "url": "https://finance.yahoo.com/news/atlassian-raises-annual-revenue-forecast-223636753.html",
-      "publisher": "Reuters",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Atlassian (TEAM) Surpasses Q2 Earnings and Revenue Estimates",
-      "url": "/news/302250/atlassian-team-surpasses-q2-earnings-and-revenue-estimates",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Atlassian delivers solid fiscal Q2 results, shares up",
-      "url": "https://finance.yahoo.com/news/atlassian-shares-dip-cloud-growth-214054251.html",
-      "publisher": "Investing.com",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Atlassian: Fiscal Q2 Earnings Snapshot",
-      "url": "https://finance.yahoo.com/news/atlassian-fiscal-q2-earnings-snapshot-213255874.html",
-      "publisher": "Associated Press Finance",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Atlassian (NASDAQ:TEAM) Exceeds Q4 CY2025 Expectations But Stock Drops",
-      "url": "/news/302152/atlassian-nasdaq-team-exceeds-q4-cy2025-expectations-but-stock-drops",
-      "publisher": "StockStory",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Atlassian Announces Second Quarter Fiscal Year 2026 Results",
-      "url": "https://www.businesswire.com/news/home/20260205386782/en",
-      "publisher": "Business Wire",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Secondary sales shift from founder windfalls to employee-retention tools",
-      "url": "https://finance.yahoo.com/news/secondary-sales-shift-founder-windfalls-173000108.html",
-      "publisher": "TechCrunch",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Amazon Cloud Sales in Focus After Microsofts $500 Billion Rout",
-      "url": "https://finance.yahoo.com/news/amazon-cloud-sales-focus-microsoft-112001757.html",
-      "publisher": "Bloomberg",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "The Software Crash In Numbers: These Stocks Are Getting Hit Hardest",
-      "url": "/news/299911/the-software-crash-in-numbers-these-stocks-are-getting-hit-hardest",
-      "publisher": "Benzinga",
-      "date": "2026-02-04",
-      "sentiment": "negative"
-    }
-  ]
+  "headlines": []
 }

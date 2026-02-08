@@ -6271,8 +6271,8 @@
     "debt_equity_score": 16.954333333333334,
     "fcf_yield_score": 45.24964419686968,
     "current_ratio_score": 85.0,
-    "safety_score": 52.251380809842466,
-    "fundamental_score": 69.06102123974627,
+    "safety_score": 52.24807209843485,
+    "fundamental_score": 69.06035949746475,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 31.25016851296279,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.07572833915351629,
-    "sentiment_pos": 0.08745,
-    "sentiment_neg": 0.08455,
-    "sentiment_neu": 0.8279500000000001,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 53.79
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.2857142857142857,
     "target_upside": 0.8440204563335955,
@@ -6332,7 +6324,7 @@
     "value_score": 35.442980311111114,
     "quality_score": 90.0,
     "growth_score": 91.0,
-    "safety_score": 52.251380809842466,
+    "safety_score": 52.24807209843485,
     "trend_score": 23.26385680529497,
     "momentum_score": 34.90337157124767,
     "volatility_score": 19.0,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 90.43,
     "valuation_margin": 31.506894093333333,
     "catalyst_timeline": 44.51186426622569,
-    "downside_control": 36.678707121476364,
-    "composite_score": 52.92595051723578,
+    "downside_control": 36.67821081476522,
+    "composite_score": 52.92585125589355,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 69.06102123974627,
+    "fundamental_score": 69.06035949746475,
     "technical_score": 31.25016851296279,
-    "sentiment_score": 53.79,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Information Technology",
     "industry": "Application Software"
   },
-  "headlines": [
-    {
-      "title": "Tech stocks have been shaky, but these 20 companies could still see rocketing sales growth",
-      "url": "https://www.marketwatch.com/story/tech-stocks-have-been-shaky-but-these-20-companies-could-still-see-rocketing-sales-growth-148195c9?mod=mw_FV",
-      "publisher": "MarketWatch",
-      "date": "2026-02-07",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Super Bowl LX, Coinbase earnings, jobs data & CPI: What to Watch",
-      "url": "https://finance.yahoo.com/video/super-bowl-lx-coinbase-earnings-000012395.html",
-      "publisher": "Yahoo Finance Video",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Software Stocks Sell-Off: Are They Deals or Traps?",
-      "url": "/news/303451/software-stocks-sell-off-are-they-deals-or-traps",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "The Stock Market Just Got Shaky. Where to Find Solid Ground.",
-      "url": "https://www.wsj.com/finance/investing/the-stock-market-just-got-shaky-where-to-find-solid-ground-fcb8af7f?mod=wsj_FV",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-06",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Larry Ellison and Jeff Bezos have seen more than $66 billion swiped from their net worths since the start of this year as AI-driven slump sees tech billionaires wealth free-fall",
-      "url": "https://finance.yahoo.com/news/tech-billionaires-watching-wealth-free-162338240.html",
-      "publisher": "Fortune",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Cisco Stock Holds Strong Amid Tech Selling As Earnings Come Into Focus",
-      "url": "https://www.investors.com/research/earnings-preview/cisco-stock-holds-strong-amid-tech-selling-as-earnings-come-into-focus?mod=IBD_FV",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Stock Market Today: Dow Rallies, Bitcoin Bounces; Amazon Dives On Earnings Results (Live Coverage)",
-      "url": "https://finance.yahoo.com/m/d5f6d70b-adbf-3412-b185-ebea8f943d91/stock-market-today%3A-dow.html",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Is AppLovin (APP) a Buy as Wall Street Analysts Look Optimistic?",
-      "url": "/news/302855/is-applovin-app-a-buy-as-wall-street-analysts-look-optimistic",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Tech stock shakeout clouds market ahead of economic data deluge",
-      "url": "https://finance.yahoo.com/news/tech-stock-shakeout-clouds-market-110520808.html",
-      "publisher": "Reuters",
-      "date": "2026-02-06",
-      "sentiment": "negative"
-    },
-    {
-      "title": "This Mobile App Marketing Firm Is Holding Off an IPO for Now",
-      "url": "https://www.barrons.com/articles/liftoff-mobile-postpone-ipo-market-c124331b?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Snap Grapples With Meta, TikTok As Ad Pressure Mounts",
-      "url": "/news/301944/snap-grapples-with-meta-tiktok-as-ad-pressure-mounts",
-      "publisher": "Benzinga",
-      "date": "2026-02-05",
-      "sentiment": "negative"
-    },
-    {
-      "title": "AppLovin Has Far More Worries Than a Short Seller's Report",
-      "url": "https://finance.yahoo.com/m/0da6d39b-c243-39b2-aa1b-8424d06a3de1/applovin-has-far-more-worries.html",
-      "publisher": "Barchart",
-      "date": "2026-02-05",
-      "sentiment": "negative"
-    },
-    {
-      "title": "ScanSource (SCSC) Q2 Earnings and Revenues Lag Estimates",
-      "url": "/news/301624/scansource-scsc-q2-earnings-and-revenues-lag-estimates",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Why Piper Sandler Says Google's Project Genie Isn't a Threat to AppLovin (APP)",
-      "url": "/news/300721/why-piper-sandler-says-googles-project-genie-isnt-a-threat-to-applovin-app",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Software Selloff Hits Industry's Billionaires",
-      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-02-04-2026/card/software-selloff-hits-industry-s-billionaires-hkGAJtkZwxstwsCLZMVL?mod=wsj_FV",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Why AppLovin Stock Is Plummeting Today",
-      "url": "/news/300090/why-applovin-stock-is-plummeting-today",
-      "publisher": "Motley Fool",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Tech stocks plunge as AI fears take hold",
-      "url": "https://finance.yahoo.com/m/c97ff855-fe63-3f3a-86fa-1375ab0a878b/tech-stocks-plunge-as-ai.html",
-      "publisher": "The Telegraph",
-      "date": "2026-02-04",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Jim Cramer Says \"Wall Street's Terrified That AI Will Eat AppLovin Alive\"",
-      "url": "/news/299963/jim-cramer-says-wall-streets-terrified-that-ai-will-eat-applovin-alive",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-04",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Software Stocks Plummet, Bitcoin Erases Post-Trump Election Rally: What's Moving Markets Wednesday?",
-      "url": "/news/299928/software-stocks-plummet-bitcoin-erases-post-trump-election-rally-whats-moving-markets-wednesday",
-      "publisher": "Benzinga",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Why Benchmark Says Google's AI Won't Derail AppLovin (APP)",
-      "url": "/news/299914/why-benchmark-says-googles-ai-wont-derail-applovin-app",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    }
-  ]
+  "headlines": []
 }

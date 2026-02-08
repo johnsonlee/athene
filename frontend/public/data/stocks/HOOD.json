@@ -6271,8 +6271,8 @@
     "debt_equity_score": 47.33618,
     "fcf_yield_score": 35.0,
     "current_ratio_score": 49.968,
-    "safety_score": 35.77864871140762,
-    "fundamental_score": 62.16894534894819,
+    "safety_score": 35.77534,
+    "fundamental_score": 62.16828360666667,
     "fund_data_completeness": 0.9166666666666666
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 30.2400340765374,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.11861921036706785,
-    "sentiment_pos": 0.1146,
-    "sentiment_neg": 0.03315,
-    "sentiment_neu": 0.8523,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 55.93
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.18181818181818182,
     "target_upside": 0.8654914271914997,
@@ -6332,7 +6324,7 @@
     "value_score": 22.625342426666666,
     "quality_score": 88.6896,
     "growth_score": 91.0,
-    "safety_score": 35.77864871140762,
+    "safety_score": 35.77534,
     "trend_score": 19.45711867918811,
     "momentum_score": 35.34299490926989,
     "volatility_score": 19.0,
@@ -6353,22 +6345,22 @@
     "earnings_visibility": 84.39544,
     "valuation_margin": 21.893602727999998,
     "catalyst_timeline": 42.73404499520944,
-    "downside_control": 32.919797306711146,
-    "composite_score": 45.89304460858321,
+    "downside_control": 32.919301,
+    "composite_score": 45.89294534724097,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 62.16894534894819,
+    "fundamental_score": 62.16828360666667,
     "technical_score": 30.2400340765374,
-    "sentiment_score": 55.93,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 0.9441666666666666,
     "data_quality_penalty": 0.0,
-    "rank": 466,
-    "percentile": 0.10404624277456648,
+    "rank": 467,
+    "percentile": 0.10211946050096339,
     "tier": "hold",
     "tier_raw": "sell",
     "tier_label": "Hold",
@@ -6377,146 +6369,5 @@
     "sector": "Financials",
     "industry": "Investment Banking & Brokerage"
   },
-  "headlines": [
-    {
-      "title": "203,556,622 DOGE Slam Into Robinhood as Dogecoin Price Explodes 6%",
-      "url": "https://finance.yahoo.com/news/203-556-622-doge-slam-204140810.html",
-      "publisher": "Benzinga",
-      "date": "2026-02-07",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Stock Market Week: Mapping Out A Deeply Divided Rally",
-      "url": "https://finance.yahoo.com/m/0e557477-4934-348b-bc76-efe7044abfaa/stock-market-week%3A-mapping.html",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "I think investors are getting nervous about Robinhood's bitcoin correlation, says Jim Cramer",
-      "url": "https://www.youtube.com/watch?v=d4mJwsb_uhw",
-      "publisher": "CNBC TV",
-      "date": "2026-02-06",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Super Bowl LX, Coinbase earnings, jobs data & CPI: What to Watch",
-      "url": "https://finance.yahoo.com/video/super-bowl-lx-coinbase-earnings-000012395.html",
-      "publisher": "Yahoo Finance Video",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Jobs Report, CPI Data: What to Watch Next Week",
-      "url": "https://finance.yahoo.com/m/5e5a76be-cde7-3066-bdef-30523ee18e4d/jobs-report%2C-cpi-data%3A-what.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Stocks to Watch Friday: Amazon, Roblox, Stellantis, Strategy",
-      "url": "https://finance.yahoo.com/m/b9ddf50a-9f85-33bb-abac-388ab9931b3d/stocks-to-watch-friday%3A.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "The Stock Market Just Got Shaky. Where to Find Solid Ground.",
-      "url": "https://www.wsj.com/finance/investing/the-stock-market-just-got-shaky-where-to-find-solid-ground-fcb8af7f?mod=wsj_FV",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-06",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Robinhoods Battered Stock Gets Some Relief. A Full Recovery Will Take More Time.",
-      "url": "https://finance.yahoo.com/m/497458a1-3a9d-399a-a074-4a4361b2a67c/robinhood%E2%80%99s-battered-stock.html",
-      "publisher": "Barrons.com",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Earnings live: Amazon, Reddit stocks sink to cap jam-packed earnings week",
-      "url": "https://finance.yahoo.com/news/live/earnings-live-amazon-reddit-stocks-sink-to-cap-jam-packed-earnings-week-213155571.html",
-      "publisher": "Yahoo Finance",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Amazon, Strategy, Robinhood, Novo Nordisk, Molina, Stellantis, Hub Group, and More Stock Market Movers",
-      "url": "https://finance.yahoo.com/m/c18863ff-041f-35f2-8054-0ec3d92baa4a/amazon%2C-strategy%2C-robinhood%2C.html",
-      "publisher": "Barrons.com",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Biogen stock pops, Robinhood gets lift as bitcoin ticks up",
-      "url": "https://finance.yahoo.com/video/biogen-stock-pops-robinhood-gets-204853534.html",
-      "publisher": "Yahoo Finance Video",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Tech Bounces As Software Sell-Off Eases, Dow Jones Hits Records: What's Moving Markets Friday?",
-      "url": "/news/303167/tech-bounces-as-software-sell-off-eases-dow-jones-hits-records-whats-moving-markets-friday",
-      "publisher": "Benzinga",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Trump Accounts Get Super Bowl Commercial: Kids Promote President's New Initiative - 'That's Free Money'",
-      "url": "/news/303155/trump-accounts-get-super-bowl-commercial-kids-promote-presidents-new-initiative-thats-free-money",
-      "publisher": "Benzinga",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "These Stocks Are Todays Movers: Amazon, Strategy, Robinhood, Novo Nordisk, Molina, Stellantis, Hub Group, and More",
-      "url": "https://finance.yahoo.com/m/c18863ff-041f-35f2-8054-0ec3d92baa4a/these-stocks-are-today%E2%80%99s.html",
-      "publisher": "Barrons.com",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Robinhood's Stock Lost Nearly Half Its Value Since October. Why It Is Up Today.",
-      "url": "https://www.barrons.com/advisor/articles/robinhood-stock-price-7e5074dc?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Why Are Robinhood (HOOD) Shares Soaring Today",
-      "url": "/news/303060/why-are-robinhood-hood-shares-soaring-today",
-      "publisher": "StockStory",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Robinhood Stock Surges As Bitcoin Rebounds Above $68,000",
-      "url": "/news/302967/robinhood-stock-surges-as-bitcoin-rebounds-above-68000",
-      "publisher": "Benzinga",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Solid Equity, Options Trading to Aid HOOD Q4 Earnings Amid Crypto Slump",
-      "url": "/news/302664/solid-equity-options-trading-to-aid-hood-q4-earnings-amid-crypto-slump",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "MarketAxess (MKTX) Q4 Earnings Beat Estimates",
-      "url": "/news/302634/marketaxess-mktx-q4-earnings-beat-estimates",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Zacks Investment Ideas feature highlights: Robinhood Markets and Nvidia",
-      "url": "/news/302551/zacks-investment-ideas-feature-highlights-robinhood-markets-and-nvidia",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

@@ -6271,8 +6271,8 @@
     "debt_equity_score": 76.52175,
     "fcf_yield_score": 62.06346272467122,
     "current_ratio_score": 55.074000000000005,
-    "safety_score": 56.41916507374322,
-    "fundamental_score": 74.63959869058198,
+    "safety_score": 56.4158563623356,
+    "fundamental_score": 74.63893694830045,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 43.2054920448785,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.0698268443510493,
-    "sentiment_pos": 0.055349999999999996,
-    "sentiment_neg": 0.0,
-    "sentiment_neu": 0.94465,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 53.49
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": -0.14285714285714285,
     "target_upside": 0.24261494991009505,
@@ -6332,7 +6324,7 @@
     "value_score": 64.66090198333333,
     "quality_score": 85.0518006,
     "growth_score": 86.7,
-    "safety_score": 56.41916507374322,
+    "safety_score": 56.4158563623356,
     "trend_score": 30.04582969534992,
     "momentum_score": 52.59873993528039,
     "volatility_score": 42.06060577844703,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 84.29677009,
     "valuation_margin": 63.169270595,
     "catalyst_timeline": 47.36036883125136,
-    "downside_control": 53.12496562782853,
-    "composite_score": 66.02605441066234,
+    "downside_control": 53.12446932111739,
+    "composite_score": 66.02595514932011,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 74.63959869058198,
+    "fundamental_score": 74.63893694830045,
     "technical_score": 43.2054920448785,
-    "sentiment_score": 53.49,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Information Technology",
     "industry": "Application Software"
   },
-  "headlines": [
-    {
-      "title": "PTC Q1 Earnings & Revenues Top, Rise Y/Y on Large Deal Momentum",
-      "url": "/news/301885/ptc-q1-earnings-revenues-top-rise-yy-on-large-deal-momentum",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "PTC Q4 Deep Dive: AI Integration and Deferred Revenue Shape Guidance",
-      "url": "/news/300871/ptc-q4-deep-dive-ai-integration-and-deferred-revenue-shape-guidance",
-      "publisher": "StockStory",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "PTC Q1 Earnings Call Highlights",
-      "url": "https://finance.yahoo.com/m/3db9d907-540f-3bd6-87b2-257f9d5b062f/ptc-q1-earnings-call.html",
-      "publisher": "MarketBeat",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "PTC (PTC) Q1 2026 Earnings Call Transcript",
-      "url": "/news/300432/ptc-ptc-q1-2026-earnings-call-transcript",
-      "publisher": "Motley Fool",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Here's What Key Metrics Tell Us About PTC Inc. (PTC) Q1 Earnings",
-      "url": "/news/300504/heres-what-key-metrics-tell-us-about-ptc-inc-ptc-q1-earnings",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "PTC Inc. (PTC) Q1 Earnings and Revenues Top Estimates",
-      "url": "/news/300392/ptc-inc-ptc-q1-earnings-and-revenues-top-estimates",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "PTC Inc.: Fiscal Q1 Earnings Snapshot",
-      "url": "https://finance.yahoo.com/news/ptc-inc-fiscal-q1-earnings-211745890.html",
-      "publisher": "Associated Press Finance",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "PTC (NASDAQ:PTC) Beats Q4 CY2025 Sales Expectations",
-      "url": "/news/300239/ptc-nasdaq-ptc-beats-q4-cy2025-sales-expectations",
-      "publisher": "StockStory",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "PTC ANNOUNCES FIRST FISCAL QUARTER 2026 RESULTS",
-      "url": "/news/300147/ptc-announces-first-fiscal-quarter-2026-results",
-      "publisher": "PR Newswire",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "PTC (PTC) Reports Q4: Everything You Need To Know Ahead Of Earnings",
-      "url": "/news/296600/ptc-ptc-reports-q4-everything-you-need-to-know-ahead-of-earnings",
-      "publisher": "StockStory",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "PTC to Report Q1 Earnings: Here's What Investors Should Expect",
-      "url": "/news/295529/ptc-to-report-q1-earnings-heres-what-investors-should-expect",
-      "publisher": "Zacks",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Microsoft (MSFT) Tops Q2 Earnings and Revenue Estimates",
-      "url": "/news/290879/microsoft-msft-tops-q2-earnings-and-revenue-estimates",
-      "publisher": "Zacks",
-      "date": "2026-01-28",
-      "sentiment": "positive"
-    },
-    {
-      "title": "2 Reasons to Like PTC (and 1 Not So Much)",
-      "url": "/news/291074/2-reasons-to-like-ptc-and-1-not-so-much",
-      "publisher": "StockStory",
-      "date": "2026-01-27",
-      "sentiment": "positive"
-    },
-    {
-      "title": "PTC Launches New Windchill AI Parts Rationalization Capabilities",
-      "url": "/news/288158/ptc-launches-new-windchill-ai-parts-rationalization-capabilities",
-      "publisher": "PR Newswire",
-      "date": "2026-01-27",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "PTC Onshape Helps Reditus Space Accelerate Reusable Reentry Capsule",
-      "url": "/news/282484/ptc-onshape-helps-reditus-space-accelerate-reusable-reentry-capsule",
-      "publisher": "Zacks",
-      "date": "2026-01-21",
-      "sentiment": "positive"
-    },
-    {
-      "title": "PTC's Onshape Selected by Reditus Space to Accelerate Development of Reusable Orbital Reentry Capsule",
-      "url": "/news/280957/ptcs-onshape-selected-by-reditus-space-to-accelerate-development-of-reusable-orbital-reentry-capsule",
-      "publisher": "PR Newswire",
-      "date": "2026-01-20",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "PTC Enhances ALM Portfolio With Codebeamer & Pure Variants Upgrades",
-      "url": "/news/280202/ptc-enhances-alm-portfolio-with-codebeamer-pure-variants-upgrades",
-      "publisher": "Zacks",
-      "date": "2026-01-19",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "PTC Delivers New AI Functionality for Software-Driven Product Development with New ALM Releases",
-      "url": "/news/277281/ptc-delivers-new-ai-functionality-for-software-driven-product-development-with-new-alm-releases",
-      "publisher": "PR Newswire",
-      "date": "2026-01-15",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "PTC to Announce Fiscal Q1'26 Results on Wednesday, February 4th, 2026",
-      "url": "/news/276770/ptc-to-announce-fiscal-q126-results-on-wednesday-february-4th-2026",
-      "publisher": "PR Newswire",
-      "date": "2026-01-14",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "What to Expect From PTC Inc.s Next Quarterly Earnings Report",
-      "url": "https://finance.yahoo.com/m/a8c53fe3-1988-335c-af0a-260b933ad8f6/what-to-expect-from-ptc.html",
-      "publisher": "Barchart",
-      "date": "2026-01-07",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

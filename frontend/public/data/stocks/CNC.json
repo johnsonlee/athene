@@ -6271,8 +6271,8 @@
     "debt_equity_score": 52.2952,
     "fcf_yield_score": 88.0,
     "current_ratio_score": 49.6,
-    "safety_score": 57.274158711407615,
-    "fundamental_score": 52.77499025418629,
+    "safety_score": 57.270849999999996,
+    "fundamental_score": 52.77432851190476,
     "fund_data_completeness": 0.8333333333333334
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 38.64287848708243,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.04093421240610817,
-    "sentiment_pos": 0.07615,
-    "sentiment_neg": 0.041,
-    "sentiment_neu": 0.8827999999999999,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 52.05
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.25,
     "target_upside": 0.11804472178887153,
@@ -6332,7 +6324,7 @@
     "value_score": 82.69863404761905,
     "quality_score": 18.36,
     "growth_score": 60.55,
-    "safety_score": 57.274158711407615,
+    "safety_score": 57.270849999999996,
     "trend_score": 41.051791762664124,
     "momentum_score": 36.458654111762,
     "volatility_score": 26.948723623772946,
@@ -6353,22 +6345,22 @@
     "earnings_visibility": 36.0495,
     "valuation_margin": 76.65859021428571,
     "catalyst_timeline": 45.07099908562254,
-    "downside_control": 47.70343235027708,
-    "composite_score": 49.440004132337464,
+    "downside_control": 47.70293604356594,
+    "composite_score": 49.43990487099523,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 52.77499025418629,
+    "fundamental_score": 52.77432851190476,
     "technical_score": 38.64287848708243,
-    "sentiment_score": 52.05,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 0.8883333333333334,
     "data_quality_penalty": 0.0,
-    "rank": 417,
-    "percentile": 0.19845857418111754,
+    "rank": 418,
+    "percentile": 0.19653179190751446,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6377,146 +6369,5 @@
     "sector": "Health Care",
     "industry": "Managed Health Care"
   },
-  "headlines": [
-    {
-      "title": "Centene Q4 Earnings Call Highlights",
-      "url": "https://finance.yahoo.com/m/2f3f0fb9-85f3-38d2-b1b7-d4d609e25bcf/centene-q4-earnings-call.html",
-      "publisher": "MarketBeat",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Molina Healthcare Stock Notches Lowest Close in Six Years. Why Its Earnings Outlook Is So Bleak.",
-      "url": "https://finance.yahoo.com/m/c7fe7ab4-d49e-3836-8704-26cd1cf0da9e/molina-healthcare-stock.html",
-      "publisher": "Barrons.com",
-      "date": "2026-02-06",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Centene Corp (CNC) Q4 2025 Earnings Call Highlights: Navigating Challenges and Setting Sights ...",
-      "url": "https://finance.yahoo.com/news/centene-corp-cnc-q4-2025-210105974.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Centene Takes A Hit As Medicaid Membership Shrinks",
-      "url": "/news/303190/centene-takes-a-hit-as-medicaid-membership-shrinks",
-      "publisher": "Benzinga",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Centene Incurs Q4 Loss, Revenues Up YoY due to PDP Business Strength",
-      "url": "/news/303215/centene-incurs-q4-loss-revenues-up-yoy-due-to-pdp-business-strength",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Molina, Centene Fall on Concerns About Medicaid Business",
-      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-02-06-2026/card/molina-centene-fall-on-concerns-about-medicaid-business-NDTlN1Q40rBrXXVNfzVK?mod=wsj_FV",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Analyst Report: Centene Corporation",
-      "url": "https://finance.yahoo.com/m/316f9e89-e968-3c60-aad9-9c4deba65c1c/analyst-report%3A-centene.html",
-      "publisher": "Morningstar Research",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Centene Releases 2026 Profit Outlook Above Estimates as Shares Fall 6%",
-      "url": "https://finance.yahoo.com/news/centene-releases-2026-profit-outlook-161700707.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Health Net and Pro Football Hall of Fame Honor Sacramento Community and Inspire Local Youth During Super Bowl Week",
-      "url": "/news/302979/health-net-and-pro-football-hall-of-fame-honor-sacramento-community-and-inspire-local-youth-during-super-bowl-week",
-      "publisher": "PR Newswire",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "S&P 500 Health Insurer Dives As ACA Enrollment Implodes",
-      "url": "https://www.investors.com/news/sp-500-health-insurance-stocks-aca-enrollment-centene-molina?mod=IBD_FV",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Centene (CNC) Reports Q4 Earnings: What Key Metrics Have to Say",
-      "url": "/news/302850/centene-cnc-reports-q4-earnings-what-key-metrics-have-to-say",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Centene (CNC) Reports Q4 Loss, Beats Revenue Estimates",
-      "url": "/news/302614/centene-cnc-reports-q4-loss-beats-revenue-estimates",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Molina Healthcare Stock Falls 27%. Why Its Earnings Outlook Is So Bleak.",
-      "url": "https://www.barrons.com/articles/molina-healthcare-earnings-stock-price-5a29806e?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Centene (NYSE:CNC) Surprises With Q4 CY2025 Sales",
-      "url": "/news/302561/centene-nyse-cnc-surprises-with-q4-cy2025-sales",
-      "publisher": "StockStory",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Centene Swings to Loss Despite Higher Revenue",
-      "url": "https://www.wsj.com/business/earnings/centene-swings-to-loss-despite-higher-revenue-3b1f646e?mod=wsj_FV",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-06",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Centene: Q4 Earnings Snapshot",
-      "url": "https://finance.yahoo.com/news/centene-q4-earnings-snapshot-113438835.html",
-      "publisher": "Associated Press Finance",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "CENTENE CORPORATION REPORTS 2025 RESULTS AND ANNOUNCES 2026 GUIDANCE",
-      "url": "/news/302480/centene-corporation-reports-2025-results-and-announces-2026-guidance",
-      "publisher": "PR Newswire",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "UnitedHealth's Q4 Beat Can't Stop the Slide: Should You Let Go Now?",
-      "url": "/news/301778/unitedhealths-q4-beat-cant-stop-the-slide-should-you-let-go-now",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Analyst Report: The Cigna Group",
-      "url": "https://finance.yahoo.com/m/f6b4fc4a-f7f8-3982-8866-1623dc60f080/analyst-report%3A-the-cigna.html",
-      "publisher": "Morningstar Research",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Cigna (CI) Q4 Earnings and Revenues Beat Estimates",
-      "url": "/news/301173/cigna-ci-q4-earnings-and-revenues-beat-estimates",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

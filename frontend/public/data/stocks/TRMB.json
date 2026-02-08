@@ -6271,8 +6271,8 @@
     "debt_equity_score": 80.98575,
     "fcf_yield_score": 58.42566285753564,
     "current_ratio_score": 45.184,
-    "safety_score": 56.832265140175444,
-    "fundamental_score": 60.26350865589223,
+    "safety_score": 56.828956428767825,
+    "fundamental_score": 60.26284691361071,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 38.01974811587281,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.01685044972185918,
-    "sentiment_pos": 0.0121,
-    "sentiment_neg": 0.00685,
-    "sentiment_neu": 0.98105,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 50.84
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.6666666666666666,
     "target_upside": 0.48904006046863174,
@@ -6332,7 +6324,7 @@
     "value_score": 67.07408034,
     "quality_score": 49.07428514285714,
     "growth_score": 69.625,
-    "safety_score": 56.832265140175444,
+    "safety_score": 56.828956428767825,
     "trend_score": 28.47282573674329,
     "momentum_score": 43.82889037964569,
     "volatility_score": 31.646166404780587,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 56.52189277142857,
     "valuation_margin": 61.63922410199999,
     "catalyst_timeline": 45.866862685712974,
-    "downside_control": 48.285764731743406,
-    "composite_score": 52.95300541591237,
+    "downside_control": 48.285268425032264,
+    "composite_score": 52.95290615457014,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 60.26350865589223,
+    "fundamental_score": 60.26284691361071,
     "technical_score": 38.01974811587281,
-    "sentiment_score": 50.84,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Information Technology",
     "industry": "Electronic Equipment & Instruments"
   },
-  "headlines": [
-    {
-      "title": "Trimble Stock: Analyst Estimates & Ratings",
-      "url": "https://finance.yahoo.com/m/f51f8506-dc8a-36fd-b744-6b4427ff9761/trimble-stock%3A-analyst.html",
-      "publisher": "Barchart",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Unlocking Q4 Potential of Trimble (TRMB): Exploring Wall Street Estimates for Key Metrics",
-      "url": "/news/301485/unlocking-q4-potential-of-trimble-trmb-exploring-wall-street-estimates-for-key-metrics",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "The Zacks Analyst Blog Highlights Kennametal, Mueller Water Products and Trimble",
-      "url": "/news/299773/the-zacks-analyst-blog-highlights-kennametal-mueller-water-products-and-trimble",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Analysts Estimate Generac Holdings (GNRC) to Report a Decline in Earnings: What to Look Out for",
-      "url": "/news/299666/analysts-estimate-generac-holdings-gnrc-to-report-a-decline-in-earnings-what-to-look-out-for",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Rockwell Automation Set to Report Q1 Earnings: What's in Store?",
-      "url": "/news/297917/rockwell-automation-set-to-report-q1-earnings-whats-in-store",
-      "publisher": "Zacks",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "3 Industrial Stocks Set to Outpace Q4 Earnings Estimates",
-      "url": "/news/297812/3-industrial-stocks-set-to-outpace-q4-earnings-estimates",
-      "publisher": "Zacks",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Trimble Navigation (TRMB) Earnings Expected to Grow: What to Know Ahead of Next Week's Release",
-      "url": "/news/297657/trimble-navigation-trmb-earnings-expected-to-grow-what-to-know-ahead-of-next-weeks-release",
-      "publisher": "Zacks",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Sony's Q3 Earnings on Deck: Can Gaming Strength Offset FX Volatility?",
-      "url": "/news/297325/sonys-q3-earnings-on-deck-can-gaming-strength-offset-fx-volatility",
-      "publisher": "Zacks",
-      "date": "2026-02-03",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Avery Dennison Stock to Report Q4 Earnings: Here's What to Expect",
-      "url": "/news/296056/avery-dennison-stock-to-report-q4-earnings-heres-what-to-expect",
-      "publisher": "Zacks",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Pentair Gears Up to Report Q4 Earnings: What to Expect From the Stock?",
-      "url": "/news/295868/pentair-gears-up-to-report-q4-earnings-what-to-expect-from-the-stock",
-      "publisher": "Zacks",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Cirrus Logic's Q3 Earnings Loom: Is a Beat in the Offing for CRUS?",
-      "url": "/news/295759/cirrus-logics-q3-earnings-loom-is-a-beat-in-the-offing-for-crus",
-      "publisher": "Zacks",
-      "date": "2026-02-02",
-      "sentiment": "negative"
-    },
-    {
-      "title": "CDW to Release Q4 Earnings: Here's What Investors Should Know",
-      "url": "/news/295761/cdw-to-release-q4-earnings-heres-what-investors-should-know",
-      "publisher": "Zacks",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Eaton to Post Q4 Earnings: What's in Store for the Stock This Season?",
-      "url": "/news/295699/eaton-to-post-q4-earnings-whats-in-store-for-the-stock-this-season",
-      "publisher": "Zacks",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "The AI Stock Wall Street Insiders Are Quietly Buying",
-      "url": "/news/294700/the-ai-stock-wall-street-insiders-are-quietly-buying",
-      "publisher": "Motley Fool",
-      "date": "2026-02-01",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Grainger Stock Set to Report Q4 Earnings: Here's What to Expect",
-      "url": "/news/293982/grainger-stock-set-to-report-q4-earnings-heres-what-to-expect",
-      "publisher": "Zacks",
-      "date": "2026-01-30",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Ball Corp Stock Set to Report Q4 Earnings: Here's What to Expect",
-      "url": "/news/293971/ball-corp-stock-set-to-report-q4-earnings-heres-what-to-expect",
-      "publisher": "Zacks",
-      "date": "2026-01-30",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Workiva Announces Two New Appointments to Board of Directors",
-      "url": "https://www.businesswire.com/news/home/20260128298109/en/",
-      "publisher": "Business Wire",
-      "date": "2026-01-28",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Dover Gears Up to Report Q4 Earnings: Here's What to Expect",
-      "url": "/news/288863/dover-gears-up-to-report-q4-earnings-heres-what-to-expect",
-      "publisher": "Zacks",
-      "date": "2026-01-27",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Will Trimble (TRMB) Beat Estimates Again in Its Next Earnings Report?",
-      "url": "/news/288832/will-trimble-trmb-beat-estimates-again-in-its-next-earnings-report",
-      "publisher": "Zacks",
-      "date": "2026-01-27",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Trimble Fourth Quarter and Full Year 2025 Earnings Call and Webcast",
-      "url": "/news/288118/trimble-fourth-quarter-and-full-year-2025-earnings-call-and-webcast",
-      "publisher": "PR Newswire",
-      "date": "2026-01-27",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

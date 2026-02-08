@@ -6271,8 +6271,8 @@
     "debt_equity_score": 15.0,
     "fcf_yield_score": 37.692039698305265,
     "current_ratio_score": 53.647999999999996,
-    "safety_score": 32.79657856056025,
-    "fundamental_score": 49.077879033540626,
+    "safety_score": 32.79326984915263,
+    "fundamental_score": 49.0772172912591,
     "fund_data_completeness": 0.9166666666666666
   },
   "technical": {
@@ -6306,38 +6306,30 @@
     "technical_score": 57.656432071902884,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.20740676081481393,
-    "sentiment_pos": 0.11565,
-    "sentiment_neg": 0.0,
-    "sentiment_neu": 0.8843500000000001,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 60.37
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.1,
     "target_upside": 0.1315475455705057,
-    "consensus_rating": 1.59259,
+    "consensus_rating": 1.53846,
     "analyst_revision_count": 10.0,
     "analyst_count": 24.0,
     "analyst_upgrades": 1.0,
     "analyst_downgrades": 0.0,
     "revision_momentum_score": 56.0,
     "target_upside_score": 63.785705468460684,
-    "consensus_score": 74.2964,
-    "analyst_score": 63.29909691396124
+    "consensus_score": 76.4616,
+    "analyst_score": 63.84039691396124
   },
   "ranking": {
     "value_score": 34.07905328571429,
     "quality_score": 59.995999999999995,
     "growth_score": 64.0,
-    "safety_score": 32.79657856056025,
+    "safety_score": 32.79326984915263,
     "trend_score": 67.15638561981419,
     "momentum_score": 51.694708637655395,
     "volatility_score": 60.00551897331009,
     "volume_score": 50.0,
-    "analyst_score": 63.29909691396124,
+    "analyst_score": 63.84039691396124,
     "pe_score": 5.601210799999999,
     "forward_pe_score": 18.571442857142856,
     "pb_score": 15.0,
@@ -6352,23 +6344,23 @@
     "current_ratio_score": 53.647999999999996,
     "earnings_visibility": 54.7264,
     "valuation_margin": 29.228715985714285,
-    "catalyst_timeline": 59.61301911714308,
-    "downside_control": 45.17531463008055,
-    "composite_score": 45.37813191104483,
+    "catalyst_timeline": 59.667149117143076,
+    "downside_control": 45.1748183233694,
+    "composite_score": 45.39562489970259,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 49.077879033540626,
+    "fundamental_score": 49.0772172912591,
     "technical_score": 57.656432071902884,
-    "sentiment_score": 60.37,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 0.9441666666666666,
     "data_quality_penalty": 0.0,
-    "rank": 473,
-    "percentile": 0.0905587668593449,
+    "rank": 474,
+    "percentile": 0.08863198458574181,
     "tier": "hold",
     "tier_raw": "sell",
     "tier_label": "Hold",
@@ -6377,146 +6369,5 @@
     "sector": "Industrials",
     "industry": "Aerospace & Defense"
   },
-  "headlines": [
-    {
-      "title": "Jefferies Reiterates Buy on The Boeing Company (BA) Following Q4 Results",
-      "url": "/news/303698/jefferies-reiterates-buy-on-the-boeing-company-ba-following-q4-results",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-08",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Boeing (BA) Is One of My Favorites, Says Jim Cramer",
-      "url": "/news/303580/boeing-ba-is-one-of-my-favorites-says-jim-cramer",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-07",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Dow Jones Tops 50,000 As Apple, Boeing, JPMorgan Flash Buy Signals; Is AI Trade Reviving?",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-50000-apple-boeing-jpmorgan-ai-stocks?mod=IBD_FV",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "The Dow Surged Past 50,000. How Caterpillar and These Other Stocks Got It There.",
-      "url": "https://www.barrons.com/articles/dow-jones-industrial-average-50000-first-time-caterpillar-stock-ff67c63d?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Boeing, IBD Stock Of The Day, Back In Buy Zone On India, Saudi Arabia Deal Buzz",
-      "url": "https://www.investors.com/research/ibd-stock-of-the-day/boeing-stock-buy-zone-india-saudi-arabia-jet-orders?mod=IBD_FV",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Boeing Stock In Focus -- India Eyes $80 Billion Aircraft Deal",
-      "url": "https://finance.yahoo.com/news/boeing-stock-focus-india-eyes-155227811.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Boeing Stock Rises. Thank China.",
-      "url": "https://www.barrons.com/articles/boeing-stock-rises-thank-china-92e56bd9?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Saudia reportedly mulls 150-jet order, talks to Boeing, Airbus",
-      "url": "https://finance.yahoo.com/news/saudia-reportedly-mulls-150-jet-183511695.html",
-      "publisher": "Investing.com",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Strong Newport News Shipbuilding Performance Drives HII's Q4 Results",
-      "url": "/news/301867/strong-newport-news-shipbuilding-performance-drives-hiis-q4-results",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "DAL Gains 31% in 6 Months: How Should Investors Play the Stock Now?",
-      "url": "/news/301727/dal-gains-31-in-6-months-how-should-investors-play-the-stock-now",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Catch Up on Trumps Breakneck Critical-Minerals Drive",
-      "url": "https://finance.yahoo.com/m/71382e32-ac70-3737-b255-13a6a906ebc5/catch-up-on-trump%E2%80%99s-breakneck.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Boeing Lands Biggest-Ever Landing Gear Deal At Singapore Airshow",
-      "url": "/news/300959/boeing-lands-biggest-ever-landing-gear-deal-at-singapore-airshow",
-      "publisher": "Benzinga",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Boeing 787 Under Spotlight Again As UK Regulator Questions Air India Over Fuel Switch Incident",
-      "url": "/news/300941/boeing-787-under-spotlight-again-as-uk-regulator-questions-air-india-over-fuel-switch-incident",
-      "publisher": "Benzinga",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "India to sign trade deal with United States in March, minister says",
-      "url": "https://finance.yahoo.com/news/india-us-trade-deal-signed-075827559.html",
-      "publisher": "Reuters",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Rolls-Royce Pushes Trent 1000 XE to Win Back 787 Customers",
-      "url": "https://finance.yahoo.com/news/rolls-royce-pushes-trent-1000-202422363.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "The Boeing Company (BA): A Bull Case Theory",
-      "url": "/news/300019/the-boeing-company-ba-a-bull-case-theory",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Boeing Targets April First Flight For 777X",
-      "url": "https://finance.yahoo.com/news/boeing-targets-april-first-flight-185829503.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Ryanair's Traffic Numbers for January 2026 Improve Year Over Year",
-      "url": "/news/299954/ryanairs-traffic-numbers-for-january-2026-improve-year-over-year",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Boeing Stock Surges 2.2% in a Month: What Should Investors Know?",
-      "url": "/news/299733/boeing-stock-surges-22-in-a-month-what-should-investors-know",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Is Most-Watched Stock The Boeing Company (BA) Worth Betting on Now?",
-      "url": "/news/299398/is-most-watched-stock-the-boeing-company-ba-worth-betting-on-now",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    }
-  ]
+  "headlines": []
 }

@@ -14699,7 +14699,7 @@
       "momentum_score": 67.2
     },
     "Real Estate": {
-      "rs_score": 31.8,
+      "rs_score": 31.9,
       "momentum_score": 65.7
     },
     "Industrials": {
@@ -33467,7 +33467,7 @@
       "momentum_score": 71.1
     },
     "Consumer Discretionary": {
-      "trend_strength": 53.8,
+      "trend_strength": 53.7,
       "trend_state": "neutral",
       "rs_score": 38.1,
       "momentum_score": 59.4
@@ -33479,8 +33479,8 @@
       "momentum_score": 49.9
     },
     "Real Estate": {
-      "trend_strength": 55.0,
-      "trend_state": "uptrend",
+      "trend_strength": 54.8,
+      "trend_state": "neutral",
       "rs_score": 53.0,
       "momentum_score": 64.2
     },

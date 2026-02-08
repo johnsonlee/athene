@@ -6271,8 +6271,8 @@
     "debt_equity_score": 59.888,
     "fcf_yield_score": 54.57757759162625,
     "current_ratio_score": 63.215999999999994,
-    "safety_score": 48.67855871140762,
-    "fundamental_score": 54.44465176251961,
+    "safety_score": 48.67525,
+    "fundamental_score": 54.44399002023809,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 59.62184796610569,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.4744869185267864,
-    "sentiment_pos": 0.12090000000000001,
-    "sentiment_neg": 0.020050000000000002,
-    "sentiment_neu": 0.8590500000000001,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 73.72
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.5,
     "target_upside": -0.015303562468640227,
@@ -6332,7 +6324,7 @@
     "value_score": 69.34019126666666,
     "quality_score": 46.07964067857142,
     "growth_score": 54.2,
-    "safety_score": 48.67855871140762,
+    "safety_score": 48.67525,
     "trend_score": 64.575001897759,
     "momentum_score": 65.42327008570226,
     "volatility_score": 53.11183185533659,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 47.61294610178571,
     "valuation_margin": 66.78505738,
     "catalyst_timeline": 61.247952261065635,
-    "downside_control": 55.83355858501163,
-    "composite_score": 58.11219254394102,
+    "downside_control": 55.83306227830049,
+    "composite_score": 58.11209328259879,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 54.44465176251961,
+    "fundamental_score": 54.44399002023809,
     "technical_score": 59.62184796610569,
-    "sentiment_score": 73.72,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Health Care",
     "industry": "Health Care Distributors"
   },
-  "headlines": [
-    {
-      "title": "A Legacy of Brighter Smiles: Celebrating 24 Years of the Give Kids A Smile Program",
-      "url": "https://www.businesswire.com/news/home/20260204794070/en/A",
-      "publisher": "Business Wire",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Henry Schein to Webcast Fourth Quarter 2025 Conference Call on Tuesday, February 24, 2026, at 8:00 A.M. ET",
-      "url": "https://www.businesswire.com/news/home/20260119178944/en",
-      "publisher": "Business Wire",
-      "date": "2026-01-22",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Here's What to Expect From Henry Schein's Next Earnings Report",
-      "url": "https://finance.yahoo.com/m/f770fbf7-6bfb-3d19-a440-60deef08761d/here%27s-what-to-expect-from.html",
-      "publisher": "Barchart",
-      "date": "2026-01-20",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Henry Schein Enters Exclusive Distribution Agreement for CytoChip's CLIA-Waived Hematology Analyzer",
-      "url": "https://www.businesswire.com/news/home/20260115495488/en",
-      "publisher": "Business Wire",
-      "date": "2026-01-15",
-      "sentiment": "positive"
-    },
-    {
-      "title": "3 Reasons to Sell HSIC and 1 Stock to Buy Instead",
-      "url": "/news/277519/3-reasons-to-sell-hsic-and-1-stock-to-buy-instead",
-      "publisher": "StockStory",
-      "date": "2026-01-14",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "JPM26: Henry Schein focuses on high-margin, high-growth business as new CEO announced",
-      "url": "https://finance.yahoo.com/m/70062b32-7739-322c-89fc-7cd06ce88af7/jpm26%3A-henry-schein-focuses.html",
-      "publisher": "Medical Device Network",
-      "date": "2026-01-14",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Why Henry Schein (HSIC) is a Top Value Stock for the Long-Term",
-      "url": "/news/274975/why-henry-schein-hsic-is-a-top-value-stock-for-the-long-term",
-      "publisher": "Zacks",
-      "date": "2026-01-13",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Equity Indexes Recover Early Losses as Precious Metals Reach New Record Highs",
-      "url": "https://finance.yahoo.com/m/b8a57aed-a1b4-3de0-9a35-8912570f7640/equity-indexes-recover-early.html",
-      "publisher": "Barchart",
-      "date": "2026-01-12",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Stocks Retreat on Concerns Over Fed Independence",
-      "url": "https://finance.yahoo.com/m/d2f8bfbc-e795-319c-9333-6fcf2f266621/stocks-retreat-on-concerns.html",
-      "publisher": "Barchart",
-      "date": "2026-01-12",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Henry Schein Names Frederick M. Lowery as Chief Executive Officer",
-      "url": "https://www.businesswire.com/news/home/20260111291084/en",
-      "publisher": "Business Wire",
-      "date": "2026-01-12",
-      "sentiment": "negative"
-    },
-    {
-      "title": "HSIC or SAUHY: Which Is the Better Value Stock Right Now?",
-      "url": "/news/268578/hsic-or-sauhy-which-is-the-better-value-stock-right-now",
-      "publisher": "Zacks",
-      "date": "2026-01-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "New Henry Schein CEO expected by mid-January as Bergman extends tenure",
-      "url": "https://finance.yahoo.com/m/ea938f37-1c0f-33f4-ad24-6c26feec4779/new-henry-schein-ceo-expected.html",
-      "publisher": "MedTech Dive",
-      "date": "2026-01-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Henry Schein to Participate in the J.P. Morgan Conference in January",
-      "url": "https://www.businesswire.com/news/home/20251223974996/en/",
-      "publisher": "Business Wire",
-      "date": "2025-12-29",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Are You a Momentum Investor? This 1 Stock Could Be the Perfect Pick",
-      "url": "/news/262570/are-you-a-momentum-investor-this-1-stock-could-be-the-perfect-pick",
-      "publisher": "Zacks",
-      "date": "2025-12-26",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Henry Schein Provides Update on CEO Search Process",
-      "url": "https://www.businesswire.com/news/home/20251223254481/en",
-      "publisher": "Business Wire",
-      "date": "2025-12-23",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "How Is Henry Schein's Stock Performance Compared to Other Healthcare Stocks?",
-      "url": "https://finance.yahoo.com/m/6e3153d3-fed2-3216-a71d-40eb3c2ac3a8/how-is-henry-schein%27s-stock.html",
-      "publisher": "Barchart",
-      "date": "2025-12-18",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Why Henry Schein (HSIC) Stock Is Up Today",
-      "url": "/news/250009/why-henry-schein-hsic-stock-is-up-today",
-      "publisher": "StockStory",
-      "date": "2025-12-09",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Henry Schein, Inc. (HSIC): A Bull Case Theory",
-      "url": "/news/249923/henry-schein-inc-hsic-a-bull-case-theory",
-      "publisher": "Insider Monkey",
-      "date": "2025-12-09",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Why Is Henry Schein (HSIC) Up 1.2% Since Last Earnings Report?",
-      "url": "/news/245945/why-is-henry-schein-hsic-up-12-since-last-earnings-report",
-      "publisher": "Zacks",
-      "date": "2025-12-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Q3 Rundown: Henry Schein (NASDAQ:HSIC) Vs Other Dental Equipment & Technology Stocks",
-      "url": "/news/245225/q3-rundown-henry-schein-nasdaq-hsic-vs-other-dental-equipment-technology-stocks",
-      "publisher": "StockStory",
-      "date": "2025-12-03",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

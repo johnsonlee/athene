@@ -6271,8 +6271,8 @@
     "debt_equity_score": 69.7705,
     "fcf_yield_score": 52.151553951402846,
     "current_ratio_score": 70.76,
-    "safety_score": 57.39180871140763,
-    "fundamental_score": 55.71359765577359,
+    "safety_score": 57.38850000000001,
+    "fundamental_score": 55.71293591349206,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 35.82617163197109,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.07904247665290681,
-    "sentiment_pos": 0.03555,
-    "sentiment_neg": 0.015099999999999999,
-    "sentiment_neu": 0.9493,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 53.95
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.21428571428571427,
     "target_upside": 0.3118440779610195,
@@ -6332,7 +6324,7 @@
     "value_score": 56.21984365396826,
     "quality_score": 58.93424999999999,
     "growth_score": 50.0,
-    "safety_score": 57.39180871140763,
+    "safety_score": 57.38850000000001,
     "trend_score": 30.516826106749413,
     "momentum_score": 37.55042590845768,
     "volatility_score": 27.029980137044838,
@@ -6353,22 +6345,22 @@
     "earnings_visibility": 51.3821375,
     "valuation_margin": 51.64895309619047,
     "catalyst_timeline": 43.11193238364393,
-    "downside_control": 47.446268327267866,
-    "composite_score": 46.58804136983106,
+    "downside_control": 47.44577202055672,
+    "composite_score": 46.587942108488825,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 55.71359765577359,
+    "fundamental_score": 55.71293591349206,
     "technical_score": 35.82617163197109,
-    "sentiment_score": 53.95,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 459,
-    "percentile": 0.11753371868978806,
+    "rank": 460,
+    "percentile": 0.11560693641618497,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6377,146 +6369,5 @@
     "sector": "Information Technology",
     "industry": "Application Software"
   },
-  "headlines": [
-    {
-      "title": "Tech stocks have been shaky, but these 20 companies could still see rocketing sales growth",
-      "url": "https://www.marketwatch.com/story/tech-stocks-have-been-shaky-but-these-20-companies-could-still-see-rocketing-sales-growth-148195c9?mod=mw_FV",
-      "publisher": "MarketWatch",
-      "date": "2026-02-07",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Edgewater Wireless Issues 2026 Corporate Update",
-      "url": "https://www.businesswire.com/news/home/20260205541713/en/",
-      "publisher": "Business Wire",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Nvidia's Huang Says It's 'Illogical' to Think AI Will Replace Software Tools",
-      "url": "https://finance.yahoo.com/m/8dede680-1bde-36d4-8d3f-8b4cc1a7fc3b/nvidia%27s-huang-says-it%27s.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Nvidia CEO Jensen Huang Says It's 'Illogical' to Think AI Will Replace Software Tools",
-      "url": "https://finance.yahoo.com/m/8dede680-1bde-36d4-8d3f-8b4cc1a7fc3b/nvidia-ceo-jensen-huang-says.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Analyst Report: Synopsys, Inc.",
-      "url": "https://finance.yahoo.com/m/7d4d255c-2bce-36ce-9fe2-ffb0667ed2d1/analyst-report%3A-synopsys%2C-inc..html",
-      "publisher": "Morningstar Research",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Synopsys, Inc. (SNPS): A Bull Case Theory",
-      "url": "/news/296526/synopsys-inc-snps-a-bull-case-theory",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "4 Software Stocks Set to Pull Off a Beat This Earnings Season",
-      "url": "/news/295528/4-software-stocks-set-to-pull-off-a-beat-this-earnings-season",
-      "publisher": "Zacks",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Synopsys (SNPS) Falls More Steeply Than Broader Market: What Investors Need to Know",
-      "url": "/news/292787/synopsys-snps-falls-more-steeply-than-broader-market-what-investors-need-to-know",
-      "publisher": "Zacks",
-      "date": "2026-01-29",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Lightmatter advances AI infrastructure with photonic interconnects in 2026",
-      "url": "https://www.digitimes.com/news/a20260128VL203/infrastructure-2026-cpo-taiwan-bandwidth.html",
-      "publisher": "DigiTimes",
-      "date": "2026-01-27",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Synopsys Announces Earnings Release Date for First Quarter Fiscal Year 2026",
-      "url": "/news/288997/synopsys-announces-earnings-release-date-for-first-quarter-fiscal-year-2026",
-      "publisher": "PR Newswire",
-      "date": "2026-01-27",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Why Trump's South Korea Tariffs Add Fuel To Memory-Chip Crunch",
-      "url": "/news/288656/why-trumps-south-korea-tariffs-add-fuel-to-memory-chip-crunch",
-      "publisher": "Benzinga",
-      "date": "2026-01-27",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Cadence & Lightmatter Team Up to Scale Optical Connectivity for AI",
-      "url": "/news/288405/cadence-lightmatter-team-up-to-scale-optical-connectivity-for-ai",
-      "publisher": "Zacks",
-      "date": "2026-01-27",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Synopsys, Inc. (SNPS) Is a Trending Stock: Facts to Know Before Betting on It",
-      "url": "/news/288392/synopsys-inc-snps-is-a-trending-stock-facts-to-know-before-betting-on-it",
-      "publisher": "Zacks",
-      "date": "2026-01-27",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "These 2 Computer and Technology Stocks Could Beat Earnings: Why They Should Be on Your Radar",
-      "url": "/news/288352/these-2-computer-and-technology-stocks-could-beat-earnings-why-they-should-be-on-your-radar",
-      "publisher": "Zacks",
-      "date": "2026-01-27",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "AI Is Eating World's Memory And SK Hynix, Samsung, Micron Are Getting Rich",
-      "url": "/news/287144/ai-is-eating-worlds-memory-and-sk-hynix-samsung-micron-are-getting-rich",
-      "publisher": "Benzinga",
-      "date": "2026-01-26",
-      "sentiment": "positive"
-    },
-    {
-      "title": "MIPS expands RISC-V processor platform with ARC IP integration",
-      "url": "https://www.digitimes.com/news/a20260121VL207/mips-risc-v-embedded-processor-ip-globalfoundries.html",
-      "publisher": "DigiTimes",
-      "date": "2026-01-25",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Synopsys (SNPS) Stock Falls Amid Market Uptick: What Investors Need to Know",
-      "url": "/news/285867/synopsys-snps-stock-falls-amid-market-uptick-what-investors-need-to-know",
-      "publisher": "Zacks",
-      "date": "2026-01-23",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Cadence Unveils HiFi iQ DSP to Power Next-Gen Voice AI and Audio",
-      "url": "/news/283964/cadence-unveils-hifi-iq-dsp-to-power-next-gen-voice-ai-and-audio",
-      "publisher": "Zacks",
-      "date": "2026-01-22",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Markets Rally As Trump Drops Greenland's Tariff Threat: These 10 Stocks Are Soaring",
-      "url": "/news/282895/markets-rally-as-trump-drops-greenlands-tariff-threat-these-10-stocks-are-soaring",
-      "publisher": "Benzinga",
-      "date": "2026-01-21",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Nvidia, Broadcom, Micron Stocks Jump -- JPMorgan Flags as Top Chip Picks",
-      "url": "https://finance.yahoo.com/news/nvidia-broadcom-micron-stocks-jump-192512678.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-01-21",
-      "sentiment": "positive"
-    }
-  ]
+  "headlines": []
 }

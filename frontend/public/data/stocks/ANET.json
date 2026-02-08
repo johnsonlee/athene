@@ -6271,8 +6271,8 @@
     "debt_equity_score": 50.0,
     "fcf_yield_score": 45.73208909936085,
     "current_ratio_score": 85.0,
-    "safety_score": 54.62655871140762,
-    "fundamental_score": 64.96378166561486,
+    "safety_score": 54.62325,
+    "fundamental_score": 64.96311992333334,
     "fund_data_completeness": 0.9166666666666666
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 49.95211953365582,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.24979658835242569,
-    "sentiment_pos": 0.1321,
-    "sentiment_neg": 0.007549999999999999,
-    "sentiment_neu": 0.8603500000000001,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 62.49
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.5,
     "target_upside": 0.20008727907484172,
@@ -6332,7 +6324,7 @@
     "value_score": 29.453879693333334,
     "quality_score": 90.00000000000001,
     "growth_score": 78.7,
-    "safety_score": 54.62655871140762,
+    "safety_score": 54.62325,
     "trend_score": 63.05554225042804,
     "momentum_score": 54.732396337344305,
     "volatility_score": 23.078689786620586,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 84.203,
     "valuation_margin": 29.801163908,
     "catalyst_timeline": 59.8909924186725,
-    "downside_control": 43.435787274704225,
-    "composite_score": 56.69811569638691,
+    "downside_control": 43.43529096799308,
+    "composite_score": 56.69801643504467,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 64.96378166561486,
+    "fundamental_score": 64.96311992333334,
     "technical_score": 49.95211953365582,
-    "sentiment_score": 62.49,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Information Technology",
     "industry": "Communications Equipment"
   },
-  "headlines": [
-    {
-      "title": "These 7 Stocks Are Analyst Favorites For Magnificent Earnings Growth; Google Test Entry As Data Center Play Shines",
-      "url": "https://finance.yahoo.com/m/2b47c372-177e-3051-aa01-406a8d82b220/these-7-stocks-are-analyst.html",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-02-07",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Apple, GE Aerospace Lead Five Stocks Flashing Buy Signals",
-      "url": "https://www.investors.com/news/apple-stock-ge-aerospace-stocks-buy-signals?mod=IBD_FV",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Super Bowl LX, Coinbase earnings, jobs data & CPI: What to Watch",
-      "url": "https://finance.yahoo.com/video/super-bowl-lx-coinbase-earnings-000012395.html",
-      "publisher": "Yahoo Finance Video",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Dow Jones Tops 50,000 As Apple, Boeing, JPMorgan Flash Buy Signals; Is AI Trade Reviving?",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-50000-apple-boeing-jpmorgan-ai-stocks?mod=IBD_FV",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Insurance Leader Hamilton Breaks Out Amid Stock Market Volatility",
-      "url": "https://www.investors.com/stock-lists/ipo-analysis/hamilton-stock-hg-insurance-breakout-amid-market-weakness-investing?mod=IBD_FV",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Monolithic Power's Q4 Earnings Surpass Estimates on Record Revenues",
-      "url": "/news/303205/monolithic-powers-q4-earnings-surpass-estimates-on-record-revenues",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Viasat Q3 Earnings Surpass Estimates, Revenues Increase Y/Y",
-      "url": "/news/303169/viasat-q3-earnings-surpass-estimates-revenues-increase-yy",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Paylocity Q2 Earnings Beat Estimates, Revenues Increase Y/Y",
-      "url": "/news/303066/paylocity-q2-earnings-beat-estimates-revenues-increase-yy",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Lightspeed Commerce Q3 Earnings Beat Estimates, Revenues Rise Y/Y",
-      "url": "/news/303067/lightspeed-commerce-q3-earnings-beat-estimates-revenues-rise-yy",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Arrow Electronics Q4 Earnings Beat Estimates, Revenues Rise Y/Y",
-      "url": "/news/303047/arrow-electronics-q4-earnings-beat-estimates-revenues-rise-yy",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Fortinet Q4 Earnings & Revenues Beat Estimates, Increase Y/Y",
-      "url": "/news/303033/fortinet-q4-earnings-revenues-beat-estimates-increase-yy",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Cisco Stock Holds Strong Amid Tech Selling As Earnings Come Into Focus",
-      "url": "https://www.investors.com/research/earnings-preview/cisco-stock-holds-strong-amid-tech-selling-as-earnings-come-into-focus?mod=IBD_FV",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Reddit Q4 Earnings Beat Estimates, Revenues Up Y/Y, Shares Rise",
-      "url": "/news/303006/reddit-q4-earnings-beat-estimates-revenues-up-yy-shares-rise",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Gen Digital Q3 Earnings Surpass Expectations, Revenues Rise Y/Y",
-      "url": "/news/302997/gen-digital-q3-earnings-surpass-expectations-revenues-rise-yy",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Atlassian Q2 Earnings Surpass Expectations, Revenues Rise Y/Y",
-      "url": "/news/302991/atlassian-q2-earnings-surpass-expectations-revenues-rise-yy",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "InterDigital Beats Q4 Earnings Estimates Despite Lower Y/Y Revenues",
-      "url": "/news/302615/interdigital-beats-q4-earnings-estimates-despite-lower-yy-revenues",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "9 S&P 500 Stocks Spend On The Future Like They Know A Boom Is Near",
-      "url": "https://finance.yahoo.com/m/79eb98b2-89c9-3d31-b06d-dad9c0b9f1d4/9-s%26p-500-stocks-spend-on-the.html",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Arista Networks Stock Outlook: Is Wall Street Bullish or Bearish?",
-      "url": "https://finance.yahoo.com/m/7649acdb-f529-3a85-b415-119971bae4dd/arista-networks-stock.html",
-      "publisher": "Barchart",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Carrier Global Q4 Earnings & Revenues Miss Estimates, Stock Down",
-      "url": "/news/301985/carrier-global-q4-earnings-revenues-miss-estimates-stock-down",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Alphabet's Q4 Earnings Beat Estimates, Revenues Increase Y/Y",
-      "url": "/news/301964/alphabets-q4-earnings-beat-estimates-revenues-increase-yy",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    }
-  ]
+  "headlines": []
 }

@@ -6271,8 +6271,8 @@
     "debt_equity_score": 58.1834,
     "fcf_yield_score": 63.133188358806365,
     "current_ratio_score": 83.61,
-    "safety_score": 60.49815289081081,
-    "fundamental_score": 60.66161846705105,
+    "safety_score": 60.49484417940319,
+    "fundamental_score": 60.66095672476953,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 60.27309082798218,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.17216130046263148,
-    "sentiment_pos": 0.12304999999999999,
-    "sentiment_neg": 0.0158,
-    "sentiment_neu": 0.86115,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 58.61
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": null,
     "target_upside": 0.0037591765238442505,
@@ -6332,7 +6324,7 @@
     "value_score": 60.14880155555554,
     "quality_score": 62.495125,
     "growth_score": 59.105,
-    "safety_score": 60.49815289081081,
+    "safety_score": 60.49484417940319,
     "trend_score": 53.993121341559124,
     "momentum_score": 67.58722930064542,
     "volatility_score": 68.99492817660409,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 59.134018749999996,
     "valuation_margin": 55.760640466666665,
     "catalyst_timeline": 56.93077074097063,
-    "downside_control": 67.77996216011223,
-    "composite_score": 60.72545631540653,
+    "downside_control": 67.77946585340109,
+    "composite_score": 60.7253570540643,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 60.66161846705105,
+    "fundamental_score": 60.66095672476953,
     "technical_score": 60.27309082798218,
-    "sentiment_score": 58.61,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Financials",
     "industry": "Multi-Sector Holdings"
   },
-  "headlines": [
-    {
-      "title": "Miners Win as China's Export Ban Triggers 54-Nation Pact Reshaping Critical Minerals",
-      "url": "/news/303152/miners-win-as-chinas-export-ban-triggers-54-nation-pact-reshaping-critical-minerals",
-      "publisher": "PR Newswire",
-      "date": "2026-02-06",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Berkshire Is Scoring Big With Japanese Trading Companies: 5 Stocks Worth Almost $40 Billion",
-      "url": "https://www.barrons.com/articles/berkshire-stock-japanese-trading-companies-5eb8cc97?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Revisiting Stock Picks Berkshire Hathaway, Deere, Vita Coco. What the Charts Say.",
-      "url": "https://www.barrons.com/articles/revisiting-stock-picks-berkshire-hathaway-deere-vita-coco-charts-12c2f711?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Berkshire Stock Is Shining as Investors Go Defensive. $350 Billion of Cash Is Helping.",
-      "url": "https://www.barrons.com/articles/berkshire-hathaway-stock-gains-defensive-237cfc12?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "What Happens if You Invest $500 in This Stock and Hold It for 10 Years? (Hint: Warren Buffett Will Be Very Interested in the Answer)",
-      "url": "/news/298859/what-happens-if-you-invest-500-in-this-stock-and-hold-it-for-10-years-hint-warren-buffett-will-be-very-interested-in-the-answer",
-      "publisher": "Motley Fool",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Warren Buffett Knocked Out Of Top 10 Richest People List Thanks To Walmart",
-      "url": "/news/298346/warren-buffett-knocked-out-of-top-10-richest-people-list-thanks-to-walmart",
-      "publisher": "Benzinga",
-      "date": "2026-02-03",
-      "sentiment": "positive"
-    },
-    {
-      "title": "1 Reason Now Is a Great Time to Buy Berkshire Hathaway Stock",
-      "url": "/news/298217/1-reason-now-is-a-great-time-to-buy-berkshire-hathaway-stock",
-      "publisher": "Motley Fool",
-      "date": "2026-02-03",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Walmart just became a $1 trillion company. Here's what it needs to do to remain one.",
-      "url": "https://www.marketwatch.com/story/walmart-just-became-a-1-trillion-company-heres-what-it-needs-to-do-to-remain-one-36b6f5d7?mod=mw_FV",
-      "publisher": "MarketWatch",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "This Berkshire Hathaway Holding Is Up 25%. Earnings Breeze Past Estimates.",
-      "url": "https://www.barrons.com/articles/davita-earnings-stock-price-berkshire-hathaway-e1d03506?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "2 Warren Buffett Stocks to Buy Hand Over Fist in February",
-      "url": "/news/296614/2-warren-buffett-stocks-to-buy-hand-over-fist-in-february",
-      "publisher": "Motley Fool",
-      "date": "2026-02-02",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Berkshire Hathaway B (BRK.B) Exceeds Market Returns: Some Facts to Consider",
-      "url": "/news/296272/berkshire-hathaway-b-brkb-exceeds-market-returns-some-facts-to-consider",
-      "publisher": "Zacks",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Why These 2 Stocks Remain My Top Stocks to Buy for 2026 and Beyond",
-      "url": "/news/295929/why-these-2-stocks-remain-my-top-stocks-to-buy-for-2026-and-beyond",
-      "publisher": "Motley Fool",
-      "date": "2026-02-02",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Your Big Advantage Over Warren Buffett",
-      "url": "/news/295158/your-big-advantage-over-warren-buffett",
-      "publisher": "Motley Fool",
-      "date": "2026-02-02",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Investing Legend Warren Buffett Sold 45% of Berkshire Hathaway's Bank of America Stake and Bought Shares of This Consumer Favorite for 5 Consecutive Quarters Before Retiring",
-      "url": "/news/294996/investing-legend-warren-buffett-sold-45-of-berkshire-hathaways-bank-of-america-stake-and-bought-shares-of-this-consumer-favorite-for-5-consecutive-quarters-before-retiring",
-      "publisher": "Motley Fool",
-      "date": "2026-02-02",
-      "sentiment": "positive"
-    },
-    {
-      "title": "How Long Can Equal-Weighted ETFs Keep Outperforming the S&P 500?",
-      "url": "/news/294736/how-long-can-equal-weighted-etfs-keep-outperforming-the-sp-500",
-      "publisher": "MarketBeat",
-      "date": "2026-02-01",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Before Retiring, Warren Buffett Made a $58 Billion-Plus Bet on One Sector. Now, That Investment Is Starting to Work.",
-      "url": "/news/294727/before-retiring-warren-buffett-made-a-58-billion-plus-bet-on-one-sector-now-that-investment-is-starting-to-work",
-      "publisher": "Motley Fool",
-      "date": "2026-02-01",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "1 Reason Now is a Great Time to Buy Berkshire Hathaway [BRK.B] Stock",
-      "url": "/news/294720/1-reason-now-is-a-great-time-to-buy-berkshire-hathaway-brkb-stock",
-      "publisher": "Motley Fool",
-      "date": "2026-02-01",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Prediction: This Will Be Berkshire Hathaway's Stock Price 5 Years From Now",
-      "url": "/news/294435/prediction-this-will-be-berkshire-hathaways-stock-price-5-years-from-now",
-      "publisher": "Motley Fool",
-      "date": "2026-01-31",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Jim Cramer Makes Major Prediction For Berkshire Hathaway (BRK-B)",
-      "url": "/news/294389/jim-cramer-makes-major-prediction-for-berkshire-hathaway-brk-b",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-31",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "MarketBeat Week in Review - 01/26 - 01/30",
-      "url": "/news/294383/marketbeat-week-in-review-0126-0130",
-      "publisher": "MarketBeat",
-      "date": "2026-01-31",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

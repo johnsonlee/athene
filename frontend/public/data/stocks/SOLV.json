@@ -3807,8 +3807,8 @@
     "debt_equity_score": 45.788799999999995,
     "fcf_yield_score": 62.58045278651576,
     "current_ratio_score": 68.0,
-    "safety_score": 52.4167851046655,
-    "fundamental_score": 70.28104769712358,
+    "safety_score": 52.41347639325788,
+    "fundamental_score": 70.28038595484205,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -3842,15 +3842,7 @@
     "technical_score": 54.103347518579305,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.10587114618710226,
-    "sentiment_pos": 0.11465,
-    "sentiment_neg": 0.032850000000000004,
-    "sentiment_neu": 0.8525,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 55.29
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.6,
     "target_upside": 0.17127496159754219,
@@ -3868,7 +3860,7 @@
     "value_score": 74.02811270476191,
     "quality_score": 81.906375,
     "growth_score": 66.875,
-    "safety_score": 52.4167851046655,
+    "safety_score": 52.41347639325788,
     "trend_score": 52.7070614630119,
     "momentum_score": 58.795398870079936,
     "volatility_score": 53.263047093258784,
@@ -3889,15 +3881,15 @@
     "earnings_visibility": 69.72120625,
     "valuation_margin": 70.47343381142858,
     "catalyst_timeline": 55.817889372018854,
-    "downside_control": 54.57597482968864,
-    "composite_score": 65.8413941266347,
+    "downside_control": 54.57547852297749,
+    "composite_score": 65.84129486529247,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 70.28104769712358,
+    "fundamental_score": 70.28038595484205,
     "technical_score": 54.103347518579305,
-    "sentiment_score": 55.29,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -3913,146 +3905,5 @@
     "sector": "Health Care",
     "industry": "Health Care Technology"
   },
-  "headlines": [
-    {
-      "title": "Analyst Report: Solventum Corporation",
-      "url": "https://finance.yahoo.com/m/8aa7828b-3c44-3114-b4f7-f4dc6d1ad4d3/analyst-report%3A-solventum.html",
-      "publisher": "Morningstar Research",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Solventum to Report Fourth Quarter and Full Year Fiscal 2025 Earnings on February 26, 2026",
-      "url": "/news/298081/solventum-to-report-fourth-quarter-and-full-year-fiscal-2025-earnings-on-february-26-2026",
-      "publisher": "PR Newswire",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Here's Why Diamond Hill Large Cap Fund Added Solventum (SOLV) to Its Portfolio",
-      "url": "/news/297093/heres-why-diamond-hill-large-cap-fund-added-solventum-solv-to-its-portfolio",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-03",
-      "sentiment": "positive"
-    },
-    {
-      "title": "What You Need To Know Ahead of Solventum Earnings Release",
-      "url": "https://finance.yahoo.com/m/8eaa41e4-20d2-3424-8876-d3d8d1ef3561/what-you-need-to-know-ahead.html",
-      "publisher": "Barchart",
-      "date": "2026-01-22",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Analyst Report: 3M Company",
-      "url": "https://finance.yahoo.com/m/37c6e0c1-295e-3526-b830-2834d709525e/analyst-report%3A-3m-company.html",
-      "publisher": "Morningstar Research",
-      "date": "2026-01-20",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "3 Reasons SOLV is Risky and 1 Stock to Buy Instead",
-      "url": "/news/275877/3-reasons-solv-is-risky-and-1-stock-to-buy-instead",
-      "publisher": "StockStory",
-      "date": "2026-01-13",
-      "sentiment": "negative"
-    },
-    {
-      "title": "JPM26: ThermoFisher very positive on strategic M&A as deals expand capabilities",
-      "url": "https://finance.yahoo.com/m/22519448-5757-3ef8-bce3-2030e24a0965/jpm26%3A%C2%A0thermofisher%C2%A0%E2%80%98very.html",
-      "publisher": "Pharmaceutical Technology",
-      "date": "2026-01-13",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Are Medical Stocks Lagging  Solventum Corporation (SOLV) This Year?",
-      "url": "/news/264374/are-medical-stocks-lagging-solventum-corporation-solv-this-year",
-      "publisher": "Zacks",
-      "date": "2025-12-30",
-      "sentiment": "negative"
-    },
-    {
-      "title": "SOLV Acquires Acera Surgical to Expand Advanced Wound Care Portfolio",
-      "url": "/news/262028/solv-acquires-acera-surgical-to-expand-advanced-wound-care-portfolio",
-      "publisher": "Zacks",
-      "date": "2025-12-24",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Solventum Completes Acquisition of Acera Surgical",
-      "url": "/news/261326/solventum-completes-acquisition-of-acera-surgical",
-      "publisher": "PR Newswire",
-      "date": "2025-12-23",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Global Expert Panel Publishes New Recommendations on Advanced Use of Closed Incision Negative Pressure Therapy",
-      "url": "/news/256693/global-expert-panel-publishes-new-recommendations-on-advanced-use-of-closed-incision-negative-pressure-therapy",
-      "publisher": "PR Newswire",
-      "date": "2025-12-17",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Solventum Earns Diamond Level HIRC Resiliency Badge, Demonstrating Best-In-Class Supply Chain Strength",
-      "url": "/news/255616/solventum-earns-diamond-level-hirc-resiliency-badge-demonstrating-best-in-class-supply-chain-strength",
-      "publisher": "PR Newswire",
-      "date": "2025-12-16",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Is Solventum Stock Outperforming the Nasdaq?",
-      "url": "https://finance.yahoo.com/m/39a22f18-039c-37f1-81db-6c156fc68532/is-solventum-stock.html",
-      "publisher": "Barchart",
-      "date": "2025-12-16",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Should You Add Solventum Corp (SOLV) to Your Portfolio?",
-      "url": "/news/250554/should-you-add-solventum-corp-solv-to-your-portfolio",
-      "publisher": "Insider Monkey",
-      "date": "2025-12-10",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Solventum Corporation (SOLV): A Bull Case Theory",
-      "url": "/news/249954/solventum-corporation-solv-a-bull-case-theory",
-      "publisher": "Insider Monkey",
-      "date": "2025-12-09",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "BD Stock Up Post Tie-Up to Expand Hazardous Drug Contamination Testing",
-      "url": "/news/247183/bd-stock-up-post-tie-up-to-expand-hazardous-drug-contamination-testing",
-      "publisher": "Zacks",
-      "date": "2025-12-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "These Are the 3 Hottest Stocks in the S&P 500 Heading Into the New Year. Should You Invest in Them?",
-      "url": "/news/246481/these-are-the-3-hottest-stocks-in-the-sp-500-heading-into-the-new-year-should-you-invest-in-them",
-      "publisher": "Motley Fool",
-      "date": "2025-12-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "HIMS Stock Jumps After Buyout Deal, Boosts Blood Collection Efficiency",
-      "url": "/news/246022/hims-stock-jumps-after-buyout-deal-boosts-blood-collection-efficiency",
-      "publisher": "Zacks",
-      "date": "2025-12-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Up Over 20% in 2025, These 3 Stocks Are Boosting Buyback Capacity",
-      "url": "/news/242660/up-over-20-in-2025-these-3-stocks-are-boosting-buyback-capacity",
-      "publisher": "MarketBeat",
-      "date": "2025-12-01",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Solventum to Participate in the 2025 Piper Sandler Healthcare Conference",
-      "url": "/news/239022/solventum-to-participate-in-the-2025-piper-sandler-healthcare-conference",
-      "publisher": "PR Newswire",
-      "date": "2025-11-25",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

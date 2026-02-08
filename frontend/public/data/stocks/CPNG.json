@@ -6271,8 +6271,8 @@
     "debt_equity_score": 45.2452,
     "fcf_yield_score": 57.55082763874883,
     "current_ratio_score": 47.760000000000005,
-    "safety_score": 39.78197253078204,
-    "fundamental_score": 52.027611289839875,
+    "safety_score": 39.77866381937442,
+    "fundamental_score": 52.02694954755835,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 29.46725977092439,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.07225087371286797,
-    "sentiment_pos": 0.1156,
-    "sentiment_neg": 0.0524,
-    "sentiment_neu": 0.8320000000000001,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 53.61
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.8058690744920994,
@@ -6332,7 +6324,7 @@
     "value_score": 44.08501084901962,
     "quality_score": 42.858213571428564,
     "growth_score": 80.77,
-    "safety_score": 39.78197253078204,
+    "safety_score": 39.77866381937442,
     "trend_score": 9.31577564725095,
     "momentum_score": 40.692547394907436,
     "volatility_score": 22.323814291384366,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 56.61023203571429,
     "valuation_margin": 38.43950325470588,
     "catalyst_timeline": 40.64395230421584,
-    "downside_control": 37.17586802332496,
-    "composite_score": 40.861529435437866,
+    "downside_control": 37.17537171661381,
+    "composite_score": 40.86143017409562,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 52.027611289839875,
+    "fundamental_score": 52.02694954755835,
     "technical_score": 29.46725977092439,
-    "sentiment_score": 53.61,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Consumer Cyclical",
     "industry": "Internet Retail"
   },
-  "headlines": [
-    {
-      "title": "BYDs $60 Billion Wipeout Points to Deeper Turmoil for China EVs",
-      "url": "https://finance.yahoo.com/news/byd-60-billion-wipeout-points-045921915.html",
-      "publisher": "Bloomberg",
-      "date": "2026-02-05",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Coupang, Inc. (CPNG)'s Growth Engine Remains Intact Despite Temporary Uncertainty",
-      "url": "/news/301630/coupang-inc-cpngs-growth-engine-remains-intact-despite-temporary-uncertainty",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Microsoft downgraded, Snap upgraded: Wall Street's top analyst calls",
-      "url": "https://finance.yahoo.com/news/microsoft-downgraded-snap-upgraded-wall-151235143.html",
-      "publisher": "The Fly",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Here Are Thursdays Top Wall Street Analyst Research Calls: CAVA Group, DigitalOcean, Fox Corp, Jack Henry, Microsoft, Qualcomm, Snap, Zoom Communications, and More",
-      "url": "https://finance.yahoo.com/m/7943495b-3e50-307f-bf36-03b396f8bb9a/here-are-thursday%E2%80%99s-top-wall.html",
-      "publisher": "24/7 Wall St.",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Coupang confirms more data leaks which South Korean aide says has 'shaken' US ties",
-      "url": "https://finance.yahoo.com/news/coupang-confirms-personal-data-165-085834770.html",
-      "publisher": "Reuters",
-      "date": "2026-02-05",
-      "sentiment": "negative"
-    },
-    {
-      "title": "2 of Wall Street's Favorite Stocks on Our Watchlist and 1 Facing Headwinds",
-      "url": "/news/298742/2-of-wall-streets-favorite-stocks-on-our-watchlist-and-1-facing-headwinds",
-      "publisher": "StockStory",
-      "date": "2026-02-03",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Coupang, Inc. (CPNG) Declines More Than Market: Some Information for Investors",
-      "url": "/news/298353/coupang-inc-cpng-declines-more-than-market-some-information-for-investors",
-      "publisher": "Zacks",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Coupang, Inc. (CPNG): A Bull Case Theory",
-      "url": "/news/296389/coupang-inc-cpng-a-bull-case-theory",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Coupang, Inc. (CPNG) Is a Trending Stock: Facts to Know Before Betting on It",
-      "url": "/news/295591/coupang-inc-cpng-is-a-trending-stock-facts-to-know-before-betting-on-it",
-      "publisher": "Zacks",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "The Druckenmiller Connection: Meet the Man Behind Bessent and Warsh",
-      "url": "https://www.barrons.com/articles/stan-druckenmiller-bessent-warsh-fed-chair-507bd26b?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Coupang, Inc. (CPNG) Shares in Focus Amid Mixed Signals",
-      "url": "/news/294595/coupang-inc-cpng-shares-in-focus-amid-mixed-signals",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-31",
-      "sentiment": "positive"
-    },
-    {
-      "title": "The Nominee to Lead the Fed Must First Fire Corporate America",
-      "url": "https://www.barrons.com/articles/kevin-warsh-fed-ups-coupang-board-bcb691e0?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2026-01-30",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Stocks to Watch Wednesday Recap: Amazon, Nvidia,  Deutsche Bank",
-      "url": "https://finance.yahoo.com/m/0a6f935e-a763-3444-8f42-00c79f4d6577/stocks-to-watch-wednesday.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-01-28",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Tiffany Gonzalez from Bombyll to Speak at TechCon Southwest 2026",
-      "url": "https://finance.yahoo.com/news/tiffany-gonzalez-bombyll-speak-techcon-215700044.html",
-      "publisher": "TMX Newsfile",
-      "date": "2026-01-28",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Stocks to Watch Wednesday: Amazon, Nvidia,  Deutsche Bank",
-      "url": "https://finance.yahoo.com/m/0a6f935e-a763-3444-8f42-00c79f4d6577/stocks-to-watch-wednesday%3A.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-01-28",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Trump Warns South Korea on Trade Deal as 25% Tariffs Loom",
-      "url": "https://finance.yahoo.com/news/trump-warns-south-korea-trade-154657408.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-01-28",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Stocks to Watch Wednesday: Amazon, Nvidia, Alibaba",
-      "url": "https://www.wsj.com/livecoverage/fed-interest-rate-decision-01-28-2026/card/stocks-to-watch-wednesday-nvidia-softbank-YxSGpJ6KdlVJN9dpU0EI?mod=wsj_FV",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-01-28",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Coupang (CPNG) Is Considered a Good Investment by Brokers: Is That True?",
-      "url": "/news/290180/coupang-cpng-is-considered-a-good-investment-by-brokers-is-that-true",
-      "publisher": "Zacks",
-      "date": "2026-01-28",
-      "sentiment": "positive"
-    },
-    {
-      "title": "U.S. Tries to Protect Tech Firms From South Korean Pressure",
-      "url": "https://finance.yahoo.com/m/e8c36e25-b226-3bb9-97b6-86c94f218376/u.s.-tries-to-protect-tech.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-01-27",
-      "sentiment": "positive"
-    },
-    {
-      "title": "U.S. Warns Korea Against Targeting American Tech Firms Amid Trade Escalation",
-      "url": "https://finance.yahoo.com/m/09726b82-bd4a-3482-ac1c-9f6a93d72a5e/u.s.-warns-korea-against.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-01-27",
-      "sentiment": "negative"
-    }
-  ]
+  "headlines": []
 }

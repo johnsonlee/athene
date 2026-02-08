@@ -6271,8 +6271,8 @@
     "debt_equity_score": 15.0,
     "fcf_yield_score": 84.18755536992722,
     "current_ratio_score": 19.139999999999997,
-    "safety_score": 38.79033639637123,
-    "fundamental_score": 67.32113453284566,
+    "safety_score": 38.78702768496361,
+    "fundamental_score": 67.32047279056414,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 37.117564941441174,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": -0.011678576571493647,
-    "sentiment_pos": 0.1101,
-    "sentiment_neg": 0.0449,
-    "sentiment_neu": 0.84505,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 49.42
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.7743262703147501,
@@ -6332,7 +6324,7 @@
     "value_score": 75.06043329999999,
     "quality_score": 80.639625,
     "growth_score": 66.42428571428572,
-    "safety_score": 38.79033639637123,
+    "safety_score": 38.78702768496361,
     "trend_score": 13.506516849026795,
     "momentum_score": 50.75578276321237,
     "volatility_score": 39.19437528884714,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 72.43158660714285,
     "valuation_margin": 63.67112999,
     "catalyst_timeline": 44.17760496122391,
-    "downside_control": 38.990706752782756,
-    "composite_score": 56.85243159045225,
+    "downside_control": 38.990210446071615,
+    "composite_score": 56.85233232911001,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 67.32113453284566,
+    "fundamental_score": 67.32047279056414,
     "technical_score": 37.117564941441174,
-    "sentiment_score": 49.42,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Information Technology",
     "industry": "Internet Services & Infrastructure"
   },
-  "headlines": [
-    {
-      "title": "GoDaddy Stock: Analyst Estimates & Ratings",
-      "url": "https://finance.yahoo.com/m/b8ad440f-602a-300f-bd1c-e07845a25751/godaddy-stock%3A-analyst.html",
-      "publisher": "Barchart",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "QuinStreet (QNST) Beats Q2 Earnings and Revenue Estimates",
-      "url": "/news/302225/quinstreet-qnst-beats-q2-earnings-and-revenue-estimates",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "GoDaddy Inc. to Announce Fourth Quarter and Fiscal Year 2025 Financial Results on Tuesday, February 24, 2026",
-      "url": "/news/299244/godaddy-inc-to-announce-fourth-quarter-and-fiscal-year-2025-financial-results-on-tuesday-february-24-2026",
-      "publisher": "PR Newswire",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "These 10 Stocks Just Had Their Best Or Worst Month Ever - And You Might Not Know Why",
-      "url": "/news/293983/these-10-stocks-just-had-their-best-or-worst-month-ever-and-you-might-not-know-why",
-      "publisher": "Benzinga",
-      "date": "2026-01-30",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "GoDaddy (GDDY) Loses 18.4% in 4 Weeks, Here's Why a Trend Reversal May be Around the Corner",
-      "url": "/news/287043/godaddy-gddy-loses-184-in-4-weeks-heres-why-a-trend-reversal-may-be-around-the-corner",
-      "publisher": "Zacks",
-      "date": "2026-01-26",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Earnings Preview: What to Expect From GoDaddy's Report",
-      "url": "https://finance.yahoo.com/m/ae9f35ce-e9ac-3160-972c-74e41a71123a/earnings-preview%3A-what-to.html",
-      "publisher": "Barchart",
-      "date": "2026-01-16",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Down 8.3% in 4 Weeks, Here's Why GoDaddy (GDDY) Looks Ripe for a Turnaround",
-      "url": "/news/272109/down-83-in-4-weeks-heres-why-godaddy-gddy-looks-ripe-for-a-turnaround",
-      "publisher": "Zacks",
-      "date": "2026-01-09",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "1 S&P 500 Stock with Promising Prospects and 2 We Avoid",
-      "url": "/news/270829/1-sp-500-stock-with-promising-prospects-and-2-we-avoid",
-      "publisher": "StockStory",
-      "date": "2026-01-07",
-      "sentiment": "positive"
-    },
-    {
-      "title": "3 Reasons to Avoid GDDY and 1 Stock to Buy Instead",
-      "url": "/news/269197/3-reasons-to-avoid-gddy-and-1-stock-to-buy-instead",
-      "publisher": "StockStory",
-      "date": "2026-01-06",
-      "sentiment": "negative"
-    },
-    {
-      "title": "1 Cash-Producing Stock with Solid Fundamentals and 2 That Underwhelm",
-      "url": "/news/266379/1-cash-producing-stock-with-solid-fundamentals-and-2-that-underwhelm",
-      "publisher": "StockStory",
-      "date": "2026-01-01",
-      "sentiment": "positive"
-    },
-    {
-      "title": "GoDaddy (GDDY) Fell Due to Weakening Sales",
-      "url": "/news/264911/godaddy-gddy-fell-due-to-weakening-sales",
-      "publisher": "Insider Monkey",
-      "date": "2025-12-31",
-      "sentiment": "negative"
-    },
-    {
-      "title": "3 of Wall Street's Favorite Stocks That Concern Us",
-      "url": "/news/264315/3-of-wall-streets-favorite-stocks-that-concern-us",
-      "publisher": "StockStory",
-      "date": "2025-12-29",
-      "sentiment": "positive"
-    },
-    {
-      "title": "GoDaddy Inc. (GDDY) Launches Verified AI Agent Platform Amid Analyst Confidence in Growth Strategy",
-      "url": "/news/263492/godaddy-inc-gddy-launches-verified-ai-agent-platform-amid-analyst-confidence-in-growth-strategy",
-      "publisher": "Insider Monkey",
-      "date": "2025-12-29",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Wall Street Tout's GoDaddy Inc. (GDDY) Growth Metrics on Airo AI Offerings Prospects",
-      "url": "/news/263069/wall-street-touts-godaddy-inc-gddy-growth-metrics-on-airo-ai-offerings-prospects",
-      "publisher": "Insider Monkey",
-      "date": "2025-12-28",
-      "sentiment": "positive"
-    },
-    {
-      "title": "E-commerce Software Stocks Q3 Recap: Benchmarking GoDaddy (NYSE:GDDY)",
-      "url": "/news/261878/e-commerce-software-stocks-q3-recap-benchmarking-godaddy-nyse-gddy",
-      "publisher": "StockStory",
-      "date": "2025-12-23",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Implied Volatility Surging for GoDaddy Stock Options",
-      "url": "/news/260854/implied-volatility-surging-for-godaddy-stock-options",
-      "publisher": "Zacks",
-      "date": "2025-12-23",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Zacks Industry Outlook Highlights GoDaddy, MakeMyTrip and QuinStreet",
-      "url": "/news/260005/zacks-industry-outlook-highlights-godaddy-makemytrip-and-quinstreet",
-      "publisher": "Zacks",
-      "date": "2025-12-22",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Adobe and these 9 fellow tech stocks are rarely this cheap. Are they great deals or value traps?",
-      "url": "https://www.marketwatch.com/story/adobe-and-these-9-fellow-tech-stocks-are-rarely-this-cheap-are-they-great-deals-or-value-traps-ea450807?mod=mw_FV",
-      "publisher": "MarketWatch",
-      "date": "2025-12-20",
-      "sentiment": "positive"
-    },
-    {
-      "title": "3 Internet Delivery Services Stocks to Watch Amid Industry Challenges",
-      "url": "/news/258404/3-internet-delivery-services-stocks-to-watch-amid-industry-challenges",
-      "publisher": "Zacks",
-      "date": "2025-12-19",
-      "sentiment": "positive"
-    },
-    {
-      "title": "GoDaddy's New ANS Marketplace Tells You Which AI Agents You Can Trust",
-      "url": "/news/257834/godaddys-new-ans-marketplace-tells-you-which-ai-agents-you-can-trust",
-      "publisher": "PR Newswire",
-      "date": "2025-12-18",
-      "sentiment": "positive"
-    }
-  ]
+  "headlines": []
 }

@@ -6271,8 +6271,8 @@
     "debt_equity_score": 89.610375,
     "fcf_yield_score": 52.836164676303596,
     "current_ratio_score": 85.0,
-    "safety_score": 74.43174621140761,
-    "fundamental_score": 64.92402917978151,
+    "safety_score": 74.42843749999999,
+    "fundamental_score": 64.92336743749999,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 51.91981860587532,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.056472592883430234,
-    "sentiment_pos": 0.059250000000000004,
-    "sentiment_neg": 0.02615,
-    "sentiment_neu": 0.91465,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 52.82
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": -0.25,
     "target_upside": 0.1645193260654113,
@@ -6332,7 +6324,7 @@
     "value_score": 49.008519749999984,
     "quality_score": 82.956,
     "growth_score": 51.595,
-    "safety_score": 74.43174621140761,
+    "safety_score": 74.42843749999999,
     "trend_score": 38.429468115129296,
     "momentum_score": 57.82326549095794,
     "volatility_score": 65.21999262024573,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 68.09065,
     "valuation_margin": 46.13255592499999,
     "catalyst_timeline": 48.783587863416784,
-    "downside_control": 70.815760824748,
-    "composite_score": 59.23088824446517,
+    "downside_control": 70.81526451803686,
+    "composite_score": 59.230788983122935,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 64.92402917978151,
+    "fundamental_score": 64.92336743749999,
     "technical_score": 51.91981860587532,
-    "sentiment_score": 52.82,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Industrials",
     "industry": "Diversified Support Services"
   },
-  "headlines": [
-    {
-      "title": "As Copart Flails, This Rival Bids Up A Breakout. Day Of Judgment Nears.",
-      "url": "https://finance.yahoo.com/m/3a9c087a-d13d-332f-ac9a-71defbe99235/as-copart-flails%2C-this-rival.html",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Copart, Inc. (CPRT): A Bull Case Theory",
-      "url": "/news/300012/copart-inc-cprt-a-bull-case-theory",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Copart, Inc. (CPRT) Reinforces Financial Flexibility Amid Steady Operating Performance",
-      "url": "/news/298870/copart-inc-cprt-reinforces-financial-flexibility-amid-steady-operating-performance",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "2 Large-Cap Stocks for Long-Term Investors and 1 We Avoid",
-      "url": "/news/296764/2-large-cap-stocks-for-long-term-investors-and-1-we-avoid",
-      "publisher": "StockStory",
-      "date": "2026-02-02",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Copart, Inc. (CPRT) Stock Sinks As Market Gains: Here's Why",
-      "url": "/news/296354/copart-inc-cprt-stock-sinks-as-market-gains-heres-why",
-      "publisher": "Zacks",
-      "date": "2026-02-02",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Copart Stock Outlook: Is Wall Street Bullish or Bearish?",
-      "url": "https://finance.yahoo.com/m/2e95fe72-64aa-3379-8e95-e64488fedf32/copart-stock-outlook%3A-is-wall.html",
-      "publisher": "Barchart",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Copart, Inc. (CPRT) Stock Falls Amid Market Uptick: What Investors Need to Know",
-      "url": "/news/289265/copart-inc-cprt-stock-falls-amid-market-uptick-what-investors-need-to-know",
-      "publisher": "Zacks",
-      "date": "2026-01-27",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "2 Services Stocks Worth Investigating and 1 We Avoid",
-      "url": "/news/283410/2-services-stocks-worth-investigating-and-1-we-avoid",
-      "publisher": "StockStory",
-      "date": "2026-01-21",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Here's What to Expect From Coparts Next Earnings Report",
-      "url": "https://finance.yahoo.com/m/5655fbac-16c7-3fe2-b839-7388080c013c/here%27s-what-to-expect-from.html",
-      "publisher": "Barchart",
-      "date": "2026-01-20",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "1 Stock Under $50 with Impressive Fundamentals and 2 We Question",
-      "url": "/news/279373/1-stock-under-50-with-impressive-fundamentals-and-2-we-question",
-      "publisher": "StockStory",
-      "date": "2026-01-15",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Copart: The Economics Behind a Quietly Dominant Marketplace",
-      "url": "https://finance.yahoo.com/news/copart-economics-behind-quietly-dominant-144310290.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-01-09",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Jim Cramer on Copart: \"Too Soon to Stick Your Neck Out\"",
-      "url": "/news/270425/jim-cramer-on-copart-too-soon-to-stick-your-neck-out",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-08",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Copart, Inc. (CPRT) Outperforms Broader Market: What You Need to Know",
-      "url": "/news/267729/copart-inc-cprt-outperforms-broader-market-what-you-need-to-know",
-      "publisher": "Zacks",
-      "date": "2026-01-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Here's Why Qualivian Investment Partners Decided to Sell Copart Inc. (CPRT)",
-      "url": "/news/260913/heres-why-qualivian-investment-partners-decided-to-sell-copart-inc-cprt",
-      "publisher": "Insider Monkey",
-      "date": "2025-12-23",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Aoris International Fund Sold Copart (CPRT) in Q3",
-      "url": "/news/258477/aoris-international-fund-sold-copart-cprt-in-q3",
-      "publisher": "Insider Monkey",
-      "date": "2025-12-19",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Analysts See 25% Upside To Copart, Inc. (CPRT) Despite Cautious View",
-      "url": "/news/253362/analysts-see-25-upside-to-copart-inc-cprt-despite-cautious-view",
-      "publisher": "Insider Monkey",
-      "date": "2025-12-12",
-      "sentiment": "positive"
-    },
-    {
-      "title": "2 Safe-and-Steady Stocks with Exciting Potential and 1 We Find Risky",
-      "url": "/news/247977/2-safe-and-steady-stocks-with-exciting-potential-and-1-we-find-risky",
-      "publisher": "StockStory",
-      "date": "2025-12-07",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Copart, Inc. (CPRT): A Bull Case Theory",
-      "url": "/news/245889/copart-inc-cprt-a-bull-case-theory",
-      "publisher": "Insider Monkey",
-      "date": "2025-12-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Is Copart Stock Underperforming the Dow?",
-      "url": "https://finance.yahoo.com/m/737fc107-1c19-385f-935a-ae8f9adba82e/is-copart-stock.html",
-      "publisher": "Barchart",
-      "date": "2025-12-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Here's Why You Should Offload Copart Stock From Your Portfolio Now",
-      "url": "/news/240718/heres-why-you-should-offload-copart-stock-from-your-portfolio-now",
-      "publisher": "Zacks",
-      "date": "2025-11-28",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

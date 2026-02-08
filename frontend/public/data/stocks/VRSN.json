@@ -6271,8 +6271,8 @@
     "debt_equity_score": 50.0,
     "fcf_yield_score": 60.46153869655103,
     "current_ratio_score": 15.0,
-    "safety_score": 42.357328059683134,
-    "fundamental_score": 68.15170294526996,
+    "safety_score": 42.354019348275514,
+    "fundamental_score": 68.15104120298844,
     "fund_data_completeness": 0.8333333333333334
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 38.989778046528,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.15439405069846546,
-    "sentiment_pos": 0.04435,
-    "sentiment_neg": 0.01065,
-    "sentiment_neu": 0.945,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 57.72
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.28473926038274533,
@@ -6332,7 +6324,7 @@
     "value_score": 69.60094933333333,
     "quality_score": 90.0,
     "growth_score": 61.12,
-    "safety_score": 42.357328059683134,
+    "safety_score": 42.354019348275514,
     "trend_score": 29.85901643572873,
     "momentum_score": 36.85011894237154,
     "volatility_score": 44.885187165489604,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 71.339,
     "valuation_margin": 64.3502848,
     "catalyst_timeline": 46.06969535518077,
-    "downside_control": 47.92537728377591,
-    "composite_score": 59.58499184301072,
+    "downside_control": 47.92488097706477,
+    "composite_score": 59.584892581668484,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 68.15170294526996,
+    "fundamental_score": 68.15104120298844,
     "technical_score": 38.989778046528,
-    "sentiment_score": 57.72,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Information Technology",
     "industry": "Internet Services & Infrastructure"
   },
-  "headlines": [
-    {
-      "title": "Analyst Report: VeriSign, Inc.",
-      "url": "https://finance.yahoo.com/m/610ae1bc-eeed-3ec0-9a2c-b4bb26c54b28/analyst-report%3A-verisign%2C-inc..html",
-      "publisher": "Morningstar Research",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Tech Bounces As Software Sell-Off Eases, Dow Jones Hits Records: What's Moving Markets Friday?",
-      "url": "/news/303167/tech-bounces-as-software-sell-off-eases-dow-jones-hits-records-whats-moving-markets-friday",
-      "publisher": "Benzinga",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "VeriSign Q4 Earnings Call Highlights",
-      "url": "https://finance.yahoo.com/m/6a4f4a78-c97e-3763-b648-a2668eb7150f/verisign-q4-earnings-call.html",
-      "publisher": "MarketBeat",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "VeriSign Inc (VRSN) Q4 2025 Earnings Call Highlights: Strong Revenue Growth and Shareholder Returns",
-      "url": "https://finance.yahoo.com/news/verisign-inc-vrsn-q4-2025-050434973.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "DNIB.com Reports Internet Has 386.9 Million Domain Name Registrations at the End of the Fourth Quarter of 2025",
-      "url": "https://www.businesswire.com/news/home/20260205554430/en",
-      "publisher": "Business Wire",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "VeriSign: Q4 Earnings Snapshot",
-      "url": "https://finance.yahoo.com/news/verisign-q4-earnings-snapshot-211806376.html",
-      "publisher": "Associated Press Finance",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Verisign Reports Fourth Quarter and Full Year 2025 Results",
-      "url": "https://www.businesswire.com/news/home/20260205954939/en/",
-      "publisher": "Business Wire",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "JPMorgan Raises VeriSign (VRSN) Target as Domain Trends Improve",
-      "url": "/news/294618/jpmorgan-raises-verisign-vrsn-target-as-domain-trends-improve",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-31",
-      "sentiment": "positive"
-    },
-    {
-      "title": "5 Top Buffett Stocks to Buy and Hold for the Long Haul",
-      "url": "/news/287150/5-top-buffett-stocks-to-buy-and-hold-for-the-long-haul",
-      "publisher": "Motley Fool",
-      "date": "2026-01-26",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Do Options Traders Know Something About VeriSign Stock We Don't?",
-      "url": "/news/276107/do-options-traders-know-something-about-verisign-stock-we-dont",
-      "publisher": "Zacks",
-      "date": "2026-01-14",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "VeriSign Earnings Preview: What to Expect",
-      "url": "https://finance.yahoo.com/m/cbb10645-c18d-32b8-8d2b-e415e984c164/verisign-earnings-preview%3A.html",
-      "publisher": "Barchart",
-      "date": "2026-01-12",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Verisign to Report Fourth Quarter and Full Year 2025 Financial Results",
-      "url": "https://www.businesswire.com/news/home/20260102015667/en",
-      "publisher": "Business Wire",
-      "date": "2026-01-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Buffetts $24 Billion Selling Spree: The 6 Stocks Berkshire Hathaway Dumped",
-      "url": "https://finance.yahoo.com/m/2ac7a15e-5c56-31e5-ac08-bcf7fd644a14/buffett%E2%80%99s-%2424-billion-selling.html",
-      "publisher": "24/7 Wall St.",
-      "date": "2025-12-23",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Analyst Report: VeriSign, Inc.",
-      "url": "https://finance.yahoo.com/m/150c3d8e-d39f-3448-9f67-1d2de3138853/analyst-report%3A-verisign%2C-inc..html",
-      "publisher": "Morningstar Research",
-      "date": "2025-12-19",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "How Is VeriSigns Stock Performance Compared to Other Software Stocks?",
-      "url": "https://finance.yahoo.com/m/c48a5a59-be40-337d-8dbb-6de982490929/how-is-verisign%E2%80%99s-stock.html",
-      "publisher": "Barchart",
-      "date": "2025-12-12",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "VeriSign, Inc. (VRSN): A Bear Case Theory",
-      "url": "/news/246123/verisign-inc-vrsn-a-bear-case-theory",
-      "publisher": "Insider Monkey",
-      "date": "2025-12-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "RingCentral (RNG) Up 7.2% Since Last Earnings Report: Can It Continue?",
-      "url": "/news/244591/ringcentral-rng-up-72-since-last-earnings-report-can-it-continue",
-      "publisher": "Zacks",
-      "date": "2025-12-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Tyler Technologies (TYL) Down 2.5% Since Last Earnings Report: Can It Rebound?",
-      "url": "/news/240989/tyler-technologies-tyl-down-25-since-last-earnings-report-can-it-rebound",
-      "publisher": "Zacks",
-      "date": "2025-11-28",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "E-commerce Software Stocks Q3 Recap: Benchmarking VeriSign (NASDAQ:VRSN)",
-      "url": "/news/239287/e-commerce-software-stocks-q3-recap-benchmarking-verisign-nasdaq-vrsn",
-      "publisher": "StockStory",
-      "date": "2025-11-25",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "VeriSign Stock: Analyst Estimates & Ratings",
-      "url": "https://finance.yahoo.com/m/7ee97d90-b6b8-3894-a547-833a66f95201/verisign-stock%3A-analyst.html",
-      "publisher": "Barchart",
-      "date": "2025-11-19",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

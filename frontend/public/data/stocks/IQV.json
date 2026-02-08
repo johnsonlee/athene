@@ -6271,8 +6271,8 @@
     "debt_equity_score": 16.573666666666668,
     "fcf_yield_score": 78.80218849819764,
     "current_ratio_score": 29.939999999999998,
-    "safety_score": 41.497652960506436,
-    "fundamental_score": 62.519112323053676,
+    "safety_score": 41.494344249098816,
+    "fundamental_score": 62.51845058077215,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 36.359468764805214,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.1453326987134453,
-    "sentiment_pos": 0.0888,
-    "sentiment_neg": 0.0059,
-    "sentiment_neu": 0.9053000000000001,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 57.27
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.09090909090909091,
     "target_upside": 0.32007040375486684,
@@ -6332,7 +6324,7 @@
     "value_score": 66.23168120952381,
     "quality_score": 64.9353,
     "growth_score": 72.72428571428571,
-    "safety_score": 41.497652960506436,
+    "safety_score": 41.494344249098816,
     "trend_score": 40.42262599480847,
     "momentum_score": 32.501989466056614,
     "volatility_score": 22.410420632728446,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 65.39993785714285,
     "valuation_margin": 59.60150436285714,
     "catalyst_timeline": 47.371133532810646,
-    "downside_control": 33.24621103898523,
-    "composite_score": 52.331788149309126,
+    "downside_control": 33.24571473227409,
+    "composite_score": 52.33168888796689,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 62.519112323053676,
+    "fundamental_score": 62.51845058077215,
     "technical_score": 36.359468764805214,
-    "sentiment_score": 57.27,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Health Care",
     "industry": "Life Sciences Tools & Services"
   },
-  "headlines": [
-    {
-      "title": "IQVIA Q4 Earnings Call Highlights",
-      "url": "https://finance.yahoo.com/m/9577f0f3-54ab-3cbc-b6db-8a6e4e653212/iqvia-q4-earnings-call.html",
-      "publisher": "MarketBeat",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Why IQVIA Holdings (IQV) is a Top Value Stock for the Long-Term",
-      "url": "/news/302914/why-iqvia-holdings-iqv-is-a-top-value-stock-for-the-long-term",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Analyst Report: IQVIA Holdings Inc.",
-      "url": "https://finance.yahoo.com/m/7d196f35-54af-3d19-b8d6-946286e73d00/analyst-report%3A-iqvia.html",
-      "publisher": "Morningstar Research",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "IQV Q4 Deep Dive: Market Cautions Despite Revenue Beat and AI Strategy Emphasis",
-      "url": "/news/302457/iqv-q4-deep-dive-market-cautions-despite-revenue-beat-and-ai-strategy-emphasis",
-      "publisher": "StockStory",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "IQVIA Holdings Inc (IQV) Q4 2025 Earnings Call Highlights: Strong Revenue Growth and Strategic ...",
-      "url": "https://finance.yahoo.com/news/iqvia-holdings-inc-iqv-q4-210058395.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "IQVIA Q4 Earnings & Revenues Beat Estimates, Increase Y/Y",
-      "url": "/news/301900/iqvia-q4-earnings-revenues-beat-estimates-increase-yy",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "IQVIA (IQV) Stock Trades Down, Here Is Why",
-      "url": "/news/301806/iqvia-iqv-stock-trades-down-here-is-why",
-      "publisher": "StockStory",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "IQVIA backs AI strategy as analysts question impact on business",
-      "url": "https://finance.yahoo.com/news/iqvia-forecasts-weak-annual-profit-140714120.html",
-      "publisher": "Reuters",
-      "date": "2026-02-05",
-      "sentiment": "negative"
-    },
-    {
-      "title": "IQVIA Holdings (IQV) Q4 Earnings and Revenues Top Estimates",
-      "url": "/news/301343/iqvia-holdings-iqv-q4-earnings-and-revenues-top-estimates",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "IQVIA's (NYSE:IQV) Q4 CY2025 Sales Top Estimates",
-      "url": "/news/301157/iqvias-nyse-iqv-q4-cy2025-sales-top-estimates",
-      "publisher": "StockStory",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "IQVIA: Q4 Earnings Snapshot",
-      "url": "https://finance.yahoo.com/news/iqvia-q4-earnings-snapshot-122046487.html",
-      "publisher": "Associated Press Finance",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "IQVIA Reports Fourth-Quarter and Full-Year 2025 Results; Issues Full-Year 2026 Guidance",
-      "url": "https://www.businesswire.com/news/home/20260205999087/en",
-      "publisher": "Business Wire",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "IQV or IDXX: Which Is the Better Value Stock Right Now?",
-      "url": "/news/299829/iqv-or-idxx-which-is-the-better-value-stock-right-now",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "IQVIA (IQV) Reports Q4: Everything You Need To Know Ahead Of Earnings",
-      "url": "/news/298701/iqvia-iqv-reports-q4-everything-you-need-to-know-ahead-of-earnings",
-      "publisher": "StockStory",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "IQVIA Set to Report Q4 Earnings: Here's What You Should Know",
-      "url": "/news/297813/iqvia-set-to-report-q4-earnings-heres-what-you-should-know",
-      "publisher": "Zacks",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Unlocking Q4 Potential of IQVIA (IQV): Exploring Wall Street Estimates for Key Metrics",
-      "url": "/news/297490/unlocking-q4-potential-of-iqvia-iqv-exploring-wall-street-estimates-for-key-metrics",
-      "publisher": "Zacks",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "IQVIA and Boehringer Ingelheim announce strategic long-term global commercial data foundation transformation collaboration",
-      "url": "https://www.businesswire.com/news/home/20260129755415/en",
-      "publisher": "Business Wire",
-      "date": "2026-01-29",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Beyond Biotech-3 Healthcare Stocks for Growth-Minded Investors",
-      "url": "/news/286327/beyond-biotech-3-healthcare-stocks-for-growth-minded-investors",
-      "publisher": "MarketBeat",
-      "date": "2026-01-25",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "IQVIA Named to the Fortune Worlds Most Admired Companies List, Ranked No. 1 in Its Sector for Fifth Consecutive Year",
-      "url": "https://www.businesswire.com/news/home/20260122095283/en/",
-      "publisher": "Business Wire",
-      "date": "2026-01-22",
-      "sentiment": "positive"
-    },
-    {
-      "title": "IQVIA to Announce Fourth-Quarter and Full-Year 2025 Results on February 5, 2026",
-      "url": "https://www.businesswire.com/news/home/20260120754483/en",
-      "publisher": "Business Wire",
-      "date": "2026-01-20",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

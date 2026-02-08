@@ -6271,8 +6271,8 @@
     "debt_equity_score": 63.109,
     "fcf_yield_score": 76.46998910813582,
     "current_ratio_score": 53.556,
-    "safety_score": 56.91605326547553,
-    "fundamental_score": 68.81831831976177,
+    "safety_score": 56.91274455406791,
+    "fundamental_score": 68.81765657748025,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 43.16522330285845,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.04559812233521167,
-    "sentiment_pos": 0.07139999999999999,
-    "sentiment_neg": 0.0669,
-    "sentiment_neu": 0.8617000000000001,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 52.28
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": -0.03125,
     "target_upside": 0.3431873479318734,
@@ -6332,7 +6324,7 @@
     "value_score": 42.79423066666667,
     "quality_score": 87.251,
     "growth_score": 82.245,
-    "safety_score": 56.91605326547553,
+    "safety_score": 56.91274455406791,
     "trend_score": 20.368887086187076,
     "momentum_score": 55.3656638010399,
     "volatility_score": 52.224290183451764,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 84.5254,
     "valuation_margin": 38.0592692,
     "catalyst_timeline": 46.35984630526771,
-    "downside_control": 58.00005151733909,
-    "composite_score": 58.8968221325154,
+    "downside_control": 57.999555210627946,
+    "composite_score": 58.89672287117317,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 68.81831831976177,
+    "fundamental_score": 68.81765657748025,
     "technical_score": 43.16522330285845,
-    "sentiment_score": 52.28,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Communication Services",
     "industry": "Movies & Entertainment"
   },
-  "headlines": [
-    {
-      "title": "Netflix, Inc. (NFLX)'s Warner Bros. Acquisition Faces Regulatory Scrutiny Amid Mixed Analyst Outlook",
-      "url": "/news/303723/netflix-inc-nflxs-warner-bros-acquisition-faces-regulatory-scrutiny-amid-mixed-analyst-outlook",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-08",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Netflix dominates streaming. No wonder its trying to redefine the market",
-      "url": "https://finance.yahoo.com/news/netflix-dominates-streaming-no-wonder-155801521.html",
-      "publisher": "Fortune",
-      "date": "2026-02-07",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Mixed options sentiment in Netflix with shares up 0.8%",
-      "url": "https://finance.yahoo.com/news/mixed-options-sentiment-netflix-shares-153515000.html",
-      "publisher": "TipRanks",
-      "date": "2026-02-07",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Netflix Stock Tanks 39%  Is It Too Cheap to Ignore?",
-      "url": "https://finance.yahoo.com/m/4e83dc1d-bf0f-3f85-b3b2-9065a2ca44c7/netflix-stock-tanks-39%25-%E2%80%94-is.html",
-      "publisher": "24/7 Wall St.",
-      "date": "2026-02-07",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Netflix Faces DOJ Antitrust Heat Over Nearly $83 Billion Warner Bros. Deal As Regulators Question Market Power Grab: Report",
-      "url": "/news/303462/netflix-faces-doj-antitrust-heat-over-nearly-83-billion-warner-bros-deal-as-regulators-question-market-power-grab-report",
-      "publisher": "Benzinga",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "US Justice Department casts wide net on Netflix's business practices in merger probe, WSJ reports",
-      "url": "https://finance.yahoo.com/news/justice-department-casts-wide-net-194150385.html",
-      "publisher": "Reuters",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Justice Department Casts Wide Net on Netflix's Business Practices in Merger Probe",
-      "url": "https://www.wsj.com/business/media/justice-department-casts-wide-net-on-netflixs-business-practices-in-merger-probe-fd30d7f8?mod=wsj_FV",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Trump Steps Back From Hollywood's Biggest Bidding War For Warner Bros-Netflix Media Merger: 'The Justice Department Will Handle'",
-      "url": "https://finance.yahoo.com/news/trump-steps-back-hollywoods-biggest-183104931.html",
-      "publisher": "Benzinga",
-      "date": "2026-02-06",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Netflix co-CEO Ted Sarandos argues its Warner Bros. deal wont hurt consumers. If so, they can cancel with one click",
-      "url": "https://finance.yahoo.com/news/netflix-co-ceo-ted-sarandos-174156613.html",
-      "publisher": "Fortune",
-      "date": "2026-02-06",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Investors Heavily Search Netflix, Inc. (NFLX): Here is What You Need to Know",
-      "url": "/news/302788/investors-heavily-search-netflix-inc-nflx-here-is-what-you-need-to-know",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Walt Disney's CEO Roller Coaster: Why Josh D'Amaro Can Smooth the Ride",
-      "url": "https://www.barrons.com/articles/walt-disney-stock-ceo-josh-damaro-0c981a8e?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Major sports TV network shutting down, leaving fans scrambling",
-      "url": "https://finance.yahoo.com/m/1ced5439-4e50-3ca7-8c3e-05ac48f6718e/major-sports-tv-network.html",
-      "publisher": "TheStreet",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Netflix Co-CEO Ted Sarandos Defends Warner Bros. Discovery Deal, Says YouTube Is More Than 'Cat Videos'  Ross Gerber Agrees",
-      "url": "https://finance.yahoo.com/news/netflix-co-ceo-ted-sarandos-230103314.html",
-      "publisher": "Benzinga",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Congressman Who Spent Millions On Magnificent Seven Stocks In 2025 Makes First 2026 Purchases: Here's What He's Buying",
-      "url": "/news/302028/congressman-who-spent-millions-on-magnificent-seven-stocks-in-2025-makes-first-2026-purchases-heres-what-hes-buying",
-      "publisher": "Benzinga",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Netflix leader drops harsh reality check for worried subscribers",
-      "url": "https://finance.yahoo.com/m/8a3f60e6-1713-3ef9-963c-bb26bc79da48/netflix-leader-drops-harsh.html",
-      "publisher": "TheStreet",
-      "date": "2026-02-05",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Trump Says He 'Shouldn't Be Involved' in Warner Bros. Deal",
-      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-02-05-2026/card/trump-says-he-shouldn-t-be-involved-in-warner-bros-deal-EicxoOixKetVPKBU1etE?mod=wsj_FV",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Former NBC Cable President Tom Rogers on Netflix-WBD deal scrutiny, Disney leadership changes",
-      "url": "https://www.youtube.com/watch?v=LPFObylH76A",
-      "publisher": "CNBC TV",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Netflix Stock Surges As Trump Steps Aside On Warner Bros. Discovery Deal",
-      "url": "/news/301469/netflix-stock-surges-as-trump-steps-aside-on-warner-bros-discovery-deal",
-      "publisher": "Benzinga",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Are Wall Street Analysts Bullish on Netflix Stock?",
-      "url": "https://finance.yahoo.com/m/d9098f4f-ec7c-3158-9e8d-46c3c06444cc/are-wall-street-analysts.html",
-      "publisher": "Barchart",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Trump Steps Back From Hollywood's Biggest Bidding War For Warner Bros-Netflix Media Merger: 'The Justice Department Will Handle'",
-      "url": "/news/300773/trump-steps-back-from-hollywoods-biggest-bidding-war-for-warner-bros-netflix-media-merger-the-justice-department-will-handle",
-      "publisher": "Benzinga",
-      "date": "2026-02-05",
-      "sentiment": "negative"
-    }
-  ]
+  "headlines": []
 }

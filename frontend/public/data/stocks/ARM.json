@@ -4871,8 +4871,8 @@
     "debt_equity_score": 87.783,
     "fcf_yield_score": 35.23175572469042,
     "current_ratio_score": 85.0,
-    "safety_score": 73.5180587114076,
-    "fundamental_score": 52.176300920059305,
+    "safety_score": 73.51474999999999,
+    "fundamental_score": 52.17563917777778,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -4906,15 +4906,7 @@
     "technical_score": 50.107354443183254,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": -0.00609147695973251,
-    "sentiment_pos": 0.0622,
-    "sentiment_neg": 0.07139999999999999,
-    "sentiment_neu": 0.8663500000000001,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 49.7
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.2126111560226354,
@@ -4932,7 +4924,7 @@
     "value_score": 20.381956711111112,
     "quality_score": 62.98650000000001,
     "growth_score": 53.925,
-    "safety_score": 73.5180587114076,
+    "safety_score": 73.51474999999999,
     "trend_score": 42.43732455337592,
     "momentum_score": 74.83028678600306,
     "volatility_score": 24.63535520684777,
@@ -4953,22 +4945,22 @@
     "earnings_visibility": 61.811724999999996,
     "valuation_margin": 18.07058701333333,
     "catalyst_timeline": 56.330451513889386,
-    "downside_control": 53.1250120877383,
-    "composite_score": 45.515103612954576,
+    "downside_control": 53.124515781027156,
+    "composite_score": 45.51500435161235,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 52.176300920059305,
+    "fundamental_score": 52.17563917777778,
     "technical_score": 50.107354443183254,
-    "sentiment_score": 49.7,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 472,
-    "percentile": 0.09248554913294797,
+    "rank": 473,
+    "percentile": 0.0905587668593449,
     "tier": "hold",
     "tier_raw": "sell",
     "tier_label": "Hold",
@@ -4977,146 +4969,5 @@
     "sector": "Technology",
     "industry": "Semiconductors"
   },
-  "headlines": [
-    {
-      "title": "New Street Upgrades Arm Holdings (ARM) to Buy Following Strong Royalty Performance",
-      "url": "/news/303740/new-street-upgrades-arm-holdings-arm-to-buy-following-strong-royalty-performance",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-08",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Jim Cramer Makes Cryptic Remark About Arm Holdings (ARM)",
-      "url": "/news/303583/jim-cramer-makes-cryptic-remark-about-arm-holdings-arm",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Is ARM Stock a Buy, Hold, or Sell After Stellar Q3 Earnings?",
-      "url": "/news/303218/is-arm-stock-a-buy-hold-or-sell-after-stellar-q3-earnings",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Company News for Feb 6, 2026",
-      "url": "/news/302935/company-news-for-feb-6-2026",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Amazon's big spending forecast is good news for these suppliers",
-      "url": "https://www.marketwatch.com/livecoverage/amazon-earnings-stock-results-amzn-guidance-q4/card/amazon-s-big-spending-forecast-is-good-news-for-these-suppliers-JBPHBbb2KD0oNoQU7xai?mod=mw_FV",
-      "publisher": "MarketWatch",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Arm Holdings (ARM) Jumps 5.7% as Revenues Break Records",
-      "url": "/news/302405/arm-holdings-arm-jumps-57-as-revenues-break-records",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Qualcomm, Arm Take Hits as Rising AI Memory Requirements Snarl Smartphone Production",
-      "url": "https://finance.yahoo.com/m/8f434d3c-46df-3a72-bdaa-d6bf71d5c30a/qualcomm%2C-arm-take-hits-as.html",
-      "publisher": "The Daily Upside",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Stocks to Watch Thursday Recap: Qualcomm, Shell, Arm",
-      "url": "https://finance.yahoo.com/m/60a92c51-b772-30ee-9667-fbe0df514dfd/stocks-to-watch-thursday.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "15 Physical AI Stocks To Watch In 2026 As Robots And Autonomy Scale Globally",
-      "url": "/news/302049/15-physical-ai-stocks-to-watch-in-2026-as-robots-and-autonomy-scale-globally",
-      "publisher": "Benzinga",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Arm Stock Jumps 5% -- Analysts Downplay Smartphone Demand Risks",
-      "url": "https://finance.yahoo.com/news/arm-stock-jumps-5-analysts-183820413.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-02-05",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Software's Freefall Continues, Bitcoin Dips To 16-Month Lows: What's Moving Markets Thursday?",
-      "url": "/news/301895/softwares-freefall-continues-bitcoin-dips-to-16-month-lows-whats-moving-markets-thursday",
-      "publisher": "Benzinga",
-      "date": "2026-02-05",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Big Tech CEOs seek to quell AI worries hammering software stocks",
-      "url": "https://finance.yahoo.com/news/big-tech-ceos-seek-to-quell-ai-worries-hammering-software-stocks-170124972.html",
-      "publisher": "Yahoo Finance",
-      "date": "2026-02-05",
-      "sentiment": "negative"
-    },
-    {
-      "title": "2 Popular Chipmakers Responding to Earnings",
-      "url": "/news/301589/2-popular-chipmakers-responding-to-earnings",
-      "publisher": "Schaeffer's Research",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Stocks to Watch Thursday: Qualcomm, Shell, Arm",
-      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-02-05-2026/card/stocks-to-watch-thursday-qualcomm-shell-alphabet-VhD0xjGPhQxf6bPUQAZd?mod=wsj_FV",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Qualcomm and Arm Stocks Drop. The Memory Crunch Is the Problem.",
-      "url": "https://www.barrons.com/articles/qualcomm-stock-price-arm-adr-65f673a2?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2026-02-05",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Analyst Report: Arm Holdings plc",
-      "url": "https://finance.yahoo.com/m/da7e76e4-5f6c-357c-9652-ec14f776569e/analyst-report%3A-arm-holdings.html",
-      "publisher": "Morningstar Research",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "BofA lowers Qualcomm rating after earnings amid weak handset market, share losses",
-      "url": "https://finance.yahoo.com/news/bofa-lowers-qualcomm-rating-earnings-122720158.html",
-      "publisher": "Investing.com",
-      "date": "2026-02-05",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Bearish Outlook? Try These 2 Bear Call Spread Trades on Thursday",
-      "url": "https://finance.yahoo.com/m/3bb155de-806f-333c-b77b-c0da40e1793f/bearish-outlook%3F-try-these-2.html",
-      "publisher": "Barchart",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Stocks Slip Before the Open as Tech-Led Selloff Continues, Amazon Earnings on Tap",
-      "url": "https://finance.yahoo.com/m/d6bfc45e-b377-336e-a9c9-92a038f8134b/stocks-slip-before-the-open.html",
-      "publisher": "Barchart",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Amazon Cloud Sales in Focus After Microsofts $500 Billion Rout",
-      "url": "https://finance.yahoo.com/news/amazon-cloud-sales-focus-microsoft-112001757.html",
-      "publisher": "Bloomberg",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    }
-  ]
+  "headlines": []
 }

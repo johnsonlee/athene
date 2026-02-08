@@ -6271,8 +6271,8 @@
     "debt_equity_score": 66.367,
     "fcf_yield_score": 79.35329018814627,
     "current_ratio_score": 44.76,
-    "safety_score": 59.986703805480765,
-    "fundamental_score": 75.05181621823903,
+    "safety_score": 59.983395094073146,
+    "fundamental_score": 75.05115447595749,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6307,13 +6307,13 @@
     "tech_data_completeness": 1.0
   },
   "sentiment": {
-    "sentiment_compound": 0.009784192156873954,
-    "sentiment_pos": 0.1127,
-    "sentiment_neg": 0.0926,
-    "sentiment_neu": 0.7947,
+    "sentiment_compound": 0.022966189794874307,
+    "sentiment_pos": 0.10545,
+    "sentiment_neg": 0.07980000000000001,
+    "sentiment_neu": 0.8148,
     "news_count": 20.0,
     "sentiment_confidence": 1.0,
-    "sentiment_score": 50.49
+    "sentiment_score": 51.15
   },
   "analyst": {
     "revision_momentum": -0.25,
@@ -6332,7 +6332,7 @@
     "value_score": 75.05933040000001,
     "quality_score": 90.0,
     "growth_score": 69.15857142857143,
-    "safety_score": 59.986703805480765,
+    "safety_score": 59.983395094073146,
     "trend_score": 18.349503108323248,
     "momentum_score": 38.98673516129771,
     "volatility_score": 34.0665360961435,
@@ -6353,15 +6353,15 @@
     "earnings_visibility": 81.03578571428571,
     "valuation_margin": 68.80879912,
     "catalyst_timeline": 40.152060091698665,
-    "downside_control": 50.14398598524363,
-    "composite_score": 63.46936222733208,
+    "downside_control": 50.14348967853249,
+    "composite_score": 63.46926296598984,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 75.05181621823903,
+    "fundamental_score": 75.05115447595749,
     "technical_score": 34.01417870011498,
-    "sentiment_score": 50.49,
+    "sentiment_score": 51.15,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6378,6 +6378,13 @@
     "industry": "Application Software"
   },
   "headlines": [
+    {
+      "title": "Trump Ally Mullin Buys 10 Stocks, Including These $5 Billion Companies You've Probably Never Heard Of",
+      "url": "https://finance.yahoo.com/m/91b1be9a-cc6f-3bbd-8531-d17ef43c3a18/trump-ally-mullin-buys-10.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
     {
       "title": "Software stocks have been crushed. Here's how to play the sector as the dust settles.",
       "url": "https://www.marketwatch.com/story/software-stocks-have-been-crushed-heres-how-to-play-the-sector-as-the-dust-settles-c0175f8a?mod=mw_FV",
@@ -6510,13 +6517,6 @@
       "publisher": "The Wall Street Journal",
       "date": "2026-02-04",
       "sentiment": "positive"
-    },
-    {
-      "title": "Bitcoin's correlation with troubled software stock sector is growing",
-      "url": "https://finance.yahoo.com/m/5524885a-4935-331a-a5bc-cbf80a5274cc/bitcoin%27s-correlation-with.html",
-      "publisher": "CoinDesk",
-      "date": "2026-02-04",
-      "sentiment": "negative"
     }
   ]
 }

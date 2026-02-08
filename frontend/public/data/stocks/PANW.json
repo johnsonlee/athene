@@ -6271,8 +6271,8 @@
     "debt_equity_score": 88.143375,
     "fcf_yield_score": 53.20509161023391,
     "current_ratio_score": 44.099999999999994,
-    "safety_score": 57.800792016524575,
-    "fundamental_score": 53.60434737822555,
+    "safety_score": 57.797483305116955,
+    "fundamental_score": 53.60368563594402,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 34.04663660839465,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.12997408470990635,
-    "sentiment_pos": 0.0937,
-    "sentiment_neg": 0.016,
-    "sentiment_neu": 0.8903000000000001,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 56.5
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.4436354506653277,
@@ -6332,7 +6324,7 @@
     "value_score": 38.43288576825397,
     "quality_score": 62.47405844285713,
     "growth_score": 54.775,
-    "safety_score": 57.800792016524575,
+    "safety_score": 57.797483305116955,
     "trend_score": 24.977410621277816,
     "momentum_score": 34.060049956562246,
     "volatility_score": 31.676992175213172,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 56.14335876642856,
     "valuation_margin": 32.71186573047619,
     "catalyst_timeline": 42.85292948484903,
-    "downside_control": 48.99566762876066,
-    "composite_score": 42.60903214616084,
+    "downside_control": 48.995171322049515,
+    "composite_score": 42.60893288481861,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 53.60434737822555,
+    "fundamental_score": 53.60368563594402,
     "technical_score": 34.04663660839465,
-    "sentiment_score": 56.5,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Information Technology",
     "industry": "Systems Software"
   },
-  "headlines": [
-    {
-      "title": "Qualys (QLYS) Q4 Earnings and Revenues Surpass Estimates",
-      "url": "/news/302265/qualys-qlys-q4-earnings-and-revenues-surpass-estimates",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "CyberArk Stock Dips Despite Earnings Smash, Analysts Warn Of 'Acquisition Limbo'",
-      "url": "/news/301960/cyberark-stock-dips-despite-earnings-smash-analysts-warn-of-acquisition-limbo",
-      "publisher": "Benzinga",
-      "date": "2026-02-05",
-      "sentiment": "negative"
-    },
-    {
-      "title": "PANW Trades at Premium Valuation: Buy, Sell or Hold the Stock?",
-      "url": "/news/301510/panw-trades-at-premium-valuation-buy-sell-or-hold-the-stock",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Palo Alto Networks NextWave Program Accelerates Partner Profitability and AI-Driven Security Outcomes",
-      "url": "/news/301184/palo-alto-networks-nextwave-program-accelerates-partner-profitability-and-ai-driven-security-outcomes",
-      "publisher": "PR Newswire",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Analyst Report: Palo Alto Networks, Inc.",
-      "url": "https://finance.yahoo.com/m/eb81b4d0-4399-35c2-8f74-fd6d0e7eb328/analyst-report%3A-palo-alto.html",
-      "publisher": "Morningstar Research",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Broadcom Is 'Uncle Sam Of AI,' Says Futurum Equities As It Lists 15 Non-Mag7 AI Disruptors",
-      "url": "/news/299188/broadcom-is-uncle-sam-of-ai-says-futurum-equities-as-it-lists-15-non-mag7-ai-disruptors",
-      "publisher": "Benzinga",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "3 No-Brainer Growth Stocks to Buy With $250 Right Now",
-      "url": "/news/298913/3-no-brainer-growth-stocks-to-buy-with-250-right-now",
-      "publisher": "Motley Fool",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Palo Alto Networks (PANW) Sees a More Significant Dip Than Broader Market: Some Facts to Know",
-      "url": "/news/298321/palo-alto-networks-panw-sees-a-more-significant-dip-than-broader-market-some-facts-to-know",
-      "publisher": "Zacks",
-      "date": "2026-02-03",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Varonis Systems (VRNS) Tops Q4 Earnings and Revenue Estimates",
-      "url": "/news/298285/varonis-systems-vrns-tops-q4-earnings-and-revenue-estimates",
-      "publisher": "Zacks",
-      "date": "2026-02-03",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Options Corner: Palo Alto Networks' Non-Negotiable Business Presents A Compelling Discount",
-      "url": "/news/298186/options-corner-palo-alto-networks-non-negotiable-business-presents-a-compelling-discount",
-      "publisher": "Benzinga",
-      "date": "2026-02-03",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Investors Heavily Search Palo Alto Networks, Inc. (PANW): Here is What You Need to Know",
-      "url": "/news/297444/investors-heavily-search-palo-alto-networks-inc-panw-here-is-what-you-need-to-know",
-      "publisher": "Zacks",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Palo Alto Networks to Announce Fiscal Second Quarter 2026 Financial Results on Tuesday, February 17, 2026",
-      "url": "/news/297221/palo-alto-networks-to-announce-fiscal-second-quarter-2026-financial-results-on-tuesday-february-17-2026",
-      "publisher": "PR Newswire",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Palo Alto (PANW) Buys Chronosphere, Citizens Stays Bullish",
-      "url": "/news/296962/palo-alto-panw-buys-chronosphere-citizens-stays-bullish",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Palo Alto Networks, Inc. (PANW): A Bull Case Theory",
-      "url": "/news/296486/palo-alto-networks-inc-panw-a-bull-case-theory",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Should You Buy, Sell, or Hold GOOGL Stock Before Q4 Earnings Release?",
-      "url": "/news/295905/should-you-buy-sell-or-hold-googl-stock-before-q4-earnings-release",
-      "publisher": "Zacks",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "This Security Leader Is Turning Surging Cyber Threats Into Recurring Revenue",
-      "url": "/news/294832/this-security-leader-is-turning-surging-cyber-threats-into-recurring-revenue",
-      "publisher": "Motley Fool",
-      "date": "2026-02-01",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Palo Alto Networks, Inc. (PANW) Strengthens AI-Driven Cybersecurity Platform with Chronosphere Acquisition",
-      "url": "/news/294742/palo-alto-networks-inc-panw-strengthens-ai-driven-cybersecurity-platform-with-chronosphere-acquisition",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-01",
-      "sentiment": "positive"
-    },
-    {
-      "title": "2 Millionaire-Maker Artificial Intelligence (AI) Stocks",
-      "url": "/news/294605/2-millionaire-maker-artificial-intelligence-ai-stocks",
-      "publisher": "Motley Fool",
-      "date": "2026-01-31",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Thoma Bravo explores sale of identity software firm Imprivata, sources say",
-      "url": "https://finance.yahoo.com/news/thoma-bravo-explores-sale-identity-220101993.html",
-      "publisher": "Reuters",
-      "date": "2026-01-30",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Brokers Suggest Investing in Palo Alto (PANW): Read This Before Placing a Bet",
-      "url": "/news/293607/brokers-suggest-investing-in-palo-alto-panw-read-this-before-placing-a-bet",
-      "publisher": "Zacks",
-      "date": "2026-01-30",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

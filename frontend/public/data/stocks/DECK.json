@@ -6271,8 +6271,8 @@
     "debt_equity_score": 85.0725,
     "fcf_yield_score": 63.55223739429209,
     "current_ratio_score": 84.28,
-    "safety_score": 71.80280871140761,
-    "fundamental_score": 72.98254142680534,
+    "safety_score": 71.7995,
+    "fundamental_score": 72.98187968452382,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 55.06864011945835,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.10136677932225026,
-    "sentiment_pos": 0.07915,
-    "sentiment_neg": 0.03055,
-    "sentiment_neu": 0.8903000000000001,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 55.07
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": -0.0625,
     "target_upside": 0.11736682546556948,
@@ -6332,7 +6324,7 @@
     "value_score": 66.71291873809524,
     "quality_score": 90.0,
     "growth_score": 59.775,
-    "safety_score": 71.80280871140761,
+    "safety_score": 71.7995,
     "trend_score": 66.79857283077763,
     "momentum_score": 70.76356090075024,
     "volatility_score": 19.0,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 75.12025,
     "valuation_margin": 59.822875621428565,
     "catalyst_timeline": 61.19515404010817,
-    "downside_control": 51.45542130671113,
-    "composite_score": 65.42185687853957,
+    "downside_control": 51.45492499999999,
+    "composite_score": 65.42175761719734,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 72.98254142680534,
+    "fundamental_score": 72.98187968452382,
     "technical_score": 55.06864011945835,
-    "sentiment_score": 55.07,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Consumer Discretionary",
     "industry": "Footwear"
   },
-  "headlines": [
-    {
-      "title": "Tapestry Rises 10% on Strong Q2 Earnings & Higher FY26 Outlook",
-      "url": "/news/303214/tapestry-rises-10-on-strong-q2-earnings-higher-fy26-outlook",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "BetterInvesting Magazine Update on ServiceNow Inc. (NYSE: NOW) and Deckers Outdoors Corp. (NYSE: DECK)",
-      "url": "/news/302541/betterinvesting-magazine-update-on-servicenow-inc-nyse-now-and-deckers-outdoors-corp-nyse-deck",
-      "publisher": "PR Newswire",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Boot Barn Q3 Earnings & Sales Meet Estimates, FY26 Guidance Up",
-      "url": "/news/301763/boot-barn-q3-earnings-sales-meet-estimates-fy26-guidance-up",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Deckers's Q4 Earnings Call: Our Top 5 Analyst Questions",
-      "url": "/news/300787/deckerss-q4-earnings-call-our-top-5-analyst-questions",
-      "publisher": "StockStory",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "3 Reasons to Avoid DECK and 1 Stock to Buy Instead",
-      "url": "/news/301380/3-reasons-to-avoid-deck-and-1-stock-to-buy-instead",
-      "publisher": "StockStory",
-      "date": "2026-02-04",
-      "sentiment": "negative"
-    },
-    {
-      "title": "The Zacks Rank Explained: How to Find Strong Buy Retail and Wholesale Stocks",
-      "url": "/news/299421/the-zacks-rank-explained-how-to-find-strong-buy-retail-and-wholesale-stocks",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Jimmy Choo Growth & Versace Sale Lift Capri Holdings' Q3 Earnings Beat",
-      "url": "/news/299342/jimmy-choo-growth-versace-sale-lift-capri-holdings-q3-earnings-beat",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "If You Invested $1000 in Deckers 10 Years Ago, This Is How Much You'd Have Now",
-      "url": "/news/299320/if-you-invested-1000-in-deckers-10-years-ago-this-is-how-much-youd-have-now",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Billionaire Investor David Einhorn Has a Big Warning for Stock Investors",
-      "url": "/news/298889/billionaire-investor-david-einhorn-has-a-big-warning-for-stock-investors",
-      "publisher": "Motley Fool",
-      "date": "2026-02-04",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Deckers Outdoor Corporation (DECK): A Bull Case Theory",
-      "url": "/news/298631/deckers-outdoor-corporation-deck-a-bull-case-theory",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Analyst Report: Deckers Outdoor Corporation",
-      "url": "https://finance.yahoo.com/m/68fe94fb-04ee-3017-884d-cae0c0d28563/analyst-report%3A-deckers.html",
-      "publisher": "Morningstar Research",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Is Deckers Outdoor (DECK) Outperforming Other Retail-Wholesale Stocks This Year?",
-      "url": "/news/297583/is-deckers-outdoor-deck-outperforming-other-retail-wholesale-stocks-this-year",
-      "publisher": "Zacks",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "GAP vs. DECK: Which Stock Is the Better Value Option?",
-      "url": "/news/295917/gap-vs-deck-which-stock-is-the-better-value-option",
-      "publisher": "Zacks",
-      "date": "2026-02-02",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Deckers (DECK) Recently Broke Out Above the 20-Day Moving Average",
-      "url": "/news/295710/deckers-deck-recently-broke-out-above-the-20-day-moving-average",
-      "publisher": "Zacks",
-      "date": "2026-02-02",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Deckers (DECK) Just Overtook the 200-Day Moving Average",
-      "url": "/news/295697/deckers-deck-just-overtook-the-200-day-moving-average",
-      "publisher": "Zacks",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Deckers (DECK) Crossed Above the 50-Day Moving Average: What That Means for Investors",
-      "url": "/news/295694/deckers-deck-crossed-above-the-50-day-moving-average-what-that-means-for-investors",
-      "publisher": "Zacks",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Here is What to Know Beyond Why Deckers Outdoor Corporation (DECK) is a Trending Stock",
-      "url": "/news/295594/here-is-what-to-know-beyond-why-deckers-outdoor-corporation-deck-is-a-trending-stock",
-      "publisher": "Zacks",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Zacks Value Trader Highlights: Whirlpool, The Estee Lauder Companies, Deckers Outdoor, Pool and Helen of Troy",
-      "url": "/news/295157/zacks-value-trader-highlights-whirlpool-the-estee-lauder-companies-deckers-outdoor-pool-and-helen-of-troy",
-      "publisher": "Zacks",
-      "date": "2026-02-02",
-      "sentiment": "positive"
-    },
-    {
-      "title": "3 Unpopular Stocks We Think Twice About",
-      "url": "/news/295062/3-unpopular-stocks-we-think-twice-about",
-      "publisher": "StockStory",
-      "date": "2026-02-01",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Deckers' Surprise Blowout Has Wall Street Repricing the Story",
-      "url": "/news/294787/deckers-surprise-blowout-has-wall-street-repricing-the-story",
-      "publisher": "MarketBeat",
-      "date": "2026-02-01",
-      "sentiment": "positive"
-    }
-  ]
+  "headlines": []
 }

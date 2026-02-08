@@ -6271,8 +6271,8 @@
     "debt_equity_score": 15.0,
     "fcf_yield_score": 84.22832196965962,
     "current_ratio_score": 37.68,
-    "safety_score": 48.08071969623743,
-    "fundamental_score": 60.30001180283082,
+    "safety_score": 48.07741098482981,
+    "fundamental_score": 60.299350060549294,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 24.5414853641675,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.014771556536117779,
-    "sentiment_pos": 0.07875,
-    "sentiment_neg": 0.07089999999999999,
-    "sentiment_neu": 0.85035,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 50.74
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.17699737734280038,
@@ -6332,7 +6324,7 @@
     "value_score": 79.17075015833332,
     "quality_score": 79.84560108,
     "growth_score": 27.75,
-    "safety_score": 48.08071969623743,
+    "safety_score": 48.07741098482981,
     "trend_score": 5.899283620787458,
     "momentum_score": 29.905667593104205,
     "volatility_score": 19.0,
@@ -6353,22 +6345,22 @@
     "earnings_visibility": 55.213340161999994,
     "valuation_margin": 68.81722504749999,
     "catalyst_timeline": 33.778311606228925,
-    "downside_control": 34.59010795443561,
-    "composite_score": 47.285870342590385,
+    "downside_control": 34.58961164772447,
+    "composite_score": 47.28577108124815,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 60.30001180283082,
+    "fundamental_score": 60.299350060549294,
     "technical_score": 24.5414853641675,
-    "sentiment_score": 50.74,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 449,
-    "percentile": 0.13680154142581888,
+    "rank": 450,
+    "percentile": 0.1348747591522158,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6377,146 +6369,5 @@
     "sector": "Information Technology",
     "industry": "IT Consulting & Other Services"
   },
-  "headlines": [
-    {
-      "title": "IQVIA Q4 Earnings & Revenues Beat Estimates, Increase Y/Y",
-      "url": "/news/301900/iqvia-q4-earnings-revenues-beat-estimates-increase-yy",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Zacks Earnings Trends Highlights: Gartner, Adobe and Accenture",
-      "url": "/news/301728/zacks-earnings-trends-highlights-gartner-adobe-and-accenture",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "FlexRule(R) Has Been Recognized as Niche Player in the 2026 Gartner(R) Magic Quadrant(TM) for Decision Intelligence Platforms",
-      "url": "https://finance.yahoo.com/news/flexrule-r-recognized-niche-player-141500068.html",
-      "publisher": "TMX Newsfile",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Software ate the world. Now, Wall Street is worried AI will eat software.",
-      "url": "https://www.marketwatch.com/story/software-ate-the-world-now-wall-street-is-worried-ai-will-eat-software-88661ed5?mod=mw_FV",
-      "publisher": "MarketWatch",
-      "date": "2026-02-05",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Earnings Outlook Improves: A Closer Look",
-      "url": "/news/300597/earnings-outlook-improves-a-closer-look",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Equifax Q4 Earnings Beat Estimates, Revenues Jump 9% Y/Y",
-      "url": "/news/299775/equifax-q4-earnings-beat-estimates-revenues-jump-9-yy",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Stock Index Futures Steady After Tech-Led Selloff, U.S. ADP Jobs Report and Alphabet Earnings in Focus",
-      "url": "https://finance.yahoo.com/m/bf825e59-c634-35ae-ad25-5c90052b8217/stock-index-futures-steady.html",
-      "publisher": "Barchart",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "IT Q4 Deep Dive: Strategic Shifts Amid Market Caution and Transformation",
-      "url": "/news/298843/it-q4-deep-dive-strategic-shifts-amid-market-caution-and-transformation",
-      "publisher": "StockStory",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Gartner Q4 Earnings Call Highlights",
-      "url": "https://finance.yahoo.com/m/a085d12b-1226-3be6-a2bf-292f48229dd9/gartner-q4-earnings-call.html",
-      "publisher": "MarketBeat",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Stocks to Watch Tuesday Recap: PayPal, PepsiCo, AMD, Disney",
-      "url": "https://finance.yahoo.com/m/9234fa62-b0cf-3ed2-ba67-8ebb3210dc74/stocks-to-watch-tuesday.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Why Gartner and other IT stocks got slammed on Tuesday",
-      "url": "https://www.marketwatch.com/story/why-gartner-and-other-it-stocks-got-slammed-on-tuesday-d0c74924?mod=mw_FV",
-      "publisher": "MarketWatch",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Stocks Tumble on AI Disruption Fears",
-      "url": "https://finance.yahoo.com/m/2d280010-8635-3f1a-b487-d134aea3e092/stocks-tumble-on-ai.html",
-      "publisher": "Barchart",
-      "date": "2026-02-03",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Why Gartner Stock Fell 31% This Morning",
-      "url": "/news/298045/why-gartner-stock-fell-31-this-morning",
-      "publisher": "Motley Fool",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Gartner Stock Falls Sharply on Disappointing Guidance",
-      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-02-03-2026/card/gartner-stock-falls-sharply-on-disappointing-guidance-JoY26exZ4LFiCYyuKQ0l?mod=wsj_FV",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-03",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Gartner Inc (IT) Q4 2025 Earnings Call Highlights: Strong Financial Performance Amidst ...",
-      "url": "https://finance.yahoo.com/news/gartner-inc-q4-2025-earnings-190204142.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-02-03",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Stocks Fall, Gold Rallies On Best Day Since 2008: What's Moving Markets Tuesday?",
-      "url": "/news/297947/stocks-fall-gold-rallies-on-best-day-since-2008-whats-moving-markets-tuesday",
-      "publisher": "Benzinga",
-      "date": "2026-02-03",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Gartner Earnings Outpace Estimates in Q4, Revenues Rise Y/Y",
-      "url": "/news/297828/gartner-earnings-outpace-estimates-in-q4-revenues-rise-yy",
-      "publisher": "Zacks",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Software Stocks Retreat and Drag the Broader Market Lower",
-      "url": "https://finance.yahoo.com/m/a06579e4-a8c9-38b5-bd18-ff27c7b1d6a5/software-stocks-retreat-and.html",
-      "publisher": "Barchart",
-      "date": "2026-02-03",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Nasdaq Slips, Gold and Silver Stage Substantial Recovery",
-      "url": "https://finance.yahoo.com/m/e2a821b3-72dd-368c-9e69-12718b55c208/nasdaq-slips%2C-gold-and-silver.html",
-      "publisher": "Barchart",
-      "date": "2026-02-03",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Stocks to Watch Tuesday: PayPal, PepsiCo, AMD, Disney",
-      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-02-03-2026/card/stocks-to-watch-tuesday-palantir-teradyne-amd-1M4ooWKZ5ukuV7KWaO2N?mod=wsj_FV",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

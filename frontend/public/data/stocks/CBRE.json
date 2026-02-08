@@ -6271,8 +6271,8 @@
     "debt_equity_score": 51.5879,
     "fcf_yield_score": 52.23510524597879,
     "current_ratio_score": 50.842,
-    "safety_score": 39.038061334397,
-    "fundamental_score": 58.409699037911146,
+    "safety_score": 39.03475262298938,
+    "fundamental_score": 58.409037295629616,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 59.00137014941706,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.22967669593928533,
-    "sentiment_pos": 0.13399999999999998,
-    "sentiment_neg": 0.0079,
-    "sentiment_neu": 0.8581,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 61.48
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.5,
     "target_upside": 0.12571462250250495,
@@ -6332,7 +6324,7 @@
     "value_score": 54.78377655555556,
     "quality_score": 54.77642782142856,
     "growth_score": 81.89285714285714,
-    "safety_score": 39.038061334397,
+    "safety_score": 39.03475262298938,
     "trend_score": 63.65279633276955,
     "momentum_score": 58.273926707111286,
     "volatility_score": 62.116766187264076,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 63.319392744642855,
     "valuation_margin": 50.154132966666666,
     "catalyst_timeline": 60.7766737184986,
-    "downside_control": 54.33822412824916,
-    "composite_score": 58.29070381522944,
+    "downside_control": 54.33772782153802,
+    "composite_score": 58.290604553887206,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 58.409699037911146,
+    "fundamental_score": 58.409037295629616,
     "technical_score": 59.00137014941706,
-    "sentiment_score": 61.48,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Real Estate",
     "industry": "Real Estate Services"
   },
-  "headlines": [
-    {
-      "title": "Rexford Industrial Realty Q4 Earnings Call Highlights",
-      "url": "https://finance.yahoo.com/m/3133300e-a637-3209-9f6c-90d0b2f4b223/rexford-industrial-realty-q4.html",
-      "publisher": "MarketBeat",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "CBRE Group (CBRE) Reports Next Week: Wall Street Expects Earnings Growth",
-      "url": "/news/301689/cbre-group-cbre-reports-next-week-wall-street-expects-earnings-growth",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "FirstService (FSV) Q4 Earnings and Revenues Surpass Estimates",
-      "url": "/news/299359/firstservice-fsv-q4-earnings-and-revenues-surpass-estimates",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Earnings Growth & Price Strength Make CBRE Group (CBRE) a Stock to Watch",
-      "url": "/news/297552/earnings-growth-price-strength-make-cbre-group-cbre-a-stock-to-watch",
-      "publisher": "Zacks",
-      "date": "2026-02-03",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Large companies push coworking expansion",
-      "url": "https://finance.yahoo.com/m/3aef706f-9678-3374-bc81-1f7b17c0bb54/large-companies-push.html",
-      "publisher": "Facilities Dive",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "This TikTok family turned a $3,700 bus into a 40-foot tiny home on wheels. Why a tiny home can be a good investment",
-      "url": "https://finance.yahoo.com/news/tiktok-family-turned-3-700-123000592.html",
-      "publisher": "Moneywise",
-      "date": "2026-02-01",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Why CBRE Group (CBRE) is a Top Momentum Stock for the Long-Term",
-      "url": "/news/293680/why-cbre-group-cbre-is-a-top-momentum-stock-for-the-long-term",
-      "publisher": "Zacks",
-      "date": "2026-01-30",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Here's Why Vulcan Value Partners Reallocated Capital from CBRE Group (CBRE)",
-      "url": "/news/288010/heres-why-vulcan-value-partners-reallocated-capital-from-cbre-group-cbre",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-27",
-      "sentiment": "positive"
-    },
-    {
-      "title": "3PLs dominate industrial leasing as supply chains get outsourced",
-      "url": "https://finance.yahoo.com/news/3pls-dominate-industrial-leasing-supply-192224473.html",
-      "publisher": "FreightWaves",
-      "date": "2026-01-26",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Why CBRE Group (CBRE) is a Top Stock for the Long-Term",
-      "url": "/news/285363/why-cbre-group-cbre-is-a-top-stock-for-the-long-term",
-      "publisher": "Zacks",
-      "date": "2026-01-23",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Here's Why CBRE Group (CBRE) is a Strong Growth Stock",
-      "url": "/news/284062/heres-why-cbre-group-cbre-is-a-strong-growth-stock",
-      "publisher": "Zacks",
-      "date": "2026-01-22",
-      "sentiment": "positive"
-    },
-    {
-      "title": "3 Large-Cap Stocks We Keep Off Our Radar",
-      "url": "/news/283413/3-large-cap-stocks-we-keep-off-our-radar",
-      "publisher": "StockStory",
-      "date": "2026-01-21",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Josh Brown's 'Best Stocks in the Market': CBRE Group",
-      "url": "https://www.youtube.com/watch?v=iyI7Sc8WbhM",
-      "publisher": "CNBC TV",
-      "date": "2026-01-16",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Office, retail to see more leasing as market recovery continues: CBRE",
-      "url": "https://finance.yahoo.com/m/3808dd1f-d919-37c6-b987-9bade4b7f03f/office%2C-retail-to-see-more.html",
-      "publisher": "Facilities Dive",
-      "date": "2026-01-16",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "NYLI CBRE Global Infrastructure Megatrends Term Fund (NYSE: MEGI) Declares Availability of Section 19(a) Notice for January 2026",
-      "url": "https://www.businesswire.com/news/home/20260115235584/en/",
-      "publisher": "Business Wire",
-      "date": "2026-01-15",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Earnings Preview: What to Expect From CBRE Group's Report",
-      "url": "https://finance.yahoo.com/m/97ae80ab-cc99-3c8b-8d7e-70e544bd5f78/earnings-preview%3A-what-to.html",
-      "publisher": "Barchart",
-      "date": "2026-01-15",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "CBRE Group (CBRE) is a Top-Ranked Momentum Stock: Should You Buy?",
-      "url": "/news/276301/cbre-group-cbre-is-a-top-ranked-momentum-stock-should-you-buy",
-      "publisher": "Zacks",
-      "date": "2026-01-14",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "3 Reasons Why Growth Investors Shouldn't Overlook CBRE (CBRE)",
-      "url": "/news/275287/3-reasons-why-growth-investors-shouldnt-overlook-cbre-cbre",
-      "publisher": "Zacks",
-      "date": "2026-01-13",
-      "sentiment": "positive"
-    },
-    {
-      "title": "CBRE Group Stock Gains 17.6% in 6 Months: Will it Continue to Rise?",
-      "url": "/news/273934/cbre-group-stock-gains-176-in-6-months-will-it-continue-to-rise",
-      "publisher": "Zacks",
-      "date": "2026-01-12",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Earnings Growth & Price Strength Make CBRE Group (CBRE) a Stock to Watch",
-      "url": "/news/273759/earnings-growth-price-strength-make-cbre-group-cbre-a-stock-to-watch",
-      "publisher": "Zacks",
-      "date": "2026-01-12",
-      "sentiment": "positive"
-    }
-  ]
+  "headlines": []
 }

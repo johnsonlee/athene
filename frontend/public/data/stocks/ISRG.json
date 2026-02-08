@@ -6271,8 +6271,8 @@
     "debt_equity_score": 89.642625,
     "fcf_yield_score": 40.935236626773566,
     "current_ratio_score": 85.0,
-    "safety_score": 74.44787121140763,
-    "fundamental_score": 62.56485001037676,
+    "safety_score": 74.4445625,
+    "fundamental_score": 62.564188268095236,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 43.54368620259309,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.07508718277571332,
-    "sentiment_pos": 0.072,
-    "sentiment_neg": 0.03425,
-    "sentiment_neu": 0.89375,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 53.75
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.07142857142857142,
     "target_upside": 0.26190720065553624,
@@ -6332,7 +6324,7 @@
     "value_score": 20.893982952380952,
     "quality_score": 78.7226001,
     "growth_score": 75.34,
-    "safety_score": 74.44787121140763,
+    "safety_score": 74.4445625,
     "trend_score": 39.18809340815147,
     "momentum_score": 40.988929216663685,
     "volatility_score": 47.452897075742726,
@@ -6353,22 +6345,22 @@
     "earnings_visibility": 75.861390015,
     "valuation_margin": 20.128194885714286,
     "catalyst_timeline": 46.96874971540143,
-    "downside_control": 61.58711524307255,
-    "composite_score": 50.82078926320671,
+    "downside_control": 61.586618936361404,
+    "composite_score": 50.82069000186447,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 62.56485001037676,
+    "fundamental_score": 62.564188268095236,
     "technical_score": 43.54368620259309,
-    "sentiment_score": 53.75,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 386,
-    "percentile": 0.2581888246628131,
+    "rank": 387,
+    "percentile": 0.25626204238921,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6377,146 +6369,5 @@
     "sector": "Health Care",
     "industry": "Health Care Equipment"
   },
-  "headlines": [
-    {
-      "title": "Doximity Stock Falls Despite Q3 Earnings & Revenues Beat Estimates",
-      "url": "/news/303216/doximity-stock-falls-despite-q3-earnings-revenues-beat-estimates",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Intuitive Surgical, Inc. (ISRG) Is a Trending Stock: Facts to Know Before Betting on It",
-      "url": "/news/302789/intuitive-surgical-inc-isrg-is-a-trending-stock-facts-to-know-before-betting-on-it",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "QGEN's Q4 Earnings Meet Estimates, Revenues Up Y/Y, Stock Down",
-      "url": "/news/302702/qgens-q4-earnings-meet-estimates-revenues-up-yy-stock-down",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "RMD Stock Up Following Q2 Earnings & Revenue Beat, Margins Expand",
-      "url": "/news/302684/rmd-stock-up-following-q2-earnings-revenue-beat-margins-expand",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Can Intuitive Surgical Sustain Robust Top-line Growth in 2026?",
-      "url": "/news/301764/can-intuitive-surgical-sustain-robust-top-line-growth-in-2026",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "ALGN Stock Climbs on Q4 Earnings and Revenue Beat, Margins Down",
-      "url": "/news/301339/algn-stock-climbs-on-q4-earnings-and-revenue-beat-margins-down",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Here's Why You Should Add Masimo Stock to Your Portfolio Now",
-      "url": "/news/300004/heres-why-you-should-add-masimo-stock-to-your-portfolio-now",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Intuitive Surgical, Inc. (ISRG): A Bull Case Theory",
-      "url": "/news/298632/intuitive-surgical-inc-isrg-a-bull-case-theory",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Reasons to Add Cooper Companies Stock to Your Portfolio Now",
-      "url": "/news/298005/reasons-to-add-cooper-companies-stock-to-your-portfolio-now",
-      "publisher": "Zacks",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Is Intuitive Surgical (ISRG) a Buy as Wall Street Analysts Look Optimistic?",
-      "url": "/news/297547/is-intuitive-surgical-isrg-a-buy-as-wall-street-analysts-look-optimistic",
-      "publisher": "Zacks",
-      "date": "2026-02-03",
-      "sentiment": "positive"
-    },
-    {
-      "title": "IDEXX Stock Down Despite Q4 Earnings & Revenue Beat, Margins Rise",
-      "url": "/news/295764/idexx-stock-down-despite-q4-earnings-revenue-beat-margins-rise",
-      "publisher": "Zacks",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Should You Buy Shares of Intuitive Surgical In February?",
-      "url": "/news/294625/should-you-buy-shares-of-intuitive-surgical-in-february",
-      "publisher": "Motley Fool",
-      "date": "2026-01-31",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Becton, Dickinson Shareholders Approve All Proposals at Annual Meeting, Recap Record FY2025",
-      "url": "https://finance.yahoo.com/m/dd0d7c9d-1361-368a-bbb0-5b635846d035/becton%2C-dickinson.html",
-      "publisher": "MarketBeat",
-      "date": "2026-01-31",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Intuitive Surgical Inc.'s (ISRG) Long-Run Growth Underestimated, Says TD Cowen",
-      "url": "/news/294538/intuitive-surgical-incs-isrg-long-run-growth-underestimated-says-td-cowen",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-31",
-      "sentiment": "positive"
-    },
-    {
-      "title": "1 No-Brainer Stock to Buy on the Dip",
-      "url": "/news/294421/1-no-brainer-stock-to-buy-on-the-dip",
-      "publisher": "Motley Fool",
-      "date": "2026-01-31",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "2 AI Surgery Stocks to Buy Hand Over Fist in February",
-      "url": "/news/294218/2-ai-surgery-stocks-to-buy-hand-over-fist-in-february",
-      "publisher": "Motley Fool",
-      "date": "2026-01-30",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Intuitive Surgical and KB Home have been highlighted as Zacks Bull and Bear of the Day",
-      "url": "/news/293444/intuitive-surgical-and-kb-home-have-been-highlighted-as-zacks-bull-and-bear-of-the-day",
-      "publisher": "Zacks",
-      "date": "2026-01-30",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "HOLX Stock Slips on Q1 Earnings and Revenue Miss, Margins Crash",
-      "url": "/news/293433/holx-stock-slips-on-q1-earnings-and-revenue-miss-margins-crash",
-      "publisher": "Zacks",
-      "date": "2026-01-30",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Bull of the Day: Intuitive Surgical (ISRG)",
-      "url": "/news/293179/bull-of-the-day-intuitive-surgical-isrg",
-      "publisher": "Zacks",
-      "date": "2026-01-30",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Analysts Split on Intuitive Surgical, Inc. (ISRG) Valuation Despite Strong Operating Momentum",
-      "url": "/news/291506/analysts-split-on-intuitive-surgical-inc-isrg-valuation-despite-strong-operating-momentum",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-29",
-      "sentiment": "negative"
-    }
-  ]
+  "headlines": []
 }

@@ -6271,8 +6271,8 @@
     "debt_equity_score": 60.335,
     "fcf_yield_score": 36.29817205447816,
     "current_ratio_score": 85.0,
-    "safety_score": 59.79405871140762,
-    "fundamental_score": 47.978958532757716,
+    "safety_score": 59.79075,
+    "fundamental_score": 47.97829679047619,
     "fund_data_completeness": 0.9166666666666666
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 27.06497665037854,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": -0.05163384610156354,
-    "sentiment_pos": 0.062049999999999994,
-    "sentiment_neg": 0.06945,
-    "sentiment_neu": 0.8685499999999999,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 47.42
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.5,
     "target_upside": 0.9374698213423468,
@@ -6332,7 +6324,7 @@
     "value_score": 16.94515961904762,
     "quality_score": 52.61285628571429,
     "growth_score": 64.0,
-    "safety_score": 59.79405871140762,
+    "safety_score": 59.79075,
     "trend_score": 9.96852447372725,
     "momentum_score": 30.862203195620758,
     "volatility_score": 24.07879174787069,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 51.55392844285714,
     "valuation_margin": 14.883547885714284,
     "catalyst_timeline": 40.734072766934794,
-    "downside_control": 44.82292756889174,
-    "composite_score": 33.251410171532314,
+    "downside_control": 44.8224312621806,
+    "composite_score": 33.251310910190085,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 47.978958532757716,
+    "fundamental_score": 47.97829679047619,
     "technical_score": 27.06497665037854,
-    "sentiment_score": 47.42,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Industrials",
     "industry": "Aerospace & Defense"
   },
-  "headlines": [
-    {
-      "title": "Axon (AXON) Is Considered a Good Investment by Brokers: Is That True?",
-      "url": "/news/302857/axon-axon-is-considered-a-good-investment-by-brokers-is-that-true",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Axon Tased By AI Software Fears As Investors Shoot First",
-      "url": "https://www.investors.com/news/axon-stock-tased-by-ai-software-fears?mod=IBD_FV",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-02-05",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Investors Heavily Search Axon Enterprise, Inc (AXON): Here is What You Need to Know",
-      "url": "/news/301450/investors-heavily-search-axon-enterprise-inc-axon-here-is-what-you-need-to-know",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Weaker-Than-Expected Margin Hurt Axon Enterprise (AXON) in Q4",
-      "url": "/news/301289/weaker-than-expected-margin-hurt-axon-enterprise-axon-in-q4",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-05",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Jim Cramer on Axon: \"It's Still Too Heavy a Stock\"",
-      "url": "/news/300049/jim-cramer-on-axon-its-still-too-heavy-a-stock",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Axon Enterprise, Inc. (AXON): A Bull Case Theory",
-      "url": "/news/300018/axon-enterprise-inc-axon-a-bull-case-theory",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Mercury Systems (MRCY) Surpasses Q2 Earnings and Revenue Estimates",
-      "url": "/news/298268/mercury-systems-mrcy-surpasses-q2-earnings-and-revenue-estimates",
-      "publisher": "Zacks",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "25 Stocks to Buy for a Profitable February",
-      "url": "/news/297429/25-stocks-to-buy-for-a-profitable-february",
-      "publisher": "Schaeffer's Research",
-      "date": "2026-02-03",
-      "sentiment": "positive"
-    },
-    {
-      "title": "UnitedHealth, Trade Desk, And Unity Are Among Top 10 Large Cap Losers Last Week (Jan. 26-Jan. 30): Are the Others in Your Portfolio?",
-      "url": "/news/294834/unitedhealth-trade-desk-and-unity-are-among-top-10-large-cap-losers-last-week-jan-26-jan-30-are-the-others-in-your-portfolio",
-      "publisher": "Benzinga",
-      "date": "2026-02-01",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Axon Enterprise (AXON) Dips More Than Broader Market: What You Should Know",
-      "url": "/news/294287/axon-enterprise-axon-dips-more-than-broader-market-what-you-should-know",
-      "publisher": "Zacks",
-      "date": "2026-01-30",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Will Axon Enterprise Shock Investors When it Reports Q4 Earnings?",
-      "url": "https://finance.yahoo.com/m/e538def8-39b5-3e75-8533-08c130641575/will-axon-enterprise-shock.html",
-      "publisher": "Barchart",
-      "date": "2026-01-30",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Why Axon Enterprise Stock Plunged Week",
-      "url": "/news/293904/why-axon-enterprise-stock-plunged-week",
-      "publisher": "Motley Fool",
-      "date": "2026-01-30",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "AppLovin's ad tech business could steal Amazon's lunch",
-      "url": "https://finance.yahoo.com/news/applovins-ad-tech-business-could-steal-amazons-lunch-130055566.html",
-      "publisher": "Yahoo Finance",
-      "date": "2026-01-29",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Axon Enterprise (AXON) Sees a More Significant Dip Than Broader Market: Some Facts to Know",
-      "url": "/news/290972/axon-enterprise-axon-sees-a-more-significant-dip-than-broader-market-some-facts-to-know",
-      "publisher": "Zacks",
-      "date": "2026-01-28",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Axon's 9-Year Winning Streak Just Snapped. Can It Get Back on Track in 2026?",
-      "url": "/news/287790/axons-9-year-winning-streak-just-snapped-can-it-get-back-on-track-in-2026",
-      "publisher": "Motley Fool",
-      "date": "2026-01-27",
-      "sentiment": "positive"
-    },
-    {
-      "title": "2 High-Flying Stocks to Target This Week and 1 That Underwhelm",
-      "url": "/news/286544/2-high-flying-stocks-to-target-this-week-and-1-that-underwhelm",
-      "publisher": "StockStory",
-      "date": "2026-01-25",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Here is What to Know Beyond Why Axon Enterprise, Inc (AXON) is a Trending Stock",
-      "url": "/news/283897/here-is-what-to-know-beyond-why-axon-enterprise-inc-axon-is-a-trending-stock",
-      "publisher": "Zacks",
-      "date": "2026-01-22",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Axon Enterprise (AXON) Stock Sinks As Market Gains: What You Should Know",
-      "url": "/news/283183/axon-enterprise-axon-stock-sinks-as-market-gains-what-you-should-know",
-      "publisher": "Zacks",
-      "date": "2026-01-21",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Why Is AppLovin Down Today? CapitalWatch Short Report Hits Stock",
-      "url": "https://finance.yahoo.com/news/why-applovin-down-today-capitalwatch-170314694.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-01-20",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Axon Enterprise Earnings Preview: What to Expect",
-      "url": "https://finance.yahoo.com/m/fffb47b7-5a1d-3c4b-83f3-bfd88ca9aa24/axon-enterprise-earnings.html",
-      "publisher": "Barchart",
-      "date": "2026-01-20",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

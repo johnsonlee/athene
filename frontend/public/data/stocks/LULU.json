@@ -6271,8 +6271,8 @@
     "debt_equity_score": 75.3165,
     "fcf_yield_score": 62.46412165719372,
     "current_ratio_score": 80.65,
-    "safety_score": 65.10980871140762,
-    "fundamental_score": 69.29125640894819,
+    "safety_score": 65.10650000000001,
+    "fundamental_score": 69.29059466666666,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 35.97103882875547,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.021915197926687707,
-    "sentiment_pos": 0.05685,
-    "sentiment_neg": 0.056400000000000006,
-    "sentiment_neu": 0.88665,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 51.1
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.043478260869565216,
     "target_upside": 0.188892102979462,
@@ -6332,7 +6324,7 @@
     "value_score": 75.47717866666666,
     "quality_score": 90.0,
     "growth_score": 41.6,
-    "safety_score": 65.10980871140762,
+    "safety_score": 65.10650000000001,
     "trend_score": 25.321031952468477,
     "momentum_score": 43.54193937973419,
     "volatility_score": 26.560737145473365,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 66.157,
     "valuation_margin": 68.36015359999999,
     "catalyst_timeline": 42.10717179182096,
-    "downside_control": 51.76758187853214,
-    "composite_score": 58.5783722395554,
+    "downside_control": 51.767085571821,
+    "composite_score": 58.578272978213164,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 69.29125640894819,
+    "fundamental_score": 69.29059466666666,
     "technical_score": 35.97103882875547,
-    "sentiment_score": 51.1,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Consumer Discretionary",
     "industry": "Apparel, Accessories & Luxury Goods"
   },
-  "headlines": [
-    {
-      "title": "BTIG Reiterates Buy on Lululemon (LULU) Despite Weak North America Trends",
-      "url": "/news/303730/btig-reiterates-buy-on-lululemon-lulu-despite-weak-north-america-trends",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-08",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Lululemon (LULU) Increases Yet Falls Behind Market: What Investors Need to Know",
-      "url": "/news/303431/lululemon-lulu-increases-yet-falls-behind-market-what-investors-need-to-know",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Is Trending Stock lululemon athletica inc. (LULU) a Buy Now?",
-      "url": "/news/302784/is-trending-stock-lululemon-athletica-inc-lulu-a-buy-now",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Growth Scare Hits Markets Edgy From Tech Selloff",
-      "url": "https://finance.yahoo.com/m/0d2019b3-aa05-3e39-bec5-678db9f5188c/growth-scare-hits-markets.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-05",
-      "sentiment": "negative"
-    },
-    {
-      "title": "JPMorgan Raises Lululemon (LULU) Q4 2025 EPS Estimate Following ICR Conference Meeting Citing Updated 2026 Projections",
-      "url": "/news/301055/jpmorgan-raises-lululemon-lulu-q4-2025-eps-estimate-following-icr-conference-meeting-citing-updated-2026-projections",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "lululemon athletica inc. (LULU): A Bull Case Theory",
-      "url": "/news/300129/lululemon-athletica-inc-lulu-a-bull-case-theory",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Can NIKE Reignite Growth Amid Ongoing Wholesale Reset Pressures?",
-      "url": "/news/300059/can-nike-reignite-growth-amid-ongoing-wholesale-reset-pressures",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Enphase Energy Q4 Earnings Call Highlights",
-      "url": "https://finance.yahoo.com/m/f1547b36-3896-3d0c-a8f7-bdc8d4bc61d4/enphase-energy-q4-earnings.html",
-      "publisher": "MarketBeat",
-      "date": "2026-02-03",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Armani Outfits Olympics Team While Preparing to Pass Founders Torch",
-      "url": "https://finance.yahoo.com/m/ac730cc0-977e-3450-9b6b-7b6e2d000c0e/armani-outfits-olympics-team.html",
-      "publisher": "The Daily Upside",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Spectrum Brands to Report Q1 Earnings: What's in the Offing?",
-      "url": "/news/296078/spectrum-brands-to-report-q1-earnings-whats-in-the-offing",
-      "publisher": "Zacks",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Lululemon (LULU) Increases Despite Market Slip: Here's What You Need to Know",
-      "url": "/news/294266/lululemon-lulu-increases-despite-market-slip-heres-what-you-need-to-know",
-      "publisher": "Zacks",
-      "date": "2026-01-30",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Lululemon is looking to catch the Labubu wave. It's two years late.",
-      "url": "https://www.marketwatch.com/story/lululemon-is-looking-to-catch-the-labubu-wave-its-two-years-late-adea8318?mod=mw_FV",
-      "publisher": "MarketWatch",
-      "date": "2026-01-29",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Dollar General and Banco De Chile have been highlighted as Zacks Bull and Bear of the Day",
-      "url": "/news/291954/dollar-general-and-banco-de-chile-have-been-highlighted-as-zacks-bull-and-bear-of-the-day",
-      "publisher": "Zacks",
-      "date": "2026-01-29",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Nike vs. Lululemon: Which Stock to Buy for 2026?",
-      "url": "/news/290909/nike-vs-lululemon-which-stock-to-buy-for-2026",
-      "publisher": "Motley Fool",
-      "date": "2026-01-28",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Can lululemon's Premium Apparel Survive Weak U.S. Traffic Trends?",
-      "url": "/news/290563/can-lululemons-premium-apparel-survive-weak-us-traffic-trends",
-      "publisher": "Zacks",
-      "date": "2026-01-28",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Lululemon sends stern warning to customers about its leggings",
-      "url": "https://finance.yahoo.com/m/8769f48b-9c83-307e-9451-71bbba836623/lululemon-sends-stern-warning.html",
-      "publisher": "TheStreet",
-      "date": "2026-01-27",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Lululemon brings back leggings after backlash, warns customers",
-      "url": "https://finance.yahoo.com/m/8769f48b-9c83-307e-9451-71bbba836623/lululemon-brings-back.html",
-      "publisher": "TheStreet",
-      "date": "2026-01-27",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Down 10% Already in 2026, Is Lululemon Stock a Buy?",
-      "url": "/news/288928/down-10-already-in-2026-is-lululemon-stock-a-buy",
-      "publisher": "Motley Fool",
-      "date": "2026-01-27",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "lululemon Stock Looks Cheap: Buy Now or Wait for Better Entry Point?",
-      "url": "/news/288904/lululemon-stock-looks-cheap-buy-now-or-wait-for-better-entry-point",
-      "publisher": "Zacks",
-      "date": "2026-01-27",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Can NIKE Regain Its Stride as China and Digital Momentum Falter?",
-      "url": "/news/288887/can-nike-regain-its-stride-as-china-and-digital-momentum-falter",
-      "publisher": "Zacks",
-      "date": "2026-01-27",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

@@ -6271,8 +6271,8 @@
     "debt_equity_score": 15.0,
     "fcf_yield_score": 10.0,
     "current_ratio_score": 15.0,
-    "safety_score": 2.1265587114076183,
-    "fundamental_score": 50.55677012561485,
+    "safety_score": 2.1232499999999987,
+    "fundamental_score": 50.556108383333324,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,38 +6306,30 @@
     "technical_score": 53.67231727792564,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.27217011736778873,
-    "sentiment_pos": 0.1451,
-    "sentiment_neg": 0.0225,
-    "sentiment_neu": 0.8324,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 63.61
-  },
+  "sentiment": null,
   "analyst": {
-    "revision_momentum": -0.07142857142857142,
+    "revision_momentum": -0.07692307692307693,
     "target_upside": 0.15780445969125212,
     "consensus_rating": 1.875,
-    "analyst_revision_count": 14.0,
+    "analyst_revision_count": 13.0,
     "analyst_count": 22.0,
     "analyst_upgrades": 1.0,
     "analyst_downgrades": 2.0,
-    "revision_momentum_score": 45.714285714285715,
+    "revision_momentum_score": 45.38461538461539,
     "target_upside_score": 66.93653516295025,
     "consensus_score": 63.0,
-    "analyst_score": 57.46350159274687
+    "analyst_score": 57.33163346087874
   },
   "ranking": {
     "value_score": 78.66383353333333,
     "quality_score": 69.32249999999999,
     "growth_score": 38.675,
-    "safety_score": 2.1265587114076183,
+    "safety_score": 2.1232499999999987,
     "trend_score": 61.32550622018943,
     "momentum_score": 69.59412099339653,
     "volatility_score": 21.982145569249262,
     "volume_score": 50.0,
-    "analyst_score": 57.46350159274687,
+    "analyst_score": 57.33163346087874,
     "pe_score": 71.19219,
     "forward_pe_score": 85.7526666,
     "pb_score": 31.588124999999998,
@@ -6352,23 +6344,23 @@
     "current_ratio_score": 15.0,
     "earnings_visibility": 52.77462499999999,
     "valuation_margin": 70.84215006,
-    "catalyst_timeline": 59.45931288063328,
-    "downside_control": 15.57930564209853,
-    "composite_score": 50.39638887144666,
+    "catalyst_timeline": 59.446126067446464,
+    "downside_control": 15.578809335387389,
+    "composite_score": 50.39200389581872,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 50.55677012561485,
+    "fundamental_score": 50.556108383333324,
     "technical_score": 53.67231727792564,
-    "sentiment_score": 63.61,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 397,
-    "percentile": 0.23699421965317918,
+    "rank": 398,
+    "percentile": 0.2350674373795761,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6377,146 +6369,5 @@
     "sector": "Consumer Discretionary",
     "industry": "Hotels, Resorts & Cruise Lines"
   },
-  "headlines": [
-    {
-      "title": "What Do Analysts Think About Norwegian Cruise Line Holdings (NCLH)",
-      "url": "/news/302384/what-do-analysts-think-about-norwegian-cruise-line-holdings-nclh",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "1 Cash-Burning Stock to Target This Week and 2 That Underwhelm",
-      "url": "/news/303319/1-cash-burning-stock-to-target-this-week-and-2-that-underwhelm",
-      "publisher": "StockStory",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Oceania Cruises Celebrates Keel Laying for New-Generation Ship, Oceania Sonata, at the Fincantieri Shipyard in Marghera, Italy",
-      "url": "/news/301214/oceania-cruises-celebrates-keel-laying-for-new-generation-ship-oceania-sonata-at-the-fincantieri-shipyard-in-marghera-italy",
-      "publisher": "PR Newswire",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "BofA Reworks Credit Cards to Fuel Ambitious Consumer Profit Plan",
-      "url": "https://finance.yahoo.com/news/bofa-reworks-credit-cards-fuel-114000513.html",
-      "publisher": "Bloomberg",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "This Investment Pro Recommends Checking Into Hyatt Hotels, Out of Airbnb",
-      "url": "https://www.barrons.com/articles/this-investment-pro-recommends-checking-into-hyatt-hotels-out-of-airbnb-9158fe6b?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Don't You Dare Buy the Cheapest Cruise Line Stock",
-      "url": "/news/299217/dont-you-dare-buy-the-cheapest-cruise-line-stock",
-      "publisher": "Motley Fool",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Caribbean Capacity Surges, Can Carnival Defend Yields in 2026?",
-      "url": "/news/299389/caribbean-capacity-surges-can-carnival-defend-yields-in-2026",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Norwegian Cruise (NCLH) Commission Changes May Impact Net Returns, UBS Notes",
-      "url": "/news/296956/norwegian-cruise-nclh-commission-changes-may-impact-net-returns-ubs-notes",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Norwegian Cruise (NCLH) Jumps 7.6% on Strong Cruise Demand",
-      "url": "/news/296644/norwegian-cruise-nclh-jumps-76-on-strong-cruise-demand",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-03",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Oceania Cruises Celebrates Record-Breaking Launch Day for Brand New Ship",
-      "url": "/news/296185/oceania-cruises-celebrates-record-breaking-launch-day-for-brand-new-ship",
-      "publisher": "PR Newswire",
-      "date": "2026-02-02",
-      "sentiment": "positive"
-    },
-    {
-      "title": "RCL Best Booking Streak Ever: Signal of Strong Cruise Demand in 2026?",
-      "url": "/news/295825/rcl-best-booking-streak-ever-signal-of-strong-cruise-demand-in-2026",
-      "publisher": "Zacks",
-      "date": "2026-02-02",
-      "sentiment": "positive"
-    },
-    {
-      "title": "3 Value Stocks We Keep Off Our Radar",
-      "url": "/news/295100/3-value-stocks-we-keep-off-our-radar",
-      "publisher": "StockStory",
-      "date": "2026-02-01",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Norwegian Cruise Line (NCLH) Declines More Than Market: Some Information for Investors",
-      "url": "/news/294298/norwegian-cruise-line-nclh-declines-more-than-market-some-information-for-investors",
-      "publisher": "Zacks",
-      "date": "2026-01-30",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Norwegian Cruise (NCLH) Climbs 10% as Industry Poised for Brighter Waters",
-      "url": "/news/292994/norwegian-cruise-nclh-climbs-10-as-industry-poised-for-brighter-waters",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-29",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Microsoft Rout Weighs on the Broader Market",
-      "url": "https://finance.yahoo.com/m/57cec5ad-0d77-3a09-b508-a7dd475295fe/microsoft-rout-weighs-on-the.html",
-      "publisher": "Barchart",
-      "date": "2026-01-29",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Royal Caribbean Guidance Lifts Cruise Stocks. RCL, VIK Shares Jump.",
-      "url": "https://finance.yahoo.com/m/3e7ac1f2-1b5b-39e5-9474-a5e92f39c8d5/royal-caribbean-guidance.html",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-01-29",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Norwegian Cruise Line (NCLH) Stock Rides Wave Of Optimism After Royal Caribbean Earnings",
-      "url": "/news/292439/norwegian-cruise-line-nclh-stock-rides-wave-of-optimism-after-royal-caribbean-earnings",
-      "publisher": "Benzinga",
-      "date": "2026-01-29",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Microsoft Stock's Worst Day Since March 2020, Bitcoin Plunges 5%: What's Moving Markets Thursday?",
-      "url": "/news/292290/microsoft-stocks-worst-day-since-march-2020-bitcoin-plunges-5-whats-moving-markets-thursday",
-      "publisher": "Benzinga",
-      "date": "2026-01-29",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Why Is Norwegian Cruise Line (NCLH) Stock Rocketing Higher Today",
-      "url": "/news/292254/why-is-norwegian-cruise-line-nclh-stock-rocketing-higher-today",
-      "publisher": "StockStory",
-      "date": "2026-01-29",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Concerns Over AI Spending Weigh on Stocks",
-      "url": "https://finance.yahoo.com/m/847e6871-a324-397e-a746-c6933beb4d18/concerns-over-ai-spending.html",
-      "publisher": "Barchart",
-      "date": "2026-01-29",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

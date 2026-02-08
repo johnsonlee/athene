@@ -6271,8 +6271,8 @@
     "debt_equity_score": 83.949,
     "fcf_yield_score": 35.0,
     "current_ratio_score": 85.0,
-    "safety_score": 71.60105871140763,
-    "fundamental_score": 42.42959006728153,
+    "safety_score": 71.59775,
+    "fundamental_score": 42.428928325,
     "fund_data_completeness": 0.75
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 30.261736954548965,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.08057801240951787,
-    "sentiment_pos": 0.07930000000000001,
-    "sentiment_neg": 0.04405,
-    "sentiment_neu": 0.8766,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 54.03
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.14285714285714285,
     "target_upside": 2.2609501222856294,
@@ -6332,7 +6324,7 @@
     "value_score": 53.0625133,
     "quality_score": 15.0,
     "growth_score": 41.375,
-    "safety_score": 71.60105871140763,
+    "safety_score": 71.59775,
     "trend_score": 12.771859273800962,
     "momentum_score": 42.10059724136226,
     "volatility_score": 19.0,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 48.91624999999999,
     "valuation_margin": 45.563753989999995,
     "catalyst_timeline": 42.032105794373464,
-    "downside_control": 37.46015880671115,
-    "composite_score": 40.701323418461506,
+    "downside_control": 37.4596625,
+    "composite_score": 40.70122415711927,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 42.42959006728153,
+    "fundamental_score": 42.428928325,
     "technical_score": 30.261736954548965,
-    "sentiment_score": 54.03,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Technology",
     "industry": "Software - Application"
   },
-  "headlines": [
-    {
-      "title": "3 Contrarian \"Buy the Dip\" Picks-and One Area to Avoid",
-      "url": "/news/303668/3-contrarian-buy-the-dip-picks-and-one-area-to-avoid",
-      "publisher": "MarketBeat",
-      "date": "2026-02-07",
-      "sentiment": "negative"
-    },
-    {
-      "title": "The Most Surprising Bitcoin and Crypto Stories in the Epstein Files",
-      "url": "https://finance.yahoo.com/m/dfdbdd73-6df2-3c2b-9719-c1e338179e25/the-most-surprising-bitcoin.html",
-      "publisher": "decrypt",
-      "date": "2026-02-07",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Crypto Currents: Strategy, Galaxy Digital report Q4 earnings results",
-      "url": "https://finance.yahoo.com/news/crypto-currents-strategy-galaxy-digital-153045203.html",
-      "publisher": "TipRanks",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Palantir, Strategy, Amazon And More: 5 Stocks Investors Couldn't Stop Buzzing About This Week",
-      "url": "/news/303573/palantir-strategy-amazon-and-more-5-stocks-investors-couldnt-stop-buzzing-about-this-week",
-      "publisher": "Benzinga",
-      "date": "2026-02-07",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Strategy Inc.'s (MSTR) Bitcoin Stockpile Now at 713,502",
-      "url": "/news/303501/strategy-incs-mstr-bitcoin-stockpile-now-at-713502",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Stock Market Today: Dow Closes Above 50,000 As Nvidia Lands Atop Blue Chips (Live Coverage)",
-      "url": "https://finance.yahoo.com/m/d5f6d70b-adbf-3412-b185-ebea8f943d91/stock-market-today%3A-dow.html",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Crypto stocks rally up to 25% after big relief",
-      "url": "https://finance.yahoo.com/m/d5497f76-e7df-3358-a4b7-151fa3e39874/crypto-stocks-rally-up-to-25%25.html",
-      "publisher": "TheStreet",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Tech, Media & Telecom Roundup: Market Talk",
-      "url": "https://finance.yahoo.com/m/cde8890b-f1f9-35da-acb5-4bb1c8f5018b/tech%2C-media-%26-telecom.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Amazon, Strategy, Robinhood, Novo Nordisk, Molina, Stellantis, Hub Group, and More Stock Market Movers",
-      "url": "https://finance.yahoo.com/m/c18863ff-041f-35f2-8054-0ec3d92baa4a/amazon%2C-strategy%2C-robinhood%2C.html",
-      "publisher": "Barrons.com",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "MSTYs 102% Yield Collapses Alongside Bitcoins Meltdown",
-      "url": "https://finance.yahoo.com/m/46c15500-f146-32f3-8e64-14531d1c9fc2/msty%E2%80%99s-102%25-yield-collapses.html",
-      "publisher": "24/7 Wall St.",
-      "date": "2026-02-06",
-      "sentiment": "negative"
-    },
-    {
-      "title": "LongPoint Announces Potential Trading Halt and Change for MSTZ",
-      "url": "https://finance.yahoo.com/news/longpoint-announces-potential-trading-halt-200500415.html",
-      "publisher": "TMX Newsfile",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Stock market today: Dow crosses 50,000 mark, leading S&P 500, Nasdaq higher as Wall Street rebounds from rout",
-      "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-crosses-50000-mark-leading-sp-500-nasdaq-higher-as-wall-street-rebounds-from-rout-192439513.html",
-      "publisher": "Yahoo Finance",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Stock market today: Dow closes above 50,000 for the first time as stocks soar to cap volatile week",
-      "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-closes-above-50000-for-the-first-time-as-stocks-soar-to-cap-volatile-week-192439380.html",
-      "publisher": "Yahoo Finance",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "The Daily: Strategys safe unless BTC falls to $8K, Charles Hoskinsons down over $3B in crypto, Bithumb mistakenly sends bitcoin to users, and more",
-      "url": "https://finance.yahoo.com/m/218e6bb1-33d9-39fa-a6fb-09f2d82b7dd1/the-daily%3A-strategy%E2%80%99s-safe.html",
-      "publisher": "The Block",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "The Daily: Strategys ok unless BTC falls to $8K, Charles Hoskinsons down over $3B in crypto, Bithumb mistakenly sends bitcoin to users, and more",
-      "url": "https://finance.yahoo.com/m/218e6bb1-33d9-39fa-a6fb-09f2d82b7dd1/the-daily%3A-strategy%E2%80%99s-ok.html",
-      "publisher": "The Block",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Stock market today: Dow soars 1,000 points, leading S&P 500, Nasdaq higher as Wall Street rebounds from rout",
-      "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-soars-1000-points-leading-sp-500-nasdaq-higher-as-wall-street-rebounds-from-rout-185814610.html",
-      "publisher": "Yahoo Finance",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Strategy, BitMine, Coinbase Shares Chart Major Rebound as Bitcoin Stabilizes",
-      "url": "https://finance.yahoo.com/m/54559fc5-e8d1-3c91-b104-6de791222c17/strategy%2C-bitmine%2C-coinbase.html",
-      "publisher": "decrypt",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Tech Bounces As Software Sell-Off Eases, Dow Jones Hits Records: What's Moving Markets Friday?",
-      "url": "/news/303167/tech-bounces-as-software-sell-off-eases-dow-jones-hits-records-whats-moving-markets-friday",
-      "publisher": "Benzinga",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Strategy Q4 Earnings Miss Estimates, Revenues Increase Y/Y",
-      "url": "/news/303206/strategy-q4-earnings-miss-estimates-revenues-increase-yy",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Crypto's Rough Week Has Dragged on Bitcoin, Altcoins, DATs and Stocks. What's Next?",
-      "url": "https://finance.yahoo.com/m/8269df71-a0c5-3b0e-8c30-c61a7a758f1d/crypto%27s-rough-week-has.html",
-      "publisher": "Investopedia",
-      "date": "2026-02-06",
-      "sentiment": "negative"
-    }
-  ]
+  "headlines": []
 }

@@ -6271,8 +6271,8 @@
     "debt_equity_score": 89.667375,
     "fcf_yield_score": 50.8045222701706,
     "current_ratio_score": 85.0,
-    "safety_score": 74.46024621140762,
-    "fundamental_score": 78.12428619069424,
+    "safety_score": 74.45693750000001,
+    "fundamental_score": 78.12362444841271,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 63.23612600644654,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.13425455663620708,
-    "sentiment_pos": 0.08299999999999999,
-    "sentiment_neg": 0.014299999999999998,
-    "sentiment_neu": 0.9027,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 56.71
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.1,
     "target_upside": 0.0010148537687978544,
@@ -6332,7 +6324,7 @@
     "value_score": 62.7485477936508,
     "quality_score": 86.81700000000001,
     "growth_score": 86.0,
-    "safety_score": 74.46024621140762,
+    "safety_score": 74.45693750000001,
     "trend_score": 76.268986796172,
     "momentum_score": 66.29345428548807,
     "volatility_score": 52.336968409742596,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 85.66055,
     "valuation_margin": 58.18556433809523,
     "catalyst_timeline": 62.103573590452186,
-    "downside_control": 66.77358219317253,
-    "composite_score": 73.27840589579802,
+    "downside_control": 66.77308588646139,
+    "composite_score": 73.27830663445577,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 78.12428619069424,
+    "fundamental_score": 78.12362444841271,
     "technical_score": 63.23612600644654,
-    "sentiment_score": 56.71,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Health Care",
     "industry": "Biotechnology"
   },
-  "headlines": [
-    {
-      "title": "Incyte Gears Up to Report Q4 Earnings: Is a Beat in the Cards?",
-      "url": "/news/302730/incyte-gears-up-to-report-q4-earnings-is-a-beat-in-the-cards",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Microsoft downgraded, Snap upgraded: Wall Street's top analyst calls",
-      "url": "https://finance.yahoo.com/news/microsoft-downgraded-snap-upgraded-wall-151235143.html",
-      "publisher": "The Fly",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Unveiling Incyte (INCY) Q4 Outlook: Wall Street Estimates for Key Metrics",
-      "url": "/news/301477/unveiling-incyte-incy-q4-outlook-wall-street-estimates-for-key-metrics",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Here Are Thursdays Top Wall Street Analyst Research Calls: CAVA Group, DigitalOcean, Fox Corp, Jack Henry, Microsoft, Qualcomm, Snap, Zoom Communications, and More",
-      "url": "https://finance.yahoo.com/m/7943495b-3e50-307f-bf36-03b396f8bb9a/here-are-thursday%E2%80%99s-top-wall.html",
-      "publisher": "24/7 Wall St.",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Royalty Pharma (RPRX) Earnings Expected to Grow: Should You Buy?",
-      "url": "/news/299653/royalty-pharma-rprx-earnings-expected-to-grow-should-you-buy",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Why Investors Need to Take Advantage of These 2 Medical Stocks Now",
-      "url": "/news/299375/why-investors-need-to-take-advantage-of-these-2-medical-stocks-now",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "TD Cowen Keeps Buy Rating on Incyte (INCY), Cites Roadmap to Triple Non-Jakafi Revenue by 2029",
-      "url": "/news/299116/td-cowen-keeps-buy-rating-on-incyte-incy-cites-roadmap-to-triple-non-jakafi-revenue-by-2029",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Incyte (INCY) Reports Next Week: Wall Street Expects Earnings Growth",
-      "url": "/news/297650/incyte-incy-reports-next-week-wall-street-expects-earnings-growth",
-      "publisher": "Zacks",
-      "date": "2026-02-03",
-      "sentiment": "positive"
-    },
-    {
-      "title": "These 2 Medical Stocks Could Beat Earnings: Why They Should Be on Your Radar",
-      "url": "/news/297416/these-2-medical-stocks-could-beat-earnings-why-they-should-be-on-your-radar",
-      "publisher": "Zacks",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Analysts Differ in Opinion on Jakafi Drug Maker Incyte (INCY)",
-      "url": "/news/296894/analysts-differ-in-opinion-on-jakafi-drug-maker-incyte-incy",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Incyte Announces Positive CHMP Opinion for Zynyz (retifanlimab) for First-Line Treatment of Advanced Squamous Cell Carcinoma of the Anal Canal (SCAC)",
-      "url": "https://www.businesswire.com/news/home/20260130540995/en/",
-      "publisher": "Business Wire",
-      "date": "2026-01-30",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Incyte to Report Fourth Quarter and Year-End 2025 Financial Results",
-      "url": "https://www.businesswire.com/news/home/20260127068438/en/",
-      "publisher": "Business Wire",
-      "date": "2026-01-27",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Here's Why Incyte (INCY) is a Strong Momentum Stock",
-      "url": "/news/287096/heres-why-incyte-incy-is-a-strong-momentum-stock",
-      "publisher": "Zacks",
-      "date": "2026-01-26",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Why Incyte (INCY) is a Top Value Stock for the Long-Term",
-      "url": "/news/285381/why-incyte-incy-is-a-top-value-stock-for-the-long-term",
-      "publisher": "Zacks",
-      "date": "2026-01-23",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Intel upgraded, Domino's downgraded: Wall Street's top analyst calls",
-      "url": "https://finance.yahoo.com/news/intel-upgraded-dominos-downgraded-wall-143603334.html",
-      "publisher": "The Fly",
-      "date": "2026-01-20",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Why Incyte (INCY) Stock Is Trading Up Today",
-      "url": "/news/276776/why-incyte-incy-stock-is-trading-up-today",
-      "publisher": "StockStory",
-      "date": "2026-01-14",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Incyte CEO Bill Meury: Blood cancer therapy development is company's central identity",
-      "url": "https://www.youtube.com/watch?v=d_wMXjwttiw",
-      "publisher": "CNBC TV",
-      "date": "2026-01-13",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Earnings Preview: What To Expect From Incyte's Report",
-      "url": "https://finance.yahoo.com/m/fa1e8333-aae0-37cb-b241-d028a31f00f9/earnings-preview%3A-what-to.html",
-      "publisher": "Barchart",
-      "date": "2026-01-13",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "These 2 Medical Stocks Could Beat Earnings: Why They Should Be on Your Radar",
-      "url": "/news/274861/these-2-medical-stocks-could-beat-earnings-why-they-should-be-on-your-radar",
-      "publisher": "Zacks",
-      "date": "2026-01-13",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Will Incyte (INCY) Beat Estimates Again in Its Next Earnings Report?",
-      "url": "/news/274022/will-incyte-incy-beat-estimates-again-in-its-next-earnings-report",
-      "publisher": "Zacks",
-      "date": "2026-01-12",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

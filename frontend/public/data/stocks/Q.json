@@ -623,8 +623,8 @@
     "debt_equity_score": 82.6215,
     "fcf_yield_score": 35.0,
     "current_ratio_score": 74.744,
-    "safety_score": 65.80930871140762,
-    "fundamental_score": 61.49210640886883,
+    "safety_score": 65.806,
+    "fundamental_score": 61.491444666587306,
     "fund_data_completeness": 0.75
   },
   "technical": {
@@ -658,15 +658,7 @@
     "technical_score": 53.15997020238725,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.10477663786379288,
-    "sentiment_pos": 0.0635,
-    "sentiment_neg": 0.0038,
-    "sentiment_neu": 0.9327500000000001,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 55.24
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.3333333333333333,
     "target_upside": 0.10975361433516596,
@@ -684,7 +676,7 @@
     "value_score": 60.796807237777784,
     "quality_score": 60.913,
     "growth_score": 59.42857142857143,
-    "safety_score": 65.80930871140762,
+    "safety_score": 65.806,
     "trend_score": 68.40674264810038,
     "momentum_score": 54.363562613742175,
     "volatility_score": 31.64439311917244,
@@ -705,15 +697,15 @@
     "earnings_visibility": 57.35623571428572,
     "valuation_margin": 58.524042171333335,
     "catalyst_timeline": 56.956106817503056,
-    "downside_control": 50.42305527458701,
-    "composite_score": 56.42566492013111,
+    "downside_control": 50.422558967875865,
+    "composite_score": 56.425565658788884,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 61.49210640886883,
+    "fundamental_score": 61.491444666587306,
     "technical_score": 53.15997020238725,
-    "sentiment_score": 55.24,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -729,146 +721,5 @@
     "sector": "Information Technology",
     "industry": "Semiconductor Materials & Equipment"
   },
-  "headlines": [
-    {
-      "title": "Qnity Schedules Fourth Quarter and Full Year 2025 Earnings Release and Conference Call",
-      "url": "https://www.businesswire.com/news/home/20260205798755/en/",
-      "publisher": "Business Wire",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "These overlooked stocks are a backdoor way to play the AI chip boom",
-      "url": "https://www.marketwatch.com/story/these-overlooked-stocks-are-a-backdoor-way-to-play-the-ai-chip-boom-7157eab9?mod=mw_FV",
-      "publisher": "MarketWatch",
-      "date": "2026-01-31",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Every Stock in This Index Group Is Up Double-Digits in 2026",
-      "url": "/news/286283/every-stock-in-this-index-group-is-up-double-digits-in-2026",
-      "publisher": "Motley Fool",
-      "date": "2026-01-25",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Qnity (Q) \"is a Very Inexpensive Stock,\" Says Jim Cramer",
-      "url": "/news/280724/qnity-q-is-a-very-inexpensive-stock-says-jim-cramer",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-20",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Qnity Electronics CFO Matt Harbaugh Steps Down Immediately",
-      "url": "/news/278620/qnity-electronics-cfo-matt-harbaugh-steps-down-immediately",
-      "publisher": "Benzinga",
-      "date": "2026-01-16",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Qnity Electronics Q4 2025 Earnings: What to Expect",
-      "url": "https://finance.yahoo.com/m/c56fda76-3f6a-3dbe-96ed-8600abdba079/qnity-electronics%E2%80%99-q4-2025.html",
-      "publisher": "Barchart",
-      "date": "2026-01-16",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Qnity Announces CFO Transition",
-      "url": "https://www.businesswire.com/news/home/20260116905193/en",
-      "publisher": "Business Wire",
-      "date": "2026-01-16",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "DuPont's Decade of Restructuring Yields Meager Returns",
-      "url": "https://www.wsj.com/business/duponts-decade-of-restructuring-yields-meager-returns-a04380b0?mod=wsj_FV",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-01-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Analyst Report: Qnity Electronics, Inc.",
-      "url": "https://finance.yahoo.com/m/c32832e7-b0e8-32f5-8db6-30436df7683d/analyst-report%3A-qnity.html",
-      "publisher": "Morningstar Research",
-      "date": "2026-01-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Is Qnity Electronics (Q) the Next Spin-Off Success? Oppenheimer Believes So",
-      "url": "/news/263805/is-qnity-electronics-q-the-next-spin-off-success-oppenheimer-believes-so",
-      "publisher": "Insider Monkey",
-      "date": "2025-12-29",
-      "sentiment": "positive"
-    },
-    {
-      "title": "How Is Qnity Electronics Stock Performance Compared to Other Semiconductor Stocks?",
-      "url": "https://finance.yahoo.com/m/7e4357b4-6936-3add-a8c7-d5b377a363c3/how-is-qnity-electronics%E2%80%99.html",
-      "publisher": "Barchart",
-      "date": "2025-12-18",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Buy! Analysts Pound The Table For 11 S&P 500 Stocks In 2026",
-      "url": "https://finance.yahoo.com/m/6c8b793b-8d2d-3015-94f6-0d287e5a5eda/buy%21-analysts-pound-the-table.html",
-      "publisher": "Investor's Business Daily",
-      "date": "2025-12-17",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Qnity Announces Segment Leadership Transition",
-      "url": "https://www.businesswire.com/news/home/20251209596860/en",
-      "publisher": "Business Wire",
-      "date": "2025-12-09",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Qnity Announces First Quarter 2026 Dividend on Common Stock",
-      "url": "https://www.businesswire.com/news/home/20251208449327/en/",
-      "publisher": "Business Wire",
-      "date": "2025-12-09",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "RBC Capital Reduces PT on Qnity Electronics (Q) Stock",
-      "url": "/news/241229/rbc-capital-reduces-pt-on-qnity-electronics-q-stock",
-      "publisher": "Insider Monkey",
-      "date": "2025-11-29",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "DuPont Can Become a 'Compounder.' Why the Stock Could Gain 20%.",
-      "url": "https://www.barrons.com/articles/dupont-stock-price-compounder-buy-fd98b593?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2025-11-25",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Brinker upgraded, Coinbase downgraded: Wall Street's top analyst calls",
-      "url": "https://finance.yahoo.com/news/brinker-upgraded-coinbase-downgraded-wall-143621890.html",
-      "publisher": "The Fly",
-      "date": "2025-11-25",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Qnity Wins R&D 100 Award for Non-Fluorine Photoresist, Advancing Sustainability in Semiconductor Fabrication",
-      "url": "https://www.businesswire.com/news/home/20251124214719/en",
-      "publisher": "Business Wire",
-      "date": "2025-11-24",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Analyst Report: Qnity Electronics, Inc.",
-      "url": "https://finance.yahoo.com/m/3afa3f91-fc51-3afd-adb4-53ef51adcea4/analyst-report%3A-qnity.html",
-      "publisher": "Morningstar Research",
-      "date": "2025-11-18",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Analyst Report: Qnity Electronics, Inc.",
-      "url": "https://finance.yahoo.com/m/af3c0bb2-5529-33bd-b060-b41eddb31cb4/analyst-report%3A-qnity.html",
-      "publisher": "Morningstar Research",
-      "date": "2025-11-17",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

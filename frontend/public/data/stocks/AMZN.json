@@ -6271,8 +6271,8 @@
     "debt_equity_score": 73.2825,
     "fcf_yield_score": 38.78194683037406,
     "current_ratio_score": 47.346,
-    "safety_score": 47.44080871140762,
-    "fundamental_score": 58.68326236728153,
+    "safety_score": 47.4375,
+    "fundamental_score": 58.682600625000006,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 40.37356683020788,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.03311920412426396,
-    "sentiment_pos": 0.09104999999999999,
-    "sentiment_neg": 0.0615,
-    "sentiment_neu": 0.8474,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 51.66
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": -0.023809523809523808,
     "target_upside": 0.3550779764168886,
@@ -6332,7 +6324,7 @@
     "value_score": 51.55048250000001,
     "quality_score": 70.1916,
     "growth_score": 61.0,
-    "safety_score": 47.44080871140762,
+    "safety_score": 47.4375,
     "trend_score": 39.58141330246573,
     "momentum_score": 34.316960289835535,
     "volatility_score": 41.02027376258749,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 70.54774,
     "valuation_margin": 46.55214475,
     "catalyst_timeline": 48.11043889843569,
-    "downside_control": 49.57816237109926,
-    "composite_score": 54.584970701022655,
+    "downside_control": 49.57766606438812,
+    "composite_score": 54.58487143968042,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 58.68326236728153,
+    "fundamental_score": 58.682600625000006,
     "technical_score": 40.37356683020788,
-    "sentiment_score": 51.66,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Consumer Discretionary",
     "industry": "Broadline Retail"
   },
-  "headlines": [
-    {
-      "title": "5 big analyst AI moves: Microsoft stock downgraded as its time for a break",
-      "url": "https://finance.yahoo.com/news/5-big-analyst-ai-moves-093503505.html",
-      "publisher": "Investing.com",
-      "date": "2026-02-08",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Street Calls of the Week",
-      "url": "https://finance.yahoo.com/news/street-calls-week-090516424.html",
-      "publisher": "Investing.com",
-      "date": "2026-02-08",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Dan Ives Says Software Selloff Is Worst He's Seen In 25 Years As Microsoft, Salesforce Face Brutal AI Reckoning",
-      "url": "https://finance.yahoo.com/news/dan-ives-says-software-selloff-003125036.html",
-      "publisher": "Benzinga",
-      "date": "2026-02-07",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Jim Cramer On Amazon Stock Slip: Not Saying Downside Overdone, 'I Figure Tomorrow's Pretty Ugly'",
-      "url": "https://finance.yahoo.com/news/jim-cramer-amazon-stock-slip-233145336.html",
-      "publisher": "Benzinga",
-      "date": "2026-02-07",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Amazon CEO Andy Jassy Warns Shoppers Are 'Starting To See More Of That Impact' As Trump's 10% Tariffs Begin Hitting Prices On Amazon",
-      "url": "https://finance.yahoo.com/news/amazon-ceo-andy-jassy-warns-203141202.html",
-      "publisher": "Benzinga",
-      "date": "2026-02-07",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Techs AI Push Risks a Bond Market Blowback: Credit Weekly",
-      "url": "https://finance.yahoo.com/news/tech-ai-push-risks-bond-190132451.html",
-      "publisher": "Bloomberg",
-      "date": "2026-02-07",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Her Husband Brings In $156K, But They Struggle With Groceries Due To His $700 Monthly Vices. She Calls Him An Addict, Dave Ramsey Disagrees",
-      "url": "https://finance.yahoo.com/news/her-husband-brings-156k-struggle-183131125.html",
-      "publisher": "Benzinga",
-      "date": "2026-02-07",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Amazon.com, Inc. (AMZN): A Bull Case Theory",
-      "url": "/news/303651/amazoncom-inc-amzn-a-bull-case-theory",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Bitcoin To Fall To $54K? Veteran Trader Questions Whether Strategy Investors Can Hold On",
-      "url": "https://finance.yahoo.com/news/bitcoin-fall-54k-veteran-trader-164602291.html",
-      "publisher": "Benzinga",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Peter Thiel Once Said Brilliant Thinking Is 'Rare' But Even Rarer And In 'Shorter Supply' Is This Personality Trait",
-      "url": "/news/303617/peter-thiel-once-said-brilliant-thinking-is-rare-but-even-rarer-and-in-shorter-supply-is-this-personality-trait",
-      "publisher": "Benzinga",
-      "date": "2026-02-07",
-      "sentiment": "positive"
-    },
-    {
-      "title": "The Saturday Spread: Reducing Uncertainty in an Uncertain World (AMZN, CHWY, EXPE)",
-      "url": "https://finance.yahoo.com/m/567a6fc5-4e0f-3fde-abfe-764ead759ceb/the-saturday-spread%3A-reducing.html",
-      "publisher": "Barchart",
-      "date": "2026-02-07",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Amazon's (AMZN) Retail Will Help, Says Jim Cramer",
-      "url": "/news/303582/amazons-amzn-retail-will-help-says-jim-cramer",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-07",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Big Tech companies are starting to look like IBM in the 1960s",
-      "url": "https://finance.yahoo.com/news/big-tech-companies-are-starting-to-look-like-ibm-in-the-1960s-150030684.html",
-      "publisher": "Yahoo Finance",
-      "date": "2026-02-07",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Palantir, Strategy, Amazon And More: 5 Stocks Investors Couldn't Stop Buzzing About This Week",
-      "url": "/news/303573/palantir-strategy-amazon-and-more-5-stocks-investors-couldnt-stop-buzzing-about-this-week",
-      "publisher": "Benzinga",
-      "date": "2026-02-07",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Big Tech Dominates Market Coverage as AI Narrative Intensifies",
-      "url": "https://finance.yahoo.com/m/a9098eda-657d-30c6-9364-cbe941713509/big-tech-dominates-market.html",
-      "publisher": "24/7 Wall St.",
-      "date": "2026-02-07",
-      "sentiment": "positive"
-    },
-    {
-      "title": "'It's existential': How Big Tech found itself in a $650 billion spending spiral",
-      "url": "https://www.marketwatch.com/story/its-existential-how-big-tech-found-itself-in-a-650-billion-spending-spiral-346caa4d?mod=mw_FV",
-      "publisher": "MarketWatch",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Big Techs AI Push Is Costing a Lot More Than the Moon Landing",
-      "url": "https://finance.yahoo.com/m/f2e491e1-516b-37a7-8f08-dd299fb384c8/big-tech%E2%80%99s-ai-push-is-costing.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Investing.coms stocks of the week",
-      "url": "https://finance.yahoo.com/news/investing-com-stocks-week-093005101.html",
-      "publisher": "Investing.com",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "SemiAnalysis President Says Microsoft Is 'Getting Owned' In AI Race, Praises AWS Scale",
-      "url": "/news/303486/semianalysis-president-says-microsoft-is-getting-owned-in-ai-race-praises-aws-scale",
-      "publisher": "Benzinga",
-      "date": "2026-02-07",
-      "sentiment": "positive"
-    },
-    {
-      "title": "NFL May Sell Live Games To Streaming Platforms After $100 Million YouTube Deal, Raising Stakes For Disney, NBC And Traditional Partners",
-      "url": "/news/303485/nfl-may-sell-live-games-to-streaming-platforms-after-100-million-youtube-deal-raising-stakes-for-disney-nbc-and-traditional-partners",
-      "publisher": "Benzinga",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

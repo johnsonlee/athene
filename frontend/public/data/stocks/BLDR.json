@@ -6271,8 +6271,8 @@
     "debt_equity_score": 39.9108,
     "fcf_yield_score": 69.4870272451922,
     "current_ratio_score": 74.864,
-    "safety_score": 59.30207233400372,
-    "fundamental_score": 50.140053646562635,
+    "safety_score": 59.2987636225961,
+    "fundamental_score": 50.13939190428111,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 53.82813169665765,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.26762090613842754,
-    "sentiment_pos": 0.1243,
-    "sentiment_neg": 0.0083,
-    "sentiment_neu": 0.8674,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 63.38
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": -0.25,
     "target_upside": 0.09307185339977495,
@@ -6332,7 +6324,7 @@
     "value_score": 66.2169879047619,
     "quality_score": 57.33464067857142,
     "growth_score": 18.1,
-    "safety_score": 59.30207233400372,
+    "safety_score": 59.2987636225961,
     "trend_score": 58.6212015981677,
     "momentum_score": 61.04523198881514,
     "volatility_score": 39.64100810281403,
@@ -6353,22 +6345,22 @@
     "earnings_visibility": 37.36219610178571,
     "valuation_margin": 63.33509637142856,
     "catalyst_timeline": 55.253603922380435,
-    "downside_control": 50.35246206552266,
-    "composite_score": 49.61991441101547,
+    "downside_control": 50.35196575881152,
+    "composite_score": 49.61981514967324,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 50.140053646562635,
+    "fundamental_score": 50.13939190428111,
     "technical_score": 53.82813169665765,
-    "sentiment_score": 63.38,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 410,
-    "percentile": 0.2119460500963391,
+    "rank": 411,
+    "percentile": 0.21001926782273603,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6377,146 +6369,5 @@
     "sector": "Industrials",
     "industry": "Building Products"
   },
-  "headlines": [
-    {
-      "title": "Builders FirstSource, Inc. (BLDR) is Attracting Investor Attention: Here is What You Should Know",
-      "url": "/news/302795/builders-firstsource-inc-bldr-is-attracting-investor-attention-here-is-what-you-should-know",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Builders FirstSource (BLDR) Moves 4.7% Higher: Will This Strength Last?",
-      "url": "/news/299637/builders-firstsource-bldr-moves-47-higher-will-this-strength-last",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Why Builders FirstSource (BLDR) Dipped More Than Broader Market Today",
-      "url": "/news/292801/why-builders-firstsource-bldr-dipped-more-than-broader-market-today",
-      "publisher": "Zacks",
-      "date": "2026-01-29",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Builders FirstSource, Inc. (BLDR): A Bull Case Theory",
-      "url": "/news/289917/builders-firstsource-inc-bldr-a-bull-case-theory",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-28",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Builders FirstSource, Inc. (BLDR) Is a Trending Stock: Facts to Know Before Betting on It",
-      "url": "/news/286923/builders-firstsource-inc-bldr-is-a-trending-stock-facts-to-know-before-betting-on-it",
-      "publisher": "Zacks",
-      "date": "2026-01-26",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Builders FirstSource (BLDR) Stock Sinks As Market Gains: Here's Why",
-      "url": "/news/284713/builders-firstsource-bldr-stock-sinks-as-market-gains-heres-why",
-      "publisher": "Zacks",
-      "date": "2026-01-22",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Here's Why Builders FirstSource (BLDR) Fell More Than Broader Market",
-      "url": "/news/281723/heres-why-builders-firstsource-bldr-fell-more-than-broader-market",
-      "publisher": "Zacks",
-      "date": "2026-01-20",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "What to Expect From Builders FirstSources Q4 2025 Earnings Report",
-      "url": "https://finance.yahoo.com/m/3bf0b75c-dc23-3cc7-b34e-05efd77013db/what-to-expect-from-builders.html",
-      "publisher": "Barchart",
-      "date": "2026-01-20",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Builders FirstSource to Host Fourth Quarter and Full Year 2025 Financial Results Conference Call and Webcast",
-      "url": "https://www.businesswire.com/news/home/20260116447568/en",
-      "publisher": "Business Wire",
-      "date": "2026-01-16",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Builders FirstSource (BLDR) Gains As Market Dips: What You Should Know",
-      "url": "/news/276865/builders-firstsource-bldr-gains-as-market-dips-what-you-should-know",
-      "publisher": "Zacks",
-      "date": "2026-01-14",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Exclusive: With $10 billion in dry power, QXO is near next multi-billion deal",
-      "url": "https://finance.yahoo.com/news/exclusive-10-billion-dry-power-185623562.html",
-      "publisher": "Investing.com",
-      "date": "2026-01-14",
-      "sentiment": "positive"
-    },
-    {
-      "title": "How amateur investors are looking to cash in on Trump's new affordability push",
-      "url": "https://www.marketwatch.com/story/how-amateur-investors-are-looking-to-cash-in-on-trumps-new-affordability-push-d2ed96e1?mod=mw_FV",
-      "publisher": "MarketWatch",
-      "date": "2026-01-14",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "3 S&P 500 Stocks Walking a Fine Line",
-      "url": "/news/275815/3-sp-500-stocks-walking-a-fine-line",
-      "publisher": "StockStory",
-      "date": "2026-01-13",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Should You Be Optimistic About Builders FirstSource (BLDR)",
-      "url": "/news/274669/should-you-be-optimistic-about-builders-firstsource-bldr",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-13",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Builders FirstSource (BLDR) Surges 12.0%: Is This an Indication of Further Gains?",
-      "url": "/news/273844/builders-firstsource-bldr-surges-120-is-this-an-indication-of-further-gains",
-      "publisher": "Zacks",
-      "date": "2026-01-12",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Investors Heavily Search Builders FirstSource, Inc. (BLDR): Here is What You Need to Know",
-      "url": "/news/273683/investors-heavily-search-builders-firstsource-inc-bldr-here-is-what-you-need-to-know",
-      "publisher": "Zacks",
-      "date": "2026-01-12",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "US futures slip while Asian shares gain as Fed chair Powell faces legal threat",
-      "url": "https://finance.yahoo.com/news/us-futures-slip-while-asian-034739222.html",
-      "publisher": "Associated Press Finance",
-      "date": "2026-01-11",
-      "sentiment": "positive"
-    },
-    {
-      "title": "S&P 500 Rallies to a New Record High on US Economic Optimism",
-      "url": "https://finance.yahoo.com/m/78714529-8429-3795-b457-6fcd715bcd8a/s%26p-500-rallies-to-a-new.html",
-      "publisher": "Barchart",
-      "date": "2026-01-09",
-      "sentiment": "positive"
-    },
-    {
-      "title": "S&P 500, Russell 2000 Soar To Record Highs, Silver Jumps To $80: What's Moving Markets Friday?",
-      "url": "/news/272451/sp-500-russell-2000-soar-to-record-highs-silver-jumps-to-80-whats-moving-markets-friday",
-      "publisher": "Benzinga",
-      "date": "2026-01-09",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Do You Have a Positive Outlook on Builder First Source (BLDR)?",
-      "url": "/news/271903/do-you-have-a-positive-outlook-on-builder-first-source-bldr",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-09",
-      "sentiment": "positive"
-    }
-  ]
+  "headlines": []
 }

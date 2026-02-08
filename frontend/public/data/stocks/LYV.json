@@ -6271,8 +6271,8 @@
     "debt_equity_score": 15.0,
     "fcf_yield_score": 78.16583587582404,
     "current_ratio_score": 40.260000000000005,
-    "safety_score": 46.33947664931964,
-    "fundamental_score": 47.71085742510202,
+    "safety_score": 46.33616793791202,
+    "fundamental_score": 47.7101956828205,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 49.495275163857144,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.15559305960182818,
-    "sentiment_pos": 0.12745,
-    "sentiment_neg": 0.011550000000000001,
-    "sentiment_neu": 0.861,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 57.78
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.2070434535643283,
@@ -6332,7 +6324,7 @@
     "value_score": 32.69241980952381,
     "quality_score": 68.965,
     "growth_score": 38.32142857142857,
-    "safety_score": 46.33947664931964,
+    "safety_score": 46.33616793791202,
     "trend_score": 44.88905637691361,
     "momentum_score": 51.42022337172993,
     "volatility_score": 53.0124561963204,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 50.98096428571428,
     "valuation_margin": 27.88872594285714,
     "catalyst_timeline": 52.751591831723196,
-    "downside_control": 48.488789926846,
-    "composite_score": 42.11345492794237,
+    "downside_control": 48.48829362013486,
+    "composite_score": 42.11335566660014,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 47.71085742510202,
+    "fundamental_score": 47.7101956828205,
     "technical_score": 49.495275163857144,
-    "sentiment_score": 57.78,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Communication Services",
     "industry": "Movies & Entertainment"
   },
-  "headlines": [
-    {
-      "title": "1 Large-Cap Stock to Target This Week and 2 We Question",
-      "url": "/news/303359/1-large-cap-stock-to-target-this-week-and-2-we-question",
-      "publisher": "StockStory",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Warner Music Group Corp. (WMG) Q1 Earnings Lag Estimates",
-      "url": "/news/302261/warner-music-group-corp-wmg-q1-earnings-lag-estimates",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Live Nation Entertainment Schedules Fourth Quarter and Full Year 2025 Earnings Release And Teleconference",
-      "url": "/news/302107/live-nation-entertainment-schedules-fourth-quarter-and-full-year-2025-earnings-release-and-teleconference",
-      "publisher": "PR Newswire",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Live Nation Expands Italy Footprint With ForumNet Deal",
-      "url": "/news/299805/live-nation-expands-italy-footprint-with-forumnet-deal",
-      "publisher": "Benzinga",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "WMG vs. LYV: Which Stock Is the Better Value Option?",
-      "url": "/news/293818/wmg-vs-lyv-which-stock-is-the-better-value-option",
-      "publisher": "Zacks",
-      "date": "2026-01-30",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Are Wall Street Analysts Bullish on Live Nation Entertainment Stock?",
-      "url": "https://finance.yahoo.com/m/ace7dcf4-2325-3c15-aa52-5c9177489ea9/are-wall-street-analysts.html",
-      "publisher": "Barchart",
-      "date": "2026-01-30",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Blake Shelton Adds Eight New Dates at The Colosseum at Caesars Palace May 6 24, 2026",
-      "url": "https://www.businesswire.com/news/home/20260129429854/en/",
-      "publisher": "Business Wire",
-      "date": "2026-01-29",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Harry Styles Tour 2026 Includes Only One US City And There's A Stock That Could Directly Benefit",
-      "url": "/news/284589/harry-styles-tour-2026-includes-only-one-us-city-and-theres-a-stock-that-could-directly-benefit",
-      "publisher": "Benzinga",
-      "date": "2026-01-22",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Live Nation Entertainment's Q4 2025 Earnings: What to Expect",
-      "url": "https://finance.yahoo.com/m/fddedb96-ddca-3c4a-b88b-f751bc71da1e/live-nation-entertainment%27s.html",
-      "publisher": "Barchart",
-      "date": "2026-01-19",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "FIFA 2026 World Cup to drive unprecedented attention to US live events",
-      "url": "https://finance.yahoo.com/news/fifa-2026-world-cup-drive-093504767.html",
-      "publisher": "Investing.com",
-      "date": "2026-01-17",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "IMAX or LYV: Which Is the Better Value Stock Right Now?",
-      "url": "/news/276487/imax-or-lyv-which-is-the-better-value-stock-right-now",
-      "publisher": "Zacks",
-      "date": "2026-01-14",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Q3 Earnings Roundup: Live Nation (NYSE:LYV) And The Rest Of The Leisure Facilities Segment",
-      "url": "/news/273482/q3-earnings-roundup-live-nation-nyse-lyv-and-the-rest-of-the-leisure-facilities-segment",
-      "publisher": "StockStory",
-      "date": "2026-01-11",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "What Makes Live Nation Entertainment (LYV) Attractive",
-      "url": "/news/272748/what-makes-live-nation-entertainment-lyv-attractive",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-10",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Claire Rothman, Legendary Live-Music Pioneer Who Ran the Forum in L.A., Dies at 97",
-      "url": "https://finance.yahoo.com/m/05c53e33-bc3f-335c-9dd2-20c1b98967ce/claire-rothman%2C-legendary.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-01-01",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Why this portfolio mgr. is eyeing Carvana, Seagate, Live Nation",
-      "url": "https://finance.yahoo.com/video/why-portfolio-mgr-eyeing-carvana-170017411.html",
-      "publisher": "Yahoo Finance Video",
-      "date": "2025-12-13",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "3 Reasons to Sell LYV and 1 Stock to Buy Instead",
-      "url": "/news/253186/3-reasons-to-sell-lyv-and-1-stock-to-buy-instead",
-      "publisher": "StockStory",
-      "date": "2025-12-11",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "MIT CLIMATE MACHINE WITH SUPPORT FROM COLDPLAY, WARNER MUSIC GROUP, LIVE NATION, AND HOPE SOLUTIONS RELEASE FIRST EVER TOTAL EMISSIONS OF LIVE MUSIC IN US AND UK",
-      "url": "/news/251682/mit-climate-machine-with-support-from-coldplay-warner-music-group-live-nation-and-hope-solutions-release-first-ever-total-emissions-of-live-music-in-us-and-uk",
-      "publisher": "PR Newswire",
-      "date": "2025-12-11",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Thailand's Premier Venue Joins Live Nation's Expanding Global Venue Network",
-      "url": "/news/251243/thailands-premier-venue-joins-live-nations-expanding-global-venue-network",
-      "publisher": "PR Newswire",
-      "date": "2025-12-10",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "A Round of Golf Changed Trumps Tone on the Concert Industry",
-      "url": "https://finance.yahoo.com/m/bb065f7b-b113-381b-9b21-3044affe0c5e/a-round-of-golf-changed.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2025-12-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "HALPER SADEH LLC ENCOURAGES LIVE NATION ENTERTAINMENT, INC. SHAREHOLDERS TO CONTACT THE FIRM TO DISCUSS THEIR RIGHTS",
-      "url": "/news/247344/halper-sadeh-llc-encourages-live-nation-entertainment-inc-shareholders-to-contact-the-firm-to-discuss-their-rights",
-      "publisher": "PR Newswire",
-      "date": "2025-12-05",
-      "sentiment": "positive"
-    }
-  ]
+  "headlines": []
 }

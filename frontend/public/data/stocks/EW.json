@@ -6271,8 +6271,8 @@
     "debt_equity_score": 87.42675,
     "fcf_yield_score": 39.458499496501545,
     "current_ratio_score": 85.0,
-    "safety_score": 73.33993371140764,
-    "fundamental_score": 57.02475162393419,
+    "safety_score": 73.33662500000001,
+    "fundamental_score": 57.02408988165267,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 49.12496262693782,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.16815224668065606,
-    "sentiment_pos": 0.10765,
-    "sentiment_neg": 0.01395,
-    "sentiment_neu": 0.8784000000000001,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 58.41
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.1,
     "target_upside": 0.2514292974209123,
@@ -6332,7 +6324,7 @@
     "value_score": 40.564808098039215,
     "quality_score": 72.2364,
     "growth_score": 42.17857142857143,
-    "safety_score": 73.33993371140764,
+    "safety_score": 73.33662500000001,
     "trend_score": 45.87517835850733,
     "momentum_score": 43.83528051385474,
     "volatility_score": 61.05912482614602,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 57.692245714285704,
     "valuation_margin": 39.469442429411764,
     "catalyst_timeline": 51.57425753886878,
-    "downside_control": 67.15085878063304,
-    "composite_score": 52.96409180002243,
+    "downside_control": 67.15036247392189,
+    "composite_score": 52.96399253868019,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 57.02475162393419,
+    "fundamental_score": 57.02408988165267,
     "technical_score": 49.12496262693782,
-    "sentiment_score": 58.41,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Health Care",
     "industry": "Health Care Equipment"
   },
-  "headlines": [
-    {
-      "title": "The TAVR Pioneer Bets Everything on One Market as Its Competitor Spreads Risk",
-      "url": "https://finance.yahoo.com/m/84166d95-285f-358e-9b9f-57733af61cc3/the-tavr-pioneer-bets.html",
-      "publisher": "24/7 Wall St.",
-      "date": "2026-02-06",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Ahead of Edwards Lifesciences (EW) Q4 Earnings: Get Ready With Wall Street Estimates for Key Metrics",
-      "url": "/news/301496/ahead-of-edwards-lifesciences-ew-q4-earnings-get-ready-with-wall-street-estimates-for-key-metrics",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Edwards Lifesciences' Q4 Earnings on Deck: Here's What to Expect",
-      "url": "/news/299735/edwards-lifesciences-q4-earnings-on-deck-heres-what-to-expect",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Edwards Lifesciences to Host Earnings Conference Call on February 10, 2026",
-      "url": "https://www.businesswire.com/news/home/20260203529478/en",
-      "publisher": "Business Wire",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Edwards Lifesciences Corporation (EW): A Bull Case Theory",
-      "url": "/news/296523/edwards-lifesciences-corporation-ew-a-bull-case-theory",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Edwards Lifesciences to Present at the TD Cowen 46th Annual Health Care Conference",
-      "url": "https://www.businesswire.com/news/home/20260202494444/en",
-      "publisher": "Business Wire",
-      "date": "2026-02-02",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Analyst Upgrades Signal Renewed Growth Cycle for Edwards Lifesciences Corporation (EW)",
-      "url": "/news/294484/analyst-upgrades-signal-renewed-growth-cycle-for-edwards-lifesciences-corporation-ew",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-31",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Renewed Growth Cycle Drives a Favorable Sentiment Towards Edwards Lifesciences (EW)",
-      "url": "/news/293960/renewed-growth-cycle-drives-a-favorable-sentiment-towards-edwards-lifesciences-ew",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-30",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Intuitives cardiac initiative includes valve repair, LAA closure",
-      "url": "https://finance.yahoo.com/m/dfb4a4ba-3530-30b9-b1b2-235db08710ce/intuitive%E2%80%99s-cardiac.html",
-      "publisher": "MedTech Dive",
-      "date": "2026-01-26",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Beyond Biotech-3 Healthcare Stocks for Growth-Minded Investors",
-      "url": "/news/286327/beyond-biotech-3-healthcare-stocks-for-growth-minded-investors",
-      "publisher": "MarketBeat",
-      "date": "2026-01-25",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Does Edwards Lifesciences (EW) Have Strong Double-Digit Earnings Potential?",
-      "url": "/news/280213/does-edwards-lifesciences-ew-have-strong-double-digit-earnings-potential",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-19",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Boston Scientific Acquires Penumbra In $14.5 Billion Bet To Dominate Thrombectomy",
-      "url": "/news/277310/boston-scientific-acquires-penumbra-in-145-billion-bet-to-dominate-thrombectomy",
-      "publisher": "Benzinga",
-      "date": "2026-01-15",
-      "sentiment": "negative"
-    },
-    {
-      "title": "JPM26: Edwards Lifesciences targets 10% growth in 2026",
-      "url": "https://finance.yahoo.com/m/2cf003bb-af23-3161-9829-65597d601ce4/jpm26%3A-edwards-lifesciences.html",
-      "publisher": "Medical Device Network",
-      "date": "2026-01-14",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Is it Apt to Hold Edwards Lifesciences Stock in Your Portfolio Now?",
-      "url": "/news/275995/is-it-apt-to-hold-edwards-lifesciences-stock-in-your-portfolio-now",
-      "publisher": "Zacks",
-      "date": "2026-01-14",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "What to Expect From Edwards Lifesciences' Q4 2025 Earnings Report",
-      "url": "https://finance.yahoo.com/m/f594d871-9718-38a5-841c-7213d98c13f3/what-to-expect-from-edwards.html",
-      "publisher": "Barchart",
-      "date": "2026-01-13",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Court Ruling Ends Edwards Lifesciences $1.2 Billion Plan To Acquire JenaValve",
-      "url": "/news/273596/court-ruling-ends-edwards-lifesciences-12-billion-plan-to-acquire-jenavalve",
-      "publisher": "Benzinga",
-      "date": "2026-01-12",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Edwards JenaValve acquisition nixed as FTC injunction approved by court",
-      "url": "https://finance.yahoo.com/m/384d3c4a-4cb9-325f-af40-1afd7c1c6c36/edwards%E2%80%99-jenavalve.html",
-      "publisher": "Medical Device Network",
-      "date": "2026-01-12",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Edwards calls off JenaValve buyout after court halts deal",
-      "url": "https://finance.yahoo.com/m/4531ec81-1e48-317a-bee6-d8895c193214/edwards-calls-off-jenavalve.html",
-      "publisher": "MedTech Dive",
-      "date": "2026-01-12",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Edwards Comments on JenaValve Acquisition",
-      "url": "https://www.businesswire.com/news/home/20260109944511/en",
-      "publisher": "Business Wire",
-      "date": "2026-01-09",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "EW Wins FDA Approval for SAPIEN M3 as First Transseptal TMVR Therapy",
-      "url": "/news/262667/ew-wins-fda-approval-for-sapien-m3-as-first-transseptal-tmvr-therapy",
-      "publisher": "Zacks",
-      "date": "2025-12-26",
-      "sentiment": "positive"
-    }
-  ]
+  "headlines": []
 }

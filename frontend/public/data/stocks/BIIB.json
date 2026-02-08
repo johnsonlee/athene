@@ -6271,8 +6271,8 @@
     "debt_equity_score": 76.32525,
     "fcf_yield_score": 74.86070194413,
     "current_ratio_score": 83.395,
-    "safety_score": 66.98668371140761,
-    "fundamental_score": 56.01326594644819,
+    "safety_score": 66.983375,
+    "fundamental_score": 56.01260420416667,
     "fund_data_completeness": 0.9166666666666666
   },
   "technical": {
@@ -6306,38 +6306,30 @@
     "technical_score": 58.861042612127626,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.14129310344827586,
-    "sentiment_pos": 0.13135000000000002,
-    "sentiment_neg": 0.01885,
-    "sentiment_neu": 0.8497999999999999,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 57.06
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": -0.125,
-    "target_upside": -0.030718759320011963,
+    "target_upside": -0.01580674023262753,
     "consensus_rating": 2.2,
     "analyst_revision_count": 8.0,
     "analyst_count": 28.0,
     "analyst_upgrades": 0.0,
     "analyst_downgrades": 1.0,
     "revision_momentum_score": 42.5,
-    "target_upside_score": 38.85624813599761,
+    "target_upside_score": 41.838651953474496,
     "consensus_score": 52.8,
-    "analyst_score": 43.79968684759916
+    "analyst_score": 44.843528183716074
   },
   "ranking": {
     "value_score": 67.69651816666668,
     "quality_score": 59.05599887500001,
     "growth_score": 31.900000000000002,
-    "safety_score": 66.98668371140761,
+    "safety_score": 66.983375,
     "trend_score": 83.08800991975535,
     "momentum_score": 60.5620484161734,
     "volatility_score": 28.830125556745,
     "volume_score": 50.0,
-    "analyst_score": 43.79968684759916,
+    "analyst_score": 44.843528183716074,
     "pe_score": 59.2027322,
     "forward_pe_score": 72.194432,
     "pb_score": 70.7351345,
@@ -6352,16 +6344,16 @@
     "current_ratio_score": 83.395,
     "earnings_visibility": 54.94339983125,
     "valuation_margin": 67.20895545,
-    "catalyst_timeline": 61.76697451835279,
-    "downside_control": 58.24152139022289,
-    "composite_score": 61.90358893415534,
+    "catalyst_timeline": 61.87135865196448,
+    "downside_control": 58.24102508351175,
+    "composite_score": 61.9374145162369,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 56.01326594644819,
+    "fundamental_score": 56.01260420416667,
     "technical_score": 58.861042612127626,
-    "sentiment_score": 57.06,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Health Care",
     "industry": "Biotechnology"
   },
-  "headlines": [
-    {
-      "title": "Analyst Report: Biogen Inc.",
-      "url": "https://finance.yahoo.com/m/727c6b3f-4859-396d-bd98-da7c7adae9f3/analyst-report%3A-biogen-inc..html",
-      "publisher": "Morningstar Research",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "How One Drug Heavy-Lifted Biogen's Fourth-Quarter Beat",
-      "url": "https://www.investors.com/news/technology/biogen-stock-biogen-earningspq4-2025?mod=IBD_FV",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Biogen Inc (BIIB) Q4 2025 Earnings Call Highlights: Strong Growth in Key Products Amidst ...",
-      "url": "https://finance.yahoo.com/news/biogen-inc-biib-q4-2025-210219240.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Biogen stock pops, Robinhood gets lift as bitcoin ticks up",
-      "url": "https://finance.yahoo.com/video/biogen-stock-pops-robinhood-gets-204853534.html",
-      "publisher": "Yahoo Finance Video",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Biogen Stock Rises Even as Multiple Sclerosis Revenue Tumbles. It Sees Continued Declines in the Portfolio.",
-      "url": "https://www.barrons.com/articles/biogen-earnings-stock-price-multiple-sclerosis-97907d44?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "BIIB Beats on Q4 Earnings & Sales, Stock Gains on Upbeat '26 EPS View",
-      "url": "/news/303089/biib-beats-on-q4-earnings-sales-stock-gains-on-upbeat-26-eps-view",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Biogen Forecasts 2026 Profit Above Estimates as Shares Climb 30%",
-      "url": "https://finance.yahoo.com/news/biogen-forecasts-2026-profit-above-161527897.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Pre-Markets Open in Green to Close the Week",
-      "url": "/news/303074/pre-markets-open-in-green-to-close-the-week",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Biogen Hits 52-Week High, Alzheimer's Drug Sales Jump",
-      "url": "/news/302881/biogen-hits-52-week-high-alzheimers-drug-sales-jump",
-      "publisher": "Benzinga",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Pre-Markets Rebounding Ahead of Super Bowl Sunday",
-      "url": "/news/303013/pre-markets-rebounding-ahead-of-super-bowl-sunday",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Biogen Q4 Earnings Call Highlights",
-      "url": "https://finance.yahoo.com/m/1d9f398d-0d21-3954-afbc-9c419c0fbaf7/biogen-q4-earnings-call.html",
-      "publisher": "MarketBeat",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Stock Market Today: Dow Rallies, Bitcoin Bounces; Amazon Dives On Earnings Results (Live Coverage)",
-      "url": "https://finance.yahoo.com/m/d5f6d70b-adbf-3412-b185-ebea8f943d91/stock-market-today%3A-dow.html",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Biogen (BIIB) Q4 Earnings: Taking a Look at Key Metrics Versus Estimates",
-      "url": "/news/302854/biogen-biib-q4-earnings-taking-a-look-at-key-metrics-versus-estimates",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Biogen Revenue Down as Multiple Sclerosis Sales Slide",
-      "url": "https://finance.yahoo.com/m/784c036c-63c3-3267-b2a4-7d5a5ff1f251/biogen-revenue-down-as.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Biogen 4Q Revenue Down as Multiple Sclerosis Sales Slide",
-      "url": "https://www.wsj.com/business/earnings/biogen-4q-revenue-down-as-multiple-sclerosis-sales-slide-ab8001ba?mod=wsj_FV",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-06",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Biogen's (NASDAQ:BIIB) Q4 CY2025: Strong Sales",
-      "url": "/news/302552/biogens-nasdaq-biib-q4-cy2025-strong-sales",
-      "publisher": "StockStory",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Biogen Inc. (BIIB) Q4 Earnings and Revenues Top Estimates",
-      "url": "/news/302601/biogen-inc-biib-q4-earnings-and-revenues-top-estimates",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Biogen shares rise as Q4 earnings beat expectations, 2026 profit outlook strong",
-      "url": "https://finance.yahoo.com/news/biogen-shares-rise-q4-earnings-120320668.html",
-      "publisher": "Investing.com",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Consumer Sentiment, Biogen Earnings: What to Watch Friday",
-      "url": "https://finance.yahoo.com/m/7b2b6226-1169-333f-adde-6c86f0d9fff6/consumer-sentiment%2C-biogen.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Stocks to Watch Friday: Amazon, Roblox, Stellantis, Strategy",
-      "url": "https://finance.yahoo.com/m/b9ddf50a-9f85-33bb-abac-388ab9931b3d/stocks-to-watch-friday%3A.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    }
-  ]
+  "headlines": []
 }

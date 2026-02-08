@@ -6271,8 +6271,8 @@
     "debt_equity_score": 58.8499,
     "fcf_yield_score": 88.0,
     "current_ratio_score": 18.839999999999996,
-    "safety_score": 60.551508711407614,
-    "fundamental_score": 68.82428275418629,
+    "safety_score": 60.548199999999994,
+    "fundamental_score": 68.82362101190476,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6307,13 +6307,13 @@
     "tech_data_completeness": 1.0
   },
   "sentiment": {
-    "sentiment_compound": 0.19230314068067383,
+    "sentiment_compound": 0.15281296027193836,
     "sentiment_pos": 0.10640000000000001,
-    "sentiment_neg": 0.01045,
-    "sentiment_neu": 0.88315,
+    "sentiment_neg": 0.016050000000000002,
+    "sentiment_neu": 0.8775499999999999,
     "news_count": 20.0,
     "sentiment_confidence": 1.0,
-    "sentiment_score": 59.62
+    "sentiment_score": 57.64
   },
   "analyst": {
     "revision_momentum": 0.0,
@@ -6332,7 +6332,7 @@
     "value_score": 60.080998333333326,
     "quality_score": 75.7297,
     "growth_score": 75.89928571428572,
-    "safety_score": 60.551508711407614,
+    "safety_score": 60.548199999999994,
     "trend_score": 63.43741720391486,
     "momentum_score": 60.251304465005845,
     "volatility_score": 53.70249361122276,
@@ -6353,15 +6353,15 @@
     "earnings_visibility": 71.42934785714286,
     "valuation_margin": 58.3652995,
     "catalyst_timeline": 57.15251406882372,
-    "downside_control": 55.63810034839456,
-    "composite_score": 63.28233136353124,
+    "downside_control": 55.63760404168342,
+    "composite_score": 63.282232102189006,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 68.82428275418629,
+    "fundamental_score": 68.82362101190476,
     "technical_score": 57.84711522292076,
-    "sentiment_score": 59.62,
+    "sentiment_score": 57.64,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6378,6 +6378,13 @@
     "industry": "Property & Casualty Insurance"
   },
   "headlines": [
+    {
+      "title": "Dow 50,000 sets table for inflation data, delayed January jobs report: What to watch this week",
+      "url": "https://finance.yahoo.com/news/dow-50000-sets-table-for-inflation-data-delayed-january-jobs-report-what-to-watch-this-week-123826626.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-08",
+      "sentiment": "negative"
+    },
     {
       "title": "Arch Capital (ACGL) Navigates Market Cycles with Strength, Offering Investors Long-Term Value",
       "url": "/news/303716/arch-capital-acgl-navigates-market-cycles-with-strength-offering-investors-long-term-value",
@@ -6510,13 +6517,6 @@
       "publisher": "Zacks",
       "date": "2026-01-20",
       "sentiment": "positive"
-    },
-    {
-      "title": "Travelers Gears Up to Report Q4 Earnings: Here's What to Expect",
-      "url": "/news/278964/travelers-gears-up-to-report-q4-earnings-heres-what-to-expect",
-      "publisher": "Zacks",
-      "date": "2026-01-16",
-      "sentiment": "neutral"
     }
   ]
 }

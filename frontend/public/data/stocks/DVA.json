@@ -6271,8 +6271,8 @@
     "debt_equity_score": 15.0,
     "fcf_yield_score": 88.0,
     "current_ratio_score": 58.432,
-    "safety_score": 60.34255871140763,
-    "fundamental_score": 70.61543737151962,
+    "safety_score": 60.33925000000001,
+    "fundamental_score": 70.6147756292381,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 53.69728351968948,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.1221318154548629,
-    "sentiment_pos": 0.11715,
-    "sentiment_neg": 0.04575,
-    "sentiment_neu": 0.8371000000000001,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 56.11
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.10771852588226931,
@@ -6332,7 +6324,7 @@
     "value_score": 84.96294909523809,
     "quality_score": 75.57419928,
     "growth_score": 58.535714285714285,
-    "safety_score": 60.34255871140763,
+    "safety_score": 60.33925000000001,
     "trend_score": 68.60265887695364,
     "momentum_score": 64.38828618867797,
     "volatility_score": 19.0,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 63.44648703485714,
     "valuation_margin": 82.84688472857142,
     "catalyst_timeline": 58.62326231526869,
-    "downside_control": 39.831383806711145,
-    "composite_score": 64.49377772138246,
+    "downside_control": 39.830887499999996,
+    "composite_score": 64.49367846004023,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 70.61543737151962,
+    "fundamental_score": 70.6147756292381,
     "technical_score": 53.69728351968948,
-    "sentiment_score": 56.11,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Health Care",
     "industry": "Health Care Services"
   },
-  "headlines": [
-    {
-      "title": "Should Value Investors Buy DaVita (DVA) Stock?",
-      "url": "/news/301595/should-value-investors-buy-davita-dva-stock",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Why DaVita HealthCare (DVA) is a Top Value Stock for the Long-Term",
-      "url": "/news/301620/why-davita-healthcare-dva-is-a-top-value-stock-for-the-long-term",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Analyst Report: DaVita Inc.",
-      "url": "https://finance.yahoo.com/m/86961714-e736-3734-8e28-28d2bd04d2ad/analyst-report%3A-davita-inc..html",
-      "publisher": "Morningstar Research",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "3 Warren Buffett-Style Stocks for a Golden Retirement",
-      "url": "https://finance.yahoo.com/m/3258a2fe-71ad-3270-9b1b-531458b3907f/3-warren-buffett-style-stocks.html",
-      "publisher": "24/7 Wall St.",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "DaVita (DVA) Q1 2025 Earnings Call Transcript",
-      "url": "/news/299646/davita-dva-q1-2025-earnings-call-transcript",
-      "publisher": "Motley Fool",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Stocks to Watch Tuesday Recap: PayPal, PepsiCo, AMD, Disney",
-      "url": "https://finance.yahoo.com/m/9234fa62-b0cf-3ed2-ba67-8ebb3210dc74/stocks-to-watch-tuesday.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Stocks Tumble on AI Disruption Fears",
-      "url": "https://finance.yahoo.com/m/2d280010-8635-3f1a-b487-d134aea3e092/stocks-tumble-on-ai.html",
-      "publisher": "Barchart",
-      "date": "2026-02-03",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Stocks Fall, Gold Rallies On Best Day Since 2008: What's Moving Markets Tuesday?",
-      "url": "/news/297947/stocks-fall-gold-rallies-on-best-day-since-2008-whats-moving-markets-tuesday",
-      "publisher": "Benzinga",
-      "date": "2026-02-03",
-      "sentiment": "positive"
-    },
-    {
-      "title": "What Sent DaVita Stock Soaring On Tuesday?",
-      "url": "/news/297842/what-sent-davita-stock-soaring-on-tuesday",
-      "publisher": "Motley Fool",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "DaVita Stock Rallies On Profit Beat, Confident 2026 View",
-      "url": "/news/297811/davita-stock-rallies-on-profit-beat-confident-2026-view",
-      "publisher": "Benzinga",
-      "date": "2026-02-03",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Why Is DaVita (DVA) Stock Rocketing Higher Today",
-      "url": "/news/297777/why-is-davita-dva-stock-rocketing-higher-today",
-      "publisher": "StockStory",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "This Berkshire Hathaway Holding Is Up 25%. Earnings Breeze Past Estimates.",
-      "url": "https://www.barrons.com/articles/davita-earnings-stock-price-berkshire-hathaway-e1d03506?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Software Stocks Retreat and Drag the Broader Market Lower",
-      "url": "https://finance.yahoo.com/m/a06579e4-a8c9-38b5-bd18-ff27c7b1d6a5/software-stocks-retreat-and.html",
-      "publisher": "Barchart",
-      "date": "2026-02-03",
-      "sentiment": "negative"
-    },
-    {
-      "title": "DaVita Stock Up Following Q4 Earnings & Revenue Beat, Margins Expand",
-      "url": "/news/297715/davita-stock-up-following-q4-earnings-revenue-beat-margins-expand",
-      "publisher": "Zacks",
-      "date": "2026-02-03",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Nasdaq Slips, Gold and Silver Stage Substantial Recovery",
-      "url": "https://finance.yahoo.com/m/e2a821b3-72dd-368c-9e69-12718b55c208/nasdaq-slips%2C-gold-and-silver.html",
-      "publisher": "Barchart",
-      "date": "2026-02-03",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Stocks to Watch Tuesday: PayPal, PepsiCo, AMD, Disney",
-      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-02-03-2026/card/stocks-to-watch-tuesday-palantir-teradyne-amd-1M4ooWKZ5ukuV7KWaO2N?mod=wsj_FV",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "DVA Q4 Deep Dive: Clinical Initiatives and Integrated Care Drive Outlook Amid Margin Compression",
-      "url": "/news/298015/dva-q4-deep-dive-clinical-initiatives-and-integrated-care-drive-outlook-amid-margin-compression",
-      "publisher": "StockStory",
-      "date": "2026-02-03",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Teradyne's 'blowout' guidance sees stock surge, and other early movers",
-      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-sp500-record-nasdaq-dow-up-gold-silver-rally-amd-earnings/card/teradyne-s-blowout-guidance-sees-stock-surge-and-other-early-movers-cC7Xun11oYCbYxya0kvo?mod=mw_FV",
-      "publisher": "MarketWatch",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "DaVita Inc (DVA) Q4 2025 Earnings Call Highlights: Strong Financial Performance Amid Challenges",
-      "url": "https://finance.yahoo.com/news/davita-inc-dva-q4-2025-050100530.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-02-03",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Analyst Report: DaVita Inc.",
-      "url": "https://finance.yahoo.com/m/1bc5425c-5746-398b-9f17-e98c659b1fde/analyst-report%3A-davita-inc..html",
-      "publisher": "Morningstar Research",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

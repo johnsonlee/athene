@@ -6271,8 +6271,8 @@
     "debt_equity_score": 72.0835,
     "fcf_yield_score": 65.09932211065941,
     "current_ratio_score": 85.0,
-    "safety_score": 65.6683087114076,
-    "fundamental_score": 46.49637578672596,
+    "safety_score": 65.66499999999999,
+    "fundamental_score": 46.49571404444444,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 60.06289519292718,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.1709284918089684,
-    "sentiment_pos": 0.10945,
-    "sentiment_neg": 0.041499999999999995,
-    "sentiment_neu": 0.8490500000000001,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 58.55
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": -0.0030674846625767306,
@@ -6332,7 +6324,7 @@
     "value_score": 64.09971387777777,
     "quality_score": 46.95928524999999,
     "growth_score": 13.0,
-    "safety_score": 65.6683087114076,
+    "safety_score": 65.66499999999999,
     "trend_score": 78.16137217430219,
     "momentum_score": 62.261838231565875,
     "volatility_score": 39.67966035583379,
@@ -6353,22 +6345,22 @@
     "earnings_visibility": 30.2878927875,
     "valuation_margin": 54.614914163333324,
     "catalyst_timeline": 61.80667064794876,
-    "downside_control": 59.020195360086205,
-    "composite_score": 48.410234243209324,
+    "downside_control": 59.019699053375064,
+    "composite_score": 48.41013498186709,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 46.49637578672596,
+    "fundamental_score": 46.49571404444444,
     "technical_score": 60.06289519292718,
-    "sentiment_score": 58.55,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 436,
-    "percentile": 0.16184971098265896,
+    "rank": 437,
+    "percentile": 0.1599229287090559,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6377,146 +6369,5 @@
     "sector": "Information Technology",
     "industry": "Semiconductors"
   },
-  "headlines": [
-    {
-      "title": "onsemi (ON) Reports Q4: Everything You Need To Know Ahead Of Earnings",
-      "url": "/news/303683/onsemi-on-reports-q4-everything-you-need-to-know-ahead-of-earnings",
-      "publisher": "StockStory",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Super Bowl LX, Coinbase earnings, jobs data & CPI: What to Watch",
-      "url": "https://finance.yahoo.com/video/super-bowl-lx-coinbase-earnings-000012395.html",
-      "publisher": "Yahoo Finance Video",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "RF-Based VRU Safety Platforms Positioned for Institutional-Scale Growth",
-      "url": "/news/302713/rf-based-vru-safety-platforms-positioned-for-institutional-scale-growth",
-      "publisher": "PR Newswire",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "PBCM Sold on Semiconductor (ON) Due to Persistent Downturn in EV Demand",
-      "url": "/news/302639/pbcm-sold-on-semiconductor-on-due-to-persistent-downturn-in-ev-demand",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-06",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Analyst Report: ON Semiconductor Corporation",
-      "url": "https://finance.yahoo.com/m/6437d6ed-4363-3465-ac9c-34e1156a0b52/analyst-report%3A-on.html",
-      "publisher": "Morningstar Research",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "ON Set to Report Q4 Earnings: What's in Store for the Stock?",
-      "url": "/news/301958/on-set-to-report-q4-earnings-whats-in-store-for-the-stock",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Coherent Shines at Q2 Earnings: Should Investors Buy the Stock Now?",
-      "url": "/news/301916/coherent-shines-at-q2-earnings-should-investors-buy-the-stock-now",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "M/A-Com (MTSI) Tops Q1 Earnings and Revenue Estimates",
-      "url": "/news/301421/ma-com-mtsi-tops-q1-earnings-and-revenue-estimates",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "3 Volatile Stocks We Think Twice About",
-      "url": "/news/301388/3-volatile-stocks-we-think-twice-about",
-      "publisher": "StockStory",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Ahead of ON Semiconductor Corp. (ON) Q4 Earnings: Get Ready With Wall Street Estimates for Key Metrics",
-      "url": "/news/299454/ahead-of-on-semiconductor-corp-on-q4-earnings-get-ready-with-wall-street-estimates-for-key-metrics",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "1 S&P 500 Stock with Impressive Fundamentals and 2 We Ignore",
-      "url": "/news/295152/1-sp-500-stock-with-impressive-fundamentals-and-2-we-ignore",
-      "publisher": "StockStory",
-      "date": "2026-02-01",
-      "sentiment": "positive"
-    },
-    {
-      "title": "ON Semiconductor Corp. (ON) Sees a More Significant Dip Than Broader Market: Some Facts to Know",
-      "url": "/news/294286/on-semiconductor-corp-on-sees-a-more-significant-dip-than-broader-market-some-facts-to-know",
-      "publisher": "Zacks",
-      "date": "2026-01-30",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Are Wall Street Analysts Bullish on ON Semiconductor Stock?",
-      "url": "https://finance.yahoo.com/m/dff1cb9c-bc7f-3bab-9dc5-3d091d309fd2/are-wall-street-analysts.html",
-      "publisher": "Barchart",
-      "date": "2026-01-30",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "What Anthropic and OpenAI's Recent News Mean for AI Stock Investors",
-      "url": "/news/292995/what-anthropic-and-openais-recent-news-mean-for-ai-stock-investors",
-      "publisher": "Motley Fool",
-      "date": "2026-01-29",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "ON Semiconductor Corp. (ON) Suffers a Larger Drop Than the General Market: Key Insights",
-      "url": "/news/292829/on-semiconductor-corp-on-suffers-a-larger-drop-than-the-general-market-key-insights",
-      "publisher": "Zacks",
-      "date": "2026-01-29",
-      "sentiment": "negative"
-    },
-    {
-      "title": "MaxLinear (MXL) Tops Q4 Earnings and Revenue Estimates",
-      "url": "/news/292757/maxlinear-mxl-tops-q4-earnings-and-revenue-estimates",
-      "publisher": "Zacks",
-      "date": "2026-01-29",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Intel, Micron, These Other Chip Stocks Are Rallying. Thank Texas Instruments and ASML.",
-      "url": "https://finance.yahoo.com/m/c9999509-419c-3444-a8c1-bdb4979655f1/intel%2C-micron%2C-these-other.html",
-      "publisher": "Barrons.com",
-      "date": "2026-01-28",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Stocks Mixed After the Fed Pauses Rate Cuts",
-      "url": "https://finance.yahoo.com/m/396af179-3604-3474-8571-1f8c6eb49f58/stocks-mixed-after-the-fed.html",
-      "publisher": "Barchart",
-      "date": "2026-01-28",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Texas Instruments, ASML Lift Chip Stocks Higher",
-      "url": "/news/289689/texas-instruments-asml-lift-chip-stocks-higher",
-      "publisher": "Benzinga",
-      "date": "2026-01-28",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Intel, Micron and These Other Chip Stocks Are Rallying. Thank Texas Instruments and ASML.",
-      "url": "https://finance.yahoo.com/m/c9999509-419c-3444-a8c1-bdb4979655f1/intel%2C-micron-and-these-other.html",
-      "publisher": "Barrons.com",
-      "date": "2026-01-28",
-      "sentiment": "positive"
-    }
-  ]
+  "headlines": []
 }

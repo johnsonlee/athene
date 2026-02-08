@@ -6271,8 +6271,8 @@
     "debt_equity_score": 73.6405,
     "fcf_yield_score": 72.81744635537248,
     "current_ratio_score": 75.896,
-    "safety_score": 61.89480871140763,
-    "fundamental_score": 61.31528565964264,
+    "safety_score": 61.89150000000001,
+    "fundamental_score": 61.31462391736112,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 31.074437401761198,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.09738248458441474,
-    "sentiment_pos": 0.11245000000000001,
-    "sentiment_neg": 0.07295,
-    "sentiment_neu": 0.81465,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 54.87
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.6879450036827892,
@@ -6332,7 +6324,7 @@
     "value_score": 65.00029641944445,
     "quality_score": 44.255356517857145,
     "growth_score": 77.63857142857142,
-    "safety_score": 61.89480871140763,
+    "safety_score": 61.89150000000001,
     "trend_score": 14.246141041616783,
     "momentum_score": 39.54721357840725,
     "volatility_score": 24.682155078769938,
@@ -6353,22 +6345,22 @@
     "earnings_visibility": 54.95008919196428,
     "valuation_margin": 55.137088925833325,
     "catalyst_timeline": 39.7008954620024,
-    "downside_control": 44.53554456852663,
-    "composite_score": 47.24781149752485,
+    "downside_control": 44.53504826181549,
+    "composite_score": 47.247712236182615,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 61.31528565964264,
+    "fundamental_score": 61.31462391736112,
     "technical_score": 31.074437401761198,
-    "sentiment_score": 54.87,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 450,
-    "percentile": 0.1348747591522158,
+    "rank": 451,
+    "percentile": 0.1329479768786127,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6377,146 +6369,5 @@
     "sector": "Information Technology",
     "industry": "Application Software"
   },
-  "headlines": [
-    {
-      "title": "Why is Workday (WDAY) One of the Most Promising Future Stocks to Buy Now?",
-      "url": "/news/303710/why-is-workday-wday-one-of-the-most-promising-future-stocks-to-buy-now",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-08",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Software stocks have been crushed. Here's how to play the sector as the dust settles.",
-      "url": "https://www.marketwatch.com/story/software-stocks-have-been-crushed-heres-how-to-play-the-sector-as-the-dust-settles-c0175f8a?mod=mw_FV",
-      "publisher": "MarketWatch",
-      "date": "2026-02-07",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Workday (WDAY) Outperforms Broader Market: What You Need to Know",
-      "url": "/news/303424/workday-wday-outperforms-broader-market-what-you-need-to-know",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Is Workday (WDAY) a Buy as Wall Street Analysts Look Optimistic?",
-      "url": "/news/302873/is-workday-wday-a-buy-as-wall-street-analysts-look-optimistic",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Here is What to Know Beyond Why Workday, Inc. (WDAY) is a Trending Stock",
-      "url": "/news/302790/here-is-what-to-know-beyond-why-workday-inc-wday-is-a-trending-stock",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Workday, Varonis Systems, Five9, SoundHound AI, and C3.ai Shares Are Falling, What You Need To Know",
-      "url": "/news/302007/workday-varonis-systems-five9-soundhound-ai-and-c3ai-shares-are-falling-what-you-need-to-know",
-      "publisher": "StockStory",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Anthropic releases AI upgrade as market punishes software stocks",
-      "url": "https://finance.yahoo.com/news/anthropic-releases-ai-upgrade-market-174530092.html",
-      "publisher": "Reuters",
-      "date": "2026-02-05",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Strength Seen in Workday (WDAY): Can Its 5.6% Jump Turn into More Strength?",
-      "url": "/news/301474/strength-seen-in-workday-wday-can-its-56-jump-turn-into-more-strength",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Stock Market Today: Dow Jones Futures Fall, Nasdaq Gains Day After Tech Selloff-Alphabet, Broadcom, Amazon In Focus",
-      "url": "/news/300876/stock-market-today-dow-jones-futures-fall-nasdaq-gains-day-after-tech-selloff-alphabet-broadcom-amazon-in-focus",
-      "publisher": "Benzinga",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Do Stock Sell-Offs Pay Off? These Experts Warn Not to Bottom Feed on New Lows",
-      "url": "https://finance.yahoo.com/m/d5471702-ea0d-3f73-8cfe-28eec028c482/do-stock-sell-offs-pay-off%3F.html",
-      "publisher": "Investopedia",
-      "date": "2026-02-04",
-      "sentiment": "negative"
-    },
-    {
-      "title": "AI Won't Kill the Software Business, Just Its Growth Story",
-      "url": "https://www.wsj.com/tech/ai/ai-wont-kill-the-software-business-just-its-growth-story-05673e07?mod=wsj_FV",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Why the AI-driven software stock crash probably isn't over",
-      "url": "https://finance.yahoo.com/news/why-the-ai-driven-software-stock-crash-probably-isnt-over-125809330.html",
-      "publisher": "Yahoo Finance",
-      "date": "2026-02-04",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Heard on the Street Tuesday Recap: Code Red",
-      "url": "https://finance.yahoo.com/m/af68f4b2-5e4e-3115-b526-4a59127f82c4/heard-on-the-street-tuesday.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Heard on the Street Recap: Code Red",
-      "url": "https://finance.yahoo.com/m/a39d2f87-7870-392a-b761-b2745ab03605/heard-on-the-street-recap%3A.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Stocks and bitcoin sink as investors dump software company shares",
-      "url": "https://finance.yahoo.com/m/1adef0a3-59fe-37fc-9eea-65a8b69a6425/stocks-and-bitcoin-sink-as.html",
-      "publisher": "NBC News",
-      "date": "2026-02-03",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Workday Introduces the Military Skills Mapper to Help Organizations Better Recognize and Hire Veteran Talent",
-      "url": "/news/297235/workday-introduces-the-military-skills-mapper-to-help-organizations-better-recognize-and-hire-veteran-talent",
-      "publisher": "PR Newswire",
-      "date": "2026-02-03",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Workday Announces Date of Fiscal 2026 Fourth Quarter and Full Year Financial Results on February 24th, 2026",
-      "url": "/news/297220/workday-announces-date-of-fiscal-2026-fourth-quarter-and-full-year-financial-results-on-february-24th-2026",
-      "publisher": "PR Newswire",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "What CFOs at Adobe, Dataminr, and Huntington say about scaling AI",
-      "url": "https://finance.yahoo.com/news/cfos-adobe-dataminr-huntington-scaling-120441486.html",
-      "publisher": "Fortune",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Here's What Wall Street Thinks About ?Workday, Inc (WDAY)",
-      "url": "/news/294682/heres-what-wall-street-thinks-about-workday-inc-wday",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-01",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Workday's (WDAY) AI Strategy Still Developing, 2026 Seen as Critical",
-      "url": "/news/293390/workdays-wday-ai-strategy-still-developing-2026-seen-as-critical",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-30",
-      "sentiment": "negative"
-    }
-  ]
+  "headlines": []
 }

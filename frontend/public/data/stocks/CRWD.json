@@ -6271,8 +6271,8 @@
     "debt_equity_score": 82.44225,
     "fcf_yield_score": 41.840440485077714,
     "current_ratio_score": 75.464,
-    "safety_score": 66.07968371140763,
-    "fundamental_score": 39.01400162561486,
+    "safety_score": 66.076375,
+    "fundamental_score": 39.01333988333333,
     "fund_data_completeness": 0.8333333333333334
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 33.783587625819365,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": -0.009174960251179575,
-    "sentiment_pos": 0.07155,
-    "sentiment_neg": 0.07235,
-    "sentiment_neu": 0.8561,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 49.54
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.02564102564102564,
     "target_upside": 0.4538558786346397,
@@ -6332,7 +6324,7 @@
     "value_score": 31.092259533333333,
     "quality_score": 10.0,
     "growth_score": 60.1,
-    "safety_score": 66.07968371140763,
+    "safety_score": 66.076375,
     "trend_score": 25.49440825503356,
     "momentum_score": 36.10288481288606,
     "volatility_score": 26.52199852721739,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 31.549999999999997,
     "valuation_margin": 27.856677859999998,
     "catalyst_timeline": 42.584871219657856,
-    "downside_control": 50.02425233579375,
-    "composite_score": 31.61999925699041,
+    "downside_control": 50.023756029082605,
+    "composite_score": 31.619899995648176,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 39.01400162561486,
+    "fundamental_score": 39.01333988333333,
     "technical_score": 33.783587625819365,
-    "sentiment_score": 49.54,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Information Technology",
     "industry": "Systems Software"
   },
-  "headlines": [
-    {
-      "title": "Citi Reiterates Buy on CrowdStrike Holdings, Inc. (CRWD), Raises Target on Strong Cybersecurity Spending Trends",
-      "url": "/news/303665/citi-reiterates-buy-on-crowdstrike-holdings-inc-crwd-raises-target-on-strong-cybersecurity-spending-trends",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-07",
-      "sentiment": "positive"
-    },
-    {
-      "title": "CrowdStrike Holdings, Inc. (CRWD): A Bull Case Theory",
-      "url": "/news/303637/crowdstrike-holdings-inc-crwd-a-bull-case-theory",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Software stocks have been crushed. Here's how to play the sector as the dust settles.",
-      "url": "https://www.marketwatch.com/story/software-stocks-have-been-crushed-heres-how-to-play-the-sector-as-the-dust-settles-c0175f8a?mod=mw_FV",
-      "publisher": "MarketWatch",
-      "date": "2026-02-07",
-      "sentiment": "negative"
-    },
-    {
-      "title": "MarketBeat Week in Review - 02/02 - 02/06",
-      "url": "/news/303521/marketbeat-week-in-review-0202-0206",
-      "publisher": "MarketBeat",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "CrowdStrike (CRWD) Stock Trades Up, Here Is Why",
-      "url": "/news/303063/crowdstrike-crwd-stock-trades-up-here-is-why",
-      "publisher": "StockStory",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "3 SaaS Stocks Worth Buying Despite The Meltdown",
-      "url": "https://finance.yahoo.com/m/e05efdc4-3d7d-3fec-8a52-30ffce8c0b4b/3-saas-stocks-worth-buying.html",
-      "publisher": "24/7 Wall St.",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Fortinet Q4 Earnings Call Highlights",
-      "url": "https://finance.yahoo.com/m/9c1fe9a5-7070-3a56-bd4d-ef2bdce34e38/fortinet-q4-earnings-call.html",
-      "publisher": "MarketBeat",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Stocks Settle Lower as Tech and Crypto are Routed",
-      "url": "https://finance.yahoo.com/m/e8dc40dd-4748-3ac3-a161-4d6796beda04/stocks-settle-lower-as-tech.html",
-      "publisher": "Barchart",
-      "date": "2026-02-05",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Why CrowdStrike (CRWD) Shares Are Getting Obliterated Today",
-      "url": "/news/302004/why-crowdstrike-crwd-shares-are-getting-obliterated-today",
-      "publisher": "StockStory",
-      "date": "2026-02-05",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Wedbush: Microsoft, Palantir, CrowdStrike Lead Top Five Software Stocks",
-      "url": "https://finance.yahoo.com/news/wedbush-microsoft-palantir-crowdstrike-lead-181444637.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Palantir, Microsoft And 3 More Software Stocks To Buy At The 'Garage Sale'",
-      "url": "/news/301790/palantir-microsoft-and-3-more-software-stocks-to-buy-at-the-garage-sale",
-      "publisher": "Benzinga",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "CrowdStrike Enters into MoU with Aramco to Advance Saudi Arabias Cybersecurity Transformation",
-      "url": "https://www.businesswire.com/news/home/20260205796198/en/",
-      "publisher": "Business Wire",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "CrowdStrike Plunges 22% in 3 Months: Time to Hold or Fold the Stock?",
-      "url": "/news/301253/crowdstrike-plunges-22-in-3-months-time-to-hold-or-fold-the-stock",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "CrowdStrike (CRWD) Acquires SGNL For $740M To Support Identity Security Against AI-Powered Threats",
-      "url": "/news/301034/crowdstrike-crwd-acquires-sgnl-for-740m-to-support-identity-security-against-ai-powered-threats",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Jim Cramer Highlights the Charitable Trust's New Holdings in CrowdStrike",
-      "url": "/news/300077/jim-cramer-highlights-the-charitable-trusts-new-holdings-in-crowdstrike",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Tech stocks plunge as AI fears take hold",
-      "url": "https://finance.yahoo.com/m/c97ff855-fe63-3f3a-86fa-1375ab0a878b/tech-stocks-plunge-as-ai.html",
-      "publisher": "The Telegraph",
-      "date": "2026-02-04",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Today's Market: Dow Climbs 350 Points, Nasdaq Falls 1% as Tech Stocks Struggle",
-      "url": "https://finance.yahoo.com/news/todays-market-dow-climbs-350-172108146.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-02-04",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Broadcom Is 'Uncle Sam Of AI,' Says Futurum Equities As It Lists 15 Non-Mag7 AI Disruptors",
-      "url": "/news/299188/broadcom-is-uncle-sam-of-ai-says-futurum-equities-as-it-lists-15-non-mag7-ai-disruptors",
-      "publisher": "Benzinga",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Global software stocks hit by Anthropic wake-up call on AI disruption",
-      "url": "https://finance.yahoo.com/news/global-software-stocks-hit-anthropic-120659089.html",
-      "publisher": "Reuters",
-      "date": "2026-02-04",
-      "sentiment": "negative"
-    },
-    {
-      "title": "CrowdStrike Holdings (CRWD) Falls More Steeply Than Broader Market: What Investors Need to Know",
-      "url": "/news/298324/crowdstrike-holdings-crwd-falls-more-steeply-than-broader-market-what-investors-need-to-know",
-      "publisher": "Zacks",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

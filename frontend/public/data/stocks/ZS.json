@@ -6271,8 +6271,8 @@
     "debt_equity_score": 49.94,
     "fcf_yield_score": 58.311948564960005,
     "current_ratio_score": 75.776,
-    "safety_score": 54.170532993887626,
-    "fundamental_score": 40.609995892428316,
+    "safety_score": 54.16722428248001,
+    "fundamental_score": 40.60933415014679,
     "fund_data_completeness": 0.8333333333333334
   },
   "technical": {
@@ -6306,20 +6306,12 @@
     "technical_score": 26.57472253968598,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.12527689475169745,
-    "sentiment_pos": 0.10430000000000002,
-    "sentiment_neg": 0.015349999999999999,
-    "sentiment_neu": 0.88035,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 56.26
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.9123886930018524,
     "consensus_rating": 1.63265,
-    "analyst_revision_count": 24.0,
+    "analyst_revision_count": 23.0,
     "analyst_count": 45.0,
     "analyst_upgrades": 1.0,
     "analyst_downgrades": 1.0,
@@ -6332,7 +6324,7 @@
     "value_score": 45.353557174603175,
     "quality_score": 10.0,
     "growth_score": 61.75,
-    "safety_score": 54.170532993887626,
+    "safety_score": 54.16722428248001,
     "trend_score": 8.033417328225958,
     "momentum_score": 29.37165257232619,
     "volatility_score": 26.76600784760167,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 41.1285,
     "valuation_margin": 46.53406715238095,
     "catalyst_timeline": 35.179856990055214,
-    "downside_control": 42.32448112622339,
-    "composite_score": 37.01719563790507,
+    "downside_control": 42.32398481951225,
+    "composite_score": 37.01709637656283,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 40.609995892428316,
+    "fundamental_score": 40.60933415014679,
     "technical_score": 26.57472253968598,
-    "sentiment_score": 56.26,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Technology",
     "industry": "Software - Infrastructure"
   },
-  "headlines": [
-    {
-      "title": "Software stocks have been crushed. Here's how to play the sector as the dust settles.",
-      "url": "https://www.marketwatch.com/story/software-stocks-have-been-crushed-heres-how-to-play-the-sector-as-the-dust-settles-c0175f8a?mod=mw_FV",
-      "publisher": "MarketWatch",
-      "date": "2026-02-07",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Zscaler acquires SquareX to extend Zero Trust controls into browsers",
-      "url": "https://finance.yahoo.com/m/ca7c7b7c-2514-3c74-a191-0669428f3378/zscaler-acquires-squarex-to.html",
-      "publisher": "Verdict",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Qualys Q4 Earnings Call Highlights",
-      "url": "https://finance.yahoo.com/m/0083db48-c79d-31cb-a50e-3cc997c83288/qualys-q4-earnings-call.html",
-      "publisher": "MarketBeat",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Analyst Report: Zscaler, Inc.",
-      "url": "https://finance.yahoo.com/m/b37f593e-162c-3de3-a29b-59ce56d45271/analyst-report%3A-zscaler%2C-inc..html",
-      "publisher": "Morningstar Research",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Zscaler Acquires SquareX to Advance Zero Trust Browser Security for the AI Era",
-      "url": "/news/302095/zscaler-acquires-squarex-to-advance-zero-trust-browser-security-for-the-ai-era",
-      "publisher": "GlobeNewswire",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Why Zscaler (ZS) Stock Is Nosediving",
-      "url": "/news/302013/why-zscaler-zs-stock-is-nosediving",
-      "publisher": "StockStory",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Zscaler to Host Second Quarter Fiscal Year 2026 Earnings Conference Call",
-      "url": "/news/301144/zscaler-to-host-second-quarter-fiscal-year-2026-earnings-conference-call",
-      "publisher": "GlobeNewswire",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Zscaler (ZS) Falls More Steeply Than Broader Market: What Investors Need to Know",
-      "url": "/news/298317/zscaler-zs-falls-more-steeply-than-broader-market-what-investors-need-to-know",
-      "publisher": "Zacks",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Zscaler, Inc. (ZS): A Bull Case Theory",
-      "url": "/news/296475/zscaler-inc-zs-a-bull-case-theory",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Citizens Highlights Zscaler's (ZS) Competitive Moat in Cybersecurity",
-      "url": "/news/293387/citizens-highlights-zscalers-zs-competitive-moat-in-cybersecurity",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-30",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Analyst Report: Zscaler, Inc.",
-      "url": "https://finance.yahoo.com/m/b30fce14-ff78-3c17-a3c7-056c10741516/analyst-report%3A-zscaler%2C-inc..html",
-      "publisher": "Morningstar Research",
-      "date": "2026-01-29",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Here's Why Zscaler (ZS) is a Strong Growth Stock",
-      "url": "/news/291928/heres-why-zscaler-zs-is-a-strong-growth-stock",
-      "publisher": "Zacks",
-      "date": "2026-01-29",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Zscaler (ZS) Outperforms Broader Market: What You Need to Know",
-      "url": "/news/289184/zscaler-zs-outperforms-broader-market-what-you-need-to-know",
-      "publisher": "Zacks",
-      "date": "2026-01-27",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Why Zscaler Stock Is Up Today",
-      "url": "/news/288895/why-zscaler-stock-is-up-today",
-      "publisher": "Motley Fool",
-      "date": "2026-01-27",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Why Zscaler (ZS) Stock Is Up Today",
-      "url": "/news/288691/why-zscaler-zs-stock-is-up-today",
-      "publisher": "StockStory",
-      "date": "2026-01-27",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Stock Market Today: Dow Falls As Fed Meeting Starts; UnitedHealth Plunges On Medicare News (Live Coverage)",
-      "url": "https://finance.yahoo.com/m/7d896214-53d1-3346-a616-937334a286af/stock-market-today%3A-dow-falls.html",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-01-27",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Is Most-Watched Stock Zscaler, Inc. (ZS) Worth Betting on Now?",
-      "url": "/news/288383/is-most-watched-stock-zscaler-inc-zs-worth-betting-on-now",
-      "publisher": "Zacks",
-      "date": "2026-01-27",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Zscaler Unveils New Innovations to Secure Enterprise AI Adoption",
-      "url": "/news/287827/zscaler-unveils-new-innovations-to-secure-enterprise-ai-adoption",
-      "publisher": "GlobeNewswire",
-      "date": "2026-01-27",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Zscaler 2026 AI Threat Report: 91% Year-over-Year Surge in AI Activity Creates Growing Oversight Gap for Global Enterprises",
-      "url": "/news/287826/zscaler-2026-ai-threat-report-91-year-over-year-surge-in-ai-activity-creates-growing-oversight-gap-for-global-enterprises",
-      "publisher": "GlobeNewswire",
-      "date": "2026-01-27",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Citizens Remains a Buy on ?Zscaler, Inc (ZS)",
-      "url": "/news/285051/citizens-remains-a-buy-on-zscaler-inc-zs",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-23",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

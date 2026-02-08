@@ -6271,8 +6271,8 @@
     "debt_equity_score": 50.0,
     "fcf_yield_score": 44.4749407612292,
     "current_ratio_score": 40.74,
-    "safety_score": 34.364029092022214,
-    "fundamental_score": 64.85293603507111,
+    "safety_score": 34.360720380614595,
+    "fundamental_score": 64.85227429278959,
     "fund_data_completeness": 0.8333333333333334
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 36.54328043860915,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.34014742558895766,
-    "sentiment_pos": 0.21974999999999997,
-    "sentiment_neg": 0.0206,
-    "sentiment_neu": 0.7596,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 67.01
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.4414090582314881,
@@ -6332,7 +6324,7 @@
     "value_score": 58.02052086666668,
     "quality_score": 90.0,
     "growth_score": 65.9,
-    "safety_score": 34.364029092022214,
+    "safety_score": 34.360720380614595,
     "trend_score": 25.39482251099885,
     "momentum_score": 43.67545422383772,
     "volatility_score": 29.110987090790918,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 74.03699999999999,
     "valuation_margin": 53.232156260000004,
     "catalyst_timeline": 46.325013769817225,
-    "downside_control": 36.17025242742197,
-    "composite_score": 54.05046608961555,
+    "downside_control": 36.16975612071082,
+    "composite_score": 54.05036682827331,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 64.85293603507111,
+    "fundamental_score": 64.85227429278959,
     "technical_score": 36.54328043860915,
-    "sentiment_score": 67.01,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Information Technology",
     "industry": "Application Software"
   },
-  "headlines": [
-    {
-      "title": "Tech stocks have been shaky, but these 20 companies could still see rocketing sales growth",
-      "url": "https://www.marketwatch.com/story/tech-stocks-have-been-shaky-but-these-20-companies-could-still-see-rocketing-sales-growth-148195c9?mod=mw_FV",
-      "publisher": "MarketWatch",
-      "date": "2026-02-07",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Equifax Q4 Earnings Call Highlights",
-      "url": "https://finance.yahoo.com/m/51a9262e-cf76-3d14-a04a-d241eb3e4f77/equifax-q4-earnings-call.html",
-      "publisher": "MarketBeat",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Grab Finance Expands Credit Access Across Southeast Asia Using FICO Platform, Delivering 22 Workflows in Six Countries",
-      "url": "https://www.businesswire.com/news/home/20260204753549/en",
-      "publisher": "Business Wire",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Why Fair Isaac (FICO) is a Top Growth Stock for the Long-Term",
-      "url": "/news/299592/why-fair-isaac-fico-is-a-top-growth-stock-for-the-long-term",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Does Extreme Optimism, January Gains Spell SPX Trouble?",
-      "url": "/news/299145/does-extreme-optimism-january-gains-spell-spx-trouble",
-      "publisher": "Schaeffer's Research",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "5 Revealing Analyst Questions From Fair Isaac Corporation's Q4 Earnings Call",
-      "url": "/news/298815/5-revealing-analyst-questions-from-fair-isaac-corporations-q4-earnings-call",
-      "publisher": "StockStory",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Analyst Report: Fair Isaac Corporation",
-      "url": "https://finance.yahoo.com/m/5e9b4598-a689-38f5-9a20-d387c6f4c978/analyst-report%3A-fair-isaac.html",
-      "publisher": "Morningstar Research",
-      "date": "2026-02-03",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Mentalist Oz Pearlman Will Demonstrate Power of Reading Customer Cues at FICO World 2026",
-      "url": "https://www.businesswire.com/news/home/20260203041482/en",
-      "publisher": "Business Wire",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "FICO Score 10T Sees Surge of Adoption by Mortgage Lenders",
-      "url": "https://www.businesswire.com/news/home/20260203001718/en/",
-      "publisher": "Business Wire",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "FICO Educational Analytics Challenge Program Continues its Third Year, Empowering Students with Hands-On Experience Building Responsible AI Models",
-      "url": "https://www.businesswire.com/news/home/20260202913525/en/",
-      "publisher": "Business Wire",
-      "date": "2026-02-02",
-      "sentiment": "positive"
-    },
-    {
-      "title": "FICO Recognized in the 2026 Gartner Critical Capabilities Report for Decision Intelligence Platforms",
-      "url": "https://www.businesswire.com/news/home/20260130108152/en/",
-      "publisher": "Business Wire",
-      "date": "2026-01-30",
-      "sentiment": "positive"
-    },
-    {
-      "title": "FICO, Tech Mahindra form global alliance to speed AI decisioning for banks",
-      "url": "https://finance.yahoo.com/m/09cd7d3d-e5f5-3bb7-9874-e0f1f0047fe1/fico%2C-tech-mahindra-form.html",
-      "publisher": "Retail Banker International",
-      "date": "2026-01-30",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "FICO UK Credit Card Market Report: November 2025",
-      "url": "https://www.businesswire.com/news/home/20260130508151/en",
-      "publisher": "Business Wire",
-      "date": "2026-01-30",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Fair Isaac Q1 Earnings Top Estimates, Strong Scores Drive Up Sales Y/Y",
-      "url": "/news/292376/fair-isaac-q1-earnings-top-estimates-strong-scores-drive-up-sales-yy",
-      "publisher": "Zacks",
-      "date": "2026-01-29",
-      "sentiment": "positive"
-    },
-    {
-      "title": "FICO Named a Leader in 2026 Gartner Magic Quadrant for Decision Intelligence Platforms",
-      "url": "https://www.businesswire.com/news/home/20260129308692/en/2026",
-      "publisher": "Business Wire",
-      "date": "2026-01-29",
-      "sentiment": "positive"
-    },
-    {
-      "title": "FICO and Tech Mahindra Partner to Accelerate AI-Driven Decisioning and Core Banking Transformation",
-      "url": "https://www.businesswire.com/news/home/20260129372664/en/",
-      "publisher": "Business Wire",
-      "date": "2026-01-29",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Analyst Report: Fair Isaac Corporation",
-      "url": "https://finance.yahoo.com/m/6da29532-b22f-35d1-875b-8a126ed35abd/analyst-report%3A-fair-isaac.html",
-      "publisher": "Morningstar Research",
-      "date": "2026-01-29",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Fair Isaac Corp (FICO) Q1 2026 Earnings Call Highlights: Strong Revenue Growth and Record ...",
-      "url": "https://finance.yahoo.com/news/fair-isaac-corp-fico-q1-050202301.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-01-29",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Fair Isaac Q1 Earnings Call Highlights",
-      "url": "https://finance.yahoo.com/m/18ed8970-53cf-32ec-bdeb-e0af04314478/fair-isaac-q1-earnings-call.html",
-      "publisher": "MarketBeat",
-      "date": "2026-01-28",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Here's What Key Metrics Tell Us About Fair Isaac (FICO) Q1 Earnings",
-      "url": "/news/290985/heres-what-key-metrics-tell-us-about-fair-isaac-fico-q1-earnings",
-      "publisher": "Zacks",
-      "date": "2026-01-28",
-      "sentiment": "positive"
-    }
-  ]
+  "headlines": []
 }

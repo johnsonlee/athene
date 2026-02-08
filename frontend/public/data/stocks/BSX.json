@@ -6271,8 +6271,8 @@
     "debt_equity_score": 69.5135,
     "fcf_yield_score": 35.0,
     "current_ratio_score": 42.0,
-    "safety_score": 42.883308711407615,
-    "fundamental_score": 57.46334654340197,
+    "safety_score": 42.879999999999995,
+    "fundamental_score": 57.462684801120446,
     "fund_data_completeness": 0.75
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 28.970397150216296,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.034052686772665194,
-    "sentiment_pos": 0.0679,
-    "sentiment_neg": 0.06365,
-    "sentiment_neu": 0.8684499999999999,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 51.7
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.37668808181460606,
@@ -6332,7 +6324,7 @@
     "value_score": 45.64250349019608,
     "quality_score": 61.92019642857143,
     "growth_score": 75.6,
-    "safety_score": 42.883308711407615,
+    "safety_score": 42.879999999999995,
     "trend_score": 17.984482015723742,
     "momentum_score": 32.068589595932366,
     "volatility_score": 19.772378333597324,
@@ -6353,22 +6345,22 @@
     "earnings_visibility": 64.92402946428571,
     "valuation_margin": 43.09975104705882,
     "catalyst_timeline": 41.70056954729384,
-    "downside_control": 35.72535305675074,
-    "composite_score": 45.58475767778648,
+    "downside_control": 35.72485675003959,
+    "composite_score": 45.58465841644424,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 57.46334654340197,
+    "fundamental_score": 57.462684801120446,
     "technical_score": 28.970397150216296,
-    "sentiment_score": 51.7,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 0.8325,
     "data_quality_penalty": 0.0,
-    "rank": 470,
-    "percentile": 0.09633911368015415,
+    "rank": 471,
+    "percentile": 0.09441233140655106,
     "tier": "hold",
     "tier_raw": "sell",
     "tier_label": "Hold",
@@ -6377,146 +6369,5 @@
     "sector": "Health Care",
     "industry": "Health Care Equipment"
   },
-  "headlines": [
-    {
-      "title": "Truist Cuts Boston Scientific Corporation (BSX) Price Target but Maintains Buy After Earnings Pullback",
-      "url": "/news/303562/truist-cuts-boston-scientific-corporation-bsx-price-target-but-maintains-buy-after-earnings-pullback",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-07",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Haemonetics Q3 Earnings & Revenues Beat, Margins Up, Stock Slips",
-      "url": "/news/302903/haemonetics-q3-earnings-revenues-beat-margins-up-stock-slips",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "The TAVR Pioneer Bets Everything on One Market as Its Competitor Spreads Risk",
-      "url": "https://finance.yahoo.com/m/84166d95-285f-358e-9b9f-57733af61cc3/the-tavr-pioneer-bets.html",
-      "publisher": "24/7 Wall St.",
-      "date": "2026-02-06",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Boston Scientific price target lowered to $110 from $125 at Stifel",
-      "url": "https://finance.yahoo.com/news/boston-scientific-price-target-lowered-130803427.html",
-      "publisher": "TipRanks",
-      "date": "2026-02-06",
-      "sentiment": "negative"
-    },
-    {
-      "title": "DXCM Upgrades Stelo With AI-Powered Smart Meal Logging Features",
-      "url": "/news/301919/dxcm-upgrades-stelo-with-ai-powered-smart-meal-logging-features",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "CAH Q2 Earnings Beat Estimates, '26 EPS View Up, Stock Gains",
-      "url": "/news/301750/cah-q2-earnings-beat-estimates-26-eps-view-up-stock-gains",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Why Boston Scientific (BSX) is a Top Growth Stock for the Long-Term",
-      "url": "/news/301649/why-boston-scientific-bsx-is-a-top-growth-stock-for-the-long-term",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "STE Q3 Earnings Meet, Revenues Beat, Stock Dips in Aftermarket Trading",
-      "url": "/news/301520/ste-q3-earnings-meet-revenues-beat-stock-dips-in-aftermarket-trading",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Morning Movers: Eli Lilly rises, Boston Scientific falls after quarterly results",
-      "url": "https://finance.yahoo.com/news/morning-movers-eli-lilly-rises-140052306.html",
-      "publisher": "TipRanks",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Boston Scientifics shares tumble 18% despite strong FY25 growth",
-      "url": "https://finance.yahoo.com/m/1d949430-99f4-3083-a2ec-e1ac2ae50797/boston-scientific%E2%80%99s-shares.html",
-      "publisher": "Medical Device Network",
-      "date": "2026-02-05",
-      "sentiment": "negative"
-    },
-    {
-      "title": "J.P. Morgan Healthcare Conference 2026 Report",
-      "url": "https://finance.yahoo.com/m/254ec794-e878-326a-9362-ef28b85c2483/j.p.-morgan-healthcare.html",
-      "publisher": "Pharmaceutical Technology",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "BSX Q4 Deep Dive: Growth Engines Face Scrutiny as Market Reacts to Guidance and Segment Dynamics",
-      "url": "/news/300874/bsx-q4-deep-dive-growth-engines-face-scrutiny-as-market-reacts-to-guidance-and-segment-dynamics",
-      "publisher": "StockStory",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Boston Scientific Q4 Earnings Call Highlights",
-      "url": "https://finance.yahoo.com/m/89086e5f-e518-3474-8a4a-b4a3e308c4ba/boston-scientific-q4-earnings.html",
-      "publisher": "MarketBeat",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Stock Market Today, Feb. 4: Boston Scientific Plunges After Cautious 2026 Guidance Disappoints Investors",
-      "url": "/news/300350/stock-market-today-feb-4-boston-scientific-plunges-after-cautious-2026-guidance-disappoints-investors",
-      "publisher": "Motley Fool",
-      "date": "2026-02-04",
-      "sentiment": "negative"
-    },
-    {
-      "title": "These Stocks Are Today's Movers: AMD, AbbVie, Boston Scientific, Eli Lilly, MP Materials, Super Micro, Palantir, and More",
-      "url": "https://www.barrons.com/articles/stock-movers-a67a617e?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Boston Scientific Hits An 18-Month Low On A 'Sore Spot' For Its Most Hyped Device",
-      "url": "https://www.investors.com/news/technology/boston-scientific-stock-boston-scientific-earnings-q4-2025?mod=IBD_FV",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-02-04",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Boston Scientific Corp (BSX) Q4 2025 Earnings Call Highlights: Surpassing Financial Goals with ...",
-      "url": "https://finance.yahoo.com/news/boston-scientific-corp-bsx-q4-190307840.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Analyst Report: Boston Scientific Corporation",
-      "url": "https://finance.yahoo.com/m/4c39fb44-55a4-390a-b290-837604e94296/analyst-report%3A-boston.html",
-      "publisher": "Morningstar Research",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Why Boston Scientific Stock Plummeted Today",
-      "url": "/news/299932/why-boston-scientific-stock-plummeted-today",
-      "publisher": "Motley Fool",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Software Stocks Plummet, Bitcoin Erases Post-Trump Election Rally: What's Moving Markets Wednesday?",
-      "url": "/news/299928/software-stocks-plummet-bitcoin-erases-post-trump-election-rally-whats-moving-markets-wednesday",
-      "publisher": "Benzinga",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

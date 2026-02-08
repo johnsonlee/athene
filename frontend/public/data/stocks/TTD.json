@@ -6271,8 +6271,8 @@
     "debt_equity_score": 84.579,
     "fcf_yield_score": 61.29944472533865,
     "current_ratio_score": 73.03999999999999,
-    "safety_score": 65.93605871140761,
-    "fundamental_score": 67.01036339228152,
+    "safety_score": 65.93275,
+    "fundamental_score": 67.00970165,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 26.60993242707885,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.08211282195799537,
-    "sentiment_pos": 0.09280000000000001,
-    "sentiment_neg": 0.061549999999999994,
-    "sentiment_neu": 0.84565,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 54.11
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": -0.11764705882352941,
     "target_upside": 0.849112426035503,
@@ -6332,7 +6324,7 @@
     "value_score": 54.25817659999999,
     "quality_score": 68.999525,
     "growth_score": 78.235,
-    "safety_score": 65.93605871140761,
+    "safety_score": 65.93275,
     "trend_score": 6.774895363940635,
     "momentum_score": 31.818839384335785,
     "volatility_score": 25.159060012979623,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 70.84717875,
     "valuation_margin": 50.15045298,
     "catalyst_timeline": 34.735392033651166,
-    "downside_control": 51.55526780865809,
-    "composite_score": 52.038359170982964,
+    "downside_control": 51.554771501946945,
+    "composite_score": 52.03825990964073,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 67.01036339228152,
+    "fundamental_score": 67.00970165,
     "technical_score": 26.60993242707885,
-    "sentiment_score": 54.11,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Communication Services",
     "industry": "Advertising"
   },
-  "headlines": [
-    {
-      "title": "Trade Desk (TTD) Sees Major Divestment from ETF",
-      "url": "/news/303492/trade-desk-ttd-sees-major-divestment-from-etf",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Leadership Transition Tempers Analyst Sentiment on Trade Desk (TTD)",
-      "url": "/news/302370/leadership-transition-tempers-analyst-sentiment-on-trade-desk-ttd",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-06",
-      "sentiment": "negative"
-    },
-    {
-      "title": "The Trade Desk, SentinelOne, GitLab, Guidewire Software, and Rapid7 Shares Are Falling, What You Need To Know",
-      "url": "/news/302027/the-trade-desk-sentinelone-gitlab-guidewire-software-and-rapid7-shares-are-falling-what-you-need-to-know",
-      "publisher": "StockStory",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Analysts Love These 3 Stocks Trading Near 52-Week Lows-Here's Why",
-      "url": "/news/301195/analysts-love-these-3-stocks-trading-near-52-week-lows-heres-why",
-      "publisher": "MarketBeat",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Alphabet Inc. (GOOG) Surpasses Q4 Earnings and Revenue Estimates",
-      "url": "/news/300374/alphabet-inc-goog-surpasses-q4-earnings-and-revenue-estimates",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Jim Cramer on Trade Desk: \"I Think It's Just Not Worth the Risk\"",
-      "url": "/news/299958/jim-cramer-on-trade-desk-i-think-its-just-not-worth-the-risk",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "The Trade Desk (TTD) is Attracting Investor Attention: Here is What You Should Know",
-      "url": "/news/299408/the-trade-desk-ttd-is-attracting-investor-attention-here-is-what-you-should-know",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Should You Buy The Trade Desk After Its 67% Slump in 2025?",
-      "url": "/news/299212/should-you-buy-the-trade-desk-after-its-67-slump-in-2025",
-      "publisher": "Motley Fool",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Trade Desk Extends Losses After KeyBanc Slashes Target",
-      "url": "https://finance.yahoo.com/news/trade-desk-extends-losses-keybanc-110928836.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-02-04",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Why The Trade Desk Stock Plunged to a New 5-Year Low Today",
-      "url": "/news/298054/why-the-trade-desk-stock-plunged-to-a-new-5-year-low-today",
-      "publisher": "Motley Fool",
-      "date": "2026-02-03",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Trade Desk Stock Drops After Keybanc Cuts Target",
-      "url": "/news/298047/trade-desk-stock-drops-after-keybanc-cuts-target",
-      "publisher": "Benzinga",
-      "date": "2026-02-03",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Jim Cramer on Trade Desk: \"Out of Left Field CFO Departure Equals Sell\"",
-      "url": "/news/297740/jim-cramer-on-trade-desk-out-of-left-field-cfo-departure-equals-sell",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Prediction: This Tech Stock Could Double Your Money by End of 2026",
-      "url": "/news/297703/prediction-this-tech-stock-could-double-your-money-by-end-of-2026",
-      "publisher": "Motley Fool",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "25 Stocks to Buy for a Profitable February",
-      "url": "/news/297429/25-stocks-to-buy-for-a-profitable-february",
-      "publisher": "Schaeffer's Research",
-      "date": "2026-02-03",
-      "sentiment": "positive"
-    },
-    {
-      "title": "The Top 5 Stocks to Double Up on Right Now",
-      "url": "/news/296608/the-top-5-stocks-to-double-up-on-right-now",
-      "publisher": "Motley Fool",
-      "date": "2026-02-02",
-      "sentiment": "positive"
-    },
-    {
-      "title": "The Trade Desk, Inc. (TTD): A Bull Case Theory",
-      "url": "/news/296521/the-trade-desk-inc-ttd-a-bull-case-theory",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Should You Buy The Trade Desk After Its 68% Slump in 2025?",
-      "url": "/news/296310/should-you-buy-the-trade-desk-after-its-68-slump-in-2025",
-      "publisher": "Motley Fool",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "The Trade Desk (TTD) Stock Declines While Market Improves: Some Information for Investors",
-      "url": "/news/296270/the-trade-desk-ttd-stock-declines-while-market-improves-some-information-for-investors",
-      "publisher": "Zacks",
-      "date": "2026-02-02",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Time to Cash Out? 4 Stocks to Sell Before Earnings",
-      "url": "/news/296086/time-to-cash-out-4-stocks-to-sell-before-earnings",
-      "publisher": "Motley Fool",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "The Best Stocks to Invest $10,000 in to Start 2026",
-      "url": "/news/294953/the-best-stocks-to-invest-10000-in-to-start-2026",
-      "publisher": "Motley Fool",
-      "date": "2026-02-02",
-      "sentiment": "positive"
-    }
-  ]
+  "headlines": []
 }

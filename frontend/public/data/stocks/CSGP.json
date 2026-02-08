@@ -6271,8 +6271,8 @@
     "debt_equity_score": 67.89984,
     "fcf_yield_score": 34.45021984642906,
     "current_ratio_score": 85.0,
-    "safety_score": 63.57647871140761,
-    "fundamental_score": 44.623278047837076,
+    "safety_score": 63.57316999999999,
+    "fundamental_score": 44.62261630555555,
     "fund_data_completeness": 0.9166666666666666
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 26.809135991809637,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.14362121789516905,
-    "sentiment_pos": 0.09575,
-    "sentiment_neg": 0.0108,
-    "sentiment_neu": 0.89345,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 57.18
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.1,
     "target_upside": 0.5910898965791567,
@@ -6332,7 +6324,7 @@
     "value_score": 42.365829222222224,
     "quality_score": 21.72175,
     "growth_score": 59.2,
-    "safety_score": 63.57647871140761,
+    "safety_score": 63.57316999999999,
     "trend_score": 10.483253872832114,
     "momentum_score": 31.861156818035276,
     "volatility_score": 20.529063922747092,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 36.2042625,
     "valuation_margin": 36.60074876666667,
     "catalyst_timeline": 39.6307861923962,
-    "downside_control": 44.4938313951232,
-    "composite_score": 33.878997598222696,
+    "downside_control": 44.49333508841206,
+    "composite_score": 33.87889833688046,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 44.623278047837076,
+    "fundamental_score": 44.62261630555555,
     "technical_score": 26.809135991809637,
-    "sentiment_score": 57.18,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Real Estate",
     "industry": "Real Estate Services"
   },
-  "headlines": [
-    {
-      "title": "CoStar Projects Stable U.S. Office Vacancy Through 2026",
-      "url": "https://www.businesswire.com/news/home/20260206213648/en/Forecast:",
-      "publisher": "Business Wire",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Below Expected Net New Sales Weighed on CoStar's (CSGP) Performance in Q4",
-      "url": "/news/302527/below-expected-net-new-sales-weighed-on-costars-csgp-performance-in-q4",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "CoStar Expects U.S. Industrial Vacancy to Peak This Year; Rent Growth Remains Unchanged Through 2026",
-      "url": "https://www.businesswire.com/news/home/20260205011373/en/",
-      "publisher": "Business Wire",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "CoStar Group Highlights Proven Track Record and Reiterates Commitment to Enhancing Stockholder Value",
-      "url": "https://www.businesswire.com/news/home/20260205947148/en",
-      "publisher": "Business Wire",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "CoStar Group to Report Financial Results for Fourth Quarter and Full Year on February 24, 2026",
-      "url": "https://www.businesswire.com/news/home/20260204426862/en",
-      "publisher": "Business Wire",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "The D. E. Shaw Group Releases Open Letter and Presentation to the Board of Directors of CoStar Group",
-      "url": "/news/299241/the-d-e-shaw-group-releases-open-letter-and-presentation-to-the-board-of-directors-of-costar-group",
-      "publisher": "PR Newswire",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "D.E. Shaw to Push for Board Shake-Up at Real-Estate Data Giant CoStar",
-      "url": "https://www.wsj.com/business/deals/d-e-shaw-to-push-for-board-shake-up-at-real-estate-data-giant-costar-a1cd2230?mod=wsj_FV",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "D.E. Shaw Pushes for Board Shake-Up at Real-Estate Data Giant CoStar",
-      "url": "https://finance.yahoo.com/m/e8f4915a-e7f7-3169-a8d4-0698a4c968e7/d.e.-shaw-pushes-for-board.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Analyst Report: CoStar Group, Inc.",
-      "url": "https://finance.yahoo.com/m/09b9229b-8e3e-3b50-b907-7ff1f4e00562/analyst-report%3A-costar-group%2C.html",
-      "publisher": "Morningstar Research",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "CoStar Group Reiterates Strategic Initiatives to Prioritize Profitable Growth and Increase Long-term Stockholder Value",
-      "url": "https://www.businesswire.com/news/home/20260128212874/en",
-      "publisher": "Business Wire",
-      "date": "2026-01-28",
-      "sentiment": "positive"
-    },
-    {
-      "title": "3 Large Cap Stocks Announce Big Buyback Boosts Amid +20% Falls",
-      "url": "/news/289837/3-large-cap-stocks-announce-big-buyback-boosts-amid-20-falls",
-      "publisher": "MarketBeat",
-      "date": "2026-01-28",
-      "sentiment": "positive"
-    },
-    {
-      "title": "US hotel RevPAR, ADR set for growth in 2026: report",
-      "url": "https://finance.yahoo.com/m/26499c56-46e2-3aa2-ba3d-19aac463725e/us-hotel-revpar%2C-adr-set-for.html",
-      "publisher": "Hotel Dive",
-      "date": "2026-01-28",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Why CoStar Group Stock Topped the Market Today",
-      "url": "/news/289250/why-costar-group-stock-topped-the-market-today",
-      "publisher": "Motley Fool",
-      "date": "2026-01-27",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Homes.com Is a Target for This Hedge Fund. Real-Estate Listings Portals Are Being Disrupted.",
-      "url": "https://finance.yahoo.com/m/ffc98164-a711-3ba4-98a3-6b01a1c4f833/homes.com-is-a-target-for.html",
-      "publisher": "Barrons.com",
-      "date": "2026-01-27",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "This Hedge Fund Is Taking Aim at CoStar. The Stock Is Rising.",
-      "url": "https://finance.yahoo.com/m/ffc98164-a711-3ba4-98a3-6b01a1c4f833/this-hedge-fund-is-taking-aim.html",
-      "publisher": "Barrons.com",
-      "date": "2026-01-27",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Target upgraded, Stryker downgraded: Wall Street's top analyst calls",
-      "url": "https://finance.yahoo.com/news/target-upgraded-stryker-downgraded-wall-143753830.html",
-      "publisher": "The Fly",
-      "date": "2026-01-27",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Third Point Sends Letter to Board of Directors of CoStar Group",
-      "url": "https://www.businesswire.com/news/home/20260127616511/en",
-      "publisher": "Business Wire",
-      "date": "2026-01-27",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Here's Why CoStar Group (CSGP) Traded Lower in 2025",
-      "url": "/news/288032/heres-why-costar-group-csgp-traded-lower-in-2025",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-27",
-      "sentiment": "negative"
-    },
-    {
-      "title": "CoStar Group Founder and CEO Andy Florance Earns Top Ten Placement on the 2026 SP 200",
-      "url": "https://www.businesswire.com/news/home/20260122926553/en/",
-      "publisher": "Business Wire",
-      "date": "2026-01-22",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Key full-year US hotel metrics fall for first time since 2020",
-      "url": "https://finance.yahoo.com/m/508b751c-c4d8-3caf-b52a-208f1f7575bb/key-full-year-us-hotel.html",
-      "publisher": "Hotel Dive",
-      "date": "2026-01-22",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

@@ -6271,8 +6271,8 @@
     "debt_equity_score": 88.977375,
     "fcf_yield_score": 88.0,
     "current_ratio_score": 81.775,
-    "safety_score": 75.61524621140762,
-    "fundamental_score": 79.6327403589482,
+    "safety_score": 75.61193750000001,
+    "fundamental_score": 79.63207861666667,
     "fund_data_completeness": 1.0
   },
   "technical": {
@@ -6306,15 +6306,7 @@
     "technical_score": 48.64770454316218,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.11457553566731726,
-    "sentiment_pos": 0.09725,
-    "sentiment_neg": 0.057499999999999996,
-    "sentiment_neu": 0.8452500000000001,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 55.73
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.44072061199277773,
@@ -6332,7 +6324,7 @@
     "value_score": 87.1241358952381,
     "quality_score": 86.661,
     "growth_score": 66.92142857142858,
-    "safety_score": 75.61524621140762,
+    "safety_score": 75.61193750000001,
     "trend_score": 37.57291112200013,
     "momentum_score": 62.65681216035847,
     "volatility_score": 42.893937792273,
@@ -6353,15 +6345,15 @@
     "earnings_visibility": 76.30736428571429,
     "valuation_margin": 81.81524076857143,
     "catalyst_timeline": 52.700755077927006,
-    "downside_control": 62.035377600552096,
-    "composite_score": 73.02245909647935,
+    "downside_control": 62.034881293840954,
+    "composite_score": 73.02235983513711,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 79.6327403589482,
+    "fundamental_score": 79.63207861666667,
     "technical_score": 48.64770454316218,
-    "sentiment_score": 55.73,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6377,146 +6369,5 @@
     "sector": "Consumer Cyclical",
     "industry": "Internet Retail"
   },
-  "headlines": [
-    {
-      "title": "PDD Holdings Inc. (PDD)'s Global Expansion Supports Its Long-Term Growth Story",
-      "url": "/news/301631/pdd-holdings-inc-pdds-global-expansion-supports-its-long-term-growth-story",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "PDD Holdings Inc. Sponsored ADR (PDD) Dips More Than Broader Market: What You Should Know",
-      "url": "/news/300450/pdd-holdings-inc-sponsored-adr-pdd-dips-more-than-broader-market-what-you-should-know",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "PDD Holdings Inc. (PDD): A Bull Case Theory",
-      "url": "/news/298466/pdd-holdings-inc-pdd-a-bull-case-theory",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Is Most-Watched Stock PDD Holdings Inc. Sponsored ADR (PDD) Worth Betting on Now?",
-      "url": "/news/295584/is-most-watched-stock-pdd-holdings-inc-sponsored-adr-pdd-worth-betting-on-now",
-      "publisher": "Zacks",
-      "date": "2026-02-02",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Citi Lowers PT on PDD Holdings to $142, Keeps Neutral Rating Ahead of Q4 2025 Earnings",
-      "url": "/news/293870/citi-lowers-pt-on-pdd-holdings-to-142-keeps-neutral-rating-ahead-of-q4-2025-earnings",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-30",
-      "sentiment": "negative"
-    },
-    {
-      "title": "China Internet Regulation Poses New Risks for PDD Holdings (PDD)",
-      "url": "/news/293041/china-internet-regulation-poses-new-risks-for-pdd-holdings-pdd",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-30",
-      "sentiment": "negative"
-    },
-    {
-      "title": "PDD Holdings Inc. Sponsored ADR (PDD) Registers a Bigger Fall Than the Market: Important Facts to Note",
-      "url": "/news/290918/pdd-holdings-inc-sponsored-adr-pdd-registers-a-bigger-fall-than-the-market-important-facts-to-note",
-      "publisher": "Zacks",
-      "date": "2026-01-28",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Is PDD Holdings (PDD) One of the Most Profitable Cheap Stocks to Invest In?",
-      "url": "/news/290420/is-pdd-holdings-pdd-one-of-the-most-profitable-cheap-stocks-to-invest-in",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-28",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Greg Abbott Imposes Sweeping Ban On Texas Employees Using Products And Services From Alibaba, Shein And Temu",
-      "url": "/news/287782/greg-abbott-imposes-sweeping-ban-on-texas-employees-using-products-and-services-from-alibaba-shein-and-temu",
-      "publisher": "Benzinga",
-      "date": "2026-01-26",
-      "sentiment": "negative"
-    },
-    {
-      "title": "PDD Holdings (PDD) Facing Regulatory Challenges, Here's What You Need To Know",
-      "url": "/news/286589/pdd-holdings-pdd-facing-regulatory-challenges-heres-what-you-need-to-know",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-26",
-      "sentiment": "positive"
-    },
-    {
-      "title": "TikTok, Chinese apps thrive in U.S. despite political challenges",
-      "url": "https://finance.yahoo.com/m/fd51f4e9-0c87-334a-9ec2-346ccd42065e/tiktok%2C-chinese-apps-thrive.html",
-      "publisher": "Investing.com",
-      "date": "2026-01-23",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Billionaire Investor Doubles Down On AI, Boosts Stakes In Microsoft And Meta Despite 2025 Tech Volatility",
-      "url": "/news/284444/billionaire-investor-doubles-down-on-ai-boosts-stakes-in-microsoft-and-meta-despite-2025-tech-volatility",
-      "publisher": "Benzinga",
-      "date": "2026-01-22",
-      "sentiment": "positive"
-    },
-    {
-      "title": "PDD Shares Rise After Shanghai Tax Authority Issues Small Fine",
-      "url": "https://finance.yahoo.com/news/pdd-shares-rise-shanghai-tax-192311130.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-01-21",
-      "sentiment": "positive"
-    },
-    {
-      "title": "PDD Stock Pops After Smaller-Than-Expected China Tax Fine",
-      "url": "https://finance.yahoo.com/news/pdd-stock-pops-smaller-expected-142256434.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-01-21",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Top 3 Cheap Stocks With Massive Upside Potential, According to WarrenAI",
-      "url": "https://finance.yahoo.com/news/top-3-cheap-stocks-massive-134924020.html",
-      "publisher": "Investing.com",
-      "date": "2026-01-21",
-      "sentiment": "positive"
-    },
-    {
-      "title": "PDD Holdings Stock Climbs Nearly 6% In Wednesday Pre-Market: What's Going On?",
-      "url": "/news/282025/pdd-holdings-stock-climbs-nearly-6-in-wednesday-pre-market-whats-going-on",
-      "publisher": "Benzinga",
-      "date": "2026-01-21",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Analyst Report: PDD Holdings Inc.",
-      "url": "https://finance.yahoo.com/m/70c95c77-d4a4-34a8-be15-6fe2f78cca81/analyst-report%3A-pdd-holdings.html",
-      "publisher": "Morningstar Research",
-      "date": "2026-01-20",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Alibaba Pushes Quick Commerce Hard: Is Margin Pressure Mounting?",
-      "url": "/news/280405/alibaba-pushes-quick-commerce-hard-is-margin-pressure-mounting",
-      "publisher": "Zacks",
-      "date": "2026-01-19",
-      "sentiment": "negative"
-    },
-    {
-      "title": "MCHI Soars 45% as Chinese Equities Break Multi-Year Slump",
-      "url": "https://finance.yahoo.com/m/31420f3a-2f9b-3516-a5dd-f3c8514ff969/mchi-soars-45%25-as-chinese.html",
-      "publisher": "24/7 Wall St.",
-      "date": "2026-01-17",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "PDD stock is no longer a Top Pick at Morgan Stanley. Heres why",
-      "url": "https://finance.yahoo.com/news/pdd-stock-no-longer-top-155651522.html",
-      "publisher": "Investing.com",
-      "date": "2026-01-15",
-      "sentiment": "negative"
-    }
-  ]
+  "headlines": []
 }
