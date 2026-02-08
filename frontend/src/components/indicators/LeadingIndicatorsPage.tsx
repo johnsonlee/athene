@@ -41,10 +41,12 @@ function num(v: number | null | undefined, digits = 4): string {
 }
 
 function SignalBadge({ signal }: { signal: string }) {
+  const { t } = useI18n();
   const color = SIGNAL_COLORS[signal] || SIGNAL_COLORS.neutral;
+  const label = t(`indicators.signal.${signal}` as any);
   return (
     <span className={`inline-block rounded px-1.5 py-0.5 text-xs font-medium ${color}`}>
-      {signal.replace(/_/g, ' ')}
+      {label.startsWith('indicators.signal.') ? signal.replace(/_/g, ' ') : label}
     </span>
   );
 }
@@ -98,7 +100,7 @@ function CreditSpreadCard({ data }: { data: CreditSpreadEntry[] }) {
               key={i}
               className={`flex-1 rounded-t-sm ${v5 < 0 ? 'bg-green-400 dark:bg-green-500' : 'bg-red-400 dark:bg-red-500'}`}
               style={{ height: Math.max(1, absV) }}
-              title={`${d.date}: ${pct(d.velocity_5d)}`}
+              title={`${d.date}: ${t('indicators.velocity5d' as any)} ${pct(d.velocity_5d)}`}
             />
           );
         })}
@@ -170,7 +172,7 @@ function BreadthThrustCard({ data }: { data: BreadthThrustEntry[] }) {
               key={i}
               className="flex-1 rounded-t-sm bg-green-400 dark:bg-green-500"
               style={{ height: Math.max(1, h), opacity: d.pct_uptrend > 0.5 ? 1 : 0.6 }}
-              title={`${d.date}: ${pct(d.pct_uptrend, 0)} uptrend`}
+              title={`${d.date}: ${pct(d.pct_uptrend, 0)} ${t('indicators.uptrend' as any)}`}
             />
           );
         })}
@@ -246,7 +248,7 @@ function RfiAccelerationCard({ data }: { data: RfiAccelerationEntry[] }) {
           const abs = Math.min(Math.abs(d.rfi) * 20, 20);
           const isPositive = d.rfi >= 0;
           return (
-            <div key={i} className="relative flex-1" style={{ height: 40 }} title={`${d.date}: RFI ${num(d.rfi, 2)}`}>
+            <div key={i} className="relative flex-1" style={{ height: 40 }} title={`${d.date}: ${t('indicators.rfiAcceleration' as any)} ${num(d.rfi, 2)}`}>
               {isPositive ? (
                 <div
                   className="absolute bottom-[20px] w-full rounded-t-sm bg-green-400 dark:bg-green-500"
@@ -324,7 +326,7 @@ export function LeadingIndicatorsPage() {
   // Current signal summary
   const latestSignals: { key: IndicatorKey; signal: string; available: boolean }[] = INDICATOR_KEYS.map((k) => ({
     key: k,
-    signal: indicators[k].data.length > 0 ? indicators[k].data[indicators[k].data.length - 1].signal : 'n/a',
+    signal: indicators[k].data.length > 0 ? indicators[k].data[indicators[k].data.length - 1].signal : 'na',
     available: indicators[k].available,
   }));
 
@@ -358,7 +360,7 @@ export function LeadingIndicatorsPage() {
               {t(`indicators.${key}.short` as any)}
             </div>
             <div className="mt-1">
-              <SignalBadge signal={available ? signal : 'n/a'} />
+              <SignalBadge signal={available ? signal : 'na'} />
             </div>
             <div className="mt-1 text-[10px] text-gray-400">
               {available ? `${indicators[key].count} ${t('indicators.dataPoints' as any)}` : t('indicators.pendingData' as any)}

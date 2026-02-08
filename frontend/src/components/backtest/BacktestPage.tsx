@@ -86,14 +86,13 @@ function KeyFindings({ signals, t }: { signals: BacktestSignal[]; t: (k: string)
   const bestContrarian = signals
     .filter((s) => s.count >= 5 && s.direction === 'risk_off' && (s.horizons['22d']?.hit_rate ?? 0) > 0.7);
 
-  const findings: { icon: string; text: string; color: string }[] = [];
+  const findings: { text: string; color: string }[] = [];
 
   if (strong.length > 0) {
     const best = strong[0];
     const signalLabel = t(`backtest.signal.${best.signal}`) || best.signal;
     const dirLabel = t(`backtest.dir.${best.direction}`) || best.direction;
     findings.push({
-      icon: '1',
       text: t('backtest.finding.strongSignal')
         .replace('{signal}', `${signalLabel} (${dirLabel})`)
         .replace('{hitRate}', pct(best.horizons['22d']?.hit_rate, 0))
@@ -106,7 +105,6 @@ function KeyFindings({ signals, t }: { signals: BacktestSignal[]; t: (k: string)
   if (bestContrarian.length > 0) {
     const c = bestContrarian[0];
     findings.push({
-      icon: '2',
       text: t('backtest.finding.contrarian')
         .replace('{hitRate}', pct(c.horizons['22d']?.hit_rate, 0))
         .replace('{return}', pct(c.horizons['22d']?.avg_return))
@@ -120,7 +118,6 @@ function KeyFindings({ signals, t }: { signals: BacktestSignal[]; t: (k: string)
     const signalLabel = t(`backtest.signal.${worst.signal}`) || worst.signal;
     const dirLabel = t(`backtest.dir.${worst.direction}`) || worst.direction;
     findings.push({
-      icon: '3',
       text: t('backtest.finding.trap')
         .replace('{signal}', `${signalLabel} (${dirLabel})`)
         .replace('{return}', pct(worst.horizons['22d']?.avg_return))
@@ -137,7 +134,6 @@ function KeyFindings({ signals, t }: { signals: BacktestSignal[]; t: (k: string)
     const downRet = downgrades.horizons['22d']?.avg_return ?? 0;
     if (upRet > 0 && downRet > 0) {
       findings.push({
-        icon: '4',
         text: t('backtest.finding.sectorBeta')
           .replace('{upReturn}', pct(upRet))
           .replace('{downReturn}', pct(downRet)),
@@ -156,7 +152,7 @@ function KeyFindings({ signals, t }: { signals: BacktestSignal[]; t: (k: string)
           <div key={i} className={`rounded-lg border p-3 ${f.color}`}>
             <div className="flex gap-2">
               <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-gray-900/10 text-[10px] font-bold text-gray-700 dark:bg-white/10 dark:text-gray-300">
-                {f.icon}
+                {i + 1}
               </span>
               <p className="text-xs leading-relaxed text-gray-700 dark:text-gray-300">{f.text}</p>
             </div>
