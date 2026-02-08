@@ -896,8 +896,7 @@ def export_backtest(report: dict) -> str:
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     path = os.path.join(OUTPUT_DIR, "backtest.json")
     with open(path, "w", encoding="utf-8") as f:
-        json.dump(report, f, cls=NumpyEncoder, ensure_ascii=False,
-                  indent=None, separators=(",", ":"))
+        json.dump(report, f, cls=NumpyEncoder, ensure_ascii=False, indent=2)
     size_kb = os.path.getsize(path) / 1024
     log.info(f"Wrote {path} ({size_kb:.1f} KB)")
     return path
