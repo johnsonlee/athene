@@ -76,10 +76,11 @@ interface Props {
 
 export function PriceChart({ prices, ticker }: Props) {
   const [range, setRange] = useState<TimeRange>('1Y');
+  const isMobileInit = typeof window !== 'undefined' && window.innerWidth < 640;
   const [visiblePanels, setVisiblePanels] = useState<Record<IndicatorPanel, boolean>>({
-    rsi: true,
-    macd: true,
-    kdj: false,
+    rsi: !isMobileInit,
+    macd: !isMobileInit,
+    kdj: !isMobileInit,
   });
   const [interval, setInterval] = useState<Interval>('D');
   const [overlays, setOverlays] = useState<Record<Overlay, boolean>>({
