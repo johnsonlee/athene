@@ -84,6 +84,7 @@ KDJ_PERIOD = 14
 # ---------- Extra tickers (not in S&P 500 / NASDAQ 100) ----------
 EXTRA_TICKERS = [
     {"ticker": "CPNG", "name": "Coupang", "sector": "Consumer Cyclical", "industry": "Internet Retail"},
+    {"ticker": "BABA", "name": "Alibaba Group", "sector": "Consumer Cyclical", "industry": "Internet Retail"},
 ]
 
 # ---------- v9: Sentiment analysis ----------
@@ -168,6 +169,18 @@ BATCH_SIZE = 50                  # tickers per yf.download batch
 
 # ---------- Z-score (legacy, kept for reference) ----------
 WINSORIZE_LIMITS = (0.02, 0.02)  # 2% tails
+
+# ---------- Jurisdiction risk (DC penalty) ----------
+# Two-layer structure: risk type defines penalty, ticker mapping classifies stocks.
+JURISDICTION_RISK = {
+    "CN_VIE": {"dc_penalty": -12, "label": "VIE structure, China ops"},
+    "CN_ADR": {"dc_penalty": -8,  "label": "ADR, China ops"},
+}
+
+TICKER_JURISDICTION = {
+    "PDD": "CN_VIE",
+    "BABA": "CN_VIE",
+}
 
 # ---------- Output ----------
 OUTPUT_DIR = "frontend/public/data"

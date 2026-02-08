@@ -51,6 +51,9 @@ from engine.config import (
     TECH_WEIGHT_MOMENTUM,
     TECH_WEIGHT_VOLATILITY,
     TECH_WEIGHT_VOLUME,
+    # Jurisdiction risk
+    JURISDICTION_RISK,
+    TICKER_JURISDICTION,
 )
 from engine.scorer.ic_weights import load_ic_weights, ic_weighted_avg, log_ic_status
 from engine.utils.logger import get_logger
@@ -168,6 +171,17 @@ def compute_composite(
     dc_components = {"safety_score": safety, "volatility_score": volatility}
     dc = ic_weighted_avg(dc_components, ic_w)
     log_ic_status("DC", list(dc_components.keys()), ic_w)
+
+    # --- Jurisdiction risk: apply DC penalty for high-risk domiciles ---
+    _n_penalized = 0
+    for ticker in result.index:
+        jur_key = TICKER_JURISDICTION.get(ticker)
+        if jur_key and jur_key in JURISDICTION_RISK:
+            penalty_pts = JURISDICTION_RISK[jur_key]["dc_penalty"]
+            dc.at[ticker] = max(0.0, dc.at[ticker] + penalty_pts)
+            _n_penalized += 1
+    if _n_penalized:
+        log.info(f"Jurisdiction DC penalty applied to {_n_penalized} ticker(s)")
 
     result["earnings_visibility"] = ev
     result["valuation_margin"] = vm
