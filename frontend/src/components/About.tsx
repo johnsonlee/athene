@@ -105,6 +105,18 @@ export function About() {
         </ul>
       </section>
 
+      {/* Open Source */}
+      <section className="tech-card p-4 sm:p-6">
+        <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">{t('about.openSource')}</h2>
+        <ul className="list-disc space-y-1 pl-5 text-sm text-gray-600 dark:text-gray-400">
+          <li>
+            <a href="https://github.com/tradingview/lightweight-charts" target="_blank" rel="noopener noreferrer"
+              className="text-blue-600 hover:underline dark:text-cyan-400">Lightweight Charts</a>
+            {' '}&mdash; {t('about.lightweightChartsDesc')}
+          </li>
+        </ul>
+      </section>
+
       {/* Disclaimer */}
       <section className="tech-card p-4 sm:p-6">
         <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">{t('about.disclaimer')}</h2>

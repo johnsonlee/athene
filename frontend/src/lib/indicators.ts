@@ -14,9 +14,9 @@ export interface IndicatorBar {
   macdLine: number | null;
   macdSignal: number | null;
   macdHist: number | null;
-  bbUpper: number | null;
-  bbLower: number | null;
-  bbMiddle: number | null;
+  dcUpper: number | null;
+  dcLower: number | null;
+  dcMiddle: number | null;
   stochK: number | null;
   stochD: number | null;
 }
@@ -109,6 +109,11 @@ function computeMACD(
 
   // Signal = EMA of MACD line (only from non-null values)
   const nonNullStart = macdLine.findIndex((v) => v != null);
+  if (nonNullStart === -1) {
+    // Not enough data for MACD — return all nulls
+    const allNull = Array(closes.length).fill(null);
+    return { line: allNull, signal: allNull, histogram: allNull };
+  }
   const macdValues = macdLine.slice(nonNullStart).map((v) => v!);
   const signalEma = ema(macdValues, signal);
 
@@ -126,26 +131,28 @@ function computeMACD(
   return { line: macdLine, signal: signalLine, histogram };
 }
 
-function computeBB(
-  closes: number[],
+function computeDonchian(
+  highs: number[],
+  lows: number[],
   period = 20,
-  mult = 2,
 ): { upper: (number | null)[]; lower: (number | null)[]; middle: (number | null)[] } {
-  const middle = sma(closes, period);
   const upper: (number | null)[] = [];
   const lower: (number | null)[] = [];
-  for (let i = 0; i < closes.length; i++) {
-    if (middle[i] == null) {
+  const middle: (number | null)[] = [];
+  for (let i = 0; i < highs.length; i++) {
+    if (i < period - 1) {
       upper.push(null);
       lower.push(null);
+      middle.push(null);
     } else {
-      let variance = 0;
+      let highest = -Infinity, lowest = Infinity;
       for (let j = i - period + 1; j <= i; j++) {
-        variance += (closes[j] - middle[i]!) ** 2;
+        if (highs[j] > highest) highest = highs[j];
+        if (lows[j] < lowest) lowest = lows[j];
       }
-      const std = Math.sqrt(variance / period);
-      upper.push(middle[i]! + mult * std);
-      lower.push(middle[i]! - mult * std);
+      upper.push(highest);
+      lower.push(lowest);
+      middle.push((highest + lowest) / 2);
     }
   }
   return { upper, lower, middle };
@@ -222,7 +229,7 @@ export function computeIndicators(prices: PriceInput[]): IndicatorBar[] {
   const sma50 = sma(closes, 50);
   const rsi = computeRSI(closes);
   const macd = computeMACD(closes);
-  const bb = computeBB(closes);
+  const dc = computeDonchian(highs, lows);
   const stoch = computeStochastic(highs, lows, closes);
 
   return prices.map((p, i) => ({
@@ -235,9 +242,9 @@ export function computeIndicators(prices: PriceInput[]): IndicatorBar[] {
     macdLine: macd.line[i],
     macdSignal: macd.signal[i],
     macdHist: macd.histogram[i],
-    bbUpper: bb.upper[i],
-    bbLower: bb.lower[i],
-    bbMiddle: bb.middle[i],
+    dcUpper: dc.upper[i],
+    dcLower: dc.lower[i],
+    dcMiddle: dc.middle[i],
     stochK: stoch.k[i],
     stochD: stoch.d[i],
   }));

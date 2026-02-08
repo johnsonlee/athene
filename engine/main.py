@@ -369,6 +369,12 @@ def run(tickers_override: list[str] | None = None) -> None:
     for ticker in tickers:
         price_data = prices.get(ticker, pd.DataFrame())
         fund_data = fund_scored.loc[ticker].to_dict() if ticker in fund_scored.index else None
+        # Merge raw profile fields (longBusinessSummary, employees, etc.) into fund_data
+        raw_fund = fundamentals_raw.get(ticker)
+        if raw_fund and fund_data is not None:
+            for k in ("longBusinessSummary", "fullTimeEmployees", "website", "city", "country"):
+                if raw_fund.get(k) is not None:
+                    fund_data[k] = raw_fund[k]
         tech_data = tech_scored.loc[ticker].to_dict() if ticker in tech_scored.index else None
         sent_data = sent_df.loc[ticker].to_dict() if ticker in sent_df.index else None
         anl_data = analyst_scored.loc[ticker].to_dict() if ticker in analyst_scored.index else None
