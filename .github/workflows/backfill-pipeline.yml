@@ -405,5 +405,5 @@ jobs:
   # ── Deploy ─────────────────────────────────────────────────
   deploy:
     needs: analyze
-    if: needs.analyze.outputs.data_changed == 'true'
+    if: ${{ !failure() && !cancelled() && needs.analyze.outputs.data_changed == 'true' }}
     uses: ./.github/workflows/deploy-pages.yml
