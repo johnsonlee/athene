@@ -422,6 +422,18 @@ def run(collected_dir: str = COLLECTED_DIR) -> None:
 
     composite = _apply_ema_smoothing(composite)
 
+    # Spread amplification: expand composite_score around median to increase
+    # tier differentiation.  Applied after EMA smoothing (which recomputes
+    # composite from smoothed dimensions) and before tier assignment.
+    _SPREAD_K = 1.3
+    _median = composite["composite_score"].median()
+    composite["composite_score"] = (_median + _SPREAD_K * (composite["composite_score"] - _median))
+    # Re-apply data quality penalty (penalty was applied in compute_composite
+    # but EMA smoothing recomputes composite from smoothed dimensions)
+    if "data_quality_penalty" in composite.columns:
+        composite["composite_score"] -= composite["data_quality_penalty"]
+    composite["composite_score"] = composite["composite_score"].clip(0, 100)
+
     if "data_completeness" in composite.columns:
         dc = composite["data_completeness"]
         log.info(f"Data completeness: mean={dc.mean():.2f}, "

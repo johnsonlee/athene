@@ -363,7 +363,26 @@ Four forward-looking market turn signals computed from existing collected data. 
 
 **Files**: `engine/analyzers/leading_indicators.py`, `engine/collectors/macro.py`, `engine/backtest.py`, `engine/main.py`, `frontend/src/components/indicators/LeadingIndicatorsPage.tsx`, `frontend/src/hooks/useLeadingIndicators.ts`, `frontend/src/types/index.ts`, `frontend/src/lib/dataLoader.ts`, `frontend/src/routes.tsx`, `frontend/src/components/layout/Header.tsx`, `frontend/src/lib/i18n.tsx`, `frontend/src/components/About.tsx`
 
-### v15: Direct ETF Fund Flows (current)
+### v16: IC-Weighted Scoring (current)
+
+IC-weighted scoring infrastructure that auto-activates once IC data accumulates. Fixes score distribution compression (Hold 85.7% → 64.5%) through trimmed mean aggregation, tier recalibration, sub-score debiasing, and spread amplification.
+
+**Key changes from v15:**
+- **IC-weighted averaging**: New `engine/scorer/ic_weights.py` provides `ic_weighted_avg()` and `trimmed_ic_weighted_avg()`. Weights derived from `|mean IC|` with floor 0.1. Falls back to equal weights when IC data insufficient (<20 observations).
+- **IC blend-in**: Linear transition from equal-weight to IC-weight over observations 20→40, preventing ranking jumps when IC data first becomes available.
+- **IC shrinkage**: Bayesian shrinkage pulls raw IC values toward grand mean IC. Shrinkage coefficient = `min(1, min_obs/n_obs)`, reducing noise from small sample sizes.
+- **Trimmed mean**: For sub-scores with ≥3 metrics (value, quality, safety), drops the worst-scoring metric per ticker before averaging. Prevents single bad metric from dragging sub-score to neutral.
+- **Metric-level IC tracking**: Extended IC tracker from 14 to 26 factors. Added 12 per-metric scores (pe_score, roe_score, etc.) to history.json for forward-return correlation.
+- **Tier threshold recalibration**: Strong Buy 75→63, Buy 60→56, Hold lower 40→46, Sell 25→39. Calibrated to actual score distribution (mean ~54, std ~5).
+- **CT dimension reform**: Catalyst Timeline reduced from 5 to 3 components — trend (1/3), momentum (1/3), analyst (1/3). Removed sentiment (std=5.5, noise) and volume (std=13.2, low signal). CT std improved from 6.5 to 7.1.
+- **Safety pool-aware centering**: Subtracts pool median and adds 50 to recenter safety_score distribution. Fixes S&P 500 structural bias where large-cap safety metrics are uniformly good (median was ~62, now 50).
+- **Analyst breakpoint left-shift**: Consensus rating breakpoints shifted left — consensus=2.0 now scores 58 (was 70). Corrects sell-side optimism bias.
+- **Spread amplification**: `composite = median + 1.3 × (raw - median)`, applied after EMA smoothing. Expands score distribution around median. Composite std 5.2→6.8.
+- **IC-weighted dimension aggregation**: EV, CT, DC dimensions use `ic_weighted_avg()` for sub-score combination. Falls back to equal weight within each dimension when IC data unavailable.
+
+**Files**: `engine/scorer/ic_weights.py` (new), `engine/analyzers/ic_tracker.py`, `engine/analyzers/fundamental.py`, `engine/scorer/factor_model.py`, `engine/scorer/absolute.py`, `engine/exporters/json_exporter.py`, `engine/config.py`, `engine/analyze.py`, `engine/main.py`, `frontend/src/components/About.tsx`, `frontend/src/lib/i18n.tsx`
+
+### v15: Direct ETF Fund Flows
 
 Hybrid capital flow model: 6 ETFs use real shares outstanding from ETF provider endpoints, 3 ETFs use volume-price proxy as fallback. Replaces broken yfinance shares data with direct iShares/SPDR CSV sources. Fixes fundamental issues from v11-v12: bimodal RFI distribution (33% saturated at ±1), 216 regime transitions in 523 days (noise), uncorrelated risk/safe nets (r=0.041).
 

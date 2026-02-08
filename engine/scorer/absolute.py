@@ -171,7 +171,7 @@ TARGET_UPSIDE_BREAKPOINTS: Breakpoints = [
 ]
 # Consensus rating: 1.0 = Strong Buy ... 5.0 = Strong Sell (inverted: lower is better)
 CONSENSUS_RATING_BREAKPOINTS: Breakpoints = [
-    (1.0, 92), (1.5, 82), (2.0, 70), (2.5, 58), (3.0, 45), (3.5, 32), (4.0, 20), (5.0, 8),
+    (1.0, 92), (1.5, 78), (2.0, 58), (2.5, 45), (3.0, 30), (3.5, 18), (4.0, 10), (5.0, 5),
 ]
 
 

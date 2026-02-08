@@ -128,7 +128,12 @@ def export_history(ranked: pd.DataFrame, run_date: str | None = None) -> str:
                      "trend_score", "momentum_score", "volatility_score", "volume_score",
                      # v8: analyst revision momentum
                      "analyst_score",
-                     "data_completeness"):
+                     "data_completeness",
+                     # v16: per-metric scores for IC tracking
+                     "pe_score", "forward_pe_score", "pb_score", "ps_score",
+                     "roe_score", "roa_score", "margin_score",
+                     "rev_growth_score", "earn_growth_score",
+                     "debt_equity_score", "fcf_yield_score", "current_ratio_score"):
             val = row.get(key)
             if val is not None and pd.notna(val):
                 entry[key] = round(float(val), 2)

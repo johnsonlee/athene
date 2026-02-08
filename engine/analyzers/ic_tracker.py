@@ -37,6 +37,11 @@ FACTORS = [
     "volume_score",
     # v8: analyst revision momentum
     "analyst_score",
+    # v16: per-metric scores for IC-weighted averaging
+    "pe_score", "forward_pe_score", "pb_score", "ps_score",           # value
+    "roe_score", "roa_score", "margin_score",                          # quality
+    "rev_growth_score", "earn_growth_score",                           # growth
+    "debt_equity_score", "fcf_yield_score", "current_ratio_score",     # safety
 ]
 
 DEFAULT_HORIZONS = [5, 21]  # trading days forward
