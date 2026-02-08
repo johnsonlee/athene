@@ -30,7 +30,7 @@ function StockCard({ stock, t, tIndustry }: { stock: RankedStock; t: ReturnType<
           <div className="flex items-center gap-2">
             <span className="font-mono text-xs text-gray-400 dark:text-gray-600">#{stock.rank}</span>
             <span className="font-mono text-sm font-bold text-blue-600 dark:text-cyan-400">{stock.ticker}</span>
-            <ScoreBadge tier={stock.tier} label={t(`tier.${stock.tier}` as any)} />
+            <ScoreBadge tier={stock.tier} tierRaw={stock.tier_raw} label={t(`tier.${stock.tier}` as any)} />
           </div>
           <p className="mt-0.5 truncate text-xs text-gray-500 dark:text-gray-500">{stock.name}</p>
         </div>
@@ -159,7 +159,7 @@ export function ScreenerTable({ data }: Props) {
         accessorKey: 'tier_label',
         header: t('table.rating'),
         cell: ({ row }) => (
-          <ScoreBadge tier={row.original.tier} label={t(`tier.${row.original.tier}` as any)} />
+          <ScoreBadge tier={row.original.tier} tierRaw={row.original.tier_raw} label={t(`tier.${row.original.tier}` as any)} />
         ),
       },
     ],
