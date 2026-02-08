@@ -461,6 +461,10 @@ def cmd_sector_etfs(args: argparse.Namespace) -> None:
 
 def cmd_capital_flow_etfs(args: argparse.Namespace) -> None:
     """Collect capital flow ETF price data."""
+    if getattr(args, "backfill_shares", False):
+        from engine.collectors.capital_flow import backfill_shares_outstanding
+        backfill_shares_outstanding()
+        return
     if args.backfill:
         _backfill_capital_flow_etfs(args)
         return
@@ -650,6 +654,8 @@ def main() -> None:
     _add_common_args(p_cf)
     p_cf.add_argument("--backfill", action="store_true",
                       help="Fetch historical data and split into daily slices")
+    p_cf.add_argument("--backfill-shares", action="store_true",
+                      help="Backfill shares outstanding into existing daily JSONs")
     p_cf.add_argument("--start", help="Backfill start date (YYYY-MM-DD)")
     p_cf.add_argument("--end", help="Backfill end date (YYYY-MM-DD)")
     p_cf.set_defaults(func=cmd_capital_flow_etfs)

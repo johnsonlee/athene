@@ -1,30 +1,19 @@
 """Analyze capital flows across global asset classes.
 
-Multi-signal fusion approach for ~80% directional accuracy:
+Uses ETF shares outstanding changes (creation/redemption) to compute
+direct fund flows — measuring real institutional capital allocation
+rather than proxy signals.
 
-1. **CMF** (Chaikin Money Flow) — close position within day's range × volume.
-   Captures buying vs selling pressure.
-2. **OBV slope** (On-Balance Volume) — linear regression slope of cumulative
-   volume.  Captures volume trend independent of intraday price position.
-3. **Return × Dollar Volume** — weekly return × avg daily dollar volume.
-   Raw price-volume flow estimate.
+    daily_fund_flow = Δ(shares_outstanding) × close_price
 
-Signals are fused via weighted voting: direction agreement across 2/3 or
-3/3 signals boosts confidence; single-signal outliers are penalized.
-
-Cross-asset consistency validation:  when risk outflows correlate with
-safe inflows (or vice versa), confidence is boosted.  Contradictory
-patterns (risk up + safe up) reduce magnitude.
-
-Optional external data:
-- CFTC COT: institutional futures positioning confirms/contradicts direction
-- ICI: calibrates dollar magnitude scale (when available)
+RFI (Risk Flow Index) uses tanh normalization for smooth, bounded output
+without the saturation issues of the previous ratio-based formula.
 """
 
 from __future__ import annotations
 
 import math
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List
 
 import numpy as np
 import pandas as pd
@@ -35,11 +24,7 @@ from engine.config import (
     CAPITAL_FLOW_WINDOW_DAYS,
     CAPITAL_FLOW_MIN_FLOW,
     CAPITAL_FLOW_MAX_ARROWS,
-    CF_WEIGHT_CMF,
-    CF_WEIGHT_OBV,
-    CF_WEIGHT_RDV,
-    CF_CONSISTENCY_BOOST,
-    CF_CONSISTENCY_PENALTY,
+    RFI_TANH_SCALE,
     RFI_PANIC,
     RFI_RISK_ON,
 )
@@ -47,330 +32,116 @@ from engine.utils.logger import get_logger
 
 log = get_logger(__name__)
 
-
-# ---------------------------------------------------------------------------
-# Signal 1: Chaikin Money Flow
-# ---------------------------------------------------------------------------
-
-def _chaikin_money_flow(df: pd.DataFrame, window: int = 5) -> float:
-    """CMF = sum(MFM × Volume) / sum(Volume)
-
-    MFM = ((Close - Low) - (High - Close)) / (High - Low)
-    Returns value in [-1, 1].  Positive = buying pressure.
-    """
-    tail = df.tail(window).copy()
-    if len(tail) < 2:
-        return 0.0
-
-    high = tail["High"]
-    low = tail["Low"]
-    close = tail["Close"]
-    volume = tail["Volume"]
-
-    hl_range = high - low
-    hl_range = hl_range.replace(0, np.nan)
-
-    mfm = ((close - low) - (high - close)) / hl_range
-    mfm = mfm.fillna(0.0)
-
-    mfv = mfm * volume
-    total_vol = volume.sum()
-    if total_vol == 0:
-        return 0.0
-
-    return float(mfv.sum() / total_vol)
+# Tickers that use proxy flow estimation (no shares outstanding data)
+_PROXY_TICKERS = {
+    ticker for ticker, meta in CAPITAL_FLOW_ETFS.items()
+    if meta.get("shares_source") is None
+}
 
 
 # ---------------------------------------------------------------------------
-# Signal 2: OBV Slope
+# Core flow computation
 # ---------------------------------------------------------------------------
 
-def _obv_slope(df: pd.DataFrame, window: int = 5) -> float:
-    """Normalized slope of On-Balance Volume over the window.
+def _compute_daily_flows(etf_prices: Dict[str, pd.DataFrame]) -> Dict[str, pd.Series]:
+    """Compute daily fund flows from shares outstanding changes.
 
-    OBV accumulates volume: +volume on up days, -volume on down days.
-    The slope of OBV (via linear regression) indicates the trend of
-    cumulative volume direction.
-
-    Returns a normalized value in roughly [-1, 1].
-    """
-    tail = df.tail(window + 1).copy()  # +1 for close-change calculation
-    if len(tail) < 3:
-        return 0.0
-
-    close = tail["Close"].values
-    volume = tail["Volume"].values
-
-    # Build OBV series
-    obv = np.zeros(len(close))
-    for i in range(1, len(close)):
-        if close[i] > close[i - 1]:
-            obv[i] = obv[i - 1] + volume[i]
-        elif close[i] < close[i - 1]:
-            obv[i] = obv[i - 1] - volume[i]
-        else:
-            obv[i] = obv[i - 1]
-
-    # Use the last `window` OBV values
-    obv_window = obv[-window:]
-    if len(obv_window) < 2:
-        return 0.0
-
-    # Linear regression slope: slope of OBV vs time index
-    x = np.arange(len(obv_window), dtype=float)
-    x_mean = x.mean()
-    y_mean = obv_window.mean()
-    denominator = ((x - x_mean) ** 2).sum()
-    if denominator == 0:
-        return 0.0
-    slope = ((x - x_mean) * (obv_window - y_mean)).sum() / denominator
-
-    # Normalize by average daily volume to get a [-1, 1] range
-    avg_vol = np.mean(volume[-window:])
-    if avg_vol == 0:
-        return 0.0
-
-    normalized = slope / avg_vol
-    # Clamp to [-1, 1]
-    return float(max(-1.0, min(1.0, normalized)))
-
-
-# ---------------------------------------------------------------------------
-# Signal 3: Return × Dollar Volume
-# ---------------------------------------------------------------------------
-
-def _return_dollar_volume(df: pd.DataFrame, window: int = 5) -> float:
-    """Weekly return × average daily dollar volume.
-
-    Simple price-volume flow proxy: if the ETF went up 2% on $5B daily
-    volume, the flow proxy is 0.02 × $5B = $100M.
-
-    Returns value in $B.
-    """
-    tail = df.tail(window)
-    if len(tail) < 2:
-        return 0.0
-
-    start_close = tail["Close"].iloc[0]
-    end_close = tail["Close"].iloc[-1]
-    if start_close == 0:
-        return 0.0
-
-    weekly_return = (end_close - start_close) / start_close
-    avg_dollar_vol = (tail["Close"] * tail["Volume"]).mean()
-
-    return float(weekly_return * avg_dollar_vol * len(tail) / 1e9)
-
-
-# ---------------------------------------------------------------------------
-# Signal fusion
-# ---------------------------------------------------------------------------
-
-def _fuse_signals(
-    cmf_val: float,
-    obv_val: float,
-    rdv_val: float,
-    avg_dollar_vol: float,
-    window: int,
-) -> tuple[float, float, dict]:
-    """Fuse three signals into a single flow proxy with confidence.
+    daily_flow = Δ(shares_outstanding) × close_price, in $B.
 
     Args:
-        cmf_val: CMF value in [-1, 1]
-        obv_val: OBV slope value in [-1, 1]
-        rdv_val: Return × Dollar Volume value in $B
-        avg_dollar_vol: Average daily dollar volume ($)
-        window: Number of trading days
+        etf_prices: Dict of ticker -> DataFrame with columns including
+            Close, Volume, and optionally Shares.
 
     Returns:
-        (net_flow_B, confidence, signal_details)
-        - net_flow_B: fused flow estimate in $B
-        - confidence: 0-1 confidence score based on signal agreement
-        - signal_details: dict with per-signal values for debugging
+        Dict of ticker -> Series of daily flows in $B, indexed by date.
+        Tickers without Shares data are omitted.
     """
-    # Convert CMF and OBV to $B using dollar volume
-    cmf_flow_B = cmf_val * avg_dollar_vol * window / 1e9
-    obv_flow_B = obv_val * avg_dollar_vol * window / 1e9
-    rdv_flow_B = rdv_val  # already in $B
+    flows: Dict[str, pd.Series] = {}
 
-    # Directions: +1 / 0 / -1
-    threshold = 0.01  # minimum absolute $B to register as directional
-    directions = []
-    for val in [cmf_flow_B, obv_flow_B, rdv_flow_B]:
-        if val > threshold:
-            directions.append(1)
-        elif val < -threshold:
-            directions.append(-1)
-        else:
-            directions.append(0)
-
-    # Direction agreement score
-    nonzero_dirs = [d for d in directions if d != 0]
-    if not nonzero_dirs:
-        confidence = 0.3  # all signals near zero
-        consensus_dir = 0
-    else:
-        pos_count = sum(1 for d in nonzero_dirs if d > 0)
-        neg_count = sum(1 for d in nonzero_dirs if d < 0)
-        if pos_count > neg_count:
-            consensus_dir = 1
-            confidence = pos_count / len(nonzero_dirs)
-        elif neg_count > pos_count:
-            consensus_dir = -1
-            confidence = neg_count / len(nonzero_dirs)
-        else:
-            consensus_dir = 0
-            confidence = 0.3
-
-    # Weighted magnitude
-    fused_flow = (
-        CF_WEIGHT_CMF * cmf_flow_B
-        + CF_WEIGHT_OBV * obv_flow_B
-        + CF_WEIGHT_RDV * rdv_flow_B
-    )
-
-    signal_details = {
-        "cmf": round(cmf_flow_B, 2),
-        "obv": round(obv_flow_B, 2),
-        "rdv": round(rdv_flow_B, 2),
-        "directions": directions,
-        "confidence": round(confidence, 2),
-    }
-
-    return fused_flow, confidence, signal_details
-
-
-# ---------------------------------------------------------------------------
-# Cross-asset consistency
-# ---------------------------------------------------------------------------
-
-def _apply_cross_asset_consistency(
-    nodes: Dict[str, Dict[str, Any]],
-) -> Dict[str, Dict[str, Any]]:
-    """Adjust node magnitudes based on cross-asset consistency.
-
-    If risk assets have net outflow AND safe assets have net inflow
-    (or vice versa), this is a consistent signal — boost magnitudes.
-    If both risk and safe move in the same direction, the signal is
-    contradictory — reduce magnitudes.
-    """
-    risk_net = sum(n["net"] for n in nodes.values() if n["type"] == "risk")
-    safe_net = sum(n["net"] for n in nodes.values() if n["type"] == "safe")
-
-    # Determine consistency
-    # Consistent: risk and safe move in opposite directions
-    # Contradictory: both move same direction (unusual, lower confidence)
-    if risk_net == 0 and safe_net == 0:
-        return nodes
-
-    consistent = (risk_net > 0 and safe_net < 0) or (risk_net < 0 and safe_net > 0)
-
-    if consistent:
-        multiplier = CF_CONSISTENCY_BOOST
-    elif (risk_net > 0 and safe_net > 0) or (risk_net < 0 and safe_net < 0):
-        # Both same direction — reduce confidence
-        multiplier = CF_CONSISTENCY_PENALTY
-    else:
-        multiplier = 1.0
-
-    if multiplier == 1.0:
-        return nodes
-
-    adjusted = {}
-    for nid, node in nodes.items():
-        adjusted_net = round(node["net"] * multiplier, 1)
-        adjusted[nid] = {
-            **node,
-            "net": adjusted_net,
-            "value": _format_value(adjusted_net),
-        }
-
-    return adjusted
-
-
-# ---------------------------------------------------------------------------
-# CFTC integration
-# ---------------------------------------------------------------------------
-
-def _apply_cftc_signal(
-    nodes: Dict[str, Dict[str, Any]],
-    cftc_data: Dict[str, Any],
-) -> Dict[str, Dict[str, Any]]:
-    """Incorporate CFTC COT directional signal into flow estimates.
-
-    When CFTC asset manager positioning agrees with our flow direction,
-    boost confidence. When it disagrees, dampen the signal.
-    """
-    if not cftc_data:
-        return nodes
-
-    adjusted = {}
-    for nid, node in nodes.items():
-        cftc = cftc_data.get(nid)
-        if not cftc:
-            adjusted[nid] = node
+    for ticker, df in etf_prices.items():
+        if "Shares" not in df.columns:
             continue
 
-        cftc_dir = cftc.get("direction", 0)
-        our_dir = 1 if node["net"] > 0 else (-1 if node["net"] < 0 else 0)
+        shares = df["Shares"].dropna()
+        if len(shares) < 2:
+            continue
 
-        if cftc_dir == 0 or our_dir == 0:
-            # No CFTC signal or our signal is zero — no adjustment
-            adjusted[nid] = node
-        elif cftc_dir == our_dir:
-            # Agreement: boost by 15%
-            boosted = round(node["net"] * 1.15, 1)
-            adjusted[nid] = {**node, "net": boosted, "value": _format_value(boosted)}
-        else:
-            # Disagreement: reduce by 25%
-            dampened = round(node["net"] * 0.75, 1)
-            adjusted[nid] = {**node, "net": dampened, "value": _format_value(dampened)}
+        close = df["Close"].reindex(shares.index)
+        delta_shares = shares.diff()
+        daily_flow = (delta_shares * close) / 1e9  # Convert to $B
+        daily_flow = daily_flow.dropna()
 
-    return adjusted
+        if not daily_flow.empty:
+            flows[ticker] = daily_flow
+
+    return flows
 
 
-# ---------------------------------------------------------------------------
-# ICI calibration
-# ---------------------------------------------------------------------------
+def _compute_proxy_daily_flows(etf_prices: Dict[str, pd.DataFrame]) -> Dict[str, pd.Series]:
+    """Proxy flow estimate for tickers without shares outstanding data.
 
-def _apply_ici_calibration(
-    nodes: Dict[str, Dict[str, Any]],
-    ici_data: Dict[str, Any],
-) -> Dict[str, Dict[str, Any]]:
-    """Calibrate flow magnitudes using ICI reported fund flow data.
+    Uses daily_return × dollar_volume as flow proxy.
+    Only applies to tickers where config has shares_source=None
+    (SPY, BIL, VGK).
 
-    When ICI data is available, compute a scale factor between our
-    proxy values and ICI reported values, then apply the scaling.
+    Args:
+        etf_prices: Dict of ticker -> DataFrame with Close, Volume columns.
+
+    Returns:
+        Dict of ticker -> Series of proxy daily flows in $B, indexed by date.
     """
-    if not ici_data:
-        return nodes
+    flows: Dict[str, pd.Series] = {}
 
-    # Compute scale factor from nodes that have both ICI data and our estimate
-    ratios = []
-    for nid, node in nodes.items():
-        ici = ici_data.get(nid)
-        if not ici or abs(node["net"]) < 0.1:
+    for ticker in _PROXY_TICKERS:
+        if ticker not in etf_prices:
             continue
-        ici_flow = ici.get("ici_flow_B", 0)
-        if abs(ici_flow) < 0.01:
+
+        df = etf_prices[ticker]
+        if "Close" not in df.columns or "Volume" not in df.columns:
             continue
-        ratios.append(ici_flow / node["net"])
+        if len(df) < 2:
+            continue
 
-    if not ratios:
-        return nodes
+        close = df["Close"].dropna()
+        volume = df["Volume"].dropna()
+        # Align on common index
+        common = close.index.intersection(volume.index)
+        if len(common) < 2:
+            continue
+        close = close.loc[common]
+        volume = volume.loc[common]
 
-    # Use median ratio as scale factor (robust to outliers)
-    scale_factor = float(np.median(ratios))
-    # Clamp to reasonable range [0.2, 5.0]
-    scale_factor = max(0.2, min(5.0, scale_factor))
+        daily_return = close.pct_change()
+        dollar_volume = close * volume
+        proxy_flow = (daily_return * dollar_volume) / 1e9  # in $B
+        proxy_flow = proxy_flow.dropna()
 
-    adjusted = {}
-    for nid, node in nodes.items():
-        scaled_net = round(node["net"] * scale_factor, 1)
-        adjusted[nid] = {**node, "net": scaled_net, "value": _format_value(scaled_net)}
+        if not proxy_flow.empty:
+            flows[ticker] = proxy_flow
 
-    log.info(f"ICI calibration applied: scale_factor={scale_factor:.2f}")
-    return adjusted
+    return flows
+
+
+def _aggregate_rolling_flows(
+    daily_flows: Dict[str, pd.Series],
+    window: int,
+) -> Dict[str, pd.Series]:
+    """Rolling sum of daily flows over a window of trading days.
+
+    Args:
+        daily_flows: Dict of ticker -> daily flow Series ($B).
+        window: Number of trading days to sum over.
+
+    Returns:
+        Dict of ticker -> rolling sum Series ($B).
+    """
+    result: Dict[str, pd.Series] = {}
+    for ticker, flow_series in daily_flows.items():
+        if len(flow_series) < window:
+            result[ticker] = flow_series
+        else:
+            result[ticker] = flow_series.rolling(window=window, min_periods=1).sum()
+    return result
 
 
 # ---------------------------------------------------------------------------
@@ -383,46 +154,39 @@ def _format_value(net: float) -> str:
     return f"{sign}${abs(net):.1f}B"
 
 
-def _compute_rfi(risk_net: float, safe_net: float) -> float:
-    """Compute Risk Flow Index: (risk_net - safe_net) / total_scale.
+def _compute_rfi(risk_net: float, safe_net: float, scale: float = RFI_TANH_SCALE) -> float:
+    """Compute Risk Flow Index with tanh normalization.
 
-    Returns a value in [-1, +1].  When risk_net dominates, RFI → +1 (risk-on);
-    when safe_net dominates, RFI → -1 (panic deleveraging).
+    tanh((risk_net - safe_net) / scale) — smooth, bounded [-1, +1],
+    no saturation at extremes unlike the ratio-based formula.
+    """
+    return round(math.tanh((risk_net - safe_net) / scale), 4)
+
+
+def _detect_phase(risk_net: float, safe_net: float, rfi: float) -> str:
+    """Classify the market phase based on risk/safe net flows and RFI.
+
+    Uses RFI thresholds as primary signal (stable, based on real flows).
     """
     total = abs(risk_net) + abs(safe_net)
-    if total < 0.5:
-        return 0.0
-    return round((risk_net - safe_net) / total, 4)
-
-
-def _detect_phase(risk_net: float, safe_net: float) -> str:
-    """Classify the market phase based on risk/safe net flows.
-
-    Uses absolute dollar thresholds first, then falls back to RFI-based
-    classification when dollar thresholds don't trigger but capital allocation
-    is heavily skewed (e.g. risk_net=0.2, safe_net=8.0 → RFI=-0.95).
-    """
-    total = abs(risk_net) + abs(safe_net)
-    if total < 0.5:
+    if total < 0.1:
         return "normal"
 
-    # Primary: absolute dollar thresholds
-    if risk_net < -3 and safe_net > 1:
-        return "deleverage"
-    if risk_net < -3 and safe_net < -1:
+    # Both sides declining — broad outflow
+    if risk_net < -0.5 and safe_net < -0.5:
         return "outflow"
-    if risk_net > 3 and safe_net < -1:
-        return "riskon"
-    if risk_net > 0 and risk_net <= 3 and safe_net < 0:
-        return "bottom"
 
-    # Secondary: RFI-based fallback for skewed allocation
-    rfi = (risk_net - safe_net) / total
-    if rfi < RFI_PANIC:  # < -0.7
-        # Overwhelmingly safe — deleverage behavior even if risk_net >= 0
+    if rfi < RFI_PANIC:
         return "deleverage"
-    if rfi > RFI_RISK_ON:  # > 0.3
+    if rfi < -0.3 and risk_net < 0:
+        # Capital flowing from risk to safe
+        if safe_net > 0:
+            return "deleverage"
+        return "normal"
+    if rfi > RFI_RISK_ON:
         return "riskon"
+    if 0 < rfi <= RFI_RISK_ON and risk_net > 0 and safe_net < 0:
+        return "bottom"
 
     return "normal"
 
@@ -435,9 +199,7 @@ def _generate_flow_arrows(
     """Generate flow arrows from sources (outflow) to sinks (inflow).
 
     Total arrow volume is capped at min(total_outflow, total_inflow) to
-    enforce zero-sum accounting.  Without this cap, broad-outflow scenarios
-    (where almost everything is a source) would produce phantom arrows that
-    vastly exceed the actual tracked inflows.
+    enforce zero-sum accounting.
     """
     sources = {nid: n for nid, n in nodes.items() if n["net"] < 0}
     sinks = {nid: n for nid, n in nodes.items() if n["net"] > 0}
@@ -450,7 +212,6 @@ def _generate_flow_arrows(
     if total_inflow <= 0 or total_outflow <= 0:
         return []
 
-    # Cap at the smaller side — the maximum that could actually flow
     cap = min(total_outflow, total_inflow)
 
     arrows: List[Dict[str, Any]] = []
@@ -477,25 +238,22 @@ def _generate_flow_arrows(
 
 def analyze_capital_flows(
     etf_prices: Dict[str, pd.DataFrame],
-    cftc_data: Optional[Dict[str, Any]] = None,
-    ici_data: Optional[Dict[str, Any]] = None,
     lookback_weeks: int | None = None,
     window_days: int | None = None,
 ) -> List[Dict[str, Any]]:
-    """Compute weekly capital flow snapshots with multi-signal fusion.
+    """Compute weekly capital flow snapshots from ETF shares outstanding.
 
     Pipeline per weekly window:
-    1. Compute 3 independent signals (CMF, OBV slope, Return×DollarVolume)
-    2. Fuse signals via weighted voting
-    3. Apply cross-asset consistency adjustment
-    4. Apply CFTC directional confirmation (if available)
-    5. Apply ICI magnitude calibration (if available)
-    6. Detect phase and generate flow arrows
+    1. Compute daily flows from Δ(shares_outstanding) × close
+    2. Rolling window aggregation
+    3. Build nodes with real $ flow values
+    4. Compute risk_net / safe_net
+    5. Compute RFI with tanh formula
+    6. Detect phase
+    7. Generate flow arrows (zero-sum)
 
     Args:
-        etf_prices: Dict of ticker -> OHLCV DataFrame from collector.
-        cftc_data: Optional CFTC COT positioning data.
-        ici_data: Optional ICI fund flow data for magnitude calibration.
+        etf_prices: Dict of ticker -> OHLCV+Shares DataFrame from collector.
         lookback_weeks: Number of weekly snapshots to produce.
         window_days: Trading days per weekly window.
 
@@ -505,6 +263,7 @@ def analyze_capital_flows(
     weeks = lookback_weeks or CAPITAL_FLOW_LOOKBACK_WEEKS
     window = window_days or CAPITAL_FLOW_WINDOW_DAYS
 
+    # Check for sufficient data
     min_len = min(
         (len(df) for df in etf_prices.values() if not df.empty),
         default=0,
@@ -513,10 +272,32 @@ def analyze_capital_flows(
         log.warning(f"Insufficient data for capital flow analysis (min_len={min_len})")
         return []
 
-    ref_ticker = "SPY"
-    if ref_ticker not in etf_prices or etf_prices[ref_ticker].empty:
-        ref_ticker = next(iter(etf_prices))
-    ref_dates = etf_prices[ref_ticker].index
+    # Compute daily flows from shares outstanding (real data)
+    daily_flows = _compute_daily_flows(etf_prices)
+    tickers_with_shares = set(daily_flows.keys())
+
+    # Compute proxy flows for tickers without shares data (SPY, BIL, VGK)
+    proxy_flows = _compute_proxy_daily_flows(etf_prices)
+    tickers_with_proxy = set(proxy_flows.keys())
+
+    # Merge: proxy only fills in tickers not already in daily_flows
+    for ticker, flow_series in proxy_flows.items():
+        if ticker not in daily_flows:
+            daily_flows[ticker] = flow_series
+
+    if not daily_flows:
+        log.warning("No flow data available — cannot compute fund flows")
+        return []
+
+    log.info(f"Computing fund flows: {len(tickers_with_shares)} real + "
+             f"{len(tickers_with_proxy)} proxy tickers")
+
+    # Aggregate rolling flows
+    rolling_flows = _aggregate_rolling_flows(daily_flows, window)
+
+    # Determine reference dates from the ticker with most data
+    ref_ticker = "SPY" if "SPY" in rolling_flows else next(iter(rolling_flows))
+    ref_dates = rolling_flows[ref_ticker].index
 
     total_needed = weeks * window
     if len(ref_dates) < total_needed:
@@ -545,16 +326,7 @@ def analyze_capital_flows(
                        "en": "Risk appetite restored, capital flowing back from safe havens at scale"},
     }
 
-    # Log signal fusion mode
-    external_sources = []
-    if cftc_data:
-        external_sources.append(f"CFTC ({len(cftc_data)} contracts)")
-    if ici_data:
-        external_sources.append(f"ICI ({len(ici_data)} categories)")
-    fusion_desc = "CMF + OBV + Return×DV"
-    if external_sources:
-        fusion_desc += " + " + " + ".join(external_sources)
-    log.info(f"Signal fusion mode: {fusion_desc}")
+    log.info(f"Signal method: hybrid (ETF shares outstanding + volume-price proxy)")
 
     phases: List[Dict[str, Any]] = []
 
@@ -568,14 +340,14 @@ def analyze_capital_flows(
         date_str = pd.Timestamp(window_end_date).strftime("%Y-%m-%d")
 
         nodes: Dict[str, Dict[str, Any]] = {}
-        all_signals: Dict[str, dict] = {}  # node_id -> signal details
-        dv_scales: Dict[str, float] = {}   # node_id -> weekly dollar vol ($B)
         risk_net = 0.0
         safe_net = 0.0
 
         for ticker, meta in CAPITAL_FLOW_ETFS.items():
             node_id = meta["id"]
-            if ticker not in etf_prices or etf_prices[ticker].empty:
+
+            if ticker not in rolling_flows:
+                # No shares data for this ticker — show zero flow
                 nodes[node_id] = {
                     "label_zh": meta["label_zh"],
                     "label_en": meta["label_en"],
@@ -585,54 +357,23 @@ def analyze_capital_flows(
                 }
                 continue
 
-            df = etf_prices[ticker]
-            mask = df.index <= window_end_date
-            df_up_to = df[mask]
-            actual_window = min(window, len(df_up_to))
+            flow_series = rolling_flows[ticker]
+            # Get the flow value at or before window_end_date
+            mask = flow_series.index <= window_end_date
+            valid = flow_series[mask]
+            if valid.empty:
+                net = 0.0
+            else:
+                net = round(float(valid.iloc[-1]), 1)
 
-            if actual_window < 2:
-                nodes[node_id] = {
-                    "label_zh": meta["label_zh"],
-                    "label_en": meta["label_en"],
-                    "value": "$0.0B",
-                    "net": 0.0,
-                    "type": meta["type"],
-                }
-                continue
-
-            # Normalize crypto volume: yfinance reports BTC-USD volume
-            # in USD, not units.  Convert to unit volume so that
-            # Close × Volume gives correct dollar volume downstream.
-            if meta.get("volume_in_usd"):
-                df_up_to = df_up_to.copy()
-                df_up_to["Volume"] = df_up_to["Volume"] / df_up_to["Close"]
-
-            # Compute 3 independent signals
-            cmf_val = _chaikin_money_flow(df_up_to, actual_window)
-            obv_val = _obv_slope(df_up_to, actual_window)
-            rdv_val = _return_dollar_volume(df_up_to, actual_window)
-
-            # Average daily dollar volume for normalization
-            tail = df_up_to.tail(actual_window)
-            avg_dollar_vol = float((tail["Close"] * tail["Volume"]).mean())
-
-            # Track weekly dollar volume for cross-asset normalization
-            dv_scales[node_id] = avg_dollar_vol * actual_window / 1e9  # $B
-
-            # Fuse signals
-            net, confidence, sig_details = _fuse_signals(
-                cmf_val, obv_val, rdv_val, avg_dollar_vol, actual_window
-            )
-            net = round(net, 1)
-            all_signals[node_id] = sig_details
-
+            confidence = 0.6 if ticker in tickers_with_proxy else 1.0
             nodes[node_id] = {
                 "label_zh": meta["label_zh"],
                 "label_en": meta["label_en"],
                 "value": _format_value(net),
                 "net": net,
                 "type": meta["type"],
-                "confidence": round(confidence, 2),
+                "confidence": confidence,
             }
 
             if meta["type"] == "risk":
@@ -640,40 +381,14 @@ def analyze_capital_flows(
             else:
                 safe_net += net
 
-        # Step 2.5: Dollar-volume normalization
-        # Raw flows scale with dollar volume, making BTC ($35B/day) produce
-        # signals 100x larger than EWJ ($0.3B/day).  Normalize each asset's
-        # flow by its weekly dollar volume (giving dimensionless "intensity"),
-        # then scale to the median dollar volume so all assets are comparable.
-        valid_dvs = [v for v in dv_scales.values() if v > 0]
-        if valid_dvs:
-            median_dv = float(np.median(valid_dvs))
-            for nid, node in nodes.items():
-                dv = dv_scales.get(nid, 0.0)
-                if dv > 0 and node["net"] != 0:
-                    intensity = node["net"] / dv
-                    normalized = round(intensity * median_dv, 1)
-                    node["net"] = normalized
-                    node["value"] = _format_value(normalized)
+        risk_net = round(risk_net, 1)
+        safe_net = round(safe_net, 1)
 
-        # Step 3: Cross-asset consistency adjustment
-        nodes = _apply_cross_asset_consistency(nodes)
-
-        # Step 4: CFTC directional confirmation (only for latest week)
-        if cftc_data and w == 1:
-            nodes = _apply_cftc_signal(nodes, cftc_data)
-
-        # Step 5: ICI magnitude calibration (only for latest week)
-        if ici_data and w == 1:
-            nodes = _apply_ici_calibration(nodes, ici_data)
-
-        # Recompute risk/safe net after adjustments
-        risk_net = round(sum(n["net"] for n in nodes.values() if n["type"] == "risk"), 1)
-        safe_net = round(sum(n["net"] for n in nodes.values() if n["type"] == "safe"), 1)
-
-        # Detect phase and compute RFI
-        phase_type = _detect_phase(risk_net, safe_net)
+        # Compute RFI with tanh normalization
         rfi = _compute_rfi(risk_net, safe_net)
+
+        # Detect phase
+        phase_type = _detect_phase(risk_net, safe_net, rfi)
 
         # Generate flow arrows
         flows = _generate_flow_arrows(nodes)
@@ -705,6 +420,6 @@ def analyze_capital_flows(
         latest = phases[-1]
         log.info(f"  Latest phase: {latest['phase']} "
                  f"(risk_net={latest['risk_net']:.1f}B, safe_net={latest['safe_net']:.1f}B, "
-                 f"RFI={latest['rfi']:.2f})")
+                 f"RFI={latest['rfi']:.4f})")
 
     return phases

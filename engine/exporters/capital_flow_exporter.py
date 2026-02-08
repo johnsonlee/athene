@@ -122,7 +122,7 @@ def export_capital_flows(
     data = {
         "date": run_date,
         "default_window": default_window,
-        "signal_method": "CMF+OBV+RDV fusion with cross-asset consistency",
+        "signal_method": "Hybrid: ETF shares outstanding (6 ETFs) + volume-price proxy (3 ETFs)",
         "windows": windows,
     }
 

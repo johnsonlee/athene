@@ -140,26 +140,37 @@ Frontend (/): TrendDashboard → TrendLineChart (11 sector lines, signal toggle,
 
 ### Capital Flow Pipeline
 
-Tracks global capital rotation across 9 asset classes (5 risk, 4 safe) using ETF volume-price signals.
+Tracks global capital rotation across 9 asset classes (5 risk, 4 safe) using a hybrid approach: direct ETF fund flows from shares outstanding (6 ETFs) + volume-price proxy (3 ETFs).
 
 ```
 Collection (daily, stored to collected/YYYY/MM/DD/capital_flow_etfs/<TICKER>.json):
-  yfinance → 9 ETFs (SPY/VGK/EWJ/EEM/BTC-USD/GLD/TLT/BIL/LQD) → daily OHLCV snapshot
+  yfinance → 9 ETFs → daily OHLCV
+  iShares CSV → 5 ETFs (EWJ/EEM/IBIT/TLT/LQD) → shares outstanding
+  SPDR Gold archive → 1 ETF (GLD) → shares outstanding
+  SPY/BIL/VGK → no shares source (proxy-only)
 
 Analysis (multi-window: 1W/2W/1M):
   stored daily slices → reconstruct DataFrames → analyze_capital_flows() per window
 
-  Signal fusion (per weekly window, per asset):
-    CMF (40%) + OBV slope (30%) + Return×DollarVolume (30%)
-    → direction voting (2/3 agreement → boost, outlier → penalize)
-    → cross-asset consistency (risk↑ safe↓ → ×1.3, same direction → ×0.7)
-    → optional CFTC directional confirmation (±15-25%)
-    → optional ICI magnitude calibration (scale factor [0.2, 5.0])
+  Direct fund flows (6 ETFs with shares data):
+    daily_fund_flow = Δ(shares_outstanding) × close_price
+    → rolling sum over window (5d/10d/22d)
+    → real $ flow values in $B
 
-  Phase detection:
-    deleverage: risk_net < -3 AND safe_net > 1
-    riskon:     risk_net > 3 AND safe_net < -1
-    bottom:     risk_net ∈ (0, 3] AND safe_net < 0
+  Proxy fund flows (3 ETFs without shares data: SPY, BIL, VGK):
+    proxy_flow = daily_return × dollar_volume
+    → rolling sum over window
+    → confidence: 0.6 (vs 1.0 for real flows)
+
+  RFI (Risk Flow Index):
+    RFI = tanh((risk_net - safe_net) / scale)
+    → smooth, bounded [-1, +1], no saturation
+
+  Phase detection (RFI-based):
+    outflow:    risk_net < -0.5 AND safe_net < -0.5
+    deleverage: RFI < -0.8 (panic) or risk→safe rotation with RFI < -0.3
+    riskon:     RFI > 0.3
+    bottom:     0 < RFI ≤ 0.3 AND risk_net > 0 AND safe_net < 0
     normal:     default
 
   Flow arrows: sources (net < 0) → sinks (net > 0), proportional allocation, ≥0.1B, max 10
@@ -170,27 +181,25 @@ Frontend (/flows): SVG diagram (risk left ↔ safe right) + timeline + interval 
 ```
 
 **Key files:**
-- `engine/collectors/capital_flow.py` — ETF OHLCV collection (daily + historical + stored loader)
-- `engine/collectors/cftc.py` — CFTC COT futures positioning (optional)
-- `engine/collectors/ici.py` — ICI fund flows (optional)
-- `engine/analyzers/capital_flow.py` — Multi-signal fusion analyzer
+- `engine/collectors/capital_flow.py` — ETF OHLCV + shares outstanding collection (iShares/SPDR fetchers, daily + backfill + stored loader)
+- `engine/analyzers/capital_flow.py` — Hybrid fund flow analyzer (real shares + proxy fallback)
 - `engine/exporters/capital_flow_exporter.py` — Multi-window JSON export
 - `engine/capital_flow_pipeline.py` — Standalone pipeline CLI
-- `engine/config.py:125-164` — ETF mapping, signal weights, thresholds
+- `engine/config.py:125-155` — ETF mapping, shares sources, RFI thresholds
 - `frontend/src/components/flows/CapitalFlowViz.tsx` — SVG visualization
 
 **Asset classes:**
-| ETF | Node ID | Label | Type |
-|-----|---------|-------|------|
-| SPY | usEquity | US Equity / 美股 | risk |
-| VGK | euEquity | EU Equity / 欧股 | risk |
-| EWJ | jpEquity | JP Equity / 日股 | risk |
-| EEM | emEquity | EM Equity / 新兴 | risk |
-| BTC-USD | crypto | Crypto / 加密 | risk |
-| GLD | gold | Gold / 黄金 | safe |
-| TLT | usTreasury | US Treasury / 美债 | safe |
-| BIL | cash | Cash / 现金 | safe |
-| LQD | corpBond | Corp Bond / 公司债 | safe |
+| ETF | Node ID | Label | Type | Shares Source |
+|-----|---------|-------|------|---------------|
+| SPY | usEquity | US Equity / 美股 | risk | proxy (no free source) |
+| VGK | euEquity | EU Equity / 欧股 | risk | proxy (no free source) |
+| EWJ | jpEquity | JP Equity / 日股 | risk | iShares CSV |
+| EEM | emEquity | EM Equity / 新兴 | risk | iShares CSV |
+| IBIT | crypto | Crypto / 加密 | risk | iShares CSV |
+| GLD | gold | Gold / 黄金 | safe | SPDR Gold archive |
+| TLT | usTreasury | US Treasury / 美债 | safe | iShares CSV |
+| BIL | cash | Cash / 现金 | safe | proxy (no free source) |
+| LQD | corpBond | Corp Bond / 公司债 | safe | iShares CSV |
 
 ## Version History
 
@@ -339,7 +348,7 @@ Track global capital rotation across 9 asset classes (5 risk, 4 safe) using ETF 
 
 **Files**: `engine/collectors/capital_flow.py`, `engine/collectors/cftc.py`, `engine/collectors/ici.py`, `engine/analyzers/capital_flow.py`, `engine/exporters/capital_flow_exporter.py`, `engine/capital_flow_pipeline.py`, `engine/config.py`, `frontend/src/components/flows/CapitalFlowViz.tsx`
 
-### v14: Leading Indicators (current)
+### v14: Leading Indicators
 
 Four forward-looking market turn signals computed from existing collected data. Designed to detect market turns before they happen, complementing the reactive signals in v13.
 
@@ -353,6 +362,23 @@ Four forward-looking market turn signals computed from existing collected data. 
 - **Frontend**: New `/indicators` page with per-indicator cards showing latest signal, mini sparklines, and recent signal history. Filter by individual indicator.
 
 **Files**: `engine/analyzers/leading_indicators.py`, `engine/collectors/macro.py`, `engine/backtest.py`, `engine/main.py`, `frontend/src/components/indicators/LeadingIndicatorsPage.tsx`, `frontend/src/hooks/useLeadingIndicators.ts`, `frontend/src/types/index.ts`, `frontend/src/lib/dataLoader.ts`, `frontend/src/routes.tsx`, `frontend/src/components/layout/Header.tsx`, `frontend/src/lib/i18n.tsx`, `frontend/src/components/About.tsx`
+
+### v15: Direct ETF Fund Flows (current)
+
+Hybrid capital flow model: 6 ETFs use real shares outstanding from ETF provider endpoints, 3 ETFs use volume-price proxy as fallback. Replaces broken yfinance shares data with direct iShares/SPDR CSV sources. Fixes fundamental issues from v11-v12: bimodal RFI distribution (33% saturated at ±1), 216 regime transitions in 523 days (noise), uncorrelated risk/safe nets (r=0.041).
+
+**Key changes from v14:**
+- **Hybrid fund flows**: 6 ETFs (EWJ, EEM, IBIT, TLT, LQD, GLD) use `daily_flow = Δ(shares_outstanding) × close_price` — real ETF creation/redemption. 3 ETFs (SPY, BIL, VGK) use `daily_return × dollar_volume` as proxy fallback (no free shares outstanding source available).
+- **iShares shares outstanding**: New `_fetch_ishares_shares()` fetches shares outstanding from iShares AJAX CSV endpoint (product ID + slug). Covers EWJ, EEM, IBIT, TLT, LQD.
+- **SPDR Gold shares outstanding**: New `_fetch_gld_shares()` fetches from SPDR Gold Shares archive CSV (`GLD_US_archive_EN.csv`). Session-level cache avoids re-downloading.
+- **Shares source dispatch**: `_fetch_shares_for_ticker()` routes to correct fetcher based on `shares_source` field in config. `None` → proxy-only (no shares fetched).
+- **Proxy fallback in analyzer**: New `_compute_proxy_daily_flows()` computes `return × dollar_volume` for SPY/BIL/VGK. Merged into main flow pipeline. Proxy nodes get `confidence: 0.6` (informational).
+- **Shares backfill**: `backfill_shares_outstanding()` uses iShares/SPDR fetchers for historical dates, skips proxy-only tickers, rate-limits iShares requests (0.5s delay).
+- **BTC-USD → IBIT**: Replaced BTC-USD with IBIT (iShares Bitcoin Trust ETF). Standard ETF with shares outstanding via iShares endpoint.
+- **Tanh RFI normalization**: `RFI = tanh((risk_net - safe_net) / scale)`. Smooth, bounded [-1, +1].
+- **Simplified analyzer**: Removed CMF, OBV slope, direction voting, cross-asset consistency, CFTC/ICI dependencies. Hybrid pipeline: real shares flows + proxy flows → merge → rolling sum → nodes → RFI → phase → arrows.
+
+**Files**: `engine/config.py`, `engine/collectors/capital_flow.py`, `engine/collect.py`, `engine/analyzers/capital_flow.py`, `engine/capital_flow_pipeline.py`, `engine/main.py`, `engine/exporters/capital_flow_exporter.py`, `.github/workflows/backfill-pipeline.yml`, `frontend/src/lib/i18n.tsx`, `frontend/src/components/About.tsx`
 
 ### v13: Signal Backtesting
 
@@ -564,4 +590,4 @@ When implementing a new version from the roadmap:
 - Sector detail page (`/sector/:name`) — ETF price chart, signal radar, breadth history, constituent stocks
 - Sparklines in trend table from `trend_history.json`
 - 13F institutional holdings via SEC Edgar API
-- ETF fund flow proxy via AUM changes
+- ETF fund flow detail (per-sector shares outstanding trends)

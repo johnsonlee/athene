@@ -44,8 +44,6 @@ from engine.collectors.capital_flow import (
     collect_capital_flow_etfs,
     load_capital_flow_etfs_from_collected,
 )
-from engine.collectors.cftc import collect_cftc_cot
-from engine.collectors.ici import collect_ici_flows
 from engine.analyzers.capital_flow import analyze_capital_flows
 from engine.exporters.capital_flow_exporter import export_capital_flows
 from engine.exporters.changes import detect_changes, format_changes_markdown
@@ -346,30 +344,16 @@ def run(tickers_override: list[str] | None = None) -> None:
             log.info("  No stored data — fetching live from yfinance...")
             cf_prices = collect_capital_flow_etfs()
 
-        log.info("Step F2: Collecting CFTC COT data (optional)...")
-        cftc_data = None
-        try:
-            cftc_data = collect_cftc_cot()
-        except Exception as e:
-            log.warning(f"CFTC data unavailable: {e}")
-
-        log.info("Step F3: Collecting ICI fund flow data (optional)...")
-        ici_data = None
-        try:
-            ici_data = collect_ici_flows()
-        except Exception as e:
-            log.warning(f"ICI data unavailable: {e}")
-
-        log.info("Step F4: Analyzing capital flows (multi-window)...")
+        log.info("Step F2: Analyzing capital flows (multi-window)...")
         from engine.config import CAPITAL_FLOW_WINDOWS
         cf_window_results: dict[str, list] = {}
         for label, wdays in CAPITAL_FLOW_WINDOWS.items():
             cf_window_results[label] = analyze_capital_flows(
-                cf_prices, cftc_data=cftc_data, ici_data=ici_data,
+                cf_prices,
                 window_days=wdays,
             )
 
-        log.info("Step F5: Exporting capital flow data...")
+        log.info("Step F3: Exporting capital flow data...")
         export_capital_flows(cf_window_results, run_date)
 
     # --- Leading Indicators ---
