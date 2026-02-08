@@ -162,11 +162,14 @@ function NodeBox({ data, pos, locale, isDark }: {
 }) {
   const colors = getNodeColor(data.net, isDark);
   const label = locale === 'zh' ? data.label_zh : data.label_en;
+  const isProxy = data.confidence !== undefined && data.confidence < 1.0;
   return (
     <g>
       <rect
         x={pos.x} y={pos.y} width={NODE_W} height={NODE_H} rx={8}
         fill={colors.fill} stroke={colors.stroke} strokeWidth={1.2}
+        strokeDasharray={isProxy ? '4 2' : 'none'}
+        opacity={isProxy ? 0.8 : 1}
         filter={`drop-shadow(0 0 6px ${colors.glow})`}
       />
       <text x={pos.x + NODE_W / 2} y={pos.y + 18} textAnchor="middle"
@@ -178,6 +181,13 @@ function NodeBox({ data, pos, locale, isDark }: {
         style={{ fontFamily: 'monospace' }}>
         {data.value}
       </text>
+      {isProxy && (
+        <text x={pos.x + NODE_W - 4} y={pos.y + 10} textAnchor="end"
+          fill={isDark ? '#6b7280' : '#9ca3af'} fontSize="7"
+          style={{ fontFamily: 'monospace' }}>
+          proxy
+        </text>
+      )}
     </g>
   );
 }
@@ -990,6 +1000,7 @@ export function CapitalFlowViz() {
         <span>{t('flows.legendSmallOutflow')}</span>
         <span>{t('flows.legendOutflow5')}</span>
         <span className="text-indigo-400">{t('flows.legendPath')}</span>
+        <span className="text-gray-400">{t('flows.legendProxy')}</span>
       </div>
 
       {/* Disclaimer */}

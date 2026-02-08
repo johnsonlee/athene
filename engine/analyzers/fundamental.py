@@ -13,6 +13,7 @@ from engine.config import (
     FUND_WEIGHT_GROWTH,
     FUND_WEIGHT_SAFETY,
 )
+from engine.scorer.ic_weights import load_ic_weights, ic_weighted_avg, trimmed_ic_weighted_avg, log_ic_status
 from engine.utils.logger import get_logger
 
 log = get_logger(__name__)
@@ -177,13 +178,26 @@ def compute_fundamental_subscores(
         ]
     else:
         result["ps_score"] = 50.0
-    result["value_score"] = result[["pe_score", "forward_pe_score", "pb_score", "ps_score"]].mean(axis=1)
+    # v16: IC-weighted sub-score averaging
+    ic_w = load_ic_weights()
+
+    result["value_score"] = trimmed_ic_weighted_avg(
+        {"pe_score": result["pe_score"], "forward_pe_score": result["forward_pe_score"],
+         "pb_score": result["pb_score"], "ps_score": result["ps_score"]},
+        ic_w, drop=1,
+    )
+    log_ic_status("value", ["pe_score", "forward_pe_score", "pb_score", "ps_score"], ic_w)
 
     # -- Quality sub-score: avg(roe, roa, margin) --
     result["roe_score"] = result["roe"].apply(score_roe) if "roe" in result.columns else 50.0
     result["roa_score"] = result["roa"].apply(score_roa) if "roa" in result.columns else 50.0
     result["margin_score"] = result["profit_margin"].apply(score_profit_margin) if "profit_margin" in result.columns else 50.0
-    result["quality_score"] = result[["roe_score", "roa_score", "margin_score"]].mean(axis=1)
+    result["quality_score"] = trimmed_ic_weighted_avg(
+        {"roe_score": result["roe_score"], "roa_score": result["roa_score"],
+         "margin_score": result["margin_score"]},
+        ic_w, drop=1,
+    )
+    log_ic_status("quality", ["roe_score", "roa_score", "margin_score"], ic_w)
 
     # -- Growth sub-score: avg(rev_growth, earn_growth) -- sector-aware --
     if "revenue_growth" in result.columns:
@@ -198,7 +212,12 @@ def compute_fundamental_subscores(
         ]
     else:
         result["earn_growth_score"] = 50.0
-    result["growth_score"] = result[["rev_growth_score", "earn_growth_score"]].mean(axis=1)
+    result["growth_score"] = ic_weighted_avg(
+        {"rev_growth_score": result["rev_growth_score"],
+         "earn_growth_score": result["earn_growth_score"]},
+        ic_w,
+    )
+    log_ic_status("growth", ["rev_growth_score", "earn_growth_score"], ic_w)
 
     # -- Safety sub-score: avg(debt_equity, fcf_yield, current_ratio) -- sector-aware --
     if "debt_to_equity" in result.columns:
@@ -211,10 +230,20 @@ def compute_fundamental_subscores(
     result["fcf_yield_score"] = result["fcf_yield"].apply(score_fcf_yield) if "fcf_yield" in result.columns else 50.0
     result["current_ratio_score"] = result["current_ratio"].apply(score_current_ratio) if "current_ratio" in result.columns else 50.0
 
-    # Weighted average: D/E is most important, FCF yield and current ratio supplement
-    safety_components = result[["debt_equity_score", "fcf_yield_score", "current_ratio_score"]]
-    # Count how many non-50 (non-default) metrics we have per row
-    result["safety_score"] = safety_components.mean(axis=1)
+    result["safety_score"] = trimmed_ic_weighted_avg(
+        {"debt_equity_score": result["debt_equity_score"],
+         "fcf_yield_score": result["fcf_yield_score"],
+         "current_ratio_score": result["current_ratio_score"]},
+        ic_w, drop=1,
+    )
+    # Pool-aware centering: S&P 500 constituents have structurally good safety
+    # metrics, so the raw safety_score distribution is skewed high (median ~62).
+    # Re-center around 50 to prevent safety from acting as a hidden floor.
+    safety_median = result["safety_score"].median()
+    if safety_median != 50.0:
+        result["safety_score"] = (result["safety_score"] - safety_median + 50.0).clip(0, 100)
+        log.info(f"Safety pool-aware centering: median {safety_median:.1f} → 50.0")
+    log_ic_status("safety", ["debt_equity_score", "fcf_yield_score", "current_ratio_score"], ic_w)
 
     # Composite fundamental score (weighted, already 0-100)
     result["fundamental_score"] = (

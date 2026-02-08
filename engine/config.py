@@ -14,12 +14,12 @@ EV_WEIGHT_GROWTH = 0.40
 # Valuation Margin sub-composition
 VM_WEIGHT_VALUE = 1.00
 
-# Catalyst Timeline sub-composition (v8: added analyst revision momentum)
-CT_WEIGHT_TREND = 0.25
-CT_WEIGHT_MOMENTUM = 0.25
-CT_WEIGHT_ANALYST = 0.20
-CT_WEIGHT_SENTIMENT = 0.15
-CT_WEIGHT_VOLUME = 0.15
+# Catalyst Timeline sub-composition (v16: concentrate on high-spread factors)
+CT_WEIGHT_TREND = 0.40
+CT_WEIGHT_MOMENTUM = 0.35
+CT_WEIGHT_ANALYST = 0.25
+CT_WEIGHT_SENTIMENT = 0.00
+CT_WEIGHT_VOLUME = 0.00
 
 # Downside Control sub-composition
 DC_WEIGHT_SAFETY = 0.60
@@ -43,10 +43,12 @@ TECH_WEIGHT_VOLATILITY = 0.20
 TECH_WEIGHT_VOLUME = 0.20
 
 # ---------- Rating thresholds (absolute, 0-100 scale) ----------
-SCORE_STRONG_BUY = 75
-SCORE_BUY = 60
-SCORE_HOLD_LOWER = 40
-SCORE_SELL = 25
+# Calibrated to actual score distribution (mean ~54, std ~5, range 35-69).
+# SB ~3%, B ~36%, H ~55%, S ~5%, SS ~2%.
+SCORE_STRONG_BUY = 63
+SCORE_BUY = 56
+SCORE_HOLD_LOWER = 46
+SCORE_SELL = 39
 TIER_HYSTERESIS = 2        # ±2 points buffer to prevent oscillation
 
 # Score smoothing (EMA on composite_score)
@@ -145,8 +147,10 @@ CAPITAL_FLOW_WINDOWS = {
     "1M": 22,   # 1 month (~22 trading days)
 }
 
-# RFI tanh normalization scale (empirically tuned for real fund flows in $B)
-RFI_TANH_SCALE = 10.0             # tanh((risk_net - safe_net) / scale)
+# RFI tanh normalization scale (calibrated for real fund flows in $B).
+# Typical |risk_net - safe_net| is 1-10$B.  Scale=5 maps median (~2$B) to
+# RFI ±0.38 and extremes (~10$B) to ±0.96, making all thresholds reachable.
+RFI_TANH_SCALE = 5.0              # tanh((risk_net - safe_net) / scale)
 
 # Risk Flow Index (RFI) thresholds: tanh-normalized, range [-1, +1]
 RFI_RISK_ON = 0.3                 # RFI >  0.3 → Risk-On (capital flooding risk assets)

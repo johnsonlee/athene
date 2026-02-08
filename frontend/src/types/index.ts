@@ -263,6 +263,7 @@ export interface CapitalFlowNode {
   value: string;
   net: number;
   type: 'risk' | 'safe';
+  confidence?: number;  // 1.0 = real shares outstanding, 0.6 = volume-price proxy
 }
 
 export interface CapitalFlowArrow {

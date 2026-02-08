@@ -52,11 +52,20 @@ from engine.config import (
     TECH_WEIGHT_VOLATILITY,
     TECH_WEIGHT_VOLUME,
 )
+from engine.scorer.ic_weights import load_ic_weights, ic_weighted_avg, log_ic_status
 from engine.utils.logger import get_logger
 
 log = get_logger(__name__)
 
 NEUTRAL = 50.0
+
+# Metric-level score columns to forward from fund_scored for IC tracking
+_METRIC_SCORE_COLS = (
+    "pe_score", "forward_pe_score", "pb_score", "ps_score",
+    "roe_score", "roa_score", "margin_score",
+    "rev_growth_score", "earn_growth_score",
+    "debt_equity_score", "fcf_yield_score", "current_ratio_score",
+)
 
 
 def _val(series_or_scalar, default: float = NEUTRAL) -> pd.Series:
@@ -134,13 +143,31 @@ def compute_composite(
     result["volume_score"] = volume
     result["analyst_score"] = analyst
 
+    # --- v16: Forward metric-level scores for IC tracking ---
+    for col in _METRIC_SCORE_COLS:
+        if fund_scored is not None and col in fund_scored.columns:
+            result[col] = fund_scored[col].reindex(result.index).fillna(NEUTRAL)
+
     # --- Four qualitative dimensions (all 0-100) ---
-    ev = EV_WEIGHT_QUALITY * quality + EV_WEIGHT_GROWTH * growth
+    # v16: IC-weighted sub-score aggregation within dimensions
+    ic_w = load_ic_weights()
+
+    ev_components = {"quality_score": quality, "growth_score": growth}
+    ev = ic_weighted_avg(ev_components, ic_w)
+    log_ic_status("EV", list(ev_components.keys()), ic_w)
+
     vm = VM_WEIGHT_VALUE * value
-    ct = (CT_WEIGHT_TREND * trend + CT_WEIGHT_MOMENTUM * momentum
-          + CT_WEIGHT_ANALYST * analyst + CT_WEIGHT_SENTIMENT * sentiment
-          + CT_WEIGHT_VOLUME * volume)
-    dc = DC_WEIGHT_SAFETY * safety + DC_WEIGHT_VOLATILITY * volatility
+
+    ct_components = {
+        "trend_score": trend, "momentum_score": momentum,
+        "analyst_score": analyst,
+    }
+    ct = ic_weighted_avg(ct_components, ic_w)
+    log_ic_status("CT", list(ct_components.keys()), ic_w)
+
+    dc_components = {"safety_score": safety, "volatility_score": volatility}
+    dc = ic_weighted_avg(dc_components, ic_w)
+    log_ic_status("DC", list(dc_components.keys()), ic_w)
 
     result["earnings_visibility"] = ev
     result["valuation_margin"] = vm
