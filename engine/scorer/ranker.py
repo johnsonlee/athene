@@ -53,6 +53,8 @@ def _apply_hysteresis(score: float, new_tier: str, prev_tier: str | None) -> str
     """Apply hysteresis to prevent oscillation at tier boundaries.
 
     To change tier, the score must cross the boundary by ±TIER_HYSTERESIS points.
+    For multi-tier jumps, steps through each boundary one at a time and stops
+    at the furthest tier the score can reach with margin.
     """
     if prev_tier is None or prev_tier == new_tier:
         return new_tier
@@ -63,22 +65,39 @@ def _apply_hysteresis(score: float, new_tier: str, prev_tier: str | None) -> str
     if prev_idx < 0 or new_idx < 0:
         return new_tier
 
+    # Build ordered boundary list: [(idx_upper, idx_lower, threshold), ...]
+    boundaries = []
+    for (upper, lower), threshold in _TIER_BOUNDARIES.items():
+        boundaries.append((_TIER_ORDER.index(upper), _TIER_ORDER.index(lower), threshold))
+    boundaries.sort(key=lambda b: b[0])  # sort by tier index
+
     # Upgrading (moving to better tier = lower index)
     if new_idx < prev_idx:
-        # Find the boundary between new_tier and prev_tier (or adjacent)
-        for (upper, lower), threshold in _TIER_BOUNDARIES.items():
-            if _TIER_ORDER.index(upper) == new_idx and _TIER_ORDER.index(lower) <= prev_idx:
-                if score < threshold + TIER_HYSTERESIS:
-                    return prev_tier  # Not enough margin -> stay
-                break
+        # Walk from prev_tier upward, checking each boundary
+        current = prev_idx
+        for idx_upper, idx_lower, threshold in reversed(boundaries):
+            if idx_lower > current or idx_upper >= current:
+                continue
+            # This boundary is between idx_upper and idx_lower
+            if score >= threshold + TIER_HYSTERESIS:
+                current = idx_upper  # Crossed with margin -> advance
+            else:
+                break  # Blocked at this boundary
+        return _TIER_ORDER[current]
 
     # Downgrading (moving to worse tier = higher index)
     if new_idx > prev_idx:
-        for (upper, lower), threshold in _TIER_BOUNDARIES.items():
-            if _TIER_ORDER.index(lower) == new_idx and _TIER_ORDER.index(upper) >= prev_idx:
-                if score > threshold - TIER_HYSTERESIS:
-                    return prev_tier  # Not enough margin -> stay
-                break
+        # Walk from prev_tier downward, checking each boundary
+        current = prev_idx
+        for idx_upper, idx_lower, threshold in boundaries:
+            if idx_upper < current or idx_lower <= current:
+                continue
+            # This boundary is between idx_upper and idx_lower
+            if score <= threshold - TIER_HYSTERESIS:
+                current = idx_lower  # Crossed with margin -> advance
+            else:
+                break  # Blocked at this boundary
+        return _TIER_ORDER[current]
 
     return new_tier
 
@@ -125,14 +144,17 @@ def assign_tiers(df: pd.DataFrame) -> pd.DataFrame:
     prev_tiers = _load_previous_tiers()
 
     tiers = []
+    raw_tiers = []
     for ticker, row in result.iterrows():
         score = row["composite_score"]
         raw_tier = _assign_rating(score)
         prev_tier = prev_tiers.get(str(ticker))
         tier = _apply_hysteresis(score, raw_tier, prev_tier)
         tiers.append(tier)
+        raw_tiers.append(raw_tier)
 
     result["tier"] = tiers
+    result["tier_raw"] = raw_tiers
     result["tier_label"] = result["tier"].map(TIER_LABELS)
     result["tier_color"] = result["tier"].map(TIER_COLORS)
 

@@ -39,6 +39,7 @@ export interface RankedStock {
   rank: number;
   percentile: number;
   tier: TierKey;
+  tier_raw?: TierKey;
   tier_label: string;
   tier_color: string;
   // Qualitative dimensions (v3)
