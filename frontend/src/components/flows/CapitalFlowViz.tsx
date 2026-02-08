@@ -841,7 +841,7 @@ export function CapitalFlowViz() {
     return Object.keys(data.windows);
   }, [data]);
 
-  const activeInterval = interval ?? data?.default_window ?? windowKeys[0] ?? '1W';
+  const activeInterval = interval ?? data?.default_window ?? windowKeys[0] ?? '2W';
 
   const windowData = data?.windows?.[activeInterval];
   const allPhases = windowData?.phases ?? [];

@@ -115,8 +115,8 @@ def export_capital_flows(
             "phases": cleaned,
         }
 
-    # Default window = first key (typically "1W")
-    default_window = next(iter(windows))
+    # Default window = 2W (less noisy than 1W)
+    default_window = "2W" if "2W" in windows else next(iter(windows))
 
     data = {
         "date": run_date,
