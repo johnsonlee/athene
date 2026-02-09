@@ -6225,6 +6225,14 @@
       "low": 392.9200134277344,
       "close": 401.1400146484375,
       "volume": 53403600
+    },
+    {
+      "date": "2026-02-09",
+      "open": 399.1700134277344,
+      "high": 401.7900085449219,
+      "low": 392.9200134277344,
+      "close": 401.1400146484375,
+      "volume": 53403600
     }
   ],
   "fundamental": {
@@ -6277,43 +6285,43 @@
   },
   "technical": {
     "close": 401.1400146484375,
-    "sma_20": 444.0235015869141,
-    "sma_50": 467.36280151367185,
-    "sma_200": 485.98262924194336,
-    "trend_alignment": 0.24944724684933348,
+    "sma_20": 440.22150268554697,
+    "sma_50": 465.67560180664054,
+    "sma_200": 486.0621556091308,
+    "trend_alignment": 0.2506604200607446,
     "rsi": 29.134423906023716,
     "rsi_score": -0.4173115218795257,
-    "macd_histogram": -5.508752982640004,
-    "macd_line": -19.625120332451104,
-    "macd_histogram_pct": -1.3732743634334066,
-    "bb_position": 0.12395954342542971,
-    "bb_upper": 501.0432798962895,
-    "bb_lower": 387.0037232775387,
-    "bb_width": 0.25683225372346297,
-    "hist_volatility": 0.46050952941954965,
-    "volume_ratio": 1.2280387886926867,
-    "avg_volume_20d": 43486900.0,
+    "macd_histogram": -4.7559489136213635,
+    "macd_line": -20.061303491837805,
+    "macd_histogram_pct": -1.1856082016124763,
+    "bb_position": 0.1621909212627788,
+    "bb_upper": 498.06702919300744,
+    "bb_lower": 382.3759761780865,
+    "bb_width": 0.26280191292145905,
+    "hist_volatility": 0.4612840739871929,
+    "volume_ratio": 1.1872457056115922,
+    "avg_volume_20d": 44981085.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 6.924095494021887,
-    "stoch_d": 5.763973275123915,
-    "trend_score": 24.944724684933348,
+    "stoch_k": 9.647789294476992,
+    "stoch_d": 7.59209473100276,
+    "trend_score": 25.06604200607446,
     "rsi_abs_score": 49.13442390602371,
-    "macd_abs_score": 21.9008845484989,
-    "momentum_score": 35.5176542272613,
-    "volatility_score": 27.142675999735314,
+    "macd_abs_score": 24.715876975812854,
+    "momentum_score": 36.92515044091829,
+    "volatility_score": 27.11634148443544,
     "volume_score": 50.0,
-    "technical_score": 33.56724887360546,
+    "technical_score": 34.020626030984914,
     "tech_data_completeness": 1.0
   },
   "sentiment": {
-    "sentiment_compound": -0.14348324557318934,
-    "sentiment_pos": 0.06135,
+    "sentiment_compound": -0.1623369732559919,
+    "sentiment_pos": 0.0484,
     "sentiment_neg": 0.11379999999999998,
-    "sentiment_neu": 0.8249000000000001,
+    "sentiment_neu": 0.8378500000000001,
     "news_count": 20.0,
     "sentiment_confidence": 1.0,
-    "sentiment_score": 42.83
+    "sentiment_score": 41.88
   },
   "analyst": {
     "revision_momentum": -0.04,
@@ -6333,9 +6341,9 @@
     "quality_score": 90.00000000000001,
     "growth_score": 84.35,
     "safety_score": 57.5876875,
-    "trend_score": 24.944724684933348,
-    "momentum_score": 35.5176542272613,
-    "volatility_score": 27.142675999735314,
+    "trend_score": 25.06604200607446,
+    "momentum_score": 36.92515044091829,
+    "volatility_score": 27.11634148443544,
     "volume_score": 50.0,
     "analyst_score": 71.33780007678118,
     "pe_score": 62.3224795,
@@ -6350,25 +6358,26 @@
     "debt_equity_score": 78.172875,
     "fcf_yield_score": 44.99300931576377,
     "current_ratio_score": 62.756,
+    "cyclical_risk_score": 50.0,
     "earnings_visibility": 86.6885,
     "valuation_margin": 56.33329642142857,
-    "catalyst_timeline": 43.805017898897574,
-    "downside_control": 46.56155452496029,
-    "composite_score": 61.871302262495135,
+    "catalyst_timeline": 43.95789925237739,
+    "downside_control": 46.55760434766531,
+    "composite_score": 61.905359543959925,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 74.20361785119047,
-    "technical_score": 33.56724887360546,
-    "sentiment_score": 42.83,
+    "technical_score": 34.020626030984914,
+    "sentiment_score": 41.88,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 58,
-    "percentile": 0.8901734104046243,
+    "rank": 57,
+    "percentile": 0.8921001926782274,
     "tier": "buy",
     "tier_raw": "buy",
     "tier_label": "Buy",
@@ -6379,59 +6388,73 @@
   },
   "headlines": [
     {
+      "title": "Stock market today: Dow, S&P 500, Nasdaq futures rise with Wall Street looking to continue Dow 50,000 rally",
+      "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-rise-with-wall-street-looking-to-continue-dow-50000-rally-001401347.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Bill Gates And Eric Clapton Chose This Secret Florida Oasis",
+      "url": "https://finance.yahoo.com/m/ecd05087-c5db-35bb-b4c5-c0e464d8d6b9/why-bill-gates-and-eric.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-09",
+      "sentiment": "neutral"
+    },
+    {
       "title": "'This probably seems overdone': Wall Street strategists weigh in on software stock sell-off",
       "url": "https://finance.yahoo.com/news/this-probably-seems-overdone-wall-street-strategists-weigh-in-on-software-stock-sell-off-160003877.html",
       "publisher": "Yahoo Finance",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "neutral"
     },
     {
       "title": "The Software Stock Panic Will Be a Buying OpportunityEventually",
       "url": "https://finance.yahoo.com/m/5a3b302c-e67d-3dcf-89b3-e36e6b2b16c6/the-software-stock-panic-will.html",
       "publisher": "Barrons.com",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "negative"
     },
     {
       "title": "The Dow Surged Past 50,000. How It Got There, and Where It Goes Next.",
       "url": "https://finance.yahoo.com/m/d4d07bd1-e873-3a77-8c7a-e7616a7fd512/the-dow-surged-past-50%2C000..html",
       "publisher": "Barrons.com",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "neutral"
     },
     {
       "title": "AI Fear Grips Wall Street as a New Stock Market Reality Sets In",
       "url": "https://finance.yahoo.com/news/ai-fear-grips-wall-street-140007396.html",
       "publisher": "Bloomberg",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "negative"
     },
     {
       "title": "Dow 50,000 sets table for inflation data, delayed January jobs report: What to watch this week",
       "url": "https://finance.yahoo.com/news/dow-50000-sets-table-for-inflation-data-delayed-january-jobs-report-what-to-watch-this-week-123826626.html",
       "publisher": "Yahoo Finance",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "negative"
     },
     {
       "title": "Analysis-Investors chase cheaper, smaller companies as risk aversion hits tech sector",
       "url": "https://finance.yahoo.com/news/analysis-investors-chase-cheaper-smaller-110318617.html",
       "publisher": "Reuters",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "negative"
     },
     {
       "title": "5 big analyst AI moves: Microsoft stock downgraded as its time for a break",
       "url": "https://finance.yahoo.com/news/5-big-analyst-ai-moves-093503505.html",
       "publisher": "Investing.com",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "neutral"
     },
     {
       "title": "Barclays Remains Bullish on Microsoft Corporation (MSFT)",
       "url": "/news/303706/barclays-remains-bullish-on-microsoft-corporation-msft",
       "publisher": "Insider Monkey",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "neutral"
     },
     {
@@ -6503,20 +6526,6 @@
       "publisher": "Detroit Free Press",
       "date": "2026-02-07",
       "sentiment": "negative"
-    },
-    {
-      "title": "Big Techs AI Push Is Costing a Lot More Than the Moon Landing",
-      "url": "https://finance.yahoo.com/m/f2e491e1-516b-37a7-8f08-dd299fb384c8/big-tech%E2%80%99s-ai-push-is-costing.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "WEC Energy Group Q4 Earnings Call Highlights",
-      "url": "https://finance.yahoo.com/m/c7237d8b-3695-3abc-87de-d9989423c6ee/wec-energy-group-q4-earnings.html",
-      "publisher": "MarketBeat",
-      "date": "2026-02-07",
-      "sentiment": "positive"
     }
   ]
 }

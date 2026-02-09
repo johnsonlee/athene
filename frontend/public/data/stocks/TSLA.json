@@ -6225,6 +6225,14 @@
       "low": 397.75,
       "close": 411.1099853515625,
       "volume": 62559600
+    },
+    {
+      "date": "2026-02-09",
+      "open": 400.8699951171875,
+      "high": 414.54998779296875,
+      "low": 397.75,
+      "close": 411.1099853515625,
+      "volume": 62559600
     }
   ],
   "fundamental": {
@@ -6277,43 +6285,43 @@
   },
   "technical": {
     "close": 411.1099853515625,
-    "sma_20": 428.7139984130859,
-    "sma_50": 444.38680053710937,
-    "sma_200": 382.3025500488281,
-    "trend_alignment": 0.5432673770412786,
-    "rsi": 41.49313628620166,
-    "rsi_score": -0.17013727427596678,
-    "macd_histogram": -2.24138256920126,
-    "macd_line": -10.147963516394555,
-    "macd_histogram_pct": -0.5452026584283843,
-    "bb_position": 0.2107704917839293,
-    "bb_upper": 459.1466004841931,
-    "bb_lower": 398.28139634197873,
-    "bb_width": 0.14197158097825366,
-    "hist_volatility": 0.38775719967983435,
-    "volume_ratio": 1.0119505884790727,
-    "avg_volume_20d": 61820805.0,
+    "sma_20": 426.8214981079101,
+    "sma_50": 444.0774005126953,
+    "sma_200": 383.0605499267578,
+    "trend_alignment": 0.541302963135373,
+    "rsi": 41.493136286201654,
+    "rsi_score": -0.17013727427596692,
+    "macd_histogram": -1.7046690021245325,
+    "macd_line": -10.03741719984896,
+    "macd_histogram_pct": -0.41465035218416735,
+    "bb_position": 0.23667601822423034,
+    "bb_upper": 456.6545437925347,
+    "bb_lower": 396.9884524232855,
+    "bb_width": 0.1397916731789463,
+    "hist_volatility": 0.38521963388209735,
+    "volume_ratio": 1.0112063424508704,
+    "avg_volume_20d": 61866305.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 29.193616417988345,
-    "stoch_d": 22.30491203151511,
-    "trend_score": 54.32673770412786,
-    "rsi_abs_score": 63.791763543441995,
-    "macd_abs_score": 34.321960123574236,
-    "momentum_score": 49.056861833508115,
-    "volatility_score": 41.3919232518396,
+    "stoch_k": 36.33280244968243,
+    "stoch_d": 28.961514064523378,
+    "trend_score": 54.13029631353729,
+    "rsi_abs_score": 63.79176354344199,
+    "macd_abs_score": 37.133741195395814,
+    "momentum_score": 50.4627523694189,
+    "volatility_score": 41.906302972926945,
     "volume_score": 50.0,
-    "technical_score": 49.29346451165871,
+    "technical_score": 49.759175199472246,
     "tech_data_completeness": 1.0
   },
   "sentiment": {
-    "sentiment_compound": 0.018942968647377285,
-    "sentiment_pos": 0.06634999999999999,
-    "sentiment_neg": 0.05575,
-    "sentiment_neu": 0.8779,
+    "sentiment_compound": -0.03086930440542764,
+    "sentiment_pos": 0.04375,
+    "sentiment_neg": 0.061750000000000006,
+    "sentiment_neu": 0.8945000000000001,
     "news_count": 20.0,
     "sentiment_confidence": 1.0,
-    "sentiment_score": 50.95
+    "sentiment_score": 48.46
   },
   "analyst": {
     "revision_momentum": -0.043478260869565216,
@@ -6333,9 +6341,9 @@
     "quality_score": 35.69731256875,
     "growth_score": 21.9,
     "safety_score": 69.20268750000001,
-    "trend_score": 54.32673770412786,
-    "momentum_score": 49.056861833508115,
-    "volatility_score": 41.3919232518396,
+    "trend_score": 54.13029631353729,
+    "momentum_score": 50.4627523694189,
+    "volatility_score": 41.906302972926945,
     "volume_score": 50.0,
     "analyst_score": 53.401570044085304,
     "pe_score": 5.0,
@@ -6350,18 +6358,19 @@
     "debt_equity_score": 83.338875,
     "fcf_yield_score": 32.01633295243256,
     "current_ratio_score": 80.82000000000001,
+    "cyclical_risk_score": 50.0,
     "earnings_visibility": 29.520596885312496,
     "valuation_margin": 11.875,
-    "catalyst_timeline": 50.11851695817212,
-    "downside_control": 55.55819161277594,
-    "composite_score": 29.517886547899018,
+    "catalyst_timeline": 50.23946187270415,
+    "downside_control": 55.635348570939044,
+    "composite_score": 29.562652341924885,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 33.35806460395834,
-    "technical_score": 49.29346451165871,
-    "sentiment_score": 50.95,
+    "technical_score": 49.759175199472246,
+    "sentiment_score": 48.46,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6379,59 +6388,108 @@
   },
   "headlines": [
     {
+      "title": "Tesla Says FSD Service Would Be Taken Into Account When Trading In Model S, X, Cyberbeast Trims With Luxe Package",
+      "url": "/news/303890/tesla-says-fsd-service-would-be-taken-into-account-when-trading-in-model-s-x-cyberbeast-trims-with-luxe-package",
+      "publisher": "Benzinga",
+      "date": "2026-02-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "SpaceX prioritizes lunar 'self-growing city' over Mars project, Musk says",
+      "url": "https://finance.yahoo.com/news/musk-says-spacex-prioritise-building-234344484.html",
+      "publisher": "Reuters",
+      "date": "2026-02-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tesla Eyes US Solar Cell Expansion, Musk Targets 100-Gigawatt Power Push For AI Data Centers",
+      "url": "https://finance.yahoo.com/news/tesla-eyes-us-solar-cell-233111250.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Musk predicts space computing shift in 36 months as terrestrial power limits bite",
+      "url": "https://www.digitimes.com/news/a20260206VL215/elon-musk-infrastructure-chips-spacex-xai.html",
+      "publisher": "DigiTimes",
+      "date": "2026-02-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Musk flags manufacturing bottlenecks, floats 'TeraFab' as chip supply strains",
+      "url": "https://www.digitimes.com/news/a20260206VL216/manufacturing-elon-musk-expansion-capacity-equipment.html",
+      "publisher": "DigiTimes",
+      "date": "2026-02-09",
+      "sentiment": "negative"
+    },
+    {
+      "title": "SpaceX Could Rocket Musk to Trillionaire Status",
+      "url": "/news/303840/spacex-could-rocket-musk-to-trillionaire-status",
+      "publisher": "Benzinga",
+      "date": "2026-02-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tesla Isn't the Only Robot Game In Town. This Company Aims to Compete.",
+      "url": "https://www.barrons.com/articles/tesla-robot-china-xpeng-compete-83a77dad?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-09",
+      "sentiment": "neutral"
+    },
+    {
       "title": "The Robot Revolution Is Real. Tesla, Hyundai, and More Stocks to Play It.",
       "url": "https://www.barrons.com/articles/robot-stocks-tesla-nvidia-gm-ford-ai-humanoid-6629c2c3?mod=bar_FV",
       "publisher": "Barrons.com",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "positive"
     },
     {
       "title": "Waymo Says Bar Higher Than Human Driving For Autonomy Even As Tesla Says Cameras Are Enough: 'What Does It Take To Build A Safe Product?'",
       "url": "/news/303777/waymo-says-bar-higher-than-human-driving-for-autonomy-even-as-tesla-says-cameras-are-enough-what-does-it-take-to-build-a-safe-product",
       "publisher": "Benzinga",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "positive"
     },
     {
       "title": "Tesla Officially Updates Free FSD Transfer Policy - Here's The Last Date For Placing Orders To Be Eligible",
       "url": "/news/303775/tesla-officially-updates-free-fsd-transfer-policy-heres-the-last-date-for-placing-orders-to-be-eligible",
       "publisher": "Benzinga",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "positive"
     },
     {
       "title": "Elon Musk Admits It Would Take 'Staggeringly Enormous Amount Of Work For Tesla Valuation To Hit $100 Trillion: 'I'm Just Saying…'",
       "url": "/news/303774/elon-musk-admits-it-would-take-staggeringly-enormous-amount-of-work-for-tesla-valuation-to-hit-100-trillion-im-just-saying",
       "publisher": "Benzinga",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "positive"
     },
     {
       "title": "Consumer Tech News (Feb 2-6): Big Tech Earnings Take Center Stage In U.S. Markets, Anthropic Launches New AI Tool & More",
       "url": "/news/303773/consumer-tech-news-feb-2-6-big-tech-earnings-take-center-stage-in-us-markets-anthropic-launches-new-ai-tool-more",
       "publisher": "Benzinga",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "neutral"
     },
     {
       "title": "Elon Musk's Tesla Reignites Roadster Hype With New Trademark Filings",
       "url": "https://finance.yahoo.com/news/elon-musks-tesla-reignites-roadster-123102546.html",
       "publisher": "Benzinga",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "neutral"
     },
     {
       "title": "Can Living on $4K a Year Really Work? A Look at Extreme Frugality and FIRE Strategies",
       "url": "https://finance.yahoo.com/m/12ff1f69-3c31-3689-91bf-3ff9392775fb/can-living-on-%244k-a-year.html",
       "publisher": "Investopedia",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "negative"
     },
     {
       "title": "Musk On Apple's Recruiting Tactics, Record iPhone Quarter, Tim Cook Successor And More: This Week In Appleverse",
       "url": "/news/303762/musk-on-apples-recruiting-tactics-record-iphone-quarter-tim-cook-successor-and-more-this-week-in-appleverse",
       "publisher": "Benzinga",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "positive"
     },
     {
@@ -6468,55 +6526,6 @@
       "publisher": "Benzinga",
       "date": "2026-02-07",
       "sentiment": "neutral"
-    },
-    {
-      "title": "AI can make anyone rich: Mark Cuban says it could turn just one dude in a basement into a trillionaire",
-      "url": "https://finance.yahoo.com/news/ai-anyone-rich-mark-cuban-152003409.html",
-      "publisher": "Fortune",
-      "date": "2026-02-07",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Wolfe Sees Catalyst-Rich Year Ahead for Tesla (TSLA) Despite Fundamental Concerns",
-      "url": "/news/303591/wolfe-sees-catalyst-rich-year-ahead-for-tesla-tsla-despite-fundamental-concerns",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Tesla Rival Nio Expects Its First Profitable Quarter",
-      "url": "https://finance.yahoo.com/news/tesla-rival-nio-expects-first-133110882.html",
-      "publisher": "Benzinga",
-      "date": "2026-02-07",
-      "sentiment": "positive"
-    },
-    {
-      "title": "MarketBeat Week in Review - 02/02 - 02/06",
-      "url": "/news/303521/marketbeat-week-in-review-0202-0206",
-      "publisher": "MarketBeat",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Ross Gerber Says Tesla Will Be 'Another Division' Of X Amid Ticker Symbol Speculation, SpaceX-xAI Merger",
-      "url": "https://finance.yahoo.com/news/ross-gerber-says-tesla-another-114622705.html",
-      "publisher": "Benzinga",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "China Is Going All-In to Beat the U.S. on Humanoid Robots",
-      "url": "https://finance.yahoo.com/m/29138aa3-4a44-3c8f-ad48-df6156cbbc42/china-is-going-all-in-to-beat.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Musk Says Apple Once 'Carpet Bombed' Tesla Engineers With Recruiting Calls, Offering Double Pay During Now-Scrapped EV Program",
-      "url": "/news/303487/musk-says-apple-once-carpet-bombed-tesla-engineers-with-recruiting-calls-offering-double-pay-during-now-scrapped-ev-program",
-      "publisher": "Benzinga",
-      "date": "2026-02-07",
-      "sentiment": "negative"
     }
   ]
 }

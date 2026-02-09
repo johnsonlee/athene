@@ -6225,6 +6225,14 @@
       "low": 78.26000213623047,
       "close": 79.02999877929688,
       "volume": 18500400
+    },
+    {
+      "date": "2026-02-09",
+      "open": 78.5,
+      "high": 79.19999694824219,
+      "low": 78.26000213623047,
+      "close": 79.02999877929688,
+      "volume": 18500400
     }
   ],
   "fundamental": {
@@ -6277,43 +6285,43 @@
   },
   "technical": {
     "close": 79.02999877929688,
-    "sma_20": 73.80800018310546,
-    "sma_50": 71.60303359985352,
-    "sma_200": 69.42044506072999,
-    "trend_alignment": 0.6875675793428093,
+    "sma_20": 74.23450012207032,
+    "sma_50": 71.73620010375977,
+    "sma_200": 69.46078727722167,
+    "trend_alignment": 0.6858116413842354,
     "rsi": 81.89642446565202,
     "rsi_score": 0.6379284893130404,
-    "macd_histogram": 0.6440276727099605,
-    "macd_line": 2.1450359988061933,
-    "macd_histogram_pct": 0.8149154531920271,
-    "bb_position": 0.9471078872843447,
-    "bb_upper": 79.64775244950913,
-    "bb_lower": 67.9682479167018,
-    "bb_width": 0.15824171504216894,
-    "hist_volatility": 0.14595213345745367,
-    "volume_ratio": 0.9488751968873463,
-    "avg_volume_20d": 19497190.0,
+    "macd_histogram": 0.5798871667276617,
+    "macd_line": 2.22586728450581,
+    "macd_histogram_pct": 0.7337557581736571,
+    "bb_position": 0.8953972960102259,
+    "bb_upper": 80.2986521858499,
+    "bb_lower": 68.17034805829073,
+    "bb_width": 0.16337826896679494,
+    "hist_volatility": 0.14587690462744823,
+    "volume_ratio": 0.9539689018018536,
+    "avg_volume_20d": 19393085.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 97.43450953726581,
-    "stoch_d": 95.17757184813053,
-    "trend_score": 68.75675793428093,
+    "stoch_k": 97.99056257584962,
+    "stoch_d": 96.83057179838458,
+    "trend_score": 68.58116413842355,
     "rsi_abs_score": 26.207151068695964,
-    "macd_abs_score": 69.7237317978804,
-    "momentum_score": 47.965441433288184,
-    "volatility_score": 58.5820749696085,
+    "macd_abs_score": 68.50633637260486,
+    "momentum_score": 47.356743720650414,
+    "volatility_score": 58.1258034227926,
     "volume_score": 50.0,
-    "technical_score": 56.733074804192434,
+    "technical_score": 56.406533042280714,
     "tech_data_completeness": 1.0
   },
   "sentiment": {
-    "sentiment_compound": 0.09549749384771067,
-    "sentiment_pos": 0.0917,
+    "sentiment_compound": 0.07164241079516966,
+    "sentiment_pos": 0.08285000000000001,
     "sentiment_neg": 0.04095,
-    "sentiment_neu": 0.8674,
+    "sentiment_neu": 0.87625,
     "news_count": 20.0,
     "sentiment_confidence": 1.0,
-    "sentiment_score": 54.77
+    "sentiment_score": 53.58
   },
   "analyst": {
     "revision_momentum": 0.0,
@@ -6333,9 +6341,9 @@
     "quality_score": 88.404,
     "growth_score": 68.91,
     "safety_score": 31.20710969631832,
-    "trend_score": 68.75675793428093,
-    "momentum_score": 47.965441433288184,
-    "volatility_score": 58.5820749696085,
+    "trend_score": 68.58116413842355,
+    "momentum_score": 47.356743720650414,
+    "volatility_score": 58.1258034227926,
     "volume_score": 50.0,
     "analyst_score": 53.14012781222321,
     "pe_score": 49.5778125,
@@ -6350,25 +6358,26 @@
     "debt_equity_score": 32.53816666666667,
     "fcf_yield_score": 33.46171939263664,
     "current_ratio_score": 54.706,
+    "cyclical_risk_score": 50.0,
     "earnings_visibility": 77.0351,
     "valuation_margin": 40.045808574999995,
-    "catalyst_timeline": 56.66923271797923,
-    "downside_control": 47.08237769988902,
-    "composite_score": 57.12932655408886,
+    "catalyst_timeline": 56.59080356712971,
+    "downside_control": 47.013936967866634,
+    "composite_score": 57.071440377417495,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 61.294129085097,
-    "technical_score": 56.733074804192434,
-    "sentiment_score": 54.77,
+    "technical_score": 56.406533042280714,
+    "sentiment_score": 53.58,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 189,
-    "percentile": 0.6377649325626205,
+    "rank": 190,
+    "percentile": 0.6358381502890174,
     "tier": "hold",
     "tier_raw": "buy",
     "tier_label": "Hold",
@@ -6379,24 +6388,52 @@
   },
   "headlines": [
     {
+      "title": "Coca-Cola (KO) Q4 Earnings Report Preview: What To Look For",
+      "url": "/news/303862/coca-cola-ko-q4-earnings-report-preview-what-to-look-for",
+      "publisher": "StockStory",
+      "date": "2026-02-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock market today: Dow, S&P 500, Nasdaq futures rise with Wall Street looking to continue Dow 50,000 rally",
+      "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-rise-with-wall-street-looking-to-continue-dow-50000-rally-001401347.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jobs, Consumer Prices, Coca-Cola, CVS, Ford, McDonald's, and More to Watch This Week",
+      "url": "https://www.barrons.com/articles/jobs-report-consumer-prices-coca-cola-cvs-ford-mcdonalds-earnings-7c16ca85?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Inflation, Earnings and Other Key Things to Watch this Week",
+      "url": "https://finance.yahoo.com/m/681475e1-1f2b-31b8-bb9a-d2b914788fbc/inflation%2C-earnings-and-other.html",
+      "publisher": "Barchart",
+      "date": "2026-02-09",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Consumer Staples Are Massively Outperforming the Market-Here's Why",
       "url": "/news/303818/consumer-staples-are-massively-outperforming-the-market-heres-why",
       "publisher": "MarketBeat",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "neutral"
     },
     {
       "title": "Dow 50,000 sets table for inflation data, delayed January jobs report: What to watch this week",
       "url": "https://finance.yahoo.com/news/dow-50000-sets-table-for-inflation-data-delayed-january-jobs-report-what-to-watch-this-week-123826626.html",
       "publisher": "Yahoo Finance",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "negative"
     },
     {
       "title": "What to Expect in Markets This Week: January Jobs Report, Inflation and Retail Sales Data; Earnings From Cisco, Coca-Cola, McDonalds",
       "url": "https://finance.yahoo.com/m/a9ca561d-8175-34ea-a04c-40cec25e75cb/what-to-expect-in-markets.html",
       "publisher": "Investopedia",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "neutral"
     },
     {
@@ -6489,34 +6526,6 @@
       "publisher": "Insider Monkey",
       "date": "2026-02-05",
       "sentiment": "neutral"
-    },
-    {
-      "title": "PepsiCo's Productivity Strategy: A Catalyst for EPS Expansion?",
-      "url": "/news/301967/pepsicos-productivity-strategy-a-catalyst-for-eps-expansion",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Minute Maid is discontinuing frozen juices after 80 years",
-      "url": "https://finance.yahoo.com/m/b6efd575-8188-39bc-a874-d9a4cd6cee99/minute-maid-is-discontinuing.html",
-      "publisher": "USA TODAY",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Pepsi Pops as Investors Take Notice of Key Strategic Initiatives",
-      "url": "/news/301753/pepsi-pops-as-investors-take-notice-of-key-strategic-initiatives",
-      "publisher": "MarketBeat",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Why Mid Cap Dividend Stocks Are Gaining an Edge Over Large Caps This Year",
-      "url": "https://finance.yahoo.com/m/cf0e32d6-82eb-3375-8e40-0291e3d92714/why-mid-cap-dividend-stocks.html",
-      "publisher": "24/7 Wall St.",
-      "date": "2026-02-05",
-      "sentiment": "positive"
     }
   ]
 }

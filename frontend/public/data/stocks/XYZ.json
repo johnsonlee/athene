@@ -6225,6 +6225,14 @@
       "low": 54.810001373291016,
       "close": 55.970001220703125,
       "volume": 8969500
+    },
+    {
+      "date": "2026-02-09",
+      "open": 55.04999923706055,
+      "high": 56.41999816894531,
+      "low": 54.810001373291016,
+      "close": 55.970001220703125,
+      "volume": 8969500
     }
   ],
   "fundamental": {
@@ -6277,43 +6285,43 @@
   },
   "technical": {
     "close": 55.970001220703125,
-    "sma_20": 62.49000053405762,
-    "sma_50": 64.01120040893555,
-    "sma_200": 68.08630001068113,
-    "trend_alignment": 0.25423499071236966,
-    "rsi": 34.30198429155749,
-    "rsi_score": -0.31396031416885023,
-    "macd_histogram": -0.9893704172913753,
-    "macd_line": -2.7305672859345336,
-    "macd_histogram_pct": -1.767679820820533,
-    "bb_position": 0.14125891360834905,
-    "bb_upper": 71.57733337755073,
-    "bb_lower": 53.40266769056451,
-    "bb_width": 0.2908411830958596,
-    "hist_volatility": 0.491727125164728,
-    "volume_ratio": 1.244269900931451,
-    "avg_volume_20d": 7208645.0,
+    "sma_20": 61.775500488281246,
+    "sma_50": 63.830000457763674,
+    "sma_200": 68.07865001678465,
+    "trend_alignment": 0.25521269371675,
+    "rsi": 34.30198429155748,
+    "rsi_score": -0.3139603141688504,
+    "macd_histogram": -0.8387470027322417,
+    "macd_line": -2.7896306220584606,
+    "macd_histogram_pct": -1.498565275038786,
+    "bb_position": 0.16848890202126546,
+    "bb_upper": 70.5316165021568,
+    "bb_lower": 53.019384474405705,
+    "bb_width": 0.2834818316214717,
+    "hist_volatility": 0.48738513404541245,
+    "volume_ratio": 1.2117482638408077,
+    "avg_volume_20d": 7402115.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 12.165298236715486,
-    "stoch_d": 11.113593689750545,
-    "trend_score": 25.423499071236964,
-    "rsi_abs_score": 55.162381149868985,
-    "macd_abs_score": 20.0,
-    "momentum_score": 37.581190574934496,
-    "volatility_score": 26.081277744399248,
+    "stoch_k": 18.14406027432001,
+    "stoch_d": 14.202996899066074,
+    "trend_score": 25.521269371674997,
+    "rsi_abs_score": 55.16238114986898,
+    "macd_abs_score": 20.02152087441821,
+    "momentum_score": 37.591951012143596,
+    "volatility_score": 26.228905442455975,
     "volume_score": 50.0,
-    "technical_score": 34.11766244273129,
+    "technical_score": 34.17974720363677,
     "tech_data_completeness": 1.0
   },
   "sentiment": {
-    "sentiment_compound": -0.08527519217629811,
-    "sentiment_pos": 0.0711,
-    "sentiment_neg": 0.14125000000000001,
-    "sentiment_neu": 0.78765,
+    "sentiment_compound": -0.1306150010637735,
+    "sentiment_pos": 0.0772,
+    "sentiment_neg": 0.16055,
+    "sentiment_neu": 0.7622500000000001,
     "news_count": 20.0,
     "sentiment_confidence": 1.0,
-    "sentiment_score": 45.74
+    "sentiment_score": 43.47
   },
   "analyst": {
     "revision_momentum": 0.07692307692307693,
@@ -6333,9 +6341,9 @@
     "quality_score": 63.27612755357143,
     "growth_score": 68.875,
     "safety_score": 55.7783,
-    "trend_score": 25.423499071236964,
-    "momentum_score": 37.581190574934496,
-    "volatility_score": 26.081277744399248,
+    "trend_score": 25.521269371674997,
+    "momentum_score": 37.591951012143596,
+    "volatility_score": 26.228905442455975,
     "volume_score": 50.0,
     "analyst_score": 70.10307012273059,
     "pe_score": 53.47686,
@@ -6350,18 +6358,19 @@
     "debt_equity_score": 56.3951,
     "fcf_yield_score": 35.887857486478744,
     "current_ratio_score": 80.91499999999999,
+    "cyclical_risk_score": 50.0,
     "earnings_visibility": 57.19566913303571,
     "valuation_margin": 54.63248556,
-    "catalyst_timeline": 41.380775976890206,
-    "downside_control": 42.12693666165988,
-    "composite_score": 47.875455425304274,
+    "catalyst_timeline": 41.39162905065491,
+    "downside_control": 42.1490808163684,
+    "composite_score": 47.87013804218257,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 62.44598623273809,
-    "technical_score": 34.11766244273129,
-    "sentiment_score": 45.74,
+    "technical_score": 34.17974720363677,
+    "sentiment_score": 43.47,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6378,6 +6387,27 @@
     "industry": "Transaction & Payment Processing Services"
   },
   "headlines": [
+    {
+      "title": "Jack Dorseys Block looking to cut up to 10% of workforce in latest efficiency push: Bloomberg",
+      "url": "https://finance.yahoo.com/m/e8eba368-6c16-3d78-82b4-505af9cd61c9/jack-dorsey%E2%80%99s-block-looking.html",
+      "publisher": "The Block",
+      "date": "2026-02-09",
+      "sentiment": "negative"
+    },
+    {
+      "title": "How crypto miners are decoupling from bitcoin for AI",
+      "url": "https://finance.yahoo.com/video/crypto-miners-decoupling-bitcoin-ai-190012481.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Block weighs cutting up to 10% of jobs: Bloomberg",
+      "url": "https://finance.yahoo.com/m/8bbb09ee-d553-33a6-9117-96d8a8c58ac5/block-weighs-cutting-up-to.html",
+      "publisher": "CoinDesk",
+      "date": "2026-02-09",
+      "sentiment": "negative"
+    },
     {
       "title": "Dorseys Block cutting up to 10% of staff, Bloomberg News reports",
       "url": "https://finance.yahoo.com/news/dorsey-block-cutting-10-staff-221923601.html",
@@ -6496,27 +6526,6 @@
       "publisher": "Business Wire",
       "date": "2026-01-29",
       "sentiment": "negative"
-    },
-    {
-      "title": "7 Leaves Cafe Plans Expansion, Chooses Square as its Commerce Technology Partner",
-      "url": "https://www.businesswire.com/news/home/20260129598503/en/",
-      "publisher": "Business Wire",
-      "date": "2026-01-29",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Piper Sandler Maintains an Underweight Rating on Block, Inc. (XYZ)",
-      "url": "/news/291396/piper-sandler-maintains-an-underweight-rating-on-block-inc-xyz",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-29",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Block's Square Renews Corner Store Lease in San Francisco",
-      "url": "/news/290428/blocks-square-renews-corner-store-lease-in-san-francisco",
-      "publisher": "Zacks",
-      "date": "2026-01-28",
-      "sentiment": "neutral"
     }
   ]
 }

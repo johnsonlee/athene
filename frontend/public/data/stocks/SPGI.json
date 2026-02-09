@@ -6225,6 +6225,14 @@
       "low": 436.5299987792969,
       "close": 439.2799987792969,
       "volume": 4337100
+    },
+    {
+      "date": "2026-02-09",
+      "open": 452.1600036621094,
+      "high": 461.510009765625,
+      "low": 436.5299987792969,
+      "close": 439.2799987792969,
+      "volume": 4337100
     }
   ],
   "fundamental": {
@@ -6277,43 +6285,43 @@
   },
   "technical": {
     "close": 439.2799987792969,
-    "sma_20": 514.2559875488281,
-    "sma_50": 513.0475946044921,
-    "sma_200": 513.116356048584,
-    "trend_alignment": 0.2843726087857924,
+    "sma_20": 508.9959884643555,
+    "sma_50": 511.9209948730468,
+    "sma_200": 512.9198109436035,
+    "trend_alignment": 0.28495128247764834,
     "rsi": 19.542749203501355,
     "rsi_score": -0.6091450159299729,
-    "macd_histogram": -11.774541684408668,
-    "macd_line": -18.79415088862737,
-    "macd_histogram_pct": -2.680418347552499,
-    "bb_position": 0.0026020148139060386,
-    "bb_upper": 589.6241947013763,
-    "bb_lower": 438.88778039627994,
-    "bb_width": 0.2931155260312532,
-    "hist_volatility": 0.4627166083862374,
-    "volume_ratio": 1.7666287171361479,
-    "avg_volume_20d": 2455015.0,
+    "macd_histogram": -11.235096661788821,
+    "macd_line": -21.06348003145473,
+    "macd_histogram_pct": -2.5576162568315706,
+    "bb_position": 0.06945781342726227,
+    "bb_upper": 589.9590065602378,
+    "bb_lower": 428.0329703684732,
+    "bb_width": 0.3181283150782712,
+    "hist_volatility": 0.4610371230443383,
+    "volume_ratio": 1.655283752297097,
+    "avg_volume_20d": 2620155.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 5.521639543095877,
-    "stoch_d": 8.757730026180289,
-    "trend_score": 28.43726087857924,
+    "stoch_k": 2.5908755654087035,
+    "stoch_d": 6.077217777452119,
+    "trend_score": 28.495128247764832,
     "rsi_abs_score": 39.54274920350136,
     "macd_abs_score": 20.0,
     "momentum_score": 29.77137460175068,
-    "volatility_score": 27.06763531486793,
+    "volatility_score": 27.124737816492498,
     "volume_score": 50.0,
-    "technical_score": 32.87611770707256,
+    "technical_score": 32.90489841815315,
     "tech_data_completeness": 1.0
   },
   "sentiment": {
-    "sentiment_compound": -0.0038151309454231624,
+    "sentiment_compound": -0.01723068323317946,
     "sentiment_pos": 0.071,
-    "sentiment_neg": 0.03945,
-    "sentiment_neu": 0.8895500000000001,
+    "sentiment_neg": 0.0462,
+    "sentiment_neu": 0.8827999999999999,
     "news_count": 20.0,
     "sentiment_confidence": 1.0,
-    "sentiment_score": 49.81
+    "sentiment_score": 49.14
   },
   "analyst": {
     "revision_momentum": 0.0,
@@ -6333,9 +6341,9 @@
     "quality_score": 72.9196,
     "growth_score": 71.29214285714286,
     "safety_score": 44.775164912894965,
-    "trend_score": 28.43726087857924,
+    "trend_score": 28.495128247764832,
     "momentum_score": 29.77137460175068,
-    "volatility_score": 27.06763531486793,
+    "volatility_score": 27.124737816492498,
     "volume_score": 50.0,
     "analyst_score": 70.34417580040065,
     "pe_score": 25.8314184,
@@ -6350,18 +6358,19 @@
     "debt_equity_score": 56.821600000000004,
     "fcf_yield_score": 58.48222982578993,
     "current_ratio_score": 43.44,
+    "cyclical_risk_score": 50.0,
     "earnings_visibility": 69.91076142857142,
     "valuation_margin": 28.662676078095238,
-    "catalyst_timeline": 40.43528112807306,
-    "downside_control": 40.74342003416443,
-    "composite_score": 43.727153189929766,
+    "catalyst_timeline": 40.441067864991616,
+    "downside_control": 40.75198540940812,
+    "composite_score": 43.716658764672204,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 56.08367876194407,
-    "technical_score": 32.87611770707256,
-    "sentiment_score": 49.81,
+    "technical_score": 32.90489841815315,
+    "sentiment_score": 49.14,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6379,10 +6388,24 @@
   },
   "headlines": [
     {
+      "title": "S&P Global (SPGI) Reports Earnings Tomorrow: What To Expect",
+      "url": "/news/303860/sp-global-spgi-reports-earnings-tomorrow-what-to-expect",
+      "publisher": "StockStory",
+      "date": "2026-02-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Goldman Traders Warn Stock Selling Isnt Over in Choppy Market",
+      "url": "https://finance.yahoo.com/news/goldman-traders-warn-stock-selling-160000921.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-09",
+      "sentiment": "negative"
+    },
+    {
       "title": "The Software Stock Panic Will Be a Buying OpportunityEventually",
       "url": "https://finance.yahoo.com/m/5a3b302c-e67d-3dcf-89b3-e36e6b2b16c6/the-software-stock-panic-will.html",
       "publisher": "Barrons.com",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "negative"
     },
     {
@@ -6503,20 +6526,6 @@
       "publisher": "Motley Fool",
       "date": "2026-02-03",
       "sentiment": "positive"
-    },
-    {
-      "title": "CleanSpark Gears Up to Report Q1 Earnings: What's in the Offing?",
-      "url": "/news/298000/cleanspark-gears-up-to-report-q1-earnings-whats-in-the-offing",
-      "publisher": "Zacks",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Analyst Report: S&P Global Inc.",
-      "url": "https://finance.yahoo.com/m/ecfe7769-a915-3fc0-9600-ea4e8f6bbcf6/analyst-report%3A-s%26p-global.html",
-      "publisher": "Morningstar Research",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
     }
   ]
 }

@@ -6225,11 +6225,19 @@
       "low": 200.30999755859375,
       "close": 210.32000732421875,
       "volume": 179021600
+    },
+    {
+      "date": "2026-02-09",
+      "open": 202.6999969482422,
+      "high": 211.44000244140625,
+      "low": 200.30999755859375,
+      "close": 210.32000732421875,
+      "volume": 179021600
     }
   ],
   "fundamental": {
     "pe": 29.333334,
-    "forward_pe": 22.605234,
+    "forward_pe": 22.636864,
     "pb": 5.490524,
     "ps": 3.149244,
     "roe": 0.22286,
@@ -6257,10 +6265,10 @@
     "fcf_yield": 0.010538336196448873,
     "fcf_debt_ratio": 0.1332597325623777,
     "pe_score": 41.666664999999995,
-    "forward_pe_score": 54.1382235,
+    "forward_pe_score": 54.067056,
     "pb_score": 28.528428,
     "ps_score": 59.00504,
-    "value_score": 51.6033095,
+    "value_score": 51.579587000000004,
     "roe_score": 80.7432,
     "roa_score": 59.63999999999999,
     "margin_score": 56.66857,
@@ -6272,48 +6280,48 @@
     "fcf_yield_score": 38.78194683037406,
     "current_ratio_score": 47.346,
     "safety_score": 47.4375,
-    "fundamental_score": 58.695807375,
+    "fundamental_score": 58.689876749999996,
     "fund_data_completeness": 1.0
   },
   "technical": {
     "close": 210.32000732421875,
-    "sma_20": 235.19349975585936,
-    "sma_50": 232.91440002441408,
-    "sma_200": 223.33600021362304,
-    "trend_alignment": 0.39581413302465723,
+    "sma_20": 233.38600006103513,
+    "sma_50": 232.53760009765625,
+    "sma_200": 223.45490028381346,
+    "trend_alignment": 0.3955690652821927,
     "rsi": 28.63392057967107,
     "rsi_score": -0.4273215884065786,
-    "macd_histogram": -3.6039892713051405,
-    "macd_line": -3.7593856089495716,
-    "macd_histogram_pct": -1.7135741469186105,
-    "bb_position": -0.11391929304448667,
-    "bb_upper": 255.45144954946375,
-    "bb_lower": 214.93554996225498,
-    "bb_width": 0.17226623877473635,
-    "hist_volatility": 0.3348664367238747,
-    "volume_ratio": 3.0470994092404142,
-    "avg_volume_20d": 58751480.0,
+    "macd_histogram": -3.8432182273402207,
+    "macd_line": -4.959419121819707,
+    "macd_histogram_pct": -1.8273193673941388,
+    "bb_position": -0.015715197195869272,
+    "bb_upper": 255.74911138898761,
+    "bb_lower": 211.02288873308265,
+    "bb_width": 0.19164055532126245,
+    "hist_volatility": 0.3357301793269085,
+    "volume_ratio": 2.716186533679608,
+    "avg_volume_20d": 65909170.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 16.868231532146574,
-    "stoch_d": 22.577128629714196,
-    "trend_score": 39.58141330246573,
+    "stoch_k": 21.087022347198356,
+    "stoch_d": 19.179766122871975,
+    "trend_score": 39.55690652821927,
     "rsi_abs_score": 48.63392057967107,
     "macd_abs_score": 20.0,
     "momentum_score": 34.316960289835535,
-    "volatility_score": 41.02027376258749,
+    "volatility_score": 39.22763985922823,
     "volume_score": 50.0,
-    "technical_score": 40.37356683020788,
+    "technical_score": 40.00768801726209,
     "tech_data_completeness": 1.0
   },
   "sentiment": {
-    "sentiment_compound": -0.13404652963761274,
-    "sentiment_pos": 0.06805,
-    "sentiment_neg": 0.12655,
-    "sentiment_neu": 0.80535,
+    "sentiment_compound": -0.019039260805464583,
+    "sentiment_pos": 0.09709999999999999,
+    "sentiment_neg": 0.10769999999999999,
+    "sentiment_neu": 0.79515,
     "news_count": 20.0,
     "sentiment_confidence": 1.0,
-    "sentiment_score": 43.3
+    "sentiment_score": 49.05
   },
   "analyst": {
     "revision_momentum": -0.023809523809523808,
@@ -6329,17 +6337,17 @@
     "analyst_score": 68.68601539205565
   },
   "ranking": {
-    "value_score": 51.6033095,
+    "value_score": 51.579587000000004,
     "quality_score": 70.1916,
     "growth_score": 61.0,
     "safety_score": 47.4375,
-    "trend_score": 39.58141330246573,
+    "trend_score": 39.55690652821927,
     "momentum_score": 34.316960289835535,
-    "volatility_score": 41.02027376258749,
+    "volatility_score": 39.22763985922823,
     "volume_score": 50.0,
     "analyst_score": 68.68601539205565,
     "pe_score": 41.666664999999995,
-    "forward_pe_score": 54.1382235,
+    "forward_pe_score": 54.067056,
     "pb_score": 28.528428,
     "ps_score": 59.00504,
     "roe_score": 80.7432,
@@ -6350,25 +6358,26 @@
     "debt_equity_score": 73.2825,
     "fcf_yield_score": 38.78194683037406,
     "current_ratio_score": 47.346,
+    "cyclical_risk_score": 50.0,
     "earnings_visibility": 70.54774,
-    "valuation_margin": 46.567992849999996,
-    "catalyst_timeline": 48.11043889843569,
-    "downside_control": 49.57766606438812,
-    "composite_score": 54.586133026881974,
+    "valuation_margin": 46.560876099999994,
+    "catalyst_timeline": 48.10798822101104,
+    "downside_control": 49.30877097888423,
+    "composite_score": 54.49850877841849,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 58.695807375,
-    "technical_score": 40.37356683020788,
-    "sentiment_score": 43.3,
+    "fundamental_score": 58.689876749999996,
+    "technical_score": 40.00768801726209,
+    "sentiment_score": 49.05,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 285,
-    "percentile": 0.4527938342967245,
+    "rank": 282,
+    "percentile": 0.45857418111753373,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -6379,80 +6388,122 @@
   },
   "headlines": [
     {
+      "title": "AI spending spree threatens big tech cash flows",
+      "url": "https://www.digitimes.com/news/a20260209VL206/cash-flow-capex-google-amazon-2026.html",
+      "publisher": "DigiTimes",
+      "date": "2026-02-09",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Daniel Newman Backs Amazon As UBS Forecasts AWS Growth Doubling To 38% In 2026: 'One Of Our Best Ideas,' Says Futurum CEO",
+      "url": "/news/303848/daniel-newman-backs-amazon-as-ubs-forecasts-aws-growth-doubling-to-38-in-2026-one-of-our-best-ideas-says-futurum-ceo",
+      "publisher": "Benzinga",
+      "date": "2026-02-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Stock market today: Dow, S&P 500, Nasdaq futures rise with Wall Street looking to continue Dow 50,000 rally",
+      "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-rise-with-wall-street-looking-to-continue-dow-50000-rally-001401347.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Jim Cramer Says 'I Will Defend Amazon' After $200 Billion Spending Plan Triggers Selloff, Calls Google 'The Prize'",
+      "url": "https://finance.yahoo.com/news/jim-cramer-says-defend-amazon-213217623.html",
+      "publisher": "Benzinga",
+      "date": "2026-02-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "'Send Help' remains atop box office while 'Melania' sinks in its second weekend",
+      "url": "https://www.marketwatch.com/story/send-help-remains-atop-box-office-while-melania-sinks-in-its-second-weekend-e1daf9b2?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Amazon delivers a jaw-dropper that changes the AMZN conversation",
+      "url": "https://finance.yahoo.com/m/93e6b5e5-9b84-318f-a0d9-386bd5cbe90a/amazon-delivers-a-jaw-dropper.html",
+      "publisher": "TheStreet",
+      "date": "2026-02-09",
+      "sentiment": "positive"
+    },
+    {
       "title": "Thomson Reuters CEO Says AI Is Delivering Tangible Gains",
       "url": "https://finance.yahoo.com/news/thomson-reuters-ceo-says-ai-163138862.html",
       "publisher": "Benzinga",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "positive"
     },
     {
       "title": "Amazon is turning to AI to cut film and TV production costs",
       "url": "https://finance.yahoo.com/m/7cb96ff0-093e-384b-b8e2-bf00f371e5c1/amazon-is-turning-to-ai-to.html",
       "publisher": "Digital Trends",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "negative"
     },
     {
       "title": "AI Killed Software, Now It's Killing Jobs: January Sees Most Cuts Since 2009",
       "url": "https://finance.yahoo.com/news/ai-killed-software-now-killing-160133411.html",
       "publisher": "Benzinga",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "negative"
     },
     {
       "title": "'This probably seems overdone': Wall Street strategists weigh in on software stock sell-off",
       "url": "https://finance.yahoo.com/news/this-probably-seems-overdone-wall-street-strategists-weigh-in-on-software-stock-sell-off-160003877.html",
       "publisher": "Yahoo Finance",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "neutral"
     },
     {
       "title": "The job market was bruising in 2025. The start of 2026 doesn't look much better.",
       "url": "https://finance.yahoo.com/news/the-job-market-was-bruising-in-2025-the-start-of-2026-doesnt-look-much-better-150057009.html",
       "publisher": "Yahoo Finance",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "negative"
     },
     {
       "title": "Amazon Defends Massive AI Spending, Says New AWS Capacity Being Monetized Quickly: Andy Jassy Sees Very 'Unusual' Opportunity",
       "url": "https://finance.yahoo.com/news/amazon-defends-massive-ai-spending-143139992.html",
       "publisher": "Benzinga",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "positive"
     },
     {
       "title": "Consumer Tech News (Feb 2-6): Big Tech Earnings Take Center Stage In U.S. Markets, Anthropic Launches New AI Tool & More",
       "url": "/news/303773/consumer-tech-news-feb-2-6-big-tech-earnings-take-center-stage-in-us-markets-anthropic-launches-new-ai-tool-more",
       "publisher": "Benzinga",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "neutral"
     },
     {
       "title": "Dow 50,000 sets table for inflation data, delayed January jobs report: What to watch this week",
       "url": "https://finance.yahoo.com/news/dow-50000-sets-table-for-inflation-data-delayed-january-jobs-report-what-to-watch-this-week-123826626.html",
       "publisher": "Yahoo Finance",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "negative"
     },
     {
       "title": "Analysis-Investors chase cheaper, smaller companies as risk aversion hits tech sector",
       "url": "https://finance.yahoo.com/news/analysis-investors-chase-cheaper-smaller-110318617.html",
       "publisher": "Reuters",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "negative"
     },
     {
       "title": "5 big analyst AI moves: Microsoft stock downgraded as its time for a break",
       "url": "https://finance.yahoo.com/news/5-big-analyst-ai-moves-093503505.html",
       "publisher": "Investing.com",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "neutral"
     },
     {
       "title": "Street Calls of the Week",
       "url": "https://finance.yahoo.com/news/street-calls-week-090516424.html",
       "publisher": "Investing.com",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "neutral"
     },
     {
@@ -6475,48 +6526,6 @@
       "publisher": "Benzinga",
       "date": "2026-02-07",
       "sentiment": "positive"
-    },
-    {
-      "title": "Techs AI Push Risks a Bond Market Blowback: Credit Weekly",
-      "url": "https://finance.yahoo.com/news/tech-ai-push-risks-bond-190132451.html",
-      "publisher": "Bloomberg",
-      "date": "2026-02-07",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Her Husband Brings In $156K, But They Struggle With Groceries Due To His $700 Monthly Vices. She Calls Him An Addict, Dave Ramsey Disagrees",
-      "url": "https://finance.yahoo.com/news/her-husband-brings-156k-struggle-183131125.html",
-      "publisher": "Benzinga",
-      "date": "2026-02-07",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Amazon.com, Inc. (AMZN): A Bull Case Theory",
-      "url": "/news/303651/amazoncom-inc-amzn-a-bull-case-theory",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Bitcoin To Fall To $54K? Veteran Trader Questions Whether Strategy Investors Can Hold On",
-      "url": "https://finance.yahoo.com/news/bitcoin-fall-54k-veteran-trader-164602291.html",
-      "publisher": "Benzinga",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Peter Thiel Once Said Brilliant Thinking Is 'Rare' But Even Rarer And In 'Shorter Supply' Is This Personality Trait",
-      "url": "/news/303617/peter-thiel-once-said-brilliant-thinking-is-rare-but-even-rarer-and-in-shorter-supply-is-this-personality-trait",
-      "publisher": "Benzinga",
-      "date": "2026-02-07",
-      "sentiment": "positive"
-    },
-    {
-      "title": "The Saturday Spread: Reducing Uncertainty in an Uncertain World (AMZN, CHWY, EXPE)",
-      "url": "https://finance.yahoo.com/m/567a6fc5-4e0f-3fde-abfe-764ead759ceb/the-saturday-spread%3A-reducing.html",
-      "publisher": "Barchart",
-      "date": "2026-02-07",
-      "sentiment": "negative"
     }
   ]
 }

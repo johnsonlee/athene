@@ -6225,6 +6225,14 @@
       "low": 82.80999755859375,
       "close": 84.81999969482422,
       "volume": 23924100
+    },
+    {
+      "date": "2026-02-09",
+      "open": 83.55999755859375,
+      "high": 85.0,
+      "low": 82.80999755859375,
+      "close": 84.81999969482422,
+      "volume": 23924100
     }
   ],
   "fundamental": {
@@ -6277,43 +6285,43 @@
   },
   "technical": {
     "close": 84.81999969482422,
-    "sma_20": 77.9300006866455,
-    "sma_50": 77.29747680664062,
-    "sma_200": 69.48580879211424,
-    "trend_alignment": 0.7531679145057908,
+    "sma_20": 78.47050056457519,
+    "sma_50": 77.48057464599609,
+    "sma_200": 69.6333004951477,
+    "trend_alignment": 0.7505562304685539,
     "rsi": 72.44858219548195,
     "rsi_score": 0.44897164390963895,
-    "macd_histogram": 0.8954898517906749,
-    "macd_line": 2.1043155140476415,
-    "macd_histogram_pct": 1.0557531891211718,
-    "bb_position": 0.9539033102228262,
-    "bb_upper": 85.5197217274508,
-    "bb_lower": 70.3402796458402,
-    "bb_width": 0.19478303538898636,
-    "hist_volatility": 0.2697646039831159,
-    "volume_ratio": 1.0646778877776166,
-    "avg_volume_20d": 22470740.0,
+    "macd_histogram": 0.8461101469182295,
+    "macd_line": 2.2664633459047536,
+    "macd_histogram_pct": 0.9975361353011886,
+    "bb_position": 0.8995596429435747,
+    "bb_upper": 86.4161217532818,
+    "bb_lower": 70.52487937586858,
+    "bb_width": 0.20251231052535404,
+    "hist_volatility": 0.27029537562484807,
+    "volume_ratio": 1.0577619435432313,
+    "avg_volume_20d": 22617660.0,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 93.4188792384788,
-    "stoch_d": 87.67261146171572,
-    "trend_score": 75.31679145057907,
+    "stoch_k": 98.46771948303045,
+    "stoch_d": 92.22124365214164,
+    "trend_score": 75.05562304685539,
     "rsi_abs_score": 47.14396985265054,
-    "macd_abs_score": 73.33629783681758,
-    "momentum_score": 60.24013384473406,
-    "volatility_score": 43.99306641667964,
+    "macd_abs_score": 72.46304202951782,
+    "momentum_score": 59.80350594108418,
+    "volatility_score": 43.244354490233334,
     "volume_score": 50.0,
-    "technical_score": 59.465690871929866,
+    "technical_score": 59.106609594428534,
     "tech_data_completeness": 1.0
   },
   "sentiment": {
-    "sentiment_compound": -0.03512382386940879,
+    "sentiment_compound": 0.010642185270283561,
     "sentiment_pos": 0.06765,
-    "sentiment_neg": 0.0901,
-    "sentiment_neu": 0.8422499999999999,
+    "sentiment_neg": 0.0633,
+    "sentiment_neu": 0.86905,
     "news_count": 20.0,
     "sentiment_confidence": 1.0,
-    "sentiment_score": 48.24
+    "sentiment_score": 50.53
   },
   "analyst": {
     "revision_momentum": 0.07142857142857142,
@@ -6333,9 +6341,9 @@
     "quality_score": 77.09054999999998,
     "growth_score": 55.375,
     "safety_score": 48.30475882722497,
-    "trend_score": 75.31679145057907,
-    "momentum_score": 60.24013384473406,
-    "volatility_score": 43.99306641667964,
+    "trend_score": 75.05562304685539,
+    "momentum_score": 59.80350594108418,
+    "volatility_score": 43.244354490233334,
     "volume_score": 50.0,
     "analyst_score": 54.46741370296763,
     "pe_score": 51.33462,
@@ -6350,18 +6358,19 @@
     "debt_equity_score": 63.385999999999996,
     "fcf_yield_score": 58.97701765444996,
     "current_ratio_score": 40.620000000000005,
+    "cyclical_risk_score": 50.0,
     "earnings_visibility": 65.11083249999999,
     "valuation_margin": 58.097809840000004,
-    "catalyst_timeline": 61.94043389982808,
-    "downside_control": 49.810673786585696,
-    "composite_score": 60.76826000685587,
+    "catalyst_timeline": 61.87065426909072,
+    "downside_control": 49.69836699761875,
+    "composite_score": 60.70177974941536,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
     "fundamental_score": 61.63920829877833,
-    "technical_score": 59.465690871929866,
-    "sentiment_score": 48.24,
+    "technical_score": 59.106609594428534,
+    "sentiment_score": 50.53,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6379,17 +6388,31 @@
   },
   "headlines": [
     {
+      "title": "Stock market today: Dow, S&P 500, Nasdaq futures rise with Wall Street looking to continue Dow 50,000 rally",
+      "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-rise-with-wall-street-looking-to-continue-dow-50000-rally-001401347.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Inflation, Earnings and Other Key Things to Watch this Week",
+      "url": "https://finance.yahoo.com/m/681475e1-1f2b-31b8-bb9a-d2b914788fbc/inflation%2C-earnings-and-other.html",
+      "publisher": "Barchart",
+      "date": "2026-02-09",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Dow 50,000 sets table for inflation data, delayed January jobs report: What to watch this week",
       "url": "https://finance.yahoo.com/news/dow-50000-sets-table-for-inflation-data-delayed-january-jobs-report-what-to-watch-this-week-123826626.html",
       "publisher": "Yahoo Finance",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "negative"
     },
     {
       "title": "What to Expect in Markets This Week: January Jobs Report, Inflation and Retail Sales Data; Earnings From Cisco, Coca-Cola, McDonalds",
       "url": "https://finance.yahoo.com/m/a9ca561d-8175-34ea-a04c-40cec25e75cb/what-to-expect-in-markets.html",
       "publisher": "Investopedia",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "sentiment": "neutral"
     },
     {
@@ -6503,20 +6526,6 @@
       "publisher": "24/7 Wall St.",
       "date": "2026-02-05",
       "sentiment": "positive"
-    },
-    {
-      "title": "Fears That AI Will Kill Software Are Exaggerated but Can Still Cause Pain",
-      "url": "https://finance.yahoo.com/m/37023917-4604-3030-8029-341d065027d3/fears-that-ai-will-kill.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-04",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Cisco Just (Finally) Set New All-Time Highs. Is CSCO Stock a Buy for February 2026?",
-      "url": "https://finance.yahoo.com/m/117a3436-9a8f-3cab-a41b-c75809f12da5/cisco-just-%28finally%29-set-new.html",
-      "publisher": "Barchart",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
     }
   ]
 }
