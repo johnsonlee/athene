@@ -42,6 +42,8 @@ FACTORS = [
     "roe_score", "roa_score", "margin_score",                          # quality
     "rev_growth_score", "earn_growth_score",                           # growth
     "debt_equity_score", "fcf_yield_score", "current_ratio_score",     # safety
+    # v17: cyclical risk
+    "cyclical_risk_score",
 ]
 
 DEFAULT_HORIZONS = [5, 21]  # trading days forward

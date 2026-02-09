@@ -363,7 +363,21 @@ Four forward-looking market turn signals computed from existing collected data. 
 
 **Files**: `engine/analyzers/leading_indicators.py`, `engine/collectors/macro.py`, `engine/backtest.py`, `engine/main.py`, `frontend/src/components/indicators/LeadingIndicatorsPage.tsx`, `frontend/src/hooks/useLeadingIndicators.ts`, `frontend/src/types/index.ts`, `frontend/src/lib/dataLoader.ts`, `frontend/src/routes.tsx`, `frontend/src/components/layout/Header.tsx`, `frontend/src/lib/i18n.tsx`, `frontend/src/components/About.tsx`
 
-### v16: IC-Weighted Scoring (current)
+### v17: Cyclical Risk Analysis (current)
+
+Cyclical risk scoring for commodity/materials sectors. Addresses the fundamental blind spot where the framework treated cyclical-stock characteristics (low PE at earnings peak, high structural volatility, commodity-driven earnings swings) as positive signals instead of risk indicators.
+
+**Key changes from v16:**
+- **Materials sector breakpoints**: New `_SECTOR_OVERRIDES["Materials"]` for PE, forward PE, earnings growth, and revenue growth. Low PE (e.g., 5) now scores 55 (was 90) — recognizes that low PE in commodity stocks often signals peak earnings, not deep value. Negative earnings growth scored more neutrally (-20% → 35 vs default 10) since it's a normal cycle feature.
+- **Cyclical risk factor**: New `engine/analyzers/cyclical_risk.py` computes `cyclical_risk_score` (0-100) for cyclical sectors. Two signals: (1) Earnings direction (60%): `forward_pe / trailing_pe` ratio — ratio >1.2 means market expects earnings decline (cycle peak risk), <0.8 means earnings improving (cycle trough, safer). (2) Margin deviation (40%): current operating margin vs sector mid-cycle reference — above-normal margins signal peak cycle.
+- **DC dimension expansion for cyclical stocks**: For tickers in `CYCLICAL_SECTORS` (Materials, Energy): `DC = 0.50×safety + 0.30×volatility + 0.20×cyclical_risk`. Non-cyclical stocks retain original DC formula (0.60×safety + 0.40×volatility).
+- **Commodity-specific DC penalty**: New `TICKER_COMMODITY_RISK` mapping (like `TICKER_JURISDICTION`). CF/NTR/MOS: -8 DC points for China fertilizer export policy risk. IPI: -5 DC points for potash supply concentration risk.
+- **Cyclical sector config**: New `CYCLICAL_SECTORS` (Materials, Energy) and `CYCLICAL_MARGIN_REFS` (mid-cycle operating margin references per sector) in config.
+- **IC tracking extended**: Added `cyclical_risk_score` to the 27-factor IC tracker (was 26 factors).
+
+**Files**: `engine/analyzers/cyclical_risk.py` (new), `engine/scorer/absolute.py`, `engine/scorer/factor_model.py`, `engine/config.py`, `engine/analyzers/ic_tracker.py`, `engine/main.py`, `engine/analyze.py`, `frontend/src/components/About.tsx`, `frontend/src/lib/i18n.tsx`
+
+### v16: IC-Weighted Scoring
 
 IC-weighted scoring infrastructure that auto-activates once IC data accumulates. Fixes score distribution compression (Hold 85.7% → 64.5%) through trimmed mean aggregation, tier recalibration, sub-score debiasing, and spread amplification.
 
@@ -500,6 +514,7 @@ earningsVisibility = 0.60×quality + 0.40×growth
 valuationMargin    = value
 catalystTimeline   = 0.25×trend + 0.25×momentum + 0.20×analyst + 0.15×sentiment + 0.15×volume
 downsideControl    = 0.60×safety + 0.40×volatility
+downsideControl    = 0.50×safety + 0.30×volatility + 0.20×cyclical_risk  (cyclical sectors only)
 
 composite_score = w_EV×EV + w_VM×VM + w_CT×CT + w_DC×DC
 ```

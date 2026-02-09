@@ -220,6 +220,13 @@ _SECTOR_OVERRIDES: Dict[str, Dict[str, Breakpoints]] = {
         "pe": [(0, 15), (5, 72), (10, 62), (18, 50), (30, 35), (50, 18)],
         "forward_pe": [(0, 15), (5, 70), (10, 60), (16, 48), (28, 32), (45, 15)],
     },
+    # -- Materials: cyclical commodity earnings — low PE often signals peak, not value --
+    "Materials": {
+        "pe": [(0, 15), (5, 55), (10, 50), (18, 45), (30, 35), (50, 20)],
+        "forward_pe": [(0, 15), (5, 52), (10, 48), (16, 42), (28, 32), (45, 18)],
+        "earnings_growth": [(-0.50, 20), (-0.20, 35), (0, 45), (0.10, 60), (0.30, 78), (0.50, 88)],
+        "revenue_growth": [(-0.20, 15), (-0.05, 35), (0, 45), (0.08, 60), (0.20, 78), (0.35, 88)],
+    },
 }
 
 # Mapping from various sector name variants to canonical override keys.
@@ -233,6 +240,8 @@ _SECTOR_ALIASES: Dict[str, str] = {
     "Utilities": "Utilities",
     "Real Estate": "Real Estate",
     "Energy": "Energy",
+    "Basic Materials": "Materials",
+    "Materials": "Materials",
 }
 
 

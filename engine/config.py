@@ -170,6 +170,43 @@ BATCH_SIZE = 50                  # tickers per yf.download batch
 # ---------- Z-score (legacy, kept for reference) ----------
 WINSORIZE_LIMITS = (0.02, 0.02)  # 2% tails
 
+# ---------- Cyclical sector configuration (v17) ----------
+# Sectors where earnings are structurally cyclical (commodity-driven).
+# These sectors receive cyclical risk scoring instead of neutral (50).
+CYCLICAL_SECTORS = {
+    "Basic Materials",  # yfinance sector name
+    "Materials",        # alias
+    "Energy",
+}
+
+# Reference operating margins by sector — the "mid-cycle" normal.
+# Current margin relative to this reference indicates cycle position.
+CYCLICAL_MARGIN_REFS = {
+    "Basic Materials": 0.15,  # Materials mid-cycle ~15% operating margin
+    "Materials": 0.15,
+    "Energy": 0.12,           # Energy mid-cycle ~12% operating margin
+}
+
+# Downside Control sub-composition (v17: adds cyclical risk)
+DC_WEIGHT_SAFETY_V17 = 0.50
+DC_WEIGHT_VOLATILITY_V17 = 0.30
+DC_WEIGHT_CYCLICAL_RISK = 0.20
+
+# ---------- Commodity-specific risk (DC penalty, like jurisdiction risk) ----------
+# Ticker-level adjustments for commodity exposure risks that the quantitative
+# model cannot capture (e.g., policy risk, sanction risk).
+COMMODITY_RISK = {
+    "FERTILIZER_CN_EXPORT": {"dc_penalty": -8, "label": "China fertilizer export policy risk"},
+    "FERTILIZER_POTASH": {"dc_penalty": -5, "label": "Potash supply concentration risk"},
+}
+
+TICKER_COMMODITY_RISK = {
+    "CF": "FERTILIZER_CN_EXPORT",
+    "NTR": "FERTILIZER_CN_EXPORT",
+    "MOS": "FERTILIZER_CN_EXPORT",
+    "IPI": "FERTILIZER_POTASH",
+}
+
 # ---------- Jurisdiction risk (DC penalty) ----------
 # Two-layer structure: risk type defines penalty, ticker mapping classifies stocks.
 JURISDICTION_RISK = {
