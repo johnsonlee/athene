@@ -39,6 +39,11 @@ from engine.config import (
     CT_WEIGHT_VOLUME,
     DC_WEIGHT_SAFETY,
     DC_WEIGHT_VOLATILITY,
+    # v17: cyclical risk in DC
+    DC_WEIGHT_SAFETY_V17,
+    DC_WEIGHT_VOLATILITY_V17,
+    DC_WEIGHT_CYCLICAL_RISK,
+    CYCLICAL_SECTORS,
     # Legacy weights for backward-compat factor scores
     WEIGHT_FUNDAMENTAL,
     WEIGHT_TECHNICAL,
@@ -54,6 +59,9 @@ from engine.config import (
     # Jurisdiction risk
     JURISDICTION_RISK,
     TICKER_JURISDICTION,
+    # v17: commodity risk
+    COMMODITY_RISK,
+    TICKER_COMMODITY_RISK,
 )
 from engine.scorer.ic_weights import load_ic_weights, ic_weighted_avg, log_ic_status
 from engine.utils.logger import get_logger
@@ -84,6 +92,8 @@ def compute_composite(
     sent_df: pd.DataFrame,
     analyst_scored: pd.DataFrame | None = None,
     weight_overrides: dict[str, float] | None = None,
+    cyclical_risk: pd.Series | None = None,
+    sectors: pd.Series | None = None,
 ) -> pd.DataFrame:
     """Compute composite score via four qualitative dimensions.
 
@@ -172,6 +182,33 @@ def compute_composite(
     dc = ic_weighted_avg(dc_components, ic_w)
     log_ic_status("DC", list(dc_components.keys()), ic_w)
 
+    # --- v17: Cyclical risk — blend into DC for cyclical-sector tickers ---
+    if cyclical_risk is not None:
+        cyc = cyclical_risk.reindex(result.index).fillna(NEUTRAL)
+        result["cyclical_risk_score"] = cyc
+
+        # Build a sector lookup
+        _sec_map: dict[str, str] = {}
+        if sectors is not None:
+            _sec_map = sectors.to_dict() if isinstance(sectors, pd.Series) else sectors
+
+        # For cyclical tickers: DC = 0.50*safety + 0.30*volatility + 0.20*cyclical_risk
+        # For non-cyclical: DC stays as is (safety + volatility only)
+        _n_cycl = 0
+        for ticker in result.index:
+            sec = _sec_map.get(ticker)
+            if sec and sec in CYCLICAL_SECTORS:
+                dc.at[ticker] = (
+                    DC_WEIGHT_SAFETY_V17 * safety.at[ticker]
+                    + DC_WEIGHT_VOLATILITY_V17 * volatility.at[ticker]
+                    + DC_WEIGHT_CYCLICAL_RISK * cyc.at[ticker]
+                )
+                _n_cycl += 1
+        if _n_cycl:
+            log.info(f"Cyclical risk blended into DC for {_n_cycl} ticker(s)")
+    else:
+        result["cyclical_risk_score"] = pd.Series(NEUTRAL, index=result.index)
+
     # --- Jurisdiction risk: apply DC penalty for high-risk domiciles ---
     _n_penalized = 0
     for ticker in result.index:
@@ -182,6 +219,17 @@ def compute_composite(
             _n_penalized += 1
     if _n_penalized:
         log.info(f"Jurisdiction DC penalty applied to {_n_penalized} ticker(s)")
+
+    # --- v17: Commodity risk: apply DC penalty for commodity-specific risks ---
+    _n_commodity = 0
+    for ticker in result.index:
+        com_key = TICKER_COMMODITY_RISK.get(ticker)
+        if com_key and com_key in COMMODITY_RISK:
+            penalty_pts = COMMODITY_RISK[com_key]["dc_penalty"]
+            dc.at[ticker] = max(0.0, dc.at[ticker] + penalty_pts)
+            _n_commodity += 1
+    if _n_commodity:
+        log.info(f"Commodity DC penalty applied to {_n_commodity} ticker(s)")
 
     result["earnings_visibility"] = ev
     result["valuation_margin"] = vm

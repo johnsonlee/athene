@@ -35,6 +35,7 @@ from engine.analyzers.technical import analyze_technical, compute_technical_subs
 from engine.analyzers.sentiment import analyze_sentiment, annotate_headlines
 from engine.analyzers.analyst import analyze_analyst, compute_analyst_subscores
 from engine.analyzers.macro import detect_regime
+from engine.analyzers.cyclical_risk import compute_cyclical_risk
 from engine.scorer.factor_model import compute_composite
 from engine.scorer.ranker import assign_tiers
 from engine.config import (
@@ -416,9 +417,14 @@ def run(collected_dir: str = COLLECTED_DIR) -> None:
     analyst_df = analyze_analyst(analyst_raw)
     analyst_scored = compute_analyst_subscores(analyst_df)
 
+    # v17: Cyclical risk scoring
+    cyclical_risk = compute_cyclical_risk(fund_df, sectors=sector_map)
+
     regime_weights = regime_info.get("weights")
     composite = compute_composite(fund_scored, tech_scored, sent_df, analyst_scored,
-                                  weight_overrides=regime_weights)
+                                  weight_overrides=regime_weights,
+                                  cyclical_risk=cyclical_risk,
+                                  sectors=sector_map)
 
     composite = _apply_ema_smoothing(composite)
 
