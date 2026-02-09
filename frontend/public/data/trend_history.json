@@ -33443,6 +33443,98 @@
   },
   "2026-02-06": {
     "Information Technology": {
+      "rs_score": 37.0,
+      "momentum_score": 59.8
+    },
+    "Financials": {
+      "rs_score": 45.2,
+      "momentum_score": 62.1
+    },
+    "Energy": {
+      "rs_score": 92.9,
+      "momentum_score": 60.9
+    },
+    "Health Care": {
+      "rs_score": 60.8,
+      "momentum_score": 70.9
+    },
+    "Consumer Discretionary": {
+      "rs_score": 40.1,
+      "momentum_score": 51.6
+    },
+    "Consumer Staples": {
+      "rs_score": 78.7,
+      "momentum_score": 49.3
+    },
+    "Real Estate": {
+      "rs_score": 53.8,
+      "momentum_score": 60.6
+    },
+    "Industrials": {
+      "rs_score": 76.3,
+      "momentum_score": 72.8
+    },
+    "Utilities": {
+      "rs_score": 46.6,
+      "momentum_score": 62.1
+    },
+    "Materials": {
+      "rs_score": 83.4,
+      "momentum_score": 71.7
+    },
+    "Communication Services": {
+      "rs_score": 47.5,
+      "momentum_score": 64.7
+    }
+  },
+  "2026-02-08": {
+    "Information Technology": {
+      "rs_score": 40.0,
+      "momentum_score": 63.8
+    },
+    "Financials": {
+      "rs_score": 43.7,
+      "momentum_score": 65.2
+    },
+    "Energy": {
+      "rs_score": 89.5,
+      "momentum_score": 59.8
+    },
+    "Health Care": {
+      "rs_score": 61.0,
+      "momentum_score": 71.1
+    },
+    "Consumer Discretionary": {
+      "rs_score": 39.2,
+      "momentum_score": 59.4
+    },
+    "Consumer Staples": {
+      "rs_score": 76.7,
+      "momentum_score": 49.9
+    },
+    "Real Estate": {
+      "rs_score": 53.1,
+      "momentum_score": 64.2
+    },
+    "Industrials": {
+      "rs_score": 75.2,
+      "momentum_score": 62.4
+    },
+    "Utilities": {
+      "rs_score": 46.3,
+      "momentum_score": 63.9
+    },
+    "Materials": {
+      "rs_score": 80.6,
+      "momentum_score": 68.4
+    },
+    "Communication Services": {
+      "rs_score": 47.1,
+      "momentum_score": 66.3
+    }
+  },
+  "2026-02-09": {
+    "Information Technology": {
       "trend_strength": 50.5,
       "trend_state": "neutral",
       "rs_score": 38.3,
@@ -33506,98 +33598,6 @@
       "trend_strength": 48.8,
       "trend_state": "neutral",
       "rs_score": 48.1,
-      "momentum_score": 65.2
-    }
-  },
-  "2026-02-08": {
-    "Information Technology": {
-      "rs_score": 40.0,
-      "momentum_score": 63.8
-    },
-    "Financials": {
-      "rs_score": 43.7,
-      "momentum_score": 65.2
-    },
-    "Energy": {
-      "rs_score": 89.5,
-      "momentum_score": 59.8
-    },
-    "Health Care": {
-      "rs_score": 61.0,
-      "momentum_score": 71.1
-    },
-    "Consumer Discretionary": {
-      "rs_score": 39.2,
-      "momentum_score": 59.4
-    },
-    "Consumer Staples": {
-      "rs_score": 76.7,
-      "momentum_score": 49.9
-    },
-    "Real Estate": {
-      "rs_score": 53.1,
-      "momentum_score": 64.2
-    },
-    "Industrials": {
-      "rs_score": 75.2,
-      "momentum_score": 62.4
-    },
-    "Utilities": {
-      "rs_score": 46.3,
-      "momentum_score": 63.9
-    },
-    "Materials": {
-      "rs_score": 80.6,
-      "momentum_score": 68.4
-    },
-    "Communication Services": {
-      "rs_score": 47.1,
-      "momentum_score": 66.3
-    }
-  },
-  "2026-02-09": {
-    "Information Technology": {
-      "rs_score": 39.7,
-      "momentum_score": 60.9
-    },
-    "Financials": {
-      "rs_score": 44.4,
-      "momentum_score": 64.7
-    },
-    "Energy": {
-      "rs_score": 89.3,
-      "momentum_score": 63.1
-    },
-    "Health Care": {
-      "rs_score": 62.6,
-      "momentum_score": 68.0
-    },
-    "Consumer Discretionary": {
-      "rs_score": 38.1,
-      "momentum_score": 48.5
-    },
-    "Consumer Staples": {
-      "rs_score": 75.6,
-      "momentum_score": 50.0
-    },
-    "Real Estate": {
-      "rs_score": 53.0,
-      "momentum_score": 63.8
-    },
-    "Industrials": {
-      "rs_score": 74.3,
-      "momentum_score": 67.7
-    },
-    "Utilities": {
-      "rs_score": 44.3,
-      "momentum_score": 63.7
-    },
-    "Materials": {
-      "rs_score": 78.5,
-      "momentum_score": 71.6
-    },
-    "Communication Services": {
-      "rs_score": 47.4,
       "momentum_score": 65.2
     }
   }

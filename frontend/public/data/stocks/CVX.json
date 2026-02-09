@@ -6315,7 +6315,7 @@
     "tech_data_completeness": 1.0
   },
   "sentiment": {
-    "sentiment_compound": 0.010561531810042601,
+    "sentiment_compound": 0.01056153181004261,
     "sentiment_pos": 0.09795000000000001,
     "sentiment_neg": 0.06605,
     "sentiment_neu": 0.836,
