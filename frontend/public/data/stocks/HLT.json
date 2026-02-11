@@ -6241,42 +6241,50 @@
       "low": 317.0,
       "close": 323.70001220703125,
       "volume": 2717207
+    },
+    {
+      "date": "2026-02-11",
+      "open": 321.760009765625,
+      "high": 330.9800109863281,
+      "low": 320.95001220703125,
+      "close": 325.1300048828125,
+      "volume": 3117880
     }
   ],
   "fundamental": {
-    "pe": 47.04942,
-    "forward_pe": 35.371716,
-    "pb": -15.295564,
-    "ps": 15.632899,
+    "pe": 47.188683,
+    "forward_pe": 30.877453,
+    "pb": -15.363134,
+    "ps": 15.701961,
     "roe": null,
     "roa": 0.09635,
     "revenue_growth": 0.035,
     "earnings_growth": 0.29,
     "debt_to_equity": null,
     "fcf": 2064125056.0,
-    "market_cap": 76132220928.0,
+    "market_cap": 76468551680.0,
     "profit_margin": 0.34188998,
     "operating_margin": 0.60327,
     "gross_margin": 0.77515,
     "dividend_yield": 0.0019,
     "beta": 1.11,
-    "current_price": 323.7,
-    "high_52w": 325.0797,
+    "current_price": 325.13,
+    "high_52w": 330.98,
     "low_52w": 196.04,
     "total_debt": 12350999552.0,
     "total_cash": 1057000000.0,
     "ebitda": 2737999872.0,
     "current_ratio": 0.664,
-    "inv_pe": 0.02125424712993274,
+    "inv_pe": 0.021191521704473085,
     "inv_pb": null,
-    "inv_ps": 0.06396766204400092,
-    "fcf_yield": 0.02711237148791562,
+    "inv_ps": 0.0636863128115017,
+    "fcf_yield": 0.026993123456003187,
     "fcf_debt_ratio": 0.16712210597285268,
-    "pe_score": 22.950580000000002,
-    "forward_pe_score": 32.46013223529412,
+    "pe_score": 22.811317000000003,
+    "forward_pe_score": 38.27623729411765,
     "pb_score": 90.0,
     "ps_score": 20.0,
-    "value_score": 48.47023741176471,
+    "value_score": 50.36251809803921,
     "roe_score": 50.0,
     "roa_score": 69.486,
     "margin_score": 90.0,
@@ -6285,77 +6293,77 @@
     "earn_growth_score": 84.3,
     "growth_score": 66.525,
     "debt_equity_score": 50.0,
-    "fcf_yield_score": 52.59364290659635,
+    "fcf_yield_score": 52.49426954666932,
     "current_ratio_score": 24.840000000000003,
-    "safety_score": 38.55192397750089,
-    "fundamental_score": 60.382094148441354,
+    "safety_score": 38.64047325195337,
+    "fundamental_score": 60.872874174900474,
     "fund_data_completeness": 0.8333333333333334
   },
   "technical": {
-    "close": 323.70001220703125,
-    "sma_20": 303.13000183105464,
-    "sma_50": 293.4413995361328,
-    "sma_200": 270.1807035827636,
-    "trend_alignment": 0.744086218205296,
-    "rsi": 78.94101310702585,
-    "rsi_score": 0.5788202621405171,
-    "macd_histogram": 1.729069163706443,
-    "macd_line": 6.659544332697919,
-    "macd_histogram_pct": 0.5341578926480142,
-    "bb_position": 1.1109433970227165,
-    "bb_upper": 319.9646304367647,
-    "bb_lower": 286.2953732253446,
-    "bb_width": 0.11107200543674733,
-    "hist_volatility": 0.2125692481943602,
-    "volume_ratio": 1.3404932022512748,
-    "avg_volume_20d": 2027020.35,
-    "daily_return": 0.029645674595917295,
-    "signed_volume_ratio": 1.3404932022512748,
-    "stoch_k": 96.8473735636968,
-    "stoch_d": 96.81728558057932,
-    "trend_score": 74.4086218205296,
-    "rsi_abs_score": 32.117973785948294,
-    "macd_abs_score": 65.51236838972021,
-    "momentum_score": 48.81517108783425,
-    "volatility_score": 60.360834256316934,
-    "volume_score": 68.1718368540306,
-    "technical_score": 62.67367209457866,
+    "close": 325.1300048828125,
+    "sma_20": 304.38000183105464,
+    "sma_50": 294.2831994628906,
+    "sma_200": 270.70025657653804,
+    "trend_alignment": 0.7472098077602135,
+    "rsi": 79.72636007601828,
+    "rsi_score": 0.5945272015203656,
+    "macd_histogram": 1.9942698342807725,
+    "macd_line": 7.423312461842443,
+    "macd_histogram_pct": 0.6133761278044986,
+    "bb_position": 1.0344632539398106,
+    "bb_upper": 323.79200340347205,
+    "bb_lower": 284.96800025863723,
+    "bb_width": 0.12755109702109793,
+    "hist_volatility": 0.21160554630244405,
+    "volume_ratio": 1.4800992919958793,
+    "avg_volume_20d": 2106534.35,
+    "daily_return": 0.0044176478895733215,
+    "signed_volume_ratio": 1.4800992919958793,
+    "stoch_k": 92.47390213560213,
+    "stoch_d": 95.63637856407654,
+    "trend_score": 74.72098077602135,
+    "rsi_abs_score": 30.547279847963438,
+    "macd_abs_score": 66.70064191706747,
+    "momentum_score": 48.623960882515455,
+    "volatility_score": 57.655758876168946,
+    "volume_score": 71.5223830079011,
+    "technical_score": 62.839110874375045,
     "tech_data_completeness": 1.0
   },
   "sentiment": {
-    "sentiment_compound": 0.025615828849028542,
-    "sentiment_pos": 0.0464,
-    "sentiment_neg": 0.03805,
-    "sentiment_neu": 0.91555,
+    "sentiment_compound": -0.009313808855789389,
+    "sentiment_pos": 0.020200000000000003,
+    "sentiment_neg": 0.029849999999999998,
+    "sentiment_neu": 0.94995,
     "news_count": 20.0,
     "sentiment_confidence": 1.0,
-    "sentiment_score": 51.28
+    "sentiment_score": 49.53
   },
   "analyst": {
     "revision_momentum": 0.2857142857142857,
-    "target_upside": -0.05776953969725051,
+    "target_upside": -0.06191369606003751,
     "consensus_rating": 2.19231,
     "analyst_revision_count": 7.0,
     "analyst_count": 25.0,
     "analyst_upgrades": 2.0,
     "analyst_downgrades": 0.0,
     "revision_momentum_score": 65.71428571428571,
-    "target_upside_score": 33.4460920605499,
+    "target_upside_score": 32.6172607879925,
     "consensus_score": 52.99994,
-    "analyst_score": 51.241831506906756
+    "analyst_score": 50.95174056151166
   },
   "ranking": {
-    "value_score": 48.47023741176471,
+    "value_score": 50.36251809803921,
     "quality_score": 79.743,
     "growth_score": 66.525,
-    "safety_score": 38.55192397750089,
-    "trend_score": 74.4086218205296,
-    "momentum_score": 48.81517108783425,
-    "volatility_score": 60.360834256316934,
-    "volume_score": 68.1718368540306,
-    "analyst_score": 51.241831506906756,
-    "pe_score": 22.950580000000002,
-    "forward_pe_score": 32.46013223529412,
+    "safety_score": 38.64047325195337,
+    "trend_score": 74.72098077602135,
+    "momentum_score": 48.623960882515455,
+    "volatility_score": 57.655758876168946,
+    "volume_score": 71.5223830079011,
+    "analyst_score": 50.95174056151166,
+    "pe_score": 22.811317000000003,
+    "forward_pe_score": 38.27623729411765,
     "pb_score": 90.0,
     "ps_score": 20.0,
     "roe_score": 50.0,
@@ -6364,21 +6372,21 @@
     "rev_growth_score": 48.75,
     "earn_growth_score": 84.3,
     "debt_equity_score": 50.0,
-    "fcf_yield_score": 52.59364290659635,
+    "fcf_yield_score": 52.49426954666932,
     "current_ratio_score": 24.840000000000003,
     "cyclical_risk_score": 50.0,
-    "earnings_visibility": 71.5492,
-    "valuation_margin": 46.6220712235294,
-    "catalyst_timeline": 58.77456244152705,
-    "downside_control": 51.950913735072675,
-    "composite_score": 58.92509455974432,
+    "earnings_visibility": 72.0252,
+    "valuation_margin": 47.74275542941176,
+    "catalyst_timeline": 58.568668222004845,
+    "downside_control": 50.809434819218346,
+    "composite_score": 59.0890342788106,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 60.382094148441354,
-    "technical_score": 62.67367209457866,
-    "sentiment_score": 51.28,
+    "fundamental_score": 60.872874174900474,
+    "technical_score": 62.839110874375045,
+    "sentiment_score": 49.53,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
@@ -6390,11 +6398,130 @@
     "tier_raw": "buy",
     "tier_label": "Buy",
     "tier_color": "#4ade80",
-    "market_cap": 76132220928.0,
+    "market_cap": 76468551680.0,
     "sector": "Consumer Discretionary",
     "industry": "Hotels, Resorts & Cruise Lines"
   },
   "headlines": [
+    {
+      "title": "Hilton Worldwide Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/f0ec5fb0-d274-329c-8d52-418e4f5ea3a3/hilton-worldwide-q4-earnings.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-11",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hilton Worldwide Holdings Inc (HLT) Q4 2025 Earnings Call Highlights: Record Capital Returns ...",
+      "url": "https://finance.yahoo.com/news/hilton-worldwide-holdings-inc-hlt-210037166.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-11",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ackman's hedge fund Pershing Square bets on Meta, exits Hilton",
+      "url": "https://finance.yahoo.com/news/ackmans-hedge-fund-pershing-square-200201598.html",
+      "publisher": "Reuters",
+      "date": "2026-02-11",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hilton Slips as Quarterly Results Confront High Bar",
+      "url": "https://finance.yahoo.com/video/hilton-slips-quarterly-results-confront-200108224.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-11",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Hilton Q4 Earnings Surpass Estimates, Revenues Rise Y/Y",
+      "url": "/news/307998/hilton-q4-earnings-surpass-estimates-revenues-rise-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-11",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hilton Worldwide Holdings Inc. Q4 2025 Earnings Call Summary",
+      "url": "https://finance.yahoo.com/m/7fd6e48f-f7f7-3d13-9430-925d12f25de5/hilton-worldwide-holdings.html",
+      "publisher": "Moby",
+      "date": "2026-02-11",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What's Going On With Hilton Worldwide Stock Today?",
+      "url": "/news/307775/whats-going-on-with-hilton-worldwide-stock-today",
+      "publisher": "Benzinga",
+      "date": "2026-02-11",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Hilton Worldwide Holdings Inc.",
+      "url": "https://finance.yahoo.com/m/78ee33e8-06f3-3589-8df5-37ac77292350/analyst-report%3A-hilton.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-11",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Compared to Estimates, Hilton Worldwide (HLT) Q4 Earnings: A Look at Key Metrics",
+      "url": "/news/307506/compared-to-estimates-hilton-worldwide-hlt-q4-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-11",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hilton's (NYSE:HLT) Q4 CY2025 Sales Top Estimates",
+      "url": "/news/306986/hiltons-nyse-hlt-q4-cy2025-sales-top-estimates",
+      "publisher": "StockStory",
+      "date": "2026-02-11",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Hilton Worldwide Holdings Inc. (HLT) Q4 Earnings and Revenues Surpass Estimates",
+      "url": "/news/307073/hilton-worldwide-holdings-inc-hlt-q4-earnings-and-revenues-surpass-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-11",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hilton Worldwide Issues FY26 Guidance",
+      "url": "https://www.rttnews.com/3620184/hilton-worldwide-issues-fy26-guidance.aspx",
+      "publisher": "RTT News",
+      "date": "2026-02-11",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hilton Reports Fourth Quarter and Full Year Results",
+      "url": "https://www.businesswire.com/news/home/20260211262243/en",
+      "publisher": "Business Wire",
+      "date": "2026-02-11",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hilton Stock: Analyst Estimates & Ratings",
+      "url": "https://finance.yahoo.com/m/28ba4523-9589-39d6-8b52-23aa4a1dc531/hilton-stock%3A-analyst.html",
+      "publisher": "Barchart",
+      "date": "2026-02-11",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Hilton Worldwide Holdings Inc.",
+      "url": "https://finance.yahoo.com/m/715280eb-4c94-382b-a30f-07c7e5c655aa/analyst-report%3A-hilton.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-10",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "January jobs report, McDonald's earnings, Fed: What to Watch",
+      "url": "https://finance.yahoo.com/video/january-jobs-report-mcdonalds-earnings-000000407.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-10",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Stocks to Play the Summer Travel Boom as Demand Surges Again",
+      "url": "/news/306565/3-stocks-to-play-the-summer-travel-boom-as-demand-surges-again",
+      "publisher": "MarketBeat",
+      "date": "2026-02-10",
+      "sentiment": "positive"
+    },
     {
       "title": "Marriott CEO: We are seeing a K-shaped economy",
       "url": "https://finance.yahoo.com/news/marriott-ceo-we-are-seeing-a-k-shaped-economy-165909929.html",
@@ -6415,125 +6542,6 @@
       "publisher": "StockStory",
       "date": "2026-02-09",
       "sentiment": "neutral"
-    },
-    {
-      "title": "Hilton Gears Up to Post Q4 Earnings: What's in Store for the Stock?",
-      "url": "/news/304774/hilton-gears-up-to-post-q4-earnings-whats-in-store-for-the-stock",
-      "publisher": "Zacks",
-      "date": "2026-02-09",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Robinhood, AppLovin, Rivian and More Stocks With Earnings This Week",
-      "url": "/news/304600/robinhood-applovin-rivian-and-more-stocks-with-earnings-this-week",
-      "publisher": "Benzinga",
-      "date": "2026-02-09",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Wynn Resorts to Report Q4 Earnings: Here's What Investors Must Know",
-      "url": "/news/304308/wynn-resorts-to-report-q4-earnings-heres-what-investors-must-know",
-      "publisher": "Zacks",
-      "date": "2026-02-09",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Super Bowl LX, Coinbase earnings, jobs data & CPI: What to Watch",
-      "url": "https://finance.yahoo.com/video/super-bowl-lx-coinbase-earnings-000012395.html",
-      "publisher": "Yahoo Finance Video",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Gear Up for Hilton Worldwide (HLT) Q4 Earnings: Wall Street Estimates for Key Metrics",
-      "url": "/news/302821/gear-up-for-hilton-worldwide-hlt-q4-earnings-wall-street-estimates-for-key-metrics",
-      "publisher": "Zacks",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Mattel Gears Up to Post Q4 Earnings: What Lies Ahead for the Stock?",
-      "url": "/news/301845/mattel-gears-up-to-post-q4-earnings-what-lies-ahead-for-the-stock",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Marriott to Report Q4 Earnings: What to Expect From the Stock?",
-      "url": "/news/301847/marriott-to-report-q4-earnings-what-to-expect-from-the-stock",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Hyatt Hotels (H) Reports Next Week: Wall Street Expects Earnings Growth",
-      "url": "/news/301717/hyatt-hotels-h-reports-next-week-wall-street-expects-earnings-growth",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Hasbro Prepares to Unveil Q4 Earnings: Key Things to Watch",
-      "url": "/news/301349/hasbro-prepares-to-unveil-q4-earnings-key-things-to-watch",
-      "publisher": "Zacks",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Hilton Worldwide Holdings Inc. (HLT) Reports Next Week: Wall Street Expects Earnings Growth",
-      "url": "/news/299681/hilton-worldwide-holdings-inc-hlt-reports-next-week-wall-street-expects-earnings-growth",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Boyd Gaming Set to Report Q4 Earnings: Can Gaming Momentum Persist?",
-      "url": "/news/297411/boyd-gaming-set-to-report-q4-earnings-can-gaming-momentum-persist",
-      "publisher": "Zacks",
-      "date": "2026-02-03",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Roblox Prepares to Report Q4 Earnings: Key Things to Watch",
-      "url": "/news/295834/roblox-prepares-to-report-q4-earnings-key-things-to-watch",
-      "publisher": "Zacks",
-      "date": "2026-02-02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Can InterContinental Hotels Be the Leader of the Pack?",
-      "url": "/news/294527/can-intercontinental-hotels-be-the-leader-of-the-pack",
-      "publisher": "Motley Fool",
-      "date": "2026-01-31",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "What Should You Expect From Las Vegas Sands' Q4 Earnings?",
-      "url": "/news/288905/what-should-you-expect-from-las-vegas-sands-q4-earnings",
-      "publisher": "Zacks",
-      "date": "2026-01-27",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Royal Caribbean Prepares to Unveil Q4 Results: Key Things to Watch",
-      "url": "/news/288674/royal-caribbean-prepares-to-unveil-q4-results-key-things-to-watch",
-      "publisher": "Zacks",
-      "date": "2026-01-27",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Hilton Delivers Strong 6.7% Net Unit Growth in 2025, Closes Year with Record 520,000 Rooms Under Development",
-      "url": "https://www.businesswire.com/news/home/20260126116177/en/ACME",
-      "publisher": "Business Wire",
-      "date": "2026-01-26",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Winter Storm Fern Threatens Disruptions Across US: Here Are Businesses, Stocks Likely To Be Impacted",
-      "url": "/news/286271/winter-storm-fern-threatens-disruptions-across-us-here-are-businesses-stocks-likely-to-be-impacted",
-      "publisher": "Benzinga",
-      "date": "2026-01-25",
-      "sentiment": "negative"
     }
   ]
 }
