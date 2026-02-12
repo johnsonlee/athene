@@ -11,6 +11,16 @@ on:
         description: 'End date (YYYY-MM-DD), e.g. 2024-12-31'
         required: false
         default: ''
+      skip_snapshot:
+        description: 'No-op (backfill no longer collects snapshots, daily pipeline handles it)'
+        required: false
+        type: boolean
+        default: false
+      skip_analyze:
+        description: 'Skip analyze + deploy (equivalent to trigger_daily=false)'
+        required: false
+        type: boolean
+        default: false
       force_collect:
         description: 'Force re-fetch collected data even if it already exists'
         required: false
@@ -266,7 +276,7 @@ jobs:
   # ── Trigger daily pipeline for collect + analyze + deploy ──
   trigger-daily:
     needs: [backfill-prices, backfill-sector-etfs, backfill-capital-flow-etfs]
-    if: ${{ !failure() && !cancelled() && inputs.trigger_daily != false }}
+    if: ${{ !failure() && !cancelled() && inputs.trigger_daily != false && inputs.skip_analyze != true }}
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
