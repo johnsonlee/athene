@@ -85,6 +85,7 @@ KDJ_PERIOD = 14
 EXTRA_TICKERS = [
     {"ticker": "CPNG", "name": "Coupang", "sector": "Consumer Cyclical", "industry": "Internet Retail"},
     {"ticker": "BABA", "name": "Alibaba Group", "sector": "Consumer Cyclical", "industry": "Internet Retail"},
+    {"ticker": "XBI", "name": "SPDR S&P Biotech ETF", "sector": "Healthcare", "industry": "Biotechnology"},
 ]
 
 # ---------- v9: Sentiment analysis ----------
