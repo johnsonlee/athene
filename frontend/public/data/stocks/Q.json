@@ -601,6 +601,14 @@
       "low": 109.08999633789062,
       "close": 114.51000213623047,
       "volume": 2998175
+    },
+    {
+      "date": "2026-02-12",
+      "open": 110.62000274658203,
+      "high": 114.87999725341797,
+      "low": 109.05999755859375,
+      "close": 114.51000213623047,
+      "volume": 3001100
     }
   ],
   "fundamental": {
@@ -618,7 +626,7 @@
     "profit_margin": 0.17256,
     "operating_margin": 0.21708,
     "gross_margin": 0.46324003,
-    "dividend_yield": 0.0013,
+    "dividend_yield": 0.0012,
     "beta": null,
     "current_price": 114.51,
     "high_52w": 114.88,
@@ -647,50 +655,42 @@
     "debt_equity_score": 82.6215,
     "fcf_yield_score": 35.0,
     "current_ratio_score": 74.744,
-    "safety_score": 66.0760884786187,
-    "fundamental_score": 60.48419719508881,
+    "safety_score": 66.25606484497656,
+    "fundamental_score": 60.520192468360385,
     "fund_data_completeness": 0.75
   },
   "technical": {
     "close": 114.51000213623047,
-    "sma_20": 99.25400009155274,
-    "sma_50": 90.07519989013673,
+    "sma_20": 100.32350006103516,
+    "sma_50": 90.77039993286132,
     "sma_200": null,
-    "trend_alignment": 0.8796734972697897,
+    "trend_alignment": 0.8722101916091006,
     "rsi": 70.8077098856187,
     "rsi_score": 0.4161541977123741,
-    "macd_histogram": 0.966976929333303,
-    "macd_line": 4.122214867018812,
-    "macd_histogram_pct": 0.8444475690279948,
-    "bb_position": 1.2417737576655303,
-    "bb_upper": 109.537460437124,
-    "bb_lower": 88.97053974598148,
-    "bb_width": 0.20721503085186904,
-    "hist_volatility": 0.6910578216935861,
-    "volume_ratio": 1.1760042379181295,
-    "avg_volume_20d": 2549459.35,
-    "daily_return": 0.04766696193050899,
-    "signed_volume_ratio": 1.1760042379181295,
-    "stoch_k": 73.0557523723563,
-    "stoch_d": 54.03799667984888,
-    "trend_score": 87.96734972697897,
+    "macd_histogram": 1.3593797025153012,
+    "macd_line": 4.854462565829635,
+    "macd_histogram_pct": 1.1871274798319118,
+    "bb_position": 1.0952288135583197,
+    "bb_upper": 112.24034762624912,
+    "bb_lower": 88.4066524958212,
+    "bb_width": 0.23756841732921882,
+    "hist_volatility": 0.6869876908443711,
+    "volume_ratio": 1.2136325008284554,
+    "avg_volume_20d": 2472824.35,
+    "daily_return": 0.0,
+    "signed_volume_ratio": 0.0,
+    "stoch_k": 93.63865746418219,
+    "stoch_d": 73.0557523723563,
+    "trend_score": 87.22101916091006,
     "rsi_abs_score": 51.73841232026763,
-    "macd_abs_score": 70.16671353541992,
-    "momentum_score": 60.95256292784377,
-    "volatility_score": 23.15468128574986,
-    "volume_score": 64.22410171003511,
-    "technical_score": 62.15173039560382,
+    "macd_abs_score": 75.30691219747868,
+    "momentum_score": 63.522662258873154,
+    "volatility_score": 20.561260951661687,
+    "volume_score": 50.0,
+    "technical_score": 59.3353566162673,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.3245778238902673,
-    "sentiment_pos": 0.07944999999999999,
-    "sentiment_neg": 0.0038,
-    "sentiment_neu": 0.9168,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 66.23
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.3333333333333333,
     "target_upside": -0.03938520653218064,
@@ -708,11 +708,11 @@
     "value_score": 56.551746568888895,
     "quality_score": 60.913,
     "growth_score": 59.42857142857143,
-    "safety_score": 66.0760884786187,
-    "trend_score": 87.96734972697897,
-    "momentum_score": 60.95256292784377,
-    "volatility_score": 23.15468128574986,
-    "volume_score": 64.22410171003511,
+    "safety_score": 66.25606484497656,
+    "trend_score": 87.22101916091006,
+    "momentum_score": 63.522662258873154,
+    "volatility_score": 20.561260951661687,
+    "volume_score": 50.0,
     "analyst_score": 60.77083665385847,
     "pe_score": 36.501912000000004,
     "forward_pe_score": 35.34564999999999,
@@ -727,25 +727,25 @@
     "fcf_yield_score": 35.0,
     "current_ratio_score": 74.744,
     "cyclical_risk_score": 50.0,
-    "earnings_visibility": 59.204235714285716,
-    "valuation_margin": 58.139523970666666,
-    "catalyst_timeline": 63.074074930868115,
-    "downside_control": 47.71261546465528,
-    "composite_score": 58.126892131484034,
+    "earnings_visibility": 59.49123571428571,
+    "valuation_margin": 57.66352397066667,
+    "catalyst_timeline": 65.30045180736417,
+    "downside_control": 46.419598869495736,
+    "composite_score": 58.42462717022491,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 60.48419719508881,
-    "technical_score": 62.15173039560382,
-    "sentiment_score": 66.23,
+    "fundamental_score": 60.520192468360385,
+    "technical_score": 59.3353566162673,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 0.8325,
     "data_quality_penalty": 0.0,
-    "rank": 188,
-    "percentile": 0.6396917148362236,
+    "rank": 178,
+    "percentile": 0.6596153846153846,
     "tier": "buy",
     "tier_raw": "buy",
     "tier_label": "Buy",
@@ -754,146 +754,5 @@
     "sector": "Information Technology",
     "industry": "Semiconductor Materials & Equipment"
   },
-  "headlines": [
-    {
-      "title": "DuPont de Nemours Q4 Earnings Call Highlights",
-      "url": "https://finance.yahoo.com/m/e71944c9-0f05-34d4-a58c-569e0ce8f921/dupont-de-nemours-q4-earnings.html",
-      "publisher": "MarketBeat",
-      "date": "2026-02-10",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "DuPonts Earnings Boost the Stock to 52-Week High. Heres Why.",
-      "url": "https://finance.yahoo.com/m/7a981a8f-5fc5-3893-9f0e-db1ad0a46502/dupont%E2%80%99s-earnings-boost-the.html",
-      "publisher": "Barrons.com",
-      "date": "2026-02-10",
-      "sentiment": "positive"
-    },
-    {
-      "title": "DuPont Earnings Boost Stock to 52-Week High. Heres Why.",
-      "url": "https://finance.yahoo.com/m/7a981a8f-5fc5-3893-9f0e-db1ad0a46502/dupont-earnings-boost-stock.html",
-      "publisher": "Barrons.com",
-      "date": "2026-02-10",
-      "sentiment": "positive"
-    },
-    {
-      "title": "DuPont Stock Pops After Earnings Beat. Strong Quarter Bolsters Market Hopes.",
-      "url": "https://finance.yahoo.com/m/7a981a8f-5fc5-3893-9f0e-db1ad0a46502/dupont-stock-pops-after.html",
-      "publisher": "Barrons.com",
-      "date": "2026-02-10",
-      "sentiment": "positive"
-    },
-    {
-      "title": "DuPont Earnings Beat Estimates. Why Things Are Getting Better.",
-      "url": "https://www.barrons.com/articles/dupont-earnings-stock-price-27530d47?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2026-02-10",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Analyst Report: Qnity Electronics, Inc.",
-      "url": "https://finance.yahoo.com/m/e05be624-c790-3a77-a299-68b5d1de4760/analyst-report%3A-qnity.html",
-      "publisher": "Morningstar Research",
-      "date": "2026-02-09",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Qnity Schedules Fourth Quarter and Full Year 2025 Earnings Release and Conference Call",
-      "url": "https://www.businesswire.com/news/home/20260205798755/en/",
-      "publisher": "Business Wire",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "These overlooked stocks are a backdoor way to play the AI chip boom",
-      "url": "https://www.marketwatch.com/story/these-overlooked-stocks-are-a-backdoor-way-to-play-the-ai-chip-boom-7157eab9?mod=mw_FV",
-      "publisher": "MarketWatch",
-      "date": "2026-01-31",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Every Stock in This Index Group Is Up Double-Digits in 2026",
-      "url": "/news/286283/every-stock-in-this-index-group-is-up-double-digits-in-2026",
-      "publisher": "Motley Fool",
-      "date": "2026-01-25",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Qnity (Q) \"is a Very Inexpensive Stock,\" Says Jim Cramer",
-      "url": "/news/280724/qnity-q-is-a-very-inexpensive-stock-says-jim-cramer",
-      "publisher": "Insider Monkey",
-      "date": "2026-01-20",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Qnity Electronics CFO Matt Harbaugh Steps Down Immediately",
-      "url": "/news/278620/qnity-electronics-cfo-matt-harbaugh-steps-down-immediately",
-      "publisher": "Benzinga",
-      "date": "2026-01-16",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Qnity Electronics Q4 2025 Earnings: What to Expect",
-      "url": "https://finance.yahoo.com/m/c56fda76-3f6a-3dbe-96ed-8600abdba079/qnity-electronics%E2%80%99-q4-2025.html",
-      "publisher": "Barchart",
-      "date": "2026-01-16",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Qnity Announces CFO Transition",
-      "url": "https://www.businesswire.com/news/home/20260116905193/en",
-      "publisher": "Business Wire",
-      "date": "2026-01-16",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "DuPont's Decade of Restructuring Yields Meager Returns",
-      "url": "https://www.wsj.com/business/duponts-decade-of-restructuring-yields-meager-returns-a04380b0?mod=wsj_FV",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-01-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Analyst Report: Qnity Electronics, Inc.",
-      "url": "https://finance.yahoo.com/m/c32832e7-b0e8-32f5-8db6-30436df7683d/analyst-report%3A-qnity.html",
-      "publisher": "Morningstar Research",
-      "date": "2026-01-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Is Qnity Electronics (Q) the Next Spin-Off Success? Oppenheimer Believes So",
-      "url": "/news/263805/is-qnity-electronics-q-the-next-spin-off-success-oppenheimer-believes-so",
-      "publisher": "Insider Monkey",
-      "date": "2025-12-29",
-      "sentiment": "positive"
-    },
-    {
-      "title": "How Is Qnity Electronics Stock Performance Compared to Other Semiconductor Stocks?",
-      "url": "https://finance.yahoo.com/m/7e4357b4-6936-3add-a8c7-d5b377a363c3/how-is-qnity-electronics%E2%80%99.html",
-      "publisher": "Barchart",
-      "date": "2025-12-18",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Buy! Analysts Pound The Table For 11 S&P 500 Stocks In 2026",
-      "url": "https://finance.yahoo.com/m/6c8b793b-8d2d-3015-94f6-0d287e5a5eda/buy%21-analysts-pound-the-table.html",
-      "publisher": "Investor's Business Daily",
-      "date": "2025-12-17",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Qnity Announces Segment Leadership Transition",
-      "url": "https://www.businesswire.com/news/home/20251209596860/en",
-      "publisher": "Business Wire",
-      "date": "2025-12-09",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Qnity Announces First Quarter 2026 Dividend on Common Stock",
-      "url": "https://www.businesswire.com/news/home/20251208449327/en/",
-      "publisher": "Business Wire",
-      "date": "2025-12-09",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

@@ -3,6 +3,94 @@
   "profile": null,
   "prices": [
     {
+      "date": "2022-12-15",
+      "open": 62.69266719818115,
+      "high": 62.69266719818115,
+      "low": 59.70730209350586,
+      "close": 59.70730209350586,
+      "volume": 1318200
+    },
+    {
+      "date": "2022-12-16",
+      "open": 59.70731443639664,
+      "high": 59.70731443639664,
+      "low": 54.73170490003026,
+      "close": 56.463218688964844,
+      "volume": 2307500
+    },
+    {
+      "date": "2022-12-19",
+      "open": 52.741454267923814,
+      "high": 58.7022353922567,
+      "low": 52.741454267923814,
+      "close": 56.22438049316406,
+      "volume": 117200
+    },
+    {
+      "date": "2022-12-20",
+      "open": 57.7170706805204,
+      "high": 57.7170706805204,
+      "low": 56.483117843968124,
+      "close": 56.93092346191406,
+      "volume": 22200
+    },
+    {
+      "date": "2022-12-21",
+      "open": 58.712185908631305,
+      "high": 65.95667136193109,
+      "low": 55.22925962591589,
+      "close": 56.68213653564453,
+      "volume": 290700
+    },
+    {
+      "date": "2022-12-22",
+      "open": 58.14496069904863,
+      "high": 60.72133145509499,
+      "low": 56.72193637747066,
+      "close": 57.319007873535156,
+      "volume": 3253200
+    },
+    {
+      "date": "2022-12-23",
+      "open": 57.80662734247491,
+      "high": 60.350158500786286,
+      "low": 56.72194439431895,
+      "close": 57.219505310058594,
+      "volume": 125800
+    },
+    {
+      "date": "2022-12-27",
+      "open": 57.69715972184585,
+      "high": 58.702234834532675,
+      "low": 57.09511150701921,
+      "close": 57.16974639892578,
+      "volume": 26500
+    },
+    {
+      "date": "2022-12-28",
+      "open": 57.64740800128177,
+      "high": 57.717066225798234,
+      "low": 56.72194439431895,
+      "close": 57.219505310058594,
+      "volume": 514800
+    },
+    {
+      "date": "2022-12-29",
+      "open": 58.21462095194849,
+      "high": 58.49325382038911,
+      "low": 57.46827965769274,
+      "close": 57.71706008911133,
+      "volume": 374800
+    },
+    {
+      "date": "2022-12-30",
+      "open": 58.45345931822086,
+      "high": 58.71218932973392,
+      "low": 57.44838412083443,
+      "close": 58.09521484375,
+      "volume": 351100
+    },
+    {
       "date": "2023-01-03",
       "open": 60.38398818548376,
       "high": 60.38398818548376,
@@ -6249,6 +6337,14 @@
       "low": 78.30000305175781,
       "close": 79.19999694824219,
       "volume": 3483483
+    },
+    {
+      "date": "2026-02-12",
+      "open": 78.93000030517578,
+      "high": 79.49500274658203,
+      "low": 78.30000305175781,
+      "close": 79.19999694824219,
+      "volume": 3500200
     }
   ],
   "fundamental": {
@@ -6295,50 +6391,42 @@
     "debt_equity_score": 47.5132,
     "fcf_yield_score": 64.48446042404055,
     "current_ratio_score": 62.158,
-    "safety_score": 50.71456869063898,
-    "fundamental_score": 56.932162574437314,
+    "safety_score": 50.89454505699684,
+    "fundamental_score": 56.96815784770889,
     "fund_data_completeness": 1.0
   },
   "technical": {
     "close": 79.19999694824219,
-    "sma_20": 80.3824996948242,
-    "sma_50": 82.5837040710449,
-    "sma_200": 76.00975578308105,
-    "trend_alignment": 0.5230607284379497,
-    "rsi": 43.12234769005291,
-    "rsi_score": -0.13755304619894176,
-    "macd_histogram": -0.07124747532375586,
-    "macd_line": -0.6777099736058716,
-    "macd_histogram_pct": -0.08995893695591509,
-    "bb_position": 0.27285002274949444,
-    "bb_upper": 82.98541157026307,
-    "bb_lower": 77.77958781938534,
-    "bb_width": 0.06476314833007026,
-    "hist_volatility": 0.31838334699203213,
-    "volume_ratio": 0.8787693042605547,
-    "avg_volume_20d": 3964047.2,
-    "daily_return": -0.00025251542732505845,
-    "signed_volume_ratio": -0.8787693042605547,
-    "stoch_k": 25.667103232037885,
-    "stoch_d": 31.780343312939813,
-    "trend_score": 52.30607284379497,
+    "sma_20": 80.2169994354248,
+    "sma_50": 82.56394104003904,
+    "sma_200": 76.06575016021726,
+    "trend_alignment": 0.5223928284337136,
+    "rsi": 43.122347690052905,
+    "rsi_score": -0.1375530461989419,
+    "macd_histogram": -0.09138908869289031,
+    "macd_line": -0.7206988591482286,
+    "macd_histogram_pct": -0.11539026794737606,
+    "bb_position": 0.2924278242868154,
+    "bb_upper": 82.66675572787669,
+    "bb_lower": 77.7672431429729,
+    "bb_width": 0.06107823303523,
+    "hist_volatility": 0.2991943294203743,
+    "volume_ratio": 0.9021977622031255,
+    "avg_volume_20d": 3879637.2,
+    "daily_return": 0.0,
+    "signed_volume_ratio": 0.0,
+    "stoch_k": 19.525620506099152,
+    "stoch_d": 25.667103232037885,
+    "trend_score": 52.239282843371356,
     "rsi_abs_score": 65.74681722806349,
-    "macd_abs_score": 45.50205315220425,
-    "momentum_score": 55.624435190133866,
-    "volatility_score": 58.4485417876729,
-    "volume_score": 41.21230695739445,
-    "technical_score": 52.31132215919212,
+    "macd_abs_score": 44.6152433013156,
+    "momentum_score": 55.18103026468955,
+    "volatility_score": 60.197267441973466,
+    "volume_score": 50.0,
+    "technical_score": 54.26554742081296,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.3043360821923151,
-    "sentiment_pos": 0.1533,
-    "sentiment_neg": 0.01905,
-    "sentiment_neu": 0.82765,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 65.22
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": -0.07142857142857142,
     "target_upside": 0.19949494949494945,
@@ -6356,11 +6444,11 @@
     "value_score": 70.29512105952381,
     "quality_score": 67.71822857142857,
     "growth_score": 35.6,
-    "safety_score": 50.71456869063898,
-    "trend_score": 52.30607284379497,
-    "momentum_score": 55.624435190133866,
-    "volatility_score": 58.4485417876729,
-    "volume_score": 41.21230695739445,
+    "safety_score": 50.89454505699684,
+    "trend_score": 52.239282843371356,
+    "momentum_score": 55.18103026468955,
+    "volatility_score": 60.197267441973466,
+    "volume_score": 50.0,
     "analyst_score": 58.91690216450216,
     "pe_score": 69.03846575,
     "forward_pe_score": 69.34768742857143,
@@ -6375,25 +6463,25 @@
     "fcf_yield_score": 64.48446042404055,
     "current_ratio_score": 62.158,
     "cyclical_risk_score": 50.0,
-    "earnings_visibility": 51.694734285714276,
-    "valuation_margin": 68.51353631785713,
-    "catalyst_timeline": 56.9277410198431,
-    "downside_control": 53.34146657174678,
-    "composite_score": 58.03568335393874,
+    "earnings_visibility": 51.68073428571428,
+    "valuation_margin": 69.04553631785714,
+    "catalyst_timeline": 56.4847215272563,
+    "downside_control": 54.001771874845545,
+    "composite_score": 58.18393826627484,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 56.932162574437314,
-    "technical_score": 52.31132215919212,
-    "sentiment_score": 65.22,
+    "fundamental_score": 56.96815784770889,
+    "technical_score": 54.26554742081296,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 193,
-    "percentile": 0.630057803468208,
+    "rank": 191,
+    "percentile": 0.6346153846153846,
     "tier": "buy",
     "tier_raw": "buy",
     "tier_label": "Buy",
@@ -6402,146 +6490,5 @@
     "sector": "Health Care",
     "industry": "Health Care Equipment"
   },
-  "headlines": [
-    {
-      "title": "GEHC or SYK: Which Is the Better Value Stock Right Now?",
-      "url": "/news/307838/gehc-or-syk-which-is-the-better-value-stock-right-now",
-      "publisher": "Zacks",
-      "date": "2026-02-11",
-      "sentiment": "positive"
-    },
-    {
-      "title": "5 Must-Read Analyst Questions From GE HealthCare's Q4 Earnings Call",
-      "url": "/news/307104/5-must-read-analyst-questions-from-ge-healthcares-q4-earnings-call",
-      "publisher": "StockStory",
-      "date": "2026-02-11",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "GEHC Launches ReadyFix Fleet Management to Boost ECG Efficiency",
-      "url": "/news/306229/gehc-launches-readyfix-fleet-management-to-boost-ecg-efficiency",
-      "publisher": "Zacks",
-      "date": "2026-02-10",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Barclays Raises GE HealthCare (GEHC) PT to $87 Following Q4 Beat, Strong 2026 Outlook",
-      "url": "/news/304661/barclays-raises-ge-healthcare-gehc-pt-to-87-following-q4-beat-strong-2026-outlook",
-      "publisher": "Insider Monkey",
-      "date": "2026-02-09",
-      "sentiment": "positive"
-    },
-    {
-      "title": "GEHC Strengthens AI Fetal Ultrasound via Diagnoly Collaboration",
-      "url": "/news/304608/gehc-strengthens-ai-fetal-ultrasound-via-diagnoly-collaboration",
-      "publisher": "Zacks",
-      "date": "2026-02-09",
-      "sentiment": "positive"
-    },
-    {
-      "title": "GE HealthCare launches ReadyFix fleet management solution to help enhance operational efficiency and reliable patient care",
-      "url": "https://www.businesswire.com/news/home/20260206680107/en",
-      "publisher": "Business Wire",
-      "date": "2026-02-09",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Are Wall Street Analysts Bullish on GE HealthCare Technologies Stock?",
-      "url": "https://finance.yahoo.com/m/5abaf06a-0246-34c1-b60a-87dc6942a680/are-wall-street-analysts.html",
-      "publisher": "Barchart",
-      "date": "2026-02-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "GE HealthCare and Diagnoly integrate AI solutions for foetal ultrasound",
-      "url": "https://finance.yahoo.com/m/7472d60a-8e32-3b5e-abd7-3a2b31737c3d/ge-healthcare-and-diagnoly.html",
-      "publisher": "Medical Device Network",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Analyst Report: GE HealthCare Technologies Inc.",
-      "url": "https://finance.yahoo.com/m/cacbefd6-a9d2-3d79-aa33-cdf84dbb1719/analyst-report%3A-ge-healthcare.html",
-      "publisher": "Morningstar Research",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Morning Movers: Eli Lilly rises, Boston Scientific falls after quarterly results",
-      "url": "https://finance.yahoo.com/news/morning-movers-eli-lilly-rises-140052306.html",
-      "publisher": "TipRanks",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "GEHC Q4 Deep Dive: Product Pipeline and Service Recurring Revenue Drive Outlook",
-      "url": "/news/300850/gehc-q4-deep-dive-product-pipeline-and-service-recurring-revenue-drive-outlook",
-      "publisher": "StockStory",
-      "date": "2026-02-05",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "GE HealthCare Stock Jumps. Why Earnings Were a Relief.",
-      "url": "https://finance.yahoo.com/m/d69e5470-1e4c-32cb-bfc7-e01542a331a1/ge-healthcare-stock-jumps..html",
-      "publisher": "Barrons.com",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "GE HealthCare Technologies Inc (GEHC) Q4 2025 Earnings Call Highlights: Strong Revenue Growth ...",
-      "url": "https://finance.yahoo.com/news/ge-healthcare-technologies-inc-gehc-210225858.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "GE HealthCare reports FY25 revenue of $20.6bn amid strong imaging demand",
-      "url": "https://finance.yahoo.com/m/19810444-4c3d-3d88-b93d-1f2a9fb7c8b2/ge-healthcare-reports-fy25.html",
-      "publisher": "Medical Device Network",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "GE HealthCare Beats Earnings But Margin Pressure, Tariff Costs Could Weigh On Profitability",
-      "url": "/news/299929/ge-healthcare-beats-earnings-but-margin-pressure-tariff-costs-could-weigh-on-profitability",
-      "publisher": "Benzinga",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "GE HealthCare Q4 Earnings and Revenues Beat Estimates, Net Margin Falls",
-      "url": "/news/299781/ge-healthcare-q4-earnings-and-revenues-beat-estimates-net-margin-falls",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "GE HealthCare (GEHC) Q4 2025 Earnings Transcript",
-      "url": "/news/299479/ge-healthcare-gehc-q4-2025-earnings-transcript",
-      "publisher": "Motley Fool",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "GE HealthCare Technologies Q4 Earnings Call Highlights",
-      "url": "https://finance.yahoo.com/m/58b22919-6b5d-3260-9c6f-7bcee5f6d76e/ge-healthcare-technologies-q4.html",
-      "publisher": "MarketBeat",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Stock Market Today: Dow Rises On Surprise Jobs Data; AMD Plunges On Earnings (Live Coverage)",
-      "url": "https://finance.yahoo.com/m/95eff06b-9fa2-3b22-b1b7-24055bf9706b/stock-market-today%3A-dow-rises.html",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-02-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Compared to Estimates, GE HealthCare (GEHC) Q4 Earnings: A Look at Key Metrics",
-      "url": "/news/299496/compared-to-estimates-ge-healthcare-gehc-q4-earnings-a-look-at-key-metrics",
-      "publisher": "Zacks",
-      "date": "2026-02-04",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

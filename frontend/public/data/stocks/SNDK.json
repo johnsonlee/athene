@@ -2009,6 +2009,14 @@
       "low": 575.0,
       "close": 599.3400268554688,
       "volume": 20127188
+    },
+    {
+      "date": "2026-02-12",
+      "open": 578.5,
+      "high": 612.7999877929688,
+      "low": 575.0,
+      "close": 599.3400268554688,
+      "volume": 20322200
     }
   ],
   "fundamental": {
@@ -2055,50 +2063,42 @@
     "debt_equity_score": 87.015,
     "fcf_yield_score": 41.79196931776992,
     "current_ratio_score": 85.0,
-    "safety_score": 73.40083847861871,
-    "fundamental_score": 61.077511899295175,
+    "safety_score": 73.58081484497657,
+    "fundamental_score": 61.11350717256674,
     "fund_data_completeness": 0.9166666666666666
   },
   "technical": {
     "close": 599.3400268554688,
-    "sma_20": 540.3140014648438,
-    "sma_50": 373.75460052490234,
-    "sma_200": 161.0980253982544,
-    "trend_alignment": 0.9546219654040055,
-    "rsi": 63.03920629813905,
-    "rsi_score": 0.260784125962781,
-    "macd_histogram": -7.7269563970128985,
-    "macd_line": 65.22302736204506,
-    "macd_histogram_pct": -1.2892441770581524,
-    "bb_position": 0.6902733405322781,
-    "bb_upper": 695.4225028069216,
-    "bb_lower": 385.2055001227661,
-    "bb_width": 0.5741420763539848,
-    "hist_volatility": 1.1694410905528825,
-    "volume_ratio": 0.9269282295966745,
-    "avg_volume_20d": 21713858.05,
-    "daily_return": 0.1065283410504348,
-    "signed_volume_ratio": 0.9269282295966745,
-    "stoch_k": 46.29746866960225,
-    "stoch_d": 49.41667872875618,
-    "trend_score": 95.46219654040054,
-    "rsi_abs_score": 69.37255559130267,
-    "macd_abs_score": 23.161337344127713,
-    "momentum_score": 46.266946467715194,
+    "sma_20": 549.8190032958985,
+    "sma_50": 381.63440093994143,
+    "sma_200": 163.9300255393982,
+    "trend_alignment": 0.9450339323147396,
+    "rsi": 63.039206298139064,
+    "rsi_score": 0.2607841259627813,
+    "macd_histogram": -8.168660100188077,
+    "macd_line": 62.73915863382285,
+    "macd_histogram_pct": -1.3629425258056318,
+    "bb_position": 0.6717046818216343,
+    "bb_upper": 694.0230606174466,
+    "bb_lower": 405.6149459743503,
+    "bb_width": 0.5245510120862128,
+    "hist_volatility": 1.166680771139049,
+    "volume_ratio": 0.92278681390761,
+    "avg_volume_20d": 22022638.05,
+    "daily_return": 0.0,
+    "signed_volume_ratio": 0.0,
+    "stoch_k": 45.443271275880754,
+    "stoch_d": 46.065089086160796,
+    "trend_score": 94.50339323147396,
+    "rsi_abs_score": 69.37255559130266,
+    "macd_abs_score": 22.055862112915523,
+    "momentum_score": 45.71420885210909,
     "volatility_score": 19.0,
-    "volume_score": 59.26928229596675,
-    "technical_score": 58.172599361628066,
+    "volume_score": 50.0,
+    "technical_score": 55.86528062507492,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.1603995684630117,
-    "sentiment_pos": 0.09915,
-    "sentiment_neg": 0.04305,
-    "sentiment_neu": 0.85775,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 58.02
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.05,
     "target_upside": 0.16795141322120993,
@@ -2116,11 +2116,11 @@
     "value_score": 55.99137681428571,
     "quality_score": 32.165,
     "growth_score": 91.0,
-    "safety_score": 73.40083847861871,
-    "trend_score": 95.46219654040054,
-    "momentum_score": 46.266946467715194,
+    "safety_score": 73.58081484497657,
+    "trend_score": 94.50339323147396,
+    "momentum_score": 45.71420885210909,
     "volatility_score": 19.0,
-    "volume_score": 59.26928229596675,
+    "volume_score": 50.0,
     "analyst_score": 62.553959355290814,
     "pe_score": 50.0,
     "forward_pe_score": 67.6008893,
@@ -2135,25 +2135,25 @@
     "fcf_yield_score": 41.79196931776992,
     "current_ratio_score": 85.0,
     "cyclical_risk_score": 50.0,
-    "earnings_visibility": 59.10974999999999,
-    "valuation_margin": 55.09441304428571,
-    "catalyst_timeline": 67.54531023634064,
-    "downside_control": 47.1591257717928,
-    "composite_score": 58.40962580597313,
+    "earnings_visibility": 59.851749999999996,
+    "valuation_margin": 55.360413044285714,
+    "catalyst_timeline": 67.56215614388738,
+    "downside_control": 46.89912222674648,
+    "composite_score": 58.6764466728349,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 61.077511899295175,
-    "technical_score": 58.172599361628066,
-    "sentiment_score": 58.02,
+    "fundamental_score": 61.11350717256674,
+    "technical_score": 55.86528062507492,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 0.9441666666666666,
     "data_quality_penalty": 0.0,
-    "rank": 177,
-    "percentile": 0.6608863198458574,
+    "rank": 171,
+    "percentile": 0.6730769230769231,
     "tier": "buy",
     "tier_raw": "buy",
     "tier_label": "Buy",
@@ -2162,146 +2162,5 @@
     "sector": "Information Technology",
     "industry": "Technology Hardware, Storage & Peripherals"
   },
-  "headlines": [
-    {
-      "title": "SanDisk Stock Surges On Memory Shortage Outlook",
-      "url": "/news/307914/sandisk-stock-surges-on-memory-shortage-outlook",
-      "publisher": "Benzinga",
-      "date": "2026-02-11",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Down 18% From Its Recent High, Should You Buy the Dip in Sandisk Stock?",
-      "url": "https://finance.yahoo.com/m/67a95602-1a34-3ca1-a988-3d85b5fcf2aa/down-18%25-from-its-recent.html",
-      "publisher": "Barchart",
-      "date": "2026-02-11",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "MU and SNDK: Analysts Pound the Table on These 2 Top Semiconductor Stocks",
-      "url": "https://finance.yahoo.com/news/mu-sndk-analysts-pound-table-170823499.html",
-      "publisher": "TipRanks",
-      "date": "2026-02-11",
-      "sentiment": "positive"
-    },
-    {
-      "title": "A Wild Ride for Chip Stocks",
-      "url": "https://www.barrons.com/livecoverage/stock-market-news-today-021126/card/a-wild-ride-for-chip-stocks-j4nL1vq0poaa6pGyPSLi?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2026-02-11",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "20 stocks of companies that delivered a double dose of growth this earnings season",
-      "url": "https://www.marketwatch.com/story/20-stocks-of-companies-that-delivered-a-double-dose-of-growth-this-earnings-season-7b343b8b?mod=mw_FV",
-      "publisher": "MarketWatch",
-      "date": "2026-02-11",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Bear of the Day: Qualcomm (QCOM)",
-      "url": "/news/306841/bear-of-the-day-qualcomm-qcom",
-      "publisher": "Zacks",
-      "date": "2026-02-11",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Zacks Investment Ideas feature highlights: Western Digital, Seagate, Micron, Sandisk, NVIDIA and Oklo",
-      "url": "/news/306806/zacks-investment-ideas-feature-highlights-western-digital-seagate-micron-sandisk-nvidia-and-oklo",
-      "publisher": "Zacks",
-      "date": "2026-02-11",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Stock Market Today: Dow Closes At Another Record High; Nasdaq Breaks Win Streak (Live Coverage)",
-      "url": "https://finance.yahoo.com/m/63afefbd-05fc-3709-99a9-cdb08e73e002/stock-market-today%3A-dow.html",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-02-10",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Trend, Risk, & Resilience: A Guide to Profitable Trading (I Wish I Knew This Earlier)",
-      "url": "/news/306230/trend-risk-resilience-a-guide-to-profitable-trading-i-wish-i-knew-this-earlier",
-      "publisher": "Zacks",
-      "date": "2026-02-10",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Memory Chip Crunch Ripples Through Markets, With Worse to Come",
-      "url": "https://finance.yahoo.com/news/memory-chip-crunch-ripples-markets-023002147.html",
-      "publisher": "Bloomberg",
-      "date": "2026-02-09",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Its Been a Memorable Quarter for These AI Stocks",
-      "url": "https://finance.yahoo.com/m/26edf6a2-52bf-3bf0-b83d-933c937cc858/it%E2%80%99s-been-a-memorable-quarter.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-09",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "The Memory Shortage Trade: 7 Stocks Goldman Says Can Keep Running",
-      "url": "/news/304723/the-memory-shortage-trade-7-stocks-goldman-says-can-keep-running",
-      "publisher": "Benzinga",
-      "date": "2026-02-09",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Buy SNDK for Double-Digit Returns in the Short Term After a Solid 2025",
-      "url": "/news/304342/buy-sndk-for-double-digit-returns-in-the-short-term-after-a-solid-2025",
-      "publisher": "Zacks",
-      "date": "2026-02-09",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Goldman Named The Issue Thats Pushing SanDisk Stock to the Moon",
-      "url": "https://finance.yahoo.com/m/b6dc549b-7610-3b43-ba77-2751677d2666/goldman-named-the-issue.html",
-      "publisher": "24/7 Wall St.",
-      "date": "2026-02-09",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Tech stocks have been shaky, but these 20 companies could still see rocketing sales growth",
-      "url": "https://www.marketwatch.com/story/tech-stocks-have-been-shaky-but-these-20-companies-could-still-see-rocketing-sales-growth-148195c9?mod=mw_FV",
-      "publisher": "MarketWatch",
-      "date": "2026-02-07",
-      "sentiment": "positive"
-    },
-    {
-      "title": "MarketBeat Week in Review - 02/02 - 02/06",
-      "url": "/news/303521/marketbeat-week-in-review-0202-0206",
-      "publisher": "MarketBeat",
-      "date": "2026-02-07",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Nvidia Shares Surge on Big Techs $650 Billion AI-Spending Plan",
-      "url": "https://finance.yahoo.com/news/nvidia-shares-surge-big-tech-180706782.html",
-      "publisher": "Bloomberg",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Nvidia's stock shoots toward best day since April as tech sector rebounds",
-      "url": "https://www.marketwatch.com/story/nvidias-stock-shoots-toward-best-day-since-april-as-tech-sector-rebounds-7211f5bd?mod=mw_FV",
-      "publisher": "MarketWatch",
-      "date": "2026-02-06",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Sandisk Stock Gained +1,500% Since Its Debut. Why This Trader Is Looking Elsewhere.",
-      "url": "https://www.investors.com/news/sandisk-stock-gained-1500-debut-why-trader-looking-elsewhere?mod=IBD_FV",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Sandisk's Swings Are Getting Bigger-Here's How to Play Them",
-      "url": "/news/301999/sandisks-swings-are-getting-bigger-heres-how-to-play-them",
-      "publisher": "MarketBeat",
-      "date": "2026-02-05",
-      "sentiment": "positive"
-    }
-  ]
+  "headlines": []
 }
