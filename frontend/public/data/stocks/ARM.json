@@ -4857,11 +4857,19 @@
       "low": 125.16000366210938,
       "close": 125.27999877929688,
       "volume": 4135300
+    },
+    {
+      "date": "2026-02-13",
+      "open": 120.12000274658203,
+      "high": 127.41999816894531,
+      "low": 119.69999694824219,
+      "close": 125.27999877929688,
+      "volume": 4411374
     }
   ],
   "fundamental": {
     "pe": 167.04,
-    "forward_pe": 58.113533,
+    "forward_pe": 58.155083,
     "pb": 17.061146,
     "ps": 28.483662,
     "roe": 0.112679996,
@@ -4889,10 +4897,10 @@
     "fcf_yield": 0.006198928890240329,
     "fcf_debt_ratio": 1.7890455878524947,
     "pe_score": 5.0,
-    "forward_pe_score": 16.958256240000004,
+    "forward_pe_score": 16.928340240000004,
     "pb_score": 25.289937199999997,
     "ps_score": 17.677558666666666,
-    "value_score": 19.975250702222223,
+    "value_score": 19.96527870222222,
     "roe_score": 54.337141714285714,
     "roa_score": 54.39,
     "margin_score": 71.583,
@@ -4903,42 +4911,50 @@
     "debt_equity_score": 87.783,
     "fcf_yield_score": 35.165774075200275,
     "current_ratio_score": 85.0,
-    "safety_score": 73.96481484497657,
-    "fundamental_score": 52.163975644550874,
+    "safety_score": 74.42647612819731,
+    "fundamental_score": 52.25381490119502,
     "fund_data_completeness": 1.0
   },
   "technical": {
     "close": 125.27999877929688,
-    "sma_20": 114.51849899291994,
-    "sma_50": 117.66039962768555,
-    "sma_200": 138.40297508239752,
-    "trend_alignment": 0.44366990205022344,
+    "sma_20": 115.49349899291994,
+    "sma_50": 117.38219955444336,
+    "sma_200": 138.4591250610352,
+    "trend_alignment": 0.44425991360032346,
     "rsi": 63.62961827832928,
     "rsi_score": 0.2725923655665856,
-    "macd_histogram": 2.375522096148732,
-    "macd_line": 2.25486498436355,
-    "macd_histogram_pct": 1.8961702740224633,
-    "bb_position": 0.8421348460121636,
-    "bb_upper": 130.24548487554813,
-    "bb_lower": 98.79151311029177,
-    "bb_width": 0.2746628015723554,
-    "hist_volatility": 0.5861704237927894,
-    "volume_ratio": 0.44928495239981137,
-    "avg_volume_20d": 9204180.95,
+    "macd_histogram": 2.1662275508534696,
+    "macd_line": 2.587127326781655,
+    "macd_histogram_pct": 1.7291088537362351,
+    "bb_position": 0.8084659367194198,
+    "bb_upper": 131.35667644852134,
+    "bb_lower": 99.63032153731854,
+    "bb_width": 0.27470251735249374,
+    "hist_volatility": 0.5870485187959051,
+    "volume_ratio": 0.48158081444262757,
+    "avg_volume_20d": 9160194.65,
     "daily_return": 0.0,
     "signed_volume_ratio": 0.0,
-    "stoch_k": 82.52376012239316,
-    "stoch_d": 87.75314136312281,
-    "trend_score": 44.36699020502235,
+    "stoch_k": 81.80053232820333,
+    "stoch_d": 84.02581127123976,
+    "trend_score": 44.42599136003235,
     "rsi_abs_score": 68.9592672051695,
     "macd_abs_score": 80.0,
     "momentum_score": 74.47963360258476,
-    "volatility_score": 22.87020559104516,
+    "volatility_score": 22.840350360939226,
     "volume_score": 50.0,
-    "technical_score": 50.228028260491165,
+    "technical_score": 50.239757560972976,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.23985957268487013,
+    "sentiment_pos": 0.09784999999999999,
+    "sentiment_neg": 0.0039,
+    "sentiment_neu": 0.89825,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 61.99
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.19731800766283525,
@@ -4953,17 +4969,17 @@
     "analyst_score": 59.58735632183908
   },
   "ranking": {
-    "value_score": 19.975250702222223,
+    "value_score": 19.96527870222222,
     "quality_score": 62.98650000000001,
     "growth_score": 53.925,
-    "safety_score": 73.96481484497657,
-    "trend_score": 44.36699020502235,
+    "safety_score": 74.42647612819731,
+    "trend_score": 44.42599136003235,
     "momentum_score": 74.47963360258476,
-    "volatility_score": 22.87020559104516,
+    "volatility_score": 22.840350360939226,
     "volume_score": 50.0,
     "analyst_score": 59.58735632183908,
     "pe_score": 5.0,
-    "forward_pe_score": 16.958256240000004,
+    "forward_pe_score": 16.928340240000004,
     "pb_score": 25.289937199999997,
     "ps_score": 17.677558666666666,
     "roe_score": 54.337141714285714,
@@ -4975,32 +4991,173 @@
     "fcf_yield_score": 35.165774075200275,
     "current_ratio_score": 85.0,
     "cyclical_risk_score": 50.0,
-    "earnings_visibility": 58.850725,
-    "valuation_margin": 19.761575210666667,
-    "catalyst_timeline": 59.094398012944616,
-    "downside_control": 48.88825306540326,
-    "composite_score": 44.48819224378771,
+    "earnings_visibility": 58.731725,
+    "valuation_margin": 19.821583610666668,
+    "catalyst_timeline": 59.21229812844562,
+    "downside_control": 48.81302397337048,
+    "composite_score": 43.92666737877338,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
-    "weight_catalyst_timeline": 0.25,
-    "weight_downside_control": 0.2,
-    "fundamental_score": 52.163975644550874,
-    "technical_score": 50.228028260491165,
-    "sentiment_score": 50.0,
+    "weight_catalyst_timeline": 0.2,
+    "weight_downside_control": 0.25,
+    "fundamental_score": 52.25381490119502,
+    "technical_score": 50.239757560972976,
+    "sentiment_score": 61.99,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 490,
-    "percentile": 0.05961538461538462,
-    "tier": "hold",
+    "rank": 491,
+    "percentile": 0.057692307692307696,
+    "tier": "sell",
     "tier_raw": "sell",
-    "tier_label": "Hold",
-    "tier_color": "#9ca3af",
+    "tier_label": "Sell",
+    "tier_color": "#fb923c",
     "market_cap": 133047181312.0,
     "sector": "Technology",
     "industry": "Semiconductors"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "AMD Taking PC, Server Market Share From Intel",
+      "url": "https://finance.yahoo.com/m/8cef3c77-7e98-311e-ab7d-af14d974d99a/amd-taking-pc%2C-server-market.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-13",
+      "sentiment": "positive"
+    },
+    {
+      "title": "SoftBank Swings to Profit on Valuation Boost From OpenAI Bet",
+      "url": "https://finance.yahoo.com/news/softbank-swings-profit-valuation-boost-074014227.html",
+      "publisher": "Bloomberg",
+      "date": "2026-02-12",
+      "sentiment": "positive"
+    },
+    {
+      "title": "SoftBank Group Posts Quarterly Profit on Tech Funds Gains",
+      "url": "https://finance.yahoo.com/m/fec24ec4-2851-3d42-8191-9f4d3a19e803/softbank-group-posts.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-12",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Masayoshi Son Says AI Access Should Be 'Human Right' As Softbank Shares Pop 10% On Upbeat Forecast, Arm Strength",
+      "url": "/news/305198/masayoshi-son-says-ai-access-should-be-human-right-as-softbank-shares-pop-10-on-upbeat-forecast-arm-strength",
+      "publisher": "Benzinga",
+      "date": "2026-02-10",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Broadcom and 2 More Chip Stocks Poised for Upside, According to Technical Analysis",
+      "url": "https://www.barrons.com/articles/broadcom-stock-price-buy-chips-semiconductors-technical-analysis-6a481592?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-09",
+      "sentiment": "positive"
+    },
+    {
+      "title": "What Next for Semis? Technical Indicators Show Upside for 3 Stocks.",
+      "url": "https://www.barrons.com/articles/technical-indicators-show-upside-for-semiconductor-stocks-arm-holdings-broadcom-credo-6a481592?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Slip Ahead of this Week's US News on Jobs and Inflation",
+      "url": "https://finance.yahoo.com/m/c4305182-b917-3cd0-9770-668b44538368/stocks-slip-ahead-of-this.html",
+      "publisher": "Barchart",
+      "date": "2026-02-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Best-Performing Leveraged ETFs of Last Week",
+      "url": "/news/304204/best-performing-leveraged-etfs-of-last-week",
+      "publisher": "Zacks",
+      "date": "2026-02-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Set for Muted Open as Bond Yields Climb, Key U.S. Economic Data Awaited",
+      "url": "https://finance.yahoo.com/m/056af1f1-44be-3416-8e86-59d0f6d5358a/stocks-set-for-muted-open-as.html",
+      "publisher": "Barchart",
+      "date": "2026-02-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why I am still taking these tech stocks to task",
+      "url": "https://finance.yahoo.com/news/why-i-am-still-taking-these-tech-stocks-to-task-133012952.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Consumer Tech News (Feb 2-6): Big Tech Earnings Take Center Stage In U.S. Markets, Anthropic Launches New AI Tool & More",
+      "url": "/news/303773/consumer-tech-news-feb-2-6-big-tech-earnings-take-center-stage-in-us-markets-anthropic-launches-new-ai-tool-more",
+      "publisher": "Benzinga",
+      "date": "2026-02-08",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "New Street Upgrades Arm Holdings (ARM) to Buy Following Strong Royalty Performance",
+      "url": "/news/303740/new-street-upgrades-arm-holdings-arm-to-buy-following-strong-royalty-performance",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Jim Cramer Makes Cryptic Remark About Arm Holdings (ARM)",
+      "url": "/news/303583/jim-cramer-makes-cryptic-remark-about-arm-holdings-arm",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is ARM Stock a Buy, Hold, or Sell After Stellar Q3 Earnings?",
+      "url": "/news/303218/is-arm-stock-a-buy-hold-or-sell-after-stellar-q3-earnings",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Company News for Feb 6, 2026",
+      "url": "/news/302935/company-news-for-feb-6-2026",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Amazon's big spending forecast is good news for these suppliers",
+      "url": "https://www.marketwatch.com/livecoverage/amazon-earnings-stock-results-amzn-guidance-q4/card/amazon-s-big-spending-forecast-is-good-news-for-these-suppliers-JBPHBbb2KD0oNoQU7xai?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-06",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Arm Holdings (ARM) Jumps 5.7% as Revenues Break Records",
+      "url": "/news/302405/arm-holdings-arm-jumps-57-as-revenues-break-records",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Qualcomm, Arm Take Hits as Rising AI Memory Requirements Snarl Smartphone Production",
+      "url": "https://finance.yahoo.com/m/8f434d3c-46df-3a72-bdaa-d6bf71d5c30a/qualcomm%2C-arm-take-hits-as.html",
+      "publisher": "The Daily Upside",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks to Watch Thursday Recap: Qualcomm, Shell, Arm",
+      "url": "https://finance.yahoo.com/m/60a92c51-b772-30ee-9667-fbe0df514dfd/stocks-to-watch-thursday.html",
+      "publisher": "The Wall Street Journal",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "15 Physical AI Stocks To Watch In 2026 As Robots And Autonomy Scale Globally",
+      "url": "/news/302049/15-physical-ai-stocks-to-watch-in-2026-as-robots-and-autonomy-scale-globally",
+      "publisher": "Benzinga",
+      "date": "2026-02-05",
+      "sentiment": "neutral"
+    }
+  ]
 }
