@@ -12313,6 +12313,14 @@
       "low": 114.75,
       "close": 115.66000366210938,
       "volume": 5522104
+    },
+    {
+      "date": "2026-02-19",
+      "open": 115.19999694824219,
+      "high": 116.26000213623047,
+      "low": 114.62000274658203,
+      "close": 115.66000366210938,
+      "volume": 2992726
     }
   ],
   "fundamental": {
@@ -12330,7 +12338,7 @@
     "profit_margin": 0.03576,
     "operating_margin": 0.04626,
     "gross_margin": 0.27813998,
-    "dividend_yield": 0.0391,
+    "dividend_yield": 0.0394,
     "beta": 1.136,
     "current_price": 115.66,
     "high_52w": 131.7,
@@ -12359,50 +12367,42 @@
     "debt_equity_score": 34.65633333333333,
     "fcf_yield_score": 66.00269625499126,
     "current_ratio_score": 43.5,
-    "safety_score": 42.40005316049531,
-    "fundamental_score": 54.73144817567048,
+    "safety_score": 42.27788019188283,
+    "fundamental_score": 54.70701358194799,
     "fund_data_completeness": 1.0
   },
   "technical": {
     "close": 115.66000366210938,
-    "sma_20": 110.77900047302246,
-    "sma_50": 104.91,
-    "sma_200": 96.61356525421141,
-    "trend_alignment": 0.7427427560366611,
-    "rsi": 63.268261138658126,
-    "rsi_score": 0.2653652227731625,
-    "macd_histogram": 0.10846436376872592,
-    "macd_line": 3.3257837908480212,
-    "macd_histogram_pct": 0.09377862729936885,
-    "bb_position": 0.7407654931509294,
-    "bb_upper": 120.91542643092986,
-    "bb_lower": 100.64257451511507,
-    "bb_width": 0.18300266141823282,
-    "hist_volatility": 0.3327869918800405,
-    "volume_ratio": 0.8440355726322722,
-    "avg_volume_20d": 6542501.5,
-    "daily_return": -0.007551031804571758,
-    "signed_volume_ratio": -0.8440355726322722,
-    "stoch_k": 87.86007488862649,
-    "stoch_d": 87.59312854376815,
-    "trend_score": 74.27427560366611,
+    "sma_20": 111.23700065612795,
+    "sma_50": 105.36200012207031,
+    "sma_200": 96.73778881072997,
+    "trend_alignment": 0.7390074510000313,
+    "rsi": 63.26826113865812,
+    "rsi_score": 0.2653652227731624,
+    "macd_histogram": 0.009960498742402013,
+    "macd_line": 3.229770050507298,
+    "macd_histogram_pct": 0.008611878287243309,
+    "bb_position": 0.7178794589042954,
+    "bb_upper": 121.38711537603886,
+    "bb_lower": 101.08688593621703,
+    "bb_width": 0.1824952967095622,
+    "hist_volatility": 0.3331813683757103,
+    "volume_ratio": 0.46420999488314024,
+    "avg_volume_20d": 6446922.8,
+    "daily_return": 0.0,
+    "signed_volume_ratio": 0.0,
+    "stoch_k": 84.57748505428864,
+    "stoch_d": 86.90627753015104,
+    "trend_score": 73.90074510000314,
     "rsi_abs_score": 69.21221720293931,
-    "macd_abs_score": 54.68893136496844,
-    "momentum_score": 61.95057428395388,
-    "volatility_score": 40.17183093249008,
-    "volume_score": 41.55964427367728,
-    "technical_score": 57.213750007519465,
+    "macd_abs_score": 50.43059391436216,
+    "momentum_score": 59.82140555865074,
+    "volatility_score": 40.19514575484915,
+    "volume_score": 50.0,
+    "technical_score": 58.15567434856599,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.13442259967548342,
-    "sentiment_pos": 0.11844999999999999,
-    "sentiment_neg": 0.04735,
-    "sentiment_neu": 0.8342,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 56.72
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.1,
     "target_upside": -0.11378177416565793,
@@ -12420,11 +12420,11 @@
     "value_score": 79.21435071428571,
     "quality_score": 67.65949954999999,
     "growth_score": 24.6,
-    "safety_score": 42.40005316049531,
-    "trend_score": 74.27427560366611,
-    "momentum_score": 61.95057428395388,
-    "volatility_score": 40.17183093249008,
-    "volume_score": 41.55964427367728,
+    "safety_score": 42.27788019188283,
+    "trend_score": 73.90074510000314,
+    "momentum_score": 59.82140555865074,
+    "volatility_score": 40.19514575484915,
+    "volume_score": 50.0,
     "analyst_score": 40.68960685630296,
     "pe_score": 77.10129857142857,
     "forward_pe_score": 70.54175357142857,
@@ -12439,173 +12439,32 @@
     "fcf_yield_score": 66.00269625499126,
     "current_ratio_score": 43.5,
     "cyclical_risk_score": 50.0,
-    "earnings_visibility": 46.059924932499996,
-    "valuation_margin": 79.01530521428572,
-    "catalyst_timeline": 58.98444567439229,
-    "downside_control": 41.2397826139478,
-    "composite_score": 56.74006841450534,
+    "earnings_visibility": 46.0809249325,
+    "valuation_margin": 79.0783052142857,
+    "catalyst_timeline": 58.72717575149568,
+    "downside_control": 41.238953892009796,
+    "composite_score": 55.68721252530886,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
-    "weight_catalyst_timeline": 0.25,
-    "weight_downside_control": 0.2,
-    "fundamental_score": 54.73144817567048,
-    "technical_score": 57.213750007519465,
-    "sentiment_score": 56.72,
+    "weight_catalyst_timeline": 0.2,
+    "weight_downside_control": 0.25,
+    "fundamental_score": 54.70701358194799,
+    "technical_score": 58.15567434856599,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 235,
-    "percentile": 0.55,
+    "rank": 258,
+    "percentile": 0.5057692307692307,
     "tier": "hold",
-    "tier_raw": "buy",
+    "tier_raw": "hold",
     "tier_label": "Hold",
     "tier_color": "#9ca3af",
     "market_cap": 52555804672.0,
     "sector": "Consumer Staples",
     "industry": "Consumer Staples Merchandise Retail"
   },
-  "headlines": [
-    {
-      "title": "XRT Is Up 11% But the Real Story Is Which Retailers Are Winning",
-      "url": "https://finance.yahoo.com/m/49949228-15c7-3fb5-8bdf-e4fd42b5be93/xrt-is-up-11%25-but-the-real.html",
-      "publisher": "24/7 Wall St.",
-      "date": "2026-02-18",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Zacks Investment Ideas feature highlights Walmart, Target and Amazon",
-      "url": "/news/313885/zacks-investment-ideas-feature-highlights-walmart-target-and-amazon",
-      "publisher": "Zacks",
-      "date": "2026-02-18",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Costco takes a risky stand while Walmart and Target stay out",
-      "url": "https://finance.yahoo.com/m/4fb671d3-5750-3dfb-a47a-0feb255778a0/costco-takes-a-risky-stand.html",
-      "publisher": "TheStreet",
-      "date": "2026-02-17",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Analyst Report: Ulta Beauty, Inc.",
-      "url": "https://finance.yahoo.com/m/60e97544-de78-389d-a1ad-25ad10443cfe/analyst-report%3A-ulta-beauty%2C.html",
-      "publisher": "Morningstar Research",
-      "date": "2026-02-17",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Walmart Vs Target: Which Retail Stock is the Best Investment as Q4 Results Approach?",
-      "url": "/news/313476/walmart-vs-target-which-retail-stock-is-the-best-investment-as-q4-results-approach",
-      "publisher": "Zacks",
-      "date": "2026-02-17",
-      "sentiment": "positive"
-    },
-    {
-      "title": "In stagnant job market, worker sentiment 'is taking a hit'",
-      "url": "https://finance.yahoo.com/news/in-stagnant-job-market-worker-sentiment-is-taking-a-hit-171804758.html",
-      "publisher": "Yahoo Finance",
-      "date": "2026-02-17",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Walmart's Q4 Earnings Coming Up: Is WMT Stock Still a Smart Buy?",
-      "url": "/news/312813/walmarts-q4-earnings-coming-up-is-wmt-stock-still-a-smart-buy",
-      "publisher": "Zacks",
-      "date": "2026-02-17",
-      "sentiment": "positive"
-    },
-    {
-      "title": "6 brands to watch in 2026",
-      "url": "https://finance.yahoo.com/m/819b2d7b-0801-3a73-bc51-43ebf756b20a/6-brands-to-watch-in-2026.html",
-      "publisher": "Retail Dive",
-      "date": "2026-02-17",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Walmart Shares Are Expensive AI Insurance",
-      "url": "https://finance.yahoo.com/m/af8334d9-8425-38c5-a233-35c80ab42440/walmart-shares-are-expensive.html",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-02-17",
-      "sentiment": "positive"
-    },
-    {
-      "title": "EXCLUSIVE: Moon Juice Enters Target, Expanding Into Mass",
-      "url": "https://finance.yahoo.com/m/8ee6e596-21e4-3ff7-9f8a-6eed8af0a7c7/exclusive%3A-moon-juice-enters.html",
-      "publisher": "WWD",
-      "date": "2026-02-16",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Should Investors Buy or Sell Target Stock at Its Current Valuation?",
-      "url": "/news/311880/should-investors-buy-or-sell-target-stock-at-its-current-valuation",
-      "publisher": "Zacks",
-      "date": "2026-02-16",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Dollar General's Non-Consumables Surge Drives a Better Sales Mix",
-      "url": "/news/311839/dollar-generals-non-consumables-surge-drives-a-better-sales-mix",
-      "publisher": "Zacks",
-      "date": "2026-02-16",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Walmart Holds the Edge in an Uncertain Retail Environment",
-      "url": "/news/311762/walmart-holds-the-edge-in-an-uncertain-retail-environment",
-      "publisher": "Zacks",
-      "date": "2026-02-16",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Investors Heavily Search Target Corporation (TGT): Here is What You Need to Know",
-      "url": "/news/311640/investors-heavily-search-target-corporation-tgt-here-is-what-you-need-to-know",
-      "publisher": "Zacks",
-      "date": "2026-02-16",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Lowes CEO used to make $4.35 an hour working at Target. His secret to climbing the corporate ladder was volunteering for jobs nobody else wanted",
-      "url": "https://finance.yahoo.com/news/lowe-ceo-used-4-35-125404768.html",
-      "publisher": "Fortune",
-      "date": "2026-02-16",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Is Stock Market Open Today? What's Open, What's Closed On Presidents Day 2026?",
-      "url": "/news/311425/is-stock-market-open-today-whats-open-whats-closed-on-presidents-day-2026",
-      "publisher": "Benzinga",
-      "date": "2026-02-16",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "3 Low-Volatility Stocks We Find Risky",
-      "url": "/news/311916/3-low-volatility-stocks-we-find-risky",
-      "publisher": "StockStory",
-      "date": "2026-02-15",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Is Target open on Presidents Day",
-      "url": "https://finance.yahoo.com/m/0fd1fd6a-a88b-3adf-83b2-6c33c602ed4f/is-target-open-on-presidents.html",
-      "publisher": "TheStreet",
-      "date": "2026-02-15",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Walmart shopper shift is a brutal reality check for retail",
-      "url": "https://finance.yahoo.com/m/70eead52-75bb-3938-80ba-b5e7950d3622/walmart-shopper-shift-is-a.html",
-      "publisher": "TheStreet",
-      "date": "2026-02-14",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Walmart customer shift is reality check for Target, Amazon",
-      "url": "https://finance.yahoo.com/m/70eead52-75bb-3938-80ba-b5e7950d3622/walmart-customer-shift-is.html",
-      "publisher": "TheStreet",
-      "date": "2026-02-14",
-      "sentiment": "positive"
-    }
-  ]
+  "headlines": []
 }
