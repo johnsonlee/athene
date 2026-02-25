@@ -12345,6 +12345,14 @@
       "low": 49.63999938964844,
       "close": 50.63999938964844,
       "volume": 4672471
+    },
+    {
+      "date": "2026-02-25",
+      "open": 50.43000030517578,
+      "high": 50.79999923706055,
+      "low": 49.689998626708984,
+      "close": 50.63999938964844,
+      "volume": 2940482
     }
   ],
   "fundamental": {
@@ -12362,10 +12370,10 @@
     "profit_margin": 0.06845,
     "operating_margin": 0.29241,
     "gross_margin": 0.66867995,
-    "dividend_yield": 0.0369,
+    "dividend_yield": 0.036699999999999997,
     "beta": 0.62,
     "current_price": 50.64,
-    "high_52w": 50.83,
+    "high_52w": 50.8,
     "low_52w": 37.58,
     "total_debt": 26843000832.0,
     "total_cash": 57000000.0,
@@ -12391,50 +12399,42 @@
     "debt_equity_score": 41.3584375,
     "fcf_yield_score": 14.013596143235606,
     "current_ratio_score": 18.9,
-    "safety_score": 17.19955115045311,
-    "fundamental_score": 48.485933072947766,
+    "safety_score": 17.195357264504274,
+    "fundamental_score": 48.485094295757996,
     "fund_data_completeness": 0.9166666666666666
   },
   "technical": {
     "close": 50.63999938964844,
-    "sma_20": 47.944051361083986,
-    "sma_50": 46.14043807983398,
-    "sma_200": 43.47982385635376,
-    "trend_alignment": 0.709354820054805,
+    "sma_20": 48.12800025939941,
+    "sma_50": 46.27642105102539,
+    "sma_200": 43.52666503906249,
+    "trend_alignment": 0.7065489991444714,
     "rsi": 74.72725386763256,
     "rsi_score": 0.49454507735265113,
-    "macd_histogram": 0.26411718070467094,
-    "macd_line": 1.1793631091403398,
-    "macd_histogram_pct": 0.5215584200000216,
-    "bb_position": 0.9266971919210021,
-    "bb_upper": 51.103139444634785,
-    "bb_lower": 44.78496327753319,
-    "bb_width": 0.13178227512558605,
-    "hist_volatility": 0.20889782479285574,
-    "volume_ratio": 0.9000597327458055,
-    "avg_volume_20d": 5191289.9,
-    "daily_return": 0.003965122291528944,
-    "signed_volume_ratio": 0.9000597327458055,
-    "stoch_k": 94.55426700931568,
-    "stoch_d": 88.69268908598775,
-    "trend_score": 70.9354820054805,
+    "macd_histogram": 0.24016177450499,
+    "macd_line": 1.2154481465669065,
+    "macd_histogram_pct": 0.47425311492812255,
+    "bb_position": 0.8759053099918476,
+    "bb_upper": 51.46926608283711,
+    "bb_lower": 44.786734435961705,
+    "bb_width": 0.13884914417507518,
+    "hist_volatility": 0.20816783942136288,
+    "volume_ratio": 0.570745286688442,
+    "avg_volume_20d": 5152004.0,
+    "daily_return": 0.0,
+    "signed_volume_ratio": 0.0,
+    "stoch_k": 94.82789619367296,
+    "stoch_d": 93.03994890167156,
+    "trend_score": 70.65489991444714,
     "rsi_abs_score": 40.76368917062885,
-    "macd_abs_score": 65.32337630000032,
-    "momentum_score": 53.043532735314585,
-    "volatility_score": 57.2072307493648,
-    "volume_score": 59.00059732745805,
-    "technical_score": 60.4352700376031,
+    "macd_abs_score": 64.35632787320307,
+    "momentum_score": 52.56000852191596,
+    "volatility_score": 56.07886154810093,
+    "volume_score": 50.0,
+    "technical_score": 58.18024484052911,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.24925870176794307,
-    "sentiment_pos": 0.1558,
-    "sentiment_neg": 0.01545,
-    "sentiment_neu": 0.82875,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 62.46
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.2,
     "target_upside": 0.007109004739336481,
@@ -12452,11 +12452,11 @@
     "value_score": 60.97266279999999,
     "quality_score": 46.84285714285715,
     "growth_score": 63.0,
-    "safety_score": 17.19955115045311,
-    "trend_score": 70.9354820054805,
-    "momentum_score": 53.043532735314585,
-    "volatility_score": 57.2072307493648,
-    "volume_score": 59.00059732745805,
+    "safety_score": 17.195357264504274,
+    "trend_score": 70.65489991444714,
+    "momentum_score": 52.56000852191596,
+    "volatility_score": 56.07886154810093,
+    "volume_score": 50.0,
     "analyst_score": 54.204472748815164,
     "pe_score": 47.713044124999996,
     "forward_pe_score": 52.6366144,
@@ -12471,25 +12471,25 @@
     "fcf_yield_score": 14.013596143235606,
     "current_ratio_score": 18.9,
     "cyclical_risk_score": 50.0,
-    "earnings_visibility": 57.18142857142857,
-    "valuation_margin": 61.19479883999999,
-    "catalyst_timeline": 59.81834874896103,
-    "downside_control": 39.875017284972685,
-    "composite_score": 55.30858535078807,
+    "earnings_visibility": 56.50242857142857,
+    "valuation_margin": 61.12479884,
+    "catalyst_timeline": 59.61593811851782,
+    "downside_control": 38.907132821890784,
+    "composite_score": 54.69449044529927,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 48.485933072947766,
-    "technical_score": 60.4352700376031,
-    "sentiment_score": 62.46,
+    "fundamental_score": 48.485094295757996,
+    "technical_score": 58.18024484052911,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 0.9441666666666666,
     "data_quality_penalty": 0.0,
-    "rank": 274,
-    "percentile": 0.475,
+    "rank": 283,
+    "percentile": 0.4576923076923077,
     "tier": "buy",
     "tier_raw": "hold",
     "tier_label": "Buy",
@@ -12498,146 +12498,5 @@
     "sector": "Utilities",
     "industry": "Electric Utilities"
   },
-  "headlines": [
-    {
-      "title": "What Makes FirstEnergy (FE) a Strong Momentum Stock: Buy Now?",
-      "url": "/news/320716/what-makes-firstenergy-fe-a-strong-momentum-stock-buy-now",
-      "publisher": "Zacks",
-      "date": "2026-02-24",
-      "sentiment": "positive"
-    },
-    {
-      "title": "NRG Energy Q4 Earnings and Revenues Surpass Expectations",
-      "url": "/news/320585/nrg-energy-q4-earnings-and-revenues-surpass-expectations",
-      "publisher": "Zacks",
-      "date": "2026-02-24",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Here's Why FirstEnergy (FE) is a Strong Momentum Stock",
-      "url": "/news/320538/heres-why-firstenergy-fe-is-a-strong-momentum-stock",
-      "publisher": "Zacks",
-      "date": "2026-02-24",
-      "sentiment": "positive"
-    },
-    {
-      "title": "FirstEnergy Corporation (FE) Soars to 52-Week High, Time to Cash Out?",
-      "url": "/news/320407/firstenergy-corporation-fe-soars-to-52-week-high-time-to-cash-out",
-      "publisher": "Zacks",
-      "date": "2026-02-24",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "PPL Gains 2.1% in Three Months: Worth Including in Your Portfolio?",
-      "url": "/news/320223/ppl-gains-21-in-three-months-worth-including-in-your-portfolio",
-      "publisher": "Zacks",
-      "date": "2026-02-24",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Dominion Energy Q4 Earnings and Revenues Surpass Estimates",
-      "url": "/news/319085/dominion-energy-q4-earnings-and-revenues-surpass-estimates",
-      "publisher": "Zacks",
-      "date": "2026-02-23",
-      "sentiment": "positive"
-    },
-    {
-      "title": "PPL Earnings Miss Estimates in Q4, Revenues Increase Y/Y",
-      "url": "/news/317631/ppl-earnings-miss-estimates-in-q4-revenues-increase-yy",
-      "publisher": "Zacks",
-      "date": "2026-02-20",
-      "sentiment": "positive"
-    },
-    {
-      "title": "IDACORP Q4 Earnings Beat Estimates, Revenues Increase Y/Y",
-      "url": "/news/317633/idacorp-q4-earnings-beat-estimates-revenues-increase-yy",
-      "publisher": "Zacks",
-      "date": "2026-02-20",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Evergy's Q4 Earnings Miss Estimates, Revenues Increase Y/Y",
-      "url": "/news/316236/evergys-q4-earnings-miss-estimates-revenues-increase-yy",
-      "publisher": "Zacks",
-      "date": "2026-02-19",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Stronger, Smarter Power Grid to Improve Reliability for 6,000+ Customers in Berks County",
-      "url": "/news/315769/stronger-smarter-power-grid-to-improve-reliability-for-6000-customers-in-berks-county",
-      "publisher": "PR Newswire",
-      "date": "2026-02-19",
-      "sentiment": "positive"
-    },
-    {
-      "title": "FirstEnergy 5-year spending plan jumps 30%, to $36B, driven by transmission",
-      "url": "https://finance.yahoo.com/m/05094547-f4b7-3700-8198-43b651371d6f/firstenergy-5-year-spending.html",
-      "publisher": "Utility Dive",
-      "date": "2026-02-19",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "FirstEnergy Corp (FE) Q4 2025 Earnings Call Highlights: Strong Financial Performance and ...",
-      "url": "https://finance.yahoo.com/news/firstenergy-corp-fe-q4-2025-210135828.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-02-18",
-      "sentiment": "positive"
-    },
-    {
-      "title": "FirstEnergy Q4 Earnings Call Highlights",
-      "url": "https://finance.yahoo.com/m/bf242397-4ee7-3598-83b1-6a8fb34b5749/firstenergy-q4-earnings-call.html",
-      "publisher": "MarketBeat",
-      "date": "2026-02-18",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Analyst Report: FirstEnergy Corp.",
-      "url": "https://finance.yahoo.com/m/5bbe5048-8646-3c86-9ef4-1539734d8c65/analyst-report%3A-firstenergy.html",
-      "publisher": "Morningstar Research",
-      "date": "2026-02-18",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "FirstEnergy (FE) Q4 Earnings: Taking a Look at Key Metrics Versus Estimates",
-      "url": "/news/314794/firstenergy-fe-q4-earnings-taking-a-look-at-key-metrics-versus-estimates",
-      "publisher": "Zacks",
-      "date": "2026-02-18",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "New Potomac Edison Substation Delivers More Reliable Power for Berkeley County Customers",
-      "url": "/news/314636/new-potomac-edison-substation-delivers-more-reliable-power-for-berkeley-county-customers",
-      "publisher": "PR Newswire",
-      "date": "2026-02-18",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "FirstEnergy Q4 Earnings Top Estimates, Revenues Increase Y/Y",
-      "url": "/news/314403/firstenergy-q4-earnings-top-estimates-revenues-increase-yy",
-      "publisher": "Zacks",
-      "date": "2026-02-18",
-      "sentiment": "positive"
-    },
-    {
-      "title": "FirstEnergy Corp. Q4 2025 Earnings Call Summary",
-      "url": "https://finance.yahoo.com/m/c810932b-08e9-3652-8e56-77e53f06bae4/firstenergy-corp.-q4-2025.html",
-      "publisher": "Moby",
-      "date": "2026-02-18",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "FirstEnergy (FE) Q4 Earnings and Revenues Surpass Estimates",
-      "url": "/news/313571/firstenergy-fe-q4-earnings-and-revenues-surpass-estimates",
-      "publisher": "Zacks",
-      "date": "2026-02-17",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "FirstEnergy: Q4 Earnings Snapshot",
-      "url": "https://finance.yahoo.com/news/firstenergy-q4-earnings-snapshot-221016771.html",
-      "publisher": "Associated Press Finance",
-      "date": "2026-02-17",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }
