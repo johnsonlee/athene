@@ -40,588 +40,186 @@ npm run build    # Production build → dist/
 - **Sector ETFs as primary signal**: 11 SPDR Select Sector ETFs measure institutional capital allocation directly
 - **Static JSON**: No backend server; all data is pre-computed and served as static files
 - **GitHub Pages**: Frontend deployed to `/` base path
-- **Daily collection, flexible analysis**: Data pipeline collectors always slice by day (daily OHLCV). Analysis engines select time windows as needed (e.g. 5d/10d/22d for capital flows). This decouples collection frequency from analysis granularity.
+- **Daily collection, flexible analysis**: Collectors slice by day (daily OHLCV). Analysis engines select time windows as needed (e.g. 5d/10d/22d). Decouples collection frequency from analysis granularity.
 
-## Data Flow
+## Pipelines
 
-### Stock Scoring Pipeline
+Three pipelines collect daily, analyze, and export static JSON to `frontend/public/data/`. All data stored to `collected/YYYY/MM/DD/`.
 
-Scores ~550 individual stocks (S&P 500 + NASDAQ 100) across 4 qualitative dimensions.
+**Stock Scoring** — ~550 stocks (S&P 500 + NASDAQ 100) across 4 dimensions. See [Scoring Design](#scoring-design).
+- Collectors: `universe.json`, `prices/<TICKER>.json`, `fundamentals.json`, `news.json`, `analyst.json`, `macro.json`
+- Analyzers: fundamental, technical, sentiment, analyst, macro regime, cyclical risk
+- Export: `meta.json`, `rankings.json`, `history.json`, `ic.json`, `feed.xml`, `stocks/{TICKER}.json`
+- Key files: `engine/main.py`, `engine/analyze.py`, `engine/collectors/`, `engine/analyzers/`, `engine/scorer/`, `engine/exporters/json_exporter.py`
 
-```
-Collection (daily, stored to collected/YYYY/MM/DD/):
-  universe.json              ← Wikipedia S&P 500 + NASDAQ 100 lists (~550 tickers)
-  prices/<TICKER>.json       ← yfinance daily OHLCV per ticker (365+ days)
-  fundamentals.json          ← yfinance PE/PB/PS/ROE/ROA/D-E/FCF/margins (25+ metrics)
-  news.json                  ← yfinance news headlines + dates
-  analyst.json               ← yfinance upgrades/downgrades/targets/consensus (90-day window)
-  macro.json                 ← yfinance VIX, S&P 500/SMA200, 10Y/3M yields
+**Trend** — 11 SPDR Sector ETFs + SPY. 5 signals: RS(35%), Breadth(25%), Analyst(15%), Momentum(15%), Volume(10%) → strength 0-100 → state classification.
+- Export: `trends.json`, `trend_history.json`
+- Key files: `engine/collectors/sector_etf.py`, `engine/analyzers/sector_trend.py`, `engine/analyzers/trend_scorer.py`, `engine/exporters/trend_exporter.py`
+- Frontend: `TrendDashboard.tsx` → `TrendLineChart.tsx`
 
-Analysis (5 parallel analyzers):
-  analyze_fundamental()  → value, quality, growth, safety sub-scores
-  analyze_technical()    → trend, momentum, volatility, volume sub-scores
-  analyze_sentiment()    → sentiment_score (VADER + time decay + source credibility)
-  analyze_analyst()      → analyst_score (40% revision + 35% target + 25% consensus)
-  detect_regime()        → risk_on / neutral / risk_off (VIX + SPY/SMA200 + yield curve)
+**Capital Flow** — 9 ETFs (5 risk, 4 safe). Hybrid: 6 use real shares outstanding (iShares/SPDR CSV), 3 use volume-price proxy. Multi-window (1W/2W/1M). RFI = tanh((risk_net - safe_net) / scale). Phases: outflow/deleverage/riskon/bottom/normal.
+- Export: `capital_flows.json`
+- Key files: `engine/collectors/capital_flow.py`, `engine/analyzers/capital_flow.py`, `engine/exporters/capital_flow_exporter.py`, `engine/capital_flow_pipeline.py`
+- Frontend: `CapitalFlowViz.tsx`
 
-Scoring:
-  metric_score()         (piecewise linear breakpoints → absolute 0-100)
-  4 dimensions:
-    Earnings Visibility (30%) = 0.60×quality + 0.40×growth
-    Valuation Margin    (25%) = value
-    Catalyst Timeline   (20%) = 0.25×trend + 0.25×momentum + 0.20×analyst + 0.15×sentiment + 0.15×volume
-    Downside Control    (25%) = 0.60×safety + 0.40×volatility
-  Regime-adjusted: risk_on → CT+5%/DC-5%, risk_off → CT-5%/DC+5%
-  EMA smoothing (α=0.3) per dimension, then composite recomputed
-  Tier: ≥75 Strong Buy, ≥60 Buy, ≥40 Hold, ≥25 Sell, <25 Strong Sell (±2 hysteresis)
-
-Export: frontend/public/data/
-  meta.json              (date, ticker count, macro regime)
-  rankings.json          (all tickers: score, tier, rank, percentile, dimensions)
-  history.json           (time-series: daily scores for all tickers)
-  ic.json                (14-factor IC validation: Spearman vs forward returns)
-  feed.xml               (rating changes RSS)
-  stocks/{TICKER}.json   (550+ individual detail files: prices, fundamentals, technicals)
-
-Frontend: / (screener table), /stock/:ticker (detail page), /dashboard (macro)
-```
-
-**Key files:**
-- `engine/collect.py` — CLI for all collectors (`python -m engine.collect <type>`)
-- `engine/collectors/price.py`, `fundamental.py`, `news.py`, `analyst.py`, `macro.py`
-- `engine/analyzers/fundamental.py`, `technical.py`, `sentiment.py`, `analyst.py`, `macro.py`
-- `engine/scorer/absolute.py` — Piecewise linear metric scoring (0-100)
-- `engine/scorer/factor_model.py` — 4-dimension composite + EMA + regime adjustment
-- `engine/exporters/json_exporter.py` — Rankings/history/stock detail export
-- `engine/analyzers/ic_tracker.py` — 14-factor IC validation
-- `engine/main.py` — Full pipeline orchestration
-- `engine/analyze.py` — Analysis-only from stored collected/ data (CI entry point)
-
-### Trend Pipeline (v10+)
-
-Identifies sector-level trends using 11 SPDR Select Sector ETFs as institutional capital allocation proxies.
-
-```
-Collection (daily, stored to collected/YYYY/MM/DD/sector_etfs/<TICKER>.json):
-  yfinance → 11 ETFs (XLK/XLF/XLE/XLV/XLY/XLP/XLRE/XLI/XLU/XLB/XLC) + SPY → daily OHLCV
-
-Analysis (5 signals per sector):
-  Relative Strength (35%): excess return vs SPY at 1M/3M/6M (weighted 50/30/20)
-  Breadth           (25%): % of sector stocks above SMA50 (50%) + SMA200 (50%)
-  Analyst Revisions (15%): aggregated upgrade/downgrade ratio across sector stocks
-  Momentum          (15%): ETF RSI-14 (50%) + SMA alignment margin scores (50%)
-  Volume            (10%): directional volume (signed by daily return direction)
-
-Scoring:
-  trend_strength = weighted sum of 5 signals (0-100)
-  Trend state: ≥70 Strong Uptrend, ≥55 Uptrend, ≥40 Neutral, ≥25 Downtrend, <25 Strong Downtrend
-  Primary signal attribution: argmax(|score_i - 50| × weight_i)
-
-History:
-  compute_trend_history() → RS + Momentum scores from 1+ year of ETF prices (vectorized rolling)
-  Sampled daily, resampled W/M/Q on frontend for chart display
-
-Export: frontend/public/data/
-  trends.json          (current: 11 sectors with scores, signals, regime info)
-  trend_history.json   (time-series: daily RS/momentum per sector for RRG charting)
-
-Frontend (/): TrendDashboard → TrendLineChart (11 sector lines, signal toggle, range/interval selector)
-  Click legend → select sector → highlight line + filter stock table below
-```
-
-**Key files:**
-- `engine/collectors/sector_etf.py` — 11 SPDR ETFs + SPY OHLCV collection
-- `engine/analyzers/sector_trend.py` — 5-signal analysis + historical computation
-- `engine/analyzers/trend_scorer.py` — Composite scoring + state classification
-- `engine/exporters/trend_exporter.py` — trends.json + trend_history.json export
-- `engine/config.py:94-122` — ETF mapping, signal weights, state thresholds
-- `frontend/src/components/trends/TrendDashboard.tsx` — Main dashboard component
-- `frontend/src/components/trends/TrendLineChart.tsx` — Multi-line chart with EMA overlay
-
-### Capital Flow Pipeline
-
-Tracks global capital rotation across 9 asset classes (5 risk, 4 safe) using a hybrid approach: direct ETF fund flows from shares outstanding (6 ETFs) + volume-price proxy (3 ETFs).
-
-```
-Collection (daily, stored to collected/YYYY/MM/DD/capital_flow_etfs/<TICKER>.json):
-  yfinance → 9 ETFs → daily OHLCV
-  iShares CSV → 5 ETFs (EWJ/EEM/IBIT/TLT/LQD) → shares outstanding
-  SPDR Gold archive → 1 ETF (GLD) → shares outstanding
-  SPY/BIL/VGK → no shares source (proxy-only)
-
-Analysis (multi-window: 1W/2W/1M):
-  stored daily slices → reconstruct DataFrames → analyze_capital_flows() per window
-
-  Direct fund flows (6 ETFs with shares data):
-    daily_fund_flow = Δ(shares_outstanding) × close_price
-    → rolling sum over window (5d/10d/22d)
-    → real $ flow values in $B
-
-  Proxy fund flows (3 ETFs without shares data: SPY, BIL, VGK):
-    proxy_flow = daily_return × dollar_volume
-    → rolling sum over window
-    → confidence: 0.6 (vs 1.0 for real flows)
-
-  RFI (Risk Flow Index):
-    RFI = tanh((risk_net - safe_net) / scale)
-    → smooth, bounded [-1, +1], no saturation
-
-  Phase detection (RFI-based):
-    outflow:    risk_net < -0.5 AND safe_net < -0.5
-    deleverage: RFI < -0.8 (panic) or risk→safe rotation with RFI < -0.3
-    riskon:     RFI > 0.3
-    bottom:     0 < RFI ≤ 0.3 AND risk_net > 0 AND safe_net < 0
-    normal:     default
-
-  Flow arrows: sources (net < 0) → sinks (net > 0), proportional allocation, ≥0.1B, max 10
-
-Export: capital_flows.json → {date, default_window, windows: {1W/2W/1M: {phases[]}}}
-
-Frontend (/flows): SVG diagram (risk left ↔ safe right) + timeline + interval selector
-```
-
-**Key files:**
-- `engine/collectors/capital_flow.py` — ETF OHLCV + shares outstanding collection (iShares/SPDR fetchers, daily + backfill + stored loader)
-- `engine/analyzers/capital_flow.py` — Hybrid fund flow analyzer (real shares + proxy fallback)
-- `engine/exporters/capital_flow_exporter.py` — Multi-window JSON export
-- `engine/capital_flow_pipeline.py` — Standalone pipeline CLI
-- `engine/config.py:125-155` — ETF mapping, shares sources, RFI thresholds
-- `frontend/src/components/flows/CapitalFlowViz.tsx` — SVG visualization
-
-**Asset classes:**
-| ETF | Node ID | Label | Type | Shares Source |
-|-----|---------|-------|------|---------------|
-| SPY | usEquity | US Equity / 美股 | risk | proxy (no free source) |
-| VGK | euEquity | EU Equity / 欧股 | risk | proxy (no free source) |
-| EWJ | jpEquity | JP Equity / 日股 | risk | iShares CSV |
-| EEM | emEquity | EM Equity / 新兴 | risk | iShares CSV |
-| IBIT | crypto | Crypto / 加密 | risk | iShares CSV |
-| GLD | gold | Gold / 黄金 | safe | SPDR Gold archive |
-| TLT | usTreasury | US Treasury / 美债 | safe | iShares CSV |
-| BIL | cash | Cash / 现金 | safe | proxy (no free source) |
-| LQD | corpBond | Corp Bond / 公司债 | safe | iShares CSV |
+| ETF | Node ID | Type | Shares Source |
+|-----|---------|------|---------------|
+| SPY | usEquity | risk | proxy |
+| VGK | euEquity | risk | proxy |
+| EWJ | jpEquity | risk | iShares CSV |
+| EEM | emEquity | risk | iShares CSV |
+| IBIT | crypto | risk | iShares CSV |
+| GLD | gold | safe | SPDR Gold archive |
+| TLT | usTreasury | safe | iShares CSV |
+| BIL | cash | safe | proxy |
+| LQD | corpBond | safe | iShares CSV |
 
 ## Version History
 
-### v1: Z-score + Percentile Ranking (deprecated)
+### v1–v9: Scoring Foundation (superseded)
 
-Scoring: z-score normalization (`z = (x - mean) / std`) + percentile-based tier assignment.
+| Ver | Theme | Summary |
+|-----|-------|---------|
+| v1 | Z-score Ranking | Deprecated: fixed distribution, unstable ratings, no attribution. |
+| v2 | Absolute Rating | Piecewise linear breakpoints (0-100). Separated Rating from Ranking. |
+| v3 | 4-Dimension Model | EV/VM/CT/DC. EMA smoothing, hysteresis, change attribution. |
+| v4 | Sector Breakpoints | Financial-sector PE/PB/D-E breakpoints. |
+| v5 | Fundamental Overhaul | 6-sector scoring, expanded safety, forward PE. |
+| v6 | Technical Overhaul | MACD normalization, direction-aware volume, true volatility, per-dimension EMA. |
+| v7 | Data Quality | IC tracking (14 factors), directional missing-data defaults, completeness penalty. |
+| v8 | Analyst Momentum | Analyst revision/target/consensus (40/35/25%). |
+| v9 | Intelligence | Sentiment decay + credibility. Macro regime detection. Regime-conditional weights. |
 
-**Why deprecated:**
-1. **Fixed distribution**: Percentile tiers guarantee exactly 10% Strong Buy, 10% Strong Sell regardless of actual stock quality. Bull market where everything is good → 10% still labeled "Strong Sell".
-2. **Rating = Ranking confusion**: Tier and rank conflated into one system. Tier was just a label for rank position, not an independent quality assessment.
-3. **Unstable ratings**: Z-scores recomputed daily from cross-section. A stock's z-score changes because *other stocks* changed, not because it changed. Minor data fluctuations → position shifts → tier flips.
-4. **No attribution**: When a rating changed, no way to identify which factor drove it.
+### v10–v12: Trend Dashboard + Capital Flows
 
-### v2: Absolute Rating + Relative Ranking
-
-Replaced z-score with piecewise linear breakpoints for absolute 0-100 metric scoring. Separated **Rating** (absolute quality tier) from **Ranking** (relative position).
-
-**Key changes from v1:**
-- Each metric scored via domain-specific breakpoints, not cross-sectional statistics.
-- Rating based on fixed thresholds (≥75 Strong Buy, ≥60 Buy, etc.) — independent of other stocks.
-- Ranking remains relative by design, used only for comparison within the same tier.
-- Financial sector gets adjusted breakpoints (PE, PB, D/E) to avoid structural bias.
-
-**Key principle**: A stock's rating reflects its own quality. Ranking is for comparison.
-
-### v3: Qualitative 4-Dimension Model
-
-Replaced the flat 3-factor aggregation (fundamental/technical/sentiment) with four investment-analysis dimensions, each with clear semantic meaning.
-
-**Key changes from v2:**
-- **Earnings Visibility (30%)** = 0.60×quality + 0.40×growth — "Can we reliably forecast earnings?"
-- **Valuation Margin (25%)** = value — "Are we buying at a discount?"
-- **Catalyst Timeline (20%)** = 0.30×trend + 0.30×momentum + 0.25×sentiment + 0.15×volume — "Will momentum carry forward?"
-- **Downside Control (25%)** = 0.60×safety + 0.40×volatility — "How much do we lose if wrong?"
-- Added EMA smoothing (α=0.3) on composite score to reduce noise.
-- Added hysteresis (±2 pts) at tier boundaries to prevent oscillation.
-- Added change attribution: when a rating changes, identify the primary driving dimension.
-
-### v4: Sector-Aware Breakpoints
-
-Added financial-sector-specific breakpoints to fix systematic over-scoring of banks and insurers.
-
-**Key changes from v3:**
-- Financial PE 8 now scores 60 (was 90) — low PE is structural for financials, not deep value.
-- Financial PB 1.5 scores 52 (was ~70) — book value dynamics differ from non-financial sectors.
-- Financial D/E scored near-neutral (~50) — leverage is the business model, not a risk signal.
-- Generalized sector-detection pattern (`_is_financial()`) for future sector expansions.
-
-### v5: Fundamental Scoring Overhaul
-
-Comprehensive upgrade to fundamental scoring: expanded sector awareness, deeper safety evaluation, and forward-looking valuation.
-
-**Key changes from v4:**
-- **Sector-aware scoring for 6 sectors**: Generalized `_is_financial()` to a `_SECTOR_OVERRIDES` lookup table covering Financial, Technology, Healthcare, Utilities, Real Estate, Energy. Each sector has tailored breakpoints for PE, PB, PS, D/E, and growth metrics where structural norms differ.
-- **Expanded safety dimension**: `safety_score` upgraded from a single metric (D/E) to `avg(debt_equity_score, fcf_yield_score, current_ratio_score)`. Added FCF yield breakpoints and current ratio breakpoints. Collector now fetches `totalDebt`, `totalCash`, `ebitda`, `currentRatio`.
-- **Forward PE scoring**: Added `score_forward_pe()` with sector-aware breakpoints. `value_score` now `avg(pe, forward_pe, pb, ps)` instead of `avg(pe, pb, ps)`.
-- **Sector-aware growth scoring**: Utilities use adjusted growth expectations (3% revenue growth = good, not mediocre).
-
-### v6: Technical Scoring Overhaul
-
-Comprehensive upgrade to technical indicator scoring: price normalization, directional context, true volatility measurement, margin-weighted trend, and math-consistent EMA smoothing.
-
-**Key changes from v5:**
-- **MACD histogram price normalization**: `macd_histogram_pct = (histogram / close) * 100`. Removes absolute ±0.5 threshold that favored low-price stocks. Breakpoints now use percentage-of-price values.
-- **Direction-aware volume**: `signed_volume_ratio = volume_ratio * sign(daily_return)`. High volume on a down day scores bearish (distribution); high volume on an up day scores bullish (confirmation). Replaces magnitude-only scoring.
-- **True volatility measurement**: Replaced BB position (%B) with two proper volatility measures: `bb_width = (upper - lower) / middle` (Bollinger bandwidth) and `hist_volatility` (annualized std of 20-day returns). `volatility_score = avg(bb_width_score, hist_vol_score)`. Removes mean-reversion bias.
-- **Margin-weighted trend alignment**: Each SMA alignment check now scores on a continuous 0-1 scale based on percentage distance from the SMA, instead of a binary pass/fail. Price 20% above SMA200 gets a stronger signal than price 0.1% above.
-- **Per-dimension EMA smoothing**: EMA smoothing (α=0.3) now applied to each of the four dimensions individually. Composite is then recomputed from smoothed dimensions, ensuring `composite = Σ(weight_i × smoothed_dim_i)`. Fixes the math inconsistency where displayed dimension scores didn't add up to the displayed composite.
-
-**Files**: `engine/analyzers/technical.py`, `engine/scorer/absolute.py`, `engine/main.py`
-
-### v7: Signal Validation & Data Quality
-
-Validates scoring rules via IC tracking, handles missing data honestly, and introduces data completeness scoring.
-
-**Key changes from v6:**
-- **Per-metric IC tracking**: Extended IC computation from 5 factors (composite + 4 dimensions) to 13 factors (+ 8 sub-scores: value, quality, growth, safety, trend, momentum, volatility, volume). Sub-scores are now stored in `history.json` for forward-return correlation. Enables detection of which individual scoring rules are predictive.
-- **Directional missing-data defaults**: Missing metrics no longer universally default to 50 (neutral). Metrics with known directional bias when missing use below-neutral defaults: FCF yield → 35, profit margin → 35, earnings growth → 38, ROA → 40, current ratio → 42. Other metrics remain at 50.
-- **Data completeness tracking**: Each ticker gets a `data_completeness` score (0-1) measuring the fraction of scored metrics with real data. Computed as weighted average of fundamental completeness (12 metrics, 67% weight) and technical completeness (6 metrics, 33% weight).
-- **Composite score penalty**: When `data_completeness < 0.50`, a linear penalty of up to 5 points is applied to composite_score. This prevents stocks with very sparse data from getting inflated neutral scores.
-
-**Files**: `engine/scorer/absolute.py`, `engine/scorer/factor_model.py`, `engine/analyzers/fundamental.py`, `engine/analyzers/technical.py`, `engine/analyzers/ic_tracker.py`, `engine/exporters/json_exporter.py`, `engine/main.py`
-
-### v8: Analyst Revision Momentum
-
-Adds sell-side analyst revision momentum as a dedicated signal within Catalyst Timeline, separating institutional-quality analyst actions from general news sentiment.
-
-**Key changes from v7:**
-- **Analyst data collector**: New `engine/collectors/analyst.py` fetches analyst consensus (recommendation mean, target prices, number of analysts) and upgrade/downgrade history (90-day lookback) from yfinance per ticker.
-- **Analyst revision momentum analyzer**: New `engine/analyzers/analyst.py` computes three sub-metrics:
-  - **Revision momentum** (40%): `(upgrades - downgrades) / total_revisions` mapped to 0-100 via piecewise breakpoints.
-  - **Target price upside** (35%): `(target_median - current_price) / current_price` mapped to 0-100.
-  - **Consensus rating** (25%): yfinance `recommendationMean` (1=Strong Buy to 5=Strong Sell) inverted and mapped to 0-100.
-- **Catalyst Timeline reweighting**: Added `analyst_score` as a new component. Reweighted: trend 25% + momentum 25% + analyst 20% + sentiment 15% + volume 15% (was: trend 30% + momentum 30% + sentiment 25% + volume 15%).
-- **IC tracking extended**: `analyst_score` added to the 14-factor IC tracker (was 13 factors).
-- **Missing data default**: Analyst score defaults to 50 (neutral) when no analyst data is available — no directional bias since lack of coverage is ambiguous.
-
-**Files**: `engine/collectors/analyst.py`, `engine/analyzers/analyst.py`, `engine/scorer/absolute.py`, `engine/scorer/factor_model.py`, `engine/config.py`, `engine/analyzers/ic_tracker.py`, `engine/exporters/json_exporter.py`, `engine/main.py`
-
-### v9: Intelligence Upgrade
-
-Two-part intelligence upgrade: better sentiment NLP and macro regime awareness.
-
-**Key changes from v8:**
-- **Sentiment time decay**: Headlines weighted by exponential decay with 7-day half-life (`w = exp(-ln2/7 × days_old)`). Recent headlines contribute more to the average than stale ones.
-- **Source credibility weighting**: Three-tier publisher credibility system. Tier 1 (1.5×): Reuters, Bloomberg, WSJ, FT, CNBC, AP, Barron's, MarketWatch. Tier 2 (1.0×): default. Tier 3 (0.7×): Benzinga, Seeking Alpha, Motley Fool, InvestorPlace. Combined weight = `time_decay × source_weight`.
-- **Headline count normalization**: `sentiment_confidence = min(1.0, news_count / 10)`. Low-confidence scores pulled toward neutral: `score = 50 + confidence × (raw - 50)`. Prevents stocks with 1-2 headlines from getting extreme sentiment scores.
-- **Macro data collector**: New `engine/collectors/macro.py` fetches VIX (`^VIX`), S&P 500 (`^GSPC`) with SMA200, 10Y Treasury yield (`^TNX`), and 13W T-Bill yield (`^IRX`).
-- **Market regime detection**: New `engine/analyzers/macro.py` classifies market as risk_on, neutral, or risk_off based on three signals: VIX level (<15 risk-on, >25 risk-off), S&P 500 vs SMA200 (>5% above risk-on, >5% below risk-off), yield curve slope (>1pp normal, <0 inverted). Regime score = average of available signals.
-- **Regime-conditional dimension weights**: In risk-on: CT 25%, DC 20% (+5% to catalysts). In risk-off: CT 15%, DC 30% (+5% to defense). Neutral: default weights. EV and VM stay constant across regimes.
-- **Macro data export**: Regime info (regime, signals, VIX, spread, etc.) exported in `meta.json` for frontend consumption.
-
-**Files**: `engine/analyzers/sentiment.py`, `engine/collectors/macro.py`, `engine/analyzers/macro.py`, `engine/scorer/factor_model.py`, `engine/config.py`, `engine/exporters/json_exporter.py`, `engine/main.py`
-
-### v10: Trend Dashboard
-
-Reposition from stock screener to trend identification tool. Build sector-level trend analysis with interactive frontend.
-
-**Key changes from v9:**
-- **Sector ETF collector**: New `engine/collectors/sector_etf.py` fetches OHLCV for 11 SPDR Select Sector ETFs (XLK/XLF/XLE/XLV/XLY/XLP/XLRE/XLI/XLU/XLB/XLC) + SPY benchmark.
-- **Sector trend analyzer**: New `engine/analyzers/sector_trend.py` computes per-sector trend signals: relative strength (35%), breadth (25%), analyst revisions (15%), momentum (15%), volume (10%). Also computes historical RS/momentum from ETF price data via `compute_trend_history()`.
-- **Trend scorer**: New `engine/analyzers/trend_scorer.py` produces composite trend strength (0-100) and trend state classification: Strong Uptrend (>=70), Uptrend (>=55), Neutral (>=40), Downtrend (>=25), Strong Downtrend (<25).
-- **Trend exporter**: New `engine/exporters/trend_exporter.py` exports `trends.json` (current sector trends) and `trend_history.json` (historical RS/momentum scores for charting).
-- **Trend line chart**: `frontend/src/components/trends/TrendLineChart.tsx` — multi-line chart (recharts) showing 11 sector trend lines over time. Signal toggle (Rel. Strength / Momentum), range selector (3M/6M/1Y/All), interval selector (W/M/Q) with period-based resampling.
-- **Sector selection + stock list**: Legend click selects a sector — highlights that line, dims others, and filters a stock table below the chart to show only that sector's stocks. Default shows all stocks.
-- **Regime banner**: `RegimeBanner` displays current macro regime (Risk On / Neutral / Risk Off) from `meta.json`.
-- **Trend history**: Engine computes weekly-sampled historical RS and momentum scores from ETF price data. Frontend renders these as interactive time-series.
-- **Version history timeline**: About page now includes a visual timeline of all versions (v1-v10) with current/deprecated badges.
-
-**Files**: `engine/collectors/sector_etf.py`, `engine/analyzers/sector_trend.py`, `engine/analyzers/trend_scorer.py`, `engine/exporters/trend_exporter.py`, `engine/config.py`, `engine/main.py`, `frontend/src/components/trends/TrendDashboard.tsx`, `frontend/src/components/trends/TrendLineChart.tsx`, `frontend/src/components/trends/RegimeBanner.tsx`, `frontend/src/hooks/useTrends.ts`, `frontend/src/hooks/useTrendHistory.ts`, `frontend/src/lib/dataLoader.ts`, `frontend/src/lib/i18n.tsx`, `frontend/src/types/index.ts`, `frontend/src/routes.tsx`, `frontend/src/components/About.tsx`
-
-### v11: Capital Flow Tracking
-
-Track global capital rotation across 9 asset classes (5 risk, 4 safe) using ETF volume-price signals. Visualize fund flows as an interactive SVG diagram.
-
-**Key changes from v10:**
-- **Capital flow ETF collector**: New `engine/collectors/capital_flow.py` fetches daily OHLCV for 9 ETFs — risk assets (SPY, VGK, EWJ, EEM, BTC-USD) and safe havens (GLD, TLT, BIL, LQD). Supports daily snapshots, historical backfill, and reconstruction from stored daily slices.
-- **Multi-signal fusion analyzer**: New `engine/analyzers/capital_flow.py` computes per-asset flow estimates using CMF (40%) + OBV slope (30%) + Return×DollarVolume (30%). Direction voting (2/3 agreement → boost, outlier → penalize), cross-asset consistency checks (risk↑ safe↓ → ×1.3, same direction → ×0.7).
-- **Optional institutional data**: CFTC COT futures positioning (`engine/collectors/cftc.py`) for directional confirmation (±15-25%). ICI fund flows (`engine/collectors/ici.py`) for magnitude calibration (scale factor [0.2, 5.0]).
-- **Multi-window analysis**: Analyzes capital flows across 1W/2W/1M windows simultaneously. Each window produces independent phase detection and flow arrow computation.
-- **Phase detection**: Classifies market state — deleverage (risk_net < -3, safe_net > 1), risk-on (risk_net > 3, safe_net < -1), bottom (risk_net ∈ (0, 3], safe_net < 0), normal (default).
-- **Flow arrow computation**: Sources (net < 0) → sinks (net > 0) with proportional allocation, minimum ≥0.1B threshold, max 10 arrows per window.
-- **Capital flow exporter**: New `engine/exporters/capital_flow_exporter.py` exports `capital_flows.json` with multi-window structure: `{date, default_window, windows: {1W/2W/1M: {phases[]}}}`.
-- **Standalone pipeline**: `engine/capital_flow_pipeline.py` — independent CLI for capital flow collection + analysis, runnable separately from the main stock scoring pipeline.
-- **SVG visualization**: New `frontend/src/components/flows/CapitalFlowViz.tsx` renders interactive SVG diagram with risk assets on the left, safe havens on the right, animated flow arrows between them. Includes interval selector (1W/2W/1M), phase indicator, and net flow summary.
-
-**Files**: `engine/collectors/capital_flow.py`, `engine/collectors/cftc.py`, `engine/collectors/ici.py`, `engine/analyzers/capital_flow.py`, `engine/exporters/capital_flow_exporter.py`, `engine/capital_flow_pipeline.py`, `engine/config.py`, `frontend/src/components/flows/CapitalFlowViz.tsx`
-
-### v14: Leading Indicators
-
-Four forward-looking market turn signals computed from existing collected data. Designed to detect market turns before they happen, complementing the reactive signals in v13.
-
-**Key changes from v13:**
-- **VIX Term Structure**: `^VIX / ^VIX3M` ratio — backwardation (>1.05) signals peak fear, deep contango (<0.85) signals complacency. Added `^VIX3M` to macro collector; historical data will accumulate over time.
-- **Credit Spread Velocity**: LQD/TLT ratio rate-of-change at 5d/10d windows. Rising = credit tightening (bearish for equities). Falling = credit easing (bullish). 1,018 historical data points from capital flow ETF archives.
-- **RFI Acceleration**: Second derivative of Risk Flow Index from `capital_flows.json` phase timeline. Detects bottoming (deceleration of outflow) and topping (deceleration of inflow) signals that precede direction changes. 50 data points.
-- **Breadth Thrust**: Rate of sectors flipping from downtrend to uptrend over a 22-day rolling window. Computed from `trend_history.json`. Thrust ≥18% = bullish, ≤-18% = bearish. 1,462 data points.
-- **Backtest integration**: All three active indicators added to the backtest framework — 178 credit spread events, 280 breadth thrust events, 38 RFI acceleration events with forward return validation.
-- **Pipeline integration**: `compute_leading_indicators()` runs automatically in the main pipeline after capital flows. Exports `leading_indicators.json`.
-- **Frontend**: New `/indicators` page with per-indicator cards showing latest signal, mini sparklines, and recent signal history. Filter by individual indicator.
-
-**Files**: `engine/analyzers/leading_indicators.py`, `engine/collectors/macro.py`, `engine/backtest.py`, `engine/main.py`, `frontend/src/components/indicators/LeadingIndicatorsPage.tsx`, `frontend/src/hooks/useLeadingIndicators.ts`, `frontend/src/types/index.ts`, `frontend/src/lib/dataLoader.ts`, `frontend/src/routes.tsx`, `frontend/src/components/layout/Header.tsx`, `frontend/src/lib/i18n.tsx`, `frontend/src/components/About.tsx`
-
-### v17: Cyclical Risk Analysis (current)
-
-Cyclical risk scoring for commodity/materials sectors. Addresses the fundamental blind spot where the framework treated cyclical-stock characteristics (low PE at earnings peak, high structural volatility, commodity-driven earnings swings) as positive signals instead of risk indicators.
-
-**Key changes from v16:**
-- **Materials sector breakpoints**: New `_SECTOR_OVERRIDES["Materials"]` for PE, forward PE, earnings growth, and revenue growth. Low PE (e.g., 5) now scores 55 (was 90) — recognizes that low PE in commodity stocks often signals peak earnings, not deep value. Negative earnings growth scored more neutrally (-20% → 35 vs default 10) since it's a normal cycle feature.
-- **Cyclical risk factor**: New `engine/analyzers/cyclical_risk.py` computes `cyclical_risk_score` (0-100) for cyclical sectors. Two signals: (1) Earnings direction (60%): `forward_pe / trailing_pe` ratio — ratio >1.2 means market expects earnings decline (cycle peak risk), <0.8 means earnings improving (cycle trough, safer). (2) Margin deviation (40%): current operating margin vs sector mid-cycle reference — above-normal margins signal peak cycle.
-- **DC dimension expansion for cyclical stocks**: For tickers in `CYCLICAL_SECTORS` (Materials, Energy): `DC = 0.50×safety + 0.30×volatility + 0.20×cyclical_risk`. Non-cyclical stocks retain original DC formula (0.60×safety + 0.40×volatility).
-- **Commodity-specific DC penalty**: New `TICKER_COMMODITY_RISK` mapping (like `TICKER_JURISDICTION`). CF/NTR/MOS: -8 DC points for China fertilizer export policy risk. IPI: -5 DC points for potash supply concentration risk.
-- **Cyclical sector config**: New `CYCLICAL_SECTORS` (Materials, Energy) and `CYCLICAL_MARGIN_REFS` (mid-cycle operating margin references per sector) in config.
-- **IC tracking extended**: Added `cyclical_risk_score` to the 27-factor IC tracker (was 26 factors).
-
-**Files**: `engine/analyzers/cyclical_risk.py` (new), `engine/scorer/absolute.py`, `engine/scorer/factor_model.py`, `engine/config.py`, `engine/analyzers/ic_tracker.py`, `engine/main.py`, `engine/analyze.py`, `frontend/src/components/About.tsx`, `frontend/src/lib/i18n.tsx`
-
-### v16: IC-Weighted Scoring
-
-IC-weighted scoring infrastructure that auto-activates once IC data accumulates. Fixes score distribution compression (Hold 85.7% → 64.5%) through trimmed mean aggregation, tier recalibration, sub-score debiasing, and spread amplification.
-
-**Key changes from v15:**
-- **IC-weighted averaging**: New `engine/scorer/ic_weights.py` provides `ic_weighted_avg()` and `trimmed_ic_weighted_avg()`. Weights derived from `|mean IC|` with floor 0.1. Falls back to equal weights when IC data insufficient (<20 observations).
-- **IC blend-in**: Linear transition from equal-weight to IC-weight over observations 20→40, preventing ranking jumps when IC data first becomes available.
-- **IC shrinkage**: Bayesian shrinkage pulls raw IC values toward grand mean IC. Shrinkage coefficient = `min(1, min_obs/n_obs)`, reducing noise from small sample sizes.
-- **Trimmed mean**: For sub-scores with ≥3 metrics (value, quality, safety), drops the worst-scoring metric per ticker before averaging. Prevents single bad metric from dragging sub-score to neutral.
-- **Metric-level IC tracking**: Extended IC tracker from 14 to 26 factors. Added 12 per-metric scores (pe_score, roe_score, etc.) to history.json for forward-return correlation.
-- **Tier threshold recalibration**: Strong Buy 75→63, Buy 60→56, Hold lower 40→46, Sell 25→39. Calibrated to actual score distribution (mean ~54, std ~5).
-- **CT dimension reform**: Catalyst Timeline reduced from 5 to 3 components — trend (1/3), momentum (1/3), analyst (1/3). Removed sentiment (std=5.5, noise) and volume (std=13.2, low signal). CT std improved from 6.5 to 7.1.
-- **Safety pool-aware centering**: Subtracts pool median and adds 50 to recenter safety_score distribution. Fixes S&P 500 structural bias where large-cap safety metrics are uniformly good (median was ~62, now 50).
-- **Analyst breakpoint left-shift**: Consensus rating breakpoints shifted left — consensus=2.0 now scores 58 (was 70). Corrects sell-side optimism bias.
-- **Spread amplification**: `composite = median + 1.3 × (raw - median)`, applied after EMA smoothing. Expands score distribution around median. Composite std 5.2→6.8.
-- **IC-weighted dimension aggregation**: EV, CT, DC dimensions use `ic_weighted_avg()` for sub-score combination. Falls back to equal weight within each dimension when IC data unavailable.
-
-**Files**: `engine/scorer/ic_weights.py` (new), `engine/analyzers/ic_tracker.py`, `engine/analyzers/fundamental.py`, `engine/scorer/factor_model.py`, `engine/scorer/absolute.py`, `engine/exporters/json_exporter.py`, `engine/config.py`, `engine/analyze.py`, `engine/main.py`, `frontend/src/components/About.tsx`, `frontend/src/lib/i18n.tsx`
-
-### v15: Direct ETF Fund Flows
-
-Hybrid capital flow model: 6 ETFs use real shares outstanding from ETF provider endpoints, 3 ETFs use volume-price proxy as fallback. Replaces broken yfinance shares data with direct iShares/SPDR CSV sources. Fixes fundamental issues from v11-v12: bimodal RFI distribution (33% saturated at ±1), 216 regime transitions in 523 days (noise), uncorrelated risk/safe nets (r=0.041).
-
-**Key changes from v14:**
-- **Hybrid fund flows**: 6 ETFs (EWJ, EEM, IBIT, TLT, LQD, GLD) use `daily_flow = Δ(shares_outstanding) × close_price` — real ETF creation/redemption. 3 ETFs (SPY, BIL, VGK) use `daily_return × dollar_volume` as proxy fallback (no free shares outstanding source available).
-- **iShares shares outstanding**: New `_fetch_ishares_shares()` fetches shares outstanding from iShares AJAX CSV endpoint (product ID + slug). Covers EWJ, EEM, IBIT, TLT, LQD.
-- **SPDR Gold shares outstanding**: New `_fetch_gld_shares()` fetches from SPDR Gold Shares archive CSV (`GLD_US_archive_EN.csv`). Session-level cache avoids re-downloading.
-- **Shares source dispatch**: `_fetch_shares_for_ticker()` routes to correct fetcher based on `shares_source` field in config. `None` → proxy-only (no shares fetched).
-- **Proxy fallback in analyzer**: New `_compute_proxy_daily_flows()` computes `return × dollar_volume` for SPY/BIL/VGK. Merged into main flow pipeline. Proxy nodes get `confidence: 0.6` (informational).
-- **Shares backfill**: `backfill_shares_outstanding()` uses iShares/SPDR fetchers for historical dates, skips proxy-only tickers, rate-limits iShares requests (0.5s delay).
-- **BTC-USD → IBIT**: Replaced BTC-USD with IBIT (iShares Bitcoin Trust ETF). Standard ETF with shares outstanding via iShares endpoint.
-- **Tanh RFI normalization**: `RFI = tanh((risk_net - safe_net) / scale)`. Smooth, bounded [-1, +1].
-- **Simplified analyzer**: Removed CMF, OBV slope, direction voting, cross-asset consistency, CFTC/ICI dependencies. Hybrid pipeline: real shares flows + proxy flows → merge → rolling sum → nodes → RFI → phase → arrows.
-
-**Files**: `engine/config.py`, `engine/collectors/capital_flow.py`, `engine/collect.py`, `engine/analyzers/capital_flow.py`, `engine/capital_flow_pipeline.py`, `engine/main.py`, `engine/exporters/capital_flow_exporter.py`, `.github/workflows/backfill-pipeline.yml`, `frontend/src/lib/i18n.tsx`, `frontend/src/components/About.tsx`
+v10: Sector trend pipeline + interactive frontend.
+v11: Capital flow pipeline, phase detection, SVG visualization.
+v12: Dollar-volume normalization, Broad Outflow phase, zero-sum flow arrows.
 
 ### v13: Signal Backtesting
 
-Backtest framework for historical signal validation. Reads from stored trend_history.json, capital_flows.json, and collected/ ETF price archives to compute forward returns after signal events.
+Backtest framework (`python -m engine.backtest`): sector trends (2,241 events), capital flow phases (27), RFI crossings (40). Per-signal hit rate/return/expectancy at 5d/10d/22d.
 
-**Key changes from v12:**
-- **Backtest engine**: New `engine/backtest.py` — standalone CLI (`python -m engine.backtest`) that runs all backtests and exports `backtest.json`. Pure Python, no new dependencies. Reads from existing `collected/` archives (1,775 daily snapshots from 2020-01-02 to 2026-02-07) and frontend JSON data.
-- **4 signal types tested**:
-  - **Sector trend transitions** (2,241 events): Detects when a sector's trend state changes (e.g., neutral → uptrend). Forward returns computed from sector ETF prices. Per-sector breakdown included.
-  - **Capital flow phase transitions** (27 events): Detects phase changes (normal/riskon/deleverage/bottom/outflow) from capital_flows.json. SPY forward returns as benchmark.
-  - **RFI level crossings** (40 events): Tracks Risk Flow Index zone transitions (panic/risk_off/mild_risk_off/neutral/risk_on). SPY forward returns.
-  - **Macro regime transitions** (0 events currently — macro collector only started recently, framework ready for future data).
-- **Per-signal statistics**: Hit rate, average/median return, expectancy, standard deviation, max drawdown at 5d/10d/22d horizons. Per-sector breakdown for sector trend signals.
-- **Backtest report page**: New `/backtest` route with interactive signal cards — filter by signal type, drill-down into horizons/sectors/recent events. Summary cards show top-level metrics.
-- **Frontend**: Added nav item, i18n (EN/ZH), TypeScript types, data loader, hook.
+**Key findings** (2020–2026, 2,308 events):
+1. Sector trend transitions lack standalone alpha — need RFI/regime filtering.
+2. RFI panic → risk_on strongest: 22d 100% hit, +2.51%.
+3. Capital flow risk_off is contrarian: 83% hit at 22d.
+4. mild_risk_off → risk_on is a trap: 50% hit, -3.42%.
+5. Cyclical sectors respond most to trend upgrades.
 
-**Files**: `engine/backtest.py`, `frontend/src/components/backtest/BacktestPage.tsx`, `frontend/src/hooks/useBacktest.ts`, `frontend/src/types/index.ts`, `frontend/src/lib/dataLoader.ts`, `frontend/src/routes.tsx`, `frontend/src/components/layout/Header.tsx`, `frontend/src/lib/i18n.tsx`, `frontend/src/components/About.tsx`
+### v14–v15
 
-**Key findings** (2020-01-02 ~ 2026-02-07, 2,308 events):
+v14: Four leading indicators (VIX term structure, credit spread velocity, RFI acceleration, breadth thrust). Key file: `engine/analyzers/leading_indicators.py`.
+v15: Hybrid shares outstanding model. Replaced yfinance shares data. BTC-USD → IBIT. Removed CMF/OBV/CFTC/ICI.
 
-1. **Sector trend transitions lack standalone alpha.** Both upgrades (n=1126, 22d +1.89%) and downgrades (n=1115, 22d +2.24%) produce positive forward returns — the market's upward beta drowns out signal directionality. Sector trends need conditional filtering (RFI direction or macro regime) to generate alpha.
-2. **RFI panic → risk_on is the strongest signal.** 22d: 100% hit rate, +2.51% avg return, only 2.98% max drawdown (n=5). The neutral → panic signal is similarly strong (22d: 100% hit rate, +5.50%). Both confirm that post-panic periods are the highest-conviction buying opportunity.
-3. **Capital flow Risk-Off is a contrarian signal.** Phase transitions to risk_off show 83% hit rate at 22d (+1.91%) — fear-driven exits lead to rebounds. Risk-On transitions show 69% hit rate (+1.67%).
-4. **mild_risk_off → risk_on is a trap.** Only 50% hit rate at 22d with -3.42% avg return — likely false breakouts where the recovery attempt fails.
-5. **Sector performance dispersion matters.** On upgrades, Energy (22d +2.77%, 66% hit) and Industrials (+2.59%, 70% hit) consistently outperform Consumer Staples (+0.70%, 58% hit). Cyclical sectors respond more strongly to trend shifts.
-6. **Macro regime data is too sparse.** Only 4 daily snapshots exist (macro collector started recently). Framework ready — will produce actionable signals as data accumulates.
+### v16: IC-Weighted Scoring
 
-### v12: Flow Normalization
+IC-weighted scoring, auto-activates once IC data accumulates. Fixes Hold compression (85.7% → 64.5%).
+- IC weights from `|mean IC|` with Bayesian shrinkage, blend-in over 20→40 observations.
+- Trimmed mean for sub-scores with ≥3 metrics. Spread amplification (k=1.3).
+- Tier recalibration: SB 75→63, Buy 60→56, Hold 40→46, Sell 25→39.
+- CT reduced to trend/momentum/analyst (removed sentiment+volume).
+- Safety pool-median centering for S&P 500 bias.
 
-Dollar-volume normalization for cross-asset comparability. Fixes three issues from v11: distorted flow magnitudes, missing phase detection, and phantom flow arrows.
+### v17: Cyclical Risk Analysis (current)
 
-**Key changes from v11:**
-- **Dollar-volume normalization**: Raw flows are divided by each asset's weekly dollar volume to get dimensionless "flow intensity", then scaled to the median weekly dollar volume across all 9 assets. This makes BTC ($35B/day volume) and EWJ ($0.3B/day volume) produce comparable flow numbers instead of a 100× distortion.
-- **Broad Outflow phase**: New `outflow` phase detected when both risk_net < -3 AND safe_net < -1 (both sides declining simultaneously). Previously misclassified as "normal rotation". Label: "全面流出" / "Broad Outflow" with explanation that capital is exiting to money markets / deposits outside the tracked universe.
-- **Zero-sum flow arrows**: Flow arrow total volume capped at `min(total_outflow, total_inflow)`. Each source contributes proportionally to its share of total outflow, each sink proportionally to its share of total inflow. Prevents phantom arrows (e.g., $171B arrows when only $2B actually flowed into sinks).
-- **Untracked flow tracking**: Each phase now includes an `untracked` field = `total_outflow - total_inflow`, representing capital that left the tracked ETF universe (likely money market funds, bank deposits, etc.). Displayed in frontend when > $1B with orange highlight.
+Cyclical risk scoring for commodity/materials sectors — prevents treating low PE at earnings peak as value.
+- **Materials breakpoints**: Low PE (5) scores 55 (was 90). Negative earnings growth scored neutrally.
+- **Cyclical risk factor** (`engine/analyzers/cyclical_risk.py`): forward/trailing PE ratio (60%) + margin deviation (40%).
+- **DC expansion**: Cyclical stocks: `DC = 0.50×safety + 0.30×volatility + 0.20×cyclical_risk`.
+- **Commodity DC penalty**: CF/NTR/MOS -8pts (China export risk), IPI -5pts (supply concentration).
+- IC tracker extended to 27 factors.
 
-**Files**: `engine/analyzers/capital_flow.py`, `frontend/src/components/flows/CapitalFlowViz.tsx`, `frontend/src/types/index.ts`, `frontend/src/lib/i18n.tsx`, `frontend/src/components/About.tsx`
+## Scoring Design
 
-## Scoring Design (v9)
+### Metric Scoring
 
-### Absolute Metric Scoring
+Each raw metric → 0-100 via piecewise linear breakpoints (`engine/scorer/absolute.py:metric_score()`).
 
-Each raw metric is mapped to 0-100 using a piecewise linear function with domain-specific breakpoints. This replaces z-score normalization entirely.
+**Missing data defaults:** FCF yield 35, profit margin 35, earnings growth 38, ROA 40, current ratio 42, all others 50.
 
-```python
-# engine/scorer/absolute.py
-def metric_score(value, breakpoints, missing_default=50.0) -> float:
-    """Piecewise linear interpolation: raw value → 0-100 score.
-    breakpoints: [(raw_val, score), ...] sorted by raw_val.
-    Missing data → missing_default (v7: directional defaults for biased metrics).
-    """
-```
+### Key Breakpoints
 
-### Missing Data Defaults (v7)
+| Metric | Direction | Breakpoints |
+|--------|-----------|-------------|
+| PE | Lower better | 8→90, 15→75, 25→50, 50→20 |
+| PB | Lower better | 1→80, 3→50, 5→30 |
+| ROE | Higher better | 8%→45, 15%→65, 25%→85 |
+| Revenue Growth | Higher better | 0%→40, 10%→65, 30%→90 |
+| Debt/Equity | Lower better | 40→75, 100→45, 250→15 |
+| RSI | Moderate best | 50→75, 30→50, 70→40 |
+| MACD Hist % | Higher better | -1.5%→20, 0%→50, 0.5%→65, 1.5%→80 |
+| BB Width | Lower better | 0.02→88, 0.10→55, 0.25→20 |
+| Hist Volatility | Lower better | 10%→88, 30%→52, 70%→18 |
+| Dir. Volume | Positive better | -2.5→15, 0→50, 1.5→72, 2.5→85 |
+| VADER Compound | Higher better | (-1,+1)→(0,100) |
+| Revision Momentum | Positive better | -1.0→10, 0→50, +0.5→75, +1.0→90 |
+| Target Upside | Higher better | -20%→10, 0%→45, +20%→72, +40%→85 |
+| Consensus Rating | Lower better | 1.0→92, 2.0→70, 3.0→45, 4.0→20 |
 
-| Metric | Default when missing | Rationale |
-|--------|---------------------|-----------|
-| FCF yield | 35 | Companies not reporting FCF often have negative FCF |
-| Profit margin | 35 | Missing suggests unprofitable or pre-revenue |
-| Earnings growth | 38 | Missing usually means negative/volatile earnings |
-| ROA | 40 | Missing correlates with poor asset efficiency |
-| Current ratio | 42 | Missing common in financials; slight penalty |
-| All others | 50 | No strong directional prior |
-
-### Breakpoints (intuition)
-
-| Metric | Direction | Key breakpoints |
-|--------|-----------|-----------------|
-| PE | Lower is better | PE 8→90, 15→75, 25→50, 50→20 |
-| PB | Lower is better | PB 1→80, 3→50, 5→30 |
-| ROE | Higher is better | ROE 8%→45, 15%→65, 25%→85 |
-| Revenue Growth | Higher is better | 0%→40, 10%→65, 30%→90 |
-| Debt/Equity | Lower is better | D/E 40→75, 100→45, 250→15 |
-| RSI | Moderate is best | RSI 50→75, 30→50, 70→40 |
-| MACD Hist % | Higher is better | -1.5%→20, 0%→50, 0.5%→65, 1.5%→80 |
-| BB Width | Lower is better | 0.02→88, 0.10→55, 0.25→20 |
-| Hist Volatility | Lower is better | 10%→88, 30%→52, 70%→18 |
-| Dir. Volume | Positive is better | -2.5→15, 0→50, 1.5→72, 2.5→85 |
-| VADER Compound | Higher is better | compound: direct map (-1,+1)→(0,100) |
-| Revision Momentum | Positive is better | -1.0→10, 0→50, +0.5→75, +1.0→90 |
-| Target Upside | Higher is better | -20%→10, 0%→45, +20%→72, +40%→85 |
-| Consensus Rating | Lower is better | 1.0→92, 2.0→70, 3.0→45, 4.0→20 |
-
-### Sub-score Computation
+### Dimension Aggregation
 
 ```
-value_score     = avg(pe_score, forward_pe_score, pb_score, ps_score)    # all sector-aware
-quality_score   = avg(roe_score, roa_score, margin_score)
-growth_score    = avg(rev_growth_score, earn_growth_score)               # sector-aware for Utilities
-safety_score    = avg(debt_equity_score, fcf_yield_score, current_ratio_score)  # sector-aware D/E
-sentiment_score = 50 + confidence × (raw_vader_score - 50)   # v9: confidence-normalized, time/source weighted
-analyst_score   = 0.40×revision_momentum_score + 0.35×target_upside_score + 0.25×consensus_score
+value   = avg(pe, forward_pe, pb, ps)              # sector-aware
+quality = avg(roe, roa, margin)
+growth  = avg(rev_growth, earn_growth)              # sector-aware for Utilities
+safety  = avg(debt_equity, fcf_yield, current_ratio)
+analyst = 0.40×revision + 0.35×target + 0.25×consensus
+
+EV (30%) = 0.60×quality + 0.40×growth
+VM (25%) = value
+CT (20%) = trend(1/3) + momentum(1/3) + analyst(1/3)
+DC (25%) = 0.60×safety + 0.40×volatility            # cyclical: 0.50/0.30/0.20 w/ cyclical_risk
+
+composite = w_EV×EV + w_VM×VM + w_CT×CT + w_DC×DC
 ```
 
-### Qualitative Dimension Aggregation (v9)
+Regime-adjusted: risk_on → CT+5%/DC-5%, risk_off → CT-5%/DC+5%.
 
-```
-earningsVisibility = 0.60×quality + 0.40×growth
-valuationMargin    = value
-catalystTimeline   = 0.25×trend + 0.25×momentum + 0.20×analyst + 0.15×sentiment + 0.15×volume
-downsideControl    = 0.60×safety + 0.40×volatility
-downsideControl    = 0.50×safety + 0.30×volatility + 0.20×cyclical_risk  (cyclical sectors only)
-
-composite_score = w_EV×EV + w_VM×VM + w_CT×CT + w_DC×DC
-```
-
-Default weights: EV 30%, VM 25%, CT 20%, DC 25%. Regime-adjusted:
-- **risk_on**: CT 25%, DC 20% (shift +5% to catalysts)
-- **risk_off**: CT 15%, DC 30% (shift +5% to defense)
-- **neutral**: default weights (no change)
-
-All scores are 0-100 throughout the pipeline.
-
-### Rating Tiers (absolute thresholds)
+### Rating Tiers
 
 | Score | Rating |
 |-------|--------|
-| ≥ 75 | Strong Buy |
-| ≥ 60 | Buy |
-| ≥ 40 | Hold |
-| ≥ 25 | Sell |
-| < 25 | Strong Sell |
+| ≥ 63 | Strong Buy |
+| ≥ 56 | Buy |
+| ≥ 46 | Hold |
+| ≥ 39 | Sell |
+| < 39 | Strong Sell |
 
-Hysteresis: ±2 points buffer to prevent oscillation at boundaries.
+Hysteresis ±2pts. EMA smoothing α=0.3 per dimension. Completeness penalty up to 5pts when <50% data.
 
-### EMA Smoothing (v6: per-dimension)
-
-```
-smoothed_dim = 0.3 × raw_dim + 0.7 × prev_smoothed_dim   (for each of 4 dimensions)
-composite    = Σ(weight_i × smoothed_dim_i)
-```
-Applied to each dimension individually before composite recomputation. Ensures displayed dimensions add up to composite.
-
-### Data Completeness Penalty (v7)
-
-```
-data_completeness = 0.67 × fund_completeness + 0.33 × tech_completeness
-penalty = max(0, (0.50 - data_completeness) / 0.50) × 5.0   (up to 5 points)
-composite_score = composite_score - penalty
-```
-Only applied when <50% of metrics have real data. Most stocks in the S&P 500/NASDAQ 100 universe have >80% completeness so the penalty rarely triggers.
-
-### Change Attribution
-
-When a rating changes, the system compares today's dimension scores vs yesterday's (from history.json) and identifies the primary driver:
-```
-Δ_weighted = (new_dimension_score - old_dimension_score) × dimension_weight
-primary_driver = dimension with largest |Δ_weighted|
-```
+Change attribution: `primary_driver = argmax(|Δ_dim × weight|)`
 
 ## Release Workflow
 
-When implementing a new version from the roadmap:
-
-1. Implement the engine changes (Python scoring/analysis code).
-2. Test with sample tickers: `python -m engine.main AAPL MSFT JPM XOM NEE`.
-3. Update the About page in the frontend:
-   - Add new version entry to `frontend/src/components/About.tsx` (timeline section).
-   - Add i18n strings (EN + ZH) to `frontend/src/lib/i18n.tsx` for the new version's label, date, title, description, and known issues.
-   - Move the "current" badge to the new version; demote the previous current version to a regular timeline entry.
-4. Update `CLAUDE.md`: move the implemented version from "Improvement Roadmap" to "Version History", mark the next version as `(current)`.
-5. Build frontend to verify: `cd frontend && npm run build`.
-6. Commit all changes together with message: `feat(engine): implement vN — <theme>`.
+1. Implement engine changes (Python).
+2. Test: `python -m engine.main AAPL MSFT JPM XOM NEE`.
+3. Update About page + i18n (`frontend/src/components/About.tsx`, `frontend/src/lib/i18n.tsx`).
+4. Update `CLAUDE.md`: move version from Roadmap to Version History.
+5. Build: `cd frontend && npm run build`.
+6. Commit: `feat(engine): implement vN — <theme>`.
 
 ## Roadmap
 
 ### Conditional Signal Filtering (next)
 
-- Depends on: Leading Indicators
-- **Motivation (v13 finding)**: Sector trend transitions alone lack alpha — both upgrades and downgrades produce positive returns because market beta drowns out signal directionality. Filtering by RFI state or macro regime is required.
-- Sector trend upgrade filtered by RFI state: only count upgrades when RFI is in neutral or risk_on zone (exclude panic/risk_off to avoid catching falling knives)
-- Sector trend downgrade filtered by RFI state: only count downgrades when RFI is in risk_off or panic (avoid selling in normal rotation)
-- Re-run backtest with conditional filters to verify improved hit rate / expectancy vs unconditional baseline
-- **Trap signal avoidance (v13 finding)**: mild_risk_off → risk_on (50% hit, -3.42% avg) should be excluded or require confirmation from a second signal before acting
+- **Motivation (v13)**: Sector trends alone lack alpha. Filter by RFI state/macro regime.
+- Upgrades only when RFI neutral/risk_on. Downgrades only when RFI risk_off/panic.
+- **Trap avoidance**: mild_risk_off → risk_on excluded or requires confirmation.
 
 ### Signal-to-Position Mapping
 
-- Depends on: Conditional Signal Filtering
-- Multi-signal composite decision matrix: RFI level + RFI direction + macro regime + sector trend breadth → position size bucket
-- Position buckets: empty (0%), light (25%), half (50%), heavy (75%), full (100%)
-- **Backtest-validated rules (v13 evidence)**:
-  - RFI panic → risk_on = heavy/full (100% hit rate, +2.51% 22d, 2.98% max DD)
-  - neutral → panic = heavy (100% hit rate, +5.50% 22d — post-panic rebound)
-  - risk_off → neutral = heavy (100% hit rate, +7.92% 22d — recovery confirmation)
-  - capital_flow risk_off phase = half (83% hit rate, +1.91% 22d — contrarian entry)
-  - mild_risk_off → risk_on = empty (trap signal, -3.42% avg — wait for confirmation)
-- Rules derived from backtesting results (not hand-tuned) — each rule must cite backtest evidence
-- Export as `signals.json` with current composite signal state + suggested position bucket
-- Frontend: signal dashboard showing current state of each input signal and the resulting position suggestion
+- Decision matrix: RFI level + direction + macro regime + sector breadth → position bucket (0/25/50/75/100%)
+- **Backtest-validated rules**: panic→risk_on = full (100% hit, +2.51%), neutral→panic = heavy (+5.50%), risk_off→neutral = heavy (+7.92%), risk_off phase = half (83% hit), mild_risk_off→risk_on = empty (trap)
 
 ### Position Alerts
 
-- Depends on: Signal-to-Position Mapping
-- User watchlist (localStorage)
-- Alert when position suggestion changes (e.g. light → heavy) based on validated signal rules
-- Frontend-only (compare watchlist against `signals.json` + existing JSON data)
+- User watchlist (localStorage), alert on position changes, frontend-only
 
 ### Leading Stock Valuation
 
-- Depends on: v13 backtest results (validated sector trends)
-- **Sector selection (v13 evidence)**: Prioritize cyclical sectors — Energy (22d +2.77%, 66% hit), Industrials (+2.59%, 70% hit), Tech (+2.39%, 65% hit) respond most to trend upgrades. Deprioritize Consumer Staples (+0.70%, 58% hit).
-- For sectors in backtesting-confirmed uptrend, identify leading stocks (top RS within sector + quality metrics)
-- Valuation analysis of sector leaders (reuse existing fundamental scoring)
-- New page `/leaders` — top 3-5 stocks per trending sector
+- Top RS + quality stocks per trending cyclical sector, `/leaders` page
 
 ### Sector Drill-Down
 
-- Independent — can be built at any time
-- Sector detail page (`/sector/:name`) — ETF price chart, signal radar, breadth history, constituent stocks
-- Sparklines in trend table from `trend_history.json`
-- 13F institutional holdings via SEC Edgar API
-- ETF fund flow detail (per-sector shares outstanding trends)
+- `/sector/:name` — ETF chart, signal radar, breadth history, constituents, 13F holdings
