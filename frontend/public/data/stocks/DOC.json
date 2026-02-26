@@ -12353,6 +12353,14 @@
       "low": 17.05500030517578,
       "close": 17.510000228881836,
       "volume": 5850718
+    },
+    {
+      "date": "2026-02-26",
+      "open": 17.549999237060547,
+      "high": 17.69499969482422,
+      "low": 17.454999923706055,
+      "close": 17.510000228881836,
+      "volume": 4969712
     }
   ],
   "fundamental": {
@@ -12370,7 +12378,7 @@
     "profit_margin": 0.02528,
     "operating_margin": 0.20066999,
     "gross_margin": 0.59973997,
-    "dividend_yield": 0.0707,
+    "dividend_yield": 0.0697,
     "beta": 1.107,
     "current_price": 17.51,
     "high_52w": 21.28,
@@ -12399,42 +12407,50 @@
     "debt_equity_score": 49.7817,
     "fcf_yield_score": 86.20914816775895,
     "current_ratio_score": 55.028,
-    "safety_score": 57.68471259838374,
-    "fundamental_score": 49.17138189467675,
+    "safety_score": 57.63653536505295,
+    "fundamental_score": 49.16174644801059,
     "fund_data_completeness": 1.0
   },
   "technical": {
     "close": 17.510000228881836,
-    "sma_20": 16.991499996185304,
-    "sma_50": 16.83633388519287,
-    "sma_200": 17.167924394607546,
-    "trend_alignment": 0.5401774093543933,
-    "rsi": 59.546590983180266,
-    "rsi_score": 0.1909318196636053,
-    "macd_histogram": 0.04634903337933996,
-    "macd_line": 0.06971165758772102,
-    "macd_histogram_pct": 0.2647003585007934,
-    "bb_position": 1.021194956346193,
-    "bb_upper": 17.48891485638603,
-    "bb_lower": 16.494085135984577,
-    "bb_width": 0.05854866966570347,
-    "hist_volatility": 0.21813173623786677,
-    "volume_ratio": 0.5875147421116005,
-    "avg_volume_20d": 9958419.05,
-    "daily_return": 0.01507247703662817,
-    "signed_volume_ratio": 0.5875147421116005,
-    "stoch_k": 84.48259735412464,
-    "stoch_d": 77.586683726062,
-    "trend_score": 54.01774093543933,
+    "sma_20": 17.010000038146973,
+    "sma_50": 16.857329521179203,
+    "sma_200": 17.172178688049318,
+    "trend_alignment": 0.5392531012003061,
+    "rsi": 59.54659098318026,
+    "rsi_score": 0.19093181966360517,
+    "macd_histogram": 0.05618411534114538,
+    "macd_line": 0.09359276838481279,
+    "macd_histogram_pct": 0.320868729907111,
+    "bb_position": 0.9580136475617095,
+    "bb_upper": 17.555835509859087,
+    "bb_lower": 16.46416456643486,
+    "bb_width": 0.06417818583045402,
+    "hist_volatility": 0.21808085690730805,
+    "volume_ratio": 0.5180809442888256,
+    "avg_volume_20d": 9592539.65,
+    "daily_return": 0.0,
+    "signed_volume_ratio": 0.0,
+    "stoch_k": 86.4916017023283,
+    "stoch_d": 81.87292008218228,
+    "trend_score": 53.92531012003061,
     "rsi_abs_score": 71.81738631177382,
-    "macd_abs_score": 59.117508962519835,
-    "momentum_score": 65.46744763714682,
-    "volatility_score": 68.73355253304373,
-    "volume_score": 55.875147421116004,
-    "technical_score": 60.7672965626078,
+    "macd_abs_score": 60.521718247677775,
+    "momentum_score": 66.16955227972579,
+    "volatility_score": 67.78162271809201,
+    "volume_score": 50.0,
+    "technical_score": 59.58478326354532,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.010813651220591042,
+    "sentiment_pos": 0.0512,
+    "sentiment_neg": 0.0417,
+    "sentiment_neu": 0.90715,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 49.46
+  },
   "analyst": {
     "revision_momentum": -0.3333333333333333,
     "target_upside": 0.08509423186750419,
@@ -12452,11 +12468,11 @@
     "value_score": 43.971557499999996,
     "quality_score": 30.575999999999993,
     "growth_score": 69.875,
-    "safety_score": 57.68471259838374,
-    "trend_score": 54.01774093543933,
-    "momentum_score": 65.46744763714682,
-    "volatility_score": 68.73355253304373,
-    "volume_score": 55.875147421116004,
+    "safety_score": 57.63653536505295,
+    "trend_score": 53.92531012003061,
+    "momentum_score": 66.16955227972579,
+    "volatility_score": 67.78162271809201,
+    "volume_score": 50.0,
     "analyst_score": 47.24519606193286,
     "pe_score": 10.0,
     "forward_pe_score": 8.0,
@@ -12471,25 +12487,25 @@
     "fcf_yield_score": 86.20914816775895,
     "current_ratio_score": 55.028,
     "cyclical_risk_score": 50.0,
-    "earnings_visibility": 50.200649999999996,
-    "valuation_margin": 44.18046725,
-    "catalyst_timeline": 54.5150384634519,
-    "downside_control": 61.69073976971411,
-    "composite_score": 50.99583445422978,
+    "earnings_visibility": 50.20765,
+    "valuation_margin": 44.11746725,
+    "catalyst_timeline": 54.89800584616893,
+    "downside_control": 61.99572371247174,
+    "composite_score": 51.155601153239395,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
     "weight_catalyst_timeline": 0.25,
     "weight_downside_control": 0.2,
-    "fundamental_score": 49.17138189467675,
-    "technical_score": 60.7672965626078,
-    "sentiment_score": 50.0,
+    "fundamental_score": 49.16174644801059,
+    "technical_score": 59.58478326354532,
+    "sentiment_score": 49.46,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
-    "rank": 395,
-    "percentile": 0.2423076923076923,
+    "rank": 391,
+    "percentile": 0.25,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
@@ -12498,5 +12514,146 @@
     "sector": "Real Estate",
     "industry": "Health Care REITs"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "REITs Set for a 2026 Rebound? 7 Top Picks as Rate Cuts Approach",
+      "url": "/news/316343/reits-set-for-a-2026-rebound-7-top-picks-as-rate-cuts-approach",
+      "publisher": "MarketBeat",
+      "date": "2026-02-19",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Equinix Q4 AFFO & Revenues Miss Estimates but Grow Y/Y, Dividend Hiked",
+      "url": "/news/309559/equinix-q4-affo-revenues-miss-estimates-but-grow-yy-dividend-hiked",
+      "publisher": "Zacks",
+      "date": "2026-02-12",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Welltower's Q4 FFO & Revenues Beat Estimates, Same Store NOI Rises",
+      "url": "/news/307857/welltowers-q4-ffo-revenues-beat-estimates-same-store-noi-rises",
+      "publisher": "Zacks",
+      "date": "2026-02-11",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Red-Hot Jobs Report Will Delay Fed Rate Cuts  Lock In These 5 Ultra-High-Yield Dividend Giants",
+      "url": "https://finance.yahoo.com/m/9f27ef6b-63bc-33e8-be23-a5707f4de7e7/red-hot-jobs-report-will.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-02-11",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Ventas Q4 FFO Meet, Revenues Beat Estimates, Same-Store Cash NOI Rises",
+      "url": "/news/303092/ventas-q4-ffo-meet-revenues-beat-estimates-same-store-cash-noi-rises",
+      "publisher": "Zacks",
+      "date": "2026-02-06",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "2 REITs That Look Attractive in a Stable Rate Environment",
+      "url": "/news/299853/2-reits-that-look-attractive-in-a-stable-rate-environment",
+      "publisher": "MarketBeat",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Healthpeak Properties Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/2ab22881-b76b-310f-9a9f-0c5f184b8d8b/healthpeak-properties-q4.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Healthpeak Properties, Inc.",
+      "url": "https://finance.yahoo.com/m/19a5b4f3-6079-329f-a9d5-ce23882f33c3/analyst-report%3A-healthpeak.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Goldman Sachs Highlights Improving Occupancy and Cash Flow Visibility at Healthpeak Properties Inc. (DOC)",
+      "url": "/news/298152/goldman-sachs-highlights-improving-occupancy-and-cash-flow-visibility-at-healthpeak-properties-inc-doc",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-03",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Healthpeak Properties Inc (DOC) Q4 2025 Earnings Call Highlights: Strategic Moves and ...",
+      "url": "https://finance.yahoo.com/news/healthpeak-properties-inc-doc-q4-210257135.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Healthpeak Q4 FFO Beats Estimates, Same-Store NOI Rises Y/Y",
+      "url": "/news/297394/healthpeak-q4-ffo-beats-estimates-same-store-noi-rises-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What Are Wall Street Analysts' Target Price for Healthpeak Properties Stock?",
+      "url": "https://finance.yahoo.com/m/5b0231f3-a303-39a8-b6d4-f7d093526d21/what-are-wall-street.html",
+      "publisher": "Barchart",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Healthpeak (DOC) Beats Q4 FFO and Revenue Estimates",
+      "url": "/news/296264/healthpeak-doc-beats-q4-ffo-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Healthpeak: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/healthpeak-q4-earnings-snapshot-214214654.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Healthpeak Properties Provides Strategic Initiatives Update and Reports Fourth Quarter 2025 Results",
+      "url": "https://www.businesswire.com/news/home/20260202980616/en/",
+      "publisher": "Business Wire",
+      "date": "2026-02-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst Report: Healthpeak Properties, Inc.",
+      "url": "https://finance.yahoo.com/m/025972eb-5bc3-3a8d-9d85-5ccd50546e86/analyst-report%3A-healthpeak.html",
+      "publisher": "Morningstar Research",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What's in the Cards for Healthpeak Properties This Earnings Season?",
+      "url": "/news/292146/whats-in-the-cards-for-healthpeak-properties-this-earnings-season",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Boomers and Gen-X Are Grabbing 5 Passive Income High-Yield Giants Before 2026 Rate Cuts",
+      "url": "https://finance.yahoo.com/m/045521f1-c885-399c-9f01-2e2285d312d5/boomers-and-gen-x-are.html",
+      "publisher": "24/7 Wall St.",
+      "date": "2026-01-29",
+      "sentiment": "negative"
+    },
+    {
+      "title": "SL Green's Q4 FFO & Revenues Beat Estimates, Rental Rates Improve",
+      "url": "/news/291777/sl-greens-q4-ffo-revenues-beat-estimates-rental-rates-improve",
+      "publisher": "Zacks",
+      "date": "2026-01-29",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Boston Properties' Q4 Revenues and FFO Miss Estimates",
+      "url": "/news/290004/boston-properties-q4-revenues-and-ffo-miss-estimates",
+      "publisher": "Zacks",
+      "date": "2026-01-28",
+      "sentiment": "negative"
+    }
+  ]
 }
