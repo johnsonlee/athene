@@ -12345,6 +12345,14 @@
       "low": 125.00450134277344,
       "close": 127.66999816894531,
       "volume": 9150672
+    },
+    {
+      "date": "2026-02-27",
+      "open": 126.06999969482422,
+      "high": 127.5,
+      "low": 125.76000213623047,
+      "close": 127.37000274658203,
+      "volume": 5915046
     }
   ],
   "fundamental": {
@@ -12391,60 +12399,52 @@
     "debt_equity_score": 50.0,
     "fcf_yield_score": 35.0,
     "current_ratio_score": 42.0,
-    "safety_score": 33.017961281173484,
-    "fundamental_score": 43.6035922562347,
+    "safety_score": 33.289902157196266,
+    "fundamental_score": 43.657980431439256,
     "fund_data_completeness": 0.0
   },
   "technical": {
-    "close": 127.66999816894531,
-    "sma_20": 125.83699989318849,
-    "sma_50": 124.93510223388672,
-    "sma_200": 102.72641601562502,
-    "trend_alignment": 0.7218379555707141,
-    "rsi": 54.37122453616112,
-    "rsi_score": 0.08742449072322245,
-    "macd_histogram": 0.23492513565743722,
-    "macd_line": 0.7501586019023421,
-    "macd_histogram_pct": 0.18400966478166741,
-    "bb_position": 0.7389706807705949,
-    "bb_upper": 129.67219480045924,
-    "bb_lower": 122.00180498591776,
-    "bb_width": 0.060954964128612184,
-    "hist_volatility": 0.28067646976742183,
-    "volume_ratio": 1.0267363838666341,
-    "avg_volume_20d": 8912387.0,
-    "daily_return": -0.004755227753011256,
-    "signed_volume_ratio": -1.0267363838666341,
-    "stoch_k": 78.4867733647795,
-    "stoch_d": 76.35544829948603,
-    "trend_score": 72.1837955570714,
-    "rsi_abs_score": 74.55985717531279,
-    "macd_abs_score": 57.100241619541684,
-    "momentum_score": 65.83004939742723,
-    "volatility_score": 62.070009121393745,
-    "volume_score": 39.35832678720078,
-    "technical_score": 61.68982066806849,
+    "close": 127.37000274658203,
+    "sma_20": 125.90849990844728,
+    "sma_50": 125.0280224609375,
+    "sma_200": 102.98271533966064,
+    "trend_alignment": 0.7186907710686968,
+    "rsi": 53.61817728614825,
+    "rsi_score": 0.07236354572296505,
+    "macd_histogram": 0.19190823917082533,
+    "macd_line": 0.7551187652084366,
+    "macd_histogram_pct": 0.15066988696910832,
+    "bb_position": 0.6875589565170991,
+    "bb_upper": 129.80461573590313,
+    "bb_lower": 122.01238408099145,
+    "bb_width": 0.061888050930458974,
+    "hist_volatility": 0.27082317141458145,
+    "volume_ratio": 0.6733684003565329,
+    "avg_volume_20d": 8784264.3,
+    "daily_return": -0.0023497722774797744,
+    "signed_volume_ratio": -0.6733684003565329,
+    "stoch_k": 67.01509170334536,
+    "stoch_d": 75.02076286653997,
+    "trend_score": 71.86907710686968,
+    "rsi_abs_score": 74.03272410030378,
+    "macd_abs_score": 56.26674717422771,
+    "momentum_score": 65.14973563726575,
+    "volatility_score": 62.89671420036383,
+    "volume_score": 43.26631599643467,
+    "technical_score": 62.33824986260033,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": -0.01192265872923035,
-    "sentiment_pos": 0.09609999999999999,
-    "sentiment_neg": 0.0375,
-    "sentiment_neu": 0.8663500000000001,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 49.4
-  },
+  "sentiment": null,
   "analyst": null,
   "ranking": {
     "value_score": 50.0,
     "quality_score": 45.0,
     "growth_score": 44.0,
-    "safety_score": 33.017961281173484,
-    "trend_score": 72.1837955570714,
-    "momentum_score": 65.83004939742723,
-    "volatility_score": 62.070009121393745,
-    "volume_score": 39.35832678720078,
+    "safety_score": 33.289902157196266,
+    "trend_score": 71.86907710686968,
+    "momentum_score": 65.14973563726575,
+    "volatility_score": 62.89671420036383,
+    "volume_score": 43.26631599643467,
     "analyst_score": 50.0,
     "pe_score": 50.0,
     "forward_pe_score": 50.0,
@@ -12461,23 +12461,23 @@
     "cyclical_risk_score": 50.0,
     "earnings_visibility": 44.5,
     "valuation_margin": 50.0,
-    "catalyst_timeline": 61.67638449544987,
-    "downside_control": 47.07919556038509,
-    "composite_score": 47.46611653846316,
+    "catalyst_timeline": 61.87788127441354,
+    "downside_control": 47.38399245363401,
+    "composite_score": 46.821592657621444,
     "weight_earnings_visibility": 0.3,
     "weight_valuation_margin": 0.25,
-    "weight_catalyst_timeline": 0.25,
-    "weight_downside_control": 0.2,
-    "fundamental_score": 43.6035922562347,
-    "technical_score": 61.68982066806849,
-    "sentiment_score": 49.4,
+    "weight_catalyst_timeline": 0.2,
+    "weight_downside_control": 0.25,
+    "fundamental_score": 43.657980431439256,
+    "technical_score": 62.33824986260033,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 0.33,
     "data_quality_penalty": 1.6999999999999997,
-    "rank": 466,
-    "percentile": 0.10576923076923077,
+    "rank": 468,
+    "percentile": 0.10192307692307692,
     "tier": "sell",
     "tier_raw": "hold",
     "tier_label": "Sell",
@@ -12486,146 +12486,5 @@
     "sector": "Healthcare",
     "industry": "Biotechnology"
   },
-  "headlines": [
-    {
-      "title": "Should You Invest in the State Street SPDR S&P Biotech ETF (XBI)?",
-      "url": "/news/315480/should-you-invest-in-the-state-street-spdr-sp-biotech-etf-xbi",
-      "publisher": "Zacks",
-      "date": "2026-02-19",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "FDA Makes U-Turn Again On Moderna New Flu Vaccine Review, Stock Soars",
-      "url": "/news/314760/fda-makes-u-turn-again-on-moderna-new-flu-vaccine-review-stock-soars",
-      "publisher": "Benzinga",
-      "date": "2026-02-18",
-      "sentiment": "negative"
-    },
-    {
-      "title": "PTC Therapeutics Pulls Translarna Bid After FDA Flags Weak Proof",
-      "url": "/news/310184/ptc-therapeutics-pulls-translarna-bid-after-fda-flags-weak-proof",
-      "publisher": "Benzinga",
-      "date": "2026-02-13",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Do Wall Street Analysts Like Incyte Corporation Stock?",
-      "url": "https://finance.yahoo.com/m/fd518483-baa7-342a-a4c2-f706de9270d1/do-wall-street-analysts-like.html",
-      "publisher": "Barchart",
-      "date": "2026-02-12",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Moderna, Mexico Partner To Boost Local Vaccine Production",
-      "url": "/news/306131/moderna-mexico-partner-to-boost-local-vaccine-production",
-      "publisher": "Benzinga",
-      "date": "2026-02-10",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Novavax Stock Is Surging Monday: What's Driving The Action?",
-      "url": "/news/287205/novavax-stock-is-surging-monday-whats-driving-the-action",
-      "publisher": "Benzinga",
-      "date": "2026-01-26",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Moderna (MRNA) Stock Pulls Back After Recent Strength",
-      "url": "/news/287143/moderna-mrna-stock-pulls-back-after-recent-strength",
-      "publisher": "Benzinga",
-      "date": "2026-01-26",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Vaxcyte Pushes Next-Gen Pneumococcal Vaccine Into Phase 3 Phase",
-      "url": "/news/285315/vaxcyte-pushes-next-gen-pneumococcal-vaccine-into-phase-3-phase",
-      "publisher": "Benzinga",
-      "date": "2026-01-23",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Biotech ETF (XBI) Hits New 52-Week High",
-      "url": "/news/285456/biotech-etf-xbi-hits-new-52-week-high",
-      "publisher": "Zacks",
-      "date": "2026-01-23",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Moderna Stock Explodes To New 52-Week High: What's Driving The Action?",
-      "url": "/news/284076/moderna-stock-explodes-to-new-52-week-high-whats-driving-the-action",
-      "publisher": "Benzinga",
-      "date": "2026-01-22",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Why Moderna Stock Strength Is Only Beginning: Technical Analysis",
-      "url": "https://www.barrons.com/articles/moderna-stock-price-buy-technical-analysis-chart-5ee7e0eb?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2026-01-13",
-      "sentiment": "positive"
-    },
-    {
-      "title": "'Biotech Super Bowl' Lands With a Thud. Stocks Slide on Lack of Deal News.",
-      "url": "https://www.barrons.com/articles/biotech-stocks-chase-conference-b9cab762?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2026-01-12",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Healthcare companies set for deals spree as drug patents expire",
-      "url": "https://finance.yahoo.com/news/healthcare-companies-set-deals-spree-110003128.html",
-      "publisher": "Financial Times",
-      "date": "2026-01-11",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Here's Why Biotech ETFs Are Rallying Hard",
-      "url": "/news/272188/heres-why-biotech-etfs-are-rallying-hard",
-      "publisher": "Zacks",
-      "date": "2026-01-09",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Biotech Could Be One of 2026s Biggest Winners, and This ETF Is Perfectly Positioned",
-      "url": "https://finance.yahoo.com/m/76a818d6-6104-3c9f-9510-63ae04a52f19/biotech-could-be-one-of.html",
-      "publisher": "24/7 Wall St.",
-      "date": "2026-01-09",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Big Pharma Has More Going for It Than Obesity Drugs",
-      "url": "https://www.wsj.com/health/pharma/big-pharma-has-more-going-for-it-than-obesity-drugs-35ffd102?mod=wsj_FV",
-      "publisher": "The Wall Street Journal",
-      "date": "2026-01-06",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Biotech and Pharma Stocks Tumble as Investors Race into Energy",
-      "url": "https://www.barrons.com/articles/biotech-stocks-fall-energy-rises-75c35259?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2026-01-05",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Biotech Stocks Survive The Sector Rotation",
-      "url": "https://finance.yahoo.com/m/fb36a43a-0759-3ee5-9c52-fedafc264c11/biotech-stocks-survive-the.html",
-      "publisher": "Investor's Business Daily",
-      "date": "2025-12-26",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Biopharma 2026 outlook: Keep an eye out for M&A",
-      "url": "https://finance.yahoo.com/video/biopharma-2026-outlook-keep-eye-113006270.html",
-      "publisher": "Yahoo Finance Video",
-      "date": "2025-12-24",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Should You Invest in the State Street SPDR S&P Biotech ETF (XBI)?",
-      "url": "/news/255998/should-you-invest-in-the-state-street-spdr-sp-biotech-etf-xbi",
-      "publisher": "Zacks",
-      "date": "2025-12-17",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

@@ -3,18 +3,39 @@
   <title>Athene Stock Screener - Rating Changes</title>
   <subtitle>Daily rating changes for S&amp;P 500 + NASDAQ 100 stocks</subtitle>
   <id>https://athene.johnsonlee.io/feed.xml</id>
-  <updated>2026-02-26T22:27:52.584197+00:00</updated>
+  <updated>2026-02-27T22:17:57.805188+00:00</updated>
   <link href="https://athene.johnsonlee.io/data/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://athene.johnsonlee.io" rel="alternate" type="text/html" />
   <author>
     <name>Athene Bot</name>
   </author>
   <entry>
-    <title>2026-02-26: 7 upgrades, 2 downgrades (9 total changes)</title>
-    <id>https://athene.johnsonlee.io/changes/2026-02-26</id>
-    <updated>2026-02-26T22:27:52.584197+00:00</updated>
+    <title>2026-02-27: 3 upgrades, 7 downgrades (10 total changes)</title>
+    <id>https://athene.johnsonlee.io/changes/2026-02-27</id>
+    <updated>2026-02-27T22:17:57.805188+00:00</updated>
     <link href="https://athene.johnsonlee.io/screener" rel="alternate" />
-    <content type="html">&lt;h2&gt;Rating Changes for 2026-02-26&lt;/h2&gt;
+    <content type="html">&lt;h2&gt;Rating Changes for 2026-02-27&lt;/h2&gt;
+&lt;h3&gt;Upgrades&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;TROW&lt;/strong&gt;: Hold → Buy (score: 58.88)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;FAST&lt;/strong&gt;: Hold → Buy (score: 58.38)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TXN&lt;/strong&gt;: Hold → Buy (score: 58.11)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Downgrades&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;LNT&lt;/strong&gt;: Buy → Hold (score: 53.83)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AKAM&lt;/strong&gt;: Buy → Hold (score: 53.82)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AXP&lt;/strong&gt;: Buy → Hold (score: 53.69)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;FER&lt;/strong&gt;: Buy → Hold (score: 53.60)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;FE&lt;/strong&gt;: Buy → Hold (score: 52.45)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GPC&lt;/strong&gt;: Hold → Sell (score: 43.41)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;COIN&lt;/strong&gt;: Sell → Strong Sell (score: 36.79)&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <ns0:entry>
+    <ns0:title>2026-02-26: 7 upgrades, 2 downgrades (9 total changes)</ns0:title>
+    <ns0:id>https://athene.johnsonlee.io/changes/2026-02-26</ns0:id>
+    <ns0:updated>2026-02-26T22:27:52.584197+00:00</ns0:updated>
+    <ns0:link href="https://athene.johnsonlee.io/screener" rel="alternate" />
+    <ns0:content type="html">&lt;h2&gt;Rating Changes for 2026-02-26&lt;/h2&gt;
 &lt;h3&gt;Upgrades&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;MSFT&lt;/strong&gt;: Buy → Strong Buy (score: 65.40)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;AOS&lt;/strong&gt;: Buy → Strong Buy (score: 65.09)&lt;/li&gt;
@@ -27,8 +48,8 @@
 &lt;h3&gt;Downgrades&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;MDT&lt;/strong&gt;: Buy → Hold (score: 53.84)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;EXPD&lt;/strong&gt;: Buy → Hold (score: 53.61)&lt;/li&gt;
-&lt;/ul&gt;</content>
-  </entry>
+&lt;/ul&gt;</ns0:content>
+  </ns0:entry>
   <ns0:entry>
     <ns0:title>2026-02-25: 5 upgrades, 3 downgrades (8 total changes)</ns0:title>
     <ns0:id>https://athene.johnsonlee.io/changes/2026-02-25</ns0:id>
@@ -698,17 +719,6 @@
 &lt;h3&gt;Downgrades&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;WDC&lt;/strong&gt;: Buy → Hold (score: 56.47)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;TTWO&lt;/strong&gt;: Hold → Sell (score: 37.88)&lt;/li&gt;
-&lt;/ul&gt;</ns0:content>
-  </ns0:entry>
-  <ns0:entry>
-    <ns0:title>2026-02-06: 0 upgrades, 2 downgrades (2 total changes)</ns0:title>
-    <ns0:id>https://athene.johnsonlee.io/changes/2026-02-06</ns0:id>
-    <ns0:updated>2026-02-06T22:13:47.843974+00:00</ns0:updated>
-    <ns0:link href="https://athene.johnsonlee.io/screener" rel="alternate" />
-    <ns0:content type="html">&lt;h2&gt;Rating Changes for 2026-02-06&lt;/h2&gt;
-&lt;h3&gt;Downgrades&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;FOX&lt;/strong&gt;: Buy → Hold (score: 57.86)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;SWKS&lt;/strong&gt;: Buy → Hold (score: 57.80)&lt;/li&gt;
 &lt;/ul&gt;</ns0:content>
   </ns0:entry>
 </feed>
