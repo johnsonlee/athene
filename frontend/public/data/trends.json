@@ -11,28 +11,28 @@
     "sp500_sma200": 6559.93,
     "sp500_vs_sma200_pct": 0.0486,
     "tnx_yield": 3.9619998931884766,
-    "irx_yield": 3.5779998302459717,
+    "irx_yield": 3.578000068664551,
     "yield_curve_spread": 0.384,
     "weights": {
-      "earnings_visibility": 0.3,
-      "valuation_margin": 0.25,
-      "catalyst_timeline": 0.2,
-      "downside_control": 0.25
+      "earnings_visibility": 0.15,
+      "valuation_margin": 0.15,
+      "catalyst_timeline": 0.4,
+      "downside_control": 0.3
     }
   },
   "sectors": [
     {
       "sector": "Energy",
       "etf": "XLE",
-      "trend_strength": 78.4,
+      "trend_strength": 79.2,
       "trend_state": "strong_uptrend",
       "primary_signal": "relative_strength",
       "signals": {
         "relative_strength": {
-          "score": 87.5,
-          "rs_1m": 0.1,
-          "rs_3m": 0.24,
-          "rs_6m": 0.19
+          "score": 88.9,
+          "rs_1m": 0.12,
+          "rs_3m": 0.25,
+          "rs_6m": 0.2
         },
         "breadth": {
           "score": 100.0,
@@ -45,12 +45,12 @@
           "downgrades": 18
         },
         "momentum": {
-          "score": 74.2,
-          "rsi": 71.2
+          "score": 76.4,
+          "rsi": 68.7
         },
         "volume": {
-          "score": 66.8,
-          "volume_ratio": 1.13
+          "score": 66.2,
+          "volume_ratio": 1.08
         }
       },
       "etf_close": 55.92,
@@ -59,15 +59,15 @@
     {
       "sector": "Materials",
       "etf": "XLB",
-      "trend_strength": 77.9,
+      "trend_strength": 77.6,
       "trend_state": "strong_uptrend",
-      "primary_signal": "relative_strength",
+      "primary_signal": "breadth",
       "signals": {
         "relative_strength": {
-          "score": 83.1,
-          "rs_1m": 0.09,
-          "rs_3m": 0.19,
-          "rs_6m": 0.1
+          "score": 81.5,
+          "rs_1m": 0.08,
+          "rs_3m": 0.2,
+          "rs_6m": 0.11
         },
         "breadth": {
           "score": 94.2,
@@ -80,28 +80,63 @@
           "downgrades": 16
         },
         "momentum": {
-          "score": 72.1,
-          "rsi": 69.6
+          "score": 73.8,
+          "rsi": 66.4
         },
         "volume": {
-          "score": 59.2,
-          "volume_ratio": 0.61
+          "score": 58.9,
+          "volume_ratio": 0.59
         }
       },
       "etf_close": 53.41,
       "stock_count": 26
     },
     {
+      "sector": "Consumer Staples",
+      "etf": "XLP",
+      "trend_strength": 75.8,
+      "trend_state": "strong_uptrend",
+      "primary_signal": "relative_strength",
+      "signals": {
+        "relative_strength": {
+          "score": 80.8,
+          "rs_1m": 0.11,
+          "rs_3m": 0.14,
+          "rs_6m": 0.07
+        },
+        "breadth": {
+          "score": 87.5,
+          "pct_above_sma50": 0.89,
+          "pct_above_sma200": 0.86
+        },
+        "analyst_revisions": {
+          "score": 58.5,
+          "upgrades": 24,
+          "downgrades": 17
+        },
+        "momentum": {
+          "score": 72.2,
+          "rsi": 61.4
+        },
+        "volume": {
+          "score": 60.7,
+          "volume_ratio": 0.71
+        }
+      },
+      "etf_close": 90.01,
+      "stock_count": 36
+    },
+    {
       "sector": "Utilities",
       "etf": "XLU",
-      "trend_strength": 75.2,
+      "trend_strength": 75.3,
       "trend_state": "strong_uptrend",
       "primary_signal": "breadth",
       "signals": {
         "relative_strength": {
-          "score": 75.5,
+          "score": 75.9,
           "rs_1m": 0.11,
-          "rs_3m": 0.05,
+          "rs_3m": 0.06,
           "rs_6m": 0.08
         },
         "breadth": {
@@ -115,68 +150,33 @@
           "downgrades": 12
         },
         "momentum": {
-          "score": 50.4,
+          "score": 50.5,
           "rsi": 83.6
         },
         "volume": {
-          "score": 69.1,
-          "volume_ratio": 1.29
+          "score": 68.8,
+          "volume_ratio": 1.27
         }
       },
       "etf_close": 47.73,
       "stock_count": 31
     },
     {
-      "sector": "Consumer Staples",
-      "etf": "XLP",
-      "trend_strength": 74.1,
-      "trend_state": "strong_uptrend",
-      "primary_signal": "relative_strength",
-      "signals": {
-        "relative_strength": {
-          "score": 77.3,
-          "rs_1m": 0.09,
-          "rs_3m": 0.14,
-          "rs_6m": 0.06
-        },
-        "breadth": {
-          "score": 86.1,
-          "pct_above_sma50": 0.86,
-          "pct_above_sma200": 0.86
-        },
-        "analyst_revisions": {
-          "score": 58.5,
-          "upgrades": 24,
-          "downgrades": 17
-        },
-        "momentum": {
-          "score": 72.1,
-          "rsi": 61.4
-        },
-        "volume": {
-          "score": 59.6,
-          "volume_ratio": 0.64
-        }
-      },
-      "etf_close": 90.01,
-      "stock_count": 36
-    },
-    {
       "sector": "Industrials",
       "etf": "XLI",
-      "trend_strength": 73.0,
+      "trend_strength": 73.4,
       "trend_state": "strong_uptrend",
       "primary_signal": "relative_strength",
       "signals": {
         "relative_strength": {
-          "score": 79.3,
+          "score": 79.2,
           "rs_1m": 0.08,
           "rs_3m": 0.15,
           "rs_6m": 0.1
         },
         "breadth": {
-          "score": 74.1,
-          "pct_above_sma50": 0.73,
+          "score": 75.3,
+          "pct_above_sma50": 0.75,
           "pct_above_sma200": 0.75
         },
         "analyst_revisions": {
@@ -185,12 +185,12 @@
           "downgrades": 41
         },
         "momentum": {
-          "score": 72.3,
-          "rsi": 65.3
+          "score": 73.8,
+          "rsi": 62.5
         },
         "volume": {
-          "score": 61.4,
-          "volume_ratio": 0.76
+          "score": 61.2,
+          "volume_ratio": 0.74
         }
       },
       "etf_close": 177.14,
@@ -199,20 +199,20 @@
     {
       "sector": "Health Care",
       "etf": "XLV",
-      "trend_strength": 66.6,
+      "trend_strength": 67.6,
       "trend_state": "uptrend",
       "primary_signal": "relative_strength",
       "signals": {
         "relative_strength": {
-          "score": 64.0,
-          "rs_1m": 0.04,
-          "rs_3m": 0.01,
-          "rs_6m": 0.11
+          "score": 64.9,
+          "rs_1m": 0.05,
+          "rs_3m": 0.0,
+          "rs_6m": 0.12
         },
         "breadth": {
-          "score": 64.2,
-          "pct_above_sma50": 0.57,
-          "pct_above_sma200": 0.72
+          "score": 66.7,
+          "pct_above_sma50": 0.6,
+          "pct_above_sma200": 0.73
         },
         "analyst_revisions": {
           "score": 73.0,
@@ -220,12 +220,12 @@
           "downgrades": 24
         },
         "momentum": {
-          "score": 72.1,
-          "rsi": 60.6
+          "score": 72.4,
+          "rsi": 60.1
         },
         "volume": {
-          "score": 64.2,
-          "volume_ratio": 0.94
+          "score": 64.5,
+          "volume_ratio": 0.97
         }
       },
       "etf_close": 160.2,
@@ -234,15 +234,15 @@
     {
       "sector": "Real Estate",
       "etf": "XLRE",
-      "trend_strength": 59.8,
+      "trend_strength": 60.3,
       "trend_state": "uptrend",
       "primary_signal": "relative_strength",
       "signals": {
         "relative_strength": {
-          "score": 64.3,
+          "score": 65.7,
           "rs_1m": 0.07,
           "rs_3m": 0.06,
-          "rs_6m": -0.01
+          "rs_6m": -0.0
         },
         "breadth": {
           "score": 64.5,
@@ -255,12 +255,12 @@
           "downgrades": 28
         },
         "momentum": {
-          "score": 59.1,
+          "score": 59.2,
           "rsi": 73.2
         },
         "volume": {
-          "score": 66.7,
-          "volume_ratio": 1.12
+          "score": 66.4,
+          "volume_ratio": 1.1
         }
       },
       "etf_close": 43.84,
@@ -269,15 +269,15 @@
     {
       "sector": "Communication Services",
       "etf": "XLC",
-      "trend_strength": 51.4,
+      "trend_strength": 51.9,
       "trend_state": "neutral",
       "primary_signal": "momentum",
       "signals": {
         "relative_strength": {
-          "score": 50.4,
-          "rs_1m": -0.01,
+          "score": 51.7,
+          "rs_1m": -0.0,
           "rs_3m": 0.02,
-          "rs_6m": -0.0
+          "rs_6m": 0.0
         },
         "breadth": {
           "score": 43.5,
@@ -294,8 +294,8 @@
           "rsi": 59.9
         },
         "volume": {
-          "score": 63.5,
-          "volume_ratio": 0.9
+          "score": 63.2,
+          "volume_ratio": 0.88
         }
       },
       "etf_close": 118.05,
@@ -304,19 +304,19 @@
     {
       "sector": "Consumer Discretionary",
       "etf": "XLY",
-      "trend_strength": 50.4,
+      "trend_strength": 50.2,
       "trend_state": "neutral",
       "primary_signal": "relative_strength",
       "signals": {
         "relative_strength": {
-          "score": 41.1,
-          "rs_1m": -0.03,
+          "score": 41.3,
+          "rs_1m": -0.02,
           "rs_3m": -0.02,
           "rs_6m": -0.06
         },
         "breadth": {
-          "score": 58.3,
-          "pct_above_sma50": 0.56,
+          "score": 57.3,
+          "pct_above_sma50": 0.54,
           "pct_above_sma200": 0.6
         },
         "analyst_revisions": {
@@ -325,12 +325,12 @@
           "downgrades": 34
         },
         "momentum": {
-          "score": 57.0,
-          "rsi": 44.6
+          "score": 57.4,
+          "rsi": 45.0
         },
         "volume": {
-          "score": 40.1,
-          "volume_ratio": 0.74
+          "score": 39.2,
+          "volume_ratio": 0.81
         }
       },
       "etf_close": 116.86,
@@ -339,15 +339,15 @@
     {
       "sector": "Information Technology",
       "etf": "XLK",
-      "trend_strength": 49.0,
+      "trend_strength": 48.1,
       "trend_state": "neutral",
-      "primary_signal": "analyst_revisions",
+      "primary_signal": "relative_strength",
       "signals": {
         "relative_strength": {
-          "score": 42.2,
-          "rs_1m": -0.03,
-          "rs_3m": -0.04,
-          "rs_6m": -0.01
+          "score": 39.4,
+          "rs_1m": -0.04,
+          "rs_3m": -0.03,
+          "rs_6m": -0.02
         },
         "breadth": {
           "score": 41.9,
@@ -360,12 +360,12 @@
           "downgrades": 33
         },
         "momentum": {
-          "score": 57.1,
-          "rsi": 43.8
+          "score": 57.7,
+          "rsi": 44.5
         },
         "volume": {
-          "score": 41.5,
-          "volume_ratio": 0.64
+          "score": 41.2,
+          "volume_ratio": 0.66
         }
       },
       "etf_close": 138.76,
@@ -374,15 +374,15 @@
     {
       "sector": "Financials",
       "etf": "XLF",
-      "trend_strength": 41.6,
+      "trend_strength": 41.9,
       "trend_state": "neutral",
       "primary_signal": "relative_strength",
       "signals": {
         "relative_strength": {
-          "score": 35.8,
+          "score": 36.4,
           "rs_1m": -0.03,
           "rs_3m": -0.04,
-          "rs_6m": -0.11
+          "rs_6m": -0.1
         },
         "breadth": {
           "score": 40.8,
@@ -399,8 +399,8 @@
           "rsi": 34.2
         },
         "volume": {
-          "score": 31.4,
-          "volume_ratio": 1.4
+          "score": 31.5,
+          "volume_ratio": 1.38
         }
       },
       "etf_close": 51.43,

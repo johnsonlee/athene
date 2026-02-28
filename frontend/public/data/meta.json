@@ -1,6 +1,6 @@
 {
   "date": "2026-02-27",
-  "timestamp": "2026-02-27T17:17:57.809436-05:00",
+  "timestamp": "2026-02-28T00:20:45.063306-05:00",
   "version": "1.0.0",
   "ticker_count": 520,
   "macro": {
@@ -14,13 +14,38 @@
     "sp500_sma200": 6559.93,
     "sp500_vs_sma200_pct": 0.0486,
     "tnx_yield": 3.9619998931884766,
-    "irx_yield": 3.5779998302459717,
+    "irx_yield": 3.578000068664551,
     "yield_curve_spread": 0.384,
     "weights": {
-      "earnings_visibility": 0.3,
-      "valuation_margin": 0.25,
-      "catalyst_timeline": 0.2,
-      "downside_control": 0.25
+      "earnings_visibility": 0.15,
+      "valuation_margin": 0.15,
+      "catalyst_timeline": 0.4,
+      "downside_control": 0.3
+    }
+  },
+  "timing": {
+    "market_timing_score": 50.23,
+    "timing_zone": "neutral",
+    "composite_penalty": 0.0,
+    "signal_contributions": {
+      "rfi": 17.35,
+      "macro": 63.32,
+      "credit": 77.52,
+      "breadth": 67.87,
+      "vix_ts": 52.88
+    },
+    "raw_signals": {
+      "rfi": -0.7531,
+      "macro_regime_score": 0.333,
+      "credit_velocity_5d": -0.014731,
+      "breadth_thrust": 0.0909,
+      "vix_ts_ratio": 0.9212
+    },
+    "weight_adjustments": {
+      "earnings_visibility": 0.15,
+      "valuation_margin": 0.15,
+      "catalyst_timeline": 0.4004554353846154,
+      "downside_control": 0.2995445646153846
     }
   }
 }
