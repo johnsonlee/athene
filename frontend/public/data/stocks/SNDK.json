@@ -1,87 +1,13 @@
 {
   "ticker": "SNDK",
-  "profile": null,
+  "profile": {
+    "longBusinessSummary": "Sandisk Corporation develops, manufactures, and sells data storage devices and solutions using NAND flash technology in the United States, Europe, the Middle East, Africa, Asia, and internationally. The company offers solid state drives for desktop and notebook PCs, gaming consoles, and set top boxes; and flash-based embedded storage products for mobile phones, tablets, notebook PCs and other portable and wearable devices, automotive applications, Internet of Things, industrial, and connected home applications, as well as removable cards, universal serial bus drives, and wafers and components. It sells its products to computer manufacturers and original equipment manufacturers, datacenters, private cloud customers, cloud service providers, resellers, distributors, and retailers through its sales personnel, dealers, distributors, retailers, and subsidiaries. Sandisk Corporation was incorporated in 2024 and is based in Milpitas, California.",
+    "fullTimeEmployees": 11000,
+    "website": "https://www.sandisk.com",
+    "city": "Milpitas",
+    "country": "United States"
+  },
   "prices": [
-    {
-      "date": "2025-02-13",
-      "open": 35.060001373291016,
-      "high": 44.0,
-      "low": 34.9900016784668,
-      "close": 36.0,
-      "volume": 369100
-    },
-    {
-      "date": "2025-02-14",
-      "open": 37.0,
-      "high": 38.25,
-      "low": 35.505001068115234,
-      "close": 36.650001525878906,
-      "volume": 242700
-    },
-    {
-      "date": "2025-02-18",
-      "open": 40.529998779296875,
-      "high": 47.150001525878906,
-      "low": 39.0,
-      "close": 47.150001525878906,
-      "volume": 444500
-    },
-    {
-      "date": "2025-02-19",
-      "open": 46.5099983215332,
-      "high": 48.5,
-      "low": 45.5,
-      "close": 46.0,
-      "volume": 220700
-    },
-    {
-      "date": "2025-02-20",
-      "open": 48.97999954223633,
-      "high": 49.4900016784668,
-      "low": 46.709999084472656,
-      "close": 48.2599983215332,
-      "volume": 446200
-    },
-    {
-      "date": "2025-02-21",
-      "open": 48.9900016784668,
-      "high": 50.689998626708984,
-      "low": 48.0,
-      "close": 50.369998931884766,
-      "volume": 1252100
-    },
-    {
-      "date": "2025-02-24",
-      "open": 52.0,
-      "high": 53.0,
-      "low": 46.209999084472656,
-      "close": 48.599998474121094,
-      "volume": 33848500
-    },
-    {
-      "date": "2025-02-25",
-      "open": 48.29999923706055,
-      "high": 55.0099983215332,
-      "low": 47.810001373291016,
-      "close": 48.15999984741211,
-      "volume": 8198900
-    },
-    {
-      "date": "2025-02-26",
-      "open": 46.150001525878906,
-      "high": 49.90999984741211,
-      "low": 45.29999923706055,
-      "close": 46.58000183105469,
-      "volume": 8389000
-    },
-    {
-      "date": "2025-02-27",
-      "open": 46.040000915527344,
-      "high": 47.869998931884766,
-      "low": 41.58000183105469,
-      "close": 45.15999984741211,
-      "volume": 9676100
-    },
     {
       "date": "2025-02-28",
       "open": 45.22999954223633,
@@ -1976,47 +1902,39 @@
       "high": 615.3599853515625,
       "low": 575.5,
       "close": 597.9500122070312,
-      "volume": 21040800
-    },
-    {
-      "date": "2026-02-08",
-      "open": 614.5,
-      "high": 615.3599853515625,
-      "low": 575.5,
-      "close": 597.9500122070312,
-      "volume": 21040800
+      "volume": 21327300
     },
     {
       "date": "2026-02-09",
-      "open": 614.5,
-      "high": 615.3599853515625,
-      "low": 575.5,
-      "close": 597.9500122070312,
-      "volume": 21040800
+      "open": 592.1649780273438,
+      "high": 603.97998046875,
+      "low": 551.510009765625,
+      "close": 583.4000244140625,
+      "volume": 15290700
     },
     {
       "date": "2026-02-10",
-      "open": 574.030029296875,
+      "open": 573.8800048828125,
       "high": 582.280029296875,
-      "low": 540.1400756835938,
+      "low": 540.1400146484375,
       "close": 541.6400146484375,
-      "volume": 15680373
+      "volume": 15904000
     },
     {
       "date": "2026-02-11",
-      "open": 578.25,
-      "high": 612.7000122070312,
-      "low": 575.0,
-      "close": 599.3400268554688,
-      "volume": 20127188
-    },
-    {
-      "date": "2026-02-12",
       "open": 578.5,
       "high": 612.7999877929688,
       "low": 575.0,
       "close": 599.3400268554688,
-      "volume": 20322200
+      "volume": 20472700
+    },
+    {
+      "date": "2026-02-12",
+      "open": 640.5499877929688,
+      "high": 668.0,
+      "low": 615.6199951171875,
+      "close": 630.2899780273438,
+      "volume": 23321100
     },
     {
       "date": "2026-02-13",
@@ -2024,7 +1942,7 @@
       "high": 661.5,
       "low": 586.3699951171875,
       "close": 626.5599975585938,
-      "volume": 23541411
+      "volume": 23640400
     },
     {
       "date": "2026-02-17",
@@ -2032,7 +1950,7 @@
       "high": 628.6500244140625,
       "low": 588.9450073242188,
       "close": 590.5900268554688,
-      "volume": 17506023
+      "volume": 19143200
     },
     {
       "date": "2026-02-18",
@@ -2040,55 +1958,55 @@
       "high": 616.97998046875,
       "low": 574.5,
       "close": 600.4000244140625,
-      "volume": 24937111
+      "volume": 25097600
     },
     {
       "date": "2026-02-19",
-      "open": 597.0,
+      "open": 597.3300170898438,
       "high": 634.47998046875,
-      "low": 590.219970703125,
+      "low": 590.0999755859375,
       "close": 621.0900268554688,
-      "volume": 19498071
+      "volume": 19601600
     },
     {
       "date": "2026-02-20",
-      "open": 616.2899780273438,
+      "open": 616.0,
       "high": 650.2899780273438,
-      "low": 616.010009765625,
+      "low": 615.6500244140625,
       "close": 649.969970703125,
-      "volume": 16791364
+      "volume": 17001000
     },
     {
       "date": "2026-02-23",
-      "open": 659.5050048828125,
+      "open": 659.5900268554688,
       "high": 691.5399780273438,
-      "low": 644.8800048828125,
+      "low": 644.3800048828125,
       "close": 666.489990234375,
-      "volume": 18447984
+      "volume": 18569400
     },
     {
       "date": "2026-02-24",
-      "open": 681.2999877929688,
-      "high": 684.0899047851562,
+      "open": 682.5,
+      "high": 684.0900268554688,
       "low": 612.9199829101562,
       "close": 638.52001953125,
-      "volume": 30115693
+      "volume": 30408300
     },
     {
       "date": "2026-02-25",
-      "open": 644.2899780273438,
+      "open": 644.2999877929688,
       "high": 661.2000122070312,
       "low": 624.4299926757812,
       "close": 632.3800048828125,
-      "volume": 17471535
+      "volume": 18561500
     },
     {
       "date": "2026-02-26",
-      "open": 646.0,
+      "open": 645.739990234375,
       "high": 659.8599853515625,
       "low": 607.0,
       "close": 651.9000244140625,
-      "volume": 23339936
+      "volume": 23672700
     },
     {
       "date": "2026-02-27",
@@ -2096,7 +2014,7 @@
       "high": 661.2000122070312,
       "low": 621.27001953125,
       "close": 635.3599853515625,
-      "volume": 18134258
+      "volume": 18157600
     }
   ],
   "fundamental": {
@@ -2132,7 +2050,7 @@
     "forward_pe_score": 67.6211434,
     "pb_score": 40.6955846,
     "ps_score": 48.927532,
-    "value_score": 55.516225133333336,
+    "value_score": 45.347792299999995,
     "roe_score": 10.0,
     "roa_score": 54.33,
     "margin_score": 10.0,
@@ -2143,42 +2061,55 @@
     "debt_equity_score": 87.015,
     "fcf_yield_score": 41.12345699723119,
     "current_ratio_score": 85.0,
-    "safety_score": 73.29740215719626,
-    "fundamental_score": 60.93803671477258,
-    "fund_data_completeness": 0.9166666666666666
+    "safety_score": 83.49430000000001,
+    "fundamental_score": 60.435308075,
+    "fund_data_completeness": 0.9166666666666666,
+    "longBusinessSummary": "Sandisk Corporation develops, manufactures, and sells data storage devices and solutions using NAND flash technology in the United States, Europe, the Middle East, Africa, Asia, and internationally. The company offers solid state drives for desktop and notebook PCs, gaming consoles, and set top boxes; and flash-based embedded storage products for mobile phones, tablets, notebook PCs and other portable and wearable devices, automotive applications, Internet of Things, industrial, and connected home applications, as well as removable cards, universal serial bus drives, and wafers and components. It sells its products to computer manufacturers and original equipment manufacturers, datacenters, private cloud customers, cloud service providers, resellers, distributors, and retailers through its sales personnel, dealers, distributors, retailers, and subsidiaries. Sandisk Corporation was incorporated in 2024 and is based in Milpitas, California.",
+    "fullTimeEmployees": 11000,
+    "website": "https://www.sandisk.com",
+    "city": "Milpitas",
+    "country": "United States"
   },
   "technical": {
     "close": 635.3599853515625,
-    "sma_20": 618.4465087890625,
-    "sma_50": 464.44120239257813,
-    "sma_200": 193.69542585372923,
-    "trend_alignment": 0.9136741628597896,
-    "rsi": 60.123248319486265,
-    "rsi_score": 0.2024649663897253,
-    "macd_histogram": -6.665795393996213,
-    "macd_line": 47.51107501151671,
-    "macd_histogram_pct": -1.049136796096443,
-    "bb_position": 0.6155772248455796,
-    "bb_upper": 691.6160998789064,
-    "bb_lower": 545.2769176992185,
-    "bb_width": 0.2366238310023361,
-    "hist_volatility": 1.0636549574246554,
-    "volume_ratio": 0.813655803773654,
-    "avg_volume_20d": 22287382.35,
+    "sma_20": 618.1815063476563,
+    "sma_50": 456.99640136718756,
+    "sma_200": 190.9976756095886,
+    "trend_alignment": 0.9138943650267057,
+    "rsi": 60.155446409431725,
+    "rsi_score": 0.20310892818863452,
+    "macd_histogram": -7.200381986513996,
+    "macd_line": 49.95144844630681,
+    "macd_histogram_pct": -1.1332759620563486,
+    "bb_position": 0.6131465127481155,
+    "bb_upper": 694.0940492386095,
+    "bb_lower": 542.2689634567031,
+    "bb_width": 0.24559952736037075,
+    "hist_volatility": 1.069928912736088,
+    "volume_ratio": 0.7762754928087765,
+    "avg_volume_20d": 23390665.0,
     "daily_return": -0.025372048539753368,
-    "signed_volume_ratio": -0.813655803773654,
-    "stoch_k": 65.87846336436964,
-    "stoch_d": 67.41303313298236,
-    "trend_score": 91.36741628597896,
-    "rsi_abs_score": 71.41372617635962,
-    "macd_abs_score": 26.762948058553356,
-    "momentum_score": 49.08833711745649,
-    "volatility_score": 20.20385520978975,
-    "volume_score": 41.86344196226346,
-    "technical_score": 54.55018545544128,
+    "signed_volume_ratio": -0.7762754928087765,
+    "stoch_k": 65.8784771200752,
+    "stoch_d": 65.73466667737203,
+    "trend_score": 91.38943650267058,
+    "rsi_abs_score": 71.3911875133978,
+    "macd_abs_score": 25.50086056915477,
+    "momentum_score": 48.44602404127628,
+    "volatility_score": 19.396042537566633,
+    "volume_score": 42.237245071912234,
+    "technical_score": 54.277295685079835,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": -0.02369679265613358,
+    "sentiment_pos": 0.03105,
+    "sentiment_neg": 0.04665,
+    "sentiment_neu": 0.9223000000000001,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 48.82
+  },
   "analyst": {
     "revision_momentum": 0.05555555555555555,
     "target_upside": 0.1017375975824729,
@@ -2193,14 +2124,14 @@
     "analyst_score": 59.9063124317972
   },
   "ranking": {
-    "value_score": 55.516225133333336,
+    "value_score": 45.347792299999995,
     "quality_score": 32.165,
     "growth_score": 91.0,
-    "safety_score": 73.29740215719626,
-    "trend_score": 91.36741628597896,
-    "momentum_score": 49.08833711745649,
-    "volatility_score": 20.20385520978975,
-    "volume_score": 41.86344196226346,
+    "safety_score": 83.49430000000001,
+    "trend_score": 91.38943650267058,
+    "momentum_score": 48.44602404127628,
+    "volatility_score": 19.396042537566633,
+    "volume_score": 42.237245071912234,
     "analyst_score": 59.9063124317972,
     "pe_score": 50.0,
     "forward_pe_score": 67.6211434,
@@ -2215,25 +2146,29 @@
     "fcf_yield_score": 41.12345699723119,
     "current_ratio_score": 85.0,
     "cyclical_risk_score": 50.0,
-    "earnings_visibility": 61.559749999999994,
-    "valuation_margin": 55.588867539999995,
-    "catalyst_timeline": 67.01320658352326,
-    "downside_control": 46.3511886050479,
-    "composite_score": 57.99080043769949,
-    "weight_earnings_visibility": 0.3,
-    "weight_valuation_margin": 0.25,
-    "weight_catalyst_timeline": 0.2,
-    "weight_downside_control": 0.25,
-    "fundamental_score": 60.93803671477258,
-    "technical_score": 54.55018545544128,
-    "sentiment_score": 50.0,
+    "earnings_visibility": 65.09684999999999,
+    "valuation_margin": 52.51733768999999,
+    "catalyst_timeline": 68.52647026851295,
+    "downside_control": 44.9941297948255,
+    "composite_score": 59.96258228617516,
+    "weight_earnings_visibility": 0.15,
+    "weight_valuation_margin": 0.15,
+    "weight_catalyst_timeline": 0.4004554353846154,
+    "weight_downside_control": 0.2995445646153846,
+    "fundamental_score": 60.435308075,
+    "technical_score": 54.277295685079835,
+    "sentiment_score": 48.82,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 0.9441666666666666,
     "data_quality_penalty": 0.0,
-    "rank": 175,
-    "percentile": 0.6653846153846154,
+    "trend_gate_penalty": 0.0,
+    "timing_penalty": 0.0,
+    "market_timing_score": 50.23,
+    "timing_zone": "neutral",
+    "rank": 80,
+    "percentile": 0.8480769230769231,
     "tier": "buy",
     "tier_raw": "buy",
     "tier_label": "Buy",
@@ -2242,5 +2177,146 @@
     "sector": "Information Technology",
     "industry": "Technology Hardware, Storage & Peripherals"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "Everpure Stock Down Post Q4 Earnings: Buy, Stay Invested or Offload?",
+      "url": "/news/325402/everpure-stock-down-post-q4-earnings-buy-stay-invested-or-offload",
+      "publisher": "Zacks",
+      "date": "2026-02-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "SanDisk vs. Micron: Which AI Memory Stock Offers More Upside?",
+      "url": "/news/325391/sandisk-vs-micron-which-ai-memory-stock-offers-more-upside",
+      "publisher": "Zacks",
+      "date": "2026-02-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "SanDisk Corporation (SNDK) Outperforms on AI-Driven Storage Demand",
+      "url": "/news/325046/sandisk-corporation-sndk-outperforms-on-ai-driven-storage-demand",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-27",
+      "sentiment": "negative"
+    },
+    {
+      "title": "11 S&P 500 Stocks Blow Away Analysts' Quarterly Estimates",
+      "url": "https://finance.yahoo.com/m/5f32a3da-fb1b-3f54-8f4e-511f6b5bc87a/11-s%26p-500-stocks-blow-away.html",
+      "publisher": "Investor's Business Daily",
+      "date": "2026-02-27",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "These Stocks Are Todays Movers: Nvidia, Sandisk, Paramount, IonQ, D-Wave Quantum, J.M. Smucker, Celsius, and More",
+      "url": "https://finance.yahoo.com/m/5f18d54d-5be3-3abe-8b3e-0c015f674f9e/these-stocks-are-today%E2%80%99s.html",
+      "publisher": "Barrons.com",
+      "date": "2026-02-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "These are the winners & losers of the AI scare trade",
+      "url": "https://finance.yahoo.com/video/winners-losers-ai-scare-trade-204738495.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-02-26",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Nvidia's stock opens lower despite the upbeat report",
+      "url": "https://www.marketwatch.com/livecoverage/nvidia-earnings-stock-results-q4-guidance-ai/card/nvidia-s-stock-opens-lower-despite-the-upbeat-report-tHaiXwq1hloKxEoIEBdR?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-26",
+      "sentiment": "negative"
+    },
+    {
+      "title": "PSTG Beats on Q4 Earnings & Sales, Enters FY27 With Hyperscale Momentum",
+      "url": "/news/323618/pstg-beats-on-q4-earnings-sales-enters-fy27-with-hyperscale-momentum",
+      "publisher": "Zacks",
+      "date": "2026-02-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Sandisk CEO: Company pivoting to long-term data center contracts amid AI boom",
+      "url": "https://finance.yahoo.com/news/sandisk-ceo-company-pivoting-long-130253311.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "These Stocks Are Today's Movers: Nvidia, Sandisk, Salesforce, C3.ai, IonQ, Nutanix, Trade Desk, and More",
+      "url": "https://www.barrons.com/articles/stock-movers-05705540?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-02-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nvidia's Earnings Could Be a Make or Break Moment for the Stock Market",
+      "url": "https://finance.yahoo.com/m/4b41749a-030b-3793-aee4-ec4cdcd2aec4/nvidia%27s-earnings-could-be-a.html",
+      "publisher": "Investopedia",
+      "date": "2026-02-25",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Rally No One Saw Coming: Is It Too Late to Buy SanDisk Stock?",
+      "url": "https://finance.yahoo.com/m/5ee3ef5f-57ae-3cd3-8304-beaef5155b21/the-rally-no-one-saw-coming%3A.html",
+      "publisher": "Barchart",
+      "date": "2026-02-25",
+      "sentiment": "negative"
+    },
+    {
+      "title": "SanDisk Stock Is Up 133% This Year, Yet The Memory Trade Still Looks Cheap",
+      "url": "/news/322032/sandisk-stock-is-up-133-this-year-yet-the-memory-trade-still-looks-cheap",
+      "publisher": "Benzinga",
+      "date": "2026-02-25",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Analyst sees \"unprecedented\" NAND cycle ahead of SanDisk presentation",
+      "url": "https://finance.yahoo.com/news/analyst-sees-unprecedented-nand-cycle-143859434.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-25",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "SanDisk Isn't Nvidia - And That Distinction Matters For ETFs",
+      "url": "/news/320887/sandisk-isnt-nvidia-and-that-distinction-matters-for-etfs",
+      "publisher": "Benzinga",
+      "date": "2026-02-24",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Sandisk's split from Western Digital has been such a huge win for investors",
+      "url": "https://www.marketwatch.com/story/why-sandisks-split-from-western-digital-has-been-such-a-huge-win-for-investors-27f82e4f?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-02-24",
+      "sentiment": "positive"
+    },
+    {
+      "title": "SanDisk stock falls 5% after Citron Research short call",
+      "url": "https://finance.yahoo.com/news/sandisk-stock-falls-5-citron-151553851.html",
+      "publisher": "Investing.com",
+      "date": "2026-02-24",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Western Digital Is Selling Sandisk Stock. Should You?",
+      "url": "https://finance.yahoo.com/m/069fedaa-0589-3e90-9fae-74014e69af0e/western-digital-is-selling.html",
+      "publisher": "Barchart",
+      "date": "2026-02-24",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AI Giants Are Buying The World's Memory, And You're Getting The Bill",
+      "url": "/news/319285/ai-giants-are-buying-the-worlds-memory-and-youre-getting-the-bill",
+      "publisher": "Benzinga",
+      "date": "2026-02-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "These 5 Stocks Are at the Center of the AI Supply Squeeze",
+      "url": "/news/318997/these-5-stocks-are-at-the-center-of-the-ai-supply-squeeze",
+      "publisher": "MarketBeat",
+      "date": "2026-02-23",
+      "sentiment": "neutral"
+    }
+  ]
 }
