@@ -28,7 +28,9 @@ export function About() {
         <h2 className="mb-4 text-lg font-semibold text-gray-900 dark:text-white">{t('about.versionHistory')}</h2>
         <div className="relative ml-3 border-l-2 border-gray-200 dark:border-gray-700">
           {([
-            { key: 'v17', status: 'current' as const },
+            { key: 'v19', status: 'current' as const },
+            { key: 'v18', status: null },
+            { key: 'v17', status: null },
             { key: 'v16', status: null },
             { key: 'v15', status: null },
             { key: 'v14', status: null },

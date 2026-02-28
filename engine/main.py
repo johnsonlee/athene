@@ -51,6 +51,7 @@ from engine.exporters.changes import detect_changes, format_changes_markdown
 from engine.exporters.feed import generate_feed
 from engine.analyzers.ic_tracker import export_ic
 from engine.analyzers.leading_indicators import compute_leading_indicators, export_leading_indicators
+from engine.analyzers.market_timing import compute_market_timing
 from engine.utils.logger import get_logger
 from engine.utils.market_calendar import is_us_trading_day
 
@@ -238,20 +239,79 @@ def run(tickers_override: list[str] | None = None) -> None:
     macro_raw = collect_macro()
 
     # Step 7-9: Analyze
-    log.info("Step 7/11: Running fundamental analysis...")
+    log.info("Step 7: Running fundamental analysis...")
     fund_df = analyze_fundamental(fundamentals_raw)
 
-    log.info("Step 8/11: Running technical analysis...")
+    log.info("Step 8: Running technical analysis...")
     tech_df = analyze_technical(prices)
 
-    log.info("Step 9/11: Running sentiment analysis...")
+    log.info("Step 9: Running sentiment analysis...")
     sent_df = analyze_sentiment(news)
 
-    log.info("Step 10/11: Detecting market regime...")
+    log.info("Step 10: Detecting market regime...")
     regime_info = detect_regime(macro_raw)
 
-    # Step 11: Absolute scoring (no z-score normalization)
-    log.info("Step 11/11: Scoring and ranking (absolute)...")
+    from engine.utils.market_calendar import us_market_date
+    run_date = us_market_date()
+    full_run = not test_mode and not incremental
+
+    # --- v19: Run trend / CF / leading indicators BEFORE scoring ---
+    # These provide timing signals that influence stock scores.
+    timing_result = None
+    cf_window_results: dict[str, list] = {}
+    leading: dict = {}
+
+    if full_run:
+        # Trend Pipeline (needed for breadth thrust in leading indicators)
+        log.info("Step T1: Collecting sector ETF data...")
+        etf_prices = collect_sector_etfs()
+
+        log.info("Step T2: Analyzing sector trends...")
+        trend_df = analyze_sector_trends(etf_prices, prices, universe, analyst_raw)
+
+        log.info("Step T3: Scoring sector trends...")
+        trend_scored = score_sector_trends(trend_df)
+
+        log.info("Step T4: Computing trend history (RRG trails)...")
+        trend_hist = compute_trend_history(etf_prices)
+
+        log.info("Step T5: Exporting trend data...")
+        export_trends(trend_scored, regime_info, run_date, computed_history=trend_hist)
+
+        # Capital Flow Pipeline
+        log.info("Step F1: Loading capital flow ETF data...")
+        cf_prices = load_capital_flow_etfs_from_collected(end_date=run_date)
+        if not cf_prices:
+            log.info("  No stored data — fetching live from yfinance...")
+            cf_prices = collect_capital_flow_etfs()
+
+        log.info("Step F2: Analyzing capital flows (multi-window)...")
+        from engine.config import CAPITAL_FLOW_WINDOWS
+        for label, wdays in CAPITAL_FLOW_WINDOWS.items():
+            cf_window_results[label] = analyze_capital_flows(
+                cf_prices,
+                window_days=wdays,
+            )
+
+        # Export CF early so compute_leading_indicators() can read from disk
+        log.info("Step F3: Exporting capital flow data...")
+        export_capital_flows(cf_window_results, run_date)
+
+        # Leading Indicators (reads capital_flows.json + trend_history.json)
+        log.info("Step L1: Computing leading indicators...")
+        leading = compute_leading_indicators()
+        export_leading_indicators(leading, run_date)
+
+        # Market Timing (synthesize all timing signals)
+        log.info("Step MT: Computing market timing...")
+        timing_result = compute_market_timing(
+            regime_info,
+            cf_window_results=cf_window_results,
+            leading_indicators=leading.get("indicators") if isinstance(leading, dict) and "indicators" in leading else leading,
+        )
+
+    # --- Stock Scoring ---
+    log.info("Step 11: Scoring and ranking (absolute)...")
 
     # Pass sector info so financial-sector stocks use adjusted breakpoints
     sector_map = universe.set_index("ticker")["sector"] if not universe.empty else None
@@ -266,13 +326,13 @@ def run(tickers_override: list[str] | None = None) -> None:
     # v17: Cyclical risk scoring
     cyclical_risk = compute_cyclical_risk(fund_df, sectors=sector_map)
 
-    # Step 5: Composite scoring (4-dimension qualitative model)
-    # v9: Pass regime-adjusted weights
-    regime_weights = regime_info.get("weights")
+    # Composite scoring (4-dimension qualitative model)
+    # v19: timing supersedes regime weights when available
     composite = compute_composite(fund_scored, tech_scored, sent_df, analyst_scored,
-                                  weight_overrides=regime_weights,
+                                  weight_overrides=regime_info.get("weights"),
                                   cyclical_risk=cyclical_risk,
-                                  sectors=sector_map)
+                                  sectors=sector_map,
+                                  timing=timing_result)
 
     # EMA smoothing on composite_score
     composite = _apply_ema_smoothing(composite)
@@ -283,10 +343,14 @@ def run(tickers_override: list[str] | None = None) -> None:
     _SPREAD_K = 1.3
     _median = composite["composite_score"].median()
     composite["composite_score"] = (_median + _SPREAD_K * (composite["composite_score"] - _median))
-    # Re-apply data quality penalty (penalty was applied in compute_composite
-    # but EMA smoothing recomputes composite from smoothed dimensions)
+    # Re-apply penalties (were applied in compute_composite but EMA smoothing
+    # recomputes composite from smoothed dimensions, losing them)
     if "data_quality_penalty" in composite.columns:
         composite["composite_score"] -= composite["data_quality_penalty"]
+    if "trend_gate_penalty" in composite.columns:
+        composite["composite_score"] -= composite["trend_gate_penalty"]
+    if "timing_penalty" in composite.columns:
+        composite["composite_score"] -= composite["timing_penalty"]
     composite["composite_score"] = composite["composite_score"].clip(0, 100)
 
     # Log data quality stats (v7)
@@ -299,9 +363,6 @@ def run(tickers_override: list[str] | None = None) -> None:
     ranked = assign_tiers(composite)
 
     # Detect changes (before overwriting rankings.json)
-    from engine.utils.market_calendar import us_market_date
-    run_date = us_market_date()
-    full_run = not test_mode and not incremental
     if full_run:
         changes = detect_changes(ranked, universe)
         if changes:
@@ -325,7 +386,7 @@ def run(tickers_override: list[str] | None = None) -> None:
 
     if full_run:
         log.info("Exporting JSON data...")
-        export_meta(len(tickers), run_date, macro=regime_info)
+        export_meta(len(tickers), run_date, macro=regime_info, timing=timing_result)
         export_rankings(ranked, universe)
         export_history(ranked, run_date)
 
@@ -336,49 +397,6 @@ def run(tickers_override: list[str] | None = None) -> None:
             log.warning(f"IC computation skipped: {e}")
     else:
         log.info("Partial run — skipping global aggregation exports")
-
-    # --- Trend Pipeline ---
-    if full_run:
-        log.info("Step T1: Collecting sector ETF data...")
-        etf_prices = collect_sector_etfs()
-
-        log.info("Step T2: Analyzing sector trends...")
-        trend_df = analyze_sector_trends(etf_prices, prices, universe, analyst_raw)
-
-        log.info("Step T3: Scoring sector trends...")
-        trend_scored = score_sector_trends(trend_df)
-
-        log.info("Step T4: Computing trend history (RRG trails)...")
-        trend_hist = compute_trend_history(etf_prices)
-
-        log.info("Step T5: Exporting trend data...")
-        export_trends(trend_scored, regime_info, run_date, computed_history=trend_hist)
-
-    # --- Capital Flow Pipeline ---
-    if full_run:
-        log.info("Step F1: Loading capital flow ETF data...")
-        cf_prices = load_capital_flow_etfs_from_collected(end_date=run_date)
-        if not cf_prices:
-            log.info("  No stored data — fetching live from yfinance...")
-            cf_prices = collect_capital_flow_etfs()
-
-        log.info("Step F2: Analyzing capital flows (multi-window)...")
-        from engine.config import CAPITAL_FLOW_WINDOWS
-        cf_window_results: dict[str, list] = {}
-        for label, wdays in CAPITAL_FLOW_WINDOWS.items():
-            cf_window_results[label] = analyze_capital_flows(
-                cf_prices,
-                window_days=wdays,
-            )
-
-        log.info("Step F3: Exporting capital flow data...")
-        export_capital_flows(cf_window_results, run_date)
-
-    # --- Leading Indicators ---
-    if full_run:
-        log.info("Step L1: Computing leading indicators...")
-        leading = compute_leading_indicators()
-        export_leading_indicators(leading, run_date)
 
     # Export individual stock details (use scored DataFrames for sub-scores)
     log.info("Exporting individual stock details...")

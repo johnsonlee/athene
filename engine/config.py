@@ -1,29 +1,37 @@
 """Configuration constants for the Athene scoring engine."""
 
-# ---------- Qualitative dimension weights (v3) ----------
-# Composite = EV*0.30 + VM*0.25 + CT*0.20 + DC*0.25
-WEIGHT_EARNINGS_VISIBILITY = 0.30
-WEIGHT_VALUATION_MARGIN = 0.25
-WEIGHT_CATALYST_TIMELINE = 0.20
-WEIGHT_DOWNSIDE_CONTROL = 0.25
+# ---------- Qualitative dimension weights (v18: IC-driven rebalance) ----------
+# v18: Reweighted based on IC evidence. CT (IR +1.02) gets dominant weight;
+# EV/VM (IR -0.11/+0.01) dramatically reduced. DC kept moderate (volatility works).
+# Composite = EV*0.15 + VM*0.15 + CT*0.40 + DC*0.30
+WEIGHT_EARNINGS_VISIBILITY = 0.15
+WEIGHT_VALUATION_MARGIN = 0.15
+WEIGHT_CATALYST_TIMELINE = 0.40
+WEIGHT_DOWNSIDE_CONTROL = 0.30
 
-# Earnings Visibility sub-composition
-EV_WEIGHT_QUALITY = 0.60
-EV_WEIGHT_GROWTH = 0.40
+# Earnings Visibility sub-composition (v18: flip to growth-led)
+# Growth (IR +0.17) is the only positive-IC component; quality (IR -0.40) is anti-signal.
+# Keep quality at reduced weight for long-term fundamental grounding.
+EV_WEIGHT_QUALITY = 0.30
+EV_WEIGHT_GROWTH = 0.70
 
 # Valuation Margin sub-composition
 VM_WEIGHT_VALUE = 1.00
 
-# Catalyst Timeline sub-composition (v16: concentrate on high-spread factors)
-CT_WEIGHT_TREND = 0.40
-CT_WEIGHT_MOMENTUM = 0.35
-CT_WEIGHT_ANALYST = 0.25
+# Catalyst Timeline sub-composition (v18: trend-dominant, remove analyst)
+# Trend IR +0.95, momentum IR +0.30 — both verified predictive.
+# Analyst IR -0.19 — removed, was diluting signal.
+CT_WEIGHT_TREND = 0.55
+CT_WEIGHT_MOMENTUM = 0.45
+CT_WEIGHT_ANALYST = 0.00
 CT_WEIGHT_SENTIMENT = 0.00
 CT_WEIGHT_VOLUME = 0.00
 
-# Downside Control sub-composition
-DC_WEIGHT_SAFETY = 0.60
-DC_WEIGHT_VOLATILITY = 0.40
+# Downside Control sub-composition (v18: volatility-led)
+# Volatility IR +0.58 (strong), safety IR -0.27 (anti-signal).
+# Keep safety at reduced weight for balance sheet grounding.
+DC_WEIGHT_SAFETY = 0.35
+DC_WEIGHT_VOLATILITY = 0.65
 
 # Legacy factor weights (kept for backward-compat display)
 WEIGHT_FUNDAMENTAL = 0.50
@@ -43,12 +51,12 @@ TECH_WEIGHT_VOLATILITY = 0.20
 TECH_WEIGHT_VOLUME = 0.20
 
 # ---------- Rating thresholds (absolute, 0-100 scale) ----------
-# Calibrated to actual score distribution (mean ~54, std ~5, range 35-69).
-# SB ~3%, B ~36%, H ~55%, S ~5%, SS ~2%.
-SCORE_STRONG_BUY = 63
-SCORE_BUY = 56
-SCORE_HOLD_LOWER = 46
-SCORE_SELL = 39
+# v18: Recalibrated for new weight structure. CT-dominant scoring produces
+# wider spread. Thresholds shifted to reflect new distribution.
+SCORE_STRONG_BUY = 65
+SCORE_BUY = 57
+SCORE_HOLD_LOWER = 45
+SCORE_SELL = 38
 TIER_HYSTERESIS = 2        # ±2 points buffer to prevent oscillation
 
 # Score smoothing (EMA on composite_score)
@@ -189,9 +197,10 @@ CYCLICAL_MARGIN_REFS = {
 }
 
 # Downside Control sub-composition (v17: adds cyclical risk)
-DC_WEIGHT_SAFETY_V17 = 0.50
-DC_WEIGHT_VOLATILITY_V17 = 0.30
-DC_WEIGHT_CYCLICAL_RISK = 0.20
+# v18: Rebalanced — volatility gets more weight, safety less
+DC_WEIGHT_SAFETY_V17 = 0.25
+DC_WEIGHT_VOLATILITY_V17 = 0.50
+DC_WEIGHT_CYCLICAL_RISK = 0.25
 
 # ---------- Commodity-specific risk (DC penalty, like jurisdiction risk) ----------
 # Ticker-level adjustments for commodity exposure risks that the quantitative
@@ -219,6 +228,35 @@ TICKER_JURISDICTION = {
     "PDD": "CN_VIE",
     "BABA": "CN_VIE",
 }
+
+# ---------- v18: Trend gate (anti-value-trap) ----------
+# Penalize stocks in clear downtrends regardless of valuation attractiveness.
+# Prevents cheap-but-falling stocks from ranking high (value trap avoidance).
+TREND_GATE_THRESHOLD = 35       # trend_score below this triggers penalty
+TREND_GATE_MAX_PENALTY = 8.0    # max composite penalty for deep downtrend
+TREND_GATE_SOFT_THRESHOLD = 45  # partial penalty starts here
+TREND_GATE_SOFT_PENALTY = 3.0   # partial penalty for weak trend
+
+# ---------- v19: Market timing ----------
+# Signal weights for composite market timing score
+TIMING_WEIGHT_RFI = 0.35
+TIMING_WEIGHT_MACRO = 0.25
+TIMING_WEIGHT_CREDIT = 0.20
+TIMING_WEIGHT_BREADTH = 0.15
+TIMING_WEIGHT_VIX_TS = 0.05
+
+# Timing zone thresholds (0-100 scale)
+TIMING_ZONE_FAVORABLE = 62
+TIMING_ZONE_NEUTRAL = 45
+TIMING_ZONE_UNFAVORABLE = 30
+
+# Weight adjustment: max CT/DC shift based on timing (replaces REGIME_WEIGHT_SHIFT)
+TIMING_MAX_WEIGHT_SHIFT = 0.10
+
+# Composite penalty in unfavorable/adverse markets
+TIMING_PENALTY_THRESHOLD = 45      # penalty starts below this score
+TIMING_MAX_PENALTY = 8.0           # max composite penalty in adverse markets
+TIMING_DC_MODULATION = 0.40        # max penalty reduction for defensive stocks (DC>50)
 
 # ---------- Output ----------
 OUTPUT_DIR = "frontend/public/data"

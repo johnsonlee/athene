@@ -44,13 +44,13 @@ export function CompanyProfile({ profile, ranking }: Props) {
 
       {/* Company description */}
       <div>
-        <p className="text-xs leading-relaxed text-gray-600 dark:text-gray-400">
+        <p className="text-xs leading-relaxed text-gray-600 sm:text-sm dark:text-gray-400">
           {isLongDesc && !showFullDesc ? desc.slice(0, 150) + '…' : desc}
         </p>
         {isLongDesc && (
           <button
             onClick={() => setShowFullDesc(!showFullDesc)}
-            className="mt-1 text-[10px] text-blue-600 hover:underline dark:text-cyan-400"
+            className="mt-1 text-xs text-blue-600 hover:underline dark:text-cyan-400"
           >
             {showFullDesc ? t('profile.showLess') : t('profile.showMore')}
           </button>
@@ -58,7 +58,7 @@ export function CompanyProfile({ profile, ranking }: Props) {
       </div>
 
       {/* Company info bar */}
-      <div className="flex flex-wrap gap-x-4 gap-y-1 text-[10px] text-gray-400 dark:text-gray-500">
+      <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-gray-400 dark:text-gray-500">
         {profile.fullTimeEmployees != null && (
           <span>{t('profile.employees')}: {formatEmployees(profile.fullTimeEmployees)}</span>
         )}

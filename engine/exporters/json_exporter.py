@@ -55,11 +55,12 @@ def _write_json(data: Any, filename: str) -> str:
     return path
 
 
-def export_meta(ticker_count: int, run_date: str | None = None, macro: dict | None = None) -> str:
+def export_meta(ticker_count: int, run_date: str | None = None, macro: dict | None = None, timing: "Any | None" = None) -> str:
     """Export meta.json with run metadata.
 
     Args:
         macro: Optional macro regime info dict from detect_regime().
+        timing: Optional TimingResult from compute_market_timing().
     """
     from engine.utils.market_calendar import us_market_date, us_market_now
     data: Dict[str, Any] = {
@@ -70,6 +71,15 @@ def export_meta(ticker_count: int, run_date: str | None = None, macro: dict | No
     }
     if macro:
         data["macro"] = macro
+    if timing is not None:
+        data["timing"] = {
+            "market_timing_score": timing.market_timing_score,
+            "timing_zone": timing.timing_zone,
+            "composite_penalty": timing.composite_penalty,
+            "signal_contributions": timing.signal_contributions,
+            "raw_signals": timing.raw_signals,
+            "weight_adjustments": timing.weight_adjustments,
+        }
     return _write_json(data, "meta.json")
 
 
@@ -133,7 +143,9 @@ def export_history(ranked: pd.DataFrame, run_date: str | None = None) -> str:
                      "pe_score", "forward_pe_score", "pb_score", "ps_score",
                      "roe_score", "roa_score", "margin_score",
                      "rev_growth_score", "earn_growth_score",
-                     "debt_equity_score", "fcf_yield_score", "current_ratio_score"):
+                     "debt_equity_score", "fcf_yield_score", "current_ratio_score",
+                     # v19: market timing
+                     "market_timing_score", "timing_penalty"):
             val = row.get(key)
             if val is not None and pd.notna(val):
                 entry[key] = round(float(val), 2)

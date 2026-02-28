@@ -3,26 +3,26 @@
 Replaces the previous 3-factor (fundamental/technical/sentiment) aggregation
 with four investment-analysis dimensions:
 
-    earningsVisibility  (30%)  = quality + growth
-    valuationMargin     (25%)  = value
-    catalystTimeline    (20%)  = trend + momentum + analyst + sentiment + volume
-    downsideControl     (25%)  = safety + volatility
+    earningsVisibility  (15%)  = growth(70%) + quality(30%)
+    valuationMargin     (15%)  = value (reduced — near-zero IC)
+    catalystTimeline    (40%)  = trend(55%) + momentum(45%)
+    downsideControl     (30%)  = volatility(65%) + safety(35%)
 
-v7: Incorporates data completeness — applies a penalty to composite_score
-when a large fraction of metrics are missing (data_completeness < 0.5).
-
-v8: Added analyst revision momentum to Catalyst Timeline (20% of CT).
-Reweighted CT: trend 25% + momentum 25% + analyst 20% + sentiment 15% + volume 15%.
-
-v9: Accepts optional weight_overrides for macro regime-adjusted dimension weights.
-Risk-on shifts +5% to CT from DC; risk-off shifts +5% to DC from CT.
+v18: IC-driven rebalance. Weights restructured based on forward-return IC evidence.
+v19: Market timing integration — timing-adjusted weights and per-stock composite
+     penalty modulated by defensive characteristics.
 
 All scores remain on the 0-100 absolute scale.
 """
 
 from __future__ import annotations
 
+from typing import TYPE_CHECKING
+
 import pandas as pd
+
+if TYPE_CHECKING:
+    from engine.analyzers.market_timing import TimingResult
 
 from engine.config import (
     WEIGHT_EARNINGS_VISIBILITY,
@@ -62,6 +62,11 @@ from engine.config import (
     # v17: commodity risk
     COMMODITY_RISK,
     TICKER_COMMODITY_RISK,
+    # v18: trend gate
+    TREND_GATE_THRESHOLD,
+    TREND_GATE_MAX_PENALTY,
+    TREND_GATE_SOFT_THRESHOLD,
+    TREND_GATE_SOFT_PENALTY,
 )
 from engine.scorer.ic_weights import load_ic_weights, ic_weighted_avg, log_ic_status
 from engine.utils.logger import get_logger
@@ -94,6 +99,7 @@ def compute_composite(
     weight_overrides: dict[str, float] | None = None,
     cyclical_risk: pd.Series | None = None,
     sectors: pd.Series | None = None,
+    timing: "TimingResult | None" = None,
 ) -> pd.DataFrame:
     """Compute composite score via four qualitative dimensions.
 
@@ -103,16 +109,26 @@ def compute_composite(
     Args:
         weight_overrides: Optional dict mapping dimension name to weight.
             Used by macro regime detection to shift weights in risk-on/off.
+            Superseded by timing when provided.
+        timing: Optional TimingResult from market_timing module. When provided,
+            uses timing-adjusted weights (supersedes weight_overrides) and
+            applies per-stock composite penalty modulated by DC score.
 
     Returns:
         DataFrame indexed by ticker with dimension scores, legacy factor
         scores, composite_score, and weight columns.
     """
-    # Resolve dimension weights (regime-adjusted or default)
-    w_ev = (weight_overrides or {}).get("earnings_visibility", WEIGHT_EARNINGS_VISIBILITY)
-    w_vm = (weight_overrides or {}).get("valuation_margin", WEIGHT_VALUATION_MARGIN)
-    w_ct = (weight_overrides or {}).get("catalyst_timeline", WEIGHT_CATALYST_TIMELINE)
-    w_dc = (weight_overrides or {}).get("downside_control", WEIGHT_DOWNSIDE_CONTROL)
+    # v19: timing-adjusted weights supersede weight_overrides
+    if timing is not None:
+        _wo = timing.weight_adjustments
+    else:
+        _wo = weight_overrides or {}
+
+    # Resolve dimension weights
+    w_ev = _wo.get("earnings_visibility", WEIGHT_EARNINGS_VISIBILITY)
+    w_vm = _wo.get("valuation_margin", WEIGHT_VALUATION_MARGIN)
+    w_ct = _wo.get("catalyst_timeline", WEIGHT_CATALYST_TIMELINE)
+    w_dc = _wo.get("downside_control", WEIGHT_DOWNSIDE_CONTROL)
 
     # Merge all sub-scores into a single frame
     all_tickers: set[str] = set()
@@ -162,25 +178,23 @@ def compute_composite(
             result[col] = fund_scored[col].reindex(result.index).fillna(NEUTRAL)
 
     # --- Four qualitative dimensions (all 0-100) ---
-    # v16: IC-weighted sub-score aggregation within dimensions
+    # v18: IC-driven composition — weights reflect actual predictive power
     ic_w = load_ic_weights()
 
-    ev_components = {"quality_score": quality, "growth_score": growth}
-    ev = ic_weighted_avg(ev_components, ic_w)
-    log_ic_status("EV", list(ev_components.keys()), ic_w)
+    # EV: growth-led (v18: quality reduced from 60% to 30%, growth raised to 70%)
+    ev = EV_WEIGHT_GROWTH * growth + EV_WEIGHT_QUALITY * quality
+    log.info(f"EV composition: growth={EV_WEIGHT_GROWTH:.0%}, quality={EV_WEIGHT_QUALITY:.0%}")
 
+    # VM: value only (unchanged)
     vm = VM_WEIGHT_VALUE * value
 
-    ct_components = {
-        "trend_score": trend, "momentum_score": momentum,
-        "analyst_score": analyst,
-    }
-    ct = ic_weighted_avg(ct_components, ic_w)
-    log_ic_status("CT", list(ct_components.keys()), ic_w)
+    # CT: trend + momentum only (v18: analyst removed, IR -0.19)
+    ct = CT_WEIGHT_TREND * trend + CT_WEIGHT_MOMENTUM * momentum
+    log.info(f"CT composition: trend={CT_WEIGHT_TREND:.0%}, momentum={CT_WEIGHT_MOMENTUM:.0%}")
 
-    dc_components = {"safety_score": safety, "volatility_score": volatility}
-    dc = ic_weighted_avg(dc_components, ic_w)
-    log_ic_status("DC", list(dc_components.keys()), ic_w)
+    # DC: volatility-led (v18: volatility raised from 40% to 65%)
+    dc = DC_WEIGHT_VOLATILITY * volatility + DC_WEIGHT_SAFETY * safety
+    log.info(f"DC composition: volatility={DC_WEIGHT_VOLATILITY:.0%}, safety={DC_WEIGHT_SAFETY:.0%}")
 
     # --- v17: Cyclical risk — blend into DC for cyclical-sector tickers ---
     if cyclical_risk is not None:
@@ -293,6 +307,50 @@ def compute_composite(
     if low_data > 0:
         log.info(f"Data completeness: {low_data} tickers below 50% "
                  f"(penalty applied, max {penalty.max():.1f} pts)")
+
+    # --- v18: Trend gate — penalize stocks in clear downtrends ---
+    # Prevents value traps: cheap stocks in downtrends shouldn't rank high.
+    # Two tiers: hard penalty for deep downtrend, soft penalty for weak trend.
+    trend_gate_penalty = pd.Series(0.0, index=result.index)
+    for ticker in result.index:
+        t_score = trend.at[ticker] if ticker in trend.index else 50.0
+        if t_score < TREND_GATE_THRESHOLD:
+            # Deep downtrend: linear penalty up to max
+            severity = (TREND_GATE_THRESHOLD - t_score) / TREND_GATE_THRESHOLD
+            trend_gate_penalty.at[ticker] = severity * TREND_GATE_MAX_PENALTY
+        elif t_score < TREND_GATE_SOFT_THRESHOLD:
+            # Weak trend: proportional soft penalty
+            severity = (TREND_GATE_SOFT_THRESHOLD - t_score) / (TREND_GATE_SOFT_THRESHOLD - TREND_GATE_THRESHOLD)
+            trend_gate_penalty.at[ticker] = severity * TREND_GATE_SOFT_PENALTY
+
+    result["composite_score"] = (result["composite_score"] - trend_gate_penalty).clip(lower=0.0)
+    result["trend_gate_penalty"] = trend_gate_penalty
+
+    n_gated = (trend_gate_penalty > 0).sum()
+    if n_gated > 0:
+        log.info(f"Trend gate: {n_gated} tickers penalized "
+                 f"(max penalty {trend_gate_penalty.max():.1f} pts)")
+
+    # --- v19: Market timing penalty — per-stock, modulated by DC score ---
+    if timing is not None and timing.composite_penalty > 0:
+        from engine.analyzers.market_timing import modulate_penalty
+        timing_penalty = pd.Series(0.0, index=result.index)
+        for ticker in result.index:
+            dc_val = dc.at[ticker] if ticker in dc.index else NEUTRAL
+            timing_penalty.at[ticker] = modulate_penalty(timing.composite_penalty, dc_val)
+        result["composite_score"] = (result["composite_score"] - timing_penalty).clip(lower=0.0)
+        result["timing_penalty"] = timing_penalty
+        result["market_timing_score"] = timing.market_timing_score
+        result["timing_zone"] = timing.timing_zone
+        n_penalized = (timing_penalty > 0).sum()
+        log.info(f"Timing penalty: {n_penalized} tickers penalized "
+                 f"(base={timing.composite_penalty:.1f}, "
+                 f"max applied={timing_penalty.max():.1f} pts, "
+                 f"zone={timing.timing_zone})")
+    else:
+        result["timing_penalty"] = 0.0
+        result["market_timing_score"] = timing.market_timing_score if timing else 50.0
+        result["timing_zone"] = timing.timing_zone if timing else "neutral"
 
     log.info(f"Composite scores computed for {len(result)} tickers "
              f"(4-dimension model, 0-100 scale)")
