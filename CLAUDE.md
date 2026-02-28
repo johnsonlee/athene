@@ -71,7 +71,7 @@ Scoring:
     Valuation Margin    (25%) = value
     Catalyst Timeline   (20%) = 0.25×trend + 0.25×momentum + 0.20×analyst + 0.15×sentiment + 0.15×volume
     Downside Control    (25%) = 0.60×safety + 0.40×volatility
-  Regime-adjusted: risk_on → CT+5%/DC-5%, risk_off → CT-5%/DC+5%
+  Timing-adjusted: favorable → CT+10%/DC-10%, adverse → CT-10%/DC+10% (v19)
   EMA smoothing (α=0.3) per dimension, then composite recomputed
   Tier: ≥75 Strong Buy, ≥60 Buy, ≥40 Hold, ≥25 Sell, <25 Strong Sell (±2 hysteresis)
 
@@ -363,7 +363,53 @@ Four forward-looking market turn signals computed from existing collected data. 
 
 **Files**: `engine/analyzers/leading_indicators.py`, `engine/collectors/macro.py`, `engine/backtest.py`, `engine/main.py`, `frontend/src/components/indicators/LeadingIndicatorsPage.tsx`, `frontend/src/hooks/useLeadingIndicators.ts`, `frontend/src/types/index.ts`, `frontend/src/lib/dataLoader.ts`, `frontend/src/routes.tsx`, `frontend/src/components/layout/Header.tsx`, `frontend/src/lib/i18n.tsx`, `frontend/src/components/About.tsx`
 
-### v17: Cyclical Risk Analysis (current)
+### v18: IC-Driven Rebalance
+
+Comprehensive scoring restructure based on forward-return IC evidence. Addresses the fundamental problem where 55% of composite weight went to dimensions with zero or negative predictive power (EV IR -0.11, VM IR +0.01), while the only predictive dimension (CT IR +1.02) had only 20% weight.
+
+**Key changes from v17:**
+- **Dimension weight rebalance**: CT 20%→40% (IR +1.02, 86% hit rate — best signal). EV 30%→15% (IR -0.11). VM 25%→15% (IR +0.01). DC 25%→30% (volatility IR +0.58).
+- **EV restructured growth-led**: Growth weight 40%→70%, quality 60%→30%. Growth sub-scores (rev_growth IR +0.88, earn_growth IR +0.46) are the only positive-IC fundamental factors. Quality (IR -0.40) retained at reduced weight for long-term grounding.
+- **CT simplified to trend + momentum**: Analyst removed (IR -0.19, was diluting signal). Trend 55% + momentum 45%. Both verified predictive (trend IR +0.95, momentum IR +0.30).
+- **DC restructured volatility-led**: Volatility 40%→65% (IR +0.58), safety 60%→35% (safety_score IR -0.27). Within safety, simplified to debt_equity only (IR +0.50) — removed fcf_yield (IR -0.99) and current_ratio (IR -0.47).
+- **Anti-signal factors purged from value_score**: Removed forward_pe (IR -2.36, 0% hit rate) and ps_score (IR -0.99, 22% hit rate). Value now uses PE + PB only (PB IR +0.17).
+- **Trend gate (anti-value-trap)**: Stocks with trend_score < 35 (clear downtrend) receive up to 8-point composite penalty. Soft penalty zone 35-45 applies up to 3 points. Prevents cheap-but-falling stocks from ranking high.
+- **Tier threshold recalibration**: Strong Buy 63→65, Buy 56→57, Hold lower 46→45, Sell 39→38. Adjusted for new CT-dominant distribution.
+- **Cyclical DC rebalanced**: For cyclical sectors: safety 50%→25%, volatility 30%→50%, cyclical_risk 20%→25%.
+
+**IC evidence (5-day forward returns, 9-15 observations):**
+| Factor | IR | Hit Rate | Action |
+|--------|-----|----------|--------|
+| catalyst_timeline | +1.02 | 86% | Weight 20%→40% |
+| trend_score | +0.95 | 85% | Dominant CT component |
+| rev_growth_score | +0.88 | 89% | EV growth-led |
+| volatility_score | +0.58 | 77% | DC volatility-led |
+| debt_equity_score | +0.50 | 67% | Sole safety metric |
+| forward_pe_score | -2.36 | 0% | Removed from value |
+| ps_score | -0.99 | 22% | Removed from value |
+| fcf_yield_score | -0.99 | 22% | Removed from safety |
+| quality_score | -0.40 | 38% | Reduced in EV |
+| analyst_score | -0.19 | 42% | Removed from CT |
+
+**Files**: `engine/config.py`, `engine/scorer/factor_model.py`, `engine/analyzers/fundamental.py`, `engine/main.py`, `engine/analyze.py`, `frontend/src/components/About.tsx`, `frontend/src/lib/i18n.tsx`
+
+### v19: Market Timing Integration (current)
+
+Synthesize timing signals into a `market_timing_score` (0-100) that influences stock scoring via dimension weight adjustment and composite penalty in unfavorable markets. Addresses the problem where rich market timing signals (RFI, leading indicators, macro regime) barely influenced stock scores — only a ±5% CT/DC shift from macro regime existed.
+
+**Key changes from v18:**
+- **Market timing module**: New `engine/analyzers/market_timing.py` combines 5 signals: RFI level (35%), macro regime (25%), credit spread velocity (20%), breadth thrust (15%), VIX term structure (5%). Each signal mapped to 0-100 via `metric_score()` breakpoints, then weighted-averaged into `market_timing_score`.
+- **Timing zones**: favorable (≥62), neutral (≥45), unfavorable (≥30), adverse (<30). Zone determines weight shift magnitude and penalty level.
+- **Timing-adjusted weights**: Replaces old ±5% `REGIME_WEIGHT_SHIFT` with up to ±10% CT/DC shift based on timing score. Favorable → CT 44%/DC 26%, adverse → CT 34%/DC 36%. `TimingResult.weight_adjustments` supersedes `weight_overrides` in `compute_composite()`.
+- **Per-stock composite penalty**: In unfavorable/adverse markets, base penalty up to 8 points. Modulated by DC score: defensive stocks (DC > 50) get up to 40% penalty reduction. Aggressive growth stock (DC=35) gets full penalty, defensive utility (DC=75) gets ~60% of penalty.
+- **Trap signal avoidance**: When RFI is in mild_risk_off zone (-0.3 < RFI < 0) AND rfi_acceleration shows "improving", RFI contribution capped at 45. Based on v13 backtest: mild_risk_off→risk_on had 50% hit rate with -3.42% avg return.
+- **Pipeline reordering**: Trend, capital flow, and leading indicator pipelines now run before stock scoring (were after). CF exported early so `compute_leading_indicators()` can read from disk. Market timing step inserted between leading indicators and stock scoring.
+- **IC tracking extended**: Added `timing_penalty` to 28-factor IC tracker (varies per stock due to DC modulation, so cross-sectional IC is meaningful).
+- **Meta export extended**: `meta.json` now includes `timing` section with score, zone, signal contributions, and weight adjustments.
+
+**Files**: `engine/analyzers/market_timing.py` (new), `engine/config.py`, `engine/scorer/factor_model.py`, `engine/main.py`, `engine/analyze.py`, `engine/exporters/json_exporter.py`, `engine/analyzers/ic_tracker.py`, `frontend/src/components/About.tsx`, `frontend/src/lib/i18n.tsx`
+
+### v17: Cyclical Risk Analysis
 
 Cyclical risk scoring for commodity/materials sectors. Addresses the fundamental blind spot where the framework treated cyclical-stock characteristics (low PE at earnings peak, high structural volatility, commodity-driven earnings swings) as positive signals instead of risk indicators.
 
@@ -507,22 +553,22 @@ sentiment_score = 50 + confidence × (raw_vader_score - 50)   # v9: confidence-n
 analyst_score   = 0.40×revision_momentum_score + 0.35×target_upside_score + 0.25×consensus_score
 ```
 
-### Qualitative Dimension Aggregation (v9)
+### Qualitative Dimension Aggregation (v18)
 
 ```
-earningsVisibility = 0.60×quality + 0.40×growth
-valuationMargin    = value
-catalystTimeline   = 0.25×trend + 0.25×momentum + 0.20×analyst + 0.15×sentiment + 0.15×volume
-downsideControl    = 0.60×safety + 0.40×volatility
-downsideControl    = 0.50×safety + 0.30×volatility + 0.20×cyclical_risk  (cyclical sectors only)
+earningsVisibility = 0.30×quality + 0.70×growth
+valuationMargin    = value (PE + PB only; forward_pe and PS removed)
+catalystTimeline   = 0.55×trend + 0.45×momentum
+downsideControl    = 0.35×safety + 0.65×volatility
+downsideControl    = 0.25×safety + 0.50×volatility + 0.25×cyclical_risk  (cyclical sectors only)
 
-composite_score = w_EV×EV + w_VM×VM + w_CT×CT + w_DC×DC
+composite_score = w_EV×EV + w_VM×VM + w_CT×CT + w_DC×DC - trend_gate_penalty - timing_penalty
 ```
 
-Default weights: EV 30%, VM 25%, CT 20%, DC 25%. Regime-adjusted:
-- **risk_on**: CT 25%, DC 20% (shift +5% to catalysts)
-- **risk_off**: CT 15%, DC 30% (shift +5% to defense)
-- **neutral**: default weights (no change)
+Default weights: EV 15%, VM 15%, CT 40%, DC 30%. Timing-adjusted (v19, replaces v9 regime shift):
+- **favorable** (timing ≥62): CT up to 44%, DC down to 26% (favor momentum)
+- **adverse** (timing <30): CT down to 34%, DC up to 36% (favor defense)
+- **neutral** (timing ~50): default weights (no shift)
 
 All scores are 0-100 throughout the pipeline.
 
@@ -579,18 +625,9 @@ When implementing a new version from the roadmap:
 
 ## Roadmap
 
-### Conditional Signal Filtering (next)
+### Signal-to-Position Mapping (next)
 
-- Depends on: Leading Indicators
-- **Motivation (v13 finding)**: Sector trend transitions alone lack alpha — both upgrades and downgrades produce positive returns because market beta drowns out signal directionality. Filtering by RFI state or macro regime is required.
-- Sector trend upgrade filtered by RFI state: only count upgrades when RFI is in neutral or risk_on zone (exclude panic/risk_off to avoid catching falling knives)
-- Sector trend downgrade filtered by RFI state: only count downgrades when RFI is in risk_off or panic (avoid selling in normal rotation)
-- Re-run backtest with conditional filters to verify improved hit rate / expectancy vs unconditional baseline
-- **Trap signal avoidance (v13 finding)**: mild_risk_off → risk_on (50% hit, -3.42% avg) should be excluded or require confirmation from a second signal before acting
-
-### Signal-to-Position Mapping
-
-- Depends on: Conditional Signal Filtering
+- Depends on: v19 Market Timing Integration
 - Multi-signal composite decision matrix: RFI level + RFI direction + macro regime + sector trend breadth → position size bucket
 - Position buckets: empty (0%), light (25%), half (50%), heavy (75%), full (100%)
 - **Backtest-validated rules (v13 evidence)**:

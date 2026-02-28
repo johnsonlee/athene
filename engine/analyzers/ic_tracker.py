@@ -44,6 +44,8 @@ FACTORS = [
     "debt_equity_score", "fcf_yield_score", "current_ratio_score",     # safety
     # v17: cyclical risk
     "cyclical_risk_score",
+    # v19: market timing penalty (varies per stock due to DC modulation)
+    "timing_penalty",
 ]
 
 DEFAULT_HORIZONS = [5, 21]  # trading days forward
