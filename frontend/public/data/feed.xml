@@ -3,18 +3,62 @@
   <title>Athene Stock Screener - Rating Changes</title>
   <subtitle>Daily rating changes for S&amp;P 500 + NASDAQ 100 stocks</subtitle>
   <id>https://athene.johnsonlee.io/feed.xml</id>
-  <updated>2026-02-28T05:20:45.060945+00:00</updated>
+  <updated>2026-03-02T22:25:51.513409+00:00</updated>
   <link href="https://athene.johnsonlee.io/data/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://athene.johnsonlee.io" rel="alternate" type="text/html" />
   <author>
     <name>Athene Bot</name>
   </author>
   <entry>
-    <title>2026-02-27: 22 upgrades, 114 downgrades (136 total changes)</title>
-    <id>https://athene.johnsonlee.io/changes/2026-02-27</id>
-    <updated>2026-02-28T05:20:45.060945+00:00</updated>
+    <title>2026-03-02: 3 upgrades, 30 downgrades (33 total changes)</title>
+    <id>https://athene.johnsonlee.io/changes/2026-03-02</id>
+    <updated>2026-03-02T22:25:51.513409+00:00</updated>
     <link href="https://athene.johnsonlee.io/screener" rel="alternate" />
-    <content type="html">&lt;h2&gt;Rating Changes for 2026-02-27&lt;/h2&gt;
+    <content type="html">&lt;h2&gt;Rating Changes for 2026-03-02&lt;/h2&gt;
+&lt;h3&gt;Upgrades&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SLB&lt;/strong&gt;: Hold → Buy (score: 59.49)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RTX&lt;/strong&gt;: Hold → Buy (score: 59.35)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;NEE&lt;/strong&gt;: Hold → Buy (score: 59.09)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Downgrades&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;PDD&lt;/strong&gt;: Strong Buy → Buy (score: 61.12)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TEL&lt;/strong&gt;: Strong Buy → Buy (score: 60.62)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AMGN&lt;/strong&gt;: Buy → Hold (score: 54.86)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SYY&lt;/strong&gt;: Buy → Hold (score: 54.75)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AMD&lt;/strong&gt;: Buy → Hold (score: 54.18)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WSM&lt;/strong&gt;: Buy → Hold (score: 54.10)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ELV&lt;/strong&gt;: Buy → Hold (score: 53.72)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ZTS&lt;/strong&gt;: Buy → Hold (score: 53.65)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;COR&lt;/strong&gt;: Buy → Hold (score: 53.65)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;NVR&lt;/strong&gt;: Buy → Hold (score: 53.61)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AVGO&lt;/strong&gt;: Buy → Hold (score: 53.50)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TPR&lt;/strong&gt;: Buy → Hold (score: 53.15)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;FSLR&lt;/strong&gt;: Buy → Hold (score: 51.27)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;BBY&lt;/strong&gt;: Hold → Sell (score: 42.68)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;COF&lt;/strong&gt;: Hold → Sell (score: 42.61)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;EFX&lt;/strong&gt;: Hold → Sell (score: 42.57)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ACN&lt;/strong&gt;: Hold → Sell (score: 42.35)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WYNN&lt;/strong&gt;: Hold → Sell (score: 42.25)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CPB&lt;/strong&gt;: Hold → Sell (score: 42.03)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;PAYX&lt;/strong&gt;: Hold → Sell (score: 42.02)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;EPAM&lt;/strong&gt;: Hold → Sell (score: 41.77)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;BAX&lt;/strong&gt;: Hold → Sell (score: 41.73)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CDW&lt;/strong&gt;: Hold → Sell (score: 41.37)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ALNY&lt;/strong&gt;: Hold → Sell (score: 41.03)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IBM&lt;/strong&gt;: Hold → Sell (score: 40.61)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GDDY&lt;/strong&gt;: Sell → Strong Sell (score: 35.24)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WDAY&lt;/strong&gt;: Sell → Strong Sell (score: 35.17)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DDOG&lt;/strong&gt;: Sell → Strong Sell (score: 35.17)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;POOL&lt;/strong&gt;: Sell → Strong Sell (score: 33.20)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;BLDR&lt;/strong&gt;: Sell → Strong Sell (score: 32.77)&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <ns0:entry>
+    <ns0:title>2026-02-27: 22 upgrades, 114 downgrades (136 total changes)</ns0:title>
+    <ns0:id>https://athene.johnsonlee.io/changes/2026-02-27</ns0:id>
+    <ns0:updated>2026-02-28T05:20:45.060945+00:00</ns0:updated>
+    <ns0:link href="https://athene.johnsonlee.io/screener" rel="alternate" />
+    <ns0:content type="html">&lt;h2&gt;Rating Changes for 2026-02-27&lt;/h2&gt;
 &lt;h3&gt;Upgrades&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;AME&lt;/strong&gt;: Hold → Buy (score: 61.78)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;COO&lt;/strong&gt;: Hold → Buy (score: 61.03)&lt;/li&gt;
@@ -154,8 +198,8 @@
 &lt;li&gt;&lt;strong&gt;IT&lt;/strong&gt;: Hold → Strong Sell (score: 32.62)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;HOOD&lt;/strong&gt;: Sell → Strong Sell (score: 31.17)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;KKR&lt;/strong&gt;: Sell → Strong Sell (score: 29.79)&lt;/li&gt;
-&lt;/ul&gt;</content>
-  </entry>
+&lt;/ul&gt;</ns0:content>
+  </ns0:entry>
   <ns0:entry>
     <ns0:title>2026-02-27: 3 upgrades, 7 downgrades (10 total changes)</ns0:title>
     <ns0:id>https://athene.johnsonlee.io/changes/2026-02-27</ns0:id>
@@ -844,17 +888,6 @@
     <ns0:content type="html">&lt;h2&gt;Rating Changes for 2026-02-07&lt;/h2&gt;
 &lt;h3&gt;Upgrades&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;ZS&lt;/strong&gt;: Sell → Hold (score: 42.12)&lt;/li&gt;
-&lt;/ul&gt;</ns0:content>
-  </ns0:entry>
-  <ns0:entry>
-    <ns0:title>2026-02-06: 0 upgrades, 2 downgrades (2 total changes)</ns0:title>
-    <ns0:id>https://athene.johnsonlee.io/changes/2026-02-06</ns0:id>
-    <ns0:updated>2026-02-07T04:00:55.458946+00:00</ns0:updated>
-    <ns0:link href="https://athene.johnsonlee.io/screener" rel="alternate" />
-    <ns0:content type="html">&lt;h2&gt;Rating Changes for 2026-02-06&lt;/h2&gt;
-&lt;h3&gt;Downgrades&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;VRTX&lt;/strong&gt;: Buy → Hold (score: 57.86)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;YUM&lt;/strong&gt;: Buy → Hold (score: 56.85)&lt;/li&gt;
 &lt;/ul&gt;</ns0:content>
   </ns0:entry>
 </feed>
