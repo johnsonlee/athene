@@ -12385,6 +12385,14 @@
       "low": 30.15999984741211,
       "close": 30.799999237060547,
       "volume": 4767068
+    },
+    {
+      "date": "2026-03-04",
+      "open": 30.690000534057617,
+      "high": 31.155000686645508,
+      "low": 30.329999923706055,
+      "close": 30.799999237060547,
+      "volume": 3818430
     }
   ],
   "fundamental": {
@@ -12402,7 +12410,7 @@
     "profit_margin": 0.17591,
     "operating_margin": 0.30021998,
     "gross_margin": 0.7288,
-    "dividend_yield": 0.0246,
+    "dividend_yield": 0.025,
     "beta": 1.341,
     "current_price": 30.8,
     "high_52w": 39.2,
@@ -12431,42 +12439,50 @@
     "debt_equity_score": 50.0,
     "fcf_yield_score": 88.0,
     "current_ratio_score": 64.228,
-    "safety_score": 46.18395,
-    "fundamental_score": 70.53477348214285,
+    "safety_score": 46.0703,
+    "fundamental_score": 70.51204348214286,
     "fund_data_completeness": 0.8333333333333334
   },
   "technical": {
     "close": 30.799999237060547,
-    "sma_20": 31.229000091552738,
-    "sma_50": 31.57605094909668,
-    "sma_200": 32.83706109046936,
-    "trend_alignment": 0.42512853712385795,
+    "sma_20": 31.238500022888186,
+    "sma_50": 31.535516510009767,
+    "sma_200": 32.84730878829956,
+    "trend_alignment": 0.4254783675407971,
     "rsi": 46.28744080598072,
     "rsi_score": -0.07425118388038555,
-    "macd_histogram": 0.047284963836374955,
-    "macd_line": -0.05734618841575312,
-    "macd_histogram_pct": 0.15352261366123227,
-    "bb_position": 0.3269468467356048,
-    "bb_upper": 32.46850612308039,
-    "bb_lower": 29.98949406002509,
-    "bb_width": 0.07938173030797278,
-    "hist_volatility": 0.3791198254762361,
-    "volume_ratio": 1.0549003399498968,
-    "avg_volume_20d": 4518974.75,
-    "daily_return": -0.01566000844134327,
-    "signed_volume_ratio": -1.0549003399498968,
-    "stoch_k": 52.52184985539519,
-    "stoch_d": 61.57909076919484,
-    "trend_score": 42.5128537123858,
+    "macd_histogram": 0.012329111707390025,
+    "macd_line": -0.08921976261789055,
+    "macd_histogram_pct": 0.04002958445711532,
+    "bb_position": 0.3206282238269997,
+    "bb_upper": 32.46082383319799,
+    "bb_lower": 30.01617621257838,
+    "bb_width": 0.07825752257081613,
+    "hist_volatility": 0.3168618253399708,
+    "volume_ratio": 0.9510277720268552,
+    "avg_volume_20d": 4015056.25,
+    "daily_return": 0.0,
+    "signed_volume_ratio": 0.0,
+    "stoch_k": 45.69411283364874,
+    "stoch_d": 54.62212204003259,
+    "trend_score": 42.54783675407971,
     "rsi_abs_score": 68.9012085641865,
-    "macd_abs_score": 56.33806534153081,
-    "momentum_score": 62.619636952858656,
-    "volatility_score": 52.521649070657915,
-    "volume_score": 38.682391841202474,
-    "technical_score": 49.78055538194542,
+    "macd_abs_score": 52.001479222855764,
+    "momentum_score": 60.451343893521134,
+    "volatility_score": 56.240717727029576,
+    "volume_score": 50.0,
+    "technical_score": 52.14789773968617,
     "tech_data_completeness": 1.0
   },
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.12137285524941022,
+    "sentiment_pos": 0.04625,
+    "sentiment_neg": 0.0208,
+    "sentiment_neu": 0.93295,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 56.07
+  },
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.13636363636363633,
@@ -12484,11 +12500,11 @@
     "value_score": 84.70588392857144,
     "quality_score": 76.55087499999999,
     "growth_score": 68.625,
-    "safety_score": 46.18395,
-    "trend_score": 42.5128537123858,
-    "momentum_score": 62.619636952858656,
-    "volatility_score": 52.521649070657915,
-    "volume_score": 38.682391841202474,
+    "safety_score": 46.0703,
+    "trend_score": 42.54783675407971,
+    "momentum_score": 60.451343893521134,
+    "volatility_score": 56.240717727029576,
+    "volume_score": 50.0,
     "analyst_score": 54.42727272727272,
     "pe_score": 79.41176785714286,
     "forward_pe_score": 84.73304925,
@@ -12503,29 +12519,29 @@
     "fcf_yield_score": 88.0,
     "current_ratio_score": 64.228,
     "cyclical_risk_score": 50.0,
-    "earnings_visibility": 71.31582875,
+    "earnings_visibility": 71.22482874999999,
     "valuation_margin": 84.71576517857143,
-    "catalyst_timeline": 53.96827185117957,
-    "downside_control": 48.97803631877829,
-    "composite_score": 60.38353295604977,
+    "catalyst_timeline": 52.96032449004851,
+    "downside_control": 50.09032145677076,
+    "composite_score": 60.141771303537645,
     "weight_earnings_visibility": 0.15,
     "weight_valuation_margin": 0.15,
-    "weight_catalyst_timeline": 0.3857631153846154,
-    "weight_downside_control": 0.31423688461538457,
-    "fundamental_score": 70.53477348214285,
-    "technical_score": 49.78055538194542,
-    "sentiment_score": 50.0,
+    "weight_catalyst_timeline": 0.3828047153846154,
+    "weight_downside_control": 0.3171952846153846,
+    "fundamental_score": 70.51204348214286,
+    "technical_score": 52.14789773968617,
+    "sentiment_score": 56.07,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 0.8883333333333334,
     "data_quality_penalty": 0.0,
-    "trend_gate_penalty": 0.7461438862842606,
-    "timing_penalty": 0.37907749863637996,
-    "market_timing_score": 42.88,
+    "trend_gate_penalty": 0.7356489737760867,
+    "timing_penalty": 0.6262729138044455,
+    "market_timing_score": 41.4,
     "timing_zone": "unfavorable",
-    "rank": 62,
-    "percentile": 0.8826923076923077,
+    "rank": 63,
+    "percentile": 0.8807692307692307,
     "tier": "buy",
     "tier_raw": "buy",
     "tier_label": "Buy",
@@ -12534,5 +12550,146 @@
     "sector": "Communication Services",
     "industry": "Interactive Media & Services"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "LGBTQ+ dating app Grindr beats revenue estimates, bets on AI to drive growth",
+      "url": "https://finance.yahoo.com/news/lgbtq-dating-app-grindr-beats-210916242.html",
+      "publisher": "Reuters",
+      "date": "2026-02-26",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Tinder to Host First-Ever Product Event",
+      "url": "/news/324195/tinder-to-host-first-ever-product-event",
+      "publisher": "PR Newswire",
+      "date": "2026-02-26",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Match Group to Present at the Morgan Stanley Technology, Media & Telecom Conference",
+      "url": "/news/316482/match-group-to-present-at-the-morgan-stanley-technology-media-telecom-conference",
+      "publisher": "PR Newswire",
+      "date": "2026-02-19",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Stocks Under $50 with Warning Signs",
+      "url": "/news/313904/3-stocks-under-50-with-warning-signs",
+      "publisher": "StockStory",
+      "date": "2026-02-17",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Match Group Announces Manuel Bronstein and Raina Moskowitz to Join Board of Directors",
+      "url": "/news/312772/match-group-announces-manuel-bronstein-and-raina-moskowitz-to-join-board-of-directors",
+      "publisher": "PR Newswire",
+      "date": "2026-02-17",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Match Group (MTCH) Long-Term Estimates Reduced by TD Cowen",
+      "url": "/news/311192/match-group-mtch-long-term-estimates-reduced-by-td-cowen",
+      "publisher": "Insider Monkey",
+      "date": "2026-02-14",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How Match Groups CFO runs the finance function behind modern dating",
+      "url": "https://finance.yahoo.com/m/f9cbfc9d-4ef8-3f75-815d-629e147c7d47/how-match-group%E2%80%99s-cfo-runs.html",
+      "publisher": "CFO.com",
+      "date": "2026-02-13",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The 5 Most Interesting Analyst Questions From Match Group's Q4 Earnings Call",
+      "url": "/news/306074/the-5-most-interesting-analyst-questions-from-match-groups-q4-earnings-call",
+      "publisher": "StockStory",
+      "date": "2026-02-10",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Match Group price target lowered to $34 from $35 at Truist",
+      "url": "https://finance.yahoo.com/news/match-group-price-target-lowered-144108885.html",
+      "publisher": "TipRanks",
+      "date": "2026-02-05",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Match Group Q4 Earnings & Revenues Beat Estimates, Both Increase Y/Y",
+      "url": "/news/299917/match-group-q4-earnings-revenues-beat-estimates-both-increase-yy",
+      "publisher": "Zacks",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Rotation out of Tech Stocks Weighs on the Broader Market",
+      "url": "https://finance.yahoo.com/m/53c7bb8e-05f9-319a-a276-65ec476a457b/rotation-out-of-tech-stocks.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Mixed on Sector Rotation out of Tech",
+      "url": "https://finance.yahoo.com/m/d2e885bd-e047-3deb-9c46-4d88220b392d/stocks-mixed-on-sector.html",
+      "publisher": "Barchart",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MTCH Q4 Deep Dive: Product Revitalization and Hinge Expansion Define Outlook",
+      "url": "/news/298826/mtch-q4-deep-dive-product-revitalization-and-hinge-expansion-define-outlook",
+      "publisher": "StockStory",
+      "date": "2026-02-04",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Match Group Inc (MTCH) Q4 2025 Earnings Call Highlights: Strong Cash Flow and Strategic ...",
+      "url": "https://finance.yahoo.com/news/match-group-inc-mtch-q4-050137521.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-02-04",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Wall Street steadies in mixed trading as gold rises back above $5,000",
+      "url": "https://finance.yahoo.com/news/asia-shares-mixed-wall-street-040948016.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Match Group Q4 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/m/a1c7dddc-b9b1-3f15-87e9-74698f6819f3/match-group-q4-earnings-call.html",
+      "publisher": "MarketBeat",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Compared to Estimates, Match Group (MTCH) Q4 Earnings: A Look at Key Metrics",
+      "url": "/news/298451/compared-to-estimates-match-group-mtch-q4-earnings-a-look-at-key-metrics",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Match Group (MTCH) Q4 2025 Earnings Transcript",
+      "url": "/news/298343/match-group-mtch-q4-2025-earnings-transcript",
+      "publisher": "Motley Fool",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Match Group (MTCH) Surpasses Q4 Earnings and Revenue Estimates",
+      "url": "/news/298287/match-group-mtch-surpasses-q4-earnings-and-revenue-estimates",
+      "publisher": "Zacks",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Match Group: Q4 Earnings Snapshot",
+      "url": "https://finance.yahoo.com/news/match-group-q4-earnings-snapshot-215223621.html",
+      "publisher": "Associated Press Finance",
+      "date": "2026-02-03",
+      "sentiment": "neutral"
+    }
+  ]
 }
