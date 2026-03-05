@@ -12393,6 +12393,14 @@
       "low": 92.91000366210938,
       "close": 93.5,
       "volume": 1392247
+    },
+    {
+      "date": "2026-03-05",
+      "open": 92.7300033569336,
+      "high": 94.06999969482422,
+      "low": 92.32499694824219,
+      "close": 93.5,
+      "volume": 1194769
     }
   ],
   "fundamental": {
@@ -12410,7 +12418,7 @@
     "profit_margin": 0.075840004,
     "operating_margin": 0.14107999,
     "gross_margin": 0.44241002,
-    "dividend_yield": 0.0334,
+    "dividend_yield": 0.0335,
     "beta": 0.876,
     "current_price": 93.5,
     "high_52w": 97.88,
@@ -12439,50 +12447,42 @@
     "debt_equity_score": 56.5085,
     "fcf_yield_score": 66.66351129352223,
     "current_ratio_score": 68.24,
-    "safety_score": 52.5788,
-    "fundamental_score": 42.2541459702381,
+    "safety_score": 52.69245,
+    "fundamental_score": 42.276875970238095,
     "fund_data_completeness": 1.0
   },
   "technical": {
     "close": 93.5,
-    "sma_20": 94.38249931335449,
-    "sma_50": 92.5097998046875,
-    "sma_200": 83.0045394897461,
-    "trend_alignment": 0.6312780533402393,
-    "rsi": 49.16818486638418,
-    "rsi_score": -0.01663630267231639,
-    "macd_histogram": -0.13675171143681963,
-    "macd_line": 0.5598794568008145,
-    "macd_histogram_pct": -0.14625851490568945,
-    "bb_position": 0.39422663078252723,
-    "bb_upper": 98.55415102438226,
-    "bb_lower": 90.21084760232671,
-    "bb_width": 0.0883988396445763,
-    "hist_volatility": 0.3247862300629463,
-    "volume_ratio": 0.7683499937375684,
-    "avg_volume_20d": 1811995.85,
-    "daily_return": -0.0018148625202137826,
-    "signed_volume_ratio": -0.7683499937375684,
-    "stoch_k": 61.071139648651595,
-    "stoch_d": 70.33577249925013,
-    "trend_score": 63.12780533402393,
-    "rsi_abs_score": 70.91772940646892,
-    "macd_abs_score": 43.84353712735776,
-    "momentum_score": 57.38063326691334,
-    "volatility_score": 54.06764422352174,
-    "volume_score": 42.316500062624314,
-    "technical_score": 55.42936043751039,
+    "sma_20": 94.28249931335449,
+    "sma_50": 92.59499984741211,
+    "sma_200": 83.07715641021727,
+    "trend_alignment": 0.6298624319857435,
+    "rsi": 49.16818486638419,
+    "rsi_score": -0.016636302672316246,
+    "macd_histogram": -0.20067160237524928,
+    "macd_line": 0.4457916652685725,
+    "macd_histogram_pct": -0.21462203462593504,
+    "bb_position": 0.40582987793773384,
+    "bb_upper": 98.4372104691768,
+    "bb_lower": 90.12778815753218,
+    "bb_width": 0.08813324182282946,
+    "hist_volatility": 0.3234206379645374,
+    "volume_ratio": 0.6692898940149601,
+    "avg_volume_20d": 1785129.3,
+    "daily_return": 0.0,
+    "signed_volume_ratio": 0.0,
+    "stoch_k": 51.75858680017795,
+    "stoch_d": 60.23902740537262,
+    "trend_score": 62.98624319857436,
+    "rsi_abs_score": 70.91772940646894,
+    "macd_abs_score": 42.13444913435163,
+    "momentum_score": 56.52608927041028,
+    "volatility_score": 54.190179405461876,
+    "volume_score": 50.0,
+    "technical_score": 56.691735621787764,
     "tech_data_completeness": 1.0
   },
-  "sentiment": {
-    "sentiment_compound": 0.151456382232596,
-    "sentiment_pos": 0.09755,
-    "sentiment_neg": 0.03845,
-    "sentiment_neu": 0.86395,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 57.57
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.0,
     "target_upside": 0.016042780748663103,
@@ -12500,11 +12500,11 @@
     "value_score": 45.89697176666667,
     "quality_score": 49.79714342857143,
     "growth_score": 21.299999999999997,
-    "safety_score": 52.5788,
-    "trend_score": 63.12780533402393,
-    "momentum_score": 57.38063326691334,
-    "volatility_score": 54.06764422352174,
-    "volume_score": 42.316500062624314,
+    "safety_score": 52.69245,
+    "trend_score": 62.98624319857436,
+    "momentum_score": 56.52608927041028,
+    "volatility_score": 54.190179405461876,
+    "volume_score": 50.0,
     "analyst_score": 45.455895989304814,
     "pe_score": 42.317458333333335,
     "forward_pe_score": 55.778568,
@@ -12519,26 +12519,26 @@
     "fcf_yield_score": 66.66351129352223,
     "current_ratio_score": 68.24,
     "cyclical_risk_score": 50.0,
-    "earnings_visibility": 31.249742908571427,
-    "valuation_margin": 49.224091529999995,
-    "catalyst_timeline": 61.10747337114725,
-    "downside_control": 53.919964623586736,
-    "composite_score": 51.799398711912296,
+    "earnings_visibility": 30.829742908571426,
+    "valuation_margin": 48.22309152999999,
+    "catalyst_timeline": 60.80075217927015,
+    "downside_control": 53.84379223406506,
+    "composite_score": 50.87125644667913,
     "weight_earnings_visibility": 0.15,
     "weight_valuation_margin": 0.15,
-    "weight_catalyst_timeline": 0.3828047153846154,
-    "weight_downside_control": 0.3171952846153846,
-    "fundamental_score": 42.2541459702381,
-    "technical_score": 55.42936043751039,
-    "sentiment_score": 57.57,
+    "weight_catalyst_timeline": 0.37733992000000005,
+    "weight_downside_control": 0.32266007999999996,
+    "fundamental_score": 42.276875970238095,
+    "technical_score": 56.691735621787764,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 1.0,
     "data_quality_penalty": 0.0,
     "trend_gate_penalty": 0.0,
-    "timing_penalty": 0.6218416704241196,
-    "market_timing_score": 41.4,
+    "timing_penalty": 1.096859594013506,
+    "market_timing_score": 38.67,
     "timing_zone": "unfavorable",
     "rank": 277,
     "percentile": 0.46923076923076923,
@@ -12550,146 +12550,5 @@
     "sector": "Financials",
     "industry": "Life & Health Insurance"
   },
-  "headlines": [
-    {
-      "title": "Wells Fargo Upgrades Principal Financial Group, Inc. (PFG) to Equal Weight and Raises its Price Target to $91",
-      "url": "/news/329016/wells-fargo-upgrades-principal-financial-group-inc-pfg-to-equal-weight-and-raises-its-price-target-to-91",
-      "publisher": "Insider Monkey",
-      "date": "2026-03-04",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Principal Expands Dental and Group Benefits Presence in Alabama",
-      "url": "https://www.businesswire.com/news/home/20260303340143/en/",
-      "publisher": "Business Wire",
-      "date": "2026-03-03",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Are You Looking for a High-Growth Dividend Stock?",
-      "url": "/news/323878/are-you-looking-for-a-high-growth-dividend-stock",
-      "publisher": "Zacks",
-      "date": "2026-02-26",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "The Trade Desk Faces Its Most Important Revenue Test After a 67% Collapse",
-      "url": "https://finance.yahoo.com/m/ed9ec7d3-fa69-35ba-bf7c-13cfd84a7207/the-trade-desk-faces-its-most.html",
-      "publisher": "24/7 Wall St.",
-      "date": "2026-02-25",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Oracle upgraded, Workday downgraded: Wall Street's top analyst calls",
-      "url": "https://finance.yahoo.com/news/oracle-upgraded-workday-downgraded-wall-143205044.html",
-      "publisher": "The Fly",
-      "date": "2026-02-25",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Here Are Wednesdays Top Wall Street Analyst Research Calls: AbbVie, Angel Studios, First Solar, IBM, Kroger, Molson Coors, Oracle, Workday, and More",
-      "url": "https://finance.yahoo.com/m/4169d733-42be-3151-835b-ba5bd346912c/here-are-wednesday%E2%80%99s-top-wall.html",
-      "publisher": "24/7 Wall St.",
-      "date": "2026-02-25",
-      "sentiment": "positive"
-    },
-    {
-      "title": "LMND Q4 Loss Narrower Than Expected on Solid Underwriting",
-      "url": "/news/319242/lmnd-q4-loss-narrower-than-expected-on-solid-underwriting",
-      "publisher": "Zacks",
-      "date": "2026-02-23",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Is Wall Street Bullish or Bearish on Principal Financial Stock?",
-      "url": "https://finance.yahoo.com/m/0108a7e0-6871-3f2b-8f96-a2c97ddcd48a/is-wall-street-bullish-or.html",
-      "publisher": "Barchart",
-      "date": "2026-02-18",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Principal Financial CEO Lifts ROE Target, Highlights SMB Growth and AI Push at BofA Conference",
-      "url": "https://finance.yahoo.com/m/89161045-63b8-3522-8cef-227ebf93c5e5/principal-financial-ceo-lifts.html",
-      "publisher": "MarketBeat",
-      "date": "2026-02-14",
-      "sentiment": "positive"
-    },
-    {
-      "title": "MFC Beats Q4 Earnings Estimates, Unveils 10.2% Dividend Hike",
-      "url": "/news/309331/mfc-beats-q4-earnings-estimates-unveils-102-dividend-hike",
-      "publisher": "Zacks",
-      "date": "2026-02-12",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Sun Life Financial Q4 Earnings Beat Estimates, Revenues Rise Y/Y",
-      "url": "/news/309311/sun-life-financial-q4-earnings-beat-estimates-revenues-rise-yy",
-      "publisher": "Zacks",
-      "date": "2026-02-12",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Top Analyst Reports for Eli Lilly, Marriott & Fortinet",
-      "url": "/news/308204/top-analyst-reports-for-eli-lilly-marriott-fortinet",
-      "publisher": "Zacks",
-      "date": "2026-02-11",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Assurant Q4 Earnings & Revenues Beat Estimates on Higher Premiums",
-      "url": "/news/307694/assurant-q4-earnings-revenues-beat-estimates-on-higher-premiums",
-      "publisher": "Zacks",
-      "date": "2026-02-11",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Principal Financial Group Q4 Earnings Call Highlights",
-      "url": "https://finance.yahoo.com/m/7e4ca228-59ef-338a-a5ac-c0d9f6d46fa6/principal-financial-group-q4.html",
-      "publisher": "MarketBeat",
-      "date": "2026-02-10",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Principal Financial Group Inc (PFG) Q4 2025 Earnings Call Highlights: Strong EPS Growth and ...",
-      "url": "https://finance.yahoo.com/news/principal-financial-group-inc-pfg-210347083.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-02-10",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Why Principal Financial (PFG) is a Great Dividend Stock Right Now",
-      "url": "/news/306177/why-principal-financial-pfg-is-a-great-dividend-stock-right-now",
-      "publisher": "Zacks",
-      "date": "2026-02-10",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Principal Financial Q4 Earnings Miss, Revenues & Premiums Rise Y/Y",
-      "url": "/news/306041/principal-financial-q4-earnings-miss-revenues-premiums-rise-yy",
-      "publisher": "Zacks",
-      "date": "2026-02-10",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Principal Financial Group, Inc. Q4 2025 Earnings Call Summary",
-      "url": "https://finance.yahoo.com/m/3983647e-0cc2-3c01-93fa-10817183234f/principal-financial-group%2C.html",
-      "publisher": "Moby",
-      "date": "2026-02-10",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Here's What Key Metrics Tell Us About Principal Financial (PFG) Q4 Earnings",
-      "url": "/news/305096/heres-what-key-metrics-tell-us-about-principal-financial-pfg-q4-earnings",
-      "publisher": "Zacks",
-      "date": "2026-02-09",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Principal Financial (PFG) Q4 Earnings Miss Estimates",
-      "url": "/news/305075/principal-financial-pfg-q4-earnings-miss-estimates",
-      "publisher": "Zacks",
-      "date": "2026-02-09",
-      "sentiment": "negative"
-    }
-  ]
+  "headlines": []
 }

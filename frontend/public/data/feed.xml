@@ -3,18 +3,57 @@
   <title>Athene Stock Screener - Rating Changes</title>
   <subtitle>Daily rating changes for S&amp;P 500 + NASDAQ 100 stocks</subtitle>
   <id>https://athene.johnsonlee.io/feed.xml</id>
-  <updated>2026-03-04T22:26:06.096943+00:00</updated>
+  <updated>2026-03-05T22:25:14.582649+00:00</updated>
   <link href="https://athene.johnsonlee.io/data/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://athene.johnsonlee.io" rel="alternate" type="text/html" />
   <author>
     <name>Athene Bot</name>
   </author>
   <entry>
-    <title>2026-03-04: 2 upgrades, 22 downgrades (24 total changes)</title>
-    <id>https://athene.johnsonlee.io/changes/2026-03-04</id>
-    <updated>2026-03-04T22:26:06.096943+00:00</updated>
+    <title>2026-03-05: 0 upgrades, 30 downgrades (30 total changes)</title>
+    <id>https://athene.johnsonlee.io/changes/2026-03-05</id>
+    <updated>2026-03-05T22:25:14.582649+00:00</updated>
     <link href="https://athene.johnsonlee.io/screener" rel="alternate" />
-    <content type="html">&lt;h2&gt;Rating Changes for 2026-03-04&lt;/h2&gt;
+    <content type="html">&lt;h2&gt;Rating Changes for 2026-03-05&lt;/h2&gt;
+&lt;h3&gt;Downgrades&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VICI&lt;/strong&gt;: Strong Buy → Buy (score: 62.76)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AZO&lt;/strong&gt;: Buy → Hold (score: 54.87)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;HRL&lt;/strong&gt;: Buy → Hold (score: 54.78)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LRCX&lt;/strong&gt;: Buy → Hold (score: 54.57)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;HUBB&lt;/strong&gt;: Buy → Hold (score: 54.19)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;KDP&lt;/strong&gt;: Buy → Hold (score: 54.18)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ON&lt;/strong&gt;: Hold → Sell (score: 42.94)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GPN&lt;/strong&gt;: Hold → Sell (score: 42.82)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;NXPI&lt;/strong&gt;: Hold → Sell (score: 42.64)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;KR&lt;/strong&gt;: Hold → Sell (score: 42.63)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;INSM&lt;/strong&gt;: Hold → Sell (score: 42.60)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;PODD&lt;/strong&gt;: Hold → Sell (score: 42.55)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;URI&lt;/strong&gt;: Hold → Sell (score: 42.51)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LII&lt;/strong&gt;: Hold → Sell (score: 42.48)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DE&lt;/strong&gt;: Hold → Sell (score: 42.39)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AMT&lt;/strong&gt;: Hold → Sell (score: 42.23)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AES&lt;/strong&gt;: Hold → Sell (score: 42.19)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ARM&lt;/strong&gt;: Hold → Sell (score: 42.16)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;XYZ&lt;/strong&gt;: Hold → Sell (score: 42.00)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;UAL&lt;/strong&gt;: Hold → Sell (score: 41.80)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ROL&lt;/strong&gt;: Hold → Sell (score: 41.66)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;STZ&lt;/strong&gt;: Hold → Sell (score: 41.49)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;F&lt;/strong&gt;: Hold → Sell (score: 41.08)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CCL&lt;/strong&gt;: Hold → Sell (score: 40.49)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ALLE&lt;/strong&gt;: Hold → Sell (score: 40.40)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ALNY&lt;/strong&gt;: Sell → Strong Sell (score: 35.98)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WAT&lt;/strong&gt;: Sell → Strong Sell (score: 35.24)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;APTV&lt;/strong&gt;: Sell → Strong Sell (score: 35.14)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AXP&lt;/strong&gt;: Sell → Strong Sell (score: 34.96)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;NCLH&lt;/strong&gt;: Sell → Strong Sell (score: 34.55)&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <ns0:entry>
+    <ns0:title>2026-03-04: 2 upgrades, 22 downgrades (24 total changes)</ns0:title>
+    <ns0:id>https://athene.johnsonlee.io/changes/2026-03-04</ns0:id>
+    <ns0:updated>2026-03-04T22:26:06.096943+00:00</ns0:updated>
+    <ns0:link href="https://athene.johnsonlee.io/screener" rel="alternate" />
+    <ns0:content type="html">&lt;h2&gt;Rating Changes for 2026-03-04&lt;/h2&gt;
 &lt;h3&gt;Upgrades&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;FDX&lt;/strong&gt;: Hold → Buy (score: 59.13)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;CVX&lt;/strong&gt;: Hold → Buy (score: 59.11)&lt;/li&gt;
@@ -42,8 +81,8 @@
 &lt;li&gt;&lt;strong&gt;BAX&lt;/strong&gt;: Sell → Strong Sell (score: 35.03)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;CVNA&lt;/strong&gt;: Sell → Strong Sell (score: 34.87)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;EL&lt;/strong&gt;: Sell → Strong Sell (score: 33.78)&lt;/li&gt;
-&lt;/ul&gt;</content>
-  </entry>
+&lt;/ul&gt;</ns0:content>
+  </ns0:entry>
   <ns0:entry>
     <ns0:title>2026-03-03: 3 upgrades, 46 downgrades (49 total changes)</ns0:title>
     <ns0:id>https://athene.johnsonlee.io/changes/2026-03-03</ns0:id>
@@ -948,18 +987,6 @@
 &lt;li&gt;&lt;strong&gt;INSM&lt;/strong&gt;: Hold → Sell (score: 40.14)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;EL&lt;/strong&gt;: Hold → Sell (score: 39.97)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;TSLA&lt;/strong&gt;: Sell → Strong Sell (score: 35.26)&lt;/li&gt;
-&lt;/ul&gt;</ns0:content>
-  </ns0:entry>
-  <ns0:entry>
-    <ns0:title>2026-02-06: 3 upgrades, 0 downgrades (3 total changes)</ns0:title>
-    <ns0:id>https://athene.johnsonlee.io/changes/2026-02-06</ns0:id>
-    <ns0:updated>2026-02-07T14:02:21.485730+00:00</ns0:updated>
-    <ns0:link href="https://athene.johnsonlee.io/screener" rel="alternate" />
-    <ns0:content type="html">&lt;h2&gt;Rating Changes for 2026-02-06&lt;/h2&gt;
-&lt;h3&gt;Upgrades&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;TEL&lt;/strong&gt;: Hold → Buy (score: 61.94)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;TDY&lt;/strong&gt;: Hold → Buy (score: 59.30)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;TRV&lt;/strong&gt;: Hold → Buy (score: 58.39)&lt;/li&gt;
 &lt;/ul&gt;</ns0:content>
   </ns0:entry>
 </feed>
