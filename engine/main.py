@@ -22,6 +22,7 @@ from engine.analyzers.analyst import analyze_analyst, compute_analyst_subscores
 from engine.analyzers.macro import detect_regime
 from engine.analyzers.cyclical_risk import compute_cyclical_risk
 from engine.scorer.factor_model import compute_composite
+from engine.scorer.alpha_model import compute_alpha_score
 from engine.scorer.ranker import assign_tiers
 from engine.config import (
     OUTPUT_DIR,
@@ -333,6 +334,19 @@ def run(tickers_override: list[str] | None = None) -> None:
                                   cyclical_risk=cyclical_risk,
                                   sectors=sector_map,
                                   timing=timing_result)
+
+    # v20: Alpha model (three-factor multiplicative) — runs in parallel for validation
+    log.info("Computing alpha model scores...")
+    alpha_result = compute_alpha_score(fund_scored, tech_scored, analyst_scored)
+    # Merge alpha columns into composite for export
+    for col in alpha_result.columns:
+        composite[col] = alpha_result[col].reindex(composite.index)
+
+    # Forward reversal sub-scores from tech_scored for display/IC tracking
+    for _rev_col in ("reversal_score", "macd_reversal_score", "kdj_reversal_score",
+                      "rsi_reversal_score", "pullback_proximity_score"):
+        if _rev_col in tech_scored.columns and _rev_col not in composite.columns:
+            composite[_rev_col] = tech_scored[_rev_col].reindex(composite.index).fillna(50.0)
 
     # EMA smoothing on composite_score
     composite = _apply_ema_smoothing(composite)

@@ -67,6 +67,14 @@ export interface RankedStock {
   // v7: data quality
   data_completeness?: number | null;
   data_quality_penalty?: number | null;
+  // v20: Alpha model
+  alpha_score?: number | null;
+  alpha_vm?: number | null;
+  alpha_ev?: number | null;
+  alpha_timing?: number | null;
+  alpha_visibility?: number | null;
+  alpha_multiplier?: number | null;
+  reversal_score?: number | null;
 }
 
 export type TierKey = 'strong_buy' | 'buy' | 'hold' | 'sell' | 'strong_sell';

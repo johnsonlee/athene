@@ -258,5 +258,16 @@ TIMING_PENALTY_THRESHOLD = 45      # penalty starts below this score
 TIMING_MAX_PENALTY = 8.0           # max composite penalty in adverse markets
 TIMING_DC_MODULATION = 0.40        # max penalty reduction for defensive stocks (DC>50)
 
+# ---------- v20: Alpha Model (three-factor multiplicative) ----------
+# Score = VM × EV × Timing / K
+# Runs in parallel with legacy additive model for validation.
+ALPHA_MODEL_K = 5000                    # normalization: realistic joint max ~500K → score ~100
+ALPHA_MODEL_TIMING_ALPHA = 0.5          # reversal vs cycle_upside weight (calibrate from IC)
+ALPHA_MODEL_DIRECTION_CENTER = 0.85     # multiplier at neutral direction
+ALPHA_MODEL_DIRECTION_RANGE = 0.65      # multiplier half-range: [0.85-0.65, 0.85+0.65] = [0.2, 1.5]
+ALPHA_MODEL_EV_QUALITY_WEIGHT = 0.30    # quality contribution to visibility
+ALPHA_MODEL_EV_GROWTH_WEIGHT = 0.70     # growth contribution to visibility
+ALPHA_MODEL_THRESHOLD = 30              # score below this → not worth holding (calibrate from backtest)
+
 # ---------- Output ----------
 OUTPUT_DIR = "frontend/public/data"
