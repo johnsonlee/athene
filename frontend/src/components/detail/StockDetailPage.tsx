@@ -40,7 +40,9 @@ export function StockDetailPage() {
           {ranking && (
             <div className="ml-3 text-right">
               <p className="font-mono text-base font-bold text-gray-900 sm:text-lg dark:text-white">{formatScore(ranking.alpha_score)}</p>
-              <p className="font-mono text-xs text-gray-500 dark:text-gray-500">Alpha</p>
+              <p className="font-mono text-xs text-gray-500 dark:text-gray-500">
+                #{ranking.rank} · Top {((1 - ranking.percentile) * 100).toFixed(0)}%
+              </p>
               <div className="mt-1 flex gap-2 text-[10px]">
                 <span className="text-gray-400 dark:text-gray-600">VM <span className="font-mono font-medium text-gray-700 dark:text-gray-300">{formatScore(ranking.alpha_vm)}</span></span>
                 <span className="text-gray-400 dark:text-gray-600">EV <span className="font-mono font-medium text-gray-700 dark:text-gray-300">{formatScore(ranking.alpha_ev)}</span></span>
