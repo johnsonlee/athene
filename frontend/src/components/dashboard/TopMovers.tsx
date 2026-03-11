@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import type { RankedStock } from '../../types';
-import { ScoreBadge } from '../common/ScoreBadge';
 import { formatScore } from '../../lib/formatters';
 import { useI18n } from '../../lib/i18n';
 
@@ -11,7 +10,7 @@ interface Props {
 export function TopMovers({ rankings }: Props) {
   const { t, tIndustry } = useI18n();
   const top10 = rankings.slice(0, 10);
-  const bottom10 = [...rankings].sort((a, b) => a.composite_score - b.composite_score).slice(0, 10);
+  const bottom10 = [...rankings].sort((a, b) => (a.alpha_score ?? a.composite_score ?? 0) - (b.alpha_score ?? b.composite_score ?? 0)).slice(0, 10);
 
   return (
     <>
@@ -35,8 +34,7 @@ export function TopMovers({ rankings }: Props) {
                 )}
               </div>
               <div className="ml-2 flex shrink-0 items-center gap-2">
-                <span className="font-mono text-sm font-medium text-emerald-600 dark:text-emerald-400">{formatScore(stock.composite_score)}</span>
-                <ScoreBadge tier={stock.tier} label={t(`tier.${stock.tier}` as any)} />
+                <span className="font-mono text-sm font-medium text-emerald-600 dark:text-emerald-400">{formatScore(stock.alpha_score ?? stock.composite_score)}</span>
               </div>
             </Link>
           ))}
@@ -63,8 +61,7 @@ export function TopMovers({ rankings }: Props) {
                 )}
               </div>
               <div className="ml-2 flex shrink-0 items-center gap-2">
-                <span className="font-mono text-sm font-medium text-red-600 dark:text-red-400">{formatScore(stock.composite_score)}</span>
-                <ScoreBadge tier={stock.tier} label={t(`tier.${stock.tier}` as any)} />
+                <span className="font-mono text-sm font-medium text-red-600 dark:text-red-400">{formatScore(stock.alpha_score ?? stock.composite_score)}</span>
               </div>
             </Link>
           ))}

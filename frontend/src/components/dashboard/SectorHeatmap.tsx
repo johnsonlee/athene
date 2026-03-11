@@ -113,7 +113,7 @@ export function SectorHeatmap({ rankings }: Props) {
     rankings.forEach((s) => {
       if (!s.sector || s.sector === 'Unknown') return;
       const entry = grouped.get(s.sector) || { totalScore: 0, totalCap: 0, count: 0 };
-      entry.totalScore += s.composite_score;
+      entry.totalScore += (s.alpha_score ?? s.composite_score ?? 0);
       entry.totalCap += s.market_cap ?? 0;
       entry.count += 1;
       grouped.set(s.sector, entry);

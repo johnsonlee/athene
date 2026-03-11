@@ -26,7 +26,8 @@ export function ScoreDistribution({ rankings }: Props) {
       count: 0,
     }));
 
-    rankings.forEach(({ composite_score: score }) => {
+    rankings.forEach((r) => {
+      const score = r.alpha_score ?? r.composite_score;
       if (score == null || isNaN(score)) return;
       const idx = Math.min(Math.max(0, Math.floor(score / BIN_WIDTH)), BINS - 1);
       histogram[idx].count++;
