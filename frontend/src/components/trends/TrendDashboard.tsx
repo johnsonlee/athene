@@ -113,6 +113,9 @@ export function TrendDashboard() {
                 <th className="px-3 py-2 text-right text-xs font-semibold uppercase tracking-wider text-gray-600 dark:text-gray-500">
                   {t('table.alphaScore')}
                 </th>
+                <th className="px-3 py-2 text-right text-xs font-semibold uppercase tracking-wider text-gray-600 dark:text-gray-500">VM</th>
+                <th className="px-3 py-2 text-right text-xs font-semibold uppercase tracking-wider text-gray-600 dark:text-gray-500">EV</th>
+                <th className="px-3 py-2 text-right text-xs font-semibold uppercase tracking-wider text-gray-600 dark:text-gray-500">Timing</th>
               </tr>
             </thead>
             <tbody>
@@ -144,6 +147,9 @@ export function TrendDashboard() {
                   <td className="px-3 py-2 text-right font-mono font-medium text-gray-900 dark:text-white">
                     {(stock.alpha_score ?? stock.composite_score)?.toFixed(1)}
                   </td>
+                  <td className="px-3 py-2 text-right font-mono text-sm text-gray-700 dark:text-gray-400">{stock.alpha_vm?.toFixed(1) ?? '\u2014'}</td>
+                  <td className="px-3 py-2 text-right font-mono text-sm text-gray-700 dark:text-gray-400">{stock.alpha_ev?.toFixed(1) ?? '\u2014'}</td>
+                  <td className="px-3 py-2 text-right font-mono text-sm text-gray-700 dark:text-gray-400">{stock.alpha_timing?.toFixed(1) ?? '\u2014'}</td>
                 </tr>
               ))}
             </tbody>
@@ -169,10 +175,22 @@ export function TrendDashboard() {
                       {stock.name}
                     </span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <span className="font-mono text-sm font-medium text-gray-900 dark:text-white">
-                      {(stock.alpha_score ?? stock.composite_score)?.toFixed(1)}
-                    </span>
+                  <span className="font-mono text-sm font-medium text-gray-900 dark:text-white">
+                    {(stock.alpha_score ?? stock.composite_score)?.toFixed(1)}
+                  </span>
+                </div>
+                <div className="mt-1.5 grid grid-cols-3 gap-2 text-[10px]">
+                  <div>
+                    <span className="text-gray-400 dark:text-gray-600">VM</span>
+                    <p className="font-mono font-medium text-gray-700 dark:text-gray-300">{stock.alpha_vm?.toFixed(1) ?? '\u2014'}</p>
+                  </div>
+                  <div>
+                    <span className="text-gray-400 dark:text-gray-600">EV</span>
+                    <p className="font-mono font-medium text-gray-700 dark:text-gray-300">{stock.alpha_ev?.toFixed(1) ?? '\u2014'}</p>
+                  </div>
+                  <div>
+                    <span className="text-gray-400 dark:text-gray-600">Timing</span>
+                    <p className="font-mono font-medium text-gray-700 dark:text-gray-300">{stock.alpha_timing?.toFixed(1) ?? '\u2014'}</p>
                   </div>
                 </div>
               </div>
