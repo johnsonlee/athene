@@ -69,7 +69,7 @@ function StockCard({ stock, t, tIndustry }: { stock: RankedStock; t: ReturnType<
 }
 
 export function ScreenerTable({ data }: Props) {
-  const [sorting, setSorting] = useState<SortingState>([{ id: 'rank', desc: false }]);
+  const [sorting, setSorting] = useState<SortingState>([{ id: 'alpha_score', desc: true }]);
   const { t, tIndustry } = useI18n();
 
   const columns = useMemo<ColumnDef<RankedStock, any>[]>(
