@@ -1,4 +1,4 @@
-"""Generate Atom feed with daily rating changes for RSS subscription."""
+"""Generate Atom feed with daily alpha score changes for RSS subscription."""
 
 from __future__ import annotations
 
@@ -17,11 +17,11 @@ SITE_URL = "https://athene.johnsonlee.io"
 
 
 def generate_feed(changes: list[dict], date: str) -> str:
-    """Generate an Atom feed XML file with rating changes.
+    """Generate an Atom feed XML file with alpha score changes.
 
     Args:
-        changes: list of dicts with keys: ticker, name, old_tier, new_tier,
-                 old_rank, new_rank, composite_score
+        changes: list of dicts with keys: ticker, name, direction, old_score,
+                 new_score, delta, rank, primary_driver, factor_deltas
         date: run date string (YYYY-MM-DD)
 
     Returns:
@@ -30,8 +30,8 @@ def generate_feed(changes: list[dict], date: str) -> str:
     now = datetime.now(timezone.utc).isoformat()
 
     feed = Element("feed", xmlns="http://www.w3.org/2005/Atom")
-    SubElement(feed, "title").text = "Athene Stock Screener - Rating Changes"
-    SubElement(feed, "subtitle").text = "Daily rating changes for S&P 500 + NASDAQ 100 stocks"
+    SubElement(feed, "title").text = "Athene - Alpha Score Changes"
+    SubElement(feed, "subtitle").text = "Daily alpha score changes for S&P 500 + NASDAQ 100 stocks"
     SubElement(feed, "id").text = f"{SITE_URL}/feed.xml"
     SubElement(feed, "updated").text = now
 
@@ -48,7 +48,7 @@ def generate_feed(changes: list[dict], date: str) -> str:
     author = SubElement(feed, "author")
     SubElement(author, "name").text = "Athene Bot"
 
-    # Load existing entries from previous feed (keep last 30 days)
+    # Load existing entries, but skip legacy tier-based feeds
     existing_entries = _load_existing_entries()
 
     # Create new entry for today's changes
@@ -87,15 +87,15 @@ def _load_existing_entries() -> list[Element]:
 
 
 def _create_entry(changes: list[dict], date: str, now: str) -> Element:
-    """Create an Atom entry element for a day's rating changes."""
+    """Create an Atom entry element for a day's alpha score changes."""
     entry = Element("entry")
 
-    upgrades = [c for c in changes if _tier_rank(c["new_tier"]) < _tier_rank(c["old_tier"])]
-    downgrades = [c for c in changes if _tier_rank(c["new_tier"]) > _tier_rank(c["old_tier"])]
+    improved = [c for c in changes if c["direction"] == "improved"]
+    declined = [c for c in changes if c["direction"] == "declined"]
 
     SubElement(entry, "title").text = (
-        f"{date}: {len(upgrades)} upgrades, {len(downgrades)} downgrades "
-        f"({len(changes)} total changes)"
+        f"{date}: {len(improved)} improved, {len(declined)} declined "
+        f"({len(changes)} total)"
     )
     SubElement(entry, "id").text = f"{SITE_URL}/changes/{date}"
     SubElement(entry, "updated").text = now
@@ -105,26 +105,18 @@ def _create_entry(changes: list[dict], date: str, now: str) -> Element:
     link.set("rel", "alternate")
 
     # Build HTML content
-    lines = [f"<h2>Rating Changes for {date}</h2>"]
+    lines = [f"<h2>Alpha Score Changes for {date}</h2>"]
 
-    if upgrades:
-        lines.append("<h3>Upgrades</h3><ul>")
-        for c in upgrades:
-            lines.append(
-                f'<li><strong>{c["ticker"]}</strong>: '
-                f'{_tier_label(c["old_tier"])} → {_tier_label(c["new_tier"])} '
-                f'(score: {c["composite_score"]:.2f})</li>'
-            )
+    if improved:
+        lines.append("<h3>Improved</h3><ul>")
+        for c in improved:
+            lines.append(_format_change_html(c, "+"))
         lines.append("</ul>")
 
-    if downgrades:
-        lines.append("<h3>Downgrades</h3><ul>")
-        for c in downgrades:
-            lines.append(
-                f'<li><strong>{c["ticker"]}</strong>: '
-                f'{_tier_label(c["old_tier"])} → {_tier_label(c["new_tier"])} '
-                f'(score: {c["composite_score"]:.2f})</li>'
-            )
+    if declined:
+        lines.append("<h3>Declined</h3><ul>")
+        for c in declined:
+            lines.append(_format_change_html(c, ""))
         lines.append("</ul>")
 
     content = SubElement(entry, "content")
@@ -134,22 +126,19 @@ def _create_entry(changes: list[dict], date: str, now: str) -> Element:
     return entry
 
 
-TIER_ORDER = ["strong_buy", "buy", "hold", "sell", "strong_sell"]
-TIER_LABEL_MAP = {
-    "strong_buy": "Strong Buy",
-    "buy": "Buy",
-    "hold": "Hold",
-    "sell": "Sell",
-    "strong_sell": "Strong Sell",
-}
-
-
-def _tier_rank(tier: str) -> int:
-    try:
-        return TIER_ORDER.index(tier)
-    except ValueError:
-        return 99
-
-
-def _tier_label(tier: str) -> str:
-    return TIER_LABEL_MAP.get(tier, tier)
+def _format_change_html(c: dict, sign_prefix: str) -> str:
+    """Format a single change as an HTML list item with factor deltas."""
+    fd = c.get("factor_deltas", {})
+    factors = []
+    for name in ("vm", "ev", "timing"):
+        val = fd.get(name)
+        if val is not None:
+            s = f"+{val:.1f}" if val >= 0 else f"{val:.1f}"
+            factors.append(f"{name.upper()} {s}")
+    factor_str = f" [{', '.join(factors)}]" if factors else ""
+    delta_str = f"+{c['delta']:.1f}" if c["delta"] >= 0 else f"{c['delta']:.1f}"
+    return (
+        f'<li><strong>{c["ticker"]}</strong>: '
+        f'{c["old_score"]:.1f} &rarr; {c["new_score"]:.1f} '
+        f'({delta_str}){factor_str}</li>'
+    )
