@@ -16,11 +16,20 @@ export function Dashboard() {
   if (loading) return <LoadingSpinner message={t('common.loading')} />;
   if (error) return <p className="text-center text-red-600 dark:text-red-400">{t('common.error', { message: error })}</p>;
 
-  const tierCounts = rankings.reduce<Record<string, { label: string; count: number }>>((acc, s) => {
-    if (!acc[s.tier]) acc[s.tier] = { label: t(`tier.${s.tier}` as any), count: 0 };
-    acc[s.tier].count += 1;
-    return acc;
-  }, {});
+  const scoreBuckets = [
+    { key: '50+', label: 'Alpha ≥ 50', min: 50, max: Infinity },
+    { key: '30-50', label: '30–50', min: 30, max: 50 },
+    { key: '20-30', label: '20–30', min: 20, max: 30 },
+    { key: '10-20', label: '10–20', min: 10, max: 20 },
+    { key: '0-10', label: '< 10', min: 0, max: 10 },
+  ];
+  const bucketCounts = scoreBuckets.map((b) => ({
+    ...b,
+    count: rankings.filter((s) => {
+      const score = s.alpha_score ?? s.composite_score ?? 0;
+      return score >= b.min && score < b.max;
+    }).length,
+  }));
 
   return (
     <div className="space-y-6">
@@ -35,13 +44,13 @@ export function Dashboard() {
 
       {/* Summary cards */}
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-5 sm:gap-4">
-        {Object.entries(tierCounts).map(([tier, { label, count }]) => (
-          <div key={tier}
+        {bucketCounts.map((b) => (
+          <div key={b.key}
             className="tech-card cursor-pointer p-3 transition-all hover:scale-[1.02] active:scale-[0.98] sm:p-4"
-            onClick={() => navigate(`/screener?tier=${tier}`)}
+            onClick={() => navigate(`/screener?minScore=${b.min}&maxScore=${b.max === Infinity ? 100 : b.max}`)}
           >
-            <p className="text-xs text-gray-500 sm:text-sm dark:text-gray-500">{label}</p>
-            <p className="font-mono text-xl font-bold text-gray-900 sm:text-2xl dark:text-white">{count}</p>
+            <p className="text-xs text-gray-500 sm:text-sm dark:text-gray-500">{b.label}</p>
+            <p className="font-mono text-xl font-bold text-gray-900 sm:text-2xl dark:text-white">{b.count}</p>
           </div>
         ))}
       </div>
