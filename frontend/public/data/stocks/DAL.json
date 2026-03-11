@@ -12527,7 +12527,7 @@
     "tech_data_completeness": 1.0
   },
   "sentiment": {
-    "sentiment_compound": 0.0450320946977178,
+    "sentiment_compound": 0.045032094697717795,
     "sentiment_pos": 0.10364999999999999,
     "sentiment_neg": 0.10035000000000001,
     "sentiment_neu": 0.79595,
@@ -12572,10 +12572,10 @@
     "current_ratio_score": 15.0,
     "cyclical_risk_score": 50.0,
     "earnings_visibility": 69.05440063571427,
-    "valuation_margin": 77.339612128125,
-    "catalyst_timeline": 39.63135306600731,
-    "downside_control": 32.38733456045055,
-    "composite_score": 42.464134052309525,
+    "valuation_margin": 77.23461212812501,
+    "catalyst_timeline": 39.085353066007315,
+    "downside_control": 32.303334560450544,
+    "composite_score": 42.160871008174496,
     "weight_earnings_visibility": 0.15,
     "weight_valuation_margin": 0.15,
     "weight_catalyst_timeline": 0.36768500000000004,
