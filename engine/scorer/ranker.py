@@ -133,12 +133,13 @@ def assign_tiers(df: pd.DataFrame) -> pd.DataFrame:
     # Fill NaN composite scores with 50 (neutral)
     result["composite_score"] = result["composite_score"].fillna(50.0)
 
-    # Relative ranking: 1 = highest composite score
-    result["rank"] = result["composite_score"].rank(ascending=False, method="min").astype(int)
+    # Rank by alpha_score when available, fallback to composite_score
+    rank_col = "alpha_score" if "alpha_score" in result.columns else "composite_score"
+    result["rank"] = result[rank_col].fillna(0).rank(ascending=False, method="min").astype(int)
     result = result.sort_values("rank")
 
     # Percentile (0-1, higher = better)
-    result["percentile"] = result["composite_score"].rank(pct=True).fillna(0.5)
+    result["percentile"] = result[rank_col].fillna(0).rank(pct=True).fillna(0.5)
 
     # Absolute rating with hysteresis
     prev_tiers = _load_previous_tiers()

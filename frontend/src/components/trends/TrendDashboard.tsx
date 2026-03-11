@@ -6,7 +6,6 @@ import { useRankings } from '../../hooks/useRankings';
 import { useMeta } from '../../hooks/useMeta';
 import { useI18n } from '../../lib/i18n';
 import { LoadingSpinner } from '../common/LoadingSpinner';
-import { ScoreBadge } from '../common/ScoreBadge';
 import { RegimeBanner } from './RegimeBanner';
 import { TrendLineChart } from './TrendLineChart';
 import type { MacroRegime } from '../../types';
@@ -112,10 +111,7 @@ export function TrendDashboard() {
                   {selectedSector ? t('table.industry') : t('table.sectorIndustry')}
                 </th>
                 <th className="px-3 py-2 text-right text-xs font-semibold uppercase tracking-wider text-gray-600 dark:text-gray-500">
-                  {t('table.score')}
-                </th>
-                <th className="px-3 py-2 text-right text-xs font-semibold uppercase tracking-wider text-gray-600 dark:text-gray-500">
-                  {t('table.rating')}
+                  {t('table.alphaScore')}
                 </th>
               </tr>
             </thead>
@@ -146,13 +142,7 @@ export function TrendDashboard() {
                     }
                   </td>
                   <td className="px-3 py-2 text-right font-mono font-medium text-gray-900 dark:text-white">
-                    {stock.composite_score?.toFixed(1)}
-                  </td>
-                  <td className="px-3 py-2 text-right">
-                    <ScoreBadge
-                      tier={stock.tier}
-                      label={t(`tier.${stock.tier}` as any)}
-                    />
+                    {(stock.alpha_score ?? stock.composite_score)?.toFixed(1)}
                   </td>
                 </tr>
               ))}
@@ -181,12 +171,8 @@ export function TrendDashboard() {
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="font-mono text-sm font-medium text-gray-900 dark:text-white">
-                      {stock.composite_score?.toFixed(1)}
+                      {(stock.alpha_score ?? stock.composite_score)?.toFixed(1)}
                     </span>
-                    <ScoreBadge
-                      tier={stock.tier}
-                      label={t(`tier.${stock.tier}` as any)}
-                    />
                   </div>
                 </div>
               </div>

@@ -36,8 +36,9 @@ export function useFilterSort(data: RankedStock[], init?: InitialFilters) {
       if (filter.tiers.length > 0) {
         if (!filter.tiers.includes(stock.tier)) return false;
       }
-      if (stock.composite_score < filter.minScore) return false;
-      if (stock.composite_score > filter.maxScore) return false;
+      const score = stock.alpha_score ?? stock.composite_score ?? 0;
+      if (score < filter.minScore) return false;
+      if (score > filter.maxScore) return false;
       return true;
     });
   }, [data, filter]);

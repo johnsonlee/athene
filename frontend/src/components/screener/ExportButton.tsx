@@ -9,18 +9,16 @@ export function ExportButton({ data }: Props) {
   const { t } = useI18n();
 
   const handleExport = () => {
-    const headers = [t('table.rank'), t('table.ticker'), t('table.name'), t('table.sector'), t('table.score'), t('table.earningsVisibility'), t('table.valuationMargin'), t('table.catalystTimeline'), t('table.downsideControl'), t('table.rating')];
+    const headers = [t('table.rank'), t('table.ticker'), t('table.name'), t('table.sector'), t('table.alphaScore'), 'VM', 'EV', 'Timing'];
     const rows = data.map((s) => [
       s.rank,
       s.ticker,
       s.name || '',
       s.sector || '',
-      s.composite_score?.toFixed(4) ?? '',
-      s.earnings_visibility?.toFixed(4) ?? '',
-      s.valuation_margin?.toFixed(4) ?? '',
-      s.catalyst_timeline?.toFixed(4) ?? '',
-      s.downside_control?.toFixed(4) ?? '',
-      s.tier_label,
+      s.alpha_score?.toFixed(2) ?? '',
+      s.alpha_vm?.toFixed(2) ?? '',
+      s.alpha_ev?.toFixed(2) ?? '',
+      s.alpha_timing?.toFixed(2) ?? '',
     ]);
 
     const csv = [headers, ...rows].map((r) => r.join(',')).join('\n');

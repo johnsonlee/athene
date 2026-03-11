@@ -35,13 +35,13 @@ export interface RankedStock {
   fundamental_score?: number | null;
   technical_score?: number | null;
   sentiment_score?: number | null;
-  composite_score: number;
+  composite_score?: number;
   rank: number;
   percentile: number;
   tier: TierKey;
   tier_raw?: TierKey;
-  tier_label: string;
-  tier_color: string;
+  tier_label?: string;
+  tier_color?: string;
   // Qualitative dimensions (v3)
   earnings_visibility?: number | null;
   valuation_margin?: number | null;
