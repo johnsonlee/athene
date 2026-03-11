@@ -1,7 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { useStockDetail } from '../../hooks/useStockDetail';
 import { LoadingSpinner } from '../common/LoadingSpinner';
-import { ScoreBadge } from '../common/ScoreBadge';
 import { CompanyProfile } from './CompanyProfile';
 import { AnalystConsensus } from './AnalystConsensus';
 import { PriceChart } from './PriceChart';
@@ -40,9 +39,13 @@ export function StockDetailPage() {
           </div>
           {ranking && (
             <div className="ml-3 text-right">
-              <p className="font-mono text-xs text-gray-500 sm:text-sm dark:text-gray-500">{t('detail.rank', { rank: ranking.rank })}</p>
-              <p className="font-mono text-base font-bold text-gray-900 sm:text-lg dark:text-white">{formatScore(ranking.composite_score)}</p>
-              <ScoreBadge tier={ranking.tier} tierRaw={ranking.tier_raw} label={t(`tier.${ranking.tier}` as any)} />
+              <p className="font-mono text-base font-bold text-gray-900 sm:text-lg dark:text-white">{formatScore(ranking.alpha_score)}</p>
+              <p className="font-mono text-xs text-gray-500 dark:text-gray-500">Alpha</p>
+              <div className="mt-1 flex gap-2 text-[10px]">
+                <span className="text-gray-400 dark:text-gray-600">VM <span className="font-mono font-medium text-gray-700 dark:text-gray-300">{formatScore(ranking.alpha_vm)}</span></span>
+                <span className="text-gray-400 dark:text-gray-600">EV <span className="font-mono font-medium text-gray-700 dark:text-gray-300">{formatScore(ranking.alpha_ev)}</span></span>
+                <span className="text-gray-400 dark:text-gray-600">T <span className="font-mono font-medium text-gray-700 dark:text-gray-300">{formatScore(ranking.alpha_timing)}</span></span>
+              </div>
             </div>
           )}
         </div>

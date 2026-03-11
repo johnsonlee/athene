@@ -46,22 +46,18 @@ function StockCard({ stock, t, tIndustry }: { stock: RankedStock; t: ReturnType<
         </div>
       </div>
       {/* Mini score bars */}
-      <div className="mt-2 grid grid-cols-4 gap-2 text-[10px]">
+      <div className="mt-2 grid grid-cols-3 gap-2 text-[10px]">
         <div>
-          <span className="text-gray-400 dark:text-gray-600">{t('table.earningsVisibility')}</span>
-          <p className="font-mono font-medium text-gray-700 dark:text-gray-300">{formatScore(stock.earnings_visibility)}</p>
+          <span className="text-gray-400 dark:text-gray-600">VM</span>
+          <p className="font-mono font-medium text-gray-700 dark:text-gray-300">{formatScore(stock.alpha_vm)}</p>
         </div>
         <div>
-          <span className="text-gray-400 dark:text-gray-600">{t('table.valuationMargin')}</span>
-          <p className="font-mono font-medium text-gray-700 dark:text-gray-300">{formatScore(stock.valuation_margin)}</p>
+          <span className="text-gray-400 dark:text-gray-600">EV</span>
+          <p className="font-mono font-medium text-gray-700 dark:text-gray-300">{formatScore(stock.alpha_ev)}</p>
         </div>
         <div>
-          <span className="text-gray-400 dark:text-gray-600">{t('table.catalystTimeline')}</span>
-          <p className="font-mono font-medium text-gray-700 dark:text-gray-300">{formatScore(stock.catalyst_timeline)}</p>
-        </div>
-        <div>
-          <span className="text-gray-400 dark:text-gray-600">{t('table.downsideControl')}</span>
-          <p className="font-mono font-medium text-gray-700 dark:text-gray-300">{formatScore(stock.downside_control)}</p>
+          <span className="text-gray-400 dark:text-gray-600">Timing</span>
+          <p className="font-mono font-medium text-gray-700 dark:text-gray-300">{formatScore(stock.alpha_timing)}</p>
         </div>
       </div>
       {stock.alpha_score != null && (
@@ -141,29 +137,22 @@ export function ScreenerTable({ data }: Props) {
         ),
       },
       {
-        accessorKey: 'earnings_visibility',
-        header: t('table.earningsVisibility'),
+        accessorKey: 'alpha_vm',
+        header: 'VM',
         cell: ({ getValue }) => (
           <span className="font-mono text-sm text-gray-700 dark:text-gray-400">{formatScore(getValue() as number | null)}</span>
         ),
       },
       {
-        accessorKey: 'valuation_margin',
-        header: t('table.valuationMargin'),
+        accessorKey: 'alpha_ev',
+        header: 'EV',
         cell: ({ getValue }) => (
           <span className="font-mono text-sm text-gray-700 dark:text-gray-400">{formatScore(getValue() as number | null)}</span>
         ),
       },
       {
-        accessorKey: 'catalyst_timeline',
-        header: t('table.catalystTimeline'),
-        cell: ({ getValue }) => (
-          <span className="font-mono text-sm text-gray-700 dark:text-gray-400">{formatScore(getValue() as number | null)}</span>
-        ),
-      },
-      {
-        accessorKey: 'downside_control',
-        header: t('table.downsideControl'),
+        accessorKey: 'alpha_timing',
+        header: 'Timing',
         cell: ({ getValue }) => (
           <span className="font-mono text-sm text-gray-700 dark:text-gray-400">{formatScore(getValue() as number | null)}</span>
         ),
