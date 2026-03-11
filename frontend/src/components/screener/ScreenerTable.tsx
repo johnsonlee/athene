@@ -58,12 +58,6 @@ function StockCard({ stock, t, tIndustry }: { stock: RankedStock; t: ReturnType<
           <p className="font-mono font-medium text-gray-700 dark:text-gray-300">{formatScore(stock.alpha_timing)}</p>
         </div>
       </div>
-      {stock.alpha_score != null && (
-        <div className="mt-1.5 text-[10px]">
-          <span className="text-gray-400 dark:text-gray-600">{t('table.alphaScore')}</span>
-          <span className="ml-1 font-mono font-medium text-gray-700 dark:text-gray-300">{formatScore(stock.alpha_score)}</span>
-        </div>
-      )}
     </Link>
   );
 }
