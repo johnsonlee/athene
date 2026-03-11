@@ -11,12 +11,7 @@ export function About() {
       <section className="tech-card p-4 sm:p-6">
         <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">{t('about.whatIs')}</h2>
         <p className="text-sm text-gray-600 dark:text-gray-400">{t('about.whatIsDesc')}</p>
-      </section>
-
-      {/* Strategy */}
-      <section className="tech-card p-4 sm:p-6">
-        <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">{t('about.strategy')}</h2>
-        <ol className="list-decimal space-y-2 pl-5 text-sm text-gray-600 dark:text-gray-400">
+        <ol className="mt-3 list-decimal space-y-2 pl-5 text-sm text-gray-600 dark:text-gray-400">
           <li>{t('about.strategy1')}</li>
           <li>{t('about.strategy2')}</li>
           <li>{t('about.strategy3')}</li>
