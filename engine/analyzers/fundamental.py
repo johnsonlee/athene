@@ -193,6 +193,21 @@ def compute_fundamental_subscores(
     result["roe_score"] = result["roe"].apply(score_roe) if "roe" in result.columns else 50.0
     result["roa_score"] = result["roa"].apply(score_roa) if "roa" in result.columns else 50.0
     result["margin_score"] = result["profit_margin"].apply(score_profit_margin) if "profit_margin" in result.columns else 50.0
+
+    # v20: Leverage-adjusted ROE — blend toward ROA when D/E is extreme
+    # Normal leverage (D/E < 150%): no adjustment
+    # High leverage (D/E 150-500%): linear blend ROE→ROA
+    # Extreme leverage (D/E > 500%): use ROA entirely
+    # Only penalizes: blend is capped so roe_score never increases (min with original).
+    if "debt_to_equity" in result.columns:
+        de = result["debt_to_equity"].fillna(100.0)  # default=100% (neutral)
+        # leverage_blend: 0.0 (use ROE as-is) → 1.0 (use ROA entirely)
+        leverage_blend = ((de - 150.0) / 350.0).clip(0.0, 1.0)
+        blended = result["roe_score"] * (1 - leverage_blend) + result["roa_score"] * leverage_blend
+        # Only apply when it would lower roe_score (penalize leverage inflation).
+        # Never boost roe_score — negative ROE with high D/E should stay penalized.
+        result["roe_score"] = result["roe_score"].where(blended >= result["roe_score"], blended)
+
     result["quality_score"] = trimmed_ic_weighted_avg(
         {"roe_score": result["roe_score"], "roa_score": result["roa_score"],
          "margin_score": result["margin_score"]},
