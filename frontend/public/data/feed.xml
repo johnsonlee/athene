@@ -3,18 +3,41 @@
   <title>Athene Stock Screener - Rating Changes</title>
   <subtitle>Daily rating changes for S&amp;P 500 + NASDAQ 100 stocks</subtitle>
   <id>https://athene.johnsonlee.io/feed.xml</id>
-  <updated>2026-03-11T14:33:04.014751+00:00</updated>
+  <updated>2026-03-11T14:42:22.302465+00:00</updated>
   <link href="https://athene.johnsonlee.io/data/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://athene.johnsonlee.io" rel="alternate" type="text/html" />
   <author>
     <name>Athene Bot</name>
   </author>
   <entry>
-    <title>2026-03-11: 0 upgrades, 24 downgrades (24 total changes)</title>
+    <title>2026-03-11: 1 upgrades, 11 downgrades (12 total changes)</title>
     <id>https://athene.johnsonlee.io/changes/2026-03-11</id>
-    <updated>2026-03-11T14:33:04.014751+00:00</updated>
+    <updated>2026-03-11T14:42:22.302465+00:00</updated>
     <link href="https://athene.johnsonlee.io/screener" rel="alternate" />
     <content type="html">&lt;h2&gt;Rating Changes for 2026-03-11&lt;/h2&gt;
+&lt;h3&gt;Upgrades&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VTR&lt;/strong&gt;: Hold → Buy (score: 59.48)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Downgrades&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;TXT&lt;/strong&gt;: Strong Buy → Buy (score: 62.62)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;HIG&lt;/strong&gt;: Strong Buy → Buy (score: 62.45)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LH&lt;/strong&gt;: Buy → Hold (score: 54.69)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RMD&lt;/strong&gt;: Buy → Hold (score: 54.69)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GRMN&lt;/strong&gt;: Buy → Hold (score: 54.62)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CBOE&lt;/strong&gt;: Buy → Hold (score: 54.55)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DAL&lt;/strong&gt;: Hold → Sell (score: 42.87)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MLM&lt;/strong&gt;: Hold → Sell (score: 42.84)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CAG&lt;/strong&gt;: Hold → Sell (score: 42.26)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;HD&lt;/strong&gt;: Sell → Strong Sell (score: 35.96)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;BA&lt;/strong&gt;: Sell → Strong Sell (score: 35.37)&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <ns0:entry>
+    <ns0:title>2026-03-11: 0 upgrades, 24 downgrades (24 total changes)</ns0:title>
+    <ns0:id>https://athene.johnsonlee.io/changes/2026-03-11</ns0:id>
+    <ns0:updated>2026-03-11T14:33:04.014751+00:00</ns0:updated>
+    <ns0:link href="https://athene.johnsonlee.io/screener" rel="alternate" />
+    <ns0:content type="html">&lt;h2&gt;Rating Changes for 2026-03-11&lt;/h2&gt;
 &lt;h3&gt;Downgrades&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;ACGL&lt;/strong&gt;: Strong Buy → Buy (score: 62.98)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;CPT&lt;/strong&gt;: Buy → Hold (score: 54.75)&lt;/li&gt;
@@ -40,8 +63,8 @@
 &lt;li&gt;&lt;strong&gt;MMM&lt;/strong&gt;: Sell → Strong Sell (score: 35.42)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;GPN&lt;/strong&gt;: Sell → Strong Sell (score: 35.11)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;URI&lt;/strong&gt;: Sell → Strong Sell (score: 34.69)&lt;/li&gt;
-&lt;/ul&gt;</content>
-  </entry>
+&lt;/ul&gt;</ns0:content>
+  </ns0:entry>
   <ns0:entry>
     <ns0:title>2026-03-10: 0 upgrades, 23 downgrades (23 total changes)</ns0:title>
     <ns0:id>https://athene.johnsonlee.io/changes/2026-03-10</ns0:id>
@@ -902,94 +925,6 @@
 &lt;/ul&gt;
 &lt;h3&gt;Downgrades&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;ZS&lt;/strong&gt;: Hold → Sell (score: 37.01)&lt;/li&gt;
-&lt;/ul&gt;</ns0:content>
-  </ns0:entry>
-  <ns0:entry>
-    <ns0:title>2026-02-06: 41 upgrades, 36 downgrades (77 total changes)</ns0:title>
-    <ns0:id>https://athene.johnsonlee.io/changes/2026-02-06</ns0:id>
-    <ns0:updated>2026-02-08T13:43:45.706348+00:00</ns0:updated>
-    <ns0:link href="https://athene.johnsonlee.io/screener" rel="alternate" />
-    <ns0:content type="html">&lt;h2&gt;Rating Changes for 2026-02-06&lt;/h2&gt;
-&lt;h3&gt;Upgrades&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;HCA&lt;/strong&gt;: Buy → Strong Buy (score: 67.73)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;MOS&lt;/strong&gt;: Buy → Strong Buy (score: 66.94)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;TXT&lt;/strong&gt;: Buy → Strong Buy (score: 66.92)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;MU&lt;/strong&gt;: Buy → Strong Buy (score: 66.88)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;DAL&lt;/strong&gt;: Buy → Strong Buy (score: 66.80)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;EIX&lt;/strong&gt;: Buy → Strong Buy (score: 66.35)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;MAS&lt;/strong&gt;: Buy → Strong Buy (score: 66.29)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;PTC&lt;/strong&gt;: Buy → Strong Buy (score: 65.91)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GOOG&lt;/strong&gt;: Buy → Strong Buy (score: 65.67)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GOOGL&lt;/strong&gt;: Buy → Strong Buy (score: 65.65)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;CTRA&lt;/strong&gt;: Buy → Strong Buy (score: 65.64)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;SOLV&lt;/strong&gt;: Buy → Strong Buy (score: 65.56)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;DECK&lt;/strong&gt;: Buy → Strong Buy (score: 65.44)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;CTSH&lt;/strong&gt;: Buy → Strong Buy (score: 65.21)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;DELL&lt;/strong&gt;: Buy → Strong Buy (score: 65.14)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;FFIV&lt;/strong&gt;: Buy → Strong Buy (score: 65.11)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;NFLX&lt;/strong&gt;: Hold → Buy (score: 58.75)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;NOC&lt;/strong&gt;: Hold → Buy (score: 58.69)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;BALL&lt;/strong&gt;: Hold → Buy (score: 58.59)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;LMT&lt;/strong&gt;: Hold → Buy (score: 58.56)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;BK&lt;/strong&gt;: Hold → Buy (score: 58.50)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;LULU&lt;/strong&gt;: Hold → Buy (score: 58.49)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;CRM&lt;/strong&gt;: Hold → Buy (score: 58.40)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;D&lt;/strong&gt;: Hold → Buy (score: 58.36)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;KDP&lt;/strong&gt;: Hold → Buy (score: 58.35)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;FER&lt;/strong&gt;: Hold → Buy (score: 58.34)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;MTD&lt;/strong&gt;: Hold → Buy (score: 58.32)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;HII&lt;/strong&gt;: Hold → Buy (score: 58.27)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;MSI&lt;/strong&gt;: Hold → Buy (score: 58.27)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;CBRE&lt;/strong&gt;: Hold → Buy (score: 58.24)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;HLT&lt;/strong&gt;: Hold → Buy (score: 58.22)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;FOX&lt;/strong&gt;: Hold → Buy (score: 58.21)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;AMP&lt;/strong&gt;: Hold → Buy (score: 58.19)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;FOXA&lt;/strong&gt;: Hold → Buy (score: 58.17)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;ALGN&lt;/strong&gt;: Hold → Buy (score: 58.16)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;AON&lt;/strong&gt;: Hold → Buy (score: 58.10)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;UPS&lt;/strong&gt;: Hold → Buy (score: 58.07)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;ERIE&lt;/strong&gt;: Hold → Buy (score: 58.02)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;DXCM&lt;/strong&gt;: Hold → Buy (score: 58.01)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;HSIC&lt;/strong&gt;: Hold → Buy (score: 58.00)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;ZS&lt;/strong&gt;: Sell → Hold (score: 37.01)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Downgrades&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;DVA&lt;/strong&gt;: Buy → Hold (score: 64.47)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;LDOS&lt;/strong&gt;: Buy → Hold (score: 63.91)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;REGN&lt;/strong&gt;: Buy → Hold (score: 63.87)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;VICI&lt;/strong&gt;: Buy → Hold (score: 63.58)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;PCG&lt;/strong&gt;: Buy → Hold (score: 63.35)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;CIEN&lt;/strong&gt;: Hold → Sell (score: 44.71)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;SPGI&lt;/strong&gt;: Hold → Sell (score: 43.72)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;TRI&lt;/strong&gt;: Hold → Sell (score: 43.41)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;FIS&lt;/strong&gt;: Hold → Sell (score: 43.15)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;MCHP&lt;/strong&gt;: Hold → Sell (score: 43.13)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;PANW&lt;/strong&gt;: Hold → Sell (score: 42.66)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;INTC&lt;/strong&gt;: Hold → Sell (score: 42.55)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;AJG&lt;/strong&gt;: Hold → Sell (score: 42.35)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;CEG&lt;/strong&gt;: Hold → Sell (score: 42.21)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;LYV&lt;/strong&gt;: Hold → Sell (score: 42.11)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;ARE&lt;/strong&gt;: Hold → Sell (score: 41.93)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;FISV&lt;/strong&gt;: Hold → Sell (score: 41.91)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;IVZ&lt;/strong&gt;: Hold → Sell (score: 41.88)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;KKR&lt;/strong&gt;: Hold → Sell (score: 41.59)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;CCI&lt;/strong&gt;: Hold → Sell (score: 41.37)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;SHOP&lt;/strong&gt;: Hold → Sell (score: 41.35)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;CRL&lt;/strong&gt;: Hold → Sell (score: 41.22)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;APD&lt;/strong&gt;: Hold → Sell (score: 41.03)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;CPNG&lt;/strong&gt;: Hold → Sell (score: 40.84)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;MSTR&lt;/strong&gt;: Hold → Sell (score: 40.68)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;INSM&lt;/strong&gt;: Sell → Strong Sell (score: 36.49)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;EL&lt;/strong&gt;: Sell → Strong Sell (score: 36.07)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;TEAM&lt;/strong&gt;: Sell → Strong Sell (score: 35.41)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;ARES&lt;/strong&gt;: Sell → Strong Sell (score: 35.20)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;DDOG&lt;/strong&gt;: Sell → Strong Sell (score: 34.44)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;MRNA&lt;/strong&gt;: Sell → Strong Sell (score: 34.17)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;VST&lt;/strong&gt;: Sell → Strong Sell (score: 34.16)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;CSGP&lt;/strong&gt;: Sell → Strong Sell (score: 33.85)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;TTWO&lt;/strong&gt;: Sell → Strong Sell (score: 33.65)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;AXON&lt;/strong&gt;: Sell → Strong Sell (score: 33.24)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;CRWD&lt;/strong&gt;: Sell → Strong Sell (score: 31.65)&lt;/li&gt;
 &lt;/ul&gt;</ns0:content>
   </ns0:entry>
 </feed>
