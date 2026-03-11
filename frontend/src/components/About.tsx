@@ -23,77 +23,46 @@ export function About() {
         </ol>
       </section>
 
-      {/* Version History */}
+      {/* Investment Principles */}
       <section className="tech-card p-4 sm:p-6">
-        <h2 className="mb-4 text-lg font-semibold text-gray-900 dark:text-white">{t('about.versionHistory')}</h2>
-        <div className="relative ml-3 border-l-2 border-gray-200 dark:border-gray-700">
-          {([
-            { key: 'v19', status: 'current' as const },
-            { key: 'v18', status: null },
-            { key: 'v17', status: null },
-            { key: 'v16', status: null },
-            { key: 'v15', status: null },
-            { key: 'v14', status: null },
-            { key: 'v13', status: null },
-            { key: 'v12', status: null },
-            { key: 'v11', status: null },
-            { key: 'v10', status: null },
-            { key: 'v9', status: null },
-            { key: 'v8', status: null },
-            { key: 'v7', status: null },
-            { key: 'v6', status: null },
-            { key: 'v5', status: null },
-            { key: 'v4', status: null },
-            { key: 'v3', status: null },
-            { key: 'v2', status: null },
-            { key: 'v1', status: 'deprecated' as const },
-          ]).map(({ key, status }, i, arr) => {
-            const issuesKey = `about.${key}.issues` as any;
-            const issues = t(issuesKey);
-            const hasIssues = issues !== issuesKey;
-            const isLast = i === arr.length - 1;
-            return (
-              <div key={key} className={`relative ${isLast ? '' : 'mb-6'} ml-6`}>
-                <span className={`absolute -left-[33px] flex h-4 w-4 items-center justify-center rounded-full border-2 ${
-                  status === 'current'
-                    ? 'border-green-500 bg-green-500 dark:border-green-400 dark:bg-green-400'
-                    : status === 'deprecated'
-                      ? 'border-gray-300 bg-gray-300 dark:border-gray-600 dark:bg-gray-600'
-                      : 'border-gray-300 bg-white dark:border-gray-500 dark:bg-gray-800'
-                }`} />
-                <div className="flex items-center gap-2">
-                  <h3 className={`text-sm font-medium ${
-                    status === 'deprecated'
-                      ? 'text-gray-400 line-through dark:text-gray-600'
-                      : 'text-gray-900 dark:text-white'
-                  }`}>
-                    {t(`about.${key}.title` as any)}
-                  </h3>
-                  {status && (
-                    <span className={`rounded px-1.5 py-0.5 text-[10px] font-medium ${
-                      status === 'current'
-                        ? 'bg-green-100 text-green-700 dark:bg-green-500/15 dark:text-green-300'
-                        : 'bg-gray-100 text-gray-500 dark:bg-gray-700 dark:text-gray-400'
-                    }`}>
-                      {t(`about.${status}` as any)}
-                    </span>
-                  )}
-                </div>
-                <p className={`mt-0.5 text-xs ${
-                  status === 'deprecated'
-                    ? 'text-gray-400 dark:text-gray-600'
-                    : 'text-gray-500 dark:text-gray-400'
-                }`}>
-                  {t(`about.${key}.desc` as any)}
-                </p>
-                {hasIssues && (
-                  <p className="mt-1 text-xs text-amber-600 dark:text-amber-400/80">
-                    {issues}
-                  </p>
-                )}
+        <h2 className="mb-4 text-lg font-semibold text-gray-900 dark:text-white">{t('about.principles')}</h2>
+        <div className="space-y-4">
+          {(['principle1', 'principle2', 'principle3'] as const).map((key, i) => (
+            <div key={key} className="flex gap-3">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-100 text-xs font-bold text-blue-700 dark:bg-cyan-500/15 dark:text-cyan-300">{i + 1}</span>
+              <div>
+                <h3 className="text-sm font-medium text-gray-900 dark:text-white">{t(`about.${key}.title` as any)}</h3>
+                <p className="mt-0.5 text-xs text-gray-500 dark:text-gray-400">{t(`about.${key}.desc` as any)}</p>
               </div>
-            );
-          })}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Strategy Framework */}
+      <section className="tech-card p-4 sm:p-6">
+        <h2 className="mb-3 text-lg font-semibold text-gray-900 dark:text-white">{t('about.framework')}</h2>
+        <p className="mb-3 text-sm text-gray-600 dark:text-gray-400">{t('about.frameworkDesc')}</p>
+        <div className="rounded-lg bg-gray-50 p-3 font-mono text-sm text-gray-800 dark:bg-slate-800/50 dark:text-gray-200">
+          Score = VM × EV × Timing / K
+        </div>
+        <div className="mt-4 space-y-3">
+          {(['factorVM', 'factorEV', 'factorTiming'] as const).map((key) => (
+            <div key={key} className="border-l-2 border-blue-300 pl-3 dark:border-cyan-600/50">
+              <div className="flex items-center gap-2">
+                <h3 className="text-sm font-medium text-gray-900 dark:text-white">{t(`about.${key}.title` as any)}</h3>
+                <span className="rounded bg-blue-50 px-1.5 py-0.5 text-[10px] text-blue-600 dark:bg-cyan-500/10 dark:text-cyan-400">{t(`about.${key}.from` as any)}</span>
+              </div>
+              <p className="mt-0.5 text-xs text-gray-500 dark:text-gray-400">{t(`about.${key}.desc` as any)}</p>
+            </div>
+          ))}
+        </div>
+        <div className="mt-4 border-t border-gray-100 pt-3 dark:border-gray-800">
+          <div className="flex items-center gap-2">
+            <span className="text-sm font-medium text-gray-900 dark:text-white">{t('about.whyMultiply' as any)}</span>
+            <span className="rounded bg-blue-50 px-1.5 py-0.5 text-[10px] text-blue-600 dark:bg-cyan-500/10 dark:text-cyan-400">{t('about.whyMultiply.from' as any)}</span>
+          </div>
+          <p className="mt-0.5 text-xs text-gray-500 dark:text-gray-400">{t('about.whyMultiply.desc' as any)}</p>
         </div>
       </section>
 
