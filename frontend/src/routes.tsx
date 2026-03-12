@@ -6,7 +6,6 @@ import { ScreenerPage } from './components/screener/ScreenerPage';
 import { StockDetailPage } from './components/detail/StockDetailPage';
 import { CapitalFlowViz } from './components/flows/CapitalFlowViz';
 import { About } from './components/About';
-import { BacktestPage } from './components/backtest/BacktestPage';
 import { LeadingIndicatorsPage } from './components/indicators/LeadingIndicatorsPage';
 
 export const router = createBrowserRouter(
@@ -22,7 +21,6 @@ export const router = createBrowserRouter(
         { path: 'dashboard', element: <Dashboard /> },
         { path: 'screener', element: <ScreenerPage /> },
         { path: 'stock/:ticker', element: <StockDetailPage /> },
-        { path: 'backtest', element: <BacktestPage /> },
         { path: 'about', element: <About /> },
       ],
     },
