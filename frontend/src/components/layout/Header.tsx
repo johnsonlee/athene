@@ -104,7 +104,7 @@ export function Header() {
 
       {/* Mobile slide-down menu */}
       {menuOpen && (
-        <nav className="tech-bar border-t border-gray-200 bg-white px-4 pb-3 pt-2 md:hidden dark:border-gray-700 dark:bg-gray-800">
+        <nav className="menu-enter tech-bar border-t border-gray-200 bg-white px-4 pb-3 pt-2 md:hidden dark:border-gray-700 dark:bg-gray-800">
           <div className="flex flex-col gap-1">
             {NAV_ITEMS.map(({ path, label }) => {
               const active = location.pathname === path;

@@ -66,7 +66,7 @@ export function TrendDashboard() {
         <h1 className="tech-heading text-xl font-bold tracking-tight text-gray-900 sm:text-2xl dark:text-white">
           {t('trends.title')}
         </h1>
-        <p className="mt-1 font-mono text-sm text-gray-500 dark:text-gray-500">
+        <p className="mt-1 font-mono text-sm text-gray-500 dark:text-gray-400">
           {trends.date}
         </p>
       </div>
@@ -123,6 +123,9 @@ export function TrendDashboard() {
                 <tr
                   key={stock.ticker}
                   onClick={() => navigate(`/stock/${stock.ticker}`)}
+                  onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); navigate(`/stock/${stock.ticker}`); } }}
+                  tabIndex={0}
+                  role="link"
                   className="tech-row cursor-pointer border-b border-gray-100 transition-colors last:border-0 hover:bg-gray-50 dark:border-slate-700/50 dark:hover:bg-transparent"
                 >
                   <td className="px-3 py-2 font-mono text-xs text-gray-400 dark:text-gray-600">

@@ -36,7 +36,7 @@ export function Dashboard() {
       <div>
         <h1 className="tech-heading text-xl font-bold tracking-tight text-gray-900 sm:text-2xl dark:text-white">{t('dashboard.title')}</h1>
         {meta && (
-          <p className="mt-1 font-mono text-sm text-gray-500 dark:text-gray-500">
+          <p className="mt-1 font-mono text-sm text-gray-500 dark:text-gray-400">
             {t('dashboard.analyzed', { count: meta.ticker_count })} &middot; {meta.timestamp?.slice(0, 16).replace('T', ' ') || meta.date}
           </p>
         )}
@@ -49,7 +49,7 @@ export function Dashboard() {
             className="tech-card cursor-pointer p-3 transition-all hover:scale-[1.02] active:scale-[0.98] sm:p-4"
             onClick={() => navigate(`/screener?minScore=${b.min}&maxScore=${b.max === Infinity ? 100 : b.max}`)}
           >
-            <p className="text-xs text-gray-500 sm:text-sm dark:text-gray-500">{b.label}</p>
+            <p className="text-xs text-gray-500 sm:text-sm dark:text-gray-400">{b.label}</p>
             <p className="font-mono text-xl font-bold text-gray-900 sm:text-2xl dark:text-white">{b.count}</p>
           </div>
         ))}

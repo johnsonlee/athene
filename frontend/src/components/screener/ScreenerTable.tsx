@@ -183,7 +183,11 @@ export function ScreenerTable({ data }: Props) {
                   >
                     <div className="flex items-center gap-1">
                       {flexRender(header.column.columnDef.header, header.getContext())}
-                      {{ asc: ' \u2191', desc: ' \u2193' }[header.column.getIsSorted() as string] ?? ''}
+                      {header.column.getIsSorted() && (
+                        <span className="ml-0.5 text-blue-500 dark:text-cyan-400">
+                          {header.column.getIsSorted() === 'asc' ? '\u2191' : '\u2193'}
+                        </span>
+                      )}
                     </div>
                   </th>
                 ))}
@@ -205,7 +209,7 @@ export function ScreenerTable({ data }: Props) {
       </div>
 
       {/* Pagination */}
-      <div className="tech-card flex items-center justify-between px-3 py-2.5 text-sm text-gray-600 md:mt-0 dark:text-gray-500">
+      <div className="tech-card mt-2 flex items-center justify-between px-3 py-2.5 text-sm text-gray-600 dark:text-gray-400">
         <span className="font-mono text-xs">
           {t('screener.page', {
             current: table.getState().pagination.pageIndex + 1,
