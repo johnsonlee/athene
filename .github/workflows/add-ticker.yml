@@ -1,0 +1,96 @@
+name: Add Ticker
+
+on:
+  workflow_dispatch:
+    inputs:
+      tickers:
+        description: 'Comma-separated ticker symbols (e.g. CPNG,SE,GRAB)'
+        required: true
+      since:
+        description: 'Backfill history from date (YYYY-MM-DD, default: 1 year ago)'
+        required: false
+        default: ''
+      no_backfill:
+        description: 'Skip history backfill'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-pipeline
+  cancel-in-progress: false
+
+jobs:
+  add-ticker:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    outputs:
+      data_changed: ${{ steps.commit.outputs.data_changed }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Cache venv
+        uses: actions/cache@v4
+        with:
+          path: .venv
+          key: venv-${{ runner.os }}-py3.12-${{ hashFiles('requirements.txt') }}
+
+      - name: Install dependencies
+        run: |
+          test -d .venv || python -m venv .venv
+          source .venv/bin/activate
+          pip install -r requirements.txt
+
+      - name: Add tickers
+        run: |
+          source .venv/bin/activate
+          TICKERS=$(echo "${{ inputs.tickers }}" | tr ',' ' ')
+          ARGS=""
+          if [ "${{ inputs.no_backfill }}" = "true" ]; then
+            ARGS="$ARGS --no-backfill"
+          fi
+          if [ -n "${{ inputs.since }}" ]; then
+            ARGS="$ARGS --since ${{ inputs.since }}"
+          fi
+          python -m engine.add_ticker $ARGS $TICKERS
+
+      - name: Commit changes
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          TICKERS="${{ inputs.tickers }}"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset origin/main
+            git add engine/config.py
+            git add -f frontend/public/data/
+            if git diff --staged --quiet; then
+              echo "No changes to commit"
+              echo "data_changed=false" >> "$GITHUB_OUTPUT"
+              break
+            fi
+            git commit -m "feat: add ticker(s) ${TICKERS}"
+            git push origin main && {
+              echo "data_changed=true" >> "$GITHUB_OUTPUT"
+              break
+            }
+            echo "Push failed (attempt $attempt), retrying..."
+            sleep $((attempt * 3))
+          done
+
+  deploy:
+    needs: add-ticker
+    if: needs.add-ticker.outputs.data_changed == 'true'
+    uses: ./.github/workflows/deploy-pages.yml
