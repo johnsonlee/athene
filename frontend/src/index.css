@@ -155,3 +155,31 @@ body {
   border-color: rgba(6, 182, 212, 0.3);
   color: #67e8f9;
 }
+
+/* ── Reduced motion support ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ── Focus-visible ring ── */
+:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+.dark :focus-visible {
+  outline-color: #22d3ee;
+}
+
+/* ── Mobile menu transition utility ── */
+.menu-enter {
+  animation: menuSlideDown 200ms ease-out;
+}
+@keyframes menuSlideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}

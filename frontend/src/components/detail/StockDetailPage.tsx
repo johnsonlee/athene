@@ -29,7 +29,7 @@ export function StockDetailPage() {
           <div>
             <h1 className="tech-heading text-xl font-bold tracking-tight text-gray-900 sm:text-2xl dark:text-white">{ticker}</h1>
             {(ranking?.industry || ranking?.sector) && (
-              <p className="text-xs text-gray-500 dark:text-gray-500">{ranking.industry ? tIndustry(ranking.industry) : (ranking.sector ? t(`sector.${ranking.sector}` as any) : '')}</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400">{ranking.industry ? tIndustry(ranking.industry) : (ranking.sector ? t(`sector.${ranking.sector}` as any) : '')}</p>
             )}
             {fundamental?.current_price && (
               <p className="font-mono text-lg font-semibold text-gray-700 sm:text-xl dark:text-gray-300">
@@ -40,7 +40,7 @@ export function StockDetailPage() {
           {ranking && (
             <div className="ml-3 text-right">
               <p className="font-mono text-base font-bold text-gray-900 sm:text-lg dark:text-white">{formatScore(ranking.alpha_score)}</p>
-              <p className="font-mono text-xs text-gray-500 dark:text-gray-500">
+              <p className="font-mono text-xs text-gray-500 dark:text-gray-400">
                 #{ranking.rank} · Top {((1 - ranking.percentile) * 100).toFixed(0)}%
               </p>
               <div className="mt-1 flex gap-2 text-[10px]">
