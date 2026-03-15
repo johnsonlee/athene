@@ -207,7 +207,7 @@ See [CHANGELOG.md](CHANGELOG.md) for the full version history (v1–v20).
 
 **Current version**: v20 — Alpha Model (Three-Factor Multiplicative)
 
-## Scoring Design (v9)
+## Scoring Design
 
 ### Absolute Metric Scoring
 
@@ -252,18 +252,57 @@ def metric_score(value, breakpoints, missing_default=50.0) -> float:
 | Target Upside | Higher is better | -20%→10, 0%→45, +20%→72, +40%→85 |
 | Consensus Rating | Lower is better | 1.0→92, 2.0→70, 3.0→45, 4.0→20 |
 
+### Alpha Model (v20) — Primary Scoring
+
+The alpha model is the primary scoring system. It uses a three-factor multiplicative formula:
+
+```
+alpha_score = (VM × EV × Timing) / K    where K = 5000
+```
+
+**Factor 1: Valuation Margin (VM)**
+```
+pe_base = forward_pe_score (fallback: trailing pe_score)
+growth_adj = 0.5 + earn_growth_score / 100    ∈ [0.5, 1.5]
+VM = pe_base × growth_adj × 0.6 + fcf_yield_score × 0.4
+```
+Growth adjustment prevents penalizing high-PE growth stocks and rewarding low-PE value traps. PB excluded (anti-signal for tech, IR -0.17).
+
+**Factor 2: Earnings Visibility (EV)**
+```
+visibility = 0.30 × quality_score + 0.70 × growth_score
+direction_multiplier = 0.85 + 0.65 × (0.5 × analyst_revision + 0.5 × growth_direction)    ∈ [0.2, 1.5]
+EV = visibility × direction_multiplier
+```
+Analyst revisions and growth trajectory amplify or suppress visibility. Positive direction → up to 1.5×, negative → down to 0.2×.
+
+**Factor 3: Timing**
+```
+cycle_upside = 100 − trend_score    (contrarian: strong uptrend = less future upside)
+timing = reversal_score × (α + (1−α) × cycle_upside / 100)    where α = 0.5
+```
+Reversal-gated: reversal_score = 0 → timing = 0 regardless of cycle position (prevents value traps). Reversal signal = MACD histogram ROC (35%) + KDJ golden cross (30%) + RSI oversold recovery (25%) + pullback to SMA support (10%).
+
+**Key design principles:**
+- **Multiplicative = AND logic**: All three factors must be present. Any zero kills the score.
+- **Cycle inversion**: Model is contrarian on timing — looks for cycle upside in beaten-down sectors.
+- **DC excluded**: Downside Control is a position-sizing factor, not a stock quality factor. Moved to Layer 2.
+- **Parallel architecture**: Runs alongside legacy composite model. Both `alpha_score` and `composite_score` are exported.
+
 ### Sub-score Computation
 
 ```
-value_score     = avg(pe_score, forward_pe_score, pb_score, ps_score)    # all sector-aware
+value_score     = avg(pe_score, pb_score)                                # PE + PB only (v18: forward_pe and PS removed)
 quality_score   = avg(roe_score, roa_score, margin_score)
 growth_score    = avg(rev_growth_score, earn_growth_score)               # sector-aware for Utilities
-safety_score    = avg(debt_equity_score, fcf_yield_score, current_ratio_score)  # sector-aware D/E
-sentiment_score = 50 + confidence × (raw_vader_score - 50)   # v9: confidence-normalized, time/source weighted
+safety_score    = debt_equity_score                                      # v18: sole safety metric (fcf_yield and current_ratio removed)
+sentiment_score = 50 + confidence × (raw_vader_score - 50)              # confidence-normalized, time/source weighted
 analyst_score   = 0.40×revision_momentum_score + 0.35×target_upside_score + 0.25×consensus_score
 ```
 
-### Qualitative Dimension Aggregation (v18)
+### Legacy Composite Model (v18)
+
+> The legacy composite model runs in parallel with the alpha model. The alpha model (above) is the primary scoring system; composite_score is retained for comparison and IC validation.
 
 ```
 earningsVisibility = 0.30×quality + 0.70×growth
@@ -293,6 +332,8 @@ All scores are 0-100 throughout the pipeline.
 | < 25 | Strong Sell |
 
 Hysteresis: ±2 points buffer to prevent oscillation at boundaries.
+
+> Note: Rating tiers apply to the legacy composite model only. The alpha model uses continuous scores (0-100) without tier classification.
 
 ### EMA Smoothing (v6: per-dimension)
 
@@ -325,10 +366,8 @@ When implementing a new version from the roadmap:
 
 1. Implement the engine changes (Python scoring/analysis code).
 2. Test with sample tickers: `python -m engine.main AAPL MSFT JPM XOM NEE`.
-3. Update the About page in the frontend:
-   - Add new version entry to `frontend/src/components/About.tsx` (timeline section).
-   - Add i18n strings (EN + ZH) to `frontend/src/lib/i18n.tsx` for the new version's label, date, title, description, and known issues.
-   - Move the "current" badge to the new version; demote the previous current version to a regular timeline entry.
+3. Update the About page in the frontend if the scoring model or strategy framework changes:
+   - Update `frontend/src/components/About.tsx` and i18n strings (EN + ZH) in `frontend/src/lib/i18n.tsx`.
 4. Update `CLAUDE.md`: move the implemented version from "Improvement Roadmap" to "Version History", mark the next version as `(current)`.
 5. Build frontend to verify: `cd frontend && npm run build`.
 6. Commit all changes together with message: `feat(engine): implement vN — <theme>`.
