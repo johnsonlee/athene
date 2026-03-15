@@ -48,7 +48,10 @@ jobs:
 
       - name: Install dependencies
         run: |
-          test -d .venv || python -m venv .venv
+          if [ ! -d .venv ] || ! .venv/bin/python -c 'import sys' 2>/dev/null; then
+            rm -rf .venv
+            python -m venv .venv
+          fi
           source .venv/bin/activate
           pip install -r requirements.txt
 
