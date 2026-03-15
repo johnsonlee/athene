@@ -1,6 +1,6 @@
 # Changelog
 
-### v20: Alpha Model (Three-Factor Multiplicative)
+### v20: Alpha Model (Three-Factor Multiplicative) (current)
 
 Parallel alpha scoring model based on three investment axioms: (1) past trends predict future via cycle position, (2) capital is zero-sum, (3) cycles are continuous. Replaces additive weighted-sum approach with multiplicative `Score = VM × EV × Timing / K` where any zero factor kills the score.
 
@@ -21,7 +21,7 @@ Parallel alpha scoring model based on three investment axioms: (1) past trends p
 
 **Files**: `engine/scorer/alpha_model.py` (new), `engine/analyzers/technical.py`, `engine/config.py`, `engine/scorer/factor_model.py` (unchanged), `engine/analyze.py`, `engine/main.py`, `engine/exporters/json_exporter.py`
 
-### v19: Market Timing Integration (current)
+### v19: Market Timing Integration
 
 Synthesize timing signals into a `market_timing_score` (0-100) that influences stock scoring via dimension weight adjustment and composite penalty in unfavorable markets. Addresses the problem where rich market timing signals (RFI, leading indicators, macro regime) barely influenced stock scores — only a ±5% CT/DC shift from macro regime existed.
 
