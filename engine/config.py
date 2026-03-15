@@ -94,6 +94,9 @@ EXTRA_TICKERS = [
     {"ticker": "CPNG", "name": "Coupang", "sector": "Consumer Cyclical", "industry": "Internet Retail"},
     {"ticker": "BABA", "name": "Alibaba Group", "sector": "Consumer Cyclical", "industry": "Internet Retail"},
     {"ticker": "XBI", "name": "SPDR S&P Biotech ETF", "sector": "Healthcare", "industry": "Biotechnology"},
+    {"ticker": "SAN", "name": "Banco Santander, S.A. Sponsored", "sector": "Financial Services", "industry": "Banks - Diversified"},
+    {"ticker": "CCJ", "name": "Cameco Corporation", "sector": "Energy", "industry": "Uranium"},
+    {"ticker": "VKTX", "name": "Viking Therapeutics, Inc.", "sector": "Healthcare", "industry": "Biotechnology"},
 ]
 
 # ---------- v9: Sentiment analysis ----------
