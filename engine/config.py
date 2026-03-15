@@ -97,6 +97,12 @@ EXTRA_TICKERS = [
     {"ticker": "SAN", "name": "Banco Santander, S.A. Sponsored", "sector": "Financial Services", "industry": "Banks - Diversified"},
     {"ticker": "CCJ", "name": "Cameco Corporation", "sector": "Energy", "industry": "Uranium"},
     {"ticker": "VKTX", "name": "Viking Therapeutics, Inc.", "sector": "Healthcare", "industry": "Biotechnology"},
+    {"ticker": "NBIS", "name": "Nebius Group N.V.", "sector": "Communication Services", "industry": "Internet Content & Information"},
+    {"ticker": "CRWV", "name": "CoreWeave, Inc.", "sector": "Technology", "industry": "Software - Infrastructure"},
+    {"ticker": "SE", "name": "Sea Limited", "sector": "Consumer Cyclical", "industry": "Internet Retail"},
+    {"ticker": "RBLX", "name": "Roblox Corporation", "sector": "Communication Services", "industry": "Electronic Gaming & Multimedia"},
+    {"ticker": "OKLO", "name": "Oklo Inc.", "sector": "Utilities", "industry": "Utilities - Independent Power Producers"},
+    {"ticker": "CRCL", "name": "Circle Internet Group, Inc.", "sector": "Financial Services", "industry": "Capital Markets"},
 ]
 
 # ---------- v9: Sentiment analysis ----------
