@@ -416,7 +416,6 @@ export interface LeadingIndicatorsData {
 export interface FilterState {
   search: string;
   sectors: string[];
-  tiers: TierKey[];
   minScore: number;
   maxScore: number;
 }
