@@ -1,9 +1,8 @@
 import { useState, useMemo } from 'react';
-import type { RankedStock, FilterState, TierKey } from '../types';
+import type { RankedStock, FilterState } from '../types';
 
 interface InitialFilters {
   sector?: string;
-  tier?: TierKey;
   minScore?: number;
   maxScore?: number;
 }
@@ -12,7 +11,6 @@ function buildDefaultFilter(init?: InitialFilters): FilterState {
   return {
     search: '',
     sectors: init?.sector ? [init.sector] : [],
-    tiers: init?.tier ? [init.tier] : [],
     minScore: init?.minScore ?? -Infinity,
     maxScore: init?.maxScore ?? Infinity,
   };
@@ -25,16 +23,12 @@ export function useFilterSort(data: RankedStock[], init?: InitialFilters) {
     return data.filter((stock) => {
       if (filter.search) {
         const q = filter.search.toLowerCase();
-        const matches =
-          stock.ticker.toLowerCase().includes(q) ||
-          (stock.name?.toLowerCase().includes(q) ?? false);
-        if (!matches) return false;
+        const ticker = (stock.ticker || '').toLowerCase();
+        const name = (stock.name || '').toLowerCase();
+        if (!ticker.includes(q) && !name.includes(q)) return false;
       }
       if (filter.sectors.length > 0 && stock.sector) {
         if (!filter.sectors.includes(stock.sector)) return false;
-      }
-      if (filter.tiers.length > 0) {
-        if (!filter.tiers.includes(stock.tier)) return false;
       }
       const score = stock.alpha_score ?? stock.composite_score ?? 0;
       if (score < filter.minScore) return false;

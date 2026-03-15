@@ -14,7 +14,6 @@ export function ScreenerPage() {
   const maxScoreParam = searchParams.get('maxScore');
   const { filtered, filter, setFilter, sectors } = useFilterSort(rankings, {
     sector: searchParams.get('sector') || undefined,
-    tier: (searchParams.get('tier') as import('../../types').TierKey) || undefined,
     minScore: minScoreParam ? Number(minScoreParam) : undefined,
     maxScore: maxScoreParam ? Number(maxScoreParam) : undefined,
   });
