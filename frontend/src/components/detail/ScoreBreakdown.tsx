@@ -285,8 +285,6 @@ export function ScoreBreakdown({ detail }: Props) {
             {/* Timing - technical + sentiment */}
             {fi === 2 && tech && (
               <div className="mt-3 grid grid-cols-2 gap-x-4 border-t pt-2 dark:border-slate-700/50">
-                <Metric label={t('metric.sma20')} value={formatPrice(tech.sma_20)}
-                  signal={tech.close != null && tech.sma_20 != null ? (tech.close > tech.sma_20 ? 'bullish' : 'bearish') : undefined} />
                 <Metric label={t('metric.sma50')} value={formatPrice(tech.sma_50)}
                   signal={tech.close != null && tech.sma_50 != null ? (tech.close > tech.sma_50 ? 'bullish' : 'bearish') : undefined} />
                 <Metric label={t('metric.sma200')} value={formatPrice(tech.sma_200)}
