@@ -89,42 +89,50 @@
       "low": 89.66000366210938,
       "close": 92.26000213623047,
       "volume": 16522720
+    },
+    {
+      "date": "2026-03-31",
+      "open": 97.94999694824219,
+      "high": 103.87999725341797,
+      "low": 95.7300033569336,
+      "close": 103.76000213623047,
+      "volume": 21386444
     }
   ],
   "fundamental": {
-    "pe": 838.7273,
-    "forward_pe": -133.92754,
-    "pb": 5.060056,
-    "ps": 44.06068,
+    "pe": 943.27277,
+    "forward_pe": -150.62129,
+    "pb": 5.6907806,
+    "ps": 49.55274,
     "roe": 0.00737,
     "roa": -0.04658,
     "revenue_growth": 5.008,
     "earnings_growth": null,
     "debt_to_equity": 105.961,
     "fcf": -3610350080.0,
-    "market_cap": 23343347712.0,
+    "market_cap": 26253041664.0,
     "profit_margin": 0.19195999,
     "operating_margin": -1.02986,
     "gross_margin": 0.6863,
     "dividend_yield": null,
     "beta": 1.16,
-    "current_price": 92.26,
+    "current_price": 103.76,
     "high_52w": 141.1,
     "low_52w": 18.31,
     "total_debt": 4888200192.0,
     "total_cash": 3678099968.0,
     "ebitda": -192200000.0,
     "current_ratio": 3.084,
-    "inv_pe": 0.001192282640615132,
-    "inv_pb": 0.19762627132980345,
-    "inv_ps": 0.022695972917349438,
-    "fcf_yield": -0.15466290973098282,
+    "inv_pe": 0.00106013873378323,
+    "inv_pb": 0.17572281735830758,
+    "inv_ps": 0.020180518776560085,
+    "fcf_yield": -0.13752121092127637,
     "fcf_debt_ratio": -0.7385847424802032,
     "pe_score": 5.0,
     "forward_pe_score": 10.0,
-    "pb_score": 29.819831999999998,
+    "pb_score": 27.9276582,
     "ps_score": 20.0,
-    "value_score": 17.409916,
+    "value_score": 16.463829099999998,
     "roe_score": 22.303125,
     "roa_score": 10.0,
     "margin_score": 76.19099775,
@@ -136,34 +144,26 @@
     "fcf_yield_score": 10.0,
     "current_ratio_score": 85.0,
     "safety_score": 40.451,
-    "fundamental_score": 43.21679741250001,
+    "fundamental_score": 42.980275687500004,
     "fund_data_completeness": 0.9166666666666666
   },
   "technical": null,
-  "sentiment": {
-    "sentiment_compound": -0.09363134337152507,
-    "sentiment_pos": 0.0353,
-    "sentiment_neg": 0.07155,
-    "sentiment_neu": 0.89315,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 45.32
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.42857142857142855,
-    "target_upside": 0.7342293518317796,
+    "target_upside": 0.5420200462606013,
     "consensus_rating": 1.57143,
     "analyst_revision_count": 7.0,
     "analyst_count": 13.0,
     "analyst_upgrades": 3.0,
     "analyst_downgrades": 0.0,
     "revision_momentum_score": 71.9047619047619,
-    "target_upside_score": 92.0,
+    "target_upside_score": 89.97070161912104,
     "consensus_score": 75.1428,
-    "analyst_score": 79.74760476190475
+    "analyst_score": 79.03735032859711
   },
   "ranking": {
-    "value_score": 17.409916,
+    "value_score": 16.463829099999998,
     "quality_score": 49.247061375,
     "growth_score": 64.0,
     "safety_score": 40.451,
@@ -171,10 +171,10 @@
     "momentum_score": 50.0,
     "volatility_score": 50.0,
     "volume_score": 50.0,
-    "analyst_score": 79.74760476190475,
+    "analyst_score": 79.03735032859711,
     "pe_score": 5.0,
     "forward_pe_score": 10.0,
-    "pb_score": 29.819831999999998,
+    "pb_score": 27.9276582,
     "ps_score": 20.0,
     "roe_score": 22.303125,
     "roa_score": 10.0,
@@ -186,26 +186,26 @@
     "current_ratio_score": 85.0,
     "cyclical_risk_score": 50.0,
     "earnings_visibility": 59.57123552375,
-    "valuation_margin": 16.3949748,
+    "valuation_margin": 16.41214873,
     "catalyst_timeline": 50.0,
-    "downside_control": 46.715354999999995,
-    "composite_score": 40.835487608930364,
+    "downside_control": 46.701355,
+    "composite_score": 41.67251859771195,
     "weight_earnings_visibility": 0.15,
     "weight_valuation_margin": 0.15,
-    "weight_catalyst_timeline": 0.35740303,
-    "weight_downside_control": 0.34259697,
-    "fundamental_score": 43.21679741250001,
+    "weight_catalyst_timeline": 0.36769830000000003,
+    "weight_downside_control": 0.3323017,
+    "fundamental_score": 42.980275687500004,
     "technical_score": 50.0,
-    "sentiment_score": 45.32,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 0.6141666666666666,
     "data_quality_penalty": 0.0,
     "trend_gate_penalty": 0.0,
-    "timing_penalty": 2.9,
-    "market_timing_score": 28.7,
-    "timing_zone": "adverse",
+    "timing_penalty": 1.98,
+    "market_timing_score": 33.85,
+    "timing_zone": "unfavorable",
     "alpha_vm": 9.280000000000001,
     "alpha_vm_pe_base": 10.0,
     "alpha_vm_growth_adj": 0.88,
@@ -220,156 +220,15 @@
     "kdj_reversal_score": 50.0,
     "rsi_reversal_score": 50.0,
     "pullback_proximity_score": 50.0,
-    "rank": 513,
-    "percentile": 0.039399624765478425,
+    "rank": 517,
+    "percentile": 0.03189493433395872,
     "tier": "sell",
     "tier_raw": "sell",
     "tier_label": "Sell",
     "tier_color": "#fb923c",
-    "market_cap": 23343347712.0,
+    "market_cap": 26253041664.0,
     "sector": "Communication Services",
     "industry": "Internet Content & Information"
   },
-  "headlines": [
-    {
-      "title": "\n                        Street Calls of the Week\n                    ",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/street-calls-week-065856118.html",
-      "publisher": "Investing.com",
-      "date": "2026-03-29",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "\n                        Short Squeeze Stocks: The Usual Suspects, & One Newcomer\n                    ",
-      "url": "/news/340576/short-squeeze-stocks-the-usual-suspects-one-newcomer",
-      "publisher": "Schaeffer's Research",
-      "date": "2026-03-27",
-      "sentiment": "negative"
-    },
-    {
-      "title": "\n                        In Wild Year Since IPO, CoreWeave Stock Is Lagging Rival Nebius\n                    ",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/coreweave-shares-lag-rival-nebius-113438904.html",
-      "publisher": "Bloomberg",
-      "date": "2026-03-25",
-      "sentiment": "negative"
-    },
-    {
-      "title": "\n                        Nebius Is Quietly Building Momentum In AI\n                    ",
-      "url": "https://finance.yahoo.com/sectors/technology/articles/nebius-quietly-building-momentum-ai-214822044.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-03-24",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "\n                        Here's how CoreWeave and Nebius can prove the AI doubters wrong\n                    ",
-      "url": "https://www.marketwatch.com/story/heres-how-coreweave-and-nebius-can-prove-the-ai-doubters-wrong-b7cedd31?mod=mw_FV",
-      "publisher": "MarketWatch",
-      "date": "2026-03-24",
-      "sentiment": "negative"
-    },
-    {
-      "title": "\n                        Microsoft reinstated, Ralph Lauren upgraded: Wall Street's top analyst calls\n                    ",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/microsoft-reinstated-ralph-lauren-upgraded-133648092.html",
-      "publisher": "The Fly",
-      "date": "2026-03-24",
-      "sentiment": "positive"
-    },
-    {
-      "title": "\n                        Nebius Makes Quiet $4.3 Billion Move In AI Race\n                    ",
-      "url": "https://finance.yahoo.com/sectors/technology/articles/nebius-makes-quiet-4-3-111456387.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-03-23",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "\n                        Nebius Group Announces Closing of Private Offering of Convertible Senior Notes, With Aggregate Gross Proceeds of Approximately $4.3 Billion\n                    ",
-      "url": "https://www.businesswire.com/news/home/20260323990249/en/",
-      "publisher": "Business Wire",
-      "date": "2026-03-23",
-      "sentiment": "negative"
-    },
-    {
-      "title": "\n                        Elevated Oil Prices a Constant Weight on Wall Street\n                    ",
-      "url": "/news/339013/elevated-oil-prices-a-constant-weight-on-wall-street",
-      "publisher": "Schaeffer's Research",
-      "date": "2026-03-20",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "\n                        Why Dell Stock Is a Big Winner in the Super Micro Scandal\n                    ",
-      "url": "https://www.barrons.com/articles/dell-stock-price-super-micro-6c17789c?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2026-03-20",
-      "sentiment": "positive"
-    },
-    {
-      "title": "\n                        Nebius Prices Larger $4 Billion AI Funding Raise\n                    ",
-      "url": "https://finance.yahoo.com/news/nebius-prices-larger-4-billion-171958469.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-03-18",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "\n                        Nebius Group Announces Pricing of Upsized Private Offering of $4.0 Billion of Convertible Senior Notes\n                    ",
-      "url": "https://www.businesswire.com/news/home/20260318639263/en/",
-      "publisher": "Business Wire",
-      "date": "2026-03-18",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "\n                        Nebius' stock falls as investors get a wakeup call on the cost of competing in AI\n                    ",
-      "url": "https://www.marketwatch.com/story/nebiuss-stock-falls-on-a-bond-offering-heres-why-investors-are-sobering-up-b3392d06?mod=mw_FV",
-      "publisher": "MarketWatch",
-      "date": "2026-03-17",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "\n                        Nebius Lines Up $3.75B in Convertible Debt After Meta Deal\n                    ",
-      "url": "https://finance.yahoo.com/news/nebius-lines-3-75b-convertible-190115710.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-03-17",
-      "sentiment": "negative"
-    },
-    {
-      "title": "\n                        Nebius Stock Falls 12% on Bond Offering. Citi Calls It a 'High Risk' Buy.\n                    ",
-      "url": "https://www.barrons.com/articles/nebius-stock-bond-offering-buy-rating-45e42661?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2026-03-17",
-      "sentiment": "negative"
-    },
-    {
-      "title": "\n                        Nebius Gives VC-Backed Growth-Stage Companies a Fast Track to Enterprise Adoption in Collaboration with NVIDIA\n                    ",
-      "url": "https://www.businesswire.com/news/home/20260317623683/en/",
-      "publisher": "Business Wire",
-      "date": "2026-03-17",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "\n                        Nebius Group Announces Proposed Private Offering of $3.75 Billion of Convertible Senior Notes\n                    ",
-      "url": "https://www.businesswire.com/news/home/20260317324208/en/",
-      "publisher": "Business Wire",
-      "date": "2026-03-17",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "\n                        CrowdStrike and Nebius Partner to Unify Security Across the Next Generation of AI Cloud Infrastructure\n                    ",
-      "url": "https://www.businesswire.com/news/home/20260316779192/en",
-      "publisher": "Business Wire",
-      "date": "2026-03-17",
-      "sentiment": "positive"
-    },
-    {
-      "title": "\n                        Nebius intends to raise $3.75 billion via convertible loan following Meta, Nvidia deals\n                    ",
-      "url": "https://finance.yahoo.com/news/nebius-intends-raise-3-75-110156379.html",
-      "publisher": "Reuters",
-      "date": "2026-03-17",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "\n                        Nebius inks $27bn deal with Meta for AI cloud capacity\n                    ",
-      "url": "https://finance.yahoo.com/m/26753ed7-235d-3830-ad07-06eef1bd870b/nebius-inks-%2427bn-deal-with.html",
-      "publisher": "Verdict",
-      "date": "2026-03-17",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }

@@ -89,26 +89,34 @@
       "low": 67.15010070800781,
       "close": 69.1500015258789,
       "volume": 25131206
+    },
+    {
+      "date": "2026-03-31",
+      "open": 73.0,
+      "high": 77.58999633789062,
+      "low": 72.41999816894531,
+      "close": 77.47000122070312,
+      "volume": 27737757
     }
   ],
   "fundamental": {
     "pe": null,
-    "forward_pe": -153.46887,
-    "pb": 10.409453,
-    "ps": 7.0846496,
+    "forward_pe": -171.93396,
+    "pb": 11.6619,
+    "ps": 7.937062,
     "roe": -0.50269,
     "roa": -0.00032000002,
     "revenue_growth": 1.104,
     "earnings_growth": null,
     "debt_to_equity": 894.243,
     "fcf": -4622750208.0,
-    "market_cap": 36351336448.0,
+    "market_cap": 40725061632.0,
     "profit_margin": -0.22744,
     "operating_margin": -0.056989998,
     "gross_margin": 0.71682,
     "dividend_yield": null,
     "beta": null,
-    "current_price": 69.15,
+    "current_price": 77.47,
     "high_52w": 187.0,
     "low_52w": 33.515,
     "total_debt": 29823000576.0,
@@ -116,15 +124,15 @@
     "ebitda": 2436999936.0,
     "current_ratio": 0.455,
     "inv_pe": null,
-    "inv_pb": 0.0960665272229002,
-    "inv_ps": 0.14115024122011624,
-    "fcf_yield": -0.12716864521921414,
+    "inv_pb": 0.08574932043663555,
+    "inv_ps": 0.12599120430204527,
+    "fcf_yield": -0.1135111899835074,
     "fcf_debt_ratio": -0.15500620724663597,
     "pe_score": 50.0,
     "forward_pe_score": 10.0,
-    "pb_score": 37.2629846,
-    "ps_score": 58.11219136,
-    "value_score": 43.631492300000005,
+    "pb_score": 35.00858,
+    "ps_score": 55.2139892,
+    "value_score": 42.50429,
     "roe_score": 10.0,
     "roa_score": 10.0,
     "margin_score": 10.0,
@@ -136,34 +144,26 @@
     "fcf_yield_score": 10.0,
     "current_ratio_score": 15.0,
     "safety_score": 10.8354,
-    "fundamental_score": 32.074953075,
+    "fundamental_score": 31.793152499999998,
     "fund_data_completeness": 0.8333333333333334
   },
   "technical": null,
-  "sentiment": {
-    "sentiment_compound": -0.09386975848979112,
-    "sentiment_pos": 0.0628,
-    "sentiment_neg": 0.0905,
-    "sentiment_neu": 0.84665,
-    "news_count": 20.0,
-    "sentiment_confidence": 1.0,
-    "sentiment_score": 45.31
-  },
+  "sentiment": null,
   "analyst": {
     "revision_momentum": 0.13043478260869565,
-    "target_upside": 0.663051337671728,
+    "target_upside": 0.48444559184200336,
     "consensus_rating": 1.93939,
     "analyst_revision_count": 23.0,
     "analyst_count": 30.0,
     "analyst_upgrades": 4.0,
     "analyst_downgrades": 1.0,
     "revision_momentum_score": 57.826086956521735,
-    "target_upside_score": 92.0,
+    "target_upside_score": 87.95559571447012,
     "consensus_score": 60.424400000000006,
-    "analyst_score": 70.43653478260869
+    "analyst_score": 69.02099328267323
   },
   "ranking": {
-    "value_score": 43.631492300000005,
+    "value_score": 42.50429,
     "quality_score": 10.0,
     "growth_score": 64.0,
     "safety_score": 10.8354,
@@ -171,11 +171,11 @@
     "momentum_score": 50.0,
     "volatility_score": 50.0,
     "volume_score": 50.0,
-    "analyst_score": 70.43653478260869,
+    "analyst_score": 69.02099328267323,
     "pe_score": 50.0,
     "forward_pe_score": 10.0,
-    "pb_score": 37.2629846,
-    "ps_score": 58.11219136,
+    "pb_score": 35.00858,
+    "ps_score": 55.2139892,
     "roe_score": 10.0,
     "roa_score": 10.0,
     "margin_score": 10.0,
@@ -186,26 +186,26 @@
     "current_ratio_score": 15.0,
     "cyclical_risk_score": 50.0,
     "earnings_visibility": 47.79999999999999,
-    "valuation_margin": 42.55244769,
+    "valuation_margin": 42.536286999999994,
     "catalyst_timeline": 50.0,
-    "downside_control": 36.353717,
-    "composite_score": 39.0259783774012,
+    "downside_control": 36.332717,
+    "composite_score": 39.99216378892072,
     "weight_earnings_visibility": 0.15,
     "weight_valuation_margin": 0.15,
-    "weight_catalyst_timeline": 0.35740303,
-    "weight_downside_control": 0.34259697,
-    "fundamental_score": 32.074953075,
+    "weight_catalyst_timeline": 0.36769830000000003,
+    "weight_downside_control": 0.3323017,
+    "fundamental_score": 31.793152499999998,
     "technical_score": 50.0,
-    "sentiment_score": 45.31,
+    "sentiment_score": 50.0,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 0.5583333333333333,
     "data_quality_penalty": 0.0,
     "trend_gate_penalty": 0.0,
-    "timing_penalty": 2.9,
-    "market_timing_score": 28.7,
-    "timing_zone": "adverse",
+    "timing_penalty": 1.98,
+    "market_timing_score": 33.85,
+    "timing_zone": "unfavorable",
     "alpha_vm": 9.280000000000001,
     "alpha_vm_pe_base": 10.0,
     "alpha_vm_growth_adj": 0.88,
@@ -220,156 +220,15 @@
     "kdj_reversal_score": 50.0,
     "rsi_reversal_score": 50.0,
     "pullback_proximity_score": 50.0,
-    "rank": 523,
-    "percentile": 0.020637898686679174,
+    "rank": 525,
+    "percentile": 0.016885553470919325,
     "tier": "sell",
     "tier_raw": "sell",
     "tier_label": "Sell",
     "tier_color": "#fb923c",
-    "market_cap": 36351336448.0,
+    "market_cap": 40725061632.0,
     "sector": "Technology",
     "industry": "Software - Infrastructure"
   },
-  "headlines": [
-    {
-      "title": "\n                        Whipsaw Trading Sends Nasdaq to Steep Weekly Losses\n                    ",
-      "url": "/news/340604/whipsaw-trading-sends-nasdaq-to-steep-weekly-losses",
-      "publisher": "Schaeffer's Research",
-      "date": "2026-03-27",
-      "sentiment": "negative"
-    },
-    {
-      "title": "\n                        Tech Investing Seems Broken. Our Roundtable Pros Share 15 Stock Picks to Fix Your Portfolio.\n                    ",
-      "url": "https://www.barrons.com/articles/ai-technology-stocks-roundtable-5842c9ef?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2026-03-27",
-      "sentiment": "negative"
-    },
-    {
-      "title": "\n                        In Wild Year Since IPO, CoreWeave Stock Is Lagging Rival Nebius\n                    ",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/coreweave-shares-lag-rival-nebius-113438904.html",
-      "publisher": "Bloomberg",
-      "date": "2026-03-25",
-      "sentiment": "negative"
-    },
-    {
-      "title": "\n                        4 Stocks In Focus As Market Sends Mixed Signals\n                    ",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/4-stocks-focus-market-sends-230334400.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-03-24",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "\n                        Here's how CoreWeave and Nebius can prove the AI doubters wrong\n                    ",
-      "url": "https://www.marketwatch.com/story/heres-how-coreweave-and-nebius-can-prove-the-ai-doubters-wrong-b7cedd31?mod=mw_FV",
-      "publisher": "MarketWatch",
-      "date": "2026-03-24",
-      "sentiment": "negative"
-    },
-    {
-      "title": "\n                        CoreWeave Climbs After BofA Reinstates \"Buy\" Rating, Sees $100 Target\n                    ",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/coreweave-climbs-bofa-reinstates-buy-164628964.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-03-24",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "\n                        CoreWeave Comes With 'Inherent Risks.' Why BofA Upgraded the Stock to Buy.\n                    ",
-      "url": "https://www.barrons.com/articles/coreweave-stock-price-upgrade-buy-d2c75927?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2026-03-24",
-      "sentiment": "negative"
-    },
-    {
-      "title": "\n                        Analyst: AI Advantage Makes CoreWeave Stock a 'Buy'\n                    ",
-      "url": "/news/339646/analyst-ai-advantage-makes-coreweave-stock-a-buy",
-      "publisher": "Schaeffer's Research",
-      "date": "2026-03-24",
-      "sentiment": "positive"
-    },
-    {
-      "title": "\n                        BofA: Nebius Positioned As Share-Taker In AI Computing\n                    ",
-      "url": "https://www.investors.com/news/technology/nebius-stock-nbis-buy-rating-bank-america-coreweave?mod=IBD_FV",
-      "publisher": "Investor's Business Daily",
-      "date": "2026-03-24",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "\n                        Microsoft reinstated, Ralph Lauren upgraded: Wall Street's top analyst calls\n                    ",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/microsoft-reinstated-ralph-lauren-upgraded-133648092.html",
-      "publisher": "The Fly",
-      "date": "2026-03-24",
-      "sentiment": "positive"
-    },
-    {
-      "title": "\n                        CoreWeave Selected by Zonos to Power Cross-Border Commerce Solutions\n                    ",
-      "url": "https://www.businesswire.com/news/home/20260324546132/en/Zonos",
-      "publisher": "Business Wire",
-      "date": "2026-03-24",
-      "sentiment": "positive"
-    },
-    {
-      "title": "\n                        Why Dell Stock Is a Big Winner in the Super Micro Scandal\n                    ",
-      "url": "https://www.barrons.com/articles/dell-stock-price-super-micro-6c17789c?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2026-03-20",
-      "sentiment": "positive"
-    },
-    {
-      "title": "\n                        Small-Cap Stock Core Scientific Is A Way To Play Crypto And A.I\n                    ",
-      "url": "https://finance.yahoo.com/m/769a95c8-92a4-3135-b56e-30bd210982e3/small-cap-stock-core.html",
-      "publisher": "CryptoProwl",
-      "date": "2026-03-19",
-      "sentiment": "positive"
-    },
-    {
-      "title": "\n                        Oracle's 'Di-SaaS-ter' Leaves the Stock Too Cheap. Buy It.\n                    ",
-      "url": "https://www.barrons.com/articles/buy-oracle-stock-price-pick-df2742cc?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2026-03-19",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "\n                        Nebius Lines Up $3.75B in Convertible Debt After Meta Deal\n                    ",
-      "url": "https://finance.yahoo.com/news/nebius-lines-3-75b-convertible-190115710.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-03-17",
-      "sentiment": "negative"
-    },
-    {
-      "title": "\n                        CoreWeave Partners With BCE on Canada AI Data Center\n                    ",
-      "url": "https://finance.yahoo.com/news/coreweave-partners-bce-canada-ai-185821515.html",
-      "publisher": "GuruFocus.com",
-      "date": "2026-03-17",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "\n                        Nebius Stock Falls 12% on Bond Offering. Citi Calls It a 'High Risk' Buy.\n                    ",
-      "url": "https://www.barrons.com/articles/nebius-stock-bond-offering-buy-rating-45e42661?mod=bar_FV",
-      "publisher": "Barrons.com",
-      "date": "2026-03-17",
-      "sentiment": "negative"
-    },
-    {
-      "title": "\n                        These software stocks have turned things around and outperformed since the Iran conflict began\n                    ",
-      "url": "https://www.marketwatch.com/story/these-software-stocks-have-turned-things-around-and-outperformed-since-the-iran-war-began-167872b7?mod=mw_FV",
-      "publisher": "MarketWatch",
-      "date": "2026-03-17",
-      "sentiment": "negative"
-    },
-    {
-      "title": "\n                        CoreWeave Stock Is Up 105% in a Year. Can It Soar to $180?\n                    ",
-      "url": "https://finance.yahoo.com/m/c6b0346c-ac15-39fe-b130-535805fcd9df/coreweave-stock-is-up-105%25-in.html",
-      "publisher": "Barchart",
-      "date": "2026-03-17",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "\n                        Cline Selects CoreWeave to Power High-Performance Autonomous Engineering\n                    ",
-      "url": "https://www.businesswire.com/news/home/20260317081308/en/Cline",
-      "publisher": "Business Wire",
-      "date": "2026-03-17",
-      "sentiment": "neutral"
-    }
-  ]
+  "headlines": []
 }
