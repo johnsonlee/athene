@@ -105,26 +105,34 @@
       "low": 76.80000305175781,
       "close": 78.44000244140625,
       "volume": 22715366
+    },
+    {
+      "date": "2026-04-02",
+      "open": 75.75,
+      "high": 82.5,
+      "low": 73.80999755859375,
+      "close": 82.23999786376953,
+      "volume": 20799358
     }
   ],
   "fundamental": {
     "pe": null,
-    "forward_pe": -174.08673,
-    "pb": 11.807919,
-    "ps": 8.036441,
+    "forward_pe": -182.52031,
+    "pb": 12.379949,
+    "ps": 8.425764,
     "roe": -0.50269,
     "roa": -0.00032000002,
     "revenue_growth": 1.104,
     "earnings_growth": null,
     "debt_to_equity": 894.243,
     "fcf": -4622750208.0,
-    "market_cap": 41234976768.0,
+    "market_cap": 43232591872.0,
     "profit_margin": -0.22744,
     "operating_margin": -0.056989998,
     "gross_margin": 0.71682,
     "dividend_yield": null,
     "beta": null,
-    "current_price": 78.44,
+    "current_price": 82.24,
     "high_52w": 187.0,
     "low_52w": 33.515,
     "total_debt": 29823000576.0,
@@ -132,15 +140,15 @@
     "ebitda": 2436999936.0,
     "current_ratio": 0.455,
     "inv_pe": null,
-    "inv_pb": 0.08468892782885791,
-    "inv_ps": 0.12443319125966333,
-    "fcf_yield": -0.11210750121211273,
+    "inv_pb": 0.08077577702460648,
+    "inv_ps": 0.11868359949317357,
+    "fcf_yield": -0.10692743617330906,
     "fcf_debt_ratio": -0.15500620724663597,
     "pe_score": 50.0,
     "forward_pe_score": 10.0,
-    "pb_score": 34.7457458,
-    "ps_score": 54.91150042857143,
-    "value_score": 42.372872900000004,
+    "pb_score": 33.7160918,
+    "ps_score": 53.96600171428572,
+    "value_score": 41.8580459,
     "roe_score": 10.0,
     "roa_score": 10.0,
     "margin_score": 10.0,
@@ -151,39 +159,47 @@
     "debt_equity_score": 15.0,
     "fcf_yield_score": 10.0,
     "current_ratio_score": 15.0,
-    "safety_score": 11.297600000000003,
-    "fundamental_score": 31.852738225000003,
+    "safety_score": 10.774799999999999,
+    "fundamental_score": 31.619471475,
     "fund_data_completeness": 0.8333333333333334
   },
   "technical": null,
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.1404758951053447,
+    "sentiment_pos": 0.1173,
+    "sentiment_neg": 0.02015,
+    "sentiment_neu": 0.86255,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 57.02
+  },
   "analyst": {
     "revision_momentum": 0.13043478260869565,
-    "target_upside": 0.4660887302396737,
+    "target_upside": 0.3983463035019456,
     "consensus_rating": 1.90909,
     "analyst_revision_count": 23.0,
     "analyst_count": 30.0,
     "analyst_upgrades": 4.0,
     "analyst_downgrades": 1.0,
     "revision_momentum_score": 57.826086956521735,
-    "target_upside_score": 87.31310555838857,
+    "target_upside_score": 84.89250972762646,
     "consensus_score": 61.6364,
-    "analyst_score": 69.0991217280447
+    "analyst_score": 68.25191318727795
   },
   "ranking": {
-    "value_score": 42.372872900000004,
+    "value_score": 41.8580459,
     "quality_score": 10.0,
     "growth_score": 64.0,
-    "safety_score": 11.297600000000003,
+    "safety_score": 10.774799999999999,
     "trend_score": 50.0,
     "momentum_score": 50.0,
     "volatility_score": 50.0,
     "volume_score": 50.0,
-    "analyst_score": 69.0991217280447,
+    "analyst_score": 68.25191318727795,
     "pe_score": 50.0,
     "forward_pe_score": 10.0,
-    "pb_score": 34.7457458,
-    "ps_score": 54.91150042857143,
+    "pb_score": 33.7160918,
+    "ps_score": 53.96600171428572,
     "roe_score": 10.0,
     "roa_score": 10.0,
     "margin_score": 10.0,
@@ -194,25 +210,25 @@
     "current_ratio_score": 15.0,
     "cyclical_risk_score": 50.0,
     "earnings_visibility": 47.79999999999999,
-    "valuation_margin": 42.48986187,
+    "valuation_margin": 42.30041377,
     "catalyst_timeline": 50.0,
-    "downside_control": 36.367248,
-    "composite_score": 39.62461768959125,
+    "downside_control": 36.340354,
+    "composite_score": 40.139847126845474,
     "weight_earnings_visibility": 0.15,
     "weight_valuation_margin": 0.15,
-    "weight_catalyst_timeline": 0.3656121133333334,
-    "weight_downside_control": 0.33438788666666663,
-    "fundamental_score": 31.852738225000003,
+    "weight_catalyst_timeline": 0.37264243333333336,
+    "weight_downside_control": 0.32735756666666666,
+    "fundamental_score": 31.619471475,
     "technical_score": 50.0,
-    "sentiment_score": 50.0,
+    "sentiment_score": 57.02,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 0.5583333333333333,
     "data_quality_penalty": 0.0,
     "trend_gate_penalty": 0.0,
-    "timing_penalty": 2.17,
-    "market_timing_score": 32.81,
+    "timing_penalty": 1.54,
+    "market_timing_score": 36.32,
     "timing_zone": "unfavorable",
     "alpha_vm": 9.280000000000001,
     "alpha_vm_pe_base": 10.0,
@@ -229,14 +245,155 @@
     "rsi_reversal_score": 50.0,
     "pullback_proximity_score": 50.0,
     "rank": 523,
-    "percentile": 0.01694915254237288,
+    "percentile": 0.020637898686679174,
     "tier": "sell",
     "tier_raw": "sell",
     "tier_label": "Sell",
     "tier_color": "#fb923c",
-    "market_cap": 41234976768.0,
+    "market_cap": 43232591872.0,
     "sector": "Technology",
     "industry": "Software - Infrastructure"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "\n                        Poolside hunts data centre partners after CoreWeave deal falls through\n                    ",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/poolside-hunts-data-centre-partners-040015783.html",
+      "publisher": "Financial Times",
+      "date": "2026-04-02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        CoreWeave Delivers Leading Inference Performance in MLPerf Benchmark\n                    ",
+      "url": "https://www.businesswire.com/news/home/20260401967118/en",
+      "publisher": "Business Wire",
+      "date": "2026-04-01",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        Disney upgraded, Nike downgraded: Wall Street's top analyst calls\n                    ",
+      "url": "https://finance.yahoo.com/news/qualcomm-downgraded-rivian-upgraded-wall-133405953.html",
+      "publisher": "The Fly",
+      "date": "2026-04-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "\n                        BofA Sends Alarming Message on Microsoft, Oracle and CoreWeave\n                    ",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bofa-sends-alarming-message-microsoft-132421523.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-04-01",
+      "sentiment": "negative"
+    },
+    {
+      "title": "\n                        Nvidia Invests Billions to Strengthen AI Ecosystem\n                    ",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/nvidia-invests-billions-strengthen-ai-123940562.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-04-01",
+      "sentiment": "positive"
+    },
+    {
+      "title": "\n                        Morning Brief: Stocks roar back, plus our giant, action-packed Q1 roundup\n                    ",
+      "url": "https://finance.yahoo.com/news/morning-brief-stocks-roar-back-plus-our-giant-action-packed-q1-roundup-100033568.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-04-01",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        Nasdaq shoots higher, Dow adds momentum as Trump looks for end to war\n                    ",
+      "url": "https://finance.yahoo.com/m/c4d5ab69-9f98-374e-b1be-cbe18b27af71/nasdaq-shoots-higher%2C-dow.html",
+      "publisher": "Proactive",
+      "date": "2026-03-31",
+      "sentiment": "negative"
+    },
+    {
+      "title": "\n                        CoreWeave stock jumps 12% after company secures $8.5 billion GPU-backed loan\n                    ",
+      "url": "https://finance.yahoo.com/news/coreweave-stock-jumps-12-after-company-secures-85-billion-gpu-backed-loan-173113383.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-03-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "\n                        CoreWeave Closes $8.5 Billion GPU Loan Backed by Meta\n                    ",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/coreweave-closes-8-5-billion-155028785.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-03-31",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        CoreWeave Secures $8.5 Billion to Fuel AI Expansion\n                    ",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/coreweave-secures-8-5-billion-154152970.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-03-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "\n                        CoreWeave shares rise on $8.5B financing deal\n                    ",
+      "url": "https://finance.yahoo.com/m/3c2e7d9c-df2f-3e58-a0c5-81fc34a8697a/coreweave-shares-rise-on.html",
+      "publisher": "Proactive",
+      "date": "2026-03-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "\n                        CoreWeave's stock rises as investors cheer unique financing deal\n                    ",
+      "url": "https://www.marketwatch.com/story/coreweaves-stock-rises-as-investors-cheer-unique-financing-deal-e2d44c4e?mod=mw_FV",
+      "publisher": "MarketWatch",
+      "date": "2026-03-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "\n                        What's Going On With CoreWeave Stock Tuesday\n                    ",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/whats-going-coreweave-stock-tuesday-152045996.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-03-31",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        Cathie Wood Buys $3.1 Million of Nvidia-Backed Tech Stock\n                    ",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-buys-3-1-151115988.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-03-31",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        The Nasdaq Is Surging. CoreWeave Leads an AI Rally.\n                    ",
+      "url": "https://www.barrons.com/livecoverage/stock-market-news-today-033126/card/the-nasdaq-is-surging-coreweave-leads-an-ai-rally--TjkknyrxxX9QWHCzKaOw?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-03-31",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        Why CoreWeave's $8.5 Billion 'Investment-Grade' Loan Is Such a Big Deal\n                    ",
+      "url": "https://www.barrons.com/articles/coreweave-stock-price-new-loan-debt-deal-investment-grade-cffc8201?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-03-31",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        Nebius Stock Rises. Why the 'Neocloud' Neophyte Has Been a Winner.\n                    ",
+      "url": "https://www.barrons.com/articles/nebius-stock-price-neocloud-buy-5ec3a931?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-03-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "\n                        CoreWeave secures $8.5 billion loan to expand AI infrastructure\n                    ",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/coreweave-secures-8-5-billion-130401875.html",
+      "publisher": "Reuters",
+      "date": "2026-03-31",
+      "sentiment": "positive"
+    },
+    {
+      "title": "\n                        Nvidia invests $2 billion in Marvell as stock jumps 9%\n                    ",
+      "url": "https://finance.yahoo.com/m/44d4173e-d37f-36ba-b3a7-ad6aba44a06d/nvidia-invests-%242-billion-in.html",
+      "publisher": "Quartz",
+      "date": "2026-03-31",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        CoreWeave Closes Landmark $8.5 Billion Financing Facility, Achieving First Investment-Grade Rated GPU-backed Financing\n                    ",
+      "url": "https://www.businesswire.com/news/home/20260330529766/en",
+      "publisher": "Business Wire",
+      "date": "2026-03-31",
+      "sentiment": "positive"
+    }
+  ]
 }
