@@ -3,18 +3,142 @@
   <title>Athene - Alpha Score Changes</title>
   <subtitle>Daily alpha score changes for S&amp;P 500 + NASDAQ 100 stocks</subtitle>
   <id>https://athene.johnsonlee.io/feed.xml</id>
-  <updated>2026-04-06T22:29:27.664976+00:00</updated>
+  <updated>2026-04-07T22:32:50.397928+00:00</updated>
   <link href="https://athene.johnsonlee.io/data/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://athene.johnsonlee.io" rel="alternate" type="text/html" />
   <author>
     <name>Athene Bot</name>
   </author>
   <entry>
-    <title>2026-04-06: 63 improved, 65 declined (128 total)</title>
-    <id>https://athene.johnsonlee.io/changes/2026-04-06</id>
-    <updated>2026-04-06T22:29:27.664976+00:00</updated>
+    <title>2026-04-07: 49 improved, 64 declined (113 total)</title>
+    <id>https://athene.johnsonlee.io/changes/2026-04-07</id>
+    <updated>2026-04-07T22:32:50.397928+00:00</updated>
     <link href="https://athene.johnsonlee.io/screener" rel="alternate" />
-    <content type="html">&lt;h2&gt;Alpha Score Changes for 2026-04-06&lt;/h2&gt;
+    <content type="html">&lt;h2&gt;Alpha Score Changes for 2026-04-07&lt;/h2&gt;
+&lt;h3&gt;Improved&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;UHS&lt;/strong&gt;: 28.8 &amp;rarr; 94.1 (+65.3) [VM +39.0, EV +35.2, TIMING +0.3]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WDAY&lt;/strong&gt;: 29.5 &amp;rarr; 94.0 (+64.6) [VM +53.1, EV +32.5, TIMING -8.5]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TXT&lt;/strong&gt;: 23.5 &amp;rarr; 73.7 (+50.1) [VM +43.9, EV +37.0, TIMING -6.1]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WDC&lt;/strong&gt;: 18.3 &amp;rarr; 58.8 (+40.5) [VM +23.9, EV +55.5, TIMING -2.4]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;YUM&lt;/strong&gt;: 20.0 &amp;rarr; 51.5 (+31.5) [VM +18.2, EV +33.3, TIMING +2.9]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;V&lt;/strong&gt;: 28.2 &amp;rarr; 59.7 (+31.4) [VM -0.2, EV +45.5, TIMING +1.6]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TPR&lt;/strong&gt;: 18.5 &amp;rarr; 48.7 (+30.2) [VM +28.5, EV +43.0, TIMING -7.2]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TRV&lt;/strong&gt;: 23.6 &amp;rarr; 51.5 (+28.0) [VM +26.8, EV +20.1, TIMING -1.9]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;VRTX&lt;/strong&gt;: 16.8 &amp;rarr; 44.7 (+28.0) [VM +18.0, EV +44.8, TIMING -1.8]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TRMB&lt;/strong&gt;: 26.3 &amp;rarr; 53.2 (+26.8) [VM +34.1, EV +15.1, TIMING -7.1]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;VLTO&lt;/strong&gt;: 26.8 &amp;rarr; 51.4 (+24.6) [VM +15.4, EV +15.2, TIMING +5.1]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TTD&lt;/strong&gt;: 23.4 &amp;rarr; 47.6 (+24.2) [VM +33.3, EV +14.6, TIMING -5.0]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JBL&lt;/strong&gt;: 41.4 &amp;rarr; 63.3 (+21.9) [VM -0.7, EV +0.0, TIMING +15.1]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CSCO&lt;/strong&gt;: 46.0 &amp;rarr; 65.8 (+19.8) [VM -0.1, EV +0.0, TIMING +14.3]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;XEL&lt;/strong&gt;: 23.3 &amp;rarr; 42.3 (+18.9) [VM -3.5, EV +54.1, TIMING -7.8]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WM&lt;/strong&gt;: 23.9 &amp;rarr; 42.7 (+18.8) [VM +6.4, EV +25.0, TIMING -0.2]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;USB&lt;/strong&gt;: 26.9 &amp;rarr; 45.5 (+18.6) [VM +7.1, EV +25.6, TIMING -4.8]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;BKNG&lt;/strong&gt;: 18.2 &amp;rarr; 34.7 (+16.5) [VM +45.2, EV +0.0, TIMING -1.8]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;VRSN&lt;/strong&gt;: 17.0 &amp;rarr; 32.1 (+15.1) [VM +7.9, EV +21.9, TIMING +3.1]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TJX&lt;/strong&gt;: 20.4 &amp;rarr; 34.3 (+13.9) [VM +3.4, EV +33.3, TIMING -5.6]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ULTA&lt;/strong&gt;: 29.8 &amp;rarr; 42.1 (+12.3) [VM +6.6, EV +10.7, TIMING -0.2]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WMB&lt;/strong&gt;: 12.7 &amp;rarr; 24.9 (+12.2) [VM -11.9, EV +40.0, TIMING +9.8]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MGM&lt;/strong&gt;: 34.6 &amp;rarr; 46.6 (+12.0) [VM -0.3, EV -6.3, TIMING +16.9]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MKC&lt;/strong&gt;: 81.4 &amp;rarr; 93.0 (+11.7) [VM -0.2, EV +0.0, TIMING +8.1]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WFC&lt;/strong&gt;: 18.3 &amp;rarr; 29.9 (+11.6) [VM +1.0, EV +19.2, TIMING +4.4]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;UAL&lt;/strong&gt;: 24.5 &amp;rarr; 36.0 (+11.4) [VM +18.5, EV +6.9, TIMING -4.6]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TPL&lt;/strong&gt;: 11.6 &amp;rarr; 21.5 (+9.9) [VM +1.6, EV +21.3, TIMING +5.3]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MSI&lt;/strong&gt;: 34.2 &amp;rarr; 42.4 (+8.2) [VM -0.1, EV +6.2, TIMING +6.1]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;EQT&lt;/strong&gt;: 31.8 &amp;rarr; 40.0 (+8.2) [VM -0.1, EV +0.0, TIMING +6.0]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;APP&lt;/strong&gt;: 88.1 &amp;rarr; 96.0 (+7.9) [VM +0.2, EV +0.0, TIMING +5.0]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TROW&lt;/strong&gt;: 15.7 &amp;rarr; 23.5 (+7.8) [VM +17.4, EV +9.1, TIMING -3.3]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;VLO&lt;/strong&gt;: 7.5 &amp;rarr; 15.2 (+7.8) [VM +17.5, EV +13.1, TIMING +2.7]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SYY&lt;/strong&gt;: 16.9 &amp;rarr; 24.7 (+7.7) [VM +-0.0, EV +0.0, TIMING +15.1]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;UNP&lt;/strong&gt;: 25.0 &amp;rarr; 32.5 (+7.4) [VM +10.7, EV +12.1, TIMING -10.0]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;UPS&lt;/strong&gt;: 25.7 &amp;rarr; 33.0 (+7.3) [VM +25.0, EV -2.8, TIMING -5.1]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ZTS&lt;/strong&gt;: 28.0 &amp;rarr; 35.2 (+7.2) [VM +14.2, EV -0.4, TIMING -0.7]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DXCM&lt;/strong&gt;: 59.1 &amp;rarr; 66.2 (+7.1) [VM +0.1, EV +0.0, TIMING +6.1]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;URI&lt;/strong&gt;: 27.4 &amp;rarr; 34.4 (+7.0) [VM +12.9, EV -0.5, TIMING +0.5]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;PLTR&lt;/strong&gt;: 19.6 &amp;rarr; 26.5 (+6.9) [VM +-0.0, EV +13.6, TIMING +7.9]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TMO&lt;/strong&gt;: 16.3 &amp;rarr; 22.9 (+6.6) [VM +10.2, EV +11.5, TIMING -3.2]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SCHW&lt;/strong&gt;: 24.7 &amp;rarr; 31.1 (+6.4) [VM -0.1, EV +0.0, TIMING +6.6]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SMCI&lt;/strong&gt;: 56.2 &amp;rarr; 61.9 (+5.7) [VM +1.0, EV +0.0, TIMING +4.8]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ALGN&lt;/strong&gt;: 34.3 &amp;rarr; 40.0 (+5.7) [VM +0.8, EV +0.0, TIMING +4.5]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MS&lt;/strong&gt;: 28.7 &amp;rarr; 34.3 (+5.6) [VM -0.1, EV +4.4, TIMING +5.2]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CIEN&lt;/strong&gt;: 14.4 &amp;rarr; 19.9 (+5.5) [VM -1.1, EV +0.0, TIMING +10.3]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ALL&lt;/strong&gt;: 57.7 &amp;rarr; 62.9 (+5.2) [VM -0.1, EV +0.0, TIMING +4.4]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IR&lt;/strong&gt;: 40.3 &amp;rarr; 45.5 (+5.2) [VM -0.5, EV +0.0, TIMING +6.5]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CDW&lt;/strong&gt;: 36.2 &amp;rarr; 41.4 (+5.2) [VM +-0.0, EV +0.0, TIMING +6.4]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AMD&lt;/strong&gt;: 55.4 &amp;rarr; 60.5 (+5.1) [VM -0.2, EV +0.0, TIMING +4.1]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Declined&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;XYZ&lt;/strong&gt;: 23.1 &amp;rarr; 7.4 (-15.7) [VM -24.9, EV -15.1, TIMING -0.5]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WY&lt;/strong&gt;: 19.1 &amp;rarr; 3.5 (-15.7) [VM -22.8, EV -24.4, TIMING -9.9]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;KMB&lt;/strong&gt;: 33.4 &amp;rarr; 19.1 (-14.3) [VM +1.3, EV +0.0, TIMING -21.0]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TSLA&lt;/strong&gt;: 16.0 &amp;rarr; 1.7 (-14.3) [VM -35.2, EV -25.1, TIMING -3.9]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RCL&lt;/strong&gt;: 75.0 &amp;rarr; 61.1 (-13.9) [VM +0.6, EV +0.0, TIMING -11.4]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WYNN&lt;/strong&gt;: 25.4 &amp;rarr; 11.9 (-13.5) [VM -2.1, EV -18.6, TIMING -7.9]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WBD&lt;/strong&gt;: 18.9 &amp;rarr; 6.7 (-12.2) [VM -9.5, EV -22.0, TIMING -4.2]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WMT&lt;/strong&gt;: 19.5 &amp;rarr; 7.4 (-12.1) [VM -23.3, EV -10.7, TIMING -2.2]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;BMY&lt;/strong&gt;: 54.7 &amp;rarr; 42.9 (-11.8) [VM +0.8, EV -1.7, TIMING -7.7]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;FSLR&lt;/strong&gt;: 75.2 &amp;rarr; 64.2 (-11.0) [VM -0.6, EV +1.3, TIMING -10.2]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LVS&lt;/strong&gt;: 91.9 &amp;rarr; 81.0 (-10.9) [VM -0.2, EV +0.0, TIMING -7.6]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WTW&lt;/strong&gt;: 21.3 &amp;rarr; 10.7 (-10.6) [VM -1.9, EV -16.4, TIMING -7.3]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;VMC&lt;/strong&gt;: 24.8 &amp;rarr; 14.5 (-10.3) [VM -16.3, EV -3.6, TIMING -3.1]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;EPAM&lt;/strong&gt;: 52.7 &amp;rarr; 42.6 (-10.1) [VM -0.6, EV +0.0, TIMING -9.5]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WEC&lt;/strong&gt;: 19.6 &amp;rarr; 9.6 (-10.0) [VM -28.0, EV +4.4, TIMING +0.5]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;PFE&lt;/strong&gt;: 20.0 &amp;rarr; 10.2 (-9.9) [VM +0.6, EV -2.1, TIMING -18.8]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WELL&lt;/strong&gt;: 18.4 &amp;rarr; 8.5 (-9.9) [VM -27.3, EV -2.8, TIMING +3.9]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;UDR&lt;/strong&gt;: 28.7 &amp;rarr; 18.9 (-9.8) [VM -12.6, EV -2.7, TIMING -4.0]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ROK&lt;/strong&gt;: 64.7 &amp;rarr; 55.4 (-9.4) [VM -0.4, EV -7.2, TIMING -3.8]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TRI&lt;/strong&gt;: 25.0 &amp;rarr; 15.7 (-9.4) [VM -2.0, EV -11.5, TIMING -6.3]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DAL&lt;/strong&gt;: 42.3 &amp;rarr; 33.3 (-9.0) [VM +0.5, EV +0.0, TIMING -6.5]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;STLD&lt;/strong&gt;: 33.9 &amp;rarr; 24.9 (-9.0) [VM +-0.0, EV -6.4, TIMING -9.6]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AAPL&lt;/strong&gt;: 54.2 &amp;rarr; 45.5 (-8.7) [VM +1.0, EV +0.0, TIMING -9.7]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TEAM&lt;/strong&gt;: 39.9 &amp;rarr; 31.8 (-8.2) [VM +1.2, EV +0.0, TIMING -14.1]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IT&lt;/strong&gt;: 15.3 &amp;rarr; 7.1 (-8.2) [VM +0.9, EV +0.0, TIMING -24.5]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ADBE&lt;/strong&gt;: 75.0 &amp;rarr; 67.0 (-8.0) [VM -0.5, EV +0.0, TIMING -7.1]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;INTU&lt;/strong&gt;: 44.9 &amp;rarr; 36.9 (-8.0) [VM +0.6, EV +0.0, TIMING -5.1]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;INCY&lt;/strong&gt;: 98.1 &amp;rarr; 90.3 (-7.8) [VM +0.3, EV +0.0, TIMING -4.8]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CTSH&lt;/strong&gt;: 71.6 &amp;rarr; 63.8 (-7.8) [VM +0.3, EV +0.0, TIMING -6.8]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TKO&lt;/strong&gt;: 19.9 &amp;rarr; 12.1 (-7.8) [VM -14.4, EV -4.6, TIMING -2.0]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;PM&lt;/strong&gt;: 28.5 &amp;rarr; 20.8 (-7.7) [VM +0.5, EV -6.8, TIMING -7.9]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CRM&lt;/strong&gt;: 72.4 &amp;rarr; 64.9 (-7.5) [VM +0.4, EV +0.0, TIMING -6.1]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;KVUE&lt;/strong&gt;: 25.9 &amp;rarr; 18.4 (-7.5) [VM +1.1, EV +0.7, TIMING -11.6]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MSFT&lt;/strong&gt;: 92.8 &amp;rarr; 85.5 (-7.4) [VM +0.1, EV -1.5, TIMING -4.4]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;PDD&lt;/strong&gt;: 41.5 &amp;rarr; 34.2 (-7.3) [VM -0.4, EV +0.0, TIMING -10.7]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TSN&lt;/strong&gt;: 15.0 &amp;rarr; 8.0 (-7.1) [VM +2.5, EV -17.0, TIMING -5.7]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;QCOM&lt;/strong&gt;: 28.3 &amp;rarr; 21.3 (-7.0) [VM +0.3, EV -1.2, TIMING -9.7]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WRB&lt;/strong&gt;: 24.4 &amp;rarr; 17.4 (-7.0) [VM +2.1, EV -16.1, TIMING +5.8]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AWK&lt;/strong&gt;: 17.6 &amp;rarr; 10.6 (-7.0) [VM +0.6, EV +0.0, TIMING -17.2]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ORLY&lt;/strong&gt;: 37.6 &amp;rarr; 30.6 (-6.9) [VM +0.4, EV +0.0, TIMING -11.7]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LLY&lt;/strong&gt;: 77.6 &amp;rarr; 70.8 (-6.8) [VM -0.2, EV +0.0, TIMING -5.3]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CPB&lt;/strong&gt;: 20.1 &amp;rarr; 13.5 (-6.7) [VM +0.5, EV +0.0, TIMING -23.7]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IQV&lt;/strong&gt;: 57.1 &amp;rarr; 50.5 (-6.5) [VM +0.0, EV +0.0, TIMING -4.9]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ACN&lt;/strong&gt;: 52.8 &amp;rarr; 46.3 (-6.5) [VM +0.2, EV +0.0, TIMING -7.4]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RVTY&lt;/strong&gt;: 48.7 &amp;rarr; 42.2 (-6.5) [VM +0.2, EV +0.0, TIMING -9.0]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AMCR&lt;/strong&gt;: 30.4 &amp;rarr; 23.9 (-6.4) [VM +0.2, EV -4.2, TIMING -9.7]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;NUE&lt;/strong&gt;: 28.8 &amp;rarr; 22.4 (-6.4) [VM -0.1, EV -3.6, TIMING -9.0]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;COF&lt;/strong&gt;: 53.9 &amp;rarr; 47.6 (-6.3) [VM +0.3, EV +0.0, TIMING -7.2]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;XBI&lt;/strong&gt;: 18.0 &amp;rarr; 11.7 (-6.3) [VM -9.6, EV -6.6, TIMING -2.2]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ALNY&lt;/strong&gt;: 25.2 &amp;rarr; 19.1 (-6.2) [VM +0.8, EV +0.0, TIMING -13.2]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LH&lt;/strong&gt;: 44.2 &amp;rarr; 38.1 (-6.1) [VM +0.5, EV +0.0, TIMING -7.8]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;UNH&lt;/strong&gt;: 29.8 &amp;rarr; 23.7 (-6.1) [VM +0.7, EV -7.5, TIMING -3.4]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;BR&lt;/strong&gt;: 87.1 &amp;rarr; 81.1 (-6.0) [VM +0.6, EV +0.0, TIMING -4.5]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;D&lt;/strong&gt;: 51.0 &amp;rarr; 45.0 (-6.0) [VM -0.3, EV +0.0, TIMING -6.3]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;NCLH&lt;/strong&gt;: 26.0 &amp;rarr; 20.0 (-6.0) [VM -1.2, EV -2.2, TIMING -11.5]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GEN&lt;/strong&gt;: 93.6 &amp;rarr; 87.7 (-5.9) [VM -0.3, EV +0.0, TIMING -4.1]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MCK&lt;/strong&gt;: 54.3 &amp;rarr; 48.5 (-5.7) [VM +-0.0, EV +0.0, TIMING -4.7]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;J&lt;/strong&gt;: 40.8 &amp;rarr; 35.2 (-5.6) [VM +0.2, EV +0.0, TIMING -9.2]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;BX&lt;/strong&gt;: 44.2 &amp;rarr; 38.7 (-5.5) [VM -0.1, EV -0.4, TIMING -4.9]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;BK&lt;/strong&gt;: 38.9 &amp;rarr; 33.6 (-5.4) [VM -0.1, EV -3.1, TIMING -4.7]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;EIX&lt;/strong&gt;: 46.6 &amp;rarr; 41.3 (-5.2) [VM +0.3, EV +0.0, TIMING -4.7]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;A&lt;/strong&gt;: 31.3 &amp;rarr; 26.1 (-5.2) [VM +0.2, EV +0.0, TIMING -10.5]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;BBY&lt;/strong&gt;: 65.9 &amp;rarr; 60.8 (-5.1) [VM +0.1, EV +0.0, TIMING -4.0]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SPGI&lt;/strong&gt;: 57.3 &amp;rarr; 52.2 (-5.1) [VM +0.3, EV +0.0, TIMING -6.7]&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <ns0:entry>
+    <ns0:title>2026-04-06: 63 improved, 65 declined (128 total)</ns0:title>
+    <ns0:id>https://athene.johnsonlee.io/changes/2026-04-06</ns0:id>
+    <ns0:updated>2026-04-06T22:29:27.664976+00:00</ns0:updated>
+    <ns0:link href="https://athene.johnsonlee.io/screener" rel="alternate" />
+    <ns0:content type="html">&lt;h2&gt;Alpha Score Changes for 2026-04-06&lt;/h2&gt;
 &lt;h3&gt;Improved&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;DXCM&lt;/strong&gt;: 32.4 &amp;rarr; 59.1 (+26.7) [VM -0.7, EV +0.0, TIMING +23.5]&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;APP&lt;/strong&gt;: 67.5 &amp;rarr; 88.1 (+20.6) [VM -2.4, EV -0.2, TIMING +15.0]&lt;/li&gt;
@@ -146,8 +270,8 @@
 &lt;li&gt;&lt;strong&gt;SCHW&lt;/strong&gt;: 29.9 &amp;rarr; 24.7 (-5.2) [VM +0.2, EV +0.0, TIMING -5.4]&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;SMCI&lt;/strong&gt;: 61.3 &amp;rarr; 56.2 (-5.1) [VM -1.8, EV +0.0, TIMING -3.4]&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;BX&lt;/strong&gt;: 49.3 &amp;rarr; 44.2 (-5.1) [VM +0.1, EV +0.0, TIMING -4.8]&lt;/li&gt;
-&lt;/ul&gt;</content>
-  </entry>
+&lt;/ul&gt;</ns0:content>
+  </ns0:entry>
   <ns0:entry>
     <ns0:title>2026-04-02: 100 improved, 40 declined (140 total)</ns0:title>
     <ns0:id>https://athene.johnsonlee.io/changes/2026-04-02</ns0:id>
