@@ -137,12 +137,20 @@
       "low": 48.0,
       "close": 50.209999084472656,
       "volume": 8535008
+    },
+    {
+      "date": "2026-04-09",
+      "open": 49.529998779296875,
+      "high": 50.36000061035156,
+      "low": 47.39500045776367,
+      "close": 47.75,
+      "volume": 5938422
     }
   ],
   "fundamental": {
     "pe": null,
-    "forward_pe": -59.498276,
-    "pb": 5.459389,
+    "forward_pe": -56.583202,
+    "pb": 5.1919107,
     "ps": null,
     "roe": -0.12236,
     "roa": -0.096190006,
@@ -150,13 +158,13 @@
     "earnings_growth": null,
     "debt_to_equity": 0.098,
     "fcf": -79832752.0,
-    "market_cap": 8714888192.0,
+    "market_cap": 8287909376.0,
     "profit_margin": 0.0,
     "operating_margin": 0.0,
     "gross_margin": 0.0,
     "dividend_yield": null,
     "beta": 0.943,
-    "current_price": 50.21,
+    "current_price": 47.75,
     "high_52w": 193.84,
     "low_52w": 19.89,
     "total_debt": 1450000.0,
@@ -164,15 +172,15 @@
     "ebitda": -138772000.0,
     "current_ratio": 49.079,
     "inv_pe": null,
-    "inv_pb": 0.18317068082160842,
+    "inv_pb": 0.19260731892018096,
     "inv_ps": null,
-    "fcf_yield": -0.009160502147725087,
+    "fcf_yield": -0.009632435440375163,
     "fcf_debt_ratio": -55.057070344827586,
     "pe_score": 50.0,
     "forward_pe_score": 10.0,
-    "pb_score": 28.621833000000002,
+    "pb_score": 29.4242679,
     "ps_score": 50.0,
-    "value_score": 39.310916500000005,
+    "value_score": 39.71213395,
     "roe_score": 10.0,
     "roa_score": 10.0,
     "margin_score": 20.0,
@@ -181,17 +189,25 @@
     "earn_growth_score": 38.0,
     "growth_score": 44.0,
     "debt_equity_score": 84.97876666666667,
-    "fcf_yield_score": 26.33579914090997,
+    "fcf_yield_score": 26.147025823849937,
     "current_ratio_score": 85.0,
     "safety_score": 80.75356666666667,
-    "fundamental_score": 41.47844245833333,
+    "fundamental_score": 41.57874682083334,
     "fund_data_completeness": 0.6666666666666666
   },
   "technical": null,
-  "sentiment": null,
+  "sentiment": {
+    "sentiment_compound": 0.28800569265274173,
+    "sentiment_pos": 0.1335,
+    "sentiment_neg": 0.0219,
+    "sentiment_neu": 0.8446,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 64.4
+  },
   "analyst": {
     "revision_momentum": 0.18181818181818182,
-    "target_upside": 0.7327225652260505,
+    "target_upside": 0.8219895287958116,
     "consensus_rating": 1.89474,
     "analyst_revision_count": 11.0,
     "analyst_count": 16.0,
@@ -203,7 +219,7 @@
     "analyst_score": 72.11623636363636
   },
   "ranking": {
-    "value_score": 39.310916500000005,
+    "value_score": 39.71213395,
     "quality_score": 15.0,
     "growth_score": 44.0,
     "safety_score": 80.75356666666667,
@@ -214,7 +230,7 @@
     "analyst_score": 72.11623636363636,
     "pe_score": 50.0,
     "forward_pe_score": 10.0,
-    "pb_score": 28.621833000000002,
+    "pb_score": 29.4242679,
     "ps_score": 50.0,
     "roe_score": 10.0,
     "roa_score": 10.0,
@@ -222,53 +238,194 @@
     "rev_growth_score": 50.0,
     "earn_growth_score": 38.0,
     "debt_equity_score": 84.97876666666667,
-    "fcf_yield_score": 26.33579914090997,
+    "fcf_yield_score": 26.147025823849937,
     "current_ratio_score": 85.0,
     "cyclical_risk_score": 50.0,
     "earnings_visibility": 35.3,
-    "valuation_margin": 39.513274949999996,
+    "valuation_margin": 39.570640184999995,
     "catalyst_timeline": 50.0,
-    "downside_control": 60.7961245,
-    "composite_score": 47.79612779030724,
+    "downside_control": 60.78912449999999,
+    "composite_score": 47.38334252925231,
     "weight_earnings_visibility": 0.15,
     "weight_valuation_margin": 0.15,
-    "weight_catalyst_timeline": 0.388134317948718,
-    "weight_downside_control": 0.31186568205128207,
-    "fundamental_score": 41.47844245833333,
+    "weight_catalyst_timeline": 0.38395446666666666,
+    "weight_downside_control": 0.31604553333333335,
+    "fundamental_score": 41.57874682083334,
     "technical_score": 50.0,
-    "sentiment_score": 50.0,
+    "sentiment_score": 64.4,
     "weight_fundamental": 0.5,
     "weight_technical": 0.3,
     "weight_sentiment": 0.2,
     "data_completeness": 0.44666666666666666,
     "data_quality_penalty": 0.5333333333333334,
     "trend_gate_penalty": 0.0,
-    "timing_penalty": 0.15536130226666667,
-    "market_timing_score": 44.07,
+    "timing_penalty": 0.4935006072,
+    "market_timing_score": 41.98,
     "timing_zone": "unfavorable",
-    "alpha_vm": 15.814319656363988,
+    "alpha_vm": 15.738810329539977,
     "alpha_vm_pe_base": 10.0,
     "alpha_vm_growth_adj": 0.88,
-    "alpha_vm_fcf": 26.33579914090997,
+    "alpha_vm_fcf": 26.147025823849937,
     "alpha_visibility": 35.3,
     "alpha_multiplier": 0.8819090909090909,
     "alpha_ev": 31.131390909090904,
     "alpha_timing": 37.5,
-    "alpha_score": 3.692413253876906,
+    "alpha_score": 3.674782926097101,
     "reversal_score": 50.0,
     "macd_reversal_score": 50.0,
     "kdj_reversal_score": 50.0,
     "rsi_reversal_score": 50.0,
     "pullback_proximity_score": 50.0,
-    "rank": 518,
-    "percentile": 0.0300187617260788,
+    "rank": 519,
+    "percentile": 0.0299625468164794,
     "tier": "hold",
     "tier_raw": "hold",
     "tier_label": "Hold",
     "tier_color": "#9ca3af",
-    "market_cap": 8714888192.0,
+    "market_cap": 8287909376.0,
     "sector": "Utilities",
     "industry": "Utilities - Independent Power Producers"
   },
-  "headlines": []
+  "headlines": [
+    {
+      "title": "\n                        OKLO's Isotope Push Could Support Long-Term Growth Opportunity\n                    ",
+      "url": "https://qz.com/oklo-s-isotope-push-could-support-long-term-growth-opportunity",
+      "publisher": "Quartz",
+      "date": "2026-04-08",
+      "sentiment": "positive"
+    },
+    {
+      "title": "\n                        Cathie Wood Buys $3.1 Million of Nvidia-Backed Tech Stock\n                    ",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-buys-3-1-151115988.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-03-31",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        Oklo, Blykalla to Expand Strategic Partnership Through U.S. Investment and Collaboration\n                    ",
+      "url": "https://www.businesswire.com/news/home/20260330377076/en",
+      "publisher": "Business Wire",
+      "date": "2026-03-30",
+      "sentiment": "positive"
+    },
+    {
+      "title": "\n                        Nuclear power's moment is here. Can it make a comeback?\n                    ",
+      "url": "https://finance.yahoo.com/m/fbcd475e-193b-347d-b0a2-b7677f536a31/nuclear-power%27s-moment-is.html",
+      "publisher": "Quartz",
+      "date": "2026-03-30",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        Oklo Co-Founder and CEO Appointed to Serve on President's Council of Advisors on Science and Technology\n                    ",
+      "url": "https://www.businesswire.com/news/home/20260325357709/en",
+      "publisher": "Business Wire",
+      "date": "2026-03-25",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        EnerCom Announces Initial List of Presenting Companies for the 31st Annual Energy Investment Conference to be held August 17-19, 2026, in Denver, Colorado\n                    ",
+      "url": "/news/338773/enercom-announces-initial-list-of-presenting-companies-for-the-31st-annual-energy-investment-conference-to-be-held-august-17-19-2026-in-denver-colorado",
+      "publisher": "PR Newswire",
+      "date": "2026-03-19",
+      "sentiment": "positive"
+    },
+    {
+      "title": "\n                        Oklo Stock Dips After Earnings. Why the Nuclear Start-Up Still Has Wall Street's Support.\n                    ",
+      "url": "https://www.barrons.com/articles/oklo-stock-dips-nuclear-start-up-has-wall-streets-support-c39baf13?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-03-18",
+      "sentiment": "positive"
+    },
+    {
+      "title": "\n                        Oklo CEO on nuclear growth strategy: 'We're in full build mode'\n                    ",
+      "url": "https://www.youtube.com/watch?v=T99fe4OL3fg",
+      "publisher": "CNBC TV",
+      "date": "2026-03-18",
+      "sentiment": "positive"
+    },
+    {
+      "title": "\n                        Oklo posts wider-than-expected Q4 loss as it moves towards commercial nuclear deployment\n                    ",
+      "url": "https://finance.yahoo.com/m/b8f2626a-cb6c-3aed-95ce-f2f6b168aa8c/oklo-posts.html",
+      "publisher": "Proactive",
+      "date": "2026-03-18",
+      "sentiment": "negative"
+    },
+    {
+      "title": "\n                        Stock Markets Are Looking Through $100 Oil. Why the Fed Needs to Follow Suit.\n                    ",
+      "url": "https://www.barrons.com/articles/stock-market-oil-fed-meeting-things-to-know-today-e1c77093?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-03-18",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        These Stocks Are Today's Movers: Micron, Lululemon, Docusign, Swarmer, and More\n                    ",
+      "url": "https://www.barrons.com/articles/stock-movers-57675fac?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-03-18",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        Meta Backing Fuels Hype Around Oklo -- But Cash Burn Raises Flags\n                    ",
+      "url": "https://finance.yahoo.com/news/meta-backing-fuels-hype-around-092051174.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-03-18",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        Oklo Inc (OKLO) Q4 2025 Earnings Call Highlights: Strategic Milestones and Financial Insights\n                    ",
+      "url": "https://finance.yahoo.com/news/oklo-inc-oklo-q4-2025-030100889.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-03-17",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        Oklo Stock Falls After Earnings, but the Nuclear Startup Has Good News\n                    ",
+      "url": "https://www.barrons.com/articles/oklo-stock-earnings-nuclear-license-81eddf76?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-03-17",
+      "sentiment": "positive"
+    },
+    {
+      "title": "\n                        Oklo's Atomic Alchemy Announces U.S. Department of Energy Approval for Nuclear Safety Design Agreement of its Groves Isotopes Test Reactor\n                    ",
+      "url": "https://www.businesswire.com/news/home/20260317060053/en",
+      "publisher": "Business Wire",
+      "date": "2026-03-17",
+      "sentiment": "positive"
+    },
+    {
+      "title": "\n                        Oklo Publishes Full-Year 2025 Financial Results and Business Update\n                    ",
+      "url": "https://www.businesswire.com/news/home/20260317948925/en",
+      "publisher": "Business Wire",
+      "date": "2026-03-17",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        Kalshi faces illegal gambling charge, Oklo & DOE partner on nuclear\n                    ",
+      "url": "https://finance.yahoo.com/video/kalshi-faces-illegal-gambling-charge-181753978.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-03-17",
+      "sentiment": "negative"
+    },
+    {
+      "title": "\n                        These Stocks Are Today's Movers: Nvidia, Eli Lilly, Oklo, Swarmer, Delta, Semtech, Uber, and More\n                    ",
+      "url": "https://www.barrons.com/articles/stock-movers-9bf8bf45?mod=bar_FV",
+      "publisher": "Barrons.com",
+      "date": "2026-03-17",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        Oklo stock jumps on DOE safety design agreement for first reactor\n                    ",
+      "url": "https://finance.yahoo.com/news/oklo-stock-jumps-on-doe-safety-design-agreement-for-first-reactor-154610090.html",
+      "publisher": "Yahoo Finance",
+      "date": "2026-03-17",
+      "sentiment": "positive"
+    },
+    {
+      "title": "\n                        Nvidia to power Uber autonomous cars, Oklo's nuclear agreement with DOE\n                    ",
+      "url": "https://finance.yahoo.com/video/nvidia-power-uber-autonomous-cars-144746071.html",
+      "publisher": "Yahoo Finance Video",
+      "date": "2026-03-17",
+      "sentiment": "positive"
+    }
+  ]
 }
