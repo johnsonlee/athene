@@ -1,6 +1,16 @@
 """Three-factor multiplicative alpha scoring model.
 
-Score = VM × EV × Timing / K
+Score = (VM% × EV% × Timing% / ALPHA_SCORE_NORM) × 100
+
+Each factor is normalized to [0, 100] by dividing by its theoretical max:
+  VM_raw     ∈ [0, 130] → VM     = VM_raw     / 130 × 100
+  EV_raw     ∈ [0, 150] → EV     = EV_raw     / 150 × 100
+  Timing_raw ∈ [0, 100] → Timing = Timing_raw (already in [0, 100])
+
+The raw multiplicative product is then rescaled by ALPHA_SCORE_NORM so that top
+stocks reach ~90+. Without this rescaling, no stock ever reaches 100 because the
+theoretical joint max (VM=100% AND EV=100% AND Timing=100%) is effectively
+unreachable — historically the best products are ~29 on the 0-100 product scale.
 
 The model predicts forward excess return based on three factors:
   VM     — mispricing: how far is price from intrinsic value?
@@ -20,18 +30,27 @@ from __future__ import annotations
 import pandas as pd
 
 from engine.config import (
-    ALPHA_MODEL_K,
     ALPHA_MODEL_TIMING_ALPHA,
     ALPHA_MODEL_DIRECTION_CENTER,
     ALPHA_MODEL_DIRECTION_RANGE,
     ALPHA_MODEL_EV_QUALITY_WEIGHT,
     ALPHA_MODEL_EV_GROWTH_WEIGHT,
+    ALPHA_SCORE_NORM,
 )
 from engine.utils.logger import get_logger
 
 log = get_logger(__name__)
 
 NEUTRAL = 50.0
+
+# Theoretical maximums for normalization.
+# VM_raw = pe_base × growth_adj × 0.6 + fcf × 0.4; max at pe=100, growth_adj=1.5, fcf=100
+GROWTH_ADJ_MAX = 1.5
+VM_MAX = 100.0 * GROWTH_ADJ_MAX * 0.6 + 100.0 * 0.4  # = 130.0
+# EV_raw = visibility × direction_multiplier; max at visibility=100, multiplier=CENTER+RANGE
+EV_MAX = 100.0 * (ALPHA_MODEL_DIRECTION_CENTER + ALPHA_MODEL_DIRECTION_RANGE)  # = 150.0
+# Timing_raw = reversal × (α + (1-α) × cycle_upside/100); max at reversal=100, cycle_upside=100
+TIMING_MAX = 100.0
 
 
 def _safe_get(df: pd.DataFrame | None, col: str, index: pd.Index) -> pd.Series:
@@ -116,8 +135,10 @@ def compute_alpha_score(
     # FCF yield score: cash generation ability
     fcf_yield_s = _safe_get(fund_scored, "fcf_yield_score", idx)
 
-    # Composite VM: growth-adjusted PE (60%) + FCF yield (40%)
-    vm = pe_base * growth_adj * 0.6 + fcf_yield_s * 0.4
+    # Composite VM: growth-adjusted PE (60%) + FCF yield (40%), raw ∈ [0, 130]
+    # Normalize by VM_MAX (130) to get percentage in [0, 100].
+    vm_raw = pe_base * growth_adj * 0.6 + fcf_yield_s * 0.4
+    vm = (vm_raw / VM_MAX * 100).clip(0, 100)
     result["alpha_vm"] = vm
     result["alpha_vm_pe_base"] = pe_base
     result["alpha_vm_growth_adj"] = growth_adj
@@ -141,7 +162,9 @@ def compute_alpha_score(
     multiplier = compute_direction_multiplier(analyst_revision, growth_direction)
     result["alpha_multiplier"] = multiplier
 
-    ev = visibility * multiplier  # [0, 150]
+    # EV_raw ∈ [0, 150], normalize by EV_MAX (150) to percentage in [0, 100].
+    ev_raw = visibility * multiplier
+    ev = (ev_raw / EV_MAX * 100).clip(0, 100)
     result["alpha_ev"] = ev
 
     # --- Factor 3: Timing (Cycle Position + Reversal) ---
@@ -154,12 +177,16 @@ def compute_alpha_score(
     # - reversal=0 → timing=0 (no reversal signal = don't buy, regardless of upside)
     # - cycle_upside amplifies reversal, not replaces it
     # - α = baseline reversal contribution; (1-α) = how much cycle_upside can amplify
-    timing = reversal * (timing_alpha + (1 - timing_alpha) * cycle_upside / 100)  # [0, 100]
+    # Timing is already in [0, 100] (TIMING_MAX = 100), no normalization needed.
+    timing = reversal * (timing_alpha + (1 - timing_alpha) * cycle_upside / 100)
     result["alpha_timing"] = timing
 
-    # --- Score: VM × EV × Timing / K ---
-    raw_score = (vm * ev * timing) / ALPHA_MODEL_K
-    result["alpha_score"] = raw_score.clip(0, 100)
+    # --- Score: (VM% × EV% × Timing% / ALPHA_SCORE_NORM) × 100 ---
+    # Raw product is in [0, 100] theoretically but historically peaks around 29
+    # because a stock can rarely be simultaneously top on all three factors.
+    # Rescale by ALPHA_SCORE_NORM (≈ historical max) so top stocks reach ~90+.
+    raw_product = (vm / 100) * (ev / 100) * (timing / 100) * 100
+    result["alpha_score"] = (raw_product / ALPHA_SCORE_NORM * 100).clip(0, 100)
 
     # --- Logging ---
     log.info(

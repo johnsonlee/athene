@@ -257,7 +257,7 @@ def metric_score(value, breakpoints, missing_default=50.0) -> float:
 The alpha model is the primary scoring system. It uses a three-factor multiplicative formula:
 
 ```
-alpha_score = (VM × EV × Timing) / K    where K = 5000
+alpha_score = (VM% × EV% × Timing% / ALPHA_SCORE_NORM) × 100    (rescaled by historical max ≈ 30)
 ```
 
 **Factor 1: Valuation Margin (VM)**

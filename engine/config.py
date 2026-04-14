@@ -268,9 +268,12 @@ TIMING_MAX_PENALTY = 8.0           # max composite penalty in adverse markets
 TIMING_DC_MODULATION = 0.40        # max penalty reduction for defensive stocks (DC>50)
 
 # ---------- v20: Alpha Model (three-factor multiplicative) ----------
-# Score = VM × EV × Timing / K
+# Score = (VM% × EV% × Timing% / ALPHA_SCORE_NORM) × 100
+# Each factor normalized to [0, 100] by its theoretical max (VM_MAX=130, EV_MAX=150,
+# TIMING_MAX=100). Then the raw product (theoretical [0, 100], practical [0, ~29])
+# is rescaled by ALPHA_SCORE_NORM so top stocks naturally reach ~90+ instead of ~27.
 # Runs in parallel with legacy additive model for validation.
-ALPHA_MODEL_K = 5000                    # normalization: realistic joint max ~500K → score ~100
+ALPHA_SCORE_NORM = 30.0                 # historical max of VM%×EV%×T% product is ~29 (50d × 534 tickers)
 ALPHA_MODEL_TIMING_ALPHA = 0.5          # reversal vs cycle_upside weight (calibrate from IC)
 ALPHA_MODEL_DIRECTION_CENTER = 0.85     # multiplier at neutral direction
 ALPHA_MODEL_DIRECTION_RANGE = 0.65      # multiplier half-range: [0.85-0.65, 0.85+0.65] = [0.2, 1.5]
