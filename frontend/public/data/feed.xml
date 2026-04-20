@@ -3,18 +3,72 @@
   <title>Athene - Alpha Score Changes</title>
   <subtitle>Daily alpha score changes for S&amp;P 500 + NASDAQ 100 stocks</subtitle>
   <id>https://athene.johnsonlee.io/feed.xml</id>
-  <updated>2026-04-17T22:32:48.030290+00:00</updated>
+  <updated>2026-04-20T22:38:37.342855+00:00</updated>
   <link href="https://athene.johnsonlee.io/data/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://athene.johnsonlee.io" rel="alternate" type="text/html" />
   <author>
     <name>Athene Bot</name>
   </author>
   <entry>
-    <title>2026-04-17: 39 improved, 24 declined (63 total)</title>
-    <id>https://athene.johnsonlee.io/changes/2026-04-17</id>
-    <updated>2026-04-17T22:32:48.030290+00:00</updated>
+    <title>2026-04-20: 17 improved, 26 declined (43 total)</title>
+    <id>https://athene.johnsonlee.io/changes/2026-04-20</id>
+    <updated>2026-04-20T22:38:37.342855+00:00</updated>
     <link href="https://athene.johnsonlee.io/screener" rel="alternate" />
-    <content type="html">&lt;h2&gt;Alpha Score Changes for 2026-04-17&lt;/h2&gt;
+    <content type="html">&lt;h2&gt;Alpha Score Changes for 2026-04-20&lt;/h2&gt;
+&lt;h3&gt;Improved&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;DXCM&lt;/strong&gt;: 48.5 &amp;rarr; 69.9 (+21.4) [VM -0.5, EV +0.0, TIMING +18.5]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CAG&lt;/strong&gt;: 49.0 &amp;rarr; 65.6 (+16.6) [VM +0.0, EV +0.0, TIMING +16.4]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LH&lt;/strong&gt;: 28.5 &amp;rarr; 44.3 (+15.8) [VM +0.2, EV +0.0, TIMING +19.1]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DGX&lt;/strong&gt;: 25.7 &amp;rarr; 37.6 (+11.9) [VM -0.2, EV +0.0, TIMING +15.9]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ROST&lt;/strong&gt;: 14.4 &amp;rarr; 24.5 (+10.1) [VM -0.1, EV +0.0, TIMING +15.2]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;BKNG&lt;/strong&gt;: 75.2 &amp;rarr; 83.4 (+8.2) [VM +-0.0, EV +0.0, TIMING +5.5]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RF&lt;/strong&gt;: 13.4 &amp;rarr; 21.4 (+8.0) [VM +9.3, EV +18.8, TIMING -1.1]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CSCO&lt;/strong&gt;: 41.0 &amp;rarr; 48.8 (+7.8) [VM -0.7, EV +0.0, TIMING +6.2]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CVS&lt;/strong&gt;: 29.1 &amp;rarr; 36.9 (+7.8) [VM +0.2, EV +0.0, TIMING +5.9]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LLY&lt;/strong&gt;: 30.3 &amp;rarr; 38.0 (+7.6) [VM +0.3, EV +0.4, TIMING +5.8]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AOS&lt;/strong&gt;: 21.1 &amp;rarr; 27.8 (+6.7) [VM -0.4, EV +0.0, TIMING +7.1]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GIS&lt;/strong&gt;: 20.3 &amp;rarr; 26.9 (+6.7) [VM +0.1, EV +0.0, TIMING +15.9]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TFC&lt;/strong&gt;: 14.2 &amp;rarr; 20.4 (+6.2) [VM +6.5, EV +13.5, TIMING +0.4]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RL&lt;/strong&gt;: 21.3 &amp;rarr; 27.0 (+5.8) [VM -0.3, EV +0.0, TIMING +5.7]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;PANW&lt;/strong&gt;: 29.0 &amp;rarr; 34.2 (+5.2) [VM -0.3, EV +0.0, TIMING +7.5]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AVY&lt;/strong&gt;: 12.7 &amp;rarr; 17.9 (+5.2) [VM +0.0, EV +0.0, TIMING +10.3]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SNA&lt;/strong&gt;: 11.3 &amp;rarr; 16.6 (+5.2) [VM -0.5, EV +0.0, TIMING +9.8]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Declined&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;BSX&lt;/strong&gt;: 78.5 &amp;rarr; 62.2 (-16.3) [VM +1.7, EV +0.0, TIMING -17.2]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LDOS&lt;/strong&gt;: 56.0 &amp;rarr; 41.5 (-14.4) [VM +0.1, EV +0.0, TIMING -14.9]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;APP&lt;/strong&gt;: 71.4 &amp;rarr; 59.6 (-11.8) [VM -1.2, EV +0.0, TIMING -7.6]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MKC&lt;/strong&gt;: 76.9 &amp;rarr; 65.6 (-11.3) [VM +1.0, EV +0.0, TIMING -8.6]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;FITB&lt;/strong&gt;: 19.0 &amp;rarr; 8.2 (-10.8) [VM -22.1, EV -27.3, TIMING +3.3]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CTSH&lt;/strong&gt;: 72.8 &amp;rarr; 63.9 (-8.9) [VM -0.7, EV +0.0, TIMING -7.4]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ABBV&lt;/strong&gt;: 29.1 &amp;rarr; 20.2 (-8.9) [VM +0.5, EV +0.0, TIMING -12.6]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GDDY&lt;/strong&gt;: 81.0 &amp;rarr; 72.3 (-8.7) [VM +0.9, EV +0.0, TIMING -7.6]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LVS&lt;/strong&gt;: 64.3 &amp;rarr; 55.8 (-8.5) [VM +0.3, EV +0.0, TIMING -6.4]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SOLV&lt;/strong&gt;: 66.4 &amp;rarr; 58.6 (-7.8) [VM +0.2, EV -3.8, TIMING -3.6]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SNDK&lt;/strong&gt;: 26.2 &amp;rarr; 18.7 (-7.5) [VM -2.2, EV +0.0, TIMING -5.4]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DASH&lt;/strong&gt;: 58.1 &amp;rarr; 51.1 (-7.0) [VM -2.1, EV +0.0, TIMING -4.7]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ADBE&lt;/strong&gt;: 80.2 &amp;rarr; 73.3 (-6.9) [VM +0.5, EV +0.0, TIMING -6.6]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TEAM&lt;/strong&gt;: 49.5 &amp;rarr; 42.9 (-6.6) [VM -1.6, EV +-0.0, TIMING -9.2]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;NDAQ&lt;/strong&gt;: 49.8 &amp;rarr; 43.4 (-6.4) [VM +0.4, EV +0.0, TIMING -7.1]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GEN&lt;/strong&gt;: 100.0 &amp;rarr; 93.8 (-6.2) [VM +0.5, EV +0.0, TIMING -8.3]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;NOC&lt;/strong&gt;: 23.7 &amp;rarr; 17.5 (-6.2) [VM +0.6, EV +0.0, TIMING -7.6]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CRM&lt;/strong&gt;: 97.0 &amp;rarr; 90.9 (-6.1) [VM -0.5, EV +0.0, TIMING -4.4]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ALL&lt;/strong&gt;: 35.7 &amp;rarr; 29.6 (-6.1) [VM +0.1, EV +0.0, TIMING -4.9]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IBM&lt;/strong&gt;: 84.8 &amp;rarr; 78.8 (-6.0) [VM +-0.0, EV +0.0, TIMING -4.2]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SMCI&lt;/strong&gt;: 62.1 &amp;rarr; 56.6 (-5.6) [VM +0.4, EV +0.0, TIMING -5.0]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AON&lt;/strong&gt;: 50.6 &amp;rarr; 45.0 (-5.6) [VM +-0.0, EV +0.0, TIMING -5.8]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AVGO&lt;/strong&gt;: 33.2 &amp;rarr; 27.6 (-5.6) [VM +0.6, EV +0.0, TIMING -4.8]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;FIS&lt;/strong&gt;: 89.0 &amp;rarr; 83.7 (-5.3) [VM +0.1, EV +0.0, TIMING -4.7]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MGM&lt;/strong&gt;: 51.9 &amp;rarr; 46.7 (-5.2) [VM -1.1, EV +0.0, TIMING -4.5]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;UHS&lt;/strong&gt;: 53.3 &amp;rarr; 48.2 (-5.1) [VM -0.5, EV +0.0, TIMING -3.5]&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <ns0:entry>
+    <ns0:title>2026-04-17: 39 improved, 24 declined (63 total)</ns0:title>
+    <ns0:id>https://athene.johnsonlee.io/changes/2026-04-17</ns0:id>
+    <ns0:updated>2026-04-17T22:32:48.030290+00:00</ns0:updated>
+    <ns0:link href="https://athene.johnsonlee.io/screener" rel="alternate" />
+    <ns0:content type="html">&lt;h2&gt;Alpha Score Changes for 2026-04-17&lt;/h2&gt;
 &lt;h3&gt;Improved&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;BMY&lt;/strong&gt;: 33.9 &amp;rarr; 67.0 (+33.2) [VM -0.6, EV +0.0, TIMING +23.8]&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;DELL&lt;/strong&gt;: 27.6 &amp;rarr; 59.2 (+31.6) [VM -0.6, EV +0.0, TIMING +19.6]&lt;/li&gt;
@@ -81,8 +135,8 @@
 &lt;li&gt;&lt;strong&gt;ORCL&lt;/strong&gt;: 45.6 &amp;rarr; 40.4 (-5.2) [VM +0.5, EV +0.0, TIMING -6.1]&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;WDC&lt;/strong&gt;: 31.3 &amp;rarr; 26.1 (-5.2) [VM -1.2, EV +0.0, TIMING -3.6]&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;GILD&lt;/strong&gt;: 27.9 &amp;rarr; 22.9 (-5.0) [VM +0.2, EV +0.0, TIMING -4.5]&lt;/li&gt;
-&lt;/ul&gt;</content>
-  </entry>
+&lt;/ul&gt;</ns0:content>
+  </ns0:entry>
   <ns0:entry>
     <ns0:title>2026-04-16: 37 improved, 83 declined (120 total)</ns0:title>
     <ns0:id>https://athene.johnsonlee.io/changes/2026-04-16</ns0:id>
