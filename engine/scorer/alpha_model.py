@@ -144,18 +144,23 @@ def compute_alpha_score(
     ev = visibility * multiplier  # [0, 150]
     result["alpha_ev"] = ev
 
-    # --- Factor 3: Timing (Cycle Position + Reversal) ---
-    trend = _safe_get(tech_scored, "trend_score", idx)
+    # --- Factor 3: Timing (MA20/50 regime + Reversal) ---
     reversal = _safe_get(tech_scored, "reversal_score", idx)
 
-    cycle_upside = 100 - trend  # high trend → low upside remaining
-    # Reversal-gated timing: reversal activates cycle_upside, not additive blend.
-    # timing = reversal * [α + (1-α) * cycle_upside / 100]
-    # - reversal=0 → timing=0 (no reversal signal = don't buy, regardless of upside)
-    # - cycle_upside amplifies reversal, not replaces it
-    # - α = baseline reversal contribution; (1-α) = how much cycle_upside can amplify
-    timing = reversal * (timing_alpha + (1 - timing_alpha) * cycle_upside / 100)  # [0, 100]
+    # MA20/50 directional signal ∈ (-1, +1):
+    #   +1 = strong bullish (MA20 well above MA50 and rising)
+    #    0 = neutral / crossover zone
+    #   -1 = strong bearish (MA20 well below MA50 and falling)
+    # Map to [0, 1] as a regime amplifier: bullish → boosts timing, bearish → suppresses it.
+    # Reversal gate preserved: reversal=0 → timing=0 regardless of regime.
+    ma_signal = _safe_get(tech_scored, "ma_trend_signal", idx)  # (-1, +1); 0.0 if missing
+    ma_factor = (ma_signal + 1) / 2  # (0, 1); 0.5 = neutral crossover zone
+    # timing = reversal * [α + (1-α) * ma_factor]
+    # - α (timing_alpha): baseline reversal weight — timing is always at least α × reversal
+    # - (1-α) × ma_factor: regime amplification on top (0 when bearish, 0.5 when neutral, 1 when bullish)
+    timing = reversal * (timing_alpha + (1 - timing_alpha) * ma_factor)  # [0, 100]
     result["alpha_timing"] = timing
+    result["alpha_ma_signal"] = ma_signal
 
     # --- Score: VM × EV × Timing / K ---
     raw_score = (vm * ev * timing) / ALPHA_MODEL_K
@@ -170,7 +175,7 @@ def compute_alpha_score(
     log.info(
         f"  VM: [{vm.min():.1f}, {vm.max():.1f}] (pe_adj=[{(pe_base * growth_adj).min():.1f}, {(pe_base * growth_adj).max():.1f}], fcf=[{fcf_yield_s.min():.0f}, {fcf_yield_s.max():.0f}]), "
         f"EV: [{ev.min():.1f}, {ev.max():.1f}], "
-        f"Timing: [{timing.min():.1f}, {timing.max():.1f}], "
+        f"Timing: [{timing.min():.1f}, {timing.max():.1f}] (ma_signal=[{ma_signal.min():.2f}, {ma_signal.max():.2f}]), "
         f"multiplier: [{multiplier.min():.2f}, {multiplier.max():.2f}]"
     )
 

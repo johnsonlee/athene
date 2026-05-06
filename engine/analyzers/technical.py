@@ -61,11 +61,13 @@ def _compute_indicators(df: pd.DataFrame) -> dict:
 
     # --- Trend: SMA alignment ---
     sma_values = {}
+    sma_series: dict[int, pd.Series] = {}
     for period in SMA_PERIODS:
         if len(close) >= period:
             sma = ta.sma(close, length=period)
             if sma is not None and not sma.empty:
                 sma_values[period] = float(sma.iloc[-1])
+                sma_series[period] = sma
                 result[f"sma_{period}"] = sma_values[period]
 
     # Bullish alignment: price > SMA20 > SMA50 > SMA200
@@ -84,6 +86,20 @@ def _compute_indicators(df: pd.DataFrame) -> dict:
             )
         alignment_score = sum(margin_scores) / len(margin_scores) if margin_scores else 0.0
     result["trend_alignment"] = alignment_score
+
+    # --- MA20/50 directional signal: position + slope ---
+    # gap = (MA20 - MA50) / MA50 captures regime (positive = MA20 above MA50)
+    # slope = change in gap over 10 days captures momentum of the crossover
+    _MA_SLOPE_LOOKBACK = 10
+    if 20 in sma_series and 50 in sma_series:
+        s20, s50 = sma_series[20], sma_series[50]
+        gap_now = (float(s20.iloc[-1]) - float(s50.iloc[-1])) / float(s50.iloc[-1])
+        result["ma_gap"] = gap_now
+        if len(s20) > _MA_SLOPE_LOOKBACK and len(s50) > _MA_SLOPE_LOOKBACK:
+            s50_prev = float(s50.iloc[-1 - _MA_SLOPE_LOOKBACK])
+            if s50_prev != 0:
+                gap_prev = (float(s20.iloc[-1 - _MA_SLOPE_LOOKBACK]) - s50_prev) / s50_prev
+                result["ma_gap_slope"] = gap_now - gap_prev
 
     # --- Momentum: RSI ---
     rsi = ta.rsi(close, length=RSI_PERIOD)
@@ -361,6 +377,21 @@ def compute_technical_subscores(df: pd.DataFrame) -> pd.DataFrame:
         + 0.25 * result["rsi_reversal_score"]
         + 0.10 * result["pullback_proximity_score"]
     )
+
+    # MA20/50 directional signal ∈ (-1, +1)
+    # gap_norm:   tanh(10 × gap) — 10% gap → ±0.76, 5% → ±0.46
+    # slope_norm: tanh(20 × slope) — 2% gap change over 10d → ±0.38
+    # Positive = bullish regime (MA20 above/rising toward MA50), negative = bearish
+    import math
+    if "ma_gap" in result.columns:
+        gap_norm = result["ma_gap"].apply(lambda x: math.tanh(10 * x) if pd.notna(x) else 0.0)
+        if "ma_gap_slope" in result.columns:
+            slope_norm = result["ma_gap_slope"].apply(lambda x: math.tanh(20 * x) if pd.notna(x) else 0.0)
+        else:
+            slope_norm = pd.Series(0.0, index=result.index)
+        result["ma_trend_signal"] = 0.6 * gap_norm + 0.4 * slope_norm
+    else:
+        result["ma_trend_signal"] = pd.Series(0.0, index=result.index)
 
     # Composite technical score (weighted, already 0-100)
     result["technical_score"] = (
