@@ -147,17 +147,17 @@ def compute_alpha_score(
     # --- Factor 3: Timing (MA20/50 regime + Reversal) ---
     reversal = _safe_get(tech_scored, "reversal_score", idx)
 
-    # MA20/50 directional signal ∈ (-1, +1):
-    #   +1 = strong bullish (MA20 well above MA50 and rising)
-    #    0 = neutral / crossover zone
-    #   -1 = strong bearish (MA20 well below MA50 and falling)
-    # Map to [0, 1] as a regime amplifier: bullish → boosts timing, bearish → suppresses it.
+    # MA20/50 signal ∈ (-1, +1), calibrated from 521-ticker IC grid search (22d):
+    #   k_gap=3, k_slope=30, w_gap=0.3 — slope-dominant, light gap scaling
+    # IC is negative (contrarian effect): bullish MA → lower forward returns.
+    # So we use the INVERTED factor: bearish regime → more mean-reversion upside.
+    #   ma_factor = (1 - ma_signal) / 2  →  bearish(-1)=1.0, neutral(0)=0.5, bullish(+1)=0.0
     # Reversal gate preserved: reversal=0 → timing=0 regardless of regime.
     ma_signal = _safe_get(tech_scored, "ma_trend_signal", idx)  # (-1, +1); 0.0 if missing
-    ma_factor = (ma_signal + 1) / 2  # (0, 1); 0.5 = neutral crossover zone
+    ma_factor = (1 - ma_signal) / 2  # (0, 1); 0.5 = neutral; bearish → higher
     # timing = reversal * [α + (1-α) * ma_factor]
-    # - α (timing_alpha): baseline reversal weight — timing is always at least α × reversal
-    # - (1-α) × ma_factor: regime amplification on top (0 when bearish, 0.5 when neutral, 1 when bullish)
+    # - α (timing_alpha): baseline reversal weight
+    # - (1-α) × ma_factor: contrarian cycle amplification (bearish MA = more upside remaining)
     timing = reversal * (timing_alpha + (1 - timing_alpha) * ma_factor)  # [0, 100]
     result["alpha_timing"] = timing
     result["alpha_ma_signal"] = ma_signal
