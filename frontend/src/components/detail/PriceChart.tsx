@@ -16,7 +16,7 @@ import { useI18n } from '../../lib/i18n';
 type TimeRange = '1W' | '1M' | '3M' | '6M' | '1Y' | 'All';
 type Interval = 'D' | 'W' | 'M' | 'Q';
 type IndicatorPanel = 'rsi' | 'macd' | 'kdj';
-type Overlay = 'sma30' | 'sma60' | 'sma200' | 'dc';
+type Overlay = 'sma20' | 'sma50' | 'sma200' | 'dc';
 
 /** Compute simple moving average from daily close prices. */
 function computeSMA(prices: PriceBar[], period: number): { time: string; value: number }[] {
@@ -97,8 +97,8 @@ export function PriceChart({ prices, ticker }: Props) {
   });
   const [interval, setInterval] = useState<Interval>('D');
   const [overlays, setOverlays] = useState<Record<Overlay, boolean>>({
-    sma30: true,
-    sma60: true,
+    sma20: true,
+    sma50: true,
     sma200: true,
     dc: true,
   });
@@ -208,13 +208,13 @@ export function PriceChart({ prices, ticker }: Props) {
         );
         primarySeries.push(candle);
 
-        if (overlays.sma30) {
-          const sma30Data = computeSMA(displayPrices, 30);
-          chart.addSeries(LineSeries, { color: '#10b981', lineWidth: 1, lastValueVisible: false, priceLineVisible: false }).setData(sma30Data);
+        if (overlays.sma20) {
+          const sma20Data = computeSMA(displayPrices, 20);
+          chart.addSeries(LineSeries, { color: '#10b981', lineWidth: 1, lastValueVisible: false, priceLineVisible: false }).setData(sma20Data);
         }
-        if (overlays.sma60) {
-          const sma60Data = computeSMA(displayPrices, 60);
-          chart.addSeries(LineSeries, { color: '#f59e0b', lineWidth: 1, lastValueVisible: false, priceLineVisible: false }).setData(sma60Data);
+        if (overlays.sma50) {
+          const sma50Data = computeSMA(displayPrices, 50);
+          chart.addSeries(LineSeries, { color: '#f59e0b', lineWidth: 1, lastValueVisible: false, priceLineVisible: false }).setData(sma50Data);
         }
         if (overlays.sma200) {
           const sma200Data = computeSMA(displayPrices, 200);
@@ -431,7 +431,7 @@ export function PriceChart({ prices, ticker }: Props) {
       chartsRef.current = [];
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [displayPrices, indicators, isDark, locale, visiblePanels.rsi, visiblePanels.macd, visiblePanels.kdj, overlays.sma30, overlays.sma60, overlays.sma200, overlays.dc]);
+  }, [displayPrices, indicators, isDark, locale, visiblePanels.rsi, visiblePanels.macd, visiblePanels.kdj, overlays.sma20, overlays.sma50, overlays.sma200, overlays.dc]);
 
   // Handle range change without recreating charts
   useEffect(() => {
@@ -505,8 +505,8 @@ export function PriceChart({ prices, ticker }: Props) {
       {/* Main chart overlay toggles */}
       <div className="mb-1 flex flex-wrap gap-1">
         {([
-          { key: 'sma30' as Overlay, color: '#10b981', label: t('metric.sma30') },
-          { key: 'sma60' as Overlay, color: '#f59e0b', label: t('metric.sma60') },
+          { key: 'sma20' as Overlay, color: '#10b981', label: t('metric.sma20') },
+          { key: 'sma50' as Overlay, color: '#f59e0b', label: t('metric.sma50') },
           { key: 'sma200' as Overlay, color: '#3b82f6', label: t('metric.sma200') },
           { key: 'dc' as Overlay, color: 'rgba(156,163,175,0.5)', label: t('chart.donchianChannel') },
         ]).map(({ key, color, label }) => (
