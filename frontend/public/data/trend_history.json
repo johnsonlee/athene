@@ -71071,70 +71071,116 @@
   },
   "2026-05-13": {
     "Information Technology": {
-      "trend_strength": 70.4,
-      "trend_state": "strong_uptrend",
-      "rs_score": 84.6,
+      "rs_score": 85.4,
       "momentum_score": 60.1
     },
     "Financials": {
-      "trend_strength": 40.8,
-      "trend_state": "neutral",
-      "rs_score": 21.2,
+      "rs_score": 21.3,
       "momentum_score": 48.7
     },
     "Energy": {
-      "trend_strength": 63.1,
-      "trend_state": "uptrend",
-      "rs_score": 52.7,
+      "rs_score": 50.4,
       "momentum_score": 75.7
     },
     "Health Care": {
-      "trend_strength": 45.2,
-      "trend_state": "neutral",
-      "rs_score": 22.6,
+      "rs_score": 20.6,
       "momentum_score": 60.2
     },
     "Consumer Discretionary": {
-      "trend_strength": 41.2,
-      "trend_state": "neutral",
-      "rs_score": 30.4,
+      "rs_score": 31.0,
       "momentum_score": 62.4
     },
     "Consumer Staples": {
-      "trend_strength": 48.3,
-      "trend_state": "neutral",
-      "rs_score": 38.9,
+      "rs_score": 36.8,
       "momentum_score": 66.0
     },
     "Real Estate": {
-      "trend_strength": 53.1,
-      "trend_state": "neutral",
-      "rs_score": 39.6,
+      "rs_score": 37.7,
       "momentum_score": 66.0
     },
     "Industrials": {
-      "trend_strength": 50.9,
-      "trend_state": "neutral",
-      "rs_score": 38.2,
+      "rs_score": 35.1,
       "momentum_score": 66.3
     },
     "Utilities": {
-      "trend_strength": 39.6,
-      "trend_state": "downtrend",
-      "rs_score": 24.8,
+      "rs_score": 22.8,
       "momentum_score": 49.4
     },
     "Materials": {
-      "trend_strength": 52.9,
-      "trend_state": "neutral",
-      "rs_score": 39.7,
+      "rs_score": 36.9,
       "momentum_score": 69.0
     },
     "Communication Services": {
-      "trend_strength": 46.0,
-      "trend_state": "neutral",
-      "rs_score": 30.2,
+      "rs_score": 29.5,
       "momentum_score": 59.1
+    }
+  },
+  "2026-05-14": {
+    "Information Technology": {
+      "trend_strength": 71.6,
+      "trend_state": "strong_uptrend",
+      "rs_score": 86.2,
+      "momentum_score": 61.8
+    },
+    "Financials": {
+      "trend_strength": 46.2,
+      "trend_state": "neutral",
+      "rs_score": 21.4,
+      "momentum_score": 56.7
+    },
+    "Energy": {
+      "trend_strength": 62.5,
+      "trend_state": "uptrend",
+      "rs_score": 49.7,
+      "momentum_score": 76.9
+    },
+    "Health Care": {
+      "trend_strength": 41.7,
+      "trend_state": "neutral",
+      "rs_score": 20.5,
+      "momentum_score": 62.0
+    },
+    "Consumer Discretionary": {
+      "trend_strength": 39.1,
+      "trend_state": "downtrend",
+      "rs_score": 29.1,
+      "momentum_score": 61.1
+    },
+    "Consumer Staples": {
+      "trend_strength": 46.1,
+      "trend_state": "neutral",
+      "rs_score": 34.9,
+      "momentum_score": 65.9
+    },
+    "Real Estate": {
+      "trend_strength": 48.2,
+      "trend_state": "neutral",
+      "rs_score": 30.7,
+      "momentum_score": 64.8
+    },
+    "Industrials": {
+      "trend_strength": 53.2,
+      "trend_state": "neutral",
+      "rs_score": 37.3,
+      "momentum_score": 68.4
+    },
+    "Utilities": {
+      "trend_strength": 42.4,
+      "trend_state": "neutral",
+      "rs_score": 19.2,
+      "momentum_score": 51.5
+    },
+    "Materials": {
+      "trend_strength": 48.9,
+      "trend_state": "neutral",
+      "rs_score": 33.7,
+      "momentum_score": 66.3
+    },
+    "Communication Services": {
+      "trend_strength": 44.3,
+      "trend_state": "neutral",
+      "rs_score": 27.1,
+      "momentum_score": 64.1
     }
   },
   "2026-04-20": {
