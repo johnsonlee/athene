@@ -1,0 +1,283 @@
+{
+  "ticker": "BNY",
+  "profile": null,
+  "prices": [
+    {
+      "date": "2026-05-22",
+      "open": 139.58999633789062,
+      "high": 140.77999877929688,
+      "low": 139.11000061035156,
+      "close": 139.14999389648438,
+      "volume": 3572619
+    }
+  ],
+  "fundamental": {
+    "pe": 17.264267,
+    "forward_pe": 14.431519,
+    "pb": 2.420926,
+    "ps": 4.601987,
+    "roe": 0.13472,
+    "roa": 0.01196,
+    "revenue_growth": 0.134,
+    "earnings_growth": 0.418,
+    "debt_to_equity": null,
+    "fcf": null,
+    "market_cap": 95509635072.0,
+    "profit_margin": 0.28722,
+    "operating_margin": 0.37647998,
+    "gross_margin": 0.0,
+    "dividend_yield": 0.015300000000000001,
+    "beta": 1.068,
+    "current_price": 139.15,
+    "high_52w": 140.78,
+    "low_52w": 87.41,
+    "total_debt": 80384000000.0,
+    "total_cash": 247720001536.0,
+    "ebitda": null,
+    "current_ratio": null,
+    "inv_pe": 0.057923107885205896,
+    "inv_pb": 0.41306508336066444,
+    "inv_ps": 0.21729744130089892,
+    "fcf_yield": null,
+    "fcf_debt_ratio": null,
+    "pe_score": 43.22622166666667,
+    "forward_pe_score": 45.94746833333333,
+    "pb_score": 40.948888,
+    "ps_score": 49.32008666666667,
+    "value_score": 42.08755483333333,
+    "roe_score": 60.63428571428572,
+    "roa_score": 27.973333333333333,
+    "margin_score": 88.4664,
+    "quality_score": 74.55034285714287,
+    "rev_growth_score": 71.57142857142857,
+    "earn_growth_score": 92.0,
+    "growth_score": 81.78571428571428,
+    "debt_equity_score": 50.0,
+    "fcf_yield_score": 35.0,
+    "current_ratio_score": 42.0,
+    "safety_score": 46.950450000000004,
+    "fundamental_score": 62.723510136904764,
+    "fund_data_completeness": 0.75
+  },
+  "technical": null,
+  "sentiment": {
+    "sentiment_compound": 0.12013474220695484,
+    "sentiment_pos": 0.094,
+    "sentiment_neg": 0.00455,
+    "sentiment_neu": 0.90145,
+    "news_count": 20.0,
+    "sentiment_confidence": 1.0,
+    "sentiment_score": 56.01
+  },
+  "analyst": null,
+  "ranking": {
+    "value_score": 42.08755483333333,
+    "quality_score": 74.55034285714287,
+    "growth_score": 81.78571428571428,
+    "safety_score": 46.950450000000004,
+    "trend_score": 50.0,
+    "momentum_score": 50.0,
+    "volatility_score": 50.0,
+    "volume_score": 50.0,
+    "analyst_score": 50.0,
+    "pe_score": 43.22622166666667,
+    "forward_pe_score": 45.94746833333333,
+    "pb_score": 40.948888,
+    "ps_score": 49.32008666666667,
+    "roe_score": 60.63428571428572,
+    "roa_score": 27.973333333333333,
+    "margin_score": 88.4664,
+    "rev_growth_score": 71.57142857142857,
+    "earn_growth_score": 92.0,
+    "debt_equity_score": 50.0,
+    "fcf_yield_score": 35.0,
+    "current_ratio_score": 42.0,
+    "cyclical_risk_score": 50.0,
+    "earnings_visibility": 79.61510285714286,
+    "valuation_margin": 42.08755483333333,
+    "catalyst_timeline": 50.0,
+    "downside_control": 48.932657500000005,
+    "composite_score": 52.74394858402212,
+    "weight_earnings_visibility": 0.15,
+    "weight_valuation_margin": 0.15,
+    "weight_catalyst_timeline": 0.41773928,
+    "weight_downside_control": 0.28226072,
+    "fundamental_score": 62.723510136904764,
+    "technical_score": 50.0,
+    "sentiment_score": 56.01,
+    "weight_fundamental": 0.5,
+    "weight_technical": 0.3,
+    "weight_sentiment": 0.2,
+    "data_completeness": 0.5025000000000001,
+    "data_quality_penalty": 0.0,
+    "trend_gate_penalty": 0.0,
+    "timing_penalty": 0.0,
+    "market_timing_score": 58.87,
+    "timing_zone": "neutral",
+    "alpha_vm": 53.14724302,
+    "alpha_vm_pe_base": 45.94746833333333,
+    "alpha_vm_growth_adj": 1.42,
+    "alpha_vm_fcf": 35.0,
+    "alpha_visibility": 79.61510285714286,
+    "alpha_multiplier": 1.0566071428571429,
+    "alpha_ev": 84.12188635816327,
+    "alpha_timing": 37.5,
+    "alpha_score": 33.53134753183594,
+    "reversal_score": 50.0,
+    "macd_reversal_score": 50.0,
+    "kdj_reversal_score": 50.0,
+    "rsi_reversal_score": 50.0,
+    "pullback_proximity_score": 50.0,
+    "rank": 203,
+    "percentile": 0.6231343283582089,
+    "tier": "hold",
+    "tier_raw": "hold",
+    "tier_label": "Hold",
+    "tier_color": "#9ca3af",
+    "market_cap": 95509635072.0,
+    "sector": "Financials",
+    "industry": "Asset Management & Custody Banks"
+  },
+  "headlines": [
+    {
+      "title": "\n                        BNY to Speak at the Morgan Stanley U.S. Financials Conference\n                    ",
+      "url": "/news/356627/bny-to-speak-at-the-morgan-stanley-us-financials-conference",
+      "publisher": "PR Newswire",
+      "date": "2026-05-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        NYSE Content Update: Lincoln International Pops by 13% in First Day of Trade\n                    ",
+      "url": "/news/356333/nyse-content-update-lincoln-international-pops-by-13-in-first-day-of-trade",
+      "publisher": "PR Newswire",
+      "date": "2026-05-21",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        BNY Announces ETF Share Splits\n                    ",
+      "url": "https://www.businesswire.com/news/home/20260519050396/en/",
+      "publisher": "Business Wire",
+      "date": "2026-05-19",
+      "sentiment": "positive"
+    },
+    {
+      "title": "\n                        Snapdocs and BNY To Launch Automated Collateral Delivery and eCustody Solution\n                    ",
+      "url": "https://www.businesswire.com/news/home/20260514744846/en",
+      "publisher": "Business Wire",
+      "date": "2026-05-14",
+      "sentiment": "positive"
+    },
+    {
+      "title": "\n                        Digital Asset Eyes $2 Billion Valuation In A16z-Led Crypto Raise\n                    ",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/digital-asset-eyes-2-billion-144312058.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-05-11",
+      "sentiment": "positive"
+    },
+    {
+      "title": "\n                        BNY Announces Planned Change of Stock Ticker Symbol to \"BNY\"\n                    ",
+      "url": "/news/352827/bny-announces-planned-change-of-stock-ticker-symbol-to-bny",
+      "publisher": "PR Newswire",
+      "date": "2026-05-11",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        Bitcoin surges past $80,000 as institutional adoption signals global finance shift\n                    ",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-surges-past-80-000-082038767.html",
+      "publisher": "Investing.com",
+      "date": "2026-05-09",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        BNY Mellon to Launch Bitcoin and Ethereum Crypto Custody in UAE\n                    ",
+      "url": "https://finance.yahoo.com/m/078cbd37-a46d-3dc6-b222-8cba5c4ebbd5/bny-mellon-to-launch-bitcoin.html",
+      "publisher": "CoinGape",
+      "date": "2026-05-07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        BNY Shares Jump 65% As AI Hiring Push Accelerates\n                    ",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/bny-shares-jump-65-ai-115004909.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-05-05",
+      "sentiment": "positive"
+    },
+    {
+      "title": "\n                        NYSE Content Update: Artemis II Crew to Take Part in 'Bell Moment' at NYSE\n                    ",
+      "url": "/news/349856/nyse-content-update-artemis-ii-crew-to-take-part-in-bell-moment-at-nyse",
+      "publisher": "PR Newswire",
+      "date": "2026-05-01",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        BNY Mellon Municipal Bond Closed-End Funds Declare Distributions\n                    ",
+      "url": "https://www.businesswire.com/news/home/20260429727472/en/",
+      "publisher": "Business Wire",
+      "date": "2026-04-29",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        BNY's Emily Portney on Asset Servicing, AI, and the Future of Markets\n                    ",
+      "url": "https://finance.yahoo.com/video/bnys-emily-portney-asset-servicing-135323518.html",
+      "publisher": "NYSE",
+      "date": "2026-04-27",
+      "sentiment": "positive"
+    },
+    {
+      "title": "\n                        Morgan Stanley launches money market fund for stablecoin reserves\n                    ",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/morgan-stanley-launches-money-market-210240675.html",
+      "publisher": "Investing.com",
+      "date": "2026-04-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        BNY Mellon High Yield Strategies Fund Declares Dividend\n                    ",
+      "url": "https://www.businesswire.com/news/home/20260423163493/en/",
+      "publisher": "Business Wire",
+      "date": "2026-04-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        Morgan Stanley Investment Management Launches Stablecoin Reserves Portfolio\n                    ",
+      "url": "https://www.businesswire.com/news/home/20260423878842/en/",
+      "publisher": "Business Wire",
+      "date": "2026-04-23",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        BNY Mellon Municipal Bond Infrastructure Fund, Inc. (NYSE: DMB) Announces Distribution\n                    ",
+      "url": "https://www.businesswire.com/news/home/20260422105801/en/",
+      "publisher": "Business Wire",
+      "date": "2026-04-22",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        Cryptos biggest selling point is responsible for $8.5bn in losses. But it can be made safe\n                    ",
+      "url": "https://finance.yahoo.com/m/efd2ad7b-bf67-3fa1-8b74-6f6a812ca0f2/crypto%E2%80%99s-biggest-selling.html",
+      "publisher": "DLNews",
+      "date": "2026-04-22",
+      "sentiment": "positive"
+    },
+    {
+      "title": "\n                        Bank of New York Mellon Corp (BK) Q1 2026 Earnings Call Highlights: Record Revenue and AI ...\n                    ",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bank-york-mellon-corp-bk-070310111.html",
+      "publisher": "GuruFocus.com",
+      "date": "2026-04-17",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        The Bank of New York Mellon Corporation Q1 2026 Earnings Call Summary\n                    ",
+      "url": "https://finance.yahoo.com/m/658de051-57a4-395e-8cb2-2a6819a41b86/the-bank-of-new-york-mellon.html",
+      "publisher": "Moby",
+      "date": "2026-04-16",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\n                        BNY earnings fold Pershing reporting into Wealth Solutions\n                    ",
+      "url": "https://finance.yahoo.com/m/32f17259-1f45-39fd-922a-3cb283b98251/bny-earnings-fold-pershing.html",
+      "publisher": "Financial Planning",
+      "date": "2026-04-16",
+      "sentiment": "positive"
+    }
+  ]
+}
