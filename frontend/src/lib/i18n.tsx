@@ -238,6 +238,15 @@ const translations = {
     'screener.prev': 'Prev',
     'screener.next': 'Next',
     'screener.page': 'Page {current} of {total}',
+    'filter.min': 'Min',
+    'filter.max': 'Max',
+    'filter.search': 'Filter',
+    'filter.open': 'Open filter',
+    'filter.range': 'Range',
+    'filter.sortAsc': 'Sort ascending',
+    'filter.sortDesc': 'Sort descending',
+    'filter.clearSort': 'Clear sort',
+    'filter.clearFilter': 'Clear filter',
 
     // Table headers
     'table.rank': '#',
@@ -256,6 +265,9 @@ const translations = {
     'table.sentiment': 'Sent.',
     'table.rating': 'Rating',
     'table.alphaScore': 'Alpha',
+    'table.baseScore': 'Base',
+    'table.ma200Deviation': 'Bias',
+    'table.ma200DistanceDelta5d': 'Δ5D',
 
     // Tiers
     'tier.strong_buy': 'Strong Buy',
@@ -773,6 +785,15 @@ const translations = {
     'screener.prev': '上一页',
     'screener.next': '下一页',
     'screener.page': '第 {current} 页，共 {total} 页',
+    'filter.min': '下限',
+    'filter.max': '上限',
+    'filter.search': '筛选',
+    'filter.open': '打开筛选',
+    'filter.range': '范围',
+    'filter.sortAsc': '升序排序',
+    'filter.sortDesc': '降序排序',
+    'filter.clearSort': '清除排序',
+    'filter.clearFilter': '清除筛选',
 
     // Table headers
     'table.rank': '排名',
@@ -791,6 +812,9 @@ const translations = {
     'table.sentiment': '舆情',
     'table.rating': '评级',
     'table.alphaScore': 'Alpha',
+    'table.baseScore': '基本',
+    'table.ma200Deviation': '偏离',
+    'table.ma200DistanceDelta5d': 'Δ5D',
 
     // Tiers
     'tier.strong_buy': '强烈推荐',

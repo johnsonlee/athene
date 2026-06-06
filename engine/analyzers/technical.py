@@ -58,6 +58,8 @@ def _compute_indicators(df: pd.DataFrame) -> dict:
 
     latest_close = float(close.iloc[-1])
     result["close"] = latest_close
+    if len(close) >= 6:
+        result["ma200_ref_5d_close"] = float(close.iloc[-6])
 
     # --- Trend: SMA alignment ---
     sma_values = {}
@@ -67,6 +69,10 @@ def _compute_indicators(df: pd.DataFrame) -> dict:
             if sma is not None and not sma.empty:
                 sma_values[period] = float(sma.iloc[-1])
                 result[f"sma_{period}"] = sma_values[period]
+                if period == 200:
+                    sma_clean = sma.dropna()
+                    if len(sma_clean) >= 6:
+                        result["ma200_ref_5d_sma_200"] = float(sma_clean.iloc[-6])
 
     # Bullish alignment: price > SMA20 > SMA50 > SMA200
     # v6: margin-weighted — degree above/below SMA matters, not just sign
