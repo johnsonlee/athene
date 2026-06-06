@@ -544,6 +544,12 @@ def run(collected_dir: str = COLLECTED_DIR) -> None:
     # Export
     if "market_cap" in fund_scored.columns:
         ranked = ranked.join(fund_scored[["market_cap"]], how="left")
+    tech_export_cols = [
+        col for col in ("close", "sma_200", "ma200_ref_5d_close", "ma200_ref_5d_sma_200")
+        if col in tech_scored.columns
+    ]
+    if tech_export_cols:
+        ranked = ranked.join(tech_scored[tech_export_cols], how="left")
 
     log.info("Exporting JSON data...")
     export_meta(len(tickers), run_date, macro=regime_info, timing=timing_result)

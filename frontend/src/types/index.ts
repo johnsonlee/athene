@@ -32,6 +32,10 @@ export interface RankedStock {
   sector?: string;
   industry?: string;
   market_cap?: number | null;
+  close?: number | null;
+  sma_200?: number | null;
+  ma200_ref_5d_close?: number | null;
+  ma200_ref_5d_sma_200?: number | null;
   fundamental_score?: number | null;
   technical_score?: number | null;
   sentiment_score?: number | null;

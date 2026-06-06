@@ -397,6 +397,12 @@ def run(tickers_override: list[str] | None = None) -> None:
     # Carry market_cap from fundamentals into ranked for export
     if "market_cap" in fund_scored.columns:
         ranked = ranked.join(fund_scored[["market_cap"]], how="left")
+    tech_export_cols = [
+        col for col in ("close", "sma_200", "ma200_ref_5d_close", "ma200_ref_5d_sma_200")
+        if col in tech_scored.columns
+    ]
+    if tech_export_cols:
+        ranked = ranked.join(tech_scored[tech_export_cols], how="left")
 
     if full_run:
         log.info("Exporting JSON data...")
