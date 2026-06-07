@@ -103,6 +103,8 @@ EXTRA_TICKERS = [
     {"ticker": "RBLX", "name": "Roblox Corporation", "sector": "Communication Services", "industry": "Electronic Gaming & Multimedia"},
     {"ticker": "OKLO", "name": "Oklo Inc.", "sector": "Utilities", "industry": "Utilities - Independent Power Producers"},
     {"ticker": "CRCL", "name": "Circle Internet Group, Inc.", "sector": "Financial Services", "industry": "Capital Markets"},
+    {"ticker": "MRVL", "name": "Marvell Technology, Inc.", "sector": "Technology", "industry": "Semiconductors"},
+    {"ticker": "FLEX", "name": "Flex Ltd.", "sector": "Technology", "industry": "Electronic Components"},
 ]
 
 # ---------- v9: Sentiment analysis ----------
